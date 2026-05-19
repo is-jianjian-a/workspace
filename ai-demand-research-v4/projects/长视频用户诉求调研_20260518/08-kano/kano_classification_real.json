@@ -1,0 +1,83 @@
+[
+  {
+    "job_id": "J007",
+    "job_statement": "当我在想要放松或寻找灵感时，我想要观看他人的生活记录和日常，这样我就可以获得代入感、灵感或情感共鸣",
+    "category": "形态-生活记录",
+    "kano_type": "delighter",
+    "confidence": 0.7,
+    "frequency": 187,
+    "total_interaction": 1069880
+  },
+  {
+    "job_id": "J008",
+    "job_statement": "当我在想看某个系列内容时，我想要能够一次性看完完整的故事或系列，这样我就可以不用等待更新，获得完整的观看体验",
+    "category": "形态-一口气合集",
+    "kano_type": "must_be",
+    "confidence": 0.85,
+    "frequency": 154,
+    "total_interaction": 827849
+  },
+  {
+    "job_id": "J006",
+    "job_statement": "当我在想要娱乐或放松时，我想要观看有情节、有叙事的长视频内容，这样我就可以沉浸在故事中，获得情感体验",
+    "category": "形态-故事叙事",
+    "kano_type": "performance",
+    "confidence": 0.6,
+    "frequency": 195,
+    "total_interaction": 788691
+  },
+  {
+    "job_id": "J002",
+    "job_statement": "当我在晚上准备睡觉时，我想要找到一段舒缓、无惊吓的长视频内容，这样我就可以在温柔的声音或画面中放松下来，顺利入睡",
+    "category": "场景-助眠睡前",
+    "kano_type": "performance",
+    "confidence": 0.6,
+    "frequency": 82,
+    "total_interaction": 652167
+  },
+  {
+    "job_id": "J005",
+    "job_statement": "当我在想要学习或了解某个话题时，我想要找到高质量的知识类长视频，这样我就可以获得新知识或深入理解某个话题",
+    "category": "形态-知识获取",
+    "kano_type": "performance",
+    "confidence": 0.8,
+    "frequency": 201,
+    "total_interaction": 584210
+  },
+  {
+    "job_id": "J009",
+    "job_statement": "当我在对某个游戏感兴趣时，我想要观看游戏实况或解说，这样我就可以了解游戏内容或享受观看乐趣",
+    "category": "形态-游戏实况",
+    "kano_type": "performance",
+    "confidence": 0.75,
+    "frequency": 119,
+    "total_interaction": 383789
+  },
+  {
+    "job_id": "J003",
+    "job_statement": "当我在吃饭时，我想要找到有趣、轻松的长视频内容，这样我就可以让吃饭时间更愉快，有内容陪伴",
+    "category": "场景-吃饭下饭",
+    "kano_type": "performance",
+    "confidence": 0.6,
+    "frequency": 77,
+    "total_interaction": 307246
+  },
+  {
+    "job_id": "J001",
+    "job_statement": "当我在学习或画画时，我想要有口条清晰、有情节的长视频作为背景音，这样我就可以在不分散注意力的情况下获得陪伴感，提高专注度",
+    "category": "场景-学习工作BGM",
+    "kano_type": "must_be",
+    "confidence": 0.9,
+    "frequency": 144,
+    "total_interaction": 284824
+  },
+  {
+    "job_id": "J004",
+    "job_statement": "当我在通勤或旅途中，我想要有适合碎片化时间的长视频内容，这样我就可以打发无聊时间，让通勤不那么枯燥",
+    "category": "场景-通勤路途",
+    "kano_type": "performance",
+    "confidence": 0.6,
+    "frequency": 30,
+    "total_interaction": 214548
+  }
+]

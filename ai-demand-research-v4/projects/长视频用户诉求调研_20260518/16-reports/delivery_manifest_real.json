@@ -1,0 +1,39 @@
+{
+  "project_id": "长视频用户诉求调研_20260518",
+  "version": "4.0-real",
+  "delivery_date": "2026-05-19T10:31:34.670514",
+  "method": "真实语义分析（非关键词硬套）",
+  "reports": [
+    {
+      "name": "最终分析报告（真实版）",
+      "file": "16-reports/final-analysis-report-real.html"
+    },
+    {
+      "name": "Job Stories（真实版）",
+      "file": "05-jobs/job_stories_real.md"
+    },
+    {
+      "name": "Kano分类（真实版）",
+      "file": "08-kano/kano_classification_real.json"
+    },
+    {
+      "name": "RICE评分（真实版）",
+      "file": "09-rice/rice_scores_real.json"
+    },
+    {
+      "name": "假设（真实版）",
+      "file": "10-hypotheses/hypotheses_real.json"
+    }
+  ],
+  "total_ugc": 804,
+  "jobs": 9,
+  "opportunities": 9,
+  "hypotheses": 5,
+  "key_findings": [
+    "陪伴型消费是核心场景（17.9%学习/工作BGM）",
+    "合集需求强烈（19.2%找一口气看完）",
+    "助眠内容互动率最高（平均7,953）",
+    "电子榨菜是真实痛点（9.6%专门找下饭视频）",
+    "推荐需求巨大（7.7%主动求安利）"
+  ]
+}

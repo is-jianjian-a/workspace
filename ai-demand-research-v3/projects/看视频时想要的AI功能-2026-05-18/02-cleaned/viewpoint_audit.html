@@ -1,0 +1,2849 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>视角审核 - 创造者vs消费者</title>
+<style>
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f8fafc;padding:20px}
+.container{max-width:1200px;margin:0 auto}
+.header{background:linear-gradient(135deg,#4f46e5 0%,#7c3aed 100%);color:white;padding:30px;border-radius:12px;margin-bottom:20px}
+.section{background:white;padding:20px;border-radius:8px;margin-bottom:16px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.ugc-item{background:#f8fafc;border:1px solid #e2e8f0;border-radius:6px;padding:12px;margin-bottom:8px}
+.ugc-item .title{font-weight:600;margin-bottom:4px}
+.ugc-item .content{font-size:0.9em;color:#64748b;margin-bottom:6px}
+.ugc-item .tags{display:flex;gap:4px;flex-wrap:wrap}
+.tag{padding:2px 8px;border-radius:10px;font-size:0.75em}
+.tag-creator{background:#fee2e2;color:#991b1b}
+.tag-consumer{background:#d1fae5;color:#065f46}
+.tag-mixed{background:#fef3c7;color:#92400e}
+.tabs{display:flex;gap:8px;margin-bottom:16px}
+.tab{padding:8px 16px;border-radius:20px;background:#e0e7ff;color:#4f46e5;cursor:pointer;font-size:0.9em;font-weight:600;border:none}
+.tab.active{background:#4f46e5;color:white}
+.panel{display:none}
+.panel.active{display:block}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>🎬 视角审核：创造者 vs 消费者</h1>
+<p>请审核以下UGC的视角分类是否准确。创造者视角应排除，消费者视角应保留。</p>
+</div>
+
+<div class="tabs">
+<button class="tab active" onclick="showPanel('creator')">🔴 创造者视角 (76) </button>
+<button class="tab" onclick="showPanel('mixed')">🟡 混合视角 (58) </button>
+<button class="tab" onclick="showPanel('consumer')">🟢 消费者视角 (177) </button>
+</div>
+
+<div id="creator" class="panel active">
+<div class="section">
+<h2>🔴 创造者视角（建议排除）</h2>
+<p style="color:#64748b;font-size:0.9em">这些UGC主要从内容创作者角度出发，讨论AI如何帮助制作/编辑视频，而非作为消费者看视频时想要什么AI功能。</p>
+
+<div class="ugc-item">
+<div class="title">[小红书] 千问也太会整活了吧！</div>
+<div class="content">刚才刷到博主用它写的清透感撩人脚本拍的视频，我直接看嗨了，脑洞根本刹不住车，我连夜脑补了一百零八种绝美画面！
+梁锦豪要不你也赶紧安排一条！这玩意儿简直就是为你量身定做的，别让我蹲太久啊！
+#千问[话题]# #千问ai[话题]# #千问怎么这样[话题]# #写作灵感[话题]# #脑洞[话题]#...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 你敢相信这是Ai生成的？😅</div>
+<div class="content">#大疆pocket3[话题]# #数码好视频[话题]# #数码大玩家[话题]# #一种很新的转场方式[话题]# #AI动画[话题]# #ai剪辑视频[话题]# #ai[话题]# #视频剪辑[话题]# #ai关键词[话题]#...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 关键词高亮, AI生成视频, 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] AI视频到底怎么玩？一条视频带你看懂</div>
+<div class="content">#ai视频[话题]# #科技改变生活[话题]# #黑科技[话题]# #人工智能[话题]# #宝藏APP[话题]#...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 还在卷漫剧？AI 绘本故事才是蓝海赛道！</div>
+<div class="content">AI 绘本故事现在真的太适合普通人入场了。
+不用会画画，不用会分镜，只要一句话讲清楚你想要的故事主题，Lovart 就能帮你把角色、场景、风格全部搭好，还顺手给你生成一整版专业故事板。
+最后再一键转成视频分镜，接上 seedance2.0 出片，加上配音和封面，你就能轻松做出一支完整的绘本故事短视频。
+相比动辄几十个镜头、各种参数要调的漫剧，AI 绘本这条线更轻、更快、更稳，是现在最适合想要“下场...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 4个好用的AI长视频切片产品</div>
+<div class="content">一个长视频自动完成多个短视频切片
+1️⃣ Opus Clip
+2️⃣ 录咖AI
+3️⃣ wisecut
+4️⃣ gling
+5️⃣ VidyoAI
+﻿#AI[话题]#﻿   ﻿#录咖[话题]#﻿ ﻿#科技[话题]#﻿   ﻿#互联网[话题]#﻿   ﻿#视频剪辑[话题]#﻿   ﻿#视频[话题]#﻿   ﻿#人工智能[话题]#﻿   ﻿#大数据[话题]#﻿   ﻿#产品[话题]#﻿   ﻿#视频素...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] AI已经进化到P视频像P图一样容易了？</div>
+<div class="content">#AI[话题]# #AI视频[话题]# #P视频[话题]# #视频编辑[话题]# #RED新生代创作大赛[话题]# #人工智能[话题]# #AI工具[话题]# #后期[话题]# #万相[话题]# #Wan[话题]#...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 靠AI解决了90%的口播剪辑</div>
+<div class="content">最近一直在研究怎么高效剪辑又长又臭的口播视频，尤其是油管长视频，测试了好几个Ai工具，终于被我挖到宝藏了！
+	
+#剪辑工具[话题]# #AI工具[话题]# #AI视频[话题]# #自媒体工具[话题]# #ai自动剪辑工具[话题]#...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频, 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 热乎乎的8月最新AI生成视频工具排名，快看</div>
+<div class="content">最新排名...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 用AI做爆火设计干货动画，一分钟教会你 #AI设计 #室内设计 #AI视频 #AI工具 #设计工作室</div>
+<div class="content">用AI做爆火设计干货动画，一分钟教会你 #AI设计 #室内设计 #AI视频 #AI工具 #设计工作室...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 太兴奋了，肝了一夜，我用GPT创建了一个可以分析视频的GPT，从此GPT可以看懂视频了，输入任意的一个视频地址，这个gpt都可以帮你来分析 #短视频创作 #aigc #gpts #chatgpt #a</div>
+<div class="content">太兴奋了，肝了一夜，我用GPT创建了一个可以分析视频的GPT，从此GPT可以看懂视频了，输入任意的一个视频地址，这个gpt都可以帮你来分析 #短视频创作 #aigc #gpts #chatgpt #aigc一步之遥...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 2026年度AI视频工具榜单出炉啦～ 来看看哪个最适合你#ai工具测评 #ai视频工具 #AI工具</div>
+<div class="content">2026年度AI视频工具榜单出炉啦～ 来看看哪个最适合你#ai工具测评 #ai视频工具 #AI工具...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 这是一个真正让你不限次数免费生成视频的网站。每天认识一个宝藏网站【43期】#热门 #ai #职场 #干货分享 #打工人</div>
+<div class="content">这是一个真正让你不限次数免费生成视频的网站。每天认识一个宝藏网站【43期】#热门 #ai #职场 #干货分享 #打工人...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 国产免费的AI生成视频工具！让你悄悄躺平！🔥 #ai #ai工具 #自媒体 #干货分享 #短视频</div>
+<div class="content">国产免费的AI生成视频工具！让你悄悄躺平！🔥 #ai #ai工具 #自媒体 #干货分享 #短视频...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 天呐！上传一个视频ai直接开始分析，连视频里的小字都被精准识别到😱 #AI新技术  #Gemini  #视频分析  #自媒体干货 #AI应用</div>
+<div class="content">天呐！上传一个视频ai直接开始分析，连视频里的小字都被精准识别到😱 #AI新技术  #Gemini  #视频分析  #自媒体干货 #AI应用...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 完全免费、无限次数的AI视频生成器 每天一个神奇网站（第34期）这是全球首个完全免费、无限次数的AI视频生成器，支持文生视频，图生视频，还能让照片中的人物开口说话，可以做AI小猫跳舞视频，真人口播视频</div>
+<div class="content">完全免费、无限次数的AI视频生成器 每天一个神奇网站（第34期）这是全球首个完全免费、无限次数的AI视频生成器，支持文生视频，图生视频，还能让照片中的人物开口说话，可以做AI小猫跳舞视频，真人口播视频，短视频带货，无需登录就能直接带走#AI视频 #AI带货 #ai视频 #照片说话 #AI工具...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 如果AI会“看”视频了，你的文案会变成什么样？ #AI #AI自动剪辑  #内容创作  #幻剪 #解说 想象一下，AI不再是你的写作“工具”，而是你的专属“编剧”！🎬
+今天这个新功能，就实现了这一点。</div>
+<div class="content">如果AI会“看”视频了，你的文案会变成什么样？ #AI #AI自动剪辑  #内容创作  #幻剪 #解说 想象一下，AI不再是你的写作“工具”，而是你的专属“编剧”！🎬
+今天这个新功能，就实现了这一点。它会深度理解你的画面，自动帮你构思叙事线，写出真正有灵魂的解说。
+想知道我的素材被它解读成了什么样吗？点开视频，看完成片效果我惊了！...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 这个国产Ai好用到爆！Seedance 视频生成效率倍增！#Ai #科技下一站 #Ai视频 #Ai工具 #自媒体干货</div>
+<div class="content">这个国产Ai好用到爆！Seedance 视频生成效率倍增！#Ai #科技下一站 #Ai视频 #Ai工具 #自媒体干货...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 【第109期】🎬 彻底白嫖！这里可以免费且不限量AI生成视频 #AI工具测评 #AI视频 #免费资源 #科技下一站 #ai动画</div>
+<div class="content">【第109期】🎬 彻底白嫖！这里可以免费且不限量AI生成视频 #AI工具测评 #AI视频 #免费资源 #科技下一站 #ai动画...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 测试各种ai模型多窗口制作视频一次出几十条减少排队的方法 #ai视频 #电脑好像有情绪了 #ai制作 #既梦ai #seedance2.0</div>
+<div class="content">测试各种ai模型多窗口制作视频一次出几十条减少排队的方法 #ai视频 #电脑好像有情绪了 #ai制作 #既梦ai #seedance2.0...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 负面屏蔽, AI生成视频, 情绪适配</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 一个可以做长视频的宝藏网站，建议收藏！ #ai #AI视频 #AI长视频#seedance #宝藏网站</div>
+<div class="content">一个可以做长视频的宝藏网站，建议收藏！ #ai #AI视频 #AI长视频#seedance #宝藏网站...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI怎么做视频
+既赚钱 又有流量
+一分钟看明白
+ #文娱百科明日之星 #快成长计划 #智能Ai #短视频变现赚钱 @快手创作者中心(O3xrgtux2ehryffe) @快手创作者小助手(O3xkzs</div>
+<div class="content">AI怎么做视频
+既赚钱 又有流量
+一分钟看明白
+ #文娱百科明日之星 #快成长计划 #智能Ai #短视频变现赚钱 @快手创作者中心(O3xrgtux2ehryffe) @快手创作者小助手(O3xkzswpkrqacs8s) @快手热点(O3xddgkd5fav5if9)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI怎么做视频 既赚米 又有流量
+一分钟看明白
+ #智能Ai #短视频变现赚钱 #ai #宝妈创业 @快手创作者中心 @快手创作者小助手 @快手热点</div>
+<div class="content">AI怎么做视频 既赚米 又有流量
+一分钟看明白
+ #智能Ai #短视频变现赚钱 #ai #宝妈创业 @快手创作者中心 @快手创作者小助手 @快手热点...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 教你用AI工具，一键生成原创视频 #剪辑 #自媒体 #ai #视频剪辑</div>
+<div class="content">教你用AI工具，一键生成原创视频 #剪辑 #自媒体 #ai #视频剪辑...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 国产免费的AI生成视频工具，直接让你2026年躺平   #职场  #AI视频  #视频生成</div>
+<div class="content">国产免费的AI生成视频工具，直接让你2026年躺平   #职场  #AI视频  #视频生成...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 国产免费的AI生成视频工具，你用过几个？#AI视频 #AI工具 #视频工具 #干货</div>
+<div class="content">国产免费的AI生成视频工具，你用过几个？#AI视频 #AI工具 #视频工具 #干货...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手新功能AI自动生成视频 #老铁知识百科发文征集令 #有用内容创作计划 #光合计划 #快影AI生视频 @快手热点(O3xddgkd5fav5if9) @我要上热门(O3x8er38dpbhvbaa)</div>
+<div class="content">快手新功能AI自动生成视频 #老铁知识百科发文征集令 #有用内容创作计划 #光合计划 #快影AI生视频 @快手热点(O3xddgkd5fav5if9) @我要上热门(O3x8er38dpbhvbaa) @快手粉条(O3xhcy6vhfzcu3qe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI视频通话太经验了，跟真人视频一样！ #ai视频通话</div>
+<div class="content">AI视频通话太经验了，跟真人视频一样！ #ai视频通话...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 自动生成视频功能#快手知识分享 #人工智能</div>
+<div class="content">自动生成视频功能#快手知识分享 #人工智能...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI胖贵妃视频咋做的？简单一看就会 #胖贵妃  #大唐胖妞  #ai视频制作</div>
+<div class="content">AI胖贵妃视频咋做的？简单一看就会 #胖贵妃  #大唐胖妞  #ai视频制作...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #知识播种计划 #技能速成宝典 AI视频创作者请注意 请为AI参与制作的视频添加作者声明 #老铁知识百科  @粉条上热门(O3x3t62ghyg2f43c) @快手光合计划助手(O3xxpf2m4br</div>
+<div class="content">#知识播种计划 #技能速成宝典 AI视频创作者请注意 请为AI参与制作的视频添加作者声明 #老铁知识百科  @粉条上热门(O3x3t62ghyg2f43c) @快手光合计划助手(O3xxpf2m4brbf3pe) @快手创作者中心(O3xrgtux2ehryffe) @快手教育(O3xs4pwkr6yf6g56)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 1分钟教你用AI生成视频 #趋势 #人工智能 #创业 </div>
+<div class="content">1分钟教你用AI生成视频 #趋势 #人工智能 #创业 ...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 智能二创，自动解说，深度去重，全部一键处理，无脑搬运，你还在等什么。 #二创 #二创剪辑 #视频</div>
+<div class="content">智能二创，自动解说，深度去重，全部一键处理，无脑搬运，你还在等什么。 #二创 #二创剪辑 #视频...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 开通磁力聚星，AI自动生成视频#磁力聚星 #短视频创业 #诊断助手流量黑科技 #诊断助手 @快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3x</div>
+<div class="content">开通磁力聚星，AI自动生成视频#磁力聚星 #短视频创业 #诊断助手流量黑科技 #诊断助手 @快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 一分钟生成ai服装图文带货#AI服装带货 #老铁知识百科 #AI图文带货 #短视频带货 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手创作者中心</div>
+<div class="content">一分钟生成ai服装图文带货#AI服装带货 #老铁知识百科 #AI图文带货 #短视频带货 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O3xrgtux2ehryffe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 记住这4款AI工具，免米使用 #AI工具 #AI视频 #丁妍之</div>
+<div class="content">记住这4款AI工具，免米使用 #AI工具 #AI视频 #丁妍之...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 想涨粉？快用“精彩时刻”，让AI帮你发短视频！ #直播技巧 #精彩时刻 #短视频创作 </div>
+<div class="content">想涨粉？快用“精彩时刻”，让AI帮你发短视频！ #直播技巧 #精彩时刻 #短视频创作 ...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI数字人制作口播短视频操作流程 #知识播种计划 #技能速成宝典 #爆款选题创作计划 #短视频创业 @快手光合计划助手(O3xxpf2m4brbf3pe) @我要上热门(O3x8er38dpbhvba</div>
+<div class="content">AI数字人制作口播短视频操作流程 #知识播种计划 #技能速成宝典 #爆款选题创作计划 #短视频创业 @快手光合计划助手(O3xxpf2m4brbf3pe) @我要上热门(O3x8er38dpbhvbaa) @快手粉条(O3xhcy6vhfzcu3qe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 这个Ai工具，给视频画面背景 #ai工具 #自媒体运营 #短视频运营</div>
+<div class="content">这个Ai工具，给视频画面背景 #ai工具 #自媒体运营 #短视频运营...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 教你用自己的照片去制作AI数字人 #自媒体教学 #短视频 #剪辑 #教学</div>
+<div class="content">教你用自己的照片去制作AI数字人 #自媒体教学 #短视频 #剪辑 #教学...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 想赚零花钱，就用短剧解说。
+ #短剧 #快影 #快影AI短剧解说 #快手短视频创业 @快影学苑(O3xbw6yu9c8tw6xg) @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O</div>
+<div class="content">想赚零花钱，就用短剧解说。
+ #短剧 #快影 #快影AI短剧解说 #快手短视频创业 @快影学苑(O3xbw6yu9c8tw6xg) @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O3xrgtux2ehryffe) @快影(O3xsdhwemvmeynnq)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 4个实用的AI功能，一定要学会 #ai #视频剪辑 #自媒体 #干货分享</div>
+<div class="content">4个实用的AI功能，一定要学会 #ai #视频剪辑 #自媒体 #干货分享...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #ai人工智能 #宝妈创业 #ai短视频创作 #视频热门</div>
+<div class="content">#ai人工智能 #宝妈创业 #ai短视频创作 #视频热门...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 这几个AI工具真的太好用了，关键还都不用花钱！#AI#人工智能#私域哥聊流量#短视频运营</div>
+<div class="content">这几个AI工具真的太好用了，关键还都不用花钱！#AI#人工智能#私域哥聊流量#短视频运营...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 微信搜一搜AI功能大揭秘 #ai #视频号小助手  #的  #谁这么优秀关注了我</div>
+<div class="content">微信搜一搜AI功能大揭秘 #ai #视频号小助手  #的  #谁这么优秀关注了我...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 如何免费生成数字人说话#老铁知识百科#AI创业 #数字人口播 #短视频创业 @快手新知(O3xvmqt3emychk29) @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xr</div>
+<div class="content">如何免费生成数字人说话#老铁知识百科#AI创业 #数字人口播 #短视频创业 @快手新知(O3xvmqt3emychk29) @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xrgtux2ehryffe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] ai短视频怎么没流量了，ai短视频怎么制作，AI短视频怎么变现，生成视频的智能体，ai生成带货视频，#ai短视频制作 #ai短视频获客 #ai短视频技术</div>
+<div class="content">ai短视频怎么没流量了，ai短视频怎么制作，AI短视频怎么变现，生成视频的智能体，ai生成带货视频，#ai短视频制作 #ai短视频获客 #ai短视频技术...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] OpenClaw第八课：让他看懂视频——AI视频分析能力配置</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 那些离谱的数学答案#搞笑#校园#抽象#Ai视频</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] UP 主必备！Updream 一站式 AI 视频创作</div>
+<div class="content">updream官方链接：https://updream.bilibili.com
+AI创作互助小站：https://www.bilibili.com/bubble/home/40?spm_id_from=333.1369.0.0
+updream使用助手：https://tcnksifr5ujy.feishu.cn/wiki/Vjkcw7omTiS4EKkt726cZVTwnVe‌﻿‍‍﻿‬‬‍‌‬...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 你能看出来哪个视频是AI生成的吗？？？</div>
+<div class="content">本期视频均为海艺AI生成~...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 人工智能AI视频全新玩法来啦！3个新功能一个比一个炸！！！！</div>
+<div class="content">AI生成视频再出王炸！极度爆炸的视频生成，这3个新功能一个比一个炸~（附插件）...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 新手一分钟掌握百种AI视频技巧！全流程！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 第一人称视角AI真人短剧是如何制作的？一期视频教会你 拆解爆款AI短片《告别》AI真人视频教学</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 好用的AI视频工具有哪些？知道这4个工具就够了！</div>
+<div class="content">好用的AI视频工具有哪些？市面上有很多AI视频生成工具，
+其实，目前来说用AI做视频，知道这4个工具就够了！...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 你有什么莫名其妙的生理反应？</div>
+<div class="content">我识别AI的方式很简单：只要看到AI图或AI视频，我就会有强烈的不适感，感觉恶心想吐。有同样感觉的人点个赞，我看看有多少。...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 你看过用ai做的短视频吗？你感觉怎么样？</div>
+<div class="content">常用。视频最终的质量还是靠人。AI是在人的指令基础上发挥的，所以用AI做视频其实人更不能偷懒，尤其是不专业的人，AI会倒逼你变得专业，所以用扎实的审美和知识技能驱动AI为你创作才是王道。...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 有没有免费的AI视频生成App？</div>
+<div class="content">现在免费的越来越少了，不过有些新平台还是有优惠的，我最近用的ZeroCut AI（https://www.http://zerocut.cn）感觉很好，也对新手很友好，可以一键生成视频，后期不怎么需要剪辑。可以试试看适合不适合...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频, 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 2026年AI视频技术会有哪些发展趋势？</div>
+<div class="content">发展从来是分阶段和逐级上升的。可能在某个阶段会有大的爆发，比如2026这一波。随着电商行业对视频生成技术的强烈依赖更多的技术力量会被引导到AI视频创造领域中来，并实现资源集中与整合，最终实现井喷式增长。2026刚开年，让我们拭目以待。...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 十年后人眼还能分辨ai视频吗？</div>
+<div class="content">新出生的一代人从小看AI视频，很可能会出现认知错乱，分不清真假，甚至对事理逻辑产生根本性的认知扭曲。比如猫就是猫，狗就是狗。从小通过各种媒体接触过猫和狗的影像的儿童，会在头脑中建立起“猫”和“狗”这两个分类概念。但是现在AI视频可以创造出既是猫又是狗的动物，或者在猫和狗之间反复切换的动物，儿童的分类认知可能就会陷入混乱。再比如说，想把一个长的东西放进一个短的盒子里是放不进去的，这是观察实践产生的空...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] AI视频工具真的好用吗?</div>
+<div class="content">可以去试试这个某漫剧公司接入了官方Seedance2.0满血版的api，据说刚上线，几乎不咋卡审核，我用两天了，排队最快两分钟出片，运镜牛，亲测高效好用！https://www.bananapro.site?ref=gdSeedance2.0满血版无敌https://www.zhihu.com/video/2021999713700848759...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 那个ai换脸视频怎么弄啊？</div>
+<div class="content">www.jumirui.com 在线 无限制...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 如何高效生产优秀的内容？</div>
+<div class="content">昨天晚上刷到一个Dan Koe的内容创作者。（这几年在中文互联网上很知名）
+	
+这哥们一个人，每周能写一篇深度文章、拍一个YouTube视频、发几十条社交媒体内容。而且质量都不差。
+#搞钱[话题]# #赚钱思维[话题]# #内容创造者[话题]# #优质内容输出者[话题]#...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 剪映Agent终于来了！AI自动剪辑～【小白必备】 #秋芝2046 #剪辑可以全靠一张嘴了 #剪映可以聊天剪辑了 #剪映AI助手 #前沿科技趋势发布月</div>
+<div class="content">剪映Agent终于来了！AI自动剪辑～【小白必备】 #秋芝2046 #剪辑可以全靠一张嘴了 #剪映可以聊天剪辑了 #剪映AI助手 #前沿科技趋势发布月...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 剪映即将迎来王炸级更新！ #AIagent #剪映 #沙雕动画 #an插件 #磁力素材</div>
+<div class="content">剪映即将迎来王炸级更新！ #AIagent #剪映 #沙雕动画 #an插件 #磁力素材...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 三个变态又好用的Ai，一定要偷偷码住 #ai #人工智能 #数字人 #闪剪</div>
+<div class="content">三个变态又好用的Ai，一定要偷偷码住 #ai #人工智能 #数字人 #闪剪...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #短视频变现 #干货分享 #短视频创业 ＃老铁知识百科 @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xrgtux2ehryffe) @快手新知(O3xvmqt3emychk</div>
+<div class="content">#短视频变现 #干货分享 #短视频创业 ＃老铁知识百科 @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xrgtux2ehryffe) @快手新知(O3xvmqt3emychk29)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #快影最强投稿王 #快影发文必得流量 #短视频变现 @快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)</div>
+<div class="content">#快影最强投稿王 #快影发文必得流量 #短视频变现 @快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #雕刻 #荒诞视频 #Boo荒诞视频 #高手在民间 @快手创作者小助手(O3xkzswpkrqacs8s) @快手创作者中心(O3xrgtux2ehryffe)</div>
+<div class="content">#雕刻 #荒诞视频 #Boo荒诞视频 #高手在民间 @快手创作者小助手(O3xkzswpkrqacs8s) @快手创作者中心(O3xrgtux2ehryffe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI生成作品，要标注了，一定要注意  #幸福乡村丰收季  #三农   #作品  </div>
+<div class="content">AI生成作品，要标注了，一定要注意  #幸福乡村丰收季  #三农   #作品  ...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #视频制作</div>
+<div class="content">#视频制作...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #每日打卡领流量券 #记录生活  #小猫咪是被派来治愈人类的吧 #教新人如何玩好快手 @快手创作者中心(O3xrgtux2ehryffe) @快手热点(O3xddgkd5fav5if9) @快手粉条(</div>
+<div class="content">#每日打卡领流量券 #记录生活  #小猫咪是被派来治愈人类的吧 #教新人如何玩好快手 @快手创作者中心(O3xrgtux2ehryffe) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手]  秒剪AI功能 ，小白也能学会用起来 #AI # 剪辑工具 #丁妍之</div>
+<div class="content"> 秒剪AI功能 ，小白也能学会用起来 #AI # 剪辑工具 #丁妍之...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #每日打卡领流量券 #今日份的自拍 #萌娃 #Ai教学 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @快手创作者中心(O3xrgtux2ehryff</div>
+<div class="content">#每日打卡领流量券 #今日份的自拍 #萌娃 #Ai教学 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @快手创作者中心(O3xrgtux2ehryffe)...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 两个变太神器，打死也不能删除 #短视频运营  #神仙软件  #自媒体运营  #软件分享</div>
+<div class="content">两个变太神器，打死也不能删除 #短视频运营  #神仙软件  #自媒体运营  #软件分享...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【AI音乐MV制作全攻略】保姆级全步骤流程教学，从音乐生成到MV剪辑一站式搞定，零基础也能做质感成品</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] Token命名, AI风口已来！百万up主教你用AI副业弯道超车！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-creator">二层: 无</span>
+</div>
+</div>
+</div></div>
+<div id="mixed" class="panel">
+<div class="section">
+<h2>🟡 混合视角（需人工判断）</h2>
+<p style="color:#64748b;font-size:0.9em">这些UGC同时包含创造者和消费者视角，请逐条判断是否应保留。</p>
+
+<div class="ugc-item">
+<div class="title">[小红书] Al做电影转动画，这太好涨粉啦</div>
+<div class="content">#ai[话题]# #那些赚钱的副业[话题]# #自媒体运营[话题]# #副业[话题]# #人工智能[话题]# #短视频剪辑[话题]# #AI教程[话题]# #动画[话题]#...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 🔥从故事到成片,Agent自动搭建短剧全流程</div>
+<div class="content">最近用 YouArt 做了一条真人短片《让座》🎬
+#00:00[时刻]#-#00:07[时刻]# 精彩片段
+#00:08[时刻]#-#00:26[时刻]# 工作流整体介绍
+#00:27[时刻]#-#00:45[时刻]# 生成视觉资产
+#00:46[时刻]#-#00:53[时刻]# 拆解分镜
+#00:54[时刻]#-#01:12[时刻]# 生成分镜图
+#01:13[时刻]#-#01:56[时刻]# ...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 自动剪辑, 跳过广告</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 想学什么都可以自己生成专属网课了</div>
+<div class="content">AI 已经可以生成符合你喜好的专属网课了。只要告诉它你想学什么，比如试着输入「区块链入门」，它立刻就能从网上帮搜一堆优质电子书、课程资料，然后让你选具体想学哪一章，接着会自动生成一整套课件 + 视频。重点是——还有AI老师配套讲解，一边放 PPT 一边讲得头头是道，完全就是你专属的私教。
+它还可以自定义。比如你可以选讲解风格：要不要细一点？有没有比喻？语速快慢？讲解声音想要男声女声、活泼一点还是冷...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 知识提取, 学习管理, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 视频→AI提取→Obsidian入库，知识管理新方法</div>
+<div class="content">偶然发现一个Obsidian 学习搭子「Ai好记」，
+	
+让我最近又成功地从繁忙的学业和工作中“偷”到了不少时间。
+	
+我每天要看和处理大量的视频、播客和会议录音。有时候看到 AI 大佬、学术大咖更新了油管视频，明知道内容优质，却一看到时长动辄一小时甚至更久，就开始犯难，经常还没看几分钟就被其他事情打断施法，最后不了了之。
+	
+[暗中观察R]我现在的视频知识处理工作流：
+	
+1.  碰到优质但冗长...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 实时翻译, 知识提取, 学习管理, 跳过广告</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 不靠运气，这款AI如何连续引爆全球社交媒体？</div>
+<div class="content">-
+最近，你们应该经常刷到类似这样的视频[暗中观察R]
+	
+很多人把自己放进了🇰🇷职业棒球赛场的大屏里，转播镜头精准对焦，观众席的光打过来，还原真实的球场转播氛围。
+	
+有一条在ins上非常火，播放量破2200万，点赞超140万。评论区很多人都在问，到底是怎么做的？
+很多人不知道的是，这些爆款出圈的视频背后，用到的都是可灵。
+	
+而这，已经不是它第一次引发这种级别的全球传播了。
+在过去半年里，可灵...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 氛围音效</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 发现豆包AI，有个自媒体人都需要的神奇功能</div>
+<div class="content">刚发现豆包AI有一个神奇的功能[偷笑R]
+	
+给它一个抖X短视频链接，要求它提取文案，他就可以完整的把视频文案提取出来。只要原视频发音，人能听清楚，它就不会识别错，标点符号也标注的很好。
+	
+自媒体人研究爆款，少不了研究文案。
+	
+丢给AI一个视频链接，它就可以提取文案，之后还可以点评和总结文案内容，实在是方便。
+	
+感兴趣的可以试试看，都是免费的。
+	
+补充几点：
+① 试了其它几个热门AI，暂时...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 用“七宗罪”拆解，为什么这个AI App可能爆</div>
+<div class="content">先说一个可能得罪不少同行的观点：我对绝大多数AI toC App的前景是悲观的。
+	
+原因很简单，我们的手机使用时长早就见顶了。每天24小时，睡觉8小时，工作8小时，剩下8小时已经被微信、抖音、小红书、淘宝瓜分得干干净净。这是一个彻头彻尾的存量市场，你要做一个新App，要么替代掉某个旧App的功能，很难；要么从现有App手里抢时间，更难。
+	
+而大多数AI App在做的事情，本质上是效率工具的替代...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 🔥AI文字生成视频！免费实用软件推荐</div>
+<div class="content">[星R]均支持免费下载视频
+[星R]不需要科学上网
+[星R]简单好上手
+	
+没事可以尝试起来玩玩，打开新世界大门
+	
+#AI视频[话题]# #ai视频[话题]# #ai视频生成[话题]# #ai视频制作[话题]# #ai短视频[话题]# #ai做视频[话题]# #pixverse[话题]# #快影[话题]# #minimax[话题]#
+	
+p7错别字更正：看不起-》看不清...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 让AI帮你剪视频（教程）</div>
+<div class="content">个人觉得这个ai助手真的很方便啦，我是跟着@喜公子拍点啥！ 这个大佬做的，他教，我就用嘴吧对着ai助手说～
+✅视频由ai辅助完成，没有任何不良引导哈
+#剪辑[话题]# #ai工具[话题]# #ai教程[话题]# #用嘴剪视频[话题]# #aigc[话题]# #我的剪辑搭子[话题]# #ai助手[话题]# #vlog[话题]# #图片剪辑[话题]# #剪辑放飞自我[话题]#...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 我天，Instagram 上这个视频火了。</div>
+<div class="content">下午朋友给我发了个 Instagram 帖子，说这类视频最近在海外特别火。
+	
+点开看了下，视频里是一个美女小姐姐，正坐在韩国职棒的观众席上看球。转播镜头从她面前扫过，停了一下，画面里还能看到旁边的韩国球迷举着红色的应援棒。
+	
+我看完第一反应是，人家真长得真漂亮。紧接着朋友告诉我，这条视频在 Instagram 上彻底爆了，有 140 万次点赞。并且，这条视频居然是 AI 生成的。
+	
+转头去社...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] Claude 现在能替你刷视频了，内容拆解效率直接起飞！ 使用 Algrow 插件让你的 Claude 帮你看视频：视频里发生了什么、为什么重要，以及该如何利用这些内容。无论是分析内容、研究趋势，还是</div>
+<div class="content">Claude 现在能替你刷视频了，内容拆解效率直接起飞！ 使用 Algrow 插件让你的 Claude 帮你看视频：视频里发生了什么、为什么重要，以及该如何利用这些内容。无论是分析内容、研究趋势，还是快速生成创意，这都能节省大量时间。 
+#Claude #AI看视频 #视频内容拆解 #AI效率工具 #内容创作神器...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 一步搞定素材自动匹配！让素材来找你~ 做视频再也不用翻硬盘找素材了！#AI智能体 #AI工作流 #草堆AI #一人公司 #视频批量剪辑软件</div>
+<div class="content">一步搞定素材自动匹配！让素材来找你~ 做视频再也不用翻硬盘找素材了！#AI智能体 #AI工作流 #草堆AI #一人公司 #视频批量剪辑软件...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI视频细节一致性技巧 做AI视频，最怕的就是视频只能生成15秒。15秒之后，人物形象突变、位置乱跑，配音乱换，到底该怎么办？ 这一期，一帆老师带你学习AI影视细节控制方法，从形象、声音、位置、动作四</div>
+<div class="content">AI视频细节一致性技巧 做AI视频，最怕的就是视频只能生成15秒。15秒之后，人物形象突变、位置乱跑，配音乱换，到底该怎么办？ 这一期，一帆老师带你学习AI影视细节控制方法，从形象、声音、位置、动作四个维度，帮你把人物一致性焊死在视频里。 新手也能直接上手，帮你告别反复“抽卡”！  
+ #AI视频 #AI影视  #AI教程 #AI视频一致性 #ai新星计划...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 5款免费的AI软件视频生成工具，赶紧收藏码住防止找不到！#闪剪 #数字人 #人工智能 #ai工具 #ai视频</div>
+<div class="content">5款免费的AI软件视频生成工具，赶紧收藏码住防止找不到！#闪剪 #数字人 #人工智能 #ai工具 #ai视频...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 一口气带你学会即梦AI！3分钟入门AI视频制作！ AI生成视频零基础入门保姆级教程（2025最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）
+#ai #ai视频 #AI视频</div>
+<div class="content">一口气带你学会即梦AI！3分钟入门AI视频制作！ AI生成视频零基础入门保姆级教程（2025最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）
+#ai #ai视频 #AI视频制作 #AI动画 ...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #干货分享  #短视频教学 #自媒体 #剪辑教程</div>
+<div class="content">#干货分享  #短视频教学 #自媒体 #剪辑教程...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 教你制作Ai数字人~ #剪辑  #视频制作  #手机剪辑  #剪辑教程</div>
+<div class="content">教你制作Ai数字人~ #剪辑  #视频制作  #手机剪辑  #剪辑教程...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【全30集】5分钟入门AI视频制作！AI生成视频零基础入门保姆级教程（2026最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）</div>
+<div class="content">一个冷知识:点赞是免费的!
+但是可以让辛苦做视频的UP主开心快乐一整天!!!
+视频配套的整 合 包 &工 作 流，关注+评论掉落~或者看置顶评论领取哦！...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/</div>
+<div class="content">这个视频的课程研发 整体特别特别辛苦的···
+然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是
+请一定要【一键三连】
+请一定要【一键三连】
+请一定要【一键三连】
+
+课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~
+进粉丝群的话，在后台回复【我是铁粉】或...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑, 学习管理, 氛围音效</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【全68集】3分钟入门AI视频制作！AI生成视频零基础入门保姆级教程（2025最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）</div>
+<div class="content">持续更新中~附全套工具！求三连！！...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 一个视频教会你该如何AI配音和加字幕</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 字幕生成</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【全30集】吊打付费！目前B站最全最细的即梦AI视频制作保姆级教程！2026最新版AI视频生成全流程教学！七天就能从小白到大神！零基础入门到精通实现商业变现</div>
+<div class="content">视频制作不易，希望各位观众老爷能给个免费的三联！！祝你学习愉快~...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 我成功让AI自动剪视频！Skill免费领取，你立刻就能体验！</div>
+<div class="content">本期视频，我会先分享自己如何跟AI沟通，并让它帮我完成一个想法。
+这样大家也可以学习我的沟通方式（我的方式不是最佳的！），起到一个抱砖引玉吧！
+-
+然后我让Claude根据它制作的这套AI自动剪辑视频的工作流，完成了一个Skill的制作。
+项目已经开源，大家可以免费获得。
+项目：https://github.com/DayadaUP/claude-code-auto-video-edit
+如果你不...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 字幕生成, 自动剪辑, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【无限生成时长】最新免费AI数字人视频制作教程，五分钟即可生成专属你自己形象的数字人。全程干货满满，记得点赞收藏哦！ai数字人视频制作，ai数字人免费软件推荐</div>
+<div class="content">【无限生成时长】最新免费AI数字人视频制作教程，五分钟即可生成专属你自己形象的数字人。全程干货满满，记得点赞收藏哦！ai数字人视频制作，ai数字人免费软件推荐
+需要数字人软件整合包、本地安装包资源、模型、等AI资源评论区留言获取！
+
+更多精品软件资源请关注官方网站24小时自助✅：
+https://fk.m3xm.cn...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 如何用AI克隆视频版的你自己（完整工作流）</div>
+<div class="content">【视频简介】
+本期视频分享如何利用AI工具，从脚本到成片，掌握高效制作自媒体视频的4个关键步骤。
+
+【视频章节】
+00:00～00:30 引言
+00:31～01:30 AI拆解分镜
+01:31～02:40 AI生成真人口播
+02:41～04:14 AI生成CG素材
+04:15～06:29 AI生成真人视频
+06:30～07:00 总结
+
+【相关链接】
+镜分脚本助手：https://www.doub...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 章节拆分, AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【AI漫剧】吊打付费！目前B站最全最细的AI视频制作保姆级教程！2026最新AI视频生成全流程教学！手把手教你从0到1制作AI短剧，轻松学会！玩转AI视频赛道！</div>
+<div class="content">全套籽料包敲【6】全部抱走哦～只求换大家的一个[热词系列_三连]
+大家不要白嫖啊(┯_┯)，一个小小的赞也可谢谢了...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] ai漫剧制作全教程（2026ai短视频制作教程）AI生成视频+AI短剧+AI动漫+即梦+ComfyUI教程+AI动态漫制作+AI动画+Seedance2！</div>
+<div class="content">ai漫剧制作全教程（2026ai短视频制作教程）AI生成视频+AI短剧+AI动漫+即梦+ComfyUI教程+AI动态漫制作+AI动画+Seedance2！...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 抖音上有个能控制苍蝇的人，那视频看了几遍都不像ai，难道真的有人可以驯服...类似苍蝇这样的生物吗？</div>
+<div class="content">嗯……人可以驯服昆虫。不过这位主播的玩法，恐怕算不上驯服了。这位主播叫柯铭，这一系列视频的主题是带着宠物苍蝇（或其它昆虫）外出旅行。他的视频的确不是ai。不过，后期剪辑的力量是少不了的。细心的观众，可以发现他的多个镜头中出现的不是同一只苍蝇。例如这个去环球影城的视频，最开始出现的是一只复眼巨大、在头顶相接的丽蝇。它可能是 大头金蝇 Chrysomya megacephala 或近似物种的雄虫。这种...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑, 学习管理, 助眠解压, 情绪适配, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 一个人用AI做了一部短视频，聊聊踩过的坑</div>
+<div class="content">Seedance 2.0 发布的时候我手痒了，想试试现在的AI视频生成到底能做到什么程度。于是花了大概一周时间，从零开始摸索，最终做出了一部1920年代克苏鲁风格的短视频。 这篇不是教程，是制作手记。记录真实的流程和真实的血泪教训。我用了哪些工具先摊牌，整个项目的工具链长这样：即梦 / Seedance 2.0 — 视频生成的绝对主力。关键帧生成和视频片段都靠它。ComfyUI — 辅助角色，负责...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 字幕生成, 口音处理, 兴趣推荐, 去重过滤, AI生成视频, 自动剪辑, 氛围音效, 画质增强, 老片修复</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 用这3款AI看视频，一分钟抓取视频内容，学习10倍提效！</div>
+<div class="content">我们现在大部分的学习场景，可能都变成了看视频，更方便，也更直观，也更加高效。但是就算是有2倍速，3倍速的功能，有时候还是觉得“刷”起来太慢了，跳着看又怕遗漏一些细节。咋个办？找ai帮忙啊。最近很多粉丝加到我就有两个场景想解决：1.ai能够快速总结视频课程内容。2.ai能够识别课程中的视觉信息。第二个是比较难的，目前对于ai来讲有难度，视觉识图已经普及了。视频视觉识别还在发展中。所以今天重点盘点三款...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 章节拆分, 实时翻译, AI生成视频, 笔记工具, 知识提取, 学习管理, 智能倍速, 多端同步</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 做视频的AI工具app哪个好用？</div>
+<div class="content">Nano Banana Prohttps://www.bananapro.site?ref=ASDSDS平台整合多风格视频生成工具，精准匹配不同创作场景：- 电影级质感首选Veo3：画面与音频毫秒级同步，物理引擎驱动真实光影，让短片媲美院线大片；- 场景过渡神器Veo3.1：上传首尾帧即可生成自然转场视频，轻松实现“从星空到城市”“从古代到未来”的创意衔接；- 短视频高效生产Sora2：10-15...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 画质增强, 多端同步</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 大神推荐几款免费ai视频生成软件？</div>
+<div class="content">以下5个您参考下，我用的即梦的Seedance 2.0模型2026年2月接入，支持文本、图像、音频混合输入。最大的亮点是“多镜头叙事”和音画同步。输入一段故事文字，生成画面，自动匹配镜头语言（如推拉摇移），甚至生成与画面口型、动作同步的声音。支持生成15秒的高质量视频，且在角色一致性上做了很大优化，适合做创意短片。2026年4月推出了“小章鱼”Octo工具（现在是内测阶段，需要申请，不一定通过哟）...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 自动剪辑, 氛围音效, 跳过广告, 画质增强, 多端同步</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 如何看待AI视频？</div>
+<div class="content">三到五年内，AI 视频会爆炸式增长，人类创作的视频会两极分化，底层被 AI 替代，顶层溢价更高。一、人类创作的内容，永远是刚需AI 可以生成画面，但生成不了“人味”。你看现在抖音上火的那些视频——无论是《大师与失意人》的禅意对话，还是《菜市场阿姨怼 AI》的生活片段，观众追的不是画面有多精致，而是：真实的情感：妈妈嘴上说“父女节”时憋不住的笑意外的共鸣：“你那 AI 它吃过西红柿吗”背后的生活智慧...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 助眠解压, 情绪适配, 跳过广告</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] AI脱衣心动女生明星裸照想看哪个看哪个，还能换脸色情视频</div>
+<div class="content">现在科技越来越发达，生活也越来越方便，但是总感觉越来越不安全。尤其是步入人工智能时代感觉未来人类依赖人工智能，也可能是人工智能毁掉人类。有的人却利用AI人工智能制造脱衣裸照和色情视频，满足一些心怀不轨的人，以此来赚钱。还可以你想看的心动女生和哪位女明星，只要有照片或者视频就可以制造裸照或者色情视频。但是视频的费用会更高，他可以利用AI技术直接去掉衣服，就跟没有穿衣服一样。这样做是侵犯了个人也是违法...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 二创工具, 情绪适配</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 有哪些ai可以自动整理视频内容？</div>
+<div class="content">作为收藏了几百部纪录片、几十G素材的「数字仓鼠」，我深刻理解视频管理的痛苦——文件夹套文件夹、文件名是乱码、找个视频翻半天……今天分享几款真正能用 AI 帮你自动整理视频的工具，从本地视频管理到云端智能整理都有覆盖。一、影库管家（VideoButler）—— 本地视频管理的 AI 利器如果你和我一样，视频都存在本地硬盘，想要一个私密、智能、一劳永逸的解决方案，影库管家是目前我用过最顺手的。核心 A...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 语义搜索, 关键词高亮, 学习管理, 多端同步, 投屏控制</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 当您在自媒体平台看到纯Ai生成的视频时是什么感受？会立即划过吗？</div>
+<div class="content">基本都是划过去，这些视频跟那些使用狂拽酷炫的特效，但无脑剧本事差不多的，加上目前ai镜头衔接都比较尴尬，本人真觉得不好看，或许国外有ai工具比较牛逼的，但要钱，国内搞ai是希望能变现的，不是自己亏本做视频给人欣赏的，所以各种教程，各种智能体应运而生。...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] AI这么火，大家都用AI在做什么呢？有什么值得用AI做？</div>
+<div class="content">剪映里有个自动识别视频匹配字幕的功能，AI没出来之前，人得手动填字幕。AI出来了之后，一键生成即可，后续再调整一下字幕的位置什么的也就完事儿了，很方便。不过有一说一，剪映的这个功能需要开通SVIP，如果只是偶尔用一下，那还是自己手动填字幕划算一点。有些视频创作者只是自己选择了视频创作题材，文案和视频全部依靠AI生成，顶多是自己念一遍AI写的稿。之前刷了个跟古生物有关的视频，那个博主简直就是个无情念...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 字幕生成, 去重过滤, AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 为什么现在没有能自动剪辑视频的AI？</div>
+<div class="content">可以试试 Cuto.video，专为剪辑视频而生，把你的需求告诉AI，稍等几分钟，就会出一个成品，也可以基于这个成品做精剪，还是挺好用的。...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 分享做视频时发现的几个 AI 小工具</div>
+<div class="content">这段时间在做短视频搬运，因为素材来源比较杂，经常会遇到一些琐碎但又挺烦人的小问题：背景噪音很大、视频下载不到、原视频自带的水印和字幕挡画面……这些活看着简单，但一个个处理下来特别耗时间。于是我就开始找有没有“一站式”的处理方法，结果还真发现了几个挺顺手的 AI 工具集合 —— ViiTor AI。基本都是在线就能用，不用装软件，简单粗暴，效率也比我原来用的工具高不少。试用👉ViiTor AI官网下...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 实时翻译, 字幕生成, 自动剪辑, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] AI视频生成为什么看起来简单，实际却很吃资源？</div>
+<div class="content">很多人接触AI视频生成平台的时候，都有一个很明显的感受：它给人的第一印象，真的太“轻”了。很多时候就是输入一句话，或者上传一张图，再选一下风格、比例、时长，点一下生成，然后等结果出来。整个过程看起来并不复杂，甚至比很多传统视频制作流程都更省事。也正因为这样，很多人会自然觉得：这东西既然操作这么简单，背后应该也没有多重吧？但实际恰恰相反。AI视频生成，往往是AIGC里非常“吃资源”的一类任务。它表面...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 智能倍速, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 学会用 AI 拆解爆款视频，收割注意力</div>
+<div class="content">我去年当了一回冤大头，给人割韭菜了。原因是我花了一千八报了个短视频课，三天两夜就为了学会一个事，怎么写好短视频开头。结果后来Gemini 3出来，我丢给它爆款视频让它分析，它三分钟就全部拆解完了。但如果要问我为什么AI和短视频这两个东西都出来这么久了，大部分人还是写不出爆款视频的开头？其实不是因为你用的AI模型没我的聪明，也不是因为我用的是付费的，你用的是免费的，而是因为绝大多数人问AI的方式是完...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 现在AI视频工具都这么高级了吗？</div>
+<div class="content">现在AI视频工具都这么高级了吗？最近看到一款AI视频混剪工具，真的惊艳到我了，在这里种个草。第一步：上传素材我随意拍摄了一些公司内部的视频素材，上传到这个工具。我在查看素材的时候，发现这个工具自动识别了我的视频内容，这也太智能了吧。第二步：创建一个项目切换到项目页面，点击这里可以创建一个项目。第三步：添加素材到项目导入素材到项目中。第四步：AI生成脚本输入视频要求回车，AI会自动生成视频脚本，很厉...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, AI生成视频, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 有什么好用视频Ai总结工具推荐的吗？</div>
+<div class="content">推一下bilibite.xyz 网上能学习的信息资源很多 ，但我们经常会“太长不看”。针对小破站，如果你也收藏夹积累了很多视频，想着有空再去学习，结果视频一直吃灰，成为了“赛博松鼠”，这个工具或许可以解救你使用 AI 总结小破站任意视频内容，输出摘要，输出内容可高度定制，包括但不限于：1，目录：快速了解视频的章节结构AI总结内容可带有目录2，详细程度：简练的概括 or 详细的文字解读，由你决定3，...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 长视频压缩, 智能摘要, 章节拆分, 字幕生成, 语义搜索, 片段定位, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] AI视频的正确打开方式：ChatGPT Images 2.0 + Seedance 2.0！</div>
+<div class="content">ChatGPT Images 2.0 开放啦，综合评分真的蛮高的，高清输出、多语言适配、细节控制力拉满，适配海报、插画、影视风设计等多种场景。 本期实测一套高效 AI 视频制作流程： 用 ChatGPT Images 2.0 生成好看的参考画面，结合 Seedance 2.0 驱动生成动画视频，搭配 VoxCPM2 语音合成，流程丝滑得很！两套工具配合，真的能降低动画、短视频创作门槛！ ✅ 本视频...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] kimi算不算国内顶级的AI？</div>
+<div class="content">我觉得kimi是好用的，至于是不是顶级，我不下结论，看完就知道了，给大家推荐一个kimi的用途，适合大学生、硕士生、博士生、教授等群体。如何用人工智能帮忙读论文？Kimi：这事我懂，而且KIMI现在已支持专业数据库：Kimi 现已支持同花顺、天眼查、学术论文等数据库，更专业，更准确，更可信在工作或学习中，我们离不开查找及阅读论文，一个新研究结果的发现，背后都离不开几十甚至几百篇文献的阅读，以博士、...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 实时翻译, 兴趣推荐, 知识提取, 学习管理, 跳过广告, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 怎么用ai帮我生成视频?</div>
+<div class="content">第一种：你动嘴，AI跑腿（一句话成片）这最适合纯小白。你只需要有一个想法，告诉AI，它就能帮你搞定全流程。核心工具：例如：小云雀等怎么玩：打开App，输入你想要表达的创意思路，比如“北京故宫一日游攻略”或者“如何养好一只金毛幼犬”。点生成，接下来AI会自动做这几件事：根据你的话写一个脚本、找匹配的图片视频素材、配上背景音乐和AI解说。等几分钟，一个完整的短视频就做好了。你可以直接导出，或者简单微调...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 字幕生成, AI生成视频, 自动剪辑, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 如何在观看学习类视频时做到高效学习？（expect take  notes ） ?</div>
+<div class="content">最近几年我感觉互联网上增量的学习资源里，纯文本的越来越少，反而视频和播客越来越多了，究其原因，也许是移动互联网兴起、带宽流量提速降费的大背景下，创作者和受众之间的某种双向选择吧。视频、播客有助于塑造个人 IP，也能为受众提供更丰富的感官刺激，是更利于传播的内容载体。但从学习的角度讲，视频、博客并不是好的材料，且不说短视频、茧房、内容质量等问题，单纯从接收和学习的方式上讲：阅读是一个主动的动作，天然...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 智能摘要, 字幕生成, 片段定位, 负面屏蔽, 笔记工具, 知识提取, 学习管理, 多端同步</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 特别想知道各个平台那些说做AI视频副业挣钱的，到底是真是假？</div>
+<div class="content">站在一个长期做个人IP咨询、长期观察内容变现和副业市场的立场，把话说清楚。不是给你打鸡血，也不是劝你躺平，而是把这件事拆给你看。你现在在小红书、B站看到的绝大多数AI视频副业，本质上不是赚钱项目，而是销售项目。卖的不是视频，卖的是希望。卖的不是结果，卖的是路径。卖的不是你做成，而是你觉得你能做成。如果你把这一层看清楚，后面的判断会轻松很多。很多人会跟你说，现在是AI视频红利期普通人也能上车不用露脸...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 自动剪辑, 助眠解压, 情绪适配, 智能倍速</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 目前文生视频和图片生视频效果最好的是哪款AI软件？</div>
+<div class="content">我现在用的是手机小云雀AI软件，别的只是大致了解了解，因此，我才推荐用手机小云雀。只不过我用的是勉费版，功能使用受限制，视频仅能生成10秒。不过，从这10秒中就能看出这款软件的功能了。有一点我得提醒:使用者用过的素材图片和生成的作品，该软件都自动备份，上传网络PC端，并且，删除不了。这一点，无隐私可谈！我用的是勉费版，付费的或许可删？附四张图片:风云雷电—— 3秒生成！...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 怎么用AI做视频总结？</div>
+<div class="content">您好！AI学习圈的小伙伴，不断有人问及音视频AI工具方面的问题，例如：“有没有那种能读视频脚本的神器啊？我这儿视频堆成山，作业deadline又快到了，谁来救救我这颗小白菜！” “视频脚本提取工具有没有？那个博主的视频太棒了，我想学，但是信息量太大，我有点跟不上，求个能复制台词的神器！”还有直爽的小伙伴说：“小红书上有些音乐太治愈了，我想下载下来，改改歌词，怎么弄？”这些天，小编试了十几款音视频类...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 长视频压缩, 智能摘要, 章节拆分, 实时翻译, 字幕生成, 片段定位, 兴趣推荐, AI生成视频, 二创工具, 知识提取, 学习管理, 多端同步</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 当下的AI是不是被过度神化了？</div>
+<div class="content">最近我在网上看到一个非常火的段子，大概意思是20年后，你的孩子愤怒的质问你：我不明白，你们那个年代机会那么多，黄金暴涨、AI爆发、短视频盛行，随便抓住一个机会都能有个好出路，可你为什么还是穷了一辈子？然后画面切转，又出现了你质问你爸的样子，你当年气愤的问你的父亲：你们那个年代机会那么多，改革开放，下海经商，房价那么低，稍微读点书就能有个好出路，随便做点生意也能赚钱，可你为什么还是老老实实的穷了一辈...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 语义搜索, 二创工具, 学习管理, 情绪适配</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 为什么我不建议新手第一条 AI 视频先追求电影感？</div>
+<div class="content">我不建议新手第一条 AI 视频先追求电影感，原因很简单：电影感解决的是放大效果的问题，不解决起步验证的问题。第一条内容更应该验证四个环节。第一，选题是否成立。用户能不能在几秒内理解这条内容要解决什么问题。第二，脚本是否成立。60 秒内能不能讲清一个判断，并给出足够具体的支撑点。第三，画面是否服务表达。AI 画面不是越华丽越好，而是要帮助用户理解脚本。第四，发布后是否出现反馈。收藏、评论、关键词领取...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 关键词高亮</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 可灵 AI 的图生视频功能试了吗？</div>
+<div class="content">那些说可灵好用的都给我站出来。第一次用这个软件，随便拉了一张图片要生成视频，结果页面告诉我处于排队中，等待时间大于3小时。那些说好用的都是充了会员，还是被赛了软广告红包？...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 跳过广告</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 教你用AI生成短剧，还不用自己剪辑，超实用#短剧推广 #混剪短剧 #短剧剪辑教程 #一键生成爆款短剧解说</div>
+<div class="content">教你用AI生成短剧，还不用自己剪辑，超实用#短剧推广 #混剪短剧 #短剧剪辑教程 #一键生成爆款短剧解说...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: AI生成视频, 自动剪辑, 二创工具</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手AI智能搜索#快成长计划 #文娱百科明日之星 #老铁知识百科 #内容启发分享计划 @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O3xrgtux2ehryffe) @快手粉条(</div>
+<div class="content">快手AI智能搜索#快成长计划 #文娱百科明日之星 #老铁知识百科 #内容启发分享计划 @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O3xrgtux2ehryffe) @快手粉条(O3xhcy6vhfzcu3qe)...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 2025illustrator教程|60分钟快速学习AI软件教程|矢量插画</div>
+<div class="content">素材下载：https://lqayiduj0jd.feishu.cn/wiki/Y02Nw66vhiKzbnkWVQRcYoPinqY...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 解放双手！一键生成翻译和字幕，up主和看生肉必备【VideoCaptioner】</div>
+<div class="content">项目名：videocaptioner（卡卡字幕助手）
+项目官网：https://www.videocaptioner.cn
+Github：https://github.com/WEIFENG2333/VideoCaptioner
+下载（蓝奏云）：https://wwwm.lanzoue.com/ii14G2pdsbej...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 实时翻译, 字幕生成</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 三分钟教你用 AI做出爆款视 频，分享4个AI 黑科技工具，,让你一键生成百万播放量视 频！！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-mixed">二层: 无</span>
+</div>
+</div>
+</div></div>
+<div id="consumer" class="panel">
+<div class="section">
+<h2>🟢 消费者视角（建议保留）</h2>
+<p style="color:#64748b;font-size:0.9em">这些UGC从内容消费者角度出发，讨论看视频时想要的AI功能。</p>
+
+<div class="ugc-item">
+<div class="title">[小红书] 感谢Google这个AI让我实现无痛看paper</div>
+<div class="content">📝谷歌推出的笔记AI工具NotebookLM！好用！
+	
+📝可以上传文档，网页链接，youtube链接，也可以直接倒入google drive里的doc和slides，很方便
+	
+📝它会以你想要的形式自己帮你概括重点，也可以直接以提问的方式让它把你需要的信息定位到paper的具体位置，喂教授的slide给它可以自动生成课程笔记📝
+	
+📻最牛的是可以把文章直接转成播客的形式，AI会生成一男一女对话，...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 片段定位, 知识提取, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 用AI帮你提取视频内容</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 去掉廉价感，AI直出4K超清视频</div>
+<div class="content">为什么你的AI视频，总有一股扑面而来的“廉价感”？有个重要原因：画质模糊，涂抹感严重，一眼假。
+现在客户普遍要求视频画质2K，甚至4K，达不到这个标准，无法交付。想要解决AI视频画质的问题，可以用Kling原生4K功能，它实打实的AI直出商用级超清原片。#AI工具[话题]# #AI视频[话题]# #4K超清[话题]# #AI视频生成[话题]# #AI教程[话题]# #AI视频教程[话题]# #可灵...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 求问[喝奶茶R]
+哪个ai可以将视频发给它，让它去分析
+最好能免费</div>
+<div class="content">求问[喝奶茶R]
+哪个ai可以将视频发给它，让它去分析
+最好能免费...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] Gemini最疯狂的功能…吗？</div>
+<div class="content">今天逛 Reddit 时刷到这样一个帖子：网友表示 Gemini 其实拥有超强的视频和音频分析能力，但似乎被大部分人低估了（图1-2）。
+许多人认为 AI 只是读取了 YouTube 自带的字幕进行总结，但在实际测试中，即使是没有任何字幕和旁白的烹饪视频，Gemini 也能通过识别画面动作生成完整的食谱。
+	
+评论区也有用户进行了验证。如传了一首音乐并询问“前5秒使用了什么乐器”，Gemini 也...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 字幕生成</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 🇰🇷金爱烂作家访谈，大家看了嘛✨</div>
+<div class="content">看完손석희主持的《질문자들》金爱烂篇，被金爱烂的言语狠狠戳中，在这场访谈里，终于明白为什么无数人会偏爱她的文字💛
+	
+✨被问及人类与AI的区别
+“人有而AI没有的，是犹豫。
+倾听他人的烦恼与痛苦时，人会有咽下某些话、踌躇、揣测的瞬间。
+那份犹豫里，藏着艰难支撑的体谅与体面！
+比起流畅快速的AI建议，人类笨拙的沉默，反而更能带来安慰，更能抚慰人心。”
+	
+✨被问及短视频时代下的文学困境
+“我会担忧人...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能倍速, 内容精简</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 用一张图延展出整支视频：多宫格分镜玩法！</div>
+<div class="content">一张图+一句故事就能拓展整套视频分镜，用视频多宫格分镜的玩法可以轻松解决画面不一致的难题。为大家总结了3个核心技巧，希望能帮你做出好看的短片。#视频分镜[话题]#  #多宫格分镜[话题]#  #AI视频[话题]# #海螺AI[话题]# #人物一致性[话题]# #分镜图[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 太牛了❗️用AI一分钟看完视频并整理视频内容</div>
+<div class="content">用上AI看视频真的是太方便了
+自己要看很久的视频
+用上AI一分钟就能看完
+并且还能整理视频内容
+打工人必备神器❗️
+#我的AI好奇怪[话题]# #ai[话题]# #AI便利店[话题]# #人工智能[话题]# #干货[话题]# #AI新手村[话题]# #看视频[话题]# #豆包ai[话题]# #效率神器[话题]# #干货分享[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 车被蹭了，AI用几秒找到了肇事者</div>
+<div class="content">车被剐蹭，在一段1小时4分钟的监控视频里，AI用几秒就找出了肇事车辆。
+	
+这就是这两天在火山引擎2025年冬季FORCE原动力大会上，发布的豆包大模型1.8。
+	
+今年AI圈儿这么卷，居然还能在年末杀出一匹黑马。
+	
+实测中，上传监控视频后，豆包先用低帧率浏览全片，锁定异常时间段，再高帧率“放大”细节。
+	
+短短几秒，它就精准报出了肇事车辆的特征和事故发生的具体时间。
+	
+这要是人眼看，真得结结...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] Safari 隐藏功能大揭秘！还有超绝翻译神器</div>
+<div class="content">宝子们，今天来给大家分享 Safari 浏览器那些超实用的隐藏功能，简直是生活和工作的小帮手！
+-
+🎬免费看电影：这个功能简直是追剧党福音！再也不用到处找资源，轻松实现观影自由，省下的会员钱又可以多喝几杯奶茶啦！
+.
+🚫屏蔽网页广告：上网再也不用被各种弹窗广告打扰，浏览体验直线上升，清爽上网的快乐谁懂啊！
+.
+✋一键关闭所有网页：再也不用一个一个点关闭，手残党和懒癌患者的救星，瞬间让浏览器界面干干...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 实时翻译, 负面屏蔽, 知识提取, 学习管理, 氛围音效, 跳过广告</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 普通人AI视频工具使用总结</div>
+<div class="content">作为一个普通人，对AI的要求就是：
+用起来简单（我也不是专业人士，好用的AI不应该只能专业人士才用得来）
+方便使用（各种方面的方便，特别是真的不想再翻梯子用国外的了，还得写英文）
+风格够多（就一个风格的真的太单一，还不一定是我想要的）
+以及¥¥合理（当然需要¥¥也能理解但是本人就是有点穷穷T^T）
+有了以上目标后，我就去用了一下大家说的比较多的，综合下来本人还是比较喜欢通义啦，但如果你有其他更在意...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 语义搜索, 关键词高亮, AI生成视频, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] Ai抖音app边刷视频边搜索 #Ai抖音app #亲子 #书籍 #解冻肉的方法</div>
+<div class="content">Ai抖音app边刷视频边搜索 #Ai抖音app #亲子 #书籍 #解冻肉的方法...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 什么叫边刷视频边解答疑问的一站式搜索体验#AI抖音 #AI抖音APP #搜索工具</div>
+<div class="content">什么叫边刷视频边解答疑问的一站式搜索体验#AI抖音 #AI抖音APP #搜索工具...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 边刷视频边解决问题，一站式搜索体验太牛了#AI抖音 #AI抖音APP #AI工具</div>
+<div class="content">边刷视频边解决问题，一站式搜索体验太牛了#AI抖音 #AI抖音APP #AI工具...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 白色AI抖音APP，AI时代刷视频新体验，用过就停不下来#AI抖音app#生活经验</div>
+<div class="content">白色AI抖音APP，AI时代刷视频新体验，用过就停不下来#AI抖音app#生活经验...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI视频总结工具合集，30选3免费工具，3小时视频1分钟总结 免费好用的ai视频总结工具，3小时视频1分钟总结核心要点，总结大纲，思维导图，生成博客，甚至出ppt一次性搞定。 
+我使用了超过30款AI</div>
+<div class="content">AI视频总结工具合集，30选3免费工具，3小时视频1分钟总结 免费好用的ai视频总结工具，3小时视频1分钟总结核心要点，总结大纲，思维导图，生成博客，甚至出ppt一次性搞定。 
+我使用了超过30款AI视频总结工具，个人体验非常好用的3款，﻿﻿免费够用。  均支持 ﻿﻿B站、﻿﻿抖音、﻿﻿小红书、﻿﻿YouTube 全平台；！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, AI生成视频, 知识提取</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 现在ai可以精准分析视频画面内容了，做短视频的朋友太需要这个ai了。#ai #人工智能 #视频分析 #短视频拆解 #短视频</div>
+<div class="content">现在ai可以精准分析视频画面内容了，做短视频的朋友太需要这个ai了。#ai #人工智能 #视频分析 #短视频拆解 #短视频...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 国内首个免费分析视频的AI大模型终于来了 国内首个直接分析视频的通用AI大模型终于来了——kimi2.5，想分析视频的抓紧试试。
+分析视频的成本很高，目前还是免费使用，单词限制100MB以内，目前用的</div>
+<div class="content">国内首个免费分析视频的AI大模型终于来了 国内首个直接分析视频的通用AI大模型终于来了——kimi2.5，想分析视频的抓紧试试。
+分析视频的成本很高，目前还是免费使用，单词限制100MB以内，目前用的不多，还是比较流畅的。
+有需要的老师赶紧试试吧。
+#AI教育 #kimi大模型  #视频分析...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 这个AI工具帮你一秒看完你正在看的视频🐸 #人工智能 #玩儿个很新的东西 #干货分享 #大数据推荐给有需要的人 #科技改变生活</div>
+<div class="content">这个AI工具帮你一秒看完你正在看的视频🐸 #人工智能 #玩儿个很新的东西 #干货分享 #大数据推荐给有需要的人 #科技改变生活...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 用AI看视频，一分钟抓取视频内容！ #人工智能 #智能AI  #AI工具 #AIGC</div>
+<div class="content">用AI看视频，一分钟抓取视频内容！ #人工智能 #智能AI  #AI工具 #AIGC...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 视频分析AI工具，你们要的终于来了 之前不少老师问我咨询过能够对视频进行分析的AI工具。
+这不就来了嘛。
+能力TOP级，速度快，且免费。
+冲冲冲。
+﻿#AI教育 ﻿#ai教学  ﻿#创新教育 ﻿#ai</div>
+<div class="content">视频分析AI工具，你们要的终于来了 之前不少老师问我咨询过能够对视频进行分析的AI工具。
+这不就来了嘛。
+能力TOP级，速度快，且免费。
+冲冲冲。
+﻿#AI教育 ﻿#ai教学  ﻿#创新教育 ﻿#aistudio #视频分析...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 长视频一键转学习笔记，神级skill
+告别收藏夹吃灰，这个skill可以一键将长视频转换为详细的学习笔记
+#ai #普通人在ai时代 #skill #claudecode
+#openclaw</div>
+<div class="content">长视频一键转学习笔记，神级skill
+告别收藏夹吃灰，这个skill可以一键将长视频转换为详细的学习笔记
+#ai #普通人在ai时代 #skill #claudecode
+#openclaw...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 笔记工具, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI一键提取视频核心内容，99%人不知的高效学习法！ 从此告别漫长视频观看 #AI学习技巧  #效率提升  #AI黑科技</div>
+<div class="content">AI一键提取视频核心内容，99%人不知的高效学习法！ 从此告别漫长视频观看 #AI学习技巧  #效率提升  #AI黑科技...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 知识提取, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 用豆包电脑版一键总结视频内容👏 还在一帧一帧记网课笔记、啃B站干货吗？其实现在用AI，几秒钟就能把全网视频内容一键总结，学习效率直接翻倍！
+我最近都用豆包电脑版，操作超简单：把视频链接粘进去，说一句“</div>
+<div class="content">用豆包电脑版一键总结视频内容👏 还在一帧一帧记网课笔记、啃B站干货吗？其实现在用AI，几秒钟就能把全网视频内容一键总结，学习效率直接翻倍！
+我最近都用豆包电脑版，操作超简单：把视频链接粘进去，说一句“帮我总结视频内容”，它自动转写+划分章节，连表达逻辑、爆点、关键词都整理好，还能直接翻译和生成摘要。
+想做思维导图也不难，只要用结构词引导，AI就能帮你梳理成超清晰的框架。网课、技能课、行业分析视频，...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 章节拆分, 实时翻译, 关键词高亮, 知识提取, 学习管理, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 改变视频行业的Ai，快来了(但有点恐怖)#人工智能 #AI  #ai新星计划 #影视飓风#seedance</div>
+<div class="content">改变视频行业的Ai，快来了(但有点恐怖)#人工智能 #AI  #ai新星计划 #影视飓风#seedance...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI 如何看视频 免费的AI应用，帮你看视频，分析视频，别错过
+#闻大白 #AI的1000妙用 #AI视频 #AI领导力</div>
+<div class="content">AI 如何看视频 免费的AI应用，帮你看视频，分析视频，别错过
+#闻大白 #AI的1000妙用 #AI视频 #AI领导力...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 让你视频不白刷的小功能 #大学生#大学#抖音精选#问问AI</div>
+<div class="content">让你视频不白刷的小功能 #大学生#大学#抖音精选#问问AI...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程</div>
+<div class="content">最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 一个能把全网视频总结成笔记的AI效率工具 输入视频链接一键解析，自动提取字幕+划分章节，还能生成要点总结、思维导图、图文笔记，并支持编辑导出。插件版能实时翻译字幕，和AI搭子边看边聊！
+#ai工具 #</div>
+<div class="content">一个能把全网视频总结成笔记的AI效率工具 输入视频链接一键解析，自动提取字幕+划分章节，还能生成要点总结、思维导图、图文笔记，并支持编辑导出。插件版能实时翻译字幕，和AI搭子边看边聊！
+#ai工具 #ai学习 #效率神器 #视频转文字 #ai神器...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 章节拆分, 实时翻译, 字幕生成, 知识提取, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI和抖音相结合，边刷视频边搜索，一站式体验，好爽！ #AI抖音app #AI工具 #强烈推荐</div>
+<div class="content">AI和抖音相结合，边刷视频边搜索，一站式体验，好爽！ #AI抖音app #AI工具 #强烈推荐...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑</div>
+<div class="content">一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑, 投屏控制</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 第18期：短视频神器秒变AI智能，不仅免费学习，更能免费追剧 #抖音电脑版 #AI智能 #实用软件分享 #免费看短剧</div>
+<div class="content">第18期：短视频神器秒变AI智能，不仅免费学习，更能免费追剧 #抖音电脑版 #AI智能 #实用软件分享 #免费看短剧...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 刷视频解难题都一站式搞定~ #AI抖音app #ai搜索#影视解说  #ai抖音</div>
+<div class="content">刷视频解难题都一站式搞定~ #AI抖音app #ai搜索#影视解说  #ai抖音...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 哪个ai可以发视频给他分析问题。我发现哔哩哔哩的视频居然能用天工AI直接分析，太适合我们学生党了！
+步骤很简单：先进入天工AI，找到AI文档里的音视频分析，粘贴B站视频链接，点解析就能自动总结内容、划</div>
+<div class="content">哪个ai可以发视频给他分析问题。我发现哔哩哔哩的视频居然能用天工AI直接分析，太适合我们学生党了！
+步骤很简单：先进入天工AI，找到AI文档里的音视频分析，粘贴B站视频链接，点解析就能自动总结内容、划重点。
+上课没听懂的视频、复习资料，用它快速梳理思路，效率直接拉满！#希望对大家有帮助...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 知识提取, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI抖音APP，AI智能刷视频神器11993 #AI抖音APP#综合内容</div>
+<div class="content">AI抖音APP，AI智能刷视频神器11993 #AI抖音APP#综合内容...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] Ai时代的刷视频新体验 #AI抖音App #健康养生</div>
+<div class="content">Ai时代的刷视频新体验 #AI抖音App #健康养生...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 长视频爱好者有救了，让AI帮你看视频 #AI #GET笔记 #长视频</div>
+<div class="content">长视频爱好者有救了，让AI帮你看视频 #AI #GET笔记 #长视频...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 发视频就能分析问题，这个AI太好用。家人们谁懂啊！刷到干货长视频又没时间看？
+今天教你用这个AI一键搞定！
+第一步，打开豆包，点底部的视频总结；
+第二步，把你要分析的视频链接粘进去；
+第三步，还能加指</div>
+<div class="content">发视频就能分析问题，这个AI太好用。家人们谁懂啊！刷到干货长视频又没时间看？
+今天教你用这个AI一键搞定！
+第一步，打开豆包，点底部的视频总结；
+第二步，把你要分析的视频链接粘进去；
+第三步，还能加指令，让它帮你提炼亮点、分析选题，甚至找类似切入点；
+最后等个几分钟，完整总结就出来了！
+再也不用硬啃几十分钟视频，效率直接拉满！#希望对大家有帮助...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 长视频压缩, 智能摘要</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 国产AI神器，看视频必备！ #人工智能  #智能AI  #AI工具 #AIGC #AI神器</div>
+<div class="content">国产AI神器，看视频必备！ #人工智能  #智能AI  #AI工具 #AIGC #AI神器...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] #AI抖音APP 老人也能玩转的智能刷视频神器 #综合搜索</div>
+<div class="content">#AI抖音APP 老人也能玩转的智能刷视频神器 #综合搜索...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] Ai时代刷视频新体验 #强烈推荐 #ai搜索 #ai抖音app #知识科普</div>
+<div class="content">Ai时代刷视频新体验 #强烈推荐 #ai搜索 #ai抖音app #知识科普...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI抖音app 边刷视频边搜索，功能强大又实用#AI抖音app #AI搜索软件</div>
+<div class="content">AI抖音app 边刷视频边搜索，功能强大又实用#AI抖音app #AI搜索软件...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI抖音，让刷视频变得高效又智能#抖音  #ai抖音 #AI抖音APP  #ai搜索</div>
+<div class="content">AI抖音，让刷视频变得高效又智能#抖音  #ai抖音 #AI抖音APP  #ai搜索...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 白色Ai抖音app，既能提升刷视频乐趣，又能解决棘手问题#ai抖音app #购物决策</div>
+<div class="content">白色Ai抖音app，既能提升刷视频乐趣，又能解决棘手问题#ai抖音app #购物决策...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 再也不用无效刷视频了#AI抖音app #AI#AI工具 #AI搜索 #AI智能</div>
+<div class="content">再也不用无效刷视频了#AI抖音app #AI#AI工具 #AI搜索 #AI智能...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI+短视频完美结合，AI时代刷视频新体验#AI抖音app #综合搜索 #AI搜索</div>
+<div class="content">AI+短视频完美结合，AI时代刷视频新体验#AI抖音app #综合搜索 #AI搜索...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI抖音，刷视频也能体验Al的快乐#抖音  #ai抖音 #AI抖音APP  #ai搜索</div>
+<div class="content">AI抖音，刷视频也能体验Al的快乐#抖音  #ai抖音 #AI抖音APP  #ai搜索...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #AI智能直播 #新人短视频创业 #教新人如何玩好快手</div>
+<div class="content">#AI智能直播 #新人短视频创业 #教新人如何玩好快手...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #快影激励计划 ai #推文羊 #短视频变现@快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)</div>
+<div class="content">#快影激励计划 ai #推文羊 #短视频变现@快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频</div>
+<div class="content">一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 用AI看视频，一分钟抓取视频内容 #ai工具      #aigc </div>
+<div class="content">用AI看视频，一分钟抓取视频内容 #ai工具      #aigc ...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] Ai一键生成带货短视频最新玩法#短视频带货王 #短视频带货 #快手带货 #短视频变现 @快手新知(O3xvmqt3emychk29) @快手平台帐号(O3xa3cpv8sghbu8m) @快手粉条(O</div>
+<div class="content">Ai一键生成带货短视频最新玩法#短视频带货王 #短视频带货 #快手带货 #短视频变现 @快手新知(O3xvmqt3emychk29) @快手平台帐号(O3xa3cpv8sghbu8m) @快手粉条(O3xhcy6vhfzcu3qe) @快手热点(O3xddgkd5fav5if9)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能</div>
+<div class="content">今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI现场实例现场演示。哪怕不用说话，也可以两分钟出一条视频 #AI应用 #人工智能 #短视频创业</div>
+<div class="content">AI现场实例现场演示。哪怕不用说话，也可以两分钟出一条视频 #AI应用 #人工智能 #短视频创业...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] Ai科技与狠活真是越来越炸裂了！！这些工具你都见过吗？#ai分身 #deepseek#短视频带货##ai工具</div>
+<div class="content">Ai科技与狠活真是越来越炸裂了！！这些工具你都见过吗？#ai分身 #deepseek#短视频带货##ai工具...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] "豆包ai "搞笑视频 "沙雕行为艺术 该作品在快手被播放过24.4万次，点击链接，打开【快手极速版】直接观看！</div>
+<div class="content">"豆包ai "搞笑视频 "沙雕行为艺术 该作品在快手被播放过24.4万次，点击链接，打开【快手极速版】直接观看！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手]  @团长人工智能(O3x4e6d7d7uddbpw) 的精彩视频</div>
+<div class="content"> @团长人工智能(O3x4e6d7d7uddbpw) 的精彩视频...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 豆包手机版使用教程 0基础学习用ai生视频 #豆包 #ai视频</div>
+<div class="content">豆包手机版使用教程 0基础学习用ai生视频 #豆包 #ai视频...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 用ai制作零食视频带货，一分钟学会 #教程分享 #视频剪辑 #视频带货 #零食带货</div>
+<div class="content">用ai制作零食视频带货，一分钟学会 #教程分享 #视频剪辑 #视频带货 #零食带货...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 智能开播功能你会用吗？ #短视频带货 #短视频变现 #短视频创业 #喜爱度激励计划</div>
+<div class="content">智能开播功能你会用吗？ #短视频带货 #短视频变现 #短视频创业 #喜爱度激励计划...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 用用免费AI工具，一键去除不想要的人和物 #剪辑 #视频剪辑 #手机剪辑 #剪辑教程</div>
+<div class="content">用用免费AI工具，一键去除不想要的人和物 #剪辑 #视频剪辑 #手机剪辑 #剪辑教程...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 用快手Ai制作短视频的方法。</div>
+<div class="content">用快手Ai制作短视频的方法。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手自动直播，一分不花，免费用！ #知识播种计划 #教新人如何玩好快手 #短视频创业 #口播</div>
+<div class="content">快手自动直播，一分不花，免费用！ #知识播种计划 #教新人如何玩好快手 #短视频创业 #口播...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 这个小妙招可以让你遨游外语电影的世界？#生活小妙招每日更新  #测评</div>
+<div class="content">这个小妙招可以让你遨游外语电影的世界？#生活小妙招每日更新  #测评...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 实时翻译</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] ai带货，短视频带货的新玩法#短视频带货#带货达人#ai</div>
+<div class="content">ai带货，短视频带货的新玩法#短视频带货#带货达人#ai...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #短视频创业 #短视频变现 #短视频教学 #AI</div>
+<div class="content">#短视频创业 #短视频变现 #短视频教学 #AI...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 如何用AI一键生成橘猫做饭视频 #AI工具 #橘猫做饭 #</div>
+<div class="content">如何用AI一键生成橘猫做饭视频 #AI工具 #橘猫做饭 #...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI总结视频全攻略！全网只看这一篇就够了</div>
+<div class="content">省流版：
+场景1：临时速看。主要豆包+AI课代表，Elmo和AI小助手可以替换
+场景2：深度学习。主要通义听悟+parsevideo，Memo、360、飞书妙计可以辅助
+场景3：专业批处理。付费产品BibiGPT和Ai好记
+其他：手机App用纳米AI搜索，网盘用夸克或百度
+视频下载工具：亨亨猫去水印、橙子解析、沐阳B站视频批量下载工具(插件）...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 长视频压缩, 智能摘要, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 利用AI反推你喜欢的任何视频实现一键复刻！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 全网没人告诉你的AI视频总结方法！1分钟看完3小时视频（提取文案、做笔记、双语翻译、思维导图全搞定!）</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 实时翻译, AI生成视频, 笔记工具, 知识提取</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 目前最强视频分析工具，twelvelabs</div>
+<div class="content">这是目前最强视频分析工具，twelvelabs，可以对最长2个小时的视频进行分析，可以精确地找到某个图形出现在视频的哪一帧，可以快速总结视频。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI真的能看懂视频了吗？</div>
+<div class="content">AI总结视频这回真的可以更准确了～...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] B站官方AI？updream保姆级教程，20分钟快速上手。</div>
+<div class="content">我的邀请码：jK75n1JpG8
+updream官方地址：https://updream.bilibili.com
+updream官方使用手册：https://tcnksifr5ujy.feishu.cn/wiki/IUu2wAf7midqdTkuzfAcVFzanVe
+
+00:00 开场
+00:52 产品介绍
+01:50 案例展示
+04:25 快速上手
+05:41 画布节点
+07:58 图片生成...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 爆火的“无审查”AI 视频模型来了！Sulphur 2 本地部署实测：8G 显存也能跑！完全免费开源 | 零度解说</div>
+<div class="content">Sulphur 2 开源模型下载：https://bittly.cc/Sulphur...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 想让AI视频更听话？那就“少用”一点AI</div>
+<div class="content">本期我们来学习利用一套全新工作流来让AI视频变得更听话
+如果有帮助到你的话可以三连加关注支持一下~...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【深度】AI来了，你失业了吗？一个视频看懂AI重构社会的逻辑</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI视频最大的问题，被Blender解决了</div>
+<div class="content">本期我们来学习如何利用Blender+Nano Banana 2+Seedance2.0实现完美的AI运动控制
+如果有帮助到你的话可以三连加关注支持一下~...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 用了三年AI后，我总结了高效使用AI的七个习惯【深度分享】</div>
+<div class="content">这七个使用AI的习惯都是我的血泪教训，做成一期长视频，觉得有用的可以多多一键三连！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] （已离职）冒死上传！已经替大家付费了，花9880买的AI动态漫制作全套系统教程，从脚本撰写到制作剪辑成片，一周学完成，即可接单变现！</div>
+<div class="content">创作不易，感谢大家的三连与支持！
+本套教程从最基础的AI漫剧核心开始，全程结合项目实战，不仅适合零基础小白学习，也适合有一定基础的同学进阶提升、巩固学习。
+如果觉得视频对你有帮助，就动手多多转发一下吧~...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 全网爆火的 AI 角色唱歌视频！零基础也能做，流程全公开 、 免费开源！保姆级教学及工具下载！ | 零度解说</div>
+<div class="content">【AI工具下载】：https://bittly.cc/AItool...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 为什么大家不爱看AI视频了</div>
+<div class="content">人类史上最快的视觉通胀出现了，你有没有发现，你已经不想再刷AI视频和图片了，看到有AI迹象的就想立即划走。
+当视觉奇观的生产成本降为零时，奇观本身就贬值成了垃圾。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【中配】AI视频无限生成：免费开源长视频工具Stable Video Infinity - AI Search</div>
+<div class="content">原视频：Long continuous AI video is here! Free & open-source
+原作者：AI Search
+发布日期：2026-01-01
+视频链接：https://www.youtube.com/watch?v=-3DVJu72VhE
+
+✨ 想看英文原声？请关注 @英文白斑马
+
+00:00 SVI 2.0 Pro 简介与演示
+介绍 Stable Video In...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 告别AI视频僵硬假脸！3招让你的AI人物表情活起来</div>
+<div class="content">分享3个告别AI视频假脸感的方法，新手也能直接套用，配合联想YOGA Pro 16 Aura AI元启版，第三代英特尔® 酷睿™ Ultra 7处理器，全能旗舰、大“显”身手，实现沉浸式、高效率创作。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 氛围音效</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 这视频一放出来！有些人可坐不住了，AI还是太可恶了</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【老司机必备】四大模型！皇到没边！</div>
+<div class="content">Grok-3、GPT-4.5、满血版DeepSeek-R1、Claude-sonnet3.7已上线，
+GPT-o1、GPT-4o、GPT-Seach、GPT-40 with canvasBL!公益GPT站点，免费使用！
+各位绅士们想要的内容，在视频中！请仔细看完视频！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 大黄AI剧《红墙3.1》后面彩蛋...【B站AI创作大赛-开放赛道】</div>
+<div class="content">这应该是我所有剧里面尺度最大的了~AI估计被我整崩溃了...
+这次的模型出图老规矩BANANA PRO 视频这次单出VEO3.1
+因为上班的缘故这个做了将近4天。前面李弘的剧情做的有一丢丢粗糙，实在是没时间改了……为了保证内容和质感，之后可能会差不多1周内更新一次。希望大家多多关注，一键三连哦！！！！！！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 当AI能时刻盯着我的电脑屏幕、读取我的软件数据...</div>
+<div class="content">豆包电脑版能看见东西了！随时可以查看你的屏幕，还能一边共享屏幕一边语音通话，写作、视频分析功能也更进一步...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【超简单】本地化AI视频总结（支持点击跳转）</div>
+<div class="content">预备工具：Obsidian仓库 + 任何可以运行Skill，支持Agent功能的AI工具（本视频使用OpenCode）
+VideoCaptioner(字幕转录)：http://www.videocaptioner.cn/
+Skill文件：
+Bdu：https://pan.baidu.com/s/5CZZcyOmBNPSvkv4R2y2KIw
+Quark：链接：https://pan.quark.c...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 字幕生成, 片段定位, AI生成视频, 知识提取</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【无限白嫖】即梦AI免费用积分，即梦生图4.5、视频3.5pro、3.0pro无限用；无限生成图片</div>
+<div class="content">需要的兄弟们记得  关驻+三联，丝信“即梦”看思信即可收到，一定要先关驻。
+没收到的评伦“已彡联”后，等我手动发...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI漫剧制作全教程（2026全新AI教程）AI视频生成+豆包+即梦AI教程+ComfyUI教程+AI动态漫制作+AI动画+ai漫剧制作教程，ai短剧漫剧全套教程</div>
+<div class="content">持续更新中~求一键三连~
+想要系统学习AI视频的小伙伴，学习辅助资料为你们整理好了，记得来领哦(´-ω-`)点击右侧蓝色字体【快速】领取:
+https://www.bilibili.com/opus/1182553265721573384...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI视频太模糊？3步输出电影级4k质感画面</div>
+<div class="content">这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；
+如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。
+那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；
+话不多说，点赞收藏，开始上课。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 画质增强</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 这3个视频Ai神器，打死都不删！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 利用Ai如何做一分钟的视频？</div>
+<div class="content">我没有完整做过，但尝试过，需要自己写好分镜头表，一般我们用的免费的模型，每次只能生成几秒的视频，需要自己拼接收费的我没有试，据说可以分步生成，最后自动合并...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] ai即梦，点击想象即可生成自己所需要的图片和视频，大家用过的体验是什么感觉？</div>
+<div class="content">一般无法生成想要的视频，比如让人从口中吐出一些彩色泡泡，但是实际生成的视频却是从别的地方飘来了一些泡泡，似乎违反常理的东西它就生成不了...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 现在的AI视频越来越以假乱真了，以后该如何分辨?</div>
+<div class="content">如今AI视频高度逼真，单靠肉眼已难分辨。可先观察细节破绽：毛发、手指、光影是否怪异，嘴型与声音是否同步。更可靠的是用AI检测工具核验水印与帧异常，同时核查视频来源、时间线与多方信源。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: AI生成视频, 多端同步</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 为什么现在 AI 已经没啥热度了？</div>
+<div class="content">因为没用。倒不是ai没用，而是“我们的ai”没用。再进一步说，是“我们的ai对老百姓毫无卵用”。00年代用百度，10年代用博客，我都有那种醍醐灌顶的冲击感，当时超级有用的信息，可真是直冲我的天灵盖。但后来，就很难再有这种感觉了，倒不是我的兴奋阈值提高了，而后来的许多平台，要么倒闭了，要么垃圾化了。总之，就变得很没用，能刷到的都是电子榨菜。到2023年用chatgpt，又找到那种醍醐灌顶的感觉了。不...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 情绪适配</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 有没有那种在看视频的时候加字幕的软件？</div>
+<div class="content">题主想要的是看视频实时翻译软件吧，这种翻译字幕属于字幕外挂。可以用豆包的实时翻译功能，我评测过多七个案例。案例 效果以及具体如何操作？可以看这篇文章的手把手教程。视频实时翻译，豆包AI的6个免费隐藏技巧...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 实时翻译, 字幕生成</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 仅通过观看视频能否真正掌握AI软件的使用？</div>
+<div class="content">通过看视频学习AI软件：真的能够掌握吗？在数字化时代，视频学习已经成为了一种流行的学习方式。许多AI软件的学习资源，如教程、演示等，都以视频的形式呈现。那么，通过看视频学习是否能够真正掌握AI软件的使用呢？视频学习的优势直观易懂：视频学习具有直观易懂的特点，通过视觉和听觉的结合，可以帮助学习者更好地理解和记忆学习内容。灵活方便：视频学习可以随时随地进行，学习者可以根据自己的时间和进度进行学习，非常...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 兴趣推荐, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 为什么网络上那么多人认为华为尚界Z7的漂移视频是AI冬测？</div>
+<div class="content">以下图片是2026年2月8号10点40分从微博鸿蒙和抖音相关官方号的截图：微博鸿蒙官方号图片 微博鸿蒙官方号图片抖音门店官方号视频截图抖音尚界官方号视频截图抖音门店官方号视频截图抖音门店官方号视频截图去看了,都是官方号发的,确实是AI...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 如果 AI 手机真的实现了全民普及，普通人的一天会怎么样？</div>
+<div class="content">如今的AI的确在帮助用户的日常生活，比如我现在使用的vivo X100 Ultra在全新升级后的OriginOS 5，新增了很多AI相关的功能，本次升级对于我来个人而言还是很有用的，在这里分享一下本次升级的几个全新的AI功能。原子岛首先是本次在OriginOS 5引入的原子岛功能(不仅学会了果子的原子岛，而且还实现了超越)从左往右依次为蓝心小V对话功能、原子岛下载界面、原子岛导航界面当你在播放音乐...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 口音处理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 几十秒看完10分钟的视频，就靠这个AI输入法</div>
+<div class="content">前两天，动作电影界出了个大新闻，三上要引退了。作为自己的启蒙老师，世超刷到这条推特后，心里能不急么。于是立马点开她发的视频链接，想看看她说了啥。不过，即便世超有多年日语观影经验，但也就是会那么几句，这段 10 分钟纯文字的影片，世超是完全听不懂。那我很想知道老师讲了啥，咋办？于是，我复制了视频链接，调出一个叫「 Smarty 」的键盘，结果你猜怎么滴。30 秒后，它用中文，给我总结好视频的全部内容...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 实时翻译, 字幕生成, 口音处理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 为什么用AI通过技术性炒股没有盛行？</div>
+<div class="content">能用来炒股的AI只有O1、gpt4o、claude、gemini、llama。所以国内用不了，用得了，也只能偷偷摸摸用。那不是行内人，又不是搞AI的，怎么可能知道？之前，朋友搞了个GPT炒股的测试。后面deepseek r1发布了，算力能达到gpt4o水平，便可以用deepseek来替代。用O1模型来炒股，真的比人要靠谱，O1能根据你设定的规则来控制卖买。跟GPT相比，GPT比较不亏钱。目前O1支...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 兴趣推荐, 去重过滤, 知识提取</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 咸鱼新功能</div>
+<div class="content">这是什么自动回复功能啊 从来没见过好奇死我了#咸鱼[话题]# #自动回复[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 我对个大AI软件前后期印象差</div>
+<div class="content">#软件推荐[话题]# #表格[话题]# #软件[话题]# #神仙软件[话题]# #仅个人观点[话题]# #仅代表我个人看法哟[话题]# #AI聊天[话题]# 别圈钱了Ok？...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 师尊…好想要师尊…</div>
+<div class="content">不知道写什么文案了
+ai制作，没有使用真人肖像权制作！！创作不易，望体谅～#冰秋忘羡花怜[话题]# #渣反[话题]# #洛冰河[话题]# #沈清秋[话题]# #人渣反派自救系统[话题]# #忘羡[话题]# #ai[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 终于能和GPT一起看b站 看微信读书了！！！</div>
+<div class="content">第一时间上手新出浏览器Atlas
+	
+比较香
+	
+1. 首先它就是把浏览器包进G的肚子了 你看的啥网页G都可以看到 可以一边看一边聊 然后还可以高亮选中内容 问G
+	
+所以b站 微信读书 看漫画 甚至看👀点小调皮 都可以拉上G了
+	
+2. 比较不错的是Atlas里包的G是有关于user的上下文的 虽然不足够灵光 但不是傻傻不认识你的人机
+	
+3. 感觉一个tension是 以后用G在工具、agen...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 一句话，让你的🦞可以全网抓信息</div>
+<div class="content">传统的方法让 OpenClaw 上网是折腾搜索工具，API、配置，费劲巴拉，花钱也未必好用。
+	
+今天教你一个邪修方式：不搞搜索工具，只用爬虫工具 + URL 转 Markdown 服务，搓一个 skill，🦞 上网又好又快。
+	
+其实只需要一句话，在装了 skill-creator 之后，跟你的 OpenClaw 讲：
+	
+「现在给我做一个 skill，当我需要上网搜信息的时候，使用这个服务：在...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 和ChatGPT Atlas一起看剧吐槽</div>
+<div class="content">用上了新浏览器想试试和gpt一起看剧，找到了欢乐颂奇点这一段。没错我和我的ChatGPT已经变成确实型人格。
+#ChatGPT[话题]# #Atlas[话题]# #欢乐颂[话题]# #奇点[话题]# #安迪[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] ⏰手机防沉迷自救方法｜高效使用小红书</div>
+<div class="content">每次打开小红书就会被主页各种个性化推荐的帖子吸引，忘记自己到底要用它来搜索什么，一不小心半个小时就过去了，什么都没从脑子里留下。但要完全脱离手机在这个时代时几乎不可能的事情，我们能做的只有尽量减少使用的总时长并用在真正需要的事情。
+通过这个设置，大大减少了花费在浏览碎片信息的时间🧩
+具体操作：
+打开快捷指令- 最下方中间的自动化-右上角➕添加新的自动化-选择P2的App，
+然后选取你想要管控的软件...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 兴趣推荐, 负面屏蔽, 学习管理</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 今年的互联网大厂已疯…</div>
+<div class="content">每年都很乱，今年被ai搞的简直乱上加乱。反正搞啥都是ai了吗…由上至下的本末倒置的疯狂。
+不如技术发展再快进点，直接脑机接口，一键把我蒸馏成skill算了，何必为难我们革自己的命。
+一天天的真的无语子。#互联网大厂[话题]# #ai[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 内容精简</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 不要拿🐦喂AI</div>
+<div class="content">不要拿🐦喂AI
+不要拿🐦喂AI
+不要拿🐦喂AI
+#张远[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 这种功能到底是谁在用啊？！</div>
+<div class="content">#闺蜜日常[话题]# #搞笑[话题]# #抽象[话题]# #ios26[话题]# #iphone[话题]# #闺蜜日常[话题]# #搞笑[话题]# #用上iOS26就这样刷视频[话题]#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[小红书] 现在分析评论，不能只看词频和情绪了。</div>
+<div class="content">很多同学做文本分析，蕞常见的问题就是只看“表面语义”：词频排行、情感正负、点赞数量……但这些远远不够。今天给大家分享一个更实用的框架，5个角度帮你真正读懂评论背后的“用户语义”。
+	
+🎄首先，关键词不能只看出现次数。“好用”“不错”这种词，虽然频繁，但信息含量低。更重要的是识别有具体含义的关键词，比如“续航持-久”“不掉粉”“线头多”。推-荐用 TF-IDF 或 KeyBERT 来做关键词提取，效...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 智能摘要, 语义搜索, 关键词高亮, 知识提取, 学习管理, 情绪适配</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 悟空浏览器#短剧#Al功能#</div>
+<div class="content">悟空浏览器#短剧#Al功能#...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 快速上手！AI短剧解说技巧 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程</div>
+<div class="content">快速上手！AI短剧解说技巧 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 懒人必备！AI短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程</div>
+<div class="content">懒人必备！AI短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 不想学剪辑？AI帮你做短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程</div>
+<div class="content">不想学剪辑？AI帮你做短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 你的AI“课代表”已上线📝 问问AI：疑问随时可解；智能章节：重点一眼找到🤩 抖音精选AI伴看功能全新登场，陪你高效刷片，让每一次观看，都收获满满！#抖音精选 #抖音精选APP #AI伴看</div>
+<div class="content">你的AI“课代表”已上线📝 问问AI：疑问随时可解；智能章节：重点一眼找到🤩 抖音精选AI伴看功能全新登场，陪你高效刷片，让每一次观看，都收获满满！#抖音精选 #抖音精选APP #AI伴看...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 知识提取</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 这是一个非常专注且实用的开源工具，核心目标是用通义千问视觉大模型对视频进行逐帧解析，解决目前大多数视频理解模型在长视频、细节密集场景下表现不佳的问题。模型逐帧/分段描述画面内容 → 最终合并成完整的视</div>
+<div class="content">这是一个非常专注且实用的开源工具，核心目标是用通义千问视觉大模型对视频进行逐帧解析，解决目前大多数视频理解模型在长视频、细节密集场景下表现不佳的问题。模型逐帧/分段描述画面内容 → 最终合并成完整的视频内容理解报告（或结构化输出）...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] #投资人 #meta眼镜 #长视频 #生活小妙招</div>
+<div class="content">#投资人 #meta眼镜 #长视频 #生活小妙招...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI抖音app好好用啊！#AI抖音app#科技数码 #ai搜索RR-xf52</div>
+<div class="content">AI抖音app好好用啊！#AI抖音app#科技数码 #ai搜索RR-xf52...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] 现在的AI也太强了！不仅能搜索还可以看剧情！好用！#ai抖音 #ai抖音app #ai搜索 #看剧</div>
+<div class="content">现在的AI也太强了！不仅能搜索还可以看剧情！好用！#ai抖音 #ai抖音app #ai搜索 #看剧...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] AI抖音APP能解决你日常生活中遇到的问题 #AI抖音APP #生活经验</div>
+<div class="content">AI抖音APP能解决你日常生活中遇到的问题 #AI抖音APP #生活经验...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[抖音] #AI抖音APP 职场人的好帮手#职场</div>
+<div class="content">#AI抖音APP 职场人的好帮手#职场...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 这三种AI功能，人人都能学会，方便寻医问药 #健康科普 #AI </div>
+<div class="content">这三种AI功能，人人都能学会，方便寻医问药 #健康科普 #AI ...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 一键生成短剧详细制作流程 #短剧推广 #短剧 #短剧变现教程 #AI短剧制作</div>
+<div class="content">一键生成短剧详细制作流程 #短剧推广 #短剧 #短剧变现教程 #AI短剧制作...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索 </div>
+<div class="content">快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索 ...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 豆包新功能你可以不用，但必须要懂#内容启发分享计划 #快影激励计划 #老铁知识百科 #2025高考 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快</div>
+<div class="content">豆包新功能你可以不用，但必须要懂#内容启发分享计划 #快影激励计划 #老铁知识百科 #2025高考 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶置）(O3xiyc3mx7mt7b3i)</div>
+<div class="content">第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶置）(O3xiyc3mx7mt7b3i) @快手热点(O3xddgkd5fav5if9)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手新出免费人工智能工具#老铁知识百科 #快手知识分享</div>
+<div class="content">快手新出免费人工智能工具#老铁知识百科 #快手知识分享...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #短视频带货 #短视频创业 #老铁知识百科 #经典重燃计划 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5</div>
+<div class="content">#短视频带货 #短视频创业 #老铁知识百科 #经典重燃计划 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 首次扒开互联网变态软件之【即梦ai】 #即梦ai #即梦 #软件分享 #干货分享</div>
+<div class="content">首次扒开互联网变态软件之【即梦ai】 #即梦ai #即梦 #软件分享 #干货分享...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #知识播种计划 #技能速成宝典</div>
+<div class="content">#知识播种计划 #技能速成宝典...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 一定要学会用这个功能作品不违规 #知识播种计划 #技能速成宝典 #老铁知识百科 #2025高考 @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa) @快手</div>
+<div class="content">一定要学会用这个功能作品不违规 #知识播种计划 #技能速成宝典 #老铁知识百科 #2025高考 @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa) @快手光合计划助手(O3xxpf2m4brbf3pe)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 炸了，我趣，短剧赛道，我们普通人能上桌了？ #创业 #创业项目 #项目</div>
+<div class="content">炸了，我趣，短剧赛道，我们普通人能上桌了？ #创业 #创业项目 #项目...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #ai #次元世界AI快穿 #今天来教你们怎么艾特AI小快</div>
+<div class="content">#ai #次元世界AI快穿 #今天来教你们怎么艾特AI小快...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 热门视频一键生成#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享   @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8e</div>
+<div class="content">热门视频一键生成#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享   @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI与外国人热吻 | 导入一张照片替换即可。 #AI #创意无极限</div>
+<div class="content">AI与外国人热吻 | 导入一张照片替换即可。 #AI #创意无极限...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #老铁知识百科 #经典重燃计划 #2025高考 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if</div>
+<div class="content">#老铁知识百科 #经典重燃计划 #2025高考 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 微信的ai功能，你知道怎么用的吗#微信实用小功能 #微信实用技巧 #老铁知识百科 #数码玩机攻略</div>
+<div class="content">微信的ai功能，你知道怎么用的吗#微信实用小功能 #微信实用技巧 #老铁知识百科 #数码玩机攻略...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #内容启发分享计划 #老铁知识百科 #快影剪辑教程 #开学季 @快手热点(O3xddgkd5fav5if9) @快手教育(O3xs4pwkr6yf6g56) @快手新知(O3xvmqt3emychk2</div>
+<div class="content">#内容启发分享计划 #老铁知识百科 #快影剪辑教程 #开学季 @快手热点(O3xddgkd5fav5if9) @快手教育(O3xs4pwkr6yf6g56) @快手新知(O3xvmqt3emychk29) @快影...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 自动剪辑</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手AI智能搜索深度思考#ai  #快手智能搜索</div>
+<div class="content">快手AI智能搜索深度思考#ai  #快手智能搜索...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] AI跳舞保姆级教程
+
+想学网络热门跳舞但是四肢僵硬怎么办？让AI帮你 #舞蹈 #街舞达人 #AI跳舞 #教程</div>
+<div class="content">AI跳舞保姆级教程
+
+想学网络热门跳舞但是四肢僵硬怎么办？让AI帮你 #舞蹈 #街舞达人 #AI跳舞 #教程...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 6个隐藏玩法：100%解锁元宝AI超能力   #玩机技巧  #软件分享  #ai </div>
+<div class="content">6个隐藏玩法：100%解锁元宝AI超能力   #玩机技巧  #软件分享  #ai ...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 盘点一下，最火的5款手机AI软件。
+#AI #创业 #商业 #个人ip</div>
+<div class="content">盘点一下，最火的5款手机AI软件。
+#AI #创业 #商业 #个人ip...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #无人直播带货 #无人直播带货 #老铁知识百科 #快影光合计划 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3</div>
+<div class="content">#无人直播带货 #无人直播带货 #老铁知识百科 #快影光合计划 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #ai  #认知  #知识分享  #周文强 </div>
+<div class="content">#ai  #认知  #知识分享  #周文强 ...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 快手新功能如何制作自己的AI形象#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享  #快影 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @</div>
+<div class="content">快手新功能如何制作自己的AI形象#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享  #快影 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @快手光合计划助手(O3xxpf2m4brbf3pe)...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #短视频带货 #短视频变现 #短视频创业 #光和计划激励任务</div>
+<div class="content">#短视频带货 #短视频变现 #短视频创业 #光和计划激励任务...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手]  @江南长老(O3ximwbufpnddq3a) 的精彩视频</div>
+<div class="content"> @江南长老(O3ximwbufpnddq3a) 的精彩视频...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #短视频带货 #带货 #图文带货 #副业</div>
+<div class="content">#短视频带货 #带货 #图文带货 #副业...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] #aAi时代来了  #aAi时代来了</div>
+<div class="content">#aAi时代来了  #aAi时代来了...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] 上一期有老铁问快手可灵如何进入，来，今天手把手带大家走一遍！操作起来～ #可灵 #快手融媒研修院 #创意 继续抽奖！欢迎老铁们评论区留言，抽取幸运铁送出《快手参考》可灵专刊和官方小礼品～</div>
+<div class="content">上一期有老铁问快手可灵如何进入，来，今天手把手带大家走一遍！操作起来～ #可灵 #快手融媒研修院 #创意 继续抽奖！欢迎老铁们评论区留言，抽取幸运铁送出《快手参考》可灵专刊和官方小礼品～...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[快手] ai对话功能使用#快手知识分享 #老铁知识百科</div>
+<div class="content">ai对话功能使用#快手知识分享 #老铁知识百科...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 月老掉线</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 陈鸿宇1</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 斗猫（1）</div>
+<div class="content">斗猫不是动词...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 给AI看的“成人网站”Molthub！追觅老总要当世界首富？</div>
+<div class="content">聊姐带你了解科技信息差！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 被开启的禁忌之门</div>
+<div class="content">自压 秀逗第24集 最给力的一集...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 一个能逐帧看视频的模型，能干点啥？【Qwen3.5-Omni】</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 5个Ai功能非常好用，希望对你有帮助</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI会员到底要不要充？要看“用不用得上”</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【MAT】IS〈インフィニット・ストラトス〉ED 小提琴試演</div>
+<div class="content">原創 渣技術又來了-.- 話說今天才發現這曲子不錯聽的(平時都是不看ED) 無中生有(我指的是由第一次聽到做好視頻)大約花了我4小時....唉(沒技術就是這樣WW) 好吧, 盡情吐槽吧...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 如何让AI帮你做分镜</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 一个作品点赞量 18W➕  用 AI 做宫崎骏治愈农村动画【0 基础小白保姆级教程】</div>
+<div class="content">持续更新中～需要资料包的小伙伴扣 999 ！全部分享  求一键三连！...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 4个AI神器，满足你的特殊需求...</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI漫剧风口来了！新手小白也能看懂的教程！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 沙雕4</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 不想再看到垃圾的ai内容，仅需要导入ai内容屏蔽规则</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 负面屏蔽</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 【王德峰】慎用AI，别自以为是！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 用Deepseek生成照片和视频，1分钟搞定</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI真正的意义！</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 绅士必备，老司机狂喜的Ai软件</div>
+<div class="content">云界AI网站：https://yunjie.art/register?channel=3
+更多GPT会员：https://nf.video/iG0KR...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] AI界王炸，一次性生成长达6分钟短片！</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 如何使用豆包快速去制作一个短片</div>
+<div class="content">...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[B站] 一个人手搓80集AI短剧 updream 创作体验</div>
+<div class="content">https://www.updream.cn/login一个人全流程制作80集AI短剧《一吻维他命》...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 无</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="title">[知乎] 这波人工智能浪潮怎么越来越像泡沫，AI到底带来了什么？</div>
+<div class="content">卧槽，现在ai都能直接把成品电视剧改成a片了，而且两个月时间越来越真实，我觉得目前ai对文娱产生的冲击最大前几年大火的有声读物已经不需要人了。...</div>
+<div class="tags">
+<span class="tag tag-consumer">二层: 投屏控制</span>
+</div>
+</div>
+
+</div></div>
+
+<script>
+function showPanel(id) {
+    document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>

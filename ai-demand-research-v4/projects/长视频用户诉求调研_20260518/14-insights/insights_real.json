@@ -1,0 +1,87 @@
+[
+  {
+    "id": "I001",
+    "rank": 1,
+    "job_statement": "当我在想看某个系列内容时，我想要能够一次性看完完整的故事或系列，这样我就可以不用等待更新，获得完整的观看体验",
+    "category": "形态-一口气合集",
+    "kano_type": "must_be",
+    "rice_score": 392700.0,
+    "reach": 154000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 1,
+    "evidence": {
+      "frequency": 154,
+      "total_interaction": 827849
+    },
+    "recommendation": "开发「合集中心」：自动聚合系列内容→一键连播→跨平台进度同步→更新提醒"
+  },
+  {
+    "id": "I002",
+    "rank": 2,
+    "job_statement": "当我在想要学习或了解某个话题时，我想要找到高质量的知识类长视频，这样我就可以获得新知识或深入理解某个话题",
+    "category": "形态-知识获取",
+    "kano_type": "performance",
+    "rice_score": 256275.0,
+    "reach": 201000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "evidence": {
+      "frequency": 201,
+      "total_interaction": 584210
+    },
+    "recommendation": "开发「知识模式」：章节导航→笔记摘录→思维导图生成→复习提醒"
+  },
+  {
+    "id": "I003",
+    "rank": 3,
+    "job_statement": "当我在想要娱乐或放松时，我想要观看有情节、有叙事的长视频内容，这样我就可以沉浸在故事中，获得情感体验",
+    "category": "形态-故事叙事",
+    "kano_type": "performance",
+    "rice_score": 248625.0,
+    "reach": 195000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "evidence": {
+      "frequency": 195,
+      "total_interaction": 788691
+    },
+    "recommendation": "进一步优化相关功能"
+  },
+  {
+    "id": "I004",
+    "rank": 4,
+    "job_statement": "当我在想要放松或寻找灵感时，我想要观看他人的生活记录和日常，这样我就可以获得代入感、灵感或情感共鸣",
+    "category": "形态-生活记录",
+    "kano_type": "delighter",
+    "rice_score": 238425.0,
+    "reach": 187000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "evidence": {
+      "frequency": 187,
+      "total_interaction": 1069880
+    },
+    "recommendation": "优化vlog推荐：情绪标签分类（治愈/励志/解压）→场景化推荐（睡前/通勤/吃饭）"
+  },
+  {
+    "id": "I005",
+    "rank": 5,
+    "job_statement": "当我在学习或画画时，我想要有口条清晰、有情节的长视频作为背景音，这样我就可以在不分散注意力的情况下获得陪伴感，提高专注度",
+    "category": "场景-学习工作BGM",
+    "kano_type": "must_be",
+    "rice_score": 122400.0,
+    "reach": 144000,
+    "impact": 2,
+    "confidence": 0.85,
+    "effort": 2,
+    "evidence": {
+      "frequency": 144,
+      "total_interaction": 284824
+    },
+    "recommendation": "开发「专注模式」：口条清晰内容标签→白噪音混合→番茄钟集成→只听模式"
+  }
+]

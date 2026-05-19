@@ -1,0 +1,137 @@
+[
+  {
+    "id": "O008",
+    "job_id": "J008",
+    "description": "能够一次性看完完整的故事或系列...",
+    "category": "形态-一口气合集",
+    "kano_type": "must_be",
+    "reach": 154000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 1,
+    "rice_score": 392700.0,
+    "data_sources": [
+      "xiaohongshu:154 mentions"
+    ]
+  },
+  {
+    "id": "O005",
+    "job_id": "J005",
+    "description": "找到高质量的知识类长视频...",
+    "category": "形态-知识获取",
+    "kano_type": "performance",
+    "reach": 201000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 256275.0,
+    "data_sources": [
+      "xiaohongshu:201 mentions"
+    ]
+  },
+  {
+    "id": "O006",
+    "job_id": "J006",
+    "description": "观看有情节、有叙事的长视频内容...",
+    "category": "形态-故事叙事",
+    "kano_type": "performance",
+    "reach": 195000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 248625.0,
+    "data_sources": [
+      "xiaohongshu:195 mentions"
+    ]
+  },
+  {
+    "id": "O007",
+    "job_id": "J007",
+    "description": "观看他人的生活记录和日常...",
+    "category": "形态-生活记录",
+    "kano_type": "delighter",
+    "reach": 187000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 238425.0,
+    "data_sources": [
+      "xiaohongshu:187 mentions"
+    ]
+  },
+  {
+    "id": "O001",
+    "job_id": "J001",
+    "description": "有口条清晰、有情节的长视频作为背景音...",
+    "category": "场景-学习工作BGM",
+    "kano_type": "must_be",
+    "reach": 144000,
+    "impact": 2,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 122400.0,
+    "data_sources": [
+      "xiaohongshu:144 mentions"
+    ]
+  },
+  {
+    "id": "O002",
+    "job_id": "J002",
+    "description": "找到一段舒缓、无惊吓的长视频内容...",
+    "category": "场景-助眠睡前",
+    "kano_type": "performance",
+    "reach": 82000,
+    "impact": 3,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 104550.0,
+    "data_sources": [
+      "xiaohongshu:82 mentions"
+    ]
+  },
+  {
+    "id": "O009",
+    "job_id": "J009",
+    "description": "观看游戏实况或解说...",
+    "category": "形态-游戏实况",
+    "kano_type": "performance",
+    "reach": 119000,
+    "impact": 2,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 101150.0,
+    "data_sources": [
+      "xiaohongshu:119 mentions"
+    ]
+  },
+  {
+    "id": "O003",
+    "job_id": "J003",
+    "description": "找到有趣、轻松的长视频内容...",
+    "category": "场景-吃饭下饭",
+    "kano_type": "performance",
+    "reach": 77000,
+    "impact": 2,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 65450.0,
+    "data_sources": [
+      "xiaohongshu:77 mentions"
+    ]
+  },
+  {
+    "id": "O004",
+    "job_id": "J004",
+    "description": "有适合碎片化时间的长视频内容...",
+    "category": "场景-通勤路途",
+    "kano_type": "performance",
+    "reach": 30000,
+    "impact": 2,
+    "confidence": 0.85,
+    "effort": 2,
+    "rice_score": 25500.0,
+    "data_sources": [
+      "xiaohongshu:30 mentions"
+    ]
+  }
+]

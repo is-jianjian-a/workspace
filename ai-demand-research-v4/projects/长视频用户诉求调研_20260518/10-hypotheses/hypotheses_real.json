@@ -1,0 +1,42 @@
+[
+  {
+    "id": "H001",
+    "opportunity_id": "O008",
+    "statement": "如果我们为热门系列自动生成分集合集页（一键连续播放+进度记忆），那么系列内容的完播率会提升40%，因为调研显示154条UGC在找'一口气看完'",
+    "type": "solution_attractiveness",
+    "validation_method": "prototype_test",
+    "rice_score": 392700.0
+  },
+  {
+    "id": "H002",
+    "opportunity_id": "O005",
+    "statement": "如果我们为知识类内容增加'章节导航'和'笔记摘录'功能，那么知识视频的完播率会提升35%，因为调研显示201条UGC消费知识内容",
+    "type": "solution_attractiveness",
+    "validation_method": "prototype_test",
+    "rice_score": 256275.0
+  },
+  {
+    "id": "H003",
+    "opportunity_id": "O006",
+    "statement": "基于形态-故事叙事的洞察，建议进一步优化相关功能",
+    "type": "solution_attractiveness",
+    "validation_method": "prototype_test",
+    "rice_score": 248625.0
+  },
+  {
+    "id": "H004",
+    "opportunity_id": "O007",
+    "statement": "如果我们优化vlog推荐算法（按情绪标签分类：治愈/励志/解压），那么vlog类内容的点击率会提升20%，因为调研显示187条UGC消费生活记录内容",
+    "type": "solution_attractiveness",
+    "validation_method": "user_interview",
+    "rice_score": 238425.0
+  },
+  {
+    "id": "H005",
+    "opportunity_id": "O001",
+    "statement": "如果我们推出'专注模式'（口条清晰的内容推荐+白噪音混合+番茄钟集成），那么学习/工作场景的用户时长会提升30%，因为调研显示144条UGC寻求背景音陪伴",
+    "type": "solution_attractiveness",
+    "validation_method": "user_interview",
+    "rice_score": 122400.0
+  }
+]
