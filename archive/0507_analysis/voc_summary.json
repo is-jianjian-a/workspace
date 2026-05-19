@@ -1,0 +1,105 @@
+{
+  "overview": {
+    "total_batches": 120,
+    "total_items": 4579,
+    "total_ai": 437,
+    "ai_ratio": 9.54,
+    "total_explicit": 287,
+    "total_implicit": 150
+  },
+  "scene_distribution": {
+    "general_video": 3377,
+    "short_video": 904,
+    "long_video": 240,
+    "live_stream": 58
+  },
+  "type_distribution": {
+    "behavior_description": 3407,
+    "pain_point": 760,
+    "feature_request": 318,
+    "positive_feedback": 94
+  },
+  "topic_distribution": {
+    "other": 2625,
+    "video_quality": 721,
+    "playback_control": 249,
+    "content_recommend": 216,
+    "payment_member": 192,
+    "screen_cast": 158,
+    "ai_feature": 152,
+    "download_cache": 126,
+    "ad_experience": 106,
+    "subtitle_translate": 19,
+    "background_play": 15
+  },
+  "platform_distribution": {
+    "zhihu": 2789,
+    "bili": 1024,
+    "kuaishou": 439,
+    "tieba": 327
+  },
+  "ai_platform_distribution": {
+    "zhihu": 217,
+    "kuaishou": 127,
+    "bili": 78,
+    "tieba": 15
+  },
+  "ai_statistics": {
+    "total_ai": 437,
+    "explicit": 287,
+    "implicit": 150,
+    "not_ai": 4142
+  },
+  "ai_topic_breakdown": {
+    "playback_control": {
+      "explicit": 2,
+      "implicit": 6,
+      "total": 8
+    },
+    "content_recommend": {
+      "explicit": 107,
+      "implicit": 75,
+      "total": 182
+    },
+    "background_play": {
+      "explicit": 1,
+      "implicit": 0,
+      "total": 1
+    },
+    "video_quality": {
+      "explicit": 30,
+      "implicit": 16,
+      "total": 46
+    },
+    "ai_feature": {
+      "explicit": 107,
+      "implicit": 45,
+      "total": 152
+    },
+    "download_cache": {
+      "explicit": 33,
+      "implicit": 0,
+      "total": 33
+    },
+    "other": {
+      "explicit": 0,
+      "implicit": 5,
+      "total": 5
+    },
+    "ad_experience": {
+      "explicit": 3,
+      "implicit": 0,
+      "total": 3
+    },
+    "screen_cast": {
+      "explicit": 0,
+      "implicit": 3,
+      "total": 3
+    },
+    "subtitle_translate": {
+      "explicit": 4,
+      "implicit": 0,
+      "total": 4
+    }
+  }
+}

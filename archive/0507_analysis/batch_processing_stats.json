@@ -1,0 +1,727 @@
+{
+  "total_original": 8155,
+  "total_filtered": 4138,
+  "filter_rate": 50.7,
+  "batch_stats": [
+    {
+      "batch_id": 1,
+      "original": 68,
+      "filtered": 63,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 2,
+      "original": 68,
+      "filtered": 28,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 3,
+      "original": 68,
+      "filtered": 8,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 4,
+      "original": 68,
+      "filtered": 19,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 5,
+      "original": 68,
+      "filtered": 11,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 6,
+      "original": 68,
+      "filtered": 19,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 7,
+      "original": 68,
+      "filtered": 21,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 8,
+      "original": 68,
+      "filtered": 30,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 9,
+      "original": 68,
+      "filtered": 27,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 10,
+      "original": 68,
+      "filtered": 20,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 11,
+      "original": 68,
+      "filtered": 41,
+      "platform": "tieba"
+    },
+    {
+      "batch_id": 12,
+      "original": 68,
+      "filtered": 62,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 13,
+      "original": 68,
+      "filtered": 32,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 14,
+      "original": 68,
+      "filtered": 17,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 15,
+      "original": 68,
+      "filtered": 44,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 16,
+      "original": 68,
+      "filtered": 41,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 17,
+      "original": 68,
+      "filtered": 45,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 18,
+      "original": 68,
+      "filtered": 32,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 19,
+      "original": 68,
+      "filtered": 35,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 20,
+      "original": 68,
+      "filtered": 26,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 21,
+      "original": 68,
+      "filtered": 22,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 22,
+      "original": 68,
+      "filtered": 44,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 23,
+      "original": 68,
+      "filtered": 39,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 24,
+      "original": 68,
+      "filtered": 47,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 25,
+      "original": 68,
+      "filtered": 41,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 26,
+      "original": 68,
+      "filtered": 39,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 27,
+      "original": 68,
+      "filtered": 37,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 28,
+      "original": 68,
+      "filtered": 45,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 29,
+      "original": 68,
+      "filtered": 30,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 30,
+      "original": 68,
+      "filtered": 37,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 31,
+      "original": 68,
+      "filtered": 27,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 32,
+      "original": 68,
+      "filtered": 32,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 33,
+      "original": 68,
+      "filtered": 40,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 34,
+      "original": 68,
+      "filtered": 33,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 35,
+      "original": 68,
+      "filtered": 47,
+      "platform": "bili"
+    },
+    {
+      "batch_id": 36,
+      "original": 68,
+      "filtered": 52,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 37,
+      "original": 68,
+      "filtered": 60,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 38,
+      "original": 68,
+      "filtered": 26,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 39,
+      "original": 68,
+      "filtered": 34,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 40,
+      "original": 68,
+      "filtered": 22,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 41,
+      "original": 68,
+      "filtered": 27,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 42,
+      "original": 68,
+      "filtered": 13,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 43,
+      "original": 68,
+      "filtered": 23,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 44,
+      "original": 68,
+      "filtered": 34,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 45,
+      "original": 68,
+      "filtered": 28,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 46,
+      "original": 68,
+      "filtered": 39,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 47,
+      "original": 68,
+      "filtered": 15,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 48,
+      "original": 68,
+      "filtered": 35,
+      "platform": "kuaishou"
+    },
+    {
+      "batch_id": 49,
+      "original": 68,
+      "filtered": 54,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 50,
+      "original": 68,
+      "filtered": 53,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 51,
+      "original": 68,
+      "filtered": 55,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 52,
+      "original": 68,
+      "filtered": 52,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 53,
+      "original": 68,
+      "filtered": 35,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 54,
+      "original": 68,
+      "filtered": 39,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 55,
+      "original": 68,
+      "filtered": 39,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 56,
+      "original": 68,
+      "filtered": 42,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 57,
+      "original": 68,
+      "filtered": 46,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 58,
+      "original": 68,
+      "filtered": 26,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 59,
+      "original": 68,
+      "filtered": 36,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 60,
+      "original": 68,
+      "filtered": 40,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 61,
+      "original": 68,
+      "filtered": 31,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 62,
+      "original": 68,
+      "filtered": 36,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 63,
+      "original": 68,
+      "filtered": 50,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 64,
+      "original": 68,
+      "filtered": 55,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 65,
+      "original": 68,
+      "filtered": 45,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 66,
+      "original": 68,
+      "filtered": 39,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 67,
+      "original": 68,
+      "filtered": 43,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 68,
+      "original": 68,
+      "filtered": 36,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 69,
+      "original": 68,
+      "filtered": 39,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 70,
+      "original": 68,
+      "filtered": 30,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 71,
+      "original": 68,
+      "filtered": 29,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 72,
+      "original": 68,
+      "filtered": 44,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 73,
+      "original": 68,
+      "filtered": 35,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 74,
+      "original": 68,
+      "filtered": 38,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 75,
+      "original": 68,
+      "filtered": 18,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 76,
+      "original": 68,
+      "filtered": 21,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 77,
+      "original": 68,
+      "filtered": 34,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 78,
+      "original": 68,
+      "filtered": 31,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 79,
+      "original": 68,
+      "filtered": 27,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 80,
+      "original": 68,
+      "filtered": 18,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 81,
+      "original": 68,
+      "filtered": 10,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 82,
+      "original": 68,
+      "filtered": 11,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 83,
+      "original": 68,
+      "filtered": 35,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 84,
+      "original": 68,
+      "filtered": 24,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 85,
+      "original": 68,
+      "filtered": 35,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 86,
+      "original": 68,
+      "filtered": 44,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 87,
+      "original": 68,
+      "filtered": 47,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 88,
+      "original": 68,
+      "filtered": 37,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 89,
+      "original": 68,
+      "filtered": 42,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 90,
+      "original": 68,
+      "filtered": 35,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 91,
+      "original": 68,
+      "filtered": 38,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 92,
+      "original": 68,
+      "filtered": 38,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 93,
+      "original": 68,
+      "filtered": 30,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 94,
+      "original": 68,
+      "filtered": 40,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 95,
+      "original": 68,
+      "filtered": 47,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 96,
+      "original": 68,
+      "filtered": 55,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 97,
+      "original": 68,
+      "filtered": 48,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 98,
+      "original": 68,
+      "filtered": 37,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 99,
+      "original": 68,
+      "filtered": 45,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 100,
+      "original": 68,
+      "filtered": 34,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 101,
+      "original": 68,
+      "filtered": 42,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 102,
+      "original": 68,
+      "filtered": 30,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 103,
+      "original": 68,
+      "filtered": 30,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 104,
+      "original": 68,
+      "filtered": 41,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 105,
+      "original": 68,
+      "filtered": 35,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 106,
+      "original": 68,
+      "filtered": 36,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 107,
+      "original": 68,
+      "filtered": 31,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 108,
+      "original": 68,
+      "filtered": 17,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 109,
+      "original": 68,
+      "filtered": 19,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 110,
+      "original": 68,
+      "filtered": 44,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 111,
+      "original": 68,
+      "filtered": 24,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 112,
+      "original": 68,
+      "filtered": 24,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 113,
+      "original": 68,
+      "filtered": 10,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 114,
+      "original": 68,
+      "filtered": 11,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 115,
+      "original": 68,
+      "filtered": 26,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 116,
+      "original": 68,
+      "filtered": 28,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 117,
+      "original": 68,
+      "filtered": 26,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 118,
+      "original": 68,
+      "filtered": 38,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 119,
+      "original": 68,
+      "filtered": 45,
+      "platform": "zhihu"
+    },
+    {
+      "batch_id": 120,
+      "original": 63,
+      "filtered": 44,
+      "platform": "zhihu"
+    }
+  ]
+}

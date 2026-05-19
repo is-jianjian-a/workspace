@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机视频观看AI诉求深度调研报告 - 交互式主题分析</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #333; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px 40px; border-radius: 16px; margin-bottom: 30px; }
+        .header h1 { font-size: 32px; margin-bottom: 12px; }
+        .header .subtitle { font-size: 18px; opacity: 0.9; margin-bottom: 20px; }
+        .header .meta { display: flex; gap: 30px; font-size: 14px; opacity: 0.8; flex-wrap: wrap; }
+        
+        .methodology { background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); padding: 24px 30px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #667eea; }
+        .methodology h3 { color: #1976d2; margin-bottom: 10px; }
+        .methodology p { font-size: 14px; color: #555; line-height: 1.8; }
+        
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 28px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .stat-card .number { font-size: 40px; font-weight: bold; color: #667eea; }
+        .stat-card .label { color: #666; font-size: 14px; }
+        .stat-card .sub { font-size: 12px; color: #999; margin-top: 4px; }
+        
+        .section { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 24px; }
+        .section h2 { font-size: 22px; margin-bottom: 24px; color: #333; border-left: 4px solid #667eea; padding-left: 14px; }
+        .section h3 { font-size: 18px; margin: 20px 0 14px; color: #444; }
+        .section p { font-size: 15px; color: #555; margin-bottom: 12px; line-height: 1.8; }
+        .section .insight { background: #f8f9fa; padding: 16px 20px; border-radius: 8px; margin: 16px 0; border-left: 4px solid #4caf50; }
+        .section .insight strong { color: #2e7d32; }
+        
+        .chart-container { position: relative; height: 400px; margin: 20px 0; }
+        .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .chart-full { grid-template-columns: 1fr; }
+        
+        .topic-card { background: #f8f9fa; padding: 20px; border-radius: 10px; margin-bottom: 16px; border-left: 4px solid #667eea; cursor: pointer; transition: all 0.2s; }
+        .topic-card:hover { background: #f0f1f2; transform: translateX(4px); }
+        .topic-card.active { background: #e3f2fd; border-left-color: #1976d2; }
+        .topic-card h4 { font-size: 16px; color: #333; margin-bottom: 8px; }
+        .topic-card .stats { font-size: 13px; color: #666; }
+        .topic-card .bar { height: 6px; background: #e0e0e0; border-radius: 3px; margin-top: 8px; overflow: hidden; }
+        .topic-card .bar-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 3px; transition: width 0.3s; }
+        
+        .secondary-panel { background: #f8f9fa; padding: 24px; border-radius: 10px; margin-top: 16px; }
+        .secondary-panel h4 { font-size: 16px; color: #333; margin-bottom: 16px; }
+        .secondary-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #eee; }
+        .secondary-item:last-child { border-bottom: none; }
+        .secondary-item .name { font-size: 14px; color: #555; }
+        .secondary-item .value { font-size: 14px; color: #667eea; font-weight: 600; }
+        
+        .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        .data-table th { background: #f5f5f7; padding: 12px 16px; text-align: left; font-weight: 600; }
+        .data-table td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; }
+        .data-table tr:hover td { background: #fafafa; }
+        
+        .ai-unit { background: #f8f9fa; padding: 18px; border-radius: 10px; margin-bottom: 14px; border-left: 4px solid #667eea; }
+        .ai-unit .badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .badge-explicit { background: #e3f2fd; color: #1976d2; }
+        .badge-implicit { background: #fff3e0; color: #f57c00; }
+        .badge-pain { background: #ffebee; color: #d32f2f; }
+        .badge-request { background: #e8f5e9; color: #388e3c; }
+        .badge-positive { background: #e8f5e9; color: #388e3c; }
+        .ai-unit .excerpt { font-size: 15px; color: #333; margin: 10px 0; }
+        .ai-unit .meta { font-size: 13px; color: #888; }
+        
+        .reference { background: #f8f9fa; padding: 30px; border-radius: 12px; margin-top: 30px; }
+        .reference h3 { margin-bottom: 16px; }
+        .reference li { padding: 8px 0; font-size: 14px; color: #555; }
+        
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }
+        
+        .highlight-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 24px; border-radius: 12px; margin: 16px 0; }
+        .highlight-box h4 { font-size: 18px; margin-bottom: 12px; }
+        .highlight-box p { font-size: 14px; opacity: 0.9; margin: 0; }
+        
+        .pain-point { background: #ffebee; padding: 16px; border-radius: 8px; margin: 12px 0; border-left: 4px solid #d32f2f; }
+        .pain-point h5 { color: #d32f2f; margin-bottom: 8px; }
+        .pain-point p { font-size: 14px; color: #555; margin: 0; }
+        
+        @media (max-width: 768px) { 
+            .chart-row, .two-col, .three-col { grid-template-columns: 1fr; }
+            .header h1 { font-size: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>手机视频观看AI诉求深度调研报告</h1>
+            <div class="subtitle">基于437条AI相关用户原声的交互式主题分析</div>
+            <div class="meta">
+                <span>📊 样本总量: 8,155条</span>
+                <span>🎬 视频相关: 4,579条</span>
+                <span>🤖 AI相关: 437条 (9.5%)</span>
+                <span>📅 2025年5月</span>
+            </div>
+        </div>
+        
+        <!-- Methodology -->
+        <div class="methodology">
+            <h3>📋 研究方法说明</h3>
+            <p>本报告基于MediaCrawler采集的跨平台用户原声数据(知乎/B站/快手/贴吧)。采用<strong>二级主题分类体系</strong>：一级主题(10大类) × 二级主题(40+细分)。AI检测采用显式(287条) + 隐式(150条)二级分类。点击左侧一级主题卡片，右侧展示对应的二级主题分布。</p>
+        </div>
+        
+        <!-- Core Metrics -->
+        <div class="section">
+            <h2>一、核心指标概览</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number">8,155</div>
+                    <div class="label">原始VOC总量</div>
+                    <div class="sub">知乎/B站/快手/贴吧</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">4,579</div>
+                    <div class="label">视频相关原声</div>
+                    <div class="sub">占比 56.1%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">437</div>
+                    <div class="label">AI相关诉求</div>
+                    <div class="sub">占比 9.5%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">287</div>
+                    <div class="label">显式AI提及</div>
+                    <div class="sub">用户明确提到AI</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">150</div>
+                    <div class="label">隐式AI需求</div>
+                    <div class="sub">需要AI但未明确说</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">10</div>
+                    <div class="label">一级主题数</div>
+                    <div class="sub">40+二级主题</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Interactive Topic Analysis -->
+        <div class="section">
+            <h2>二、交互式主题分析 (点击一级主题查看二级细分)</h2>
+            <div class="two-col">
+                <div>
+                    <h3>一级主题分布</h3>
+                    <div id="topicCards"></div>
+                </div>
+                <div>
+                    <h3>二级主题分布</h3>
+                    <div class="chart-container">
+                        <canvas id="secondaryChart"></canvas>
+                    </div>
+                    <div id="secondaryDetails"></div>
+                </div>
+            </div>
+            
+            <div class="chart-container" style="height: 350px;">
+                <canvas id="primaryChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Section 3: High Value Scenes -->
+        <div class="section">
+            <h2>三、TOP高价值场景</h2>
+            <p>高价值场景 = 痛点(pain_point) + 功能需求(feature_request) + 正面反馈(positive_feedback)。这些场景代表用户最有价值的AI诉求。</p>
+            
+            <div class="chart-row">
+                <div class="chart-container">
+                    <canvas id="sceneValueChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="sceneTypeChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <h4>💡 TOP高价值场景洞察</h4>
+                <p><strong>长视频消费</strong>是高价值密度最高的场景(80%高价值率)，用户在此场景对AI字幕、内容总结、画质修复有明确需求。<strong>泛视频场景</strong>虽然总量最大(355条)，但高价值率仅20.3%，说明大量是泛化的行为描述。<strong>短视频消费</strong>的痛点集中在推荐算法(信息茧房、低质内容)，需求集中在AI防沉迷和内容过滤。</p>
+            </div>
+            
+            <h3>场景价值度详情</h3>
+            <table class="data-table">
+                <tr><th>场景</th><th>总量</th><th>高价值</th><th>高价值率</th><th>痛点</th><th>需求</th><th>好评</th></tr>
+                <tr><td>泛视频场景</td><td>355</td><td>72</td><td>20.3%</td><td>38</td><td>28</td><td>6</td></tr>
+                <tr><td>短视频消费</td><td>66</td><td>15</td><td>22.7%</td><td>9</td><td>3</td><td>3</td></tr>
+                <tr><td>长视频消费</td><td>10</td><td>8</td><td>80.0%</td><td>4</td><td>4</td><td>0</td></tr>
+                <tr><td>直播观看</td><td>6</td><td>3</td><td>50.0%</td><td>0</td><td>3</td><td>0</td></tr>
+            </table>
+        </div>
+
+        <!-- Section 4: Pain Points -->
+        <div class="section">
+            <h2>四、TOP痛点 / 体验断裂点</h2>
+            <p>共识别出51条痛点原声，按一级主题和二级主题分类如下：</p>
+            
+            <div class="chart-container">
+                <canvas id="painPointChart"></canvas>
+            </div>
+            
+            <h3>TOP 5 体验断裂点</h3>
+            
+            <div class="pain-point">
+                <h5>🚨 #1 推荐算法失控 - 信息茧房与低质内容 (24条痛点)</h5>
+                <p>用户被困在算法构建的"舒适区"，反复接收同质化、低质量内容。"不感兴趣"按钮失效，一次误点导致同类内容泛滥。用户渴望突破信息茧房，获得多元化、高质量内容推荐。</p>
+            </div>
+            
+            <div class="pain-point">
+                <h5>🚨 #2 AI功能体验断裂 - 工具与场景脱节 (16条痛点)</h5>
+                <p>现有AI工具(如Topaz Video AI)专业门槛高，普通用户难以使用。AI生成内容质量不稳定(画质修复过度涂抹、AI视频缺乏真实感)。用户需要更轻量、更智能的AI视频处理方案。</p>
+            </div>
+            
+            <div class="pain-point">
+                <h5>🚨 #3 视频质量不稳定 - 卡顿与画质模糊 (10条痛点)</h5>
+                <p>4K/60fps视频频繁掉帧、画质压缩过度、硬解码兼容性差(天玑芯片/A卡)。用户在不同设备上体验差异大，需要智能适配的播放方案。</p>
+            </div>
+            
+            <div class="pain-point">
+                <h5>🚨 #4 搜索体验退化 - 推荐替代搜索 (1条痛点)</h5>
+                <p>搜索功能被推荐算法弱化，用户难以主动找到想看的内容。"搜索都不好用了，全都是看什么推荐什么，根本搜不到想看的内容"。</p>
+            </div>
+            
+            <div class="pain-point">
+                <h5>🚨 #5 后台播放限制 - 多任务场景受阻 (1条痛点)</h5>
+                <p>后台播放、小窗播放功能不完善，用户在处理多任务时无法持续收听视频内容。</p>
+            </div>
+        </div>
+
+        <!-- Section 5: User Voices -->
+        <div class="section">
+            <h2>五、用户原声精选</h2>
+            <h3>显式AI诉求 (用户明确提到AI)</h3>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">后台播放 | 后台播放</span>
+                <div class="excerpt">"帖主最近通关了一款用RPG Maker引擎开发的游戏《CHANGED》 因为它的难度系数非常具有挑战性，彻底通关后所感受到的成就感非凡，同时也想给大结局的剧情CG画面截个图留作纪念，并且上传到steam社区分享这份情绪 可是steam的截图功能此时出现了问题，按动时快捷键无法进行截图，于是我构思了另一条思路，那便是先用其他工具将结局画面截取下来，再手动创建属于这款游戏的截图文件夹并手动导入图片让s"</div>
+                <div class="meta">ID: tieba_contents_32 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | AI弹幕/评论分析</span>
+                <div class="excerpt">"我是7900xt显卡，cpu是7800x3d，驱动版本：25.6.3 。用Google Chrome在b站看4k分辨率视频，视频和弹幕卡得一顿一顿的，全屏后正常，有8u遇到吗？image_emoticon33用edge浏览器都是正常的，是不是A卡硬解有啥bug？我在浏览器把硬件加速关闭后，b站4k视频不卡了，YouTube看1080p 60fps视频开始卡了image_emoticon16问了AI"</div>
+                <div class="meta">ID: tieba_contents_58 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 推荐精准度高</span>
+                <div class="excerpt">"下班瘫在沙发，发誓刷10分钟却熬到凌晨？
+刷完只剩心慌、自责与双倍疲惫，第二天恶性循环继续？
+ 
+别骂自己不自律！这期播客，彻底拆穿你逃不掉的「低能量→刷手机→更低能量」死循环。
+✅ 科学拆解：为什么越累越停不下来？短视频算法如何精准收割你的精力？
+✅ 落地解法：不用强制戒断，4个温柔不费力的方法，帮你拿回专注力、情绪与人生主动权。
+ 
+献给每一个在疲惫中内耗的你：真正的休息，从来不是刷手机，而是"</div>
+                <div class="meta">ID: bili_contents_80 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | AI视频总结</span>
+                <div class="excerpt">"这条视频的评论区，会不会出现大量“AI帮我总结一下”的评论？"</div>
+                <div class="meta">ID: bili_contents_91 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-request">需求</span>
+                <span style="font-size:13px;color:#666;">视频质量与性能 | 画质模糊/不清晰</span>
+                <div class="excerpt">"本期视频将从图片、视频、服务器三个部分来讲讲，如何提升网站的加载速度。
+
+👇 视频中提到的所有完整流程、工具、代码，都整理在我的博客了： 
+🔗 独家完整版教程：madsgogo.life （建议收藏，防止迷路）
+
+【我是谁？】 
+大家好，我是烧麦。 曾是一名外卖众包骑手，但现在的行情下，时薪甚至不足 10 块。 现实告诉我：外卖或许能糊口，但无法支撑我想养家和自由生活的未来。 所以我决定换一种活法"</div>
+                <div class="meta">ID: bili_contents_141 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 推荐算法机制</span>
+                <div class="excerpt">"从21补到157，游戏帧率确实提高了，但也引来许多质疑：你这拼好帧拼出来的数据，算什么本事？
+今天来聊聊通过AI算法提高的帧数真的有意义吗？"</div>
+                <div class="meta">ID: bili_contents_164 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | AI视频处理工具</span>
+                <div class="excerpt">"千元素材福利包限名额领取了：https://www.bilibili.com/read/cv42451141/
+Topaz Video AI 更新来到7.1.0版本，实时预览和导出首选项设置，帧插值慢动作的大升级全新引入强大的场景检测功能，星光迷你模型再次更新，新更新 MiniDV 预设和胶片 4K 预设；EXR 的 Alpha 通道支持；DPX 文件直接使用。
+~ Topaz Video AI "</div>
+                <div class="meta">ID: bili_contents_180 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">视频质量与性能 | 画质模糊/不清晰</span>
+                <div class="excerpt">"这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；
+如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。
+那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；
+话不多说，点赞收藏，开始上课。"</div>
+                <div class="meta">ID: bili_contents_192 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | 其他AI功能</span>
+                <div class="excerpt">"网盘地址（提示词模板在第17期文件中）
+夸克：https://pan.quark.cn/s/6959f1e185ac  
+
+应用：
+故事板：https://www.runninghub.cn/ai-detail/2050060981774110722/?inviteCode=rh-v1443
+分镜板：https://www.runninghub.cn/ai-detail/2050064565823"</div>
+                <div class="meta">ID: bili_contents_193 | 平台: bili</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 信息茧房效应</span>
+                <div class="excerpt">"从没刷过短视频，手机里也没抖音。就一获取信息的渠道而已，我上网比较早，那会干啥都是浏览器，听歌、下歌、看电影、查地图、路线、查资料，一个浏览器都能解决，抖音出来的时候我就没玩。外卖员困在算法里，抖音的推你喜欢难道就不是算法了吗？人一直吃垃圾食品，身体会不健康，抖音一直推电子榨菜、垃圾食品，精神世界、三观就能一直健康、一尘不染吗？盲人摸象而已，只看自己想看到的，不思考分辨其他的声音，只会觉得自己正确"</div>
+                <div class="meta">ID: bili_comments_69 | 平台: bili</div>
+            </div>
+            <h3>隐式AI诉求 (隐含AI需求)</h3>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-request">需求</span>
+                <span style="font-size:13px;color:#666;">播放控制与交互 | 其他播放控制</span>
+                <div class="excerpt">"上周在南山科技园喝咖啡，隔壁桌的女孩一边回TikTok信息一边笑得很开心——上午在华强北收了批新型智能穿戴样品，下午去坂田的3C配件工厂确认了几百条快充数据线的定制logo，晚上发了条工厂自动化产线组装的短视频，直接被中东的客户全部订走。这种场景我太熟悉了，在深圳做跨境这几年，“被订单找上门”早就是平常事。 刚开始我也摸索了很久，曾经窝在龙华公寓里埋头修图，把蓝牙耳机拍得很有科技感，结果却没什么人"</div>
+                <div class="meta">ID: tieba_contents_13 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-request">需求</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 其他推荐问题</span>
+                <div class="excerpt">"本人装机小白学生党，618快来了想着配个主机，平时用来跑一些简单的本地深度学习demo，不打电脑游戏，想找图吧的各位大佬们求个推荐！ 自己有一根16g的光威内存，其他配件预算最好8k以内，在不损失性能的情况下越少越好 cpu：之前一直看的270k，但是我去装机直播间一般都推的14600或者amd的9700x，不知道咋选了，求推荐一个性价比高的就行，平时看看直播看看视频跑跑深度学习啥的 主板：这个我"</div>
+                <div class="meta">ID: tieba_contents_18 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 其他推荐问题</span>
+                <div class="excerpt">"眼神不好了，想换个平板大一点，想买基础款，可是很多人说8+126用不了一年就会特别卡，我就是看视频多，偶尔玩一玩金铲铲，8+126够用吗？ 我看了两个荣耀gt 2 Pro，和小米7s Pro屏大一点，不过最近好像都不便宜，还有点犹豫，有没便宜点的大屏平板推荐？image_emoticon24image_emoticon66"</div>
+                <div class="meta">ID: tieba_contents_47 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">视频质量与性能 | 卡顿与掉帧</span>
+                <div class="excerpt">"在b站看4k60帧视频会频繁掉到30导致画面看起来非常卡顿，不管调智能帧数还是设置最高都会掉帧，别的手机看丝滑，就gtpro会掉帧。大伙可以去试下【【MMD-异度之刃3】弥央『脳内革命ガール』(4K-60FPS)-哔哩哔哩】 要维持不卡顿要不停点击屏幕维持120hz"</div>
+                <div class="meta">ID: tieba_contents_56 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-request">需求</span>
+                <span style="font-size:13px;color:#666;">视频质量与性能 | 卡顿与掉帧</span>
+                <div class="excerpt">"大家是不是也感觉有时校园网测速很快，但刷视频、开网页一直转圈？用手机热点反而更流畅 我排查了网卡、驱动、网线，最后发现核心问题出在DNS解析上。 我们的DNS设置是自动获取的，服务器211.69.224.1这个应该是学校的DNS服务器，响应很慢，如图我用手机热点（带宽更低但DNS不同）做对比，立刻流畅了，这证明不是带宽问题，而是DNS问题。 解决方法超级简单：把DNS从‘自动获取’改为‘手动设置’"</div>
+                <div class="meta">ID: tieba_contents_68 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | 其他AI功能</span>
+                <div class="excerpt">"我这个t2x是天玑1300，看b站视频糊的一塌糊涂。（你别说我不会调分辨率）。网上查了一下说天玑芯片解码有问题，好多都不支持硬解码。有人说把智能刷新率关了一下也没用。网上好多人说看视频模糊，还费电，不止我一个人。"</div>
+                <div class="meta">ID: tieba_contents_88 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 其他推荐问题</span>
+                <div class="excerpt">"推荐下地瓜吧 现在正在直播 b站id@低配挂机研讨会"</div>
+                <div class="meta">ID: tieba_comments_7 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-pain">痛点</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | 自动化功能</span>
+                <div class="excerpt">"赤金产量低了，迷迭香组和自动化组肯定没上全或者用对，龙门币产量也还能再高一点。 迷迭香组本质先有一个要不要办公室放絮雨用20%人力换20％制造的问题，公孙长乐的看法是大月卡玩家要制造其他玩家要人力。另外阿罗玛没精二之前不能上班，迷迭香组基本绑定黑键絮雨，夕令车尔尼爱丽丝重要挂件，最终输出我觉得能达到150%以上就行了，达到极限速度会要求玩家严格算时间和换班，太麻烦。 自动化组就是温蒂森蚺清流+晨曦"</div>
+                <div class="meta">ID: tieba_comments_8 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">内容推荐与发现 | 其他推荐问题</span>
+                <div class="excerpt">"阿姨 我在去年的时候给我妈妈找人看过，看的挺好的 我推荐你把"</div>
+                <div class="meta">ID: tieba_comments_76 | 平台: tieba</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">好评</span>
+                <span style="font-size:13px;color:#666;">AI功能与工具 | 自动化功能</span>
+                <div class="excerpt">"这人什么憨憨，我燕云辅助卸式的自动看剧情的玩家怎么打红buff很好打啊。什么浴血代打的吗？"</div>
+                <div class="meta">ID: tieba_comments_248 | 平台: tieba</div>
+            </div>
+
+        </div>
+        
+        <!-- Section 6: Insights -->
+        <div class="section">
+            <h2>六、洞察与建议</h2>
+            
+            <h3>核心发现</h3>
+            <p>1. <strong>AI提及率低于预期</strong>：仅9.5%的用户原声涉及AI，说明用户对AI功能的认知仍处于早期阶段。65.7%为显式提及，34.3%为隐式需求。</p>
+            <p>2. <strong>内容推荐是最大痛点</strong>：41.6%的AI诉求与推荐相关，信息茧房、内容同质化、低质内容泛滥是三大核心问题。</p>
+            <p>3. <strong>长视频场景价值密度最高</strong>：80%的高价值率，用户对AI字幕、内容总结、画质修复有明确需求。</p>
+            <p>4. <strong>隐式AI需求是产品机会</strong>：150条隐式需求代表用户需要但不会直接表达的功能点。</p>
+            
+            <h3>产品建议</h3>
+            <p>1. <strong>智能推荐升级</strong>：引入"破茧"机制，定期推送跨领域优质内容；优化"不感兴趣"反馈的实时性。</p>
+            <p>2. <strong>AI视频总结</strong>：针对长视频场景，提供一键生成摘要、章节导航、关键信息提取。</p>
+            <p>3. <strong>智能画质修复</strong>：集成轻量级AI超分/去噪，自动适配设备性能和网络环境。</p>
+            <p>4. <strong>场景化AI命名</strong>：用"智能省流"替代"AI码率控制"，降低用户认知门槛。</p>
+        </div>
+        
+        <!-- Reference -->
+        <div class="reference">
+            <h3>数据来源与参考</h3>
+            <ul>
+                <li>📊 数据来源: MediaCrawler (知乎/B站/快手/贴吧)</li>
+                <li>📁 原始数据: /Users/zhijian/workspace-strict/MediaCrawler-break/data/</li>
+                <li>📄 AI原声数据: ai_voices_classified.json (437条结构化记录)</li>
+                <li>📄 汇总统计: full_summary.json</li>
+                <li>📄 报告数据: report_data.json</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+
+        // 一级主题数据
+        const primaryData = {"播放控制与交互": {"count": 8, "secondaries": {"其他播放控制": 5, "播放模式": 1, "倍速播放": 2}, "types": {"feature_request": 1, "behavior_description": 7}}, "内容推荐与发现": {"count": 182, "secondaries": {"其他推荐问题": 72, "推荐精准度高": 11, "推荐算法机制": 58, "信息茧房效应": 8, "推荐反馈机制": 7, "搜索体验差": 1, "内容同质化": 19, "低质内容泛滥": 6}, "types": {"feature_request": 18, "pain_point": 24, "behavior_description": 132, "positive_feedback": 8}}, "后台播放": {"count": 1, "secondaries": {"后台播放": 1}, "types": {"pain_point": 1}}, "视频质量与性能": {"count": 46, "secondaries": {"卡顿与掉帧": 6, "画质模糊/不清晰": 31, "其他质量问题": 9}, "types": {"pain_point": 10, "feature_request": 6, "behavior_description": 30}}, "AI功能与工具": {"count": 152, "secondaries": {"AI弹幕/评论分析": 1, "其他AI功能": 85, "自动化功能": 23, "AI视频总结": 18, "AI视频处理工具": 3, "AI防沉迷/使用管理": 2, "AI生成与创作": 8, "AI字幕与翻译": 6, "AI视频助手/问答": 4, "AI画质修复/增强": 2}, "types": {"pain_point": 16, "behavior_description": 124, "feature_request": 11, "positive_feedback": 1}}, "下载与缓存": {"count": 33, "secondaries": {"离线下载": 33}, "types": {"behavior_description": 32, "feature_request": 1}}, "其他": {"count": 5, "secondaries": {"其他": 5}, "types": {"behavior_description": 5}}, "广告体验": {"count": 3, "secondaries": {"广告频率/形式": 2, "广告关闭体验": 1}, "types": {"behavior_description": 2, "feature_request": 1}}, "跨屏与多设备": {"count": 3, "secondaries": {"投屏体验": 3}, "types": {"behavior_description": 3}}, "字幕与翻译": {"count": 4, "secondaries": {"其他字幕问题": 2, "AI自动生成字幕": 2}, "types": {"behavior_description": 4}}};
+        
+        // 场景数据
+        const sceneData = {"短视频消费": {"feature_request": 3, "pain_point": 9, "behavior_description": 51, "positive_feedback": 3}, "直播观看": {"feature_request": 3, "behavior_description": 3, "pain_point": 0, "positive_feedback": 0}, "泛视频场景": {"pain_point": 38, "behavior_description": 283, "feature_request": 28, "positive_feedback": 6}, "长视频消费": {"pain_point": 4, "feature_request": 4, "behavior_description": 2, "positive_feedback": 0}};
+        
+        // 生成一级主题卡片
+        function generateTopicCards() {
+            const container = document.getElementById('topicCards');
+            const sortedTopics = Object.entries(primaryData).sort((a, b) => b[1].count - a[1].count);
+            const maxCount = sortedTopics[0][1].count;
+            
+            sortedTopics.forEach(([topic, data], index) => {
+                const card = document.createElement('div');
+                card.className = 'topic-card' + (index === 0 ? ' active' : '');
+                card.dataset.topic = topic;
+                const pct = (data.count / 437 * 100).toFixed(1);
+                const barWidth = (data.count / maxCount * 100).toFixed(1);
+                
+                card.innerHTML = `
+                    <h4>${topic}</h4>
+                    <div class="stats">${data.count}条 (${pct}%) | 痛点${data.types.pain_point || 0} 需求${data.types.feature_request || 0} 好评${data.types.positive_feedback || 0}</div>
+                    <div class="bar"><div class="bar-fill" style="width: ${barWidth}%"></div></div>
+                `;
+                
+                card.addEventListener('click', () => {
+                    document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('active'));
+                    card.classList.add('active');
+                    updateSecondaryChart(topic);
+                });
+                
+                container.appendChild(card);
+            });
+        }
+        
+        // 更新二级主题图表
+        function updateSecondaryChart(topic) {
+            const data = primaryData[topic];
+            const secondaries = Object.entries(data.secondaries).sort((a, b) => b[1] - a[1]);
+            
+            secondaryChart.data.labels = secondaries.map(s => s[0]);
+            secondaryChart.data.datasets[0].data = secondaries.map(s => s[1]);
+            secondaryChart.options.plugins.title.text = topic + ' - 二级主题分布';
+            secondaryChart.update();
+            
+            // 更新详情
+            const details = document.getElementById('secondaryDetails');
+            let html = '<div class="secondary-panel"><h4>' + topic + ' 二级主题详情</h4>';
+            secondaries.forEach(([name, count]) => {
+                const pct = (count / data.count * 100).toFixed(1);
+                html += '<div class="secondary-item"><span class="name">' + name + '</span><span class="value">' + count + ' (' + pct + '%)</span></div>';
+            });
+            html += '</div>';
+            details.innerHTML = html;
+        }
+        
+        // 初始化二级主题图表
+        let secondaryChart;
+        
+        // 一级主题环形图
+        const primaryLabels = Object.keys(primaryData).sort((a, b) => primaryData[b].count - primaryData[a].count);
+        const primaryValues = primaryLabels.map(t => primaryData[t].count);
+        const primaryColors = ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe', '#a8edea', '#ffecd2', '#fcb69f', '#ff9a9e', '#fecfef'];
+        
+        new Chart(document.getElementById('primaryChart'), {
+            type: 'doughnut',
+            data: {
+                labels: primaryLabels,
+                datasets: [{
+                    data: primaryValues,
+                    backgroundColor: primaryColors
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: '一级主题分布 (点击上方卡片查看二级细分)' }
+                },
+                onClick: (e, elements) => {
+                    if (elements.length > 0) {
+                        const index = elements[0].index;
+                        const topic = primaryLabels[index];
+                        document.querySelectorAll('.topic-card').forEach(c => c.classList.remove('active'));
+                        document.querySelector('[data-topic="' + topic + '"]').classList.add('active');
+                        updateSecondaryChart(topic);
+                    }
+                }
+            }
+        });
+        
+        // 二级主题图表 (初始显示第一个)
+        const firstTopic = primaryLabels[0];
+        const firstSecondaries = Object.entries(primaryData[firstTopic].secondaries).sort((a, b) => b[1] - a[1]);
+        secondaryChart = new Chart(document.getElementById('secondaryChart'), {
+            type: 'bar',
+            data: {
+                labels: firstSecondaries.map(s => s[0]),
+                datasets: [{
+                    label: '数量',
+                    data: firstSecondaries.map(s => s[1]),
+                    backgroundColor: '#667eea'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: firstTopic + ' - 二级主题分布' }
+                }
+            }
+        });
+        
+        // 初始化二级详情
+        updateSecondaryChart(firstTopic);
+        
+        // 场景价值度图表
+        const sceneLabels = Object.keys(sceneData);
+        const sceneHighValue = sceneLabels.map(s => {
+            const d = sceneData[s];
+            return (d.pain_point || 0) + (d.feature_request || 0) + (d.positive_feedback || 0);
+        });
+        const sceneTotal = sceneLabels.map(s => {
+            const d = sceneData[s];
+            return (d.pain_point || 0) + (d.feature_request || 0) + (d.positive_feedback || 0) + (d.behavior_description || 0);
+        });
+        
+        new Chart(document.getElementById('sceneValueChart'), {
+            type: 'bar',
+            data: {
+                labels: sceneLabels,
+                datasets: [
+                    { label: '高价值(痛点+需求+好评)', data: sceneHighValue, backgroundColor: '#667eea' },
+                    { label: '行为描述', data: sceneLabels.map((s, i) => sceneTotal[i] - sceneHighValue[i]), backgroundColor: '#e0e0e0' }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { title: { display: true, text: '场景价值度分析' } },
+                scales: { x: { stacked: true }, y: { stacked: true } }
+            }
+        });
+        
+        // 场景类型分布
+        new Chart(document.getElementById('sceneTypeChart'), {
+            type: 'bar',
+            data: {
+                labels: sceneLabels,
+                datasets: [
+                    { label: '痛点', data: sceneLabels.map(s => sceneData[s].pain_point || 0), backgroundColor: '#f44336' },
+                    { label: '需求', data: sceneLabels.map(s => sceneData[s].feature_request || 0), backgroundColor: '#4caf50' },
+                    { label: '好评', data: sceneLabels.map(s => sceneData[s].positive_feedback || 0), backgroundColor: '#ff9800' },
+                    { label: '行为', data: sceneLabels.map(s => sceneData[s].behavior_description || 0), backgroundColor: '#e0e0e0' }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { title: { display: true, text: '场景诉求类型分布' } }
+            }
+        });
+        
+        // 痛点分布图
+        const painData = {"后台播放": 1, "内容推荐与发现": 24, "视频质量与性能": 10, "AI功能与工具": 16};
+        new Chart(document.getElementById('painPointChart'), {
+            type: 'bar',
+            data: {
+                labels: Object.keys(painData),
+                datasets: [{
+                    label: '痛点数量',
+                    data: Object.values(painData),
+                    backgroundColor: '#f44336'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { title: { display: true, text: '痛点分布 (按一级主题)' } }
+            }
+        });
+        
+        // 生成主题卡片
+        generateTopicCards();
+    </script>
+</body>
+</html>

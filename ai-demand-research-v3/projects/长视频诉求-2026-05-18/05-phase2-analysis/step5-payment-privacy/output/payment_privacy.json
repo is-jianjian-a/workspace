@@ -1,0 +1,14 @@
+{
+  "payment_signals": {
+    "愿意付费": 46,
+    "价格敏感": 5,
+    "需要试用": 9
+  },
+  "privacy_signals": {
+    "数据安全": 4,
+    "隐私顾虑": 2,
+    "本地处理": 1
+  },
+  "total_with_payment_signal": 60,
+  "total_with_privacy_signal": 7
+}

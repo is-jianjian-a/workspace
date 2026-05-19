@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI需求调研工作流定义 v3.0</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a2e;
+            --border: #2a2a3e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #8888a0;
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --info: #3b82f6;
+            --new: #10b981;
+            --modified: #f59e0b;
+            --removed: #ef4444;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 24px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent), #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        .header-meta {
+            display: flex;
+            gap: 24px;
+            color: var(--text-secondary);
+            font-size: 14px;
+        }
+
+        .version-badge {
+            display: inline-block;
+            padding: 2px 10px;
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--accent);
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 32px 40px;
+        }
+
+        /* 阶段卡片 */
+        .phase {
+            margin-bottom: 32px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+        }
+
+        .phase-header {
+            padding: 20px 28px;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .phase-header h2 {
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .phase-icon {
+            font-size: 22px;
+        }
+
+        .phase-desc {
+            color: var(--text-secondary);
+            font-size: 13px;
+            margin-top: 4px;
+        }
+
+        /* 步骤流 */
+        .steps-flow {
+            padding: 24px 28px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            flex-wrap: wrap;
+            position: relative;
+        }
+
+        .step {
+            background: var(--bg-card);
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 18px;
+            min-width: 160px;
+            max-width: 220px;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            position: relative;
+        }
+
+        .step:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 24px var(--accent-glow);
+            transform: translateY(-3px);
+        }
+
+        .step.new {
+            border-color: var(--new);
+            background: rgba(16, 185, 129, 0.08);
+        }
+
+        .step.modified {
+            border-color: var(--modified);
+            background: rgba(245, 158, 11, 0.08);
+        }
+
+        .step.removed {
+            border-color: var(--removed);
+            background: rgba(239, 68, 68, 0.08);
+            opacity: 0.6;
+        }
+
+        .step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 6px;
+        }
+
+        .step-number {
+            font-size: 11px;
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-family: "JetBrains Mono", monospace;
+        }
+
+        .step-status-badge {
+            font-size: 10px;
+            padding: 1px 6px;
+            border-radius: 3px;
+            font-weight: 600;
+        }
+
+        .badge-new { background: rgba(16,185,129,0.2); color: var(--new); }
+        .badge-modified { background: rgba(245,158,11,0.2); color: var(--modified); }
+        .badge-removed { background: rgba(239,68,68,0.2); color: var(--removed); }
+
+        .step h3 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .step-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        /* 箭头连接 */
+        .arrow {
+            color: var(--border);
+            font-size: 20px;
+            padding-top: 24px;
+            font-weight: bold;
+        }
+
+        /* 详情面板 */
+        .detail-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 99;
+        }
+
+        .detail-overlay.active { display: block; }
+
+        .detail-panel {
+            display: none;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 560px;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            padding: 28px 32px;
+            overflow-y: auto;
+            z-index: 100;
+            box-shadow: -10px 0 50px rgba(0,0,0,0.5);
+        }
+
+        .detail-panel.active {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+
+        .detail-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 24px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .detail-header h2 {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .detail-header .step-id {
+            color: var(--text-secondary);
+            font-size: 13px;
+            font-family: "JetBrains Mono", monospace;
+            margin-top: 4px;
+        }
+
+        .close-btn {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 22px;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .close-btn:hover {
+            background: var(--error);
+            color: white;
+            border-color: var(--error);
+        }
+
+        .detail-section {
+            margin-bottom: 24px;
+        }
+
+        .detail-section h4 {
+            font-size: 11px;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 700;
+        }
+
+        .detail-section p, .detail-section li {
+            font-size: 14px;
+            color: var(--text-primary);
+            line-height: 1.7;
+        }
+
+        .detail-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .detail-section li {
+            padding: 6px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .detail-section li::before {
+            content: "›";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .code-ref {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            font-family: "JetBrains Mono", "Fira Code", monospace;
+            font-size: 12px;
+            color: var(--accent);
+            display: inline-block;
+            margin-top: 6px;
+        }
+
+        .checklist {
+            background: var(--bg-card);
+            border-radius: 10px;
+            padding: 16px;
+            border: 1px solid var(--border);
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 6px 0;
+            font-size: 13px;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            width: 16px;
+            height: 16px;
+            accent-color: var(--accent);
+        }
+
+        /* Changelog */
+        .changelog {
+            margin-top: 40px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            padding: 24px 28px;
+        }
+
+        .changelog h2 {
+            font-size: 18px;
+            margin-bottom: 16px;
+        }
+
+        .changelog-item {
+            display: flex;
+            gap: 16px;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .changelog-item:last-child {
+            border-bottom: none;
+        }
+
+        .changelog-version {
+            font-family: "JetBrains Mono", monospace;
+            font-size: 13px;
+            color: var(--accent);
+            font-weight: 600;
+            min-width: 50px;
+        }
+
+        .changelog-date {
+            color: var(--text-secondary);
+            font-size: 12px;
+            min-width: 100px;
+        }
+
+        .changelog-changes {
+            flex: 1;
+        }
+
+        .changelog-changes li {
+            font-size: 13px;
+            color: var(--text-secondary);
+            padding: 2px 0;
+        }
+
+        /* Legend */
+        .legend {
+            display: flex;
+            gap: 24px;
+            margin-bottom: 24px;
+            padding: 16px 20px;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            border: 1px solid var(--border);
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        .legend-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 3px;
+            border: 2px solid;
+        }
+
+        .legend-dot.normal { border-color: var(--border); background: var(--bg-card); }
+        .legend-dot.new { border-color: var(--new); background: rgba(16,185,129,0.2); }
+        .legend-dot.modified { border-color: var(--modified); background: rgba(245,158,11,0.2); }
+        .legend-dot.removed { border-color: var(--removed); background: rgba(239,68,68,0.2); }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔬 AI产品需求调研工作流定义</h1>
+        <div class="header-meta">
+            <span><span class="version-badge">v3.0</span></span>
+            <span>最后更新: 2026-05-14</span>
+            <span>共 17 个步骤 / 4 个阶段</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Legend -->
+        <div class="legend">
+            <div class="legend-item"><div class="legend-dot normal"></div> 标准步骤</div>
+            <div class="legend-item"><div class="legend-dot new"></div> 新增 (v3.0)</div>
+            <div class="legend-item"><div class="legend-dot modified"></div> 修改</div>
+            <div class="legend-item"><div class="legend-dot removed"></div> 删除</div>
+        </div>
+
+        <!-- Phase 0: 准备 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div>
+                    <h2><span class="phase-icon">🚀</span> 准备阶段</h2>
+                    <div class="phase-desc">项目初始化与搜索词设计</div>
+                </div>
+            </div>
+            <div class="steps-flow">
+                <div class="step" data-step="step0-1" onclick="showDetail('step0-1')">
+                    <div class="step-header">
+                        <span class="step-number">0.1</span>
+                    </div>
+                    <h3>项目初始化</h3>
+                    <div class="step-desc">创建目录、配置主题平台、生成工作流HTML</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step0-2" onclick="showDetail('step0-2')">
+                    <div class="step-header">
+                        <span class="step-number">0.2</span>
+                    </div>
+                    <h3>搜索词设计</h3>
+                    <div class="step-desc">场景词+情绪词+动作词，评审检查点</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step0-3" onclick="showDetail('step0-3')">
+                    <div class="step-header">
+                        <span class="step-number">0.3</span>
+                    </div>
+                    <h3>数据采集</h3>
+                    <div class="step-desc">多平台爬虫采集，原始数据保存</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step0-4" onclick="showDetail('step0-4')">
+                    <div class="step-header">
+                        <span class="step-number">0.4</span>
+                    </div>
+                    <h3>数据清洗</h3>
+                    <div class="step-desc">格式标准化、互动量转换、质量检查</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 1: 场景发现 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div>
+                    <h2><span class="phase-icon">🔍</span> 第一阶段：场景发现（泛化搜索）</h2>
+                    <div class="phase-desc">识别高价值场景，输出产品机会</div>
+                </div>
+            </div>
+            <div class="steps-flow">
+                <div class="step" data-step="step1-1" onclick="showDetail('step1-1')">
+                    <div class="step-header">
+                        <span class="step-number">1.1</span>
+                    </div>
+                    <h3>主题聚类</h3>
+                    <div class="step-desc">构建主题词典，匹配内容主题</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step1-2" onclick="showDetail('step1-2')">
+                    <div class="step-header">
+                        <span class="step-number">1.2</span>
+                    </div>
+                    <h3>信号提取</h3>
+                    <div class="step-desc">痛点/决策/求助/行为/期望信号</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step1-3" onclick="showDetail('step1-3')">
+                    <div class="step-header">
+                        <span class="step-number">1.3</span>
+                    </div>
+                    <h3>内容质量</h3>
+                    <div class="step-desc">UGC/营销/混合/中性分类</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step1-4" onclick="showDetail('step1-4')">
+                    <div class="step-header">
+                        <span class="step-number">1.4</span>
+                    </div>
+                    <h3>高价值识别</h3>
+                    <div class="step-desc">互动量+信号+UGC筛选TOP N</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step1-5" onclick="showDetail('step1-5')">
+                    <div class="step-header">
+                        <span class="step-number">1.5</span>
+                    </div>
+                    <h3>机会映射</h3>
+                    <div class="step-desc">评估矩阵，P0/P1/P2优先级</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step new" data-step="step1-6" onclick="showDetail('step1-6')">
+                    <div class="step-header">
+                        <span class="step-number">1.6</span>
+                        <span class="step-status-badge badge-new">NEW</span>
+                    </div>
+                    <h3>三维标签化</h3>
+                    <div class="step-desc">使用情境/触发退出/用户群体</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 2: 现状分析 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div>
+                    <h2><span class="phase-icon">📈</span> 第二阶段：现状分析（聚焦搜索）</h2>
+                    <div class="phase-desc">深入验证P0机会，理解用户现状</div>
+                </div>
+            </div>
+            <div class="steps-flow">
+                <div class="step" data-step="step2-1" onclick="showDetail('step2-1')">
+                    <div class="step-header">
+                        <span class="step-number">2.1</span>
+                    </div>
+                    <h3>用户画像</h3>
+                    <div class="step-desc">身份、阶段、设备、使用深度</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step2-2" onclick="showDetail('step2-2')">
+                    <div class="step-header">
+                        <span class="step-number">2.2</span>
+                    </div>
+                    <h3>解决方案</h3>
+                    <div class="step-desc">当前使用工具、频率、满意度</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step2-3" onclick="showDetail('step2-3')">
+                    <div class="step-header">
+                        <span class="step-number">2.3</span>
+                    </div>
+                    <h3>痛点深度</h3>
+                    <div class="step-desc">7类痛点：操作/信息/焦虑/选择/质量/系统/实操</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step2-4" onclick="showDetail('step2-4')">
+                    <div class="step-header">
+                        <span class="step-number">2.4</span>
+                    </div>
+                    <h3>期望功能</h3>
+                    <div class="step-desc">8类期望：问答/知识库/推荐/视频/社区/专家/AI/系统</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step2-5" onclick="showDetail('step2-5')">
+                    <div class="step-header">
+                        <span class="step-number">2.5</span>
+                    </div>
+                    <h3>付费隐私</h3>
+                    <div class="step-desc">付费意愿、价格敏感、隐私顾虑</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phase 3: 交付 -->
+        <div class="phase">
+            <div class="phase-header">
+                <div>
+                    <h2><span class="phase-icon">📦</span> 交付阶段</h2>
+                    <div class="phase-desc">洞察生成、搜索优化、三件套交付</div>
+                </div>
+            </div>
+            <div class="steps-flow">
+                <div class="step" data-step="step3-1" onclick="showDetail('step3-1')">
+                    <div class="step-header">
+                        <span class="step-number">3.1</span>
+                    </div>
+                    <h3>洞察生成</h3>
+                    <div class="step-desc">核心洞察、机会矩阵、P0详解</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step new" data-step="step3-2" onclick="showDetail('step3-2')">
+                    <div class="step-header">
+                        <span class="step-number">3.2</span>
+                        <span class="step-status-badge badge-new">NEW</span>
+                    </div>
+                    <h3>搜索词优化</h3>
+                    <div class="step-desc">效果评估、下一轮搜索词、闭环反馈</div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="step" data-step="step3-3" onclick="showDetail('step3-3')">
+                    <div class="step-header">
+                        <span class="step-number">3.3</span>
+                    </div>
+                    <h3>三件套交付</h3>
+                    <div class="step-desc">分析报告+技术报告+改进建议</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Changelog -->
+        <div class="changelog">
+            <h2>📋 变更记录</h2>
+            <div class="changelog-item">
+                <div class="changelog-version">v3.0</div>
+                <div class="changelog-date">2026-05-14</div>
+                <div class="changelog-changes">
+                    <ul>
+                        <li>新增搜索词优化闭环（步骤3.2）</li>
+                        <li>新增项目初始化和搜索词设计阶段（步骤0.1-0.2）</li>
+                        <li>工作流HTML改为流程定义展示，支持迭代检查</li>
+                        <li>新增中间过程可控机制（manifest.json规范）</li>
+                        <li>新增项目隔离和归档机制</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="changelog-item">
+                <div class="changelog-version">v2.0</div>
+                <div class="changelog-date">2026-05-10</div>
+                <div class="changelog-changes">
+                    <ul>
+                        <li>新增三维标签化分析（使用情境/触发退出/用户群体）</li>
+                        <li>扩展多平台支持（小红书/B站/知乎/酷安/App Store）</li>
+                        <li>新增跨场景通用原则</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="changelog-item">
+                <div class="changelog-version">v1.0</div>
+                <div class="changelog-date">2026-05-01</div>
+                <div class="changelog-changes">
+                    <ul>
+                        <li>初始版本：场景发现+现状分析两阶段</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detail Panel -->
+    <div class="detail-overlay" onclick="closeDetail()"></div>
+    <div class="detail-panel" id="detailPanel">
+        <div class="detail-header">
+            <div>
+                <h2 id="detailTitle">步骤详情</h2>
+                <div class="step-id" id="detailStepId"></div>
+            </div>
+            <button class="close-btn" onclick="closeDetail()">×</button>
+        </div>
+        <div id="detailContent"></div>
+    </div>
+
+    <script>
+        const WORKFLOW_DEFINITION = {
+            version: "3.0",
+            lastUpdated: "2026-05-14",
+            steps: {
+                "step0-1": {
+                    name: "项目初始化",
+                    definition: "创建项目目录结构，配置调研主题和目标平台，生成工作流定义HTML",
+                    input: "调研主题、目标平台（xhs/bilibili/zhihu等）、初步方向",
+                    output: "项目目录、project.json、workflow-definition.html、搜索词模板",
+                    checkpoints: [
+                        "目录结构完整（00-meta/ 到 08-reports/ + archive/）",
+                        "project.json 包含主题、平台、状态、版本",
+                        "workflow-definition.html 可正常打开"
+                    ],
+                    codeTemplate: "templates/init_project.py",
+                    references: ["references/project-structure.md"],
+                    status: "normal"
+                },
+                "step0-2": {
+                    name: "搜索词设计",
+                    definition: "采用正交搭配原则：【场景词/平台词/行为词】×【功能/缺点/体验词】，不预设具体功能方向，让用户的真实表达决定主题分布。从手机系统层面出发，非APP功能层面。",
+                    input: "调研主题、目标平台、初步方向",
+                    output: "search-keywords.json（结构化）、search-keywords.md（人类可读）",
+                    checkpoints: [
+                        "采用正交搭配：场景词/平台词/行为词 × 功能/缺点/体验词",
+                        "不预设具体功能方向",
+                        "从手机系统层面出发，非APP功能层面",
+                        "无同质化词",
+                        "语义不通的组合已剔除"
+                    ],
+                    codeTemplate: "templates/search_keyword_design.py",
+                    references: ["references/search-keyword-design.md"],
+                    status: "modified"
+                },
+                "step0-3": {
+                    name: "数据采集",
+                    definition: "使用爬虫或工具按搜索词采集多平台原始数据",
+                    input: "搜索词清单、平台配置",
+                    output: "*.jsonl（按搜索词分文件）、crawl-log.json",
+                    checkpoints: [
+                        "每个搜索词采集量≥100条",
+                        "保存原始数据不做清洗",
+                        "记录采集时间、数量、异常"
+                    ],
+                    codeTemplate: "templates/data_collection.py",
+                    references: ["references/data-collection.md"],
+                    status: "normal"
+                },
+                "step0-4": {
+                    name: "数据清洗",
+                    definition: "标准化格式、转换互动量、合并文本、质量检查",
+                    input: "原始数据文件（JSONL/Excel/SQLite）",
+                    output: "cleaned_data.parquet、cleaning_report.json",
+                    checkpoints: [
+                        "互动量标准化（parse_count处理万+/逗号）",
+                        "文本合并（title+desc→text）",
+                        "搜索词分布检查",
+                        "异常值处理记录"
+                    ],
+                    codeTemplate: "templates/data_cleaning.py",
+                    references: ["references/sqlite-data-source.md"],
+                    status: "normal"
+                },
+                "step1-1": {
+                    name: "主题聚类分析",
+                    definition: "构建主题词典，匹配每条内容的主题，统计分布",
+                    input: "清洗后数据",
+                    output: "topic_stats.json、topic_content_map.csv",
+                    checkpoints: [
+                        "主题词典覆盖业务场景",
+                        "主题分布合理（无过度集中）",
+                        "识别内容空白和热点"
+                    ],
+                    codeTemplate: "templates/topic_clustering.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step1-2": {
+                    name: "需求信号提取",
+                    definition: "从文本中提取痛点、决策、求助、行为、期望信号",
+                    input: "清洗后数据",
+                    output: "signal_stats.json、signal_details.csv",
+                    checkpoints: [
+                        "信号词典覆盖主要情绪",
+                        "统计各信号类型出现频率",
+                        "识别高频痛点和期望"
+                    ],
+                    codeTemplate: "templates/signal_extract.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step1-3": {
+                    name: "内容质量评估",
+                    definition: "区分UGC和营销内容，评估内容真实度",
+                    input: "清洗后数据",
+                    output: "quality_stats.json",
+                    checkpoints: [
+                        "UGC/营销/混合/中性分类准确",
+                        "纯UGC内容占比≥30%",
+                        "各类型互动量对比合理"
+                    ],
+                    codeTemplate: "templates/content_quality.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step1-4": {
+                    name: "高价值内容识别",
+                    definition: "筛选高互动+高信号+纯UGC的内容",
+                    input: "主题、信号、质量分析结果",
+                    output: "high_value_stats.json、top_cases.json",
+                    checkpoints: [
+                        "互动量阈值合理（>5000或前20%）",
+                        "包含痛点或期望信号",
+                        "优先纯UGC内容"
+                    ],
+                    codeTemplate: "templates/high_value_identify.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step1-5": {
+                    name: "产品机会映射",
+                    definition: "基于评估矩阵对机会进行P0/P1/P2优先级排序",
+                    input: "主题分布、信号统计、高价值内容",
+                    output: "opportunities.json",
+                    checkpoints: [
+                        "评估矩阵5维度完整",
+                        "P0机会有数据支撑",
+                        "权重配置合理"
+                    ],
+                    codeTemplate: "templates/opportunity_mapping.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step1-6": {
+                    name: "三维标签化分析",
+                    definition: "从使用情境、触发-退出机制、用户群体三个维度深化分析",
+                    input: "清洗后数据",
+                    output: "usage_context_stats.json、trigger_exit_stats.json、user_group_stats.json",
+                    checkpoints: [
+                        "使用情境标签覆盖空间/身体/并行活动",
+                        "触发-退出机制覆盖触发/障碍/退出/情绪",
+                        "用户群体覆盖身份/阶段/设备/深度"
+                    ],
+                    codeTemplate: "templates/three_dimension_tagging.py",
+                    references: ["references/three-dimension-tagging.md"],
+                    status: "new"
+                },
+                "step2-1": {
+                    name: "用户画像提取",
+                    definition: "从文本中提取用户身份、阶段、设备、使用深度",
+                    input: "聚焦搜索的清洗后数据",
+                    output: "user_profile.json",
+                    checkpoints: [
+                        "身份标签识别准确",
+                        "阶段标签覆盖完整",
+                        "设备偏好统计"
+                    ],
+                    codeTemplate: "templates/user_profile.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step2-2": {
+                    name: "解决方案分析",
+                    definition: "分析用户当前使用的工具、平台、满意度",
+                    input: "聚焦搜索的清洗后数据",
+                    output: "solution_analysis.json",
+                    checkpoints: [
+                        "工具识别完整（APP/平台/小程序）",
+                        "使用频率和场景提取",
+                        "满意度从情绪推断"
+                    ],
+                    codeTemplate: "templates/solution_analysis.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step2-3": {
+                    name: "痛点深度分析",
+                    definition: "分类统计7类痛点，识别强度和典型场景",
+                    input: "聚焦搜索的清洗后数据",
+                    output: "pain_analysis.json",
+                    checkpoints: [
+                        "7类痛点分类准确",
+                        "痛点强度量化",
+                        "典型场景提取"
+                    ],
+                    codeTemplate: "templates/pain_analysis.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step2-4": {
+                    name: "期望功能分析",
+                    definition: "分类统计8类期望功能，评估优先级和实现难度",
+                    input: "聚焦搜索的清洗后数据",
+                    output: "expectation_analysis.json",
+                    checkpoints: [
+                        "8类期望覆盖完整",
+                        "优先级排序合理",
+                        "实现难度评估"
+                    ],
+                    codeTemplate: "templates/expectation_analysis.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step2-5": {
+                    name: "付费意愿与隐私",
+                    definition: "分析付费信号和隐私顾虑",
+                    input: "聚焦搜索的清洗后数据",
+                    output: "payment_privacy.json",
+                    checkpoints: [
+                        "付费信号识别（愿意/广告/敏感/试用）",
+                        "隐私顾虑提取",
+                        "价格敏感度评估"
+                    ],
+                    codeTemplate: "templates/payment_privacy.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step3-1": {
+                    name: "洞察生成",
+                    definition: "聚合两阶段分析结果，生成结构化洞察和机会矩阵",
+                    input: "两阶段所有分析结果",
+                    output: "insights.json、opportunity_matrix.json",
+                    checkpoints: [
+                        "核心洞察3-5条，有数据支撑",
+                        "机会矩阵完整",
+                        "P0机会有用户原声"
+                    ],
+                    codeTemplate: "templates/insight_generator.py",
+                    references: [],
+                    status: "normal"
+                },
+                "step3-2": {
+                    name: "搜索词优化",
+                    definition: "基于分析结果评估搜索效果，生成下一轮搜索词",
+                    input: "本轮分析结果、原始搜索词",
+                    output: "optimized-keywords.json",
+                    checkpoints: [
+                        "高覆盖低互动→减少搜索",
+                        "低覆盖高互动→增加搜索",
+                        "形成闭环反馈"
+                    ],
+                    codeTemplate: "templates/search_optimize.py",
+                    references: [],
+                    status: "new"
+                },
+                "step3-3": {
+                    name: "三件套交付",
+                    definition: "生成最终分析报告、过程技术报告、任务改进建议",
+                    input: "所有分析结果、洞察、代码",
+                    output: "final-analysis-report.html、technical-report.html、improvement-report.html",
+                    checkpoints: [
+                        "最终报告：洞察+机会+建议（酷炫交互）",
+                        "技术报告：每步方法+代码+参数（技术文档风）",
+                        "改进报告：方法论+工具+流程（结构化清单）"
+                    ],
+                    codeTemplate: "templates/report_generator.py",
+                    references: ["references/report-templates.md"],
+                    status: "normal"
+                }
+            }
+        };
+
+        function showDetail(stepId) {
+            const step = WORKFLOW_DEFINITION.steps[stepId];
+            if (!step) return;
+
+            document.getElementById('detailPanel').classList.add('active');
+            document.querySelector('.detail-overlay').classList.add('active');
+
+            document.getElementById('detailTitle').textContent = step.name;
+            document.getElementById('detailStepId').textContent = stepId;
+
+            let content = '';
+
+            // 定义
+            content += `<div class="detail-section">`;
+            content += `<h4>定义</h4>`;
+            content += `<p>${step.definition}</p>`;
+            content += `</div>`;
+
+            // 输入
+            content += `<div class="detail-section">`;
+            content += `<h4>输入</h4>`;
+            content += `<p>${step.input}</p>`;
+            content += `</div>`;
+
+            // 输出
+            content += `<div class="detail-section">`;
+            content += `<h4>输出</h4>`;
+            content += `<p>${step.output}</p>`;
+            content += `</div>`;
+
+            // 检查点
+            content += `<div class="detail-section">`;
+            content += `<h4>关键检查点</h4>`;
+            content += `<div class="checklist">`;
+            for (const cp of step.checkpoints) {
+                content += `<div class="checklist-item"><input type="checkbox"><span>${cp}</span></div>`;
+            }
+            content += `</div></div>`;
+
+            // 代码模板
+            content += `<div class="detail-section">`;
+            content += `<h4>代码模板</h4>`;
+            content += `<div class="code-ref">${step.codeTemplate}</div>`;
+            content += `</div>`;
+
+            // 参考文档
+            if (step.references.length > 0) {
+                content += `<div class="detail-section">`;
+                content += `<h4>参考文档</h4>`;
+                content += `<ul>`;
+                for (const ref of step.references) {
+                    content += `<li>${ref}</li>`;
+                }
+                content += `</ul></div>`;
+            }
+
+            document.getElementById('detailContent').innerHTML = content;
+        }
+
+        function closeDetail() {
+            document.getElementById('detailPanel').classList.remove('active');
+            document.querySelector('.detail-overlay').classList.remove('active');
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeDetail();
+        });
+    </script>
+</body>
+</html>

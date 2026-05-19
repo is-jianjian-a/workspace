@@ -1,0 +1,626 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下47条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 65/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_958
+平台: zhihu
+类型: comments
+内容: 我之前开会员追一部电视剧，最后四集没更新，我去翻评论有人说网上已经放出了全集，而且没有广告！！连澳门葡京都没有[捂脸]
+
+--- ITEM #2 ---
+ID: zhihu_comments_960
+平台: zhihu
+类型: comments
+内容: 一个Vip就够了，受不了Svip，还有超点，视频网站在把观众当猴耍，现在的剧更新还慢，想念以前一天更新三集，还不断更的日子
+
+--- ITEM #3 ---
+ID: zhihu_comments_961
+平台: zhihu
+类型: comments
+内容: 开会员无所谓，毕竟盗版不稳定，也经常卡，但是正版很多都是删减版，那看个屁
+
+--- ITEM #4 ---
+ID: zhihu_comments_963
+平台: zhihu
+类型: comments
+内容: 盗版不仅可以免费看正片 还能轻松跳过广告 而正版就算花钱开了会员也避不开广告 谁更良心不言而喻了吧
+
+--- ITEM #5 ---
+ID: zhihu_comments_964
+平台: zhihu
+类型: comments
+内容: 环境太次了，从视频暂停广告居中一小块进化到暂停瞬间放大占满屏幕直接恶心到我了，宁可看画质差一点的播放器也不用这些出生软件了[打招呼]
+
+--- ITEM #6 ---
+ID: zhihu_comments_966
+平台: zhihu
+类型: comments
+内容: 赞同 尤其是贴片广告 跳又跳不过误触一下又马上跳到其他app[生气]
+
+--- ITEM #7 ---
+ID: zhihu_comments_967
+平台: zhihu
+类型: comments
+内容: 因为开了会员还有一堆广告 还不如直接看点广告还不用花钱
+
+--- ITEM #8 ---
+ID: zhihu_comments_968
+平台: zhihu
+类型: comments
+内容: 现在的B站也是一片广告了，转转、神奇小鹿
+
+--- ITEM #9 ---
+ID: zhihu_comments_970
+平台: zhihu
+类型: comments
+内容: 会员投屏要么限时要么降低清晰度，会员还要分个三六九等
+
+--- ITEM #10 ---
+ID: zhihu_comments_971
+平台: zhihu
+类型: comments
+内容: B站良心，就算内容有广告，也可以拉着过！
+
+--- ITEM #11 ---
+ID: zhihu_comments_975
+平台: zhihu
+类型: comments
+内容: 还有一点，就是平台自制的电视电影里面，还会嵌入广告，管你什么会员，都得看[酷]
+
+--- ITEM #12 ---
+ID: zhihu_comments_976
+平台: zhihu
+类型: comments
+内容: 还有点了暂停大屏广告画面缩小屏，恶心死了
+
+--- ITEM #13 ---
+ID: zhihu_comments_977
+平台: zhihu
+类型: comments
+内容: 正版恶心在的花钱了，体验依旧底下，有些甚至还不如盗版
+
+--- ITEM #14 ---
+ID: zhihu_comments_978
+平台: zhihu
+类型: comments
+内容: 开了会员之后还有广告，确实有点儿顶
+
+--- ITEM #15 ---
+ID: zhihu_comments_980
+平台: zhihu
+类型: comments
+内容: 而且盗版还能直接右键跳过广告，现在爱优腾的广告都是独立的不合并在视频里，跳都不好跳[飙泪笑]
+
+--- ITEM #16 ---
+ID: zhihu_comments_981
+平台: zhihu
+类型: comments
+内容: [小情绪][小情绪]一想到我买了那么多会员，都会觉得自己就是个冤大头了。唉。。
+
+--- ITEM #17 ---
+ID: zhihu_comments_982
+平台: zhihu
+类型: comments
+内容: 我有会员，但我还是去盗版网站看，因为我发现正版的电影总是少几分钟，而且剧情有些片段衔接很怪。
+
+--- ITEM #18 ---
+ID: zhihu_comments_983
+平台: zhihu
+类型: comments
+内容: 阿B也开始加暂停广告了
+
+--- ITEM #19 ---
+ID: zhihu_comments_986
+平台: zhihu
+类型: comments
+内容: 现在甚至还有会员专属广告
+
+--- ITEM #20 ---
+ID: zhihu_comments_987
+平台: zhihu
+类型: comments
+内容: 上个月腾讯视频到期了,然后发现我看的视频本来就不需要vip,然后看了两集,一来50秒开屏广告没毛病,然后好玩的来了,一个带前后尾音乐的25分钟动漫,中途还能插2次广告进来,葡京还只插一次呢,还没有开屏广告,还能拖进度条跳过.
+
+--- ITEM #21 ---
+ID: zhihu_comments_988
+平台: zhihu
+类型: comments
+内容: 对付费这件事的看法不同吧
+
+--- ITEM #22 ---
+ID: zhihu_comments_989
+平台: zhihu
+类型: comments
+内容: 也不是说不愿意看正版。对于我来说最主要的就是比如说你只有优酷视频的会员，但是这个视频优酷上没有仅仅为了一部电视剧就上其它的视频网站开会员感觉有点不值。更坑爹的是有些电视剧优酷以前有，但是现在又没有了比如说宫心计，优酷以前能看，现在只能在腾讯和咕米上看了
+
+--- ITEM #23 ---
+ID: zhihu_comments_990
+平台: zhihu
+类型: comments
+内容: 翻译烂和和谐删减版你没提，看了半天你也是正版受害者，B站那么多和谐删减版，除非你从来不看吧[捂脸]
+
+--- ITEM #24 ---
+ID: zhihu_comments_991
+平台: zhihu
+类型: comments
+内容: 真的点了，尤其是一些视频软件，盗版的广告加起来不到1分钟，正版的就很神了，在我开了VIP之后依旧还是要看广告，还要开SVIP，我知道广告赞助商什么的，但是作为观众，广告实在是太多了
+
+--- ITEM #25 ---
+ID: zhihu_comments_992
+平台: zhihu
+类型: comments
+内容: 盗版网站还大字提示：视频出现任何广告都不要相信。正版网站广告链接点击直接都跳转了[魔性笑]
+
+--- ITEM #26 ---
+ID: zhihu_comments_994
+平台: zhihu
+类型: comments
+内容: 因为没钱的人看盗版，因为没钱看广告也不会买那东西，所以放广告没用。有钱人看正版，正版里的广告正好给有钱人指路，让他们去消费
+
+--- ITEM #27 ---
+ID: zhihu_comments_995
+平台: zhihu
+类型: comments
+内容: 主要是这盗版的广告都能跳得过去，正版的广告没人敢写这规则，没有哪个软件敢拦截。
+
+--- ITEM #28 ---
+ID: zhihu_comments_998
+平台: zhihu
+类型: comments
+内容: 正版上了就一分半广告[赞]
+
+--- ITEM #29 ---
+ID: zhihu_comments_999
+平台: zhihu
+类型: comments
+内容: @知乎用户sANKuC  @阅尽人间春色  @守旧派芙蓉王源 你还别嗦 盗版广告少甚至没广告就已经秒了[生气]
+
+--- ITEM #30 ---
+ID: zhihu_comments_1000
+平台: zhihu
+类型: comments
+内容: 好嘛，葡京广告深入人心，广受欢迎[思考]
+
+--- ITEM #31 ---
+ID: zhihu_comments_1001
+平台: zhihu
+类型: comments
+内容: 就像高赞回答里提到的，盗版资源也只敢在角落放几个标识，最多插三五秒广告，因为他们知道，广告多了就没人看了。盗版的核心竞争力，就是极致的用户体验：无干扰、无限制、低成本。而正版平台，却常常把用户当成“韭菜”，用各种套路收割，自然会把观众推向盗版。
+
+--- ITEM #32 ---
+ID: zhihu_comments_1002
+平台: zhihu
+类型: comments
+内容: b站出了作者收费 我也取消会员了
+
+--- ITEM #33 ---
+ID: zhihu_comments_1005
+平台: zhihu
+类型: comments
+内容: 吃相太难看了 特么看电影看没几分钟还能弹个小窗悬浮广告 真是牛[大笑]  暂停看细节直接一个全屏广告 还灵敏的很 一下就跳转了 切个后台回去 诶～开屏广告又跳出来一次
+
+--- ITEM #34 ---
+ID: zhihu_comments_1006
+平台: zhihu
+类型: comments
+内容: 最恶心的是，会员专属推荐和暂停广告，广告就广告，还专属，暂停那个，你猜我为什么暂停，就是为了看清楚细节啊，你又给我广告，真的是恶心妈妈给恶心开门，恶心到家了
+
+--- ITEM #35 ---
+ID: zhihu_comments_1007
+平台: zhihu
+类型: comments
+内容: 最烦暂停后弹窗广告了，老子赞同就是为了看的更清楚找细节，它特么拿广告给我挡住了[生气]
+
+--- ITEM #36 ---
+ID: zhihu_comments_1008
+平台: zhihu
+类型: comments
+内容: 直接挂🪜。啥都能看还是高清的。一个月加起来不超过30块钱
+
+--- ITEM #37 ---
+ID: zhihu_comments_1011
+平台: zhihu
+类型: comments
+内容: 会的，下载抖音前一年能看十来本，下载后一本都很困难了
+
+--- ITEM #38 ---
+ID: zhihu_comments_1012
+平台: zhihu
+类型: comments
+内容: 当身边的东西都变成这种模式，普通人真的很难逃脱
+
+--- ITEM #39 ---
+ID: zhihu_comments_1014
+平台: zhihu
+类型: comments
+内容: 我们做抖音的才是最痛苦的，想卸载抖音又不敢卸载
+
+--- ITEM #40 ---
+ID: zhihu_comments_1018
+平台: zhihu
+类型: comments
+内容: 所以我不下载、不安装、不刷抖音快手，听歌一般在B站[酷]
+
+--- ITEM #41 ---
+ID: zhihu_comments_1020
+平台: zhihu
+类型: comments
+内容: 也不是算法吧，人性就是如此。在这之前网络小说也一直都有黄金三章的说法。现在是比黄金三章更变态了，你看现在小说一堆花里胡哨的名字，恨不得把爆点让你在标题就能看到
+
+--- ITEM #42 ---
+ID: zhihu_comments_1024
+平台: zhihu
+类型: comments
+内容: 我男朋友也是，每天都要打视频很久，有时候压根就是尬聊，他还不挂。吃个饭洗个衣服洗个碗都要视频。这样也影响效率。导致我每天想自己呆会时间放空都没有，还打乱了我的生活节奏。说啥也不听。不然就是生气拉黑。我说了能不能有一天不联系我让我静下来想些东西做些自己的事情也不行。
+
+--- ITEM #43 ---
+ID: zhihu_comments_1025
+平台: zhihu
+类型: comments
+内容: 我跟我老公也是异地 之前我们一般打两个小时电话 他觉得打电话太久了没私人空间，就改成半小时偶尔超出一下1小时，他还是觉得很烦没话说没私人空间，如果每天半小时都不交流，也不是每周见面，那还有感情可以维系，他觉得每天对我都有压力，我无法理解，移情别恋了？ 厌恶我了？
+
+--- ITEM #44 ---
+ID: zhihu_comments_1026
+平台: zhihu
+类型: comments
+内容: 我怎么跟你反着，从来都是他给我打视频，最近更可怕，只要他不在实验室的时间都在给我打视频，没话说也打，我真是想不通咋想的。
+
+--- ITEM #45 ---
+ID: zhihu_comments_1027
+平台: zhihu
+类型: comments
+内容: 同意！神烦这种，这种有意思的我看原视频不香吗？如果是二创鬼畜也行啊！关键是它就来几副定格漫画，也不是再创作啊[生气]
+
+--- ITEM #46 ---
+ID: zhihu_comments_1031
+平台: zhihu
+类型: comments
+内容: 他们是为了为了原创，给系统贴上二创标签。为了盗用别人优质引人的视频素材不被追究，加入引用机制[思考]
+
+--- ITEM #47 ---
+ID: zhihu_comments_1032
+平台: zhihu
+类型: comments
+内容: 视频一开始噹一声音效，结尾土拨鼠站起来啊一声惨叫。
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_065
+
+开始分析：

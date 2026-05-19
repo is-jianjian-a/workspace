@@ -1,0 +1,532 @@
+{
+  "batch_id": 55,
+  "total_items": 42,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 32,
+      "general_video": 10
+    },
+    "type_distribution": {
+      "behavior_description": 33,
+      "pain_point": 6,
+      "feature_request": 3
+    },
+    "topic_distribution": {
+      "other": 37,
+      "screen_cast": 3,
+      "content_recommend": 2
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 41
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_167",
+      "text": "短视频用好了，也能增长见识和视野，学到很多知识，了解许多见闻，看怎么去筛选了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_173",
+      "text": "透彻入里，从人性、家庭、社会逐层次递进分析。切中了我心中的思考点。   宜疏不宜堵这是一个非常符合人性的做法，物极必反的道理大家都懂，所以万事万物皆有两面，不能因噎废食。当一件事情的利大于弊则可为。   短视频只是当下的一种工具，工具本身无对无不对，无可无不可。刀能伤人，那是不是就禁止用刀呢？   孩子的教育在于家庭和家人，大人的一言一行就是孩子最好的教育！请记住，不要自己一边熬夜刷着视频玩着游戏",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_178",
+      "text": "不刷短视频不一定能上清华，但刷，一定上不了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_179",
+      "text": "也会出现新的矛盾，课上明确规定不允许带手机，可是就是会有人偷偷玩，其他人也跟着学，老师每节都要下来抓手机。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_182",
+      "text": "偷换概念而已。确实，对于自制力不高的、创造社会价值较低的人来说，刷视频和看电视、看小说之类的娱乐设施似乎无本质出入，反正谁沉迷就来一句，你自制力不够，与其影响别人，还不如好好躺着。那么，请问，抽烟、喝酒、吃槟榔和吸毒一样么？不要把利用人性的经营活动美化成社会安定的功臣，没有好的引导，自我发展必然不会有好的结果。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_183",
+      "text": "短视频的问题在意，可以虚假，但太超出实际现实了，可以架空，但不能毫无底线，不求你什么警示醒人，但至少你剧情可以正经一点吧，否则就实在是烂的毫无底线。。。什么为了养子虐待亲儿子，什么另一半出轨，大少爷绿帽哥委曲求全，毫无脾气且死活不走非要等什么狗屁销户口本的日期，完了突然莫名其妙幡然醒悟说什么爱的只有你，还要求原谅。。。太难看了，就特么不能编一点好看的剧情吗。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_185",
+      "text": "还真是[思考]不刷短视频，不玩游戏，你家孩子就去自主学习，发奋练题了吗？就能出人头地了？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_188",
+      "text": "是的呢，我女儿的舞蹈老师就给他们说过，说让他们轻易不要打游戏，因为他老公就是大厂游戏团队的，她说他老公部门的那些人为了让游戏更有吸引力，专门去学用户心理学的，设计的目的就是让人上瘾，不断充值打下去。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_189",
+      "text": "刷短视频，不知不觉时间就浪费掉了！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_191",
+      "text": "所以大人需要远离短视频，孩子更需要远离短视频[赞同][赞同][赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_192",
+      "text": "视频刷了一两个小时回想一下看了个寂寞。看啥东西都记不住了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_194",
+      "text": "赞同，短视频就是很短频快的占据精力，这样的刺激适应以后保持专注力就很难了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_195",
+      "text": "非常赞同，不能让孩子养成看短视频的习惯，多用其他方式引导孩子远离[赞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_196",
+      "text": "远离短视频，转为听音乐，可行不？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_198",
+      "text": "短视频就是信息快餐，通过不断刺激人的感官快速吸引眼球，本身信息门槛就低，根本就不需要去思考，但凡需要思考的短视频内容都没流量，推不到跟前，大数据推波助澜，一旦习惯就会被控制～[大笑]，不光小孩，老人也很容易中短视频的毒。哎…",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_199",
+      "text": "看来打组队游戏比刷短视频还好些，难怪电竞是一项运动[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_201",
+      "text": "我看短视频还得拿笔写下来，基本记不住[捂脸][捂脸][捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_204",
+      "text": "绝大多数上瘾行为，都是人体的多巴胺作祟，而且越简单越容易分泌多巴胺的行为越容易上瘾，例如抽烟或刷短视频。多巴胺的问题是，阈值会越来越高，需要更多的刺激才能满足。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_205",
+      "text": "当我休息的时候，顺手就会打开短视频，有点上瘾行为了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_208",
+      "text": "所以问题的关键不是短视频，而是看视频不思考🤔，如果边看短视频边思考它说的是啥，说的对不对，那是不是也没什么问题。可是我都看短视频了，还要费脑子吗[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_209",
+      "text": "短视频之于孩子，堪比可卡因，不知不觉、无色无味地中毒",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_210",
+      "text": "幸好我自己都不看短视频。也不让孩子看",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_211",
+      "text": "看完你的文章，我的脑海浮现了一个问题，“沉浸在游戏、短视频和音乐的环境中是否会有和玩游戏、刷视频、听音乐效果”（我怕过一会想不起这个问题，先写在评论里，然后我去 ai 一下，然后去全网搜索，我现在特别容易有想法，但也特别容易忘记想法[捂脸]）提问环境背景：大学寝室，室友在玩游戏、刷视频、听音乐，[小情绪]虽然我有时候也会“玩游戏、刷视频、听音乐”",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_213",
+      "text": "请问，看电影一类的长视频，会和看短视频出现一样的情况嘛？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_217",
+      "text": "是的呢，我女儿的舞蹈老师就给他们说过，说让他们轻易不要打游戏，因为他老公就是大厂游戏团队的，她说他老公部门的那些人为了让游戏更有吸引力，专门去学用户心理学的，设计的目的就是让人上瘾，不断充值打下去。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_221",
+      "text": "那为什么国家不控制短视频？还让它危害社会！！？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_223",
+      "text": "我的抖音就是用来看电视剧电影的！ 因为它免费[捂脸]！其次用来学摄影课！ 因为它也有很多免费的课程！ 再者，给小孩子搜课题做笔记！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_225",
+      "text": "不只是短视频，所有可以不用付出努力、快速产生多巴胺的行为都会上瘾并损伤大脑。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_227",
+      "text": "你还是写明一下 短视频和手游",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_230",
+      "text": "新式鸦片，以前都是烟枪烟灯大烟炮，呵呵，现在只要一部手机。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_232",
+      "text": "没必要卸载哔站吧，别没事打开刷，但是也没必要卸载。哔站也是一个很好的知识平台，平时遇到什么不懂的比如安装网线修电脑都可以去哔站上面找教程",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_234",
+      "text": "我2025年360小时阅读时长，但眼睛是真的伤，有点遭住不了，准备365打卡结束后换回kindle墨水屏了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_237",
+      "text": "博主有什么书单推荐吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_238",
+      "text": "怎么设置时间限制？求问[拜托]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_239",
+      "text": "果断卸载短视频软件，是最好的办法。自然会找些有意义的事做。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_240",
+      "text": "以前挑战过一个月不看抖音，小红书，b站，期间想看视频的时候，就用听音乐或者读书来代替。运动属于健康类的问题，和手机使用关系不大",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_242",
+      "text": "卸载抖音，b站，微信设置青少年模式，关闭短视频。有点像古人戒大烟。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_243",
+      "text": "不碰电脑，不看短视频，一个月看一两次电视，生活会变得更精彩。而且不止一点点，而是差十万八千里。 思想的贫穷限制了普通人的想象。除了玩手机，很多更有意义的事情都发生在人与人，人与自然，运动，冥想，等其他范围中。[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_245",
+      "text": "短视频应用都卸载光了，除了微信视频号(可以隐藏起来)",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_248",
+      "text": "嗯？条条大路通废柴 你要真是那块料  一个抖音 b站能给你废了？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_249",
+      "text": "分析透彻。短视频占据大脑发呆的时间，占据人们聊天的时间，可是人们还自以为在休息，在放松。实际上看短视频的过程中，手没有停歇，眼睛没有休息，脑袋也在高速运转，情绪和内心也在不断变化，这是一种没有感觉到疲劳的疲劳。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_251",
+      "text": "说的太好啦，给你点赞，现代人深度思考能力真的不行。我以前沉迷短视频的时候每天浑浑噩噩，虽然没体会过吸大烟是什么感觉，但是我想这样的感觉也差不多。只想快乐几分钟是几分钟，刷上就根本停不下来。只有后来我读完了一本书决心改变，读完一本又一本。最起码我现在知道什么对我是正确的，我也能抵制住诱惑。比如我要去点外卖，突然淘宝跳出一个链接，我会关掉。要是换以前没准先要刷20分钟才想起来原来我是要点外卖的。许许多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

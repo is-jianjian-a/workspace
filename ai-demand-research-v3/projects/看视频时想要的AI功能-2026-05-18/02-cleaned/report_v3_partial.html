@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>看视频时想要的AI功能 - 深度需求调研报告</title>
+<style>
+:root{--primary:#4f46e5;--secondary:#7c3aed;--bg:#f8fafc;--card:#fff;--text:#1e293b;--text-light:#64748b;--border:#e2e8f0;--success:#10b981;--warning:#f59e0b;--info:#3b82f6;--danger:#ef4444;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.container{max-width:1200px;margin:0 auto;padding:20px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);color:white;padding:50px 40px;border-radius:16px;margin-bottom:30px}
+.header h1{font-size:2.2em;margin-bottom:12px}
+.header .subtitle{font-size:1.1em;opacity:0.9;margin-bottom:24px}
+.header .meta{display:flex;gap:24px;flex-wrap:wrap;font-size:0.9em;opacity:0.85}
+.section{background:var(--card);padding:32px;border-radius:12px;margin-bottom:24px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.section h2{font-size:1.4em;margin-bottom:20px;padding-bottom:12px;border-bottom:2px solid var(--border);color:var(--primary)}
+.section h3{font-size:1.15em;margin:24px 0 12px;color:var(--secondary)}
+.section h4{font-size:1em;margin:16px 0 8px}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:24px}
+.stat-card{background:linear-gradient(135deg,#f0f4ff 0%,#e0e7ff 100%);padding:20px;border-radius:10px;border-left:4px solid var(--primary)}
+.stat-card .number{font-size:2em;font-weight:700;color:var(--primary)}
+.stat-card .label{color:var(--text-light);font-size:0.9em;margin-top:4px}
+.bar-chart{display:flex;flex-direction:column;gap:10px;margin:20px 0}
+.bar-item{display:flex;align-items:center;gap:12px}
+.bar-label{width:140px;font-size:0.9em;text-align:right;flex-shrink:0}
+.bar-track{flex:1;height:28px;background:var(--border);border-radius:4px;overflow:hidden}
+.bar-fill{height:100%;border-radius:4px;display:flex;align-items:center;justify-content:flex-end;padding-right:8px;font-size:0.8em;font-weight:600;color:white}
+.bar-value{width:50px;font-size:0.85em;color:var(--text-light);flex-shrink:0}
+.ugc-item{background:#f8fafc;border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:12px}
+.ugc-item .ugc-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.ugc-item .platform{font-size:0.85em;font-weight:600;color:var(--primary);background:#e0e7ff;padding:2px 10px;border-radius:12px}
+.ugc-item .likes{font-size:0.85em;color:var(--text-light)}
+.ugc-item .title{font-weight:600;margin-bottom:6px}
+.ugc-item .content{font-size:0.9em;color:var(--text-light);margin-bottom:10px;line-height:1.5}
+.ugc-item .tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{display:inline-block;padding:3px 10px;border-radius:12px;font-size:0.8em;font-weight:500}
+.tag-l1{background:#e0e7ff;color:var(--primary)}
+.tag-l2{background:#f3e8ff;color:var(--secondary)}
+.tag-emotion{background:#fef3c7;color:#92400e}
+.tag-scene{background:#d1fae5;color:#065f46}
+.logic-chain{background:linear-gradient(135deg,#f0f9ff 0%,#e0f2fe 100%);border-left:4px solid var(--info);padding:20px;border-radius:8px;margin:16px 0}
+.logic-chain .step{display:flex;align-items:flex-start;gap:12px;margin-bottom:12px}
+.logic-chain .step-num{background:var(--info);color:white;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.8em;font-weight:600;flex-shrink:0}
+.logic-chain .arrow{text-align:center;color:var(--info);font-size:1.2em;margin:8px 0}
+.insight-box{background:linear-gradient(135deg,#fefce8 0%,#fef9c3 100%);border-left:4px solid var(--warning);padding:16px 20px;border-radius:8px;margin:16px 0}
+.rec-box{background:linear-gradient(135deg,#f0fdf4 0%,#dcfce7 100%);border-left:4px solid var(--success);padding:16px 20px;border-radius:8px;margin:16px 0}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.collapsible{background:var(--card);border:1px solid var(--border);border-radius:8px;margin-bottom:12px;overflow:hidden}
+.collapsible-header{padding:14px 16px;background:#f8fafc;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.collapsible-header:hover{background:#f1f5f9}
+.collapsible-content{padding:16px;display:none}
+.collapsible-content.active{display:block}
+.toggle-icon{transition:transform 0.3s}
+.toggle-icon.rotated{transform:rotate(180deg)}
+table{width:100%;border-collapse:collapse;margin-top:16px;font-size:0.9em}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border)}
+th{background:#f8fafc;font-weight:600;color:var(--text-light);font-size:0.85em}
+tr:hover{background:#f8fafc}
+@media(max-width:768px){.two-col{grid-template-columns:1fr}.header h1{font-size:1.6em}.bar-label{width:100px;font-size:0.8em}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>🎬 看视频时想要的AI功能</h1>
+<div class="subtitle">深度需求调研报告 - 基于523条社交媒体UGC的完整逻辑分析</div>
+<div class="meta">
+<span>📅 2026-05-18</span>
+<span>📊 小红书 | 抖音 | 快手 | B站 | 知乎</span>
+<span>🔍 搜索词: "看视频时想要的AI功能"</span>
+<span>🤖 语义理解 + 规则增强 (排除社交/互动干扰)</span>
+</div>
+</div>
+
+<div class="section">
+<h2>📋 执行摘要</h2>
+<p style="margin-bottom:16px">
+本次调研采集了<strong>523条</strong>社交媒体UGC，经过三层筛选（排除无关内容、排除社交/互动干扰词、语义分类），
+最终识别出<strong>185条</strong>与"看视频时想要的AI功能"真正相关的用户表达。
+核心发现：<strong>视频生成/编辑</strong>是最强需求信号（118条，占有效UGC的63.8%），
+其次是<strong>学习/笔记</strong>（47条，25.4%）和<strong>内容搜索/定位</strong>（37条，20.0%）。
+</p>
+<div class="stats-grid">
+<div class="stat-card"><div class="number">523</div><div class="label">总采集UGC</div></div>
+<div class="stat-card"><div class="number">185</div><div class="label">有效相关UGC</div></div>
+<div class="stat-card"><div class="number">10</div><div class="label">识别需求主题</div></div>
+<div class="stat-card"><div class="number">32</div><div class="label">细分功能点</div></div>
+</div>
+</div>
+
+<div class="section">
+<h2>📊 数据概览与筛选逻辑</h2>
+
+<h3>筛选过程（三层过滤）</h3>
+<div class="logic-chain">
+<div class="step"><div class="step-num">1</div><div class="step-content"><strong>原始采集</strong>：523条UGC（小红书94 + 抖音87 + 快手119 + B站105 + 知乎118）</div></div>
+<div class="arrow">↓</div>
+<div class="step"><div class="step-num">2</div><div class="step-content"><strong>排除明显无关</strong>：过滤AI生图教程、编程工具、育儿内容、纯AI资讯等 → 剩余311条</div></div>
+<div class="arrow">↓</div>
+<div class="step"><div class="step-num">3</div><div class="step-content"><strong>排除社交/互动干扰</strong>：去掉纯"分享转发"、"弹幕评论"、"一起看"、"AI对话"等无实质功能需求的表达 → 剩余216条</div></div>
+<div class="arrow">↓</div>
+<div class="step"><div class="step-num">4</div><div class="step-content"><strong>语义分类</strong>：对216条进行10个主题、32个功能点分类 → 有效相关185条</div></div>
+</div>
+
+<h3>平台分布</h3>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label">快手</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#ff6600">119</div></div><div class="bar-value">22.8%</div></div>
+<div class="bar-item"><div class="bar-label">知乎</div><div class="bar-track"><div class="bar-fill" style="width:99.15966386554622%;background:#0084ff">118</div></div><div class="bar-value">22.6%</div></div>
+<div class="bar-item"><div class="bar-label">B站</div><div class="bar-track"><div class="bar-fill" style="width:88.23529411764706%;background:#00a1d6">105</div></div><div class="bar-value">20.1%</div></div>
+<div class="bar-item"><div class="bar-label">小红书</div><div class="bar-track"><div class="bar-fill" style="width:78.99159663865547%;background:#ff2442">94</div></div><div class="bar-value">18.0%</div></div>
+<div class="bar-item"><div class="bar-label">抖音</div><div class="bar-track"><div class="bar-fill" style="width:73.10924369747899%;background:#000000">87</div></div><div class="bar-value">16.6%</div></div>
+</div>
+
+<div class="insight-box">
+<strong>数据质量洞察</strong>：523条原始UGC中，仅185条（35.4%）与"看视频时想要的AI功能"主题真正相关。
+大量内容为AI生图技巧（如"AI抽卡"、"提示词技巧"）、编程工具（如"Cursor"、"Vibe Coding"）、
+纯AI工具对比（如"五大AI区别"）等无关信息。<strong>建议优化搜索词</strong>，使用更精准的关键词组合如"看视频痛点"、"视频功能需求"。
+</div>
+</div>
+
+<div class="section">
+<h2>🎯 一层主题深度分析</h2>
+<p style="margin-bottom:20px;color:var(--text-light)">
+以下分析基于185条有效相关UGC。每个主题包含：典型UGC原文 → 分类依据 → 分布统计 → 交互量分析 → 产品建议推导。
+<strong style="color:var(--danger)">注意：已排除"社交/分享"和"互动/问答"主题</strong>，聚焦真实视频AI功能需求。
+</p>
+
+<h3>主题分布总览</h3>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label">视频生成/编辑</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#4f46e5">118</div></div><div class="bar-value">63.8%</div></div>
+<div class="bar-item"><div class="bar-label">学习/笔记</div><div class="bar-track"><div class="bar-fill" style="width:39.83050847457627%;background:#7c3aed">47</div></div><div class="bar-value">25.4%</div></div>
+<div class="bar-item"><div class="bar-label">内容搜索/定位</div><div class="bar-track"><div class="bar-fill" style="width:31.35593220338983%;background:#ec4899">37</div></div><div class="bar-value">20.0%</div></div>
+<div class="bar-item"><div class="bar-label">视频摘要/总结</div><div class="bar-track"><div class="bar-fill" style="width:25.423728813559322%;background:#f59e0b">30</div></div><div class="bar-value">16.2%</div></div>
+<div class="bar-item"><div class="bar-label">智能推荐/过滤</div><div class="bar-track"><div class="bar-fill" style="width:22.88135593220339%;background:#10b981">27</div></div><div class="bar-value">14.6%</div></div>
+<div class="bar-item"><div class="bar-label">语音/字幕相关</div><div class="bar-track"><div class="bar-fill" style="width:21.1864406779661%;background:#3b82f6">25</div></div><div class="bar-value">13.5%</div></div>
+<div class="bar-item"><div class="bar-label">情感/氛围</div><div class="bar-track"><div class="bar-fill" style="width:11.864406779661017%;background:#8b5cf6">14</div></div><div class="bar-value">7.6%</div></div>
+<div class="bar-item"><div class="bar-label">画质/修复</div><div class="bar-track"><div class="bar-fill" style="width:11.016949152542372%;background:#06b6d4">13</div></div><div class="bar-value">7.0%</div></div>
+<div class="bar-item"><div class="bar-label">效率/倍速</div><div class="bar-track"><div class="bar-fill" style="width:10.16949152542373%;background:#f97316">12</div></div><div class="bar-value">6.5%</div></div>
+<div class="bar-item"><div class="bar-label">跨设备/同步</div><div class="bar-track"><div class="bar-fill" style="width:7.627118644067797%;background:#84cc16">9</div></div><div class="bar-value">4.9%</div></div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 视频生成/编辑 (118条, 平均点赞9342)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 118条 (63.8%)</p>
+<p><strong>平均点赞:</strong> 9342</p>
+<p><strong>最高点赞:</strong> 396152</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 快手(32), B站(26), 知乎(25)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(20), 惊喜/兴奋(14), 困惑/迷茫(7)</p>
+<p><strong>主要场景:</strong> 工作/学习(26), 吃饭/碎片(6), 睡前/休息(4)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 396152</span>
+</div>
+<div class="title">最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程</div>
+<div class="content">最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 208696</span>
+</div>
+<div class="title">【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/</div>
+<div class="content">这个视频的课程研发 整体特别特别辛苦的···
+然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是
+请一定要【一键三连】
+请一定要【一键三连】
+请一定要【一键三连】
+
+课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~
+进粉丝群的话，在后台回复【我是铁粉】或...</div>
+<div class="tags">
+<span class="tag tag-l2">自动剪辑</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">氛围音效</span>
+<span class="tag tag-emotion">期待/渴望</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 127580</span>
+</div>
+<div class="title">国产免费的AI生成视频工具！让你悄悄躺平！🔥 #ai #ai工具 #自媒体 #干货分享 #短视频</div>
+<div class="content">国产免费的AI生成视频工具！让你悄悄躺平！🔥 #ai #ai工具 #自媒体 #干货分享 #短视频...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span>
+
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">82</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">自动剪辑</div><div class="bar-track"><div class="bar-fill" style="width:45.1219512195122%;background:#8b5cf6">37</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">二创工具</div><div class="bar-track"><div class="bar-fill" style="width:19.51219512195122%;background:#8b5cf6">16</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:17.073170731707318%;background:#8b5cf6">14</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:12.195121951219512%;background:#8b5cf6">10</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从118条UGC观察到用户对"视频生成/编辑"的需求表达，
+平均互动量9342，主要出现在xhs, dy平台，
+伴随情绪以期待/渴望, frustration为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 学习/笔记 (47条, 平均点赞6328)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 47条 (25.4%)</p>
+<p><strong>平均点赞:</strong> 6328</p>
+<p><strong>最高点赞:</strong> 208696</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(14), B站(13), 抖音(10)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(19), 惊喜/兴奋(15), 困惑/迷茫(8)</p>
+<p><strong>主要场景:</strong> 工作/学习(35), 家庭/陪伴(4), 吃饭/碎片(2)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 208696</span>
+</div>
+<div class="title">【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/</div>
+<div class="content">这个视频的课程研发 整体特别特别辛苦的···
+然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是
+请一定要【一键三连】
+请一定要【一键三连】
+请一定要【一键三连】
+
+课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~
+进粉丝群的话，在后台回复【我是铁粉】或...</div>
+<div class="tags">
+<span class="tag tag-l2">自动剪辑</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">氛围音效</span>
+<span class="tag tag-emotion">期待/渴望</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 26306</span>
+</div>
+<div class="title">AI视频细节一致性技巧 做AI视频，最怕的就是视频只能生成15秒。15秒之后，人物形象突变、位置乱跑，配音乱换，到底该怎么办？ 这一期，一帆老师带你学习AI影视细节控制方法，从形象、声音、位置、动作四个维度，帮你把人物一致性焊死在视频里。 新手也能直接上手，帮你告别反复“抽卡”！  
+ #AI视频 #AI影视  #AI教程 #AI视频一致性 #ai新星计划</div>
+<div class="content">AI视频细节一致性技巧 做AI视频，最怕的就是视频只能生成15秒。15秒之后，人物形象突变、位置乱跑，配音乱换，到底该怎么办？ 这一期，一帆老师带你学习AI影视细节控制方法，从形象、声音、位置、动作四个维度，帮你把人物一致性焊死在视频里。 新手也能直接上手，帮你告别反复“抽卡”！  
+ #AI视频 #AI影视  #AI教程 #AI视频一致性 #ai新星计划...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">学习管理</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 9303</span>
+</div>
+<div class="title">AI视频最大的问题，被Blender解决了</div>
+<div class="content">本期我们来学习如何利用Blender+Nano Banana 2+Seedance2.0实现完美的AI运动控制
+如果有帮助到你的话可以三连加关注支持一下~...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">学习管理</span>
+
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">33</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">知识提取</div><div class="bar-track"><div class="bar-fill" style="width:54.54545454545454%;background:#8b5cf6">18</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:51.515151515151516%;background:#8b5cf6">17</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:48.484848484848484%;background:#8b5cf6">16</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">实时翻译</div><div class="bar-track"><div class="bar-fill" style="width:24.242424242424242%;background:#8b5cf6">8</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从47条UGC观察到用户对"学习/笔记"的需求表达，
+平均互动量6328，主要出现在xhs, dy平台，
+伴随情绪以困惑/迷茫, 期待/渴望为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 内容搜索/定位 (37条, 平均点赞698)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 37条 (20.0%)</p>
+<p><strong>平均点赞:</strong> 698</p>
+<p><strong>最高点赞:</strong> 6138</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 抖音(15), 知乎(10), 小红书(7)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(15), 惊喜/兴奋(12), 困惑/迷茫(5)</p>
+<p><strong>主要场景:</strong> 工作/学习(10), 家庭/陪伴(3), 吃饭/碎片(3)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">快手</span>
+<span class="likes">👍 6138</span>
+</div>
+<div class="title">快手AI智能搜索深度思考#ai  #快手智能搜索</div>
+<div class="content">快手AI智能搜索深度思考#ai  #快手智能搜索...</div>
+<div class="tags">
+
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 3964</span>
+</div>
+<div class="title">感谢Google这个AI让我实现无痛看paper</div>
+<div class="content">📝谷歌推出的笔记AI工具NotebookLM！好用！
+	
+📝可以上传文档，网页链接，youtube链接，也可以直接倒入google drive里的doc和slides，很方便
+	
+📝它会以你想要的形式自己帮你概括重点，也可以直接以提问的方式让它把你需要的信息定位到paper的具体位置，喂教授的slide给它可以自动生成课程笔记📝
+	
+📻最牛的是可以把文章直接转成播客的形式，AI会生成一男一女对话，...</div>
+<div class="tags">
+<span class="tag tag-l2">片段定位</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span>
+<span class="tag tag-emotion">困惑/迷茫</span><span class="tag tag-emotion">期待/渴望</span><span class="tag tag-emotion">惊喜/兴奋</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 2964</span>
+</div>
+<div class="title">一句话，让你的🦞可以全网抓信息</div>
+<div class="content">传统的方法让 OpenClaw 上网是折腾搜索工具，API、配置，费劲巴拉，花钱也未必好用。
+	
+今天教你一个邪修方式：不搞搜索工具，只用爬虫工具 + URL 转 Markdown 服务，搓一个 skill，🦞 上网又好又快。
+	
+其实只需要一句话，在装了 skill-creator 之后，跟你的 OpenClaw 讲：
+	
+「现在给我做一个 skill，当我需要上网搜信息的时候，使用这个服务：在...</div>
+<div class="tags">
+
+
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">12</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:91.66666666666666%;background:#8b5cf6">11</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">知识提取</div><div class="bar-track"><div class="bar-fill" style="width:66.66666666666666%;background:#8b5cf6">8</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">关键词高亮</div><div class="bar-track"><div class="bar-fill" style="width:50.0%;background:#8b5cf6">6</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">片段定位</div><div class="bar-track"><div class="bar-fill" style="width:41.66666666666667%;background:#8b5cf6">5</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从37条UGC观察到用户对"内容搜索/定位"的需求表达，
+平均互动量698，主要出现在xhs, dy平台，
+伴随情绪以困惑/迷茫, 期待/渴望为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 视频摘要/总结 (30条, 平均点赞2105)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 30条 (16.2%)</p>
+<p><strong>平均点赞:</strong> 2105</p>
+<p><strong>最高点赞:</strong> 34917</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(10), B站(8), 小红书(7)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(15), 惊喜/兴奋(11), 困惑/迷茫(5)</p>
+<p><strong>主要场景:</strong> 工作/学习(15), 吃饭/碎片(2), 家庭/陪伴(1)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 34917</span>
+</div>
+<div class="title">AI真的能看懂视频了吗？</div>
+<div class="content">AI总结视频这回真的可以更准确了～...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 8145</span>
+</div>
+<div class="title">全网没人告诉你的AI视频总结方法！1分钟看完3小时视频（提取文案、做笔记、双语翻译、思维导图全搞定!）</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">实时翻译</span><span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">笔记工具</span><span class="tag tag-l2">知识提取</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 2490</span>
+</div>
+<div class="title">如何用AI克隆视频版的你自己（完整工作流）</div>
+<div class="content">【视频简介】
+本期视频分享如何利用AI工具，从脚本到成片，掌握高效制作自媒体视频的4个关键步骤。
+
+【视频章节】
+00:00～00:30 引言
+00:31～01:30 AI拆解分镜
+01:31～02:40 AI生成真人口播
+02:41～04:14 AI生成CG素材
+04:15～06:29 AI生成真人视频
+06:30～07:00 总结
+
+【相关链接】
+镜分脚本助手：https://www.doub...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">章节拆分</span><span class="tag tag-l2">AI生成视频</span>
+
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">30</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">知识提取</div><div class="bar-track"><div class="bar-fill" style="width:46.666666666666664%;background:#8b5cf6">14</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:40.0%;background:#8b5cf6">12</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">实时翻译</div><div class="bar-track"><div class="bar-fill" style="width:30.0%;background:#8b5cf6">9</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:30.0%;background:#8b5cf6">9</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从30条UGC观察到用户对"视频摘要/总结"的需求表达，
+平均互动量2105，主要出现在xhs, dy平台，
+伴随情绪以期待/渴望, 惊喜/兴奋为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 智能推荐/过滤 (27条, 平均点赞16059)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 27条 (14.6%)</p>
+<p><strong>平均点赞:</strong> 16059</p>
+<p><strong>最高点赞:</strong> 396152</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(10), 小红书(7), 抖音(6)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(13), 惊喜/兴奋(9), 疲惫/厌倦(4)</p>
+<p><strong>主要场景:</strong> 工作/学习(14), 吃饭/碎片(2), 睡前/休息(1)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 396152</span>
+</div>
+<div class="title">最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程</div>
+<div class="content">最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 9783</span>
+</div>
+<div class="title">我对个大AI软件前后期印象差</div>
+<div class="content">#软件推荐[话题]# #表格[话题]# #软件[话题]# #神仙软件[话题]# #仅个人观点[话题]# #仅代表我个人看法哟[话题]# #AI聊天[话题]# 别圈钱了Ok？...</div>
+<div class="tags">
+
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 9144</span>
+</div>
+<div class="title">这个AI工具帮你一秒看完你正在看的视频🐸 #人工智能 #玩儿个很新的东西 #干货分享 #大数据推荐给有需要的人 #科技改变生活</div>
+<div class="content">这个AI工具帮你一秒看完你正在看的视频🐸 #人工智能 #玩儿个很新的东西 #干货分享 #大数据推荐给有需要的人 #科技改变生活...</div>
+<div class="tags">
+
+
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">10</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:90.0%;background:#8b5cf6">9</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:70.0%;background:#8b5cf6">7</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">知识提取</div><div class="bar-track"><div class="bar-fill" style="width:70.0%;background:#8b5cf6">7</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">兴趣推荐</div><div class="bar-track"><div class="bar-fill" style="width:60.0%;background:#8b5cf6">6</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从27条UGC观察到用户对"智能推荐/过滤"的需求表达，
+平均互动量16059，主要出现在xhs, dy平台，
+伴随情绪以期待/渴望, 惊喜/兴奋为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 语音/字幕相关 (25条, 平均点赞855)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 25条 (13.5%)</p>
+<p><strong>平均点赞:</strong> 855</p>
+<p><strong>最高点赞:</strong> 8145</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(12), B站(6), 小红书(4)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(14), 惊喜/兴奋(11), 困惑/迷茫(6)</p>
+<p><strong>主要场景:</strong> 工作/学习(15), 通勤/路上(1), 吃饭/碎片(1)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 8145</span>
+</div>
+<div class="title">全网没人告诉你的AI视频总结方法！1分钟看完3小时视频（提取文案、做笔记、双语翻译、思维导图全搞定!）</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">实时翻译</span><span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">笔记工具</span><span class="tag tag-l2">知识提取</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 3804</span>
+</div>
+<div class="title">一个视频教会你该如何AI配音和加字幕</div>
+<div class="content">-...</div>
+<div class="tags">
+<span class="tag tag-l2">字幕生成</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 2368</span>
+</div>
+<div class="title">用豆包电脑版一键总结视频内容👏 还在一帧一帧记网课笔记、啃B站干货吗？其实现在用AI，几秒钟就能把全网视频内容一键总结，学习效率直接翻倍！
+我最近都用豆包电脑版，操作超简单：把视频链接粘进去，说一句“帮我总结视频内容”，它自动转写+划分章节，连表达逻辑、爆点、关键词都整理好，还能直接翻译和生成摘要。
+想做思维导图也不难，只要用结构词引导，AI就能帮你梳理成超清晰的框架。网课、技能课、行业分析视频，我现在全靠它高效整理，真的太香了，强烈推荐大家都试试呢~
+#ai新星计划 #效率神器 #ai提效 #ai工具 #豆包电脑版</div>
+<div class="content">用豆包电脑版一键总结视频内容👏 还在一帧一帧记网课笔记、啃B站干货吗？其实现在用AI，几秒钟就能把全网视频内容一键总结，学习效率直接翻倍！
+我最近都用豆包电脑版，操作超简单：把视频链接粘进去，说一句“帮我总结视频内容”，它自动转写+划分章节，连表达逻辑、爆点、关键词都整理好，还能直接翻译和生成摘要。
+想做思维导图也不难，只要用结构词引导，AI就能帮你梳理成超清晰的框架。网课、技能课、行业分析视频，...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">章节拆分</span><span class="tag tag-l2">实时翻译</span><span class="tag tag-l2">关键词高亮</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">画质增强</span>
+<span class="tag tag-emotion">期待/渴望</span>
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">15</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">字幕生成</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">15</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">实时翻译</div><div class="bar-track"><div class="bar-fill" style="width:86.66666666666667%;background:#8b5cf6">13</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:73.33333333333333%;background:#8b5cf6">11</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">知识提取</div><div class="bar-track"><div class="bar-fill" style="width:66.66666666666666%;background:#8b5cf6">10</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从25条UGC观察到用户对"语音/字幕相关"的需求表达，
+平均互动量855，主要出现在xhs, dy平台，
+伴随情绪以惊喜/兴奋, 期待/渴望为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 情感/氛围 (14条, 平均点赞15900)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 14条 (7.6%)</p>
+<p><strong>平均点赞:</strong> 15900</p>
+<p><strong>最高点赞:</strong> 208696</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(8), 小红书(3), B站(2)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(5), 惊喜/兴奋(5), 困惑/迷茫(4)</p>
+<p><strong>主要场景:</strong> 工作/学习(7), 吃饭/碎片(2), 睡前/休息(2)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 208696</span>
+</div>
+<div class="title">【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/</div>
+<div class="content">这个视频的课程研发 整体特别特别辛苦的···
+然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是
+请一定要【一键三连】
+请一定要【一键三连】
+请一定要【一键三连】
+
+课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~
+进粉丝群的话，在后台回复【我是铁粉】或...</div>
+<div class="tags">
+<span class="tag tag-l2">自动剪辑</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">氛围音效</span>
+<span class="tag tag-emotion">期待/渴望</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 9634</span>
+</div>
+<div class="title">告别AI视频僵硬假脸！3招让你的AI人物表情活起来</div>
+<div class="content">分享3个告别AI视频假脸感的方法，新手也能直接套用，配合联想YOGA Pro 16 Aura AI元启版，第三代英特尔® 酷睿™ Ultra 7处理器，全能旗舰、大“显”身手，实现沉浸式、高效率创作。...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">氛围音效</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 1382</span>
+</div>
+<div class="title">不靠运气，这款AI如何连续引爆全球社交媒体？</div>
+<div class="content">-
+最近，你们应该经常刷到类似这样的视频[暗中观察R]
+	
+很多人把自己放进了🇰🇷职业棒球赛场的大屏里，转播镜头精准对焦，观众席的光打过来，还原真实的球场转播氛围。
+	
+有一条在ins上非常火，播放量破2200万，点赞超140万。评论区很多人都在问，到底是怎么做的？
+很多人不知道的是，这些爆款出圈的视频背后，用到的都是可灵。
+	
+而这，已经不是它第一次引发这种级别的全球传播了。
+在过去半年里，可灵...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">氛围音效</span>
+<span class="tag tag-emotion">frustration</span><span class="tag tag-emotion">困惑/迷茫</span>
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">情绪适配</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">8</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:87.5%;background:#8b5cf6">7</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">氛围音效</div><div class="bar-track"><div class="bar-fill" style="width:75.0%;background:#8b5cf6">6</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:62.5%;background:#8b5cf6">5</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">自动剪辑</div><div class="bar-track"><div class="bar-fill" style="width:62.5%;background:#8b5cf6">5</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从14条UGC观察到用户对"情感/氛围"的需求表达，
+平均互动量15900，主要出现在xhs, dy平台，
+伴随情绪以frustration, 困惑/迷茫为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 画质/修复 (13条, 平均点赞650)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 13条 (7.0%)</p>
+<p><strong>平均点赞:</strong> 650</p>
+<p><strong>最高点赞:</strong> 2368</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(8), 小红书(3), 抖音(1)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(9), 惊喜/兴奋(5), 疲惫/厌倦(3)</p>
+<p><strong>主要场景:</strong> 工作/学习(6), 睡前/休息(2), 家庭/陪伴(1)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 2368</span>
+</div>
+<div class="title">用豆包电脑版一键总结视频内容👏 还在一帧一帧记网课笔记、啃B站干货吗？其实现在用AI，几秒钟就能把全网视频内容一键总结，学习效率直接翻倍！
+我最近都用豆包电脑版，操作超简单：把视频链接粘进去，说一句“帮我总结视频内容”，它自动转写+划分章节，连表达逻辑、爆点、关键词都整理好，还能直接翻译和生成摘要。
+想做思维导图也不难，只要用结构词引导，AI就能帮你梳理成超清晰的框架。网课、技能课、行业分析视频，我现在全靠它高效整理，真的太香了，强烈推荐大家都试试呢~
+#ai新星计划 #效率神器 #ai提效 #ai工具 #豆包电脑版</div>
+<div class="content">用豆包电脑版一键总结视频内容👏 还在一帧一帧记网课笔记、啃B站干货吗？其实现在用AI，几秒钟就能把全网视频内容一键总结，学习效率直接翻倍！
+我最近都用豆包电脑版，操作超简单：把视频链接粘进去，说一句“帮我总结视频内容”，它自动转写+划分章节，连表达逻辑、爆点、关键词都整理好，还能直接翻译和生成摘要。
+想做思维导图也不难，只要用结构词引导，AI就能帮你梳理成超清晰的框架。网课、技能课、行业分析视频，...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">章节拆分</span><span class="tag tag-l2">实时翻译</span><span class="tag tag-l2">关键词高亮</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">画质增强</span>
+<span class="tag tag-emotion">期待/渴望</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">B站</span>
+<span class="likes">👍 1540</span>
+</div>
+<div class="title">AI视频太模糊？3步输出电影级4k质感画面</div>
+<div class="content">这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；
+如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。
+那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；
+话不多说，点赞收藏，开始上课。...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">画质增强</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 1474</span>
+</div>
+<div class="title">想学什么都可以自己生成专属网课了</div>
+<div class="content">AI 已经可以生成符合你喜好的专属网课了。只要告诉它你想学什么，比如试着输入「区块链入门」，它立刻就能从网上帮搜一堆优质电子书、课程资料，然后让你选具体想学哪一章，接着会自动生成一整套课件 + 视频。重点是——还有AI老师配套讲解，一边放 PPT 一边讲得头头是道，完全就是你专属的私教。
+它还可以自定义。比如你可以选讲解风格：要不要细一点？有没有比喻？语速快慢？讲解声音想要男声女声、活泼一点还是冷...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">画质增强</span>
+<span class="tag tag-emotion">期待/渴望</span><span class="tag tag-emotion">惊喜/兴奋</span>
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">画质增强</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">12</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:66.66666666666666%;background:#8b5cf6">8</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:33.33333333333333%;background:#8b5cf6">4</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:33.33333333333333%;background:#8b5cf6">4</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">自动剪辑</div><div class="bar-track"><div class="bar-fill" style="width:33.33333333333333%;background:#8b5cf6">4</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从13条UGC观察到用户对"画质/修复"的需求表达，
+平均互动量650，主要出现在xhs, dy平台，
+伴随情绪以期待/渴望, 惊喜/兴奋为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 效率/倍速 (12条, 平均点赞538)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 12条 (6.5%)</p>
+<p><strong>平均点赞:</strong> 538</p>
+<p><strong>最高点赞:</strong> 2876</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(7), 小红书(5)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(7), 惊喜/兴奋(6), frustration(3)</p>
+<p><strong>主要场景:</strong> 工作/学习(5), 吃饭/碎片(2), 运动/健身(1)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 2876</span>
+</div>
+<div class="title">🔥从故事到成片,Agent自动搭建短剧全流程</div>
+<div class="content">最近用 YouArt 做了一条真人短片《让座》🎬
+#00:00[时刻]#-#00:07[时刻]# 精彩片段
+#00:08[时刻]#-#00:26[时刻]# 工作流整体介绍
+#00:27[时刻]#-#00:45[时刻]# 生成视觉资产
+#00:46[时刻]#-#00:53[时刻]# 拆解分镜
+#00:54[时刻]#-#01:12[时刻]# 生成分镜图
+#01:13[时刻]#-#01:56[时刻]# ...</div>
+<div class="tags">
+<span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">自动剪辑</span><span class="tag tag-l2">跳过广告</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 1192</span>
+</div>
+<div class="title">🇰🇷金爱烂作家访谈，大家看了嘛✨</div>
+<div class="content">看完손석희主持的《질문자들》金爱烂篇，被金爱烂的言语狠狠戳中，在这场访谈里，终于明白为什么无数人会偏爱她的文字💛
+	
+✨被问及人类与AI的区别
+“人有而AI没有的，是犹豫。
+倾听他人的烦恼与痛苦时，人会有咽下某些话、踌躇、揣测的瞬间。
+那份犹豫里，藏着艰难支撑的体谅与体面！
+比起流畅快速的AI建议，人类笨拙的沉默，反而更能带来安慰，更能抚慰人心。”
+	
+✨被问及短视频时代下的文学困境
+“我会担忧人...</div>
+<div class="tags">
+<span class="tag tag-l2">智能倍速</span><span class="tag tag-l2">内容精简</span>
+<span class="tag tag-emotion">frustration</span><span class="tag tag-emotion">期待/渴望</span><span class="tag tag-emotion">惊喜/兴奋</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">小红书</span>
+<span class="likes">👍 1061</span>
+</div>
+<div class="title">视频→AI提取→Obsidian入库，知识管理新方法</div>
+<div class="content">偶然发现一个Obsidian 学习搭子「Ai好记」，
+	
+让我最近又成功地从繁忙的学业和工作中“偷”到了不少时间。
+	
+我每天要看和处理大量的视频、播客和会议录音。有时候看到 AI 大佬、学术大咖更新了油管视频，明知道内容优质，却一看到时长动辄一小时甚至更久，就开始犯难，经常还没看几分钟就被其他事情打断施法，最后不了了之。
+	
+[暗中观察R]我现在的视频知识处理工作流：
+	
+1.  碰到优质但冗长...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">实时翻译</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">跳过广告</span>
+<span class="tag tag-emotion">惊喜/兴奋</span>
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">7</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">跳过广告</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">7</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能倍速</div><div class="bar-track"><div class="bar-fill" style="width:57.14285714285714%;background:#8b5cf6">4</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">实时翻译</div><div class="bar-track"><div class="bar-fill" style="width:57.14285714285714%;background:#8b5cf6">4</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">知识提取</div><div class="bar-track"><div class="bar-fill" style="width:57.14285714285714%;background:#8b5cf6">4</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从12条UGC观察到用户对"效率/倍速"的需求表达，
+平均互动量538，主要出现在xhs, zhihu平台，
+伴随情绪以frustration, 期待/渴望为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+<div class="collapsible">
+<div class="collapsible-header" onclick="toggleCollapse(this)">
+<span>📌 跨设备/同步 (9条, 平均点赞22)</span>
+<span class="toggle-icon">▼</span>
+</div>
+<div class="collapsible-content">
+
+<h4>📊 数据画像</h4>
+<div class="two-col">
+<div>
+<p><strong>UGC数量:</strong> 9条 (4.9%)</p>
+<p><strong>平均点赞:</strong> 22</p>
+<p><strong>最高点赞:</strong> 74</p>
+</div>
+<div>
+<p><strong>主要平台:</strong> 知乎(8), 抖音(1)</p>
+<p><strong>主要情绪:</strong> 期待/渴望(4), 惊喜/兴奋(3), 焦虑/急迫(1)</p>
+<p><strong>主要场景:</strong> 家庭/陪伴(3), 工作/学习(3)</p>
+</div>
+</div>
+
+<h4>📝 典型UGC与分类依据</h4>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">知乎</span>
+<span class="likes">👍 74</span>
+</div>
+<div class="title">如何在观看学习类视频时做到高效学习？（expect take  notes ） ?</div>
+<div class="content">最近几年我感觉互联网上增量的学习资源里，纯文本的越来越少，反而视频和播客越来越多了，究其原因，也许是移动互联网兴起、带宽流量提速降费的大背景下，创作者和受众之间的某种双向选择吧。视频、播客有助于塑造个人 IP，也能为受众提供更丰富的感官刺激，是更利于传播的内容载体。但从学习的角度讲，视频、博客并不是好的材料，且不说短视频、茧房、内容质量等问题，单纯从接收和学习的方式上讲：阅读是一个主动的动作，天然...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">字幕生成</span><span class="tag tag-l2">片段定位</span><span class="tag tag-l2">负面屏蔽</span><span class="tag tag-l2">笔记工具</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">多端同步</span>
+<span class="tag tag-emotion">期待/渴望</span>
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">抖音</span>
+<span class="likes">👍 62</span>
+</div>
+<div class="title">一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑</div>
+<div class="content">一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑...</div>
+<div class="tags">
+<span class="tag tag-l2">自动剪辑</span><span class="tag tag-l2">投屏控制</span>
+
+</div>
+</div>
+
+<div class="ugc-item">
+<div class="ugc-header">
+<span class="platform">知乎</span>
+<span class="likes">👍 37</span>
+</div>
+<div class="title">用这3款AI看视频，一分钟抓取视频内容，学习10倍提效！</div>
+<div class="content">我们现在大部分的学习场景，可能都变成了看视频，更方便，也更直观，也更加高效。但是就算是有2倍速，3倍速的功能，有时候还是觉得“刷”起来太慢了，跳着看又怕遗漏一些细节。咋个办？找ai帮忙啊。最近很多粉丝加到我就有两个场景想解决：1.ai能够快速总结视频课程内容。2.ai能够识别课程中的视觉信息。第二个是比较难的，目前对于ai来讲有难度，视觉识图已经普及了。视频视觉识别还在发展中。所以今天重点盘点三款...</div>
+<div class="tags">
+<span class="tag tag-l2">智能摘要</span><span class="tag tag-l2">章节拆分</span><span class="tag tag-l2">实时翻译</span><span class="tag tag-l2">AI生成视频</span><span class="tag tag-l2">笔记工具</span><span class="tag tag-l2">知识提取</span><span class="tag tag-l2">学习管理</span><span class="tag tag-l2">智能倍速</span><span class="tag tag-l2">多端同步</span>
+<span class="tag tag-emotion">焦虑/急迫</span><span class="tag tag-emotion">困惑/迷茫</span><span class="tag tag-emotion">期待/渴望</span><span class="tag tag-emotion">惊喜/兴奋</span>
+</div>
+</div>
+
+<h4>🔍 二层主题分布</h4>
+<div class="bar-chart">
+<div class="bar-item"><div class="bar-label" style="width:120px">多端同步</div><div class="bar-track"><div class="bar-fill" style="width:100.0%;background:#8b5cf6">7</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">AI生成视频</div><div class="bar-track"><div class="bar-fill" style="width:57.14285714285714%;background:#8b5cf6">4</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">学习管理</div><div class="bar-track"><div class="bar-fill" style="width:57.14285714285714%;background:#8b5cf6">4</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">投屏控制</div><div class="bar-track"><div class="bar-fill" style="width:42.857142857142854%;background:#8b5cf6">3</div></div></div>
+<div class="bar-item"><div class="bar-label" style="width:120px">智能摘要</div><div class="bar-track"><div class="bar-fill" style="width:42.857142857142854%;background:#8b5cf6">3</div></div></div>
+</div>
+
+<div class="logic-chain">
+<div class="step">
+<div class="step-num">→</div>
+<div class="step-content">
+<strong>推导逻辑</strong>：从9条UGC观察到用户对"跨设备/同步"的需求表达，
+平均互动量22，主要出现在dy, zhihu平台，
+伴随情绪以焦虑/急迫, 困惑/迷茫为主。
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,25 @@
+{
+  "total_vocs": 135,
+  "batch_size": 45,
+  "total_batches": 3,
+  "batches": [
+    {
+      "batch_id": 1,
+      "start_idx": 0,
+      "end_idx": 45,
+      "count": 45
+    },
+    {
+      "batch_id": 2,
+      "start_idx": 45,
+      "end_idx": 90,
+      "count": 45
+    },
+    {
+      "batch_id": 3,
+      "start_idx": 90,
+      "end_idx": 135,
+      "count": 45
+    }
+  ]
+}

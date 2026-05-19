@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宝爸宝妈育儿收集需求 - 调研分析报告 v2</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; background: #0f172a; color: #e2e8f0; line-height: 1.6; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 2.5em; text-align: center; margin: 40px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+  h2 { font-size: 1.8em; margin: 40px 0 20px; color: #94a3b8; border-left: 4px solid #667eea; padding-left: 15px; }
+  h3 { font-size: 1.3em; margin: 25px 0 15px; color: #cbd5e1; }
+  .summary-box { background: linear-gradient(135deg, #1e293b 0%, #334155 100%); border-radius: 12px; padding: 30px; margin: 20px 0; border: 1px solid #475569; }
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+  .stat-card { background: #1e293b; border-radius: 10px; padding: 20px; text-align: center; border: 1px solid #334155; }
+  .stat-number { font-size: 2em; font-weight: bold; color: #667eea; }
+  .stat-label { color: #94a3b8; margin-top: 5px; }
+  .chart-container { background: #1e293b; border-radius: 10px; padding: 20px; margin: 20px 0; border: 1px solid #334155; }
+  .bar-chart { display: flex; flex-direction: column; gap: 10px; }
+  .bar-item { display: flex; align-items: center; gap: 10px; }
+  .bar-label { width: 140px; text-align: right; font-size: 0.9em; color: #cbd5e1; }
+  .bar-track { flex: 1; height: 28px; background: #334155; border-radius: 14px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 14px; display: flex; align-items: center; justify-content: flex-end; padding-right: 10px; font-size: 0.8em; font-weight: bold; color: white; transition: width 0.5s ease; }
+  .opportunity-card { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); border-radius: 12px; padding: 25px; margin: 15px 0; border: 1px solid #475569; border-left: 4px solid #667eea; }
+  .opportunity-title { font-size: 1.3em; color: #e2e8f0; margin-bottom: 10px; }
+  .opportunity-meta { display: flex; gap: 20px; flex-wrap: wrap; margin: 10px 0; }
+  .meta-tag { background: #334155; padding: 4px 12px; border-radius: 20px; font-size: 0.85em; color: #94a3b8; }
+  .evidence-section { background: #0f172a; border-radius: 8px; padding: 15px; margin: 15px 0; }
+  .evidence-title { color: #667eea; font-weight: bold; margin-bottom: 10px; }
+  .ugc-item { background: #1e293b; border-radius: 6px; padding: 12px; margin: 8px 0; border-left: 3px solid #475569; }
+  .ugc-title { color: #e2e8f0; font-size: 0.95em; margin-bottom: 5px; }
+  .ugc-meta { color: #64748b; font-size: 0.8em; }
+  .formula-box { background: #0f172a; border: 1px solid #475569; border-radius: 8px; padding: 20px; margin: 15px 0; font-family: 'Courier New', monospace; }
+  .formula-title { color: #667eea; font-weight: bold; margin-bottom: 10px; }
+  .highlight { color: #667eea; font-weight: bold; }
+  .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; margin: 2px; }
+  .tag-emotion { background: #7c3aed; color: white; }
+  .tag-signal { background: #059669; color: white; }
+  .tag-scene { background: #dc2626; color: white; }
+  .tag-theme { background: #2563eb; color: white; }
+  .tag-quality-ugc { background: #10b981; color: white; }
+  .tag-quality-marketing { background: #f59e0b; color: white; }
+  .tag-quality-neutral { background: #64748b; color: white; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  th, td { padding: 12px; text-align: left; border-bottom: 1px solid #334155; }
+  th { background: #1e293b; color: #94a3b8; font-weight: 600; }
+  tr:hover { background: #1e293b; }
+  .phase-indicator { display: flex; justify-content: center; gap: 10px; margin: 30px 0; flex-wrap: wrap; }
+  .phase-dot { width: 12px; height: 12px; border-radius: 50%; background: #334155; }
+  .phase-dot.active { background: #667eea; box-shadow: 0 0 10px #667eea; }
+  .footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9em; }
+  .insight-box { background: linear-gradient(135deg, #1e3a5f 0%, #1e293b 100%); border-radius: 10px; padding: 20px; margin: 15px 0; border-left: 4px solid #10b981; }
+  .insight-title { color: #10b981; font-weight: bold; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>宝爸宝妈育儿收集需求</h1>
+  <p style="text-align: center; color: #94a3b8; margin-bottom: 40px;">基于小红书508条笔记的AI产品需求调研分析 | v2.0</p>
+  
+  <div class="phase-indicator">
+    <div class="phase-dot active" title="项目初始化"></div>
+    <div class="phase-dot active" title="搜索词设计"></div>
+    <div class="phase-dot active" title="数据采集"></div>
+    <div class="phase-dot active" title="数据清洗"></div>
+    <div class="phase-dot active" title="场景发现"></div>
+    <div class="phase-dot" title="现状分析"></div>
+    <div class="phase-dot" title="洞察生成"></div>
+    <div class="phase-dot" title="搜索优化"></div>
+    <div class="phase-dot" title="报告交付"></div>
+  </div>
+
+  <h2>📊 数据概览</h2>
+  <div class="summary-box">
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-number">508</div>
+        <div class="stat-label">有效笔记</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">5</div>
+        <div class="stat-label">搜索关键词</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">84.7万</div>
+        <div class="stat-label">总点赞</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">56.2万</div>
+        <div class="stat-label">总收藏</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">156</div>
+        <div class="stat-label">高价值内容</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">1</div>
+        <div class="stat-label">数据平台</div>
+      </div>
+    </div>
+  </div>
+
+  <h2>📈 搜索词分布</h2>
+  <div class="chart-container">
+    <div class="bar-chart">
+      <div class="bar-item">
+        <div class="bar-label">孕期</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 100%; background: linear-gradient(90deg, #667eea, #764ba2);">105条</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">产后</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 99%; background: linear-gradient(90deg, #667eea, #764ba2);">104条</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">早教</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 96%; background: linear-gradient(90deg, #667eea, #764ba2);">101条</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">备孕</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 95%; background: linear-gradient(90deg, #667eea, #764ba2);">100条</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">育儿</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 93%; background: linear-gradient(90deg, #667eea, #764ba2);">98条</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>🏷️ 一层主题分布</h2>
+  <div class="chart-container">
+    <div class="bar-chart">
+      <div class="bar-item">
+        <div class="bar-label">信息获取</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 100.0%; background: linear-gradient(90deg, #059669, #10b981);">235条 (46.3%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">知识收集</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 62.6%; background: linear-gradient(90deg, #059669, #10b981);">147条 (28.9%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">情绪表达</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 61.7%; background: linear-gradient(90deg, #059669, #10b981);">145条 (28.5%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">知识分享</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 61.7%; background: linear-gradient(90deg, #059669, #10b981);">145条 (28.5%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">经验求助</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 35.7%; background: linear-gradient(90deg, #059669, #10b981);">84条 (16.5%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">产品工具</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 33.2%; background: linear-gradient(90deg, #059669, #10b981);">78条 (15.4%)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>🔍 二层主题分布 (TOP 15)</h2>
+  <div class="chart-container">
+    <div class="bar-chart">
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">知识收集→早教启蒙</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 100.0%; background: linear-gradient(90deg, #dc2626, #f87171);">120条 (23.6%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">经验求助→教育问题</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 80.0%; background: linear-gradient(90deg, #dc2626, #f87171);">96条 (18.9%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">产后恢复→情绪心理</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 70.8%; background: linear-gradient(90deg, #dc2626, #f87171);">85条 (16.7%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">知识收集→发育知识</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 69.2%; background: linear-gradient(90deg, #dc2626, #f87171);">83条 (16.3%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">知识收集→健康护理</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 65.8%; background: linear-gradient(90deg, #dc2626, #f87171);">79条 (15.6%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">知识收集→心理情绪</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 62.5%; background: linear-gradient(90deg, #dc2626, #f87171);">75条 (14.8%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">产后恢复→职场回归</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 50.8%; background: linear-gradient(90deg, #dc2626, #f87171);">61条 (12.0%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">产后恢复→身体恢复</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 45.8%; background: linear-gradient(90deg, #dc2626, #f87171);">55条 (10.8%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">知识收集→喂养知识</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 39.2%; background: linear-gradient(90deg, #dc2626, #f87171);">47条 (9.3%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">孕期管理→孕期知识</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 38.3%; background: linear-gradient(90deg, #dc2626, #f87171);">46条 (9.1%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">知识收集→睡眠知识</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 29.2%; background: linear-gradient(90deg, #dc2626, #f87171);">35条 (6.9%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">孕期管理→营养饮食</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 24.2%; background: linear-gradient(90deg, #dc2626, #f87171);">29条 (5.7%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">孕期管理→孕期不适</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 15.8%; background: linear-gradient(90deg, #dc2626, #f87171);">19条 (3.7%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">经验求助→喂养问题</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 12.5%; background: linear-gradient(90deg, #dc2626, #f87171);">15条 (3.0%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label" style="font-size: 0.8em;">经验求助→行为问题</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 11.7%; background: linear-gradient(90deg, #dc2626, #f87171);">14条 (2.8%)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>😊 情绪分布</h2>
+  <div class="chart-container">
+    <div class="bar-chart">
+      <div class="bar-item">
+        <div class="bar-label">焦虑</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 100.0%; background: linear-gradient(90deg, #7c3aed, #a78bfa);">87条 (17.1%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">疲惫</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 92.0%; background: linear-gradient(90deg, #7c3aed, #a78bfa);">80条 (15.7%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">幸福</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 77.0%; background: linear-gradient(90deg, #7c3aed, #a78bfa);">67条 (13.2%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">后悔</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 75.9%; background: linear-gradient(90deg, #7c3aed, #a78bfa);">66条 (13.0%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">愤怒</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 47.1%; background: linear-gradient(90deg, #7c3aed, #a78bfa);">41条 (8.1%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">无助</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 12.6%; background: linear-gradient(90deg, #7c3aed, #a78bfa);">11条 (2.2%)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>📡 需求信号分布</h2>
+  <div class="chart-container">
+    <div class="bar-chart">
+      <div class="bar-item">
+        <div class="bar-label">行为信号</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 100.0%; background: linear-gradient(90deg, #ea580c, #fb923c);">209条 (41.1%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">痛点信号</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 86.1%; background: linear-gradient(90deg, #ea580c, #fb923c);">180条 (35.4%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">期望信号</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 59.3%; background: linear-gradient(90deg, #ea580c, #fb923c);">124条 (24.4%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">决策信号</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 50.2%; background: linear-gradient(90deg, #ea580c, #fb923c);">105条 (20.7%)</div>
+        </div>
+      </div>
+      <div class="bar-item">
+        <div class="bar-label">求助信号</div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 30.1%; background: linear-gradient(90deg, #ea580c, #fb923c);">63条 (12.4%)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2>🎯 产品机会矩阵</h2>
+
+  <div class="opportunity-card">
+    <div class="opportunity-title">P1: 育儿知识智能收集与整理</div>
+    <p style="color: #94a3b8; margin: 10px 0;">帮助宝妈自动收集、分类、整理散落在各平台的育儿知识，支持按月龄/主题/场景自动归档</p>
+    <div class="opportunity-meta">
+      <span class="meta-tag">📊 证据笔记: 275条</span>
+      <span class="meta-tag">👍 点赞: 708,150</span>
+      <span class="meta-tag">⭐ 收藏: 439,616</span>
+      <span class="meta-tag">🏷️ 信号: 知识收集, 信息获取</span>
+    </div>
+    <div class="formula-box">
+      <div class="formula-title">评分公式</div>
+      <div>综合评分 = Σ(笔记点赞数 + 笔记收藏数 × 2) = 1,587,382</div>
+      <div style="margin-top: 8px; color: #64748b; font-size: 0.9em;">收藏权重×2反映知识类内容的保存意愿高于点赞</div>
+    </div>
+  </div>
+
+  <div class="opportunity-card">
+    <div class="opportunity-title">P2: 育儿内容个性化推荐</div>
+    <p style="color: #94a3b8; margin: 10px 0;">根据宝宝月龄、宝妈需求、当前场景推荐精准的育儿内容，解决信息过载问题</p>
+    <div class="opportunity-meta">
+      <span class="meta-tag">📊 证据笔记: 179条</span>
+      <span class="meta-tag">👍 点赞: 548,114</span>
+      <span class="meta-tag">⭐ 收藏: 372,103</span>
+      <span class="meta-tag">🏷️ 信号: 知识分享, 决策信号</span>
+    </div>
+    <div class="formula-box">
+      <div class="formula-title">评分公式</div>
+      <div>综合评分 = Σ(笔记点赞数 + 笔记收藏数 × 2) = 1,292,320</div>
+      <div style="margin-top: 8px; color: #64748b; font-size: 0.9em;">收藏权重×2反映知识类内容的保存意愿高于点赞</div>
+    </div>
+  </div>
+
+  <div class="opportunity-card">
+    <div class="opportunity-title">P3: 产后情绪支持与心理疏导</div>
+    <p style="color: #94a3b8; margin: 10px 0;">识别宝妈产后情绪状态，提供个性化情绪支持和心理疏导，预防产后抑郁</p>
+    <div class="opportunity-meta">
+      <span class="meta-tag">📊 证据笔记: 107条</span>
+      <span class="meta-tag">👍 点赞: 360,828</span>
+      <span class="meta-tag">⭐ 收藏: 152,106</span>
+      <span class="meta-tag">🏷️ 信号: 情绪表达, 产后抑郁, 焦虑</span>
+    </div>
+    <div class="formula-box">
+      <div class="formula-title">评分公式</div>
+      <div>综合评分 = Σ(笔记点赞数 + 笔记收藏数 × 2) = 665,040</div>
+      <div style="margin-top: 8px; color: #64748b; font-size: 0.9em;">收藏权重×2反映知识类内容的保存意愿高于点赞</div>
+    </div>
+  </div>
+
+  <div class="opportunity-card">
+    <div class="opportunity-title">P4: 育儿经验智能问答</div>
+    <p style="color: #94a3b8; margin: 10px 0;">基于海量UGC内容的智能问答，解决宝妈具体育儿问题，提供过来人经验</p>
+    <div class="opportunity-meta">
+      <span class="meta-tag">📊 证据笔记: 84条</span>
+      <span class="meta-tag">👍 点赞: 246,385</span>
+      <span class="meta-tag">⭐ 收藏: 142,944</span>
+      <span class="meta-tag">🏷️ 信号: 经验求助, 求助信号</span>
+    </div>
+    <div class="formula-box">
+      <div class="formula-title">评分公式</div>
+      <div>综合评分 = Σ(笔记点赞数 + 笔记收藏数 × 2) = 532,273</div>
+      <div style="margin-top: 8px; color: #64748b; font-size: 0.9em;">收藏权重×2反映知识类内容的保存意愿高于点赞</div>
+    </div>
+  </div>
+
+  <div class="opportunity-card">
+    <div class="opportunity-title">P5: 育儿工具评测与推荐</div>
+    <p style="color: #94a3b8; margin: 10px 0;">智能推荐和评测育儿相关绘本、玩具、APP、工具，解决选择困难</p>
+    <div class="opportunity-meta">
+      <span class="meta-tag">📊 证据笔记: 78条</span>
+      <span class="meta-tag">👍 点赞: 231,257</span>
+      <span class="meta-tag">⭐ 收藏: 145,513</span>
+      <span class="meta-tag">🏷️ 信号: 产品工具, 决策信号</span>
+    </div>
+    <div class="formula-box">
+      <div class="formula-title">评分公式</div>
+      <div>综合评分 = Σ(笔记点赞数 + 笔记收藏数 × 2) = 522,283</div>
+      <div style="margin-top: 8px; color: #64748b; font-size: 0.9em;">收藏权重×2反映知识类内容的保存意愿高于点赞</div>
+    </div>
+  </div>
+
+  <h2>💡 核心洞察</h2>
+  <div class="insight-box">
+    <div class="insight-title">洞察1: 知识收集是最大痛点</div>
+    <p>46.3%的笔记涉及信息获取，28.9%涉及知识收集。宝妈在备孕到早教的全周期中，持续面临信息过载和知识整理困难。手机系统层面的智能收集功能有巨大机会。</p>
+  </div>
+  <div class="insight-box">
+    <div class="insight-title">洞察2: 产后情绪被严重忽视</div>
+    <p>产后情绪心理相关内容获得28.5万点赞，但现有工具几乎未覆盖。产后抑郁、焦虑、职场回归压力是高频痛点，情绪识别和疏导功能需求强烈。</p>
+  </div>
+  <div class="insight-box">
+    <div class="insight-title">洞察3: 早教启蒙内容极度分散</div>
+    <p>早教启蒙是二层主题TOP1（120条笔记），但内容分散在绘本、玩具、游戏、儿歌等多个领域。用户需要一站式早教内容聚合和个性化推荐。</p>
+  </div>
+  <div class="insight-box">
+    <div class="insight-title">洞察4: 选择困难贯穿全周期</div>
+    <p>决策信号覆盖20.7%的笔记，从备孕月份选择到早教工具选购，宝妈在各阶段都面临选择困难。智能对比和推荐功能有明确需求。</p>
+  </div>
+
+  <h2>⭐ 高价值内容 TOP 10</h2>
+  <div class="evidence-section">
+    <div class="evidence-title">筛选标准: 总互动≥1000 + (含痛点信号 OR 期望信号 OR 求助信号)</div>
+    <div class="ugc-item">
+      <div class="ugc-title">1. [育儿] 如何得到一个沉默的孩子</div>
+      <div class="ugc-meta">👍 52,000 | ⭐ 11,000 | 总互动: 80,584 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-emotion">焦虑</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">2. [产后] 堪称恐怖片的写照出现在我身上</div>
+      <div class="ugc-meta">👍 32,000 | ⭐ 3,913 | 总互动: 63,754 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-signal">决策信号</span> <span class="tag tag-emotion">无助</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">3. [育儿] 画画和勇敢是妈妈后天给予我的“天赋”</div>
+      <div class="ugc-meta">👍 50,000 | ⭐ 4,037 | 总互动: 56,270 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-signal">行为信号</span> <span class="tag tag-signal">期望信号</span> <span class="tag tag-emotion">焦虑</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">4. [产后] 亲爱的垚垚宝贝：
+这是妈妈最后一次上班为你产nei   nei啦～
+持续了约330天不知不觉已经坚持了这么久
+今天是2025年6月18日一个特别的日子（也是妈妈和爸爸第一次见面的日子）
+妈妈决定在今天</div>
+      <div class="ugc-meta">👍 12,000 | ⭐ 1,941 | 总互动: 51,941 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-signal">行为信号</span> <span class="tag tag-signal">期望信号</span> <span class="tag tag-emotion">焦虑</span> <span class="tag tag-emotion">幸福</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">5. [育儿] 普通家庭最大的通病，是把托举的顺序搞反了</div>
+      <div class="ugc-meta">👍 18,000 | ⭐ 25,000 | 总互动: 49,966 | <span class="tag tag-quality-营销">营销</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-signal">决策信号</span> <span class="tag tag-signal">行为信号</span> <span class="tag tag-signal">期望信号</span> <span class="tag tag-emotion">焦虑</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">6. [孕期] 选择孕育生命真的是一个很勇敢的决定</div>
+      <div class="ugc-meta">👍 22,000 | ⭐ 7,176 | 总互动: 48,837 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-signal">期望信号</span> <span class="tag tag-emotion">疲惫</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">7. [育儿] 惊人的父子定律，看看队友中了几条？</div>
+      <div class="ugc-meta">👍 16,000 | ⭐ 12,000 | 总互动: 43,363 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">求助信号</span> </div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">8. [备孕] 室友在寝室smoke而我在备孕</div>
+      <div class="ugc-meta">👍 26,000 | ⭐ 2,155 | 总互动: 42,151 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">求助信号</span> </div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">9. [产后] 38岁辣妈产后恢复少女腰经验分享！精简干货</div>
+      <div class="ugc-meta">👍 17,000 | ⭐ 22,000 | 总互动: 42,043 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">痛点信号</span> <span class="tag tag-signal">求助信号</span> <span class="tag tag-signal">行为信号</span> <span class="tag tag-signal">期望信号</span> <span class="tag tag-emotion">焦虑</span> <span class="tag tag-emotion">幸福</span> <span class="tag tag-emotion">后悔</span></div>
+    </div>
+    <div class="ugc-item">
+      <div class="ugc-title">10. [早教] 🔥 发现了没，孩子其实并不在乎去哪里玩❗️❗️</div>
+      <div class="ugc-meta">👍 15,000 | ⭐ 18,000 | 总互动: 39,214 | <span class="tag tag-quality-中性">中性</span> | <span class="tag tag-signal">期望信号</span> <span class="tag tag-emotion">幸福</span></div>
+    </div>
+  </div>
+
+  <h2>📋 方法论说明</h2>
+  <div class="summary-box">
+    <h3>数据来源</h3>
+    <p>本报告基于MediaCrawler历史采集的小红书数据，搜索词覆盖孕期、产后、早教、备孕、育儿5个场景，共508条笔记。</p>
+    
+    <h3>标签体系</h3>
+    <ul style="margin: 10px 0; padding-left: 20px;">
+      <li><strong>一层主题</strong>: 信息获取、知识分享、知识收集、经验求助、情绪表达、产品工具</li>
+      <li><strong>二层主题</strong>: 早教启蒙、发育知识、健康护理、心理情绪、产后恢复、孕期管理等</li>
+      <li><strong>情绪标签</strong>: 焦虑、幸福、疲惫、后悔、愤怒、无助</li>
+      <li><strong>信号标签</strong>: 痛点信号、行为信号、期望信号、决策信号、求助信号</li>
+      <li><strong>场景标签</strong>: 家务时、工作间隙、学习时、睡前、外出、喂养时</li>
+    </ul>
+    
+    <h3>评分公式</h3>
+    <div class="formula-box">
+      <div>机会评分 = Σ(笔记点赞数 + 笔记收藏数 × 2)</div>
+      <div style="margin-top: 8px;">其中收藏权重×2反映用户对知识类内容的保存意愿高于点赞</div>
+    </div>
+    
+    <h3>分析流程</h3>
+    <ol style="margin: 10px 0; padding-left: 20px;">
+      <li>数据清洗: 去重、去空、互动量标准化</li>
+      <li>标签提取: 基于关键词词典的语义匹配</li>
+      <li>主题聚类: 一层+二层主题分布统计</li>
+      <li>信号提取: 痛点/决策/求助/行为/期望信号识别</li>
+      <li>机会映射: 基于互动量的综合评分排序</li>
+    </ol>
+  </div>
+
+  <div class="footer">
+    <p>宝爸宝妈育儿收集需求调研 v2.0 | 生成时间: 2026-05-18</p>
+    <p>数据来源: 小红书 | 分析工具: AI Demand Research v3.3</p>
+  </div>
+</div>
+</body>
+</html>

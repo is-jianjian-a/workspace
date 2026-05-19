@@ -1,0 +1,567 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下37条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 29/120)
+
+--- ITEM #1 ---
+ID: bili_comments_1260
+平台: bili
+类型: comments
+内容: 所以手机呢？[doge]
+
+--- ITEM #2 ---
+ID: bili_comments_1262
+平台: bili
+类型: comments
+内容: 有用狠狠投币，不过操作在win11笔记本上有点区别，具体为：
+设置→网络和Internet→高级网络设置→在网络适配器里选择点开自己正在使用的WLAN→更多适配器选项  编辑，  然后按up的步骤来。
+
+--- ITEM #3 ---
+ID: bili_comments_1263
+平台: bili
+类型: comments
+内容: 牛逼 真的有用 点赞三连了，麻的新电脑打开网页很慢 气死了 500兆啊
+
+--- ITEM #4 ---
+ID: bili_comments_1265
+平台: bili
+类型: comments
+内容: b站这些网页视频正常，但是看其他盗版的视频就非常慢[笑哭]不知道为啥，手机都很流畅
+
+--- ITEM #5 ---
+ID: bili_comments_1266
+平台: bili
+类型: comments
+内容: 大佬问你一下，这种方式关掉了ipv6会导致最高网速变慢吗
+
+--- ITEM #6 ---
+ID: bili_comments_1267
+平台: bili
+类型: comments
+内容: win11的浏览器现在我感觉越用越卡，最近一个月频繁更新不知道是不是部分机器有问题[呆]
+
+--- ITEM #7 ---
+ID: bili_comments_1268
+平台: bili
+类型: comments
+内容: 前几天尝试各种方式不好使，结果昨天买了个新梯子国内网络浏览快到飞起，就连那种服务器访问异常困难的小网站也是稍微等待一下即可访问，到现在也不知道原理，当然如果网络在未搭建梯子的时候就访问能力尚佳也没有获取海外咨询需求的则没有必要了，我是笔记本由于网口内部的铜线档口塑料片断裂，导致只能识别出百兆速度，万般无奈之下只能买USB转千兆网口转换器（小地方没人会焊这玩意，千辛万苦找到了也不可能只收22，）作为代替品时发现该产品网络浏览状态下存在瑕疵才正好可以利用帆强软件来优化国内网络浏览环境，一般正常家庭网络设一设DNS也就OK了，只有个别电脑出现特别奇葩的网络访问问题才有可能需要
+
+--- ITEM #8 ---
+ID: bili_comments_1269
+平台: bili
+类型: comments
+内容: up你好，我一直用的edge的浏览器，最近几天突然进入的时候转半天，然后想点进其他端比如抖音就加载不出来，连了梯子也没办法正常上外网，实在找不到原因，是有什么设置上的问题吗
+
+--- ITEM #9 ---
+ID: bili_comments_1270
+平台: bili
+类型: comments
+内容: 这几天B站真是卡死我了。按视频设置弄了一下，立刻就变好了[星星眼]
+
+--- ITEM #10 ---
+ID: bili_comments_1277
+平台: bili
+类型: comments
+内容: 想一想优酷爱奇艺在冲了会员的同时不也一样么，不然我不小心点开广告立马关了，为何会有人打骚扰电话告诉我你已获得某某游戏测试资格[吃瓜]
+
+--- ITEM #11 ---
+ID: bili_comments_1280
+平台: bili
+类型: comments
+内容: 笑疯了，javascript有这么大权限？[星星眼]
+
+--- ITEM #12 ---
+ID: bili_comments_1281
+平台: bili
+类型: comments
+内容: 流量？个人信息？广告？[doge][doge]除了颜色网站我从来没见过那个网站告诉我千万不要信广告内容的。流量每个月都有剩的就当处理存货了，至于个人信息[藏狐][藏狐]他们的用户都是我们男性消费能力一般，而且兄弟们的个人信息早就被公司跟各种app买过多少手了，他连我电话都不要能有我多少信息
+
+--- ITEM #13 ---
+ID: bili_comments_1282
+平台: bili
+类型: comments
+内容: 我发现b站的每次点击进度条都重新请求了片段，是不是每次点击进度条都需要把之前的sourceBuffer删除掉
+
+--- ITEM #14 ---
+ID: bili_comments_1283
+平台: bili
+类型: comments
+内容: 我发现我没有设置过默认就是分片下载[doge]
+
+--- ITEM #15 ---
+ID: bili_comments_1284
+平台: bili
+类型: comments
+内容: 这几种方式种，那种更加节约带宽呢？大厂每节约点带宽都是巨量的节约成本吧。目前已经知道是mp4切成m3u8会使得文件总体更大
+
+--- ITEM #16 ---
+ID: bili_comments_1285
+平台: bili
+类型: comments
+内容: vue这么智能么？[doge]
+
+--- ITEM #17 ---
+ID: bili_comments_1286
+平台: bili
+类型: comments
+内容: 现在上传文件是直接与OSS交互还是通过后端上传
+
+--- ITEM #18 ---
+ID: bili_comments_1288
+平台: bili
+类型: comments
+内容: 我这段时间也遇到了，Chrome 使用一种名为 ANGLE 的技术，将 WebGL 等图形 API 在 Windows 上运行时转换为 DirectX。默认使用 D3D11，但某些硬件配置（尤其是 AMD GPU）可能与 D3D11 不兼容，导致卡顿。切换到 D3D9 后，这些不兼容问题似乎被绕过，视频变得更稳定。不过，这播放器可能会禁用 WebGL2 等功能，是一个权衡。虽然切换到 D3D9 是一个有效的解决方法，但并不是近期之计。我在外网看到用户报告说，禁用硬件加速也能解决问题，但可能会降低性能，图形处理会因为转移到 CPU。等更新吧，我建议是直接去浏览器里面去报告问题，让官方更新为妙
+
+--- ITEM #19 ---
+ID: bili_comments_1289
+平台: bili
+类型: comments
+内容: 没用，本来浏览器设置里就是独显。上次WIN11大更新之后就这样了，而且我是谷歌浏览器，同样的问题。
+
+--- ITEM #20 ---
+ID: bili_comments_1290
+平台: bili
+类型: comments
+内容: 这个视频不卡，有些视频一卡一卡的，像是在同时播放两个视频，会重叠一闪一闪的
+
+--- ITEM #21 ---
+ID: bili_comments_1294
+平台: bili
+类型: comments
+内容: win10不卡 win11好几个版本都卡
+
+--- ITEM #22 ---
+ID: bili_comments_1295
+平台: bili
+类型: comments
+内容: 亲测有效，不过我不是你这种卡，我是用一段时间打开视频就会无限加载！
+
+--- ITEM #23 ---
+ID: bili_comments_1296
+平台: bili
+类型: comments
+内容: 我是看视频不卡顿但是弹幕有时候会明显掉帧，看直播弹幕卡顿，edge和chrome都是如此。后来用了下面这个朋友的方法就好了。
+
+--- ITEM #24 ---
+ID: bili_comments_1301
+平台: bili
+类型: comments
+内容: 没颜色的你都没有隐私，就微信而言，不用多说了吧，上次我申请解除微信解除冻结还拍人和身份证照，顿时后悔[doge]
+
+--- ITEM #25 ---
+ID: bili_comments_1302
+平台: bili
+类型: comments
+内容: 这怎么跟@智能帮 发的视频一模一样？原视频B站链接：BV1qT4y1J7LN
+
+--- ITEM #26 ---
+ID: bili_comments_1307
+平台: bili
+类型: comments
+内容: 不卡啊，我用UC浏览器，98块买了3个月会员。什么网址都不卡
+
+--- ITEM #27 ---
+ID: bili_comments_1309
+平台: bili
+类型: comments
+内容: 这个功能其实早就有了，但是默认关闭，现在默认打开了挺逆天的
+
+--- ITEM #28 ---
+ID: bili_comments_1310
+平台: bili
+类型: comments
+内容: 他这个占用是真的高，不过最大的问题不是占用高，是我感觉他效果不怎么样，感觉就是锐化了一下没有让视频变得更清晰，占用这么高就为了锐化一下这说不过去[脱单doge]
+
+--- ITEM #29 ---
+ID: bili_comments_1311
+平台: bili
+类型: comments
+内容: 谢谢你哥们。不管你的建议好不好用，我都提前感谢你。[笑哭]之前我电脑浏览网页，视频都卡顿，排查了一大通。
+
+--- ITEM #30 ---
+ID: bili_comments_1312
+平台: bili
+类型: comments
+内容: 我记得这个增强视频有三个选项，一个是调用nv显卡的视频超分，一个是浏览器自带的超分，调用核心，还有一个是类似锐化滤镜的，前两者启用会占用20左右的性能，有时候画面色块会糊在一坨。但是加滤镜的那个就占用很小，而且视觉上也有明显增强，所以我一般看b站视频会开
+
+--- ITEM #31 ---
+ID: bili_comments_1313
+平台: bili
+类型: comments
+内容: 太感谢了[笑哭]，服了，最近一直打不开直播间，网页打开也是转圈，关了瞬间没事了
+
+--- ITEM #32 ---
+ID: bili_comments_1316
+平台: bili
+类型: comments
+内容: [笑哭]本来都要开始骂B站垃圾优化了，顶配放视频都能卡，结果又是Edge的问题
+
+--- ITEM #33 ---
+ID: bili_comments_1318
+平台: bili
+类型: comments
+内容: 神医！我就奇怪了电脑玩游戏一点不卡，怎么手机上购物APP连图片都刷不出来
+
+--- ITEM #34 ---
+ID: bili_comments_1319
+平台: bili
+类型: comments
+内容: 神医呀，最近刚换了个千兆路由器，网速到是上去了就是开软件的时候加载死慢，我寻思腾达的路由器不至于连几年前的路由器都比不上吧，测速什么的又比以前的老路由器好，原来是这个玩意的问题。
+
+--- ITEM #35 ---
+ID: bili_comments_1322
+平台: bili
+类型: comments
+内容: 神了，byd这浏览器我老以为是我家网络不好[笑哭]
+
+--- ITEM #36 ---
+ID: bili_comments_1329
+平台: bili
+类型: comments
+内容: BYD总算找到问题出在哪儿了，微软能不能少整点烂活，那个破效率模式也一直在折磨我
+
+--- ITEM #37 ---
+ID: bili_comments_1331
+平台: bili
+类型: comments
+内容: 我也准备前端发展，现在大二，希望up主能多出一些干货视频， 这个视频很给力！！关注了
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_029
+
+开始分析：

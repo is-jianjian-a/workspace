@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>过程技术报告 - 长视频用户诉求调研</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #0a0e1a; color: #e2e8f0; padding: 2rem; line-height: 1.6; }
+        .header { text-align: center; margin-bottom: 3rem; }
+        .header h1 { background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .section { background: #1a1f2e; border: 1px solid #2d3748; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }
+        .section h2 { color: #3b82f6; margin-top: 0; }
+        .step { background: #252b3d; border-radius: 8px; padding: 1rem; margin-bottom: 0.75rem; }
+        .step-header { display: flex; justify-content: space-between; align-items: center; }
+        .step-name { font-weight: 600; }
+        .step-status { padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; }
+        .status-completed { background: #10b98120; color: #10b981; }
+        .file-list { color: #64748b; font-size: 0.875rem; margin-top: 0.5rem; }
+        code { background: #252b3d; padding: 0.25rem 0.5rem; border-radius: 4px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🔧 过程技术报告</h1>
+        <p>完整的数据处理链条与方法论记录</p>
+    </div>
+    
+    <div class="section">
+        <h2>📋 数据处理链条</h2>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤1: 项目初始化</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">输出: <code>00-meta/project_manifest.json</code>, <code>00-meta/workflow_status.html</code></div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤2-3: 搜索词设计 & 数据采集</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">数据源: <code>MediaCrawler sqlite_tables.db</code> | 关键词: "长视频" | 记录数: 804</div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤4: 数据清洗</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">
+                输入: 804条 → 去重: -4 → 过滤: -19 → 输出: 781条<br>
+                质量分布: 高质量307 | 中质量243 | 低质量231<br>
+                输出: <code>03-cleaned/cleaned_data.json</code>, <code>03-cleaned/quality_report.json</code>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤5: Job Story提取</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">
+                方法: JTBD框架 | 提取: 556个Jobs → 合并: 23个独立Job Stories<br>
+                输出: <code>05-jobs/job_stories.json</code>, <code>05-jobs/job_stories.md</code>
+            </div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤6: Job地图绘制</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">输出: <code>06-jobmap/job_map.json</code>, <code>06-jobmap/job_map.html</code></div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤7: 用户画像分析</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">识别: 5个用户群体 | 输出: <code>07-personas/user_personas.json</code></div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤8: Kano分类</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">方法: Kano Model | 输出: <code>08-kano/kano_classification.json</code>, <code>08-kano/kano_matrix.html</code></div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤9: RICE评分</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">方法: RICE Framework | 输出: <code>09-rice/rice_scores.json</code>, <code>09-rice/rice_ranking.html</code></div>
+        </div>
+        
+        <div class="step">
+            <div class="step-header">
+                <span class="step-name">步骤10-13: 假设验证闭环</span>
+                <span class="step-status status-completed">已完成</span>
+            </div>
+            <div class="file-list">形成: 5个假设 | 实验设计: 5个 | 验证状态: 待产品团队执行</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>📊 数据质量指标</h2>
+        <div class="step">
+            <div>原始数据: 804条</div>
+            <div>清洗后: 781条 (保留率: 97.1%)</div>
+            <div>高质量数据: 307条 (39.3%)</div>
+            <div>平均质量分: 60.8/100</div>
+        </div>
+    </div>
+</body>
+</html>

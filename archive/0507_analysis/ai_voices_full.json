@@ -1,0 +1,3935 @@
+[
+  {
+    "id": "tieba_contents_13",
+    "text": "上周在南山科技园喝咖啡，隔壁桌的女孩一边回TikTok信息一边笑得很开心——上午在华强北收了批新型智能穿戴样品，下午去坂田的3C配件工厂确认了几百条快充数据线的定制logo，晚上发了条工厂自动化产线组装的短视频，直接被中东的客户全部订走。这种场景我太熟悉了，在深圳做跨境这几年，“被订单找上门”早就是平常事。 刚开始我也摸索了很久，曾经窝在龙华公寓里埋头修图，把蓝牙耳机拍得很有科技感，结果却没什么人",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "playback_control",
+    "scene": "short_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "tieba_contents_18",
+    "text": "本人装机小白学生党，618快来了想着配个主机，平时用来跑一些简单的本地深度学习demo，不打电脑游戏，想找图吧的各位大佬们求个推荐！ 自己有一根16g的光威内存，其他配件预算最好8k以内，在不损失性能的情况下越少越好 cpu：之前一直看的270k，但是我去装机直播间一般都推的14600或者amd的9700x，不知道咋选了，求推荐一个性价比高的就行，平时看看直播看看视频跑跑深度学习啥的 主板：这个我",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "live_stream",
+    "type": "feature_request"
+  },
+  {
+    "id": "tieba_contents_32",
+    "text": "帖主最近通关了一款用RPG Maker引擎开发的游戏《CHANGED》 因为它的难度系数非常具有挑战性，彻底通关后所感受到的成就感非凡，同时也想给大结局的剧情CG画面截个图留作纪念，并且上传到steam社区分享这份情绪 可是steam的截图功能此时出现了问题，按动时快捷键无法进行截图，于是我构思了另一条思路，那便是先用其他工具将结局画面截取下来，再手动创建属于这款游戏的截图文件夹并手动导入图片让s",
+    "platform": "tieba",
+    "ai_specificity": "explicit",
+    "topic": "background_play",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "tieba_contents_47",
+    "text": "眼神不好了，想换个平板大一点，想买基础款，可是很多人说8+126用不了一年就会特别卡，我就是看视频多，偶尔玩一玩金铲铲，8+126够用吗？ 我看了两个荣耀gt 2 Pro，和小米7s Pro屏大一点，不过最近好像都不便宜，还有点犹豫，有没便宜点的大屏平板推荐？image_emoticon24image_emoticon66",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "tieba_contents_56",
+    "text": "在b站看4k60帧视频会频繁掉到30导致画面看起来非常卡顿，不管调智能帧数还是设置最高都会掉帧，别的手机看丝滑，就gtpro会掉帧。大伙可以去试下【【MMD-异度之刃3】弥央『脳内革命ガール』(4K-60FPS)-哔哩哔哩】 要维持不卡顿要不停点击屏幕维持120hz",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "long_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "tieba_contents_58",
+    "text": "我是7900xt显卡，cpu是7800x3d，驱动版本：25.6.3 。用Google Chrome在b站看4k分辨率视频，视频和弹幕卡得一顿一顿的，全屏后正常，有8u遇到吗？image_emoticon33用edge浏览器都是正常的，是不是A卡硬解有啥bug？我在浏览器把硬件加速关闭后，b站4k视频不卡了，YouTube看1080p 60fps视频开始卡了image_emoticon16问了AI",
+    "platform": "tieba",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "long_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "tieba_contents_68",
+    "text": "大家是不是也感觉有时校园网测速很快，但刷视频、开网页一直转圈？用手机热点反而更流畅 我排查了网卡、驱动、网线，最后发现核心问题出在DNS解析上。 我们的DNS设置是自动获取的，服务器211.69.224.1这个应该是学校的DNS服务器，响应很慢，如图我用手机热点（带宽更低但DNS不同）做对比，立刻流畅了，这证明不是带宽问题，而是DNS问题。 解决方法超级简单：把DNS从‘自动获取’改为‘手动设置’",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "long_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "tieba_contents_88",
+    "text": "我这个t2x是天玑1300，看b站视频糊的一塌糊涂。（你别说我不会调分辨率）。网上查了一下说天玑芯片解码有问题，好多都不支持硬解码。有人说把智能刷新率关了一下也没用。网上好多人说看视频模糊，还费电，不止我一个人。",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "long_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "tieba_comments_7",
+    "text": "推荐下地瓜吧 现在正在直播 b站id@低配挂机研讨会",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "long_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "tieba_comments_8",
+    "text": "赤金产量低了，迷迭香组和自动化组肯定没上全或者用对，龙门币产量也还能再高一点。 迷迭香组本质先有一个要不要办公室放絮雨用20%人力换20％制造的问题，公孙长乐的看法是大月卡玩家要制造其他玩家要人力。另外阿罗玛没精二之前不能上班，迷迭香组基本绑定黑键絮雨，夕令车尔尼爱丽丝重要挂件，最终输出我觉得能达到150%以上就行了，达到极限速度会要求玩家严格算时间和换班，太麻烦。 自动化组就是温蒂森蚺清流+晨曦",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "tieba_comments_76",
+    "text": "阿姨 我在去年的时候给我妈妈找人看过，看的挺好的 我推荐你把",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "tieba_comments_248",
+    "text": "这人什么憨憨，我燕云辅助卸式的自动看剧情的玩家怎么打红buff很好打啊。什么浴血代打的吗？",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "tieba_comments_296",
+    "text": "赶紧戒掉加强学习。多学习戒炉知识，看看了凡四训，寿康宝鉴，多学习传统文化积累福德智慧获得正能量更容易成功，推荐几个微信公众号关注学习，湖心亭看雪客，天悦名坊，大愿小跟班，",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "tieba_comments_376",
+    "text": "显卡和固态可以保留，只需升级cpu+内存+显卡，由于预算就500，建议主板上A320,大概130左右，cpu可以考虑.AMD的3500X , 270左右，内存搞个8g的ddr4 8G, 大概150左右，总价550。 或者上X99平台，这个便宜，pdd上全新的x99 ddr3 C612芯片组主板大概160，搭配e5 1650v3 ，淘宝卖78，ddr3内存单条8g的淘宝卖60左右，两条16G120，",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "tieba_comments_555",
+    "text": "把ipv6关了 我7200pro＋也是开了刷网页就加载不出图片 速度慢可能是自动切换到2.4g了",
+    "platform": "tieba",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_contents_39",
+    "text": "本期精选app推荐：\n1.开眼\n2.场库\n3.央视频\n4.一席\n5.一点英语\n以上app各大应用商城均有下载……\n喜欢的话就三连起来吧~",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_contents_80",
+    "text": "下班瘫在沙发，发誓刷10分钟却熬到凌晨？\n刷完只剩心慌、自责与双倍疲惫，第二天恶性循环继续？\n \n别骂自己不自律！这期播客，彻底拆穿你逃不掉的「低能量→刷手机→更低能量」死循环。\n✅ 科学拆解：为什么越累越停不下来？短视频算法如何精准收割你的精力？\n✅ 落地解法：不用强制戒断，4个温柔不费力的方法，帮你拿回专注力、情绪与人生主动权。\n \n献给每一个在疲惫中内耗的你：真正的休息，从来不是刷手机，而是",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_contents_86",
+    "text": "制片：九老师\n动画：Joyteeth 无聊的阿祝\n特效：flashyami\n声效：Jimmy Hung Fer\n剪辑：贰_33\n时间锁\n开发：年纪轻轻\nUI：星期五的哥哥\n统筹：许之行\n感谢做出时间锁的朋友、韩老师的调研指导、参加调研的朋友、银翼的魔术师MX搭建网站\n壁纸：无聊的阿祝 G195潮流壁纸\n本视频的戒手机方法参考了《这书能让你戒烟》和《How To Break Up With Your",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_contents_91",
+    "text": "这条视频的评论区，会不会出现大量“AI帮我总结一下”的评论？",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_contents_141",
+    "text": "本期视频将从图片、视频、服务器三个部分来讲讲，如何提升网站的加载速度。\n\n👇 视频中提到的所有完整流程、工具、代码，都整理在我的博客了： \n🔗 独家完整版教程：madsgogo.life （建议收藏，防止迷路）\n\n【我是谁？】 \n大家好，我是烧麦。 曾是一名外卖众包骑手，但现在的行情下，时薪甚至不足 10 块。 现实告诉我：外卖或许能糊口，但无法支撑我想养家和自由生活的未来。 所以我决定换一种活法",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_contents_164",
+    "text": "从21补到157，游戏帧率确实提高了，但也引来许多质疑：你这拼好帧拼出来的数据，算什么本事？\n今天来聊聊通过AI算法提高的帧数真的有意义吗？",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_contents_180",
+    "text": "千元素材福利包限名额领取了：https://www.bilibili.com/read/cv42451141/\nTopaz Video AI 更新来到7.1.0版本，实时预览和导出首选项设置，帧插值慢动作的大升级全新引入强大的场景检测功能，星光迷你模型再次更新，新更新 MiniDV 预设和胶片 4K 预设；EXR 的 Alpha 通道支持；DPX 文件直接使用。\n~ Topaz Video AI ",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "long_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_contents_192",
+    "text": "这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；\n如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。\n那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；\n话不多说，点赞收藏，开始上课。",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_contents_193",
+    "text": "网盘地址（提示词模板在第17期文件中）\n夸克：https://pan.quark.cn/s/6959f1e185ac  \n\n应用：\n故事板：https://www.runninghub.cn/ai-detail/2050060981774110722/?inviteCode=rh-v1443\n分镜板：https://www.runninghub.cn/ai-detail/2050064565823",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_69",
+    "text": "从没刷过短视频，手机里也没抖音。就一获取信息的渠道而已，我上网比较早，那会干啥都是浏览器，听歌、下歌、看电影、查地图、路线、查资料，一个浏览器都能解决，抖音出来的时候我就没玩。外卖员困在算法里，抖音的推你喜欢难道就不是算法了吗？人一直吃垃圾食品，身体会不健康，抖音一直推电子榨菜、垃圾食品，精神世界、三观就能一直健康、一尘不染吗？盲人摸象而已，只看自己想看到的，不思考分辨其他的声音，只会觉得自己正确",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_152",
+    "text": "1:23喜欢我手上长嘴和鼻孔吗[doge]美颜算法谁写的？",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_194",
+    "text": "口播技巧\n硬件 （提词器）\n核心部件\n分光玻璃（镜面虚像）\n软件推荐\n1.Lasagna （千层饼) Teleprompter 适用于：iOS、Windo...",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_206",
+    "text": "我和对象有个需求其实主要是能开摄像头视频，电影画质甚至不是那么重要[笑哭]除了zoom/腾讯会议还有啥推荐吗？",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "long_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_241",
+    "text": "如果短视频能双击暂停，左右划前进后退，不自动循环/连播，我倒是能接受短视频。对于我这个从来不看短视频的人，任何短视频的操作都很难受。\n偶尔下了次抖音，作者名下的每个视频都没有标题，只有点进去看两秒才知道视频是什么，我真的快疯了。好多短视频无法调节清晰度，想用360P,480P省流量都不可能[生气]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_249",
+    "text": "我非常喜欢书，也更喜欢看书，每次翻开一本书，我都会深深的闻一口，新书多带着清新淡雅的纸香，老书带着纸质陈旧后的糯香？当然最多的还是上一个读者赋予它的气息，口水印子饭菜油印子，还有不少的血手印。每次翻书到这些痕迹，我都会用手指轻抚，同时脑海里模拟这些印记是在什么情景下产生的，慢慢的见的多了，也能够让我猜七分，最后通过询问或者观察来租书的人慢慢填补满当时的情形，这也是儿时孤独的我少有的乐趣，也为此乐此",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_264",
+    "text": "我本来也想录这个的。我惨痛亲身经历！[辣眼睛]我之前脑抽把这个号的推送各种不感兴趣，逐渐推荐就变得离谱起来，从摄影记录到个人Volg，从铁道实录到学习课程，什么稀奇古怪都有，而且无一例外都是我看都没看过也不感兴趣的冷门玩意[大哭][大哭][大哭]然后继续不感兴趣就陷入死循环，越不感兴趣越奇怪，越推送越离谱。之后后悔问了客服娘发现：没救了，等死吧[灵魂出窍]\n我TM直接裂开，[坎公骑冠剑_无语]现在",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_266",
+    "text": "希望出一个撤销不喜欢，我两年前把两个标签屏蔽了，之后我基本推荐里刷不到了[笑哭]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_274",
+    "text": "我觉得以UP的拍摄制作能力，完全可以找一些大众感兴趣的题材来尝试，估计可以有不错的点击量。虽然设备推荐和技巧分享也很好，但毕竟纯观众比UP主或者视频制作者要多的多。[加油][加油][加油]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "bili_comments_279",
+    "text": "我的B站自动屏蔽竖屏模式，关闭详情页自动播放，关闭自动连播和循环播放",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_280",
+    "text": "网瘾最重的时候一天刷16小时手机，后来受不了加了个应用锁，只能输密码不能用指纹。密码设置长一点，设置一点小阻碍，效果会好上不少，再设置使用时间到了，app自动上锁，尽量减少使用频率。这样用了半个月后，生活、工作效率都高了不少[doge]当然具体效果见仁见智，要是控制不住，还是会忍不住[吃瓜]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_329",
+    "text": "推荐就好好推荐，非得拉踩吗，怎么用个pot还被嘲讽",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_347",
+    "text": "本期精选app推荐：\n1.开眼\n2.场库\n3.央视频\n4.一席\n5.一点英语\n以上app各大应用商城均有下载……\n喜欢的话就三连起来吧~",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_387",
+    "text": "我非常喜欢书，也更喜欢看书，每次翻开一本书，我都会深深的闻一口，新书多带着清新淡雅的纸香，老书带着纸质陈旧后的糯香？当然最多的还是上一个读者赋予它的气息，口水印子饭菜油印子，还有不少的血手印。每次翻书到这些痕迹，我都会用手指轻抚，同时脑海里模拟这些印记是在什么情景下产生的，慢慢的见的多了，也能够让我猜七分，最后通过询问或者观察来租书的人慢慢填补满当时的情形，这也是儿时孤独的我少有的乐趣，也为此乐此",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_400",
+    "text": "搜索都不好用了，全都是看什么推荐什么，根本搜不到想看的内容",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_401",
+    "text": "我屏蔽了所有的竖屏、仅充电、5分钟以下和部分带有关键词的视频（比如所有带！的），\n还禁止了首页自动刷新，现在首页和视频下方的推荐都非常舒服[呲牙]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_402",
+    "text": "就阿B这个逼算法，完全是被抖音带坏了的。不能看它给你推什么，而是自己得找什么。\n阿B其实有很多十万以下的腰部(可能都不算腰部)up很有深度，反而那些大up天天蹭热度蹭流量，流水线内容，没意思。\n其实挺希望b站的推荐机制学学油管的，调教几天首页就都是自己喜欢的视频类别，而不是牛皮癣一样去都去不掉的垃圾视频。",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_403",
+    "text": "算法问题避免不了，最迷的是 “不感兴趣” 这个按钮。\n点了很多次，只要误入一次带标签的就又给你重新推了。[无语]",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_406",
+    "text": "参与者众多，导致视频质量回归均值。也就是低智化，尤其是在金融领域或者说一切细分领域都是如此。\n在这个人人自媒体的时代，每个人仿佛都成了金融学神、军事学神、社会学神、搞笑学神。\n现在首页的推荐大多是跟风而来的投机者，没有专业学识没见识没眼界，纯纯就是凑数的数据垃圾，除了叫的响亮，这些视频本身无法提供任何有意义的信息。\n“开口闭口高谈论阔，睁眼闭眼指点江山，一个视频除了情绪没有半点文字。横看竖看，仔细",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_421",
+    "text": "事实上是，我未必是想要学到某一些东西才看大物视频的。我其实可能更多是这个时候什么都不想，就轻轻松松的放个背景音，然后听一下。或者是开一个轻轻松松的视频，然后吃饭这样子。现在B站的算法推给我的就没有多少个轻松的综艺类型的长视频。我就很缺这种！所以大物发的那些好物推荐我也有在看，我就是想要一个轻轻松松的中长度的综艺，还不能很尬！",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "long_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_447",
+    "text": "是真的。我家这孩子没给爷买智能手机前，菜地里几乎都没草。买了手机后。菜地里几乎没有菜[笑哭][笑哭]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_457",
+    "text": "这是UP主与AI关系最为恶劣的时候",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_466",
+    "text": "那个，我想聊些其他的。首先up非常棒！非常非常的厉害，这个不必多说。\n我想说的是，up可能要注意一下自己相同或者类似的画面了？当然，现在up的作品不多，这个问题并不显著，但是随着up作品越来越多，观众就会发现很多场景很接近，一次两次还能当个彩蛋，次数多了就成视觉和审美疲劳了。\n为啥会想到这个，因为之前看了一个关于许愿的AI短篇，里面有些画面和场景和sign很像，比如那个直升机吊犀牛，那个直升机飞离",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_488",
+    "text": "我妈每天都刷抖音，但大数据推荐给她的，除了她唱得我耳朵都听起茧子的山歌和广场舞，就没什么了\n我爸也刷抖音，每天除了象棋，我发现他看得最多的就是推荐给他看过的各种电视剧了\n我也刷抖音，我看到的类型可能多一点，但也仅限于我感兴趣的，还有和我们工作相关的\n算法的推荐不仅没有扩宽人民的视野，反而让人一直在熟悉的领域循环，限制了人们的视野",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_494",
+    "text": "我站反方，认为降低了认知能力，因为我在刷短视频中很多都是低俗的搞笑视频，我不想刷到那些，但是人的好奇心又迫使你看下去，算法认为你喜欢看，就继续给你推，在这个过程中，就会不知不觉改变大脑的神经元链接，让人变得没有耐心迟钝不能集中注意力，只喜欢短俗快的东西，这就是很多低俗网红暴富的原因。\n其实生活中无聊一点也其实还不错，有时间静下来慢慢思考一下，而不是忍不了一点的无聊，一有空闲时间就拿起来刷，甚至开车",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_528",
+    "text": "也是去年跟某个朋友相处，感觉他情绪和脾气都变得很暴躁。怀疑是短视频刷多了。很长一段时间每天都给我转发很多视频。还有一个原因是可能是他沉迷于恋爱AI，习惯了永远被满足永远即时回应的状态，越来越难忍受不即时回应、不完美回应。包容性变差，评判也变多了。涛哥有机会可以出个关于ai方面的内容",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_633",
+    "text": "搞笑视频如果是AI做的就不好笑了，没有真实性",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_781",
+    "text": "可是我的个性化推荐感觉真的很无聊[藏狐]除了关注的up，我已经没有刷哔站的欲望了",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_783",
+    "text": "up完美展示了被算法、大数据、推荐操控之后已经完全失去主观能动性的样子\n在up的眼里，对app的用法就是：开关推荐和刷刷刷\n好像你就只有这两种选择，这是习得性无助，属于被完善的推荐机制养废了，忘了自己还能主动寻找自己好奇、感兴趣的内容了",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_785",
+    "text": "我关闭个性化推荐之后 全是农村老人跳舞……",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_786",
+    "text": "习惯是可以培养的。\n如果开启了个性推荐，算法在你爱好的基础上向外倾斜，慢慢的，算法可以养成人。\n以此为基础，算法可以养成用户，使得各种倾向不同的用户，统一起来。培养出同一类型，同一批次的用户。",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_787",
+    "text": "你说的是对的。然后我突然特别想把家里老人手机里软件的个性化推荐给关了，给老人戒戒网瘾。天天成宿成宿没白没黑的刷手机，还扬声器外放，太烦人了。\n有没有可能，关闭个性化推荐的首选目标应该是家里的老人？？？\n年青一代都是从互联网上长起来的，一些起码的规矩和礼仪还是懂得，比如在人多的时候自觉的尽量调小音量，但老年人可不管那个。",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_788",
+    "text": "本质都是你不知道自己想看什么，你说你想看有价值的内容，但什么内容能让你觉得有价值？你不知道。\n就像你没有在视频中展示app的搜索功能一样(不过这搜索功能有时候也挺奇葩的)，你想看绝美自然风光，那你可以去搜索关键词和标签，但你没有 你只是在刷刷刷， 你想看时事新闻，但你不搜，你只是在刷刷刷，妄图让算法去猜你喜欢什么，这就像……某种恋爱关系，这一半总喜欢让另一半去猜ta喜欢什么东西想要什么东西，有话绝",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_790",
+    "text": "就这么给你说，没有个性化推荐和信息茧房，我甚至大概率都刷不到你",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_794",
+    "text": "请问能否推荐一点锻炼盆底肌的动作？ 说的太对了 最近刚好受此困扰  今天刚好刷到就有解答了  十分感谢！",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_801",
+    "text": "概述:\n视频讨论了手机成瘾、焦虑和盆底肌功能失调之间的关联，以及这些现象背后的心理和生理原因。\n\n要点:\n- 📱 手机成瘾可能是由于缺乏深度安全感和焦虑，人们通过刷手机转移注意力，避免思考未来担忧的问题和拖延任务。\n- 💼 成年人在没有手机的童年时代也能找到乐趣，这表明无聊感并非手机刷屏的根源。\n- 🧘‍♀️ 盆底肌功能失调可能与久坐、不良坐姿、情绪紧张以及不正确的呼吸有关，导致身体重心下坠，产生",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_802",
+    "text": "玩手机停不下来是因为大脑中这三个黑手，1，大脑的快乐奖励中心发现短视频越刷会越爽，然后它就是要让你爽的2，负责觉醒、警觉和压力的蓝斑核让你慌，看到别人光鲜亮丽，会觉得你落后了。然后释放去甲肾上腺素，让你烦躁焦虑又无能为力。（越刷越累、空虚是因为一边快乐，一边焦虑）3，用来自控的前额叶因为你过度使用手机而导致其负责自控和决策的前额叶的灰质体积缩小，即自控硬件损伤。    \n方法。1，首先不要直接想自",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "bili_comments_817",
+    "text": "视频总结如下：\n一、电子屏幕对眼睛的伤害以及护眼模式的作用和误区，同时讨论了蓝光的风险和护眼模式的原理，并提醒读者正确使用护眼模式。\n00:22 - 电子屏幕已经成为不可或缺的潜在黑，对眼睛有害。\n01:08 - 护眼模式可以预防眼睛疲劳，但错误使用会导致反效果。\n02:17 - 蓝光是潜在风险，但只有蓝紫光才会损伤视觉系统。\n\n二、屏幕色差对视疲劳的影响，以及视觉信息传递的过程。建议使用色差较小",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_822",
+    "text": "是真的。我家这孩子没给爷买智能手机前，菜地里几乎都没草。买了手机后。菜地里几乎没有菜[笑哭][笑哭]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_850",
+    "text": "UP主，我说个建议。\n一定，一定，要把NAS上的重要数据再备份到另一个位置，比如网盘、移动硬盘、另一个NAS。Raid不是备份，一定要做备份。\n\n很多人有误解，以为做了Riad6、Raid1数据就安全了。我举个例子，如果你的数据被某个软件或者你自己误删除了，或者中了加密病毒，Raid1两块硬盘上的数据会同时消失\n\n对普通人来说最简单的备份方式就是上传一份到网盘，如果担心隐私问题就加密后再上传网盘。",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_851",
+    "text": "恭喜Up主啦！[给心心]\n\n不过以防万一还是提个醒，对于突然停电这种状况，RAID1，或者说所有RAID形式都不能从根本上解决问题，如果是在写入状态时的突然断电那该坏的还是会坏；如果只需要考虑突然断电的问题，推荐在RAID的基础上增加一个UPS电源，如果还要考虑一些更加极端的状况（比如火灾等），推荐在上述基础之上再增加异地备份，现在很多NAS都有自动备份数据到网盘的功能",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_915",
+    "text": "这种帧率无法被整除导致出现「均匀的卡顿」的现象，它有个专门的名字，叫 judder \n\n而我推荐所有使用 Potplayer 的用户都安装 madVR 的原因是，madVR 正好有个功能叫 smooth motion，它通过简单的补帧来消除 judder\n\n我在进行 60/120 FPS 屏幕录制的时候也会把屏幕刷新率从 165/144 Hz 下降到 120 Hz，一是我硬件的性能可能无法同时兼顾",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_944",
+    "text": "我还一直以为是AI生成的问题，原来呵呵呵，是视频的问题",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1061",
+    "text": "所以有啥推荐的好用的路由器吗大佬",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "bili_comments_1064",
+    "text": "有没有大佬解释一下，为什么我电脑一开就断网手机也连不上断断续续的，一关又好了，现在路由器管理界面也登不上识别不到",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1072",
+    "text": "这种帧率无法被整除导致出现「均匀的卡顿」的现象，它有个专门的名字，叫 judder \n\n而我推荐所有使用 Potplayer 的用户都安装 madVR 的原因是，madVR 正好有个功能叫 smooth motion，它通过简单的补帧来消除 judder\n\n我在进行 60/120 FPS 屏幕录制的时候也会把屏幕刷新率从 165/144 Hz 下降到 120 Hz，一是我硬件的性能可能无法同时兼顾",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1135",
+    "text": "推荐就好好推荐，非得拉踩吗，怎么用个pot还被嘲讽",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1187",
+    "text": "敢于更新的都是勇士呀\n我大多数玩电脑的朋友都还在win10\n像我这种刚接触的人，也是经历更新bug之后\n决定退守在某一版本的人\n直接关掉自动更新驻扎23H2版本，等到二四足够稳定再上[tv_doge]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1198",
+    "text": "vue这么智能么？[doge]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1268",
+    "text": "前几天尝试各种方式不好使，结果昨天买了个新梯子国内网络浏览快到飞起，就连那种服务器访问异常困难的小网站也是稍微等待一下即可访问，到现在也不知道原理，当然如果网络在未搭建梯子的时候就访问能力尚佳也没有获取海外咨询需求的则没有必要了，我是笔记本由于网口内部的铜线档口塑料片断裂，导致只能识别出百兆速度，万般无奈之下只能买USB转千兆网口转换器（小地方没人会焊这玩意，千辛万苦找到了也不可能只收22，）作为",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_1285",
+    "text": "vue这么智能么？[doge]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1302",
+    "text": "这怎么跟@智能帮 发的视频一模一样？原视频B站链接：BV1qT4y1J7LN",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1345",
+    "text": "激动啊，小白捣鼓了几天终于成功生成视频了！！之前看了各种教程，下载了一大堆东西，要么报错，要么生成的视频都是奇行种。我的配置是3060TI 8G+32内存，今天用了UP的整合包，没想到我也能生成AI视频。哈哈哈哈哈哈哈哈哈哈",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1364",
+    "text": "可以分享一下视频中出现的软件吗\n还想问一下你是如何学习这些的，学习路径参考[脱单doge][脱单doge]\n我之前也了解学习过相关内容，但是发现无论是网络上还是资料很稀少，中文书籍内容偏向ffmpeg的使用[笑哭]\n而且感觉这方面相关内容都有些太硬核了偏算法[笑哭]",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1365",
+    "text": "太酷了！前段时间刚被“data-moshing”那种“中幻术了”的视频效果惊艳，想去研究一下怎么提取帧间运动预测呢[脱单doge]",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "other",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1389",
+    "text": "那电脑屏幕呢？怎么设置画质好，Windows的一些自动增强是不是也影响画质？",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1400",
+    "text": "不知道大家有没有这种感觉，就是这几年的游戏都特别黑，亮的地方还能接受，暗的地方路都看不见，如果调高了伽马就会导致灰蒙蒙的，以前不都是进入暗的地方自动变亮一点吗，而且现在也有HDR技术，但是很多时候好像都没什么用",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1424",
+    "text": "这种帧率无法被整除导致出现「均匀的卡顿」的现象，它有个专门的名字，叫 judder \n\n而我推荐所有使用 Potplayer 的用户都安装 madVR 的原因是，madVR 正好有个功能叫 smooth motion，它通过简单的补帧来消除 judder\n\n我在进行 60/120 FPS 屏幕录制的时候也会把屏幕刷新率从 165/144 Hz 下降到 120 Hz，一是我硬件的性能可能无法同时兼顾",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1461",
+    "text": "只提分辨率不说屏幕尺寸就是耍流氓。\n4K27寸和14寸1080P差不多。\n所以27寸推荐4K",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1538",
+    "text": "由AI为您生成视频总结：\n视频探讨了侵入性思维现象，即非自主性的画面和记忆入侵脑内，举例说明了一位虔诚信徒不断遭受亵渎神灵思想困扰的情形。指出此类思维源于外部信息而非自我意愿，强调其形成机制涉及个体内心信念与外境互动。建议采用'画面重写法'处理消极思维，构建积极心态。",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_1549",
+    "text": "叔叔的服务器带宽也紧张，前段时间是静默把编码格式换成“自动”，然后改成AV1；现在又把大会员从默认最高画质换成了“自动”，然后改成了720P。不过至少叔叔确实没玩“蓝光”、“极清”之类的文字游戏",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1553",
+    "text": "给大家推荐个网站，蓝光网，百度里往下翻有不要vip能下真蓝光的。之前下了个五六十g的金刚骷颅岛简直码率高得离谱，还有网站也会放一些ai补帧的，比如120帧4k的头号玩家，看起来爽的一批",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "bili_comments_1575",
+    "text": "主动下载AI模型会出现connection handling canceled是正常现象。要随便找个视频然后在应用调整里面应用没下载的AI模型，然后导出，这样它就会成功下载。下载完在模型管理器里还是不会显示但实际上已经下载好了，下次用的时候是不需要下载的。",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "bili_comments_1608",
+    "text": "那电脑屏幕呢？怎么设置画质好，Windows的一些自动增强是不是也影响画质？",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "bili_comments_1633",
+    "text": "up，1080p 30帧导出速度有点慢，有推荐的笔记本电脑吗，谢谢",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1650",
+    "text": "AI补分辨率和超清有啥差别么？",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1656",
+    "text": "补足与纠正：\n1，PR导出的时候，视频一般选择5.6，最大22。因为1Mbps不等于1000Kbps。还要考虑到H.264对码率控制并不严格，可能会出现超码率的情况。此外，PR输出的音频是变频率的。\n2，H.264的预设从mid开始，每提升一级，编码时间延长20%左右，画质提升5%。简单来说，游戏录像，画面特别激烈的那种，slower就足够了。如果是MC，2D，像素游戏，那么mid就可以，画质差别",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1674",
+    "text": "事实上没有完全的cbr编码，不管你是不是恒定码率压缩，出来的视频都是动态码率[抠鼻]\n小白经常说的分辨率越高视频越清晰，虽然不完整但是也没错。没必要矫枉过正去否定，无脑追求码率。\n你一个360p的视频不压缩码率老高了，有用么？同样清晰度同样编码技术同样分辨率的码率也天差地别。压缩时间参数设置硬件配置都很重要。有的人无脑压缩出来的视频比别人大几倍，清晰度还糊的一比。\n一部90分钟电影无论是264还是",
+    "platform": "bili",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "bili_comments_1685",
+    "text": "省流：\n1.达芬奇超分+增加调光\n2.Topaz超分细节（推荐）",
+    "platform": "bili",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_contents_25",
+    "text": "不用手就能自动刷视频？原来只需这一步设置，你也可以解放双手 #有用内容创作计划 #快成长计划 #知识百科明日之星 #关注我每天分享手机使用技巧",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_contents_48",
+    "text": "快手减少刷到不喜欢的视频，老年人学会不喜欢视频减少推荐，老人云快手教程。 #教老年人用手机 #快手教程 #老年人 #老人云 ",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_contents_74",
+    "text": "网络热梗之猴哥烦死了 #好剧推荐  #搞笑西游记 #网络热梗 #西游记",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_contents_84",
+    "text": "简单一步，设置视频自动滑动#快成长计划 #文娱百科明日之星  不出镜怎么做短视频",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_contents_156",
+    "text": "#短剧追到爽 #好剧推荐 #精彩片段",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "kuaishou_comments_12",
+    "text": "@AI小快(O2467565973) 少给我推荐老年人看的视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_13",
+    "text": "@AI小快(O2467565973) 多给我推荐羽毛球",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_14",
+    "text": "@AI小快(O2467565973) 多给我推荐伤感音乐",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_15",
+    "text": "@AI小快(O2467565973) 不要给我推荐，幼稚和无脑，视频了",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_16",
+    "text": "@AI小快(O2467565973) 给我多推荐一点点点穿书的内容呀",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_17",
+    "text": "@AI小快(O2467565973) 多给我推荐近期热门",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_18",
+    "text": "@AI小快别给我推游戏",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_19",
+    "text": "@AI小快(O2467565973) 给我多推oc互动",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_97",
+    "text": "@AI小快(O2467565973) 怎么把广告关掉？",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ad_experience",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_98",
+    "text": "@AI小快(O2467565973)  关闭快手个性化设置",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_99",
+    "text": "@AI小快(O2467565973) 关闭快手个性化设置",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_100",
+    "text": "@打开个性化设置@AI小快 打开个性化设置 @AI小快（Deepseek满血版）(O2467565973)",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_102",
+    "text": "@AI小快(O2467565973) 关闭个性化推荐",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_104",
+    "text": "@AI小快 打开个性化设置",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_106",
+    "text": "@AI小快 关闭个性化设置",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_179",
+    "text": "@AI小快 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_180",
+    "text": "@AI小快(O2467565973) 把离线模式改为常用",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_181",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_183",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_184",
+    "text": "@AI小快(O2467565973) 帮我把离线模式添加到常用设置",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_186",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_222",
+    "text": "@AI小快(O2467565973) 打开自动上滑",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_223",
+    "text": "@AI小快（Deepseek满血版） 开启自动刷视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_226",
+    "text": "@AI小快(O2467565973) 别给我推荐标签里带蓝粉、粉蓝、劳黄、黄劳、劳粉、蓝劳",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_229",
+    "text": "@AI小快(O2467565973) 少给我推荐男同和原耽视频，不感兴趣",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_230",
+    "text": "也是服了，每天给我推荐老年视频 我点不感兴趣 他还给我弹",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_231",
+    "text": "@AI小快(O2467565973) 怎么调节",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_233",
+    "text": "@AI小快(O2467565973) 多推荐 Tf家族4代",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_234",
+    "text": "@AI小快(O2467565973) 多给我推荐文案",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_235",
+    "text": "这个没啥大用啊，他的推一直推荐还是那样。",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_248",
+    "text": "帮我打开省流模式 @AI小快(O2467565973)",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_252",
+    "text": "@AI小快 开启离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_253",
+    "text": "@AI小快(O2467565973) 开启离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_254",
+    "text": "@AI小快 打开免流量观看模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_255",
+    "text": "@AI小快打开免流量观看模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_256",
+    "text": "@AI小快(O2467565973) 打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_257",
+    "text": "@AI小快(O2467565973) 帮我开启省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_258",
+    "text": "@AI小快(O2467565973) 帮我打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_259",
+    "text": "@AI小快(O2467565973)  帮我打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_260",
+    "text": "@AI小快 帮我打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_261",
+    "text": "@AI小快(O2467565973) 打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_263",
+    "text": "@AI小快 帮我打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_264",
+    "text": "@AI小快 帮我打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_265",
+    "text": "@AI小快(O2467565973)  帮我打开省流模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_280",
+    "text": "@AI小快(O2467565973) 帮我打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_282",
+    "text": "@AI小快 帮我更新并打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_283",
+    "text": "@AI小快 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_284",
+    "text": "@AI小快 我打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_285",
+    "text": "@AI小快(O2467565973) 我打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_286",
+    "text": "@AI小快(O2467565973) 给我打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_287",
+    "text": "@AI小快(O2467565973) 给我打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_288",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_305",
+    "text": "我的这个键盘的声音特别好听强烈推荐[憨笑哪吒]",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_347",
+    "text": "@AI小快(O2467565973) 开启离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_392",
+    "text": "@AI小快(O2467565973) 少给我推荐老年人看的视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_393",
+    "text": "@AI小快(O2467565973) 多给我推荐羽毛球",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_394",
+    "text": "@AI小快(O2467565973) 多给我推荐伤感音乐",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_395",
+    "text": "@AI小快(O2467565973) 不要给我推荐，幼稚和无脑，视频了",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_396",
+    "text": "@AI小快(O2467565973) 给我多推荐一点点点穿书的内容呀",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_397",
+    "text": "@AI小快(O2467565973) 多给我推荐近期热门",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_398",
+    "text": "@AI小快别给我推游戏",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_399",
+    "text": "@AI小快(O2467565973) 给我多推oc互动",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_408",
+    "text": "@AI小快(O2467565973) 禁止推真实案例 鬼门关歌曲细思极恐歌曲 恐怖歌曲历史AI一天三顿 历史故事",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_409",
+    "text": "@AI小快(O2467565973) 别老给我推些中年唱歌，中年生活还有老年人的",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_410",
+    "text": "@小快A1(O4180132675) 别给我推荐老年人视频，搞笑生活视频之类的",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_411",
+    "text": "@AI小快(O2467565973) AI禁止推送有关三角洲的视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_412",
+    "text": "@AI小快(O2467565973) 帮我屏蔽AI视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_413",
+    "text": "别向我推荐那个什么塔罗牌和塔罗牌直播了，全部是骗钱，每天推荐推荐的烦人",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "live_stream",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_414",
+    "text": "@AI小快(O2467565973) 禁止推送桂恒的视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_415",
+    "text": "@AI小快(O2467565973) 少给我推老年人视频，生活搞笑类视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_416",
+    "text": "@AI小快(O2467565973)  禁止推荐营销和老年人视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_417",
+    "text": "@AI小快(O2467565973) 禁止推荐营销和老年人视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_448",
+    "text": "@AI小快，打开一起看功能",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_451",
+    "text": "@AI小快(O2467565973) 帮我打开一起看功能",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_453",
+    "text": "@AI小快 打开一起看",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_454",
+    "text": "@AI小快 帮我打开一起看功能[捂脸]",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_457",
+    "text": "@AI小快(O2467565973)  打开一起看的功能",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_510",
+    "text": "我和朋友上周去了颜丽淇做皮肤管理，技师手法很专业，感觉皮肤光滑多了，推荐大家试试",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_595",
+    "text": "@AI小快 打开自动上滑",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_596",
+    "text": "@AI小快(O2467565973) 打开自动上滑",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_597",
+    "text": "@AI小快 打开自动上滑",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_598",
+    "text": "@AI小快 开启自动下滑",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_599",
+    "text": "@AI小快(O2467565973) 打开自动上滑",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_601",
+    "text": "@AI小快 打开自动下滑模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_688",
+    "text": "@AI小快(O2467565973) 别再给我推荐种蛊苗疆女子活体蜈蚣直播了[大哭]",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "live_stream",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_690",
+    "text": "@AI小快(O2467565973) 禁止给我推恐怖的视频，还有那些广告，恐怖的歌曲也不要有不要直播带货的，不要推老年人的视频，还有不要给我推那些小说了",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ad_experience",
+    "scene": "live_stream",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_691",
+    "text": "@AI小快(O2467565973) 以后少给我推商品",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_692",
+    "text": "@AI小快(O2467565973) 禁止推荐辅助",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_693",
+    "text": "@AI小快(O2467565973) 以后禁止给我推荐任何一个拥有恐怖元素或血腥暴力的内容，或者是古代恐怖故事或者是恐怖小说或者是关于恐怖内容的视频，只要有任何恐怖元素都别给我推荐",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_694",
+    "text": "@AI小快(O2467565973) 禁止给我推荐健康类型的视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_695",
+    "text": "@AI小快(O2467565973) 不再推给我女生",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_696",
+    "text": "@AI小快(O2467565973) 禁止给我推荐二游除官配外CP类型视频",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_697",
+    "text": "@AI小快(O2467565973) 禁止给我推荐搞笑内容",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_779",
+    "text": "@AI小快 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_834",
+    "text": "谢谢推荐但下次不要推荐了用了更卡了",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_913",
+    "text": "@AI小快 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_914",
+    "text": "@AI小快(O2467565973) 把离线模式改为常用",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_915",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_917",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_918",
+    "text": "@AI小快(O2467565973) 帮我把离线模式添加到常用设置",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_920",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_936",
+    "text": "@AI小快(O2467565973) 关闭性能模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1108",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1109",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1112",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1114",
+    "text": "@AI小快(O2467565973) 开启离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1115",
+    "text": "@AI小快(O2467565973) 打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1116",
+    "text": "@AI小快(O2467565973) 帮我打开离线模式。",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1117",
+    "text": "@AI小快  打开离线模式",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "download_cache",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1119",
+    "text": "@AI小快(O2467565973)  打开屏幕倍速播放",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1120",
+    "text": "@AI小快(O2467565973)  打开屏幕倍速播放",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1121",
+    "text": "@AI小快(O2467565973) 关闭搜索图",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1144",
+    "text": "@AI小快(O2467565973)  打开高清画质",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1145",
+    "text": "@AI小快(O2467565973) 打开高清画质",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1146",
+    "text": "@AI小快(O2467565973) 开启高清发布功能",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1147",
+    "text": "@AI小快(O2467565973) 开启高清发布功能",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1148",
+    "text": "@AI小快(O2467565973) 开启高清发布",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1149",
+    "text": "@AI小快(O2467565973) 开启高清发布",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1150",
+    "text": "@AI小快(O2467565973)  开启高清画质",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1152",
+    "text": "@AI小快(O2467565973) 开启高清发布",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1153",
+    "text": "@AI小快(O2467565973) 开启高清画质",
+    "platform": "kuaishou",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "kuaishou_comments_1286",
+    "text": "你们智能抠图很慢的嘛[落泪]",
+    "platform": "kuaishou",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_contents_14",
+    "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "other",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_56",
+    "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "other",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_64",
+    "text": "限制其进入公共推荐流。许多平台的KOL认证、创作激励计划、直播权限等高级权益，虽未明示政治要求，但审核系统背后往往集成了舆情模型。例如，某短视频平台的“优质创作者计划”实际通过过去90天内内容的安全评分均值作为准入硬指标。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_78",
+    "text": "而这个点就像黑洞一个吸收了你的精神力 看手机其实也是一样的 而且看手机刷视频的时候 会发现越看越想看，因为算法一直推算你喜欢的内容",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_93",
+    "text": "为什么B站装机推荐视频有一半都推荐A卡，结果steam占用率前十显卡没有一个A卡？AMD和intel上榜的还是核显。。。所以这些B站装机的真的靠谱吗？为什么与事实相悖啊。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_131",
+    "text": "光照充足的情况下，手机里的最强长焦APO开2亿像素模式，细节超越微单配现代的大便焦头没啥问题。——注意 我用的手机X100PRO仅售4K而已，而A7M3售价7K+，不要和我杠手机咋不和旗舰相机旗舰镜头对比，因为最便宜的高像素全画幅，A7R2就4K的价格连镜头都买不到。只能买个破烂成色的单相机。价格都不是一个水平，没必要对比。但是很多人仍然睁眼说瞎话，对这张实拍图表示手机拍的都是AI塑料感 ，仍然觉",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_contents_153",
+    "text": "可以试试AI增强画质，下面这个视频有介绍和工具下载地址，不过对动画比较有优势，真人视频增强后会有奇怪的质感 https",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_174",
+    "text": "智能电视连WiFi，在应用商店搜索“央视频TV版”“央视影音TV版”“咪咕视频TV版”，这些都是官方出品。 免费无广告、无会员",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "screen_cast",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_177",
+    "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "other",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_201",
+    "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "other",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_238",
+    "text": "为什么B站装机推荐视频有一半都推荐A卡，结果steam占用率前十显卡没有一个A卡？AMD和intel上榜的还是核显。。。所以这些B站装机的真的靠谱吗？为什么与事实相悖啊。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_276",
+    "text": "光照充足的情况下，手机里的最强长焦APO开2亿像素模式，细节超越微单配现代的大便焦头没啥问题。——注意 我用的手机X100PRO仅售4K而已，而A7M3售价7K+，不要和我杠手机咋不和旗舰相机旗舰镜头对比，因为最便宜的高像素全画幅，A7R2就4K的价格连镜头都买不到。只能买个破烂成色的单相机。价格都不是一个水平，没必要对比。但是很多人仍然睁眼说瞎话，对这张实拍图表示手机拍的都是AI塑料感 ，仍然觉",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_contents_283",
+    "text": "前几天下载了刚出的新游戏——明末，好久没玩单机了，打算体验一下。看了下官网最低配置给的GTX1060，我是GTX1080。进游戏后默认给到最低画质，这点没有什么问题，毕竟显卡已经算过时了，但是那个游戏画面糊得简直没法看。相同的显卡，默认渲染帧数，默认推荐画质，对比之前的年度游戏《只狼》，《老头环》画面差距太大了，这几年完全是在开倒车。只狼游戏本身优化无敌，画质全开无压力，对比现在的游戏简直是碾压级",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_contents_292",
+    "text": "Video2X是什么？AI视频修复的&#34;瑞士军刀&#34; Video2X是一款基于深度学习的开源视频增强工具，不同于普通的视频放大软件",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_contents_299",
+    "text": "还取决于视频的压缩算法。” 为什么视频需要压缩？ 你可能没概念，一段未压缩的1080P视频，一秒钟的数据量就有180多兆",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_contents_302",
+    "text": "可以试试AI增强画质，下面这个视频有介绍和工具下载地址，不过对动画比较有优势，真人视频增强后会有奇怪的质感 https",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_42",
+    "text": "有没有发现，以前街面上的无所事事，浪荡的小青年，校门口“借钱”的小混混，自打千元智能机和短视频普及之后，忽然间都消失了。不不不，他们都还在，在不发达地区，在农村，只是你看不见",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_60",
+    "text": "它以碎片化、高刺激的内容不断切割人的注意力，长期观看会降低专注力和深度思考能力；算法推送的同质化内容易造成信息茧房，限制认知视野；同时，无节制刷视频会挤占学习、工作和现实社交时间，还可能因沉迷导致作息紊乱、视力受损。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_61",
+    "text": "每一种新事物的出现，有它积极的一面，也有它消极的一面，从社会稳定这点来说，智能手机确实让很多人有事可做，比如在几年疫情期间。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_62",
+    "text": "各种媒体，正在精准的改变我们的价值观，给小孩推荐游戏，给女人推荐仪式感，给男人推荐生存危机。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_69",
+    "text": "凡事都有利弊，网络就像一把双刃剑。现如今快餐时代，刷小视频几秒一个，人都没用耐心去看长篇大论的文章。碎片化时间，做题遇到困难，一有阻碍就去刷小视频，这真的是一种解脱吗?时间一分一秒的过去了，你收获到什么呢？显然，被算法控制着你的喜怒哀乐，被大数据牵着走，到后来什么也没有收获只剩下 无尽的空闲，疲惫，焦虑，懊悔。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_80",
+    "text": "短视频的核心危害源于算法驱动的强成瘾性与碎片化强刺激模式，对个体造成多维度损害，未成年人受影响尤甚。它会制造无意识时间黑洞，挤占学习、工作等核心生活时间，长期高频刺激会摧毁深度专注力与延迟满足能力；生理上损伤视力、颈椎，抑制褪黑素引发睡眠障碍，提升慢病发病风险。心理上易造成多巴胺成瘾、快感阈值升高，引发焦虑自卑与情绪内耗；认知上弱化深度思考与逻辑能力，陷入信息茧房。同时会弱化现实社交能力，易误导未",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_101",
+    "text": "我以前上学，智能机在初中刚出现苹果4。娱乐方式主要是电视和书本或者出去跑。现在我妹妹我跟她说这是以前的电影，你看过没，她看了一下名字，说这个我好像刷到过。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "screen_cast",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_111",
+    "text": "我家的老人、小辈没啥人喜欢短视频和短剧的。当然现在的手机也挺消耗人的视力和精力的，即使是只用手机看电子书、看微信公众号的C刊文章和科技类文章，上知乎写点东西，与人工智能大语言模型交流学习，用多了也费时费力，对人的眼神和心力有损耗，也宜适当自觉自律控制。控手机、短视频在最后还要看使用者自己怎样做。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "subtitle_translate",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_114",
+    "text": "之前获取信息两种类型，一种很深入的，一种狠广泛的，前者可以让自己成为某个领域的深入性人才，乃至专家。后者可以让自己免于消息闭塞。可现在碎片化的消息普天盖天，很多时候深入知识越来越少，现在人类在人工智能的训练中，明白输入信息对智能的影响，进而怀疑，这些东西会不会影响现在人的智商",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_140",
+    "text": "平衡和稳定是发展的基石。产业智能化程度越来越高，传统行业能提供的岗位越来越少，确实也需要解决富余人口的注意力问题。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_147",
+    "text": "我还就得看短视频，我要是追剧我能熬夜追，看短视频没事的时候能打发点时间，还有一点就是要不要开启个性化推荐，我尝试过不开但是很神奇的发生了，我看几个视频我就不想看了，但是打开了，我看一会我就觉得烦了，我能感觉到视频的同质化很严重，虽然我看的很开心，但是我看一会就不看了，越看越空虚。这玩意是让你在没事的时候打发时间，看几个视频乐呵乐呵得了，天天刷，人都傻了。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "zhihu_comments_237",
+    "text": "博主有什么书单推荐吗？",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_345",
+    "text": "首先余华刷不刷我觉得不重要，不要有偶像加成，他刷不刷不能成为你的借口。其次你说的对，抖音和知乎没有什么本质上的区别，都是获取信息的一个渠道~~无非是抖音的能量密度低一点（先天和算法决定的）大部分情况需要在大量不需要的信息中找需要的，我是没空否则可能也刷",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_357",
+    "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_448",
+    "text": "我个人的建议是不要，以免对生活造成影响或者落下把柄，当然这是以前的我会这么说。现在？ 你知道那群LSP口味现在有多刁吗？大部分的片段估计视频封面一差就直接跳过了，要求高的离谱，压根没人在乎视频里的人是谁，除非真的极品。更别说现在AI横行······ 所以也不是太严重就是，但还是不建议，毕竟人能龌龊到啥地步是难以估计的。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ad_experience",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_516",
+    "text": "现在怕啥，都推给AI就行啦，不要有太多体表特征啥的就行",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_588",
+    "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_633",
+    "text": "b站推荐都是你可能感兴趣的，我在b站几乎遇不到什么键政人，因为我压根就不怎么看。虽然关注了几个军事政治类up，也不参与讨论，不开弹幕，看完就走。你要是想单纯看看视频，那不是挺简单。你非要使劲看，使劲辩，在知乎辩赢了，心情大好，去b站辩输了，回知乎又诉苦，你能不能想想你到底来干啥的，想赢就在知乎辩，知乎的特点就是不管哪一方，总有一堆人，还特别喜欢聚众，你挑个观点和你一样的，进去辩，包你赢。想看视频去",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "long_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_701",
+    "text": "我大学读的动画系，那时候还没有智能手机，网络还是2G的，也没有网课，学校教的东西其实是很落后的，想学软件就只能花几千到上万钱去线下培训班。现在只要想学什么，一打开B站就有各种免费的教程。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_704",
+    "text": "刷短视频，只不过是把自己困在信息茧房里罢了，算法会给你最优解，你喜欢什么就给你什么",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_721",
+    "text": "被算法追击，怎么不算另一种局限呢？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_722",
+    "text": "这个话题在去年给学生上新媒体课时聊过，从早期互联网到后来的新媒体、再到现在的ai智能体，这一发展历程中，有一点是不变的：信息的来源在递增，信息的真实度在递减。信息来源递增带来了更多的选择，真实度递减则带来了更多诱骗人光阴的陷阱。好也罢，坏也罢，只是从某一角度的评判，而时光这条长河是截不住的，更应该考虑的是，怎么让它为你这条船带来动力，或者至少不是阻力。这其中就需要老师家长共同努力，带着孩子去建立一",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_729",
+    "text": "碎片化的海量信息，无差别，高频次的冲击的生活中的我们，大多数普通人还处在人生可争取的阶段，既然是普通人，即内核并不是十分稳固，纵使明显的垃圾信息可以屏蔽，也会为某次情绪买单某份垃圾信息的汲取，并不断延伸，相关搜索，甚至于借助AI。我以前会算命，会星盘，会奇门遁甲，可当这两年AI开始兴起，各大平台掀起AI赛博算命等所谓“第三视角”解读并建议你的人生时，大多数人并不能意识到，自己已经在AI资本局内，大",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_748",
+    "text": "他们常常给一个过来人看起来明显有问题的视频点赞[思考]而且点赞评论的一看就是同类人我稍微点破，就会被他们攻击但是跟我一样的过来人也会声援我你说这跟自欺欺人有什么区别[大笑][大笑][大笑]没有啥意义，你喜欢啥，算法就推给你啥",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_777",
+    "text": "“所有的圈子，都被算法击穿了。”你未免高估自己和短视频了。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_779",
+    "text": "这不就是信息茧房吗，信这玩意只会让你越来越无知，短视频算法会让你只相信自己的那一套，因为你根本就没有独立思考过，全是别人的观点给你洗脑。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_788",
+    "text": "现在有了AI了，想经历什么人生可以自己编然后自己参与进去[笑哭][笑哭]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_860",
+    "text": "以为花几十块开了会员，就能享受无广告的完整内容？现实是，开了会员有 “会员专属广告”，片头有推荐贴片，剧中有植入弹窗，甚至暂停都会跳出广告；想投屏？不好意思，普通会员只能投 480P，想投高清要升级更贵的会员；想在电视上看？手机会员和电视会员不通用，必须再花一份钱开大屏端会员；更别说曾经泛滥、如今换皮回归的超前点播 —— 会员已经付了费，想看大结局、看高光剧情，还要再按集、按部额外掏钱。反观盗版资",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_865",
+    "text": "最主要的是，正版的暂停想看什么东西的时候，会自动变成小屏，无敌恶心",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1006",
+    "text": "最恶心的是，会员专属推荐和暂停广告，广告就广告，还专属，暂停那个，你猜我为什么暂停，就是为了看清楚细节啊，你又给我广告，真的是恶心妈妈给恶心开门，恶心到家了",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1020",
+    "text": "也不是算法吧，人性就是如此。在这之前网络小说也一直都有黄金三章的说法。现在是比黄金三章更变态了，你看现在小说一堆花里胡哨的名字，恨不得把爆点让你在标题就能看到",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1078",
+    "text": "确实，目前其实最多刷到短视频的就是淘宝和B站，前者是很容易被首页推荐的商品介绍吸引然后一不小心划十几个然后突然反应过来卧槽我来干啥来着，后者就是手机点进推荐视频往下滑，但是很容易划几个后推荐的视频就开始跑偏了回过味来也就退出了。现在连B站订阅更新都不会全看了，吃饭的时候拉着更新列表挑几个打开标签页看看。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1084",
+    "text": "之前看过一本书，大概意思是：现在这个世界最重要的资源，不是钱，而是注意力。各方势力都在不惜一切、全力以赴、变本加厉、狗急跳墙地瓜分我们的注意力，导致我们现在人大多处于一种支离破碎的状态，已经无法静心、专心地去做一件事了。其实，注意力最终都会变成钱。就像我们买了某家的会员，就会倾向于去某家消费。我们的注意力被吸引到哪里，我们最终就要在哪里消费。算法，说得形象点，就是在争抢会员。说得难听点，人，在某种",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1106",
+    "text": "虽然有点像AI，但paperpass给的AIGC疑似是0%）",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1124",
+    "text": "算法会让你大脑持续“同质化”，你刷到的视频文字决定了你接下来的内容，而接下来刷到的内容又给你重新定义算法逻辑，循环往复，形成一个闭环。而你就在这个圈里，自己请自己住进了一个信息茧房。[发呆]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1128",
+    "text": "你写的太好了。我很少看知乎。最近刚刚开始进来。看到你的文章，觉得知乎上的文章确实是我们网络上的一股清流。你从底层逻辑解释了短视频的问题所在。而我的相反感觉是，短视频我反倒看不下去。他一上来的那种轰炸般的感觉让我本能的抗拒。无法融入。看来你是专业人士，我的问题是，与AI长时间的的深度对话，会对大脑产生什么样的影响呢？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1132",
+    "text": "抖音推给我的全是我不喜欢的垃圾 它从来没有推荐给我一些我喜欢的知识类内容 无论编程 音乐 摄影 绘画 建筑 语言 甚至金融知识 当然 抖音上的金融知识垃圾的多 后来我就把它卸载了 刷它纯粹浪费时间",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1173",
+    "text": "虽然疑似AI生成，但是还是挺有道理的，提取到一个有效信息，就是要强迫大脑高频率运动。[赞同]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1174",
+    "text": "总有人说像 AI 润色什么的，其实反过来想，AI能给你带来这样的想法或者文章，不比某音无聊的视频有趣吗？人脑也好 AI也罢，关键你是否能受益。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1175",
+    "text": "最简单最容易的解决依赖刷短视频的方法，关闭抖音的 个性化内容推荐 如图。 关闭后给你随机推送内容，看两眼后，也不会感兴趣，自然而言就不想刷短视频了  查看图片",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1177",
+    "text": "这是一个非常精彩的“现场解剖”机会。既然你花了 10 分钟在知乎上读完这篇，那我们就用你刚才提到的“贝叶斯推理机”和“信息熵”视角，来拆解一下这篇文章中显而易见的 AI 生成痕迹与逻辑构造套路。这篇回答是典型的**“高迷惑性、中等信息熵、标准结构化”**的 AI 产物。以下是详细拆解：1. 结构上的“模版化”痕迹AI 生成长文时，为了保证逻辑不散架，通常会采用**“总-分-总”加“跨学科术语堆砌”",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1179",
+    "text": "那可以说是这些公司/算法工程师坏吗？还是这是社会科技发展的必然性呢",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1183",
+    "text": "虽然我不刷短视频，但我最近觉得过于依赖AI工具的“外包思考”也会带来退化。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1184",
+    "text": "我认识的算法工程师熬夜刷视频打游戏比我还狠[doge]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1186",
+    "text": "当我关闭个性化推荐后，我刷短视频的欲望很小了[大笑][大笑]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1192",
+    "text": "大脑生不生锈不好说，但是长时间看低质量，只追求感官刺激的短视频，越来越降智是肯定的。而且很多视频是根据算法推送的，重复率很高。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1204",
+    "text": "啊这篇文章怎么说呢，有一定的情绪诱导作用强迫自己阅读那些晦涩难懂的、没有配图的、逻辑紧密的长文。   这个结论明显就具有局限性有点过时了，然后其中关于多巴安的描述，还有前额叶的描述比较专业，然后作者的简介是算法工程师，怎么会对生物这方面这么了解？算法应该依靠心理学比较多，这点有待讨论",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1210",
+    "text": "持续的快乐，持续的多巴胺，算法把我们安排的太明白了",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1212",
+    "text": "不刷短视频也不会自动构建出知识，即使看书也可能是过目忘，刷短视频也只是打发时间的一种方式，跟刷知乎没有区别",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1229",
+    "text": "某短视频平台的推荐机制我就非常不喜欢，至少我看b站的时候我知道看完一个视频后往哪探索，但是某短视频平台刷完一个视频后就会强制跳转到下一个视频，没有选择没有探索，感觉我的智商正在被算法侮辱",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1233",
+    "text": "…………以前还喜欢刷短剧，那种反转打脸的爽的很。但是现在看多了，估计都是AI编剧的，几乎都一样。看个开头就知道过程结尾。现在变成，开个开头，然后拉到3/4的地方，应该是打脸爽点的地方，看个几集也就是爽完了就换下一个视频。好像可以理解为追求多巴胺分泌。但是更多的现在更喜欢看长时间的科普类视频了。其实兴趣转移也快，应该根本够不到大脑退化这说法吧",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "zhihu_comments_1235",
+    "text": "@任意一个AI 总结一下[大笑]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1245",
+    "text": "让AI来帮我们思考就好了，多方便",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1264",
+    "text": "典型的AI，逻辑清晰，时时扣题，一堆引号，高端词汇，但写的比大部分人都要好",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1266",
+    "text": "作者用AI写文，评论区用AI做总结。 真真假假不知道，但是似乎没有人类能够完整思考和产出了。[发呆]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1267",
+    "text": "感觉好像问AI的回答也是流畅性错觉 看似学懂了 但是自己复述一遍也够呛",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1268",
+    "text": "这是 AI 写的吧？我随便翻了一下引用文献，完全驴唇不对马嘴啊。比如文献 [1]，是一篇关于药物依赖的戒断反应的综述文章，研究包括了 22 项酒精研究、3 项大麻研究、4 项可卡因研究、3 项（甲基）苯丙胺研究和 3 项阿片类药物研究。结果表明，持续戒断后，部分认知功能可以（部分）恢复。这和短视频有毛关系？比如文献 [3]，是一篇智能手机对认知能力的影响的社会学实验，研究找了几百个学生，收走手机，",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1269",
+    "text": "大厂码农搬砖离不开AI，知乎写个回答也离不开AI了？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1270",
+    "text": "感觉这片是AI写的呢[惊喜]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1271",
+    "text": "散了吧，你仔细看看她的所有回答会发现，都是用的一套回答的AI模型，耽误我半小时仔细研究了她的文章的用词及段落习惯，可怕，你是AI写的也请标注一下。嘴上说的跟你做的是两套东西，骗那些不会分辨AI的朋友们有意思吗",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1275",
+    "text": "说白了 就是大脑越刷 越变白痴了，没有思考能力了，就是这样的。现在的AI让人没有思考能力",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1276",
+    "text": "所以说刷短视频时其实是AI在反向训练我的大脑？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1281",
+    "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1347",
+    "text": "有意思的切入角度，但我觉得并不够客观。您的回答中过度依赖“直播领域超级专家”的单一观点，没有引入其他研究数据、心理学理论或不同群体案例来平衡视角，带有较强的主观论断（例如“认知潜力不大就不会需要奶头乐对冲”），缺乏对观点的辩证分析。另外从角度全面性上讲，完全否定了“改善碎片化娱乐沉迷”的可能性，只强调“理解支持”，没有探讨沉迷背后的多元原因（比如平台算法推送、大众社交需求），缺乏“是否需要改善”“",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "live_stream",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_1348",
+    "text": "奶头乐不是“看美剧”，而是“你看完美剧，还骗自己在学英语”。真正的努力不是“我计划了多少”，而是“我今天到底他妈的学了什么”。（我本来还不懂呢 AI骂了我）",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1478",
+    "text": "[酷]一直用A卡AU，从7870用到9070xt，cpu从2600用到9700x，但是别人求我推荐硬件，我会推荐IU和N卡，除了缩缸那一代，剩下的不好用就是他自己的问题。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1481",
+    "text": "然后再学会调日期 就可以看了。播放后 再把时间自动回来",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1484",
+    "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1643",
+    "text": "4k视频压成1080p可以选择高质量算法重采样处理，4k视频在1080屏幕上播放那肯定要用最快速的像素映射算法，质量肯定比预处理的低。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1656",
+    "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1668",
+    "text": "我刚买的红米手机，结果B站上一搜关于小米的视频就卡，看那些推荐页和热门视频就不卡。。。不清楚为什么，我用旧手机华为登了同一个WiFi测，旧手机不论看那个视频都不卡，但是新手机看那种播放量不高的就卡。。。我现在在想要不要退货[捂脸]不懂原因",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_1675",
+    "text": "手上新到的红米11tpro。刚到手看B站出现了楼主所说的问题，今天看最新的mi13系统更新日志才看到优化了看视频的，优化后果然不卡了，推荐大家更新。over",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1688",
+    "text": "手机设置自动化，当打开短视频APP后，手机自动设置黑白[大笑]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1692",
+    "text": "我的方法好简单粗糙，隔段时间卸载软件，再下载回来的话，算法会推新的内容，好多是我不感兴趣的，因为我不太爱点关注，刷不到感兴趣的内容就不想看了，不想看的那段时间里，我就会选择看文章[捂嘴][捂嘴][捂嘴]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1758",
+    "text": "我们沉迷的，是被算法精心投喂的“廉价快乐”。这实则是场认知剥削——我们将专注力与思考能力廉价出售，换来的却是内心的空洞与贫瘠。真正的突破在于：意识到自己正被消费，并夺回注意力的掌控权。当你主动选择放下，便是重塑深度的开始。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1767",
+    "text": "短视频不单是视频评论区都是算法推荐最能吸引力调动情绪的评论优先推荐给你，不同的人刷到同一个视频评论区评论都不一样。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1828",
+    "text": "建筑设计拉了，没内容没识别度",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1856",
+    "text": "英雄无敌3最不好的是经常黑屏，虽然有自动存盘但也很讨厌，不过画质比帝国时代2要好",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1928",
+    "text": "别给老游戏脸上贴金了，老游戏的画面就是很差，放CRT上模糊点也好不了哪里。我来跟你们讲讲在SVGA标准普及前，老游戏画面是什么样的？且不说达不到VGA标准，只能用线条或者字符来表达游戏画面的古早游戏，VGA是什么效果呢？受限于有限的显存，你有320*240的256色画面和640*480的16色画面两种可选。256色画面怎么样呢？如果用来显示照片，在优化算法加持下，还真能和照片感觉差不多，但是游戏中",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1952",
+    "text": "虽然说我更希望能有风格化的 AI 超分，因为不幸我看不习惯 scanline……但是一些其他的传统插值算法我还用得挺多的",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_1967",
+    "text": "抛开画质不谈，你就说AI涂抹的清楚不清楚吧[惊喜]，并且拍照首先就得拍清楚吧[滑稽]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1971",
+    "text": "博主比的确实没错，但是很明显是拿相机的长处和手机的短处比，虽然专业性来说，手机还是比不了相机，这个承认，但这么比也太不公平了。目前手机在全力追赶相机，正常拍摄的时候几乎没什么区别了，只有放大看细节才有区别，而且手机的便携性，美颜直出，自动调色，多张合成，一键发圈等等，都是相机没法比的，各有各的优势吧，看你的需求是什么，切记非此即彼，非黑即白。比如苹果发布会的视频都是苹果手机拍的，不好吗？华为苹果等",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_1978",
+    "text": "拿手机和单反比画质，为什么不拿手机和单反比算法和运行其他app的数量呀。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1988",
+    "text": "我刚拿起我的VIVOX200PRO拍了一下身份证。就是那个长城那里以及那个身份证的字母那里，清晰度，还是能达到你的适马出片水平，我还拿VIVOX100基础版也拍了，搞得我挺郁闷了，因为X200还是带PRO的，升级幅度并不明显啊，这钱有点花得不舒服了。哈哈但我并不认为手机画质能超越全画幅了。[酷]拼画质永远不可能脱离底大这个物理逻辑。何况相机真的优势是源于光学。不仅仅是那块COMS。手机比相机强的地",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1990",
+    "text": "手机cmos硬件不行，算法来凑，注定与高端画质无缘。不信你放大看看就知道了",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_1995",
+    "text": "我有个疑问，手机拍不出身份证和钞票上的超清细节会不会是因为政策的原因，导致手机ai自动屏蔽了这些细节？",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2002",
+    "text": "X200 Pro这个AI不能完全关闭就让人很恼火[生气]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2020",
+    "text": "现在什么相机不用算法？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2049",
+    "text": "别说超越了   就是靠近都绝无可能    手机领先的是方便  易拍   保有量大   性价比高但是单说相机那个头  那个进光量      几百倍有了吧？    拿啥靠近？  拿啥超越？    手机只是算法牛逼   可以取悦大众而已",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2253",
+    "text": "AI和波动你是一点不提啊",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2305",
+    "text": "感觉耐玩一点的，人工少女3和AI少女好一点吧[酷][酷][酷]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2330",
+    "text": "我记得当时还尝试提取文本自己翻译汉化来着, 也不知道现在如何了, 我觉得最好的汉化方式还是外挂的方式, 最好是图像识别自动翻译, 如果有AI来搞就更好了.",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "subtitle_translate",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2379",
+    "text": "手机是通过算法补充的。算法本质就是推测的，细节显然不如光学准确清晰真实。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2400",
+    "text": "手机锐化太严重了，不过算法也挺强",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2537",
+    "text": "厉害了，可以推荐一本新人难度地摄影书吗，目前就学过摄影的一些公开课[赞同]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2672",
+    "text": "提个意见，使用高压缩率算法（H265,AV1）能够做到在不损失画质的前提下压缩视频大小，坏处是需要本地客户端参与更多的运算，视频站点的问题是盲目降码率等参数而不是使用高压缩率算法。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_2702",
+    "text": "[捂嘴]看到AI笑了，这事跟AI没关系。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2706",
+    "text": "当AI来决策这些的时候，估计就是性价比最优优先了。。 可能后面要面对方方面面的这种矛盾",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2780",
+    "text": "记得前年，刚买了新款的相对很贵的电视，不记得是在QIYI上还是TX上，看《爱宠大机密》《疯狂动物城》，视频弹出推荐试用高大上的名称的清晰度，应为首次使用支持动态对比度的电视，试用时，那惊艳的裸眼3D效果+从未看过的清晰质感，之后开了会员，过了一个月重新再看之前看过的电影和动画时，就感觉很奇怪，怎么不那么好看了，画面变得“很平”，还把电视重置了一次，然而依旧没啥改变，之后放弃，现在看到影视飓风这个视",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2786",
+    "text": "你说他们有钱吧，他们给你降画质，降码率，可你说他们没钱吧，他们还有钱搞算法那套，我在想算法这套设备不花钱啊？个中缘由我就不解释了吧[飙泪笑]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2796",
+    "text": "感觉答主很外行，关键是码率不是算法，跟ai也没啥关系",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2873",
+    "text": "有没有发现，以前街面上的无所事事，浪荡的小青年，校门口“借钱”的小混混，自打千元智能机和短视频普及之后，忽然间都消失了。不不不，他们都还在，在不发达地区，在农村，只是你看不见",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2891",
+    "text": "它以碎片化、高刺激的内容不断切割人的注意力，长期观看会降低专注力和深度思考能力；算法推送的同质化内容易造成信息茧房，限制认知视野；同时，无节制刷视频会挤占学习、工作和现实社交时间，还可能因沉迷导致作息紊乱、视力受损。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2892",
+    "text": "每一种新事物的出现，有它积极的一面，也有它消极的一面，从社会稳定这点来说，智能手机确实让很多人有事可做，比如在几年疫情期间。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2893",
+    "text": "各种媒体，正在精准的改变我们的价值观，给小孩推荐游戏，给女人推荐仪式感，给男人推荐生存危机。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2900",
+    "text": "凡事都有利弊，网络就像一把双刃剑。现如今快餐时代，刷小视频几秒一个，人都没用耐心去看长篇大论的文章。碎片化时间，做题遇到困难，一有阻碍就去刷小视频，这真的是一种解脱吗?时间一分一秒的过去了，你收获到什么呢？显然，被算法控制着你的喜怒哀乐，被大数据牵着走，到后来什么也没有收获只剩下 无尽的空闲，疲惫，焦虑，懊悔。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2911",
+    "text": "短视频的核心危害源于算法驱动的强成瘾性与碎片化强刺激模式，对个体造成多维度损害，未成年人受影响尤甚。它会制造无意识时间黑洞，挤占学习、工作等核心生活时间，长期高频刺激会摧毁深度专注力与延迟满足能力；生理上损伤视力、颈椎，抑制褪黑素引发睡眠障碍，提升慢病发病风险。心理上易造成多巴胺成瘾、快感阈值升高，引发焦虑自卑与情绪内耗；认知上弱化深度思考与逻辑能力，陷入信息茧房。同时会弱化现实社交能力，易误导未",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_2932",
+    "text": "我以前上学，智能机在初中刚出现苹果4。娱乐方式主要是电视和书本或者出去跑。现在我妹妹我跟她说这是以前的电影，你看过没，她看了一下名字，说这个我好像刷到过。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "screen_cast",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2942",
+    "text": "我家的老人、小辈没啥人喜欢短视频和短剧的。当然现在的手机也挺消耗人的视力和精力的，即使是只用手机看电子书、看微信公众号的C刊文章和科技类文章，上知乎写点东西，与人工智能大语言模型交流学习，用多了也费时费力，对人的眼神和心力有损耗，也宜适当自觉自律控制。控手机、短视频在最后还要看使用者自己怎样做。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "subtitle_translate",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2945",
+    "text": "之前获取信息两种类型，一种很深入的，一种狠广泛的，前者可以让自己成为某个领域的深入性人才，乃至专家。后者可以让自己免于消息闭塞。可现在碎片化的消息普天盖天，很多时候深入知识越来越少，现在人类在人工智能的训练中，明白输入信息对智能的影响，进而怀疑，这些东西会不会影响现在人的智商",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_2971",
+    "text": "平衡和稳定是发展的基石。产业智能化程度越来越高，传统行业能提供的岗位越来越少，确实也需要解决富余人口的注意力问题。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_2978",
+    "text": "我还就得看短视频，我要是追剧我能熬夜追，看短视频没事的时候能打发点时间，还有一点就是要不要开启个性化推荐，我尝试过不开但是很神奇的发生了，我看几个视频我就不想看了，但是打开了，我看一会我就觉得烦了，我能感觉到视频的同质化很严重，虽然我看的很开心，但是我看一会就不看了，越看越空虚。这玩意是让你在没事的时候打发时间，看几个视频乐呵乐呵得了，天天刷，人都傻了。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "zhihu_comments_3041",
+    "text": "博主有什么书单推荐吗？",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3110",
+    "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3211",
+    "text": "我大学读的动画系，那时候还没有智能手机，网络还是2G的，也没有网课，学校教的东西其实是很落后的，想学软件就只能花几千到上万钱去线下培训班。现在只要想学什么，一打开B站就有各种免费的教程。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3214",
+    "text": "刷短视频，只不过是把自己困在信息茧房里罢了，算法会给你最优解，你喜欢什么就给你什么",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3231",
+    "text": "被算法追击，怎么不算另一种局限呢？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3232",
+    "text": "这个话题在去年给学生上新媒体课时聊过，从早期互联网到后来的新媒体、再到现在的ai智能体，这一发展历程中，有一点是不变的：信息的来源在递增，信息的真实度在递减。信息来源递增带来了更多的选择，真实度递减则带来了更多诱骗人光阴的陷阱。好也罢，坏也罢，只是从某一角度的评判，而时光这条长河是截不住的，更应该考虑的是，怎么让它为你这条船带来动力，或者至少不是阻力。这其中就需要老师家长共同努力，带着孩子去建立一",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_3239",
+    "text": "碎片化的海量信息，无差别，高频次的冲击的生活中的我们，大多数普通人还处在人生可争取的阶段，既然是普通人，即内核并不是十分稳固，纵使明显的垃圾信息可以屏蔽，也会为某次情绪买单某份垃圾信息的汲取，并不断延伸，相关搜索，甚至于借助AI。我以前会算命，会星盘，会奇门遁甲，可当这两年AI开始兴起，各大平台掀起AI赛博算命等所谓“第三视角”解读并建议你的人生时，大多数人并不能意识到，自己已经在AI资本局内，大",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_3258",
+    "text": "他们常常给一个过来人看起来明显有问题的视频点赞[思考]而且点赞评论的一看就是同类人我稍微点破，就会被他们攻击但是跟我一样的过来人也会声援我你说这跟自欺欺人有什么区别[大笑][大笑][大笑]没有啥意义，你喜欢啥，算法就推给你啥",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_3287",
+    "text": "“所有的圈子，都被算法击穿了。”你未免高估自己和短视频了。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3289",
+    "text": "这不就是信息茧房吗，信这玩意只会让你越来越无知，短视频算法会让你只相信自己的那一套，因为你根本就没有独立思考过，全是别人的观点给你洗脑。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3298",
+    "text": "现在有了AI了，想经历什么人生可以自己编然后自己参与进去[笑哭][笑哭]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3302",
+    "text": "b站推荐都是你可能感兴趣的，我在b站几乎遇不到什么键政人，因为我压根就不怎么看。虽然关注了几个军事政治类up，也不参与讨论，不开弹幕，看完就走。你要是想单纯看看视频，那不是挺简单。你非要使劲看，使劲辩，在知乎辩赢了，心情大好，去b站辩输了，回知乎又诉苦，你能不能想想你到底来干啥的，想赢就在知乎辩，知乎的特点就是不管哪一方，总有一堆人，还特别喜欢聚众，你挑个观点和你一样的，进去辩，包你赢。想看视频去",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "long_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_3400",
+    "text": "以为花几十块开了会员，就能享受无广告的完整内容？现实是，开了会员有 “会员专属广告”，片头有推荐贴片，剧中有植入弹窗，甚至暂停都会跳出广告；想投屏？不好意思，普通会员只能投 480P，想投高清要升级更贵的会员；想在电视上看？手机会员和电视会员不通用，必须再花一份钱开大屏端会员；更别说曾经泛滥、如今换皮回归的超前点播 —— 会员已经付了费，想看大结局、看高光剧情，还要再按集、按部额外掏钱。反观盗版资",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_3405",
+    "text": "最主要的是，正版的暂停想看什么东西的时候，会自动变成小屏，无敌恶心",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3546",
+    "text": "最恶心的是，会员专属推荐和暂停广告，广告就广告，还专属，暂停那个，你猜我为什么暂停，就是为了看清楚细节啊，你又给我广告，真的是恶心妈妈给恶心开门，恶心到家了",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3560",
+    "text": "也不是算法吧，人性就是如此。在这之前网络小说也一直都有黄金三章的说法。现在是比黄金三章更变态了，你看现在小说一堆花里胡哨的名字，恨不得把爆点让你在标题就能看到",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3617",
+    "text": "确实，目前其实最多刷到短视频的就是淘宝和B站，前者是很容易被首页推荐的商品介绍吸引然后一不小心划十几个然后突然反应过来卧槽我来干啥来着，后者就是手机点进推荐视频往下滑，但是很容易划几个后推荐的视频就开始跑偏了回过味来也就退出了。现在连B站订阅更新都不会全看了，吃饭的时候拉着更新列表挑几个打开标签页看看。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3623",
+    "text": "之前看过一本书，大概意思是：现在这个世界最重要的资源，不是钱，而是注意力。各方势力都在不惜一切、全力以赴、变本加厉、狗急跳墙地瓜分我们的注意力，导致我们现在人大多处于一种支离破碎的状态，已经无法静心、专心地去做一件事了。其实，注意力最终都会变成钱。就像我们买了某家的会员，就会倾向于去某家消费。我们的注意力被吸引到哪里，我们最终就要在哪里消费。算法，说得形象点，就是在争抢会员。说得难听点，人，在某种",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3645",
+    "text": "虽然有点像AI，但paperpass给的AIGC疑似是0%）",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3663",
+    "text": "算法会让你大脑持续“同质化”，你刷到的视频文字决定了你接下来的内容，而接下来刷到的内容又给你重新定义算法逻辑，循环往复，形成一个闭环。而你就在这个圈里，自己请自己住进了一个信息茧房。[发呆]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3667",
+    "text": "你写的太好了。我很少看知乎。最近刚刚开始进来。看到你的文章，觉得知乎上的文章确实是我们网络上的一股清流。你从底层逻辑解释了短视频的问题所在。而我的相反感觉是，短视频我反倒看不下去。他一上来的那种轰炸般的感觉让我本能的抗拒。无法融入。看来你是专业人士，我的问题是，与AI长时间的的深度对话，会对大脑产生什么样的影响呢？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_3671",
+    "text": "抖音推给我的全是我不喜欢的垃圾 它从来没有推荐给我一些我喜欢的知识类内容 无论编程 音乐 摄影 绘画 建筑 语言 甚至金融知识 当然 抖音上的金融知识垃圾的多 后来我就把它卸载了 刷它纯粹浪费时间",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3712",
+    "text": "虽然疑似AI生成，但是还是挺有道理的，提取到一个有效信息，就是要强迫大脑高频率运动。[赞同]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3713",
+    "text": "总有人说像 AI 润色什么的，其实反过来想，AI能给你带来这样的想法或者文章，不比某音无聊的视频有趣吗？人脑也好 AI也罢，关键你是否能受益。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3714",
+    "text": "最简单最容易的解决依赖刷短视频的方法，关闭抖音的 个性化内容推荐 如图。 关闭后给你随机推送内容，看两眼后，也不会感兴趣，自然而言就不想刷短视频了  查看图片",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3716",
+    "text": "这是一个非常精彩的“现场解剖”机会。既然你花了 10 分钟在知乎上读完这篇，那我们就用你刚才提到的“贝叶斯推理机”和“信息熵”视角，来拆解一下这篇文章中显而易见的 AI 生成痕迹与逻辑构造套路。这篇回答是典型的**“高迷惑性、中等信息熵、标准结构化”**的 AI 产物。以下是详细拆解：1. 结构上的“模版化”痕迹AI 生成长文时，为了保证逻辑不散架，通常会采用**“总-分-总”加“跨学科术语堆砌”",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3718",
+    "text": "那可以说是这些公司/算法工程师坏吗？还是这是社会科技发展的必然性呢",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3722",
+    "text": "虽然我不刷短视频，但我最近觉得过于依赖AI工具的“外包思考”也会带来退化。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3723",
+    "text": "我认识的算法工程师熬夜刷视频打游戏比我还狠[doge]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3725",
+    "text": "当我关闭个性化推荐后，我刷短视频的欲望很小了[大笑][大笑]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3731",
+    "text": "大脑生不生锈不好说，但是长时间看低质量，只追求感官刺激的短视频，越来越降智是肯定的。而且很多视频是根据算法推送的，重复率很高。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_3743",
+    "text": "啊这篇文章怎么说呢，有一定的情绪诱导作用强迫自己阅读那些晦涩难懂的、没有配图的、逻辑紧密的长文。   这个结论明显就具有局限性有点过时了，然后其中关于多巴安的描述，还有前额叶的描述比较专业，然后作者的简介是算法工程师，怎么会对生物这方面这么了解？算法应该依靠心理学比较多，这点有待讨论",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3749",
+    "text": "持续的快乐，持续的多巴胺，算法把我们安排的太明白了",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3751",
+    "text": "不刷短视频也不会自动构建出知识，即使看书也可能是过目忘，刷短视频也只是打发时间的一种方式，跟刷知乎没有区别",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3768",
+    "text": "某短视频平台的推荐机制我就非常不喜欢，至少我看b站的时候我知道看完一个视频后往哪探索，但是某短视频平台刷完一个视频后就会强制跳转到下一个视频，没有选择没有探索，感觉我的智商正在被算法侮辱",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3772",
+    "text": "…………以前还喜欢刷短剧，那种反转打脸的爽的很。但是现在看多了，估计都是AI编剧的，几乎都一样。看个开头就知道过程结尾。现在变成，开个开头，然后拉到3/4的地方，应该是打脸爽点的地方，看个几集也就是爽完了就换下一个视频。好像可以理解为追求多巴胺分泌。但是更多的现在更喜欢看长时间的科普类视频了。其实兴趣转移也快，应该根本够不到大脑退化这说法吧",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "positive_feedback"
+  },
+  {
+    "id": "zhihu_comments_3774",
+    "text": "@任意一个AI 总结一下[大笑]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3784",
+    "text": "让AI来帮我们思考就好了，多方便",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3803",
+    "text": "典型的AI，逻辑清晰，时时扣题，一堆引号，高端词汇，但写的比大部分人都要好",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3805",
+    "text": "作者用AI写文，评论区用AI做总结。 真真假假不知道，但是似乎没有人类能够完整思考和产出了。[发呆]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3806",
+    "text": "感觉好像问AI的回答也是流畅性错觉 看似学懂了 但是自己复述一遍也够呛",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3807",
+    "text": "这是 AI 写的吧？我随便翻了一下引用文献，完全驴唇不对马嘴啊。比如文献 [1]，是一篇关于药物依赖的戒断反应的综述文章，研究包括了 22 项酒精研究、3 项大麻研究、4 项可卡因研究、3 项（甲基）苯丙胺研究和 3 项阿片类药物研究。结果表明，持续戒断后，部分认知功能可以（部分）恢复。这和短视频有毛关系？比如文献 [3]，是一篇智能手机对认知能力的影响的社会学实验，研究找了几百个学生，收走手机，",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3808",
+    "text": "大厂码农搬砖离不开AI，知乎写个回答也离不开AI了？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3809",
+    "text": "感觉这片是AI写的呢[惊喜]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3810",
+    "text": "散了吧，你仔细看看她的所有回答会发现，都是用的一套回答的AI模型，耽误我半小时仔细研究了她的文章的用词及段落习惯，可怕，你是AI写的也请标注一下。嘴上说的跟你做的是两套东西，骗那些不会分辨AI的朋友们有意思吗",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3814",
+    "text": "说白了 就是大脑越刷 越变白痴了，没有思考能力了，就是这样的。现在的AI让人没有思考能力",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3815",
+    "text": "所以说刷短视频时其实是AI在反向训练我的大脑？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3820",
+    "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_3886",
+    "text": "有意思的切入角度，但我觉得并不够客观。您的回答中过度依赖“直播领域超级专家”的单一观点，没有引入其他研究数据、心理学理论或不同群体案例来平衡视角，带有较强的主观论断（例如“认知潜力不大就不会需要奶头乐对冲”），缺乏对观点的辩证分析。另外从角度全面性上讲，完全否定了“改善碎片化娱乐沉迷”的可能性，只强调“理解支持”，没有探讨沉迷背后的多元原因（比如平台算法推送、大众社交需求），缺乏“是否需要改善”“",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "live_stream",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_3887",
+    "text": "奶头乐不是“看美剧”，而是“你看完美剧，还骗自己在学英语”。真正的努力不是“我计划了多少”，而是“我今天到底他妈的学了什么”。（我本来还不懂呢 AI骂了我）",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4011",
+    "text": "碎片化的信息本质没有问题，我们每天都在处理碎片化的东西。但有个核心问题在于，高密度的碎片化信息，自己要学会筛选，感兴趣的要知道如何求真。以及如何去相对构建该类的系统化的知识。就像如今的AI，都在说，你也看到了。你可能会焦虑，可能会兴奋，但这些毫无意义，如果感兴趣，去了解，发展到了什么程度，目前应用到了什么程度，去学习去感受去思考。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4026",
+    "text": "带着钩子去浏览碎片化信息，针对你关注的问题，主动驾驭算法，而不是等算法投喂。输出倒逼输入。把看到的内容转化成自身的思考并尝试用文字输出，把道理讲清楚讲明白。真正的内化，必须经历痛苦的重构。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4032",
+    "text": "我觉得平常刷视频能看到自己感兴趣的精准推荐，能获得很多的灵感",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4053",
+    "text": "[酷]一直用A卡AU，从7870用到9070xt，cpu从2600用到9700x，但是别人求我推荐硬件，我会推荐IU和N卡，除了缩缸那一代，剩下的不好用就是他自己的问题。",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4056",
+    "text": "然后再学会调日期 就可以看了。播放后 再把时间自动回来",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "playback_control",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4059",
+    "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4215",
+    "text": "4k视频压成1080p可以选择高质量算法重采样处理，4k视频在1080屏幕上播放那肯定要用最快速的像素映射算法，质量肯定比预处理的低。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4228",
+    "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4240",
+    "text": "我刚买的红米手机，结果B站上一搜关于小米的视频就卡，看那些推荐页和热门视频就不卡。。。不清楚为什么，我用旧手机华为登了同一个WiFi测，旧手机不论看那个视频都不卡，但是新手机看那种播放量不高的就卡。。。我现在在想要不要退货[捂脸]不懂原因",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_4247",
+    "text": "手上新到的红米11tpro。刚到手看B站出现了楼主所说的问题，今天看最新的mi13系统更新日志才看到优化了看视频的，优化后果然不卡了，推荐大家更新。over",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4260",
+    "text": "手机设置自动化，当打开短视频APP后，手机自动设置黑白[大笑]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4264",
+    "text": "我的方法好简单粗糙，隔段时间卸载软件，再下载回来的话，算法会推新的内容，好多是我不感兴趣的，因为我不太爱点关注，刷不到感兴趣的内容就不想看了，不想看的那段时间里，我就会选择看文章[捂嘴][捂嘴][捂嘴]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4330",
+    "text": "我们沉迷的，是被算法精心投喂的“廉价快乐”。这实则是场认知剥削——我们将专注力与思考能力廉价出售，换来的却是内心的空洞与贫瘠。真正的突破在于：意识到自己正被消费，并夺回注意力的掌控权。当你主动选择放下，便是重塑深度的开始。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4339",
+    "text": "短视频不单是视频评论区都是算法推荐最能吸引力调动情绪的评论优先推荐给你，不同的人刷到同一个视频评论区评论都不一样。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "short_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4400",
+    "text": "建筑设计拉了，没内容没识别度",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4428",
+    "text": "英雄无敌3最不好的是经常黑屏，虽然有自动存盘但也很讨厌，不过画质比帝国时代2要好",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4500",
+    "text": "别给老游戏脸上贴金了，老游戏的画面就是很差，放CRT上模糊点也好不了哪里。我来跟你们讲讲在SVGA标准普及前，老游戏画面是什么样的？且不说达不到VGA标准，只能用线条或者字符来表达游戏画面的古早游戏，VGA是什么效果呢？受限于有限的显存，你有320*240的256色画面和640*480的16色画面两种可选。256色画面怎么样呢？如果用来显示照片，在优化算法加持下，还真能和照片感觉差不多，但是游戏中",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4524",
+    "text": "虽然说我更希望能有风格化的 AI 超分，因为不幸我看不习惯 scanline……但是一些其他的传统插值算法我还用得挺多的",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_4538",
+    "text": "抛开画质不谈，你就说AI涂抹的清楚不清楚吧[惊喜]，并且拍照首先就得拍清楚吧[滑稽]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4542",
+    "text": "博主比的确实没错，但是很明显是拿相机的长处和手机的短处比，虽然专业性来说，手机还是比不了相机，这个承认，但这么比也太不公平了。目前手机在全力追赶相机，正常拍摄的时候几乎没什么区别了，只有放大看细节才有区别，而且手机的便携性，美颜直出，自动调色，多张合成，一键发圈等等，都是相机没法比的，各有各的优势吧，看你的需求是什么，切记非此即彼，非黑即白。比如苹果发布会的视频都是苹果手机拍的，不好吗？华为苹果等",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "pain_point"
+  },
+  {
+    "id": "zhihu_comments_4549",
+    "text": "拿手机和单反比画质，为什么不拿手机和单反比算法和运行其他app的数量呀。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4559",
+    "text": "我刚拿起我的VIVOX200PRO拍了一下身份证。就是那个长城那里以及那个身份证的字母那里，清晰度，还是能达到你的适马出片水平，我还拿VIVOX100基础版也拍了，搞得我挺郁闷了，因为X200还是带PRO的，升级幅度并不明显啊，这钱有点花得不舒服了。哈哈但我并不认为手机画质能超越全画幅了。[酷]拼画质永远不可能脱离底大这个物理逻辑。何况相机真的优势是源于光学。不仅仅是那块COMS。手机比相机强的地",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4561",
+    "text": "手机cmos硬件不行，算法来凑，注定与高端画质无缘。不信你放大看看就知道了",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4566",
+    "text": "我有个疑问，手机拍不出身份证和钞票上的超清细节会不会是因为政策的原因，导致手机ai自动屏蔽了这些细节？",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4573",
+    "text": "X200 Pro这个AI不能完全关闭就让人很恼火[生气]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4591",
+    "text": "现在什么相机不用算法？",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4620",
+    "text": "别说超越了   就是靠近都绝无可能    手机领先的是方便  易拍   保有量大   性价比高但是单说相机那个头  那个进光量      几百倍有了吧？    拿啥靠近？  拿啥超越？    手机只是算法牛逼   可以取悦大众而已",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4827",
+    "text": "AI和波动你是一点不提啊",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4879",
+    "text": "感觉耐玩一点的，人工少女3和AI少女好一点吧[酷][酷][酷]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4904",
+    "text": "我记得当时还尝试提取文本自己翻译汉化来着, 也不知道现在如何了, 我觉得最好的汉化方式还是外挂的方式, 最好是图像识别自动翻译, 如果有AI来搞就更好了.",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "subtitle_translate",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4952",
+    "text": "手机是通过算法补充的。算法本质就是推测的，细节显然不如光学准确清晰真实。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_4973",
+    "text": "手机锐化太严重了，不过算法也挺强",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_5108",
+    "text": "厉害了，可以推荐一本新人难度地摄影书吗，目前就学过摄影的一些公开课[赞同]",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_5248",
+    "text": "提个意见，使用高压缩率算法（H265,AV1）能够做到在不损失画质的前提下压缩视频大小，坏处是需要本地客户端参与更多的运算，视频站点的问题是盲目降码率等参数而不是使用高压缩率算法。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "feature_request"
+  },
+  {
+    "id": "zhihu_comments_5278",
+    "text": "[捂嘴]看到AI笑了，这事跟AI没关系。",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_5282",
+    "text": "当AI来决策这些的时候，估计就是性价比最优优先了。。 可能后面要面对方方面面的这种矛盾",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "ai_feature",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_5356",
+    "text": "记得前年，刚买了新款的相对很贵的电视，不记得是在QIYI上还是TX上，看《爱宠大机密》《疯狂动物城》，视频弹出推荐试用高大上的名称的清晰度，应为首次使用支持动态对比度的电视，试用时，那惊艳的裸眼3D效果+从未看过的清晰质感，之后开了会员，过了一个月重新再看之前看过的电影和动画时，就感觉很奇怪，怎么不那么好看了，画面变得“很平”，还把电视重置了一次，然而依旧没啥改变，之后放弃，现在看到影视飓风这个视",
+    "platform": "zhihu",
+    "ai_specificity": "implicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_5362",
+    "text": "你说他们有钱吧，他们给你降画质，降码率，可你说他们没钱吧，他们还有钱搞算法那套，我在想算法这套设备不花钱啊？个中缘由我就不解释了吧[飙泪笑]",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "video_quality",
+    "scene": "general_video",
+    "type": "behavior_description"
+  },
+  {
+    "id": "zhihu_comments_5372",
+    "text": "感觉答主很外行，关键是码率不是算法，跟ai也没啥关系",
+    "platform": "zhihu",
+    "ai_specificity": "explicit",
+    "topic": "content_recommend",
+    "scene": "general_video",
+    "type": "behavior_description"
+  }
+]

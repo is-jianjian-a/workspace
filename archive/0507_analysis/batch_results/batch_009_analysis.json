@@ -1,0 +1,463 @@
+{
+  "batch_id": 9,
+  "total_items": 36,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 31,
+      "short_video": 2,
+      "live_stream": 2,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 30,
+      "pain_point": 5,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "video_quality": 13,
+      "other": 21,
+      "download_cache": 1,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 36
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_600",
+      "text": "哈哈我之前玩博德3装机械盘，第一次档加载两分钟。这还是个得频繁sl的游戏，直接坐大牢image_emoticonimage_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_603",
+      "text": "去年博得3也是这样，我的机械盘导致我加载模型特别卡",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_605",
+      "text": "视频没了，结论有问题？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_608",
+      "text": "114确实比其他延迟低image_emoticon2",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_615",
+      "text": "有没有方法可以解决打开抖音转半天的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_617",
+      "text": "你好，我想问一下，我手机校园网信号满格，笔记本信号只有两格是为什么啊。就这次国庆回来之后，我笔记本连校园网信号差，特别卡",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_618",
+      "text": "短时间别指望能改善了，成都最近开始限速，刚开始晚8-12限速50，过了几天开始限速40，昨天在白天又发现有的基站直接限速7，没自己基站只能看别人眼色了，还是双卡吧",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_619",
+      "text": "你们命好，我在乡镇，不管是插路由器，还是手机。不管是4还是5，不管白天还是夜里，最好时候下载速度就只有3m左右，平时都是1-2，晚上到9点基本等于断网，抖音都缓冲半天才能看，他要是24小时都能稳3m我都不说了，我的主卡电信现在下载软件还能到10，平时能跑道6-7",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_620",
+      "text": "事实上，广东以前晚高峰限速35，现在白天也限制得很厉害，晚上有时20都跑不到image_emoticon67，限制得越来越狠",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_622",
+      "text": "沈阳前段时间限速1M，有时候都500KB左右，从早上过8点到晚上23点，限速两个月左右，现在好多了，10MB—50MB都有，最起码能用了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_623",
+      "text": "同广东，实际很影响使用了，网页都卡，视频根本打不开",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_625",
+      "text": "我也在黄埔这边晚上八点到凌晨基本废了，看直播验卡，微信视频严重卡，网速只有100多k达到了2G时代的速率。转换为我联通限3的卡就没有问题。本身是因为有个限速卡，买了广电的惠民卡，然后又买了有线C卡和有线A卡。上个月投诉了好久没有用，把惠民卡注销付了70违约金。看吧，等合约到期全注销了，用着真埋汰网速稀烂，还经常二次认证，开卡几个月了反复实名认证了七八次。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_627",
+      "text": "得了吧，我这全天限速200kb，投诉有吊用image_emoticon10",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_629",
+      "text": "我觉得画质相比暗黑2重置版已经不错了，4060显卡，就是人物模型是真丑",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_631",
+      "text": "单纯的优化辣鸡 和虚幻4没关系",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_632",
+      "text": "画质不是重点，优化垃圾 冰电双捷+护甲爆破，卡到怀疑人生",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_633",
+      "text": "你是不是开了A卡的插帧和动态删减画质。这游戏美术虽然说不上好看，至少4K高画质模型清晰度还是在线的。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_634",
+      "text": "画质差，优化差，只靠玩法撑着，但是GGG不但不思进取，还要在玩法上搞负优化，生怕玩家玩的太爽，唯一像人的地方就是上线离线市集了。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_635",
+      "text": "我都只能降画质玩，不然满图特效卡得一比",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_638",
+      "text": "洛手不吃配置，电脑端丢球方便，其他的移动端也能做",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_640",
+      "text": "image_emoticon玩不来电脑🆘",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_641",
+      "text": "泥螺没有手柄模式真的很烦，以前玩宝传说的手癖改不过来用键盘玩真的很累image_emoticon12",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_643",
+      "text": "本可上班摸鱼用手机，经常误触image_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_644",
+      "text": "手机玩这种大世界的视角有点难受，感觉还是电脑舒服",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_645",
+      "text": "电脑抓异色太方便了，滑动视角很舒服，手机端打打pvp好像抓宠那个手感太屎了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_647",
+      "text": "我用手机玩的时候经常误触长按打开任务，精灵界面，明明我都没按了，长按进度条还在增加image_emoticon16，所以能用电脑我就用电脑玩的，只要队伍里带个会飞的，要摔下去的时候一直按空格就好噜",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_648",
+      "text": "看主播直播。我的感觉没鸣潮pc好看。。。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_649",
+      "text": "二测的时候能开极致画质，现在感觉是俩个游戏，我说我进去怎么感觉有点陌生。。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_651",
+      "text": "放你****，这游戏画质不会比对马岛差多少，我4080特效全开，现在两个游戏同时玩，黑画质先检讨下自己行不image_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_655",
+      "text": "应该就是BUG了，我上次测试4070画质挺好的，网易一贯的画质",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_658",
+      "text": "你好，没有，本质上就是个会飞的手机镜头",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_662",
+      "text": "RAW格式，增加曝光时间",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_663",
+      "text": "使用1080p 30帧 这样能增加进光量 画质会好一些",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_665",
+      "text": "夜景 就算全画幅单反都很难顶得住更何况1英寸。要拍出好视频必须专业级电影摄像机。少拍夜景就好了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_666",
+      "text": "夜景本来就这样，先不说传感器就那么点，夜景像素高了反而吃亏，以前b站不是试过a7m3夜景画质比a7m4还稍微好一点吗？就是因为像素低",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_667",
+      "text": "一分钱一分货的道理都不懂吗？穷的买mini，就不要追求画质了shoubai_emoji_face_04",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

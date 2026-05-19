@@ -1,0 +1,488 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下24条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 10/120)
+
+--- ITEM #1 ---
+ID: tieba_comments_687
+平台: tieba
+类型: comments
+内容: 高清的是如果这部卖的好就拿出来卖image_emoticon
+
+--- ITEM #2 ---
+ID: tieba_comments_688
+平台: tieba
+类型: comments
+内容: 我去搜了下这个神人卖家，好多片都半年了还不出高清的，这是正常情况吗
+
+--- ITEM #3 ---
+ID: tieba_comments_689
+平台: tieba
+类型: comments
+内容: 大于2个G就不想下载了 其实720看着也行的
+
+--- ITEM #4 ---
+ID: tieba_comments_700
+平台: tieba
+类型: comments
+内容: 首先把锁60帧和游戏内的插帧关了，去n卡app添加上异环，超分模型选m性能，ai插帧打开，之前卡卡的cg也完全不卡了，我是4060，调完之后2k开lumen平均帧100多，但还是不建议开lumen因为low很低会有卡顿的感觉
+
+--- ITEM #5 ---
+ID: tieba_comments_701
+平台: tieba
+类型: comments
+内容: 不是拉踩，但是这真的体现出终末地优化有多强了…image_emoticon9image_emoticon9我还挺喜欢异环这游戏的，但是如果一直这么掉帧那真的游戏体验很差了
+
+--- ITEM #6 ---
+ID: tieba_comments_703
+平台: tieba
+类型: comments
+内容: 4060ti 2k原画，帧生成+lumen，能有100帧，很稳
+
+--- ITEM #7 ---
+ID: tieba_comments_705
+平台: tieba
+类型: comments
+内容: 我朋友5060笔电很流畅。
+
+--- ITEM #8 ---
+ID: tieba_comments_707
+平台: tieba
+类型: comments
+内容: 不开插帧，然后锁120中画质，关闭光追，能在100-120，我也是5060，电脑记得开狂暴模式
+
+--- ITEM #9 ---
+ID: tieba_comments_714
+平台: tieba
+类型: comments
+内容: 买PS4的第一个游戏建议玩那些画质好的游戏， 神海地平线大表哥之类的， 如果第一个游戏玩的画质一般那种， 你会觉PS4画质不好， 失望 ， 其实是游戏的锅
+
+--- ITEM #10 ---
+ID: tieba_comments_715
+平台: tieba
+类型: comments
+内容: 主机改不了画质 都是默认画质 而且你玩的游戏太老了
+
+--- ITEM #11 ---
+ID: tieba_comments_719
+平台: tieba
+类型: comments
+内容: 为什么我觉得我的电视看着还阔以是我眼睛有问题嘛image_emoticon25
+
+--- ITEM #12 ---
+ID: tieba_comments_722
+平台: tieba
+类型: comments
+内容: 他助理已经公开视频来源了，说是她在美国洛杉矶豪宅帮大家拍的，被大家的爱国热情震撼了就放到了自己的抖音😒😒
+
+--- ITEM #13 ---
+ID: tieba_comments_724
+平台: tieba
+类型: comments
+内容: 我想看杨议后续反应的表演视频image_emoticon25
+
+--- ITEM #14 ---
+ID: tieba_comments_729
+平台: tieba
+类型: comments
+内容: 某短视频平台拿800年前的视频都可以说成是明天发生的
+
+--- ITEM #15 ---
+ID: tieba_comments_738
+平台: tieba
+类型: comments
+内容: 首先分享一下我的游玩感想，机器人100的三维开局非常弱并且哈姆雷特第二季节就是长期下雨湿润无法避免所以持续掉血是常态，因为哈姆雷特野外的花不产生蝴蝶，又没有蜘蛛，所以我发现能常规廉价回血手段只剩下吃1金币烤熟的石榴（回20血）
+
+--- ITEM #16 ---
+ID: tieba_comments_739
+平台: tieba
+类型: comments
+内容: 机器人开荒哈姆雷特唯一的优势是电，这也是我最想分享给大家的，哈姆雷特的电鸟是很多的，离出生点又不远，开局采几根树枝就可以去找电鸟电自己，一边挨电一边把铁矿捡完，这个时候你就不需要火把了，机器人会常亮非常非常非常久（或许是永久的？不太确定），下一步就是做一本解锁背包、古董锤、木甲等就可以下遗迹了，遗迹主要目标是古董、草、树枝，留意有陷阱，建议穿木甲探索来回搬物资，狠狠探索两个遗迹拿到第一桶金，再去猪镇买房
+
+--- ITEM #17 ---
+ID: tieba_comments_750
+平台: tieba
+类型: comments
+内容: 美术，小麦地排前面？小麦地角色只能说一般。。。如果版本在往前退一点，那就是屎。
+
+--- ITEM #18 ---
+ID: tieba_comments_751
+平台: tieba
+类型: comments
+内容: 优化方面，原，崩，（终，绝）同一级
+
+--- ITEM #19 ---
+ID: tieba_comments_753
+平台: tieba
+类型: comments
+内容: 国内视频网站的4k码率很低，实际上只要码率够。我这里指的是1080p的蓝光原盘那种，你放4k上播一样很清晰的。
+
+--- ITEM #20 ---
+ID: tieba_comments_754
+平台: tieba
+类型: comments
+内容: 电脑不行或者视频源不行
+
+--- ITEM #21 ---
+ID: tieba_comments_755
+平台: tieba
+类型: comments
+内容: 你找个50m码率的4K视频看看就知道什么是清晰
+
+--- ITEM #22 ---
+ID: tieba_comments_757
+平台: tieba
+类型: comments
+内容: 你去看看环太平洋85GB的原盘，绝对清晰
+
+--- ITEM #23 ---
+ID: tieba_comments_759
+平台: tieba
+类型: comments
+内容: 荣耀本身的画质增强也开了的
+
+--- ITEM #24 ---
+ID: tieba_comments_760
+平台: tieba
+类型: comments
+内容: 其他界面也模糊吗？还是只是在用三方应用看视频模糊？
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_010
+
+开始分析：

@@ -1,0 +1,56 @@
+{
+  "date": "2026-05-06",
+  "total_hot_search": 53,
+  "related_count": 4,
+  "high_related": [
+    {
+      "title": "OpenAI或加速手机开发",
+      "score": 5,
+      "matched": {
+        "AI": [
+          "AI",
+          "OpenAI"
+        ],
+        "手机": [
+          "手机"
+        ]
+      }
+    }
+  ],
+  "mid_related": [
+    {
+      "title": "黄仁勋反驳AI末日论",
+      "score": 3,
+      "matched": {
+        "AI": [
+          "AI"
+        ]
+      }
+    },
+    {
+      "title": "鸿蒙智行回应副驾折叠争议",
+      "score": 2,
+      "matched": {
+        "手机": [
+          "鸿蒙"
+        ]
+      }
+    }
+  ],
+  "low_related": [
+    {
+      "title": "智慧春耕科技范儿十足",
+      "score": 1,
+      "matched": {
+        "科技": [
+          "科技"
+        ]
+      }
+    }
+  ],
+  "category_stats": {
+    "AI": 2,
+    "手机": 2,
+    "科技": 1
+  }
+}

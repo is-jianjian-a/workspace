@@ -1,0 +1,359 @@
+{
+  "batch_id": 20,
+  "total_items": 27,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 17,
+      "short_video": 8,
+      "live_stream": 1,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 22,
+      "positive_feedback": 2,
+      "pain_point": 2,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 21,
+      "screen_cast": 1,
+      "payment_member": 1,
+      "content_recommend": 1,
+      "playback_control": 1,
+      "download_cache": 1,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 26
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_571",
+      "text": "我体谅所有公共场所外放视频的人  因为它和它的家人全炸了 烤的外焦里嫩 撒点烧烤料 隔壁小孩都馋哭了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_576",
+      "text": "真管用，给隔壁投屏过去，立马没声了[打call]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_577",
+      "text": "抖音接近四千亿的市值全在这视频里了[辣眼睛][脸红]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_581",
+      "text": "哥谭噩梦0:00\n帅气逼人组合0:14\n塞班在哪0:35\n栓q歌1:05\n加油 奥利给1:29\n雷霆嘎巴无情哈拉少1:47\n师傅你是做什么工作的2:26\n独立宣言2:36\n我叫马牛逼2:47\n我买了一个小风车3:04\n我是老六3:09\n退退退3:32\n专业配音演员3:53\n高质量男性3:56\n脚艺人4:12\n我是云南的4:25\n我之后心疼哥哥4:57\n猛男舞团5:25\n二奶和高领2:38\n嘿嘿，b",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_582",
+      "text": "草，说起来高中时候考试作文曾多次套用怪鸽 野兽先辈 会员制餐厅 JOJO啥的当作素材，甚至比原来正常作文分数还多[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_583",
+      "text": "奥利给有2个，一个是老八，一个是另一个，老八是模仿的，最开始的是一个工地大叔说的，好像跟视频里面那个大叔是同一个人，所以不要把老八当原创，因为他就是抄袭蹭热度的，他能火是因为真的吃不是因为奥利给，最开始奥利给是加油，现在被老八给坏了名声变成贬义词了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_590",
+      "text": "其实直播间氛围很好的，大家都很开心[OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_592",
+      "text": "每个人笑点都不一样，所以好不好笑都是看人的。大部分人都在说很好笑看的很开心，结果一些人就在大家笑得很开心的时候自认很cool地说“看不懂有什么好笑的”真的很扫人兴呢[喜极而泣]看不懂就看点自己能看懂的笑一笑，何必还浪费时间看不感兴趣的视频呢[喜极而泣]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_596",
+      "text": "救命啊我真的不行了啊啊啊啊 你们知道这十分钟的视频，我看了半个小时啊啊啊，每次笑一会就得暂停笑完不然怕笑抽抽了喘不上气，这些人的笑声到底为什么这么魔性啊哈哈哈哈哈哈哈哈哈",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_597",
+      "text": "我不刷短视频，但是我刷长视频[辣眼睛]\n是不是本质上没什么区别，我也会看长视频每天至少俩小时，时事新闻，财经新闻，科普知识，游戏攻略，偶尔也会看毫无营养的东西",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_598",
+      "text": "我刷的不是短视频 我刷的是B站十分钟以上的知识科普和解析[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_599",
+      "text": "b站也是，之前推出了一个短视频模式，有一次不小心点进去半个小时才出来。后面的几天总会点进去看一两个小时，真的太可怕了。天下资本都是一种东西，不要以为叔叔就是好人了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_600",
+      "text": "爱看哔站视频的也是成瘾的表现吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_602",
+      "text": "没有安装bilibili的朋友们给我点个赞",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_603",
+      "text": "实不相瞒，我觉得个人的意志力更加重要。随着时代的发展，总会有更容易获得快感的娱乐方式出现。我大学的时候总是在游戏上花大量的时间，边玩边懊悔，非常痛苦，这只是我们想要逃离压力的方式，所有的娱乐方式都不能避免成为人堕落的温床。后来每天安排好一天的学习工作休息时间，通过坚持控制自己，慢慢的让自己能拒绝很多诱惑了。说那么多不是想指责什么的，就是说一下自己的经历，希望跟我有一样状况的朋友们能够共勉[打cal",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_604",
+      "text": "虽然从没下载过抖音快手，但每天刷B站三小时起步的我[微笑][无语]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_605",
+      "text": "我虽然不刷短视频，但我总是逛评论区，就像现在这样。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_606",
+      "text": "年轻人还好，中年人是真毁了，家里天天刷抖音，而且还是大声音外放。[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_608",
+      "text": "你们不知道 他配音最成功的是 唐老鸭。。。。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_609",
+      "text": "这个配音确实给孙悟空加分不少。仔细看孙悟空确实做不出什么面部表情，六小龄童也只能从眼神和动作上找补，但是光有眼神远远不够，配音对情感的拿捏确实让孙悟空形象更饱满了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_611",
+      "text": "虽然猴子没有细腻表情，但肢体动作对情绪的表达是教科书级的。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_614",
+      "text": "我一直以为是猴哥自己的声音[热词系列_知识增加]没想到是配音",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_615",
+      "text": "毕竟，当年会普通话的人不像现在这么多，第二，给他们配音也是为了能让这个声音更符合人物特点、性格。不像现在，动不动配音是因为演员懒、架子大",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_616",
+      "text": "确实配的很好，但有些下面评论什么演员声音很难听的实在其心可诛，黑魔怔了真是，承认演员演的也很到位，本音也许没那么贴脸，但也不至于说难听，有这么难吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_633",
+      "text": "搞笑视频如果是AI做的就不好笑了，没有真实性",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_637",
+      "text": "看到标题，我退出了视频，家人们我做得对吗[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_638",
+      "text": "破解过度刷短视频，挽回被动刷信息流的破解办法有一个，就是自己做课代表， 将视频有用的地方做课代表发评论总结，这一招能主动让大脑思考这个视频有用的地方，还是很不错的[星星眼][星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

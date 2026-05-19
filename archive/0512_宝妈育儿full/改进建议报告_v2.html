@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>改进建议报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; 
+            background: #fafafa; 
+            color: #333; 
+            line-height: 1.6; 
+            font-size: 14px;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        .header { 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 20px; 
+            margin-bottom: 40px; 
+        }
+        .header h1 { 
+            font-size: 28px; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+        .header .subtitle { 
+            font-size: 14px; 
+            color: #666; 
+            margin-bottom: 12px; 
+        }
+        .header .meta { 
+            font-size: 12px; 
+            color: #999; 
+        }
+        
+        .section { 
+            margin-bottom: 48px; 
+        }
+        .section-title { 
+            font-size: 18px; 
+            font-weight: 600; 
+            margin-bottom: 16px; 
+            color: #1a1a1a;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: #444;
+        }
+        
+        .recommendation {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            padding: 20px;
+            margin: 16px 0;
+        }
+        .recommendation .rec-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+        .recommendation .rec-desc {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 12px;
+        }
+        .recommendation .rec-action {
+            font-size: 12px;
+            color: #666;
+            background: #f5f5f5;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        .priority-high {
+            border-left: 4px solid #333;
+        }
+        .priority-medium {
+            border-left: 4px solid #666;
+        }
+        .priority-low {
+            border-left: 4px solid #999;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            font-size: 11px;
+            color: #666;
+            margin-right: 6px;
+        }
+        .tag-p0 { background: #333; color: #fff; }
+        .tag-p1 { background: #666; color: #fff; }
+        .tag-p2 { background: #999; color: #fff; }
+        
+        .insight-box { 
+            background: #fff; 
+            border-left: 3px solid #333; 
+            padding: 16px; 
+            margin: 16px 0; 
+            font-size: 13px;
+            color: #555;
+        }
+        .insight-box strong {
+            color: #1a1a1a;
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 12px 0; 
+            font-size: 13px;
+        }
+        th { 
+            background: #f5f5f5; 
+            padding: 10px 12px; 
+            text-align: left; 
+            font-weight: 600; 
+            color: #555; 
+            border-bottom: 1px solid #ddd; 
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td { 
+            padding: 10px 12px; 
+            border-bottom: 1px solid #eee; 
+            color: #444;
+        }
+        tr:hover { background: #fafafa; }
+        
+        .footer { 
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center; 
+            color: #999; 
+            font-size: 12px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>改进建议报告</h1>
+            <div class="subtitle">基于新增三维标签化的产品优化建议</div>
+            <div class="meta">2025年5月13日 · 660条小红书笔记 · 新增使用情境/触发退出/用户群体维度</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">高优先级改进建议（P0）</div>
+            
+            <div class="recommendation priority-high">
+                <div class="rec-title">1. 针对"焦虑驱动搜索"场景优化搜索体验</div>
+                <div class="rec-desc">
+                    发现：焦虑状态（10.7%）远高于无聊（0.8%），用户主动搜索而非被动消费。<br>
+                    问题：当前搜索功能未针对焦虑状态下的快速决策需求优化。
+                </div>
+                <div class="rec-action">
+                    建议：在搜索框增加"快速判断"模式，输入症状/问题后，AI直接给出"正常/需关注/立即就医"的初步判断，减少用户浏览多篇文章的焦虑。
+                </div>
+            </div>
+            
+            <div class="recommendation priority-high">
+                <div class="rec-title">2. 针对"带娃时"场景设计免手操作模式</div>
+                <div class="rec-desc">
+                    发现：带娃时（12.8%）是主要并行活动，但用户双手被占用。<br>
+                    问题：现有产品未考虑单手/语音操作需求。
+                </div>
+                <div class="rec-action">
+                    建议：增加语音搜索和语音播报功能，支持"播放育儿知识"、"查询辅食做法"等语音指令，解放双手。
+                </div>
+            </div>
+            
+            <div class="recommendation priority-high">
+                <div class="rec-title">3. 针对"算法陷阱"退出障碍增加使用时长提醒</div>
+                <div class="rec-desc">
+                    发现：算法陷阱（9.8%）是主要退出障碍，用户意识到被算法控制但难以自拔。<br>
+                    问题：用户产生"罪恶感"和"后悔"情绪，影响产品口碑。
+                </div>
+                <div class="rec-action">
+                    建议：增加"健康使用"功能，设置单次使用时长提醒（如20分钟），提醒时展示"今日已学X个知识点"的正面反馈，而非强制中断。
+                </div>
+            </div>
+            
+            <div class="recommendation priority-high">
+                <div class="rec-title">4. 针对"孕期"群体（33.6%）增加产前焦虑缓解内容</div>
+                <div class="rec-desc">
+                    发现：孕期用户占比最高（33.6%），但内容供给集中在新生儿和幼儿期。<br>
+                    问题：产前焦虑（对分娩、产后恢复、育儿能力的担忧）缺乏系统化内容支持。
+                </div>
+                <div class="rec-action">
+                    建议：增加"孕期心理"专区，包含：分娩知识科普、产后恢复时间线、新手妈妈适应指南、焦虑自评工具等。
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">中优先级改进建议（P1）</div>
+            
+            <div class="recommendation priority-medium">
+                <div class="rec-title">5. 针对"运动时"场景（9.8%）增加音频内容</div>
+                <div class="rec-desc">
+                    发现：运动时（9.8%）和睡前（6.2%）是重要场景，用户无法注视屏幕。
+                </div>
+                <div class="rec-action">
+                    建议：增加"听育儿"功能，将热门文章转为音频，支持倍速播放和定时关闭。
+                </div>
+            </div>
+            
+            <div class="recommendation priority-medium">
+                <div class="rec-title">6. 针对"小月龄"（3.2%）供给不足问题扩充内容</div>
+                <div class="rec-desc">
+                    发现：小月龄（3.2%）内容供给明显不足，新生儿（8.9%）和幼儿期（8.6%）集中。
+                </div>
+                <div class="rec-action">
+                    建议：引入儿科医生和早教师资源，制作小月龄护理系列内容（肠绞痛、睡眠训练、追视训练等）。
+                </div>
+            </div>
+            
+            <div class="recommendation priority-medium">
+                <div class="rec-title">7. 针对"社交需求"触发因素（92.9%）增加社区功能</div>
+                <div class="rec-desc">
+                    发现：社交需求是最大触发因素，但多为从众心理，非真实需求。
+                </div>
+                <div class="rec-action">
+                    建议：增加"妈妈圈子"功能，按宝宝月龄/地区/兴趣分组，促进真实社交互动，减少单纯的内容消费。
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">低优先级改进建议（P2）</div>
+            
+            <div class="recommendation priority-low">
+                <div class="rec-title">8. 针对"中度用户"（15.8%）设计个性化推荐策略</div>
+                <div class="rec-desc">
+                    发现：中度用户占主导，重度用户仅1.1%，用户有自控意识。
+                </div>
+                <div class="rec-action">
+                    建议：采用"质量优先"推荐策略，减少低质量内容推送，增加"今日精选"人工 curated 内容。
+                </div>
+            </div>
+            
+            <div class="recommendation priority-low">
+                <div class="rec-title">9. 针对"睡前"场景（6.2%）增加夜间模式</div>
+                <div class="rec-desc">
+                    发现：床上睡前是重要使用场景，但屏幕蓝光影响睡眠。
+                </div>
+                <div class="rec-action">
+                    建议：增加"睡前模式"，自动切换为暖色调+低亮度，内容推荐调整为舒缓类（如睡前故事、放松音乐）。
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">数据驱动的迭代方向</div>
+            
+            <div class="insight-box">
+                <strong>短期（1-2周）</strong>：<br>
+                • 上线"快速判断"搜索功能，针对焦虑驱动场景<br>
+                • 增加语音搜索入口，优化带娃时使用体验<br>
+                • 增加使用时长提醒，减少算法陷阱负面影响
+            </div>
+            
+            <div class="insight-box">
+                <strong>中期（1-2月）</strong>：<br>
+                • 扩充孕期心理和小月龄内容，填补供给缺口<br>
+                • 上线"听育儿"音频功能，覆盖运动和睡前场景<br>
+                • 增加"妈妈圈子"社区功能，转化社交需求为真实互动
+            </div>
+            
+            <div class="insight-box">
+                <strong>长期（3-6月）</strong>：<br>
+                • 建立用户画像体系，基于身份标签+宝宝阶段+使用深度进行精准推荐<br>
+                • 开发"健康使用"数据分析功能，帮助用户了解自己的使用模式<br>
+                • 探索AI助手功能，提供个性化育儿建议
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>改进建议报告 · 新增三维标签化分析</p>
+            <p>方法论: ai-demand-research-v2 · 数据源: 小红书SQLite</p>
+        </div>
+    </div>
+</body>
+</html>

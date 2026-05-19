@@ -1,0 +1,292 @@
+{
+  "batch_id": 108,
+  "total_items": 22,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 22
+    },
+    "type_distribution": {
+      "behavior_description": 15,
+      "pain_point": 5,
+      "positive_feedback": 1,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "video_quality": 17,
+      "other": 4,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 20
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4372",
+      "text": "配了台9950x3d +dv2+40寸5120x2160分辨率的显示器，试玩了一圈3a，实在玩不来。又试ra3，感觉体验没提升（视野没提升,画质方面能看见马赛克，不知道是不是没设置好反正都选最高了）。最想玩的还是尤里复仇，配合大屏可以看见全世界。这次最值得的花费就是显示器了。 查看图片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4389",
+      "text": "回答说美术，挽尊的说画质，说明还是没懂",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4390",
+      "text": "警3的画面问题非常严重，在于其发售的2008年，玩家的硬件普遍跟不上只能开低画质或中画质。这两种画质下建筑和单位看起来非常玩具化和模糊，典型如你最后那张图。高和最高画质下这种情况改善了很多，水面也很漂亮",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4391",
+      "text": "2005年到2010前后的游戏基本上都吃了这个亏，等距视角的游戏几乎各个都是重灾区，帝国3cnc将军红警3英雄无敌5基本上视觉表现都相比前作反而倒退了。星际2算是作为这个时代末期的作品有大量cnc团队的人，不仅从技术到美术都拉满了还吸取了红警3画面饱和度过高的教训，但仍然免不了被诟病过分卡通:t和p机械不如1代硬朗，z不够1代诡异恶心。除了大家诟病的色彩饱和度过高和模型精细度不足，还有2d和3d不",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4394",
+      "text": "英雄无敌才明显，除了3代其他所有版本都让我觉得出戏",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4400",
+      "text": "建筑设计拉了，没内容没识别度",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4405",
+      "text": "红警的画质在当年的SLG里，也算很顶的了。在美术上，建筑刻画的细节其实也挺不错，质感很强。3代虽然技术全面升级，但整体美术水平却是全方位倒退。说个题外话，现在的很多游戏，都在本末倒置的一味追求画质，却忽略了游戏最核心的部分是创意和可玩性。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4406",
+      "text": "到今天红警3除了30帧以外ui和画质都还酸能过眼，音乐和cg也是最经典流传的。不同的美术风格没有选择讨好旧有受众不代表不好。红警如果能有4，3也会是很多人口中的神作。这不评论区就有吹帝3的，这游戏当年被骂的程度可不亚于ra3。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4407",
+      "text": "给红3画质调低，尽量避免出现水面[doge]春秋笔法这一块",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4408",
+      "text": "第一段话真的是重点，太真实了！我们工作室老板就完全不懂什么是画质，什么是美术质量，单纯认为画质好就能卖高价[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4409",
+      "text": "直到现在，绝大多数游戏仍然是在平面上显示的，那么2D艺术的优势就一直存在。直到有一天电子游戏发展到人们可以体验到五感的虚拟世界",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4412",
+      "text": "大学玩过一段时间红警3，记得还有日本。其实内容很丰富，只是那个时代，还有太多好玩的游戏了。红警2的大火，是因为同时代的竞品游戏太少了。网吧不是红警就是cs，还有传奇",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4416",
+      "text": "对比2代和3代美术表现之前，能不能先给3代开高画质？最低画质肯定丑得一坨啊，你这样比根本不公平。其次，为什么故意把3的基地建筑都挤在一起？挤在一起，然后说\"ra3的美术设计分不清建筑\"，那肯定分不清啊[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4417",
+      "text": "太有道理了，确实，现在游戏画质提升没有带来审美的提升。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4418",
+      "text": "经典游戏怀念的是玩法，不是低画质。所以有不少经典游戏被炒冷饭出重制版",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4421",
+      "text": "我认为你说的片面。先不说红色警戒基本要依托于命令与征服，我个人感觉你对3代明显是更加针对极端了点我知道3代不喜欢的人很多，但它有他各种各样的原因，这里我就不多掰扯了2代你觉得辨识度高有好几个因素，第一最主要的就是你玩的多，习惯化了。二是红警2维度更少，大多数单位与建筑都是静态，闪个灯放个电已经是最顶级状态了。三是时代原因，当时分辨率不高，大家800x600的居多，有个1024x768的都是好屏幕了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4422",
+      "text": "红警3的粗糙大3D多边形画质哪里比得上红警2的精细2D油画风画面[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4425",
+      "text": "你红3画质都没开到最高有什么好比的，而且你怎么不敢截海面的图？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4428",
+      "text": "英雄无敌3最不好的是经常黑屏，虽然有自动存盘但也很讨厌，不过画质比帝国时代2要好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4434",
+      "text": "红3画质我个人认为惨不忍睹，一眼看到它时，我都惊呆，这是玩具在过家家吗，完全没有玩的兴趣。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4438",
+      "text": "不是哥们，你至少应该把RA3的画质打开啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4439",
+      "text": "「因为画质不代表美术质量啊！」看到这句，再配合本题，我首先想到的就是《暗黑破坏神》系列。第二集的暗黑平实低魔风格让人非常投入，到第三集，画质提升了不止一个级别，然而美术质量，好不好见仁见智，起码对我来说完全没有了前两集的独特魅力了。第四集我一直不敢玩所以不妄下断言，近日倒是想玩第二集的重制版，因为它很大程度上忠实复刻了原版的美术风格",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

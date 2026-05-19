@@ -1,0 +1,273 @@
+{
+  "时间压力": {
+    "count": 5,
+    "total_interaction": 4738,
+    "avg_interaction": 947.6,
+    "related_themes": [
+      "时长控制",
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 131,
+        "title": "S7赛季讲了啥？时长一小时建议睡前看!",
+        "interaction": 1950,
+        "l1_theme": "时长控制",
+        "matched_keywords": [
+          "时长"
+        ]
+      },
+      {
+        "idx": 144,
+        "title": "想找一些长视频up主，最好是知识区的，可以用来当做手工写写画画时候的背景音。\n平时看得比较多的就是毕导、大物是也、芳斯塔",
+        "interaction": 1367,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "时长"
+        ]
+      },
+      {
+        "idx": 147,
+        "title": "“超下饭”up主推荐！（个人向）",
+        "interaction": 1249,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "时长"
+        ]
+      }
+    ]
+  },
+  "选择困难": {
+    "count": 14,
+    "total_interaction": 87966,
+    "avg_interaction": 6283.285714285715,
+    "related_themes": [
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 40,
+        "title": "求推荐b站下饭or唠嗑长视频，适合当背景板时不时看一眼的那种。做事情的时候总喜欢电脑播点什么玩意儿听个声，时不时抬头看一",
+        "interaction": 20038,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "求推荐"
+        ]
+      },
+      {
+        "idx": 51,
+        "title": "最好是恐游/剧情向，视频越长越好",
+        "interaction": 15178,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "不知道"
+        ]
+      },
+      {
+        "idx": 56,
+        "title": "求推荐挂机视频",
+        "interaction": 14240,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "求推荐"
+        ]
+      }
+    ]
+  },
+  "内容质量差": {
+    "count": 10,
+    "total_interaction": 160479,
+    "avg_interaction": 16047.9,
+    "related_themes": [
+      "行为习惯",
+      "时长控制",
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 5,
+        "title": "长视频，建议1.5倍速观看。长期处于慢性压力，容易导致低效和沉溺幻想#慢性压力[话题]# #身体健康[话题]# #心理压",
+        "interaction": 82459,
+        "l1_theme": "时长控制",
+        "matched_keywords": [
+          "水"
+        ]
+      },
+      {
+        "idx": 15,
+        "title": "《悉达多》一生的思考与追寻",
+        "interaction": 40646,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "水"
+        ]
+      },
+      {
+        "idx": 33,
+        "title": "百年百本诺贝尔奖作品解读：第一本《窄门》",
+        "interaction": 20200,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "水"
+        ]
+      }
+    ]
+  },
+  "沉迷问题": {
+    "count": 3,
+    "total_interaction": 506,
+    "avg_interaction": 168.66666666666666,
+    "related_themes": [
+      "行为习惯",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 271,
+        "title": "#山野小邪医1[话题]##我在小红书追好剧[话题]# #情感短剧[话题]# #小红书追剧人[话题]# #一看就停不下来[",
+        "interaction": 217,
+        "l1_theme": "行为习惯",
+        "matched_keywords": [
+          "停不下来",
+          "上瘾"
+        ]
+      },
+      {
+        "idx": 279,
+        "title": "短视频行业要变天！⽃⾳精选推出付费视频",
+        "interaction": 170,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "沉迷"
+        ]
+      },
+      {
+        "idx": 283,
+        "title": "激情满满做youtube长视频，然后就这样",
+        "interaction": 119,
+        "l1_theme": "行为习惯",
+        "matched_keywords": [
+          "熬夜"
+        ]
+      }
+    ]
+  },
+  "眼睛疲劳": {
+    "count": 1,
+    "total_interaction": 15198,
+    "avg_interaction": 15198.0,
+    "related_themes": [
+      "内容发现"
+    ],
+    "examples": [
+      {
+        "idx": 61,
+        "title": "求推荐不太需要眼睛的",
+        "interaction": 15198,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "眼睛"
+        ]
+      }
+    ]
+  },
+  "信息过载": {
+    "count": 5,
+    "total_interaction": 28019,
+    "avg_interaction": 5603.8,
+    "related_themes": [
+      "行为习惯",
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 61,
+        "title": "求推荐不太需要眼睛的",
+        "interaction": 15198,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "太多"
+        ]
+      },
+      {
+        "idx": 64,
+        "title": "看完两个长视频感觉还能溺爱B站很久…",
+        "interaction": 8799,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "太多"
+        ]
+      },
+      {
+        "idx": 102,
+        "title": "推荐我的电子榨菜！！宝藏的长视频up们",
+        "interaction": 3912,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "太多"
+        ]
+      }
+    ]
+  },
+  "付费压力": {
+    "count": 2,
+    "total_interaction": 11595,
+    "avg_interaction": 5797.5,
+    "related_themes": [
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 60,
+        "title": "超好听的粉丝投稿音乐合集（一个小时版）",
+        "interaction": 11425,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "不值得"
+        ]
+      },
+      {
+        "idx": 279,
+        "title": "短视频行业要变天！⽃⾳精选推出付费视频",
+        "interaction": 170,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "付费"
+        ]
+      }
+    ]
+  },
+  "社交孤独": {
+    "count": 2,
+    "total_interaction": 12674,
+    "avg_interaction": 6337.0,
+    "related_themes": [
+      "内容发现"
+    ],
+    "examples": [
+      {
+        "idx": 60,
+        "title": "超好听的粉丝投稿音乐合集（一个小时版）",
+        "interaction": 11425,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "孤独"
+        ]
+      },
+      {
+        "idx": 147,
+        "title": "“超下饭”up主推荐！（个人向）",
+        "interaction": 1249,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "想分享"
+        ]
+      }
+    ]
+  }
+}

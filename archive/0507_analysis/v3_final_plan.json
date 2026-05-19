@@ -1,0 +1,118 @@
+{
+  "version": "v3_final",
+  "created_at": "2025-05-08",
+  "description": "手机视频观看场景VOC深度分析方案 - 最终版",
+  "decisions": {
+    "batch_size": "B (100条/批次)",
+    "classification": "B (半开放: 预定义21个 + 允许LLM建议新主题)",
+    "sentiment": "A (三档: 负面/中性/正面)",
+    "execution": "A (先用200条验证，再扩展)"
+  },
+  "architecture": {
+    "stage1_collection": "爬虫收集 (小红书/知乎/抖音/B站/头条)",
+    "stage2_preprocessing": "LLM批处理提取Opinion Units (100条/批次)",
+    "stage3_analysis": "LLM批处理分类标注 (100条/批次)",
+    "stage4_aggregation": "本地Python聚合统计 + 可视化"
+  },
+  "data_model": {
+    "opinion_unit": {
+      "voc_id": "原始VOC编号",
+      "unit_id": "唯一编号",
+      "excerpt": "原文摘录",
+      "scene": "场景ID (Layer 1)",
+      "type": "类型ID (Layer 2)",
+      "topic": "主题ID (Layer 3)",
+      "sentiment": "情感 (negative/neutral/positive)",
+      "is_ai_related": "是否AI相关",
+      "ai_specificity": "显式/隐式/无关",
+      "confidence": "置信度 0-1",
+      "reason": "分类理由"
+    }
+  },
+  "classification_schema": {
+    "layer1_scene": [
+      "短视频消费",
+      "长视频消费",
+      "直播观看",
+      "视频创作"
+    ],
+    "layer2_type": [
+      "功能需求",
+      "体验痛点",
+      "情感表达",
+      "期望建议",
+      "行为描述"
+    ],
+    "layer3_topic_count": 21,
+    "layer3_topics": [
+      "播放控制",
+      "画质音质",
+      "内容推荐",
+      "社交互动",
+      "付费会员",
+      "广告体验",
+      "多设备同步",
+      "下载缓存",
+      "字幕翻译",
+      "投屏大屏",
+      "后台播放",
+      "搜索发现",
+      "隐私安全",
+      "青少年模式",
+      "无障碍辅助",
+      "时间沉迷",
+      "AI功能",
+      "创作工具",
+      "跨平台体验",
+      "通知提醒",
+      "其他"
+    ]
+  },
+  "batch_processing": {
+    "batch_size": 100,
+    "estimated_time_per_batch": "60-90秒",
+    "estimated_time_1000_vocs": "10-15分钟 (10批次)",
+    "timeout_safe": true
+  },
+  "quality_control": {
+    "confidence_threshold": 0.6,
+    "low_confidence_action": "人工review",
+    "new_topic_threshold": "单批次≥3条无法匹配时建议新增",
+    "data_cleaning_rules": [
+      "过滤纯话题标签无正文的内容",
+      "过滤与手机视频完全无关的内容"
+    ]
+  },
+  "validation_results": {
+    "test_data": "10条VOC",
+    "output_units": 18,
+    "avg_units_per_voc": 1.8,
+    "predefined_topic_usage": "66.7% (12/18)",
+    "other_topic_rate": "33.3% (6/18)",
+    "avg_confidence": 0.74,
+    "low_confidence_rate": "22.2% (4/18)",
+    "ai_related_detection": "0条 (与v2一致)",
+    "new_topic_discovered": [
+      "时间沉迷(已加入预定义)",
+      "手机依赖",
+      "内容标签",
+      "智能穿戴"
+    ]
+  },
+  "improvements_over_v2": [
+    "分析粒度: 整篇VOC → Opinion Unit拆分",
+    "分类一致性: 自由发挥(22类) → 预定义+动态(21+)",
+    "情感量化: 无 → 三档+置信度",
+    "AI检测: 简单标记 → 显/隐/无三级",
+    "可解释性: 低 → 高(含reason字段)",
+    "批处理能力: 逐条(易超时) → 100条/批次",
+    "新主题发现: 无 → 自动建议"
+  ],
+  "files": {
+    "classification_schema": "v3_classification_schema.json",
+    "test_prompt": "v3_test_batch_prompt.txt",
+    "test_result_raw": "v3_test_result_raw.json (模拟生成)",
+    "test_result_analysis": "v3_test_result_analysis.json",
+    "final_plan": "v3_final_plan.json (本文件)"
+  }
+}

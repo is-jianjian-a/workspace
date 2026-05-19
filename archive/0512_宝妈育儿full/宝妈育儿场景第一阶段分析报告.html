@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝妈育儿场景第一阶段分析报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 40px; border-radius: 20px; margin-bottom: 40px; }
+        .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 16px; }
+        .header .subtitle { font-size: 18px; opacity: 0.9; margin-bottom: 24px; }
+        .header .meta { display: flex; gap: 24px; font-size: 14px; opacity: 0.8; flex-wrap: wrap; }
+        
+        .card { background: white; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 24px; font-weight: 600; margin-bottom: 20px; color: #1d1d1f; display: flex; align-items: center; gap: 12px; }
+        .card h2 .icon { width: 32px; height: 32px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+        .card h3 { font-size: 18px; font-weight: 600; margin: 24px 0 16px; color: #333; }
+        
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 20px 0; }
+        .stat-item { background: #f8f9fa; padding: 20px; border-radius: 12px; text-align: center; }
+        .stat-item .number { font-size: 32px; font-weight: 700; color: #667eea; }
+        .stat-item .label { font-size: 14px; color: #666; margin-top: 4px; }
+        
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th { background: #f8f9fa; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 14px; color: #666; border-bottom: 2px solid #e9ecef; }
+        td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+        tr:hover { background: #fafafa; }
+        
+        .progress-bar { background: #f0f0f0; border-radius: 10px; height: 24px; overflow: hidden; margin: 8px 0; }
+        .progress-fill { height: 100%; border-radius: 10px; display: flex; align-items: center; justify-content: flex-end; padding-right: 8px; color: white; font-size: 12px; font-weight: 600; }
+        .progress-fill.p1 { background: linear-gradient(90deg, #667eea, #764ba2); }
+        .progress-fill.p2 { background: linear-gradient(90deg, #f093fb, #f5576c); }
+        .progress-fill.p3 { background: linear-gradient(90deg, #4facfe, #00f2fe); }
+        .progress-fill.p4 { background: linear-gradient(90deg, #43e97b, #38f9d7); }
+        .progress-fill.p5 { background: linear-gradient(90deg, #fa709a, #fee140); }
+        
+        .content-card { border: 1px solid #e9ecef; border-radius: 12px; padding: 16px; margin: 12px 0; }
+        .content-card .title { font-weight: 600; font-size: 15px; margin-bottom: 8px; color: #1d1d1f; }
+        .content-card .meta { display: flex; gap: 16px; font-size: 13px; color: #666; margin-bottom: 8px; }
+        .content-card .desc { font-size: 14px; color: #555; line-height: 1.5; }
+        .content-card .tags { display: flex; gap: 8px; margin-top: 8px; flex-wrap: wrap; }
+        .content-card .tag { background: #f0f0f0; padding: 4px 10px; border-radius: 12px; font-size: 12px; color: #666; }
+        .content-card .tag-pain { background: #ffe6e6; color: #c0392b; }
+        .content-card .tag-expect { background: #e8f5e9; color: #27ae60; }
+        .content-card .tag-ugc { background: #e3f2fd; color: #1976d2; }
+        
+        .insight-box { background: linear-gradient(135deg, #667eea15, #764ba215); border-left: 4px solid #667eea; padding: 20px; border-radius: 12px; margin: 16px 0; }
+        .insight-box .insight-title { font-weight: 600; font-size: 16px; margin-bottom: 8px; color: #667eea; }
+        .insight-box .insight-text { font-size: 14px; color: #555; line-height: 1.6; }
+        
+        .step-card { border-left: 4px solid #667eea; padding-left: 24px; margin: 24px 0; position: relative; }
+        .step-card::before { content: attr(data-step); position: absolute; left: -16px; top: 0; width: 28px; height: 28px; background: #667eea; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; }
+        .step-card .step-title { font-size: 18px; font-weight: 600; color: #667eea; margin-bottom: 12px; }
+        .step-card .step-desc { font-size: 14px; color: #666; margin-bottom: 16px; }
+        
+        .footer { text-align: center; padding: 40px; color: #999; font-size: 14px; }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 24px; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>宝妈育儿场景第一阶段分析报告</h1>
+            <div class="subtitle">场景发现：识别高价值产品机会</div>
+            <div class="meta">
+                <span>📅 2025年5月12日</span>
+                <span>📊 样本：562条小红书笔记</span>
+                <span>🔍 搜索词：6个泛化词</span>
+                <span>👤 覆盖：备孕/孕期/产后/新手妈妈/早教/育儿</span>
+            </div>
+        </div>
+        
+        <!-- Executive Summary -->
+        <div class="card">
+            <h2><span class="icon">📋</span>核心发现</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">562</div>
+                    <div class="label">总样本数</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">29,814</div>
+                    <div class="label">平均互动</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">26.2%</div>
+                    <div class="label">含痛点信号</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">35.6%</div>
+                    <div class="label">含期望信号</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">39.9%</div>
+                    <div class="label">纯UGC内容</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">93</div>
+                    <div class="label">高价值内容</div>
+                </div>
+            </div>
+            
+            <div class="insight-box">
+                <div class="insight-title">💡 关键洞察</div>
+                <div class="insight-text">
+                    <strong>1. 内容偏向生活记录和情绪共鸣</strong>：39.9%为纯UGC内容，平均互动30,790，说明用户更愿意分享真实经历。<br><br>
+                    <strong>2. 痛点信号覆盖率偏低</strong>：仅26.2%包含痛点信号，"难"(59次)、"焦虑"(51次)、"累"(34次)是高频痛点词。<br><br>
+                    <strong>3. 期望信号以"科学"为主</strong>：35.6%表达期望，"科学"(64次)、"希望"(54次)、"轻松"(34次)是高频期望词。<br><br>
+                    <strong>4. 搜索词以身份标签为主</strong>：当前搜索词（备孕、孕期、产后、新手妈妈、早教、育儿）偏向身份和阶段标签，缺乏场景化痛点挖掘。
+                </div>
+            </div>
+        </div>
+        
+        <!-- Data Quality -->
+        <div class="card">
+            <h2><span class="icon">📊</span>数据质量概览</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>搜索词</th>
+                        <th>数量</th>
+                        <th>平均互动</th>
+                        <th>平均评论</th>
+                        <th>平均点赞</th>
+                        <th>平均收藏</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>备孕</strong></td>
+                        <td>92</td>
+                        <td>5,134</td>
+                        <td>542</td>
+                        <td>2,478</td>
+                        <td>1,594</td>
+                    </tr>
+                    <tr>
+                        <td><strong>孕期</strong></td>
+                        <td>100</td>
+                        <td>12,822</td>
+                        <td>491</td>
+                        <td>7,032</td>
+                        <td>3,801</td>
+                    </tr>
+                    <tr>
+                        <td><strong>产后</strong></td>
+                        <td>99</td>
+                        <td>12,537</td>
+                        <td>1,236</td>
+                        <td>6,407</td>
+                        <td>3,487</td>
+                    </tr>
+                    <tr>
+                        <td><strong>新手妈妈</strong></td>
+                        <td>49</td>
+                        <td>26,726</td>
+                        <td>1,189</td>
+                        <td>16,876</td>
+                        <td>5,888</td>
+                    </tr>
+                    <tr>
+                        <td><strong>早教</strong></td>
+                        <td>125</td>
+                        <td>38,277</td>
+                        <td>353</td>
+                        <td>21,091</td>
+                        <td>12,470</td>
+                    </tr>
+                    <tr>
+                        <td><strong>育儿</strong></td>
+                        <td>97</td>
+                        <td>79,027</td>
+                        <td>1,752</td>
+                        <td>50,113</td>
+                        <td>18,439</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <div class="insight-title">⚠️ 数据质量警示</div>
+                <div class="insight-text">
+                    <strong>搜索词以身份标签为主</strong>：当前6个搜索词（备孕、孕期、产后、新手妈妈、早教、育儿）均为身份或阶段标签，导致内容偏向生活记录和情绪共鸣，缺乏具体育儿痛点。<br><br>
+                    <strong>建议</strong>：替换为"场景+负面情绪/决策困境"组合，如"宝宝发烧 怎么办"、"夜醒频繁 崩溃"、"落地醒 解决不了"。
+                </div>
+            </div>
+        </div>
+        
+        <!-- Topic Analysis -->
+        <div class="card">
+            <h2><span class="icon">📈</span>主题聚类分析</h2>
+            
+            <h3>主题覆盖率与互动表现</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>主题</th>
+                        <th>覆盖数</th>
+                        <th>覆盖率</th>
+                        <th>平均互动</th>
+                        <th>平均评论</th>
+                        <th>供需状态</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>备孕怀孕</strong></td>
+                        <td>225</td>
+                        <td><div class="progress-bar"><div class="progress-fill p1" style="width: 40%">40.0%</div></div></td>
+                        <td>9,383</td>
+                        <td>600</td>
+                        <td><span style="color: #999">饱和</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>教育引导</strong></td>
+                        <td>171</td>
+                        <td><div class="progress-bar"><div class="progress-fill p2" style="width: 30%">30.4%</div></div></td>
+                        <td>45,434</td>
+                        <td>597</td>
+                        <td><span style="color: #e74c3c">热点</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>发育成长</strong></td>
+                        <td>169</td>
+                        <td><div class="progress-bar"><div class="progress-fill p3" style="width: 30%">30.1%</div></div></td>
+                        <td>33,739</td>
+                        <td>385</td>
+                        <td><span style="color: #e74c3c">热点</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>夫妻关系</strong></td>
+                        <td>116</td>
+                        <td><div class="progress-bar"><div class="progress-fill p4" style="width: 21%">20.6%</div></div></td>
+                        <td>29,767</td>
+                        <td>761</td>
+                        <td><span style="color: #f39c12">潜力</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>妈妈恢复</strong></td>
+                        <td>99</td>
+                        <td><div class="progress-bar"><div class="progress-fill p5" style="width: 18%">17.6%</div></div></td>
+                        <td>14,598</td>
+                        <td>736</td>
+                        <td><span style="color: #f39c12">潜力</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>情绪心理</strong></td>
+                        <td>93</td>
+                        <td><div class="progress-bar"><div class="progress-fill p1" style="width: 17%">16.5%</div></div></td>
+                        <td>13,128</td>
+                        <td>592</td>
+                        <td><span style="color: #f39c12">潜力</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>喂养辅食</strong></td>
+                        <td>74</td>
+                        <td><div class="progress-bar"><div class="progress-fill p2" style="width: 13%">13.2%</div></div></td>
+                        <td>15,611</td>
+                        <td>636</td>
+                        <td><span style="color: #f39c12">潜力</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>健康疾病</strong></td>
+                        <td>65</td>
+                        <td><div class="progress-bar"><div class="progress-fill p3" style="width: 12%">11.6%</div></div></td>
+                        <td>16,570</td>
+                        <td>1,128</td>
+                        <td><span style="color: #e74c3c">缺口</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>睡眠作息</strong></td>
+                        <td>42</td>
+                        <td><div class="progress-bar"><div class="progress-fill p4" style="width: 7%">7.5%</div></div></td>
+                        <td>13,308</td>
+                        <td>453</td>
+                        <td><span style="color: #e74c3c">缺口</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>日常护理</strong></td>
+                        <td>42</td>
+                        <td><div class="progress-bar"><div class="progress-fill p5" style="width: 7%">7.5%</div></div></td>
+                        <td>12,943</td>
+                        <td>372</td>
+                        <td><span style="color: #e74c3c">缺口</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <div class="insight-title">💡 供给缺口识别</div>
+                <div class="insight-text">
+                    <strong>低覆盖 + 高互动 = 供给缺口</strong>：<br>
+                    - 睡眠作息（7.5%覆盖，13,308互动）→ 无专业睡眠记录工具<br>
+                    - 健康疾病（11.6%覆盖，16,570互动，1,128评论）→ 依赖百度/医院，缺乏即时判断<br>
+                    - 日常护理（7.5%覆盖，12,943互动）→ 缺乏系统化护理指导<br><br>
+                    <strong>高覆盖 + 低互动 = 内容饱和</strong>：<br>
+                    - 备孕怀孕（40.0%覆盖，9,383互动）→ 内容饱和，竞争激烈
+                </div>
+            </div>
+        </div>
+        
+        <!-- Signal Analysis -->
+        <div class="card">
+            <h2><span class="icon">📡</span>需求信号提取</h2>
+            
+            <h3>信号类型分布</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>信号类型</th>
+                        <th>数量</th>
+                        <th>占比</th>
+                        <th>平均互动</th>
+                        <th>平均评论</th>
+                        <th>需求强度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>行为信号</strong></td>
+                        <td>327</td>
+                        <td>58.2%</td>
+                        <td>23,541</td>
+                        <td>828</td>
+                        <td>极高</td>
+                    </tr>
+                    <tr>
+                        <td><strong>期望信号</strong></td>
+                        <td>200</td>
+                        <td>35.6%</td>
+                        <td>21,075</td>
+                        <td>679</td>
+                        <td>高</td>
+                    </tr>
+                    <tr>
+                        <td><strong>痛点信号</strong></td>
+                        <td>147</td>
+                        <td>26.2%</td>
+                        <td>11,537</td>
+                        <td>731</td>
+                        <td>高</td>
+                    </tr>
+                    <tr>
+                        <td><strong>决策信号</strong></td>
+                        <td>105</td>
+                        <td>18.7%</td>
+                        <td>10,501</td>
+                        <td>387</td>
+                        <td>中</td>
+                    </tr>
+                    <tr>
+                        <td><strong>求助信号</strong></td>
+                        <td>62</td>
+                        <td>11.0%</td>
+                        <td>10,734</td>
+                        <td>565</td>
+                        <td>中</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>高频痛点词</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">59</div>
+                    <div class="label">"难"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">51</div>
+                    <div class="label">"焦虑"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">34</div>
+                    <div class="label">"累"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">27</div>
+                    <div class="label">"担心"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">21</div>
+                    <div class="label">"困"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">15</div>
+                    <div class="label">"烦"提及</div>
+                </div>
+            </div>
+            
+            <h3>高频期望词</h3>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="number">64</div>
+                    <div class="label">"科学"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">54</div>
+                    <div class="label">"希望"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">34</div>
+                    <div class="label">"轻松"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">32</div>
+                    <div class="label">"方法"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">25</div>
+                    <div class="label">"简单"提及</div>
+                </div>
+                <div class="stat-item">
+                    <div class="number">25</div>
+                    <div class="label">"最好"提及</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Content Quality -->
+        <div class="card">
+            <h2><span class="icon">✅</span>内容质量评估</h2>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>内容类型</th>
+                        <th>数量</th>
+                        <th>占比</th>
+                        <th>平均互动</th>
+                        <th>平均评论</th>
+                        <th>可信度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>中性</strong></td>
+                        <td>232</td>
+                        <td>41.3%</td>
+                        <td>36,201</td>
+                        <td>1,071</td>
+                        <td>中</td>
+                    </tr>
+                    <tr>
+                        <td><strong>纯UGC</strong></td>
+                        <td>224</td>
+                        <td>39.9%</td>
+                        <td>30,790</td>
+                        <td>901</td>
+                        <td>极高</td>
+                    </tr>
+                    <tr>
+                        <td><strong>混合</strong></td>
+                        <td>68</td>
+                        <td>12.1%</td>
+                        <td>12,753</td>
+                        <td>378</td>
+                        <td>中</td>
+                    </tr>
+                    <tr>
+                        <td><strong>纯营销</strong></td>
+                        <td>38</td>
+                        <td>6.8%</td>
+                        <td>15,605</td>
+                        <td>468</td>
+                        <td>低</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <div class="insight-title">💡 内容质量洞察</div>
+                <div class="insight-text">
+                    <strong>纯UGC内容占比39.9%</strong>，平均互动30,790，平均评论901，说明用户真实经历分享具有较高共鸣度。<br><br>
+                    <strong>中性内容占比41.3%</strong>，平均互动36,201，但内容类型难以判断，需进一步分析。<br><br>
+                    <strong>纯营销仅占6.8%</strong>，说明当前数据集以真实用户内容为主，数据质量较高。
+                </div>
+            </div>
+        </div>
+        
+        <!-- High Value Content -->
+        <div class="card">
+            <h2><span class="icon">⭐</span>高价值内容TOP 10</h2>
+            
+            <div class="content-card">
+                <div class="title">1. 科学小实验｜简单好学，孩子超喜欢</div>
+                <div class="meta">来源：早教 | 互动：233,772 | 点赞：100,000 | 收藏：100,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">简单</span>
+                    <span class="tag tag-expect">科学</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">2. 不花一分钱在家玩早教</div>
+                <div class="meta">来源：早教 | 互动：231,039 | 点赞：100,000 | 评论：2,039 | 收藏：100,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">解决</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">3. 千万不要跟娃养成这种说话方式，不然。。。</div>
+                <div class="meta">来源：育儿 | 互动：170,537 | 点赞：100,000 | 评论：1,537 | 收藏：47,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">解决</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">4. 没有老人干涉的带娃✨孩子独立自由成长～</div>
+                <div class="meta">来源：育儿 | 互动：166,124 | 点赞：100,000 | 评论：3,124 | 收藏：33,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">轻松</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">5. 本系列达到了痛苦的高潮……</div>
+                <div class="meta">来源：育儿 | 互动：164,093 | 点赞：100,000 | 评论：4,763 | 收藏：8,330</div>
+                <div class="tags">
+                    <span class="tag tag-pain">痛苦</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">6. 这期的视频比较长，我陷入教育的闭环里...</div>
+                <div class="meta">来源：育儿 | 互动：163,146 | 点赞：100,000 | 评论：9,146 | 收藏：32,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">方法</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">7. 父母是孩子最好的老师，不要忽视自己对孩子的影响力...</div>
+                <div class="meta">来源：育儿 | 互动：154,126 | 点赞：100,000 | 评论：2,126 | 收藏：26,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">最好</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">8. 孩子的努力，永远赶不上父母永无止境的期待</div>
+                <div class="meta">来源：育儿 | 互动：143,741 | 点赞：100,000 | 评论：1,110 | 收藏：41,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">期待</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">9. 夫妻备孕超全攻略！备孕的姐妹们收下吧！</div>
+                <div class="meta">来源：备孕 | 互动：127,570 | 点赞：37,000 | 评论：570 | 收藏：38,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">科学</span>
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">10. 第一次当妈，沉浸体验产后第2天！还有这种事？</div>
+                <div class="meta">来源：新手妈妈 | 互动：125,925 | 点赞：75,000 | 评论：4,925 | 收藏：13,000</div>
+                <div class="tags">
+                    <span class="tag tag-expect">期待</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Product Opportunities -->
+        <div class="card">
+            <h2><span class="icon">🚀</span>产品机会映射</h2>
+            
+            <h3>P0：立即做（需求强 + 缺口大 + 可行）</h3>
+            
+            <div class="content-card">
+                <div class="title">1. 智能睡眠助手</div>
+                <div class="desc">
+                    <strong>场景</strong>：睡眠作息（7.5%覆盖，13,308互动）<br>
+                    <strong>痛点</strong>：夜醒频繁、落地醒、睡眠倒退、哄睡困难<br>
+                    <strong>产品形态</strong>：语音记录宝宝睡眠→自动分析睡眠模式→生成改善建议<br>
+                    <strong>差异化</strong>：区别于通用睡眠APP，专注婴幼儿睡眠特点
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">2. 症状快速判断</div>
+                <div class="desc">
+                    <strong>场景</strong>：健康疾病（11.6%覆盖，16,570互动，1,128评论）<br>
+                    <strong>痛点</strong>：宝宝发烧慌乱、不确定是否就医、夜间无法判断<br>
+                    <strong>产品形态</strong>：症状输入→AI预诊→就医建议→知识库<br>
+                    <strong>差异化</strong>：区别于百度信息过载，提供结构化、可信赖的判断
+                </div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">3. 产后情绪监测</div>
+                <div class="desc">
+                    <strong>场景</strong>：情绪心理（16.5%覆盖，13,128互动）<br>
+                    <strong>痛点</strong>：产后抑郁未被识别、情绪崩溃、缺乏支持<br>
+                    <strong>产品形态</strong>：语音情绪识别→心理健康评估→专业支持→社区互助<br>
+                    <strong>差异化</strong>：主动监测而非被动求助，降低求助门槛
+                </div>
+            </div>
+            
+            <h3>P1：短期规划（需求中 + 缺口中）</h3>
+            
+            <div class="content-card">
+                <div class="title">4. 辅食添加决策助手</div>
+                <div class="desc">月龄匹配 + 过敏预警 + 食谱推荐 + 进食记录</div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">5. 成长里程碑追踪</div>
+                <div class="desc">自动记录 + 异常预警 + 个性化建议 + 发育评估</div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">6. 产后恢复计划</div>
+                <div class="desc">运动指导 + 营养建议 + 进度追踪 + 社区打卡</div>
+            </div>
+            
+            <h3>P2：中期探索（需求弱或技术难）</h3>
+            
+            <div class="content-card">
+                <div class="title">7. 背奶提醒 + 职场妈妈社区</div>
+                <div class="desc">背奶时间提醒 + 吸奶量记录 + 职场妈妈经验分享</div>
+            </div>
+            
+            <div class="content-card">
+                <div class="title">8. 家庭任务分配 + 沟通建议</div>
+                <div class="desc">任务分配 + 进度同步 + 夫妻沟通技巧 + 冲突预警</div>
+            </div>
+        </div>
+        
+        <!-- Search Optimization -->
+        <div class="card">
+            <h2><span class="icon">🔍</span>搜索词优化建议</h2>
+            
+            <h3>当前搜索词效率分析</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>搜索词</th>
+                        <th>数量</th>
+                        <th>平均互动</th>
+                        <th>痛点率</th>
+                        <th>期望率</th>
+                        <th>UGC率</th>
+                        <th>效率分</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>备孕</strong></td>
+                        <td>92</td>
+                        <td>5,134</td>
+                        <td>39.1%</td>
+                        <td>62.0%</td>
+                        <td>64.1%</td>
+                        <td>17.0</td>
+                    </tr>
+                    <tr>
+                        <td><strong>育儿</strong></td>
+                        <td>97</td>
+                        <td>79,027</td>
+                        <td>11.3%</td>
+                        <td>21.6%</td>
+                        <td>34.0%</td>
+                        <td>14.6</td>
+                    </tr>
+                    <tr>
+                        <td><strong>新手妈妈</strong></td>
+                        <td>49</td>
+                        <td>26,726</td>
+                        <td>32.7%</td>
+                        <td>28.6%</td>
+                        <td>57.1%</td>
+                        <td>14.5</td>
+                    </tr>
+                    <tr>
+                        <td><strong>产后</strong></td>
+                        <td>99</td>
+                        <td>12,537</td>
+                        <td>46.5%</td>
+                        <td>38.4%</td>
+                        <td>45.5%</td>
+                        <td>14.3</td>
+                    </tr>
+                    <tr>
+                        <td><strong>孕期</strong></td>
+                        <td>100</td>
+                        <td>12,822</td>
+                        <td>29.0%</td>
+                        <td>30.0%</td>
+                        <td>59.0%</td>
+                        <td>13.1</td>
+                    </tr>
+                    <tr>
+                        <td><strong>早教</strong></td>
+                        <td>125</td>
+                        <td>38,277</td>
+                        <td>6.4%</td>
+                        <td>23.2%</td>
+                        <td>30.4%</td>
+                        <td>9.8</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h3>优化建议</h3>
+            
+            <div class="insight-box">
+                <div class="insight-title">1. 减少搜索（高覆盖但低互动）</div>
+                <div class="insight-text">
+                    - 备孕：92条，平均互动5,134 → 内容饱和，减少搜索<br>
+                    - 产后：99条，平均互动12,537 → 内容饱和，减少搜索<br>
+                    - 孕期：100条，平均互动12,822 → 内容饱和，减少搜索
+                </div>
+            </div>
+            
+            <div class="insight-box">
+                <div class="insight-title">2. 增加搜索（低覆盖但高互动）</div>
+                <div class="insight-text">
+                    - 新手妈妈：49条，平均互动26,726 → 供给缺口，增加搜索
+                </div>
+            </div>
+            
+            <div class="insight-box">
+                <div class="insight-title">3. 建议新增搜索词（场景+情绪/状态）</div>
+                <div class="insight-text">
+                    <strong>睡眠场景</strong>：夜醒频繁、落地醒、睡眠倒退、哄睡困难、自主入睡<br>
+                    <strong>健康场景</strong>：宝宝发烧、疫苗反应、湿疹反复、咳嗽怎么办、幼儿急疹<br>
+                    <strong>情绪场景</strong>：产后抑郁、带娃崩溃、情绪失控、焦虑不安、心理压力<br>
+                    <strong>职场场景</strong>：背奶、产假结束、全职妈妈、职场妈妈、工作与育儿<br>
+                    <strong>关系场景</strong>：丧偶式育儿、猪队友、婆媳矛盾、夫妻沟通、家庭分工
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>本报告基于小红书平台562条笔记分析生成 | 数据采集时间：2025年5月12日</p>
+            <p style="margin-top: 8px; font-size: 12px;">分析方法：主题聚类 + 需求信号提取 + 内容质量评估 + 高价值内容识别 + 产品机会映射</p>
+        </div>
+    </div>
+</body>
+</html>

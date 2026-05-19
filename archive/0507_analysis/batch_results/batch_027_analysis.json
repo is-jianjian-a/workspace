@@ -1,0 +1,609 @@
+{
+  "batch_id": 27,
+  "total_items": 48,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 41,
+      "long_video": 5,
+      "live_stream": 1,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "pain_point": 12,
+      "behavior_description": 33,
+      "feature_request": 3
+    },
+    "topic_distribution": {
+      "video_quality": 10,
+      "other": 25,
+      "playback_control": 10,
+      "content_recommend": 1,
+      "payment_member": 1,
+      "ad_experience": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 47
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1110",
+      "text": "我也是，一直加载0kb/s，卡的连客服联系都进不了，但用其他设备看就没有问题，气到我了[热](这条评论就是用另一个设备发的)",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1113",
+      "text": "还是不行，一开始以为是手机，可是其他软件都没卡过，我其他倒是还好，就是卡屏，画面不动一直在放声音，烦死了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1114",
+      "text": "怎么解决啊哥？我也是11tPro，我现在刷视频烦死了，好恶心啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1116",
+      "text": "还真是，最近突然每次看长视频的时候老卡，我还以为自己电脑有问题了，现在问题解决了[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1117",
+      "text": "就离谱，新电脑9700x开某一个视频直接网页卡死，cpu温度瞬间上80[笑哭]总算解决了，谢谢。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1118",
+      "text": "还真是，就单独一个视频页面卡，这个方法直接解决，给你投币",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1119",
+      "text": "还真是   我在看老戴解说游戏的时候巨卡   然后看短的视频完全没事   长视频评论都加载不出来",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1125",
+      "text": "我这段时间也遇到了，Chrome 使用一种名为 ANGLE 的技术，将 WebGL 等图形 API 在 Windows 上运行时转换为 DirectX。默认使用 D3D11，但某些硬件配置（尤其是 AMD GPU）可能与 D3D11 不兼容，导致卡顿。切换到 D3D9 后，这些不兼容问题似乎被绕过，视频变得更稳定。不过，这播放器可能会禁用 WebGL2 等功能，是一个权衡。虽然切换到 D3D9 是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1126",
+      "text": "没用，本来浏览器设置里就是独显。上次WIN11大更新之后就这样了，而且我是谷歌浏览器，同样的问题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1127",
+      "text": "这个视频不卡，有些视频一卡一卡的，像是在同时播放两个视频，会重叠一闪一闪的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1131",
+      "text": "win10不卡 win11好几个版本都卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1132",
+      "text": "亲测有效，不过我不是你这种卡，我是用一段时间打开视频就会无限加载！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1133",
+      "text": "我是看视频不卡顿但是弹幕有时候会明显掉帧，看直播弹幕卡顿，edge和chrome都是如此。后来用了下面这个朋友的方法就好了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1135",
+      "text": "推荐就好好推荐，非得拉踩吗，怎么用个pot还被嘲讽",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1136",
+      "text": "单这个标题就值得我一条评论和黑名单位置",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1139",
+      "text": "这话说反了，成年人都是什么方便用什么，小学生才天天给自己挂与众不同的标签，评论区就是典型例证[嗑瓜子]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1140",
+      "text": "别再迷信mpv了！那是浪费时间的大玩具，自己用ffmpeg写一个才是真神器[吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1142",
+      "text": "就该用PotPlayer！那是给普通人用的播放器！\n别再迷信mpv了！那是给闲人折腾的玩具！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1145",
+      "text": "手持小米11Ultra和小米13，怎么看这个圆都会闪，然后果断掏出MacBook Air M1发现还是达不到120帧的效果（外接高刷屏看的），心想强如888的解码器播不动就算了，8g2和M1这么强的编解码器怎么可能也播不动，刚准备码字喷这视频有问题，肯定是少了几帧，结果把浏览器从Egde换成Safari之后一切都正常起来了……圆不闪了，小白条也不跳了，小方块也没有缺了，行吧，原来是播放器的锅",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1146",
+      "text": "真的一群人没说到点子上，那个圆如果想不闪，屏幕必须是120帧的非零整数倍的刷新率，144Hz、165Hz等都不行，如果是165Hz，一帧画面需要刷新1.375次，由于逐行扫描的原因，圆必定会破缺，加上视频垂直同步，有帧重复刷新，就一定会闪。这个圆不应作为120帧是否掉帧的检测手段，可以作为120Hz刷新率显示器的检测标准，掉帧与否应该看光标条和白块。而安卓手机播放流媒体视频是一定会掉帧的，必须本地",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1147",
+      "text": "大会员在线吃答辩掉帧视频",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1148",
+      "text": "小米14Pro全程120帧有视频不信可以私信加好友发给你看我看的和录屏是不一样的录屏最高只支持90帧但是测帧率的全程120帧不掉如果是测帧率的有问题那我不清楚这是小米自带的开发者选项里面的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1150",
+      "text": "在特定秒数的时间段内有顿挫感，在特定秒数的时间段内很流畅。可重复播放视频验证",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1151",
+      "text": "ltpo屏幕不能正常播放，播放视频锁60，可以通过微微下拉状态栏能达到120hz",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1152",
+      "text": "服了neo9播放120帧视频只要啥也不动就锁60[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1153",
+      "text": "感觉b站有毛病，我一会儿30一会儿60一会儿120，红魔9",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1154",
+      "text": "解码器的话，骁龙888我测过8k60 HDR10 10bit 420视频，播放没有任何压力\n原因应该是帧率问题，手机电脑帧率并不是60hz或120hz，可能是59.94 60.01 119.88 120.02 143.98\n闪的原因就是卡，帧率对不齐所以卡，第二帧可能和第三帧重叠",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1156",
+      "text": "设置了半天，就是为了玩蜘蛛纸牌？[大笑]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1159",
+      "text": "1帧能玩 2帧流畅 3帧电竞",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1160",
+      "text": "我看说动漫的很多人都是一知半解，科普也科普得不到位。我做了十几年动画，经历了有纸动画线拍到无纸动画，执行导演，带片导演，和总导演都做过。有经验可以谈谈这个。关于电影部分，视频里说的都对。\n动画方面，首先动画不是24帧，很多人都说错了。在网络时代前，国内动画我们是按电视制式PAL制来做的，1秒25帧。代工日本动画是按NTSC制，1秒30帧。国产动画因为价格低，周期短，一拍二是标准态（意思是1张画面拍",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1162",
+      "text": "换电脑是最好的选择[doge][doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1165",
+      "text": "解决了，广告拦截插件的问题....反复缓冲。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1166",
+      "text": "总结：\n如up主视频中的卡顿，是因为在  英伟达控制面板-管理3D设置  中开启了“后台应用程序最大怎速率”\n\n解决办法（根据自身任选其一）：\n1.在B站设置中勾选“禁用GPU加速”\n2.在英伟达控制面板关闭后台速率限制",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1168",
+      "text": "我是只要开全屏看就会一卡一卡的，我在b站设置里把禁止gpu加速打开就不卡了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1169",
+      "text": "40系，50系显卡，看过来\n1.如果b站出现全屏白色，黄色区块，关闭rtx动态亮丽\n2.如果b站精选一步一卡，十分潇洒，关闭ai插帧\n发现没人提到，还得自己找方法啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1170",
+      "text": "我是突然卡一下连带声音都卡，卡顿时间0.5秒那样然后恢复，不定时的这样，刚配的电脑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1171",
+      "text": "是英特尔显卡把帧率限制器给关了就行了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1172",
+      "text": "A卡在驱动软件的右上角齿轮设置里面的常规选项，把web选项打开就可以丝般顺滑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1173",
+      "text": "你好呀，我的问题跟你一样，然后跟你一样设置了一下但是还是没用哎",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1174",
+      "text": "B站垃圾优化，我十一代1180G7处理器，16G内存，看B站电脑版本就卡，同样问题的还有抖音电脑版本",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1175",
+      "text": "都试过了，不行的，第五种方法，换电脑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1176",
+      "text": "视频-图像处理滤镜-不使用\n完美解决",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1177",
+      "text": "跟着改了一大堆还是卡，直接恢复默认设置就好了[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1178",
+      "text": "视频——视频渲染器——普通视频渲染，然后我就解决了...",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1179",
+      "text": "这个没用过，但是完美解码默认设置播放4K视频不卡[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1180",
+      "text": "我想知道，这玩意播放4K蓝光原盘最低配置是什么，我好去买电脑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1181",
+      "text": "这里这里！我一开始是视频中的这个配置，但是4k卡。然后又初始化，不管用，然后又卸载安装，默认配置，不管用，重新调成视频中的配置，还是卡。\n于是我尝试了边播放视频边调进阶皮肤，结果解决了！！！！\n有人可以试试，不是一开始就调成11皮肤，而是在视频播放时调整，让视频在播放时黑一下切换。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1182",
+      "text": "4K就默认设置看都不卡啊，卡的是软件版本没更新吧，这软件现在是8K视频帧率上不去，8K60帧视频只有45帧的样子，然后看起来有点卡的感觉，但是显卡占用又没吃满，只能吃个50%左右",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

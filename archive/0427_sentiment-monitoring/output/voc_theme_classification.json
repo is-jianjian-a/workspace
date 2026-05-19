@@ -1,0 +1,5855 @@
+{
+  "summary": {
+    "total_voc": 14657,
+    "total_titles": 14458,
+    "related_voc": 1870,
+    "unique_related": 955,
+    "theme_counts": {
+      "AI功能": 335,
+      "手机功能": 250,
+      "视频功能": 422,
+      "体验问题": 65,
+      "期待功能": 61,
+      "影像功能": 32
+    }
+  },
+  "themes": {
+    "AI功能": [
+      {
+        "text": "OpenAI或加速手机开发",
+        "source": "weibo_hot_30days_v2_20260506_095030.json",
+        "score": 6
+      },
+      {
+        "text": "黄仁勋反驳AI末日论",
+        "source": "weibo_hot_30days_v2_20260506_095030.json",
+        "score": 3
+      },
+      {
+        "text": "\n                        \n                        \n                        \n                        \n                            2026 最好的AI视频生成工具（我都试了）\n                            关注\n                            \n                            \n                        \n                        \n                            \n                        \n     ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "\n                            2026 最好的AI视频生成工具（我都试了）\n                            关注\n                            \n                            \n                        ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "\n                    \n\n    \n    \n    弹幕随屏幕缩放\n\n                    \n\n    \n    \n    防挡字幕\n\n                    \n\n    \n    \n    智能防挡弹幕\n\n                ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "  2026 最好的AI视频生成工具（我都试了） 从00:00开始分享\n               \n                获取视频分享链接\n                手机扫码观看/分享",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 9
+      },
+      {
+        "text": "  2026 最好的AI视频生成工具（我都试了）",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "你们怎么看待豆包收费？ 100 万热度",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "导师和评委真的能一眼看出来你的毕业论文是 AI 写的吗？ 83 万热度",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "和AI玩猜历史人物游戏，又被它给耍了 372.2万",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "古代铠甲勇士合集 1500年前铠甲勇士的故事（AI铠甲勇士外传微电影） 181.0万",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "豆包为什么选择了 “最low”的变现方式？",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "被AI抢走工作的人，在忙什么？",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "突发，OpenAI总裁当庭「认罪」，自曝零元购300亿，马斯克这回真要赢了？",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "8点1氪丨豆包新增付费订阅；抖音集团副总裁回应红果短剧付费；苹果因Siri人工智能功能推迟发布，以2.5亿美元和解诉讼",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 14
+      },
+      {
+        "text": "AI 输出中的 ** 是怎么来的：谈中文 Markdown 强调标记的渲染问题 PlatyHsu",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "AI 时代，我关于教育的思考 LOSSES",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek连夜删掉的新论文，到底说了什么 34.5万",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "一个二本的女生，用免费的AI考上了北大 34.7万",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "被AI抢走工作的人，在忙什么？ 27.9万",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "永久底层：硅谷的AI从业者普遍认为，普通人已经“完蛋了”。 21.8万",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "172.9万\n4584\n16:36\nAI真的好用吗？影视飓风全新工作流分享！\n影视飓风\n· 04-26",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "AI真的好用吗？影视飓风全新工作流分享！\n影视飓风\n· 04-26",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "不感兴趣将减少此类内容推荐 撤销 添加至稍后再看176.9万1.6万01:36:08无公司，无投资，无AI！我们手搓了一个原创中恐无限流大电影！？爱黏人的圆子哔___· 04-24",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "无公司，无投资，无AI！我们手搓了一个原创中恐无限流大电影！？爱黏人的圆子哔___· 04-24",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "5分钟看完不结婚的一生 #爱情 #青年导演创作扶持计划第二季 #即梦创作者成长计划 #即梦ai新影像#AI创作浪潮计划\n@苦荞凉介\n · 4月18日",
+        "source": "douyin_comments_20260429_174136.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek-V4问世，中美AI竞争的格局要变了 #科技 #deepseek #AI #零基础看懂全球 #全球创作者计划\n@卢克文工作室\n · 3天前",
+        "source": "douyin_comments_20260429_174136.json",
+        "score": 4
+      },
+      {
+        "text": "一键总结视频全文的AI居然在OPPO手机实现了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 10
+      },
+      {
+        "text": "一个视频教会你该如何AI配音和加字幕",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【功能1-AI总结视频】1分钟学会3种召唤方式，解锁AI助理，为你总结视频～",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "红魔10Pro首发开麦AI怼人+AI代打功能介绍",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "【软件分享+保姆级视频教程】Topaz Video AI 视频无损放大全网最全教程【手把手教你安装使用 附软件汉化版网盘分享 4K60帧高清修复】",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 9
+      },
+      {
+        "text": "OriginOS 6 揭秘！AI 能力惊到我，竟领先苹果这么多？！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "不做噱头只玩真实！Flyme AIOS超实用AI功能体验",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "4个B站实装的AI功能，80%的用户绝对不知道",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "不能用小米手机看黄片（AI合成，注意分辨）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【保姆级教程】AI动画电影制作，12个作品涨粉50万，手把手教你ComfyUI+豆包+即梦AI玩转AI短剧赛道",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "【全30集】5分钟入门AI视频制作！AI生成视频零基础入门保姆级教程（2026最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【全68集】3分钟入门AI视频制作！AI生成视频零基础入门保姆级教程（2025最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "胖橘火爆AI动画如何制作的--深度解析AI动画短视频如何打造。#AI创作 #AI学习 #AI动画 #AI视频 #AI教程",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【老司机必备】四大模型！皇到没边！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "2026 最好的AI视频生成工具（我都试了）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【AI】用AI制作影视解说视频，原来这么简单",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AI视频被判违规扣健康分？看看为什么平台能精准识别你的内容是AI生成的",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "全网没人告诉你的AI视频总结方法！1分钟看完3小时视频（提取文案、做笔记、双语翻译、思维导图全搞定!）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "夸克AI眼镜S1全功能测评，这玩意的各个功能到底好不好用？细致到app中的每一个功能",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "2026超好用的十大 AI 工具！避免你被时代淘汰！免费且强大！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "这4款最强AI视频总结神器竟然全都免费！【建议收藏】看视频必备！支持B站、YouTube、本地视频等",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 10
+      },
+      {
+        "text": "威龙V10AI智能魔方APP功能展示",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "从0到1打造千万播放爆款AI视频（基础+进阶）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AI也有“专业对口”？国内的5大AI到底哪个才能让你效率快一倍？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "Windows音/视频一键转文字！导入音视频轻松提取文案，精确度达98%以上，完全免费，AI文案提取助手",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AI总结视频全攻略！全网只看这一篇就够了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AI智能视频总结助手 @课代表猫 的使用教程",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "豆包b站王炸组合！一键总结视频，一键生成思维导图，保姆级教程。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "一站式AI全自己看视频写笔记工具，可本地可云端，支持哔哩哔哩、YouTube 等平台，转写提炼一键完成！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "虚幻引擎-UE5.7 新工具开发者AI助手-&amp;gt;到底有没实用价值？(这个视频为你讲清楚)",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "3分钟入门AI视频，用免费工具，制作你的AI大片",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "Dobby AI 视频助手：一键生成，全网发布",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【AE教程】苹果AI助手Siri动画解析复刻",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "完全免费 AI 影视解说神器 NarratoAI 0.7.2 更新说明！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "【限时优惠】玩转AI视频【AI短片&amp;AI音乐】",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "现如今“P视频”也像P图一样简单了，大厂出品的 AI 视频创作神器有多强？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AutoClip：AI智能视频高光自动剪辑工具",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "AI影视级短片训练营-全流程实战(从脚本到变现)",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "我成功让AI自动剪视频！Skill免费领取，你立刻就能体验！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【AI教程】只需5分钟！利用ChatGPT和剪映零基础制作视频！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【高燃混剪】B站 AI创作大赛｜UP主脑洞封神，每帧都是创意暴击✨",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "hermes实现视频的自动生成和自动发部 #AI #hermes #科技下一站 #视频自动剪辑",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【AI视频教程】豆包AI一站式生成AI动画 AI生成视频零基础入门保姆级教程 AI脚本+分镜制作+配音剪辑全流程教学！小白入门到精通!",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "如何用ChatGPT生成视频，速看！撼动Sora地位",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【AI视频教程】（2026最新）“豆包+即梦+剪映”小白2小时快速掌握AI视频创作技巧 AI视频制作提示词逻辑+AI绘画+图生视频+视听语言完整流程详解！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "教大家三种方法把AI生成的图矢量化！超实用",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "在视频号做绿植盆栽花卉视频，借助AI5分钟制作一条原创视频，轻松销量上千单（附详细制作步骤）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "学会100个AI教程 | 水果转场宣传视频（1/100）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "[豆包] 豆包每日视频生成额度少于10个的原因找到了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【Seedance2.0】放弃视频提示词！制作AI视频新思路，全网独家故事板法",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "OpenAI Whisper 本地部署！语音转文字，支持多种语言！消费级显卡可运行！新手友好，含可视化页面！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "B站官方AI？updream保姆级教程，20分钟快速上手。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "PR也开始结合AI了？这个功能太香了吧，一个视频告诉你PR2026的更新速递",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "首发实测Keyshot AI内置功能｜10分钟快速上手！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "b站视频豆包自动化总结！效率飞升",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "日版iPhone16 AI使用速报 4大超好用功能 如何激活 功能盘点",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "以防你不知道B站可以用AI原声翻译了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "B 站内测的 AI 工具 updream ，用完我沉默了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "（爆枪突击）聊一下关于AI功能的影响看法 我愿称之为最红利的版本！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "AI + iPad笔记！Goodnotes 炸裂新功能上手指南",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "用AI做四个抖音账号能赚多少钱？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "秒懂AI！普通人必学的AI技能 涨粉变现实操课",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "抖音短视频之【ai生成视频新手教程】视频可以AI全自动创作了，全程无需自己动手！抖音起号涨粉实操教程分享，各种短视频教程让你的账号快速涨粉变现",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "耗时7天制作，共29分钟《DeepSeek做小红书图文全攻略》一天做1000条；deepseek小红书使用教程，deepseek从入门到精通，deepseek小",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "“闪念胶囊”回归？我愿称它为新一代AI录音神器！\n钉钉黑板报\n21.5万\n56",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 3
+      },
+      {
+        "text": "100％成功！全网最新免费Sora2生成视频无限用！\n\nAI科技领航员\n3.2万\n30",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "2026超好用的十大 AI 工具！避免你被时代淘汰！免费且强大！\n\n小邓Talk\n5.5万\n59",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 3
+      },
+      {
+        "text": "6大AI视频谁是王？私藏级一人AIGC工作流\n\nAI视次方\n2.5万\n2",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "夯爆了！可灵 AI3.0 独家保姆级教程！目前 B 站最全最细的 AI 视频制作教程！AI绘画 + 图生视频 + 脚本 + 配音完整流程详解！包含所有干货！\n\nAI大世界2026\n7449\n63",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "【全30集】即梦+豆包+剪映，2小时快速掌握AI视频制作技巧，手把手教你从0到1制作AI短片！小白适用！学完即接单，带你玩转AI视频赛道！\n\nAI视频教程_\n360.6万\n1514",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "AI短片《夏日午后》制作流程分享\n\n马俊_SIN\n2.4万\n26",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 3
+      },
+      {
+        "text": "最新即梦seedance2.0fast 无限生成 最新白嫖 无限排队嘎嘎出视频\n\nAIGC阿祖\n4388\n7",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "【26年5月首发】免翻墙！满血免费无限制AI网站分享！\n\n大模型饲养员\n6.3万\n34",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 4
+      },
+      {
+        "text": "豆包生成50秒的视频！\n\ncoxputer\n3.6万\n3",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "【全80集】吊打付费！目前B站最新最全最细的即梦AI视频制作保姆级教程！新手必看！！AI视提示词+AI绘画+图生视频+完整流程详解！七天就能从小白变大神！\n\n既梦ai图生视频教程\n9686\n144",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "4月最新 Grok 4.2解除限制！手机＋PC免费教程！小白无脑入手！\n\nAI宝藏屋\n10.1万\n136",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "小云雀AI最新解禁版来了，免费使用，AI漫剧从此可以免费生成！\n\n酥甜甜不甜\n7159\n115",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 3
+      },
+      {
+        "text": "【牌子】当世界过分“诚实”，我们要如何保持好奇与勇气【B站AI创作大赛-开放赛道】\n\nDiDi_OK\n1915.7万\n2.2万",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "【可灵3.0】6条AI视频实战经验\n\nAI导演Henry\n7764\n0",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "满血版Seedance2.0来了!不排队，无需付费，你想要的都一键直出！\n\nAIGC高手\n2.5万\n113",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "妈妈不知儿子去世跟AI儿子聊了1年",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "男子用AI写歌仅版权赚了5位数",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张婧仪方AI短剧侵权维权",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "你会选择用AI复活逝去的亲人吗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "公司用AI复刻离职员工继续工作",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用AI起草涉密材料1人被处理",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "刘耀文流口水 AI生成",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "五哈后期已经学会用AI做特效了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "公众号批量删除AI写作文章",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "央视揭AI仿声乱象",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为AI眼镜即将发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "AI写作年赚200万夫妻被封号",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "国家将为大家开发AI慕课",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "教资将考AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "谢谢AI成功让我笑了出来",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "有种老年人看不懂智能手机的无奈感",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "央视曝光AI造黄产业链",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "多款AI应用存在涉黄生成漏洞",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "境外涉黄AI软件绕过监管流入国内",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "北京最火饺子馆开始喂AI龙虾",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "认人识人是AI智能体的照妖镜",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "被央视曝光涉黄AI软件未下架",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "迪丽热巴花魁妆火到AI界了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果AI眼镜细节曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "人造大米生产线视频为AI制作",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "网易云音乐就AI广告诡异画面道歉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "被央视曝光的涉黄AI软件致歉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "广交会增设智能穿戴等9大专区",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "哪个艺人授权AI了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "特斯拉AI5芯片流片",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "腾讯视频将发布AI长剧",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "什么是AI幻觉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "千问AI眼镜S1现货开售",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包帮挑的西瓜",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "埃安N60全系标配高阶智能11.58万元起",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米18Pro新增AI按键",
+        "source": "weibo_hot_30days_github.json",
+        "score": 9
+      },
+      {
+        "text": "63岁退休老人教同龄人用AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek高薪招聘数据中心人才",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "百万级AI汽车平台归元S面世",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "极氪8X首发舱驾融合超级智能体",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "年轻人的智能好车埃安N60预售11.58万起",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI上郑州文化很简单",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包型人格",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包变豆脚了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "机器人马拉松 豆包变豆脚了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI让人越来越累",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "网友AI虚构河南新野市中心被取证",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "未授权AI艺人",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝王楚然早就融了AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "演员集体辟谣AI授权",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "爱奇艺称AI艺人库仅是合作意愿",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI观众",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张若昀工作室 没签过AI授权",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI艺人库 自掘坟墓",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "陈哲远丞磊曾舜晞入驻爱奇艺AI艺人库",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苏醒说AI艺人这方向真的对么",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "陈哲远对接否认签署AI授权",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax首发搭载AI灵感妙创",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "爱奇艺AI艺人库",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI版成何体统逐玉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包回应豆脚机器人",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "猛士x华为乾崑共创智能越野新篇",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "唐诡导演 真人能演为啥让AI演",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "灵魂摆渡电影全AI生成",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "真人短剧被AI团灭了么",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国首个智能虾上车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "林子烨 5600不如和豆包聊",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "上汽高管称真智能汽车不应外挂AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "荣威火山联手合作家越AI汽车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国首款整车智能体芯片星空",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "神仙肉 AI配角",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米首次登顶全球开源大模型第一",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "Image2 消除AI味儿",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "樊振东把竞技人生写成不同尺度的算法",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "这些图片居然都是AI的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI在保护AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeekV4 价格屠夫",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek v4 百万上下文",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeekV4发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "事业编成绩测试端口被AI抓取",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "奇瑞全域AI技术成果亮相北京车展",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用千问AI订机票真的很智能",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "第一次对AI感到恐惧",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeekV4 尺度",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "大众9X智能辅助驾驶跻身第一梯队",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "全球智能安全汽车引领者",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek多位核心骨干离职去大厂",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek致谢近300研发者10人已离职",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "余承东称智能车进入体系决胜周期",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "歌手 AI海报",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "国产开源大模型下载量破100亿次",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "被AI骗去毒蛇窝徒步",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议不要过度依赖AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "AI短剧 融脸",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI 香港身份证",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek还是最强国产AI吗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "年轻人的第一台智能满配好车10.68万起",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "美依礼芽回应歌手AI海报",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "男子用AI造谣挖冬笋被逼下跪",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "OpenAI爆出大利空",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek思考过程好萌",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "Anthropic年收300亿碾压OpenAI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用AI代替员工的快开不起工资了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "被豆包忽悠去发论文",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "泸州楼房倒塌多人坠落视频系AI合成",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "军事AI新视野",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "女子被AI误导闯入毒蛇窝",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包挑榴莲",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek梦话大赏",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "深圳14岁男孩用AI备考押中奥赛题",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "五一就该让千问AI劳动",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "网警发布五一AI防骗指南",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek 现在我是你爹了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "Claude画的DeepSeek蓝胖鱼",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "时隔五年我用AI复活了父亲",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用AI把我家猫养在了电脑上",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek拟人 哇呀啧呜哇",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI手搓小黄人产生意识了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "湖南广电 AI播新闻",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "公司用AI了35岁主管被裁",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用ChatGPT还原盗墓笔记的世界",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "特朗普发赤裸上身和万斯等人泡澡AI照",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "被AI误导闯入毒蛇窝女子发声",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "误导女子闯入毒蛇窝AI道歉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "湖南广电已经用AI开始播新闻了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "特朗普发布奇怪AI图片",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包 付费",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包错误率",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包把付费说的如此清新脱俗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包 笨还收费",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "公司引进AI后将员工降薪裁员",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "女学生照片被男子AI篡改变黄图",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "AI在偷我们的东西 我们决定毒死它",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "豆包同一个问题三个答案",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "即时写作 AI\n人工智能让每个人都可以自信地写作！",
+        "source": "tophub_analysis_20260506.json",
+        "score": 5
+      },
+      {
+        "text": "百晓生 AI\n人工智能聊天兼全能创作助手",
+        "source": "tophub_analysis_20260506.json",
+        "score": 5
+      },
+      {
+        "text": "AI 时代，我关于教育的思考\nLOSSES",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "你们怎么看待豆包收费？\n83 万热度",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "导师和评委真的能一眼看出来你的毕业论文是 AI 写的吗？\n79 万热度",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "今日简报 AI\n总结全网10000+热榜，让阅读更高效！",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "和AI玩猜历史人物游戏，又被它给耍了\n372.0万",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "古代铠甲勇士合集 1500年前铠甲勇士的故事（AI铠甲勇士外传微电影）\n179.3万",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "AI 输出中的 ** 是怎么来的：谈中文 Markdown 强调标记的渲染问题\nPlatyHsu",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "DeepSeek连夜删掉的新论文，到底说了什么\n34.5万",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "一个二本的女生，用免费的AI考上了北大\n34.7万",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "被AI抢走工作的人，在忙什么？\n27.9万",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "永久底层：硅谷的AI从业者普遍认为，普通人已经“完蛋了”。\n21.8万",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "都 2026 年了，为什么还有人觉得 AMD 比 Nvidia 更适合部署本地大模型？",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "[AI 中转站 / 福利贴]OneXModel 推广拉新，限时回帖送$，稳定、靠谱、好用～",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "汽车\n时尚美妆\n体育运动\n动物\nvlog\n绘画\n人工智能\n家装房产\n户外潮流\n健身\n手工\n旅游出行\n三农\n亲子\n健康\n情感\n生活兴趣\n生活经验\n公益\n超高清",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 7
+      },
+      {
+        "text": "2.5万\n13\n13:28\nRalph+多智能体协同，让AI长时高品质工作，从原理到实践\n费曼学徒冬瓜\n· 04-26",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 4
+      },
+      {
+        "text": "Ralph+多智能体协同，让AI长时高品质工作，从原理到实践\n费曼学徒冬瓜\n· 04-26",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 4
+      },
+      {
+        "text": "不感兴趣将减少此类内容推荐 撤销 添加至稍后再看15.1万49110:21当我把14年前的初恋蒸馏成AI...有些话终于能问了，不过结果很离谱在下小苏· 04-23",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 3
+      },
+      {
+        "text": "我天天用豆包，一个号每天五次10秒，今天突然变一次了，没错，从五次一下砍到一次了[笑哭]",
+        "source": "bilibili_comments_视频工具_20260429_171722.json",
+        "score": 3
+      },
+      {
+        "text": "今日简报 AI\n                      总结全网10000+热榜，让阅读更高效！",
+        "source": "tophub_js_analysis.json",
+        "score": 3
+      },
+      {
+        "text": "今日简报 AI",
+        "source": "tophub_js_analysis.json",
+        "score": 3
+      },
+      {
+        "text": "即时写作 AI\n                        人工智能让每个人都可以自信地写作！",
+        "source": "tophub_js_analysis.json",
+        "score": 5
+      },
+      {
+        "text": "即时写作 AI",
+        "source": "tophub_js_analysis.json",
+        "score": 3
+      },
+      {
+        "text": "人工智能让每个人都可以自信地写作！",
+        "source": "tophub_js_analysis.json",
+        "score": 4
+      },
+      {
+        "text": "百晓生 AI\n                      人工智能聊天兼全能创作助手",
+        "source": "tophub_js_analysis.json",
+        "score": 5
+      },
+      {
+        "text": "百晓生 AI",
+        "source": "tophub_js_analysis.json",
+        "score": 3
+      },
+      {
+        "text": "人工智能聊天兼全能创作助手",
+        "source": "tophub_js_analysis.json",
+        "score": 4
+      },
+      {
+        "text": "看外国\\u003cem\\u003e视频\\u003c/em\\u003e没字幕?\\u003cem\\u003e手机 AI\\u003c/em\\u003e 实时字幕，翻译音频视频超方便",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "手机自带AI功能别白白浪费！安卓苹果隐藏用法，老人小白一看就会",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "\\u003cem\\u003e手机\\u003c/em\\u003e自带\\u003cem\\u003eAI功能\\u003c/em\\u003e别白白浪费!安卓苹果隐藏用法，老人小白一看就会",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "华为视频HDC.2025新升级：AI观影黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "华为\\u003cem\\u003e视频\\u003c/em\\u003eHDC.2025新升级:\\u003cem\\u003eAI观影\\u003c/em\\u003e黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "手机自带AI功能别浪费！关掉太可惜，全部打开好用又省心",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "荣耀500用户必看！侧边AI键不是摆设，5个神功能白瞎了",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "老司机的\\u003cem\\u003eAI\\u003c/em\\u003e工具，解决\\u003cem\\u003e看视频\\u003c/em\\u003e难题!-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "电视搭载\\u003cem\\u003eAI能做什么\\u003c/em\\u003e？不止追剧！全屋智控、教育管家解锁新体验",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "用\\u003cem\\u003eAI看视频\\u003c/em\\u003e，一分钟抓取视频内容!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "用AI看视频，一分钟抓取视频内容！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "这个免费的\\u003cem\\u003eAI\\u003c/em\\u003e插件，居然让我5分钟看完2小时的YouTube\\u003cem\\u003e视频\\u003c/em\\u003e...- 掘金",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eAI\\u003c/em\\u003e 已经渗透普通人生活，只是你没发现而已",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "AI 已经渗透普通人生活，只是你没发现而已",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "如何 提高 短视频 剪辑 效率 利用 剪映 ai 剪辑 功能 快速 成片 - 人工智能 - php 中文 网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "如何提高\\u003cem\\u003e短视频\\u003c/em\\u003e剪辑效率 利用剪映\\u003cem\\u003eAI\\u003c/em\\u003e剪辑\\u003cem\\u003e功能\\u003c/em\\u003e快速成片-PHP中文网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "2026年AI视频工具横评:目前最好用效果最好的\\u003cem\\u003eai视频软件\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "2026年AI视频工具横评:目前最好用效果最好的ai视频软件",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "2026最新\\u003cem\\u003eAI\\u003c/em\\u003e短剧制作\\u003cem\\u003e软件\\u003c/em\\u003e全解析:从新手入门到专业创作全指南",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "2026最新AI短剧制作软件全解析：从新手入门到专业创作全指南",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "2026最新AI短剧制作软件：选型攻略、效率技巧与创作灵感指南",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "我帮朋友测评了十几款\\u003cem\\u003eAI视频软件\\u003c/em\\u003e，只有这一款让我\\u003cem\\u003e推荐\\u003c/em\\u003e了三次-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "5款\\u003cem\\u003e视频内容总结\\u003c/em\\u003eAI实测:视频1小时，总结3分钟，谁是你的效率神器?",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "polypal-AI实时语音\\u003cem\\u003e视频即时翻译\\u003c/em\\u003e-小米应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e,AI漫剧,短视频,AI动画,python源码 - 互站网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e下载安卓最新版_手机app官方版免费安装下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "崇胜\\u003cem\\u003eAI助手\\u003c/em\\u003e-\\u003cem\\u003eAI视频\\u003c/em\\u003e制作助手-小米应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e老旧版本大全_所有历史官方版安装下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "【\\u003cem\\u003eAI视频助手001\\u003c/em\\u003e】Up主探索中，欢迎收看求三连!-bilibili",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "十大\\u003cem\\u003e视频剪辑\\u003c/em\\u003e神器，免费\\u003cem\\u003eAI\\u003c/em\\u003e一键搞定-应用宝官网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "\\u003cem\\u003e智能剪辑视频\\u003c/em\\u003e的软件APP推荐_智能剪辑视频的软件下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "智能 剪辑 视频 的 软件 app 推荐 _ 智能 剪辑 视频 的 软件 下载 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "AI\\u003cem\\u003e智能剪辑\\u003c/em\\u003e教程，批量\\u003cem\\u003e视频\\u003c/em\\u003e归并轻松无缝拼接!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "AI智能剪辑教程，批量视频归并轻松无缝拼接！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "2026年推荐8款AI自动混剪软件，适合短视频二创与批量剪辑",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "2026年推荐8款\\u003cem\\u003eAI\\u003c/em\\u003e自动混剪软件，适合\\u003cem\\u003e短视频\\u003c/em\\u003e二创与批量\\u003cem\\u003e剪辑\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "\\u003cem\\u003eAI 视频\\u003c/em\\u003e处理技术升级:自动\\u003cem\\u003e生成摘要\\u003c/em\\u003e + 关键帧提取，企业培训更高效",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "2025 最新\\u003cem\\u003e AI\\u003c/em\\u003e 扩展 YouTube Helper:一键\\u003cem\\u003e生成视频摘要\\u003c/em\\u003e，帮你节省",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e视频摘要生成\\u003c/em\\u003e:关键帧提取与\\u003cem\\u003eAI\\u003c/em\\u003e缩略图制作-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "学习研究必备:\\u003cem\\u003eAI\\u003c/em\\u003e 一键\\u003cem\\u003e生成视频摘要\\u003c/em\\u003e，精准提取时间戳与核心观点!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "视频号创作者必看!@腾讯元宝输“总结一下”，\\u003cem\\u003eAI\\u003c/em\\u003e秒\\u003cem\\u003e生成视频摘要\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003ebilibili\\u003c/em\\u003e搜索\\u003cem\\u003eAI\\u003c/em\\u003e助手\\u003cem\\u003e功能\\u003c/em\\u003e火热内测中-哔哩哔哩",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "B站上线“AI原声翻译功能”，将加入日语等语言",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eB站\\u003c/em\\u003e上线“\\u003cem\\u003eAI原声翻译功能\\u003c/em\\u003e”，将加入日语等语言",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eB站有AI\\u003c/em\\u003e助手了，上手体验后我找到了有意思的东西",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "3分钟可成片，B站测试AI视频创作工具“花生AI”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "3分钟可成片，\\u003cem\\u003eB站\\u003c/em\\u003e测试\\u003cem\\u003eAI\\u003c/em\\u003e视频创作工具“花生AI”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "【保姆级教程】\\u003cem\\u003eB站\\u003c/em\\u003e最强大尺度AI视频生成，揭秘最离谱的\\u003cem\\u003eAI功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "抖音升级AI内容标识功能，鼓励创作者主动标识",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e抖音\\u003c/em\\u003e升级\\u003cem\\u003eAI\\u003c/em\\u003e内容标识\\u003cem\\u003e功能\\u003c/em\\u003e，鼓励创作者主动标识",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e抖音\\u003c/em\\u003e上线\\u003cem\\u003eAI\\u003c/em\\u003e创作\\u003cem\\u003e功能\\u003c/em\\u003e，设独立入口",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "抖音上线AI创作功能，设独立入口",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯、抖音、快手、B站、DeepSeek等平台官宣：上线AI标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "腾讯、\\u003cem\\u003e抖音\\u003c/em\\u003e、快手、B站、DeepSeek等平台官宣:上线\\u003cem\\u003eAI\\u003c/em\\u003e标识\\u003cem\\u003e功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "告别AI生成造假！抖音今日起升级AI内容标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "告别AI生成造假!\\u003cem\\u003e抖音\\u003c/em\\u003e今日起升级\\u003cem\\u003eAI\\u003c/em\\u003e内容标识\\u003cem\\u003e功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "抖音升级AI内容标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e举办“\\u003cem\\u003eAI驱动下的IP价值重构与生命延展论坛\\u003c/em\\u003e”，探索IP...",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频举办“AI驱动下的IP价值重构与生命延展论坛”，探索IP创新生长之道",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e将发布\\u003cem\\u003eAI\\u003c/em\\u003e长剧，预计第三季度上线",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频将发布AI长剧，预计第三季度上线",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频孙忠怀：AI重塑网络视听生态，创作小队引领行业新变革",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e孙忠怀:\\u003cem\\u003eAI\\u003c/em\\u003e重塑网络视听生态，创作小队引领行业新变革",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e布局\\u003cem\\u003eAI\\u003c/em\\u003e影视:未来需要「艺术工程师」「科技艺术家」",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频以AI技术赋能影视制作全链条",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频以AI\\u003c/em\\u003e技术赋能影视制作全链条",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      }
+    ],
+    "手机功能": [
+      {
+        "text": "OpenAI或加速手机开发",
+        "source": "weibo_hot_30days_v2_20260506_095030.json",
+        "score": 6
+      },
+      {
+        "text": "鸿蒙智行回应副驾折叠争议",
+        "source": "weibo_hot_30days_v2_20260506_095030.json",
+        "score": 3
+      },
+      {
+        "text": "\n                                    \n                                        \n                                            \n                                        \n                                    \n                                    \n                                        为TA充电后即可观看\n                                    \n                       ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "  2026 最好的AI视频生成工具（我都试了） 从00:00开始分享\n               \n                获取视频分享链接\n                手机扫码观看/分享",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 9
+      },
+      {
+        "text": "      用手机看    稍后再看   ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "    用手机看    稍后再看   ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行回应副驾折叠争议，称网传视频场景未达到防夹功能触发阈值，哪些信息值得关注？能打消网友的疑虑吗？ 618 万热度",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 6
+      },
+      {
+        "text": "8点1氪丨豆包新增付费订阅；抖音集团副总裁回应红果短剧付费；苹果因Siri人工智能功能推迟发布，以2.5亿美元和解诉讼",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 14
+      },
+      {
+        "text": "手机和平板间的新品类：华为 Pura X Max 漫谈 Microhoo",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 4
+      },
+      {
+        "text": "一键总结视频全文的AI居然在OPPO手机实现了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 10
+      },
+      {
+        "text": "OriginOS 6 揭秘！AI 能力惊到我，竟领先苹果这么多？！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "不能用小米手机看黄片（AI合成，注意分辨）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "手机更新到iOS 17无意间发现一个新功能——「音频转文字」",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "【实时翻译】无字幕外语片，让老外视频秒变双语字幕（手机电脑都能用）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【AE教程】苹果AI助手Siri动画解析复刻",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "华为手表端微信支持文字回复了！语音转文字回复",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "【张诗雨教程】小米手机如何设置文字转语音引擎，我使用的是红米note8pro，MIUI11，安卓10",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 5
+      },
+      {
+        "text": "日版iPhone16 AI使用速报 4大超好用功能 如何激活 功能盘点",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "抖音全自动抢福袋，每天抢两部手机",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "一分钟教会你如何在Apple Watch上刷抖音小红花。 #applewatch #苹果 #腕上小电视",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "iPhone 快捷指令：小红书实况图，一键下载保存",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "原来手机拨号键除了打电话，还有这么多实用功能",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "厉害了！挑战60s用Python写一个安卓APP",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "4月最新 Grok 4.2解除限制！手机＋PC免费教程！小白无脑入手！\n\nAI宝藏屋\n10.1万\n136",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "iPhone18Pro配色前瞻",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "北京警方提醒苹果手机用户",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "iPhone三款新机机模出炉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "三星家族549亿元遗产税尾款",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "两位小米联合创始人退出小米科技",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝iPhoneAir2将正常迭代",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "荣耀冰雪中华体育精神大讲堂",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米官宣6款充电宝新品",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "iPhone17在华平均售价同比大涨20%",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "荣耀张雪机车战略合作",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米18将首发高通2nm处理器",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "三星电子一季度狂赚2600亿",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑大六座华境S开启预订",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米YU7入门级版本",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用了很久的苹果手机才发现的功能",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "华为AI眼镜即将发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "中专生带手机入校被罚回家待到毕业",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米行车记录自动存事故点前后视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "曝小米18ProMax设定8500mAh电池",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "小米食堂发布小米冰激凌",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军回应小米冰淇淋",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王者荣耀世界上线",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "一蓄电池企业让员工体检前吃排铅药",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "从王者到王者荣耀世界",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米食堂说冰淇淋机快冒烟了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为Pura系列发布会定档",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为Pura90系列配色",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝iPhone18Pro简化相机按键",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "孙颖莎同款OPPOFindX9sPro",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "OPPOFindX9sPro今日官宣",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米新SU7功能即将向其他车型推送",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米正式调价",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "部分商家承认120W是充电器商标",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "有种老年人看不懂智能手机的无奈感",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "华为大阔折设计图曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝华为全新大阔折陆续到店",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "李小冉唐艺昕后台玩手机",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "郑丽文试乘小米汽车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhone17系列最新销量",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "西班牙首相试坐小米汽车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米18Pro电池设定曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "苹果AI眼镜细节曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "OPPOFindX9Ultra今日官宣",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "谁懂这次换手机的意义",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhoneFold首年销量预计",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为夺一季度中国手机出货量第一",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "苹果官方发文提醒",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王者荣耀",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "B太帮扶大山女孩用苹果手机",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "姚安娜代言华为",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "何润东接上王者荣耀商务了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝年底旗舰手机将区分档位",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "三星阔屏三折叠手机曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "小米上线电池升级服务",
+        "source": "weibo_hot_30days_github.json",
+        "score": 7
+      },
+      {
+        "text": "iOS26泄露案动态",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果AppStore下架两款违规应用",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "以防你不知道手机发展得有多快",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "陪91岁大爷玩手机月入5000",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "金立手机创始人曾赌博输掉十几亿",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "易烊千玺 华为",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米史上最大电池手机曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 5
+      },
+      {
+        "text": "小米18Pro屏幕参数曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米食堂3天卖2000多只冰淇淋",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米18Pro新增AI按键",
+        "source": "weibo_hot_30days_github.json",
+        "score": 9
+      },
+      {
+        "text": "摊主因借给学生手机被家长逼到下跪",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "工作为什么默认能用我的手机",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "荣耀高管称张雪是年轻版的李书福",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "橘子海乐队称华为侵权",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "胡峥楠出任小米集团副总裁",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军不建议有司机的大老板买小米",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "高三女生借摊贩手机作弊已被处理",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米18Pro配置全面曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "校方通报女生骗摊主手机作弊被抓",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "换电池小卡扣要13万新能源车主崩溃",
+        "source": "weibo_hot_30days_github.json",
+        "score": 7
+      },
+      {
+        "text": "橘子海乐队 华为",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米新SU7续航",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "电池卡扣断裂判全损电车维修多离谱",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "王者荣耀 哪吒2",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "荣耀机器人首次参赛就夺冠",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "三星门店偶遇明星概率好高",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "25岁女子下楼玩手机摔成大小便失禁",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米徐洁云喊话造谣者",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军直播测续航变山东文旅安利",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "荣耀闪电2026机器人半马夺冠",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为发布会",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "央视起底直播间特价手机捡漏骗局",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "深蓝S07把华为乾崑激光价格打下来了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为Pura90价格",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为领先行业半年发布大阔折",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax首发搭载AI灵感妙创",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "华为pura90",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax人像智拍神器",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "华为Pura90发布XMAGE智拍",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为余承东称手机可能涨价",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "华为非凡大师女表一分钟全部售罄",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iOS27全新Siri界面",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为Pura系列新品发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "猛士x华为乾崑共创智能越野新篇",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "OPPO哈苏双两亿影像给到夯",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "李荣浩直播手机掉水里了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "华为乾崑奕境首车命名X9",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "日本人称手机设置为中文感觉很清爽",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行发布会",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "以为库克真加入小米汽车了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝iPhone18屏幕规格或开倒车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "断绝孩子手机上瘾最快的方法",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "宁德时代高管称电池超750kg不科学",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果或被印度罚款380亿美元",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "陈奕恒的手机壁纸是jennie",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhone18Pro相机盖板曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "公共充电桩悄悄涨价",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行回应发布会被质疑出意外",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "宁德时代新电池续航可超1500km",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "机器人半马冠军出自做手机的荣耀",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "苹果CEO库克将转任",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行春季新品发布会",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "宁德时代新电池续航1500公里",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "小米首次登顶全球开源大模型第一",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "库克称苹果地图发布是首个重大错误",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhone18ProMax金属机模",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "11岁娃偷钱买手机挨骂老板又卖他一个",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhoneUltra金属机模",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "打洲本还得看荣耀WIN",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张予曦和荣耀闪电百米赛跑",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "神行电池超充1000次容量仍超90%",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "郑州公园里放下手机捧起书",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "上汽总裁鸿蒙智行发布会录播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王者荣耀闪退",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "打洲又养虾 荣耀笔记本夯到家",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑赋能阿维塔06T巅峰上市",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑技术大会",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米YU7GT",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "胡兵给荣耀机器人发走秀offer",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军官宣小米YU7GT5月底发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑智驾ADS5",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑智驾ADS5正式发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑旗舰境奕境X9全球发布",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑坚持融合感知才能更安全",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "东风奕派携华为乾崑年内上新3车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhone18ProMax厚度近14mm",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为大阔折真香",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝iPhone18配12GB内存",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为乾崑开启内外双融合感知时代",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "海洋8系大电池加闪充真王牌真旗舰",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "奥迪Q5L全系上线华为乾崑智驾",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax今日开售",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "断绝孩子手机上瘾最快的偏方",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米公司报警",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王者荣耀农家乐",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "别在乱充电提早损害电池健康了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "王濛背着节目组把手机带上台了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行北京车展全貌焕新",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "日本人不愿相信中国座椅给手机充电",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "小米玄戒O1芯片已出货超100万颗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhoneFold疯狂秀刀法",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张雪曾拒绝跟华为合作",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhoneUltra真机超前瞻",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "三星阔折叠机模曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "员工厕所玩手机照片被发400人群",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米百万亿Token计划启动",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "全球最大钠离子电池订单",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax首销日销量曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果将推出多款Ultra新品",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝苹果将推出真全面屏手机",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "曝iPhoneFold定价14999元",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果天气崩了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为Pura90系列开售爆单",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米玄戒O3曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为折叠屏对比iPhone折叠屏",
+        "source": "weibo_hot_30days_github.json",
+        "score": 5
+      },
+      {
+        "text": "保姆将幼童关狗笼自己只顾玩手机",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为WATCHFIT5今日开售",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "捡到手机后故意丢弃被判赔6000元",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果印度生产线陷入停摆",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王腾称加仓了小米股票",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果电脑废纸篓里的废纸谁扔的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "甲亢哥在深圳买的手机掉海里了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行4月交付32759辆汽车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米汽车4月交付量超3万台",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果创始人站台追觅旗下手机",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "桃黑黑王者荣耀活动",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "追星女的手机密码人尽皆知",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "荣耀将推出张雪机车冠军联名款手表",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "iPhone18Pro最低配或不涨价",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果炖牛肉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "走路看手机被劝退任性校规咋出台的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果iOS27系列新功能",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "俞浩称追觅要与苹果三星三分天下",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "黄灿灿手机都掉洞里了还在吃薯片",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米大涨超8%",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝iPhone18Pro定价激进",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米大涨超10%",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "没回消息是因为手机死翘翘了吗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苹果或与英特尔三星合作",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "iPhone18Pro渲染图再曝",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "手机和平板间的新品类：华为 Pura X Max 漫谈\nMicrohoo",
+        "source": "tophub_analysis_20260506.json",
+        "score": 4
+      },
+      {
+        "text": "7年前丢的手机发回定位 机主找回",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "7年前丢失的手机悄悄发回定位",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "别浪费荣耀侧边实体键 不止唤醒助手 三种按法解锁新体验",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "看外国\\u003cem\\u003e视频\\u003c/em\\u003e没字幕?\\u003cem\\u003e手机 AI\\u003c/em\\u003e 实时字幕，翻译音频视频超方便",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "看 外国 视频 没 字幕 ? 手机 ai 实时 字幕 ， 翻译 音频 视频 超 方便 | 手机 ai | 用户 完成 语音 | 翻译 | 语言 包 | 音频 视频 | 麦克风 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "手机自带AI功能别白白浪费！安卓苹果隐藏用法，老人小白一看就会",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "\\u003cem\\u003e手机\\u003c/em\\u003e自带\\u003cem\\u003eAI功能\\u003c/em\\u003e别白白浪费!安卓苹果隐藏用法，老人小白一看就会",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "华为视频HDC.2025新升级：AI观影黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "华为\\u003cem\\u003e视频\\u003c/em\\u003eHDC.2025新升级:\\u003cem\\u003eAI观影\\u003c/em\\u003e黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "手机自带AI功能别浪费！关掉太可惜，全部打开好用又省心",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "荣耀500用户必看！侧边AI键不是摆设，5个神功能白瞎了",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "polypal-AI实时语音\\u003cem\\u003e视频即时翻译\\u003c/em\\u003e-小米应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "polypal - ai 实时 语音 视频 即时 翻译 - 小米 应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e下载安卓最新版_手机app官方版免费安装下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "ai 视频 助手 下载 安卓 最新 版 _ 手机 app 官方版 免费 安装 下载 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "崇胜\\u003cem\\u003eAI助手\\u003c/em\\u003e-\\u003cem\\u003eAI视频\\u003c/em\\u003e制作助手-小米应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "崇胜 ai 助手 - ai 视频 制作 助手 - 小米 应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频 布局 ai 影视 : 未来 需要 「 艺术 工程师 」 「 科技 艺术家 」 | ai 影视 | 孙忠怀 | 知名 企业 | 科技 艺术家 | 腾讯 视频 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "缺少 动态 照片 循环 播放 功能 - 荣耀 俱乐部",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e缺少\\u003c/em\\u003e动态照片循环播放\\u003cem\\u003e功能\\u003c/em\\u003e-荣耀俱乐部",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "安卓/苹果都能用!全能音\\u003cem\\u003e视频\\u003c/em\\u003e播放器，多源聚合+纯本地自由",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "安卓/苹果都能用！全能音视频播放器，多源聚合+纯本地自由",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "短视频 app 源码 ， 这些 功能 到底 有 没有 改变 短 视频 | app | 源码 | 直播 平台 | 短 视频 | 美颜 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 11
+      },
+      {
+        "text": "\\u003cem\\u003e短视频APP\\u003c/em\\u003e源码，这些\\u003cem\\u003e功能\\u003c/em\\u003e到底有没有改变短视频-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "吐槽 有 效果 小米 miui 视频 播放 优化 立项 | miui | 产品经理 | 小米 | 手机 | 证件照 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "\\u003cem\\u003e吐槽\\u003c/em\\u003e有效果 小米MIUI\\u003cem\\u003e视频\\u003c/em\\u003e播放优化立项-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "罗永浩\\u003cem\\u003e吐槽\\u003c/em\\u003e运营商\\u003cem\\u003e视频\\u003c/em\\u003e彩铃\\u003cem\\u003e功能\\u003c/em\\u003e:悄悄扣钱，音乐恶俗-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "罗永浩 吐槽 运营商 视频 彩铃 功能 : 悄悄 扣钱 ， 音乐 恶俗 | 彩铃 | 手机 | 罗永浩 | 运营商 | 音乐 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "b 站 推出 “ 付费 视频 ” 功能 引 网友 吐槽 ， 能否 顺利 推行 有待 验证 | b 站 | 优酷 | 爱奇艺 | 短 视频 | 长 视频 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      }
+    ],
+    "视频功能": [
+      {
+        "text": "\n                        \n                        \n                        \n                        \n                            2026 最好的AI视频生成工具（我都试了）\n                            关注\n                            \n                            \n                        \n                        \n                            \n                        \n     ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "\n                            2026 最好的AI视频生成工具（我都试了）\n                            关注\n                            \n                            \n                        ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "\n                            您的浏览器还未开启本地网络访问权限，可能会影响视频内容的正常播放。\n                            \n                                1. 您可在浏览器通知中允许 bilibili.com 查找并连接本设备的请求；\n                                2. 您可进入浏览器在\"设置\">\"隐私和安全\">\"网站设置\">\"查看各网站的权限及存储数据\"找到 www.bilibili.com，在\"权限\"中开启\"本地网络访问权限\"，开启后刷新页面即可正常播放视频。\n                            \n                      ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "\n            75人正在看\n            ，\n            已装填 270 条弹幕\n        ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "\n                    \n\n    \n    \n    弹幕随屏幕缩放\n\n                    \n\n    \n    \n    防挡字幕\n\n                    \n\n    \n    \n    智能防挡弹幕\n\n                ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "\n                            弹幕观看屏蔽词\n                             同步屏蔽列表\n                        ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "\n                \n                    \n                        \n                    \n                    \n                        \n                            \n                        \n                    \n                    \n                    发个友善的弹幕见证当下\n                    \n                    弹幕礼仪 \n                \n                发送\n        ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "\n                    \n                        \n                    \n                    \n                        \n                            \n                        \n                    \n                    \n                    发个友善的弹幕见证当下\n                    \n                    弹幕礼仪 \n                ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "  2026 最好的AI视频生成工具（我都试了） 从00:00开始分享\n               \n                获取视频分享链接\n                手机扫码观看/分享",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 9
+      },
+      {
+        "text": "  2026 最好的AI视频生成工具（我都试了）",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "从00:00开始分享\n               \n                获取视频分享链接\n              ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "  成为UP主的“老粉” 助力UP成长，让更多人发现TA   ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": " 成为UP主的“老粉” 助力UP成长，让更多人发现TA   ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": " 成为UP主的“老粉” 助力UP成长，让更多人发现TA ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "屏蔽推广 （选择后将优化推广展示） \n              相似内容过多\n            \n              视频不感兴趣\n            \n              up主不感兴趣\n            \n              分区不感兴趣\n            ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "\n              相似内容过多\n            \n              视频不感兴趣\n            \n              up主不感兴趣\n            \n              分区不感兴趣\n            ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "鸿蒙智行回应副驾折叠争议，称网传视频场景未达到防夹功能触发阈值，哪些信息值得关注？能打消网友的疑虑吗？ 618 万热度",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 6
+      },
+      {
+        "text": "8点1氪丨豆包新增付费订阅；抖音集团副总裁回应红果短剧付费；苹果因Siri人工智能功能推迟发布，以2.5亿美元和解诉讼",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 14
+      },
+      {
+        "text": "《ENEMY》民国篇 演尽忠良几十春，一夜真作戏中人。\n明朝烽火今朝月，不负当初拜师门。#民国 \n（本视频有微恐画面，已进行打码处理，若引发不适，请勿观看） 煎饼果仔（张问初） 12520956次播放",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "App+1｜秒看视频参数，我做了个免费的 Mac 小工具 少数派50348770_pkg",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "26-4-28 11:05\n来自 微博视频号\n已编辑",
+        "source": "weibo_comments_QCRO5snUh_20260429_162937.json",
+        "score": 3
+      },
+      {
+        "text": "播放当前时间 00:00/时长 00:37加载完成: 7.67%00:00媒体流类型 直播尝试直播，当前为延时播放直播 倍速播放速度2x1.5x1.25x1x（默认）, 选择0.5x720p高清 1080p高清 720p, 选择标清 480p小窗播放试试“小窗播放”，边刷微博边看视频\n      \n          \n        \n      \n          \n          \n        \n      全屏静音",
+        "source": "weibo_comments_QCRO5snUh_20260429_162937.json",
+        "score": 4
+      },
+      {
+        "text": "首页\n番剧\n直播\n游戏中心\n会员购\n漫画\n赛事\n下载客户端\n大会员\n99+\n消息\n动态\n收藏\n历史\n创作中心\n投稿\n深色主题内测啦！\n动态\n热门\n番剧\n电影\n国创\n电视剧\n综艺\n纪录片\n动画\n游戏\n鬼畜\n音乐\n舞蹈\n影视\n娱乐\n知识\n科技数码\n资讯\n美食\n更多\n专栏\n直播\n活动\n课堂\n社区中心\n新歌热榜",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "动态\n热门\n番剧\n电影\n国创\n电视剧\n综艺\n纪录片\n动画\n游戏\n鬼畜\n音乐\n舞蹈\n影视\n娱乐\n知识\n科技数码\n资讯\n美食\n更多\n专栏\n直播\n活动\n课堂\n社区中心\n新歌热榜",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "番剧\n电影\n国创\n电视剧\n综艺\n纪录片\n动画\n游戏\n鬼畜\n音乐\n舞蹈\n影视\n娱乐\n知识\n科技数码\n资讯\n美食\n更多\n专栏\n直播\n活动\n课堂\n社区中心\n新歌热榜",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "专栏\n直播\n活动\n课堂\n社区中心\n新歌热榜",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "144.4万\n1645\n03:05:51\n鲁豫对话罗翔：在命运的剧本揭晓前，尽力扮演好自己的角色 | 陈鲁豫·慢谈EP16【视频播客】\n5万点赞\n陈鲁豫-慢谈\n· 04-27",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 6
+      },
+      {
+        "text": "鲁豫对话罗翔：在命运的剧本揭晓前，尽力扮演好自己的角色 | 陈鲁豫·慢谈EP16【视频播客】\n5万点赞\n陈鲁豫-慢谈\n· 04-27",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 6
+      },
+      {
+        "text": "直播\n640\n原神\n\n直播中\n深渊幽境帮帮\n\n梦洛天秋",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 3
+      },
+      {
+        "text": "千万粉丝网红白冰偷税911万被查，偷税细节曝光，2天前还更新视频",
+        "source": "toutiao_网红白冰偷税_20260429_154824.json",
+        "score": 3
+      },
+      {
+        "text": "小央视频: 白冰出镜认错认罚！ 千万粉丝网红白冰偷税超900万，被追缴并罚款共计超1891万元",
+        "source": "toutiao_网红白冰偷税_20260429_154824.json",
+        "score": 3
+      },
+      {
+        "text": "@今视频长天新闻创作的原声",
+        "source": "toutiao_网红白冰偷税_20260429_154824.json",
+        "score": 3
+      },
+      {
+        "text": "一键总结视频全文的AI居然在OPPO手机实现了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 10
+      },
+      {
+        "text": "一个视频教会你该如何AI配音和加字幕",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【功能1-AI总结视频】1分钟学会3种召唤方式，解锁AI助理，为你总结视频～",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "《B站省流助手》这样刷视频太快了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "【软件分享+保姆级视频教程】Topaz Video AI 视频无损放大全网最全教程【手把手教你安装使用 附软件汉化版网盘分享 4K60帧高清修复】",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 9
+      },
+      {
+        "text": "4个B站实装的AI功能，80%的用户绝对不知道",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【全30集】5分钟入门AI视频制作！AI生成视频零基础入门保姆级教程（2026最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【全68集】3分钟入门AI视频制作！AI生成视频零基础入门保姆级教程（2025最新）AI视频制作全流程教学！包含所有干货！七天就能从小白到大神！（附工具）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "胖橘火爆AI动画如何制作的--深度解析AI动画短视频如何打造。#AI创作 #AI学习 #AI动画 #AI视频 #AI教程",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "2026 最好的AI视频生成工具（我都试了）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【AI】用AI制作影视解说视频，原来这么简单",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AI视频被判违规扣健康分？看看为什么平台能精准识别你的内容是AI生成的",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "全网没人告诉你的AI视频总结方法！1分钟看完3小时视频（提取文案、做笔记、双语翻译、思维导图全搞定!）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "这4款最强AI视频总结神器竟然全都免费！【建议收藏】看视频必备！支持B站、YouTube、本地视频等",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 10
+      },
+      {
+        "text": "从0到1打造千万播放爆款AI视频（基础+进阶）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "音视频转文字实用工具合集 | 效率UP！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "全网最强版本！一键视音频提取文案，速度超快，内置多个接口，开源免费无限制，视频制作好帮手",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "视频文案提取工具，如何提取视频中的文字字幕，音频转文字软件",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "分享给大家B站视频文稿逐字稿提取神器效率工具",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "谁说视频不能P的？？教你简单的视频需改文字！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "Windows音/视频一键转文字！导入音视频轻松提取文案，精确度达98%以上，完全免费，AI文案提取助手",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "利用剪映将声音转换成文字；视频声音转文字",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "Ai视频总结工具分享，目前个人认为最有效的",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "AI总结视频全攻略！全网只看这一篇就够了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "RE0出第三季了，一个视频带你快速回顾前两季的内容！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "AI智能视频总结助手 @课代表猫 的使用教程",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "豆包b站王炸组合！一键总结视频，一键生成思维导图，保姆级教程。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "如何让ipad分屏边看视频边记笔记",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "高效笔记法｜我刷遍了b站的学习视频，发现做笔记的3个奥秘！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "Potplayer视频笔记插件，边看视频做笔记，一键添加截图时间戳，支持所有笔记软件，学习效率MAX！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "一站式AI全自己看视频写笔记工具，可本地可云端，支持哔哩哔哩、YouTube 等平台，转写提炼一键完成！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "这就是我用Obsidian做本地视频笔记的终极解决方案了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "b站新功能：听视频功能。如何使用听视频功能，听视频功能真的太棒啦！不方便看视频，做家务，想要一些背景声音，眼睛疲劳躺平，等等这些时候都可听视频",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 9
+      },
+      {
+        "text": "62篇文章突破雅思词汇：视频笔记+词汇双语朗读",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "如何给「视频」做笔记？MarginNote 手把手教学，在 iPad 上下载B站视频，在电脑导出视频笔记内容",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "B站笔记，我愿称之为最强的视频学习功能（含iPad）。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "【实时翻译】无字幕外语片，让老外视频秒变双语字幕（手机电脑都能用）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "B站竟然有自动翻译功能，点击右上角，向左滑功能栏，点击字幕设置，我应该不是最后一个知道的吧，以后生肉可以随便啃啦，就是不知道准确度如何，有知道的大佬可以说说吗？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "！！！字幕开启教程！！！多人私信我字幕怎么没有？？？这里为大家做个字幕怎么打开的视频教程这是b站自带生成翻译，如果还不知道字幕怎么打开百度兄弟们。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "2023年了，你还不会使用B站字幕翻译吗？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "（干货）如何跟微信上的外国朋友视频通话实时翻译？值得收藏",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "虚幻引擎-UE5.7 新工具开发者AI助手-&amp;gt;到底有没实用价值？(这个视频为你讲清楚)",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "3分钟入门AI视频，用免费工具，制作你的AI大片",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "Dobby AI 视频助手：一键生成，全网发布",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "B站ai小助手求助！！！不想看视频的xd可以看评论区",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "【限时优惠】玩转AI视频【AI短片&amp;AI音乐】",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "现如今“P视频”也像P图一样简单了，大厂出品的 AI 视频创作神器有多强？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "AutoClip：AI智能视频高光自动剪辑工具",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "我成功让AI自动剪视频！Skill免费领取，你立刻就能体验！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【AI教程】只需5分钟！利用ChatGPT和剪映零基础制作视频！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "从0到1只用10分钟——学会剪辑！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "《杭州几何》新片场素材「创意剪辑大赛」第一届一等奖",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "2分钟教你用必剪剪辑第一个文字视频（超简单新手友好）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "【高燃混剪】B站 AI创作大赛｜UP主脑洞封神，每帧都是创意暴击✨",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "hermes实现视频的自动生成和自动发部 #AI #hermes #科技下一站 #视频自动剪辑",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【AI视频教程】豆包AI一站式生成AI动画 AI生成视频零基础入门保姆级教程 AI脚本+分镜制作+配音剪辑全流程教学！小白入门到精通!",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "如何用ChatGPT生成视频，速看！撼动Sora地位",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "【AI视频教程】（2026最新）“豆包+即梦+剪映”小白2小时快速掌握AI视频创作技巧 AI视频制作提示词逻辑+AI绘画+图生视频+视听语言完整流程详解！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 7
+      },
+      {
+        "text": "在视频号做绿植盆栽花卉视频，借助AI5分钟制作一条原创视频，轻松销量上千单（附详细制作步骤）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "学会100个AI教程 | 水果转场宣传视频（1/100）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "[豆包] 豆包每日视频生成额度少于10个的原因找到了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【Seedance2.0】放弃视频提示词！制作AI视频新思路，全网独家故事板法",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "b站的视频声音如何转换成文字？如何一键提取b站视频文案",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "一键提取视频音频 自动生成字幕文案",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "去除视频中文字，不留痕迹的两种简单方法，新手朋友绝对能学会",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "3分钟学会视频如何修改文字字幕及去水印 | 剪辑技巧",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "B站官方AI？updream保姆级教程，20分钟快速上手。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "PR也开始结合AI了？这个功能太香了吧，一个视频告诉你PR2026的更新速递",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "b站视频豆包自动化总结！效率飞升",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "以防你不知道B站可以用AI原声翻译了",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "用AI做四个抖音账号能赚多少钱？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "抖音全自动抢福袋，每天抢两部手机",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "一分钟教会你如何在Apple Watch上刷抖音小红花。 #applewatch #苹果 #腕上小电视",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "5分钟教会你，抖音发视频怎么赚钱！播放量收益怎么计算！？~",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "抖音短视频之【ai生成视频新手教程】视频可以AI全自动创作了，全程无需自己动手！抖音起号涨粉实操教程分享，各种短视频教程让你的账号快速涨粉变现",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "抖音是怎么回事，这种视频随便就可以发出来吗？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "75w焚影50秒循环刷30秒抖音暴打木桩731w秒伤",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "八爪鱼采集器采集小红书（搜索关键词版）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "这个组合真的好用！小红书➕eagle",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "小红书抽奖功能详细解析！#小红书运营 #小红书专业号 #翟友友 #小红 - 抖音",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "小红书电商教程，小红书虚拟资料教程，小红书副业赚钱攻略，小红书无货源项目拆解，小红书运营教程，小红书开店教程，小红书无货源教程，小红书无货源选品！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "这可能是目前最好用的B站抖音小红书无水印高清视频下载工具，25.7.30可用，持续更新。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "iPhone 快捷指令：小红书实况图，一键下载保存",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "【新媒体运营】B站最强零基础入门教程 小红书运营自学天花板 7天搞定抖音短视频运营技巧 短视频剪辑 Ai文案撰写 轻松拿捏",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 8
+      },
+      {
+        "text": "推荐个在小红书看见的搞笑视频（非原创，只是推荐。）",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "小红书图片，视频保存方法介绍。最后有彩蛋！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "耗时7天制作，共29分钟《DeepSeek做小红书图文全攻略》一天做1000条；deepseek小红书使用教程，deepseek从入门到精通，deepseek小",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "Apple自带的“视频”软件有用吗？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "【Seal】非常强的一款视频解析，音频提取，封面提取的开源软件，以后再也不用找别人要封面啦！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "用 iMockup 完成你的APP宣传视频🎬",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "【阿B新功能:听视频 】和 后台播放 ……好像……没区别",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "B站给up主搞的评论弹幕防骚扰功能",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "B站新功能太烦人了，每次点开视频还要专门点一下“从头播放”",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "为什么你处理过的视频，依然被判定为“同质化垃圾”？",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "低俗短视频像猪食？？这就推荐几款容易忽视的“高质量”视频APP！！！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "视频倍速软件安利-考研党必备神器|学习向/安利向",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "100％成功！全网最新免费Sora2生成视频无限用！\n\nAI科技领航员\n3.2万\n30",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "6大AI视频谁是王？私藏级一人AIGC工作流\n\nAI视次方\n2.5万\n2",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "夯爆了！可灵 AI3.0 独家保姆级教程！目前 B 站最全最细的 AI 视频制作教程！AI绘画 + 图生视频 + 脚本 + 配音完整流程详解！包含所有干货！\n\nAI大世界2026\n7449\n63",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "【全30集】即梦+豆包+剪映，2小时快速掌握AI视频制作技巧，手把手教你从0到1制作AI短片！小白适用！学完即接单，带你玩转AI视频赛道！\n\nAI视频教程_\n360.6万\n1514",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "最新即梦seedance2.0fast 无限生成 最新白嫖 无限排队嘎嘎出视频\n\nAIGC阿祖\n4388\n7",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "豆包生成50秒的视频！\n\ncoxputer\n3.6万\n3",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "【全80集】吊打付费！目前B站最新最全最细的即梦AI视频制作保姆级教程！新手必看！！AI视提示词+AI绘画+图生视频+完整流程详解！七天就能从小白变大神！\n\n既梦ai图生视频教程\n9686\n144",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "一款不用会员的视频生成网站_接入seedance2.0\n\n西纳普斯_Offcial\n6370\n3",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 3
+      },
+      {
+        "text": "【牌子】当世界过分“诚实”，我们要如何保持好奇与勇气【B站AI创作大赛-开放赛道】\n\nDiDi_OK\n1915.7万\n2.2万",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "【可灵3.0】6条AI视频实战经验\n\nAI导演Henry\n7764\n0",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 6
+      },
+      {
+        "text": "侯宇浪姐直播睡觉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "乘风直播风味录播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "女子长期虐待2岁儿子还拍视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "尤长靖直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "刘宇直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝某牛奶直播间涉黄涉低俗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "月鳞绮纪直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐一公小考取消直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "桃黑黑直播打嘴抽脸",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐取消直播后被喊话退钱",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "直播涉黄牛奶品牌为中华老字号",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "海河乳品回应有直播间涉低俗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "237平独居视频破1100万",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "月鳞绮纪微博追剧团",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "陈都灵晒追剧团合照",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "月鳞绮纪四位主演直播生图",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "B站将上线播放页暂停广告",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张萌冰湖重生直播哭了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "李佳琦说可能缺席两个季度直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐小考 抗抑郁视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "刘宇宁直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "五哈后期已经学会用AI做特效了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "邓凯直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国军号发硬核视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "冰湖重生直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "金子涵直播疑似求救",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "峰学蔚来恢复常态化直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米行车记录自动存事故点前后视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "钎城拍摄日记vlog",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐直播 对口型",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "李在明转发以色列士兵虐童视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐一公直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "开封一卫生院员工上班时间化妆追剧",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "十日终焉官博隐藏了一条视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "腾讯视频剧集女性角色热度TOP10",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "洪知秀直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "陈飞宇直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "苏超直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "谢娜直播官宣演唱会",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "种地吧直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "田曦薇直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张极直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "音你而来直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "孙怡阚清子直播零互动",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "赵子琪回应和张慧雯争论视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "直播晕倒被辞退女主播发声",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "孙怡直播啃火腿肠",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "网红迪士尼直播美颜掉了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "陈楚生直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "大冰说我这两年的直播是刀尖上行走",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张柏芝晒与小儿子迪士尼游玩vlog",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "伊朗公布驱离美军舰视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "杨紫直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "迪丽热巴直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张翅直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "人造大米生产线视频为AI制作",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "时代少年团直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "演出服遭集体退货店家曝演出视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "杨紫迪丽热巴直播图",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "网民平均每人每天刷视频超200分钟",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国三胞胎的视频在推特上火了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "朱一龙直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "朱一龙直播紧张到腿抖",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "十个勤天不年不节发视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "腾讯视频将发布AI长剧",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "男子打赌输了被拍受辱视频后抑郁",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "龚俊家事法庭收官视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "赵子琪张慧雯吵架是怎么剪辑出来的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "Uzi说这个月就先不直播了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "赵子琪称直播揭露所有真相",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军将全程直播15小时",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "男子拍大量视频照片记录迷奸女友",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "印19岁男子涉诱奸180名少女拍视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张真源直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "邓紫棋直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "央视直播魏建军弘扬契约精神",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军回应直播15小时",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "拼多多美团京东淘天抖音被罚35亿",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军问直播放歌有没有版权问题",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "孙怡直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "赵子琪张慧雯吵架视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "诚实一口直播间7天销售额超250万",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "56岁雷军连续直播15小时",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "肖战直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "母亲看儿子遭群殴视频吃速效救心丸",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "现在都开始有人直播西天取经了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军直播测续航变山东文旅安利",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "王星越海底捞非遗寻味直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "央视起底直播间特价手机捡漏骗局",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "迅猛龙开付费直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "李荣浩直播手机掉水里了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "女子脚踹保安前监控视频曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国交警雨天执勤的视频在国外火了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "迅猛龙回应付费直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华晨宇直播时哽咽",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "男子被扒光绑树上婚闹现场视频曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝快手表哥公会签约多名未成年艺人",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "快手 低龄化伪成人",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐二公直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "伊朗发布拦截2艘货轮视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "夜巴黎直播平台是怎么监管的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "央视频发了张凌赫田曦薇",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "奔跑吧直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "明日方舟直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐直播疑似没人理何宣林",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "桃黑黑直播美颜掉了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "王者敖隐新皮肤技能特效",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "周杰伦点赞JH的解析视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "国家安全部发布视频无我",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "追觅俞浩怒批小红书",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "虞书欣直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "成毅直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "东方甄选正在变成普通直播电商",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "天津司机发近千条视频控诉闹事乘客",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小红书客服回应俞浩怒批小红书",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "迪丽热巴直播捂肚强忍疼痛",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "虞书欣直播四十分钟总榜第二",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "日本广岛爆炸现场视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国大妈合力盖井盖视频在外网翻红",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "伊能静回应恩利争议视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "吴宣仪母亲与乐华谈判视频首曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "大批韩国短视频博主正涌向中国",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "穆祉丞直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "中国喂牛水果视频被冒用",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "泸州楼房倒塌多人坠落视频系AI合成",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "vlog品类主理人独家访谈",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "保罗进入尼克斯老鹰直播间",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "爱情没有神话 重新剪辑",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "刘丁硕假期厕所直播翻车",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "卢昱晓收藏与檀健次cp视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "邓佳鑫直播自爆身高",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "高会直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "肖战五一vlog",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "何洛洛直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "主播天权离开东方甄选后首次直播",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "伊朗发布向美军舰警告射击视频",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "县城的钱从哪来？一条视频看懂县城经济门道 为什么明明月薪三千，县城却遍地豪车？那些整天在麻将馆游荡的人，财富逻辑到底是什么？本期视频带你穿透“转移支付”、“体制内乘数效应”与“社交金融”的迷雾，看清县城与大城市截然不同的生存法则。如果你正在做人生选择，请务必看完这一集。 #县城经济 #财富真相 #经济学原理 #社会潜规则 #转移支付\n@小读知新\n · 5天前",
+        "source": "douyin_comments_20260429_173029.json",
+        "score": 3
+      },
+      {
+        "text": "历史上古代为何不称为“国”而称为“朝”？ 从秦一统天下直到清帝退位，两千多年来，中原的正统政权，全叫“朝”；而旁边那些时不时过来打秋风、或者被按在地上摩擦的辽、金、西夏，才被叫做“国”。这背后藏着一套极度森严的鄙视链。为什么上下五千年，真正配叫“朝”的只有12个？为什么连软弱称臣的南宋，在史书里依然被尊为“朝”，而实力更强的金国却是“国”？本期视频，聊聊古代关于“法统”和“面子”的那些事儿。#历史 #朝代 #历史冷知识 #青年创作者成长计划\n@历史得小强\n · 3月29日",
+        "source": "douyin_comments_20260429_173029.json",
+        "score": 3
+      },
+      {
+        "text": "最新今日视频榜2025-01-14更新",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "App+1｜秒看视频参数，我做了个免费的 Mac 小工具\n少数派50348770_pkg",
+        "source": "tophub_analysis_20260506.json",
+        "score": 3
+      },
+      {
+        "text": "汽车\n时尚美妆\n体育运动\n动物\nvlog\n绘画\n人工智能\n家装房产\n户外潮流\n健身\n手工\n旅游出行\n三农\n亲子\n健康\n情感\n生活兴趣\n生活经验\n公益\n超高清",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 7
+      },
+      {
+        "text": "147.3万\n1731\n07:04\n盗视频、伪科学、夸大宣传，某些鱼油营销有多猖狂？\n中国食品报融媒体\n· 04-07",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 3
+      },
+      {
+        "text": "盗视频、伪科学、夸大宣传，某些鱼油营销有多猖狂？\n中国食品报融媒体\n· 04-07",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165751.json",
+        "score": 3
+      },
+      {
+        "text": "梦中的世界是平行宇宙吗？ #高质量科普视频 #科普\n@赤脚科学家\n · 3月4日",
+        "source": "douyin_comments_20260429_173818.json",
+        "score": 3
+      },
+      {
+        "text": "一个视频看懂罗马帝国历史 #历史 #罗马 #一口气看完系列 #人文星闪耀计划\n@池树\n · 6天前",
+        "source": "douyin_comments_20260429_173818.json",
+        "score": 3
+      },
+      {
+        "text": "实际视频创作，专业选手是不会用这么贵的价格购买的 veo是0.4元可灵是1元，，其他的因为性能太差 基本不考虑。seedance2 因为速度太慢，基本都是用来补救 所以专业做这个的基本都是3个都用，veo最多。seedance2.0基本是救场，因为他的速度太慢，所以不得不开vip p中p，而且因为政策调整频繁，不得不买多会员",
+        "source": "bilibili_comments_视频工具_20260429_171722.json",
+        "score": 6
+      },
+      {
+        "text": "微信今日视频榜",
+        "source": "tophub_js_analysis.json",
+        "score": 3
+      },
+      {
+        "text": "开眼视频日报",
+        "source": "tophub_js_analysis.json",
+        "score": 3
+      },
+      {
+        "text": "30\n\t\t\t\t\t\t\t\t\t\t\t淘金币抵扣150送月卡！腾讯视频VIP会员年卡 原价¥151 券后¥150\n\t\t\t\t\t\t\t\t\t\t\t热销100件(近2小时)",
+        "source": "tophub_js_analysis.json",
+        "score": 6
+      },
+      {
+        "text": "淘金币抵扣150送月卡！腾讯视频VIP会员年卡 原价¥151 券后¥150",
+        "source": "tophub_js_analysis.json",
+        "score": 6
+      },
+      {
+        "text": "看外国\\u003cem\\u003e视频\\u003c/em\\u003e没字幕?\\u003cem\\u003e手机 AI\\u003c/em\\u003e 实时字幕，翻译音频视频超方便",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "看 外国 视频 没 字幕 ? 手机 ai 实时 字幕 ， 翻译 音频 视频 超 方便 | 手机 ai | 用户 完成 语音 | 翻译 | 语言 包 | 音频 视频 | 麦克风 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "华为视频HDC.2025新升级：AI观影黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "华为\\u003cem\\u003e视频\\u003c/em\\u003eHDC.2025新升级:\\u003cem\\u003eAI观影\\u003c/em\\u003e黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "老司机的\\u003cem\\u003eAI\\u003c/em\\u003e工具，解决\\u003cem\\u003e看视频\\u003c/em\\u003e难题!-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "老司机 的 ai 工具 ， 解决 看 视频 难题 ! _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "电视 搭载 ai 能 做 什么 ? 不止 追剧 ! 全屋 智控 、 教育 管家 解锁 新 体验",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "电视搭载\\u003cem\\u003eAI能做什么\\u003c/em\\u003e？不止追剧！全屋智控、教育管家解锁新体验",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "用\\u003cem\\u003eAI看视频\\u003c/em\\u003e，一分钟抓取视频内容!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "用AI看视频，一分钟抓取视频内容！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "这个免费的\\u003cem\\u003eAI\\u003c/em\\u003e插件，居然让我5分钟看完2小时的YouTube\\u003cem\\u003e视频\\u003c/em\\u003e...- 掘金",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "这个 免费 的 ai 插件 ， 居然 让 我 5分钟 看完 2小时 的 youtube 视频 ! 不知道 有 多少 人 有 跟 我 一样 的 痛点 : 如果 有 一款 工具 能够 帮 - 掘金",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "如何 提高 短视频 剪辑 效率 利用 剪映 ai 剪辑 功能 快速 成片 - 人工智能 - php 中文 网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "如何提高\\u003cem\\u003e短视频\\u003c/em\\u003e剪辑效率 利用剪映\\u003cem\\u003eAI\\u003c/em\\u003e剪辑\\u003cem\\u003e功能\\u003c/em\\u003e快速成片-PHP中文网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "2026年AI视频工具横评:目前最好用效果最好的\\u003cem\\u003eai视频软件\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "2026年AI视频工具横评:目前最好用效果最好的ai视频软件",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "我 帮 朋友 测评 了 十几 款 ai 视频 软件 ， 只有 这 一款 让 我 推荐 了 三次 _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "我帮朋友测评了十几款\\u003cem\\u003eAI视频软件\\u003c/em\\u003e，只有这一款让我\\u003cem\\u003e推荐\\u003c/em\\u003e了三次-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "轻松上手:四个把\\u003cem\\u003e视频转成文字稿\\u003c/em\\u003e的方法",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "轻松上手：四个把视频转成文字稿的方法",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e视频\\u003c/em\\u003e怎么\\u003cem\\u003e转成文字\\u003c/em\\u003e?如何免费提取视频里的语音变成文字?最新方法推荐",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频怎么转成文字？如何免费提取视频里的语音变成文字？最新方法推荐，小白也能秒上手",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频怎么提取文案？6款亲测有效的工具，一键转文字",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e视频\\u003c/em\\u003e怎么提取文案?6款亲测有效的工具，一键\\u003cem\\u003e转文字\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "怎么把视频转换成文字？2026 最新 6 种视频转文字方法，建议收藏！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "怎么把\\u003cem\\u003e视频转换成文字\\u003c/em\\u003e?2026 最新 6 种视频转文字方法，建议收藏!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "视频怎么转成文字?如何提取视频语音变文字?2026免费\\u003cem\\u003e视频转文字\\u003c/em\\u003e工具推荐",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频怎么转成文字？如何提取视频语音变文字？2026免费视频转文字工具推荐",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "职场 新人 必备 的 视频 内容 总结 实用 全攻略 _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "职场新人必备的\\u003cem\\u003e视频内容总结\\u003c/em\\u003e实用全攻略-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "用户 操作 简化 难题 ， 短视频 内容 总结 方法 如何 提供 完美 解决方案 _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "用户操作简化难题，短\\u003cem\\u003e视频内容总结\\u003c/em\\u003e方法如何提供完美解决方案",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "3 步 高效 总结 视频 内容 ! 实现 视频 资料 处理 效率 提升 _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "3 步高效\\u003cem\\u003e总结视频内容\\u003c/em\\u003e!实现视频资料处理效率提升-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "5款\\u003cem\\u003e视频内容总结\\u003c/em\\u003eAI实测:视频1小时，总结3分钟，谁是你的效率神器?",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "5 款 视频 内容 总结 ai 实测 : 视频 1小时 ， 总结 3分钟 ， 谁 是 你 的 效率 神器 ? _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频 内容 总结 ai 工具 自媒体 学习 资料 整理 实用 排名 2025年 5 款 _ 用户 _ 功能性 _ 飞书",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e视频内容总结\\u003c/em\\u003eai工具 自媒体学习资料整理实用排名2025年5款-飞书",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "刷视频太费时间?“\\u003cem\\u003e视频转笔记\\u003c/em\\u003e”神器，让你 3 分钟读完 1 小时干货!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "刷视频太费时间？“视频转笔记”神器，让你 3 分钟读完 1 小时干货！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "如何把优质视频，一键变成你的专属笔记？",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "如何把优质\\u003cem\\u003e视频\\u003c/em\\u003e，一键变成你的专属\\u003cem\\u003e笔记\\u003c/em\\u003e?",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "Obsidian Web Clipper 让 YouTube 视频笔记真正用起来",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "Obsidian Web Clipper 让 YouTube\\u003cem\\u003e 视频笔记\\u003c/em\\u003e真正用起来",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "B站学习\\u003cem\\u003e视频\\u003c/em\\u003e如何\\u003cem\\u003e做笔记\\u003c/em\\u003e 实用方法及工具选择建议",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "B站学习视频如何做笔记 实用方法及工具选择建议",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "肿么边\\u003cem\\u003e看视频边做笔记\\u003c/em\\u003e啊?-ZOL问答",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "肿么 边 看 视频 边 做 笔记 啊 ? - zol 问答",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频 实时 翻译 软件 大全 _ 视频 实时 翻译 推荐 下载 _ pp 助手",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e视频实时翻译\\u003c/em\\u003e软件大全_视频实时翻译推荐下载-PP助手",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e视频实时翻译\\u003c/em\\u003eAPP推荐_视频实时翻译下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频 实时 翻译 app 推荐 _ 视频 实时 翻译 下载 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003e视频实时翻译\\u003c/em\\u003eapp免费下载2022 能够实时翻译视频的软件有哪些",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频 实时 翻译 app 免费 下载 2022 能够 实时 翻译 视频 的 软件 有 哪些 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "polypal-AI实时语音\\u003cem\\u003e视频即时翻译\\u003c/em\\u003e-小米应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "polypal - ai 实时 语音 视频 即时 翻译 - 小米 应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e视频翻译\\u003c/em\\u003e字幕软件推荐 视频翻译字幕软件有哪些好用的下载分享",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "视频 翻译 字幕 软件 推荐 视频 翻译 字幕 软件 有 哪些 好用 的 下载 分享 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e,AI漫剧,短视频,AI动画,python源码 - 互站网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "ai 视频 助手 , ai 漫剧 , 短视频 , ai 动画 , python 源码 - 互站 网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e下载安卓最新版_手机app官方版免费安装下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "ai 视频 助手 下载 安卓 最新 版 _ 手机 app 官方版 免费 安装 下载 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "崇胜\\u003cem\\u003eAI助手\\u003c/em\\u003e-\\u003cem\\u003eAI视频\\u003c/em\\u003e制作助手-小米应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "崇胜 ai 助手 - ai 视频 制作 助手 - 小米 应用商店",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "ai 视频 助手 老旧 版本 大全 _ 所有 历史 官方版 安装 下载 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "\\u003cem\\u003eAI视频助手\\u003c/em\\u003e老旧版本大全_所有历史官方版安装下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "【\\u003cem\\u003eAI视频助手001\\u003c/em\\u003e】Up主探索中，欢迎收看求三连!-bilibili",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "【 ai 视频 助手 001 】 up 主 探索 中 ， 欢迎 收看 求 三连 ! _ 哔哩 哔哩 _ bilibili",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "十大 视频剪辑 神器 ， 免费 ai 一键 搞定 - 应用宝 官网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "十大\\u003cem\\u003e视频剪辑\\u003c/em\\u003e神器，免费\\u003cem\\u003eAI\\u003c/em\\u003e一键搞定-应用宝官网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "\\u003cem\\u003e智能剪辑视频\\u003c/em\\u003e的软件APP推荐_智能剪辑视频的软件下载-豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "智能 剪辑 视频 的 软件 app 推荐 _ 智能 剪辑 视频 的 软件 下载 _ 豌豆荚",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "AI\\u003cem\\u003e智能剪辑\\u003c/em\\u003e教程，批量\\u003cem\\u003e视频\\u003c/em\\u003e归并轻松无缝拼接!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "AI智能剪辑教程，批量视频归并轻松无缝拼接！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "2026年推荐8款AI自动混剪软件，适合短视频二创与批量剪辑",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "2026年推荐8款\\u003cem\\u003eAI\\u003c/em\\u003e自动混剪软件，适合\\u003cem\\u003e短视频\\u003c/em\\u003e二创与批量\\u003cem\\u003e剪辑\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 8
+      },
+      {
+        "text": "视频自动剪辑软件推荐，零人工全自动剪辑工具合集",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "\\u003cem\\u003e视频\\u003c/em\\u003e自动\\u003cem\\u003e剪辑\\u003c/em\\u003e软件推荐，零人工全自动剪辑工具合集",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "ai 视频 处理 技术 升级 : 自动 生成 摘要 + 关键帧 提取 ， 企业 培训 更 高效",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eAI 视频\\u003c/em\\u003e处理技术升级:自动\\u003cem\\u003e生成摘要\\u003c/em\\u003e + 关键帧提取，企业培训更高效",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "2025 最新 ai 扩展 youtube helper : 一键 生成 视频 摘要 ， 帮 你 节省 90 % 观看 时间",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "2025 最新\\u003cem\\u003e AI\\u003c/em\\u003e 扩展 YouTube Helper:一键\\u003cem\\u003e生成视频摘要\\u003c/em\\u003e，帮你节省",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e视频摘要生成\\u003c/em\\u003e:关键帧提取与\\u003cem\\u003eAI\\u003c/em\\u003e缩略图制作-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "视频 摘要 生成 : 关键帧 提取 与 ai 缩略图 制作 _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "学习 研究 必备 : ai 一键 生成 视频 摘要 ， 精准 提取 时间戳 与 核心 观点 !",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "学习研究必备:\\u003cem\\u003eAI\\u003c/em\\u003e 一键\\u003cem\\u003e生成视频摘要\\u003c/em\\u003e，精准提取时间戳与核心观点!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "视频号创作者必看!@腾讯元宝输“总结一下”，\\u003cem\\u003eAI\\u003c/em\\u003e秒\\u003cem\\u003e生成视频摘要\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "视频 号 创作者 必 看 ! @ 腾讯 元宝 输 “ 总结 一下 ” ， ai 秒 生成 视频 摘要 ， 效率 直接 拉满 ! _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "B站上线“AI原声翻译功能”，将加入日语等语言",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eB站\\u003c/em\\u003e上线“\\u003cem\\u003eAI原声翻译功能\\u003c/em\\u003e”，将加入日语等语言",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eB站有AI\\u003c/em\\u003e助手了，上手体验后我找到了有意思的东西",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "3分钟可成片，B站测试AI视频创作工具“花生AI”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "3分钟可成片，\\u003cem\\u003eB站\\u003c/em\\u003e测试\\u003cem\\u003eAI\\u003c/em\\u003e视频创作工具“花生AI”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "【 保姆 级 教程 】 b 站 最强 大尺度 ai 视频 生成 ， 揭秘 最 离谱 的 ai 功能 ， 让 你 无处 安放 ! 一张 美女 图 生成 你 喜欢 的 电影 ! 真人 演员 彻底 失业 ! _ 哔哩 哔哩 _ bilibili",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "【保姆级教程】\\u003cem\\u003eB站\\u003c/em\\u003e最强大尺度AI视频生成，揭秘最离谱的\\u003cem\\u003eAI功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "抖音升级AI内容标识功能，鼓励创作者主动标识",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e抖音\\u003c/em\\u003e升级\\u003cem\\u003eAI\\u003c/em\\u003e内容标识\\u003cem\\u003e功能\\u003c/em\\u003e，鼓励创作者主动标识",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e抖音\\u003c/em\\u003e上线\\u003cem\\u003eAI\\u003c/em\\u003e创作\\u003cem\\u003e功能\\u003c/em\\u003e，设独立入口",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "抖音上线AI创作功能，设独立入口",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯、抖音、快手、B站、DeepSeek等平台官宣：上线AI标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "腾讯、\\u003cem\\u003e抖音\\u003c/em\\u003e、快手、B站、DeepSeek等平台官宣:上线\\u003cem\\u003eAI\\u003c/em\\u003e标识\\u003cem\\u003e功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "告别AI生成造假！抖音今日起升级AI内容标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "告别AI生成造假!\\u003cem\\u003e抖音\\u003c/em\\u003e今日起升级\\u003cem\\u003eAI\\u003c/em\\u003e内容标识\\u003cem\\u003e功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "抖音升级AI内容标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e举办“\\u003cem\\u003eAI驱动下的IP价值重构与生命延展论坛\\u003c/em\\u003e”，探索IP...",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频举办“AI驱动下的IP价值重构与生命延展论坛”，探索IP创新生长之道",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e将发布\\u003cem\\u003eAI\\u003c/em\\u003e长剧，预计第三季度上线",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频将发布AI长剧，预计第三季度上线",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频孙忠怀：AI重塑网络视听生态，创作小队引领行业新变革",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e孙忠怀:\\u003cem\\u003eAI\\u003c/em\\u003e重塑网络视听生态，创作小队引领行业新变革",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频 布局 ai 影视 : 未来 需要 「 艺术 工程师 」 「 科技 艺术家 」 | ai 影视 | 孙忠怀 | 知名 企业 | 科技 艺术家 | 腾讯 视频 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频\\u003c/em\\u003e布局\\u003cem\\u003eAI\\u003c/em\\u003e影视:未来需要「艺术工程师」「科技艺术家」",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "腾讯视频以AI技术赋能影视制作全链条",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e腾讯视频以AI\\u003c/em\\u003e技术赋能影视制作全链条",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "主流\\u003cem\\u003e视频类APP\\u003c/em\\u003e产品体验报告-人人都是产品经理",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "主流 视频 类 app 产品 体验 报告 | 人人 都是 产品经理",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "短视频 app 开发 : 急需 了解 的 注意 事项 - csdn 博客",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "\\u003cem\\u003e短视频APP\\u003c/em\\u003e开发:急需了解的注意事项-CSDN博客",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "安卓/苹果都能用!全能音\\u003cem\\u003e视频\\u003c/em\\u003e播放器，多源聚合+纯本地自由",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "安卓/苹果都能用！全能音视频播放器，多源聚合+纯本地自由",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "短视频 app 源码 ， 这些 功能 到底 有 没有 改变 短 视频 | app | 源码 | 直播 平台 | 短 视频 | 美颜 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 11
+      },
+      {
+        "text": "\\u003cem\\u003e短视频APP\\u003c/em\\u003e源码，这些\\u003cem\\u003e功能\\u003c/em\\u003e到底有没有改变短视频-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "微软 win 11 内置 clip champ 视频 编辑 工具 遭 吐槽 : 免费 只能 导出 480p 视频 ， 高清 导出 需 付费 - it 之家",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "微软 Win11 内置 Clipchamp\\u003cem\\u003e 视频\\u003c/em\\u003e编辑工具遭\\u003cem\\u003e吐槽\\u003c/em\\u003e:免费只能导出",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 3
+      },
+      {
+        "text": "吐槽 有 效果 小米 miui 视频 播放 优化 立项 | miui | 产品经理 | 小米 | 手机 | 证件照 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "\\u003cem\\u003e吐槽\\u003c/em\\u003e有效果 小米MIUI\\u003cem\\u003e视频\\u003c/em\\u003e播放优化立项-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "罗永浩\\u003cem\\u003e吐槽\\u003c/em\\u003e运营商\\u003cem\\u003e视频\\u003c/em\\u003e彩铃\\u003cem\\u003e功能\\u003c/em\\u003e:悄悄扣钱，音乐恶俗-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "罗永浩 吐槽 运营商 视频 彩铃 功能 : 悄悄 扣钱 ， 音乐 恶俗 | 彩铃 | 手机 | 罗永浩 | 运营商 | 音乐 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003e视频\\u003c/em\\u003e剪辑软件\\u003cem\\u003e功能\\u003c/em\\u003e比较多的，到底哪家强?老司机实测\\u003cem\\u003e吐槽\\u003c/em\\u003e!-搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "视频剪辑 软件 功能 比较 多 的 ， 到底 哪家 强 ? 老司机 实测 吐槽 ! _ 搜狐网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      },
+      {
+        "text": "b 站 推出 “ 付费 视频 ” 功能 引 网友 吐槽 ， 能否 顺利 推行 有待 验证 | b 站 | 优酷 | 爱奇艺 | 短 视频 | 长 视频 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "B站推出“\\u003cem\\u003e付费视频\\u003c/em\\u003e”\\u003cem\\u003e功能\\u003c/em\\u003e引网友\\u003cem\\u003e吐槽\\u003c/em\\u003e，能否顺利推行有待验证",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 4
+      }
+    ],
+    "体验问题": [
+      {
+        "text": "录音笔早就过时了！钉钉这张卡才是未来！\n钉钉黑板报\n1.9万\n2",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "144.4万\n1645\n03:05:51\n鲁豫对话罗翔：在命运的剧本揭晓前，尽力扮演好自己的角色 | 陈鲁豫·慢谈EP16【视频播客】\n5万点赞\n陈鲁豫-慢谈\n· 04-27",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 6
+      },
+      {
+        "text": "鲁豫对话罗翔：在命运的剧本揭晓前，尽力扮演好自己的角色 | 陈鲁豫·慢谈EP16【视频播客】\n5万点赞\n陈鲁豫-慢谈\n· 04-27",
+        "source": "bilibili_comments_BV1faL3zBEmy_20260429_165627.json",
+        "score": 6
+      },
+      {
+        "text": "“慢节奏+情绪爆发”的脱口秀该怎么说？这场表演堪称“冠军”级别！#鑫博脱口秀 #喜单 #付航\n@老和队长\n · 4月14日",
+        "source": "douyin_comments_20260429_174136.json",
+        "score": 3
+      },
+      {
+        "text": "b站新功能：听视频功能。如何使用听视频功能，听视频功能真的太棒啦！不方便看视频，做家务，想要一些背景声音，眼睛疲劳躺平，等等这些时候都可听视频",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 9
+      },
+      {
+        "text": "OpenAI Whisper 本地部署！语音转文字，支持多种语言！消费级显卡可运行！新手友好，含可视化页面！",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 6
+      },
+      {
+        "text": "英伟达APP各选项详细讲解，N卡玩家必看，发挥你的显卡最大价值",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "美军炸毁运输机地点已成打卡点",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "金卡戴珊汉密尔顿承认恋情",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "莫氏鸡煲公主称被嫌慢嫌贵",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "阚清子回应减肥卡平台期",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "魔卡少女樱票选第一",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "身体有慢性炎症可以多吃这些水果",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "最离谱的上班缺卡理由",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "感觉这个世界真的有bug",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "卡塔尔警告中东接近失控临界点",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "李斌称闪充再快也比换电慢",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "巴基斯坦官员说伊美谈判进程慢于预期",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "阿尔卡拉斯vs辛纳",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "19岁女孩回家奔丧买错车票崩溃大哭",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐版傲慢与偏见",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "辛纳首夺蒙特卡洛冠军",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "8天胖8斤博主打卡莫氏鸡煲被劝退",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张豆豆崩溃大哭",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "孙颖莎巨型卡通装饰",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "深圳一小学老师批改作业时崩溃大哭",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "换电池小卡扣要13万新能源车主崩溃",
+        "source": "weibo_hot_30days_github.json",
+        "score": 7
+      },
+      {
+        "text": "电池卡扣断裂判全损电车维修多离谱",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "2米蟒蛇吞下1只鸡后被卡鸡笼",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "爱情慢慢首宣",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "走丢男童父母送女孩终身免费牛排卡",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "镜片装反孩子暴涨到900度妈妈崩溃",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "女生游泳月卡只用23天",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "妻子产后夜夜崩溃丈夫紧抱不撒手",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "东皇太一bug已修复",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王者荣耀闪退",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "空姐真的在慢慢告别服美役的时代",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "女摩托车主遭3男子骚扰摸腰崩溃大哭",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "明日方舟 卡游",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "洗头发油慢的小方法",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "茶卡盐湖心形雕塑被吐槽画蛇添足",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "黄晓明晒父母踏青打卡潦草小狗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "生命树杨紫的家成了打卡点",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "在重庆打卡电影取景地",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小英变卡戴英了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "ILLIT新歌在外网引发热议",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "上飞猪打卡濮院开启KPL奇妙日",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "95后把卡脖子难题变成咱的杀手锏",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "一个bug是bug 一堆bug能work",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "新SU7卡布里蓝带你慢游五一",
+        "source": "weibo_hot_30days_github.json",
+        "score": 4
+      },
+      {
+        "text": "王楚钦vs卡尔伯格",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "狗狗未牵绳被碾压主人当场崩溃",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "林诗栋vs卡尔伯格",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "林诗栋1比3卡尔伯格",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "考研5年博主卡尔谈考研5年",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "敦煌一厕所走红游客手持卫生纸打卡",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "卡梦 Gr",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "四川悬崖秋千事故景区系网红打卡地",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "#傲慢与偏见 的财务账本：剥开浪漫爱情的皮，婚姻的本质为何是两个家族的“资产兼并与重组？”#名著解读 #婚姻 #认知觉醒\n@无名书生\n · 4月7日",
+        "source": "douyin_comments_20260429_173818.json",
+        "score": 3
+      },
+      {
+        "text": "一个绝对平等的国家是怎么崩溃的？ 1974年，铁托颁布了一项前所未有的改革。 从那以后，南斯拉夫变成了一个绝对平等的国家。 六个共和国，拥有了完全平等的权利，拥有了绝对的民主。 于是，这个国家崩溃了！ 更多精彩，点击主页观看~ #南斯拉夫 #历史故事 #历史 #知识创作人 #青年创作者成长计划\n@夜行微光\n · 3月10日",
+        "source": "douyin_comments_20260429_173818.json",
+        "score": 3
+      },
+      {
+        "text": "实际视频创作，专业选手是不会用这么贵的价格购买的 veo是0.4元可灵是1元，，其他的因为性能太差 基本不考虑。seedance2 因为速度太慢，基本都是用来补救 所以专业做这个的基本都是3个都用，veo最多。seedance2.0基本是救场，因为他的速度太慢，所以不得不开vip p中p，而且因为政策调整频繁，不得不买多会员",
+        "source": "bilibili_comments_视频工具_20260429_171722.json",
+        "score": 6
+      },
+      {
+        "text": "一个自己瞎鼓捣ai四年的业余人士经验之谈 目前想要稳定完全按参考图提示词生成的ai模型目前还不存在 说到底还是抽卡 个人目前用的最舒服的是seedance2 [吃瓜]",
+        "source": "bilibili_comments_视频工具_20260429_171722.json",
+        "score": 6
+      },
+      {
+        "text": "“加长版”五一假期收官：春假联动下多地景区接待游客数创历史新高，游客人均打卡2.1个城市",
+        "source": "tophub_all_20260506_110303.json",
+        "score": 3
+      },
+      {
+        "text": "30\n\t\t\t\t\t\t\t\t\t\t\t淘金币抵扣150送月卡！腾讯视频VIP会员年卡 原价¥151 券后¥150\n\t\t\t\t\t\t\t\t\t\t\t热销100件(近2小时)",
+        "source": "tophub_js_analysis.json",
+        "score": 6
+      },
+      {
+        "text": "淘金币抵扣150送月卡！腾讯视频VIP会员年卡 原价¥151 券后¥150",
+        "source": "tophub_js_analysis.json",
+        "score": 6
+      }
+    ],
+    "期待功能": [
+      {
+        "text": "屏蔽推广 （选择后将优化推广展示） \n              相似内容过多\n            \n              视频不感兴趣\n            \n              up主不感兴趣\n            \n              分区不感兴趣\n            ",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 6
+      },
+      {
+        "text": "屏蔽推广 （选择后将优化推广展示）",
+        "source": "bilibili_comments_视频工具_20260429_170622.json",
+        "score": 3
+      },
+      {
+        "text": "红果短剧回应「VIP 付费」，非新增功能，仅适用于极少量内容，这算试水转型付费吗？ ​你愿意买账吗？ 95 万热度",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "8点1氪丨豆包新增付费订阅；抖音集团副总裁回应红果短剧付费；苹果因Siri人工智能功能推迟发布，以2.5亿美元和解诉讼",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 14
+      },
+      {
+        "text": "Notion 和 Obsidian 应该怎么选？聊聊我的思考和建议 二一的笔记",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "这4款最强AI视频总结神器竟然全都免费！【建议收藏】看视频必备！支持B站、YouTube、本地视频等",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 10
+      },
+      {
+        "text": "b站新功能：听视频功能。如何使用听视频功能，听视频功能真的太棒啦！不方便看视频，做家务，想要一些背景声音，眼睛疲劳躺平，等等这些时候都可听视频",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 9
+      },
+      {
+        "text": "三年后产品升级的又一个广告，希望你们回来看看。",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 4
+      },
+      {
+        "text": "最新版动漫屋1.5.0评论区直接给链接希望能给个三连",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 3
+      },
+      {
+        "text": "满血版Seedance2.0来了!不排队，无需付费，你想要的都一键直出！\n\nAIGC高手\n2.5万\n113",
+        "source": "bilibili_comments_视频工具_20260429_170736.json",
+        "score": 7
+      },
+      {
+        "text": "女子晒婆婆升级当奶奶后三天变化",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议大家早点建立自己的早睡系统",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议飞机托运带黑色行李箱",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "以色列希望战事再持续至少1个月",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议洗澡时不要总弯腰洗头",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "网友给拼豆店提建议被老板一一反驳",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "两类肉吃太多增加肠癌风险",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米上线电池升级服务",
+        "source": "weibo_hot_30days_github.json",
+        "score": 7
+      },
+      {
+        "text": "客服称不建议合买彩票",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议大家自己做饭",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "小米18Pro新增AI按键",
+        "source": "weibo_hot_30days_github.json",
+        "score": 9
+      },
+      {
+        "text": "张伦硕 还是想要一个自己的孩子",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "责令7平台暂停新增蛋糕店铺",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "针对中国公民歧视性案件显著增加",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "雷军不建议有司机的大老板买小米",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "妇联谈小伙希望父母不要再生了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议装修一定要去家务化",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "焦虑是你太想要掌控",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "真的建议大家去过简约生活",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议大家衣服不要攒一起洗",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议不要过度依赖AI",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "建议全国推行假期高速可逆行",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议亲人去世一两个月后主动查负债",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议想减肥的人去一趟云南",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "我国服务业增加值实现三连跳",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "本科新增38种专业",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议所有女性多做力量训练",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "强烈建议大家去看语文综艺",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议大家去狂刷跨境综艺打破信息差",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "强烈建议大家去狂刷考公综艺",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "女顾客想要40码鞋反被男主播嘲讽",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "孙恩盛希望16级大姐不要把他当物品",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "建议大家一定要尽早明确生活的主线",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "经济越是下行期，这7件事回报越高（几乎不花钱） 你手里最大的杠杆，其实免费 #经济学 #个人成长 #认知升级 #副业 #逆袭\n@认知刺客\n · 3月20日",
+        "source": "douyin_comments_20260429_173818.json",
+        "score": 3
+      },
+      {
+        "text": "一个自己瞎鼓捣ai四年的业余人士经验之谈 目前想要稳定完全按参考图提示词生成的ai模型目前还不存在 说到底还是抽卡 个人目前用的最舒服的是seedance2 [吃瓜]",
+        "source": "bilibili_comments_视频工具_20260429_171722.json",
+        "score": 6
+      },
+      {
+        "text": "Notion 和 Obsidian 应该怎么选？聊聊我的思考和建议\n二一的笔记",
+        "source": "tophub_all_20260506_110303.json",
+        "score": 3
+      },
+      {
+        "text": "华为视频HDC.2025新升级：AI观影黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "华为\\u003cem\\u003e视频\\u003c/em\\u003eHDC.2025新升级:\\u003cem\\u003eAI观影\\u003c/em\\u003e黑科技，拯救“片荒脸盲症”",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 13
+      },
+      {
+        "text": "怎么把视频转换成文字？2026 最新 6 种视频转文字方法，建议收藏！",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "怎么把\\u003cem\\u003e视频转换成文字\\u003c/em\\u003e?2026 最新 6 种视频转文字方法，建议收藏!",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "B站学习\\u003cem\\u003e视频\\u003c/em\\u003e如何\\u003cem\\u003e做笔记\\u003c/em\\u003e 实用方法及工具选择建议",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "B站学习视频如何做笔记 实用方法及工具选择建议",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 7
+      },
+      {
+        "text": "ai 视频 处理 技术 升级 : 自动 生成 摘要 + 关键帧 提取 ， 企业 培训 更 高效",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 6
+      },
+      {
+        "text": "\\u003cem\\u003eAI 视频\\u003c/em\\u003e处理技术升级:自动\\u003cem\\u003e生成摘要\\u003c/em\\u003e + 关键帧提取，企业培训更高效",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "抖音升级AI内容标识功能，鼓励创作者主动标识",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "\\u003cem\\u003e抖音\\u003c/em\\u003e升级\\u003cem\\u003eAI\\u003c/em\\u003e内容标识\\u003cem\\u003e功能\\u003c/em\\u003e，鼓励创作者主动标识",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "告别AI生成造假！抖音今日起升级AI内容标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "告别AI生成造假!\\u003cem\\u003e抖音\\u003c/em\\u003e今日起升级\\u003cem\\u003eAI\\u003c/em\\u003e内容标识\\u003cem\\u003e功能\\u003c/em\\u003e",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "抖音升级AI内容标识功能",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 9
+      },
+      {
+        "text": "吐槽 有 效果 小米 miui 视频 播放 优化 立项 | miui | 产品经理 | 小米 | 手机 | 证件照 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      },
+      {
+        "text": "\\u003cem\\u003e吐槽\\u003c/em\\u003e有效果 小米MIUI\\u003cem\\u003e视频\\u003c/em\\u003e播放优化立项-手机网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 10
+      }
+    ],
+    "影像功能": [
+      {
+        "text": "祝大家假期快乐！ @二烟 导演@小包老师😇 摄像@迪锥美羊羊 道具@战神7 狠人#华味坊 #华味坊酸汤面叶 脱缰凯✨ 13559494次播放",
+        "source": "tophub_snapshot_v2_20260506_112411.json",
+        "score": 3
+      },
+      {
+        "text": "【软件分享+保姆级视频教程】Topaz Video AI 视频无损放大全网最全教程【手把手教你安装使用 附软件汉化版网盘分享 4K60帧高清修复】",
+        "source": "bilibili_all_batches_20260506_093303.json",
+        "score": 9
+      },
+      {
+        "text": "贺娇龙摄影师还没走出来",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "神器认主镜头是迪丽热巴想的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "曝iPhone18Pro简化相机按键",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "代斯为什么我的镜头是最少的",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "网红迪士尼直播美颜掉了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "唐艺昕李小冉王濛自拍",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "外籍乘客对着营区拍照被司机送进部队",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "华为PuraXMax人像智拍神器",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "iPhone18Pro相机盖板曝光",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "官方辟谣门店要求员工舔地板拍照",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "进博物馆才知道针孔摄像头这么小",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "百年乒乓纪录片第一个镜头是王楚钦",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "老舅在五哈镜头前道歉",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "浪姐 镜头霸凌",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "桃黑黑直播美颜掉了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 6
+      },
+      {
+        "text": "安静公主掉美颜",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "少年行凶前曾在女生自拍下评论漂亮",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "拍照显瘦20斤姿势",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "张豆豆承担的镜头很难呈现",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "何宣林 镜头",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王俊凯工作室 他拍比自拍好看",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "迪丽热巴在还63张自拍的债了",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "田曦薇 记得给我开美颜",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "王俊凯浪姐送考自拍",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "用最美镜头致敬铁路劳动者",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "父母互相拍照6岁儿子失足坠崖",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "跑男摄影师谈白鹿 身正不怕影子歪",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "银河左岸 黄子弘凡镜头",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "严浩翔 躲镜头",
+        "source": "weibo_hot_30days_github.json",
+        "score": 3
+      },
+      {
+        "text": "短视频 app 源码 ， 这些 功能 到底 有 没有 改变 短 视频 | app | 源码 | 直播 平台 | 短 视频 | 美颜 _ 手机 网易网",
+        "source": "toutiao_all_batches_20260506_093506.json",
+        "score": 11
+      }
+    ]
+  }
+}

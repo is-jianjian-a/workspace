@@ -1,0 +1,192 @@
+{
+  "primary_topics": {
+    "播放控制与交互": {
+      "count": 8,
+      "secondaries": {
+        "其他播放控制": 5,
+        "播放模式": 1,
+        "倍速播放": 2
+      },
+      "types": {
+        "feature_request": 1,
+        "behavior_description": 7
+      }
+    },
+    "内容推荐与发现": {
+      "count": 182,
+      "secondaries": {
+        "其他推荐问题": 72,
+        "推荐精准度高": 11,
+        "推荐算法机制": 58,
+        "信息茧房效应": 8,
+        "推荐反馈机制": 7,
+        "搜索体验差": 1,
+        "内容同质化": 19,
+        "低质内容泛滥": 6
+      },
+      "types": {
+        "feature_request": 18,
+        "pain_point": 24,
+        "behavior_description": 132,
+        "positive_feedback": 8
+      }
+    },
+    "后台播放": {
+      "count": 1,
+      "secondaries": {
+        "后台播放": 1
+      },
+      "types": {
+        "pain_point": 1
+      }
+    },
+    "视频质量与性能": {
+      "count": 46,
+      "secondaries": {
+        "卡顿与掉帧": 6,
+        "画质模糊/不清晰": 31,
+        "其他质量问题": 9
+      },
+      "types": {
+        "pain_point": 10,
+        "feature_request": 6,
+        "behavior_description": 30
+      }
+    },
+    "AI功能与工具": {
+      "count": 152,
+      "secondaries": {
+        "AI弹幕/评论分析": 1,
+        "其他AI功能": 85,
+        "自动化功能": 23,
+        "AI视频总结": 18,
+        "AI视频处理工具": 3,
+        "AI防沉迷/使用管理": 2,
+        "AI生成与创作": 8,
+        "AI字幕与翻译": 6,
+        "AI视频助手/问答": 4,
+        "AI画质修复/增强": 2
+      },
+      "types": {
+        "pain_point": 16,
+        "behavior_description": 124,
+        "feature_request": 11,
+        "positive_feedback": 1
+      }
+    },
+    "下载与缓存": {
+      "count": 33,
+      "secondaries": {
+        "离线下载": 33
+      },
+      "types": {
+        "behavior_description": 32,
+        "feature_request": 1
+      }
+    },
+    "其他": {
+      "count": 5,
+      "secondaries": {
+        "其他": 5
+      },
+      "types": {
+        "behavior_description": 5
+      }
+    },
+    "广告体验": {
+      "count": 3,
+      "secondaries": {
+        "广告频率/形式": 2,
+        "广告关闭体验": 1
+      },
+      "types": {
+        "behavior_description": 2,
+        "feature_request": 1
+      }
+    },
+    "跨屏与多设备": {
+      "count": 3,
+      "secondaries": {
+        "投屏体验": 3
+      },
+      "types": {
+        "behavior_description": 3
+      }
+    },
+    "字幕与翻译": {
+      "count": 4,
+      "secondaries": {
+        "其他字幕问题": 2,
+        "AI自动生成字幕": 2
+      },
+      "types": {
+        "behavior_description": 4
+      }
+    }
+  },
+  "scene_data": {
+    "短视频消费": {
+      "feature_request": 3,
+      "pain_point": 9,
+      "behavior_description": 51,
+      "positive_feedback": 3
+    },
+    "直播观看": {
+      "feature_request": 3,
+      "behavior_description": 3,
+      "pain_point": 0,
+      "positive_feedback": 0
+    },
+    "泛视频场景": {
+      "pain_point": 38,
+      "behavior_description": 283,
+      "feature_request": 28,
+      "positive_feedback": 6
+    },
+    "长视频消费": {
+      "pain_point": 4,
+      "feature_request": 4,
+      "behavior_description": 2,
+      "positive_feedback": 0
+    }
+  },
+  "high_value_scenes": {
+    "短视频消费": {
+      "total": 66,
+      "high_value": 15,
+      "pain": 9,
+      "request": 3,
+      "positive": 3
+    },
+    "直播观看": {
+      "total": 6,
+      "high_value": 3,
+      "pain": 0,
+      "request": 3,
+      "positive": 0
+    },
+    "泛视频场景": {
+      "total": 355,
+      "high_value": 72,
+      "pain": 38,
+      "request": 28,
+      "positive": 6
+    },
+    "长视频消费": {
+      "total": 10,
+      "high_value": 8,
+      "pain": 4,
+      "request": 4,
+      "positive": 0
+    }
+  },
+  "pain_points": {
+    "后台播放": 1,
+    "内容推荐与发现": 24,
+    "视频质量与性能": 10,
+    "AI功能与工具": 16
+  },
+  "total_voices": 437,
+  "explicit_count": 287,
+  "implicit_count": 150
+}

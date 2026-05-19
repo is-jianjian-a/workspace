@@ -1,0 +1,502 @@
+{
+  "batch_id": 74,
+  "total_items": 39,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 28,
+      "short_video": 9,
+      "long_video": 2
+    },
+    "type_distribution": {
+      "behavior_description": 27,
+      "feature_request": 1,
+      "pain_point": 11
+    },
+    "topic_distribution": {
+      "other": 26,
+      "content_recommend": 4,
+      "playback_control": 2,
+      "ai_feature": 1,
+      "video_quality": 3,
+      "ad_experience": 1,
+      "download_cache": 1,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 5,
+      "explicit": 2,
+      "implicit": 3,
+      "not_ai": 34
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1667",
+      "text": "是刷视频的时候经常会遇到上一个，下面很多个视频都不卡，就中间这一个会看一半卡住怎么办",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1668",
+      "text": "我刚买的红米手机，结果B站上一搜关于小米的视频就卡，看那些推荐页和热门视频就不卡。。。不清楚为什么，我用旧手机华为登了同一个WiFi测，旧手机不论看那个视频都不卡，但是新手机看那种播放量不高的就卡。。。我现在在想要不要退货[捂脸]不懂原因",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1669",
+      "text": "答主我也有这个问题。我也是新买的note11Tpro+，在B站看番时常常突然卡住无法拖动进度条，且退出全屏时仍然卡住不动，必须要退出到番剧主界面重新点进才能继续观看。一开始很少，但最近越来越频繁，非常影响使用体验 ！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1671",
+      "text": "我的也是刚刚买的手机小米手机，我还以为是我一个人的问题，总是会黑一会儿继续黑一会儿继续，烦死人了都。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1672",
+      "text": "我也是红米note11tPro同样的问题，刚开始我还以为我网不好，后来每次看视频都同样问题，网不可能一直每时每刻不好吧，而且用家人手机看也没问题，真是气死，刚买的手机还没两月",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1675",
+      "text": "手上新到的红米11tpro。刚到手看B站出现了楼主所说的问题，今天看最新的mi13系统更新日志才看到优化了看视频的，优化后果然不卡了，推荐大家更新。over",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1682",
+      "text": "不刷短视频，一天两天之后觉得生活好像也没有受到什么影响，这种所谓的成瘾性也没那么可怕。找点别的事情做，听博客、看书、练字，从短篇开始，注意力还是能慢慢集中起来的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1684",
+      "text": "主动放下手机能发现不一样的世界",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1685",
+      "text": "我连手机夜间模式都给取消了，就是看不了黑白色，看来我得调回来",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1686",
+      "text": "还是应该少刷点短视频[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1687",
+      "text": "最近情绪多→重新刷短视频→引到去看国漫了，比如光阴之外[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1688",
+      "text": "手机设置自动化，当打开短视频APP后，手机自动设置黑白[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1691",
+      "text": "少刷短视频，多刷知乎，多写知乎。不要再与魔鬼交换了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1692",
+      "text": "我的方法好简单粗糙，隔段时间卸载软件，再下载回来的话，算法会推新的内容，好多是我不感兴趣的，因为我不太爱点关注，刷不到感兴趣的内容就不想看了，不想看的那段时间里，我就会选择看文章[捂嘴][捂嘴][捂嘴]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1693",
+      "text": "没事我都不打开视频软件了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1696",
+      "text": "[捂嘴]看短视频也分人的，我就做不到一直看，感觉好累……还是咱们自己写内容好[握手][握手]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1697",
+      "text": "自己学会制作短视频，就不会沉迷于短视频等自媒体。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1699",
+      "text": "我是edge和chrome看4K进度条的预载白条到1分钟左右不动，非得蓝条播放到那卡住再预载几十秒，用火狐就没问题。看到大佬的方法2，灵光一闪把UA改成Windows的Firefox完美解决[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1700",
+      "text": "一直搞不懂明明刚买的英特尔A77016G公版卡咋会看不了B站4k视频，真相了。。。还以为被英特尔坑了，好像还是被英特尔坑了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1708",
+      "text": "[吃瓜] 纯玄学了 就是服务器垃圾 视频测速 b站测速自己看就知道了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1709",
+      "text": "[doge]我用浏览器看b站。就b站那个4k我用gpu硬解能占用到百分之60，70。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1710",
+      "text": "大佬，请问edge浏览器看B站四个小时的正义联盟都好好的，看UP主发的三小时视频整个浏览器都卡死是什么原因呀？[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1714",
+      "text": "牛啊，解决了。我倒不是看4k的，网速也很好，就是每次想空降就卡很久，这么操作完后不卡了。[惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1715",
+      "text": "QQ浏览器也能用，不开这个的话4K视频卡成狗，edge最新版反而不卡",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1722",
+      "text": "可我的网络是5G网，而且，开热点一分钟用掉我将近300MB的流量，见一个视频的影子都看不到",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1723",
+      "text": "视频慢是代理和网络的问题[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1724",
+      "text": "你根本没玩明白，电报群是更新最快最全的了，比网站软件强一万倍",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1726",
+      "text": "视频慢是你梯子的问题，不是tel的问题。我这个梯子除了每天晚上9点左右慢点，其他低峰期随便下。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1732",
+      "text": "实测 电脑比手机加载快很多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1735",
+      "text": "视频加载慢，有没有可能是你自己的网络问题",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1744",
+      "text": "浏览器广告太麻烦，滑一下就跳转广告了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1745",
+      "text": "tel主要是能当云盘存视频，一个收藏夹就算网页没了，资源还在",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1754",
+      "text": "[脑爆][脑爆]我的视频一直秒开啊老师",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1755",
+      "text": "网络问题吧，加载一般不慢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1758",
+      "text": "我们沉迷的，是被算法精心投喂的“廉价快乐”。这实则是场认知剥削——我们将专注力与思考能力廉价出售，换来的却是内心的空洞与贫瘠。真正的突破在于：意识到自己正被消费，并夺回注意力的掌控权。当你主动选择放下，便是重塑深度的开始。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1759",
+      "text": "兄弟们，让我们开始下载知乎吧[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1760",
+      "text": "我最近突然觉醒，是因为我发现我妈每天也捧着手机刷视频，睡觉也不睡，她以前总说我们玩手机怎样怎样。现在她也成了“网瘾老年”“网银”，很恐怖勒。还有朋友经常给我给我讲故事，讲着讲着，我就发现我刷到过，哈哈哈哈哈，也很恐怖啊，信息茧房。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1761",
+      "text": "在小学初中时，一放学我就会打开电视。到了高中大学有了手机后，我会花很多时间刷短视频。这种成瘾的情况，我感觉单纯的卸载抖音是没有用的，没有抖音又会找其他方式去排解自己的无聊。说白了还是得\"了解\"自己，然后再根据情况去控制",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1763",
+      "text": "很少刷，尤其早期的结尾还来一句抖音语音，和当初酷狗打开时一样，俗不可耐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

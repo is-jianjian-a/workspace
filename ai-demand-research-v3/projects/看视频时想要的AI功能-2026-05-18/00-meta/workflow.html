@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作流状态 - 看视频时想要的AI功能</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a2e;
+            --border: #2a2a3e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #8888a0;
+            --accent: #6366f1;
+            --success: #10b981;
+            --warning: #f59e0b;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+            border-radius: 16px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border);
+        }
+        .header h1 { font-size: 2em; margin-bottom: 8px; color: var(--accent); }
+        .header p { color: var(--text-secondary); }
+        .phase { margin-bottom: 32px; }
+        .phase-title {
+            font-size: 1.2em;
+            color: var(--accent);
+            margin-bottom: 16px;
+            padding-left: 12px;
+            border-left: 4px solid var(--accent);
+        }
+        .step-list { display: flex; flex-direction: column; gap: 12px; }
+        .step {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+        .step.completed { border-color: var(--success); }
+        .step-number {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            background: var(--bg-secondary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-weight: bold;
+            color: var(--text-secondary);
+        }
+        .step.completed .step-number { background: var(--success); color: white; }
+        .step-info { flex: 1; }
+        .step-name { font-weight: bold; margin-bottom: 4px; }
+        .step-desc { font-size: 0.9em; color: var(--text-secondary); }
+        .step-status {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+        }
+        .step-status.completed { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+        .step-status.pending { background: rgba(136, 136, 160, 0.2); color: var(--text-secondary); }
+        .summary {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-top: 40px;
+        }
+        .summary h2 { color: var(--accent); margin-bottom: 16px; }
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+        }
+        .summary-item {
+            background: var(--bg-secondary);
+            padding: 16px;
+            border-radius: 8px;
+        }
+        .summary-item .value { font-size: 1.5em; font-weight: bold; color: var(--success); }
+        .summary-item .label { color: var(--text-secondary); font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>看视频时想要的AI功能</h1>
+            <p>调研工作流状态 | 2026-05-18</p>
+        </div>
+        
+        <div class="phase">
+            <div class="phase-title">阶段一：场景发现</div>
+            <div class="step-list">
+                <div class="step completed">
+                    <div class="step-number">1</div>
+                    <div class="step-info">
+                        <div class="step-name">项目初始化</div>
+                        <div class="step-desc">创建项目目录，记录元数据</div>
+                    </div>
+                    <div class="step-status completed">已完成</div>
+                </div>
+                <div class="step completed">
+                    <div class="step-number">2</div>
+                    <div class="step-info">
+                        <div class="step-name">数据加载与清洗</div>
+                        <div class="step-desc">从SQLite加载523条记录，清洗后521条</div>
+                    </div>
+                    <div class="step-status completed">已完成</div>
+                </div>
+                <div class="step completed">
+                    <div class="step-number">3</div>
+                    <div class="step-info">
+                        <div class="step-name">信号提取</div>
+                        <div class="step-desc">提取12类AI功能信号，覆盖率63.15%</div>
+                    </div>
+                    <div class="step-status completed">已完成</div>
+                </div>
+                <div class="step completed">
+                    <div class="step-number">4</div>
+                    <div class="step-info">
+                        <div class="step-name">情绪与场景分析</div>
+                        <div class="step-desc">分析用户情绪分布与使用场景关联</div>
+                    </div>
+                    <div class="step-status completed">已完成</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="phase">
+            <div class="phase-title">阶段二：现状分析</div>
+            <div class="step-list">
+                <div class="step completed">
+                    <div class="step-number">5</div>
+                    <div class="step-info">
+                        <div class="step-name">信号洞察卡片生成</div>
+                        <div class="step-desc">为每个信号生成详细洞察，含样本、情绪、场景</div>
+                    </div>
+                    <div class="step-status completed">已完成</div>
+                </div>
+                <div class="step completed">
+                    <div class="step-number">6</div>
+                    <div class="step-info">
+                        <div class="step-name">HTML报告生成</div>
+                        <div class="step-desc">生成可视化分析报告</div>
+                    </div>
+                    <div class="step-status completed">已完成</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="summary">
+            <h2>调研摘要</h2>
+            <div class="summary-grid">
+                <div class="summary-item">
+                    <div class="value">521</div>
+                    <div class="label">有效样本</div>
+                </div>
+                <div class="summary-item">
+                    <div class="value">12</div>
+                    <div class="label">AI功能信号</div>
+                </div>
+                <div class="summary-item">
+                    <div class="value">63%</div>
+                    <div class="label">信号覆盖率</div>
+                </div>
+                <div class="summary-item">
+                    <div class="value">视频生成/编辑</div>
+                    <div class="label">Top需求</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

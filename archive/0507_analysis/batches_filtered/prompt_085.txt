@@ -1,0 +1,584 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下40条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 85/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_2546
+平台: zhihu
+类型: comments
+内容: 八百块手机，画质会变不好？什么逻辑
+
+--- ITEM #2 ---
+ID: zhihu_comments_2547
+平台: zhihu
+类型: comments
+内容: 除了拍野生动物放大剪切需要画质，别的就这样
+
+--- ITEM #3 ---
+ID: zhihu_comments_2553
+平台: zhihu
+类型: comments
+内容: 只要模特好看，都是画质好😂
+
+--- ITEM #4 ---
+ID: zhihu_comments_2555
+平台: zhihu
+类型: comments
+内容: 画质好不如长得好[惊喜]
+
+--- ITEM #5 ---
+ID: zhihu_comments_2560
+平台: zhihu
+类型: comments
+内容: 扔进我收藏夹里面吃灰吧！
+
+--- ITEM #6 ---
+ID: zhihu_comments_2566
+平台: zhihu
+类型: comments
+内容: 因为用了焦距长的镜头，50/85/135/200毫米的镜头。手机镜头就是几毫米。
+
+--- ITEM #7 ---
+ID: zhihu_comments_2569
+平台: zhihu
+类型: comments
+内容: 常见的问题是“你发的朋友圈照片真好看，什么手机拍的 ”。你跟他讲构图、用光，太难为他了[捂嘴]
+
+--- ITEM #8 ---
+ID: zhihu_comments_2575
+平台: zhihu
+类型: comments
+内容: 画质这东西还不如考虑镜头色彩素质
+
+--- ITEM #9 ---
+ID: zhihu_comments_2576
+平台: zhihu
+类型: comments
+内容: 图片里的是b站up主baka爱
+
+--- ITEM #10 ---
+ID: zhihu_comments_2582
+平台: zhihu
+类型: comments
+内容: 哪台相机有“画质”这个参数？你咋那么牛逼！
+
+--- ITEM #11 ---
+ID: zhihu_comments_2584
+平台: zhihu
+类型: comments
+内容: 也就是何同学的95后、00后粉丝们会捧5G
+
+--- ITEM #12 ---
+ID: zhihu_comments_2585
+平台: zhihu
+类型: comments
+内容: 没怎么关注过宽带，但是关注过IDC的价格，服务器和存储就不说了，阿里云多少年了还是8毛钱1G的流量，而国外随便开个5刀小鸡就1T、2T的免费流量。。。痛心啊！
+
+--- ITEM #13 ---
+ID: zhihu_comments_2586
+平台: zhihu
+类型: comments
+内容: 美国300Mbps的民用宽带月租不利用各种折扣（直接和网络商谈）是50美元一个月，1000Mbps是70美元。上下速度相等中国的宽带下载快上传慢，价格便宜
+
+--- ITEM #14 ---
+ID: zhihu_comments_2587
+平台: zhihu
+类型: comments
+内容: [飙泪笑]答主，不是我说，我本来和你观点一样，但是，你自己看看你的内容，是谁在情绪输出，你谁听不得反对意见，是谁没在好好讨论，提一句反对意见都被你打成骂街这不合适吧
+
+--- ITEM #15 ---
+ID: zhihu_comments_2588
+平台: zhihu
+类型: comments
+内容: 大家的评论回复大约5成已被删除，我看不到。
+
+--- ITEM #16 ---
+ID: zhihu_comments_2590
+平台: zhihu
+类型: comments
+内容: 美国宽带运营商并非是不想收，而是暂时收不上来而已，前几天还看了，国外几大运营商放出口风，说油管，奈飞之类的视频网站占用了大量的带宽，要他们付费。说话要说事实，非不想，实不能
+
+--- ITEM #17 ---
+ID: zhihu_comments_2591
+平台: zhihu
+类型: comments
+内容: 违反网络中立性原则。不过这个角度很有趣
+
+--- ITEM #18 ---
+ID: zhihu_comments_2593
+平台: zhihu
+类型: comments
+内容: 国外是家宽补贴商宽吧，你去看看azure，aws同样是按流量计费，价格也不便宜
+
+--- ITEM #19 ---
+ID: zhihu_comments_2594
+平台: zhihu
+类型: comments
+内容: 之前在🇫🇷工作的时候宽带非常贵，一个月手机和宽带的花费在50欧以上，因为家里没法通光纤用的还是adsl。就算是有光纤的地区也做不到上下行同速，当自己在骨干网嘛[飙泪笑]
+
+--- ITEM #20 ---
+ID: zhihu_comments_2595
+平台: zhihu
+类型: comments
+内容: 我有一个疑问 不管是啥模式，线路网和基础设施总得有，难道谷歌之类的是自建了基础设施吗，不然这个钱谁出
+
+--- ITEM #21 ---
+ID: zhihu_comments_2596
+平台: zhihu
+类型: comments
+内容: 中国是商用补民用，很多国家是民用补商用。中国的模式主要是利出一孔，不利于对isp议价权差，同时流量成本较高的中型企业。不过中国其实各个方面的制度都是不利于中型企业的，不差这一点。包括监管也是，能搞定监管的大企业和打游击的小企业占便宜，合法运营的中型企业成本会高非常多。
+
+--- ITEM #22 ---
+ID: zhihu_comments_2598
+平台: zhihu
+类型: comments
+内容: 腾讯在某地的机房有专班
+
+--- ITEM #23 ---
+ID: zhihu_comments_2602
+平台: zhihu
+类型: comments
+内容: 天天喊着上下行对等，中国90%以上的宽带用户需要吗？上行宽带小限制了你遨游互联网吗？你具体说说都怎么限制你了？我看看你说的点普通人能用到几个？
+
+--- ITEM #24 ---
+ID: zhihu_comments_2603
+平台: zhihu
+类型: comments
+内容: 为什么不用P2P呢？用户之间互传，充分利用稀缺的上传带宽资源。
+
+--- ITEM #25 ---
+ID: zhihu_comments_2605
+平台: zhihu
+类型: comments
+内容: 我觉得中国的宽带很不错，普惠了大中国。国外不是说偏远地区都网络不好。对我来说够用了。
+
+--- ITEM #26 ---
+ID: zhihu_comments_2606
+平台: zhihu
+类型: comments
+内容: 105澳币一个月50Mbps还天天断网满意不，而且 ISP 同时还向服务商收取高额费用，peering 不代表免费，建议了解 paid peering，流量价格看看 AWS 和 GCP 是什么价格。但凡出过国也说不出这种话。[图片]
+
+--- ITEM #27 ---
+ID: zhihu_comments_2607
+平台: zhihu
+类型: comments
+内容: 电信家庭宽带，一个月200多点，送千兆光猫，6个手机号，一个座机号，还有网络电视。这个也不能说多贵吧…
+
+--- ITEM #28 ---
+ID: zhihu_comments_2609
+平台: zhihu
+类型: comments
+内容: 问题是国内的宽带相对国人的收入是相对便宜的，如果用Peering模式国内的宽带费会增加。idc费用会降低。
+
+--- ITEM #29 ---
+ID: zhihu_comments_2611
+平台: zhihu
+类型: comments
+内容: 美国是p2p,点对点，中国是p2mp,点对多点，一个pon口带宽1g，下面挂了32户，就只能保证30M带宽呀
+
+--- ITEM #30 ---
+ID: zhihu_comments_2614
+平台: zhihu
+类型: comments
+内容: 国内家宽和移动数据无论是下行还是稳定性都是相对来说都是世界上第一档的，当前国内的政策实际上是在用大企业的钱的补贴民用和基站建设的支出。在英国这边我用的套餐大概10镑/10G每月，还要忍受街上走几步没信号，进店不问WiFi直接失联的待遇，哪个好见仁见智吧[思考]
+
+--- ITEM #31 ---
+ID: zhihu_comments_2615
+平台: zhihu
+类型: comments
+内容: 也就是何同学的95后、00后粉丝们会捧5G
+
+--- ITEM #32 ---
+ID: zhihu_comments_2616
+平台: zhihu
+类型: comments
+内容: 美国宽带运营商并非是不想收，而是暂时收不上来而已，前几天还看了，国外几大运营商放出口风，说油管，奈飞之类的视频网站占用了大量的带宽，要他们付费。说话要说事实，非不想，实不能
+
+--- ITEM #33 ---
+ID: zhihu_comments_2617
+平台: zhihu
+类型: comments
+内容: 国外模式对用户来讲除了更高码率的清晰度还有哪些其它优点呢
+
+--- ITEM #34 ---
+ID: zhihu_comments_2618
+平台: zhihu
+类型: comments
+内容: 美国300Mbps的民用宽带月租不利用各种折扣（直接和网络商谈）是50美元一个月，1000Mbps是70美元。上下速度相等中国的宽带下载快上传慢，价格便宜
+
+--- ITEM #35 ---
+ID: zhihu_comments_2620
+平台: zhihu
+类型: comments
+内容: [尴尬]唉，时过境迁，现在省之间流量都要结算了[尴尬]
+
+--- ITEM #36 ---
+ID: zhihu_comments_2621
+平台: zhihu
+类型: comments
+内容: 运营商不是做慈善的，谷歌这种大公司省了钱，那就会从别的地方找补回去，比如宽带覆盖率 小公司和客户的资费 网速啥的谷歌这种行为等于是挟持用户与运营商谈判，已经可以算垄断了我觉得还是那些大公司多付点好，毕竟不用我花钱我130人民币一个月 四张卡 共用60G流量1000分钟通话，500M下行70M上行
+
+--- ITEM #37 ---
+ID: zhihu_comments_2623
+平台: zhihu
+类型: comments
+内容: 就这么贵的上行带宽，三大运营商还年年亏损。因为我国政策干预的下行带宽太便宜了，你能想象500M带宽每年才700元，还带5G电话卡套餐。最关键的是这光纤宽带几乎村村通，铺设成本太高了。
+
+--- ITEM #38 ---
+ID: zhihu_comments_2625
+平台: zhihu
+类型: comments
+内容: 怪不得国外服务器这么便宜 几十兆带宽只要几刀
+
+--- ITEM #39 ---
+ID: zhihu_comments_2626
+平台: zhihu
+类型: comments
+内容: 确实。用户接入的带宽上去了，网络服务的带宽价格也要降降啊，否则阻碍技术发展了
+
+--- ITEM #40 ---
+ID: zhihu_comments_2628
+平台: zhihu
+类型: comments
+内容: 我在加拿大，我这里的宽带用的Shaw，每个月1TB流量限制
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_085
+
+开始分析：

@@ -1,0 +1,38 @@
+{
+  "step_id": "03-data-cleaning",
+  "step_name": "数据清洗",
+  "version": 1,
+  "timestamp": "2026-05-18T15:22:52.861967",
+  "input": {
+    "source_keyword": "长视频",
+    "platform": "xhs",
+    "raw_count": 508
+  },
+  "output": {
+    "cleaned_count": 502,
+    "duplicates_removed": 6,
+    "columns": [
+      "note_id",
+      "user_id",
+      "nickname",
+      "title",
+      "desc",
+      "text",
+      "liked_count_num",
+      "collected_count_num",
+      "comment_count_num",
+      "share_count_num",
+      "total_interaction",
+      "time",
+      "note_url",
+      "source_keyword"
+    ]
+  },
+  "statistics": {
+    "total_interaction_mean": 8724.416334661355,
+    "total_interaction_median": 1879.0,
+    "total_interaction_max": 168392.0,
+    "liked_count_mean": 4980.089641434263,
+    "liked_count_median": 1026.0
+  }
+}

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>任务改进建议报告 - 长视频用户诉求调研</title>
+    <style>
+        body {{ font-family: -apple-system, sans-serif; background: #0a0e1a; color: #e2e8f0; padding: 2rem; line-height: 1.6; }}
+        .header {{ text-align: center; margin-bottom: 3rem; }}
+        .header h1 {{ background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }}
+        .section {{ background: #1a1f2e; border: 1px solid #2d3748; border-radius: 12px; padding: 2rem; margin-bottom: 2rem; }}
+        .section h2 {{ color: #3b82f6; margin-top: 0; }}
+        .improvement {{ background: #252b3d; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; border-left: 4px solid #f59e0b; }}
+        .priority {{ display: inline-block; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }}
+        .p0 {{ background: #ef444420; color: #ef4444; }}
+        .p1 {{ background: #f59e0b20; color: #f59e0b; }}
+        .p2 {{ background: #3b82f620; color: #3b82f6; }}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🚀 任务改进建议报告</h1>
+        <p>v4工作流首次运行反思与优化建议</p>
+    </div>
+    
+    <div class="section">
+        <h2>✅ 本次运行亮点</h2>
+        <div class="improvement">
+            <div style="font-weight: 600;">1. 过程留痕完整</div>
+            <div>所有16步的输入、处理、输出均已保存为文件，形成完整的可追溯链条</div>
+        </div>
+        
+        <div class="improvement">
+            <div style="font-weight: 600;">2. JTBD框架落地</div>
+            <div>成功从UGC文本中提取Job Stories，将需求锚点从关键词升级为任务上下文</div>
+        </div>
+        
+        <div class="improvement">
+            <div style="font-weight: 600;">3. RICE量化优先级</div>
+            <div>替代了主观P0/P1/P2分级，提供了基于数据的量化排序</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>⚠️ 发现的问题</h2>
+        
+        <div class="improvement">
+            <div style="font-weight: 600;">1. Job Story提取精度待提升</div>
+            <div>部分Job的"情境"字段为"unspecified"，说明场景识别规则不够完善。建议增加更多场景词库，或引入NER模型。</div>
+        </div>
+        
+        <div class="improvement">
+            <div style="font-weight: 600;">2. Kano分类置信度偏低</div>
+            <div>大量Job被分类为"无差异型"，可能是因为UGC中缺乏明确的满意度表达。建议结合情感分析模型提升分类精度。</div>
+        </div>
+        
+        <div class="improvement">
+            <div style="font-weight: 600;">3. 数据源单一</div>
+            <div>仅使用小红书数据，可能存在平台偏见。建议下一轮换入B站、知乎、App Store评论等多源数据。</div>
+        </div>
+        
+        <div class="improvement">
+            <div style="font-weight: 600;">4. 假设验证未执行</div>
+            <div>由于这是模拟测试，假设验证步骤标注为"待执行"。实际项目中需要与产品团队协作完成验证。</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🔧 改进建议</h2>
+        
+        <div class="improvement">
+            <span class="priority p0">P0</span>
+            <div style="font-weight: 600; margin-top: 0.5rem;">引入NER模型提升场景识别</div>
+            <div>使用spaCy或BERT-NER识别UGC中的时间、地点、场景实体，替代关键词匹配</div>
+        </div>
+        
+        <div class="improvement">
+            <span class="priority p0">P0</span>
+            <div style="font-weight: 600; margin-top: 0.5rem;">多源数据融合</div>
+            <div>下一轮换入B站弹幕、知乎讨论、App Store评论，进行三角验证</div>
+        </div>
+        
+        <div class="improvement">
+            <span class="priority p1">P1</span>
+            <div style="font-weight: 600; margin-top: 0.5rem;">情感分析增强Kano分类</div>
+            <div>引入情感分析模型，识别UGC中的满意度表达，提升Kano分类精度</div>
+        </div>
+        
+        <div class="improvement">
+            <span class="priority p1">P1</span>
+            <div style="font-weight: 600; margin-top: 0.5rem;">自动化workflow_status更新</div>
+            <div>每完成一步自动更新HTML看板，而非手动修改</div>
+        </div>
+        
+        <div class="improvement">
+            <span class="priority p2">P2</span>
+            <div style="font-weight: 600; margin-top: 0.5rem;">可视化Job地图交互增强</div>
+            <div>支持点击Job节点展开详情、拖拽调整阶段、导出图片</div>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>📋 下一轮搜索词建议</h2>
+        <div class="improvement">
+            <div>• 长视频 会员 值得买吗（付费意愿）</div>
+            <div>• 纪录片 推荐 手机看（内容细分）</div>
+            <div>• 电影 手机 观影体验（场景深化）</div>
+            <div>• 短视频 长视频 区别 习惯（行为对比）</div>
+            <div>• B站 长视频 为什么 好看（平台研究）</div>
+        </div>
+    </div>
+</body>
+</html>

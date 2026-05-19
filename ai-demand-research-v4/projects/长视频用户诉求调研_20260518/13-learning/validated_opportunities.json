@@ -1,0 +1,44 @@
+[
+  {
+    "id": "O051",
+    "job_id": "J051",
+    "description": "当前长视频体验存在痛点: 没有关注，两个视频...",
+    "kano_type": "must_be",
+    "reach": 60000,
+    "impact": 2.4,
+    "confidence": 1.0,
+    "effort": 2,
+    "rice_score": 72000.0,
+    "data_sources": [
+      "xiaohongshu:60 mentions"
+    ]
+  },
+  {
+    "id": "O005",
+    "job_id": "J005",
+    "description": "想要更快或更慢地观看长视频内容...",
+    "kano_type": "performance",
+    "reach": 10000,
+    "impact": 3,
+    "confidence": 0.8666666666666667,
+    "effort": 1,
+    "rice_score": 26000.0,
+    "data_sources": [
+      "xiaohongshu:10 mentions"
+    ]
+  },
+  {
+    "id": "O195",
+    "job_id": "J195",
+    "description": "想要获得更好的视觉体验...",
+    "kano_type": "performance",
+    "reach": 7000,
+    "impact": 1,
+    "confidence": 1.0,
+    "effort": 1,
+    "rice_score": 7000.0,
+    "data_sources": [
+      "xiaohongshu:7 mentions"
+    ]
+  }
+]

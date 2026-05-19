@@ -1,0 +1,425 @@
+{
+  "batch_id": 78,
+  "total_items": 33,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 32,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 26,
+      "feature_request": 1,
+      "pain_point": 6
+    },
+    "topic_distribution": {
+      "other": 25,
+      "ai_feature": 2,
+      "video_quality": 4,
+      "content_recommend": 2
+    },
+    "ai_statistics": {
+      "total_ai": 4,
+      "explicit": 3,
+      "implicit": 1,
+      "not_ai": 29
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1992",
+      "text": "你就臆想吧，15年前的中低端全幅相机，能把目前最好的手机摄像按在地板上摩擦到冒烟",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1994",
+      "text": "所以你觉得摄影师会用手机当商业拍摄吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1995",
+      "text": "我有个疑问，手机拍不出身份证和钞票上的超清细节会不会是因为政策的原因，导致手机ai自动屏蔽了这些细节？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1996",
+      "text": "这是很好的问题，为什么会这么问。说一个自己近期的感受，夏天的时候去非洲大草原，带了富士xe3+适马16 1.4拍星空+腾龙18-300（相当于450）拍远处动物，设备简陋了点。又带了个vivox200u+增距镜。前几天还会拿出相机拍一拍，后来直接相机不带出门了。我是从sony f717开始玩的，底大一级压死人，这个对也不对。光圈+焦距+大底=清晰，这样看大底确实更好，但是要搭配这样的大底需要怎样的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1997",
+      "text": "手机的画质怎么可能碰瓷相机？尤其是iPhone，最新最好的Pro Max的底甚至没有Vivo X200 ultra大，拍照直接被Vivo不知道秒到哪里去了，尤其是在拍飞机起飞时候的跑道，永远无法对焦到跑道上，永远是对焦到飞机舷窗上面的灰尘上。连碰瓷别的手机都没法碰，还想碰瓷相机镜头，那就实在是图样图森破了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2001",
+      "text": "可以速速快进到手机发抖音比相机有性价比[捂嘴]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2002",
+      "text": "X200 Pro这个AI不能完全关闭就让人很恼火[生气]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2004",
+      "text": "有啥好对比的，就问问题主，他的结婚照用手机拍不",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2005",
+      "text": "随便拿个相机也吊打手机了，手机拍照只能和手机比，比相机是天方夜谭",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2006",
+      "text": "手机拍出来的粗看是没啥问题的，放朋友圈也足够，甚至优于绝大多数相机原图直出。但是根本经不起推敲，放在电脑屏幕上一放大就不忍直视。而相机直出确实没那么好看，但是放进lr里套个预设就知道什么叫眼前一亮。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2008",
+      "text": "也不太懂 就觉得手机莲花都惨白色的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2010",
+      "text": "手机那么小的镜头，光学系统怎么做，也比不上最差的相机",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2011",
+      "text": "成像质量的好坏，大部分取决于cmos，手机的做不到相机那么大，成像质量不会太好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2014",
+      "text": "没有可比性的东西，就是鸡对鸭讲，手机摄影？哈哈哈",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2016",
+      "text": "手机就是经不起放大，只能看看小图，手机党会选择性无视的，我现在正打算买相机，回看之前旅游的照片，没有一张放大能看的，真的非常后悔以前没有买相机",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2020",
+      "text": "现在什么相机不用算法？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2021",
+      "text": "终于看到有人说手机长焦端的对焦。手里两部旗舰拍照手机，亲身体验，长焦鼓捣半天对上了焦，鸟都飞没影了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2024",
+      "text": "水果手机拍照高根本不怎么样。拿华为PURA试试",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2026",
+      "text": "行家一出手就知有没有，手机cmos还是太小了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2028",
+      "text": "手机拍照画质来碰瓷A7M3真的过于离谱了。。。我跟朋友举过例子，手机之间拍照能力对比可能8分，8.5分，9分这样；相机满分100，60分及格开始对比，A7M3当年评个85-88分，现在水涨船高打个78-80吧，不是任何手机能碰瓷的。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2029",
+      "text": "在我拿手机拍黄昏下漂亮的街道时，出现了恐怖的鬼影，我果断拿打算升级手机成光学变焦的钱买相机了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2033",
+      "text": "因为他们既有好手机，也有全画幅相机",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2034",
+      "text": "2025年在拍照或者录像方面，价位接近的情况下，个人认为手机吊打相机的应该是便携性，易用性和续航，可能还有防抖（可能而已）。而不是画质，画质，画质。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2037",
+      "text": "我的感受是在较暗的光线下拍照片，手机比全幅相机差很多。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2040",
+      "text": "摄影穷三代，还没听说过手机穷几代的[捂脸]都不是一个层级的东西，怎么比。。[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2042",
+      "text": "你的g7x不能玩原神，手机赢！[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2047",
+      "text": "我用手机也经常对焦失败。大哥我请教一下，为什么手机经常对不上焦？按理来说中间对焦很容易啊。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2049",
+      "text": "别说超越了   就是靠近都绝无可能    手机领先的是方便  易拍   保有量大   性价比高但是单说相机那个头  那个进光量      几百倍有了吧？    拿啥靠近？  拿啥超越？    手机只是算法牛逼   可以取悦大众而已",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2050",
+      "text": "朋友，你怎么可以用GFX来欺负手机相机这种垃圾玩意呢？这不是丢GFX的份么？给你点赞了！[打招呼]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2051",
+      "text": "很现实的问题，当你去拍婚纱照的时候，影楼只给你用手机拍。你只会骂一句：我草……",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2057",
+      "text": "你恐怕连手机都不知道怎么用[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2060",
+      "text": "好镜头可以用几十年，人走头还在[飙泪笑]机身基本每年都更新，买新不买旧。富士用户请忽视",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2064",
+      "text": "保值的这个问题得看你是爱好者还是职业用户了。对于职业用户来说，用一个烂机身各种规格限制，接活一堆限制，几年下来少挣的钱够买好几个牛头了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

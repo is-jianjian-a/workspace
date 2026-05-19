@@ -1,0 +1,422 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下13条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 3/120)
+
+--- ITEM #1 ---
+ID: tieba_comments_76
+平台: tieba
+类型: comments
+内容: 阿姨 我在去年的时候给我妈妈找人看过，看的挺好的 我推荐你把
+
+--- ITEM #2 ---
+ID: tieba_comments_79
+平台: tieba
+类型: comments
+内容: 因果报应了，还能活一段时间，但是会有些痛苦，给他祈福吧
+
+--- ITEM #3 ---
+ID: tieba_comments_86
+平台: tieba
+类型: comments
+内容: 喜德盛新款350 瑞豹新款Robin al 捷安特这价位买不到 建议加1k能上碳了image_emoticon2
+
+--- ITEM #4 ---
+ID: tieba_comments_88
+平台: tieba
+类型: comments
+内容: 我跟你差不多体型甚至更重一点，我的建议是预算要么减到2k买入门油碟圈刹要么升到5k买碳架，中间的升级点只有碳叉和速别，碳叉+300可以改，速别区别不算不大，两千买radon，海王，superal各有各的优势，5k就上版本答案supersport蓝图
+
+--- ITEM #5 ---
+ID: tieba_comments_91
+平台: tieba
+类型: comments
+内容: 网上卖的镜片清晰度没有原厂的看着清楚，你可以对比一下
+
+--- ITEM #6 ---
+ID: tieba_comments_92
+平台: tieba
+类型: comments
+内容: 前几天，我给我老爹老妈客厅装的大屏电视机居然没声音没图像了，客厅顿时不热闹了。找修电视的来，说这得换1000多的电路板，接收器坏了。我爹一琢磨，一万多的电视，花个一千多能修好也可以。那师傅说等他爸来修，还要订原装电路板，约1500块。 我刚好回家，一调试，觉得可能只是遥控器坏了。于是网上买了5个遥控器，花了我9块钱，还送电池。 一天后，遥控器到货，一按，电视好了。
+
+--- ITEM #7 ---
+ID: tieba_comments_93
+平台: tieba
+类型: comments
+内容: 我手机摔了一次，后面摸着有点鼓包，以为是电池出问题了。先是找了个路边小店，那人看了之后说是电池出问题了，看了型号直接报价130。然后去了电脑城，那种一大堆修手机的地方，那师傅看了下也说应该是电池出问题了，然后他在他们的群里问了下，说是没我这个手机的电池，让我可以去网上买一个电池，他们可以帮忙换。最后我去了官方售后的地方，接待的人看了下说不一定是电池出问题了，可能是摔了后盖变形了。然后让店里师傅拆开看下，果然，电池没问题，不用换，给我安装好之后接待的客服还帮我免费贴了个膜，一分钱没收让我走了。
+
+--- ITEM #8 ---
+ID: tieba_comments_108
+平台: tieba
+类型: comments
+内容: 点了 谁说男的不P图 我很多年前遇到的一个长得特别白皙清秀长在我审美点上的男的 后面其他的对象都直接加上我q了才知道他同时多线好多个 唯一一个跟他奔过现的妹妹发的他拍在家看电视的照片简直一个是帅哥一个是毫不相干的路人😅
+
+--- ITEM #9 ---
+ID: tieba_comments_112
+平台: tieba
+类型: comments
+内容: 感觉可以打开各种软件看看怎么升级耳机前端了image_emoticon67
+
+--- ITEM #10 ---
+ID: tieba_comments_130
+平台: tieba
+类型: comments
+内容: 确实很好赚，我三个月赚了一个小目标。具体怎么操作可以私信我，免费分享！
+
+--- ITEM #11 ---
+ID: tieba_comments_134
+平台: tieba
+类型: comments
+内容: 写的有点快了，忘了感谢两位up的精彩PK视频，还有感谢贴吧以往拆包大佬的精准数据了，感谢image_emoticon34image_emoticon34image_emoticon34
+
+--- ITEM #12 ---
+ID: tieba_comments_137
+平台: tieba
+类型: comments
+内容: 视频更高清，可以自己搜压制触发条件测试视频观看，懒得看的，明白原理就行，感觉你带压制硬，你就带，真实的触发条件，你自己看看，如果说带压制和带复苏都是被秒，那你8000的东西和4000多的东西，可以相提并论了？还帮你省药呢
+
+--- ITEM #13 ---
+ID: tieba_comments_149
+平台: tieba
+类型: comments
+内容: 这不是很正常吗？每天除了工作就是睡觉，每天都在按老板要求完成任务，其它事情没时间也没精力去管，最想做的就是找个可以带来快乐又不会沉迷其中的娱乐项目短暂放松一下
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_003
+
+开始分析：

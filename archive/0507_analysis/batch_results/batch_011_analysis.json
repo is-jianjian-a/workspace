@@ -1,0 +1,561 @@
+{
+  "batch_id": 11,
+  "total_items": 44,
+  "statistics": {
+    "scene_distribution": {
+      "long_video": 6,
+      "general_video": 31,
+      "short_video": 7
+    },
+    "type_distribution": {
+      "behavior_description": 31,
+      "pain_point": 5,
+      "feature_request": 8
+    },
+    "topic_distribution": {
+      "other": 31,
+      "video_quality": 4,
+      "subtitle_translate": 1,
+      "playback_control": 2,
+      "content_recommend": 4,
+      "download_cache": 1,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 4,
+      "explicit": 2,
+      "implicit": 2,
+      "not_ai": 40
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_766",
+      "text": "只能说，这些动漫生在腾讯视频，这就是命",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_767",
+      "text": "没腾讯，国漫圈也起不来",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_784",
+      "text": "对比过 t1，t2x，z5，红米note10pro，note11t，X20华星，X30，X30MAX，畅玩30，oppok10，k9s，realmeq2，q3s，中兴远航30PRO 这些LCD屏，视频清晰度，细腻度，最好的是t2x和q2。负责的结论。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_785",
+      "text": "操作卡顿的话把内存拓展关了。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_786",
+      "text": "每天都看B站，视频清晰没有问题，比x20.neo3清晰，画面层次感没有远航30pro突出。你护眼模式不要拉倒最大，那样看视频会模糊点，护眼开60-70%就能保证屏幕显示效果",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_787",
+      "text": "还有t2x我买了三台，选了一台最好的，均匀发色，亮度偏柔和。剩下两台，一台左右发色不均匀一边角落黄一点点。还有一台屏幕比较亮（也不刺眼）三台里最高，色彩层次对比度更高，因为我长时间用手机还是没选这台屏幕更鲜艳的。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_788",
+      "text": "如果不看那种很高清的视频，看视频只看1080P以下的分辨率，那么天玑芯片是否和高通一样了呢？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_789",
+      "text": "t2x用了一天了，没觉得视频糊，屏幕比较护眼，对比z5，一加和小米的lcd，但是还是稍微有点眼睛发涨，没有我的xr舒服",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_792",
+      "text": "希望能给我发点笔的案件，天天不是给我推什么虚拟的东西（充卡，卖课，卖号）就给我推什么手机之类的，我也不懂啊image_emoticon33",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_793",
+      "text": "也给新人提一句醒，如果买到瑕疵品一定要及时保留证据诉诸小法庭，不要被人家收货给补偿一类的话给忽悠了。尤其在买到假货的时候要记住不退不换这时候是没有效力的。我之前买卓尔的时候买到假的了，找卖家卖家说不退不换但要是我收货给一些补偿，我那时候也没经验就直接信了，后来才明白可以直接找小法庭，再重新去找卖家人家根本不认账了image_emoticon22。从此我逛🐟的时候看见假货一定要在评论区指出来，但愿能",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_0",
+      "text": "简介\n原视频：万事屋纸纸酱\n原啵啵间：王麻衣",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_1",
+      "text": "从几个维度聊聊年轻人过度沉迷短视频的话题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_7",
+      "text": "观众老爷们求个免费的点赞投币，关注一下可爱的小梅梅吧~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_17",
+      "text": "大学课程配置不合理\n财富自由才是真的自由\n资产配置来获取时间的自由\n短视频的东西都是碎片化的\n没良心的经济学家忽悠你贷款\n最无耻的金融机构就是银行",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_22",
+      "text": "你有没有好奇过，为什么有些人可以做到在镜头前流畅口播，而自己对着镜头说话却总是卡顿？这次我们想从设备、内容，后期三方面，分享一下流畅口播的心得和技巧，希望能给你一些启发！如果这期节目对你有帮助，请多多支持我们，并把视频分享给你的朋友们一起看看！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_23",
+      "text": "视频文档\nhttp://it.zaojiamao.vip/index.php/2024/06/13/synctv%e5%92%8c%e4%bd%a0%e7%9a%84%e5%bc%82%e5%9c%b0%e6%81%8b%e5%b0%8f%e5%a5%b3%e5%8f%8b%e7%9c%8b%e5%b0%8f%e8%a7%86%e9%a2%91%e7%9a%84%e7%b3%bb%e7%bb%9f",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_25",
+      "text": "博主心里话：你不沉迷刷视频，我上哪挣钱去？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_27",
+      "text": "短视频逐渐成为主流，这点不可否认。平台需要短视频，这也能理解。但作为用户，我们应该有选择的权力，应自行决定开启或关闭，而不是连一个设置选项都不提供。可惜，事实无法改变。既然不能改变，那么只能去适应。这个方法也算是无奈之举了~\n\n软件链接(Auto.js+李跳跳)：\n蓝奏云：https://wwvs.lanzoub.com/b04empt2h\n百度云：链接：https://pan.baidu.com",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_28",
+      "text": "希望大家喜欢这期视频，\n记得「一键三连」呐！\n新来的朋友，\n别忘了点「关注」啊！\n\n对了，\n老规矩，你留言我点赞！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_30",
+      "text": "很多朋友都问过我\n怎么样才能在镜头前面流利表达\n今天就分享一下一直以来我在用的两种方式\n希望对大家有帮助\n相关视频：\n包教包会！多机位同步 ：av78028211\n三分钟了解扫光特写：av69466497\n不会做视频封面？零基础 视频封面图制作教程：av52861195\n视频极速上字幕流程大分享：av55048140\nfinal cut资源库太大硬盘吃不消？还不快来了解下av50347206\n拍摄",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_33",
+      "text": "想和朋友或对象异地一起看电影、追剧、看B站视频吗？\n这个网站可以同步播放、一起暂停、一起快进，还能边看边聊天。\n不用登录、不用装软件，发一个链接就能拉人一起看片。\n\n星靛同屏网站：https://www.niknight.cn\n\n如果你想提前体验新功能、提建议或找人一起同屏\n可以加入群：1033767243\n\n如果你觉得这个工具有用，可以收藏、点赞、转发一下\n这会让我更有动力继续更新下去",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_34",
+      "text": "想和朋友、对象异地一起看电影、追剧、刷 B 站吗？\n那一定要试试 相见观影！\n网站：https://movie.zfai.shop/\n想抢先体验新功能、提建议，或者想找人一起同屏？\n直接来群里玩！QQ群：1060452510\n如果你觉得这个工具还不错，记得点个收藏、点个赞、顺手转发一下～\n你的支持真的会让我更有动力继续更新！🔥",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_39",
+      "text": "本期精选app推荐：\n1.开眼\n2.场库\n3.央视频\n4.一席\n5.一点英语\n以上app各大应用商城均有下载……\n喜欢的话就三连起来吧~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_contents_40",
+      "text": "某明星名字是否成立？男性丁丁大小与国外成人差别？手指与蛋蛋大小的关系，女性性功能水平与什么相关？啪啪啪障碍的原因？如何拥有优秀的性福感？G点是什么？简介预防阴道松弛综合征。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_41",
+      "text": "互联网视频学习是如何压制你的思考的，为什么阅读应该是你主要获取知识的渠道。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_42",
+      "text": "博主心里话：你不沉迷刷视频，我上哪挣钱去？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_43",
+      "text": "希望大家喜欢这期视频，\n记得「一键三连」呐！\n新来的朋友，\n别忘了点「关注」啊！\n\n对了，\n老规矩，你留言我点赞！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_47",
+      "text": "本期内容包含：\n●常见错误自我安慰行为，记得避雷！\n●面对负面情绪时，最好的应对方式竟然是…？！\n●助你隔离负面情绪的心流体验小游戏！你能做到几秒完成？\n●帮助你舒缓情绪的超治愈片单！有无你的心选pick？\n●以及，为所有爱发朋友圈的小伙伴正名！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_50",
+      "text": "一个奇怪的网站会不间断播放来自其他世界的新闻，而人们的观测会把它们带入到我们的世界",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_55",
+      "text": "从几个维度聊聊年轻人过度沉迷短视频的话题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_58",
+      "text": "25年我38岁，人生中第一次变成了传说中的网瘾少年，就因为陪朋友玩了玩英雄联盟大乱斗，我以为我是在玩游戏，后来发现我是被游戏玩了，差点被一波带走！这也是为什么去年我的视频尤其是公共视频更新频次减少的核心原因，它真的会影响你做正事，一定要引以为戒！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_59",
+      "text": "为什么有些电影的设定，一句话就能让你脑补到根本停不下来？为什么短视频必须在“黄金三秒”内抓住你？\n从70年代的好莱坞，到如今的短视频，我们将看到一种叙事方式如何被不断压缩、提纯，并最终塑造了我们今天的观看习惯。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_60",
+      "text": "b站\n西游记续集倒数第二集",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_64",
+      "text": "简介\n原视频：万事屋纸纸酱\n原啵啵间：王麻衣",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_65",
+      "text": "从几个维度聊聊年轻人过度沉迷短视频的话题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_69",
+      "text": "博主心里话：你不沉迷刷视频，我上哪挣钱去？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_70",
+      "text": "进维多之家微信群，\n请b站私信：进群 \n---------------\n公众号/喜马拉雅: 维多的好习惯\n\n---------------\n维多出品课程\n1. 跟维多一起感恩28天 398元\n2. 跟维多一起生命的重建 1598元\n下载CCtalk App 搜索“维多”即可试听报名\n购买后永久有效 可回看",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_74",
+      "text": "第一次尝试从起床素颜拍摄一天全过程\n做一期电子女友报备\n如果大家对这种题材感兴趣一键三连我接着更新",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_80",
+      "text": "下班瘫在沙发，发誓刷10分钟却熬到凌晨？\n刷完只剩心慌、自责与双倍疲惫，第二天恶性循环继续？\n \n别骂自己不自律！这期播客，彻底拆穿你逃不掉的「低能量→刷手机→更低能量」死循环。\n✅ 科学拆解：为什么越累越停不下来？短视频算法如何精准收割你的精力？\n✅ 落地解法：不用强制戒断，4个温柔不费力的方法，帮你拿回专注力、情绪与人生主动权。\n \n献给每一个在疲惫中内耗的你：真正的休息，从来不是刷手机，而是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_contents_81",
+      "text": "逃避责任，错过人生。\n我觉得长期刷视频成瘾的人，是很迷茫很痛苦的。\n那如何从每天看8小时视频，到手机都不碰？\n今天和大家分享两个我给朋友分享的，真的有帮到他的方法。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_85",
+      "text": "阳了这么久声音还没好，兄弟们凑合听\n今天咱们通过《浅薄》这本书\n聊聊手机成瘾是如何塑造大脑的\n_______________________\n这里是心河摆渡，每周分享有温度的成长内容\n书本内外皆学问，伴您成长摆渡人\n不啰嗦啦，咱们下期不见不散~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_86",
+      "text": "制片：九老师\n动画：Joyteeth 无聊的阿祝\n特效：flashyami\n声效：Jimmy Hung Fer\n剪辑：贰_33\n时间锁\n开发：年纪轻轻\nUI：星期五的哥哥\n统筹：许之行\n感谢做出时间锁的朋友、韩老师的调研指导、参加调研的朋友、银翼的魔术师MX搭建网站\n壁纸：无聊的阿祝 G195潮流壁纸\n本视频的戒手机方法参考了《这书能让你戒烟》和《How To Break Up With Your",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_contents_88",
+      "text": "看完之后，刷手机的欲望真的消失了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_91",
+      "text": "这条视频的评论区，会不会出现大量“AI帮我总结一下”的评论？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

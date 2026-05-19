@@ -1,0 +1,41 @@
+{
+  "round": 2,
+  "based_on": "第一轮\"长视频\"搜索的发现",
+  "gaps": [
+    "需要更多关于付费意愿的数据",
+    "需要深入了解不同内容类型的差异化需求",
+    "需要验证长视频与短视频的用户重叠度"
+  ],
+  "terms": [
+    {
+      "id": "T201",
+      "query": "长视频 会员 值得买吗",
+      "platform": "xiaohongshu",
+      "rationale": "探索用户付费意愿和会员价值感知"
+    },
+    {
+      "id": "T202",
+      "query": "纪录片 推荐 手机看",
+      "platform": "xiaohongshu",
+      "rationale": "深入了解纪录片细分场景"
+    },
+    {
+      "id": "T203",
+      "query": "电影 手机 观影体验",
+      "platform": "xiaohongshu",
+      "rationale": "探索电影类长视频需求"
+    },
+    {
+      "id": "T204",
+      "query": "短视频 长视频 区别 习惯",
+      "platform": "zhihu",
+      "rationale": "验证长短视频用户行为差异"
+    },
+    {
+      "id": "T205",
+      "query": "B站 长视频 为什么 好看",
+      "platform": "xiaohongshu",
+      "rationale": "探索长视频平台选择因素"
+    }
+  ]
+}

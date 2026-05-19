@@ -1,0 +1,426 @@
+{
+  "batch_id": 79,
+  "total_items": 33,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 32,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 21,
+      "positive_feedback": 5,
+      "pain_point": 6,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 19,
+      "video_quality": 11,
+      "screen_cast": 2,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 33
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_2070",
+      "text": "但是好机身已经好体验了很久，。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2072",
+      "text": "给你一个5D，你拿什么和R5拼画质？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2075",
+      "text": "世界上90%以上的照片是手机拍的，4/3相机的照片比手机还是强太多了。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2077",
+      "text": "实际上你用防抖好的奥巴机身会觉得晚上太好用了，比没防抖的全幅残幅都好用。更不用说现在ai降噪有多强",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2080",
+      "text": "你的回答是正确的。本来就是个梗。很早以前的AV画面都很糊。因为针对这个梗还有后续比如你评论一段视频你可以调侃说。现在AV都是蓝光的了。形容UP主上传的视频画面太渣。不清晰",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2083",
+      "text": "没买4k之前，我一直觉得2k极致一定好于4k中高。。很大程度我是受了各种评测视频的观看影响…但是实际上云完了根本得不出客观的结论买完之后4k之后发现4k中高比2k极致看着爽多了…甚至为了高帧率，把游戏渲染调低都比2k100%渲染强…（可能也有整数倍缩放的原因）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2084",
+      "text": "现在才知道？什么鬼扯带不动4K，我2016年就用1060上4K了，玩wow和gta5，特效低点就行，就算最低，也是吊打1080P全开的。看了4K显示器再看其他的，眼睛真的会瞎。最扯淡的是7年后的今天，网上的主流舆论还是4070Ti只能带2K[发呆]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2085",
+      "text": "和你的显示器尺寸有关，我的体验是4k 27寸和2k24寸可以来回换着用，类似于1080p手机和2k手机，不会有明显落差",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2086",
+      "text": "我6年前的卡都可以轻松4K，现在蹦出一群40系显卡不能玩4K的云玩家，敢情显卡这6年还退步了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2087",
+      "text": "游戏画质选择就应该是分辨率排第一，保底60帧放第二，其他的特效往后放放",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2091",
+      "text": "我是直接上4K 165HZ的屏，玩的不要太好。你听网友瞎讲肯定误事，这就和有点症状一百度就是癌症同道理，上网上多了就是这样的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2092",
+      "text": "屏幕尺寸加清晰度加画质加帧数，这种程度才会给人很大的震撼，尤其屏幕尺寸，从16寸到32寸那感觉简直了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2094",
+      "text": "[捂脸]我也是买电脑和显示器的时候看到各种人性能焦虑，说 4060ti 是跑 1080p 的，后面买了 4k160hz 的 miniled，太爽了，玩大表哥 2 高画质开 dlss3 质量档有 80 帧，比 2k 画面清晰太多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2096",
+      "text": "我感觉无所谓，我看玩游戏，电影注意力都没多少在画质上",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2097",
+      "text": "我是1080P60hz直接到4K144hz的，那感觉，再也不可能回去了[捂脸][捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2101",
+      "text": "我玩游戏是用4K120的电视玩的，我感觉2K和4K的不大啊，甚至感觉不出来，只是跟1080P差距很大，是不是都是在同一个显示器上所以感觉不明显？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2102",
+      "text": "[好奇]55寸电池玩ps5和27寸2k显示器电脑之间来回切换，并没有被震撼到",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2103",
+      "text": "之前我是那么理解的。后来发现我对画质的要求也是那么回事。从4K60的显示器换到了2k260的，整体就是流畅太多了。后来发现一天十几个小时，八小时在公司用的1080的，对画质的要求也没那么大了。而且4K的图标实在是太小了，眼睛看的难受。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2105",
+      "text": "这么说吧。。我好几部手机，苹果12PM，14PM，OPPOR17，索尼马克兔，马克兔2，红米。。现在出门带马克兔2和14PM。玩游戏看视频从来都是马克兔4K屏幕。。因为太细腻了。尤其是我用SNAPTUBE看外国4K视频大片那更是太爽了。。因为不是4K屏幕根本无法播放",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2106",
+      "text": "4K的大表哥2，和2K的完全是两个时代的游戏[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2109",
+      "text": "4k没用过，从1080p120hz换电脑升级到了2k180hz，全高老头环，简直是两个世界[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2110",
+      "text": "你说这个应该不是视频清晰度，而是屏幕分辨率的高画质中画质吧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2111",
+      "text": "如果是4K 极致的话，需要什么样的显卡能带动。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2113",
+      "text": "我也是2070S  ，我也是2K 屏幕，感觉2070S 开不了魔兽5档画质的4K",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2114",
+      "text": "我用3070TI带的4K 60[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2115",
+      "text": "同感。同一显示器开4K中画视觉效果远强过2K高画。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2118",
+      "text": "你这得把一批显卡焦虑的人整崩溃，我在抖音上说我3070TI用的4K屏爽的要死被人各种喷[大笑]，我主要玩使命召唤，用了4K屏画质、帧数依然达到预期。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2120",
+      "text": "我是不是一步到位太过了，我是从34寸34401440的带鱼屏升级到55寸3840*2160的4k，感觉画质还变差了，没有原来的清楚，是屏幕太大了吗。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2121",
+      "text": "我还是慢慢升 刚刚升到2k 我要体验逐步升级的快感 一开始就拥有劳斯莱斯 收获不到边际效应的快乐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2127",
+      "text": "只说4K和1080P，不讲尺寸和观看距离是没有意义的。 如果是60寸电视，正常的3米多的观看距离，我都觉得差距不大，你得走到1米那么近，发现差距好明显。显示器的话，到27寸了，这两个就已经天差地别了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2129",
+      "text": "体验下九千多的明基EX321UX莫比乌斯3A专用显示器，即便同样是4k高刷显示器，也是天差地别的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2135",
+      "text": "27寸4K显示器我就是觉得字体和UI太小了，可能4K要用32寸以上的显示器才OK",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2137",
+      "text": "上班就是1080P，下班就是4K，可能我适应性比较强吧[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

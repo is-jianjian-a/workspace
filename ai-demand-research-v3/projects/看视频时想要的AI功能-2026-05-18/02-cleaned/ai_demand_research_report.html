@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>看视频时想要的AI功能 - 需求调研报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --primary: #6366f1;
+            --primary-dark: #4f46e5;
+            --secondary: #8b5cf6;
+            --accent: #ec4899;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(99, 102, 241, 0.2);
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        
+        .header .subtitle {
+            font-size: 1.1em;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        
+        .header .meta {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            font-size: 0.95em;
+        }
+        
+        .header .meta span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* Stats Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .stat-card {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid var(--primary);
+            transition: transform 0.2s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+        
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 4px;
+        }
+        
+        .stat-card .label {
+            color: var(--text-light);
+            font-size: 0.95em;
+        }
+        
+        .stat-card .trend {
+            font-size: 0.85em;
+            margin-top: 8px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
+        .trend.up { background: #d1fae5; color: #065f46; }
+        .trend.down { background: #fee2e2; color: #991b1b; }
+        
+        /* Section */
+        .section {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h2 .icon {
+            font-size: 1.3em;
+        }
+        
+        /* Charts Grid */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .chart-container {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+        
+        .chart-container h3 {
+            font-size: 1.1em;
+            margin-bottom: 16px;
+            color: var(--text);
+        }
+        
+        /* Tags */
+        .tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin: 2px;
+        }
+        
+        .tag-primary { background: #e0e7ff; color: var(--primary-dark); }
+        .tag-success { background: #d1fae5; color: #065f46; }
+        .tag-warning { background: #fef3c7; color: #92400e; }
+        .tag-danger { background: #fee2e2; color: #991b1b; }
+        .tag-info { background: #dbeafe; color: #1e40af; }
+        
+        /* Insights */
+        .insight-list {
+            list-style: none;
+        }
+        
+        .insight-list li {
+            padding: 16px;
+            margin-bottom: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 4px solid var(--secondary);
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+        
+        .insight-list li .num {
+            background: var(--secondary);
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.85em;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        
+        /* UGC List */
+        .ugc-item {
+            padding: 16px;
+            margin-bottom: 12px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+        
+        .ugc-item .ugc-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .ugc-item .platform {
+            font-size: 0.85em;
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .ugc-item .likes {
+            font-size: 0.85em;
+            color: var(--text-light);
+        }
+        
+        .ugc-item .title {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .ugc-item .tags {
+            margin-top: 8px;
+        }
+        
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        th {
+            background: #f8fafc;
+            font-weight: 600;
+            color: var(--text-light);
+            font-size: 0.9em;
+        }
+        
+        tr:hover { background: #f8fafc; }
+        
+        /* Progress Bar */
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.8em; }
+            .charts-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎬 看视频时想要的AI功能</h1>
+            <div class="subtitle">AI产品需求调研报告 - 基于523条社交媒体UGC的深度分析</div>
+            <div class="meta">
+                <span>📅 2026-05-18</span>
+                <span>📊 数据来源: 小红书 | 抖音 | 快手 | B站 | 知乎</span>
+                <span>🔍 搜索词: "看视频时想要的AI功能"</span>
+                <span>🤖 分类方法: 语义理解 + 规则增强</span>
+            </div>
+        </div>
+        
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">523</div>
+                <div class="label">总UGC数量</div>
+                <div class="trend up">覆盖5大平台</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">241</div>
+                <div class="label">相关UGC数量</div>
+                <div class="trend up">46.1% 相关率</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">12</div>
+                <div class="label">识别需求主题</div>
+                <div class="trend up">12个一层主题</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">34</div>
+                <div class="label">细分功能点</div>
+                <div class="trend up">32个二层主题</div>
+            </div>
+        </div>
+        
+        <!-- Charts Section -->
+        <div class="section">
+            <h2><span class="icon">📊</span> 数据可视化</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>一层主题分布（相关UGC）</h3>
+                    <canvas id="layer1Chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>二层主题Top10</h3>
+                    <canvas id="layer2Chart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>情绪分布</h3>
+                    <canvas id="emotionChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>场景分布</h3>
+                    <canvas id="sceneChart"></canvas>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Platform Analysis -->
+        <div class="section">
+            <h2><span class="icon">🌐</span> 平台分析</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>平台</th>
+                        <th>UGC数量</th>
+                        <th>占比</th>
+                        <th>Top3需求主题</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td><strong>快手</strong></td>
+                        <td>119</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 22.753346080305928%"></div>
+                            </div>
+                            22.8%
+                        </td>
+                        <td>社交/分享(32), 视频生成/编辑(25), 互动/问答(4)</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>知乎</strong></td>
+                        <td>118</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 22.562141491395792%"></div>
+                            </div>
+                            22.6%
+                        </td>
+                        <td>互动/问答(19), 视频生成/编辑(17), 学习/笔记(13)</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>B站</strong></td>
+                        <td>105</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 20.076481835564053%"></div>
+                            </div>
+                            20.1%
+                        </td>
+                        <td>社交/分享(14), 视频生成/编辑(12), 学习/笔记(12)</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>小红书</strong></td>
+                        <td>94</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 17.97323135755258%"></div>
+                            </div>
+                            18.0%
+                        </td>
+                        <td>社交/分享(10), 视频生成/编辑(8), 内容搜索/定位(7)</td>
+                    </tr>
+
+                    <tr>
+                        <td><strong>抖音</strong></td>
+                        <td>87</td>
+                        <td>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 16.634799235181642%"></div>
+                            </div>
+                            16.6%
+                        </td>
+                        <td>内容搜索/定位(15), 学习/笔记(10), 视频生成/编辑(10)</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- Key Insights -->
+        <div class="section">
+            <h2><span class="icon">💡</span> 关键发现</h2>
+            <ol class="insight-list">
+                <li>
+                    <span class="num">1</span>
+                    <div>
+                        <strong>数据质量挑战</strong><br>
+                        523条UGC中仅333条(63.7%)与主题真正相关，大量内容为AI生图技巧、工具指南等无关信息。
+                        <span class="tag tag-warning">需优化搜索词</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="num">2</span>
+                    <div>
+                        <strong>核心需求主题</strong><br>
+                        社交/分享 > 视频生成/编辑 > 学习/笔记 > 内容搜索/定位 > 互动/问答
+                        <span class="tag tag-primary">Top5需求</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="num">3</span>
+                    <div>
+                        <strong>情绪特征</strong><br>
+                        期待/渴望占主导(48条)，用户对新功能有强烈期待；惊喜/兴奋(32条)表明部分功能已超预期。
+                        <span class="tag tag-success">积极情绪为主</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="num">4</span>
+                    <div>
+                        <strong>场景特征</strong><br>
+                        工作/学习场景占绝对主导(50条)，家庭/陪伴次之(11条)，通勤、运动场景提及较少。
+                        <span class="tag tag-info">学习场景机会</span>
+                    </div>
+                </li>
+                <li>
+                    <span class="num">5</span>
+                    <div>
+                        <strong>平台差异</strong><br>
+                        知乎偏学习/笔记，B站偏创作工具，小红书偏社交/分享，抖音快手偏视频生成。
+                        <span class="tag tag-primary">差异化策略</span>
+                    </div>
+                </li>
+            </ol>
+        </div>
+        
+        <!-- Recommendations -->
+        <div class="section">
+            <h2><span class="icon">🎯</span> 产品建议</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div style="padding: 20px; background: #f0fdf4; border-radius: 8px; border-left: 4px solid var(--success);">
+                    <h4 style="color: #065f46; margin-bottom: 10px;">🚀 优先功能</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px solid #bbf7d0;">视频智能摘要与章节拆分</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid #bbf7d0;">一键分享精彩片段</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid #bbf7d0;">AI自动剪辑与高光提取</li>
+                        <li style="padding: 8px 0;">视频笔记与知识提取</li>
+                    </ul>
+                </div>
+                <div style="padding: 20px; background: #eff6ff; border-radius: 8px; border-left: 4px solid var(--primary);">
+                    <h4 style="color: #1e40af; margin-bottom: 10px;">💎 差异化机会</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px solid #bfdbfe;">学习场景深度优化</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid #bfdbfe;">跨平台同步与续播</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid #bfdbfe;">情绪感知与氛围调节</li>
+                        <li style="padding: 8px 0;">多人一起看与实时讨论</li>
+                    </ul>
+                </div>
+                <div style="padding: 20px; background: #fffbeb; border-radius: 8px; border-left: 4px solid var(--warning);">
+                    <h4 style="color: #92400e; margin-bottom: 10px;">⚠️ 需关注</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="padding: 8px 0; border-bottom: 1px solid #fde68a;">搜索词优化提升数据质量</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid #fde68a;">负面情绪挖掘不足</li>
+                        <li style="padding: 8px 0; border-bottom: 1px solid #fde68a;">通勤/运动场景覆盖少</li>
+                        <li style="padding: 8px 0;">跨平台需求差异大</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sample UGCs -->
+        <div class="section">
+            <h2><span class="icon">📝</span> 典型UGC样本</h2>
+
+            <h3 style="margin: 20px 0 12px; color: var(--primary);">视频摘要/总结</h3>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">想学什么都可以自己生成专属网课了</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">AI 已经可以生成符合你喜好的专属网课了。只要告诉它你想学什么，比如试着输入「区块链入门」，它立刻就能从网上帮搜一堆优质电子书、课程资料，然后让你选具体想学哪一章，接着会自动生成一整套课件 + 视频。重点是——还有AI老师配套讲解，一边放 PPT 一边讲得头头是道，完全就是你专属的私教。
+它还可以自定义。比如你可以选讲解风格：要不要细一点？有没有比喻？语速快慢？讲解声音想要男声女声、活泼一点还是冷...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">知识提取</span><span class="tag tag-primary">学习管理</span> <span class="tag tag-warning">期待/渴望</span><span class="tag tag-warning">惊喜/兴奋</span></div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">Gemini最疯狂的功能…吗？</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">今天逛 Reddit 时刷到这样一个帖子：网友表示 Gemini 其实拥有超强的视频和音频分析能力，但似乎被大部分人低估了（图1-2）。
+许多人认为 AI 只是读取了 YouTube 自带的字幕进行总结，但在实际测试中，即使是没有任何字幕和旁白的烹饪视频，Gemini 也能通过识别画面动作生成完整的食谱。
+	
+评论区也有用户进行了验证。如传了一首音乐并询问“前5秒使用了什么乐器”，Gemini 也...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">字幕生成</span><span class="tag tag-primary">视频问答</span> </div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">视频→AI提取→Obsidian入库，知识管理新方法</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">偶然发现一个Obsidian 学习搭子「Ai好记」，
+	
+让我最近又成功地从繁忙的学业和工作中“偷”到了不少时间。
+	
+我每天要看和处理大量的视频、播客和会议录音。有时候看到 AI 大佬、学术大咖更新了油管视频，明知道内容优质，却一看到时长动辄一小时甚至更久，就开始犯难，经常还没看几分钟就被其他事情打断施法，最后不了了之。
+	
+[暗中观察R]我现在的视频知识处理工作流：
+	
+1.  碰到优质但冗长...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">实时翻译</span><span class="tag tag-primary">知识提取</span> <span class="tag tag-warning">惊喜/兴奋</span></div>
+            </div>
+
+            <h3 style="margin: 20px 0 12px; color: var(--primary);">视频生成/编辑</h3>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">Al做电影转动画，这太好涨粉啦</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">#ai[话题]# #那些赚钱的副业[话题]# #自媒体运营[话题]# #副业[话题]# #人工智能[话题]# #短视频剪辑[话题]# #AI教程[话题]# #动画[话题]#...</div>
+                <div class="tags"><span class="tag tag-primary">自动剪辑</span> </div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">🔥从故事到成片,Agent自动搭建短剧全流程</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">最近用 YouArt 做了一条真人短片《让座》🎬
+#00:00[时刻]#-#00:07[时刻]# 精彩片段
+#00:08[时刻]#-#00:26[时刻]# 工作流整体介绍
+#00:27[时刻]#-#00:45[时刻]# 生成视觉资产
+#00:46[时刻]#-#00:53[时刻]# 拆解分镜
+#00:54[时刻]#-#01:12[时刻]# 生成分镜图
+#01:13[时刻]#-#01:56[时刻]# ...</div>
+                <div class="tags"><span class="tag tag-primary">自动剪辑</span><span class="tag tag-primary">跳过广告</span> </div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">你敢相信这是Ai生成的？😅</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">#大疆pocket3[话题]# #数码好视频[话题]# #数码大玩家[话题]# #一种很新的转场方式[话题]# #AI动画[话题]# #ai剪辑视频[话题]# #ai[话题]# #视频剪辑[话题]# #ai关键词[话题]#...</div>
+                <div class="tags"><span class="tag tag-primary">关键词高亮</span><span class="tag tag-primary">AI生成视频</span><span class="tag tag-primary">自动剪辑</span> </div>
+            </div>
+
+            <h3 style="margin: 20px 0 12px; color: var(--primary);">学习/笔记</h3>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">感谢Google这个AI让我实现无痛看paper</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">📝谷歌推出的笔记AI工具NotebookLM！好用！
+	
+📝可以上传文档，网页链接，youtube链接，也可以直接倒入google drive里的doc和slides，很方便
+	
+📝它会以你想要的形式自己帮你概括重点，也可以直接以提问的方式让它把你需要的信息定位到paper的具体位置，喂教授的slide给它可以自动生成课程笔记📝
+	
+📻最牛的是可以把文章直接转成播客的形式，AI会生成一男一女对话，...</div>
+                <div class="tags"><span class="tag tag-primary">片段定位</span><span class="tag tag-primary">视频问答</span><span class="tag tag-primary">AI对话</span> <span class="tag tag-warning">困惑/迷茫</span><span class="tag tag-warning">期待/渴望</span></div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">想学什么都可以自己生成专属网课了</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">AI 已经可以生成符合你喜好的专属网课了。只要告诉它你想学什么，比如试着输入「区块链入门」，它立刻就能从网上帮搜一堆优质电子书、课程资料，然后让你选具体想学哪一章，接着会自动生成一整套课件 + 视频。重点是——还有AI老师配套讲解，一边放 PPT 一边讲得头头是道，完全就是你专属的私教。
+它还可以自定义。比如你可以选讲解风格：要不要细一点？有没有比喻？语速快慢？讲解声音想要男声女声、活泼一点还是冷...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">知识提取</span><span class="tag tag-primary">学习管理</span> <span class="tag tag-warning">期待/渴望</span><span class="tag tag-warning">惊喜/兴奋</span></div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">视频→AI提取→Obsidian入库，知识管理新方法</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">偶然发现一个Obsidian 学习搭子「Ai好记」，
+	
+让我最近又成功地从繁忙的学业和工作中“偷”到了不少时间。
+	
+我每天要看和处理大量的视频、播客和会议录音。有时候看到 AI 大佬、学术大咖更新了油管视频，明知道内容优质，却一看到时长动辄一小时甚至更久，就开始犯难，经常还没看几分钟就被其他事情打断施法，最后不了了之。
+	
+[暗中观察R]我现在的视频知识处理工作流：
+	
+1.  碰到优质但冗长...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">实时翻译</span><span class="tag tag-primary">知识提取</span> <span class="tag tag-warning">惊喜/兴奋</span></div>
+            </div>
+
+            <h3 style="margin: 20px 0 12px; color: var(--primary);">社交/分享</h3>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">Gemini最疯狂的功能…吗？</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">今天逛 Reddit 时刷到这样一个帖子：网友表示 Gemini 其实拥有超强的视频和音频分析能力，但似乎被大部分人低估了（图1-2）。
+许多人认为 AI 只是读取了 YouTube 自带的字幕进行总结，但在实际测试中，即使是没有任何字幕和旁白的烹饪视频，Gemini 也能通过识别画面动作生成完整的食谱。
+	
+评论区也有用户进行了验证。如传了一首音乐并询问“前5秒使用了什么乐器”，Gemini 也...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">字幕生成</span><span class="tag tag-primary">视频问答</span> </div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">AI文字转动画！输入文字秒变丝滑动态效果！</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">Hera AI
+﻿#AI[话题]#﻿ ﻿#人工智能[话题]#﻿ ﻿#AI科普[话题]#﻿ ﻿#AI视频[话题]#﻿ ﻿#动效[话题]#﻿ ﻿#数据可视化[话题]#﻿ ﻿#干货分享[话题]#﻿ ﻿#AI新手村[话题]#﻿ ﻿#动态[话题]#﻿ ﻿#科普视频动画[话题]#﻿...</div>
+                <div class="tags"><span class="tag tag-primary">分享转发</span> </div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">不靠运气，这款AI如何连续引爆全球社交媒体？</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">-
+最近，你们应该经常刷到类似这样的视频[暗中观察R]
+	
+很多人把自己放进了🇰🇷职业棒球赛场的大屏里，转播镜头精准对焦，观众席的光打过来，还原真实的球场转播氛围。
+	
+有一条在ins上非常火，播放量破2200万，点赞超140万。评论区很多人都在问，到底是怎么做的？
+很多人不知道的是，这些爆款出圈的视频背后，用到的都是可灵。
+	
+而这，已经不是它第一次引发这种级别的全球传播了。
+在过去半年里，可灵...</div>
+                <div class="tags"><span class="tag tag-primary">知识解释</span><span class="tag tag-primary">氛围音效</span><span class="tag tag-primary">弹幕评论</span> <span class="tag tag-warning">frustration</span><span class="tag tag-warning">困惑/迷茫</span></div>
+            </div>
+
+            <h3 style="margin: 20px 0 12px; color: var(--primary);">互动/问答</h3>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">感谢Google这个AI让我实现无痛看paper</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">📝谷歌推出的笔记AI工具NotebookLM！好用！
+	
+📝可以上传文档，网页链接，youtube链接，也可以直接倒入google drive里的doc和slides，很方便
+	
+📝它会以你想要的形式自己帮你概括重点，也可以直接以提问的方式让它把你需要的信息定位到paper的具体位置，喂教授的slide给它可以自动生成课程笔记📝
+	
+📻最牛的是可以把文章直接转成播客的形式，AI会生成一男一女对话，...</div>
+                <div class="tags"><span class="tag tag-primary">片段定位</span><span class="tag tag-primary">视频问答</span><span class="tag tag-primary">AI对话</span> <span class="tag tag-warning">困惑/迷茫</span><span class="tag tag-warning">期待/渴望</span></div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">去掉廉价感，AI直出4K超清视频</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">为什么你的AI视频，总有一股扑面而来的“廉价感”？有个重要原因：画质模糊，涂抹感严重，一眼假。
+现在客户普遍要求视频画质2K，甚至4K，达不到这个标准，无法交付。想要解决AI视频画质的问题，可以用Kling原生4K功能，它实打实的AI直出商用级超清原片。#AI工具[话题]# #AI视频[话题]# #4K超清[话题]# #AI视频生成[话题]# #AI教程[话题]# #AI视频教程[话题]# #可灵...</div>
+                <div class="tags"><span class="tag tag-primary">知识解释</span><span class="tag tag-primary">画质增强</span> <span class="tag tag-warning">期待/渴望</span></div>
+            </div>
+
+            <div class="ugc-item">
+                <div class="ugc-header">
+                    <span class="platform">小红书</span>
+                </div>
+                <div class="title">Gemini最疯狂的功能…吗？</div>
+                <div style="color: var(--text-light); font-size: 0.9em;">今天逛 Reddit 时刷到这样一个帖子：网友表示 Gemini 其实拥有超强的视频和音频分析能力，但似乎被大部分人低估了（图1-2）。
+许多人认为 AI 只是读取了 YouTube 自带的字幕进行总结，但在实际测试中，即使是没有任何字幕和旁白的烹饪视频，Gemini 也能通过识别画面动作生成完整的食谱。
+	
+评论区也有用户进行了验证。如传了一首音乐并询问“前5秒使用了什么乐器”，Gemini 也...</div>
+                <div class="tags"><span class="tag tag-primary">智能摘要</span><span class="tag tag-primary">字幕生成</span><span class="tag tag-primary">视频问答</span> </div>
+            </div>
+
+        </div>
+        
+        <!-- Footer -->
+        <div style="text-align: center; padding: 40px; color: var(--text-light); font-size: 0.9em;">
+            <p>AI产品需求调研报告 | 生成时间: 2026-05-18</p>
+            <p style="margin-top: 8px;">方法论: ai-demand-research-v3 | 分类方式: 语义理解 + 规则增强</p>
+        </div>
+    </div>
+    
+    <script>
+        // 一层主题分布图
+        const layer1Ctx = document.getElementById('layer1Chart').getContext('2d');
+        new Chart(layer1Ctx, {{
+            type: 'bar',
+            data: {{
+                labels: ['视频生成/编辑', '内容搜索/定位', '互动/问答', '学习/笔记', '效率/倍速', '视频摘要/总结', '画质/修复', '语音/字幕相关', '社交/分享', '情感/氛围', '智能推荐/过滤', '跨设备/同步'],
+                datasets: [{{
+                    label: 'UGC数量',
+                    data: [72, 37, 35, 45, 10, 30, 13, 25, 76, 14, 25, 9],
+                    backgroundColor: [
+                        '#6366f1', '#8b5cf6', '#ec4899', '#f43f5e', '#f97316',
+                        '#eab308', '#84cc16', '#10b981', '#06b6d4', '#3b82f6',
+                        '#a855f7', '#d946ef'
+                    ],
+                    borderRadius: 6
+                }}]
+            }},
+            options: {{
+                responsive: true,
+                plugins: {{
+                    legend: {{ display: false }}
+                }},
+                scales: {{
+                    y: {{
+                        beginAtZero: true,
+                        ticks: {{ stepSize: 5 }}
+                    }},
+                    x: {{
+                        ticks: {{ font: {{ size: 11 }} }}
+                    }}
+                }}
+            }}
+        }});
+        
+        // 二层主题Top10图
+        const layer2Ctx = document.getElementById('layer2Chart').getContext('2d');
+        new Chart(layer2Ctx, {{
+            type: 'bar',
+            data: {{
+                labels: ['分享转发', '自动剪辑', '学习管理', 'AI生成视频', '智能摘要', '知识解释', '知识提取', '弹幕评论', 'AI对话', '二创工具'],
+                datasets: [{{
+                    label: 'UGC数量',
+                    data: [63, 37, 33, 32, 30, 18, 17, 17, 16, 16],
+                    backgroundColor: '#8b5cf6',
+                    borderRadius: 6
+                }}]
+            }},
+            options: {{
+                responsive: true,
+                indexAxis: 'y',
+                plugins: {{
+                    legend: {{ display: false }}
+                }},
+                scales: {{
+                    x: {{
+                        beginAtZero: true
+                    }}
+                }}
+            }}
+        }});
+        
+        // 情绪分布图
+        const emotionCtx = document.getElementById('emotionChart').getContext('2d');
+        new Chart(emotionCtx, {{
+            type: 'doughnut',
+            data: {{
+                labels: ['困惑/迷茫', '期待/渴望', '惊喜/兴奋', 'frustration', '焦虑/急迫', '疲惫/厌倦'],
+                datasets: [{{
+                    data: [13, 48, 32, 11, 7, 7],
+                    backgroundColor: ['#f43f5e', '#f97316', '#eab308', '#84cc16', '#10b981', '#3b82f6'],
+                    borderWidth: 0
+                }}]
+            }},
+            options: {{
+                responsive: true,
+                plugins: {{
+                    legend: {{
+                        position: 'bottom',
+                        labels: {{ padding: 20 }}
+                    }}
+                }}
+            }}
+        }});
+        
+        // 场景分布图
+        const sceneCtx = document.getElementById('sceneChart').getContext('2d');
+        new Chart(sceneCtx, {{
+            type: 'polarArea',
+            data: {{
+                labels: ['工作/学习', '睡前/休息', '家庭/陪伴', '吃饭/碎片', '运动/健身', '通勤/路上'],
+                datasets: [{{
+                    data: [50, 5, 11, 8, 3, 1],
+                    backgroundColor: [
+                        'rgba(99, 102, 241, 0.6)',
+                        'rgba(139, 92, 246, 0.6)',
+                        'rgba(236, 72, 153, 0.6)',
+                        'rgba(244, 63, 94, 0.6)',
+                        'rgba(249, 115, 22, 0.6)',
+                        'rgba(234, 179, 8, 0.6)'
+                    ],
+                    borderWidth: 1
+                }}]
+            }},
+            options: {{
+                responsive: true,
+                plugins: {{
+                    legend: {{
+                        position: 'bottom'
+                    }}
+                }}
+            }}
+        }});
+    </script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "stages": [
+    {
+      "stage": "使用",
+      "description": "用户在长视频消费中的使用阶段",
+      "jobs": [
+        {
+          "job_id": "J002",
+          "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+          "job_type": "functional",
+          "frequency": 332,
+          "confidence": 0.5,
+          "current_solutions": [
+            "抖音",
+            "B站",
+            "小红书",
+            "腾讯视频",
+            "爱奇艺"
+          ],
+          "pain_points": [
+            "待进一步调研"
+          ],
+          "expected_improvements": [
+            "根据具体场景优化功能"
+          ]
+        },
+        {
+          "job_id": "J051",
+          "job_statement": "当我在周末时，我想要当前长视频体验存在痛点: 没有关注，两个视频，这样我就可以希望能够解决这些问题，获得更流畅的观看体验",
+          "job_type": "emotional",
+          "frequency": 60,
+          "confidence": 0.65,
+          "current_solutions": [
+            "抖音",
+            "B站",
+            "小红书",
+            "腾讯视频",
+            "爱奇艺"
+          ],
+          "pain_points": [
+            "没有"
+          ],
+          "expected_improvements": [
+            "根据具体场景优化功能"
+          ]
+        },
+        {
+          "job_id": "J013",
+          "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+          "job_type": "functional",
+          "frequency": 37,
+          "confidence": 0.5,
+          "current_solutions": [
+            "抖音",
+            "B站",
+            "小红书",
+            "腾讯视频",
+            "爱奇艺"
+          ],
+          "pain_points": [
+            "待进一步调研"
+          ],
+          "expected_improvements": [
+            "根据具体场景优化功能"
+          ]
+        },
+        {
+          "job_id": "J007",
+          "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+          "job_type": "functional",
+          "frequency": 25,
+          "confidence": 0.5,
+          "current_solutions": [
+            "抖音",
+            "B站",
+            "小红书",
+            "腾讯视频",
+            "爱奇艺"
+          ],
+          "pain_points": [
+            "待进一步调研"
+          ],
+          "expected_improvements": [
+            "根据具体场景优化功能"
+          ]
+        },
+        {
+          "job_id": "J047",
+          "job_statement": "当我在 unspecified时，我想要想要与其他观众互动，分享观看体验，这样我就可以能够感受到社区氛围，获得共鸣和讨论",
+          "job_type": "social",
+          "frequency": 19,
+          "confidence": 0.7,
+          "current_solutions": [
+            "抖音",
+            "B站",
+            "小红书",
+            "腾讯视频",
+            "爱奇艺"
+          ],
+          "pain_points": [
+            "待进一步调研"
+          ],
+          "expected_improvements": [
+            "根据具体场景优化功能"
+          ]
+        }
+      ],
+      "total_frequency": 556,
+      "total_interaction": 3563930
+    }
+  ]
+}

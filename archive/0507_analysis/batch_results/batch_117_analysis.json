@@ -1,0 +1,353 @@
+{
+  "batch_id": 117,
+  "total_items": 27,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 25,
+      "long_video": 2
+    },
+    "type_distribution": {
+      "behavior_description": 20,
+      "feature_request": 3,
+      "pain_point": 3,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "video_quality": 15,
+      "other": 11,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 26
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_5067",
+      "text": "比如说普通的a片和小鸟酱的系列比 同样的画质 小鸟酱就是画面好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5068",
+      "text": "镜头素质不好，或者虚焦，导致不够锐利，或者说很糊(在画面要求清晰情况下，艺术创作需要模糊不算)画面趋向于废片，这是画质不好的一种。镜头素质属于相机参数，用于反驳作者最后一句话。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5072",
+      "text": "说画质还凑活了，很多人都说像素真好[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5074",
+      "text": "屎不会因为画质好而变香",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5075",
+      "text": "一张40M的照片，跑焦了，“画质”就是很渣。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5082",
+      "text": "开口就是画质的，基本上就是一窍不通，他们把好看跟画质划等号",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5084",
+      "text": "手机拍出来的照片感觉总是有 “断层”，就是明暗对比太剧烈，缺乏外国新闻图片那种柔和却又细腻的过渡，不知道这是什么原因呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5090",
+      "text": "这个回答有水平，收藏了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5098",
+      "text": "说模特的用词有点过了，建议换个说法[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5103",
+      "text": "我们外行见到这样的图一般默认就是相机拍摄，请问单独手机为啥拍不出这种图？是技术问题还是手机机能问题？（这里是ip11）。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5107",
+      "text": "以前也是看别人一口一个画质好，那究竟什么才是画质好呢？拿图片现身说法，茅塞顿开。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5108",
+      "text": "厉害了，可以推荐一本新人难度地摄影书吗，目前就学过摄影的一些公开课[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_5113",
+      "text": "对相机、镜头爱好者来说最重要的就是画质，不信可以去茶片坊复习",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5117",
+      "text": "八百块手机，画质会变不好？什么逻辑",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5118",
+      "text": "除了拍野生动物放大剪切需要画质，别的就这样",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5124",
+      "text": "只要模特好看，都是画质好😂",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5126",
+      "text": "画质好不如长得好[惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5131",
+      "text": "扔进我收藏夹里面吃灰吧！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5137",
+      "text": "因为用了焦距长的镜头，50/85/135/200毫米的镜头。手机镜头就是几毫米。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5140",
+      "text": "常见的问题是“你发的朋友圈照片真好看，什么手机拍的 ”。你跟他讲构图、用光，太难为他了[捂嘴]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5146",
+      "text": "画质这东西还不如考虑镜头色彩素质",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5147",
+      "text": "图片里的是b站up主baka爱",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5153",
+      "text": "哪台相机有“画质”这个参数？你咋那么牛逼！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5155",
+      "text": "动画片修复效果不错[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5157",
+      "text": "咱就是说啊，有没有哪位英雄把九十年代的港片给高清化一下，我也是集成显卡啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5162",
+      "text": "那时候我记得优酷的有些视频被反复上传，logo重叠了三四个。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5163",
+      "text": "除了题主说的片源，显示器匹配外。主要是没对比，当时人没看过更清晰的。比如第一次接触800×600大屁股显示器时，哪怕是dos游戏，觉得好清晰，比电视清晰多了，后来进去2000年，第一次看到1024×768，觉得又清晰了很多。1920×1080又提升很多。对比下，看以前的颗粒感非常大。但当时没参照物对比，感觉真清楚。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

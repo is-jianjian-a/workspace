@@ -1,0 +1,18 @@
+[
+  {
+    "id": "voc_github_000001",
+    "platform": "github",
+    "source_url": "https://github.com/Huanshere/VideoLingo/issues/545",
+    "source_type": "issue",
+    "author": "lakitu12",
+    "date": "2026-04-04",
+    "content": "[[Bug] GPT request failed: Error code: 400 - Cannot read properties of null (reading 'type')] ### 运行环境：\nOS: Debian GNU/Linux forky/sid (forky) x86_64\nKernel: Linux 6.19.10+deb14-amd64\nCPU: Intel(R) Xeon(R) E5-2680 v4 (28) @ 3.30 GHz\nGPU: AMD Radeon RX 590 GME [Discrete]\n### 问题描述：\n使用videoLingo调用LM-Studio-0.4.9-1-x64本地运行gemma-4-e4b-it的api服务时出现\n```\nGPT request failed: Error code: 400 - {'error'",
+    "context": "GitHub Huanshere/VideoLingo - VideoLingo - AI字幕翻译",
+    "sentiment": "expectation",
+    "category": "other",
+    "ai_related": true,
+    "verified": true,
+    "collection_date": "2025-04-24",
+    "collector": "hermes"
+  }
+]

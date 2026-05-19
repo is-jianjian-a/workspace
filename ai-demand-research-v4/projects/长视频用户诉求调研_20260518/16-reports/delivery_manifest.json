@@ -1,0 +1,29 @@
+{
+  "project_id": "长视频用户诉求调研_20260518",
+  "delivery_date": "2026-05-18T17:43:19.053152",
+  "reports": [
+    {
+      "name": "最终分析报告",
+      "file": "16-reports/final-analysis-report.html",
+      "size_kb": 7
+    },
+    {
+      "name": "过程技术报告",
+      "file": "16-reports/technical-report.html",
+      "size_kb": 5
+    },
+    {
+      "name": "任务改进建议报告",
+      "file": "16-reports/improvement-report.html",
+      "size_kb": 4
+    }
+  ],
+  "total_steps_completed": 16,
+  "data_sources": [
+    "xiaohongshu"
+  ],
+  "total_ugc_analyzed": 781,
+  "jobs_extracted": 23,
+  "opportunities_identified": 23,
+  "hypotheses_formed": 5
+}

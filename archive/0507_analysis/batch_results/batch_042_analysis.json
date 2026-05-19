@@ -1,0 +1,256 @@
+{
+  "batch_id": 42,
+  "total_items": 19,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 2,
+      "live_stream": 1,
+      "general_video": 16
+    },
+    "type_distribution": {
+      "behavior_description": 18,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 12,
+      "content_recommend": 1,
+      "ai_feature": 6
+    },
+    "ai_statistics": {
+      "total_ai": 7,
+      "explicit": 6,
+      "implicit": 1,
+      "not_ai": 12
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_comments_470",
+      "text": "这女的快手号是多少呀？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_473",
+      "text": "感谢紫玉儿，老九直播回放太卡，根本看不了[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_478",
+      "text": "说话说不清楚能不能设置",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_479",
+      "text": "主要是快手上很模糊，怎么操作呢",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_499",
+      "text": "人家主播现在升级了[赞]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_506",
+      "text": "哇，这美容院的服务看着真专业啊，小姐姐穿得挺正式的，想买张券去体验下，放松放松心情",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_510",
+      "text": "我和朋友上周去了颜丽淇做皮肤管理，技师手法很专业，感觉皮肤光滑多了，推荐大家试试",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_513",
+      "text": "我试了皮肤护理，几天后朋友说我气色变亮了，效果挺惊喜的，值得一试",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_514",
+      "text": "院线级护理看着就高级，心动了想买券体验，服务评价好吗？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_543",
+      "text": "明明最长时间是八小时为啥还要用两小时",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_560",
+      "text": "仙女下凡辛苦了，这美貌我直接收藏！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_580",
+      "text": "家有小学生，以前总担心他沉迷手机影响视力，用「告别手机控」设置了每日使用上限，现在每天都会主动放下手机去看书！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_594",
+      "text": "没有用，替换到下一个视频的时候没有收益了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_595",
+      "text": "@AI小快 打开自动上滑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_596",
+      "text": "@AI小快(O2467565973) 打开自动上滑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_597",
+      "text": "@AI小快 打开自动上滑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_598",
+      "text": "@AI小快 开启自动下滑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_599",
+      "text": "@AI小快(O2467565973) 打开自动上滑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_601",
+      "text": "@AI小快 打开自动下滑模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

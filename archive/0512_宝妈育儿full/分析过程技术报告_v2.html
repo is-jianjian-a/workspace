@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分析过程技术报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; 
+            background: #fafafa; 
+            color: #333; 
+            line-height: 1.6; 
+            font-size: 14px;
+        }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        .header { 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 20px; 
+            margin-bottom: 40px; 
+        }
+        .header h1 { 
+            font-size: 28px; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+        .header .subtitle { 
+            font-size: 14px; 
+            color: #666; 
+            margin-bottom: 12px; 
+        }
+        .header .meta { 
+            font-size: 12px; 
+            color: #999; 
+        }
+        
+        .section { 
+            margin-bottom: 48px; 
+        }
+        .section-title { 
+            font-size: 18px; 
+            font-weight: 600; 
+            margin-bottom: 16px; 
+            color: #1a1a1a;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: #444;
+        }
+        
+        .code-block { 
+            background: #f5f5f5; 
+            border: 1px solid #e0e0e0;
+            color: #333; 
+            padding: 16px; 
+            border-radius: 4px; 
+            font-family: 'Consolas', 'Monaco', 'Courier New', monospace; 
+            font-size: 12px; 
+            line-height: 1.5; 
+            overflow-x: auto; 
+            margin: 12px 0; 
+        }
+        
+        .flow-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin: 16px 0;
+            padding: 16px;
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        .flow-step .step-num {
+            width: 28px;
+            height: 28px;
+            background: #333;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+        .flow-step .step-content {
+            flex: 1;
+        }
+        .flow-step .step-name {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 4px;
+            color: #1a1a1a;
+        }
+        .flow-step .step-desc {
+            font-size: 13px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+        .flow-step .step-output {
+            font-size: 12px;
+            color: #999;
+            font-family: monospace;
+        }
+        
+        .insight-box { 
+            background: #fff; 
+            border-left: 3px solid #333; 
+            padding: 16px; 
+            margin: 16px 0; 
+            font-size: 13px;
+            color: #555;
+        }
+        .insight-box strong {
+            color: #1a1a1a;
+        }
+        
+        .footer { 
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center; 
+            color: #999; 
+            font-size: 12px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>分析过程技术报告</h1>
+            <div class="subtitle">新增三维标签化分析的技术实现与流程</div>
+            <div class="meta">2025年5月13日 · 660条小红书笔记 · SQLite数据源</div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">数据源与预处理</div>
+            
+            <div class="section-subtitle">数据库结构</div>
+            <div class="code-block">
+数据库: sqlite_tables.db
+表: xhs_note (660条记录)
+字段: id, user_id, nickname, title, desc, liked_count, collected_count, 
+      comment_count, share_count, source_keyword, note_url, ...
+
+搜索词分布:
+  早教: 125条
+  产后: 109条
+  备孕: 105条
+  孕期: 100条
+  育儿: 97条
+  新手妈妈: 93条
+            </div>
+            
+            <div class="section-subtitle">数据清洗代码</div>
+            <div class="code-block">
+import sqlite3
+import pandas as pd
+
+# 连接数据库
+conn = sqlite3.connect('/path/to/sqlite_tables.db')
+df = pd.read_sql_query("SELECT * FROM xhs_note;", conn)
+
+# 特殊格式处理函数
+def parse_count(value):
+    if not value:
+        return 0
+    value = str(value).strip().replace(',', '')
+    if '万' in value:
+        return int(float(value.replace('万+', '').replace('万', '')) * 10000)
+    return int(value)
+
+# 应用转换
+df['total_interaction'] = (
+    df['liked_count'].apply(parse_count) + 
+    df['collected_count'].apply(parse_count) + 
+    df['comment_count'].apply(parse_count) + 
+    df['share_count'].apply(parse_count)
+)
+
+df['text'] = df['title'].fillna('') + ' ' + df['desc'].fillna('')
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">新增三维标签化技术实现</div>
+            
+            <div class="section-subtitle">维度一：使用情境标签化</div>
+            <div class="code-block">
+usage_context = {
+    '空间情境': {
+        '通勤路上': ['地铁', '公交', '通勤', '上班路上'],
+        '床上睡前': ['睡前', '躺床上', '失眠', '睡不着'],
+        '工作间隙': ['上班', '工作', '摸鱼', '午休'],
+        '家庭场景': ['家里', '客厅', '沙发', '带娃'],
+        '户外等待': ['排队', '等', '无聊', '碎片时间'],
+    },
+    '身体状态': {
+        '疲惫': ['累', '疲惫', '精疲力尽'],
+        '焦虑': ['焦虑', '不安', '紧张', '心慌'],
+        '无聊': ['无聊', '没事做', '闲'],
+    },
+    '并行活动': {
+        '吃饭时': ['吃饭', '用餐', '外卖'],
+        '做家务': ['做家务', '洗碗', '打扫'],
+        '带娃时': ['带娃', '哄娃', '陪娃'],
+        '运动时': ['运动', '健身', '跑步'],
+    }
+}
+
+def tag_usage_context(text):
+    tags = {'空间情境': [], '身体状态': [], '并行活动': []}
+    for dimension, categories in usage_context.items():
+        for category, keywords in categories.items():
+            if any(kw in text for kw in keywords):
+                tags[dimension].append(category)
+    return tags
+
+df['usage_context'] = df['text'].apply(tag_usage_context)
+            </div>
+            
+            <div class="section-subtitle">维度二：触发-退出机制标签化</div>
+            <div class="code-block">
+trigger_exit = {
+    '触发因素': {
+        '习惯性打开': ['习惯性', '顺手', '下意识'],
+        '无聊驱动': ['无聊', '没事做', '打发时间'],
+        '情绪逃避': ['逃避', '不想面对', '转移注意力'],
+        '社交需求': ['朋友推荐', '大家都在看', '跟风'],
+        '信息获取': ['查', '搜', '找', '了解'],
+    },
+    '退出障碍': {
+        '算法陷阱': ['推荐', '停不下来', '一直刷'],
+        '沉没成本': ['看了这么久', '都看到一半'],
+        '社交压力': ['怕错过', 'FOMO'],
+    },
+    '退出触发': {
+        '外部打断': ['被打断', '有人叫', '电话'],
+        '生理限制': ['眼睛疼', '脖子酸', '没电'],
+        '时间意识': ['太晚了', '该睡了'],
+    },
+    '使用后情绪': {
+        '更焦虑': ['更焦虑', '更慌', '更烦'],
+        '放松满足': ['放松', '解压', '舒服'],
+        '空虚后悔': ['空虚', '后悔', '浪费时间'],
+    }
+}
+
+def tag_trigger_exit(text):
+    tags = {'触发因素': [], '退出障碍': [], '退出触发': [], '使用后情绪': []}
+    for dimension, categories in trigger_exit.items():
+        for category, keywords in categories.items():
+            if any(kw in text for kw in keywords):
+                tags[dimension].append(category)
+    return tags
+
+df['trigger_exit'] = df['text'].apply(tag_trigger_exit)
+            </div>
+            
+            <div class="section-subtitle">维度三：用户群体标签化</div>
+            <div class="code-block">
+user_groups = {
+    '身份标签': {
+        '新手妈妈': ['新手妈妈', '新手爸妈', '新手宝妈'],
+        '职场妈妈': ['职场妈妈', '上班族妈妈', '背奶妈妈'],
+        '全职妈妈': ['全职妈妈', '全职宝妈', '全职带娃'],
+        '孕期': ['孕期', '怀孕', '孕妇', '准妈妈'],
+        '产后': ['产后', '坐月子', '月子'],
+        '备孕': ['备孕', '准备怀孕'],
+    },
+    '宝宝阶段': {
+        '新生儿': ['新生儿', '刚出生', '0-1个月'],
+        '小月龄': ['小月龄', '1-3个月', '2个月'],
+        '婴儿期': ['婴儿', '4-6个月', '半岁'],
+        '辅食期': ['辅食', '7-9个月'],
+        '幼儿期': ['幼儿', '1岁', '2岁', '3岁'],
+        '学龄前': ['幼儿园', '4岁', '5岁'],
+    },
+    '设备偏好': {
+        'iPhone': ['iPhone', '苹果手机', 'iOS'],
+        '华为': ['华为', 'HUAWEI', '鸿蒙'],
+        '小米': ['小米', '红米', 'MIUI'],
+    },
+    '使用深度': {
+        '轻度用户': ['偶尔', '很少', '不怎么'],
+        '中度用户': ['经常', '每天', '常用'],
+        '重度用户': ['离不开', '一直用', '上瘾'],
+    }
+}
+
+def tag_user_group(text):
+    tags = {'身份标签': [], '宝宝阶段': [], '设备偏好': [], '使用深度': []}
+    for dimension, categories in user_groups.items():
+        for category, keywords in categories.items():
+            if any(kw in text for kw in keywords):
+                tags[dimension].append(category)
+    return tags
+
+df['user_group'] = df['text'].apply(tag_user_group)
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">分析流程（7步 + 3维标签化）</div>
+            
+            <div class="flow-step">
+                <div class="step-num">1</div>
+                <div class="step-content">
+                    <div class="step-name">数据加载与清洗</div>
+                    <div class="step-desc">读取SQLite数据，处理特殊互动量格式，计算总互动量</div>
+                    <div class="step-output">输出: 660条结构化数据，包含total_interaction字段</div>
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="step-num">2</div>
+                <div class="step-content">
+                    <div class="step-name">主题聚类分析</div>
+                    <div class="step-desc">构建12个主题词典，匹配内容主题，统计覆盖率与互动表现</div>
+                    <div class="step-output">输出: 主题分布表，识别供给缺口（低覆盖+高互动）</div>
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="step-num">3</div>
+                <div class="step-content">
+                    <div class="step-name">需求信号提取</div>
+                    <div class="step-desc">构建5类信号词典（痛点/决策/求助/期望/行为），匹配并统计词频</div>
+                    <div class="step-output">输出: 信号覆盖率、高频词、平均互动</div>
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="step-num">4</div>
+                <div class="step-content">
+                    <div class="step-name">内容质量评估</div>
+                    <div class="step-desc">基于营销信号和UGC信号，将内容分类为纯营销/纯UGC/混合/中性</div>
+                    <div class="step-output">输出: 4类内容分布，评估可信度</div>
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="step-num">5</div>
+                <div class="step-content">
+                    <div class="step-name">高价值内容识别</div>
+                    <div class="step-desc">筛选互动量>10000且含痛点/期望信号的内容，按互动排序</div>
+                    <div class="step-output">输出: 112条高价值内容，提取具体案例</div>
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="step-num">6</div>
+                <div class="step-content">
+                    <div class="step-name">产品机会映射</div>
+                    <div class="step-desc">基于供给缺口和需求强度，评估产品机会优先级（P0/P1/P2）</div>
+                    <div class="step-output">输出: 4个P0, 6个P1, 2个P2机会</div>
+                </div>
+            </div>
+            
+            <div class="flow-step">
+                <div class="step-num">7</div>
+                <div class="step-content">
+                    <div class="step-name">三维标签化分析（新增）</div>
+                    <div class="step-desc">使用情境、触发-退出机制、用户群体三个维度进行标签化</div>
+                    <div class="step-output">输出: 3个维度 × 多个子类别的标签分布</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <div class="section-title">关键发现</div>
+            
+            <div class="insight-box">
+                <strong>使用情境洞察</strong>：<br>
+                • 家庭场景（15.9%）和带娃时（12.8%）是主要使用情境<br>
+                • 焦虑状态（10.7%）远高于无聊（0.8%），用户主动搜索而非被动消费<br>
+                • 运动时（9.8%）和睡前（6.2%）是重要场景
+            </div>
+            
+            <div class="insight-box">
+                <strong>触发-退出机制洞察</strong>：<br>
+                • 社交需求（92.9%）是最大触发因素，但多为从众心理<br>
+                • 算法陷阱（9.8%）是主要退出障碍<br>
+                • 放松满足（10.8%）vs 空虚后悔（1.1%）— 正面情绪占主导
+            </div>
+            
+            <div class="insight-box">
+                <strong>用户群体洞察</strong>：<br>
+                • 孕期（33.6%）和备孕（17.3%）是主要群体<br>
+                • 新生儿（8.9%）和幼儿期（8.6%）内容集中，小月龄（3.2%）供给不足<br>
+                • 中度用户（15.8%）占主导，重度用户仅1.1%
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>分析过程技术报告 · 新增三维标签化</p>
+            <p>方法论: ai-demand-research-v2 · 数据源: 小红书SQLite</p>
+        </div>
+    </div>
+</body>
+</html>

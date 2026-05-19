@@ -1,0 +1,484 @@
+{
+  "batch_id": 53,
+  "total_items": 38,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 17,
+      "short_video": 21
+    },
+    "type_distribution": {
+      "pain_point": 5,
+      "behavior_description": 32,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 33,
+      "ai_feature": 2,
+      "content_recommend": 3
+    },
+    "ai_statistics": {
+      "total_ai": 5,
+      "explicit": 2,
+      "implicit": 3,
+      "not_ai": 33
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_10",
+      "text": "国内的大学教材太差了，真的没法靠它们来自学。偏偏很多大学老师上课就是照着课本和ppt来讲，真的是雪上加霜。真的很后悔大学的时候不懂多找几个版本的教材来看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_12",
+      "text": "自己思考直接无敌。 我时间慢 但是效率巨高 通常理解的很深。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_14",
+      "text": "看书学习效果好是有利边读边思考，而视频参杂了太多干扰思考的东西，让我们不能深入思考了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_18",
+      "text": "另外提个思路，现在视频的制作成本很低，有一些做长尾的营销号完全使用ai内容，不加审查（主要也没能力、没时间审查），这种东西学的越多效果越差[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_19",
+      "text": "看视频像我就很少积极主动跟上细维来思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_20",
+      "text": "因为看视频总是会其他信息吸引[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_21",
+      "text": "看视频直接睡着[飙泪笑][飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_24",
+      "text": "1. 占用大量时间，让人难集中注意力做正事；​2. 部分内容低俗，可能传递不好的信息；​3. 容易让人沉迷，耽误学习、工作或休息。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_30",
+      "text": "占用大量时间，能学到有用的信息很少，太碎片化，在有就是已经成为一些人抱怨的发泄地，全是负能量，内耗太严重，一定要严格控制看的时间。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_31",
+      "text": "这玩意和以前东西有个主要区别是以前那些是朝里努力污名化想办法控制的，而短视频是朝里主动推的。这是个很重要的区别，不是你可以抖机灵去类比的。这玩意的后劲会比你想象中的大，反噬随时能来。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_34",
+      "text": "我是农村的，我现在学习都是在手机上。以前想都不敢想的大学老师就在眼前，感觉真的太好了。并且，我也可以把自己的想法发出来，别人也能看到了，以前我写的东西可不会轻易在报纸和期刊上发表，因为没有老师指点。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_37",
+      "text": "刷短视频停不下来，是大脑“被劫持”了，刷手机上瘾的核心原因是大脑的奖赏回路被过度激活，多巴胺的分泌让你对下一个视频充满期待，形成类似‘老虎机效应’的循环刺激。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_41",
+      "text": "短视频刷多了确实让人浮躁，静不下心来了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_42",
+      "text": "有没有发现，以前街面上的无所事事，浪荡的小青年，校门口“借钱”的小混混，自打千元智能机和短视频普及之后，忽然间都消失了。不不不，他们都还在，在不发达地区，在农村，只是你看不见",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_43",
+      "text": "主要还是看人吧，大数据太厉害，总是给你推你想看的，还是要控制住自己。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_44",
+      "text": "重点不是制止短视频，是找到更有趣的替代方案，如果没有，或者父母没时间找，没有短视频也会有其他娱乐[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_45",
+      "text": "以前集体去网吧、ktv，现在集体刷手机，也挺好的[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_47",
+      "text": "Y1S1我已经很久很久没有长时间的刷过短视频了，刷多了会焦虑，还不如安安静静的看会儿书或者纪录片啥的，是不是年纪大了。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_48",
+      "text": "太有道理了！真想让我上高中的儿子也看一看这段文字，让他有所警醒。只可惜，他沉迷手机游戏和短视频，可能已经没有耐心阅读这么大段的文字了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_49",
+      "text": "短视频是公认的注意力的“枷锁”，但存在即合理，它绑定了好多人的视野和前进的步伐，但也 同样绑定了混乱和无序。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_51",
+      "text": "冷知识：刷知乎和刷抖音其实一个样",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_52",
+      "text": "刷短视频占据了人一天中的很多时间，大多数时间就是娱乐消遣，长期下去人的思考能力会退化",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_54",
+      "text": "看短视频就是打发时间，看一天一点东西记不住，但时间就这么过去了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_55",
+      "text": "具体到个人，短视频之影响，不是非黑即白的两头思维。主观决定论和客观原因论同属偏执。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_57",
+      "text": "人注定不是被困在这里，就是被困在那里。不是被短视频危害，就是被其他什么危害。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_60",
+      "text": "它以碎片化、高刺激的内容不断切割人的注意力，长期观看会降低专注力和深度思考能力；算法推送的同质化内容易造成信息茧房，限制认知视野；同时，无节制刷视频会挤占学习、工作和现实社交时间，还可能因沉迷导致作息紊乱、视力受损。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_61",
+      "text": "每一种新事物的出现，有它积极的一面，也有它消极的一面，从社会稳定这点来说，智能手机确实让很多人有事可做，比如在几年疫情期间。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_62",
+      "text": "各种媒体，正在精准的改变我们的价值观，给小孩推荐游戏，给女人推荐仪式感，给男人推荐生存危机。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_63",
+      "text": "短视频可以无限的看一下去，时间过的飞快，感觉学到了好多知识，其实纯纯的浪费时间，消耗生命！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_64",
+      "text": "无形中占用了普通人大部分的时间视频刷多了，人也变得呆傻了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_67",
+      "text": "短视频刷完一个又一个几小时过去了，然而感觉脑袋还是空空的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_68",
+      "text": "确实，短视频消耗了大部分的精力，人就没心思折腾了。大街上，男男女女，老老少少，大部分都抱着手机，看小说刷短剧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_69",
+      "text": "凡事都有利弊，网络就像一把双刃剑。现如今快餐时代，刷小视频几秒一个，人都没用耐心去看长篇大论的文章。碎片化时间，做题遇到困难，一有阻碍就去刷小视频，这真的是一种解脱吗?时间一分一秒的过去了，你收获到什么呢？显然，被算法控制着你的喜怒哀乐，被大数据牵着走，到后来什么也没有收获只剩下 无尽的空闲，疲惫，焦虑，懊悔。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_71",
+      "text": "社会镇静剂！好新颖的角度。有时候确实觉得焦虑时刷短视频 ，确实能分散注意力，慢慢的麻痹自我，减少胡思乱想的时间[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_74",
+      "text": "任何事物都有正反两面，有利益短视频就会大行其道，没有利益，就会很快消亡",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_75",
+      "text": "神经科学里有一个明确的结论：大脑的专注力，是用进废退的肌肉。短视频的内容逻辑，是把所有能刺激神经的爽点、反转、冲突，压缩到几十秒的时长里，用高密度的即时刺激，不断给大脑分泌多巴胺。当你的大脑长期习惯了这种 “抬手就有快乐” 的即时满足，就会彻底失去对 “延迟满足” 的耐受度。你会发现，自己越来越坐不住读完一本完整的书，连看完一部两小时的电影都要不断快进，沉不下心做完一件需要长期投入的事。你的专注力",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_76",
+      "text": "我觉得吧，看你怎么看待这个短视频吧！靠短视频赚上万的也不少，甚至利用好了，可以一天赚上千上万的都有！你平时看一些正能量的，那流量就会给你推正能量的东西！你就会很有能量！主要还是靠自己的定力选择！你选择看消极的内容，人生就会接触很多消极的东西！不过短视频也是能学到东西的！看你怎么利用它咯！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_77",
+      "text": "沉迷短视频易致空虚、焦虑、浪费时间、影响专注",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

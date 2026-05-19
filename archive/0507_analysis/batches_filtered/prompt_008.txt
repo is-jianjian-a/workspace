@@ -1,0 +1,602 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下43条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 8/120)
+
+--- ITEM #1 ---
+ID: tieba_comments_510
+平台: tieba
+类型: comments
+内容: 楼主解决了吗我也是看b站老是掉30帧
+
+--- ITEM #2 ---
+ID: tieba_comments_511
+平台: tieba
+类型: comments
+内容: 一样的问题，放着视频不动会掉30帧，点一下屏幕就恢复120
+
+--- ITEM #3 ---
+ID: tieba_comments_512
+平台: tieba
+类型: comments
+内容: b站网页端有一个播放策略设置，改成avc编码
+
+--- ITEM #4 ---
+ID: tieba_comments_514
+平台: tieba
+类型: comments
+内容: 浏览器实验室功能有个图形驱动，ctrl+f搜graphics，换一个。
+
+--- ITEM #5 ---
+ID: tieba_comments_515
+平台: tieba
+类型: comments
+内容: 显卡跟bios更新到最新。如果还是不行bios调SOC SA电压，低于1.02即可，一般调到0.9
+
+--- ITEM #6 ---
+ID: tieba_comments_516
+平台: tieba
+类型: comments
+内容: 这核显有玩腾讯网游吗？流畅不？
+
+--- ITEM #7 ---
+ID: tieba_comments_517
+平台: tieba
+类型: comments
+内容: 把GPU加速关了，用CPU解码视频就好了
+
+--- ITEM #8 ---
+ID: tieba_comments_518
+平台: tieba
+类型: comments
+内容: 把浏览器的视频增强关了
+
+--- ITEM #9 ---
+ID: tieba_comments_521
+平台: tieba
+类型: comments
+内容: 同样7900xt，没碰到过4k视频卡的，更新下Chrome试试看
+
+--- ITEM #10 ---
+ID: tieba_comments_522
+平台: tieba
+类型: comments
+内容: 7900xt就不要新驱动了，装回老版本
+
+--- ITEM #11 ---
+ID: tieba_comments_523
+平台: tieba
+类型: comments
+内容: 6.1还是5.1之后chrome确实有新的毛病 特殊文本会有粉色方块闪烁的问题。不过关闭硬件加速就没事了，其实不关也不影响使用 只是看着别扭。。。 弹幕卡顿倒是没遇到 试下改屏幕刷新度或者开垂直同步看看？
+
+--- ITEM #12 ---
+ID: tieba_comments_524
+平台: tieba
+类型: comments
+内容: 7000系A卡视频编解码这部分确实不行，我也有类似情况换了9000系后好多了，正好9000系编解码性能有提升
+
+--- ITEM #13 ---
+ID: tieba_comments_525
+平台: tieba
+类型: comments
+内容: 浏览器硬件加速打开就卡，这是微软的问题，升级win11Beta版就好了
+
+--- ITEM #14 ---
+ID: tieba_comments_528
+平台: tieba
+类型: comments
+内容: b站那个4k开不开都一样糊，国内几个视频网站就没真4k的
+
+--- ITEM #15 ---
+ID: tieba_comments_529
+平台: tieba
+类型: comments
+内容: 手机问题吧，我这里没事
+
+--- ITEM #16 ---
+ID: tieba_comments_535
+平台: tieba
+类型: comments
+内容: 建了多少个号？我一百个号的账号就这样，它有些功能需要确认账号级别，我怀疑是小号太多拖后腿，但没有证据
+
+--- ITEM #17 ---
+ID: tieba_comments_538
+平台: tieba
+类型: comments
+内容: 入手了realme系列手机发现只要下拉显示状态栏百分百就会幻灯片，退出到登陆界面重新进就好，游戏中有信息来下拉看后这样突然卡就蛋疼
+
+--- ITEM #18 ---
+ID: tieba_comments_539
+平台: tieba
+类型: comments
+内容: 加载时观察资源监视cpu占用，如一直满载那就是硬件弱
+
+--- ITEM #19 ---
+ID: tieba_comments_540
+平台: tieba
+类型: comments
+内容: 我也一样配置，挂载的网盘电影一样加载很慢
+
+--- ITEM #20 ---
+ID: tieba_comments_541
+平台: tieba
+类型: comments
+内容: j4125 PvE虚拟化的飞牛本地视频没事。720p、1080p都秒播，核显直通给飞牛。
+
+--- ITEM #21 ---
+ID: tieba_comments_544
+平台: tieba
+类型: comments
+内容: 3160没办法核显解码，升级主板吧
+
+--- ITEM #22 ---
+ID: tieba_comments_545
+平台: tieba
+类型: comments
+内容: cpu和gpu核显不够，换11代以上秒解，不想花钱升级就老老实实挂载网络驱动器用potplayer观看
+
+--- ITEM #23 ---
+ID: tieba_comments_546
+平台: tieba
+类型: comments
+内容: OPPO一加真我的手机都是要手动激活的，你去设置里面找一找，不然一直都不显示激活。
+
+--- ITEM #24 ---
+ID: tieba_comments_548
+平台: tieba
+类型: comments
+内容: 看了你的贴，我的和你一样，我买来有十天我一直没插卡都是连着WiFi在用，但我的没发现你的这种情况，却也显示未激活
+
+--- ITEM #25 ---
+ID: tieba_comments_550
+平台: tieba
+类型: comments
+内容: 问下，这个牌子的手机有没有自带的一键锁屏插件？一直没找到，对相机还算满意，续航如果还行就准备正式使用了
+
+--- ITEM #26 ---
+ID: tieba_comments_552
+平台: tieba
+类型: comments
+内容: 试试qq发送个大文件到手机试试内网速度？
+
+--- ITEM #27 ---
+ID: tieba_comments_554
+平台: tieba
+类型: comments
+内容: 不要用双频合一，5G和2.5G分开，单独连接5G
+
+--- ITEM #28 ---
+ID: tieba_comments_555
+平台: tieba
+类型: comments
+内容: 把ipv6关了 我7200pro＋也是开了刷网页就加载不出图片 速度慢可能是自动切换到2.4g了
+
+--- ITEM #29 ---
+ID: tieba_comments_558
+平台: tieba
+类型: comments
+内容: 这个网站的问题 ，国内的这个测速网 网速管家不行
+
+--- ITEM #30 ---
+ID: tieba_comments_560
+平台: tieba
+类型: comments
+内容: 手机用花瓣测速，电脑电信的话用电信的测速网
+
+--- ITEM #31 ---
+ID: tieba_comments_563
+平台: tieba
+类型: comments
+内容: 有可能是内存卡快满了，降速。还有可能你看人家用的是NS1不，别搞差了如果人家是NS2，或者NS1存进了机身存储，那速度自然都快
+
+--- ITEM #32 ---
+ID: tieba_comments_566
+平台: tieba
+类型: comments
+内容: 你把三星白卡拿出来往里面复制个文件试试。看看速度多少。我的128三星白卡放了三年。拿出来后电脑上写入速度1.6M/sshoubai_emoji_face_07京东小哥拿走，售后秒换新shoubai_emoji_face_71
+
+--- ITEM #33 ---
+ID: tieba_comments_568
+平台: tieba
+类型: comments
+内容: 定向流量包含在2G限速规则内吗？
+
+--- ITEM #34 ---
+ID: tieba_comments_569
+平台: tieba
+类型: comments
+内容: 有明确的到期时间 不上也罢
+
+--- ITEM #35 ---
+ID: tieba_comments_571
+平台: tieba
+类型: comments
+内容: 对一个轻度流量用户来说已经算是不错了
+
+--- ITEM #36 ---
+ID: tieba_comments_575
+平台: tieba
+类型: comments
+内容: 有些人的目的就不纯，这个安心包不是让你用得爽的，是让你主套餐流量用超了之后不会扣费。
+
+--- ITEM #37 ---
+ID: tieba_comments_576
+平台: tieba
+类型: comments
+内容: 其他流量多的那么多，为什么非得接受限速的网速呢
+
+--- ITEM #38 ---
+ID: tieba_comments_578
+平台: tieba
+类型: comments
+内容: 重启电脑后，刚刚测的。
+
+--- ITEM #39 ---
+ID: tieba_comments_579
+平台: tieba
+类型: comments
+内容: 楼上图发了3遍，终于不删了。 广州 黄埔区 低消500M NAT4 我之前从来没ping过这种，现学现卖的。 我的光猫还是默认的“智慧沃家” 双天线wifi光猫。 建议找装维上门检查，我试过让上门重置光猫。加微信 要超管密码。免费image_emoticon8
+
+--- ITEM #40 ---
+ID: tieba_comments_582
+平台: tieba
+类型: comments
+内容: 我也是冰淇淋千兆换79a，2月份刚刚换黄金尊享套餐，就是自己换一个2.5g光猫和一个WiFi7路由器，反正我测试下来跟原来宽带体验一模一样的，下班刚刚测的image_emoticon66
+
+--- ITEM #41 ---
+ID: tieba_comments_586
+平台: tieba
+类型: comments
+内容: 因为你的光猫是私自更换的， 里面设置对应的是你旧套餐的设置。 换新套餐后，数据有冲突，建议找装维上门.image_emoticon8
+
+--- ITEM #42 ---
+ID: tieba_comments_588
+平台: tieba
+类型: comments
+内容: 直接关闭行了，很多ipv6完全没普及 打开只会卡图片 卡视频进度 反正各种卡顿
+
+--- ITEM #43 ---
+ID: tieba_comments_595
+平台: tieba
+类型: comments
+内容: ipv6需要 设置mtu 1280 dns也要后ipv6的dns 默认的mtu1500不行
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_008
+
+开始分析：

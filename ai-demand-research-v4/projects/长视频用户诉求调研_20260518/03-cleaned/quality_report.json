@@ -1,0 +1,15 @@
+{
+  "raw_count": 804,
+  "dedup_removed": 4,
+  "after_dedup": 800,
+  "filtered_out": 19,
+  "cleaned_count": 781,
+  "quality_distribution": {
+    "high": 307,
+    "medium": 243,
+    "low": 231
+  },
+  "avg_quality_score": 60.81946222791293,
+  "avg_interaction": 6716.58642765685,
+  "top_interaction": 219246
+}

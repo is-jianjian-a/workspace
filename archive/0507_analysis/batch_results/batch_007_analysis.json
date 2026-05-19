@@ -1,0 +1,393 @@
+{
+  "batch_id": 7,
+  "total_items": 30,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 29,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "pain_point": 10,
+      "behavior_description": 15,
+      "positive_feedback": 2,
+      "feature_request": 3
+    },
+    "topic_distribution": {
+      "other": 17,
+      "screen_cast": 2,
+      "download_cache": 2,
+      "video_quality": 5,
+      "ad_experience": 1,
+      "playback_control": 1,
+      "background_play": 2
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 30
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_417",
+      "text": "改的太急确实是设计师的问题，在beta上多测测，正式版只更新非平衡性内容比较好",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_421",
+      "text": "ea版本是这样的，特别是安东尼乱搞，学习成本高，没时间花在上面等稳定版吧，起码一两年吧。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_422",
+      "text": "我和你看法刚好相反，我主玩战士，塔1游戏时间1k小时。0.99的战士让我觉得特别无聊，每一把都在洁到最后打剑耸之类的，甚至很多新牌我都不想抓，a10打完之后很少碰战士。0.103版本反而让战士回归了塔1的打法，可抓的牌也变多了。我觉得0.99和0.103都是两个极端，只是很多塔2入坑的玩家没有接触过塔1，不了解老角色的核心玩法也无可厚非。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_426",
+      "text": "汪Q的“缺点”有两个，一是缺少打戏导致一些老观众会有意见，丢了祖宗之法image_emoticon16二是太细腻了，汪Q的文戏真的超强，第一眼看过去普通，但如果完整追下来就会发现它的闪光点藏在一段一段的小情节里，是细水长流型，缺少爆点和让人一眼看到的亮点，不够吸睛。这就好比电视剧和短剧或者小说和爽文，哪个质量更高一眼可见，但现实就是节奏越密集大家越喜欢看image_emoticon25没有对比和拉",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_432",
+      "text": "因为楼主你是新人，没先入为主或先入为主很少，而做介绍向视频的基本都是被20年历史包袱束缚的老观众。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_438",
+      "text": "玩游戏，要旗舰或者次旗舰处理器，内存12G以上，8肯定会卡的。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_440",
+      "text": "战未来多用几年建议12G内存，存储看你，256够用，512最好",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_442",
+      "text": "只看视频够，打游戏就另说了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_453",
+      "text": "一群枯叶狗搁磊哥视频劝磊哥玩wuwa没绷住image_emoticon22",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_466",
+      "text": "自定义 重启一下手机就好了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_467",
+      "text": "刚更新最新 均衡器还是有卡顿 但是比上一个版本有改善",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_468",
+      "text": "这个参数好用，抖音啥的不卡",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_471",
+      "text": "所以你为什么不下载飞牛影视呢？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_475",
+      "text": "之前用的极空间z4pro 则没有这种问题 感觉有点后悔不该看那么多绿联广告 现在也是又上贼船了image_emoticon9",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_476",
+      "text": "我的也是，直接用电视看绿联4800plus视频卡的看不成，我很少看视频，所以也懒得用！",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_478",
+      "text": "装块m2，把视频放到m2下面，就能起飞了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_479",
+      "text": "先确定是不是带宽问题。然后就是软件内部转码，再给你看，就有可能卡了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_480",
+      "text": "如果是手机或者电视，可以直接访问nas的文件夹，用mx播放，电视用kodi播。那根本不会卡",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_482",
+      "text": "这是在线看的吗？如果换其他网站看是不是一样？如果没问题就是网站问题，如果一样的，那就是电脑问题，检查下视频线是不是插在主板上了，要插在显卡上，更新下显卡驱动试试",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_483",
+      "text": "如果没有其他问题的话，播放高码率视频掉帧卡顿很大可能是硬盘的问题，有些硬盘顺序读写数据很好看，但是4k随机读取速率太慢和时间延迟太大都会卡顿",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_487",
+      "text": "硬件控制和软件(指令集）调度抢权限",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_488",
+      "text": "在设备管理器里关闭高精度时间计时器。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_489",
+      "text": "好的，我先重装系统再试试各位大佬的建议，之前的7700x毫无问题，人嘛了image_emoticon9",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_492",
+      "text": "用WPS和PPT的时候卡顿吗",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_495",
+      "text": "反正我57X58X59X，不管配华硕还是微星还是精粤的B550，看B站总会时不时卡顿掉帧声画不同步（网页版）。有时又一点问题都没有",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_496",
+      "text": "emm，我5080的也有类似的问题，不过是高负载才会出现，而且是持续性的吱吱声，加大风压散热器风量会消失。目前也是找不到问题。可以知道的是散热的问题，但是到底是硬盘过热，还是内存过热还是蓝桥过热不得而知。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_501",
+      "text": "重装的驱动是不是官网版本的？这个瞬时卡顿是随机出现吗？还是只出现一次；感觉可以下载个Hiwifo监控下温度",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_502",
+      "text": "我也卸载并重装了声卡驱动 本来以为有好转 但没过几小时又听见了爆音 玩游戏看视频听歌都会有 不过玩游戏感觉是症状最轻的 头疼死了image_emoticon12",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_506",
+      "text": "B站更新后最近挺热闹的，非法占用用户后台资源，隔壁B吧已经闹翻天了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_508",
+      "text": "您好，为了更好地跟进您的问题，还请您主动私信小耀后台提供下相关信息：您的姓氏、联系方式和设备SN号，我们将会安排专人与您联系处理您的问题。（如您有不方便接听电话的时间，烦请告知）。 如果您希望了解更多关于数据主体权利、信息安全措施等详细信息，您可以打开荣耀官网滑到最底部，选择荣耀ESG-隐私安全，阅读《隐私与个人信息保护政策》。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

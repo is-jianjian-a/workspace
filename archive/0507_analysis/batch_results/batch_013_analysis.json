@@ -1,0 +1,443 @@
+{
+  "batch_id": 13,
+  "total_items": 34,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 18,
+      "live_stream": 1,
+      "short_video": 14,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 24,
+      "feature_request": 4,
+      "positive_feedback": 3,
+      "pain_point": 3
+    },
+    "topic_distribution": {
+      "video_quality": 1,
+      "ai_feature": 1,
+      "download_cache": 3,
+      "other": 25,
+      "content_recommend": 2,
+      "playback_control": 1,
+      "payment_member": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 3,
+      "implicit": 0,
+      "not_ai": 31
+    }
+  },
+  "results": [
+    {
+      "id": "bili_contents_192",
+      "text": "这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；\n如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。\n那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；\n话不多说，点赞收藏，开始上课。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_contents_193",
+      "text": "网盘地址（提示词模板在第17期文件中）\n夸克：https://pan.quark.cn/s/6959f1e185ac  \n\n应用：\n故事板：https://www.runninghub.cn/ai-detail/2050060981774110722/?inviteCode=rh-v1443\n分镜板：https://www.runninghub.cn/ai-detail/2050064565823",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_contents_195",
+      "text": "大概每3秒一次\n下方数字表示当前视频的帧率\n喜欢这个视频就给个三连哦~\n视频下载链接：链接：https://pan.baidu.com/s/1oRho4UIqJGUDIHypJhGqWg?pwd=fkdi \n提取码：fkdi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_196",
+      "text": "本期视频分享ND滤镜的使用技巧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_198",
+      "text": "https://link3.cc/huijinya520\nup搭建的资源下载站，\n包含单机游戏、PVZ改版、脱缰凯全集、功能软件大全、加速器会员兑换码等\n免费分享希望大家多多发电哦~\n\n视频中的链接在这里：迅雷网盘提取码qrw2\nhttps://pan.xunlei.com/s/VOA6dTulZ0UfCiKOvf5-mmayA1?pwd=qrw2#\n\n资源来源于网络，仅供学习交流使用，不可用于商",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_199",
+      "text": "链接：https://pan.baidu.com/s/1tX6XYFKLmHwy5HQO_JktLA \n提取码：g9jg",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_3",
+      "text": "其实直播间氛围很好的，大家都很开心[OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_5",
+      "text": "每个人笑点都不一样，所以好不好笑都是看人的。大部分人都在说很好笑看的很开心，结果一些人就在大家笑得很开心的时候自认很cool地说“看不懂有什么好笑的”真的很扫人兴呢[喜极而泣]看不懂就看点自己能看懂的笑一笑，何必还浪费时间看不感兴趣的视频呢[喜极而泣]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_9",
+      "text": "救命啊我真的不行了啊啊啊啊 你们知道这十分钟的视频，我看了半个小时啊啊啊，每次笑一会就得暂停笑完不然怕笑抽抽了喘不上气，这些人的笑声到底为什么这么魔性啊哈哈哈哈哈哈哈哈哈",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_10",
+      "text": "我不刷短视频，但是我刷长视频[辣眼睛]\n是不是本质上没什么区别，我也会看长视频每天至少俩小时，时事新闻，财经新闻，科普知识，游戏攻略，偶尔也会看毫无营养的东西",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_11",
+      "text": "我刷的不是短视频 我刷的是B站十分钟以上的知识科普和解析[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_12",
+      "text": "b站也是，之前推出了一个短视频模式，有一次不小心点进去半个小时才出来。后面的几天总会点进去看一两个小时，真的太可怕了。天下资本都是一种东西，不要以为叔叔就是好人了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_13",
+      "text": "爱看哔站视频的也是成瘾的表现吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_15",
+      "text": "没有安装bilibili的朋友们给我点个赞",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_16",
+      "text": "实不相瞒，我觉得个人的意志力更加重要。随着时代的发展，总会有更容易获得快感的娱乐方式出现。我大学的时候总是在游戏上花大量的时间，边玩边懊悔，非常痛苦，这只是我们想要逃离压力的方式，所有的娱乐方式都不能避免成为人堕落的温床。后来每天安排好一天的学习工作休息时间，通过坚持控制自己，慢慢的让自己能拒绝很多诱惑了。说那么多不是想指责什么的，就是说一下自己的经历，希望跟我有一样状况的朋友们能够共勉[打cal",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_17",
+      "text": "虽然从没下载过抖音快手，但每天刷B站三小时起步的我[微笑][无语]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_18",
+      "text": "我虽然不刷短视频，但我总是逛评论区，就像现在这样。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_19",
+      "text": "年轻人还好，中年人是真毁了，家里天天刷抖音，而且还是大声音外放。[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_34",
+      "text": "呜呜呜呜我抑郁症，躯体化了，笑不出来哭不出来，最近回家心情好点，也知道自己搜点搞笑视频了，让我大笑了谢谢啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_36",
+      "text": "好长时间[笑哭]有点看累了，但又有点意思，毕竟有些没看过",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_50",
+      "text": "抖音接近四千亿的市值全在这视频里了[辣眼睛][脸红]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_54",
+      "text": "哥谭噩梦0:00\n帅气逼人组合0:14\n塞班在哪0:35\n栓q歌1:05\n加油 奥利给1:29\n雷霆嘎巴无情哈拉少1:47\n师傅你是做什么工作的2:26\n独立宣言2:36\n我叫马牛逼2:47\n我买了一个小风车3:04\n我是老六3:09\n退退退3:32\n专业配音演员3:53\n高质量男性3:56\n脚艺人4:12\n我是云南的4:25\n我之后心疼哥哥4:57\n猛男舞团5:25\n二奶和高领2:38\n嘿嘿，b",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_55",
+      "text": "草，说起来高中时候考试作文曾多次套用怪鸽 野兽先辈 会员制餐厅 JOJO啥的当作素材，甚至比原来正常作文分数还多[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_56",
+      "text": "奥利给有2个，一个是老八，一个是另一个，老八是模仿的，最开始的是一个工地大叔说的，好像跟视频里面那个大叔是同一个人，所以不要把老八当原创，因为他就是抄袭蹭热度的，他能火是因为真的吃不是因为奥利给，最开始奥利给是加油，现在被老八给坏了名声变成贬义词了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_60",
+      "text": "感觉时间越来越快，而且越来越迷失自我了，可以简称没有主角感了，最近有些灵感拿出来和大家共享：\n1.活在当下，之前看到过一句话，当你内耗时，你活在过去 当你焦虑时，你活在未来 只有活在当下，才能感知生活的美好\n2.专注自己，这点不用多说，只有将人生把握在自己手里心里才会踏实，从而减少内耗和焦虑\n3.最重要的一点，把自己当主角，不要帮着别人欺负自己，别拿别人的长处比对自己的短处。我有一个好朋友，她长的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_61",
+      "text": "因为一个视频戒掉了短视频，你也是短视频，拜拜",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_63",
+      "text": "短视频一定要戒，长视频也要戒！两者的危害差不多的，你以为能你能看视频学到些东西，其实什么也记不住，短暂的获得了多巴胺，浪费了大量时间，视频中的评论又吵来吵去，让人变得浮躁耐性变得非常差，完全没有耐心看完一整本书或者看完一部电影，追一部剧，完结一部游戏之类的，这东西危害太大了，纯浪费时间。我就是这样的[藏狐]一定要戒掉",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_64",
+      "text": "不要因为刷短视频，而感到自责，因为你放下手机，也创造不了什么价值，你能在刷短视频中获得乐趣，就不是在浪费时间",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_65",
+      "text": "可怕的是看这条视频都觉得很长，看不下去，这就是被短视频毒害的下场，因为这学期迷上短视频，短剧，导致成绩直接掉了三十多分，从来没有考过那么差。马上快要一模了，但是今天早上还在刷视频。。。。而且视频刷多了真的会在专心写作业的时候，上课的时候，注意力突然被分散，想到自己刷视频的内容，很容易走神，现在感觉自己精神都不正常了，恍恍惚惚的，一边难受想要戒掉，但是又忍不住想要看，哪怕就是上个厕所，都要带手机进去",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_66",
+      "text": "我因为一部小说戒掉了一个小说网站。。是个恋爱小说，简介也写的超级甜，然后到里面突然就开始追妻火葬场，追了300章还没追上，我一看后面好像还有三四百章，评论区的人都在说，直到最后大结局也没有爱上，我当时就觉得真的很震惊。\n\n追的那么惨。然后另一个人就一直像个木头一样毫无反应。要么就是演戏，假装应付，到后面仍然是冷静的像块冰。。。。可以说剧情已经陷入了一个循环，就是不管本章追的多么惨，中间是多么甜，结",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_67",
+      "text": "短视频和玩游戏一样，就是刺激多巴胺，但玩游戏有成就感，有通关记录，有思考，有学习。 刷视频什么也没有。\n我几乎不刷，但偶尔刷一次发现沉浸其中很久都关不掉，脑子不用思考，跟吸D上瘾一样。\n我玩B站就是因为B站可以自主选择视频，而且长视频有营养，但终究也是消磨时间。\n要彻底戒掉，就是一种戒D过程。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_68",
+      "text": "短视频会上瘾，会丧失思考能力和判断能力，想戒掉开始会失落，空虚，痛苦，纠结，在卸载和安装来回切换，拉锯战可能会长达几个月时间。后来破釜沉舟注销账户，把电话卡流量改成30g套餐，家以外的wifi全部删除密码，才彻底戒掉。偶尔需要查询才安装，用完即卸载，远离毒瘤。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_69",
+      "text": "从没刷过短视频，手机里也没抖音。就一获取信息的渠道而已，我上网比较早，那会干啥都是浏览器，听歌、下歌、看电影、查地图、路线、查资料，一个浏览器都能解决，抖音出来的时候我就没玩。外卖员困在算法里，抖音的推你喜欢难道就不是算法了吗？人一直吃垃圾食品，身体会不健康，抖音一直推电子榨菜、垃圾食品，精神世界、三观就能一直健康、一尘不染吗？盲人摸象而已，只看自己想看到的，不思考分辨其他的声音，只会觉得自己正确",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_77",
+      "text": "好用心的视频[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

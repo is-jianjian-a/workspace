@@ -1,0 +1,47 @@
+{
+  "project_name": "手机视频场景用户诉求与体验断点研究-2026-05-15",
+  "topic": "手机视频场景用户诉求与体验断点研究",
+  "platforms": [
+    "xhs",
+    "bilibili",
+    "zhihu"
+  ],
+  "created_at": "2026-05-15T09:39:46.097729",
+  "updated_at": "2026-05-15T09:39:46.097731",
+  "status": "initialized",
+  "current_phase": null,
+  "current_step": null,
+  "version_counter": 0,
+  "phases": {
+    "preparation": {
+      "status": "pending",
+      "steps_completed": 0,
+      "total_steps": 4
+    },
+    "phase1": {
+      "status": "pending",
+      "steps_completed": 0,
+      "total_steps": 6
+    },
+    "phase2": {
+      "status": "pending",
+      "steps_completed": 0,
+      "total_steps": 5
+    },
+    "insights": {
+      "status": "pending",
+      "steps_completed": 0,
+      "total_steps": 1
+    },
+    "optimize": {
+      "status": "pending",
+      "steps_completed": 0,
+      "total_steps": 1
+    },
+    "reports": {
+      "status": "pending",
+      "steps_completed": 0,
+      "total_steps": 3
+    }
+  }
+}

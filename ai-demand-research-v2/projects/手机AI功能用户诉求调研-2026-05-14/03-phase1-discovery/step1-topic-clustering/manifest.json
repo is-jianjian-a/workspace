@@ -1,0 +1,12 @@
+{
+  "step_id": "phase1-step2",
+  "step_name": "主题聚类分析",
+  "version": 1,
+  "timestamp": "2026-05-14T11:00:00+08:00",
+  "status": "completed",
+  "input": {"files": ["02-cleaned/output/cleaned_data.parquet"], "checksum": "sha256:ghi789"},
+  "code": {"file": "03-phase1-discovery/step1-topic-clustering/code/topic_clustering.py", "checksum": "sha256:jkl012"},
+  "output": {"files": ["03-phase1-discovery/step1-topic-clustering/output/topic_stats.json", "03-phase1-discovery/step1-topic-clustering/output/topic_content_map.csv"], "checksums": {}},
+  "parameters": {"topics": ["拍照修图", "语音助手", "智能翻译", "AI写作", "AI绘画", "智能剪辑", "AI搜索", "隐私安全"]},
+  "notes": "识别8个核心主题，拍照修图占比最高(32%)"
+}

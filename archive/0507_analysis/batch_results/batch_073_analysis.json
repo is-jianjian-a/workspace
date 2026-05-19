@@ -1,0 +1,561 @@
+{
+  "batch_id": 73,
+  "total_items": 44,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 33,
+      "long_video": 11
+    },
+    "type_distribution": {
+      "behavior_description": 34,
+      "pain_point": 9,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "playback_control": 4,
+      "other": 23,
+      "video_quality": 12,
+      "payment_member": 1,
+      "download_cache": 1,
+      "screen_cast": 1,
+      "content_recommend": 1,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 1,
+      "implicit": 1,
+      "not_ai": 42
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1587",
+      "text": "一般根据视频类型，如果就是口水内容，一般都1.5-2倍速看了，但学习知识类一般都是1-1.5倍，除非说的很啰嗦才会上高倍速",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1588",
+      "text": "我就说我直接拉快进 啥都没记住呢[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1590",
+      "text": "懂了，考前倍速学习[惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1594",
+      "text": "直到一年后的现在腾讯视频都没解决这个问题，真是离大谱",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1595",
+      "text": "解决了，多谢，顺便提醒一下腾讯视频码率很低，所以即使4k画面也很糊，这腾讯为了省钱真是无所不用其极",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1596",
+      "text": "腾讯视频客户端，最大化GPU占用90%，牛逼不，最大化，最小化，在最大化就会，其他的视频软件15%都没有",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1597",
+      "text": "我也发现4大视频网站，就腾讯视频的网页版最卡。而且腾讯视频的PC客户端也有问题，我是12400F+3060+HDMI接口显示器，居然画面发白！折腾了我一年半才解决。原来要到显卡控制面板把视频播放设置的颜色动态范围改成完全。要说是显卡的问题，默认色彩动态是有限吧，可我用4大平台的客户端，就腾讯有这个问题",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1598",
+      "text": "腾讯这么多百万年薪的程序员，都是干什么吃的？？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1599",
+      "text": "看视频能占15%的CPU，这个软件开发人员水平是烂到家了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1601",
+      "text": "国内好多软件都是在人为设置运行障碍，流畅？体验？不存在的，都是在背后搞些名堂。开源命令套个壳就卖会员，那啥啥说的，中国人不在乎个人隐私……",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1602",
+      "text": "几年没开过腾讯的会员了[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1604",
+      "text": "@腾讯 @腾讯技术工程 出来修Bug了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1605",
+      "text": "腾讯视频客户端，最大化GPU占用90%，牛逼不，最大化，最小化，在最大化就会，其他的视频软件15%都没有",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1607",
+      "text": "看个腾讯视频风扇转起来了[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1610",
+      "text": "为效率提升人为留足空间[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1611",
+      "text": "我之前是看久了内存爆了，没找到解决方法索性不看了，不知道现在解决了没",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1613",
+      "text": "这个问题是怎么发现的，能分享一下思路吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1615",
+      "text": "看个视频，CPU占有率15%  还是12代的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1616",
+      "text": "我记得之前还有腾讯游戏下载器，也是用大部分资源一直请求一个无效地址，导致下载超级慢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1619",
+      "text": "有码率的区别，一般播放的都是有压缩的，所以4k视频会有更多的原始细节。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1620",
+      "text": "很简单，用1080p看4k视频，看到的是1080p的4k。用4k的屏幕看1080p视频，看到的是4k的1080p",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1621",
+      "text": "比较傻瓜式理解是，分辨率是杯，码率是水。你的水杯容量100，外面买水 小80 大120 的版本。虽然120会满出来，但也比小瓶多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1622",
+      "text": "用1080p的屏幕看1080p的视频，那像素不是已经1:1铺到屏幕上了吗？为什么你说播放4k视频会更清晰？屏幕又不可能凭空多出来像素点。。。只能是1080p视频实际上没有完全达到1080p，你后面的解释不正确",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1623",
+      "text": "ppi是你这么算的吗？是你这么用的吗？纯粹是4k视频码率更高，画质更好，原始细节更多而已。不信你拿英伟达官方盯帧软件icat自己放大10倍对比，看为什么更“清晰”。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1624",
+      "text": "真正需要宣传的是颠倒过来，用2k/4k屏放1080p，体感上比1080p屏幕更糟糕。因为这是反常识的，造成了无数误会。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1626",
+      "text": "4K视频放在1080P屏幕上，并不会比本身就是1080P的视频更清晰。4K视频的码率也不一定比1080P高。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1629",
+      "text": "1 4k码率更高少压缩伪影 2 4k自带超采样之后下采样 细节更清晰 2 视频422压缩色彩分辨率只有明度分辨率的一半所以4k视频到1080p屏幕颜色才能做到点对点显示",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1631",
+      "text": "可以另一个角度回答，一台1080P的电视卖2000，一台4K的电视卖5000，如果1080P电视就能看4K视频，那为什么要多花钱买4K电视？市场上为什么会出现4K电视？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1635",
+      "text": "前边一本正经，最后就错误百出了，4k转1080播放时，等同于文件分辨率也降成1080一样的了。之所以清晰，完全文件码率4k本来就比1080好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1638",
+      "text": "高分辨率显示器看低分辨率的视频，如果不是原始尺寸，放大了效果很差。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1640",
+      "text": "1080屏幕+4k片源=超采样抗锯齿1080p。差别很大，我1080p电脑屏幕不开抗锯齿根本没法看，全是毛边",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1642",
+      "text": "[思考]蹲蹲有没有大神帮我这个小白解释一下，用音质一般的耳机听那种高音质音乐是不是也这样呀～",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1643",
+      "text": "4k视频压成1080p可以选择高质量算法重采样处理，4k视频在1080屏幕上播放那肯定要用最快速的像素映射算法，质量肯定比预处理的低。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1645",
+      "text": "就是四个像素合并成一个像素显示。至于大屏幕更清晰的说法个人反对，类似于黑白电视看彩色电影（三种颜色用一个亮度显示），看4k的视频内容更清晰的原因是:都4k了，质量肯定要求更高，细节肯定保留更多，这叫“好马配金鞍”[吃瓜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1650",
+      "text": "应该大于1080p、小于4k，因为很显然多数视频的1080p都不是真1080（码率低的一批，清晰度还不如高码率的720），因此所谓4k虽然也不是真4k、但是满足真1080的要求还是问题不大的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1651",
+      "text": "我用1080p的显示器看2k视频的时候，主观感受是画面更加细节，但是整体画质依然没有提高。这种感觉就像是用60Hz的显示器去玩120fps的游戏，其实还是60Hz，但是肉眼感觉似乎流畅一些。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1652",
+      "text": "电视台为大家谋啥福利哦，他们的清晰度升级还比不上AV的清晰度升级快。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1655",
+      "text": "你这个解释的一点都不清晰，感觉像是水了一课啊。倒数第三段，“但是像素数量还是相对1080p更多了的，”这个是肯定的啊，这有啥不理解的？“所以大概两倍的差距，自然会让视频图像看上去更加细腻。”你这不就是在乱讲了吗？你都说了是屏幕是1080P的了，那最终的显示效果上哪儿会有这两倍的PPI差距啊？你应该解释的难道不应该是“虽然屏幕都是1080P，但是4K视频数据比1080P视频数据在1080P显示器上显",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1656",
+      "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1658",
+      "text": "谢谢，剪辑视频剪出来很清晰，本地观看也很清晰，上传之后就会有点不是很流畅～宽带慢影响的是视频本身还是观看的感觉呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1660",
+      "text": "我也是，我还以为是受电信限制了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1661",
+      "text": "叔叔偷你的带宽给自己发工资去了 无解",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1662",
+      "text": "cmd里的ping是icmp ping，可能检测工具用的是httping",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1663",
+      "text": "油猴：make bilibili great again",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

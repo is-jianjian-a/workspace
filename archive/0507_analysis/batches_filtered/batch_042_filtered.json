@@ -1,0 +1,330 @@
+{
+  "batch_id": 42,
+  "original_count": 68,
+  "filtered_count": 19,
+  "items": [
+    {
+      "id": "kuaishou_comments_470",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "这女的快手号是多少呀？",
+      "raw_data": {
+        "comment_id": "1046936119554",
+        "create_time": 1757980145565,
+        "video_id": "3xvm7awrfphc96k",
+        "content": "这女的快手号是多少呀？",
+        "user_id": "3xphw56dxnx4rn9",
+        "nickname": "小龙啊",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/06/29/05/BMjAyNTA2MjkwNTQ4NDNfNDc2NDY2NDM4XzJfaGQzODFfOTcx_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144282188
+      }
+    },
+    {
+      "id": "kuaishou_comments_473",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "感谢紫玉儿，老九直播回放太卡，根本看不了[捂脸]",
+      "raw_data": {
+        "comment_id": "1046550425391",
+        "create_time": 1757851337136,
+        "video_id": "3xvm7awrfphc96k",
+        "content": "感谢紫玉儿，老九直播回放太卡，根本看不了[捂脸]",
+        "user_id": "3xpjc37mgm6um82",
+        "nickname": "时空浩韵",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/04/30/00/BMjAyNTA0MzAwMDI3NTJfMTg1Mjg3MjUzM18yX2hkNzA0XzgxMA==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144282189
+      }
+    },
+    {
+      "id": "kuaishou_comments_478",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "说话说不清楚能不能设置",
+      "raw_data": {
+        "comment_id": "1096556084701",
+        "create_time": 1770370282903,
+        "video_id": "3xkrsq5nbdpufeu",
+        "content": "说话说不清楚能不能设置",
+        "user_id": "3xv35rgzi6bqfu9",
+        "nickname": "独君电动车工厂直销",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/10/17/16/BMjAyNDEwMTcxNjI2MTBfNTU5Njk3NjA0XzFfaGQxODdfNzE4_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144286428
+      }
+    },
+    {
+      "id": "kuaishou_comments_479",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "主要是快手上很模糊，怎么操作呢",
+      "raw_data": {
+        "comment_id": "1080163670240",
+        "create_time": 1766502761136,
+        "video_id": "3xkrsq5nbdpufeu",
+        "content": "主要是快手上很模糊，怎么操作呢",
+        "user_id": "3x6um3irdivurxw",
+        "nickname": "小🌹🌹🌹英",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/03/21/09/BMjAyNjAzMjEwOTQwMDlfMTQ0NjE0MDQyMF8yX2hkNjQ2Xzg=_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144286429
+      }
+    },
+    {
+      "id": "kuaishou_comments_499",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "人家主播现在升级了[赞]",
+      "raw_data": {
+        "comment_id": "1040226206405",
+        "create_time": 1756257493665,
+        "video_id": "3xkrzv2779iw2g6",
+        "content": "人家主播现在升级了[赞]",
+        "user_id": "3xubq7ytuz2riwq",
+        "nickname": "山青水秀88888",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/09/03/17/BMjAyNDA5MDMxNzU3MDBfNzA5NDk3ODcxXzJfaGQzMzVfNzA0_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144324402
+      }
+    },
+    {
+      "id": "kuaishou_comments_506",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "哇，这美容院的服务看着真专业啊，小姐姐穿得挺正式的，想买张券去体验下，放松放松心情",
+      "raw_data": {
+        "comment_id": "1126761915439",
+        "create_time": 1777561070255,
+        "video_id": "3xdu5rruh4qdije",
+        "content": "哇，这美容院的服务看着真专业啊，小姐姐穿得挺正式的，想买张券去体验下，放松放松心情",
+        "user_id": "3xqysc2h2f8a366",
+        "nickname": "汉服文化馆",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/11/28/17/BMjAyNTExMjgxNzIzMjNfMzU3MTY2NTk0OF8yX2hkNzE0XzcyNw==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144328693
+      }
+    },
+    {
+      "id": "kuaishou_comments_510",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "我和朋友上周去了颜丽淇做皮肤管理，技师手法很专业，感觉皮肤光滑多了，推荐大家试试",
+      "raw_data": {
+        "comment_id": "1116317425290",
+        "create_time": 1774848885075,
+        "video_id": "3xdu5rruh4qdije",
+        "content": "我和朋友上周去了颜丽淇做皮肤管理，技师手法很专业，感觉皮肤光滑多了，推荐大家试试",
+        "user_id": "3xzk5gu85utupgg",
+        "nickname": "狗血家事",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/12/10/10/BMjAyNTEyMTAxMDI4MDJfMzU3MTY4MTAzN18yX2hkNDI1XzY5NQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144328694
+      }
+    },
+    {
+      "id": "kuaishou_comments_513",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "我试了皮肤护理，几天后朋友说我气色变亮了，效果挺惊喜的，值得一试",
+      "raw_data": {
+        "comment_id": "1116181568503",
+        "create_time": 1774791697720,
+        "video_id": "3xdu5rruh4qdije",
+        "content": "我试了皮肤护理，几天后朋友说我气色变亮了，效果挺惊喜的，值得一试",
+        "user_id": "3xeypwckv8cs7yw",
+        "nickname": "刺绣初体验",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/09/09/09/BMjAyNTA5MDkwOTQ2MzRfMzU3MTY1ODYxNV8yX2hkMTU3Xzg0NA==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144328695
+      }
+    },
+    {
+      "id": "kuaishou_comments_514",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "院线级护理看着就高级，心动了想买券体验，服务评价好吗？",
+      "raw_data": {
+        "comment_id": "1116152828447",
+        "create_time": 1774787970864,
+        "video_id": "3xdu5rruh4qdije",
+        "content": "院线级护理看着就高级，心动了想买券体验，服务评价好吗？",
+        "user_id": "3xfxu97rj2kphkg",
+        "nickname": "晶莹剔透",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/06/18/15/BMjAyNTA2MTgxNTAyMjFfMzU3MTUzNDU3Ml8yX2hkODUzXzIyNA==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144328695
+      }
+    },
+    {
+      "id": "kuaishou_comments_543",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "明明最长时间是八小时为啥还要用两小时",
+      "raw_data": {
+        "comment_id": "1129446504280",
+        "create_time": 1778071777999,
+        "video_id": "3xetjp5s27tca7k",
+        "content": "明明最长时间是八小时为啥还要用两小时",
+        "user_id": "3xqf9wgbpypp8qq",
+        "nickname": "连环画。",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/04/14/20/BMjAyNTA0MTQyMDE5MDBfMTk2MjM1NzI3N18yX2hkNDk3XzkxNw==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144369150
+      }
+    },
+    {
+      "id": "kuaishou_comments_560",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "仙女下凡辛苦了，这美貌我直接收藏！",
+      "raw_data": {
+        "comment_id": "1093020849246",
+        "create_time": 1769686156669,
+        "video_id": "3xmdwsj6wcswmgu",
+        "content": "仙女下凡辛苦了，这美貌我直接收藏！",
+        "user_id": "3xjy2eaje2nw8qs",
+        "nickname": "Xovl.🍀",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/03/21/19/BMjAyNjAzMjExOTM3MjBfMzcwMTM0NTAyNF8yX2hkNjAwXzcyNg==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144377743
+      }
+    },
+    {
+      "id": "kuaishou_comments_580",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "家有小学生，以前总担心他沉迷手机影响视力，用「告别手机控」设置了每日使用上限，现在每天都会主动放下手机去看书！",
+      "raw_data": {
+        "comment_id": "1089345308252",
+        "create_time": 1768801590910,
+        "video_id": "3xfamzmf42kuudw",
+        "content": "家有小学生，以前总担心他沉迷手机影响视力，用「告别手机控」设置了每日使用上限，现在每天都会主动放下手机去看书！",
+        "user_id": "3xjzj7kgb5w7hpi",
+        "nickname": "小触控",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2022/06/26/11/BMjAyMjA2MjYxMTIyMDdfMjA1MjY5ODM3N18yX2hkMjBfMzYx_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144396911
+      }
+    },
+    {
+      "id": "kuaishou_comments_594",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "没有用，替换到下一个视频的时候没有收益了",
+      "raw_data": {
+        "comment_id": "1105039518182",
+        "create_time": 1771994945606,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "没有用，替换到下一个视频的时候没有收益了",
+        "user_id": "3xkzgzi5euga6m6",
+        "nickname": "快手用户1673164615309",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2023/03/19/22/BMjAyMzAzMTkyMjMzMzdfMzIzODg0NzI5Ml8yX2hkNjJfOTA5_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405446
+      }
+    },
+    {
+      "id": "kuaishou_comments_595",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 打开自动上滑",
+      "raw_data": {
+        "comment_id": "1102667814736",
+        "create_time": 1771515864436,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "@AI小快 打开自动上滑",
+        "user_id": "3xnphdhfassgnce",
+        "nickname": "快手用户1758284165345",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/02/15/23/BMjAyNjAyMTUyMzUyMzZfNTA0MTk4Nzg5OV8yX2hkM18xOTM=_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405447
+      }
+    },
+    {
+      "id": "kuaishou_comments_596",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 打开自动上滑",
+      "raw_data": {
+        "comment_id": "1096281118959",
+        "create_time": 1770305703387,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "@AI小快(O2467565973) 打开自动上滑",
+        "user_id": "3xywgzxta2hcgui",
+        "nickname": "𝘼𝟲龙 ^⚜️.",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/07/30/00/BMjAyNTA3MzAwMDE2MTJfMzA2MDg2MjIzMV8yX2hkNTcwXzI2MQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405447
+      }
+    },
+    {
+      "id": "kuaishou_comments_597",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 打开自动上滑",
+      "raw_data": {
+        "comment_id": "1093983837259",
+        "create_time": 1769869756967,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "@AI小快 打开自动上滑",
+        "user_id": "3xyxq533wvxfihi",
+        "nickname": "Luna",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/04/25/07/BMjAyNjA0MjUwNzQwNTRfMjg0ODg2MTE5OV8yX2hkMTM2XzMzMQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405447
+      }
+    },
+    {
+      "id": "kuaishou_comments_598",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 开启自动下滑",
+      "raw_data": {
+        "comment_id": "1086126627717",
+        "create_time": 1768018722330,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "@AI小快 开启自动下滑",
+        "user_id": "3xrgn3hnvcjfqu6",
+        "nickname": "吕         刚",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2019/10/20/00/BMjAxOTEwMjAwMDQ3NTJfMTQ3MDI1Mzc0XzJfaGQ2MjFfMzY=_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405448
+      }
+    },
+    {
+      "id": "kuaishou_comments_599",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 打开自动上滑",
+      "raw_data": {
+        "comment_id": "1077551847262",
+        "create_time": 1765808677172,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "@AI小快(O2467565973) 打开自动上滑",
+        "user_id": "3x9dz7cp7fqr6jy",
+        "nickname": "ㅤㅤㅤㅤㅤ ㅤ",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/04/28/23/BMjAyNjA0MjgyMzE1MjFfMTY5MjQ5NTI3Nl8yX2hkMTAzXzYwNg==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405448
+      }
+    },
+    {
+      "id": "kuaishou_comments_601",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 打开自动下滑模式",
+      "raw_data": {
+        "comment_id": "1074830708958",
+        "create_time": 1765101935140,
+        "video_id": "3xfkfi5utg2qb8u",
+        "content": "@AI小快 打开自动下滑模式",
+        "user_id": "3xjqe9x5mdampfe",
+        "nickname": "闪闪发光",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/04/12/13/BMjAyNDA0MTIxMzE4MjlfMjEwMDE2MDk3MF8yX2hkOTk3XzkzMQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144405449
+      }
+    }
+  ]
+}

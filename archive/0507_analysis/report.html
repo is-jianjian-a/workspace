@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机视频观看AI诉求调研报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; padding: 60px 0; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 20px; margin-bottom: 40px; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header p { font-size: 1.1em; opacity: 0.9; }
+        .card { background: white; border-radius: 16px; padding: 30px; margin-bottom: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 1.5em; margin-bottom: 20px; color: #333; border-left: 4px solid #667eea; padding-left: 15px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-box { background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%); padding: 25px; border-radius: 12px; text-align: center; }
+        .stat-box .number { font-size: 2.5em; font-weight: bold; color: #667eea; }
+        .stat-box .label { font-size: 0.9em; color: #666; margin-top: 5px; }
+        .chart-bar { display: flex; align-items: center; margin: 10px 0; }
+        .chart-bar .label { width: 120px; font-size: 0.9em; color: #555; }
+        .chart-bar .bar { flex: 1; height: 30px; background: #f0f0f0; border-radius: 15px; overflow: hidden; margin: 0 10px; }
+        .chart-bar .fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 15px; transition: width 0.3s; }
+        .chart-bar .value { width: 60px; text-align: right; font-size: 0.9em; color: #667eea; font-weight: bold; }
+        .voice-list { max-height: 400px; overflow-y: auto; }
+        .voice-item { padding: 15px; border-bottom: 1px solid #eee; }
+        .voice-item:last-child { border-bottom: none; }
+        .voice-item .meta { font-size: 0.8em; color: #999; margin-bottom: 5px; }
+        .voice-item .text { font-size: 0.95em; color: #333; }
+        .tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.75em; margin-right: 5px; }
+        .tag-explicit { background: #e3f2fd; color: #1976d2; }
+        .tag-implicit { background: #fff3e0; color: #f57c00; }
+        .tag-scene { background: #f3e5f5; color: #7b1fa2; }
+        .tag-type { background: #e8f5e9; color: #388e3c; }
+        .footer { text-align: center; padding: 40px 0; color: #999; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>手机视频观看AI诉求调研报告</h1>
+            <p>基于8,155条用户原声(VOC)的量化分析 | 2025年5月</p>
+        </header>
+
+        <div class="card">
+            <h2>核心数据概览</h2>
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="number">4,579</div>
+                    <div class="label">视频相关条目</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">437</div>
+                    <div class="label">AI相关原声</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">287</div>
+                    <div class="label">明确提及AI</div>
+                </div>
+                <div class="stat-box">
+                    <div class="number">150</div>
+                    <div class="label">隐含AI需求</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>场景分布</h2>
+            <div class="chart-container">
+
+                <div class="chart-bar">
+                    <div class="label">泛视频</div>
+                    <div class="bar"><div class="fill" style="width: 73.74972701463201%"></div></div>
+                    <div class="value">73.7%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">短视频</div>
+                    <div class="bar"><div class="fill" style="width: 19.74230181262284%"></div></div>
+                    <div class="value">19.7%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">长视频</div>
+                    <div class="bar"><div class="fill" style="width: 5.2413190652981%"></div></div>
+                    <div class="value">5.2%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">直播</div>
+                    <div class="bar"><div class="fill" style="width: 1.266652107447041%"></div></div>
+                    <div class="value">1.3%</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>诉求类型分布</h2>
+            <div class="chart-container">
+
+                <div class="chart-bar">
+                    <div class="label">行为描述</div>
+                    <div class="bar"><div class="fill" style="width: 74.40489189779427%"></div></div>
+                    <div class="value">74.4%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">体验痛点</div>
+                    <div class="bar"><div class="fill" style="width: 16.59751037344398%"></div></div>
+                    <div class="value">16.6%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">功能需求</div>
+                    <div class="bar"><div class="fill" style="width: 6.944747761519983%"></div></div>
+                    <div class="value">6.9%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">正面反馈</div>
+                    <div class="bar"><div class="fill" style="width: 2.0528499672417557%"></div></div>
+                    <div class="value">2.1%</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>主题分布 (Top 10)</h2>
+            <div class="chart-container">
+
+                <div class="chart-bar">
+                    <div class="label">其他</div>
+                    <div class="bar"><div class="fill" style="width: 57.32692727669797%"></div></div>
+                    <div class="value">57.3%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">视频质量</div>
+                    <div class="bar"><div class="fill" style="width: 15.745796025333043%"></div></div>
+                    <div class="value">15.7%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">播放控制</div>
+                    <div class="bar"><div class="fill" style="width: 5.437868530246779%"></div></div>
+                    <div class="value">5.4%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">内容推荐</div>
+                    <div class="bar"><div class="fill" style="width: 4.71718715876829%"></div></div>
+                    <div class="value">4.7%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">付费会员</div>
+                    <div class="bar"><div class="fill" style="width: 4.19305525223848%"></div></div>
+                    <div class="value">4.2%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">投屏大屏</div>
+                    <div class="bar"><div class="fill" style="width: 3.450535051321249%"></div></div>
+                    <div class="value">3.5%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">AI功能</div>
+                    <div class="bar"><div class="fill" style="width: 3.319502074688797%"></div></div>
+                    <div class="value">3.3%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">下载缓存</div>
+                    <div class="bar"><div class="fill" style="width: 2.7516925092815026%"></div></div>
+                    <div class="value">2.8%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">广告体验</div>
+                    <div class="bar"><div class="fill" style="width: 2.3149159205066607%"></div></div>
+                    <div class="value">2.3%</div>
+                </div>
+
+                <div class="chart-bar">
+                    <div class="label">字幕翻译</div>
+                    <div class="bar"><div class="fill" style="width: 0.4149377593360996%"></div></div>
+                    <div class="value">0.4%</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>AI相关用户原声 (前30条)</h2>
+            <div class="voice-list">
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">short_video</span>
+                        <span class="tag tag-type">feature_request</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">上周在南山科技园喝咖啡，隔壁桌的女孩一边回TikTok信息一边笑得很开心——上午在华强北收了批新型智能穿戴样品，下午去坂田的3C配件工厂确认了几百条快充数据线的定制logo，晚上发了条工厂自动化产线组装的短视频，直接被中东的客户全部订走。这种场景我太熟悉了，在深圳做跨境这几年，“被订单找上门”早就是平常事。 刚开始我也摸索了很久，曾经窝在龙华公寓里埋头修图，把蓝牙耳机拍得很有科技感，结果却没什么人...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">live_stream</span>
+                        <span class="tag tag-type">feature_request</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">本人装机小白学生党，618快来了想着配个主机，平时用来跑一些简单的本地深度学习demo，不打电脑游戏，想找图吧的各位大佬们求个推荐！ 自己有一根16g的光威内存，其他配件预算最好8k以内，在不损失性能的情况下越少越好 cpu：之前一直看的270k，但是我去装机直播间一般都推的14600或者amd的9700x，不知道咋选了，求推荐一个性价比高的就行，平时看看直播看看视频跑跑深度学习啥的 主板：这个我...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">帖主最近通关了一款用RPG Maker引擎开发的游戏《CHANGED》 因为它的难度系数非常具有挑战性，彻底通关后所感受到的成就感非凡，同时也想给大结局的剧情CG画面截个图留作纪念，并且上传到steam社区分享这份情绪 可是steam的截图功能此时出现了问题，按动时快捷键无法进行截图，于是我构思了另一条思路，那便是先用其他工具将结局画面截取下来，再手动创建属于这款游戏的截图文件夹并手动导入图片让s...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">眼神不好了，想换个平板大一点，想买基础款，可是很多人说8+126用不了一年就会特别卡，我就是看视频多，偶尔玩一玩金铲铲，8+126够用吗？ 我看了两个荣耀gt 2 Pro，和小米7s Pro屏大一点，不过最近好像都不便宜，还有点犹豫，有没便宜点的大屏平板推荐？image_emoticon24image_emoticon66...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">在b站看4k60帧视频会频繁掉到30导致画面看起来非常卡顿，不管调智能帧数还是设置最高都会掉帧，别的手机看丝滑，就gtpro会掉帧。大伙可以去试下【【MMD-异度之刃3】弥央『脳内革命ガール』(4K-60FPS)-哔哩哔哩】 要维持不卡顿要不停点击屏幕维持120hz...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">我是7900xt显卡，cpu是7800x3d，驱动版本：25.6.3 。用Google Chrome在b站看4k分辨率视频，视频和弹幕卡得一顿一顿的，全屏后正常，有8u遇到吗？image_emoticon33用edge浏览器都是正常的，是不是A卡硬解有啥bug？我在浏览器把硬件加速关闭后，b站4k视频不卡了，YouTube看1080p 60fps视频开始卡了image_emoticon16问了AI...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">feature_request</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">大家是不是也感觉有时校园网测速很快，但刷视频、开网页一直转圈？用手机热点反而更流畅 我排查了网卡、驱动、网线，最后发现核心问题出在DNS解析上。 我们的DNS设置是自动获取的，服务器211.69.224.1这个应该是学校的DNS服务器，响应很慢，如图我用手机热点（带宽更低但DNS不同）做对比，立刻流畅了，这证明不是带宽问题，而是DNS问题。 解决方法超级简单：把DNS从‘自动获取’改为‘手动设置’...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">我这个t2x是天玑1300，看b站视频糊的一塌糊涂。（你别说我不会调分辨率）。网上查了一下说天玑芯片解码有问题，好多都不支持硬解码。有人说把智能刷新率关了一下也没用。网上好多人说看视频模糊，还费电，不止我一个人。...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">推荐下地瓜吧 现在正在直播 b站id@低配挂机研讨会...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">赤金产量低了，迷迭香组和自动化组肯定没上全或者用对，龙门币产量也还能再高一点。 迷迭香组本质先有一个要不要办公室放絮雨用20%人力换20％制造的问题，公孙长乐的看法是大月卡玩家要制造其他玩家要人力。另外阿罗玛没精二之前不能上班，迷迭香组基本绑定黑键絮雨，夕令车尔尼爱丽丝重要挂件，最终输出我觉得能达到150%以上就行了，达到极限速度会要求玩家严格算时间和换班，太麻烦。 自动化组就是温蒂森蚺清流+晨曦...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">阿姨 我在去年的时候给我妈妈找人看过，看的挺好的 我推荐你把...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">这人什么憨憨，我燕云辅助卸式的自动看剧情的玩家怎么打红buff很好打啊。什么浴血代打的吗？...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">赶紧戒掉加强学习。多学习戒炉知识，看看了凡四训，寿康宝鉴，多学习传统文化积累福德智慧获得正能量更容易成功，推荐几个微信公众号关注学习，湖心亭看雪客，天悦名坊，大愿小跟班，...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">feature_request</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">显卡和固态可以保留，只需升级cpu+内存+显卡，由于预算就500，建议主板上A320,大概130左右，cpu可以考虑.AMD的3500X , 270左右，内存搞个8g的ddr4 8G, 大概150左右，总价550。 或者上X99平台，这个便宜，pdd上全新的x99 ddr3 C612芯片组主板大概160，搭配e5 1650v3 ，淘宝卖78，ddr3内存单条8g的淘宝卖60左右，两条16G120，...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[tieba]</span>
+                    </div>
+                    <div class="text">把ipv6关了 我7200pro＋也是开了刷网页就加载不出图片 速度慢可能是自动切换到2.4g了...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">本期精选app推荐：
+1.开眼
+2.场库
+3.央视频
+4.一席
+5.一点英语
+以上app各大应用商城均有下载……
+喜欢的话就三连起来吧~...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">short_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">下班瘫在沙发，发誓刷10分钟却熬到凌晨？
+刷完只剩心慌、自责与双倍疲惫，第二天恶性循环继续？
+ 
+别骂自己不自律！这期播客，彻底拆穿你逃不掉的「低能量→刷手机→更低能量」死循环。
+✅ 科学拆解：为什么越累越停不下来？短视频算法如何精准收割你的精力？
+✅ 落地解法：不用强制戒断，4个温柔不费力的方法，帮你拿回专注力、情绪与人生主动权。
+ 
+献给每一个在疲惫中内耗的你：真正的休息，从来不是刷手机，而是...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">制片：九老师
+动画：Joyteeth 无聊的阿祝
+特效：flashyami
+声效：Jimmy Hung Fer
+剪辑：贰_33
+时间锁
+开发：年纪轻轻
+UI：星期五的哥哥
+统筹：许之行
+感谢做出时间锁的朋友、韩老师的调研指导、参加调研的朋友、银翼的魔术师MX搭建网站
+壁纸：无聊的阿祝 G195潮流壁纸
+本视频的戒手机方法参考了《这书能让你戒烟》和《How To Break Up With Your...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">这条视频的评论区，会不会出现大量“AI帮我总结一下”的评论？...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">feature_request</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">本期视频将从图片、视频、服务器三个部分来讲讲，如何提升网站的加载速度。
+
+👇 视频中提到的所有完整流程、工具、代码，都整理在我的博客了： 
+🔗 独家完整版教程：madsgogo.life （建议收藏，防止迷路）
+
+【我是谁？】 
+大家好，我是烧麦。 曾是一名外卖众包骑手，但现在的行情下，时薪甚至不足 10 块。 现实告诉我：外卖或许能糊口，但无法支撑我想养家和自由生活的未来。 所以我决定换一种活法...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">从21补到157，游戏帧率确实提高了，但也引来许多质疑：你这拼好帧拼出来的数据，算什么本事？
+今天来聊聊通过AI算法提高的帧数真的有意义吗？...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">千元素材福利包限名额领取了：https://www.bilibili.com/read/cv42451141/
+Topaz Video AI 更新来到7.1.0版本，实时预览和导出首选项设置，帧插值慢动作的大升级全新引入强大的场景检测功能，星光迷你模型再次更新，新更新 MiniDV 预设和胶片 4K 预设；EXR 的 Alpha 通道支持；DPX 文件直接使用。
+~ Topaz Video AI ...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；
+如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。
+那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；
+话不多说，点赞收藏，开始上课。...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">网盘地址（提示词模板在第17期文件中）
+夸克：https://pan.quark.cn/s/6959f1e185ac  
+
+应用：
+故事板：https://www.runninghub.cn/ai-detail/2050060981774110722/?inviteCode=rh-v1443
+分镜板：https://www.runninghub.cn/ai-detail/2050064565823...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">short_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">从没刷过短视频，手机里也没抖音。就一获取信息的渠道而已，我上网比较早，那会干啥都是浏览器，听歌、下歌、看电影、查地图、路线、查资料，一个浏览器都能解决，抖音出来的时候我就没玩。外卖员困在算法里，抖音的推你喜欢难道就不是算法了吗？人一直吃垃圾食品，身体会不健康，抖音一直推电子榨菜、垃圾食品，精神世界、三观就能一直健康、一尘不染吗？盲人摸象而已，只看自己想看到的，不思考分辨其他的声音，只会觉得自己正确...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-explicit">明确AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">1:23喜欢我手上长嘴和鼻孔吗[doge]美颜算法谁写的？...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">口播技巧
+硬件 （提词器）
+核心部件
+分光玻璃（镜面虚像）
+软件推荐
+1.Lasagna （千层饼) Teleprompter 适用于：iOS、Windo......</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">long_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">我和对象有个需求其实主要是能开摄像头视频，电影画质甚至不是那么重要[笑哭]除了zoom/腾讯会议还有啥推荐吗？...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">short_video</span>
+                        <span class="tag tag-type">behavior_description</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">如果短视频能双击暂停，左右划前进后退，不自动循环/连播，我倒是能接受短视频。对于我这个从来不看短视频的人，任何短视频的操作都很难受。
+偶尔下了次抖音，作者名下的每个视频都没有标题，只有点进去看两秒才知道视频是什么，我真的快疯了。好多短视频无法调节清晰度，想用360P,480P省流量都不可能[生气]...</div>
+                </div>
+
+                <div class="voice-item">
+                    <div class="meta">
+                        <span class="tag tag-implicit">隐含AI</span>
+                        <span class="tag tag-scene">general_video</span>
+                        <span class="tag tag-type">pain_point</span>
+                        <span style="color:#999">[bili]</span>
+                    </div>
+                    <div class="text">我非常喜欢书，也更喜欢看书，每次翻开一本书，我都会深深的闻一口，新书多带着清新淡雅的纸香，老书带着纸质陈旧后的糯香？当然最多的还是上一个读者赋予它的气息，口水印子饭菜油印子，还有不少的血手印。每次翻书到这些痕迹，我都会用手指轻抚，同时脑海里模拟这些印记是在什么情景下产生的，慢慢的见的多了，也能够让我猜七分，最后通过询问或者观察来租书的人慢慢填补满当时的情形，这也是儿时孤独的我少有的乐趣，也为此乐此...</div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>数据来源: MediaCrawler | 分析时间: 2025年5月 | 样本量: 8,155条用户原声</p>
+            <p>报告路径: /Users/zhijian/workspace-strict/MediaCrawler/analysis/report.html</p>
+        </div>
+    </div>
+</body>
+</html>

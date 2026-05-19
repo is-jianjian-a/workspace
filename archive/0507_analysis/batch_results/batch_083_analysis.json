@@ -1,0 +1,462 @@
+{
+  "batch_id": 83,
+  "total_items": 36,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 36
+    },
+    "type_distribution": {
+      "behavior_description": 27,
+      "pain_point": 8,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 13,
+      "video_quality": 12,
+      "content_recommend": 1,
+      "screen_cast": 7,
+      "payment_member": 2,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 35
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_2386",
+      "text": "扯犊子呢？是发朋友圈看不出来，但是你放大一点看看，手机的细节我就不说了，懂得都懂",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2387",
+      "text": "从摄影的角度来看，画质不是第一位的，记录才是第一位的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2388",
+      "text": "手机拍风景锐化痕迹太明显了 不用放大都能看出来",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2390",
+      "text": "你这就是纯欺负人，都上中画幅了。其实M43都比手机强，主要是手机锐化太恶心了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2391",
+      "text": "我几年前亲自用几台旗舰拍照手机对比过几台相机了，有全画幅的尼康Z6，有半画幅，还有一寸底的黑卡2，我可以负责任的说，即便黑卡2和半画幅画质都远胜手机，拍人物的时候放大看看人的面部、脸部边缘、头发、脖子边缘。拍风景放大看看树叶、云彩细节。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2392",
+      "text": "分辨率就不一样，放大后的模糊程度都不同。至少要设置到同样分辨率的情况下再比吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2399",
+      "text": "楼主用手机拍下面的图看看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2400",
+      "text": "手机锐化太严重了，不过算法也挺强",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2401",
+      "text": "[飙泪笑]昨天我也是这样的那个哥们来了一句你的相机贵一般人不舍得买，手机大家都舍得买。第2句就是。你的相机又打不了原神。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2403",
+      "text": "画质再好，一坨屎也没什么可照的。除了某些炫技的摄影，普通人记录生活手机就够了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2405",
+      "text": "具体还是要看输出的画面尺寸，展示的距离，限定图片的场景，画质才有够用的说法",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2406",
+      "text": "这年头谁还用手机拍照，然后传到电脑上用大屏看呢？所以在实际使用上手机和单反拍的真的没啥差别，甚至比单反还讨好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2407",
+      "text": "为啥你的手机和相机焦距可以对到一模一样",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2408",
+      "text": "旅游发朋友圈那还是手机方便，随着ai越来越成熟，手机随便拍一张，再交给ai，分分钟渲染出矢量级别的画质[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2409",
+      "text": "题主很给手机面子了，甚至都没用全画幅来比较[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2412",
+      "text": "又有人来讨论这个问题了。手机1英寸对比半画幅，还是手机1/2英寸对比全画幅？咱找个1英寸对比全画幅吧1.说画质差不差的，首先你要搞明白你经常看图的显示器是什么，如果是手机屏幕，那画质还真差不多，难以分辨。如果你经常在看电脑屏幕（包含平板电脑），那手机画质劣势就能看出来了。但是我相信99%的人是在用手机屏幕看的更多吧，不管是文字信息还是图片信息2.你要硬说放大看，手机有1亿像素的放大岂不是秒杀相机，",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2415",
+      "text": "视频时代用户对变焦的需求增大，也促进厂商把更多资源投入到变焦的研发上",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2418",
+      "text": "老蛙10/4是那个饼干头吗？我本来想买一个玩一玩，看评测说，边缘画质太差了，没敢买",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2419",
+      "text": "我觉得你说得很对，你还少说了一点，就是音响品质很差，环绕声就不提了，基本没有，还不如自己在家下4k片源，给电视机接个音箱看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2421",
+      "text": "谢谢专业评论，今天才知道全国电影院也如此大跃进、最后成烂尾楼了[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2424",
+      "text": "去年春节我把65寸的电视换成了100寸，以后大多数电影都在家里看了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2426",
+      "text": "去年看异形，看了一会屏幕上左边总有一块地方是蓝色的，我以为是投影仪的问题，后来又观察了很久，原来是地上的出口标志灯光照到屏幕上了，无语…电影院确实很多都存在模糊、色彩不准、拖影严重等问题，特别是小影院，简直是浪费时间，音质就不说了，得个响",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2429",
+      "text": "看了一眼河北，理解了。。并不是所有影院都那么烂。我这边的影院，放映机很新、放映员不懒、虚焦发生率不高、清晰度多数较好。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2431",
+      "text": "深圳万象杜比影院，阿凡达重映的时候去体验了一把，戴上眼镜之后左右眼亮度明显不一样，所有一起去的小伙伴都有一样的感觉，出去找经理，经理和员工一口咬定他们看是一样的[大笑]之后再也没去过了本科学校门口小商场的影院原来会员日19.9，平时36一张票，现在会员日40（且只有边角座位），平日50，两个人看一次小厅就奔100块，谁爱去谁去吧。两年前说电影院走下坡路我还会惋惜一下，现在我只会说豪似[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2432",
+      "text": "原来如此，我就说嘛，怎么家里破电视比电影院清晰，敢情影院是欺负老实人",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2434",
+      "text": "热知识：决定清晰度的不是像素数量，而是PPI [惊喜][惊喜][惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2436",
+      "text": "怪不得感觉大部分电影其实就像大号投影仪，真不如手机显示器电视清晰，唉，也就看给氛围和朋友聚一下，一个人不会去的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2437",
+      "text": "影院老板这么不争气，完全不知道提升质量和手机平板竞争，就不要怪大家越来越不去电影院了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2438",
+      "text": "我家昆明有一家百美汇，价格贵但是放映质量还是有保证的。听说所有厅都是进口的科视4K机配7.1环绕，在那里看过几场，质量不错，也是绝对的真4K。万达就只是特效厅标准还行，激光IMAX杜比都有，普通厅就差太多了。万达标准高那是以前高端影厅还不多的时候，一二线的一些海外顶尖院线品牌现在吊打它",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2441",
+      "text": "有一说一，激光机可以调节光源并不是专门为中国爸爸省钱而开发出来的，如果你接触过专业投影机，你就会知道光源调节是一个非常有必要的功能。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2445",
+      "text": "去过一次电影院，就是那个音响音质很差，低音只会嗡嗡的中高音不耐听",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2449",
+      "text": "我的家用投影仪出现了左边四分之一有点虚焦的情况，该怎么调啊。另外左上纯黑能看到一个类圆形的水泡一样的斑，也不晓得是啥原因。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2452",
+      "text": "带着自家的崽去看哪吒，巨幕3D电影，效果确实不咋样，曲幕，但两侧虚焦，并且两侧比中间窄，因为投影仪是平幕投影仪，其实如果是平幕估计效果更震撼。亮度低，想来是为了省钱调低亮度！其实电影市场，只要把播放器和投影器分开管理即可，即版权方只需要管理号播放器，至于投影器，由影院方自行解决，但非要搞成一体的，天价会让老板心痛的。[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2453",
+      "text": "现在国产大电视清晰度和音响都跟上来了，影院吸引力确实越来越小",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2455",
+      "text": "电影院的投影灯明明都到了寿命还舍不得更换，一直就那样使用，导致亮度非常的低。再加上环绕立体声的音响设备调的乱七八糟，声音效果非常差，还不如在家里用高级家庭影院看电影。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2459",
+      "text": "现在无论国内外基本没什么电影好看。直接在家用4K设备看就行了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

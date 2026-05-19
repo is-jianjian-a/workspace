@@ -1,0 +1,293 @@
+{
+  "batch_id": 109,
+  "total_items": 22,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 21,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 17,
+      "pain_point": 4,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "video_quality": 14,
+      "other": 5,
+      "screen_cast": 2,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 21
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4448",
+      "text": "这个美术质量，更应该叫做“审美”吧。随着技术进步，画质和精细度的提升是必然的，但审美不一样，有着足够优秀的艺术品味，美术素颜和审美能力的人，在任何一个时代都能作出养眼的东西。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4453",
+      "text": "图里面3代用的是低画质的图，开高画质也很漂亮",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4462",
+      "text": "但是你红3挑的这个截图画质是不是开得太低了点[调皮]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4465",
+      "text": "那不叫画质，就是2D/3D的区别。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4466",
+      "text": "画质再好素材再多，不好看都是次要，看着难受",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4471",
+      "text": "主要当年也没啥更好的，这已经代表电子游戏的最高画质了，再过20年也会觉得现在的电子游戏不够好的。  就像现在看GTA5觉得画面建模各种瑕疵，十年前看觉得还是相当牛逼的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4472",
+      "text": "最终幻想6，像素重制版出来后有人实拍了一个非常明显的对比视频：【老游戏像素不是方的...】《最终幻想6》原版开场[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4473",
+      "text": "原来是这样子啊，怪不得我当年觉得画质还挺精美的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4475",
+      "text": "隔行扫描吗？玩起来很复古很带感，我有时玩模拟器时会主动设置成这样。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4478",
+      "text": "都是比出来的，当时电视节目清晰度也不高，电脑之类显示的分辨率也不高。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4484",
+      "text": "以前的游戏算得上回忆，画质在当年算好的了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4485",
+      "text": "居然还有这种操作！谢谢答主的分享！哈哈，曾经和小伙伴一起开开心心打一下午游戏的回忆！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4492",
+      "text": "想想小时候自己跟个傻福一样，没电视就把脸贴在荧幕前属红绿蓝……[捂脸][捂脸][捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4495",
+      "text": "老游戏比如红警、暗黑2之类的，虽然是2D，但是画风细腻，细节丰富，音效逼真，动作流畅，观感真的远比很多动作僵硬的3D游戏好很多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4496",
+      "text": "原来是国际友人啊。我们有对战平台，有抖音直播，你再看我们玩的什么效果，再看看你的什么苹果[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4500",
+      "text": "别给老游戏脸上贴金了，老游戏的画面就是很差，放CRT上模糊点也好不了哪里。我来跟你们讲讲在SVGA标准普及前，老游戏画面是什么样的？且不说达不到VGA标准，只能用线条或者字符来表达游戏画面的古早游戏，VGA是什么效果呢？受限于有限的显存，你有320*240的256色画面和640*480的16色画面两种可选。256色画面怎么样呢？如果用来显示照片，在优化算法加持下，还真能和照片感觉差不多，但是游戏中",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4507",
+      "text": "实际上十几年前就有1080p分辨率游戏了，现在我还在玩1080p游戏，以前的游戏画质并不太差。当然如果你说的以前是更早时期，例如最高分辨率只有800*600，那就和显示器分辨率不匹配了，这些老游戏我都直接放弃不玩。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4509",
+      "text": "二十多年前网吧里玩荣誉章：哇，画质真好，背景配音真紧张，情节真棒，一路突突突。现在看，真是弱爆了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4510",
+      "text": "你这个不是街机版本的，是sfc或者md版本的超级街霸。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4511",
+      "text": "其实以前只是技术落后，但技术大神们有办法，画面还是挺清晰的。像这些人，他们是用现在的720P影像脑补过去画质，咋说呢，照猫画虎吧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4517",
+      "text": "我们那会都是黑白电视，家长说这个容易坏彩色电视，只敢偷偷摸摸用黑白电视玩，插到电线上面，画面时好时不好，玩着玩着就变雪花[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4519",
+      "text": "娱乐方式少，自然玩的人多，而且画质也要跟同时代比",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

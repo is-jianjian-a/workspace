@@ -1,0 +1,440 @@
+{
+  "batch_id": 2,
+  "total_items": 34,
+  "statistics": {
+    "scene_distribution": {
+      "long_video": 6,
+      "general_video": 27,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "feature_request": 2,
+      "pain_point": 15,
+      "behavior_description": 17
+    },
+    "topic_distribution": {
+      "video_quality": 13,
+      "other": 16,
+      "ai_feature": 2,
+      "payment_member": 1,
+      "content_recommend": 1,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 4,
+      "explicit": 0,
+      "implicit": 4,
+      "not_ai": 30
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_contents_68",
+      "text": "大家是不是也感觉有时校园网测速很快，但刷视频、开网页一直转圈？用手机热点反而更流畅 我排查了网卡、驱动、网线，最后发现核心问题出在DNS解析上。 我们的DNS设置是自动获取的，服务器211.69.224.1这个应该是学校的DNS服务器，响应很慢，如图我用手机热点（带宽更低但DNS不同）做对比，立刻流畅了，这证明不是带宽问题，而是DNS问题。 解决方法超级简单：把DNS从‘自动获取’改为‘手动设置’",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_contents_69",
+      "text": "现在在广东地区，晚高峰期（大概是21点到0点），限速35M左右，事实上这个速度是不影响使用。 但在某些时段，某些场景上，（非重大节日），限到只有几十K不到。 例如在我们广州黄埔区某个工业园区，某个万达门口，新塘某个大商场。信号是很强的。但会出现打开app，都卡住，如美团，打开根本不显示图片，高德导航加载慢，微信视频在转圈。比当年的移动限速1M还慢。切换到其它运营商手机卡一切正常。你要限速可以理解，",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_70",
+      "text": "这游戏的地图场景还算丰富，但是这个模型清晰度好差，显卡是9070xt，开了4k全高画质还是很粗糙，难道没做4k材质吗？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_71",
+      "text": "我喜欢用电脑惹，因为我的电脑是带鱼屏 画质玩起来真素好看，有时候截屏真的很方便 但素键盘操作真的烦死噜，鸡爪子划拉不过来 可能是我端游玩的少，wasd各种按键真素头痛，有时候操作慢不是死了就是摔死 平板是我目前最常用的，不过因为是安卓平板（三星平板），感觉画质好差，不知道为什么感觉不如电脑和手机 手机是ios，不过玩起来屏幕就小很多惹",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_72",
+      "text": "当然也有可能是我电脑不好的原因3080ti表示体验感有点差 在坚持玩几天试试",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_73",
+      "text": "感觉mini5的画质好差，甚至有点不如手机，放大以后完全没有细节，有没有什么改进的办法image_emoticon9",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_74",
+      "text": "记小事一件： 外祖母七十大寿，遂返乡。 打开电脑打会mhw，遇到阔别多年的表弟。 ——“在玩什么？” lz答：怪物猎人 ——“画质好差，你玩《黑■■：■空》了吗，感觉画质不如黑■。” lz答：玩了，一周目。怪猎是老游戏肯定画质比不过。（结束游戏） ——“你这有什么画质好的游戏吗？”（开始浏览lz的Steam库） ——“《巫■3》老游戏画质不行；《■狼》画面廉价得很；《■辱》听都没听过你能玩百来个小",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_75",
+      "text": "最近看追死神一个月看到了千年血战第一季，真的好好看 把原创剧情都跳了 主线剧情真的很连贯image_emoticon66image_emoticon66w我觉得完现术篇和千年血战都好好看画质作画都好厉害，不知道为什么大家觉得很差image_emoticon66 还有斩月大叔和虚白我好喜欢 不要下线啊image_emoticon9image_emoticon9 一开始被剧透友哈巴赫是大boss，我还",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_76",
+      "text": "刚刚下了个5gb50分钟的片，结果连480p都没有，估计才360p，太夸张了，全网搜遍都没找到更高清点的，FC2-PPV-4834713就这部即使特别模糊也非常好冲，有没有大佬有高清版",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_77",
+      "text": "别人：120帧全高画质，妮姬：60帧全低boss放技能就卡 就很😂 不是说妮姬优化很差吗，我都玩好久了怎么还没发现啊？都上超弦了（一般人很难上的） su：创梦天地你这个卡拉比丘二次元美少女后背射击游戏我早就出了，就很😂 别人：❤️拉毗灰姑娘小红帽阿尼斯小美人鱼水母 我：嚣嘈 饕餮 火车 伏特 就很😂你们懂吧😂 不懂你们现在才说优化差的人，我十年前就说过了，就很😂 异环：我把你打回现实 二重螺旋：我",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_78",
+      "text": "电脑是5060的笔记本，为了妥协画质已经调成中档了，但是在战斗或者一些特殊场景仍然会猛猛掉帧，体验真的很差。是本身优化就太差还是我的电脑哪里出问题了，还需要再降低画质吗。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_79",
+      "text": "刚刚玩ps4，借我哥的老版的，感觉这画质好差啊，可以设置吗？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_80",
+      "text": "75岁的姜昆，这次是真的被冤枉惨了！ 前几天还被全网追着骂“假爱国”“中国赚钱美国花”，评论区被各种段子和嘲讽淹没，逼得他不得不关闭评论区避风头。可谁能想到，这场闹得沸沸扬扬的“美国圣诞唱红歌”风波，从头到尾就是一场精心策划的造谣骗局。 12月26日，随着视频拍摄者亲自发声，所有真相彻底曝光。那些骂得最凶的网友，瞬间被打脸；而那些趁机蹭流量内涵他的同行，估计现在尴尬到想删视频。01 事件起因：一段",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_82",
+      "text": "楼主也是老饥荒了，原版到海难都玩过不止一个存档，第一次正经玩哈姆雷特（之前都是玩一下就不玩了，不太喜欢，一直以来刻板形象是半成品，测试版出的时候看了一些视频，模糊知道有花粉过敏，有拦路的荆棘，还有一地的瓢虫）这几天看到饥荒异域心血来潮想玩又不想重复巨人和海难也就只能开哈姆雷特玩，也是选了我最喜欢的角色机器人。 默认世界死了好几个存档（大多都10天以下）也玩出了一点经验和感受，目前刚刚到第二次和平季",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_83",
+      "text": "声明 本人言论内容仅字面含义，非引战非水军，非反串，仅为个人感想无任何衍生含义内容不代表任何其他团体个人，无任何隐喻，暗示，反串，碰瓷，蹭热度等想法。本人家庭和睦安康、无任何心理或精神疾病，智力为正常水平。本人承诺维护网络环境的清朗，不参与任何形式的网络谣言传播，不制造、不传播不实信息。观点及言论仅代表我个人一点浅薄的看法，非专业学术。我尊重法律和规章制度，认为遵守规则是维护社会秩序和公平正义的重",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_84",
+      "text": "请问我的电脑显示器是4k oled屏幕，光魂的，我在爱奇艺看电影，画质已经调到4k了（当然爱奇艺肯定不够真4k），但感觉模糊是为什么？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_85",
+      "text": "荣耀m7p看视频模糊请问有解决办法吗，抖音画质调了，腾讯视频臻彩1080开了，护眼开和关都试过了，分辨率也调到最高了，还是糊啊",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_86",
+      "text": "陨落心炎哪里起码是做出来的，只是迫于腾讯的压力删减了，作为当时最火的国漫，肯定也很无奈，但是生在腾讯视频，这就是因，纯爱或大男主，这就是果，在腾讯视频有热度的国漫只能纯爱或者模糊感情戏，仙逆选择纯爱进行魔改，斗破选择模糊女性角色感情戏，不明说只暗示",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_87",
+      "text": "二游纯粹的强度党是最少的。 xp党是最多的，至少占星铁90％以上 真厨子和纯强度党一样稀少，绝大部分是xp党装厨子，和xp党装强度党。 - xp党是先偏xp，再偏强度。 举个简单的例子。 一男一女＝选女。 两女＝选强度高的。 当两女强度差距模糊的时候。 那就人脑打成狗脑，一定要让更偏向自己喜欢的。 直到分出胜负，最后回上一个选项，两女选强的。 这就是所谓的xp党。 - 纯粹的强度根本不会下场和人汴",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_88",
+      "text": "我这个t2x是天玑1300，看b站视频糊的一塌糊涂。（你别说我不会调分辨率）。网上查了一下说天玑芯片解码有问题，好多都不支持硬解码。有人说把智能刷新率关了一下也没用。网上好多人说看视频模糊，还费电，不止我一个人。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_contents_89",
+      "text": "就本人遭遇藏瑕卖家，证据糊脸仍然死不承认，然后不得已开小法庭，本人光速获胜事件，总结的一些关于买二手钢笔的感悟和经验。事情详细经过见我上一个帖子。 第一，任何情况下，一定一定要拍开箱视频。 第二，不要相信钢笔贩子的百分百好评，差评可以通过举报等非正常手段删掉。只要售出基数大，任何人都不可能百分百好评，即使他没有过错。牛城修笔这样手艺精湛德高望重的人（本句五毛，bushi）都会有差评，更别提那些压根",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_7",
+      "text": "推荐下地瓜吧 现在正在直播 b站id@低配挂机研讨会",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_8",
+      "text": "赤金产量低了，迷迭香组和自动化组肯定没上全或者用对，龙门币产量也还能再高一点。 迷迭香组本质先有一个要不要办公室放絮雨用20%人力换20％制造的问题，公孙长乐的看法是大月卡玩家要制造其他玩家要人力。另外阿罗玛没精二之前不能上班，迷迭香组基本绑定黑键絮雨，夕令车尔尼爱丽丝重要挂件，最终输出我觉得能达到150%以上就行了，达到极限速度会要求玩家严格算时间和换班，太麻烦。 自动化组就是温蒂森蚺清流+晨曦",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_13",
+      "text": "我自己改了下这样可以吗，宿舍的车尔尼爱丽丝塑心也放了。 还有什么地方可以优化下吗。 除了我没有的干员。。发现我的伺夜也没有精二，我还以为我精二了，可能记错了。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_15",
+      "text": "现在已经不好说什么了 如果根据当时游戏数据超限 扫盘过程中有后台运行别的程序（不一定是外挂辅助）都有可能被判定第三方加载 当然贵游也不会承认是他们问题",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_17",
+      "text": "4.15 腾讯游戏可能因游戏软件BUG、版本更新缺陷、第三方病毒攻击或其他任何因素导致您的游戏虚拟道具等账号数据或游戏数据发生异常。在数据异常的原因未得到查明前，腾讯有权暂时冻结该游戏账号；若查明数据异常为非正常游戏行为所致，腾讯有权恢复游戏账号数据至异常发生前的原始状态（包括向第三方追回被转移数据），而无须向您承担任何责任。若数据异常是由于您实施违法违规行为或违反本协议约定的行为所致，腾讯有权采",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_26",
+      "text": "主要是复制蓝图码比较麻烦，特别是手机用户，很有可能切出去回来就掉线了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_29",
+      "text": "还有我要推到重建业收超花时间！",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_31",
+      "text": "有可能是性能上还没优化好，我昨天抄蓝图的时候全选整个基地删除，手机操作很卡，后面试了下电脑上选了很多东西后也会比较卡image_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_34",
+      "text": "不仅要覆盖全图，蓝图还应该加个git的功能，单拉一个分支不改动master，up主最新的蓝图merge一下就行",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_42",
+      "text": "点了 谁说男的不P图 我很多年前遇到的一个长得特别白皙清秀长在我审美点上的男的 后面其他的对象都直接加上我q了才知道他同时多线好多个 唯一一个跟他奔过现的妹妹发的他拍在家看电视的照片简直一个是帅哥一个是毫不相干的路人😅",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_45",
+      "text": "感觉狗叠其实是想让玩家把协战用起来，但很多人根本没注意过协战功能。我今天也刷到一个吐槽数值膨胀的视频，评论区让她开协战和升级大喵，结果她根本不知道协战是什么也没怎么升级过大喵image_emoticon10 （1.几的老玩家，不是新人）",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_50",
+      "text": "那人评测新免费弓视频拐到真三起源都没发现弓箭体系借鉴的龙信2，鉴定为也就那样，发配到龙信2打几天有得他吐image_emoticon3",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_52",
+      "text": "boss还好，小怪加血挺烦的，不难打，就是跑图的时候浪费时间，神女清小怪得站桩，老地图的怪带弧形香氛边走边打完了，压根不影响跑图。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

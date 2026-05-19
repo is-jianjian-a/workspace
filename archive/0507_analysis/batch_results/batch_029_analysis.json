@@ -1,0 +1,478 @@
+{
+  "batch_id": 29,
+  "total_items": 37,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 30,
+      "long_video": 4,
+      "short_video": 1,
+      "live_stream": 2
+    },
+    "type_distribution": {
+      "behavior_description": 20,
+      "pain_point": 11,
+      "feature_request": 6
+    },
+    "topic_distribution": {
+      "other": 20,
+      "video_quality": 8,
+      "ai_feature": 3,
+      "payment_member": 2,
+      "ad_experience": 1,
+      "playback_control": 2,
+      "download_cache": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 0,
+      "implicit": 3,
+      "not_ai": 34
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1260",
+      "text": "所以手机呢？[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1262",
+      "text": "有用狠狠投币，不过操作在win11笔记本上有点区别，具体为：\n设置→网络和Internet→高级网络设置→在网络适配器里选择点开自己正在使用的WLAN→更多适配器选项  编辑，  然后按up的步骤来。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1263",
+      "text": "牛逼 真的有用 点赞三连了，麻的新电脑打开网页很慢 气死了 500兆啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1265",
+      "text": "b站这些网页视频正常，但是看其他盗版的视频就非常慢[笑哭]不知道为啥，手机都很流畅",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1266",
+      "text": "大佬问你一下，这种方式关掉了ipv6会导致最高网速变慢吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1267",
+      "text": "win11的浏览器现在我感觉越用越卡，最近一个月频繁更新不知道是不是部分机器有问题[呆]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1268",
+      "text": "前几天尝试各种方式不好使，结果昨天买了个新梯子国内网络浏览快到飞起，就连那种服务器访问异常困难的小网站也是稍微等待一下即可访问，到现在也不知道原理，当然如果网络在未搭建梯子的时候就访问能力尚佳也没有获取海外咨询需求的则没有必要了，我是笔记本由于网口内部的铜线档口塑料片断裂，导致只能识别出百兆速度，万般无奈之下只能买USB转千兆网口转换器（小地方没人会焊这玩意，千辛万苦找到了也不可能只收22，）作为",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1269",
+      "text": "up你好，我一直用的edge的浏览器，最近几天突然进入的时候转半天，然后想点进其他端比如抖音就加载不出来，连了梯子也没办法正常上外网，实在找不到原因，是有什么设置上的问题吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1270",
+      "text": "这几天B站真是卡死我了。按视频设置弄了一下，立刻就变好了[星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1277",
+      "text": "想一想优酷爱奇艺在冲了会员的同时不也一样么，不然我不小心点开广告立马关了，为何会有人打骚扰电话告诉我你已获得某某游戏测试资格[吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1280",
+      "text": "笑疯了，javascript有这么大权限？[星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1281",
+      "text": "流量？个人信息？广告？[doge][doge]除了颜色网站我从来没见过那个网站告诉我千万不要信广告内容的。流量每个月都有剩的就当处理存货了，至于个人信息[藏狐][藏狐]他们的用户都是我们男性消费能力一般，而且兄弟们的个人信息早就被公司跟各种app买过多少手了，他连我电话都不要能有我多少信息",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1282",
+      "text": "我发现b站的每次点击进度条都重新请求了片段，是不是每次点击进度条都需要把之前的sourceBuffer删除掉",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1283",
+      "text": "我发现我没有设置过默认就是分片下载[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1284",
+      "text": "这几种方式种，那种更加节约带宽呢？大厂每节约点带宽都是巨量的节约成本吧。目前已经知道是mp4切成m3u8会使得文件总体更大",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1285",
+      "text": "vue这么智能么？[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1286",
+      "text": "现在上传文件是直接与OSS交互还是通过后端上传",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1288",
+      "text": "我这段时间也遇到了，Chrome 使用一种名为 ANGLE 的技术，将 WebGL 等图形 API 在 Windows 上运行时转换为 DirectX。默认使用 D3D11，但某些硬件配置（尤其是 AMD GPU）可能与 D3D11 不兼容，导致卡顿。切换到 D3D9 后，这些不兼容问题似乎被绕过，视频变得更稳定。不过，这播放器可能会禁用 WebGL2 等功能，是一个权衡。虽然切换到 D3D9 是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1289",
+      "text": "没用，本来浏览器设置里就是独显。上次WIN11大更新之后就这样了，而且我是谷歌浏览器，同样的问题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1290",
+      "text": "这个视频不卡，有些视频一卡一卡的，像是在同时播放两个视频，会重叠一闪一闪的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1294",
+      "text": "win10不卡 win11好几个版本都卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1295",
+      "text": "亲测有效，不过我不是你这种卡，我是用一段时间打开视频就会无限加载！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1296",
+      "text": "我是看视频不卡顿但是弹幕有时候会明显掉帧，看直播弹幕卡顿，edge和chrome都是如此。后来用了下面这个朋友的方法就好了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1301",
+      "text": "没颜色的你都没有隐私，就微信而言，不用多说了吧，上次我申请解除微信解除冻结还拍人和身份证照，顿时后悔[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1302",
+      "text": "这怎么跟@智能帮 发的视频一模一样？原视频B站链接：BV1qT4y1J7LN",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1307",
+      "text": "不卡啊，我用UC浏览器，98块买了3个月会员。什么网址都不卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1309",
+      "text": "这个功能其实早就有了，但是默认关闭，现在默认打开了挺逆天的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1310",
+      "text": "他这个占用是真的高，不过最大的问题不是占用高，是我感觉他效果不怎么样，感觉就是锐化了一下没有让视频变得更清晰，占用这么高就为了锐化一下这说不过去[脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1311",
+      "text": "谢谢你哥们。不管你的建议好不好用，我都提前感谢你。[笑哭]之前我电脑浏览网页，视频都卡顿，排查了一大通。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1312",
+      "text": "我记得这个增强视频有三个选项，一个是调用nv显卡的视频超分，一个是浏览器自带的超分，调用核心，还有一个是类似锐化滤镜的，前两者启用会占用20左右的性能，有时候画面色块会糊在一坨。但是加滤镜的那个就占用很小，而且视觉上也有明显增强，所以我一般看b站视频会开",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1313",
+      "text": "太感谢了[笑哭]，服了，最近一直打不开直播间，网页打开也是转圈，关了瞬间没事了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1316",
+      "text": "[笑哭]本来都要开始骂B站垃圾优化了，顶配放视频都能卡，结果又是Edge的问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1318",
+      "text": "神医！我就奇怪了电脑玩游戏一点不卡，怎么手机上购物APP连图片都刷不出来",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1319",
+      "text": "神医呀，最近刚换了个千兆路由器，网速到是上去了就是开软件的时候加载死慢，我寻思腾达的路由器不至于连几年前的路由器都比不上吧，测速什么的又比以前的老路由器好，原来是这个玩意的问题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1322",
+      "text": "神了，byd这浏览器我老以为是我家网络不好[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1329",
+      "text": "BYD总算找到问题出在哪儿了，微软能不能少整点烂活，那个破效率模式也一直在折磨我",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1331",
+      "text": "我也准备前端发展，现在大二，希望up主能多出一些干货视频， 这个视频很给力！！关注了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

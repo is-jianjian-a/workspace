@@ -1,0 +1,354 @@
+{
+  "batch_id": 58,
+  "total_items": 27,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 23,
+      "short_video": 3,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 22,
+      "pain_point": 3,
+      "feature_request": 2
+    },
+    "topic_distribution": {
+      "screen_cast": 1,
+      "other": 24,
+      "download_cache": 1,
+      "ad_experience": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 26
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_414",
+      "text": "真静不下来，总感觉时间很赶，看个电视剧都要快进。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_417",
+      "text": "我一般是开着抖音刷知乎[大笑]有话题的就去知乎里看看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_420",
+      "text": "抖音最喜欢的是猫的视频，其他就找不到理由。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_423",
+      "text": "刷抖音久了脑子会坏掉的 我不下载",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_424",
+      "text": "笑了。b站知乎呢之前也有不少看b站，知乎去投资被搞的血本无归啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_427",
+      "text": "也不是看文字的都是学习的，我爱文字和图片吃瓜，因为视频太慢了，看一条视频都够我吃三四个瓜了[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_437",
+      "text": "真实了，我和我女朋友异地就是这样，我问她她就这么说，还说举着手机累[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_440",
+      "text": "你不喜欢就不拍，即使拍了也千万别漏脸，男女都不要漏。倒不是说你男朋友会故意传播。即使存在手机里有时候也会因为各种原因泄露出去。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_441",
+      "text": "我好奇，如果真的说拿女方手机录，女方会同意吗[看看你]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_443",
+      "text": "首先男方录视频一般都是不正常行为，这种都是留下把柄做证据的，只要你被拍，你结婚时或者他哪一天不如意喝醉酒泄露出来，你就直到什么叫网爆了，拿陈冠希来说还有最近很火的张津瑜，我记得张碧晨那时候背人诬陷就是男方录视频背泄露出来引起的所以不要录视频，这也就是为什么现在很多人住酒店防范意识会检查是否有隐藏摄像头，这种对于男方来说无所谓，对于女生来说会影响一辈子，不要说了什么起诉，周围人的指指点点议论纷纷都会",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_444",
+      "text": "好主意，以后用女方手机录[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_445",
+      "text": "以前拿老婆手机拍了一张，忘记放保密柜，第二天老婆把手机借出去给同事用了一个小时，也不知道被人看到没。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_447",
+      "text": "正经男女朋友或者把对方当成结婚对象的有几个录视频的，无非就是玩家心态寻求刺激。都是和别人的女朋友或者媳妇才会录下来以后慢慢欣赏寻求刺激。你自己的女朋友或媳妇你拍来下来干鸡毛啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_448",
+      "text": "我个人的建议是不要，以免对生活造成影响或者落下把柄，当然这是以前的我会这么说。现在？ 你知道那群LSP口味现在有多刁吗？大部分的片段估计视频封面一差就直接跳过了，要求高的离谱，压根没人在乎视频里的人是谁，除非真的极品。更别说现在AI横行······ 所以也不是太严重就是，但还是不建议，毕竟人能龌龊到啥地步是难以估计的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ad_experience",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_449",
+      "text": "就是用女生的手机录，自己手机不能留这些[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_451",
+      "text": "顶 适应版本的回答[滑稽]对方主动给手机录，也要当心，事后会不会成被告强J的铁证，目前版本认定违背意愿与否是相当魔幻的，爱玩点强制爱的狼性人士[为难]只能祝好运，所遇皆良人[惊喜]要不就都别拍了呢，符合各方安全需求[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_454",
+      "text": "他拍我视频，但是我想怕啥呢？他每次拍我我都不会面对镜头，闭眼弄，就算某天暴露了，我也丝毫不会觉得丢脸。因为我会立马申领一个受害者角色，那就是被偷拍的老婆。只有他有风险",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_460",
+      "text": "我也是这么想的 为了让她放心 如果我想录或者拍照的话都会用她的手机  看完最好就删了 不保存更好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_461",
+      "text": "我就是，来兴致了同意了就拿女友的手机录，反正她总不会把自己的发出去吧。当然发了被我又看到了，自然走法律程序呗，这样有情趣又安全。不过变成前女友，就是过往的经历了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_463",
+      "text": "建议换个没有这种爱好的男朋友",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_473",
+      "text": "我见过我朋友圈有女生发他俩视频的[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_478",
+      "text": "我就是拿女生手机录的，而且我自己不会在网上问对方要视频，因为会留痕",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_485",
+      "text": "男生如果想录视频，说明他心里表态，幼稚、不够爱你的表现。真正的有责任有担当爱你的男人不会拍这种私密的视频。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_491",
+      "text": "手机录不好，实在想保存记录留念也要用摄影机。现在的手机就是个窃听监视设备。[吃瓜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_495",
+      "text": "我觉得这还是要看人品，我也拍我对象的，但是我从来没想过把这个视频通过其他手段传播出去，正常都是隐藏起来夜深人静的偶尔看一下。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_496",
+      "text": "拿谁手机录了也没用，早晚会传到其他手机上，因为录视频并不单纯是为了自己看，背后有很大的利益驱动和市场纵深。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_497",
+      "text": "录视频打王者吗，可以呀",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

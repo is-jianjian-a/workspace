@@ -1,0 +1,317 @@
+{
+  "batch_id": 10,
+  "total_items": 24,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 22,
+      "short_video": 2
+    },
+    "type_distribution": {
+      "behavior_description": 19,
+      "feature_request": 3,
+      "pain_point": 2
+    },
+    "topic_distribution": {
+      "other": 13,
+      "download_cache": 1,
+      "video_quality": 9,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 24
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_687",
+      "text": "高清的是如果这部卖的好就拿出来卖image_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_688",
+      "text": "我去搜了下这个神人卖家，好多片都半年了还不出高清的，这是正常情况吗",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_689",
+      "text": "大于2个G就不想下载了 其实720看着也行的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_700",
+      "text": "首先把锁60帧和游戏内的插帧关了，去n卡app添加上异环，超分模型选m性能，ai插帧打开，之前卡卡的cg也完全不卡了，我是4060，调完之后2k开lumen平均帧100多，但还是不建议开lumen因为low很低会有卡顿的感觉",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_701",
+      "text": "不是拉踩，但是这真的体现出终末地优化有多强了…image_emoticon9image_emoticon9我还挺喜欢异环这游戏的，但是如果一直这么掉帧那真的游戏体验很差了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_703",
+      "text": "4060ti 2k原画，帧生成+lumen，能有100帧，很稳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_705",
+      "text": "我朋友5060笔电很流畅。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_707",
+      "text": "不开插帧，然后锁120中画质，关闭光追，能在100-120，我也是5060，电脑记得开狂暴模式",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_714",
+      "text": "买PS4的第一个游戏建议玩那些画质好的游戏， 神海地平线大表哥之类的， 如果第一个游戏玩的画质一般那种， 你会觉PS4画质不好， 失望 ， 其实是游戏的锅",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_715",
+      "text": "主机改不了画质 都是默认画质 而且你玩的游戏太老了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_719",
+      "text": "为什么我觉得我的电视看着还阔以是我眼睛有问题嘛image_emoticon25",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_722",
+      "text": "他助理已经公开视频来源了，说是她在美国洛杉矶豪宅帮大家拍的，被大家的爱国热情震撼了就放到了自己的抖音😒😒",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_724",
+      "text": "我想看杨议后续反应的表演视频image_emoticon25",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_729",
+      "text": "某短视频平台拿800年前的视频都可以说成是明天发生的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_738",
+      "text": "首先分享一下我的游玩感想，机器人100的三维开局非常弱并且哈姆雷特第二季节就是长期下雨湿润无法避免所以持续掉血是常态，因为哈姆雷特野外的花不产生蝴蝶，又没有蜘蛛，所以我发现能常规廉价回血手段只剩下吃1金币烤熟的石榴（回20血）",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_739",
+      "text": "机器人开荒哈姆雷特唯一的优势是电，这也是我最想分享给大家的，哈姆雷特的电鸟是很多的，离出生点又不远，开局采几根树枝就可以去找电鸟电自己，一边挨电一边把铁矿捡完，这个时候你就不需要火把了，机器人会常亮非常非常非常久（或许是永久的？不太确定），下一步就是做一本解锁背包、古董锤、木甲等就可以下遗迹了，遗迹主要目标是古董、草、树枝，留意有陷阱，建议穿木甲探索来回搬物资，狠狠探索两个遗迹拿到第一桶金，再去猪",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_750",
+      "text": "美术，小麦地排前面？小麦地角色只能说一般。。。如果版本在往前退一点，那就是屎。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_751",
+      "text": "优化方面，原，崩，（终，绝）同一级",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_753",
+      "text": "国内视频网站的4k码率很低，实际上只要码率够。我这里指的是1080p的蓝光原盘那种，你放4k上播一样很清晰的。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_754",
+      "text": "电脑不行或者视频源不行",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_755",
+      "text": "你找个50m码率的4K视频看看就知道什么是清晰",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_757",
+      "text": "你去看看环太平洋85GB的原盘，绝对清晰",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_759",
+      "text": "荣耀本身的画质增强也开了的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_760",
+      "text": "其他界面也模糊吗？还是只是在用三方应用看视频模糊？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

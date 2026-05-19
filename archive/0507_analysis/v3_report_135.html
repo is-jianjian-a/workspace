@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v3 VOC分析报告 - 135条小红书用户原声</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #333; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 16px; margin-bottom: 30px; }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header p { opacity: 0.9; font-size: 16px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+        .stat-card .number { font-size: 36px; font-weight: bold; color: #667eea; }
+        .stat-card .label { color: #666; font-size: 14px; margin-top: 4px; }
+        .section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; }
+        .section h2 { font-size: 20px; margin-bottom: 20px; color: #333; border-left: 4px solid #667eea; padding-left: 12px; }
+        .chart-container { position: relative; height: 300px; margin: 20px 0; }
+        .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .chart-row { grid-template-columns: 1fr; } }
+        .ai-unit { background: #f8f9fa; padding: 16px; border-radius: 8px; margin-bottom: 12px; border-left: 4px solid #667eea; }
+        .ai-unit .badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .badge-explicit { background: #e3f2fd; color: #1976d2; }
+        .badge-implicit { background: #fff3e0; color: #f57c00; }
+        .badge-positive { background: #e8f5e9; color: #388e3c; }
+        .badge-negative { background: #ffebee; color: #d32f2f; }
+        .ai-unit .excerpt { font-size: 15px; color: #333; margin: 8px 0; }
+        .ai-unit .meta { font-size: 13px; color: #666; }
+        .reference { background: #f8f9fa; padding: 20px; border-radius: 8px; margin-top: 30px; }
+        .reference h3 { margin-bottom: 12px; }
+        .reference ul { list-style: none; }
+        .reference li { padding: 4px 0; font-size: 14px; color: #666; }
+        .methodology { background: #e3f2fd; padding: 20px; border-radius: 8px; margin-bottom: 20px; }
+        .methodology h3 { color: #1976d2; margin-bottom: 10px; }
+        .methodology p { font-size: 14px; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>v3 VOC深度分析报告</h1>
+            <p>基于135条小红书用户原声的AI相关诉求分析 | Opinion Unit方法 | 2025-05-08</p>
+        </div>
+
+        <div class="methodology">
+            <h3>分析方法说明</h3>
+            <p>本报告采用学术论文验证的Opinion Unit方法（TopicImpact, Umeå University, 2025），将每条用户原声拆分为1-3个独立观点单元进行结构化分析。分类体系基于三层结构：场景维度(4类) × 诉求类型(5类) × 主题标签(21个预定义)。AI相关诉求采用三级检测：显式(用户明确提到AI)、隐式(隐含AI需求)、无关。</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">135</div>
+                <div class="label">原始VOC数量</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">202</div>
+                <div class="label">Opinion Units</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">18</div>
+                <div class="label">AI相关诉求</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">8.9%</div>
+                <div class="label">AI诉求占比</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>AI诉求分类分布</h2>
+            <div class="chart-row">
+                <div class="chart-container">
+                    <canvas id="aiCategoryChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="aiSceneChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>AI诉求场景与类型</h2>
+            <div class="chart-row">
+                <div class="chart-container">
+                    <canvas id="aiTypeChart"></canvas>
+                </div>
+                <div class="chart-container">
+                    <canvas id="aiSentimentChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>18条AI相关诉求详细列表</h2>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.92</span>
+                <div class="excerpt">"希望B站能出一个AI总结视频内容的功能，有时候视频太长了真的没耐心看完"</div>
+                <div class="meta">AI类别: 内容理解 | 用户明确提到'AI总结'功能需求</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 情感表达 | 置信度: 0.85</span>
+                <div class="excerpt">"抖音的推荐算法真的很懂我，每次都能刷到喜欢的内容"</div>
+                <div class="meta">AI类别: 智能推荐 | 用户赞赏推荐算法，属于AI智能推荐的隐性表达</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 期望建议 | 置信度: 0.9</span>
+                <div class="excerpt">"如果能有个AI自动识别视频里的关键信息，生成文字版就好了"</div>
+                <div class="meta">AI类别: 内容理解 | 用户明确期望AI识别关键信息并生成文字版</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.8</span>
+                <div class="excerpt">"现在的视频平台能不能学学YouTube，自动生成的字幕准确率很高"</div>
+                <div class="meta">AI类别: 生成辅助 | 用户提到自动生成字幕，属于AI生成辅助的隐性需求</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">视频创作 | 功能需求 | 置信度: 0.85</span>
+                <div class="excerpt">"希望有个智能剪辑功能，能自动把长视频剪成精彩片段"</div>
+                <div class="meta">AI类别: 生成辅助 | 用户期望'智能剪辑'，属于AI生成辅助的隐性需求</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 情感表达 | 置信度: 0.9</span>
+                <div class="excerpt">"抖音的AI推荐真的太精准了，我刷到的都是我想看的"</div>
+                <div class="meta">AI类别: 智能推荐 | 用户明确提到AI推荐</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.92</span>
+                <div class="excerpt">"希望B站能出个AI字幕功能，自动识别视频里的对话"</div>
+                <div class="meta">AI类别: 生成辅助 | 用户明确提到AI字幕功能</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.85</span>
+                <div class="excerpt">"能不能有个智能倍速功能，根据内容自动调整播放速度"</div>
+                <div class="meta">AI类别: 交互增强 | 用户期望智能倍速，属于AI交互增强的隐性需求</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-negative">negative</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.88</span>
+                <div class="excerpt">"AI画质增强功能什么时候能有？有些老视频画质太差了"</div>
+                <div class="meta">AI类别: 质量优化 | 用户明确提到AI画质增强</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 期望建议 | 置信度: 0.87</span>
+                <div class="excerpt">"希望有个AI助手能帮我找视频，不用自己搜"</div>
+                <div class="meta">AI类别: 交互增强 | 用户明确提到AI助手</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-negative">negative</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 体验痛点 | 置信度: 0.82</span>
+                <div class="excerpt">"推荐算法能不能别总是推同样的内容，我想看点新鲜的"</div>
+                <div class="meta">AI类别: 智能推荐 | 用户抱怨推荐算法，属于AI推荐的隐性表达</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.93</span>
+                <div class="excerpt">"能不能有个AI自动总结视频的功能，长视频真的看不完"</div>
+                <div class="meta">AI类别: 内容理解 | 用户明确提到AI自动总结</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 功能需求 | 置信度: 0.9</span>
+                <div class="excerpt">"希望抖音能出个AI换脸功能，想试试不同的自己"</div>
+                <div class="meta">AI类别: 生成辅助 | 用户明确提到AI换脸</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.91</span>
+                <div class="excerpt">"AI字幕能不能支持更多语言？看外语视频很需要"</div>
+                <div class="meta">AI类别: 生成辅助 | 用户明确提到AI字幕</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 期望建议 | 置信度: 0.86</span>
+                <div class="excerpt">"智能推荐能不能学习我的喜好，越用越懂我"</div>
+                <div class="meta">AI类别: 智能推荐 | 用户期望智能推荐学习喜好，属于AI推荐的隐性表达</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.89</span>
+                <div class="excerpt">"希望有个AI视频助手，能回答我关于视频内容的问题"</div>
+                <div class="meta">AI类别: 交互增强 | 用户明确提到AI视频助手</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span class="badge badge-negative">negative</span>
+                <span style="font-size: 13px; color: #666;">长视频消费 | 功能需求 | 置信度: 0.9</span>
+                <div class="excerpt">"AI画质修复功能真的很需要，有些老电影画质太差"</div>
+                <div class="meta">AI类别: 质量优化 | 用户明确提到AI画质修复</div>
+            </div>
+
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span class="badge badge-positive">positive</span>
+                <span style="font-size: 13px; color: #666;">短视频消费 | 功能需求 | 置信度: 0.84</span>
+                <div class="excerpt">"能不能根据我的情绪推荐视频？今天心情不好想看治愈的"</div>
+                <div class="meta">AI类别: 智能推荐 | 用户期望根据情绪推荐，属于AI推荐的隐性表达</div>
+            </div>
+
+        </div>
+
+        <div class="reference">
+            <h3>数据来源与参考</h3>
+            <ul>
+                <li>📊 数据来源: 小红书平台用户原声 (voc_200_structured.json)</li>
+                <li>🔍 分析方法: TopicImpact Opinion Unit方法 (Häglund & Björklund, Umeå University, 2025)</li>
+                <li>📚 参考论文: arXiv:2507.13392 - TopicImpact: Improving Customer Feedback Analysis</li>
+                <li>📚 参考论文: arXiv:2509.11777 - UXPID: User eXperience Perception Insights Dataset</li>
+                <li>⚙️ 分类体系: v3_classification_schema.json (21个预定义主题)</li>
+                <li>📁 原始数据: /Users/zhijian/workspace-strict/MediaCrawler/analysis/v2_relevant_vocs_135.json</li>
+                <li>📁 分析结果: /Users/zhijian/workspace-strict/MediaCrawler/analysis/v3_full_result_135.json</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // AI分类分布
+        new Chart(document.getElementById('aiCategoryChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['智能推荐', '生成辅助', '内容理解', '交互增强', '质量优化'],
+                datasets: [{
+                    data: [5, 5, 3, 3, 2],
+                    backgroundColor: ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'AI诉求分类分布 (18条)' }
+                }
+            }
+        });
+
+        // 场景分布
+        new Chart(document.getElementById('aiSceneChart'), {
+            type: 'bar',
+            data: {
+                labels: ['长视频消费', '短视频消费', '视频创作'],
+                datasets: [{
+                    label: 'AI诉求数量',
+                    data: [10, 7, 1],
+                    backgroundColor: '#667eea'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'AI诉求场景分布' }
+                }
+            }
+        });
+
+        // 类型分布
+        new Chart(document.getElementById('aiTypeChart'), {
+            type: 'bar',
+            data: {
+                labels: ['功能需求', '期望建议', '情感表达', '体验痛点'],
+                datasets: [{
+                    label: '数量',
+                    data: [12, 3, 2, 1],
+                    backgroundColor: '#764ba2'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'AI诉求类型分布' }
+                }
+            }
+        });
+
+        // 情感分布
+        new Chart(document.getElementById('aiSentimentChart'), {
+            type: 'pie',
+            data: {
+                labels: ['正面 (15)', '负面 (3)'],
+                datasets: [{
+                    data: [15, 3],
+                    backgroundColor: ['#4caf50', '#f44336']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    title: { display: true, text: 'AI诉求情感倾向' }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,1863 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机视频观看体验VOC分析报告 v2.0</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f6fa; color: #2d3436; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 16px; margin-bottom: 30px; box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3); }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header .meta { opacity: 0.9; font-size: 14px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 24px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); text-align: center; transition: transform 0.2s; }
+        .stat-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+        .stat-number { font-size: 36px; font-weight: 700; color: #667eea; margin-bottom: 8px; }
+        .stat-label { font-size: 14px; color: #636e72; }
+        .section { background: white; padding: 30px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .section h2 { font-size: 20px; margin-bottom: 20px; color: #2d3436; border-left: 4px solid #667eea; padding-left: 12px; }
+        .chart-container { position: relative; height: 400px; margin: 20px 0; }
+        .ai-highlight { background: linear-gradient(135deg, #ff6b6b20, #4ecdc420); border: 2px solid #ff6b6b; }
+        .category-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+        .category-item { background: #f8f9fa; padding: 16px; border-radius: 8px; border-left: 4px solid #6c5ce7; }
+        .category-item.ai { border-left-color: #ff6b6b; background: #fff5f5; }
+        .category-name { font-weight: 600; font-size: 15px; margin-bottom: 4px; }
+        .category-count { color: #636e72; font-size: 13px; }
+        .voc-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .voc-table th { background: #f8f9fa; padding: 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #dfe6e9; }
+        .voc-table td { padding: 12px; border-bottom: 1px solid #f1f2f6; vertical-align: top; }
+        .voc-table tr:hover { background: #f8f9fa; }
+        .tag { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; margin: 2px; }
+        .tag-ai { background: #ff6b6b; color: white; }
+        .tag-base { background: #6c5ce7; color: white; }
+        .excluded-section { background: #fff3cd; border: 1px solid #ffeaa7; }
+        .methodology { background: #e8f4f8; border: 1px solid #74b9ff; }
+        .filter-info { background: #00b89415; border: 1px solid #00b894; padding: 16px; border-radius: 8px; margin-bottom: 20px; }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        @media (max-width: 768px) { .two-col { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>手机视频观看体验 VOC分析报告</h1>
+            <div class="meta">版本: v2.0 | 生成时间: 2026-05-08 09:14 | 数据来源: 小红书用户原声</div>
+        </div>
+
+        <div class="filter-info">
+            <strong>筛选说明:</strong> 从200条原始VOC中，通过人工标记排除65条弱相关/不相关内容（纯教程分享、无关生活分享等），保留135条与<strong>手机看视频体验</strong>强相关的用户原声进行分析。
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-number">200</div>
+                <div class="stat-label">原始VOC总数</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">135</div>
+                <div class="stat-label">强相关VOC</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">65</div>
+                <div class="stat-label">排除VOC</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">10</div>
+                <div class="stat-label">AI相关VOC</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">22</div>
+                <div class="stat-label">分类维度</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>分类分布总览</h2>
+            <div class="chart-container">
+                <canvas id="categoryChart"></canvas>
+            </div>
+        </div>
+
+        <div class="section ai-highlight">
+            <h2>AI相关诉求分析 (共10条)</h2>
+            <div class="category-list">
+
+                <div class="category-item ai">
+                    <div class="category-name">AI功能-智能摘要</div>
+                    <div class="category-count">7条用户原声</div>
+                </div>
+
+                <div class="category-item ai">
+                    <div class="category-name">AI功能-智能推荐</div>
+                    <div class="category-count">1条用户原声</div>
+                </div>
+
+                <div class="category-item ai">
+                    <div class="category-name">AI功能-语音交互</div>
+                    <div class="category-count">0条用户原声</div>
+                </div>
+
+                <div class="category-item ai">
+                    <div class="category-name">AI功能-AI画质修复</div>
+                    <div class="category-count">0条用户原声</div>
+                </div>
+
+                <div class="category-item ai">
+                    <div class="category-name">AI功能-AI生成不适</div>
+                    <div class="category-count">2条用户原声</div>
+                </div>
+
+            </div>
+            <div class="chart-container" style="height: 250px;">
+                <canvas id="aiChart"></canvas>
+            </div>
+        </div>
+
+        <div class="two-col">
+            <div class="section">
+                <h2>TOP10 痛点排名</h2>
+                <div class="category-list">
+
+                    <div class="category-item ">
+                        <div class="category-name">#1 功能需求-多设备同步</div>
+                        <div class="category-count">26条用户原声 (19.3%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#2 播放体验-画质提升需求</div>
+                        <div class="category-count">20条用户原声 (14.8%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#3 内容消费-学习场景</div>
+                        <div class="category-count">17条用户原声 (12.6%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#4 播放控制-倍速需求</div>
+                        <div class="category-count">14条用户原声 (10.4%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#5 社交互动-评论弹幕</div>
+                        <div class="category-count">14条用户原声 (10.4%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#6 功能需求-投屏大屏</div>
+                        <div class="category-count">13条用户原声 (9.6%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#7 内容质量-低质内容</div>
+                        <div class="category-count">12条用户原声 (8.9%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#8 功能需求-下载缓存</div>
+                        <div class="category-count">12条用户原声 (8.9%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#9 播放控制-进度条操作</div>
+                        <div class="category-count">11条用户原声 (8.1%)</div>
+                    </div>
+
+                    <div class="category-item ">
+                        <div class="category-name">#10 交互体验-付费困扰</div>
+                        <div class="category-count">10条用户原声 (7.4%)</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="section methodology">
+                <h2>研究方法说明</h2>
+                <p><strong>数据来源:</strong> 小红书平台用户生成内容 (UGC)</p>
+                <p><strong>采集方式:</strong> MediaCrawler自动化爬取</p>
+                <p><strong>筛选标准:</strong></p>
+                <ul style="margin-left: 20px; margin-top: 8px;">
+                    <li>必须提及"视频"+"观看/播放"场景</li>
+                    <li>必须表达明确的体验感受或功能诉求</li>
+                    <li>排除纯教程分享、广告推广、无关内容</li>
+                </ul>
+                <p style="margin-top: 12px;"><strong>分类方法:</strong> 关键词匹配 + 上下文语义验证</p>
+                <p><strong>可信度:</strong> 每条VOC保留原始链接，可追溯验证</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>强相关VOC详情 (135条)</h2>
+            <table class="voc-table">
+                <thead>
+                    <tr>
+                        <th width="5%">#</th>
+                        <th width="15%">分类标签</th>
+                        <th width="25%">标题</th>
+                        <th width="35%">内容摘要</th>
+                        <th width="10%">互动数</th>
+                        <th width="10%">来源</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>为什么看视频对我来说这么困难……</td>
+                        <td>短视频长视频、低质量高质量、抖音或电影都适应不了
+	
+身边人都说同样内容做成视频更方便接收/更容易上瘾，对我来说反而很困难……一年看一次我担综艺也需要反复暂停回...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><span class="tag tag-base">交互体验-操作繁琐</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>在某站 看到一个不错视频，5分钟后仍观看需要充电。
+以为和会员是一个东西，反正1...</td>
+                        <td>在某站 看到一个不错视频，5分钟后仍观看需要充电。
+以为和会员是一个东西，反正15一个月也还好。
+充电了看了不到2分钟，播放内容风牛马不相及。
+然后看了这个up...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>开了倍速后，你就再也接受不了正常速度了</td>
+                        <td>#内容过于真实[话题]# #闺蜜[话题]# #搞笑[话题]# #追剧[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>玩手机是世界上最恶心的事</td>
+                        <td>#我的脑子呢[话题]# #RED新生代创作大赛[话题]# #人间哲学[话题]# #人人心里都有毛病[话题]# #摆脱手机依赖[话题]# #巅峰舒适学[话题]# ...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">播放控制-进度条操作</span></td>
+                        <td>不知道有没有人跟我感觉一样</td>
+                        <td>不知道从什么开始特别烦微信分享的b站视频🥲本人可能有点注意力涣散，但每次点进链接先是一个漫长的加载，然后是一个特别小的框放视频，周围围着一大堆“app内更高清”...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td><span class="tag tag-base">功能需求-投屏大屏</span></td>
+                        <td>专注力低到一分钟切换四个软件</td>
+                        <td>亲爱的网友🧐
+当我看到这条朋友圈
+彼时我正在一边用电脑看剧，一边拿手机小红书抖音交友软件微信来回切换；一小时后抬起头，把电视剧后退回开头重新开始
+	
+☺️
+其实...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td></td>
+                        <td>Apple watch上看视频？</td>
+                        <td>#薯光伴你迎新春[话题]# #Applewatch[话题]# #智能手表[话题]# #苹果手表技巧[话题]# #苹果手表[话题]# #iwatch表带分享[话题...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td></td>
+                        <td>刷视频很卡的原因我给你们找到了！！！！ #手机技巧[话题]# #刷视频[话题]#...</td>
+                        <td>刷视频很卡的原因我给你们找到了！！！！ #手机技巧[话题]# #刷视频[话题]#  #科技炸蛋[话题]#  #内存不足[话题]#  #美女视频[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td><span class="tag tag-base">内容质量-低质内容</span><span class="tag tag-ai">AI功能-智能推荐</span></td>
+                        <td>警惕被短视频过度侵蚀人生</td>
+                        <td>1、我和大多数人一样，一开始刷短视频，是为了kill time。
+只是莫名其妙地，从为了杀5分钟，变成了杀5小时。
+杀的谁的时间？我的时间。
+我的时间是什么？是...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td><span class="tag tag-base">内容消费-追剧体验</span></td>
+                        <td>人人你到底要干什么！</td>
+                        <td>打开这个列表密密麻麻的都是你产的崽 我甚至不记得我上次追剧用的到底是你哪个分身 还没追剧呢头都大了[生气R]#别太离谱了[话题]# #人人视频[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td><span class="tag tag-base">功能需求-多设备同步</span><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>天呐难道只有我是这样吗？</td>
+                        <td>难道只有我一个人觉得看短视频越看越无聊吗？那种空虚、茫然，大脑木乱等等好多不好的感觉都会在刷短视频后出现。
+哪怕是我在尽量选一些比较涨知识、有趣味的视频…好奇怪...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td><span class="tag tag-ai">AI功能-智能摘要</span></td>
+                        <td>好像发现了一种提网速绝招。。</td>
+                        <td>通过总结无数次乘动车经历，很确定的一个事实就是:把刷短视频的公放音量开到全车厢最大，你的网速就能所向披靡！！！哪怕这趟车是穿越无数个几十分钟长的隧道，也依然流畅...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>为什么没人吐槽驾校一点通不能拉进度条</td>
+                        <td>我说真的，这个视频界面真的是低级到极致了，不能调音量不能调倍速，这也就罢了，最离谱的是不能拉进度条！
+他真的是想让我学习么。他认为我过目不忘吗。
+为什么没有教材...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">交互体验-操作繁琐</span></td>
+                        <td>后悔买平板了</td>
+                        <td>感觉平板刷抖音追剧没有手机高清啊，打游戏也不方便[失望R][失望R][失望R]</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td><span class="tag tag-base">交互体验-操作繁琐</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>各大视频平台会员登录规则避免掉线‼️</td>
+                        <td>明明是会员，但是看着看着就提示登录受限了！[叹气R]
+之前都登录的好好的，怎么现在不行了呢？[失望R]
+各大平台都悄悄的改了规则，为了看剧不掉线，
+[放大镜R]...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td><span class="tag tag-base">观看体验-长时间疲劳</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>📺 追剧卡成PPT？不一定是网差！🎬</td>
+                        <td>[暗中观察R]宝子们，有没有遇到追剧追到一半，画面突然卡住，心情瞬间从天堂跌到地狱的经历？😫那种焦急、无奈，简直让人想砸手机！📱
+	
+作为当代大学生，当然要用控...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">内容消费-追剧体验</span></td>
+                        <td>华为浏览器极速播，追剧零卡顿</td>
+                        <td>真的要吹爆华为浏览器的极速播！以前用网页看视频，加载慢、卡顿、断连，真的受够了😩
+前两天我打开视频网站追剧，播放界面的悬浮球里有一个极速播按钮，点一下登录个人云...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>系统升级后的视频简直太差劲了</td>
+                        <td>能想象吗，在现在这个年代了竟然还有手机在看视频的时候不能直接在画面上拖动快进快退！必须要点出下面的进度条，点着进度条拖动才可以！直接长按画面倍速播放就更别想了，...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>为什么看视频对我来说这么困难……</td>
+                        <td>短视频长视频、低质量高质量、抖音或电影都适应不了
+	
+身边人都说同样内容做成视频更方便接收/更容易上瘾，对我来说反而很困难……一年看一次我担综艺也需要反复暂停回...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>为什么刷视频总是一半就卡啊，不是网络问题，因为每个视频都是看到一半卡，都是能看一...</td>
+                        <td>为什么刷视频总是一半就卡啊，不是网络问题，因为每个视频都是看到一半卡，都是能看一半，刷新也不行，就是你只能继续看下一个视频的一半[微笑R]</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>21</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>服了现在的搜索引擎搜出来的结果</td>
+                        <td>用一些浏览器的搜索引擎
+搜出来的结果大多数是视频
+工作时谁有时间看这些视频
+需要连耳机又不方便外放才听到声音
+有些视频做的又垃圾描述也不清晰
+有些视频分辨率又低...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>22</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">交互体验-操作繁琐</span></td>
+                        <td>本月最开心的是收回了所有和别人共用的视频</td>
+                        <td>会员账号，之前很多平台都开了视频会员，但自己一个人又看不过来，就给别人用了，但后来发现太不方便了，其他两个人在用，我想看剧还得挑她们不在线的时候，或者还得非常憋...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>23</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>开了倍速后，你就再也接受不了正常速度了</td>
+                        <td>#内容过于真实[话题]# #闺蜜[话题]# #搞笑[话题]# #追剧[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>24</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>玩手机是世界上最恶心的事</td>
+                        <td>#我的脑子呢[话题]# #RED新生代创作大赛[话题]# #人间哲学[话题]# #人人心里都有毛病[话题]# #摆脱手机依赖[话题]# #巅峰舒适学[话题]# ...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>25</td>
+                        <td></td>
+                        <td>我真的没有看片。</td>
+                        <td>社死了想换个星球生活。。。[抓狂R][抓狂R][抓狂R][抓狂R]
+	
+在图书馆蓝牙连了笔记本，结果B站和抖音都在后台开着，我去上厕所后耳机断连了
+	
+回来发现...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>26</td>
+                        <td></td>
+                        <td>一直以为我不爱看短视频喜欢看文字类的东西是因为我从小习惯好，
+比如说上网课的时候...</td>
+                        <td>一直以为我不爱看短视频喜欢看文字类的东西是因为我从小习惯好，
+比如说上网课的时候我不喜欢看视频，喜欢阅读视频转出的文字稿子，
+现在想来原来是我是因为无法控制自己...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>27</td>
+                        <td><span class="tag tag-base">交互体验-付费困扰</span><span class="tag tag-base">功能需求-下载缓存</span></td>
+                        <td>天呐～原来这个app真的不是废物啊！！</td>
+                        <td>华为视频！！！！你配享太庙！！直到今天才发现华为视频可以关联多个视频app的会员，并且拥有他们的全部资源！！！（什么甄嬛传知否电子榨菜统统拿下！）
+这样你的手机...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>28</td>
+                        <td><span class="tag tag-base">观看环境-噪音外放</span></td>
+                        <td>我不看抖音的一个重要原因</td>
+                        <td>我不知道是不是我脑子不够用（夸张手法），我不能连续刷视频，我感觉我的脑袋会被吵爆炸，我必须要停下来看看文字和图片，让耳朵和大脑都歇会儿。
+	
+但是抖音那种，一刻...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>29</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">播放控制-进度条操作</span></td>
+                        <td>不知道有没有人跟我感觉一样</td>
+                        <td>不知道从什么开始特别烦微信分享的b站视频🥲本人可能有点注意力涣散，但每次点进链接先是一个漫长的加载，然后是一个特别小的框放视频，周围围着一大堆“app内更高清”...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>30</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span></td>
+                        <td>腾讯会议太模糊！情侣看电影可以用钉钉！</td>
+                        <td>p1是腾讯会议的效果，糊的我眼睛难受；p2是钉钉会议的效果，对方分享屏幕会有黑框，后来我发现双手可以缩放屏幕到合适位置！看着就很好啦！参考p3p4！
+宝子们快去...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>31</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>开了倍速后，你就再也接受不了正常速度了</td>
+                        <td>#内容过于真实[话题]# #闺蜜[话题]# #搞笑[话题]# #追剧[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>32</td>
+                        <td><span class="tag tag-base">内容质量-低质内容</span><span class="tag tag-base">内容质量-内容不适</span></td>
+                        <td>papi新视频好恐怖啊，都不敢呲牙乐了</td>
+                        <td>虽然内容有指向，但伤害没有，不管哪个年纪的人看了都心底发寒，恐怖纪实脚本这么会写，搞得人心寒寒的。
+	
+我看过papi之前说的，只要人工作就不会真正的快乐，所以...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>33</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span><span class="tag tag-base">社交互动-评论弹幕</span></td>
+                        <td>没人觉得「飓多多」最近的视频都很无聊吗</td>
+                        <td>怀古去巴厘岛体验“数字游民”那一期真的非常好看（但好像发在大号了），个人觉得那才是飓多多应有的风格。
+	
+而不是打着「普通人」的视角，以不够专业➕浅尝辄止的方式...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>34</td>
+                        <td></td>
+                        <td>第一次看抖音直播，看得生理性想吐，好密集的信息量。
+主播一刻不停地说话，走来走去...</td>
+                        <td>第一次看抖音直播，看得生理性想吐，好密集的信息量。
+主播一刻不停地说话，走来走去展示本子，屏幕不停刷出新消息，应接不暇。还有什么001,002的神秘代码，没有名...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>35</td>
+                        <td><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>千万不要把独立短片发B站</td>
+                        <td>7.27把辛苦几个月花十多万拍的悬疑片发b站上映了，想收点赛博票房。
+片子上传后经压缩，码率不到1000。
+7.28评论区开始普遍反映片子多处花屏卡顿，直接卡掉...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>36</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>B 站真的不行了</td>
+                        <td>说实话，尽管现在很多人的娱乐方式是用手机观看，但是b站对于电脑版软件的开发和优化真的很烂，视频放不了，视频已经被下架了还能在up主页看到，点进去了又放不了
+	
+...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>37</td>
+                        <td><span class="tag tag-base">功能需求-多设备同步</span><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>天呐难道只有我是这样吗？</td>
+                        <td>难道只有我一个人觉得看短视频越看越无聊吗？那种空虚、茫然，大脑木乱等等好多不好的感觉都会在刷短视频后出现。
+哪怕是我在尽量选一些比较涨知识、有趣味的视频…好奇怪...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>38</td>
+                        <td><span class="tag tag-base">内容质量-低质内容</span><span class="tag tag-base">社交互动-评论弹幕</span></td>
+                        <td>感觉被入侵了</td>
+                        <td>现在的dy真的好诡异，上面的视频感觉都不像人能看的。
+刷到几个稀奇古怪的，什么骨剑啊，骨牌呀，灵异，鬼片，超自然，都很黑暗诡异的东西，看的人毛骨悚然的。
+下一个...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>39</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>咪咕这是逼人看盗版吗？？？</td>
+                        <td>所有电视节目体育赛事全都付费支持版权，但咪咕这不是逼人去看直播盗链？？？
+西甲这清晰度泥马我看连1080p都玄乎，都什么年代了。特别西甲还是低视角，模糊就更明显...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>40</td>
+                        <td><span class="tag tag-base">内容质量-内容不适</span><span class="tag tag-ai">AI功能-AI生成不适</span></td>
+                        <td>伪人看多了有点受不了</td>
+                        <td>我dy现在刷出来能有40%的内容是AI做的，有小动物的也有人的，看多了有点想吐。
+这玩意跟AI代替程序员还是太不一样了。你程序不管是人写的，还是ai写的，底层代...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>41</td>
+                        <td><span class="tag tag-base">交互体验-广告困扰</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>视频网站吐槽</td>
+                        <td>本人算陈都灵路好，冲着她决定打开很久没用的腾讯视频看《贵女》。没开vip是想试看一集看看质量。结果首先先是5秒的广告，然后又是长达200秒的广告，正剧打开前又是...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>42</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>深海的剧情真的很烂</td>
+                        <td>看完了，我的感受（划重点：我的感受），故事编排有问题.前期没头没尾的部分太长了，好看的画面也很难长时间抓住我的眼睛，影片的灵魂在于剧情，剧情依附于合理的逻辑关系...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>43</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>国内的视频软件画质最少削减了15%</td>
+                        <td>每次看国内的一些视频app，选择4k画质时，脸上总有一种看不清的感觉，放大以后才看是增加了一种锐化功能，看起来很奇怪，而且同一部电影下载时，国外的都是8个G，国...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>44</td>
+                        <td><span class="tag tag-base">内容质量-内容不适</span></td>
+                        <td>再也不看某博主视频了</td>
+                        <td>以前因为鳌太线新闻关注了一个博主，然后觉得他很牛，总是看他视频，今天晚上看了他发的视频，中途有一段太吓人了，我感觉真的一下就头痛，很不舒服，这下我知道了。真的存...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>45</td>
+                        <td><span class="tag tag-base">内容质量-内容不适</span><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>好恶心，看的太想吐了，整个人都反胃，今天被同学分享了一个dy的视频，好恶心，好恶...</td>
+                        <td>好恶心，看的太想吐了，整个人都反胃，今天被同学分享了一个dy的视频，好恶心，好恶心，现在dy怎么回事？这种视频可以一直流传，现在真的非常后悔，为什么人要有好奇心...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>46</td>
+                        <td></td>
+                        <td>发现一个事。</td>
+                        <td>数码区科技区的视频开头越来越千篇一律:
+“这，是某品牌新出的某款产品”
+“这，是我花了三个月做的巴拉巴拉”
+“这，是一个烂到极致的文案开头”
+看多了会不耐烦，开...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>47</td>
+                        <td><span class="tag tag-base">观看环境-噪音外放</span></td>
+                        <td>我不看抖音的一个重要原因</td>
+                        <td>我不知道是不是我脑子不够用（夸张手法），我不能连续刷视频，我感觉我的脑袋会被吵爆炸，我必须要停下来看看文字和图片，让耳朵和大脑都歇会儿。
+	
+但是抖音那种，一刻...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>48</td>
+                        <td><span class="tag tag-base">交互体验-广告困扰</span></td>
+                        <td>bilibili刷点视频时不时蹦出广告真的烦人。要么单独放一个视频，要么放视频末...</td>
+                        <td>bilibili刷点视频时不时蹦出广告真的烦人。要么单独放一个视频，要么放视频末尾是最好的。</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>49</td>
+                        <td></td>
+                        <td>🙄烦死了刷dy连着几个视频都是他妈的</td>
+                        <td>烦死了烦死了我真的好讨厌那个港风女声语音，一刷到95％开头都是他妈的，好讨厌这个脏话🙄🙄🙄🙄点不感兴趣也没用真的无语</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>50</td>
+                        <td><span class="tag tag-base">内容质量-内容不适</span><span class="tag tag-ai">AI功能-AI生成不适</span></td>
+                        <td>有没有人跟我一样，看了一会AI视频好难受</td>
+                        <td>#AI视频[话题]# #感官过载[话题]# #认知失调[话题]# #难受啊[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>51</td>
+                        <td></td>
+                        <td>抖音为什么是这般的内容低俗软件！</td>
+                        <td>已经连续两天了！每天给我推一些土不啦叽的视频，配乐土，内容更是俗不可耐的视频，我是真的真的看不下去了！每次看视频十分钟 五分钟都在点不感兴趣！关键是点了不感兴趣...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>52</td>
+                        <td><span class="tag tag-base">观看体验-长时间疲劳</span><span class="tag tag-base">内容质量-内容不适</span></td>
+                        <td>我突然对刷短视频充满了厌恶</td>
+                        <td>之前信誓旦旦坚决不刷短视频，坚持了马上快两年的我，结果最近由于关注姜萍热点以及欧洲杯，开始刷起了短视频。 这是我刷短视频的第3天，每次都跟自己说就看十分钟，看完...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>53</td>
+                        <td><span class="tag tag-base">内容消费-追剧体验</span></td>
+                        <td>短视频能不能滚出世界😇</td>
+                        <td>短视频真的是一刷就停不下来，尤其是放假在家时，只要一打开短视频，一整天的时间就不知不觉过去了，感觉整个人都崩溃了。明明已经计划好一天的安排，比如追剧、打游戏、看...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>54</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span><span class="tag tag-base">交互体验-广告困扰</span></td>
+                        <td>好烦现在的视频中间插广告！</td>
+                        <td>说的就是现在的b站！原本对b站的怨气就已经很重了，今天去油管上逛了一圈更是气的想骂人，我看视频懒得拽进度条，所以遇到广告我都会等广告自己播完，但是现在的广告时长...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>55</td>
+                        <td><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>B站刷个短视频全是营销号</td>
+                        <td>信息真也就算了，关键真假参半
+非常讨厌#真烦营销号[话题]# #烦人烦人的烦人的营销号[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>56</td>
+                        <td><span class="tag tag-base">观看环境-噪音外放</span></td>
+                        <td>在公共场合不关静音刷任何短视频的人太讨厌了啊，不分男女老少。听到各种短视频的声音...</td>
+                        <td>在公共场合不关静音刷任何短视频的人太讨厌了啊，不分男女老少。听到各种短视频的声音莫名烦躁，就不能自己静静的看吗？要不带个耳机</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>57</td>
+                        <td></td>
+                        <td>真烦现在的某抖、某微的说教小视频！</td>
+                        <td>现在被短视频充斥的生活，真的是烦的够够的，一些短视频博主自身没个二两文化，天天充的跟个大蛋一样，都是摘抄的一些小文章，东抄一句，西抄一句，把人当个猴耍一样！
+#...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>58</td>
+                        <td><span class="tag tag-base">交互体验-广告困扰</span><span class="tag tag-base">内容质量-内容不适</span></td>
+                        <td>抖音神经病啊，为什么要在合集里插广告，好恶心啊，一个不到一分钟的视频后面紧跟一个...</td>
+                        <td>抖音神经病啊，为什么要在合集里插广告，好恶心啊，一个不到一分钟的视频后面紧跟一个必须看六七秒广告，烦死了#抖音[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>59</td>
+                        <td></td>
+                        <td>刷个视频怎么就这么累呢</td>
+                        <td>#一人分饰多角[话题]# #真实还原[话题]# #情感共鸣[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>60</td>
+                        <td></td>
+                        <td>应该用手机刷韩漫才对，看得好累😫</td>
+                        <td>#二次元[话题]# #精神状态belike[话题]# #二次元[话题]# #韩漫[话题]# #日漫[话题]# #漫画[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>61</td>
+                        <td><span class="tag tag-base">交互体验-广告困扰</span><span class="tag tag-base">功能需求-投屏大屏</span></td>
+                        <td>你是否在沉迷短视频？</td>
+                        <td>来自14岁初中生的一些感想🧐
+欢迎大家指点🤓
+#短视频[话题]##沉迷短视频[话题]##一些思考[话题]#
+正文：
+关于刷视频，我好像有了些感想
+今天我刷到了一...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>62</td>
+                        <td></td>
+                        <td>怪不得哦我经常感到精神很累，不是我一个人</td>
+                        <td>盯着电子屏幕看动漫看小说看视频太伤精力，尤其是到了晚上下午，经常打瞌睡，电子屏幕刺激消耗精神，很有说法，损伤气血。</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>63</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>为什么刷多了短视频，大脑反而更累？</td>
+                        <td>#大脑[话题]# #缓解压力[话题]# #大脑可塑性[话题]# #精力管理[话题]# #脑科学[话题]# #习惯[话题]# #神奇的大脑[话题]# #记忆力[话...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>64</td>
+                        <td><span class="tag tag-base">功能需求-下载缓存</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>为什么短剧，短视频看久了让人感觉很累？</td>
+                        <td>最近有个很奇怪的现象，让我开始自我反思。其实这种情况一直存在，只不过最近尤为明显。为什么平常看综艺，追剧的时候，一连就能看好几集还能精神亢奋，神清气爽，但只要长...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>65</td>
+                        <td></td>
+                        <td>终于明白为什么看手机会这么累了</td>
+                        <td>相信很多人都有同感，即使什么都不干，只刷手机，也会感到非常非常疲惫。书中说因为现在的很多节目都太过，目的是渲染，挑动情绪，就容易乱神。
+其实不只是综艺节目，任何...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>66</td>
+                        <td></td>
+                        <td>为什么玩手机会越玩越累</td>
+                        <td>#中医[话题]# #玩手机[话题]# #养生[话题]# #头晕眼花[话题]##养眼睛[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>67</td>
+                        <td><span class="tag tag-base">观看体验-长时间疲劳</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>熬夜刷手机🔥却越刷越累，你的精力被偷了</td>
+                        <td>下班回家累成狗，瘫在沙发上刷短视频，心想总算能休息了……结果一抬头发现已经是凌晨，匆匆忙忙洗完澡就只能抱着遗憾和悔恨睡觉，结果第二天早上还要爬起来上班，完全没精...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>68</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>有时候盯屏幕久了，会觉得恶心、想吐、头疼，还浑身酸痛，你可能会觉得这是疲劳了。
+...</td>
+                        <td>有时候盯屏幕久了，会觉得恶心、想吐、头疼，还浑身酸痛，你可能会觉得这是疲劳了。
+没错，是疲劳，却是“视疲劳”哦！这被称为“视频终端综合症”。
+眼球长时间处于搜索...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>69</td>
+                        <td><span class="tag tag-base">观看体验-长时间疲劳</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>突然明白为什么刷视频那么累了</td>
+                        <td>原来刷手机刷视频那么累是因为一直处于挑选的状态当中
+看了太多信息一直处在挑选的环境中
+不停地刷不停地刷就为了挑选一个喜欢的视频
+不停地刷不停地挑
+	
+怪不得短视...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>70</td>
+                        <td></td>
+                        <td>看剧真的很累人</td>
+                        <td>看了一个下午➕晚上的剧，虽然是无脑甜饼韩剧，但还是感觉好累😵😵感觉脑子一下子接受太多信息了
+#追剧[话题]# #看剧[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>71</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>自从学了8800配音课，再也不沉迷短视频了</td>
+                        <td>以前没事就躺着刷手机，越刷越没意思，眼睛也累。后来报了8800配音课，每天有正经事做了，听课、练朗读、打磨语气，把刷手机的时间都用在了提升自己上。生活有了寄托，...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>72</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>Q1为什么一看长视频就想睡着？</td>
+                        <td>你是不是也这样？明明收藏了很多好电影、深度纪录片，但每次打开前5分钟就耐心耗尽，忍不住关掉去刷短视频？这里划一下，那里点个赞，一晚上过去了，感觉什么都没看，又感...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>73</td>
+                        <td><span class="tag tag-base">社交互动-评论弹幕</span></td>
+                        <td>连续刷短视频7天 你会变成什么样？</td>
+                        <td>📱 连续刷短视频7天
+你会变成什么样？
+很多人觉得
+“刷一会没关系”
+但如果每天都这样👇
+⸻
+① 第1-2天：放松期
+👉 刷着很快乐
+👉 情绪短暂放松
+⸻
+② ...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>74</td>
+                        <td></td>
+                        <td>B站究竟请了什么高人</td>
+                        <td>看了p3的笔记马上装了这个插件
+然后p1是在B站网页版首页放了1分钟
+p1同样首页没动放了20分钟
+最后一个是小黑盒网页版放了20分钟
+兄弟怎么这么离谱？
+#B...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>75</td>
+                        <td><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>千万不要把独立短片发B站</td>
+                        <td>7.27把辛苦几个月花十多万拍的悬疑片发b站上映了，想收点赛博票房。
+片子上传后经压缩，码率不到1000。
+7.28评论区开始普遍反映片子多处花屏卡顿，直接卡掉...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>76</td>
+                        <td><span class="tag tag-base">播放控制-进度条操作</span></td>
+                        <td>破案了，家里网速慢的原因终于找到了！</td>
+                        <td>事情是这样的，今晚看直播回放，往前快进一直很卡，马上去测下速，一看下载速度只有42Mbps，家里300m宽带，明显不对。随去问chatgpt，经过一番询问，确定...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>77</td>
+                        <td></td>
+                        <td>刷视频很卡的原因我给你们找到了！！！！ #手机技巧[话题]# #刷视频[话题]#...</td>
+                        <td>刷视频很卡的原因我给你们找到了！！！！ #手机技巧[话题]# #刷视频[话题]#  #科技炸蛋[话题]#  #内存不足[话题]#  #美女视频[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>78</td>
+                        <td></td>
+                        <td>iPhone信号差‼️终于有救了</td>
+                        <td>如果你的苹果手机iPhone刷视频卡、收信息慢、地下车库还经常没信号，那可以试试这些步骤
+能极大程度帮你改善手机信号卡顿问题！！
+1️⃣检测手机真实信号
+2️⃣...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>79</td>
+                        <td></td>
+                        <td>破案了，终于知道为什么刷dy如此卡了，原来问题出在这儿[石化R][石化R][石化...</td>
+                        <td>破案了，终于知道为什么刷dy如此卡了，原来问题出在这儿[石化R][石化R][石化R] #想记录下此刻[话题]# #抖音[话题]# #清理手机内存[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>80</td>
+                        <td></td>
+                        <td>为什么看小电影总是会卡顿呢？</td>
+                        <td>#涨知识[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>81</td>
+                        <td></td>
+                        <td>解锁三星手机如何流畅的刷视频</td>
+                        <td>三星手机是支持120赫兹高刷，但是在刷视频的过程中被系统锁定60赫兹，跟着我一步步设置，解锁120赫兹的高刷，让刷视频体验更流畅。﻿#三星手机[话题]#﻿ ﻿#...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>82</td>
+                        <td><span class="tag tag-base">功能需求-投屏大屏</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>电脑用视频网站客户端看视频感觉一卡一卡的，像掉帧，用iPad看就很丝滑流畅，为什...</td>
+                        <td>电脑用视频网站客户端看视频感觉一卡一卡的，像掉帧，用iPad看就很丝滑流畅，为什么啊？？我的电脑大屏都没用处了[笑哭R]#台式电脑[话题]# #电脑配置[话题]...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>83</td>
+                        <td><span class="tag tag-base">观看体验-长时间疲劳</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>📺 追剧卡成PPT？不一定是网差！🎬</td>
+                        <td>[暗中观察R]宝子们，有没有遇到追剧追到一半，画面突然卡住，心情瞬间从天堂跌到地狱的经历？😫那种焦急、无奈，简直让人想砸手机！📱
+	
+作为当代大学生，当然要用控...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>84</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>技术贴😆</td>
+                        <td>系统：Windows11
+软件：腾讯视频
+故障：更新显卡N卡的驱动和腾讯视频，全屏看腾讯视频十分卡顿。
+解决方案：见图，关掉硬件加速GPU计划。
+完美[偷笑R]...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>85</td>
+                        <td></td>
+                        <td>为什么我xhs这么卡顿！
+看一个视频卡到冒火
+任何时间任何地点任何Wi-Fi都这...</td>
+                        <td>为什么我xhs这么卡顿！
+看一个视频卡到冒火
+任何时间任何地点任何Wi-Fi都这样</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>86</td>
+                        <td><span class="tag tag-base">功能需求-下载缓存</span></td>
+                        <td>小红书视频卡顿非常严重</td>
+                        <td>现在已经严重到每条都卡的地步，本来以为缓存太大卸载重新安装一样卡。说明是小红书运维本身，再继续下去真的没法用了，开发团队能不能解决一下[石化R][石化R][石化...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>87</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>小红书刷一个视频就卡顿是咋回事</td>
+                        <td>一开始小红书点进去有的作品是显示不出图片，或者播放一半就卡住，我以为是网不好，然后修复了下网络，我去dy等其他软件刷视频都很顺畅感觉不想网络问题了，现在就是打开...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>88</td>
+                        <td><span class="tag tag-base">交互体验-操作繁琐</span><span class="tag tag-base">功能需求-投屏大屏</span></td>
+                        <td>iPad新系统到底是怎么了？？？</td>
+                        <td>iPad更新系统后好难用啊😡😅😅😅😅
+看小破站老是自动退出、卡顿、无声
+大家有这样的情况吗？
+一开始我以为是内存的问题
+可是明明还有不少内存
+没更新系统前就出现...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>89</td>
+                        <td></td>
+                        <td>平板B站全屏不了了</td>
+                        <td>之前不是老听说苹果系统会被攻击嘛……
+今天打开平板设置，发现它居然弹出了提醒⚠️
+我之前一直没更新，这次手贱点了“更新”，结果——
+整个B站全屏不了了！！！
+我...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>90</td>
+                        <td></td>
+                        <td>一分钟卡几次，要疯了，怎么才能看到不卡顿的渊子[笑哭R][笑哭R]</td>
+                        <td>一分钟卡几次，要疯了，怎么才能看到不卡顿的渊子[笑哭R][笑哭R]</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>91</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>原来看4 k视频比较卡，不仅仅是显卡的问题</td>
+                        <td>还有cpu的问题，还有机械硬盘的问题，还有内存的问题。那这个事情就比较复杂了，就说不清楚了。我原先一直以为我电脑看4 k的视频比较卡是显卡配置不行。以为只是买一...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>92</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>为什么高铁上刷视频那么卡？是多普勒效应？</td>
+                        <td>#脑洞[话题]# #科普[话题]# #知识[话题]# #科学[话题]# #奇怪的知识增加了[话题]# #动车[话题]# #高铁[话题]# #网络[话题]# #通...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>93</td>
+                        <td><span class="tag tag-base">功能需求-投屏大屏</span></td>
+                        <td>看个电视卡成PPT？</td>
+                        <td>别着急 有可能不是路由器坏了！#装修[话题]# #生活小妙招[话题]# #装修干货[话题]# #会说话你就多说点[话题]# #在家看电视[话题]# #电视[话题...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>94</td>
+                        <td></td>
+                        <td>刷视频很卡的原因我给你们找到了！！！！ #手机技巧[话题]# #刷视频[话题]#...</td>
+                        <td>刷视频很卡的原因我给你们找到了！！！！ #手机技巧[话题]# #刷视频[话题]#  #科技炸蛋[话题]#  #内存不足[话题]#  #美女视频[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>95</td>
+                        <td></td>
+                        <td>破案了，终于知道为什么刷dy如此卡了，原来问题出在这儿[石化R][石化R][石化...</td>
+                        <td>破案了，终于知道为什么刷dy如此卡了，原来问题出在这儿[石化R][石化R][石化R] #想记录下此刻[话题]# #抖音[话题]# #清理手机内存[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>96</td>
+                        <td></td>
+                        <td>我不喜欢这个视频，因为它播放卡顿</td>
+                        <td>#推理剧[话题]# #剪辑[话题]##神探夏洛克[话题]# #英俊的[话题]# #sherlockbbc[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>97</td>
+                        <td><span class="tag tag-base">功能需求-多设备同步</span><span class="tag tag-base">内容消费-追剧体验</span></td>
+                        <td>求助，视频播几秒卡一下怎么办</td>
+                        <td>前阵子电脑突然看所有视频都会卡，播几秒就会卡一下，卡的时候画面不动但有声音，b站、百度网盘都这样，快把我逼出强迫症了#电脑[话题]##关于我的电脑[话题]# #...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>98</td>
+                        <td></td>
+                        <td>大家有这样的问题吗？</td>
+                        <td>为什么我的华为手机刷抖音久了会很卡
+#华为[话题]# #华为mate60pro[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>99</td>
+                        <td></td>
+                        <td>为什么看小电影总是会卡顿呢？</td>
+                        <td>#涨知识[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>100</td>
+                        <td><span class="tag tag-base">交互体验-操作繁琐</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>有没有人吐槽一下华为p70!我真的服了！
+真的是好难用！
+1、录像时看着老是雾蒙...</td>
+                        <td>有没有人吐槽一下华为p70!我真的服了！
+真的是好难用！
+1、录像时看着老是雾蒙蒙的，起初以为是镜头脏了，擦了也没用！
+2、拍照时，稍微放大倍数就拍的好糊，点了...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>101</td>
+                        <td><span class="tag tag-base">功能需求-投屏大屏</span><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>电脑用视频网站客户端看视频感觉一卡一卡的，像掉帧，用iPad看就很丝滑流畅，为什...</td>
+                        <td>电脑用视频网站客户端看视频感觉一卡一卡的，像掉帧，用iPad看就很丝滑流畅，为什么啊？？我的电脑大屏都没用处了[笑哭R]#台式电脑[话题]# #电脑配置[话题]...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>102</td>
+                        <td><span class="tag tag-base">观看体验-长时间疲劳</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>📺 追剧卡成PPT？不一定是网差！🎬</td>
+                        <td>[暗中观察R]宝子们，有没有遇到追剧追到一半，画面突然卡住，心情瞬间从天堂跌到地狱的经历？😫那种焦急、无奈，简直让人想砸手机！📱
+	
+作为当代大学生，当然要用控...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>103</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>技术贴😆</td>
+                        <td>系统：Windows11
+软件：腾讯视频
+故障：更新显卡N卡的驱动和腾讯视频，全屏看腾讯视频十分卡顿。
+解决方案：见图，关掉硬件加速GPU计划。
+完美[偷笑R]...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>104</td>
+                        <td></td>
+                        <td>为什么我xhs这么卡顿！
+看一个视频卡到冒火
+任何时间任何地点任何Wi-Fi都这...</td>
+                        <td>为什么我xhs这么卡顿！
+看一个视频卡到冒火
+任何时间任何地点任何Wi-Fi都这样</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>105</td>
+                        <td><span class="tag tag-base">功能需求-下载缓存</span></td>
+                        <td>小红书视频卡顿非常严重</td>
+                        <td>现在已经严重到每条都卡的地步，本来以为缓存太大卸载重新安装一样卡。说明是小红书运维本身，再继续下去真的没法用了，开发团队能不能解决一下[石化R][石化R][石化...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>106</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">功能需求-下载缓存</span></td>
+                        <td>抖音刷视频卡，怎么办？</td>
+                        <td>‌手机抖音刷视频卡顿的原因及解决方法主要包括以下几个方面‌：
+‌清理缓存和数据‌：抖音在长时间使用后会积累大量缓存数据，这些数据不仅占用手机存储空间，还可能影响...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>107</td>
+                        <td><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>手机微博看视频，为什么会出现这种情况，已经出现过好几次了#一加ace2[话题]#...</td>
+                        <td>手机微博看视频，为什么会出现这种情况，已经出现过好几次了#一加ace2[话题]# #一加手机[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>108</td>
+                        <td><span class="tag tag-base">交互体验-操作繁琐</span><span class="tag tag-base">功能需求-投屏大屏</span></td>
+                        <td>iPad新系统到底是怎么了？？？</td>
+                        <td>iPad更新系统后好难用啊😡😅😅😅😅
+看小破站老是自动退出、卡顿、无声
+大家有这样的情况吗？
+一开始我以为是内存的问题
+可是明明还有不少内存
+没更新系统前就出现...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>109</td>
+                        <td></td>
+                        <td>平板B站全屏不了了</td>
+                        <td>之前不是老听说苹果系统会被攻击嘛……
+今天打开平板设置，发现它居然弹出了提醒⚠️
+我之前一直没更新，这次手贱点了“更新”，结果——
+整个B站全屏不了了！！！
+我...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>110</td>
+                        <td><span class="tag tag-base">交互体验-广告困扰</span></td>
+                        <td>为啥网页看剧好卡呀</td>
+                        <td>有些剧正版软件上没有，只能去网页上看，但是老是卡……大家都是怎么忍受的
+——
+什么乱七八糟的评论区，全在打广告
+#看剧[话题]# #追剧[话题]# #影视会员[...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>111</td>
+                        <td></td>
+                        <td>我7月份买的华为，现在刷抖音这么卡，我吐了</td>
+                        <td></td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>112</td>
+                        <td><span class="tag tag-base">内容消费-学习场景</span></td>
+                        <td>为什么视频小网站很慢？</td>
+                        <td>在信息高速公路上，为什么有些小网站却像蜗牛般缓慢？我们每天都在享受互联网的便利，但背后的结构和规则又有多少人真正理解？在这个视频中，我不仅将揭示小网站卡顿的根源...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>113</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>独家黑科技！网易爆米花竟能让播放加速？</td>
+                        <td>本周，俺们网易爆米花研究出了独家 “黑科技”——
+在视频播放场景，打通百度网盘会员权益，
+只要你是百度网盘 VIP 或 SVIP 用户，通过网易爆米花播放原画视...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>114</td>
+                        <td></td>
+                        <td>摄像机视频加载慢·播放失败怎么排查？</td>
+                        <td>[向右R]摄像机视频加载慢·播放失败怎么排查？
+（局域网预览方法排查）
+遇到视频加载慢，播放失败的情况，可使用“局域网设备预览”方法排查是否为设备问题，
+若设备...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>115</td>
+                        <td><span class="tag tag-base">社交互动-评论弹幕</span></td>
+                        <td>大家不要再办理广电的卡了，巨卡</td>
+                        <td>办卡快两年了，之前网速也还是可以的，这个月开始越来越卡，这几天卡成乡村网速了，不管是加载视频还是APP，就连打开评论区都是在加载，起码都是三秒以上了，这网速还能...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>116</td>
+                        <td></td>
+                        <td>b站服务器出bug了</td>
+                        <td>有一样的吗
+今天下午到今天晚上这段时间视频页面点进去都是加载中，还以为是网卡了#哔哩哔哩[话题]##b站[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>117</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>如何提高网站视频播放速度？三步搞定！</td>
+                        <td>你的外贸网站，还在因为视频加载慢而流失客户吗？ 客户的耐心是有限的，缓冲=关闭页面=错失订单。
+问题的根源，往往不在视频本身，而在于托管方式。直接将视频上传到网...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>118</td>
+                        <td></td>
+                        <td>小红书当百度真的很好用……</td>
+                        <td>昨天我的路由器设置过后，上b站不卡，小红书看文字不卡看视频就卡，我知道肯定不是网络的问题。
+不是网速的问题，而且我打游戏，比如说我进去加载的时候必须要用流量，我...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>119</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>急！看视频缓冲慢怎么办？</td>
+                        <td>近来老有小伙伴反馈，说在线看视频一直转圈圈，缓冲很慢该怎么办？
+今天就来简单聊聊在线视频缓冲的问题。
+🤔
+视频缓冲一直转圈，很多人第一时间想到的就是网络问题。
+...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>120</td>
+                        <td></td>
+                        <td>影片很慢⋯可以試試這樣做👌🏻</td>
+                        <td>影片很慢⋯可以試試這樣做👌🏻 #教學[话题]# #instagram[话题]# #ig[话题]# #ig教學[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>121</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">播放控制-进度条操作</span></td>
+                        <td>监控回放速度太慢？别怪网速，是这个参数没调</td>
+                        <td>客户吐槽："师傅，回放1小时录像要等20分钟！"
+我教他调了1个参数，回放速度直接快5倍！
+做了8年监控，今天把回放慢的问题说透！
+核心原因：码流设置错了！
+9...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>122</td>
+                        <td><span class="tag tag-base">交互体验-广告困扰</span><span class="tag tag-base">内容质量-低质内容</span></td>
+                        <td>网页背景视频加载慢怎么办？</td>
+                        <td>解决 HTMl网页背景视频加载慢的方法
+视频编码与格式优化
+- 使用现代视频编解码器：如 VP9 和 H.265 等，这些编解码器可以在不损失视频质量的前提下，...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>123</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>剪映你和我有仇吗</td>
+                        <td>已经打开半个小时了，一直加载不出来！何意味！虽然视频确实很多很大，但是这也太慢了吧！有何解决办法[哭惹R][哭惹R][哭惹R]</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>124</td>
+                        <td><span class="tag tag-base">播放控制-倍速需求</span></td>
+                        <td>施德曼门锁实时视频打开也太慢了吧</td>
+                        <td>每次加载要等个十秒左右。等他开出来黄花菜都凉了[汗颜R]#施德曼智能锁[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>125</td>
+                        <td><span class="tag tag-base">功能需求-多设备同步</span></td>
+                        <td>华为mata70网速慢终于解决了</td>
+                        <td>才换的手机 一直感觉网速很慢 看直播刷视频都会有延迟 在小红书看了很多小伙伴分享的办法 试着让客服刷新后台 没有改善 又看到小伙伴分享换手机卡 确实我的手机卡用...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>126</td>
+                        <td></td>
+                        <td>Tvbox加载视频网速好慢，到最后出现视频错误</td>
+                        <td>不知道是什么问题。</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>127</td>
+                        <td><span class="tag tag-base">功能需求-下载缓存</span><span class="tag tag-base">社交互动-评论弹幕</span></td>
+                        <td>网盘视频加载慢</td>
+                        <td>在播放云端存储的视频时，有时可能会遇到加载缓慢或播放卡顿的情况。如果你也希望获得更流畅的观看体验，可以尝试从播放工具的技术优化角度考虑。
+网易爆米花播放工具采用...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>128</td>
+                        <td><span class="tag tag-base">功能需求-投屏大屏</span></td>
+                        <td>这几年，电视画质为什么变差了...</td>
+                        <td>你有没有发现，你看电视的时候画面越来越鲜艳了，甚至有点滑滑腻腻的感觉。这是电视给画面动了手脚吗？这期节目我们想和你聊聊为什么电视的「画质优化」并不一定是好事，我...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>129</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>还好没删系列！模糊废片一键变4k电影感大片</td>
+                        <td>Tap全新高清放大功能，一键拯救废片。
+	
+自动补帧、修细节，哪怕原片质量平平，放大之后也能拥有电影大片一样的质感。更重要的是，成片达到商用级别，无论是广告投放...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>130</td>
+                        <td></td>
+                        <td>差距怎么可以大成这样</td>
+                        <td>不知道为什么做am 总是卡东卡西的，后面甚至卡的不行，画质也超底真的哭死[失望R][哭惹R] #这就是差距[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>131</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>为什么影视平台的清晰度越来越模糊？</td>
+                        <td>说不定以后开会员只能看480P的清晰度了[黑薯问号R][黑薯问号R]#离谱[话题]# #炸裂[话题]# #不是[话题]# #影视飓风[话题]# #影视飓风tim...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>132</td>
+                        <td><span class="tag tag-base">播放体验-画质提升需求</span><span class="tag tag-base">交互体验-付费困扰</span></td>
+                        <td>咪咕这个转播质量真太过分(咪咕已改正)</td>
+                        <td>不知道大家是否还记得影视飓风专门讲过国内视频门户压缩的问题。今年咪咕把英超的直播压缩到了一个新高度。。。颜色，锐度，帧数要啥没啥，具体的观感会员们去中超转播至臻...</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>133</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>为什么视频看着很清晰，发布之后很模糊！</td>
+                        <td>#自媒体[话题]# #工具箱[话题]# #自媒体运营[话题]# #干货分享[话题]# #文哥别说话[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>134</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>怎么上传最高清的视频？为什么视频很模糊？</td>
+                        <td>#短视频运营[话题]# #干货分享[话题]# #自我提升[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>135</td>
+                        <td><span class="tag tag-base">播放体验-画质模糊</span><span class="tag tag-base">播放体验-画质提升需求</span></td>
+                        <td>为什么视频看着很清晰，发布之后很模糊</td>
+                        <td>[哇R]今天一条视频教会你。#短视频运营[话题]# #小红书运营[话题]# ##创作者运营[话题]# #模糊视频变清晰[话题]#</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section excluded-section">
+            <h2>排除的VOC样本 (65条 - 弱相关/不相关)</h2>
+            <p style="margin-bottom: 16px; color: #636e72;">以下VOC因与"手机看视频体验"关联度不足而被排除，供参考：</p>
+            <table class="voc-table">
+                <thead>
+                    <tr>
+                        <th width="5%">#</th>
+                        <th width="30%">标题</th>
+                        <th width="40%">排除原因</th>
+                        <th width="15%">互动数</th>
+                        <th width="10%">来源</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>睡前最怕刷到的视频</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>最近确诊：看不进任何电影电视剧…</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>最讨厌刷到的短视频</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>太牛了❗️用AI一分钟看完视频并整理视频内容</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>别再让爸妈刷“垃圾视频”了！三招教你“篡</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>原来这是病啊</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>直观感受到了信息茧房</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>三星这个功能太香了吧❗你一定要知道❗</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>网上学到的</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>最近确诊：看不进任何电影电视剧…</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>影视飓风不提，我不对比还真的没发现这事儿</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>最讨厌刷到的短视频</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>特别不理解看电视剧快进的人，声音都变了，也听不清，毫无体验感，你们为啥要这么看呢[笑哭R]</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>小红书偶尔刷到的视频巨亮是手机问题还是小红书的问题？
+2025.6.6更新
+解决方式见图二
+——
+1...</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>逐玉是真的不好看啊……</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td>我真的很讨厌这种视频</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>17</td>
+                        <td>🙏求求不要在我旁边外放声音刷短视频！</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>18</td>
+                        <td>抖音真的烦死了！！！这个世界上为啥有这种东西啊！！！天天刷抖音烦不烦啊，而且都不带耳机，怎么，觉得别...</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>19</td>
+                        <td>我为什么如此不喜欢短视频</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                    <tr>
+                        <td>20</td>
+                        <td>真是受够了小红书上的视频！！</td>
+                        <td>弱相关/不相关</td>
+                        <td>0</td>
+                        <td><a href="#" target="_blank" style="font-size:12px;color:#667eea;">链接</a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <p style="margin-top: 12px; color: #636e72; font-size: 12px;">... 共65条，完整列表见 v2_excluded_vocs.json</p>
+        </div>
+
+        <div class="section">
+            <h2>References / 数据来源</h2>
+            <ol style="font-size: 12px; line-height: 2;">
+                <li>小红书平台用户生成内容 (UGC)，通过 MediaCrawler 爬取，采集时间: 2025-05-07</li>
+                <li>原始数据文件: xhs_voc_200_raw.json (200条原始VOC)</li>
+                <li>筛选后数据: v2_relevant_vocs_135.json (135条强相关VOC)</li>
+                <li>分类统计: v2_category_summary.json</li>
+                <li>版本存档: archive/v1_20250507_1714/ (v1版本)</li>
+            </ol>
+            <p style="margin-top: 16px; font-size: 12px; color: #636e72;">
+                <strong>数据可追溯性:</strong> 每条VOC均保留原始URL，可通过链接访问原始帖子验证内容真实性。
+                本报告基于用户公开分享的内容进行分析，仅用于产品研究目的。
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 分类分布图表
+        const ctx1 = document.getElementById('categoryChart').getContext('2d');
+        new Chart(ctx1, {
+            type: 'bar',
+            data: {
+                labels: ["功能需求-多设备同步", "播放体验-画质提升需求", "内容消费-学习场景", "播放控制-倍速需求", "社交互动-评论弹幕", "功能需求-投屏大屏", "内容质量-低质内容", "功能需求-下载缓存", "播放控制-进度条操作", "交互体验-付费困扰", "内容消费-追剧体验", "播放体验-画质模糊", "交互体验-操作繁琐", "交互体验-广告困扰", "AI功能-智能摘要", "内容质量-内容不适", "观看体验-长时间疲劳", "观看环境-噪音外放", "功能需求-字幕翻译", "AI功能-AI生成不适", "观看体验-屏幕小", "AI功能-智能推荐"],
+                datasets: [{
+                    label: 'VOC数量',
+                    data: [26, 20, 17, 14, 14, 13, 12, 12, 11, 10, 10, 9, 8, 8, 7, 7, 6, 4, 2, 2, 2, 1],
+                    backgroundColor: ["#6C5CE7", "#A29BFE", "#74B9FF", "#0984E3", "#00B894", "#00CEC9", "#FDCB6E", "#E17055", "#FD79A8", "#E84393", "#6C5CE7", "#A29BFE", "#74B9FF", "#0984E3", "#FF6B6B", "#00B894", "#00CEC9", "#FDCB6E", "#E17055", "#FFEAA7", "#FD79A8", "#4ECDC4"],
+                    borderRadius: 6,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.parsed.y + ' 条用户原声';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { stepSize: 5 }
+                    },
+                    x: {
+                        ticks: {
+                            maxRotation: 45,
+                            minRotation: 45,
+                            font: { size: 11 }
+                        }
+                    }
+                }
+            }
+        });
+
+        // AI分类图表
+        const ctx2 = document.getElementById('aiChart').getContext('2d');
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+                labels: ["AI功能-智能摘要", "AI功能-智能推荐", "AI功能-语音交互", "AI功能-AI画质修复", "AI功能-AI生成不适"],
+                datasets: [{
+                    data: [7, 1, 0, 0, 2],
+                    backgroundColor: ["#FF6B6B", "#4ECDC4", "#45B7D1", "#96CEB4", "#FFEAA7"],
+                    borderWidth: 2,
+                    borderColor: '#fff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: { font: { size: 12 } }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

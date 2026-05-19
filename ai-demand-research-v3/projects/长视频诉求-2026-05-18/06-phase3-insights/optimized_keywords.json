@@ -1,0 +1,38 @@
+[
+  {
+    "keyword": "长视频推荐",
+    "rationale": "内容发现是最大痛点(27.7%)，用户主动求推荐",
+    "expected_volume": "高",
+    "platform": "xhs"
+  },
+  {
+    "keyword": "下饭视频",
+    "rationale": "下饭场景13条(9.2%)，高频使用场景",
+    "expected_volume": "高",
+    "platform": "xhs"
+  },
+  {
+    "keyword": "倍速播放",
+    "rationale": "倍速控制期望总互动82885，时间压力痛点",
+    "expected_volume": "中",
+    "platform": "xhs"
+  },
+  {
+    "keyword": "视频背景音",
+    "rationale": "音频优先19.9%，学习/工作/手工场景高频",
+    "expected_volume": "中",
+    "platform": "xhs"
+  },
+  {
+    "keyword": "一起看视频",
+    "rationale": "社交互动平均互动最高(50367.7)，社交需求强烈",
+    "expected_volume": "中",
+    "platform": "xhs"
+  },
+  {
+    "keyword": "视频质量",
+    "rationale": "内容质量主题12.1%，深度干货 vs 水化内容矛盾",
+    "expected_volume": "中",
+    "platform": "xhs"
+  }
+]

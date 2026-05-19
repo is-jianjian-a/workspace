@@ -1,0 +1,29 @@
+{
+  "topic": "宝爸宝妈育儿收集需求",
+  "design_principle": "正交搭配：场景词 × 功能/痛点/体验词，从手机系统层面打捞诉求",
+  "keywords": {
+    "phase1_broad": {
+      "description": "第一阶段：泛化搜索，场景发现",
+      "scene_keywords": ["孕期", "产后", "早教", "备孕", "育儿"],
+      "rationale": "覆盖从备孕到产后全周期的育儿场景，打捞用户真实诉求"
+    },
+    "phase2_focused": {
+      "description": "第二阶段：聚焦搜索（待第一阶段分析后确定）",
+      "keywords": [],
+      "rationale": "根据第一阶段主题聚类和机会映射结果，围绕P0机会点设计聚焦搜索词"
+    }
+  },
+  "keyword_breakdown": {
+    "孕期": {"type": "场景+状态", "coverage_notes": 105, "focus": "孕期知识、注意事项、经验收集需求"},
+    "产后": {"type": "场景+状态", "coverage_notes": 104, "focus": "产后恢复、情绪管理、育儿适应需求"},
+    "早教": {"type": "场景+行为", "coverage_notes": 101, "focus": "早教知识获取、方法收集、资源整理需求"},
+    "备孕": {"type": "场景+行为", "coverage_notes": 100, "focus": "备孕知识收集、准备、记录需求"},
+    "育儿": {"type": "场景词", "coverage_notes": 98, "focus": "育儿知识、经验、问题的泛化表达"}
+  },
+  "review_checklist": {
+    "coverage": "覆盖备孕→孕期→产后→育儿→早教全周期",
+    "orthogonal": "采用场景词为主，避免预设功能方向",
+    "system_level": "从手机系统层面出发，非APP功能层面",
+    "homogeneity": "各关键词语义区分明显，无明显重叠"
+  }
+}

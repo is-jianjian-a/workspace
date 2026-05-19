@@ -1,0 +1,66 @@
+{
+  "expectation_distribution": {
+    "社区交流": 39,
+    "系统学习": 22,
+    "跨端同步": 21,
+    "专家服务": 21,
+    "播放控制": 20,
+    "知识库": 47,
+    "视频学习": 38,
+    "即时问答": 25,
+    "护眼模式": 2,
+    "AI辅助": 31,
+    "个性化推荐": 50,
+    "内容筛选": 7
+  },
+  "expectation_with_interaction": {
+    "社区交流": {
+      "count": 39,
+      "avg_interaction": 7259.0
+    },
+    "系统学习": {
+      "count": 22,
+      "avg_interaction": 11837.0
+    },
+    "跨端同步": {
+      "count": 21,
+      "avg_interaction": 10320.0
+    },
+    "专家服务": {
+      "count": 21,
+      "avg_interaction": 7324.0
+    },
+    "播放控制": {
+      "count": 20,
+      "avg_interaction": 8699.0
+    },
+    "知识库": {
+      "count": 47,
+      "avg_interaction": 14299.0
+    },
+    "视频学习": {
+      "count": 38,
+      "avg_interaction": 7855.0
+    },
+    "即时问答": {
+      "count": 25,
+      "avg_interaction": 4427.0
+    },
+    "护眼模式": {
+      "count": 2,
+      "avg_interaction": 21330.0
+    },
+    "AI辅助": {
+      "count": 31,
+      "avg_interaction": 4921.0
+    },
+    "个性化推荐": {
+      "count": 50,
+      "avg_interaction": 4975.0
+    },
+    "内容筛选": {
+      "count": 7,
+      "avg_interaction": 2939.0
+    }
+  }
+}

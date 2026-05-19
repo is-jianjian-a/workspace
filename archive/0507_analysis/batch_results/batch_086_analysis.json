@@ -1,0 +1,575 @@
+{
+  "batch_id": 86,
+  "total_items": 45,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 37,
+      "live_stream": 1,
+      "long_video": 6,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "feature_request": 4,
+      "behavior_description": 31,
+      "positive_feedback": 2,
+      "pain_point": 8
+    },
+    "topic_distribution": {
+      "other": 18,
+      "screen_cast": 1,
+      "video_quality": 12,
+      "payment_member": 6,
+      "download_cache": 4,
+      "ad_experience": 3,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 44
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_2631",
+      "text": "最有意思的是，大家都同意上下行不对等，要对等需要加钱。无线上我觉得上下行不对等还好说，比如TDD可以号称（实际上没用）灵活使用上下行占比。但有线网络搞什么上下行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2632",
+      "text": "了解了，原来如此。没看过国外的流媒体，国内点播流媒体码率是比有线电视的高不少，有线直播高清频道大概一小时3.3g出头",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2633",
+      "text": "移动不用交流量结算费其实是国家要把三家强行扶起来进行所谓竞争，用户起来已经是后话，移动固网用户主要还是靠套餐送宽带吸流的，如果还需要结算流量费的话就不会有这个措施了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2636",
+      "text": "其实开放高画质做贴片广告更适合B站，看来是被宽带费用限制了方向。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2638",
+      "text": "国内宽带对大众不错的，真正做到以人为本，要公网IP也给。对企业来说，收费贵罢了。至于限制经济发展，大流量主要在视频传输方面，这些做流媒体的，你说人人都看4K，能拖动经济几个点？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2642",
+      "text": "现在移动宽带玩腾讯游戏延迟已经很低了，即便是标称的电信服务器，电信的网玩联通的服务器也不卡，按道理不同供应商接入同一个路由架构就行了。而且三网融合也加了不少机房增加联通性，垄断只能靠行政命令解决问题[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2643",
+      "text": "只可能腾讯花钱给移动，移动不可能花钱给腾讯的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2646",
+      "text": "国外某运营商的家用宽带5G对等，每月180刀。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2650",
+      "text": "国内也有上下行对等的优质专用线路民用网络，你视而不见还是出不起那个钱？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2651",
+      "text": "带宽费用才是根本，在国内外商用带宽价格差几个数量级的情况下带领群众攻击视频网站既不负责任也解决不了问题[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2652",
+      "text": "YT的画质确实高，但广告也很多，隔几分钟就喂你一个，虽然看几秒后可以点跳过。阿b算是很良心了，视频过程中一个广告也没有",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2653",
+      "text": "其实根据动态评论，油管也开始搞降本增效了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2654",
+      "text": "降本增效，成本大头就是无休止增长的视频存储+带宽成本，不拿这个开刀是怎么都说不过去的，又不可能把旧视频不让你看（即使是十年前的），又要应对视频爆炸增长，只能从压缩这里开刀了呗还有就是手机端的流行，为了不让你手机流量爆炸，就只能压缩再压缩了。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2655",
+      "text": "主要是没知识的用户太多了。一堆人只认“分辨率”、“像素”。码率很低的4k真的清晰吗？手机拍摄的1亿像素真的比专业单反无反的24千万像素清晰吗？大多数普通消费者真正需要的不是清晰，而是“4k”字样和“一亿像素”这些噱头带来的优越感和自我安慰罢了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2656",
+      "text": "我宁愿糊一点，也不要隔一会看几秒广告。阿B这块没得黑",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2657",
+      "text": "就冲着 b 站无广告，我理解它降本降码率，别真搞倒闭了，以后就只能 10 秒钟视频先看 120 秒广告了[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2659",
+      "text": "看过某网站的关于不同格式码率和画质的，1080P30到8M附近才有边际效应（也就是一小时3.6G）在B站缓存一个1080P的视频，一小时才0.5G[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2661",
+      "text": "其实根据动态评论，油管也开始搞降本增效了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2662",
+      "text": "国内用户不可能接受网飞级别的订阅费用（哪怕是低价区），也不可能接受油管的广告/播放体验（包括不会员不能缓存不能后台播放）。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2663",
+      "text": "除了画质，通信领域3G，4G的速率“退化”也是众所周知的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2664",
+      "text": "几年前，bilibili漫画app刚出的时候，我很喜欢看。我认为那个时候没有哪家漫画的画质比得上bilibili漫画的画质，我当时还截了好多图片。结果前几天又重新下回来看的时候，发现同一张漫画，画质甚至比不上几年前的截图画质。换了一个设备看的时候也是这样。现在来看和视频降画质同理啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2665",
+      "text": "答主说【Tim提到了一个离谱的点，某些支持杜比全景声专属格式的视频，其音频码率恐怕比视频码率还要高，也就是说，一段视频，很可能会出现，音质非常清晰，甚至达到无损级别，但是画质却是“战损级别”的情况。】是误解了原视频的意思吧，Tim只是想表达4K视频码率甚至低于高保真音频，并不是说音质清晰画质不行的错配",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2668",
+      "text": "运营商带宽费用国内比国外贵了可能有一个零",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2669",
+      "text": "根据用户网络调整码率完全是个正向优化，不知道为什么会被答主解读成这样。如果手机信号差的时候，你选择视频直接停了还是降低清晰度继续？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2670",
+      "text": "带宽费用才是根本，在国内外商用带宽价格差几个数量级的情况下带领群众攻击视频网站既不负责任也解决不了问题[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2672",
+      "text": "提个意见，使用高压缩率算法（H265,AV1）能够做到在不损失画质的前提下压缩视频大小，坏处是需要本地客户端参与更多的运算，视频站点的问题是盲目降码率等参数而不是使用高压缩率算法。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2673",
+      "text": "只能说影视飓风对技术也是一知半解的，Video Streaming这领域几个动态调整分辨率、端设备超分的全是为QoE优化的技术，SIGCOMM NSDI都做了十年了（利益相关，网络方向的MLSys PhD）……我本来没细了解还支持影视飓风，现在听你这一细讲，Streaming网站基本没有问题，甚至技术先进。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2675",
+      "text": "进行一个补档，不过一个是YT原档一个是YT补档后的补档[大笑]夸克网盘分享",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2676",
+      "text": "我感觉电视画面差别也很离谱。美国的电视画面感觉非常清晰流畅，不也是1080p的吗？回国看iptv和地方有线用同轴和机顶盒送过来的，不忍直视啊，动态一高，糊成一坨，字幕都看不清了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2677",
+      "text": "这样，以后平台视频关闭下载或者强加密格式，不给用工具查属性信息，线上视频一样关闭查看视频信息功能，这样就没人可以查编码码率了[惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2678",
+      "text": "不得不说文字的信息密度比视频大多了[捂脸]还是文字看着更舒服",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2679",
+      "text": "很早前就听别人说国内的视频没有油管清晰，没人深扒，结果影视飓风给他们底裤都拔了。码率做了手脚能理解，给热门视频换源，为了看起来清晰加锐化，这纯纯逆天！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2680",
+      "text": "b站视频唯一好的一点就是没有内贴广告，虽然主页推送的也不少，但是确实看财报亏损不少，其他视频平台各种广告无孔不入，他们搞这种就是该骂。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2681",
+      "text": "BILIBILI这么搞就只能退会员了。支持影视飓风，很棒的UP主。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2682",
+      "text": "可怕的不是视频降码率，可怕的是全网下架禁评",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2683",
+      "text": "b站是妙界仙人 萌芽家仙人 洗面奶仙人····· 都进化出丝滑连招 0帧起手了 昨天还刷到一个变魔术的 变着变着变出来冰红茶开始带货[飙泪笑][大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2684",
+      "text": "只有竞争才能让它们做出改变，这点就看政府部门什么时候放开国外视频平台进来了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2685",
+      "text": "说实在的，我没有b站会员，更不用什么爱奇艺，腾讯视频，优酷，不管小电影还是大电影都是磁力链接网盘下载来看，但是可以理解各大平台这么做，我不知道有多少人能看出原画，4k 1080p的区别，但就现在这个礼崩乐坏的社会环境，人们生活压力这么大，能用十几块钱甚至几块钱极小的代价，得到百分之80的体验已经很不错了，唯一的好办法就是题主说的那样，有钱自己出钱出力追求高质量",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "positive_feedback",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2688",
+      "text": "B站故意弄成模糊的视频，让你试用高清视频，逼着让你们充值，目的很明显。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2689",
+      "text": "我B站缓存视频的时候就发现了，1080的电影，才300M，逗我呢[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2691",
+      "text": "第三方盗版平台用户竟是最大赢家[大笑]真是离谱，全视频平台会员为了什么？体验不如隔壁买盗版视频软件的用户[爱]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2692",
+      "text": "其实视频行业将画质误导还挺大的，对于视画方面影响太大了。那我来说，设计师，我最近一年多做的效果图就为了速度降低时间成本大量压缩，加锐化，甚至严重到我现在看图片和修图审美上否偏向于这个感觉，真的，就前几天还没看影视飓风的时候我们在讨论做的产品的时候合伙人提到这个问题，实话说我都没感觉到问题，其实也偏离了我做东西的最初感觉，昨晚看到视频后后知后觉，想想挺可怕",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2695",
+      "text": "讲实话，这样搞都不如不充会员，直接回到找资源的时代，毕竟哪怕你把钱充给云盘，价格也没比视频会员贵多少，但是视频体验确实上去了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2697",
+      "text": "我说为啥我觉得大会员的1080和普通用户的1080看着不一样，我以为是我高度近视的问题。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2698",
+      "text": "抖音上代古拉k那个千万点赞的视频，现在已经包浆了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

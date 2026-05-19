@@ -1,0 +1,258 @@
+{
+  "batch_id": 14,
+  "total_items": 19,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 13,
+      "short_video": 5,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 17,
+      "feature_request": 1,
+      "pain_point": 1
+    },
+    "topic_distribution": {
+      "other": 14,
+      "content_recommend": 2,
+      "background_play": 2,
+      "ad_experience": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 18
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_92",
+      "text": "让我想起来一个视频，警察叔叔，我能在这放烟花吗？不能。那为什么他能放？因为他没问[喜极而泣][喜极而泣][喜极而泣]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_112",
+      "text": "像这种视频我都直接选择不感兴趣的\n\n毕竟我知道对于部分人而言（如图）：",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_114",
+      "text": "我因为每天开车通勤时间较长，来回得两个多小时，听视频已经有两三年了。个人感觉听视频的内容还是以新闻、聊天类为好，让自己多涉猎一点知识。真正学习研究就算了，这种还是得伏案拿笔拿书本好好看、思考[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_115",
+      "text": "本视频没有任何一位桂纶镁女士遭到窃听，请大家放心观看[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_116",
+      "text": "感觉说得很好，自己最近也有听视频的习惯，有一种确实学到一点东西的感觉，但一回头又想不起来什么[笑哭]可能听观点或者时事类的视频比较合适，真想学点东西就不适合光听了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_117",
+      "text": "短视频太占眼睛，质量太低，所以还是b站刚刚好",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_118",
+      "text": "之前分享的网址失效了[大哭][大哭][大哭][大哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_129",
+      "text": "孩子是保胎技术保下来的  家长也是  真的是技术太好了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_134",
+      "text": "人类能不能不要再玩用精子和卵子合成傻叉的游戏了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_143",
+      "text": "up的视频是我了解上海的唯一方式[保佑]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_146",
+      "text": "up主说得不完全对，但说得很实际……对人生许多表象性的东西一下子就跳过……直接迫入问题的核心……常听up主的话语，是能让小年青的思路能少绕圈……（当然我已經步油腻大叔行列了）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_147",
+      "text": "我刷短视频也容易焦虑，总是会觉得自己不够优秀。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_152",
+      "text": "1:23喜欢我手上长嘴和鼻孔吗[doge]美颜算法谁写的？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_160",
+      "text": "白菜捂屁股是本视频最有创意，无低俗，不尴尬的一段",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_162",
+      "text": "ins更深神鬼二象性，我都是刷大雷还有那种美国网红的，然后莫名其妙的给我推一些变性后的女的健身露上半身的一些网红，鼓励人改变性别的这种视频，tiktok就没有这些，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_167",
+      "text": "给我干哪来了，无意中刷到这个视频，为什么里面的每一个短视频我都看不懂什么意思[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_169",
+      "text": "很喜欢史东！我是想戒断社交媒体来b站搜索并关注的，作为普通的社交媒体用户也有很拧巴的一面在、、在我主动搜索的时候还蛮好，但是只要变成无意识的习惯我就很崩溃、、我尝试各种方法好像都没什么大用。没用的前提感觉是：我本来也没有很想戒断。得到奶头乐确实是一件太轻松的事了、、或许史东有什么方法吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_170",
+      "text": "发现就算是知识学习类up的视频，我也乏了，真的不如自己看一本正经的书，以为看短视频就掌握知识掌握真理了吗，no no，不过是吃别人嚼过的甘蔗罢了，万事需躬行啊，自己不亲自感受一遍，听再多道理都不是自己的东西。现在大家都在玩短视频，不爱读书，只爱赚钱，因此大家都被各种乱七八糟真真假假的视频洗脑了，辩证思考逐渐减少，感觉大家戾气变重了，警惕性更高了，更加没人情味了。所以，我[doge][doge][d",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_175",
+      "text": "戴锦华老师说的那句话太对了，当今信息来源丰富了，但社会的反馈却越来越相近。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

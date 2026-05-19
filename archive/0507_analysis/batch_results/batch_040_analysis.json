@@ -1,0 +1,318 @@
+{
+  "batch_id": 40,
+  "total_items": 24,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 22,
+      "short_video": 2
+    },
+    "type_distribution": {
+      "behavior_description": 23,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "ai_feature": 3,
+      "other": 8,
+      "download_cache": 10,
+      "content_recommend": 1,
+      "video_quality": 1,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 13,
+      "explicit": 12,
+      "implicit": 1,
+      "not_ai": 11
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_comments_263",
+      "text": "@AI小快 帮我打开省流模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_264",
+      "text": "@AI小快 帮我打开省流模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_265",
+      "text": "@AI小快(O2467565973)  帮我打开省流模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_271",
+      "text": "谢谢敬姐分享[赞][赞][赞]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_279",
+      "text": "@Al小快打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_280",
+      "text": "@AI小快(O2467565973) 帮我打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_282",
+      "text": "@AI小快 帮我更新并打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_283",
+      "text": "@AI小快 打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_284",
+      "text": "@AI小快 我打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_285",
+      "text": "@AI小快(O2467565973) 我打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_286",
+      "text": "@AI小快(O2467565973) 给我打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_287",
+      "text": "@AI小快(O2467565973) 给我打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_288",
+      "text": "@AI小快(O2467565973) 打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_290",
+      "text": "刷视频刷多了，都不知道该干什么了，退出快手，在桌面找了一圈，最后又点进了快手[憨笑]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_305",
+      "text": "我的这个键盘的声音特别好听强烈推荐[憨笑哪吒]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_318",
+      "text": "老师讲的不错啊。给你点赞。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_327",
+      "text": "@＠  L(O1028803348) 去看评论",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_334",
+      "text": "你控制，关系熟了之后可以打语音通话，不要买太大的，会坏",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_343",
+      "text": "我的怎么没有这个功能啊？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_347",
+      "text": "@AI小快(O2467565973) 开启离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_349",
+      "text": "照顾好自己的情绪，挑剔的胃和爱笑的眼睛",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_359",
+      "text": "但是为什么我的画质真的挺糊",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_368",
+      "text": "内心强大的，看短剧是为舒心，而不是闹心，我是看美女和帅哥。自从有短剧，很少看电视剧[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_380",
+      "text": "快手无响应。是否将其关？x关闭应用？等，这是什么链接？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

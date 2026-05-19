@@ -1,0 +1,498 @@
+[
+  {
+    "signal": "视频生成/编辑",
+    "mentions": 177,
+    "percentage": 33.97,
+    "avg_interaction": 36739.79,
+    "avg_quality": 61.47,
+    "platforms": {
+      "xhs": 43,
+      "zhihu": 42,
+      "bilibili": 36,
+      "kuaishou": 35,
+      "douyin": 21
+    },
+    "top_emotions": {
+      "期待/渴望": 29,
+      "惊喜/兴奋": 14,
+      "困惑/迷茫": 9
+    },
+    "top_scenes": {
+      "工作/学习": 32,
+      "家庭/陪伴": 3,
+      "运动/健身": 2
+    },
+    "representative_samples": [
+      {
+        "platform": "kuaishou",
+        "text_preview": "一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频 一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频",
+        "interaction": 1090160,
+        "quality_score": 57.8
+      },
+      {
+        "platform": "bilibili",
+        "text_preview": "【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/ 这个视频的课程研发 整体特别特别辛苦的···\n然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是\n请一定要【一键三连】\n请一定要【一键三连】\n请一定要【一键三连】\n\n课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~\n进粉丝群的话，在后台回复【我是铁粉】或者【进群】都可以，大佬、萌新、猛男、萝莉、还有我这",
+        "interaction": 665926,
+        "quality_score": 86.0
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "国产免费的AI生成视频工具，你用过几个？#AI视频 #AI工具 #视频工具 #干货 国产免费的AI生成视频工具，你用过几个？#AI视频 #AI工具 #视频工具 #干货",
+        "interaction": 483726,
+        "quality_score": 56.6
+      }
+    ]
+  },
+  {
+    "signal": "社交/分享",
+    "mentions": 97,
+    "percentage": 18.62,
+    "avg_interaction": 51978.25,
+    "avg_quality": 67.68,
+    "platforms": {
+      "kuaishou": 36,
+      "bilibili": 24,
+      "xhs": 20,
+      "douyin": 10,
+      "zhihu": 7
+    },
+    "top_emotions": {
+      "期待/渴望": 16,
+      "困惑/迷茫": 7,
+      "惊喜/兴奋": 5
+    },
+    "top_scenes": {
+      "工作/学习": 12,
+      "家庭/陪伴": 6,
+      "睡前/休息": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "douyin",
+        "text_preview": "上期32万观看被催爆的AI视频教程来了｜别再抽卡了 \n为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精准分配模型的\"交叉注意力权重\" \n用假面骑士变身×拿破仑加冕两个实战案例，手把手教你建立五维控制坐标系，让AI把100%算力砸在画面质量上。 \n零基础也能学会，评论区告诉我下期想看什么👉\n#青年创作者成长计划#AI #人工智能 #AI视频#ai新星计划 上期32万观看被催爆的AI视频教程来了｜别再抽卡了 \n为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精准分配模型的\"交叉注意力权",
+        "interaction": 1464489,
+        "quality_score": 80.0
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "快手ai功能#短视频创业 #互联网创业 #快手知识分享 快手ai功能#短视频创业 #互联网创业 #快手知识分享",
+        "interaction": 549779,
+        "quality_score": 54.0
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "快手AI对话功能 #短视频创业 #互联网创业 #快手知识分享 快手AI对话功能 #短视频创业 #互联网创业 #快手知识分享",
+        "interaction": 462667,
+        "quality_score": 55.2
+      }
+    ]
+  },
+  {
+    "signal": "学习/笔记",
+    "mentions": 64,
+    "percentage": 12.28,
+    "avg_interaction": 22297.08,
+    "avg_quality": 69.78,
+    "platforms": {
+      "xhs": 23,
+      "bilibili": 16,
+      "zhihu": 12,
+      "douyin": 10,
+      "kuaishou": 3
+    },
+    "top_emotions": {
+      "期待/渴望": 25,
+      "惊喜/兴奋": 13,
+      "困惑/迷茫": 6
+    },
+    "top_scenes": {
+      "工作/学习": 46,
+      "家庭/陪伴": 3,
+      "吃饭/碎片": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "bilibili",
+        "text_preview": "【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/ 这个视频的课程研发 整体特别特别辛苦的···\n然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是\n请一定要【一键三连】\n请一定要【一键三连】\n请一定要【一键三连】\n\n课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~\n进粉丝群的话，在后台回复【我是铁粉】或者【进群】都可以，大佬、萌新、猛男、萝莉、还有我这",
+        "interaction": 665926,
+        "quality_score": 86.0
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能 今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能",
+        "interaction": 188209,
+        "quality_score": 62.2
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "5款免费的AI软件视频生成工具，赶紧收藏码住防止找不到！#闪剪 #数字人 #人工智能 #ai工具 #ai视频 5款免费的AI软件视频生成工具，赶紧收藏码住防止找不到！#闪剪 #数字人 #人工智能 #ai工具 #ai视频",
+        "interaction": 112435,
+        "quality_score": 61.8
+      }
+    ]
+  },
+  {
+    "signal": "互动/问答",
+    "mentions": 49,
+    "percentage": 9.4,
+    "avg_interaction": 62385.55,
+    "avg_quality": 62.37,
+    "platforms": {
+      "zhihu": 17,
+      "xhs": 14,
+      "douyin": 7,
+      "bilibili": 6,
+      "kuaishou": 5
+    },
+    "top_emotions": {
+      "困惑/迷茫": 8,
+      "期待/渴望": 8,
+      "惊喜/兴奋": 5
+    },
+    "top_scenes": {
+      "工作/学习": 6,
+      "家庭/陪伴": 1,
+      "睡前/休息": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "douyin",
+        "text_preview": "上期32万观看被催爆的AI视频教程来了｜别再抽卡了 \n为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精准分配模型的\"交叉注意力权重\" \n用假面骑士变身×拿破仑加冕两个实战案例，手把手教你建立五维控制坐标系，让AI把100%算力砸在画面质量上。 \n零基础也能学会，评论区告诉我下期想看什么👉\n#青年创作者成长计划#AI #人工智能 #AI视频#ai新星计划 上期32万观看被催爆的AI视频教程来了｜别再抽卡了 \n为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精准分配模型的\"交叉注意力权",
+        "interaction": 1464489,
+        "quality_score": 80.0
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "快手AI对话功能 #短视频创业 #互联网创业 #快手知识分享 快手AI对话功能 #短视频创业 #互联网创业 #快手知识分享",
+        "interaction": 462667,
+        "quality_score": 55.2
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶置）(O3xiyc3mx7mt7b3i) @快手热点(O3xddgkd5fav5if9) 第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶置）(O3xiyc3mx7mt7b3i) @快手热点(O3xddgkd5fav5if9)",
+        "interaction": 265016,
+        "quality_score": 80.0
+      }
+    ]
+  },
+  {
+    "signal": "内容搜索/定位",
+    "mentions": 43,
+    "percentage": 8.25,
+    "avg_interaction": 19876.84,
+    "avg_quality": 57.73,
+    "platforms": {
+      "xhs": 17,
+      "douyin": 15,
+      "zhihu": 5,
+      "bilibili": 3,
+      "kuaishou": 3
+    },
+    "top_emotions": {
+      "期待/渴望": 15,
+      "惊喜/兴奋": 8,
+      "困惑/迷茫": 3
+    },
+    "top_scenes": {
+      "工作/学习": 8,
+      "吃饭/碎片": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "kuaishou",
+        "text_preview": "快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索  快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索",
+        "interaction": 576879,
+        "quality_score": 54.4
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "快手AI智能搜索#快成长计划 #文娱百科明日之星 #老铁知识百科 #内容启发分享计划 @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O3xrgtux2ehryffe) @快手粉条(O3xhcy6vhfzcu3qe) 快手AI智能搜索#快成长计划 #文娱百科明日之星 #老铁知识百科 #内容启发分享计划 @快手热点(O3xddgkd5fav5if9) @快手创作者中心(O3xrgtux2ehryffe) @快手粉条(O3xhcy6vhfzcu3qe)",
+        "interaction": 107564,
+        "quality_score": 80.0
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "才知道不同的AI竟然有不同的分工 一开始我啥都往 ChatGPT 上丢，写文案、写报告，结果经常不在线、听不懂人话，整得我比自己写还累。\n后来把那几个工具都试了一圈，才发现它们竟然各司其职。工具用对了，效率是真的能翻几倍，感觉像给自己配了牛马。😄\n\t\n1️⃣ ChatGPT（通用型对话最强，适合结构化思维/营销策略）\n🛠️指令模版\n✅请你基于 XX 角色（如产品经理/品牌策划）输出一份关于【某项目/话题】的内容策略，包含结构与执行建议\n✅帮我改写这段文案，使其更符合【某平台风格 / 某类人群语言习惯】\n\t\n2️⃣ DeepSeek（擅长技术解读/学术类内容，适合工程/产品逻辑梳理）\n🛠️指令模",
+        "interaction": 46683,
+        "quality_score": 83.0
+      }
+    ]
+  },
+  {
+    "signal": "视频摘要/总结",
+    "mentions": 37,
+    "percentage": 7.1,
+    "avg_interaction": 5722.22,
+    "avg_quality": 69.23,
+    "platforms": {
+      "xhs": 16,
+      "bilibili": 10,
+      "zhihu": 6,
+      "douyin": 5
+    },
+    "top_emotions": {
+      "期待/渴望": 13,
+      "惊喜/兴奋": 9,
+      "困惑/迷茫": 5
+    },
+    "top_scenes": {
+      "工作/学习": 13,
+      "家庭/陪伴": 2,
+      "通勤/路上": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "xhs",
+        "text_preview": "才知道不同的AI竟然有不同的分工 一开始我啥都往 ChatGPT 上丢，写文案、写报告，结果经常不在线、听不懂人话，整得我比自己写还累。\n后来把那几个工具都试了一圈，才发现它们竟然各司其职。工具用对了，效率是真的能翻几倍，感觉像给自己配了牛马。😄\n\t\n1️⃣ ChatGPT（通用型对话最强，适合结构化思维/营销策略）\n🛠️指令模版\n✅请你基于 XX 角色（如产品经理/品牌策划）输出一份关于【某项目/话题】的内容策略，包含结构与执行建议\n✅帮我改写这段文案，使其更符合【某平台风格 / 某类人群语言习惯】\n\t\n2️⃣ DeepSeek（擅长技术解读/学术类内容，适合工程/产品逻辑梳理）\n🛠️指令模",
+        "interaction": 46683,
+        "quality_score": 83.0
+      },
+      {
+        "platform": "bilibili",
+        "text_preview": "AI真的能看懂视频了吗？ AI总结视频这回真的可以更准确了～",
+        "interaction": 42831,
+        "quality_score": 46.0
+      },
+      {
+        "platform": "bilibili",
+        "text_preview": "全网没人告诉你的AI视频总结方法！1分钟看完3小时视频（提取文案、做笔记、双语翻译、思维导图全搞定!） -",
+        "interaction": 30734,
+        "quality_score": 50.6
+      }
+    ]
+  },
+  {
+    "signal": "智能推荐/过滤",
+    "mentions": 30,
+    "percentage": 5.76,
+    "avg_interaction": 38311.8,
+    "avg_quality": 61.98,
+    "platforms": {
+      "xhs": 12,
+      "douyin": 6,
+      "zhihu": 6,
+      "bilibili": 4,
+      "kuaishou": 2
+    },
+    "top_emotions": {
+      "期待/渴望": 9,
+      "惊喜/兴奋": 5,
+      "疲惫/厌倦": 4
+    },
+    "top_scenes": {
+      "工作/学习": 10,
+      "家庭/陪伴": 2,
+      "吃饭/碎片": 2
+    },
+    "representative_samples": [
+      {
+        "platform": "douyin",
+        "text_preview": "最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程 最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程",
+        "interaction": 775101,
+        "quality_score": 61.4
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能 今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能",
+        "interaction": 188209,
+        "quality_score": 62.2
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "1个手机3个App，一键生成电影级大片！ 大家是不是每次刷到博主们的电影感vlog，都非常羡慕，[萌萌哒R][萌萌哒R]希望自己也能拍出同款？\n坦白讲，我曾经也是这样，但每次都是眼睛看会了，手没学会[扯脸H][扯脸H]\n\t\n直到我发现了这个AI王炸组合，现在有手就能制作出自己原创的🎬电影感大片，[哇R][哇R]操作非常简单。\n\t\n第一步：用【DeepSeek】出脚本\n[向右R]生成文案： 打开DeepSeek，对它说：“帮我写一个关于江南水乡的文旅小短文，100字左右，要富有诗情画意。”\n[向右R]生成画面提示词： 这是很重要的一步！接着对DeepSeek说：“根据以上内容，为每一句话设计文生",
+        "interaction": 33981,
+        "quality_score": 83.0
+      }
+    ]
+  },
+  {
+    "signal": "语音/字幕相关",
+    "mentions": 20,
+    "percentage": 3.84,
+    "avg_interaction": 11962.8,
+    "avg_quality": 69.76,
+    "platforms": {
+      "bilibili": 7,
+      "xhs": 6,
+      "douyin": 3,
+      "kuaishou": 2,
+      "zhihu": 2
+    },
+    "top_emotions": {
+      "期待/渴望": 7,
+      "惊喜/兴奋": 5,
+      "困惑/迷茫": 2
+    },
+    "top_scenes": {
+      "工作/学习": 7,
+      "家庭/陪伴": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "kuaishou",
+        "text_preview": "家人们，今天给你们分享一个超棒的用 AI 做视频的方法。\n\n这个方法适用于多种类型的视频，像小说推文、知识科普、育儿教育之类的都没问题。\n\n咱就用 AI 视频宝写标题，挑个合适的写稿子，再用 AI 成片生成视频。而且啊，在 AI 成片里可以设置视频类型、配音和字幕呢。视频生成好后就可以发布啦。 #自媒体  #ai  #副业 #软件分享 家人们，今天给你们分享一个超棒的用 AI 做视频的方法。\n\n这个方法适用于多种类型的视频，像小说推文、知识科普、育儿教育之类的都没问题。\n\n咱就用 AI 视频宝写标题，挑个合适的写稿子，再用 AI 成片生成视频。而且啊，在 AI 成片里可以设置视频类型、配音和字",
+        "interaction": 92230,
+        "quality_score": 83.0
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "才知道不同的AI竟然有不同的分工 一开始我啥都往 ChatGPT 上丢，写文案、写报告，结果经常不在线、听不懂人话，整得我比自己写还累。\n后来把那几个工具都试了一圈，才发现它们竟然各司其职。工具用对了，效率是真的能翻几倍，感觉像给自己配了牛马。😄\n\t\n1️⃣ ChatGPT（通用型对话最强，适合结构化思维/营销策略）\n🛠️指令模版\n✅请你基于 XX 角色（如产品经理/品牌策划）输出一份关于【某项目/话题】的内容策略，包含结构与执行建议\n✅帮我改写这段文案，使其更符合【某平台风格 / 某类人群语言习惯】\n\t\n2️⃣ DeepSeek（擅长技术解读/学术类内容，适合工程/产品逻辑梳理）\n🛠️指令模",
+        "interaction": 46683,
+        "quality_score": 83.0
+      },
+      {
+        "platform": "kuaishou",
+        "text_preview": "这个小妙招可以让你遨游外语电影的世界？#生活小妙招每日更新  #测评 这个小妙招可以让你遨游外语电影的世界？#生活小妙招每日更新  #测评",
+        "interaction": 35846,
+        "quality_score": 53.8
+      }
+    ]
+  },
+  {
+    "signal": "画质/修复",
+    "mentions": 15,
+    "percentage": 2.88,
+    "avg_interaction": 6849.93,
+    "avg_quality": 79.16,
+    "platforms": {
+      "xhs": 11,
+      "bilibili": 2,
+      "douyin": 1,
+      "zhihu": 1
+    },
+    "top_emotions": {
+      "期待/渴望": 7,
+      "惊喜/兴奋": 4,
+      "frustration": 3
+    },
+    "top_scenes": {
+      "工作/学习": 6,
+      "通勤/路上": 1,
+      "吃饭/碎片": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "xhs",
+        "text_preview": "才知道不同的AI竟然有不同的分工 一开始我啥都往 ChatGPT 上丢，写文案、写报告，结果经常不在线、听不懂人话，整得我比自己写还累。\n后来把那几个工具都试了一圈，才发现它们竟然各司其职。工具用对了，效率是真的能翻几倍，感觉像给自己配了牛马。😄\n\t\n1️⃣ ChatGPT（通用型对话最强，适合结构化思维/营销策略）\n🛠️指令模版\n✅请你基于 XX 角色（如产品经理/品牌策划）输出一份关于【某项目/话题】的内容策略，包含结构与执行建议\n✅帮我改写这段文案，使其更符合【某平台风格 / 某类人群语言习惯】\n\t\n2️⃣ DeepSeek（擅长技术解读/学术类内容，适合工程/产品逻辑梳理）\n🛠️指令模",
+        "interaction": 46683,
+        "quality_score": 83.0
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "但是可能和大部分人想的完全相反 Ai不会变得更智能，而是会成倍的变蠢，因为网络上能被ai拿来训练的人类物料已经快消耗完了\n\t\n从23年开始，网上你能搜到的资料已经有快一半是ai自己生成的了，等到所有人都不直接生产内容，习惯把内容生产交给ai，或者拿ai来润色，那结果就是ai吃自己拉过的💩，然后再拉一坨更恶心的💩出来，给下面的ai吃，这样一代代累积，近亲繁殖，问题越积越多，甚至出现一些只有ai自己才能懂的黑话，然后黑话会不断被新的ai纳入训练素材，代代累积……\n\t\n这些情况人类很难第一时间发现不对劲，毕竟表面上ai还是变得越来越强，反应速度越来越快。但是等ai产出的内容出现明显降智，再想修复已经",
+        "interaction": 10832,
+        "quality_score": 83.0
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "即梦 Seedance 2.0 提示词高阶技巧手册 一、核心公式（万能结构）\n遵循「主体 + 动作 + 场景 + 光影 + 镜头语言 + 风格 + 画质 + 约束」，让 AI 精准理解创作意图。\n示例：一位年轻女生在海边慢走，微风拂动头发，微笑看向镜头，黄昏暖光，4K 高清，电影感，稳定运镜，画面流畅不抖动，细节清晰。\n二、分模块核心技巧\n1. 动作描述（Seedance 最吃这个）\n原则：写慢、写连续，避免「跳舞」「走路」等笼统词。\n优先词：缓慢、轻柔、连贯、自然、流畅、不僵硬。\n避坑：夸张、高速、复杂多人互动、大幅度扭曲。\n好用组合：缓慢转身、轻轻抬手、脚步轻移、镜头缓缓推进。\n2. 镜头",
+        "interaction": 9531,
+        "quality_score": 80.0
+      }
+    ]
+  },
+  {
+    "signal": "情感/氛围",
+    "mentions": 13,
+    "percentage": 2.5,
+    "avg_interaction": 60997.69,
+    "avg_quality": 75.55,
+    "platforms": {
+      "xhs": 8,
+      "bilibili": 2,
+      "douyin": 2,
+      "zhihu": 1
+    },
+    "top_emotions": {
+      "期待/渴望": 5,
+      "frustration": 3,
+      "焦虑/急迫": 2
+    },
+    "top_scenes": {
+      "工作/学习": 3,
+      "吃饭/碎片": 2,
+      "通勤/路上": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "bilibili",
+        "text_preview": "【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/ 这个视频的课程研发 整体特别特别辛苦的···\n然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很久，这次不咕咕大家，所以重要的事着重说 那就是\n请一定要【一键三连】\n请一定要【一键三连】\n请一定要【一键三连】\n\n课程涉及的工程文件请关注我自个儿的小公众号【GenJi是真想教会你】回复【AI】就可以获取啦~\n进粉丝群的话，在后台回复【我是铁粉】或者【进群】都可以，大佬、萌新、猛男、萝莉、还有我这",
+        "interaction": 665926,
+        "quality_score": 86.0
+      },
+      {
+        "platform": "douyin",
+        "text_preview": "如何让你的AI视频更有电影感 为什么别人的 AI 视频像电影，\n你的却一眼廉价？ 😭\n问题不是提示词，\n而是你没学会——AI 的底层语言：视听语言。\n今天一帆老师教你用景别讲故事、用光影做氛围，\n让 AI 视频从“能生成”，变成“有电影感”。#AIGC #人工智能 #AI视频 #AI影视 #AI视频教学 如何让你的AI视频更有电影感 为什么别人的 AI 视频像电影，\n你的却一眼廉价？ 😭\n问题不是提示词，\n而是你没学会——AI 的底层语言：视听语言。\n今天一帆老师教你用景别讲故事、用光影做氛围，\n让 AI 视频从“能生成”，变成“有电影感”。#AIGC #人工智能 #AI视频 #AI影视 #A",
+        "interaction": 81317,
+        "quality_score": 83.0
+      },
+      {
+        "platform": "bilibili",
+        "text_preview": "告别AI视频僵硬假脸！3招让你的AI人物表情活起来 分享3个告别AI视频假脸感的方法，新手也能直接套用，配合联想YOGA Pro 16 Aura AI元启版，第三代英特尔® 酷睿™ Ultra 7处理器，全能旗舰、大“显”身手，实现沉浸式、高效率创作。",
+        "interaction": 19514,
+        "quality_score": 65.2
+      }
+    ]
+  },
+  {
+    "signal": "效率/倍速",
+    "mentions": 8,
+    "percentage": 1.54,
+    "avg_interaction": 3445.5,
+    "avg_quality": 80.55,
+    "platforms": {
+      "xhs": 8
+    },
+    "top_emotions": {
+      "惊喜/兴奋": 4,
+      "frustration": 2,
+      "期待/渴望": 2
+    },
+    "top_scenes": {
+      "工作/学习": 4,
+      "通勤/路上": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "xhs",
+        "text_preview": "看多了AI模仿手搓，来看看手搓模仿AI的 AI渗透广告业的当下，还有人在“手搓”广告——不是用CGI，而是实打实用真人、实景、实体道具硬生生造出一个像素游戏世界。\n说的就是这支《Your Way Out》（你的破局之路）。创意机构Isle of Any和导演Oscar Hudson在奥斯卡期间投放的。短片讲一个NPC觉醒、挣脱系统、找回自我——挺老套的叙事，但执行方式绝了：\n演员戴像素面具、穿印刷纹路的衣服，布景也是实打实搭出来的像素化场景，连走路姿势都训练成游戏角色的步态。全程几乎没用特效，硬是靠物理道具和真人表演还原出PS1时代的lowpoly画风。\n这年头，AI能一键生成以假乱真的画面，",
+        "interaction": 9769,
+        "quality_score": 80.0
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "🔥从故事到成片,Agent自动搭建短剧全流程 最近用 YouArt 做了一条真人短片《让座》🎬\n#00:00[时刻]#-#00:07[时刻]# 精彩片段\n#00:08[时刻]#-#00:26[时刻]# 工作流整体介绍\n#00:27[时刻]#-#00:45[时刻]# 生成视觉资产\n#00:46[时刻]#-#00:53[时刻]# 拆解分镜\n#00:54[时刻]#-#01:12[时刻]# 生成分镜图\n#01:13[时刻]#-#01:56[时刻]# 视频和剪辑\n#01:57[时刻]#-#02:34[时刻]# 生成UGC广告视频\n#02:35[时刻]#-#03:07[时刻]# 完整成片\n这次最明显的感受",
+        "interaction": 5473,
+        "quality_score": 80.0
+      },
+      {
+        "platform": "xhs",
+        "text_preview": "一键解析所有视频，帮你轻松实现导演梦 新升级的一键拉片pro功能，搭载了强大的Gemini 3。可以解析任意爆款视频，学习他们是如何写提示词和选择模型，并进行复刻和二创。更快、更准、更懂创作者！现在就可以来TapNow体验，让你轻松讲好故事。\n#TapTV[话题]# #tapnow[话题]# #ai工具[话题]# #ai广告[话题]# #ai短剧[话题]# #aigc[话题]# #拉片[话题]#",
+        "interaction": 3258,
+        "quality_score": 82.8
+      }
+    ]
+  },
+  {
+    "signal": "跨设备/同步",
+    "mentions": 1,
+    "percentage": 0.19,
+    "avg_interaction": 152.0,
+    "avg_quality": 54.2,
+    "platforms": {
+      "douyin": 1
+    },
+    "top_emotions": {},
+    "top_scenes": {
+      "家庭/陪伴": 1
+    },
+    "representative_samples": [
+      {
+        "platform": "douyin",
+        "text_preview": "一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑 一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑",
+        "interaction": 152,
+        "quality_score": 54.2
+      }
+    ]
+  }
+]

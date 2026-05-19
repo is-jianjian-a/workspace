@@ -1,0 +1,330 @@
+{
+  "batch_id": 4,
+  "total_items": 25,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 24,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 18,
+      "feature_request": 2,
+      "pain_point": 3,
+      "positive_feedback": 2
+    },
+    "topic_distribution": {
+      "other": 22,
+      "playback_control": 1,
+      "screen_cast": 1,
+      "payment_member": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 25
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_159",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_160",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_161",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_162",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_163",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_164",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_165",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_166",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_167",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_168",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上， 手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_182",
+      "text": "重量也是一方面 带个手机跟带块砖头一样干嘛呢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_183",
+      "text": "xs256银色已下单，我就喜欢可以单手操作的，也不需要别人知道我这是新手机。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_185",
+      "text": "建议顶配，因为上下屏幕都吃内存，内存不够玩大型游戏比如盖世或NS容易闪退，系统卡尽量多留点内存，但不影响游戏运行速度",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_187",
+      "text": "玩3ds够了，大部分ns也可以玩一玩，但是双屏确实吃内存严重",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_189",
+      "text": "不玩手游不模拟ns跟pc完全够用了，玩3ds没问题，ps3不一定ps2以下肯定都ok，边模拟游戏边播放视频也没什么压力，系统设置里可以再开4G虚拟内存。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_190",
+      "text": "哦对了，因为手里有闲置的1t和512g tf卡，就没焦虑内存问题，游戏安装在机身内存和tf卡里的运行速度差异大吗",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_193",
+      "text": "不要看所谓攻略视频不要看社区image_emoticon16要相信自己抽出来后玩过之后的感觉image_emoticon25网上那些破玩意都是骗你的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_203",
+      "text": "没有一线通功能，阉割版充电口",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_205",
+      "text": "看视频刷抖音的还是买屏幕更大点的吧，影音效果也会好很多。小屏只是图一时快感，最终还是大屏爽的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_210",
+      "text": "这个绿色确实好看，1+15系列的造型设计感觉应该是这两年设计得最好看的一档，性能不差，ColorOS的系统评价也挺好，电池又是7000多的大电池，小屏手机里应该算是最强的 ★但它最大的缺点就是卖得贵，同样性能甚至更好的都买得比它便宜，如果票子多不考虑价格的话那就无脑买吧，毕竟自己喜欢最重要",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_211",
+      "text": "image_emoticon25好手机，销量巨高，一定要买 image_emoticon2215T首发的那阶段在pdd显示的不是卖了多少台而是显示买了多少钱的机器",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_212",
+      "text": "等我下班回去了截几张图放评论区里，纪念一下就删游戏了image_emoticon9",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_215",
+      "text": "别删啊，以后有时间了就来玩玩，你玩到这个段位了应该知道这个游戏后期就是很公式的，可以肝也可以不肝，鉴于国服和工作的原因，其实你的游戏体验应该相当不错",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_229",
+      "text": "无所谓，反正迟早都能满的，我刷到止流以后就没刷过角色了，后面有空找个时间挂一下午就行了。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_232",
+      "text": "现在不送梦队养成但开荒视频大多又始于梦队，这点挺膈应人的，但好处是能嫖一些六道通灵师师档期精灵和部分精灵养成了。灵初时代尤其要注意星神经验（微灵星元）和元魂消耗，能白嫖神运极品就尽量拿，他送星神和元魂满级你也拿，这样你才能在灵初存得下资源。这杀软策划一般说着加资源，一边把以前比较轻松拿到的资源渠道给下架（以前回归直接白嫖两个神运极品能放大多数神运精灵，斗技一期有好多个中后期精灵可以遇到难打的直接跳",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

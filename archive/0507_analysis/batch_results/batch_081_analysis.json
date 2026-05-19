@@ -1,0 +1,221 @@
+{
+  "batch_id": 81,
+  "total_items": 16,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 16
+    },
+    "type_distribution": {
+      "behavior_description": 13,
+      "pain_point": 2,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 9,
+      "ai_feature": 2,
+      "payment_member": 1,
+      "download_cache": 2,
+      "video_quality": 2
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 2,
+      "implicit": 0,
+      "not_ai": 14
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_2223",
+      "text": "2000点赞1000收藏，你要反省[生气]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2231",
+      "text": "过去I社游戏还有不少可玩性 像欲望之血 欲望格斗什么的 并且CG动画也挺实用的 后来主打3D捏人 基本没啥玩头了 特别中间很长一段时间3D效果一般 即时演算实用性也很差",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2232",
+      "text": "你长大了，见的多了就不惊喜了。小时候一颗糖可以快乐一天，长大了一桶糖你却觉得腻。小时候小小的刺激就可以让你兴奋，长大可能需要一天赚十万才才能让你兴奋。小时候兴奋就是快乐，长大了平静就是幸福。小时候新奇就是动力，长大了理解就是感动。小时候总巴不得爸爸妈妈天天带自己出去玩，长大了周末带孩子出去玩比上班还累。小时候就是小时候， 长大了就是长大了，金钱，家庭都压着你喘不过气来，连打游戏都成了负担。长大了就",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2241",
+      "text": "是啊，当年的游戏可真令人怀念啊。现在想起来还历历在目呢！对咯，让你这么一说我忽然想重新体验一回当年的热血激情，有链接吗？[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2245",
+      "text": "刚想着加个关注，一看已经关注了…",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2247",
+      "text": "小时候第一次看到3d画面那种震撼的心情以后都不会有了。回家让家里给买被骂成狗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2253",
+      "text": "AI和波动你是一点不提啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2261",
+      "text": "这些游戏在哪里下，有没有链接，可以付费",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2262",
+      "text": "在哪里下载[大哭][大哭][大哭]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2263",
+      "text": "甜心选择很好ROOM GIRL 垃圾 体味 还是那几个不如那个海岛 收集东西的好玩不过可以男女主切换 倒是有点新意 但是优化太辣鸡了 加载好半天啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2278",
+      "text": "时隔两年评论下，不管你期待不期待i社新作。它没了你惋惜不惋惜吧[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2284",
+      "text": "我朋友玩我手机点了个收藏 真是的！[生气]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2291",
+      "text": "db4，现在看起来画质是渣，战斗简直是胡闹，但是情节场景和音乐都是神作。而后来连音乐都懒得重做，db4的到处用",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2298",
+      "text": "小时候家里电脑差，我玩欲望之血还是啥的那个格斗游戏，卡成ppt了还坚持玩了好几天[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2299",
+      "text": "还有那些渠道网盘可以下载吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2305",
+      "text": "感觉耐玩一点的，人工少女3和AI少女好一点吧[酷][酷][酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

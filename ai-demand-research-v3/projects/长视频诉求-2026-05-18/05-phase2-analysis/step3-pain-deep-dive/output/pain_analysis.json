@@ -1,0 +1,56 @@
+{
+  "pain_distribution": {
+    "选择困难": 25,
+    "质量参差": 29,
+    "身体疲劳": 12,
+    "时间失控": 26,
+    "知识焦虑": 37,
+    "操作繁琐": 7,
+    "信息过载": 13,
+    "内容付费": 3,
+    "缺乏系统": 1,
+    "实操困难": 5
+  },
+  "pain_with_interaction": {
+    "选择困难": {
+      "count": 25,
+      "avg_interaction": 6282.0
+    },
+    "质量参差": {
+      "count": 29,
+      "avg_interaction": 6961.0
+    },
+    "身体疲劳": {
+      "count": 12,
+      "avg_interaction": 12349.0
+    },
+    "时间失控": {
+      "count": 26,
+      "avg_interaction": 3524.0
+    },
+    "知识焦虑": {
+      "count": 37,
+      "avg_interaction": 5818.0
+    },
+    "操作繁琐": {
+      "count": 7,
+      "avg_interaction": 4535.0
+    },
+    "信息过载": {
+      "count": 13,
+      "avg_interaction": 2380.0
+    },
+    "内容付费": {
+      "count": 3,
+      "avg_interaction": 4842.0
+    },
+    "缺乏系统": {
+      "count": 1,
+      "avg_interaction": 2319.0
+    },
+    "实操困难": {
+      "count": 5,
+      "avg_interaction": 17.0
+    }
+  }
+}

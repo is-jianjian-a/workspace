@@ -1,0 +1,329 @@
+{
+  "batch_id": 43,
+  "total_items": 25,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 19,
+      "live_stream": 2,
+      "short_video": 4
+    },
+    "type_distribution": {
+      "behavior_description": 24,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 16,
+      "content_recommend": 6,
+      "ad_experience": 1,
+      "ai_feature": 2
+    },
+    "ai_statistics": {
+      "total_ai": 9,
+      "explicit": 9,
+      "implicit": 0,
+      "not_ai": 16
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_comments_612",
+      "text": "我老妈玩手机啊，一玩玩三个月，一直玩的都不行，那有什么好的办法，老师",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_617",
+      "text": "我奶给我看“中学生不能玩手机”的视频时给她看[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_629",
+      "text": "第二天醒来发现手机开了一晚上。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_632",
+      "text": "我是看着睡着的，第二天醒来的时候发现手机直接关机了[憨笑哪吒][憨笑哪吒][都市丽人]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_663",
+      "text": "看手机需要怎么注意用眼？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_688",
+      "text": "@AI小快(O2467565973) 别再给我推荐种蛊苗疆女子活体蜈蚣直播了[大哭]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_690",
+      "text": "@AI小快(O2467565973) 禁止给我推恐怖的视频，还有那些广告，恐怖的歌曲也不要有不要直播带货的，不要推老年人的视频，还有不要给我推那些小说了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_691",
+      "text": "@AI小快(O2467565973) 以后少给我推商品",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_692",
+      "text": "@AI小快(O2467565973) 禁止推荐辅助",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_693",
+      "text": "@AI小快(O2467565973) 以后禁止给我推荐任何一个拥有恐怖元素或血腥暴力的内容，或者是古代恐怖故事或者是恐怖小说或者是关于恐怖内容的视频，只要有任何恐怖元素都别给我推荐",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_694",
+      "text": "@AI小快(O2467565973) 禁止给我推荐健康类型的视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_695",
+      "text": "@AI小快(O2467565973) 不再推给我女生",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_696",
+      "text": "@AI小快(O2467565973) 禁止给我推荐二游除官配外CP类型视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_697",
+      "text": "@AI小快(O2467565973) 禁止给我推荐搞笑内容",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_698",
+      "text": "快手无响应。是否将其关？x关闭应用？等，这是什么链接？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_699",
+      "text": "没用的我都试过了我的手机只有快手卡，别的软件都不卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_700",
+      "text": "清理后 一点改变都没有 还是卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_702",
+      "text": "看你这个视频很卡很卡。一直不动",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_704",
+      "text": "没流量你怎么搞 还是一样卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_710",
+      "text": "我经常用手机，但没这么严重",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_713",
+      "text": "快手无响应。是否将其关？x关闭应用？等，这是什么链接？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_714",
+      "text": "没用的我都试过了我的手机只有快手卡，别的软件都不卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_715",
+      "text": "清理后 一点改变都没有 还是卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_717",
+      "text": "看你这个视频很卡很卡。一直不动",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_719",
+      "text": "没流量你怎么搞 还是一样卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

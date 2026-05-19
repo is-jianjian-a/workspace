@@ -1,0 +1,440 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下16条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 81/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_2223
+平台: zhihu
+类型: comments
+内容: 2000点赞1000收藏，你要反省[生气]
+
+--- ITEM #2 ---
+ID: zhihu_comments_2231
+平台: zhihu
+类型: comments
+内容: 过去I社游戏还有不少可玩性 像欲望之血 欲望格斗什么的 并且CG动画也挺实用的 后来主打3D捏人 基本没啥玩头了 特别中间很长一段时间3D效果一般 即时演算实用性也很差
+
+--- ITEM #3 ---
+ID: zhihu_comments_2232
+平台: zhihu
+类型: comments
+内容: 你长大了，见的多了就不惊喜了。小时候一颗糖可以快乐一天，长大了一桶糖你却觉得腻。小时候小小的刺激就可以让你兴奋，长大可能需要一天赚十万才才能让你兴奋。小时候兴奋就是快乐，长大了平静就是幸福。小时候新奇就是动力，长大了理解就是感动。小时候总巴不得爸爸妈妈天天带自己出去玩，长大了周末带孩子出去玩比上班还累。小时候就是小时候， 长大了就是长大了，金钱，家庭都压着你喘不过气来，连打游戏都成了负担。长大了就是长大了，虽然游戏想买啥就买啥，但也就是买着放着然后看看，没有打的力气和欲望。长大了就是长大了，终于明白生活是一场比游戏更精彩的游戏，值得倾注全部的情感。
+
+--- ITEM #4 ---
+ID: zhihu_comments_2241
+平台: zhihu
+类型: comments
+内容: 是啊，当年的游戏可真令人怀念啊。现在想起来还历历在目呢！对咯，让你这么一说我忽然想重新体验一回当年的热血激情，有链接吗？[赞同]
+
+--- ITEM #5 ---
+ID: zhihu_comments_2245
+平台: zhihu
+类型: comments
+内容: 刚想着加个关注，一看已经关注了…
+
+--- ITEM #6 ---
+ID: zhihu_comments_2247
+平台: zhihu
+类型: comments
+内容: 小时候第一次看到3d画面那种震撼的心情以后都不会有了。回家让家里给买被骂成狗
+
+--- ITEM #7 ---
+ID: zhihu_comments_2253
+平台: zhihu
+类型: comments
+内容: AI和波动你是一点不提啊
+
+--- ITEM #8 ---
+ID: zhihu_comments_2261
+平台: zhihu
+类型: comments
+内容: 这些游戏在哪里下，有没有链接，可以付费
+
+--- ITEM #9 ---
+ID: zhihu_comments_2262
+平台: zhihu
+类型: comments
+内容: 在哪里下载[大哭][大哭][大哭]
+
+--- ITEM #10 ---
+ID: zhihu_comments_2263
+平台: zhihu
+类型: comments
+内容: 甜心选择很好ROOM GIRL 垃圾 体味 还是那几个不如那个海岛 收集东西的好玩不过可以男女主切换 倒是有点新意 但是优化太辣鸡了 加载好半天啊
+
+--- ITEM #11 ---
+ID: zhihu_comments_2278
+平台: zhihu
+类型: comments
+内容: 时隔两年评论下，不管你期待不期待i社新作。它没了你惋惜不惋惜吧[doge]
+
+--- ITEM #12 ---
+ID: zhihu_comments_2284
+平台: zhihu
+类型: comments
+内容: 我朋友玩我手机点了个收藏 真是的！[生气]
+
+--- ITEM #13 ---
+ID: zhihu_comments_2291
+平台: zhihu
+类型: comments
+内容: db4，现在看起来画质是渣，战斗简直是胡闹，但是情节场景和音乐都是神作。而后来连音乐都懒得重做，db4的到处用
+
+--- ITEM #14 ---
+ID: zhihu_comments_2298
+平台: zhihu
+类型: comments
+内容: 小时候家里电脑差，我玩欲望之血还是啥的那个格斗游戏，卡成ppt了还坚持玩了好几天[捂脸]
+
+--- ITEM #15 ---
+ID: zhihu_comments_2299
+平台: zhihu
+类型: comments
+内容: 还有那些渠道网盘可以下载吗
+
+--- ITEM #16 ---
+ID: zhihu_comments_2305
+平台: zhihu
+类型: comments
+内容: 感觉耐玩一点的，人工少女3和AI少女好一点吧[酷][酷][酷]
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_081
+
+开始分析：

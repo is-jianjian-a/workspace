@@ -1,0 +1,638 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下49条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 104/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_4041
+平台: zhihu
+类型: comments
+内容: 我也是，我还以为是受电信限制了。
+
+--- ITEM #2 ---
+ID: zhihu_comments_4042
+平台: zhihu
+类型: comments
+内容: 叔叔偷你的带宽给自己发工资去了 无解
+
+--- ITEM #3 ---
+ID: zhihu_comments_4043
+平台: zhihu
+类型: comments
+内容: cmd里的ping是icmp ping，可能检测工具用的是httping
+
+--- ITEM #4 ---
+ID: zhihu_comments_4044
+平台: zhihu
+类型: comments
+内容: 油猴：make bilibili great again
+
+--- ITEM #5 ---
+ID: zhihu_comments_4049
+平台: zhihu
+类型: comments
+内容: 9000系专业卡有32G版本，R9700就是32GB GDDR6，售价一万
+
+--- ITEM #6 ---
+ID: zhihu_comments_4051
+平台: zhihu
+类型: comments
+内容: 你是没因为显存吃过亏啊，我从1080换到3080的时候，别人也说玩游戏显存小点无所谓10G够用了，结果呢，现在打游戏纹理拉高点设置页面就告诉我会爆显存[捂脸]
+
+--- ITEM #7 ---
+ID: zhihu_comments_4053
+平台: zhihu
+类型: comments
+内容: [酷]一直用A卡AU，从7870用到9070xt，cpu从2600用到9700x，但是别人求我推荐硬件，我会推荐IU和N卡，除了缩缸那一代，剩下的不好用就是他自己的问题。
+
+--- ITEM #8 ---
+ID: zhihu_comments_4056
+平台: zhihu
+类型: comments
+内容: 然后再学会调日期 就可以看了。播放后 再把时间自动回来
+
+--- ITEM #9 ---
+ID: zhihu_comments_4059
+平台: zhihu
+类型: comments
+内容: 最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]
+
+--- ITEM #10 ---
+ID: zhihu_comments_4060
+平台: zhihu
+类型: comments
+内容: 我一直用Chrome，测速正常，看视频就卡
+
+--- ITEM #11 ---
+ID: zhihu_comments_4061
+平台: zhihu
+类型: comments
+内容: 可是，我用的是手机bilibili啊！校园网，网速8M/s，但是看个视频课就20KB的加载？！[好奇]
+
+--- ITEM #12 ---
+ID: zhihu_comments_4070
+平台: zhihu
+类型: comments
+内容: 纯粹是B站视频质量不行，我用2K看油管和B站，同是1080p，B站就没有油管质量高，码率也是影响视频质量的重要因素，也很可能是为了减少存储成本，对视频有压缩~~~
+
+--- ITEM #13 ---
+ID: zhihu_comments_4072
+平台: zhihu
+类型: comments
+内容: 4K也糊，除非用4K片源，最主要透光太严重了，买了一个又退了，看片还不如我的老显示器
+
+--- ITEM #14 ---
+ID: zhihu_comments_4074
+平台: zhihu
+类型: comments
+内容: 2K主要是性价比高，现在2K高刷才五六百，不光是显示器，打游戏显卡也不需要太好的，4K纯吃显卡，比1080P清楚一些，预算不够比较折中的方案。当年最后悔的就是搞了一台2K高刷的ITX主机，食之无味弃之可惜，现在itx被我搞成nas，显示器被我做副屏了[捂脸]
+
+--- ITEM #15 ---
+ID: zhihu_comments_4075
+平台: zhihu
+类型: comments
+内容: 正经人都用4K60Hz
+
+--- ITEM #16 ---
+ID: zhihu_comments_4077
+平台: zhihu
+类型: comments
+内容: 2k看直播1080码率低的主播是真的糊，不过有些主播有2k画质，那看起来是真爽
+
+--- ITEM #17 ---
+ID: zhihu_comments_4078
+平台: zhihu
+类型: comments
+内容: 其实我想请教一下为什么很多人不考虑4K屏幕然后玩游戏选择窗口2560x1440（2K），我觉得这样玩也还行只是少点沉浸感
+
+--- ITEM #18 ---
+ID: zhihu_comments_4079
+平台: zhihu
+类型: comments
+内容: “看个直播比我1080p的显示器糊多了”有没有一种可能，是你的片源太差？ [捂脸]
+
+--- ITEM #19 ---
+ID: zhihu_comments_4080
+平台: zhihu
+类型: comments
+内容: 主屏2k副屏1080，看1080的视频还是主屏舒服
+
+--- ITEM #20 ---
+ID: zhihu_comments_4081
+平台: zhihu
+类型: comments
+内容: 不太看视频，休闲主要玩游戏和看网页，工作画CAD，excel，电路图。尤其是要竖屏. 看网页效果很爽。我喜欢2k的。我接两个2k的显示器一横一竖。
+
+--- ITEM #21 ---
+ID: zhihu_comments_4083
+平台: zhihu
+类型: comments
+内容: 赞同  2k除了打游戏 日常体验太差了 当然 1080p也不好
+
+--- ITEM #22 ---
+ID: zhihu_comments_4084
+平台: zhihu
+类型: comments
+内容: 你可以让mac配个better display ，让mac输出1080p HiDPI转到2k上，我就是这么设置的，清楚的要命，甚至我觉得比原生4k都清楚。win就比较麻烦
+
+--- ITEM #23 ---
+ID: zhihu_comments_4088
+平台: zhihu
+类型: comments
+内容: 2k看视频糊这个问题，n卡有super resolution技术可以解决
+
+--- ITEM #24 ---
+ID: zhihu_comments_4089
+平台: zhihu
+类型: comments
+内容: 看完这篇回答之后，好像懂了又好像没懂，是不是因为倍速看完的原因[捂脸]
+
+--- ITEM #25 ---
+ID: zhihu_comments_4090
+平台: zhihu
+类型: comments
+内容: 开倍速是因为up主语速太慢
+
+--- ITEM #26 ---
+ID: zhihu_comments_4091
+平台: zhihu
+类型: comments
+内容: 所以意思是适当的快进没问题，但是太快了会导致大脑来不及思考，反而干脆放弃思考，导致理解力下降？
+
+--- ITEM #27 ---
+ID: zhihu_comments_4093
+平台: zhihu
+类型: comments
+内容: 我觉得只有倍速的时候我才能集中精神去听每一句话，反而记得住，如果速度太慢，容易开小差。
+
+--- ITEM #28 ---
+ID: zhihu_comments_4094
+平台: zhihu
+类型: comments
+内容: 回答得太专业了，“经常倍速看视频竟然容易伤脑”这个研究结论究其原因是，加速观看视频会使大脑接受的刺激更强、转换频率更快、更没有时间思考。长此以往，人们在面对复杂的文化和艺术作品时，会失去细致的感知能力。不仅如此，加速观看视频还会习惯于快速获取信息，导致做需要耐心和深度分析的任务时，难以集中注意力。西班牙马德里自治大学神经科学家警告说，这种做法会对短期记忆功能产生负面影响，尤其是对于发育阶段的大脑。以学生为例，快速播放会导致他们忽视韵律、停顿、音调和声音的变化，妨碍对内容的理解分析过程。由于大脑中的杏仁核负责处理这种信息，因此加快播放速度会削弱杏仁核的功能。[酷]
+
+--- ITEM #29 ---
+ID: zhihu_comments_4095
+平台: zhihu
+类型: comments
+内容: 倍速看没什么意思，我一般都是快进着看
+
+--- ITEM #30 ---
+ID: zhihu_comments_4097
+平台: zhihu
+类型: comments
+内容: 具体来说，年轻人在2倍速播放时的心流体验显著低于1倍速播放时，这有可能有利于年轻人保持记忆。这里应该是显著高于吧？
+
+--- ITEM #31 ---
+ID: zhihu_comments_4099
+平台: zhihu
+类型: comments
+内容: 自从有了倍数，就没正常速看过电视局
+
+--- ITEM #32 ---
+ID: zhihu_comments_4100
+平台: zhihu
+类型: comments
+内容: 我来结合日常需求总结一下年轻人，1-2倍速，刷剧，学习，都可以，不影响短期记忆和理解，但是不利于长期记忆，且为了理解可能不能分心
+
+--- ITEM #33 ---
+ID: zhihu_comments_4101
+平台: zhihu
+类型: comments
+内容: 有一说一，三倍速看动作片儿，那真是啥也看不清。[捂脸]
+
+--- ITEM #34 ---
+ID: zhihu_comments_4102
+平台: zhihu
+类型: comments
+内容: 我觉得相关研究最大的问题是没有定义清楚一倍速是什么，不同的视频单位时间信息量本来就不同，这种情况下谈几倍速没有什么意义。
+
+--- ITEM #35 ---
+ID: zhihu_comments_4103
+平台: zhihu
+类型: comments
+内容: 要什么加速啊，直接抖音几分钟看完一部电影不就好了，一点脑子都不用动。[惊喜][惊喜][惊喜]
+
+--- ITEM #36 ---
+ID: zhihu_comments_4104
+平台: zhihu
+类型: comments
+内容: 还有一个变量没有控制，有些人说话太慢，视频正常速度对我来说是0.5倍速，所以2倍速对我来说才是正常速度，对理解不造成任何障碍同时还减少了因内心烦躁导致的注意力降低。
+
+--- ITEM #37 ---
+ID: zhihu_comments_4105
+平台: zhihu
+类型: comments
+内容: 心流那部分，我觉得这样梳理一下会更好理解:一方面，二倍速减少分心机会，有助于集中认知资源促进理解；另一方面，二倍速心流体验降低，避免完全沉浸、无差别接收传递过来的全部新知识造成认知负荷，而是有选择地、批判性的、带有主观意识地接受吸收，这样有助于长期记忆
+
+--- ITEM #38 ---
+ID: zhihu_comments_4106
+平台: zhihu
+类型: comments
+内容: 倍速没有思考时间。没有回顾时间
+
+--- ITEM #39 ---
+ID: zhihu_comments_4107
+平台: zhihu
+类型: comments
+内容: 我现在几乎已经没有用过原速看视频了，大多数视频节奏都太慢了[捂脸]
+
+--- ITEM #40 ---
+ID: zhihu_comments_4108
+平台: zhihu
+类型: comments
+内容: 从节省时间的角度，1.5~2倍速看视频是合适的。
+
+--- ITEM #41 ---
+ID: zhihu_comments_4109
+平台: zhihu
+类型: comments
+内容: 要看是看什么，刷脱口秀节目不开倍速，因为演员语速本身较快且梗密集，开倍速影响脑子跟不上，但是看一般的连续剧那语速跟蜗牛一样，不开倍速饭都吃不下去
+
+--- ITEM #42 ---
+ID: zhihu_comments_4111
+平台: zhihu
+类型: comments
+内容: 开倍速会看不懂的，有时候要回放的，但总体上还是比不倍速花的时间少
+
+--- ITEM #43 ---
+ID: zhihu_comments_4112
+平台: zhihu
+类型: comments
+内容: 大前提是视频有学习价值[思考]
+
+--- ITEM #44 ---
+ID: zhihu_comments_4113
+平台: zhihu
+类型: comments
+内容: 细说倍速看视频[思考]
+
+--- ITEM #45 ---
+ID: zhihu_comments_4115
+平台: zhihu
+类型: comments
+内容: 我看视频课就会开倍速，有时候1.5倍速，有时候2倍速。2倍速下，注意力更集中，因为语速足够快，有一点走神就听不懂说的啥，所以2倍速下注意力高度集中。1.5倍速也有这个效果，听不熟悉的课1.5比2效果好
+
+--- ITEM #46 ---
+ID: zhihu_comments_4116
+平台: zhihu
+类型: comments
+内容: 我听我妈的语音都想开倍速，一句话的事翻来覆去车轱辘话来回说[doge]
+
+--- ITEM #47 ---
+ID: zhihu_comments_4117
+平台: zhihu
+类型: comments
+内容: 倍速还不是因为垃圾视频5分钟有效信息就2句话导致的么[捂脸]，我上网课都恨不得开0.5
+
+--- ITEM #48 ---
+ID: zhihu_comments_4118
+平台: zhihu
+类型: comments
+内容: 我其实都没太理解论文逻辑[捂脸]如果想说的是“倍速降低对这个视频的理解”，那不是废话吗，倍速肯定比慢速难理解啊；如果想说的是“经常看倍速视频会降低人日常生活中的理解能力”，但从头到尾没看到怎么得到“理解能力降低”这个结论的。
+
+--- ITEM #49 ---
+ID: zhihu_comments_4120
+平台: zhihu
+类型: comments
+内容: 主要是因为视频内容啰嗦又怕跳过漏了关键信息，只能倍速，精彩剧情或信息量很大的时候自然会原速甚至多次欣赏[捂脸]
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_104
+
+开始分析：

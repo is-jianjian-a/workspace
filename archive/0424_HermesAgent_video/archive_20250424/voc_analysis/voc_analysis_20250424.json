@@ -1,0 +1,104 @@
+{
+  "total_voc": 569,
+  "target": 1000,
+  "completion_rate": 56.9,
+  "platform_distribution": {
+    "app_store": 560,
+    "v2ex": 8,
+    "github": 1
+  },
+  "sentiment_distribution": {
+    "negative": 384,
+    "positive": 146,
+    "neutral": 38,
+    "expectation": 1
+  },
+  "category_distribution": {
+    "search_discovery": 11,
+    "recommendation": 37,
+    "other": 492,
+    "creation_assist": 19,
+    "video_quality": 10
+  },
+  "app_distribution": {
+    "抖音": 14,
+    "TikTok": 200,
+    "B站": 1,
+    "YouTube": 95,
+    "快手": 4,
+    "Netflix": 76,
+    "爱奇艺": 1,
+    "优酷": 1,
+    "腾讯视频": 39,
+    "Instagram": 61,
+    "Snapchat": 76
+  },
+  "top_keywords": [
+    [
+      "广告",
+      26
+    ],
+    [
+      "bug",
+      25
+    ],
+    [
+      "推荐",
+      16
+    ],
+    [
+      "自动",
+      11
+    ],
+    [
+      "下载",
+      8
+    ],
+    [
+      "识别",
+      5
+    ],
+    [
+      "算法",
+      4
+    ],
+    [
+      "画质",
+      3
+    ],
+    [
+      "搜索",
+      3
+    ],
+    [
+      "推送",
+      3
+    ],
+    [
+      "剪辑",
+      2
+    ],
+    [
+      "特效",
+      2
+    ],
+    [
+      "美颜",
+      2
+    ],
+    [
+      "流量",
+      2
+    ],
+    [
+      "智能",
+      1
+    ],
+    [
+      "语音",
+      1
+    ]
+  ],
+  "pain_points_count": 384,
+  "expectations_count": 1
+}

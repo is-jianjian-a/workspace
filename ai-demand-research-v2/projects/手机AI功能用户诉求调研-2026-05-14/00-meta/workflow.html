@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工作流 - 手机AI功能用户诉求调研</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a2e;
+            --border: #2a2a3e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #8888a0;
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --info: #3b82f6;
+            --archived: #6b7280;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+        
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            font-weight: 600;
+            background: linear-gradient(135deg, var(--accent), #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .header .meta {
+            color: var(--text-secondary);
+            font-size: 14px;
+            margin-top: 4px;
+        }
+        
+        .progress-section {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .progress-bar {
+            width: 300px;
+            height: 8px;
+            background: var(--bg-card);
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .progress-bar .fill {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(90deg, var(--accent), #a855f7);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
+        
+        .progress-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        
+        .phase {
+            margin-bottom: 40px;
+            background: var(--bg-secondary);
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .phase:hover {
+            border-color: var(--border);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        
+        .phase-header {
+            padding: 20px 30px;
+            background: var(--bg-card);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .phase-header h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        
+        .phase-header .status {
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .status-pending { background: rgba(107, 114, 128, 0.2); color: var(--archived); }
+        .status-active { background: rgba(59, 130, 246, 0.2); color: var(--info); }
+        .status-completed { background: rgba(16, 185, 129, 0.2); color: var(--success); }
+        
+        .steps {
+            padding: 20px 30px;
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        
+        .step {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            min-width: 200px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .step:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px var(--accent-glow);
+            transform: translateY(-2px);
+        }
+        
+        .step .step-icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        
+        .step-pending .step-icon { border: 2px solid var(--archived); color: var(--archived); }
+        .step-completed .step-icon { background: var(--success); color: white; }
+        .step-active .step-icon { background: var(--info); color: white; animation: pulse 2s infinite; }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+        }
+        
+        .step h3 {
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        
+        .step .step-meta {
+            font-size: 12px;
+            color: var(--text-secondary);
+        }
+        
+        .detail-panel {
+            display: none;
+            position: fixed;
+            right: 0;
+            top: 0;
+            width: 500px;
+            height: 100vh;
+            background: var(--bg-secondary);
+            border-left: 1px solid var(--border);
+            padding: 30px;
+            overflow-y: auto;
+            z-index: 100;
+            box-shadow: -10px 0 40px rgba(0,0,0,0.5);
+        }
+        
+        .detail-panel.active { display: block; animation: slideIn 0.3s ease; }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+        
+        .detail-panel h3 {
+            font-size: 20px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+            padding-right: 40px;
+        }
+        
+        .detail-section {
+            margin-bottom: 24px;
+        }
+        
+        .detail-section h4 {
+            font-size: 12px;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        .file-list {
+            list-style: none;
+        }
+        
+        .file-list li {
+            padding: 10px 12px;
+            background: var(--bg-card);
+            border-radius: 8px;
+            margin-bottom: 6px;
+            font-size: 13px;
+            font-family: "JetBrains Mono", "Fira Code", monospace;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid transparent;
+            transition: all 0.2s ease;
+        }
+        
+        .file-list li:hover {
+            border-color: var(--accent);
+        }
+        
+        .file-list li .file-action {
+            color: var(--accent);
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 500;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            color: var(--text-secondary);
+            font-size: 24px;
+            cursor: pointer;
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+        
+        .close-btn:hover {
+            background: var(--error);
+            color: white;
+            border-color: var(--error);
+        }
+        
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 99;
+        }
+        
+        .overlay.active { display: block; }
+        
+        .param-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        
+        .param-table th, .param-table td {
+            padding: 8px 12px;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .param-table th {
+            color: var(--text-secondary);
+            font-weight: 500;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+        
+        .code-preview {
+            background: #0d0d15;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 16px;
+            font-family: "JetBrains Mono", "Fira Code", monospace;
+            font-size: 12px;
+            overflow-x: auto;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        
+        .timestamp {
+            color: var(--text-secondary);
+            font-size: 12px;
+            margin-top: 4px;
+        }
+        
+        .version-badge {
+            display: inline-block;
+            padding: 2px 8px;
+            background: rgba(245, 158, 11, 0.2);
+            color: var(--warning);
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 500;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>
+            <h1>📊 手机AI功能用户诉求调研</h1>
+            <div class="meta">项目: 手机AI功能用户诉求调研-2026-05-14 | 更新: 2026-05-14 16:16</div>
+        </div>
+        <div class="progress-section">
+            <div class="progress-bar">
+                <div class="fill" style="width: 100%"></div>
+            </div>
+            <div class="progress-text">100%</div>
+        </div>
+    </div>
+    
+    <div class="container">
+        
+            <div class="phase">
+                <div class="phase-header">
+                    <h2>🔍 场景发现</h2>
+                    <span class="status status-active">执行中</span>
+                </div>
+                <div class="steps">
+                    
+                <div class="step step-completed" data-step="phase1-step2" onclick="showDetail('phase1-step2')">
+                    <div class="step-icon">✓</div>
+                    <h3>主题聚类分析</h3>
+                    <div class="step-meta">2 个输出文件 </div>
+                </div>
+            
+                </div>
+            </div>
+        
+            <div class="phase">
+                <div class="phase-header">
+                    <h2>📈 现状分析</h2>
+                    <span class="status status-pending">待执行</span>
+                </div>
+                <div class="steps">
+                    <div style="color: var(--text-secondary); padding: 20px;">暂无步骤数据</div>
+                </div>
+            </div>
+        
+            <div class="phase">
+                <div class="phase-header">
+                    <h2>💡 洞察与机会</h2>
+                    <span class="status status-pending">待执行</span>
+                </div>
+                <div class="steps">
+                    <div style="color: var(--text-secondary); padding: 20px;">暂无步骤数据</div>
+                </div>
+            </div>
+        
+            <div class="phase">
+                <div class="phase-header">
+                    <h2>📑 最终交付件</h2>
+                    <span class="status status-pending">待执行</span>
+                </div>
+                <div class="steps">
+                    <div style="color: var(--text-secondary); padding: 20px;">暂无步骤数据</div>
+                </div>
+            </div>
+        
+    </div>
+    
+    <div class="overlay" onclick="closeDetail()"></div>
+    <div class="detail-panel" id="detailPanel">
+        <button class="close-btn" onclick="closeDetail()">×</button>
+        <h3 id="detailTitle">步骤详情</h3>
+        <div id="detailContent">
+            <p style="color: var(--text-secondary);">点击工作流节点查看详情</p>
+        </div>
+    </div>
+    
+    <script>
+        const WORKFLOW_DATA = [
+  {
+    "id": "phase1",
+    "name": "场景发现",
+    "status": "active",
+    "steps": [
+      {
+        "step_id": "phase1-step2",
+        "step_name": "主题聚类分析",
+        "version": 1,
+        "timestamp": "2026-05-14T11:00:00+08:00",
+        "status": "completed",
+        "input": {
+          "files": [
+            "02-cleaned/output/cleaned_data.parquet"
+          ],
+          "checksum": "sha256:ghi789"
+        },
+        "code": {
+          "file": "03-phase1-discovery/step1-topic-clustering/code/topic_clustering.py",
+          "checksum": "sha256:jkl012"
+        },
+        "output": {
+          "files": [
+            "03-phase1-discovery/step1-topic-clustering/output/topic_stats.json",
+            "03-phase1-discovery/step1-topic-clustering/output/topic_content_map.csv"
+          ],
+          "checksums": {}
+        },
+        "parameters": {
+          "topics": [
+            "拍照修图",
+            "语音助手",
+            "智能翻译",
+            "AI写作",
+            "AI绘画",
+            "智能剪辑",
+            "AI搜索",
+            "隐私安全"
+          ]
+        },
+        "notes": "识别8个核心主题，拍照修图占比最高(32%)"
+      }
+    ]
+  },
+  {
+    "id": "phase2",
+    "name": "现状分析",
+    "status": "pending",
+    "steps": []
+  },
+  {
+    "id": "insights",
+    "name": "洞察与机会",
+    "status": "pending",
+    "steps": []
+  },
+  {
+    "id": "reports",
+    "name": "最终交付件",
+    "status": "pending",
+    "steps": []
+  }
+];
+        
+        function showDetail(stepId) {
+            document.getElementById('detailPanel').classList.add('active');
+            document.querySelector('.overlay').classList.add('active');
+            
+            // 查找步骤数据
+            let stepData = null;
+            for (const phase of WORKFLOW_DATA) {
+                for (const step of phase.steps) {
+                    if (step.step_id === stepId) {
+                        stepData = step;
+                        break;
+                    }
+                }
+                if (stepData) break;
+            }
+            
+            if (stepData) {
+                const versionBadge = stepData.version > 1 ? `<span class="version-badge">v${stepData.version}</span>` : '';
+                document.getElementById('detailTitle').innerHTML = `${stepData.step_name}${versionBadge}`;
+                
+                let content = '';
+                
+                // 状态
+                content += `<div class="detail-section">`;
+                content += `<h4>状态</h4>`;
+                content += `<div style="color: ${stepData.status === 'completed' ? 'var(--success)' : 'var(--info)'}; font-weight: 500;">${stepData.status === 'completed' ? '✓ 已完成' : '⟳ 执行中'}</div>`;
+                if (stepData.timestamp) {
+                    content += `<div class="timestamp">完成时间: ${stepData.timestamp}</div>`;
+                }
+                content += `</div>`;
+                
+                // 输入文件
+                if (stepData.input && stepData.input.files) {
+                    content += `<div class="detail-section">`;
+                    content += `<h4>输入文件</h4>`;
+                    content += `<ul class="file-list">`;
+                    for (const file of stepData.input.files) {
+                        content += `<li><span>${file}</span><span class="file-action">查看</span></li>`;
+                    }
+                    content += `</ul></div>`;
+                }
+                
+                // 代码
+                if (stepData.code && stepData.code.file) {
+                    content += `<div class="detail-section">`;
+                    content += `<h4>处理代码</h4>`;
+                    content += `<ul class="file-list">`;
+                    content += `<li><span>${stepData.code.file}</span><span class="file-action">查看</span></li>`;
+                    content += `</ul></div>`;
+                }
+                
+                // 输出文件
+                if (stepData.output && stepData.output.files) {
+                    content += `<div class="detail-section">`;
+                    content += `<h4>输出文件</h4>`;
+                    content += `<ul class="file-list">`;
+                    for (const file of stepData.output.files) {
+                        content += `<li><span>${file}</span><span class="file-action">查看</span></li>`;
+                    }
+                    content += `</ul></div>`;
+                }
+                
+                // 参数
+                if (stepData.parameters && Object.keys(stepData.parameters).length > 0) {
+                    content += `<div class="detail-section">`;
+                    content += `<h4>参数</h4>`;
+                    content += `<table class="param-table">`;
+                    content += `<tr><th>参数</th><th>值</th></tr>`;
+                    for (const [key, value] of Object.entries(stepData.parameters)) {
+                        content += `<tr><td>${key}</td><td>${value}</td></tr>`;
+                    }
+                    content += `</table></div>`;
+                }
+                
+                // 备注
+                if (stepData.notes) {
+                    content += `<div class="detail-section">`;
+                    content += `<h4>备注</h4>`;
+                    content += `<p style="color: var(--text-secondary); font-size: 13px;">${stepData.notes}</p>`;
+                    content += `</div>`;
+                }
+                
+                document.getElementById('detailContent').innerHTML = content;
+            }
+        }
+        
+        function closeDetail() {
+            document.getElementById('detailPanel').classList.remove('active');
+            document.querySelector('.overlay').classList.remove('active');
+        }
+        
+        // 键盘快捷键
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeDetail();
+        });
+    </script>
+</body>
+</html>

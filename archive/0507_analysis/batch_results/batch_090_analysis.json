@@ -1,0 +1,488 @@
+{
+  "batch_id": 90,
+  "total_items": 38,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 16,
+      "short_video": 21,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 30,
+      "pain_point": 5,
+      "feature_request": 2,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 33,
+      "screen_cast": 2,
+      "ai_feature": 1,
+      "content_recommend": 1,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 36
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_2948",
+      "text": "似乎有道理，但感觉那里还是不对，或者说应该有更好些的方向，比如加大推流大数据的主动引导功能，基于信息分析出观看受众在哪方面有更加突出的认知和能力，逐步引导其在这方面的拓展，人尽其用，也更加推动了社会发展。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2954",
+      "text": "有道理。不过兄弟已经戒了短视频和朋友圈这两大毒瘾了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2956",
+      "text": "说的挺好，用不一样的角度解读短视频的影响。我开始在想的是短视频与多巴胺的关系短视频与现代青少年的关系等",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2957",
+      "text": "总结一下，就是奶头乐[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2959",
+      "text": "经常看短视频的人，大脑会时不时的出现宕机的现象。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2963",
+      "text": "短视频的危害不过是让更多的人找到更好的借口去摆烂罢了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2964",
+      "text": "真是分析的一针见血，但控制不住怎么办",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2966",
+      "text": "但孤独症小孩好像变多了，（儿童时期刷视频造成的）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2968",
+      "text": "啥事儿都有利有弊，不能一下子就否定了短视频的正向价值。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2969",
+      "text": "短视频的易获取和成瘾性不是游戏厅那些能比的，慢性毒品罢了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2970",
+      "text": "想起一个题外好笑的事情，印度的电影为什么经常会演着演着就跳起来了，原因无他，就是水时间，底层爱看，增加人们在电视机前的时间，维护社会稳定。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2971",
+      "text": "平衡和稳定是发展的基石。产业智能化程度越来越高，传统行业能提供的岗位越来越少，确实也需要解决富余人口的注意力问题。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2972",
+      "text": "短视频就是一种精神鸦片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2974",
+      "text": "咋说呢，短视频是没有啥危害的，主要还是里面的信息鱼龙混杂。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2975",
+      "text": "我觉得，大部分能沉迷在短视频的人，就算没有短视频，就算逼他去学习，上限也高不到哪去吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2976",
+      "text": "你回答的不对，有害一直都是内容，短视频里有正向内容也有恶向的内容，不是只看好处不看坏处，也不是只看坏处只看好处。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2977",
+      "text": "说的很有道理，在我们家，现在短视频的精妙之处已经超过了黄桃罐头了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2978",
+      "text": "我还就得看短视频，我要是追剧我能熬夜追，看短视频没事的时候能打发点时间，还有一点就是要不要开启个性化推荐，我尝试过不开但是很神奇的发生了，我看几个视频我就不想看了，但是打开了，我看一会我就觉得烦了，我能感觉到视频的同质化很严重，虽然我看的很开心，但是我看一会就不看了，越看越空虚。这玩意是让你在没事的时候打发时间，看几个视频乐呵乐呵得了，天天刷，人都傻了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2982",
+      "text": "主要是大数据推送，以及擦边视频，把人性需求，黑的一面有一个入口",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2984",
+      "text": "新媒体兴起，就意味着色情直播和电诈也在兴起",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2985",
+      "text": "本质就是奶头乐，用来转移公众注意力的，抖音维护社会稳定起到非常大的贡献",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2988",
+      "text": "危害是针对于家长对子女，长辈对晚辈的怜悯，恨铁不成钢来说的。如果你是成年人，你有自我思考能力。如果你没思考能力，未成年，找你的监护人。我不管什么短视频，长视频，只要能给我纳税，只要能给我按月交份子钱。那你就是我的马仔，我就保护你，如果你做的好，我可以让你进入我的体系，给你委员身份。我是挣钱的，我不是你的家长，也不是你的长辈。[大笑][大笑][大笑][大笑][大笑][大笑][大笑][大笑][大笑][",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2990",
+      "text": "有点牵强，短视频就是一门低门槛的经济产业，你看不看都在，没有这么大的作用",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2992",
+      "text": "很赞同，对于精神上的强者而言，短视频是信息传播的渠道，是见识人间百态的平台，万事万物为我所用。对于精神上的弱者而言，才会寄希望于外部，寄希望于国家力量封杀短视频，那只是他们并不会合理使用而已[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2998",
+      "text": "短视频用好了，也能增长见识和视野，学到很多知识，了解许多见闻，看怎么去筛选了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3004",
+      "text": "透彻入里，从人性、家庭、社会逐层次递进分析。切中了我心中的思考点。   宜疏不宜堵这是一个非常符合人性的做法，物极必反的道理大家都懂，所以万事万物皆有两面，不能因噎废食。当一件事情的利大于弊则可为。   短视频只是当下的一种工具，工具本身无对无不对，无可无不可。刀能伤人，那是不是就禁止用刀呢？   孩子的教育在于家庭和家人，大人的一言一行就是孩子最好的教育！请记住，不要自己一边熬夜刷着视频玩着游戏",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3009",
+      "text": "不刷短视频不一定能上清华，但刷，一定上不了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3010",
+      "text": "也会出现新的矛盾，课上明确规定不允许带手机，可是就是会有人偷偷玩，其他人也跟着学，老师每节都要下来抓手机。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3013",
+      "text": "偷换概念而已。确实，对于自制力不高的、创造社会价值较低的人来说，刷视频和看电视、看小说之类的娱乐设施似乎无本质出入，反正谁沉迷就来一句，你自制力不够，与其影响别人，还不如好好躺着。那么，请问，抽烟、喝酒、吃槟榔和吸毒一样么？不要把利用人性的经营活动美化成社会安定的功臣，没有好的引导，自我发展必然不会有好的结果。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3014",
+      "text": "短视频的问题在意，可以虚假，但太超出实际现实了，可以架空，但不能毫无底线，不求你什么警示醒人，但至少你剧情可以正经一点吧，否则就实在是烂的毫无底线。。。什么为了养子虐待亲儿子，什么另一半出轨，大少爷绿帽哥委曲求全，毫无脾气且死活不走非要等什么狗屁销户口本的日期，完了突然莫名其妙幡然醒悟说什么爱的只有你，还要求原谅。。。太难看了，就特么不能编一点好看的剧情吗。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3016",
+      "text": "还真是[思考]不刷短视频，不玩游戏，你家孩子就去自主学习，发奋练题了吗？就能出人头地了？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3019",
+      "text": "同意主要观点，但是网课（尤指视频课）因其可以随时倍速和暂停，再考虑到课堂老师又不可能追踪每个学生的状态，效果可能比老师现场讲课好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3022",
+      "text": "国内的大学教材太差了，真的没法靠它们来自学。偏偏很多大学老师上课就是照着课本和ppt来讲，真的是雪上加霜。真的很后悔大学的时候不懂多找几个版本的教材来看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3024",
+      "text": "自己思考直接无敌。 我时间慢 但是效率巨高 通常理解的很深。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3026",
+      "text": "看书学习效果好是有利边读边思考，而视频参杂了太多干扰思考的东西，让我们不能深入思考了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3030",
+      "text": "另外提个思路，现在视频的制作成本很低，有一些做长尾的营销号完全使用ai内容，不加审查（主要也没能力、没时间审查），这种东西学的越多效果越差[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3031",
+      "text": "看视频像我就很少积极主动跟上细维来思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3032",
+      "text": "因为看视频总是会其他信息吸引[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "batch_id": 41,
+  "total_items": 31,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 2,
+      "general_video": 28,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 30,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 8,
+      "content_recommend": 10,
+      "ai_feature": 13
+    },
+    "ai_statistics": {
+      "total_ai": 23,
+      "explicit": 21,
+      "implicit": 2,
+      "not_ai": 8
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_comments_381",
+      "text": "没用的我都试过了我的手机只有快手卡，别的软件都不卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_382",
+      "text": "清理后 一点改变都没有 还是卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_384",
+      "text": "看你这个视频很卡很卡。一直不动",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_386",
+      "text": "没流量你怎么搞 还是一样卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_392",
+      "text": "@AI小快(O2467565973) 少给我推荐老年人看的视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_393",
+      "text": "@AI小快(O2467565973) 多给我推荐羽毛球",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_394",
+      "text": "@AI小快(O2467565973) 多给我推荐伤感音乐",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_395",
+      "text": "@AI小快(O2467565973) 不要给我推荐，幼稚和无脑，视频了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_396",
+      "text": "@AI小快(O2467565973) 给我多推荐一点点点穿书的内容呀",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_397",
+      "text": "@AI小快(O2467565973) 多给我推荐近期热门",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_398",
+      "text": "@AI小快别给我推游戏",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_399",
+      "text": "@AI小快(O2467565973) 给我多推oc互动",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_401",
+      "text": "你自己用了吗，我想找你体验一下[奸笑]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_402",
+      "text": "相当好用，一粒就紧，你们可以试试看，我不是托，是真的好用，体验装用了回购的",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_404",
+      "text": "继续体验[火][火][火][火]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_408",
+      "text": "@AI小快(O2467565973) 禁止推真实案例 鬼门关歌曲细思极恐歌曲 恐怖歌曲历史AI一天三顿 历史故事",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_409",
+      "text": "@AI小快(O2467565973) 别老给我推些中年唱歌，中年生活还有老年人的",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_410",
+      "text": "@小快A1(O4180132675) 别给我推荐老年人视频，搞笑生活视频之类的",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_411",
+      "text": "@AI小快(O2467565973) AI禁止推送有关三角洲的视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_412",
+      "text": "@AI小快(O2467565973) 帮我屏蔽AI视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_413",
+      "text": "别向我推荐那个什么塔罗牌和塔罗牌直播了，全部是骗钱，每天推荐推荐的烦人",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_414",
+      "text": "@AI小快(O2467565973) 禁止推送桂恒的视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_415",
+      "text": "@AI小快(O2467565973) 少给我推老年人视频，生活搞笑类视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_416",
+      "text": "@AI小快(O2467565973)  禁止推荐营销和老年人视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_417",
+      "text": "@AI小快(O2467565973) 禁止推荐营销和老年人视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_448",
+      "text": "@AI小快，打开一起看功能",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_451",
+      "text": "@AI小快(O2467565973) 帮我打开一起看功能",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_452",
+      "text": "@困困鱼.(O1519661155) 快手什么时候有这功能[笑哭]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_453",
+      "text": "@AI小快 打开一起看",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_454",
+      "text": "@AI小快 帮我打开一起看功能[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_457",
+      "text": "@AI小快(O2467565973)  打开一起看的功能",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

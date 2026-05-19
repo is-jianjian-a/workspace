@@ -1,0 +1,404 @@
+{
+  "batch_id": 103,
+  "total_items": 31,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 16,
+      "general_video": 14,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 26,
+      "positive_feedback": 1,
+      "pain_point": 3,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 25,
+      "screen_cast": 1,
+      "playback_control": 1,
+      "ad_experience": 1,
+      "content_recommend": 3
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 2,
+      "implicit": 1,
+      "not_ai": 28
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_3950",
+      "text": "墨大之前写的劝人不看短视频的帖子链接有吗，想学习一下， 因为内心是不想看奶头乐可是控制不了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3952",
+      "text": "间歇性的会狂刷短视频，当不顺利的时候",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3954",
+      "text": "不同角度  分门合集总结。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3956",
+      "text": "我们现在的碎片化时间被大量短视频冲刷着，有时候刷短视频时间高达一天，并且是在不知不觉中过去的，这个趋势也在不断的低龄化，就像作者说的，其实我觉得还是有必要控制一下的，因为短视频带给我们的可能更多的是即时感，不可能带给我们长久的影响。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3957",
+      "text": "哈哈，其实现实中年纪大的刷那些土味视频，而且外放声音超大的更多，就像我们老板就喜欢在公司群里发那些尬到抠脚的鸡汤视频和所谓的管理哲学[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3959",
+      "text": "看知乎大神的文章就是我的乃头乐。电影电视剧美女旅游股票也吸引不了我。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3963",
+      "text": "这倒提醒我了[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3966",
+      "text": "我25岁没谈过恋爱，女孩子手都没拉过，但几乎从来不看小姐姐跳舞或者擦边直播，就爱高强度刷知乎，有时候刷贴吧，这是怎么回事[好奇]比如现在是凌晨4:52。我就觉得文字特有意思，比擦边小姐姐有意思多了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3967",
+      "text": "刷抖音精选，刷知乎算不算[捂脸]感觉能学到不少呢。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3968",
+      "text": "我喜欢看小红书那些精致女的生活，是不是也是这种认知模式[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3973",
+      "text": "对啊，别人想看就看，我有时候也会看，偶尔还看看爽剧，但是我孩子我是绝对不会让他看的，玩游戏也比刷短视频强",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3976",
+      "text": "之前也看到一篇文章说，现在大街上拉帮结伙打群架的黄毛不见了，就是短视频的功劳",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3977",
+      "text": "会刷短视频，但那只是在工作状态下用于快速筛选已经被整合的信息时用的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3978",
+      "text": "说的像没有短视频的时代他们每天读半个小时书一样[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3980",
+      "text": "看视频是能及时满足快乐的一种麻药，让人失去意识。但是世界纷繁复杂，学习也并不是充实自身的唯一方式。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3981",
+      "text": "一般在情绪低落或放松一下的时候去刷短视频。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3983",
+      "text": "总结就是：结构性矛盾，和是否看短视频，奶头乐无关是吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3986",
+      "text": "我不看短视频的时候，我看小说[捂脸][捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3987",
+      "text": "我从来不刷短视频，平时娱乐主要是B站和知乎，但是我也很少利用碎片化时间去读书，虽然我看书也能看进去",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3988",
+      "text": "如果还有认知下降的空间，[飙泪笑]，这话说的太有意思了。十几秒的快刺激让人兴奋，甚至还有倍速，时间久了就接受不了正常的阅读、看电影或者其他的了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4000",
+      "text": "分析透彻。短视频占据大脑发呆的时间，占据人们聊天的时间，可是人们还自以为在休息，在放松。实际上看短视频的过程中，手没有停歇，眼睛没有休息，脑袋也在高速运转，情绪和内心也在不断变化，这是一种没有感觉到疲劳的疲劳。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4007",
+      "text": "我只能说，短视频这类碎片化的东西最大的问题在于刷多了会影响你深度思考的能力，习惯了短平快的高刺激多巴胺，你还能静的下心来慢慢一点一点铺垫等高潮？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4008",
+      "text": "碎片信息没啥大用，且效率低。我是艺术专业的，现在市面上主流的艺术教学视频，都是浅显，极其的皮毛。且对于很多有用的衍生知识完全不提。你最后还是得正经学",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4009",
+      "text": "猴子搬包谷 你刷一会儿就不刷了吗？说的是成瘾性和长期利害 那如果串联起来拼起来和深度思考长线思考又有什么区别 短视频的厉害之处在于曝光快 曝光大 不否认但恰恰是他的弊端看一个忘一个 就像手机边充电边玩一样 效率太低了 脑子是有容量的 不是没有边界 没有短视频 你想要的完全可以搜索得到 而不是被动填塞 一个短视频不会提高认知 短视频也只是互联网的冰山一角",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4010",
+      "text": "学复杂的东西其实碎片信息最好快速的了解每一个点看不懂就跳过去，不浪费时间反复琢磨因为现在同类信息太多，以后你迟早还会碰到能看懂的就多看一遍，记住然后脑子里面各种扎根的点越来越多，有一天你会突然关联起所有东西，实现顿悟",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4011",
+      "text": "碎片化的信息本质没有问题，我们每天都在处理碎片化的东西。但有个核心问题在于，高密度的碎片化信息，自己要学会筛选，感兴趣的要知道如何求真。以及如何去相对构建该类的系统化的知识。就像如今的AI，都在说，你也看到了。你可能会焦虑，可能会兴奋，但这些毫无意义，如果感兴趣，去了解，发展到了什么程度，目前应用到了什么程度，去学习去感受去思考。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4014",
+      "text": "娱乐惰性 九十九的人收藏了都会吃灰",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4024",
+      "text": "总结一下。就是围绕主题进行碎片信息搜索，汲取各家所长，并围绕结论进行反推思考总结，纳入自己的知识体系。其实方法很早就知道了，只是执行起来坚持不下去。给自己心里暗示，这点东西都坚持不下去，还谈什么未来",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4026",
+      "text": "带着钩子去浏览碎片化信息，针对你关注的问题，主动驾驭算法，而不是等算法投喂。输出倒逼输入。把看到的内容转化成自身的思考并尝试用文字输出，把道理讲清楚讲明白。真正的内化，必须经历痛苦的重构。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4032",
+      "text": "我觉得平常刷视频能看到自己感兴趣的精准推荐，能获得很多的灵感",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4035",
+      "text": "打个比方，我看了个教篮球动作的短视频，感觉自己学会了，其实只是学废了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

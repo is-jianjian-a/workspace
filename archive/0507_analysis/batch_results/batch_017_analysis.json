@@ -1,0 +1,612 @@
+{
+  "batch_id": 17,
+  "total_items": 48,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 39,
+      "long_video": 2,
+      "short_video": 7
+    },
+    "type_distribution": {
+      "behavior_description": 32,
+      "pain_point": 7,
+      "positive_feedback": 2,
+      "feature_request": 7
+    },
+    "topic_distribution": {
+      "ad_experience": 1,
+      "content_recommend": 6,
+      "other": 33,
+      "playback_control": 1,
+      "download_cache": 2,
+      "video_quality": 1,
+      "subtitle_translate": 1,
+      "screen_cast": 2,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 7,
+      "explicit": 2,
+      "implicit": 5,
+      "not_ai": 41
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_327",
+      "text": "小时候在村里，一家人睡土炕，一睁眼旁边被筒隆起特别高，然后我晚上醒了一动不敢动，小时候小学时候最早接触真就是上浏览器搜东西广告一点就接触到了，还有拿tt装水玩，那个村里发的真的装一大油漆桶都不会爆，还有装沙子丢着玩，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_329",
+      "text": "推荐就好好推荐，非得拉踩吗，怎么用个pot还被嘲讽",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_330",
+      "text": "单这个标题就值得我一条评论和黑名单位置",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_333",
+      "text": "这话说反了，成年人都是什么方便用什么，小学生才天天给自己挂与众不同的标签，评论区就是典型例证[嗑瓜子]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_334",
+      "text": "别再迷信mpv了！那是浪费时间的大玩具，自己用ffmpeg写一个才是真神器[吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_336",
+      "text": "就该用PotPlayer！那是给普通人用的播放器！\n别再迷信mpv了！那是给闲人折腾的玩具！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_340",
+      "text": "之前分享的网址失效了[大哭][大哭][大哭][大哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_347",
+      "text": "本期精选app推荐：\n1.开眼\n2.场库\n3.央视频\n4.一席\n5.一点英语\n以上app各大应用商城均有下载……\n喜欢的话就三连起来吧~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_348",
+      "text": "手机里只有一个哔哩哔哩视频软件的路过",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_350",
+      "text": "开眼，场库，央视频大家都不用下载了，我帮大家试过了。开眼除了公益短片其他的都算不上有信息的视频。场库和开眼差不多。央视频的缺点，我直接上图了[以闪亮之名_针不戳]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_351",
+      "text": "开眼我用过 里面视频真的很不错！！！！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_352",
+      "text": "有b站这种的吗说实在b站画质1080p太糊了没法看[无语]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_354",
+      "text": "upup，应用市场里面没有场库APP，在浏览器的官网搜索安卓版的也下载不了，难道是因为我升了鸿蒙系统吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_361",
+      "text": "同意！对讲卫生的女生可以前戏做足，再对她轰炸，没有不满足的，估计美猪是自己不懂风情让吴小弟瞬间冷感没感觉了，都当男人是动物啦？！街边的打工搬运的那种憋久了的大哥会饥不择食才会不管三七二十一野兽般爆发，正常男性会有点追求的，所以非常同意up主指出的对吴签称号的质疑，现在是痛打落水狗，部分说法偏离了客观公允的事实。不能不尊重女生，但也要把男生当人啊，像吴这种次数和品种品质都永远高过正常的当然会有严重挑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_363",
+      "text": "弹幕跟评论说自己半小时，一个小时的。都是吹牛逼。正常的，和谐的时间是五到十五分钟之间。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_365",
+      "text": "有个妹子说我的时间秒杀百分之七十以上的男的，我也不知道该笑还是[doge][笑哭][笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_368",
+      "text": "B站里有很多大学课程的录播视频，这些才是真的硬核知识",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_369",
+      "text": "基本上同意up观点，但是我关注了大量知识区Up还是想分享几点：\n1. 知识区的精华在于其长尾效应。up分析的前提是建立在知识区的热门视频，但是知识区有大量在自身领域资深、简化地传递知识、粉丝量不高、但服务着小众观众群体的up。我关注的就有历史、理论物理、建筑、军事、地理、工程、生物、语言学等优质up，他们有些连续几年产出同一个系列的视频。个人觉得人的精力是有限的，不可能在所有领域都建立起完备的知识",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_371",
+      "text": "难怪现在网络环境越来越暴躁了，想起以前和网友面基看到他看那些解说视频，把一部电影精减到十几分钟给你讲完的那种，他说这样可以节约很多时间，我当时想着的却是，看这样的东西很容易受到讲解人的主观思想影响。最后得到的不是这个电影的信息，而是讲解人想要传达给你的信息和观点。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_372",
+      "text": "看视频并不会让你变傻，只会让你习惯不思考的这种模式，长久以来会让你显得有点傻。但这个是可逆的，只要重新拾起思考的习惯就好。\n首先试着关掉弹幕，然后你会发现许多视频本身是多么的无趣。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_373",
+      "text": "部分同意您的观点，但是存在的问题依旧严重\n\n以偏概全是我认为最突出的问题，对于您所说的知识视频是指那些“分享观点重于传达信息”的所谓知识类视频（例如半佛），而并不适用于所有知识类视频。\n例如我要学习摄影技巧、或者解剖学这种知识，视频的方式要远优于图书、音频等，因为这些东西本身就是“高度依赖视觉”的知识\n\n同时，对于一些没那么依赖于视觉的知识，由于视频所能传达的信息更加丰富，也有利于学习，但有一个大",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_374",
+      "text": "评论区的长评我是每一条都看了，不管赞同还是反对，这些长评都有许久不见的认真，如果你有空，可以再看几条正反的观点 [抱拳]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_375",
+      "text": "看完评论人傻了，这么多人会思考，都有自己的观点，不会被视频牵着走。小丑竟是我自己[大哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_376",
+      "text": "就是这个视频让我变傻的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_377",
+      "text": "看到标题，我退出了视频，家人们我做得对吗[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_378",
+      "text": "破解过度刷短视频，挽回被动刷信息流的破解办法有一个，就是自己做课代表， 将视频有用的地方做课代表发评论总结，这一招能主动让大脑思考这个视频有用的地方，还是很不错的[星星眼][星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_379",
+      "text": "建议不适用手机，多多使用电脑，直接可以断掉大拇指向上滑动视频。使用电脑键盘上网可以做到掌握自己得注意力。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_380",
+      "text": "短视频我感觉比游戏还可怕[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_381",
+      "text": "尤其对于大学生和读书的人，千万不要因为短视频荒废学业啊，每天的时间真的很有限，为什么不能把时间用在自己喜欢的游戏影视上面而是在这些无趣又上瘾的短视频呢，刷两个小时短视频后感觉不到多少快乐，这个时间已经能看一部电影了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_382",
+      "text": "突然想到了一个绝妙的戒掉短视频的方法——做视频博主\n有个理论就是干一行恨一行（by me）\n最早的时候触屏手机是没有普及的，我压根就没有短视频看，所以我沉迷看小说\n上课看，下课看，放学还看，看完不写作业的那种\n现在我自己当了作者，一看小说就要被动分析到底哪里写得好，一分析就打断了上瘾途径，然后就走神不看了\n更别说现在一想到怎么变现就一个头比两个大，已经很久不看小说了（改追剧了  该死我去学做编剧算",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_383",
+      "text": "为了少刷视频 我买了个switch。是的 没开玩笑 我真是为了这个目的才买的[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_384",
+      "text": "短视频真的害人，每次放学回家寻思花几个小时把作业写完再说，结果一刷就是一两个小时，最后作业写到半夜[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_385",
+      "text": "短视频我感觉比游戏跟小说危害还大，因为我一刷短视频如果是放假，那说不定要刷半天，甚至可能把吃饭时间延迟了，但游戏不会，我玩游戏，超过两个小时就玩不下去了，得换一个游戏，看小说之前我会沉迷其中，但现在不知道是年纪大了还是怎么回事，没法带入里面了，小说跟游戏还能给我带来快乐，不纯粹是打磨时间，但短视频不同，看久了没有一点收获，甚至感觉脑袋都变得迟钝了，头晕脑胀的，自己还不知道时间已经过去很久了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_386",
+      "text": "最近看到信息斋戒，确实应该这么做\n以前我在找工作的时候，会先来小红书搜索面试经验，但是后来我发现它会源源不断的给我推送很多贩卖焦虑的帖子。比如说有哪些大佬，他们手握了几十个 offer，似乎在网络上，每个人都可以轻轻松松的就获得我想要的机会。这让我陷入了非常强烈的无助和焦虑中，真的是我太差劲了吗？为什么大家都可以拥有这么好的工作机会，而我却不行呢？于是我就会一边焦虑，又一边忍不住点开那些帖子去看，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_387",
+      "text": "我非常喜欢书，也更喜欢看书，每次翻开一本书，我都会深深的闻一口，新书多带着清新淡雅的纸香，老书带着纸质陈旧后的糯香？当然最多的还是上一个读者赋予它的气息，口水印子饭菜油印子，还有不少的血手印。每次翻书到这些痕迹，我都会用手指轻抚，同时脑海里模拟这些印记是在什么情景下产生的，慢慢的见的多了，也能够让我猜七分，最后通过询问或者观察来租书的人慢慢填补满当时的情形，这也是儿时孤独的我少有的乐趣，也为此乐此",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_389",
+      "text": "不敢相信这是几千粉丝UP做出来的东西，感觉完全高于百万粉丝UP的剪辑技术，而且每一个片段都极其用心和耗费时间。这样的水平和用心程度，都不是一般人短时间做到的，应该向您学习。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_390",
+      "text": "想知道你们最爱的书跟视频（电影也行）分别是什么？\n\n我去看！！！[脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_391",
+      "text": "省流助手\n【ps这个视频的整体节奏运镜氛围把控都非常非常好，做笔记只是为了让我自己理解，文中有加入自己的见解，建议不要省流】\n\n1.看书和看视频的根本差别...",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_392",
+      "text": "每天都在看书与看视频的挣扎之中，完成任务与摆烂之中。暑假很短，事情很多，但发现一个方法，那便是：早点计划，早点开始。不妨投入，亦有乐趣。很喜欢up的视频，让我三连得很纯粹[点赞]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_393",
+      "text": "我随手滑到的这十分钟的视频里面看到的，视频里所蕴含的拍摄技巧及表达的知识，比起随手拿的一本书读上十分钟，看书怎么也不可能感受的到这么多，甚至还无法进入状态。宝藏up关注了[脱单doge][脱单doge][脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_394",
+      "text": "我昨晚看《费马大定理》（一本科普读物）看到了十二点，这本书读了一段时间了，昨晚是因为就快要读完，一不做二不休，一口气读完就到了半夜。其实一旦进入状态，看书和刷视频是一样的，欲罢不能，难的就是看书进入状态的门槛比较高",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_395",
+      "text": "我认为原因是因为人是不喜欢孤独的。看视频有一种参与的互动感，而看书需要把自己从世界抽离出来进入一种孤独安静的状态。人从本能上是抵触孤独的。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_396",
+      "text": "我觉得视频可以给人带来多方面的刺激，比如色彩丰富的画面，有节奏感的音乐和人的声音，有视觉听觉的双重刺激，能让大脑更满足且可以不带脑子，而看书是需要带脑子去想象的，画面也是较单一的文字。一段文字，感觉视频就像有一个人去总结归纳了这一段文字，加上他脑子想象的相关画面，并配音录成了一个“结果”给你直接观看就好，你只需要跟着他的节奏走就行。而看书是一个过程，是一段需要你自己去理解去想象的文字，才能得到一个",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_397",
+      "text": "最烦的是:\n\n竖屏视频\n擦边视频\n仅充电视频\n擦边仅充电视频",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_400",
+      "text": "搜索都不好用了，全都是看什么推荐什么，根本搜不到想看的内容",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_401",
+      "text": "我屏蔽了所有的竖屏、仅充电、5分钟以下和部分带有关键词的视频（比如所有带！的），\n还禁止了首页自动刷新，现在首页和视频下方的推荐都非常舒服[呲牙]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_402",
+      "text": "就阿B这个逼算法，完全是被抖音带坏了的。不能看它给你推什么，而是自己得找什么。\n阿B其实有很多十万以下的腰部(可能都不算腰部)up很有深度，反而那些大up天天蹭热度蹭流量，流水线内容，没意思。\n其实挺希望b站的推荐机制学学油管的，调教几天首页就都是自己喜欢的视频类别，而不是牛皮癣一样去都去不掉的垃圾视频。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_403",
+      "text": "算法问题避免不了，最迷的是 “不感兴趣” 这个按钮。\n点了很多次，只要误入一次带标签的就又给你重新推了。[无语]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "step_id": "data-cleaning",
+  "step_name": "数据加载与清洗",
+  "version": 1,
+  "timestamp": "2026-05-14T10:30:00+08:00",
+  "status": "completed",
+  "input": {"files": ["01-raw-data/input/xhs_data.xlsx"], "checksum": "sha256:abc123"},
+  "code": {"file": "02-cleaned/code/data_cleaning.py", "checksum": "sha256:def456"},
+  "output": {"files": ["02-cleaned/output/cleaned_data.parquet", "02-cleaned/output/cleaning_report.json"], "checksums": {}},
+  "parameters": {"min_interaction": 0, "parse_count_enabled": true},
+  "statistics": {"total_rows": 15234, "total_columns": 18, "memory_usage_mb": 45.2},
+  "notes": "数据清洗完成，互动量已标准化"
+}

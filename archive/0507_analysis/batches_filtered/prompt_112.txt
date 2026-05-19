@@ -1,0 +1,524 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下30条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 112/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_4674
+平台: zhihu
+类型: comments
+内容: 之前我是那么理解的。后来发现我对画质的要求也是那么回事。从4K60的显示器换到了2k260的，整体就是流畅太多了。后来发现一天十几个小时，八小时在公司用的1080的，对画质的要求也没那么大了。而且4K的图标实在是太小了，眼睛看的难受。
+
+--- ITEM #2 ---
+ID: zhihu_comments_4676
+平台: zhihu
+类型: comments
+内容: 这么说吧。。我好几部手机，苹果12PM，14PM，OPPOR17，索尼马克兔，马克兔2，红米。。现在出门带马克兔2和14PM。玩游戏看视频从来都是马克兔4K屏幕。。因为太细腻了。尤其是我用SNAPTUBE看外国4K视频大片那更是太爽了。。因为不是4K屏幕根本无法播放
+
+--- ITEM #3 ---
+ID: zhihu_comments_4677
+平台: zhihu
+类型: comments
+内容: 4K的大表哥2，和2K的完全是两个时代的游戏[酷]
+
+--- ITEM #4 ---
+ID: zhihu_comments_4680
+平台: zhihu
+类型: comments
+内容: 4k没用过，从1080p120hz换电脑升级到了2k180hz，全高老头环，简直是两个世界[飙泪笑]
+
+--- ITEM #5 ---
+ID: zhihu_comments_4681
+平台: zhihu
+类型: comments
+内容: 你说这个应该不是视频清晰度，而是屏幕分辨率的高画质中画质吧。
+
+--- ITEM #6 ---
+ID: zhihu_comments_4682
+平台: zhihu
+类型: comments
+内容: 如果是4K 极致的话，需要什么样的显卡能带动。
+
+--- ITEM #7 ---
+ID: zhihu_comments_4684
+平台: zhihu
+类型: comments
+内容: 我也是2070S  ，我也是2K 屏幕，感觉2070S 开不了魔兽5档画质的4K
+
+--- ITEM #8 ---
+ID: zhihu_comments_4685
+平台: zhihu
+类型: comments
+内容: 我用3070TI带的4K 60[doge]
+
+--- ITEM #9 ---
+ID: zhihu_comments_4686
+平台: zhihu
+类型: comments
+内容: 同感。同一显示器开4K中画视觉效果远强过2K高画。
+
+--- ITEM #10 ---
+ID: zhihu_comments_4689
+平台: zhihu
+类型: comments
+内容: 你这得把一批显卡焦虑的人整崩溃，我在抖音上说我3070TI用的4K屏爽的要死被人各种喷[大笑]，我主要玩使命召唤，用了4K屏画质、帧数依然达到预期。
+
+--- ITEM #11 ---
+ID: zhihu_comments_4691
+平台: zhihu
+类型: comments
+内容: 我是不是一步到位太过了，我是从34寸34401440的带鱼屏升级到55寸3840*2160的4k，感觉画质还变差了，没有原来的清楚，是屏幕太大了吗。
+
+--- ITEM #12 ---
+ID: zhihu_comments_4692
+平台: zhihu
+类型: comments
+内容: 我还是慢慢升 刚刚升到2k 我要体验逐步升级的快感 一开始就拥有劳斯莱斯 收获不到边际效应的快乐
+
+--- ITEM #13 ---
+ID: zhihu_comments_4698
+平台: zhihu
+类型: comments
+内容: 只说4K和1080P，不讲尺寸和观看距离是没有意义的。 如果是60寸电视，正常的3米多的观看距离，我都觉得差距不大，你得走到1米那么近，发现差距好明显。显示器的话，到27寸了，这两个就已经天差地别了。
+
+--- ITEM #14 ---
+ID: zhihu_comments_4700
+平台: zhihu
+类型: comments
+内容: 体验下九千多的明基EX321UX莫比乌斯3A专用显示器，即便同样是4k高刷显示器，也是天差地别的
+
+--- ITEM #15 ---
+ID: zhihu_comments_4706
+平台: zhihu
+类型: comments
+内容: 27寸4K显示器我就是觉得字体和UI太小了，可能4K要用32寸以上的显示器才OK
+
+--- ITEM #16 ---
+ID: zhihu_comments_4708
+平台: zhihu
+类型: comments
+内容: 上班就是1080P，下班就是4K，可能我适应性比较强吧[酷]
+
+--- ITEM #17 ---
+ID: zhihu_comments_4711
+平台: zhihu
+类型: comments
+内容: 我两台电脑，一台接27-4k，一台24-FHD，屏幕都挨着放的看FHD是真难受，但又舍不得送人，也没买新的4k[捂脸]，能省则省了。
+
+--- ITEM #18 ---
+ID: zhihu_comments_4712
+平台: zhihu
+类型: comments
+内容: 4k显示器看视频打开gpu super resolution效果就很明显了更别提原生4k
+
+--- ITEM #19 ---
+ID: zhihu_comments_4714
+平台: zhihu
+类型: comments
+内容: 我是4090，4k真的有游戏跑不爽，2077就是因为这个不想打开[小情绪]
+
+--- ITEM #20 ---
+ID: zhihu_comments_4718
+平台: zhihu
+类型: comments
+内容: 最近在用4k游戏电视玩古墓暗影，可惜显卡只有HDMI 2.0接口，上不去电视机的4k120hz，不过本身2080下古墓暗影也只能到四五十帧，改天调低画质试试看，要是有明显区别可能就要考虑买4070 ti super 了[大笑][大笑][大笑]
+
+--- ITEM #21 ---
+ID: zhihu_comments_4722
+平台: zhihu
+类型: comments
+内容: 24寸 2k分辨率，，27+寸 4K
+
+--- ITEM #22 ---
+ID: zhihu_comments_4724
+平台: zhihu
+类型: comments
+内容: 还是看个人习惯吧，玩3A低于60帧是真的卡，120帧我个人属于流畅玩的舒服的那种。我的4060TI，开4K玩赛博朋克卡的我是真的晕，最后我又换回2K能稳120左右，玩的就舒服多了。
+
+--- ITEM #23 ---
+ID: zhihu_comments_4726
+平台: zhihu
+类型: comments
+内容: 请教大佬我现在是2K屏，刚搞了张4090，有必要换个4K屏吗
+
+--- ITEM #24 ---
+ID: zhihu_comments_4727
+平台: zhihu
+类型: comments
+内容: 4K 24寸看文字舒服[害羞]
+
+--- ITEM #25 ---
+ID: zhihu_comments_4728
+平台: zhihu
+类型: comments
+内容: 所以我喜欢看电影的，但是电影的视频资源不是很多哦，用4k看1080p的电影会不会画面更模糊？
+
+--- ITEM #26 ---
+ID: zhihu_comments_4729
+平台: zhihu
+类型: comments
+内容: 我从24寸1080p升级为32寸2K感观毫无区别，而且感觉字小了，看不太清楚了[捂脸]
+
+--- ITEM #27 ---
+ID: zhihu_comments_4736
+平台: zhihu
+类型: comments
+内容: 3070TI能带动4K游戏么？
+
+--- ITEM #28 ---
+ID: zhihu_comments_4740
+平台: zhihu
+类型: comments
+内容: 刚2k换4k一个月，没说的这么震撼，可能是我最近主要玩fps游戏，画质提示感受不明显。
+
+--- ITEM #29 ---
+ID: zhihu_comments_4742
+平台: zhihu
+类型: comments
+内容: 其实我自己，用3060 12G，玩32英寸4K游戏。也是可以玩的，细细调一下游戏设置，真的挺不错的。
+
+--- ITEM #30 ---
+ID: zhihu_comments_4745
+平台: zhihu
+类型: comments
+内容: 4k对于显卡压力还是很大 虽然可以田忌赛马 中画质 来玩，能上4K就上4k，哪怕不玩游戏，纯看片子也爽多了，也可以弄两个显示器
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_112
+
+开始分析：

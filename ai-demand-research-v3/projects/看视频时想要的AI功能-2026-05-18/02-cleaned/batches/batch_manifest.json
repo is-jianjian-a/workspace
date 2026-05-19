@@ -1,0 +1,272 @@
+{
+  "total_ugcs": 523,
+  "batch_size": 10,
+  "total_batches": 53,
+  "batches": [
+    {
+      "batch_id": 1,
+      "start_idx": 0,
+      "end_idx": 10
+    },
+    {
+      "batch_id": 2,
+      "start_idx": 10,
+      "end_idx": 20
+    },
+    {
+      "batch_id": 3,
+      "start_idx": 20,
+      "end_idx": 30
+    },
+    {
+      "batch_id": 4,
+      "start_idx": 30,
+      "end_idx": 40
+    },
+    {
+      "batch_id": 5,
+      "start_idx": 40,
+      "end_idx": 50
+    },
+    {
+      "batch_id": 6,
+      "start_idx": 50,
+      "end_idx": 60
+    },
+    {
+      "batch_id": 7,
+      "start_idx": 60,
+      "end_idx": 70
+    },
+    {
+      "batch_id": 8,
+      "start_idx": 70,
+      "end_idx": 80
+    },
+    {
+      "batch_id": 9,
+      "start_idx": 80,
+      "end_idx": 90
+    },
+    {
+      "batch_id": 10,
+      "start_idx": 90,
+      "end_idx": 100
+    },
+    {
+      "batch_id": 11,
+      "start_idx": 100,
+      "end_idx": 110
+    },
+    {
+      "batch_id": 12,
+      "start_idx": 110,
+      "end_idx": 120
+    },
+    {
+      "batch_id": 13,
+      "start_idx": 120,
+      "end_idx": 130
+    },
+    {
+      "batch_id": 14,
+      "start_idx": 130,
+      "end_idx": 140
+    },
+    {
+      "batch_id": 15,
+      "start_idx": 140,
+      "end_idx": 150
+    },
+    {
+      "batch_id": 16,
+      "start_idx": 150,
+      "end_idx": 160
+    },
+    {
+      "batch_id": 17,
+      "start_idx": 160,
+      "end_idx": 170
+    },
+    {
+      "batch_id": 18,
+      "start_idx": 170,
+      "end_idx": 180
+    },
+    {
+      "batch_id": 19,
+      "start_idx": 180,
+      "end_idx": 190
+    },
+    {
+      "batch_id": 20,
+      "start_idx": 190,
+      "end_idx": 200
+    },
+    {
+      "batch_id": 21,
+      "start_idx": 200,
+      "end_idx": 210
+    },
+    {
+      "batch_id": 22,
+      "start_idx": 210,
+      "end_idx": 220
+    },
+    {
+      "batch_id": 23,
+      "start_idx": 220,
+      "end_idx": 230
+    },
+    {
+      "batch_id": 24,
+      "start_idx": 230,
+      "end_idx": 240
+    },
+    {
+      "batch_id": 25,
+      "start_idx": 240,
+      "end_idx": 250
+    },
+    {
+      "batch_id": 26,
+      "start_idx": 250,
+      "end_idx": 260
+    },
+    {
+      "batch_id": 27,
+      "start_idx": 260,
+      "end_idx": 270
+    },
+    {
+      "batch_id": 28,
+      "start_idx": 270,
+      "end_idx": 280
+    },
+    {
+      "batch_id": 29,
+      "start_idx": 280,
+      "end_idx": 290
+    },
+    {
+      "batch_id": 30,
+      "start_idx": 290,
+      "end_idx": 300
+    },
+    {
+      "batch_id": 31,
+      "start_idx": 300,
+      "end_idx": 310
+    },
+    {
+      "batch_id": 32,
+      "start_idx": 310,
+      "end_idx": 320
+    },
+    {
+      "batch_id": 33,
+      "start_idx": 320,
+      "end_idx": 330
+    },
+    {
+      "batch_id": 34,
+      "start_idx": 330,
+      "end_idx": 340
+    },
+    {
+      "batch_id": 35,
+      "start_idx": 340,
+      "end_idx": 350
+    },
+    {
+      "batch_id": 36,
+      "start_idx": 350,
+      "end_idx": 360
+    },
+    {
+      "batch_id": 37,
+      "start_idx": 360,
+      "end_idx": 370
+    },
+    {
+      "batch_id": 38,
+      "start_idx": 370,
+      "end_idx": 380
+    },
+    {
+      "batch_id": 39,
+      "start_idx": 380,
+      "end_idx": 390
+    },
+    {
+      "batch_id": 40,
+      "start_idx": 390,
+      "end_idx": 400
+    },
+    {
+      "batch_id": 41,
+      "start_idx": 400,
+      "end_idx": 410
+    },
+    {
+      "batch_id": 42,
+      "start_idx": 410,
+      "end_idx": 420
+    },
+    {
+      "batch_id": 43,
+      "start_idx": 420,
+      "end_idx": 430
+    },
+    {
+      "batch_id": 44,
+      "start_idx": 430,
+      "end_idx": 440
+    },
+    {
+      "batch_id": 45,
+      "start_idx": 440,
+      "end_idx": 450
+    },
+    {
+      "batch_id": 46,
+      "start_idx": 450,
+      "end_idx": 460
+    },
+    {
+      "batch_id": 47,
+      "start_idx": 460,
+      "end_idx": 470
+    },
+    {
+      "batch_id": 48,
+      "start_idx": 470,
+      "end_idx": 480
+    },
+    {
+      "batch_id": 49,
+      "start_idx": 480,
+      "end_idx": 490
+    },
+    {
+      "batch_id": 50,
+      "start_idx": 490,
+      "end_idx": 500
+    },
+    {
+      "batch_id": 51,
+      "start_idx": 500,
+      "end_idx": 510
+    },
+    {
+      "batch_id": 52,
+      "start_idx": 510,
+      "end_idx": 520
+    },
+    {
+      "batch_id": 53,
+      "start_idx": 520,
+      "end_idx": 523
+    }
+  ]
+}

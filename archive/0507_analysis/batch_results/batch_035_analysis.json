@@ -1,0 +1,608 @@
+{
+  "batch_id": 35,
+  "total_items": 48,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 28,
+      "long_video": 1,
+      "short_video": 19
+    },
+    "type_distribution": {
+      "behavior_description": 42,
+      "pain_point": 6
+    },
+    "topic_distribution": {
+      "other": 37,
+      "payment_member": 1,
+      "screen_cast": 2,
+      "playback_control": 1,
+      "download_cache": 1,
+      "video_quality": 5,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 47
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1730",
+      "text": "本期视频使用滤镜：\nFreewell V2 套装（可调nd）\nFreewell M2 套装（固定nd）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1733",
+      "text": "我一直不理解拍视频为什么会有快门速度。拍摄视频时快门帘不是一直打开的吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1736",
+      "text": "剪映有没有边缘模糊的功能？就是剪映的抠图感觉很生硬，想把边缘模糊一下，没找到",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1741",
+      "text": "太牛了吧，这种局部特效的使用方法，直接免去的用VIP的蒙版特效[喜欢][星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1744",
+      "text": "手机版可以出一个吗？手机搞不懂~！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1745",
+      "text": "lris修复人脸是最屌的，没有之一",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1747",
+      "text": "不好用，我都怀疑这个软件在挖矿，我3080ti 5800x 32G，1080转4K，100MB视频要我35分钟？然后我用1080P转成720P 也要20分钟，半小时视频我用音频分离后期都没这么久，搞笑呢？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1748",
+      "text": "ProRess和422HQ是影视级别渲染时常用的，我之前做电视剧的片头就用这个，文件非常的大，如果不是影视上用的，可以选压缩更小的格式。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1749",
+      "text": "win激活失败的指一条路：不要用最开始生成的快捷键。去根目录文件夹里面找激活替换后的应用程序，把原来那个桌面的快捷键删掉，可以用根目录的这个应用程序重新创建一个快捷键放桌面就行了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1750",
+      "text": "请问一下up所有视频修复参数设置除了模型选择外，其他参数（杂色、修复细节、颗粒这些）都是按照视频中设置吗？我按照视频中设置参数，分辨率选择768x576导出播放画面是在正中间周边有黑边没有铺满播放器，分辨率选择1280x720导出播放画面是铺满整个播放器，这是怎么回事？原视频是640x360播放铺满整个播放器的@一只小辉金吖",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1751",
+      "text": "70m的存储视频，处理成1080的分辨率，2g，太大了，不知道是不是我设置的原因，别人都是几百兆",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1753",
+      "text": "up，感谢你的分享，画质真的好了不少，但是不知道为什么画面变窄了[笑哭]有没有哪位大佬能告诉我怎么调画面比例",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1755",
+      "text": "非常有帮助，后期加动态模糊的方式我还真没想过，用nd滤镜其实还有个大问题就是在进光不够的情况下，由于运动相机是电子防抖所以可能防抖就直接废掉了，我之前就是加滤镜结果整个素材报废[笑哭]。吐槽一下b站给的码率真的太低了，gopro随便一个视频二十万的码率b站就给个两万上限，油管1080的视频比b站的4k清晰好几倍。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1756",
+      "text": "链接：https://pan.baidu.com/s/1tX6XYFKLmHwy5HQO_JktLA \n提取码：g9jg",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1758",
+      "text": "我的大疆action4拍出来的视频特别大，但是如果拍d log视频然后还原的话，大小就会变小一半，好神奇啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1759",
+      "text": "好强，刚发了几个视频，都糊的不行[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1760",
+      "text": "up淘宝几十块的nd滤镜能买不会影响画质嘛",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_0",
+      "text": "#性感女神 #长腿美女 ，还挺心疼的自己闷天天坐着想拍视频就视频玩玩手机他呢天天都很忙又累的，辛苦了 💗💖@♡ ᒪOᐯe拘༗宝(O3xdf5qqwcc9w3fs)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_1",
+      "text": "#怎么样删除快手里看过的视频，防止手机卡顿，学习多多，益处多多！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_2",
+      "text": "#冷知识 #刷快手要知道的 #芳芳冷知识",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_4",
+      "text": "@快手粉条(O3xhcy6vhfzcu3qe) @快影学苑(O3xbw6yu9c8tw6xg) @快手创作者中心(O3xrgtux2ehryffe) #新光合计划 #短视频制作 #快影教程",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_5",
+      "text": "小男孩被细菌抓走。#夏日清凉计划 #动画 #搞笑动画 #儿童动画 @快手二次元(O3x52iyv6bx2chie) @快手粉条(O3xhcy6vhfzcu3qe) @快手热点(O3xddgkd5fav5if9)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_7",
+      "text": "#儿童动画 #小朋友都爱看 #儿童玩具 #亲子 小朋友喜欢看的视频，儿童看的视频，小朋友喜欢看的搞笑视频。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_8",
+      "text": "#知识播种计划 #技能速成宝典  刷快手短视频如何正确清理内存\n清理后多了二百多G #开学季 #快手老铁帮帮团 @快手教育(O3xs4pwkr6yf6g56) @快手光合计划助手(O3xxpf2m4brbf3pe) @粉条上热门(O3x3t62ghyg2f43c) @快手创作者中心(O3xrgtux2ehryffe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_11",
+      "text": "#影视剪辑 #疫情看片 3，女大学生衣着光鲜暴Iu坐出租车没想到却因此惹来了麻烦",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_12",
+      "text": "当你刷视频刷着刷着觉得无聊，你可以试试打开这个设置 #涨知识 #冷知识",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_13",
+      "text": "我是孩纸，我不想看的，所以发这类快手的请屏蔽我 #小小年纪不学好 #清晨第一缕阳光",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_14",
+      "text": "通通通通看电视#儿童动画 #有趣 #太好玩了 #内容启发搜索",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_15",
+      "text": "手机看得太久了，听一听音束，放空大脑 #音疗",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_16",
+      "text": "刷了个寂寞 #真实 #搞笑视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_17",
+      "text": "第44集｜小男孩看到爸爸脚上长茧子了#3一6岁儿童视频 #小孩子爱看的小视频   儿童0一3岁动画片，儿童爱看搞笑小视频，儿童搞笑视频3至6岁，3到6岁儿童益智早教动画 ，3一6岁搞笑视频@快手创作者中心(O3xrgtux2ehryffe) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_18",
+      "text": " @苡菲(O3xjg6y3zkcgwpde) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_19",
+      "text": "#儿童动画 #启蒙幼儿早教 #儿童玩具 #小朋友都爱看 小朋友喜欢看的视频，儿童看的视频，小朋友喜欢看的搞笑视频。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_21",
+      "text": "#短视频流量变现 #短视频创业分享 #视频变现",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_22",
+      "text": "总是忍不住看小片，忍不住的  #手艺活 该怎么办？ #男科 #健康科普在快手",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_24",
+      "text": "忍不住是本性，没有问题，答应我下次一定忍住了 #男性健康  #健康科普在快手  #两性",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_25",
+      "text": "不用手就能自动刷视频？原来只需这一步设置，你也可以解放双手 #有用内容创作计划 #快成长计划 #知识百科明日之星 #关注我每天分享手机使用技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_contents_26",
+      "text": "快手如何设置内容偏好 #互联网一部手机创业",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_27",
+      "text": "#知识播种计划 #技能速成宝典  快手新功能\n无网照样看视频 #内容启发分享计刬 #老铁知识百科 @快手光合计划助手(O3xxpf2m4brbf3pe) @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xrgtux2ehryffe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_29",
+      "text": "快手如何开启省流模式，省流70％！ #知识播种计划 #技能速成宝典 #快手实用小技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_30",
+      "text": "在没网的情况下 照样可以刷快手视频 #知识迎新年 #春节新知锦囊 #有用内容创作计划 #技能速成宝典 @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa) @快手热点(O3xddgkd5fav5if9)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_32",
+      "text": "没网的情况下也可以看快手。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_33",
+      "text": "励志视频 #浅浅更个新 #真实还原 #有趣人类争霸赛 #浅浅更个新 @快手创作者小助手(O3xkzswpkrqacs8s) @快手平台帐号(O3xa3cpv8sghbu8m) @快手创作者中心(O3xrgtux2ehryffe) @快手热点(O3xddgkd5fav5if9)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_34",
+      "text": "网恋对象就是爱打视频怎么办 #微信虚拟视频 #虚拟视频教程 #虚拟摄像头 #网恋需谨慎",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_35",
+      "text": "我的视频怎么那么清晰，看实操#百万宝妈计划 #百万宝妈学员 #怎样才能拍出高清视频 #口播类视频拍摄技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_39",
+      "text": "手机没网的情况下也可以刷快手视频 #有用内容创作计划 #技能速成宝典 #知识播种计划 #喜爱度激励计划 @快手光合计划助手(O3xxpf2m4brbf3pe) @粉条上热门(O3x3t62ghyg2f43c) @我要上热门(O3x8er38dpbhvbaa)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_40",
+      "text": "兄弟们，像这种品质体验差的怎么去处理？ #快手小店 #无货源电商 #新手开网店",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_41",
+      "text": "新手机刷快手模糊，如何解决 #数码新品种草官 #手机小知识 #手机小技巧 #暑期玩机攻略",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

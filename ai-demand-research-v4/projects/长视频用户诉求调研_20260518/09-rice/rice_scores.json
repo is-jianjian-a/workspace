@@ -1,0 +1,324 @@
+[
+  {
+    "id": "O002",
+    "job_id": "J002",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 332000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "rice_score": 249000.0,
+    "data_sources": [
+      "xiaohongshu:332 mentions"
+    ]
+  },
+  {
+    "id": "O051",
+    "job_id": "J051",
+    "description": "当前长视频体验存在痛点: 没有关注，两个视频...",
+    "kano_type": "must_be",
+    "reach": 60000,
+    "impact": 2.4,
+    "confidence": 1.0,
+    "effort": 2,
+    "rice_score": 72000.0,
+    "data_sources": [
+      "xiaohongshu:60 mentions"
+    ]
+  },
+  {
+    "id": "O013",
+    "job_id": "J013",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 37000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "rice_score": 27750.0,
+    "data_sources": [
+      "xiaohongshu:37 mentions"
+    ]
+  },
+  {
+    "id": "O005",
+    "job_id": "J005",
+    "description": "想要更快或更慢地观看长视频内容...",
+    "kano_type": "performance",
+    "reach": 10000,
+    "impact": 3,
+    "confidence": 0.8666666666666667,
+    "effort": 1,
+    "rice_score": 26000.0,
+    "data_sources": [
+      "xiaohongshu:10 mentions"
+    ]
+  },
+  {
+    "id": "O007",
+    "job_id": "J007",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 25000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "rice_score": 18750.0,
+    "data_sources": [
+      "xiaohongshu:25 mentions"
+    ]
+  },
+  {
+    "id": "O047",
+    "job_id": "J047",
+    "description": "想要与其他观众互动，分享观看体验...",
+    "kano_type": "indifferent",
+    "reach": 19000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "rice_score": 14250.0,
+    "data_sources": [
+      "xiaohongshu:19 mentions"
+    ]
+  },
+  {
+    "id": "O026",
+    "job_id": "J026",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 15000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "rice_score": 11250.0,
+    "data_sources": [
+      "xiaohongshu:15 mentions"
+    ]
+  },
+  {
+    "id": "O107",
+    "job_id": "J107",
+    "description": "在没有网络或网络不稳定的情况下观看长视频...",
+    "kano_type": "must_be",
+    "reach": 16000,
+    "impact": 2.4,
+    "confidence": 0.5333333333333333,
+    "effort": 2,
+    "rice_score": 10240.0,
+    "data_sources": [
+      "xiaohongshu:16 mentions"
+    ]
+  },
+  {
+    "id": "O024",
+    "job_id": "J024",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 12000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "rice_score": 9000.0,
+    "data_sources": [
+      "xiaohongshu:12 mentions"
+    ]
+  },
+  {
+    "id": "O195",
+    "job_id": "J195",
+    "description": "想要获得更好的视觉体验...",
+    "kano_type": "performance",
+    "reach": 7000,
+    "impact": 1,
+    "confidence": 1.0,
+    "effort": 1,
+    "rice_score": 7000.0,
+    "data_sources": [
+      "xiaohongshu:7 mentions"
+    ]
+  },
+  {
+    "id": "O037",
+    "job_id": "J037",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 6000,
+    "impact": 2,
+    "confidence": 0.4,
+    "effort": 2,
+    "rice_score": 2400.0,
+    "data_sources": [
+      "xiaohongshu:6 mentions"
+    ]
+  },
+  {
+    "id": "O001",
+    "job_id": "J001",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 2000,
+    "impact": 3,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 900.0,
+    "data_sources": [
+      "xiaohongshu:2 mentions"
+    ]
+  },
+  {
+    "id": "O118",
+    "job_id": "J118",
+    "description": "想要在使用其他应用的同时继续观看或收听长视频...",
+    "kano_type": "must_be",
+    "reach": 2000,
+    "impact": 1.2,
+    "confidence": 0.6666666666666666,
+    "effort": 2,
+    "rice_score": 800.0,
+    "data_sources": [
+      "xiaohongshu:2 mentions"
+    ]
+  },
+  {
+    "id": "O304",
+    "job_id": "J304",
+    "description": "想要在开车观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 2000,
+    "impact": 2,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 600.0,
+    "data_sources": [
+      "xiaohongshu:2 mentions"
+    ]
+  },
+  {
+    "id": "O167",
+    "job_id": "J167",
+    "description": "想要无缝连续观看多个长视频...",
+    "kano_type": "must_be",
+    "reach": 1000,
+    "impact": 0.6,
+    "confidence": 0.6666666666666666,
+    "effort": 1,
+    "rice_score": 400.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  },
+  {
+    "id": "O081",
+    "job_id": "J081",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 2000,
+    "impact": 1,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 300.0,
+    "data_sources": [
+      "xiaohongshu:2 mentions"
+    ]
+  },
+  {
+    "id": "O306",
+    "job_id": "J306",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 2000,
+    "impact": 1,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 300.0,
+    "data_sources": [
+      "xiaohongshu:2 mentions"
+    ]
+  },
+  {
+    "id": "O011",
+    "job_id": "J011",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 1000,
+    "impact": 2,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 300.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  },
+  {
+    "id": "O513",
+    "job_id": "J513",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 1000,
+    "impact": 2,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 300.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  },
+  {
+    "id": "O070",
+    "job_id": "J070",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 1000,
+    "impact": 1,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 150.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  },
+  {
+    "id": "O075",
+    "job_id": "J075",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 1000,
+    "impact": 1,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 150.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  },
+  {
+    "id": "O069",
+    "job_id": "J069",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 1000,
+    "impact": 1,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 150.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  },
+  {
+    "id": "O085",
+    "job_id": "J085",
+    "description": "想要在 unspecified观看长视频内容...",
+    "kano_type": "indifferent",
+    "reach": 1000,
+    "impact": 1,
+    "confidence": 0.3,
+    "effort": 2,
+    "rice_score": 150.0,
+    "data_sources": [
+      "xiaohongshu:1 mentions"
+    ]
+  }
+]

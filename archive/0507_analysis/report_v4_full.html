@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机视频观看AI诉求深度调研报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f7; color: #333; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 20px; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 50px 40px; border-radius: 16px; margin-bottom: 30px; }
+        .header h1 { font-size: 32px; margin-bottom: 12px; }
+        .header .subtitle { font-size: 18px; opacity: 0.9; margin-bottom: 20px; }
+        .header .meta { display: flex; gap: 30px; font-size: 14px; opacity: 0.8; flex-wrap: wrap; }
+        .methodology { background: linear-gradient(135deg, #e3f2fd 0%, #f3e5f5 100%); padding: 24px 30px; border-radius: 12px; margin-bottom: 30px; border-left: 5px solid #667eea; }
+        .methodology h3 { color: #1976d2; margin-bottom: 10px; }
+        .methodology p { font-size: 14px; color: #555; line-height: 1.8; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .stat-card { background: white; padding: 28px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .stat-card .number { font-size: 40px; font-weight: bold; color: #667eea; }
+        .stat-card .label { color: #666; font-size: 14px; }
+        .section { background: white; padding: 35px; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 24px; }
+        .section h2 { font-size: 22px; margin-bottom: 24px; color: #333; border-left: 4px solid #667eea; padding-left: 14px; }
+        .section h3 { font-size: 18px; margin: 20px 0 14px; color: #444; }
+        .chart-container { position: relative; height: 320px; margin: 20px 0; }
+        .chart-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .data-table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
+        .data-table th { background: #f5f5f7; padding: 12px 16px; text-align: left; font-weight: 600; }
+        .data-table td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; }
+        .ai-unit { background: #f8f9fa; padding: 18px; border-radius: 10px; margin-bottom: 14px; border-left: 4px solid #667eea; }
+        .ai-unit .badge { display: inline-block; padding: 3px 10px; border-radius: 4px; font-size: 12px; margin-right: 8px; }
+        .badge-explicit { background: #e3f2fd; color: #1976d2; }
+        .badge-implicit { background: #fff3e0; color: #f57c00; }
+        .ai-unit .excerpt { font-size: 15px; color: #333; margin: 10px 0; }
+        .reference { background: #f8f9fa; padding: 30px; border-radius: 12px; margin-top: 30px; }
+        .reference h3 { margin-bottom: 16px; }
+        .reference li { padding: 8px 0; font-size: 14px; color: #555; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>手机视频观看AI诉求深度调研报告</h1>
+            <div class="subtitle">基于8,155条真实用户原声(VOC)的跨平台分析</div>
+            <div class="meta">
+                <span>样本总量: 8,155条</span>
+                <span>视频相关: 4,579条 (56.1%)</span>
+                <span>AI相关: 437条 (9.5%)</span>
+                <span>数据来源: 知乎/B站/快手/贴吧</span>
+            </div>
+        </div>
+
+        <div class="methodology">
+            <h3>研究方法说明</h3>
+            <p>本报告基于MediaCrawler采集的跨平台用户原声数据。分类体系：场景维度(4类) × 诉求类型(4类) × 主题标签(11个)。AI检测采用二级分类：显式AI(287条)和隐式AI(150条)。</p>
+        </div>
+
+        <div class="section">
+            <h2>一、核心指标概览</h2>
+            <div class="stats-grid">
+                <div class="stat-card"><div class="number">8,155</div><div class="label">原始VOC总量</div></div>
+                <div class="stat-card"><div class="number">4,579</div><div class="label">视频相关原声</div></div>
+                <div class="stat-card"><div class="number">437</div><div class="label">AI相关诉求</div></div>
+                <div class="stat-card"><div class="number">287</div><div class="label">显式AI提及</div></div>
+                <div class="stat-card"><div class="number">150</div><div class="label">隐式AI需求</div></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>二、用户场景分析</h2>
+            <div class="chart-row">
+                <div class="chart-container"><canvas id="sceneChart"></canvas></div>
+                <div class="chart-container"><canvas id="aiSceneChart"></canvas></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>三、主题分布分析</h2>
+            <div class="chart-container"><canvas id="topicChart"></canvas></div>
+        </div>
+
+        <div class="section">
+            <h2>四、AI诉求深度分析</h2>
+            <div class="chart-row">
+                <div class="chart-container"><canvas id="aiTopicChart"></canvas></div>
+                <div class="chart-container"><canvas id="aiTypeChart"></canvas></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>五、用户原声详情 (精选)</h2>
+            <h3>显式AI诉求</h3>
+                        <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 体验痛点 | 后台播放</span>
+                <div class="excerpt">"帖主最近通关了一款用RPG Maker引擎开发的游戏《CHANGED》 因为它的难度系数非常具有挑战性，彻底通关后所感受到的成就感非凡，同时也想给大结局的剧情CG画面截个图留作纪念，并且上传到steam社区分享这份情绪 可是steam的截图功能此时出现了问题，按动时快捷键无法进行截图，于是我构思了另一条思路，那便是先用其他工具将结局画面截取下来，再手动创建属..."</div>
+                <div class="meta">ID: tieba_contents_32</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 长视频消费 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"我是7900xt显卡，cpu是7800x3d，驱动版本：25.6.3 。用Google Chrome在b站看4k分辨率视频，视频和弹幕卡得一顿一顿的，全屏后正常，有8u遇到吗？image_emoticon33用edge浏览器都是正常的，是不是A卡硬解有啥bug？我在浏览器把硬件加速关闭后，b站4k视频不卡了，YouTube看1080p 60fps视频开始卡了..."</div>
+                <div class="meta">ID: tieba_contents_58</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 体验痛点 | 内容推荐</span>
+                <div class="excerpt">"下班瘫在沙发，发誓刷10分钟却熬到凌晨？
+刷完只剩心慌、自责与双倍疲惫，第二天恶性循环继续？
+ 
+别骂自己不自律！这期播客，彻底拆穿你逃不掉的「低能量→刷手机→更低能量」死循环。
+✅ 科学拆解：为什么越累越停不下来？短视频算法如何精准收割你的精力？
+✅ 落地解法：不用强制戒断，4个温柔不费力的方法，帮你拿回专注力、情绪与人生主动权。
+ 
+献给每一个在疲惫中内..."</div>
+                <div class="meta">ID: bili_contents_80</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | AI功能</span>
+                <div class="excerpt">"这条视频的评论区，会不会出现大量“AI帮我总结一下”的评论？"</div>
+                <div class="meta">ID: bili_contents_91</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 功能需求 | 视频质量</span>
+                <div class="excerpt">"本期视频将从图片、视频、服务器三个部分来讲讲，如何提升网站的加载速度。
+
+👇 视频中提到的所有完整流程、工具、代码，都整理在我的博客了： 
+🔗 独家完整版教程：madsgogo.life （建议收藏，防止迷路）
+
+【我是谁？】 
+大家好，我是烧麦。 曾是一名外卖众包骑手，但现在的行情下，时薪甚至不足 10 块。 现实告诉我：外卖或许能糊口，但无法支撑我想养家..."</div>
+                <div class="meta">ID: bili_contents_141</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"从21补到157，游戏帧率确实提高了，但也引来许多质疑：你这拼好帧拼出来的数据，算什么本事？
+今天来聊聊通过AI算法提高的帧数真的有意义吗？"</div>
+                <div class="meta">ID: bili_contents_164</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 长视频消费 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"千元素材福利包限名额领取了：https://www.bilibili.com/read/cv42451141/
+Topaz Video AI 更新来到7.1.0版本，实时预览和导出首选项设置，帧插值慢动作的大升级全新引入强大的场景检测功能，星光迷你模型再次更新，新更新 MiniDV 预设和胶片 4K 预设；EXR 的 Alpha 通道支持；DPX 文件直接使..."</div>
+                <div class="meta">ID: bili_contents_180</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 视频质量</span>
+                <div class="excerpt">"这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；
+如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。
+那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；
+话不多说，点赞收藏，开始上课。"</div>
+                <div class="meta">ID: bili_contents_192</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | AI功能</span>
+                <div class="excerpt">"网盘地址（提示词模板在第17期文件中）
+夸克：https://pan.quark.cn/s/6959f1e185ac  
+
+应用：
+故事板：https://www.runninghub.cn/ai-detail/2050060981774110722/?inviteCode=rh-v1443
+分镜板：https://www.runninghub.cn/ai-..."</div>
+                <div class="meta">ID: bili_contents_193</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"从没刷过短视频，手机里也没抖音。就一获取信息的渠道而已，我上网比较早，那会干啥都是浏览器，听歌、下歌、看电影、查地图、路线、查资料，一个浏览器都能解决，抖音出来的时候我就没玩。外卖员困在算法里，抖音的推你喜欢难道就不是算法了吗？人一直吃垃圾食品，身体会不健康，抖音一直推电子榨菜、垃圾食品，精神世界、三观就能一直健康、一尘不染吗？盲人摸象而已，只看自己想看到的..."</div>
+                <div class="meta">ID: bili_comments_69</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"1:23喜欢我手上长嘴和鼻孔吗[doge]美颜算法谁写的？"</div>
+                <div class="meta">ID: bili_comments_152</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 功能需求 | 内容推荐</span>
+                <div class="excerpt">"就阿B这个逼算法，完全是被抖音带坏了的。不能看它给你推什么，而是自己得找什么。
+阿B其实有很多十万以下的腰部(可能都不算腰部)up很有深度，反而那些大up天天蹭热度蹭流量，流水线内容，没意思。
+其实挺希望b站的推荐机制学学油管的，调教几天首页就都是自己喜欢的视频类别，而不是牛皮癣一样去都去不掉的垃圾视频。"</div>
+                <div class="meta">ID: bili_comments_402</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 体验痛点 | 内容推荐</span>
+                <div class="excerpt">"算法问题避免不了，最迷的是 “不感兴趣” 这个按钮。
+点了很多次，只要误入一次带标签的就又给你重新推了。[无语]"</div>
+                <div class="meta">ID: bili_comments_403</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 长视频消费 | 功能需求 | 内容推荐</span>
+                <div class="excerpt">"事实上是，我未必是想要学到某一些东西才看大物视频的。我其实可能更多是这个时候什么都不想，就轻轻松松的放个背景音，然后听一下。或者是开一个轻轻松松的视频，然后吃饭这样子。现在B站的算法推给我的就没有多少个轻松的综艺类型的长视频。我就很缺这种！所以大物发的那些好物推荐我也有在看，我就是想要一个轻轻松松的中长度的综艺，还不能很尬！"</div>
+                <div class="meta">ID: bili_comments_421</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | AI功能</span>
+                <div class="excerpt">"这是UP主与AI关系最为恶劣的时候"</div>
+                <div class="meta">ID: bili_comments_457</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"那个，我想聊些其他的。首先up非常棒！非常非常的厉害，这个不必多说。
+我想说的是，up可能要注意一下自己相同或者类似的画面了？当然，现在up的作品不多，这个问题并不显著，但是随着up作品越来越多，观众就会发现很多场景很接近，一次两次还能当个彩蛋，次数多了就成视觉和审美疲劳了。
+为啥会想到这个，因为之前看了一个关于许愿的AI短篇，里面有些画面和场景和sign很..."</div>
+                <div class="meta">ID: bili_comments_466</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"我妈每天都刷抖音，但大数据推荐给她的，除了她唱得我耳朵都听起茧子的山歌和广场舞，就没什么了
+我爸也刷抖音，每天除了象棋，我发现他看得最多的就是推荐给他看过的各种电视剧了
+我也刷抖音，我看到的类型可能多一点，但也仅限于我感兴趣的，还有和我们工作相关的
+算法的推荐不仅没有扩宽人民的视野，反而让人一直在熟悉的领域循环，限制了人们的视野"</div>
+                <div class="meta">ID: bili_comments_488</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 体验痛点 | 内容推荐</span>
+                <div class="excerpt">"我站反方，认为降低了认知能力，因为我在刷短视频中很多都是低俗的搞笑视频，我不想刷到那些，但是人的好奇心又迫使你看下去，算法认为你喜欢看，就继续给你推，在这个过程中，就会不知不觉改变大脑的神经元链接，让人变得没有耐心迟钝不能集中注意力，只喜欢短俗快的东西，这就是很多低俗网红暴富的原因。
+其实生活中无聊一点也其实还不错，有时间静下来慢慢思考一下，而不是忍不了一点..."</div>
+                <div class="meta">ID: bili_comments_494</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"也是去年跟某个朋友相处，感觉他情绪和脾气都变得很暴躁。怀疑是短视频刷多了。很长一段时间每天都给我转发很多视频。还有一个原因是可能是他沉迷于恋爱AI，习惯了永远被满足永远即时回应的状态，越来越难忍受不即时回应、不完美回应。包容性变差，评判也变多了。涛哥有机会可以出个关于ai方面的内容"</div>
+                <div class="meta">ID: bili_comments_528</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-explicit">显式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"搞笑视频如果是AI做的就不好笑了，没有真实性"</div>
+                <div class="meta">ID: bili_comments_633</div>
+            </div>
+
+            <h3>隐式AI诉求</h3>
+                        <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 短视频消费 | 功能需求 | 播放控制</span>
+                <div class="excerpt">"上周在南山科技园喝咖啡，隔壁桌的女孩一边回TikTok信息一边笑得很开心——上午在华强北收了批新型智能穿戴样品，下午去坂田的3C配件工厂确认了几百条快充数据线的定制logo，晚上发了条工厂自动化产线组装的短视频，直接被中东的客户全部订走。这种场景我太熟悉了，在深圳做跨境这几年，“被订单找上门”早就是平常事。 刚开始我也摸索了很久，曾经窝在龙华公寓里埋头修图，..."</div>
+                <div class="meta">ID: tieba_contents_13</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 直播观看 | 功能需求 | 内容推荐</span>
+                <div class="excerpt">"本人装机小白学生党，618快来了想着配个主机，平时用来跑一些简单的本地深度学习demo，不打电脑游戏，想找图吧的各位大佬们求个推荐！ 自己有一根16g的光威内存，其他配件预算最好8k以内，在不损失性能的情况下越少越好 cpu：之前一直看的270k，但是我去装机直播间一般都推的14600或者amd的9700x，不知道咋选了，求推荐一个性价比高的就行，平时看看直..."</div>
+                <div class="meta">ID: tieba_contents_18</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 体验痛点 | 内容推荐</span>
+                <div class="excerpt">"眼神不好了，想换个平板大一点，想买基础款，可是很多人说8+126用不了一年就会特别卡，我就是看视频多，偶尔玩一玩金铲铲，8+126够用吗？ 我看了两个荣耀gt 2 Pro，和小米7s Pro屏大一点，不过最近好像都不便宜，还有点犹豫，有没便宜点的大屏平板推荐？image_emoticon24image_emoticon66"</div>
+                <div class="meta">ID: tieba_contents_47</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 长视频消费 | 体验痛点 | 视频质量</span>
+                <div class="excerpt">"在b站看4k60帧视频会频繁掉到30导致画面看起来非常卡顿，不管调智能帧数还是设置最高都会掉帧，别的手机看丝滑，就gtpro会掉帧。大伙可以去试下【【MMD-异度之刃3】弥央『脳内革命ガール』(4K-60FPS)-哔哩哔哩】 要维持不卡顿要不停点击屏幕维持120hz"</div>
+                <div class="meta">ID: tieba_contents_56</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 长视频消费 | 功能需求 | 视频质量</span>
+                <div class="excerpt">"大家是不是也感觉有时校园网测速很快，但刷视频、开网页一直转圈？用手机热点反而更流畅 我排查了网卡、驱动、网线，最后发现核心问题出在DNS解析上。 我们的DNS设置是自动获取的，服务器211.69.224.1这个应该是学校的DNS服务器，响应很慢，如图我用手机热点（带宽更低但DNS不同）做对比，立刻流畅了，这证明不是带宽问题，而是DNS问题。 解决方法超级简单..."</div>
+                <div class="meta">ID: tieba_contents_68</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 长视频消费 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"我这个t2x是天玑1300，看b站视频糊的一塌糊涂。（你别说我不会调分辨率）。网上查了一下说天玑芯片解码有问题，好多都不支持硬解码。有人说把智能刷新率关了一下也没用。网上好多人说看视频模糊，还费电，不止我一个人。"</div>
+                <div class="meta">ID: tieba_contents_88</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 长视频消费 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"推荐下地瓜吧 现在正在直播 b站id@低配挂机研讨会"</div>
+                <div class="meta">ID: tieba_comments_7</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"赤金产量低了，迷迭香组和自动化组肯定没上全或者用对，龙门币产量也还能再高一点。 迷迭香组本质先有一个要不要办公室放絮雨用20%人力换20％制造的问题，公孙长乐的看法是大月卡玩家要制造其他玩家要人力。另外阿罗玛没精二之前不能上班，迷迭香组基本绑定黑键絮雨，夕令车尔尼爱丽丝重要挂件，最终输出我觉得能达到150%以上就行了，达到极限速度会要求玩家严格算时间和换班，..."</div>
+                <div class="meta">ID: tieba_comments_8</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"阿姨 我在去年的时候给我妈妈找人看过，看的挺好的 我推荐你把"</div>
+                <div class="meta">ID: tieba_comments_76</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 行为描述 | AI功能</span>
+                <div class="excerpt">"这人什么憨憨，我燕云辅助卸式的自动看剧情的玩家怎么打红buff很好打啊。什么浴血代打的吗？"</div>
+                <div class="meta">ID: tieba_comments_248</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"赶紧戒掉加强学习。多学习戒炉知识，看看了凡四训，寿康宝鉴，多学习传统文化积累福德智慧获得正能量更容易成功，推荐几个微信公众号关注学习，湖心亭看雪客，天悦名坊，大愿小跟班，"</div>
+                <div class="meta">ID: tieba_comments_296</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 功能需求 | 内容推荐</span>
+                <div class="excerpt">"显卡和固态可以保留，只需升级cpu+内存+显卡，由于预算就500，建议主板上A320,大概130左右，cpu可以考虑.AMD的3500X , 270左右，内存搞个8g的ddr4 8G, 大概150左右，总价550。 或者上X99平台，这个便宜，pdd上全新的x99 ddr3 C612芯片组主板大概160，搭配e5 1650v3 ，淘宝卖78，ddr3内存单条..."</div>
+                <div class="meta">ID: tieba_comments_376</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">贴吧 | 泛视频场景 | 体验痛点 | 视频质量</span>
+                <div class="excerpt">"把ipv6关了 我7200pro＋也是开了刷网页就加载不出图片 速度慢可能是自动切换到2.4g了"</div>
+                <div class="meta">ID: tieba_comments_555</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"本期精选app推荐：
+1.开眼
+2.场库
+3.央视频
+4.一席
+5.一点英语
+以上app各大应用商城均有下载……
+喜欢的话就三连起来吧~"</div>
+                <div class="meta">ID: bili_contents_39</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"制片：九老师
+动画：Joyteeth 无聊的阿祝
+特效：flashyami
+声效：Jimmy Hung Fer
+剪辑：贰_33
+时间锁
+开发：年纪轻轻
+UI：星期五的哥哥
+统筹：许之行
+感谢做出时间锁的朋友、韩老师的调研指导、参加调研的朋友、银翼的魔术师MX搭建网站
+壁纸：无聊的阿祝 G195潮流壁纸
+本视频的戒手机方法参考了《这书能让你戒烟》和《How T..."</div>
+                <div class="meta">ID: bili_contents_86</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"口播技巧
+硬件 （提词器）
+核心部件
+分光玻璃（镜面虚像）
+软件推荐
+1.Lasagna （千层饼) Teleprompter 适用于：iOS、Windo..."</div>
+                <div class="meta">ID: bili_comments_194</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 长视频消费 | 行为描述 | 视频质量</span>
+                <div class="excerpt">"我和对象有个需求其实主要是能开摄像头视频，电影画质甚至不是那么重要[笑哭]除了zoom/腾讯会议还有啥推荐吗？"</div>
+                <div class="meta">ID: bili_comments_206</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 短视频消费 | 行为描述 | 视频质量</span>
+                <div class="excerpt">"如果短视频能双击暂停，左右划前进后退，不自动循环/连播，我倒是能接受短视频。对于我这个从来不看短视频的人，任何短视频的操作都很难受。
+偶尔下了次抖音，作者名下的每个视频都没有标题，只有点进去看两秒才知道视频是什么，我真的快疯了。好多短视频无法调节清晰度，想用360P,480P省流量都不可能[生气]"</div>
+                <div class="meta">ID: bili_comments_241</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 体验痛点 | AI功能</span>
+                <div class="excerpt">"我非常喜欢书，也更喜欢看书，每次翻开一本书，我都会深深的闻一口，新书多带着清新淡雅的纸香，老书带着纸质陈旧后的糯香？当然最多的还是上一个读者赋予它的气息，口水印子饭菜油印子，还有不少的血手印。每次翻书到这些痕迹，我都会用手指轻抚，同时脑海里模拟这些印记是在什么情景下产生的，慢慢的见的多了，也能够让我猜七分，最后通过询问或者观察来租书的人慢慢填补满当时的情形，..."</div>
+                <div class="meta">ID: bili_comments_249</div>
+            </div>
+            <div class="ai-unit">
+                <span class="badge badge-implicit">隐式AI</span>
+                <span style="font-size:13px;color:#666;">bili | 泛视频场景 | 行为描述 | 内容推荐</span>
+                <div class="excerpt">"我本来也想录这个的。我惨痛亲身经历！[辣眼睛]我之前脑抽把这个号的推送各种不感兴趣，逐渐推荐就变得离谱起来，从摄影记录到个人Volg，从铁道实录到学习课程，什么稀奇古怪都有，而且无一例外都是我看都没看过也不感兴趣的冷门玩意[大哭][大哭][大哭]然后继续不感兴趣就陷入死循环，越不感兴趣越奇怪，越推送越离谱。之后后悔问了客服娘发现：没救了，等死吧[灵魂出窍]
+..."</div>
+                <div class="meta">ID: bili_comments_264</div>
+            </div>
+
+        </div>
+
+        <div class="reference">
+            <h3>数据来源</h3>
+            <ul>
+                <li>数据来源: MediaCrawler (知乎/B站/快手/贴吧)</li>
+                <li>AI原声数据: ai_voices.json (437条结构化记录)</li>
+                <li>汇总统计: full_summary.json</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        new Chart(document.getElementById('sceneChart'), {
+            type: 'bar',
+            data: {
+                labels: ['泛视频场景', '短视频消费', '长视频消费', '直播观看'],
+                datasets: [{ label: '视频相关原声', data: [3377, 904, 240, 58], backgroundColor: '#667eea' }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: '视频相关原声场景分布' } } }
+        });
+
+        new Chart(document.getElementById('aiSceneChart'), {
+            type: 'bar',
+            data: {
+                labels: ['泛视频场景', '短视频消费', '长视频消费', '直播观看'],
+                datasets: [{ label: 'AI相关诉求', data: [355, 66, 10, 6], backgroundColor: '#764ba2' }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: 'AI诉求场景分布' } } }
+        });
+
+        new Chart(document.getElementById('topicChart'), {
+            type: 'bar',
+            data: {
+                labels: ['视频质量', '播放控制', '内容推荐', '付费会员', '投屏大屏', 'AI功能', '下载缓存', '广告体验', '字幕翻译', '后台播放'],
+                datasets: [{ label: '原声数量', data: [721, 249, 216, 192, 158, 152, 126, 106, 19, 15], backgroundColor: '#667eea' }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: 'Top 10 主题分布' } } }
+        });
+
+        new Chart(document.getElementById('aiTopicChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['内容推荐', 'AI功能', '视频质量', '下载缓存', '播放控制', '其他', '字幕翻译', '广告体验', '投屏大屏', '后台播放'],
+                datasets: [{ data: [182, 152, 46, 33, 8, 5, 4, 3, 3, 1], backgroundColor: ['#667eea', '#764ba2', '#f093fb', '#f5576c', '#4facfe', '#a8edea', '#ffecd2', '#fcb69f', '#ff9a9e', '#fecfef'] }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: 'AI诉求主题分布' } } }
+        });
+
+        new Chart(document.getElementById('aiTypeChart'), {
+            type: 'pie',
+            data: {
+                labels: ['行为描述', '体验痛点', '功能需求', '正面反馈'],
+                datasets: [{ data: [325, 62, 30, 20], backgroundColor: ['#667eea', '#f44336', '#4caf50', '#ff9800'] }]
+            },
+            options: { responsive: true, maintainAspectRatio: false, plugins: { title: { display: true, text: 'AI诉求类型分布' } } }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+{
+  "batch_id": 112,
+  "total_items": 30,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 29,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 20,
+      "positive_feedback": 5,
+      "feature_request": 1,
+      "pain_point": 4
+    },
+    "topic_distribution": {
+      "video_quality": 9,
+      "playback_control": 1,
+      "other": 19,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 30
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4674",
+      "text": "之前我是那么理解的。后来发现我对画质的要求也是那么回事。从4K60的显示器换到了2k260的，整体就是流畅太多了。后来发现一天十几个小时，八小时在公司用的1080的，对画质的要求也没那么大了。而且4K的图标实在是太小了，眼睛看的难受。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4676",
+      "text": "这么说吧。。我好几部手机，苹果12PM，14PM，OPPOR17，索尼马克兔，马克兔2，红米。。现在出门带马克兔2和14PM。玩游戏看视频从来都是马克兔4K屏幕。。因为太细腻了。尤其是我用SNAPTUBE看外国4K视频大片那更是太爽了。。因为不是4K屏幕根本无法播放",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4677",
+      "text": "4K的大表哥2，和2K的完全是两个时代的游戏[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4680",
+      "text": "4k没用过，从1080p120hz换电脑升级到了2k180hz，全高老头环，简直是两个世界[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4681",
+      "text": "你说这个应该不是视频清晰度，而是屏幕分辨率的高画质中画质吧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4682",
+      "text": "如果是4K 极致的话，需要什么样的显卡能带动。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4684",
+      "text": "我也是2070S  ，我也是2K 屏幕，感觉2070S 开不了魔兽5档画质的4K",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4685",
+      "text": "我用3070TI带的4K 60[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4686",
+      "text": "同感。同一显示器开4K中画视觉效果远强过2K高画。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4689",
+      "text": "你这得把一批显卡焦虑的人整崩溃，我在抖音上说我3070TI用的4K屏爽的要死被人各种喷[大笑]，我主要玩使命召唤，用了4K屏画质、帧数依然达到预期。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4691",
+      "text": "我是不是一步到位太过了，我是从34寸34401440的带鱼屏升级到55寸3840*2160的4k，感觉画质还变差了，没有原来的清楚，是屏幕太大了吗。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4692",
+      "text": "我还是慢慢升 刚刚升到2k 我要体验逐步升级的快感 一开始就拥有劳斯莱斯 收获不到边际效应的快乐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4698",
+      "text": "只说4K和1080P，不讲尺寸和观看距离是没有意义的。 如果是60寸电视，正常的3米多的观看距离，我都觉得差距不大，你得走到1米那么近，发现差距好明显。显示器的话，到27寸了，这两个就已经天差地别了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4700",
+      "text": "体验下九千多的明基EX321UX莫比乌斯3A专用显示器，即便同样是4k高刷显示器，也是天差地别的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4706",
+      "text": "27寸4K显示器我就是觉得字体和UI太小了，可能4K要用32寸以上的显示器才OK",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4708",
+      "text": "上班就是1080P，下班就是4K，可能我适应性比较强吧[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4711",
+      "text": "我两台电脑，一台接27-4k，一台24-FHD，屏幕都挨着放的看FHD是真难受，但又舍不得送人，也没买新的4k[捂脸]，能省则省了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4712",
+      "text": "4k显示器看视频打开gpu super resolution效果就很明显了更别提原生4k",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4714",
+      "text": "我是4090，4k真的有游戏跑不爽，2077就是因为这个不想打开[小情绪]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4718",
+      "text": "最近在用4k游戏电视玩古墓暗影，可惜显卡只有HDMI 2.0接口，上不去电视机的4k120hz，不过本身2080下古墓暗影也只能到四五十帧，改天调低画质试试看，要是有明显区别可能就要考虑买4070 ti super 了[大笑][大笑][大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4722",
+      "text": "24寸 2k分辨率，，27+寸 4K",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4724",
+      "text": "还是看个人习惯吧，玩3A低于60帧是真的卡，120帧我个人属于流畅玩的舒服的那种。我的4060TI，开4K玩赛博朋克卡的我是真的晕，最后我又换回2K能稳120左右，玩的就舒服多了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4726",
+      "text": "请教大佬我现在是2K屏，刚搞了张4090，有必要换个4K屏吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4727",
+      "text": "4K 24寸看文字舒服[害羞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4728",
+      "text": "所以我喜欢看电影的，但是电影的视频资源不是很多哦，用4k看1080p的电影会不会画面更模糊？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4729",
+      "text": "我从24寸1080p升级为32寸2K感观毫无区别，而且感觉字小了，看不太清楚了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4736",
+      "text": "3070TI能带动4K游戏么？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4740",
+      "text": "刚2k换4k一个月，没说的这么震撼，可能是我最近主要玩fps游戏，画质提示感受不明显。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4742",
+      "text": "其实我自己，用3060 12G，玩32英寸4K游戏。也是可以玩的，细细调一下游戏设置，真的挺不错的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4745",
+      "text": "4k对于显卡压力还是很大 虽然可以田忌赛马 中画质 来玩，能上4K就上4k，哪怕不玩游戏，纯看片子也爽多了，也可以弄两个显示器",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

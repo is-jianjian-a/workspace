@@ -1,0 +1,28 @@
+{
+  "step_id": "project-init",
+  "step_name": "项目初始化",
+  "version": 1,
+  "timestamp": "2026-05-15T09:39:46.098253",
+  "status": "completed",
+  "input": {
+    "files": [],
+    "checksum": null
+  },
+  "code": {
+    "file": "templates/init_project.py",
+    "checksum": null
+  },
+  "output": {
+    "files": [
+      "00-meta/project.json",
+      "00-meta/workflow-definition.html",
+      "01-search-design/search-keywords-template.md"
+    ],
+    "checksums": {}
+  },
+  "parameters": {
+    "topic": "手机视频场景用户诉求与体验断点研究",
+    "platforms": "xhs,bilibili,zhihu"
+  },
+  "notes": "项目目录结构创建完成"
+}

@@ -1,0 +1,596 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下42条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 56/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_253
+平台: zhihu
+类型: comments
+内容: 视频简单些，读书需要更多的思考
+
+--- ITEM #2 ---
+ID: zhihu_comments_255
+平台: zhihu
+类型: comments
+内容: 写得真好，短视频从各维度俘获我们的注意力和时间，需要有意识地剥离
+
+--- ITEM #3 ---
+ID: zhihu_comments_258
+平台: zhihu
+类型: comments
+内容: 大脑是个小孩，追求快乐是本能。如果放任，就会一直追求快乐，胃口还会变得越来越大，这也就是为什么刷完短视频停止后会感到空虚。
+
+--- ITEM #4 ---
+ID: zhihu_comments_260
+平台: zhihu
+类型: comments
+内容: 看短视频和看书啥的都一样没问题喜欢就行
+
+--- ITEM #5 ---
+ID: zhihu_comments_265
+平台: zhihu
+类型: comments
+内容: 戒了n次短视频，继续努力[握手]
+
+--- ITEM #6 ---
+ID: zhihu_comments_269
+平台: zhihu
+类型: comments
+内容: 还有删减呢，你升级多高的会员都没用[尴尬]
+
+--- ITEM #7 ---
+ID: zhihu_comments_270
+平台: zhihu
+类型: comments
+内容: 爱奇艺开了会员还是会有弹窗广告，而且很容易误触，按了叉还是会进入广告界面。暂停的时候为了看一下细节，结果界面缩小，放大广告，真的无语了。
+
+--- ITEM #8 ---
+ID: zhihu_comments_272
+平台: zhihu
+类型: comments
+内容: 而且花多少钱都去不掉内容内的广告[doge]这个盗版都贴心的帮你去掉了。
+
+--- ITEM #9 ---
+ID: zhihu_comments_274
+平台: zhihu
+类型: comments
+内容: 盗版唯一的坏处就是赌场广告[大哭]。最大的好处是没有分级，想看啥都有。
+
+--- ITEM #10 ---
+ID: zhihu_comments_276
+平台: zhihu
+类型: comments
+内容: b站广告是几乎没有的，或者说即使有，也很友善
+
+--- ITEM #11 ---
+ID: zhihu_comments_278
+平台: zhihu
+类型: comments
+内容: 盗版全高清4K，爱奇艺会员就搞笑了，想看最高帧率还得升级最恶心的是开黄金会员还有会员专属广告，以前我开了好几年的，一气之下卸载转威尼斯人了
+
+--- ITEM #12 ---
+ID: zhihu_comments_279
+平台: zhihu
+类型: comments
+内容: 盗版视频怎么没广告看到激动时“澳门新普京……”[酷]
+
+--- ITEM #13 ---
+ID: zhihu_comments_280
+平台: zhihu
+类型: comments
+内容: 要4K普通会员还得升级[捂脸]
+
+--- ITEM #14 ---
+ID: zhihu_comments_281
+平台: zhihu
+类型: comments
+内容: 正版自带广告，盗版可以给你删减了广告
+
+--- ITEM #15 ---
+ID: zhihu_comments_283
+平台: zhihu
+类型: comments
+内容: 我现在都是在网站收藏到网盘，直接在网盘里看，清晰，片全，又没广告
+
+--- ITEM #16 ---
+ID: zhihu_comments_285
+平台: zhihu
+类型: comments
+内容: VIP还看不了4K还得SVIP才行   真是逆天   我TMD直接看盗版不要钱的4K不香吗
+
+--- ITEM #17 ---
+ID: zhihu_comments_287
+平台: zhihu
+类型: comments
+内容: 国家为什么允许短剧播放？
+
+--- ITEM #18 ---
+ID: zhihu_comments_291
+平台: zhihu
+类型: comments
+内容: 我根本就没下抖音 但是还是天天在微信里刷 [大哭]
+
+--- ITEM #19 ---
+ID: zhihu_comments_293
+平台: zhihu
+类型: comments
+内容: 没用，现在就连天气预报app里面都有短视频，地图软件也是，一不注意就又看上了
+
+--- ITEM #20 ---
+ID: zhihu_comments_302
+平台: zhihu
+类型: comments
+内容: [捂脸]不得不纠正一下，15年是快手，抖音是17年整合了内涵段子，才有的
+
+--- ITEM #21 ---
+ID: zhihu_comments_304
+平台: zhihu
+类型: comments
+内容: 抖音看多了会腻，全都是视频看的很累，后面我看小红书，小红书图文多，最后连小红书都不看了，现在我只看知乎。哈哈哈
+
+--- ITEM #22 ---
+ID: zhihu_comments_305
+平台: zhihu
+类型: comments
+内容: 人家写的传世神作都是抖音出来之前就写出来的[吃瓜]真论起来还是有影响的
+
+--- ITEM #23 ---
+ID: zhihu_comments_306
+平台: zhihu
+类型: comments
+内容: 哈哈，我现在也有种看知乎跟抖音没什么区别，我也不看抖音，抖音刚出那会我下载过，大晚上的一头扎进去看了俩小时，我一抬头，天哪，已经这么晚了，可我感觉我才刷了5分钟啊瞬间感觉这玩意太费时间了，当天晚上就果断卸载了，一直再没看过。直到后来微信视频号，百度视频号，各种视频号无孔不入，我也开始刷起了视频，不过我刷的是微信视频号再后来上班吧摸鱼时候刷视频号不方便，在办公室又不能开声音，又不好带耳机，所以就刷起了知乎，一般是上班摸鱼时候刷慢慢的把这当个树洞，也开始写起来，参加知乎打卡，哈哈，吭哧吭哧累的要死，打卡完一丢丢盐粒，不过现在还参加着呢，倒逼自己输出吧，偶尔有感想了记录一下，算是比较松弛，因为也实在
+
+--- ITEM #24 ---
+ID: zhihu_comments_308
+平台: zhihu
+类型: comments
+内容: 关键是一切短视频平台都很无聊啊，所有碎片化的信息在我看来都毫无营养和趣味，就连坐地铁时我都宁愿发呆也不愿意打开手机
+
+--- ITEM #25 ---
+ID: zhihu_comments_309
+平台: zhihu
+类型: comments
+内容: 他不刷抖音能写出《卢克明的微微一笑》这种作品吗
+
+--- ITEM #26 ---
+ID: zhihu_comments_312
+平台: zhihu
+类型: comments
+内容: 不刷抖音的人可能在打麻将，喝大酒[捂脸]
+
+--- ITEM #27 ---
+ID: zhihu_comments_313
+平台: zhihu
+类型: comments
+内容: 但是现在抖音内容越来越差了
+
+--- ITEM #28 ---
+ID: zhihu_comments_314
+平台: zhihu
+类型: comments
+内容: 话说，余华写出大部分作品的时候，还没有职能手机，更没有抖音。[捂脸]
+
+--- ITEM #29 ---
+ID: zhihu_comments_315
+平台: zhihu
+类型: comments
+内容: “抖音精选”APP还可以，是长视频的
+
+--- ITEM #30 ---
+ID: zhihu_comments_316
+平台: zhihu
+类型: comments
+内容: 抖音被我刷成英语学习app[笑哭]
+
+--- ITEM #31 ---
+ID: zhihu_comments_319
+平台: zhihu
+类型: comments
+内容: 主動搜索抖音包含的有價值的信息會比知乎高很多，攻略、評測之類的。如果是漫無目的地刷，知乎滑起來會比抖更輕鬆一點，而且一眼就可以識別出垃圾信息然後劃掉，刷到垃圾視頻的在時間和注意力上沉沒成本就會高一些。
+
+--- ITEM #32 ---
+ID: zhihu_comments_320
+平台: zhihu
+类型: comments
+内容: 王朔：我现在每天刷10个小时短视频，视力都下降了，什么都干不下去，看会儿书刷会儿视频，我最近打算戒了
+
+--- ITEM #33 ---
+ID: zhihu_comments_321
+平台: zhihu
+类型: comments
+内容: 真正强大的民族从来不遮掩历史，真正强大的人不惧手机里的APP[大笑]
+
+--- ITEM #34 ---
+ID: zhihu_comments_322
+平台: zhihu
+类型: comments
+内容: 余叔叔和童叔叔，都有抖音号[捂脸]
+
+--- ITEM #35 ---
+ID: zhihu_comments_323
+平台: zhihu
+类型: comments
+内容: 15年没有抖音，18年投嘻哈才火的
+
+--- ITEM #36 ---
+ID: zhihu_comments_324
+平台: zhihu
+类型: comments
+内容: 每个人都是自己的主编，视频在那，看什么全都是由自己选择。
+
+--- ITEM #37 ---
+ID: zhihu_comments_326
+平台: zhihu
+类型: comments
+内容: 刷知乎和刷抖音怎么会一样呢？刷知乎不会功放发出声音。不影响我你刷马桶都行。
+
+--- ITEM #38 ---
+ID: zhihu_comments_328
+平台: zhihu
+类型: comments
+内容: 看  我手机上没下载  偶尔看看微信视频 下班回家会刷上一两个小时，但是会强制自己退出不看，感觉真容易上瘾
+
+--- ITEM #39 ---
+ID: zhihu_comments_329
+平台: zhihu
+类型: comments
+内容: 抖音和电车是测试智商两大神器
+
+--- ITEM #40 ---
+ID: zhihu_comments_330
+平台: zhihu
+类型: comments
+内容: 嗐，刷个抖音还要有目的的刷么。。。不都是逗乐的么短视频不分题材的，几乎就是一大抄，大同小异的文案，大同小异的特效，真假不知道，捧着一个信息源，反复吞咽，几乎都没啥营养。你要抱着学习的态度，你就学废了。这种东西就是没事的时候，漫无目的的刷刷看看，可能还能看到些有用的信息。
+
+--- ITEM #41 ---
+ID: zhihu_comments_331
+平台: zhihu
+类型: comments
+内容: 不喜欢抖音的原因是一些人在公共场合刷着抖音，抖音里面那个笑声像傻子一样，真的无语。
+
+--- ITEM #42 ---
+ID: zhihu_comments_333
+平台: zhihu
+类型: comments
+内容: b站号称小youtube，下饭神器，但都是长视频
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_056
+
+开始分析：

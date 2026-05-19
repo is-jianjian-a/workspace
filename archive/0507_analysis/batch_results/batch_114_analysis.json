@@ -1,0 +1,197 @@
+{
+  "batch_id": 114,
+  "total_items": 14,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 14
+    },
+    "type_distribution": {
+      "behavior_description": 12,
+      "pain_point": 2
+    },
+    "topic_distribution": {
+      "payment_member": 1,
+      "download_cache": 2,
+      "video_quality": 3,
+      "other": 6,
+      "ai_feature": 1,
+      "subtitle_translate": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 2,
+      "implicit": 0,
+      "not_ai": 12
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4835",
+      "text": "这些游戏在哪里下，有没有链接，可以付费",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4836",
+      "text": "在哪里下载[大哭][大哭][大哭]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4837",
+      "text": "甜心选择很好ROOM GIRL 垃圾 体味 还是那几个不如那个海岛 收集东西的好玩不过可以男女主切换 倒是有点新意 但是优化太辣鸡了 加载好半天啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4852",
+      "text": "时隔两年评论下，不管你期待不期待i社新作。它没了你惋惜不惋惜吧[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4858",
+      "text": "我朋友玩我手机点了个收藏 真是的！[生气]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4865",
+      "text": "db4，现在看起来画质是渣，战斗简直是胡闹，但是情节场景和音乐都是神作。而后来连音乐都懒得重做，db4的到处用",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4872",
+      "text": "小时候家里电脑差，我玩欲望之血还是啥的那个格斗游戏，卡成ppt了还坚持玩了好几天[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4873",
+      "text": "还有那些渠道网盘可以下载吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4879",
+      "text": "感觉耐玩一点的，人工少女3和AI少女好一点吧[酷][酷][酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4885",
+      "text": "我小时候买欲望之血时是真的当成普通游戏买的，因为开始很正经。。我还让我妈看这游戏做的是多么细节，人物idle时还会坐下来。后来玩着玩着发现不对，幸亏家长没发现，后来我都是没人的时候玩这游戏。。二十几年前。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4887",
+      "text": "现在不是流行真人游戏了吗，几十个G，还挺好玩的~比如《定制女友》这个是正规军~不是嘿嘿嘿的哈~[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4891",
+      "text": "这我要吹下a社的兰斯10，作为黄油，游戏性好到爆炸，我当时打着打着快进cg通宵了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4904",
+      "text": "我记得当时还尝试提取文本自己翻译汉化来着, 也不知道现在如何了, 我觉得最好的汉化方式还是外挂的方式, 最好是图像识别自动翻译, 如果有AI来搞就更好了.",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "subtitle_translate",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4905",
+      "text": "那时候对电脑配置没啥概念，买了张 监禁 对着封面流口水，回家折腾了半天，进游戏只能进标题，游戏偶尔加载进去了，也根本动不了，一会就黑屏，当时急得抓耳挠腮，还在那咒骂奸商卖的盘不好。[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

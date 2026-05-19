@@ -1,0 +1,39 @@
+{
+  "phase": "phase1",
+  "topic": "手机视频场景用户诉求与体验断点研究",
+  "description": "正交搭配：场景词/平台词/行为词 × 功能/缺点/体验词。不预设具体功能方向，让用户的真实表达决定主题分布。从手机系统层面出发，非APP功能层面。",
+  "keywords": [
+    {"word": "抖音 功能", "scene": "抖音", "type": "功能", "priority": "P0"},
+    {"word": "抖音 缺点", "scene": "抖音", "type": "缺点", "priority": "P0"},
+    {"word": "抖音 不好用", "scene": "抖音", "type": "不好用", "priority": "P0"},
+    {"word": "抖音 问题", "scene": "抖音", "type": "问题", "priority": "P0"},
+    {"word": "B站 功能", "scene": "B站", "type": "功能", "priority": "P0"},
+    {"word": "B站 缺点", "scene": "B站", "type": "缺点", "priority": "P0"},
+    {"word": "B站 不好用", "scene": "B站", "type": "不好用", "priority": "P0"},
+    {"word": "B站 问题", "scene": "B站", "type": "问题", "priority": "P0"},
+    {"word": "小红书 功能", "scene": "小红书", "type": "功能", "priority": "P0"},
+    {"word": "小红书 缺点", "scene": "小红书", "type": "缺点", "priority": "P0"},
+    {"word": "小红书 不好用", "scene": "小红书", "type": "不好用", "priority": "P0"},
+    {"word": "小红书 问题", "scene": "小红书", "type": "问题", "priority": "P0"},
+    {"word": "视频号 功能", "scene": "视频号", "type": "功能", "priority": "P0"},
+    {"word": "视频号 缺点", "scene": "视频号", "type": "缺点", "priority": "P0"},
+    {"word": "视频号 不好用", "scene": "视频号", "type": "不好用", "priority": "P0"},
+    {"word": "视频号 问题", "scene": "视频号", "type": "问题", "priority": "P0"},
+    {"word": "快手 功能", "scene": "快手", "type": "功能", "priority": "P0"},
+    {"word": "快手 缺点", "scene": "快手", "type": "缺点", "priority": "P0"},
+    {"word": "快手 不好用", "scene": "快手", "type": "不好用", "priority": "P0"},
+    {"word": "快手 问题", "scene": "快手", "type": "问题", "priority": "P0"},
+    {"word": "手机看视频 功能", "scene": "手机看视频", "type": "功能", "priority": "P0"},
+    {"word": "手机看视频 缺点", "scene": "手机看视频", "type": "缺点", "priority": "P0"},
+    {"word": "手机看视频 问题", "scene": "手机看视频", "type": "问题", "priority": "P0"},
+    {"word": "刷视频 功能", "scene": "刷视频", "type": "功能", "priority": "P0"},
+    {"word": "刷视频 缺点", "scene": "刷视频", "type": "缺点", "priority": "P0"},
+    {"word": "刷视频 问题", "scene": "刷视频", "type": "问题", "priority": "P0"}
+  ],
+  "total_count": 26,
+  "coverage_check": {
+    "platforms": ["抖音", "B站", "小红书", "视频号", "快手"],
+    "generic_behaviors": ["手机看视频", "刷视频"],
+    "query_types": ["功能", "缺点", "不好用", "问题"]
+  }
+}

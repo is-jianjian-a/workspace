@@ -1,0 +1,23 @@
+{
+  "data_source": "/Users/zhijian/workspace/MediaCrawler/database/sqlite_tables.db",
+  "export_time": "2026-05-18T19:05:00+08:00",
+  "platforms": {
+    "xhs": {
+      "source_keywords": ["孕期", "产后", "早教", "备孕", "育儿"],
+      "notes_count": 508,
+      "comments_count": 0,
+      "keyword_breakdown": {
+        "孕期": {"notes": 105},
+        "产后": {"notes": 104},
+        "早教": {"notes": 101},
+        "备孕": {"notes": 100},
+        "育儿": {"notes": 98}
+      },
+      "output_files": [
+        "02-raw-data/output/xhs_notes.json"
+      ]
+    }
+  },
+  "total_ugc": 508,
+  "notes": "数据来源于MediaCrawler历史采集，非本次实时采集。评论数据关联字段不匹配，暂无法导出评论。"
+}

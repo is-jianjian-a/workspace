@@ -1,0 +1,490 @@
+{
+  "batch_id": 71,
+  "total_items": 38,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 22,
+      "live_stream": 4,
+      "short_video": 10,
+      "long_video": 2
+    },
+    "type_distribution": {
+      "behavior_description": 29,
+      "positive_feedback": 3,
+      "pain_point": 5,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 31,
+      "playback_control": 2,
+      "content_recommend": 1,
+      "ai_feature": 1,
+      "video_quality": 2,
+      "download_cache": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 0,
+      "implicit": 3,
+      "not_ai": 35
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1424",
+      "text": "这倒提醒我了[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1427",
+      "text": "我25岁没谈过恋爱，女孩子手都没拉过，但几乎从来不看小姐姐跳舞或者擦边直播，就爱高强度刷知乎，有时候刷贴吧，这是怎么回事[好奇]比如现在是凌晨4:52。我就觉得文字特有意思，比擦边小姐姐有意思多了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1428",
+      "text": "刷抖音精选，刷知乎算不算[捂脸]感觉能学到不少呢。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1429",
+      "text": "我喜欢看小红书那些精致女的生活，是不是也是这种认知模式[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1434",
+      "text": "对啊，别人想看就看，我有时候也会看，偶尔还看看爽剧，但是我孩子我是绝对不会让他看的，玩游戏也比刷短视频强",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1437",
+      "text": "之前也看到一篇文章说，现在大街上拉帮结伙打群架的黄毛不见了，就是短视频的功劳",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1438",
+      "text": "会刷短视频，但那只是在工作状态下用于快速筛选已经被整合的信息时用的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1439",
+      "text": "说的像没有短视频的时代他们每天读半个小时书一样[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1441",
+      "text": "看视频是能及时满足快乐的一种麻药，让人失去意识。但是世界纷繁复杂，学习也并不是充实自身的唯一方式。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1442",
+      "text": "一般在情绪低落或放松一下的时候去刷短视频。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1444",
+      "text": "总结就是：结构性矛盾，和是否看短视频，奶头乐无关是吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1447",
+      "text": "我不看短视频的时候，我看小说[捂脸][捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1448",
+      "text": "我从来不刷短视频，平时娱乐主要是B站和知乎，但是我也很少利用碎片化时间去读书，虽然我看书也能看进去",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1449",
+      "text": "如果还有认知下降的空间，[飙泪笑]，这话说的太有意思了。十几秒的快刺激让人兴奋，甚至还有倍速，时间久了就接受不了正常的阅读、看电影或者其他的了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1461",
+      "text": "分析透彻。短视频占据大脑发呆的时间，占据人们聊天的时间，可是人们还自以为在休息，在放松。实际上看短视频的过程中，手没有停歇，眼睛没有休息，脑袋也在高速运转，情绪和内心也在不断变化，这是一种没有感觉到疲劳的疲劳。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1466",
+      "text": "我也是，我还以为是受电信限制了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1467",
+      "text": "叔叔偷你的带宽给自己发工资去了 无解",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1468",
+      "text": "cmd里的ping是icmp ping，可能检测工具用的是httping",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1469",
+      "text": "油猴：make bilibili great again",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1474",
+      "text": "9000系专业卡有32G版本，R9700就是32GB GDDR6，售价一万",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1475",
+      "text": "你是没因为显存吃过亏啊，我从1080换到3080的时候，别人也说玩游戏显存小点无所谓10G够用了，结果呢，现在打游戏纹理拉高点设置页面就告诉我会爆显存[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1478",
+      "text": "[酷]一直用A卡AU，从7870用到9070xt，cpu从2600用到9700x，但是别人求我推荐硬件，我会推荐IU和N卡，除了缩缸那一代，剩下的不好用就是他自己的问题。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1481",
+      "text": "然后再学会调日期 就可以看了。播放后 再把时间自动回来",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1484",
+      "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1485",
+      "text": "我一直用Chrome，测速正常，看视频就卡",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1486",
+      "text": "可是，我用的是手机bilibili啊！校园网，网速8M/s，但是看个视频课就20KB的加载？！[好奇]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1495",
+      "text": "纯粹是B站视频质量不行，我用2K看油管和B站，同是1080p，B站就没有油管质量高，码率也是影响视频质量的重要因素，也很可能是为了减少存储成本，对视频有压缩~~~",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1497",
+      "text": "“看个直播比我1080p的显示器糊多了”有没有一种可能，是你的片源太差？ [捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1498",
+      "text": "4K也糊，除非用4K片源，最主要透光太严重了，买了一个又退了，看片还不如我的老显示器",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1500",
+      "text": "2K主要是性价比高，现在2K高刷才五六百，不光是显示器，打游戏显卡也不需要太好的，4K纯吃显卡，比1080P清楚一些，预算不够比较折中的方案。当年最后悔的就是搞了一台2K高刷的ITX主机，食之无味弃之可惜，现在itx被我搞成nas，显示器被我做副屏了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1501",
+      "text": "正经人都用4K60Hz",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1503",
+      "text": "2k看直播1080码率低的主播是真的糊，不过有些主播有2k画质，那看起来是真爽",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1504",
+      "text": "其实我想请教一下为什么很多人不考虑4K屏幕然后玩游戏选择窗口2560x1440（2K），我觉得这样玩也还行只是少点沉浸感",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1505",
+      "text": "“看个直播比我1080p的显示器糊多了”有没有一种可能，是你的片源太差？ [捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1506",
+      "text": "主屏2k副屏1080，看1080的视频还是主屏舒服",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1507",
+      "text": "不太看视频，休闲主要玩游戏和看网页，工作画CAD，excel，电路图。尤其是要竖屏. 看网页效果很爽。我喜欢2k的。我接两个2k的显示器一横一竖。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1509",
+      "text": "赞同  2k除了打游戏 日常体验太差了 当然 1080p也不好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1510",
+      "text": "你可以让mac配个better display ，让mac输出1080p HiDPI转到2k上，我就是这么设置的，清楚的要命，甚至我觉得比原生4k都清楚。win就比较麻烦",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

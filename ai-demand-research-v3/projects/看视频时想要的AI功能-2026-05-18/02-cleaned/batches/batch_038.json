@@ -1,0 +1,98 @@
+{
+  "batch_id": 38,
+  "start_idx": 370,
+  "end_idx": 380,
+  "total_batches": 53,
+  "ugcs": [
+    {
+      "id": "116237803723660",
+      "platform": "bili",
+      "title": "做好AI视频，不止是会“AI工具”！",
+      "content": "我发现身边很多人都陷入了一种“AI工具焦虑”：刚学会一个工具的流程，新的模型又出来了，总觉得自己来不及学。\n\n这期视频想聊聊：在AI时代，比“学工具”更重要的5件事。\n\nPS：这期全程口播，没有加一个花字。我觉得在AI时代，口播视频的表达方式，也该换一换啦～",
+      "liked_count": 983,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "做好AI视频，不止是会“AI工具”！\n我发现身边很多人都陷入了一种“AI工具焦虑”：刚学会一个工具的流程，新的模型又出来了，总觉得自己来不及学。\n\n这期视频想聊聊：在AI时代，比“学工具”更重要的5件事。\n\nPS：这期全程口播，没有加一个花字。我觉得在AI时代，口播视频的表达方式，也该换一换啦～"
+    },
+    {
+      "id": "116213006995806",
+      "platform": "bili",
+      "title": "大黄AI剧《红墙3.1》后面彩蛋...【B站AI创作大赛-开放赛道】",
+      "content": "这应该是我所有剧里面尺度最大的了~AI估计被我整崩溃了...\n这次的模型出图老规矩BANANA PRO 视频这次单出VEO3.1\n因为上班的缘故这个做了将近4天。前面李弘的剧情做的有一丢丢粗糙，实在是没时间改了……为了保证内容和质感，之后可能会差不多1周内更新一次。希望大家多多关注，一键三连哦！！！！！！",
+      "liked_count": 1242,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "大黄AI剧《红墙3.1》后面彩蛋...【B站AI创作大赛-开放赛道】\n这应该是我所有剧里面尺度最大的了~AI估计被我整崩溃了...\n这次的模型出图老规矩BANANA PRO 视频这次单出VEO3.1\n因为上班的缘故这个做了将近4天。前面李弘的剧情做的有一丢丢粗糙，实在是没时间改了……为了保证内容和质感，之后可能会差不多1周内更新一次。希望大家多多关注，一键三连哦！！！！！！"
+    },
+    {
+      "id": "116363834170718",
+      "platform": "bili",
+      "title": "我成功让AI自动剪视频！Skill免费领取，你立刻就能体验！",
+      "content": "本期视频，我会先分享自己如何跟AI沟通，并让它帮我完成一个想法。\n这样大家也可以学习我的沟通方式（我的方式不是最佳的！），起到一个抱砖引玉吧！\n-\n然后我让Claude根据它制作的这套AI自动剪辑视频的工作流，完成了一个Skill的制作。\n项目已经开源，大家可以免费获得。\n项目：https://github.com/DayadaUP/claude-code-auto-video-edit\n如果你不会安装，可以去拿到项目地址，直接给你的claude或者openclaw什么的，让它帮你下载以及使用。\n-\nAI会根据你在视频中说出的剪辑指令来完成剪辑，并制作一份SRT字幕文件。\n剪辑效果，我认为要根据AI模型的能力为准，目前我使用Claude，已经可以自动理解我的内容并完成叙事顺序重排。\n处理过程的速度更多依赖视频文件大小以及电脑性能。\n具体说明可以看README。",
+      "liked_count": 408,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "我成功让AI自动剪视频！Skill免费领取，你立刻就能体验！\n本期视频，我会先分享自己如何跟AI沟通，并让它帮我完成一个想法。\n这样大家也可以学习我的沟通方式（我的方式不是最佳的！），起到一个抱砖引玉吧！\n-\n然后我让Claude根据它制作的这套AI自动剪辑视频的工作流，完成了一个Skill的制作。\n项目已经开源，大家可以免费获得。\n项目：https://github.com/DayadaUP/claude-code-auto-video-edit\n如果你不会安装，可以去拿到项目地址，直接给你的claude或者openclaw什么的，让它帮你下载以及使用。\n-\nAI会根据你在视频中说出的剪辑指令来完成剪辑，并制作一份SRT字幕文件。\n剪辑效果，我认为要根据AI模型的能力为准，目前我使用Claude，已经可以自动理解我的内容并完成叙事顺序重排。\n处理过程的速度更多依赖视频文件大小以及电脑性能。\n具体说明可以看README。"
+    },
+    {
+      "id": "116532512295692",
+      "platform": "bili",
+      "title": "🔥【2026最新】AI生成美女舞蹈视频涨粉10万+AI工作流教程  | 免费一键生成舞蹈视频",
+      "content": "AI一键生成美女舞蹈视频工作流\n云端一键部署，免费使用。",
+      "liked_count": 143,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "🔥【2026最新】AI生成美女舞蹈视频涨粉10万+AI工作流教程  | 免费一键生成舞蹈视频\nAI一键生成美女舞蹈视频工作流\n云端一键部署，免费使用。"
+    },
+    {
+      "id": "114912856641023",
+      "platform": "bili",
+      "title": "当AI能时刻盯着我的电脑屏幕、读取我的软件数据...",
+      "content": "豆包电脑版能看见东西了！随时可以查看你的屏幕，还能一边共享屏幕一边语音通话，写作、视频分析功能也更进一步",
+      "liked_count": 5411,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "当AI能时刻盯着我的电脑屏幕、读取我的软件数据...\n豆包电脑版能看见东西了！随时可以查看你的屏幕，还能一边共享屏幕一边语音通话，写作、视频分析功能也更进一步"
+    },
+    {
+      "id": "116328266471178",
+      "platform": "bili",
+      "title": "【超简单】本地化AI视频总结（支持点击跳转）",
+      "content": "预备工具：Obsidian仓库 + 任何可以运行Skill，支持Agent功能的AI工具（本视频使用OpenCode）\nVideoCaptioner(字幕转录)：http://www.videocaptioner.cn/\nSkill文件：\nBdu：https://pan.baidu.com/s/5CZZcyOmBNPSvkv4R2y2KIw\nQuark：链接：https://pan.quark.cn/s/c3506ff3f29a?pwd=gk7C 提取码：gk7C\nObsidian：https://obsidian.md/\nOpenCode：https://opencode.ai/\nmedia-extended(Obsidian插件)：https://github.com/aidenlx/media-extended\n---\n本视频主要是技术思路分享，实际技术含量不高，总体思路如下：\n通过转录得到字幕文件，再借由字幕有时间戳的特点让AI进行总结\n总结的文件修改绑定跳转链接，并且由 media-extended 插件帮助在 Obsidian 内播放\n---\n任何疑惑或建议欢迎在评论区留言",
+      "liked_count": 99,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "【超简单】本地化AI视频总结（支持点击跳转）\n预备工具：Obsidian仓库 + 任何可以运行Skill，支持Agent功能的AI工具（本视频使用OpenCode）\nVideoCaptioner(字幕转录)：http://www.videocaptioner.cn/\nSkill文件：\nBdu：https://pan.baidu.com/s/5CZZcyOmBNPSvkv4R2y2KIw\nQuark：链接：https://pan.quark.cn/s/c3506ff3f29a?pwd=gk7C 提取码：gk7C\nObsidian：https://obsidian.md/\nOpenCode：https://opencode.ai/\nmedia-extended(Obsidian插件)：https://github.com/aidenlx/media-extended\n---\n本视频主要是技术思路分享，实际技术含量不高，总体思路如下：\n通过转录得到字幕文件，再借由字幕有时间戳的特点让AI进行总结\n总结的文件修改绑定跳转链接，并且由 media-extended 插件帮助在 Obsidian 内播放\n---\n任何疑惑或建议欢迎在评论区留言"
+    },
+    {
+      "id": "116350294956030",
+      "platform": "bili",
+      "title": "AI真正的意义！",
+      "content": "-",
+      "liked_count": 3064,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "AI真正的意义！\n-"
+    },
+    {
+      "id": "116169369454540",
+      "platform": "bili",
+      "title": "【全50集】吊打付费！目前B站最全最细的AI视频制作保姆级教程！2026最新版AI视频生成全流程教学！七天就能从小白到大神！带你从零基础入门到精通实现商业变现！",
+      "content": "置顶评论领取学习资料哦~ 想要系统学习AI视频的小伙伴，学习辅助资料为你们整理好了，记得来领哦(´-ω-`) \n内含: 《影片美术设计》《优秀脚本设计》《AI角色一致性控制》《AI影视动画分镜入门》《AI配音全攻略》 \n①AI剧本创作agent分享 \n②人物设定工作流【免费分享】 \n③场景设定多角度切换工作流【免费分享】 \n④AI动态漫付费模型分享【2TB】 \n⑤逼真的AI配音软件分享【安装包】 \n⑥影视级4K视频放大工具分享【免费版】 \n⑦5000+分镜画面提示词、500+视频风格化提示词、300个AI视频脚本分镜模板【免费分享】",
+      "liked_count": 2684,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "【全50集】吊打付费！目前B站最全最细的AI视频制作保姆级教程！2026最新版AI视频生成全流程教学！七天就能从小白到大神！带你从零基础入门到精通实现商业变现！\n置顶评论领取学习资料哦~ 想要系统学习AI视频的小伙伴，学习辅助资料为你们整理好了，记得来领哦(´-ω-`) \n内含: 《影片美术设计》《优秀脚本设计》《AI角色一致性控制》《AI影视动画分镜入门》《AI配音全攻略》 \n①AI剧本创作agent分享 \n②人物设定工作流【免费分享】 \n③场景设定多角度切换工作流【免费分享】 \n④AI动态漫付费模型分享【2TB】 \n⑤逼真的AI配音软件分享【安装包】 \n⑥影视级4K视频放大工具分享【免费版】 \n⑦5000+分镜画面提示词、500+视频风格化提示词、300个AI视频脚本分镜模板【免费分享】"
+    },
+    {
+      "id": "114137145280042",
+      "platform": "bili",
+      "title": "人工智能AI视频全新玩法来啦！3个新功能一个比一个炸！！！！",
+      "content": "AI生成视频再出王炸！极度爆炸的视频生成，这3个新功能一个比一个炸~（附插件）",
+      "liked_count": 8,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "人工智能AI视频全新玩法来啦！3个新功能一个比一个炸！！！！\nAI生成视频再出王炸！极度爆炸的视频生成，这3个新功能一个比一个炸~（附插件）"
+    },
+    {
+      "id": "1753735373",
+      "platform": "bili",
+      "title": "绅士必备，老司机狂喜的Ai软件",
+      "content": "云界AI网站：https://yunjie.art/register?channel=3\n更多GPT会员：https://nf.video/iG0KR",
+      "liked_count": 833,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "绅士必备，老司机狂喜的Ai软件\n云界AI网站：https://yunjie.art/register?channel=3\n更多GPT会员：https://nf.video/iG0KR"
+    }
+  ]
+}

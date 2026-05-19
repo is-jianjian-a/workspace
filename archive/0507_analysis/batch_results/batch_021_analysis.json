@@ -1,0 +1,354 @@
+{
+  "batch_id": 21,
+  "total_items": 27,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 15,
+      "short_video": 11,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "feature_request": 2,
+      "behavior_description": 23,
+      "positive_feedback": 1,
+      "pain_point": 1
+    },
+    "topic_distribution": {
+      "other": 25,
+      "screen_cast": 1,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 27
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_639",
+      "text": "建议不适用手机，多多使用电脑，直接可以断掉大拇指向上滑动视频。使用电脑键盘上网可以做到掌握自己得注意力。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_640",
+      "text": "短视频我感觉比游戏还可怕[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_641",
+      "text": "尤其对于大学生和读书的人，千万不要因为短视频荒废学业啊，每天的时间真的很有限，为什么不能把时间用在自己喜欢的游戏影视上面而是在这些无趣又上瘾的短视频呢，刷两个小时短视频后感觉不到多少快乐，这个时间已经能看一部电影了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_642",
+      "text": "突然想到了一个绝妙的戒掉短视频的方法——做视频博主\n有个理论就是干一行恨一行（by me）\n最早的时候触屏手机是没有普及的，我压根就没有短视频看，所以我沉迷看小说\n上课看，下课看，放学还看，看完不写作业的那种\n现在我自己当了作者，一看小说就要被动分析到底哪里写得好，一分析就打断了上瘾途径，然后就走神不看了\n更别说现在一想到怎么变现就一个头比两个大，已经很久不看小说了（改追剧了  该死我去学做编剧算",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_643",
+      "text": "为了少刷视频 我买了个switch。是的 没开玩笑 我真是为了这个目的才买的[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_644",
+      "text": "短视频真的害人，每次放学回家寻思花几个小时把作业写完再说，结果一刷就是一两个小时，最后作业写到半夜[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_645",
+      "text": "短视频我感觉比游戏跟小说危害还大，因为我一刷短视频如果是放假，那说不定要刷半天，甚至可能把吃饭时间延迟了，但游戏不会，我玩游戏，超过两个小时就玩不下去了，得换一个游戏，看小说之前我会沉迷其中，但现在不知道是年纪大了还是怎么回事，没法带入里面了，小说跟游戏还能给我带来快乐，不纯粹是打磨时间，但短视频不同，看久了没有一点收获，甚至感觉脑袋都变得迟钝了，头晕脑胀的，自己还不知道时间已经过去很久了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_646",
+      "text": "最近看到信息斋戒，确实应该这么做\n以前我在找工作的时候，会先来小红书搜索面试经验，但是后来我发现它会源源不断的给我推送很多贩卖焦虑的帖子。比如说有哪些大佬，他们手握了几十个 offer，似乎在网络上，每个人都可以轻轻松松的就获得我想要的机会。这让我陷入了非常强烈的无助和焦虑中，真的是我太差劲了吗？为什么大家都可以拥有这么好的工作机会，而我却不行呢？于是我就会一边焦虑，又一边忍不住点开那些帖子去看，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_647",
+      "text": "这是能量调整过程中的正常反应 我们都在升纬 跟宇宙校准 情绪波动或者身体出现过敏 失眠都是正常的 很快就会好的[拥抱][爱心]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_648",
+      "text": "哇呜呜呜好好看的维多！！\n宇宙在提醒我 我要变美丽了[害羞]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_653",
+      "text": "唯多是天使么~我正烦躁着，这个视频就来了[喜欢]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_661",
+      "text": "呜呜呜呜我抑郁症，躯体化了，笑不出来哭不出来，最近回家心情好点，也知道自己搜点搞笑视频了，让我大笑了谢谢啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_663",
+      "text": "好长时间[笑哭]有点看累了，但又有点意思，毕竟有些没看过",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_667",
+      "text": "别啥东西都混进搞笑视频里，有的东西真的好笑吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_669",
+      "text": "同步率伯分之一伯[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_687",
+      "text": "之前分享的网址失效了[大哭][大哭][大哭][大哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_708",
+      "text": "从这种看似是娱乐的小视频中，我们能看到现代社会对于性话题的压抑 ，以至于产生如此病态的这种曲折的表达 还要将其解释为婉转 ，我十分痛心",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_712",
+      "text": "想看左边原视频 有名字嘛 00:07 [doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_714",
+      "text": "我家小孩没完没了的哭，放这个视频魔法对轰[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_728",
+      "text": "7:27\n太长了，直奔主题吧[doge]看完就走，气死up",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_730",
+      "text": "很棒，所以真的挺讨厌dy的，当时刷了一段时间，注意力记忆力下降，人也变得很不舒服。读书真的会让人很开心的，是发自内心的开心，是真真实实能感受到的开心。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_731",
+      "text": "我也不想刷短视频，但是总怕错过一些东西，比如chatgpt，对我的学习和工作效率真的很有帮助，如果不玩网络就不了解。再比如一些政策和导向，如果都不接触就怕与社会现实脱轨。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_732",
+      "text": "真的…这样怎么办，我已经因为短视频废掉了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_734",
+      "text": "很棒，我一直觉得短视频正在让大部分底层大众深陷其中不自知，资本收割着这些99%的普通大众的时间，精力和微薄的消费力。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_736",
+      "text": "刷短视频真的上瘾啊 我现在连游戏都懒得玩了 只想躺着刷抖音",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_737",
+      "text": "我喜欢刷B站是因为，b战的短视频刷的不上头，刷一下就感觉挺无聊的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_738",
+      "text": "别制造焦虑和平台对立了（虽然很多是观众自己对立）\n能考到清华，自制力这么差。多看点书提高认知，找到自己兴趣，转移注意力实在。\n我以前沉迷游戏，真正忙起来有个毛时间玩。\n以前怪游戏，怪赌博，现在怪短视频？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,585 @@
+{
+  "batch_id": 23,
+  "total_items": 46,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 41,
+      "short_video": 1,
+      "long_video": 4
+    },
+    "type_distribution": {
+      "behavior_description": 30,
+      "feature_request": 9,
+      "pain_point": 6,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 33,
+      "ai_feature": 3,
+      "playback_control": 1,
+      "video_quality": 7,
+      "content_recommend": 1,
+      "ad_experience": 1
+    },
+    "ai_statistics": {
+      "total_ai": 4,
+      "explicit": 1,
+      "implicit": 3,
+      "not_ai": 42
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_810",
+      "text": "正在偷偷写作业刷视频的我沉默了！拜拜！[调皮][调皮][调皮]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_811",
+      "text": "不玩手机，去做别的事情来转移注意力，而不是强行硬戒",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_815",
+      "text": "总结一下：\n1护眼模式有效果\n2拉满了会影响大脑思考，分辨物品\n结论：长期使用护眼不要拉满",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_816",
+      "text": "我手机一直使用的护眼模式，看习惯之后切换普通模式就会觉得太亮晃眼[笑哭]非常不适应",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_817",
+      "text": "视频总结如下：\n一、电子屏幕对眼睛的伤害以及护眼模式的作用和误区，同时讨论了蓝光的风险和护眼模式的原理，并提醒读者正确使用护眼模式。\n00:22 - 电子屏幕已经成为不可或缺的潜在黑，对眼睛有害。\n01:08 - 护眼模式可以预防眼睛疲劳，但错误使用会导致反效果。\n02:17 - 蓝光是潜在风险，但只有蓝紫光才会损伤视觉系统。\n\n二、屏幕色差对视疲劳的影响，以及视觉信息传递的过程。建议使用色差较小",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_818",
+      "text": "一天24小时，8小时留给工作，8小时留给睡眠，8小时留给手机",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_819",
+      "text": "手机电脑全都是深色模式 已经回不去了 话说马上2024年了 微信pc端什么时候出深色模式？？？@微信",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_821",
+      "text": "盲猜下期来一个看电脑屏幕太多比看手机更伤眼[吃瓜][吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_822",
+      "text": "是真的。我家这孩子没给爷买智能手机前，菜地里几乎都没草。买了手机后。菜地里几乎没有菜[笑哭][笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_823",
+      "text": "我觉得不是人对手机有瘾，而是人想找一个放松的地方，而手机是最有性价比的方式了，其他的娱乐方式不是刺激不够就是太贵。说白了还是钱包空空加上一堆烦心事导致的，有点钱的人反而不会天天刷手机。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_824",
+      "text": "建议开启老年人防沉迷模式",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_828",
+      "text": "当大人们说游戏动漫毁掉孩子的时候，殊不知他们自己也在被短视频侵蚀大脑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_830",
+      "text": "父母刷手机，草盛豆苗稀；小孩刷手机，嘴应脚不移。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_832",
+      "text": "睡前两个小时别扣手机，睡眠质量蹭蹭提高",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_836",
+      "text": "后台播放+单集循环+定时关闭，不用非要平躺（我鼻炎患者平躺上呼吸道不舒服[笑哭]），然后尽量什么不要想把面部和四肢放松即可，第一次开始可能时间有点长，过个两三次甚至不到三分钟你就会很容易睡着的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_839",
+      "text": "凌晨两点的我：在b站看怎么提高睡眠质量[OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_840",
+      "text": "有点尴尬的是，转发到同事群里几个姑娘说太色了更睡不着了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_843",
+      "text": "用相机拍视频拍多了之后是越来越想买台iPhone了，尤其是平常外出和旅游时候，相机真的太麻烦了（而且iPhone+MacBook可以很轻松地产出杜比视界/HDR内容）。顺便一提，感觉兄弟的声音适合做杂谈电台[MyGO_捕猎状态]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_844",
+      "text": "手机跟硬盘各装上磁吸贴不就行了吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_845",
+      "text": "其实apple log就是给你们的烟雾弹，互联网拍视频直出已经够用了，研究画质和调色，平台一压缩全没了🥲，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_847",
+      "text": "建议备份还是要遵循321原则，三份数据，两种介质，一处异地。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_848",
+      "text": "UP的视频更像是漫画或者动画的分镜风格，这是代入了自己的职业习惯的[doge_金箍]这个习惯挺好的。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_850",
+      "text": "UP主，我说个建议。\n一定，一定，要把NAS上的重要数据再备份到另一个位置，比如网盘、移动硬盘、另一个NAS。Raid不是备份，一定要做备份。\n\n很多人有误解，以为做了Riad6、Raid1数据就安全了。我举个例子，如果你的数据被某个软件或者你自己误删除了，或者中了加密病毒，Raid1两块硬盘上的数据会同时消失\n\n对普通人来说最简单的备份方式就是上传一份到网盘，如果担心隐私问题就加密后再上传网盘。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_851",
+      "text": "恭喜Up主啦！[给心心]\n\n不过以防万一还是提个醒，对于突然停电这种状况，RAID1，或者说所有RAID形式都不能从根本上解决问题，如果是在写入状态时的突然断电那该坏的还是会坏；如果只需要考虑突然断电的问题，推荐在RAID的基础上增加一个UPS电源，如果还要考虑一些更加极端的状况（比如火灾等），推荐在上述基础之上再增加异地备份，现在很多NAS都有自动备份数据到网盘的功能",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_852",
+      "text": "一个十分钟的视频，干货还挺多的\n然而一群人你看他的评论就知道他只看了标题没看内容就进来喷了，还甚至热评了，挺讽刺的...\n记录时间的想法我也有过，但是只是粗略的看了下每周的app使用时长，除了徒增焦虑没什么好处\n后来慢慢和解了，没把手机当做洪水猛兽，因为像视频说的，我知道社交购物吃饭甚至是电子书，有些操作只是单纯发挥了手机本身的工具媒介属性，并不需要警惕\n但是互联网公司的人总是想着挤占你的注意力，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_853",
+      "text": "upup不是我杠，我是说有没有一种可能emmm记录活动时间本身就是件反人类的事[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_855",
+      "text": "我3年前就开始这么做了，让我从一个双非坑专业考上了985计算机硕，还能坚持运动、体重一直保持大学毕业、体脂也更好。不过我做了一些改变，专注核心时间，比如学习、运动、陪伴家人朋友等，放弃记录上厕所、吃饭、睡觉等时间。看了这个视频，有了新的思考，记录每个时间是为了让自己时刻察觉当下在干的事情，而我只记录核心时间削弱了觉察当下这个机制功能。我决定学习up方法，改进我记录时间的方法。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_857",
+      "text": "这种记录方式很早之前就有了，参考《奇特的一生》柳比歇夫时间记录法。安卓可以试试用uptimer，是我试过很多类似软件最终选择留下来的。可以把活动分为积极，消极，普通，还可以自己设定时间奖惩机制。\nPS：up真的很强，可以坚持记录这么久，很厉害。另外，APP始终是辅助工具，一张A4纸都可以完成时间记录的，最重要的还是自己。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_859",
+      "text": "我没有手机瘾，每天使用手机也就4小时左右，但是我有电脑瘾，在网页上看b站，一天能看6小时以上，总之就是每个人都会想办法娱乐自己，让自己放松，小时候玩玻璃球，折纸，铜块，扑克牌，捉鱼摸虾都是为了玩，只不过现在多人活动变成了个人活动，只要开心，就不算浪费时间，但是也要接受自己一事无成的现实",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_860",
+      "text": "up主说不是广告我是信的,但是看完up主视频买了atimelogger也是真的,我觉得这个app应该给up主广告费[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_861",
+      "text": "坚持过一段时间，后来就忘了，对，忘了。\n就觉得被禁锢了。\n这个东西可以升级的，比如把每件事设定好具体的内容，这样你就可以看自己是摄入的信息多还是产出的多，摄入的多可能成为空想家，产出的多可能是行动多。\n每件事投入到工作，运动，休息，交友，看看自己哪方面做的过多，哪方面投入太少。\n我可能记得太多太杂，嫌烦就放弃了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_862",
+      "text": "在最无助的时候刷到了最有用的视频",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_864",
+      "text": "老登好，我现在是一名高中学生，我爸妈在我小时候就去外地打工了，我从小就跟着爷爷奶奶一起生活，可能这也导致了我的性格比较孤僻，没怎么交到过朋友，小学就只有2个说得上话的朋友，1个是我邻居家的孩子，1个是我的同学，但我比较胆小一直不敢发消息打扰他们，一般是他们主动找我玩，但上了初中后，到了一个新环境他们可能交到了新朋友，我又不敢发消息给他们，渐渐联系就断了，到了高中又重演了一遍，小时候的朋友现在一个也",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_865",
+      "text": "玩手机玩到心烦，因为知道自己数学作业还没写。对数学的恐惧已经达到了虚假的顶峰，做难的还是太炸人心态了，先做两道简单题启动，不要求把整本都做完，我就假设我这本书一点都没写，我现在写的每一题都是进步。把手机放在房间里锁着，启动！[惊喜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_868",
+      "text": "其实看了这期我觉得很熟悉 给我感觉就是有个系统的认识 这期我觉得很多都能连起来 停止对比 拖延症 手机 执行力 我觉得全部和起来就是理论＋实践 二者缺一不可 之前我就是一个眼高手低的人 其实脑子里想的很多 就是理论很多 但是实践非常少 认识老登之后 我接触更多理论 我也逐渐开始实践 学到了一些东西 有所收获 这个寒假里我开始的时候目标没有那么明确 也有以前的影子 但是老登这节课说到 是不是后悔现在",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_871",
+      "text": "我感觉现在自己已经极度麻木无可救药了。高三生，但是心理和学习问题一大堆，什么方法都尝试过，但是没有一个坚持下来。上高三后我从重点班来到普通班，因为我想要有更多自我学习的时间。在普通班觉得老师讲课水平不行（因为我不听课成绩还是很好），再加上看到别的同学很卷内心很有压力，就申请回家上网课。但是回家上了几天就开始玩手机摆烂了，之后学习也是断断续续，每次回校月考大脑空白慌的不行，决心下一次要好好学习。然而",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_873",
+      "text": "我什么时候关注的？[藏狐]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_877",
+      "text": "所以手机呢？[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_878",
+      "text": "你敢信我300兆的宽带看B站的4K视频要加载好几秒，我看YouTube的真4k都不需要这么长时间",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_879",
+      "text": "我偶然发现的[doge]，重新插拔电脑的耳机孔就可以结束B站视频的卡顿。外放的时候突然变卡就插入耳机，立刻流畅；反过来插入耳机的时候突然变卡，拔出耳机就能流畅，然后短时间内再插拔耳机也没影响。不知道是什么原理。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_880",
+      "text": "最近不知道b站怎么了，我1000兆光纤手机看卡死了[doge]包括看这个视频，跑38kb每秒给我，气死了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_881",
+      "text": "B站最近是被攻击了吗？梯子油管不卡，其他平台也不卡，唯独B站卡顿丢包。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_882",
+      "text": "用的Edge看B站，有几个视频页面原来不卡，突然不知怎么就卡了，以后每次进就卡了，这个会是什么情况",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_883",
+      "text": "重度B站用户苦卡顿久矣，之前还以为电脑配置问题升级了4090显卡但还是卡顿，直到用了up的办法终于解决了[脱单doge]给up三连了（要是早点看到说不定就不买4090了[微笑]）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_884",
+      "text": "网页版只要全屏后就会掉帧卡顿，大会员买了个寂寞，显示器是3440*1440 60hz的，不知道有没有关系",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_885",
+      "text": "千兆网+双播链路聚合，用steam下载都能跑到970m的速度，在手机上看b站只有645kb/s，每次都卡在这个速度[呲牙]气笑了给我，不说看本地nas的视频了，就看腾讯视频、看爱奇艺等app，从来没卡过，就b站卡加载，牛逼[呲牙]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

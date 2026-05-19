@@ -1,0 +1,536 @@
+{
+  "batch_id": 106,
+  "total_items": 42,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 33,
+      "long_video": 2,
+      "short_video": 7
+    },
+    "type_distribution": {
+      "behavior_description": 29,
+      "feature_request": 2,
+      "pain_point": 11
+    },
+    "topic_distribution": {
+      "video_quality": 11,
+      "other": 22,
+      "screen_cast": 1,
+      "content_recommend": 4,
+      "ai_feature": 2,
+      "playback_control": 2
+    },
+    "ai_statistics": {
+      "total_ai": 6,
+      "explicit": 2,
+      "implicit": 4,
+      "not_ai": 36
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4194",
+      "text": "用1080p的屏幕看1080p的视频，那像素不是已经1:1铺到屏幕上了吗？为什么你说播放4k视频会更清晰？屏幕又不可能凭空多出来像素点。。。只能是1080p视频实际上没有完全达到1080p，你后面的解释不正确",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4195",
+      "text": "ppi是你这么算的吗？是你这么用的吗？纯粹是4k视频码率更高，画质更好，原始细节更多而已。不信你拿英伟达官方盯帧软件icat自己放大10倍对比，看为什么更“清晰”。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4196",
+      "text": "真正需要宣传的是颠倒过来，用2k/4k屏放1080p，体感上比1080p屏幕更糟糕。因为这是反常识的，造成了无数误会。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4198",
+      "text": "4K视频放在1080P屏幕上，并不会比本身就是1080P的视频更清晰。4K视频的码率也不一定比1080P高。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4201",
+      "text": "1 4k码率更高少压缩伪影 2 4k自带超采样之后下采样 细节更清晰 2 视频422压缩色彩分辨率只有明度分辨率的一半所以4k视频到1080p屏幕颜色才能做到点对点显示",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4203",
+      "text": "可以另一个角度回答，一台1080P的电视卖2000，一台4K的电视卖5000，如果1080P电视就能看4K视频，那为什么要多花钱买4K电视？市场上为什么会出现4K电视？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4207",
+      "text": "前边一本正经，最后就错误百出了，4k转1080播放时，等同于文件分辨率也降成1080一样的了。之所以清晰，完全文件码率4k本来就比1080好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4210",
+      "text": "高分辨率显示器看低分辨率的视频，如果不是原始尺寸，放大了效果很差。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4212",
+      "text": "1080屏幕+4k片源=超采样抗锯齿1080p。差别很大，我1080p电脑屏幕不开抗锯齿根本没法看，全是毛边",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4214",
+      "text": "[思考]蹲蹲有没有大神帮我这个小白解释一下，用音质一般的耳机听那种高音质音乐是不是也这样呀～",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4215",
+      "text": "4k视频压成1080p可以选择高质量算法重采样处理，4k视频在1080屏幕上播放那肯定要用最快速的像素映射算法，质量肯定比预处理的低。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4217",
+      "text": "就是四个像素合并成一个像素显示。至于大屏幕更清晰的说法个人反对，类似于黑白电视看彩色电影（三种颜色用一个亮度显示），看4k的视频内容更清晰的原因是:都4k了，质量肯定要求更高，细节肯定保留更多，这叫“好马配金鞍”[吃瓜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4222",
+      "text": "应该大于1080p、小于4k，因为很显然多数视频的1080p都不是真1080（码率低的一批，清晰度还不如高码率的720），因此所谓4k虽然也不是真4k、但是满足真1080的要求还是问题不大的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4223",
+      "text": "我用1080p的显示器看2k视频的时候，主观感受是画面更加细节，但是整体画质依然没有提高。这种感觉就像是用60Hz的显示器去玩120fps的游戏，其实还是60Hz，但是肉眼感觉似乎流畅一些。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4224",
+      "text": "电视台为大家谋啥福利哦，他们的清晰度升级还比不上AV的清晰度升级快。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4227",
+      "text": "你这个解释的一点都不清晰，感觉像是水了一课啊。倒数第三段，“但是像素数量还是相对1080p更多了的，”这个是肯定的啊，这有啥不理解的？“所以大概两倍的差距，自然会让视频图像看上去更加细腻。”你这不就是在乱讲了吗？你都说了是屏幕是1080P的了，那最终的显示效果上哪儿会有这两倍的PPI差距啊？你应该解释的难道不应该是“虽然屏幕都是1080P，但是4K视频数据比1080P视频数据在1080P显示器上显",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4228",
+      "text": "最近自动更新完，打开成这个狗样子 按照上面设置改完没用 有啥解决办法吗？[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4230",
+      "text": "谢谢，剪辑视频剪出来很清晰，本地观看也很清晰，上传之后就会有点不是很流畅～宽带慢影响的是视频本身还是观看的感觉呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4232",
+      "text": "我也是，我还以为是受电信限制了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4233",
+      "text": "叔叔偷你的带宽给自己发工资去了 无解",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4234",
+      "text": "cmd里的ping是icmp ping，可能检测工具用的是httping",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4235",
+      "text": "油猴：make bilibili great again",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4239",
+      "text": "是刷视频的时候经常会遇到上一个，下面很多个视频都不卡，就中间这一个会看一半卡住怎么办",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4240",
+      "text": "我刚买的红米手机，结果B站上一搜关于小米的视频就卡，看那些推荐页和热门视频就不卡。。。不清楚为什么，我用旧手机华为登了同一个WiFi测，旧手机不论看那个视频都不卡，但是新手机看那种播放量不高的就卡。。。我现在在想要不要退货[捂脸]不懂原因",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4241",
+      "text": "答主我也有这个问题。我也是新买的note11Tpro+，在B站看番时常常突然卡住无法拖动进度条，且退出全屏时仍然卡住不动，必须要退出到番剧主界面重新点进才能继续观看。一开始很少，但最近越来越频繁，非常影响使用体验 ！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4243",
+      "text": "我的也是刚刚买的手机小米手机，我还以为是我一个人的问题，总是会黑一会儿继续黑一会儿继续，烦死人了都。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4244",
+      "text": "我也是红米note11tPro同样的问题，刚开始我还以为我网不好，后来每次看视频都同样问题，网不可能一直每时每刻不好吧，而且用家人手机看也没问题，真是气死，刚买的手机还没两月",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4247",
+      "text": "手上新到的红米11tpro。刚到手看B站出现了楼主所说的问题，今天看最新的mi13系统更新日志才看到优化了看视频的，优化后果然不卡了，推荐大家更新。over",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4254",
+      "text": "不刷短视频，一天两天之后觉得生活好像也没有受到什么影响，这种所谓的成瘾性也没那么可怕。找点别的事情做，听博客、看书、练字，从短篇开始，注意力还是能慢慢集中起来的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4256",
+      "text": "主动放下手机能发现不一样的世界",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4257",
+      "text": "我连手机夜间模式都给取消了，就是看不了黑白色，看来我得调回来",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4258",
+      "text": "还是应该少刷点短视频[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4259",
+      "text": "最近情绪多→重新刷短视频→引到去看国漫了，比如光阴之外[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4260",
+      "text": "手机设置自动化，当打开短视频APP后，手机自动设置黑白[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4263",
+      "text": "少刷短视频，多刷知乎，多写知乎。不要再与魔鬼交换了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4264",
+      "text": "我的方法好简单粗糙，隔段时间卸载软件，再下载回来的话，算法会推新的内容，好多是我不感兴趣的，因为我不太爱点关注，刷不到感兴趣的内容就不想看了，不想看的那段时间里，我就会选择看文章[捂嘴][捂嘴][捂嘴]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4265",
+      "text": "没事我都不打开视频软件了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4268",
+      "text": "[捂嘴]看短视频也分人的，我就做不到一直看，感觉好累……还是咱们自己写内容好[握手][握手]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4269",
+      "text": "自己学会制作短视频，就不会沉迷于短视频等自媒体。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4271",
+      "text": "我是edge和chrome看4K进度条的预载白条到1分钟左右不动，非得蓝条播放到那卡住再预载几十秒，用火狐就没问题。看到大佬的方法2，灵光一闪把UA改成Windows的Firefox完美解决[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4272",
+      "text": "一直搞不懂明明刚买的英特尔A77016G公版卡咋会看不了B站4k视频，真相了。。。还以为被英特尔坑了，好像还是被英特尔坑了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4280",
+      "text": "[吃瓜] 纯玄学了 就是服务器垃圾 视频测速 b站测速自己看就知道了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

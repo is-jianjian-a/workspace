@@ -1,0 +1,585 @@
+{
+  "batch_id": 25,
+  "total_items": 46,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 40,
+      "long_video": 3,
+      "live_stream": 2,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 26,
+      "pain_point": 15,
+      "feature_request": 5
+    },
+    "topic_distribution": {
+      "other": 27,
+      "video_quality": 11,
+      "playback_control": 4,
+      "payment_member": 1,
+      "ad_experience": 1,
+      "background_play": 2
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 46
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_959",
+      "text": "这个功能其实早就有了，但是默认关闭，现在默认打开了挺逆天的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_960",
+      "text": "他这个占用是真的高，不过最大的问题不是占用高，是我感觉他效果不怎么样，感觉就是锐化了一下没有让视频变得更清晰，占用这么高就为了锐化一下这说不过去[脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_961",
+      "text": "谢谢你哥们。不管你的建议好不好用，我都提前感谢你。[笑哭]之前我电脑浏览网页，视频都卡顿，排查了一大通。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_962",
+      "text": "我记得这个增强视频有三个选项，一个是调用nv显卡的视频超分，一个是浏览器自带的超分，调用核心，还有一个是类似锐化滤镜的，前两者启用会占用20左右的性能，有时候画面色块会糊在一坨。但是加滤镜的那个就占用很小，而且视觉上也有明显增强，所以我一般看b站视频会开",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_963",
+      "text": "太感谢了[笑哭]，服了，最近一直打不开直播间，网页打开也是转圈，关了瞬间没事了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_966",
+      "text": "[笑哭]本来都要开始骂B站垃圾优化了，顶配放视频都能卡，结果又是Edge的问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_968",
+      "text": "我这段时间也遇到了，Chrome 使用一种名为 ANGLE 的技术，将 WebGL 等图形 API 在 Windows 上运行时转换为 DirectX。默认使用 D3D11，但某些硬件配置（尤其是 AMD GPU）可能与 D3D11 不兼容，导致卡顿。切换到 D3D9 后，这些不兼容问题似乎被绕过，视频变得更稳定。不过，这播放器可能会禁用 WebGL2 等功能，是一个权衡。虽然切换到 D3D9 是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_969",
+      "text": "没用，本来浏览器设置里就是独显。上次WIN11大更新之后就这样了，而且我是谷歌浏览器，同样的问题。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_970",
+      "text": "这个视频不卡，有些视频一卡一卡的，像是在同时播放两个视频，会重叠一闪一闪的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_974",
+      "text": "win10不卡 win11好几个版本都卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_975",
+      "text": "亲测有效，不过我不是你这种卡，我是用一段时间打开视频就会无限加载！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_976",
+      "text": "我是看视频不卡顿但是弹幕有时候会明显掉帧，看直播弹幕卡顿，edge和chrome都是如此。后来用了下面这个朋友的方法就好了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_978",
+      "text": "我是华为Mate30  5G手机，刷任何软件都不会出现像刷B站这么卡的情况！！（B站短视频看超过俩小时绝对会越来越开，直到非常卡！）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_979",
+      "text": "本来想看看怎么解决的，结果你这个视频也卡了[抓狂]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_980",
+      "text": "卡到视频都看不了 0kb/s",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_982",
+      "text": "刚买没多久的一加ace2，b站刷一会就卡起来，视频卡顿，滑动也卡顿，每次退出视频都会给我重新加载页面。用了好几年的老手机都没问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_983",
+      "text": "我也是，一直加载0kb/s，卡的连客服联系都进不了，但用其他设备看就没有问题，气到我了[热](这条评论就是用另一个设备发的)",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_986",
+      "text": "还是不行，一开始以为是手机，可是其他软件都没卡过，我其他倒是还好，就是卡屏，画面不动一直在放声音，烦死了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_987",
+      "text": "怎么解决啊哥？我也是11tPro，我现在刷视频烦死了，好恶心啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_988",
+      "text": "检测不出故障，但就是卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_990",
+      "text": "对于非大会员，视频前半部分根本没有感受（（（",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_993",
+      "text": "建议视频全程60帧，然后故意配个数字倒数，看看有多少人认为的卡其实是心理作用，tm50多帧就有人刷卡真是离谱[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_994",
+      "text": "实际上只要你每秒内帧数的分布是相等的，在23.9fps以上的都不会有不连贯感，更高的帧数只是看起来更自然。实际上决定影像流不流畅的还有动态模糊，游戏之所以需要更高的帧数是因为游戏无法保证渲染出的画面在每秒内是平均分布的，所以30帧的游戏和30帧的视频完全是两个概念。[捂脸]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_996",
+      "text": "如果大家这个视频不觉得卡很正常，因为这是真实世界的视频，每一帧都含有一段时间的信息，电影帧率才24帧。游戏就不一样了，那是显卡渲染出来的画面，显卡可没有曝光时间，如果习惯了144帧，猛降到60，应该具有明显的差别。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_997",
+      "text": "以前我觉得60帧能玩，后来我玩惯了120帧，这60帧是什么东西玩不了。再然后我舍友告诉我他是200帧，问我要不要体验几把，我说算了。[微笑]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_999",
+      "text": "新架构带来的全新功能，你要是拿同一个时代的手机和电脑对比，电脑并不差，甚至手机不能编码的，电脑还可以走nvenc/qsv，快了不是一星半点。你拿2014年发布的970和好几年以后的手机比较没什么意义啊，2014年的骁龙801/苹果A8处理器好干啥的，这玩意和gt1030比还能得出性能差但是能播放h265高清视频的结论呢[吃瓜][吃瓜][吃瓜][吃瓜]\n还有那个叫av1的编码格式，30系和rdna2",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1003",
+      "text": "硬解码和软解码，软解码，用的是通用的CPU，也就是说，32位64位，运算过程也是通用运算。而视频部分，十位的信号，就已经很好了，亮度，色度，等信号，都是小位数，处理运算并不需要通用那样算。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1004",
+      "text": "我就是显卡970，以前还没有4k视频，现在在B站看4k视频觉得卡，我说呢理论上970看视频来说性能很强大了，原来是970不支持H.265[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1005",
+      "text": "这个视频放在2023，就特指天玑8100吧，现在的显卡别说4K了，硬解8K都没问题的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1007",
+      "text": "国内一个全志的移动soc的厂商就是这样，单看芯片的整体性能落后于正儿八经的手机至少五六年，但随便一个芯片都支持8k的编码，户外的广告机广告牌基本用的都是这家的芯片",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1008",
+      "text": "卡？手机旗舰芯片解码4K跟玩一样[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1009",
+      "text": "为啥我的情况是有部分视频画面慢动作，声音速度正常，以前是正常的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1010",
+      "text": "我这个本来设置就是3D程序决定，可仍旧很卡，播放视频动不动就卡顿",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1011",
+      "text": "还可能是n卡的限制后台帧率速率调太低了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1012",
+      "text": "如果up的方法没用的话 大家看看 后台应用程序最大帧速率 这个选项 我设置到了30 就解决了 大家可以试试",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1013",
+      "text": "不管是本地视频还是网页视频 都是十多秒卡半帧 几乎所有办法都试过了 还是没用[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1014",
+      "text": "如果跟我一样改3D设置都没用的话，可以试试在播放器里更改渲染模式，我是这么解决的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1015",
+      "text": "我4080游戏本一样，是优酷腾讯视频在线视频有掉帧，颜色拖影，本地视频不卡，不知道是不是软件问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1016",
+      "text": "打开n卡设置，把低延时模式关了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1017",
+      "text": "谢谢up设置完果真不卡顿啦[打call][打call]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1018",
+      "text": "请问我是看硬盘里的视频卡顿，是什么原因呢",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1019",
+      "text": "今天是7月27日，是我们伟大的赫耳墨斯之星——37的生日，转发这个消息，37就会跳出来手把手教你代数几何和数论，我试过了是假的，还会被骂37厨子真可怜，但是今天真的是37的生日，让我们祝37生日快乐！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1020",
+      "text": "我是第一嗷哈哈哈哈哈！绝对不会有人在这个阴间时间发评论！除！了！我！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1024",
+      "text": "怎么才几k播放[大哭]快推啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1033",
+      "text": "不升级U，光升级其他的配件，剪辑4K，我差点信了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1034",
+      "text": "👴就看不懂了，不应该把CPU和主板一起换吗，为什么还把6700k留着，过年呢？哦，好像真的快过年了。\n显卡换成专业卡然后cpu来个3950x或者3960x他不香？\n👴虽然知道是恰饭视频但这真的离谱",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

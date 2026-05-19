@@ -1,0 +1,33 @@
+{
+  "total_items": 4579,
+  "scene_distribution": {
+    "general_video": 3377,
+    "long_video": 240,
+    "short_video": 904,
+    "live_stream": 58
+  },
+  "type_distribution": {
+    "pain_point": 760,
+    "feature_request": 318,
+    "behavior_description": 3407,
+    "positive_feedback": 94
+  },
+  "topic_distribution": {
+    "other": 2625,
+    "payment_member": 192,
+    "playback_control": 249,
+    "content_recommend": 216,
+    "screen_cast": 158,
+    "background_play": 15,
+    "download_cache": 126,
+    "video_quality": 721,
+    "ai_feature": 152,
+    "ad_experience": 106,
+    "subtitle_translate": 19
+  },
+  "ai_statistics": {
+    "explicit": 287,
+    "implicit": 150,
+    "not_ai": 4142
+  }
+}

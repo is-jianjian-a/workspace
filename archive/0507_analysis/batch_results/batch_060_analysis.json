@@ -1,0 +1,551 @@
+{
+  "batch_id": 60,
+  "total_items": 43,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 18,
+      "general_video": 18,
+      "long_video": 6,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 31,
+      "positive_feedback": 1,
+      "pain_point": 8,
+      "feature_request": 3
+    },
+    "topic_distribution": {
+      "other": 36,
+      "content_recommend": 2,
+      "payment_member": 1,
+      "ad_experience": 1,
+      "download_cache": 1,
+      "playback_control": 1,
+      "video_quality": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 41
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_586",
+      "text": "b站不就是短视频吗？大哥别笑话二哥。而且我除了耍手机就是玩游戏",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_588",
+      "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_589",
+      "text": "刷知乎跟刷视频没有本质区别",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_590",
+      "text": "你这个朋友和我一样，我也只玩游戏和B站其它都不玩，抖音从来没有玩过，就算买手机的时候自带的抖音我也会马上卸载",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_591",
+      "text": "看书，看付费的重要信息，工作信息，其他不看，不管，不理。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_593",
+      "text": "短视频随时能停，甚至几天不刷（主要是忘了有这种娱乐方式），但小说是真停不下来，一看就是几个小时[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_594",
+      "text": "没脑的刷短视频，刷久了觉得在浪费时间",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_601",
+      "text": "如果可以“广告”到底赚不赚钱赚钱请看工资条不赚钱就当我发牢骚",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_603",
+      "text": "刷短视频主要是打开想搜索什么东西，结果被吸引了，然后越看越觉得好看，这就出不来了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_604",
+      "text": "93年 女生  手机里没有抖音 快手等各种短视频app  上班时间基本不看手机 下班要搞孩子 辅导作业  自己一个人的时候 就喜欢看看唯品会 淘宝 买东西啥的  哦 喜欢看宜家app   之后喜欢看小红书 反正还是喜欢文字加图片或者图片的阅读体验吧 最近倒是因为喜欢罗云熙而下载了微博 偶尔刷刷",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_605",
+      "text": "我比你这个朋友还强一点，手机里只有贴吧 知乎 豆瓣 微博，连b站也没有，我还是爱看文字、图片一类的。游戏我也不玩手游，玩的电脑的实况足球",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_606",
+      "text": "不玩手机就看剧，经典老剧和悬疑新剧都很不错。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_607",
+      "text": "看新闻，看知乎。不刷视频",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_608",
+      "text": "我觉得刷短视频也是有趣的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_609",
+      "text": "短视频刷多了难受[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_611",
+      "text": "俺也一样，看看小说，B站其实更多是来看免费的课程的，偶尔刷刷视频看看直播，无聊就金铲铲一天就过去了[发呆]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_612",
+      "text": "感觉刷短视频已经成为生活的一部分了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_613",
+      "text": "刷知乎跟刷短视频没有任何区别，文字内容粗制滥造就能制作，视频起码有剪辑手法视觉特效，知乎除了专业学术上的内容就没有任何用，无目的地刷就纯粹娱乐平台。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_614",
+      "text": "刷不刷短视频能咋滴🤔呵呵",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_615",
+      "text": "同意主要观点，但是网课（尤指视频课）因其可以随时倍速和暂停，再考虑到课堂老师又不可能追踪每个学生的状态，效果可能比老师现场讲课好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_618",
+      "text": "国内的大学教材太差了，真的没法靠它们来自学。偏偏很多大学老师上课就是照着课本和ppt来讲，真的是雪上加霜。真的很后悔大学的时候不懂多找几个版本的教材来看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_620",
+      "text": "自己思考直接无敌。 我时间慢 但是效率巨高 通常理解的很深。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_622",
+      "text": "看书学习效果好是有利边读边思考，而视频参杂了太多干扰思考的东西，让我们不能深入思考了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_626",
+      "text": "另外提个思路，现在视频的制作成本很低，有一些做长尾的营销号完全使用ai内容，不加审查（主要也没能力、没时间审查），这种东西学的越多效果越差[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_627",
+      "text": "看视频像我就很少积极主动跟上细维来思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_628",
+      "text": "因为看视频总是会其他信息吸引[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_629",
+      "text": "看视频直接睡着[飙泪笑][飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_632",
+      "text": "分析透彻。短视频占据大脑发呆的时间，占据人们聊天的时间，可是人们还自以为在休息，在放松。实际上看短视频的过程中，手没有停歇，眼睛没有休息，脑袋也在高速运转，情绪和内心也在不断变化，这是一种没有感觉到疲劳的疲劳。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_633",
+      "text": "b站推荐都是你可能感兴趣的，我在b站几乎遇不到什么键政人，因为我压根就不怎么看。虽然关注了几个军事政治类up，也不参与讨论，不开弹幕，看完就走。你要是想单纯看看视频，那不是挺简单。你非要使劲看，使劲辩，在知乎辩赢了，心情大好，去b站辩输了，回知乎又诉苦，你能不能想想你到底来干啥的，想赢就在知乎辩，知乎的特点就是不管哪一方，总有一堆人，还特别喜欢聚众，你挑个观点和你一样的，进去辩，包你赢。想看视频去",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_635",
+      "text": "感觉视频体验极差，可能是时候放弃了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_637",
+      "text": "我每次都回档了的 每分钟闪退一次 每次闪退都不知道跳回哪里去，然后重新加载半天",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_638",
+      "text": "买个吃鸡加速器，后来还不如不买，大爷的腾讯加速器",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_639",
+      "text": "视频回档太多次，而且还没有4k",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_640",
+      "text": "感觉什么都要vip很恶心，不如优酷",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_641",
+      "text": "腾讯视频登录老出问题，经常有登陆那里点不了的情况，退出重来也不行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_642",
+      "text": "腾讯视频审核有时候很快。有时候慢的要死",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_646",
+      "text": "很要道理！科技进步带来了一些暂时无法面对的新变化。人生如戏现在是真实的了，老模式就如同游戏一样，当年的人要家庭条件好才能看到各种书，还要有条件进学堂，才能理解的一星半点儿，现在年轻人一小时就把游戏打通关了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_648",
+      "text": "其实第一种进京赶考那个例子，是真正的开悟，一个人必须有很多夜路，孤独的夜路，当有一天看到那句简单的道理，才会恍然大悟，过去经历的一切瞬间击穿胸膛，整个人就通透了。后者，或者说现在大家看个短视频就懂了很多这种，其实只是皮毛，而且自己缺乏实践。学而不思则罔，思而不学则殆嘛要劳逸结合，知行合一。大道至简呐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_649",
+      "text": "对比现实的话 现在点短视频实际上加大了信息差",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_651",
+      "text": "信息是很多，不断冲刷年轻人的视觉，确实也是很短的时间里领略了古人一辈子的经历，貌似懂得了很多道理和知识，仿佛一直在快车道，在高位俯瞰风景。但是，现在的年轻人是真的汲取经验了吗？是认识真的提高了吗？本人觉得不一定吧，也许有那么一部分睿智的人，但还有一部分人感觉自己看透了世事，看清了人生，所以干脆躺平摆烂了。所以说，视觉得到的信息和感受，并不等同于古人一步一步走出来的感受。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_652",
+      "text": "我的感觉正好相反，互联网短视频有太多所谓的砖家为了流量胡编乱造，他们可不管正确不正确，信息真实不真实，只要能有流量啥都说，反而真实有用的信息在一堆垃圾信息中更难找了，原来只需要搜索，现在不仅要搜索还要学会筛选",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_655",
+      "text": "感觉不是真通透，是一种假通透。每个人在自己的圈子里会觉得很通透，大家的三观也差不多，但是如果你回到家里，或者去到人多的地方，你看他们刷的短视频，你会觉得无语死了，但是他们却奉为真理，他们也觉得自己通透了！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_656",
+      "text": "1，信息过载比没有信息更可怕，之前你知道哪里是真知识，现在你能分辨出来吗？ 从短视频里挑出来的好东西， 你能记住吗？    2，认知差只是缩小，但是永远不会消失，而且很大，因为人看到的只是表象，家风，言传身教都是需要感受的，信息永远无法代替感受   3，你以为你体验了，实际上还是旁观了别人的生活，不体验完全无真知，建议看看心灵捕手这个电影。你真的能共情电影中的人吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

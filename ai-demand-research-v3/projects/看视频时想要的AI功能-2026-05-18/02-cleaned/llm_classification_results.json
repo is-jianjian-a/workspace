@@ -1,0 +1,4127 @@
+[
+  {
+    "id": "65f824210000000012023be0",
+    "platform": "xhs",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "69ce26dc000000001a0359a2",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "6712faf9000000001b03feeb",
+    "platform": "xhs",
+    "layer1": [
+      "内容搜索/定位",
+      "互动/问答",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "片段定位",
+      "视频问答",
+      "AI对话",
+      "知识提取",
+      "学习管理"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 互动/问答",
+    "related": true
+  },
+  {
+    "id": "6a02ab24000000003700df89",
+    "platform": "xhs",
+    "layer1": [
+      "视频生成/编辑",
+      "效率/倍速"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "跳过广告"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 效率/倍速",
+    "related": true
+  },
+  {
+    "id": "68f381900000000004005d88",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "6857171700000000220339f7",
+    "platform": "xhs",
+    "layer1": [
+      "视频摘要/总结",
+      "学习/笔记",
+      "画质/修复"
+    ],
+    "layer2": [
+      "智能摘要",
+      "知识提取",
+      "学习管理",
+      "画质增强"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "69ef2ec7000000002003b882",
+    "platform": "xhs",
+    "layer1": [
+      "互动/问答",
+      "画质/修复"
+    ],
+    "layer2": [
+      "知识解释",
+      "画质增强"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 画质/修复",
+    "related": true
+  },
+  {
+    "id": "6940a752000000001e0338c6",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "6922d586000000001e03a9f7",
+    "platform": "xhs",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "互动/问答",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "字幕生成",
+      "视频问答",
+      "知识解释",
+      "弹幕评论"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "6a09756c000000000602258b",
+    "platform": "xhs",
+    "layer1": [
+      "互动/问答",
+      "效率/倍速"
+    ],
+    "layer2": [
+      "视频问答",
+      "知识解释",
+      "智能倍速",
+      "内容精简"
+    ],
+    "emotions": [
+      "frustration",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 效率/倍速",
+    "related": true
+  },
+  {
+    "id": "695250c1000000002103c38d",
+    "platform": "xhs",
+    "layer1": [
+      "内容搜索/定位",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "关键词高亮",
+      "AI生成视频",
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "682f0f52000000000c038fe6",
+    "platform": "xhs",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "学习/笔记",
+      "效率/倍速"
+    ],
+    "layer2": [
+      "智能摘要",
+      "实时翻译",
+      "知识提取",
+      "学习管理",
+      "跳过广告"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "69f4abd60000000023017989",
+    "platform": "xhs",
+    "layer1": [
+      "视频摘要/总结"
+    ],
+    "layer2": [
+      "智能摘要"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结",
+    "related": true
+  },
+  {
+    "id": "68b04625000000001b0371ce",
+    "platform": "xhs",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "6a05c942000000000803d780",
+    "platform": "xhs",
+    "layer1": [
+      "互动/问答",
+      "情感/氛围",
+      "社交/分享"
+    ],
+    "layer2": [
+      "知识解释",
+      "氛围音效",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "frustration",
+      "困惑/迷茫"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 情感/氛围",
+    "related": true
+  },
+  {
+    "id": "672cc517000000001b0139d8",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "69e589a4000000001e00e162",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "673f1a5b0000000002039582",
+    "platform": "xhs",
+    "layer1": [
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "661a20f9000000001a016892",
+    "platform": "xhs",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "69d4ba8a00000000220022db",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "686217fd0000000017034bc0",
+    "platform": "xhs",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "674c75670000000007029a24",
+    "platform": "xhs",
+    "layer1": [
+      "视频摘要/总结"
+    ],
+    "layer2": [
+      "智能摘要"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结",
+    "related": true
+  },
+  {
+    "id": "6944d26a000000001e014691",
+    "platform": "xhs",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "68bce57e000000001d012e7d",
+    "platform": "xhs",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "698d7de4000000000e03ebac",
+    "platform": "xhs",
+    "layer1": [
+      "智能推荐/过滤",
+      "互动/问答",
+      "社交/分享"
+    ],
+    "layer2": [
+      "知识解释",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习",
+      "睡前/休息"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 互动/问答",
+    "related": true
+  },
+  {
+    "id": "6702abf4000000001902ff49",
+    "platform": "xhs",
+    "layer1": [
+      "智能推荐/过滤",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "67b687c7000000000703445b",
+    "platform": "xhs",
+    "layer1": [
+      "语音/字幕相关",
+      "智能推荐/过滤",
+      "学习/笔记",
+      "情感/氛围",
+      "效率/倍速",
+      "社交/分享"
+    ],
+    "layer2": [
+      "实时翻译",
+      "负面屏蔽",
+      "知识提取",
+      "学习管理",
+      "氛围音效",
+      "跳过广告",
+      "分享转发",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "66e7cbf70000000012012086",
+    "platform": "xhs",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "画质/修复"
+    ],
+    "layer2": [
+      "智能摘要",
+      "语义搜索",
+      "关键词高亮",
+      "画质增强"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "69fabcec0000000035038fc4",
+    "platform": "xhs",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "6a05dacd000000003700e400",
+    "platform": "xhs",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7640047489290145034",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7572070703143824869",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7545419296370937128",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位",
+      "互动/问答"
+    ],
+    "layer2": [
+      "视频问答"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 互动/问答",
+    "related": true
+  },
+  {
+    "id": "7538755329145556224",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7559897158728584467",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7522034115986640180",
+    "platform": "dy",
+    "layer1": [
+      "视频摘要/总结",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "知识提取"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "7389213302833958159",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7384038485885324583",
+    "platform": "dy",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "7600453233823288611",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7357811637832781106",
+    "platform": "dy",
+    "layer1": [
+      "智能推荐/过滤",
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "7636308757739534582",
+    "platform": "dy",
+    "layer1": [
+      "互动/问答"
+    ],
+    "layer2": [
+      "知识解释"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答",
+    "related": true
+  },
+  {
+    "id": "7378775510576319798",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7300282127885585674",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7485951726198050089",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7627850088028109222",
+    "platform": "dy",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "笔记工具",
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "7572814969712938291",
+    "platform": "dy",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "知识提取",
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "7528273966110657832",
+    "platform": "dy",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "智能推荐/过滤",
+      "学习/笔记",
+      "画质/修复"
+    ],
+    "layer2": [
+      "智能摘要",
+      "章节拆分",
+      "实时翻译",
+      "关键词高亮",
+      "知识提取",
+      "学习管理",
+      "画质增强"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "7639384298755589873",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7634149876712361074",
+    "platform": "dy",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "7604529645614042410",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7581705595816791302",
+    "platform": "dy",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "睡前/休息"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "7639219682600125937",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7572882973683453225",
+    "platform": "dy",
+    "layer1": [
+      "互动/问答"
+    ],
+    "layer2": [
+      "AI对话"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答",
+    "related": true
+  },
+  {
+    "id": "7640083733606140019",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7570640673586548011",
+    "platform": "dy",
+    "layer1": [
+      "智能推荐/过滤"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "7504243061938048282",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7554580189573811506",
+    "platform": "dy",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "章节拆分",
+      "实时翻译",
+      "字幕生成",
+      "知识提取",
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "7533559658653486371",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位",
+      "智能推荐/过滤"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "7633786684781595954",
+    "platform": "dy",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "7638250338205715775",
+    "platform": "dy",
+    "layer1": [
+      "视频生成/编辑",
+      "跨设备/同步",
+      "社交/分享"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "投屏控制",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 跨设备/同步",
+    "related": true
+  },
+  {
+    "id": "7567353365861010703",
+    "platform": "dy",
+    "layer1": [
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "学习管理",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "7589456301059591424",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7614847502893714714",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7615973530378752369",
+    "platform": "dy",
+    "layer1": [
+      "视频摘要/总结",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "知识提取",
+      "学习管理"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "7639705459850628403",
+    "platform": "dy",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "7639371669090612411",
+    "platform": "dy",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "7613387297644764264",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7579551630891175220",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7623199167359236086",
+    "platform": "dy",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "7575436040547126580",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7550998611627101492",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7616603248733227593",
+    "platform": "dy",
+    "layer1": [
+      "视频摘要/总结"
+    ],
+    "layer2": [
+      "长视频压缩",
+      "智能摘要"
+    ],
+    "emotions": [
+      "焦虑/急迫",
+      "期待/渴望"
+    ],
+    "scenes": [
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结",
+    "related": true
+  },
+  {
+    "id": "7358006960890891546",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7574385676783950761",
+    "platform": "dy",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "7571764409292770937",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7641028889443227369",
+    "platform": "dy",
+    "layer1": [
+      "智能推荐/过滤",
+      "情感/氛围"
+    ],
+    "layer2": [
+      "负面屏蔽",
+      "情绪适配"
+    ],
+    "emotions": [],
+    "scenes": [
+      "吃饭/碎片"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 情感/氛围",
+    "related": true
+  },
+  {
+    "id": "7625618892945231145",
+    "platform": "dy",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "7555780643620883771",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位",
+      "智能推荐/过滤"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "7535369895052250411",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7587264496196979995",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7566461609298136346",
+    "platform": "dy",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "7586718337749519651",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7577726347393510778",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "7581435104942198067",
+    "platform": "dy",
+    "layer1": [
+      "内容搜索/定位"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "3x6rgjukdhx86s2",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xx4imj3wmtrnig",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "3xp6mipzjsmt4ti",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xwzgc4b9b8atfy",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xvyvzhzzc65z7s",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xcjp5j56qv4kku",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xuhuv2xuabf42i",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xp9rnzaertw4bm",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xq9udrf5z4k3z6",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xkuu9jatnd5v5i",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xkqgaw8n88n7ei",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xvge9qbvikgiba",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xpdk4tt5cz3b6c",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习",
+      "睡前/休息"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xxgcvjivczkx96",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xzy38gn6gqv4gq",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xw8tr8k6tv8feq",
+    "platform": "ks",
+    "layer1": [
+      "互动/问答",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI对话",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xnnuuqzs2swk8e",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xtjc5ynzitice2",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3x5rvjh65ji9jqu",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xbua8n9grea3bm",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xtn6rmk3pn7m6e",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xt26jwjrfk8sse",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xkqbxru3u59u7g",
+    "platform": "ks",
+    "layer1": [
+      "智能推荐/过滤",
+      "学习/笔记"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "3xr5x79jthrgzs2",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3x7jetqs7wwv6te",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xdwbuwq2xecxfu",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xa7t882vig4mts",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3x78kqyytezaxd2",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3x23bx8f82dnurm",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xig4h7sna2y22q",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3x6jkfn799fm8js",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xifgfqsa2k443e",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xhse6drswb2z3q",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xef92t6ziax65q",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xq46vedad2zfxq",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xqgdcu9sficw5w",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3x5qhcffvuiwrk9",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3x7czt4chp524da",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xqtmb4t27v65ta",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xgbfugid79tpzq",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xr4rgab4auhcq6",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xphjxeckqusdnc",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xgsmg37mjgdyky",
+    "platform": "ks",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "3xiukyi9i46mxrc",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3x4dapdybyhnhi2",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xsczn5ktg8hp42",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xk8d2eb6cjmqp2",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3x8hkh9hhvhcpui",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xguyirh8u43rdc",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xkkhfeys4b36im",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xvk3kidspfwr7k",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xx9ekz552hz8fm",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xvyekm5qw8iz3i",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3x87ssm7fc2q36i",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xf8j74dc78qfe9",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xf3niav3cwa6qq",
+    "platform": "ks",
+    "layer1": [
+      "互动/问答"
+    ],
+    "layer2": [
+      "AI对话"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答",
+    "related": true
+  },
+  {
+    "id": "3x3u6ducash5txm",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xxp6kzgyp9vq9i",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xfukrhitcwfkis",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xnm65p4xtmx3w4",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xztjw44gwkbbtq",
+    "platform": "ks",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "3xu46r7zcfdia56",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xtateuqi3vxdi4",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xcf5a75gcacdh6",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3xzk9c6x4ws49ww",
+    "platform": "ks",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3x3ab3uqyc68m2m",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "3xm9kiu2b6axws2",
+    "platform": "ks",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "116497833792892",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "弹幕评论"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "114455476178948",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结",
+      "内容搜索/定位",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 内容搜索/定位",
+    "related": true
+  },
+  {
+    "id": "115559064673823",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "113606263835050",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "实时翻译",
+      "笔记工具",
+      "知识提取"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "115166863821439",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结"
+    ],
+    "layer2": [
+      "智能摘要"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结",
+    "related": true
+  },
+  {
+    "id": "116413326950925",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结"
+    ],
+    "layer2": [
+      "智能摘要"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结",
+    "related": true
+  },
+  {
+    "id": "116510500587110",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结"
+    ],
+    "layer2": [
+      "智能摘要"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结",
+    "related": true
+  },
+  {
+    "id": "116369269986451",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116559456573687",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116554289191849",
+    "platform": "bili",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "弹幕评论"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "116460739430129",
+    "platform": "bili",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "116316505639910",
+    "platform": "bili",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "弹幕评论"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "116244950817341",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116542310253574",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "801293749",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记",
+      "情感/氛围"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "学习管理",
+      "氛围音效"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "116302177962170",
+    "platform": "bili",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习",
+      "运动/健身"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "115909490377033",
+    "platform": "bili",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "弹幕评论"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "116051325026845",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "116563600480443",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116502565100964",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "学习管理",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "114997246037319",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "115604983911345",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "832440464",
+    "platform": "bili",
+    "layer1": [
+      "语音/字幕相关"
+    ],
+    "layer2": [
+      "字幕生成"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "116152944561203",
+    "platform": "bili",
+    "layer1": [
+      "互动/问答"
+    ],
+    "layer2": [
+      "知识解释"
+    ],
+    "emotions": [
+      "frustration"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答",
+    "related": true
+  },
+  {
+    "id": "116559439727464",
+    "platform": "bili",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "学习管理"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "1401637939",
+    "platform": "bili",
+    "layer1": [
+      "社交/分享"
+    ],
+    "layer2": [
+      "分享转发",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "困惑/迷茫"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 社交/分享",
+    "related": true
+  },
+  {
+    "id": "115826460066554",
+    "platform": "bili",
+    "layer1": [
+      "语音/字幕相关",
+      "智能推荐/过滤"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "116284779928435",
+    "platform": "bili",
+    "layer1": [
+      "情感/氛围",
+      "社交/分享"
+    ],
+    "layer2": [
+      "氛围音效",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 情感/氛围, 社交/分享",
+    "related": true
+  },
+  {
+    "id": "114851636577710",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "116565345373002",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "114227037673081",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116213006995806",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "frustration",
+      "焦虑/急迫",
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116363834170718",
+    "platform": "bili",
+    "layer1": [
+      "语音/字幕相关",
+      "视频生成/编辑",
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "字幕生成",
+      "自动剪辑",
+      "学习管理",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "114912856641023",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116328266471178",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "字幕生成",
+      "片段定位",
+      "分享转发",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "114137145280042",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "114913846499255",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "115842398359466",
+    "platform": "bili",
+    "layer1": [
+      "智能推荐/过滤",
+      "视频生成/编辑",
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "二创工具",
+      "弹幕评论"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "113741672809759",
+    "platform": "bili",
+    "layer1": [
+      "视频摘要/总结",
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "章节拆分",
+      "AI生成视频",
+      "分享转发"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "116560043712442",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116540649248100",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116454078881242",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116543350374769",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "116566553266057",
+    "platform": "bili",
+    "layer1": [
+      "学习/笔记"
+    ],
+    "layer2": [
+      "学习管理"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "114748557564849",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "116142609864862",
+    "platform": "bili",
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记",
+      "画质/修复"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "画质增强"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "1753376680",
+    "platform": "bili",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "2014712702505862115",
+    "platform": "zhihu",
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记",
+      "情感/氛围",
+      "画质/修复"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "学习管理",
+      "助眠解压",
+      "情绪适配",
+      "画质增强"
+    ],
+    "emotions": [
+      "焦虑/急迫",
+      "疲惫/厌倦"
+    ],
+    "scenes": [
+      "工作/学习",
+      "睡前/休息",
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "2006510505351733880",
+    "platform": "zhihu",
+    "layer1": [
+      "语音/字幕相关",
+      "智能推荐/过滤",
+      "互动/问答",
+      "视频生成/编辑",
+      "学习/笔记",
+      "情感/氛围",
+      "画质/修复",
+      "社交/分享"
+    ],
+    "layer2": [
+      "字幕生成",
+      "口音处理",
+      "兴趣推荐",
+      "去重过滤",
+      "知识解释",
+      "AI生成视频",
+      "自动剪辑",
+      "氛围音效",
+      "画质增强",
+      "老片修复",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "疲惫/厌倦",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "1891189970120721078",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "互动/问答",
+      "学习/笔记",
+      "效率/倍速",
+      "跨设备/同步",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "章节拆分",
+      "实时翻译",
+      "视频问答",
+      "AI对话",
+      "笔记工具",
+      "知识提取",
+      "学习管理",
+      "智能倍速",
+      "多端同步",
+      "分享转发"
+    ],
+    "emotions": [
+      "焦虑/急迫",
+      "困惑/迷茫",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "1978882425812701660",
+    "platform": "zhihu",
+    "layer1": [
+      "画质/修复",
+      "跨设备/同步"
+    ],
+    "layer2": [
+      "画质增强",
+      "多端同步"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 画质/修复, 跨设备/同步",
+    "related": true
+  },
+  {
+    "id": "2031820008930682550",
+    "platform": "zhihu",
+    "layer1": [
+      "智能推荐/过滤",
+      "视频生成/编辑",
+      "情感/氛围",
+      "效率/倍速",
+      "画质/修复",
+      "跨设备/同步",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "自动剪辑",
+      "氛围音效",
+      "跳过广告",
+      "画质增强",
+      "多端同步",
+      "分享转发"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "2019219733895999673",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答",
+      "情感/氛围",
+      "效率/倍速",
+      "社交/分享"
+    ],
+    "layer2": [
+      "AI对话",
+      "助眠解压",
+      "情绪适配",
+      "跳过广告",
+      "分享转发"
+    ],
+    "emotions": [
+      "疲惫/厌倦"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 情感/氛围",
+    "related": true
+  },
+  {
+    "id": "690933175",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答",
+      "视频生成/编辑",
+      "情感/氛围",
+      "社交/分享"
+    ],
+    "layer2": [
+      "知识解释",
+      "二创工具",
+      "情绪适配",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "frustration",
+      "困惑/迷茫",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "1990175904534659242",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "2016833424590131734",
+    "platform": "zhihu",
+    "layer1": [
+      "内容搜索/定位",
+      "学习/笔记",
+      "跨设备/同步",
+      "社交/分享"
+    ],
+    "layer2": [
+      "语义搜索",
+      "关键词高亮",
+      "学习管理",
+      "多端同步",
+      "投屏控制",
+      "分享转发"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "1945761983921100061",
+    "platform": "zhihu",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "1959002529984680575",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "3523243508",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答"
+    ],
+    "layer2": [
+      "AI对话"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答",
+    "related": true
+  },
+  {
+    "id": "2012610029862270230",
+    "platform": "zhihu",
+    "layer1": [
+      "跨设备/同步"
+    ],
+    "layer2": [
+      "多端同步"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 跨设备/同步",
+    "related": true
+  },
+  {
+    "id": "1971046132848260458",
+    "platform": "zhihu",
+    "layer1": [
+      "内容搜索/定位",
+      "互动/问答",
+      "情感/氛围"
+    ],
+    "layer2": [
+      "知识解释",
+      "情绪适配"
+    ],
+    "emotions": [
+      "frustration",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 互动/问答",
+    "related": true
+  },
+  {
+    "id": "1940171712789459466",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "frustration",
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "2038256603841998972",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "2023880488499122672",
+    "platform": "zhihu",
+    "layer1": [
+      "语音/字幕相关"
+    ],
+    "layer2": [
+      "实时翻译",
+      "字幕生成"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "2004476643440354840",
+    "platform": "zhihu",
+    "layer1": [
+      "智能推荐/过滤",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "兴趣推荐",
+      "学习管理"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤, 学习/笔记",
+    "related": true
+  },
+  {
+    "id": "2017618485748979046",
+    "platform": "zhihu",
+    "layer1": [
+      "语音/字幕相关",
+      "智能推荐/过滤",
+      "互动/问答",
+      "视频生成/编辑",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "字幕生成",
+      "去重过滤",
+      "视频问答",
+      "AI生成视频",
+      "学习管理"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "疲惫/厌倦",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "2010779990283809772",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "知识解释",
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "2003784579643875786",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答"
+    ],
+    "layer2": [
+      "知识解释"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答",
+    "related": true
+  },
+  {
+    "id": "1980025379356968859",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "实时翻译",
+      "字幕生成",
+      "自动剪辑",
+      "二创工具",
+      "分享转发"
+    ],
+    "emotions": [
+      "frustration",
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "2023039457389978803",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答",
+      "视频生成/编辑",
+      "画质/修复"
+    ],
+    "layer2": [
+      "知识解释",
+      "AI生成视频",
+      "画质增强"
+    ],
+    "emotions": [
+      "frustration",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "吃饭/碎片",
+      "运动/健身"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "2020680703000490691",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "智能摘要",
+      "AI生成视频",
+      "二创工具"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "吃饭/碎片"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "2024539129052938391",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "智能推荐/过滤",
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "长视频压缩",
+      "智能摘要",
+      "章节拆分",
+      "字幕生成",
+      "语义搜索",
+      "片段定位",
+      "学习管理",
+      "分享转发",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "疲惫/厌倦",
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "2030956865895539667",
+    "platform": "zhihu",
+    "layer1": [
+      "画质/修复"
+    ],
+    "layer2": [
+      "画质增强"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 画质/修复",
+    "related": true
+  },
+  {
+    "id": "2035700208772849697",
+    "platform": "zhihu",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "1999907578117899971",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "2025907288335036698",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "智能推荐/过滤",
+      "互动/问答",
+      "学习/笔记",
+      "效率/倍速",
+      "画质/修复",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "实时翻译",
+      "兴趣推荐",
+      "视频问答",
+      "AI对话",
+      "知识解释",
+      "知识提取",
+      "学习管理",
+      "跳过广告",
+      "画质增强",
+      "分享转发",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "焦虑/急迫",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "通勤/路上",
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "1992376827046560672",
+    "platform": "zhihu",
+    "layer1": [
+      "语音/字幕相关",
+      "视频生成/编辑",
+      "社交/分享"
+    ],
+    "layer2": [
+      "字幕生成",
+      "AI生成视频",
+      "自动剪辑",
+      "二创工具",
+      "分享转发"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 语音/字幕相关, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "1967518267359888341",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "1902875062882788560",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "智能推荐/过滤",
+      "互动/问答",
+      "学习/笔记",
+      "跨设备/同步"
+    ],
+    "layer2": [
+      "智能摘要",
+      "字幕生成",
+      "片段定位",
+      "负面屏蔽",
+      "AI对话",
+      "笔记工具",
+      "知识提取",
+      "学习管理",
+      "多端同步"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "38420570853",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "互动/问答",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "口音处理",
+      "视频问答",
+      "AI对话",
+      "分享转发"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "吃饭/碎片",
+      "运动/健身"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "1998050179555811490",
+    "platform": "zhihu",
+    "layer1": [
+      "互动/问答",
+      "视频生成/编辑",
+      "情感/氛围",
+      "画质/修复"
+    ],
+    "layer2": [
+      "知识解释",
+      "自动剪辑",
+      "助眠解压",
+      "情绪适配"
+    ],
+    "emotions": [
+      "疲惫/厌倦",
+      "期待/渴望"
+    ],
+    "scenes": [
+      "睡前/休息"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 互动/问答, 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "2024480111634686209",
+    "platform": "zhihu",
+    "layer1": [
+      "智能推荐/过滤"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "622482136",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "互动/问答"
+    ],
+    "layer2": [
+      "智能摘要",
+      "实时翻译",
+      "字幕生成",
+      "口音处理",
+      "AI对话"
+    ],
+    "emotions": [
+      "焦虑/急迫",
+      "困惑/迷茫",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "6955625093",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关",
+      "内容搜索/定位",
+      "智能推荐/过滤",
+      "互动/问答",
+      "视频生成/编辑",
+      "学习/笔记",
+      "跨设备/同步"
+    ],
+    "layer2": [
+      "长视频压缩",
+      "智能摘要",
+      "章节拆分",
+      "实时翻译",
+      "字幕生成",
+      "片段定位",
+      "兴趣推荐",
+      "视频问答",
+      "二创工具",
+      "知识提取",
+      "学习管理",
+      "多端同步"
+    ],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 语音/字幕相关",
+    "related": true
+  },
+  {
+    "id": "2027717457163432833",
+    "platform": "zhihu",
+    "layer1": [
+      "内容搜索/定位",
+      "互动/问答",
+      "视频生成/编辑",
+      "学习/笔记",
+      "情感/氛围"
+    ],
+    "layer2": [
+      "语义搜索",
+      "视频问答",
+      "AI对话",
+      "知识解释",
+      "二创工具",
+      "学习管理",
+      "情绪适配"
+    ],
+    "emotions": [
+      "焦虑/急迫",
+      "困惑/迷茫",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习",
+      "吃饭/碎片",
+      "家庭/陪伴"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 互动/问答",
+    "related": true
+  },
+  {
+    "id": "2022000196582646595",
+    "platform": "zhihu",
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "吃饭/碎片"
+    ],
+    "confidence": 0.5,
+    "reasoning": "未识别到明确主题",
+    "related": true
+  },
+  {
+    "id": "2038596185557087959",
+    "platform": "zhihu",
+    "layer1": [
+      "内容搜索/定位",
+      "互动/问答",
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "关键词高亮",
+      "知识解释",
+      "弹幕评论"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 内容搜索/定位, 互动/问答",
+    "related": true
+  },
+  {
+    "id": "3349644077",
+    "platform": "zhihu",
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "二创工具"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑",
+    "related": true
+  },
+  {
+    "id": "61125846026",
+    "platform": "zhihu",
+    "layer1": [
+      "视频摘要/总结",
+      "智能推荐/过滤",
+      "互动/问答",
+      "学习/笔记",
+      "社交/分享"
+    ],
+    "layer2": [
+      "智能摘要",
+      "兴趣推荐",
+      "去重过滤",
+      "知识解释",
+      "知识提取",
+      "分享转发"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "疲惫/厌倦",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频摘要/总结, 智能推荐/过滤",
+    "related": true
+  },
+  {
+    "id": "76368034690",
+    "platform": "zhihu",
+    "layer1": [
+      "视频生成/编辑",
+      "效率/倍速"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "跳过广告"
+    ],
+    "emotions": [],
+    "scenes": [
+      "吃饭/碎片"
+    ],
+    "confidence": 0.75,
+    "reasoning": "识别到主题: 视频生成/编辑, 效率/倍速",
+    "related": true
+  }
+]

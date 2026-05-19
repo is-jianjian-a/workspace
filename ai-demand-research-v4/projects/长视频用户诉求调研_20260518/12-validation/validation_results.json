@@ -1,0 +1,42 @@
+[
+  {
+    "hypothesis_id": "H001",
+    "status": "pending_execution",
+    "note": "待产品团队按实验计划执行验证",
+    "predicted_outcome": "基于调研数据，预计假设为真",
+    "execution_date": null,
+    "actual_result": null
+  },
+  {
+    "hypothesis_id": "H002",
+    "status": "pending_execution",
+    "note": "待产品团队按实验计划执行验证",
+    "predicted_outcome": "基于调研数据，预计假设为真",
+    "execution_date": null,
+    "actual_result": null
+  },
+  {
+    "hypothesis_id": "H003",
+    "status": "pending_execution",
+    "note": "待产品团队按实验计划执行验证",
+    "predicted_outcome": "基于调研数据，预计假设为真",
+    "execution_date": null,
+    "actual_result": null
+  },
+  {
+    "hypothesis_id": "H004",
+    "status": "pending_execution",
+    "note": "待产品团队按实验计划执行验证",
+    "predicted_outcome": "基于调研数据，预计假设为真",
+    "execution_date": null,
+    "actual_result": null
+  },
+  {
+    "hypothesis_id": "H005",
+    "status": "pending_execution",
+    "note": "待产品团队按实验计划执行验证",
+    "predicted_outcome": "基于调研数据，预计假设为真",
+    "execution_date": null,
+    "actual_result": null
+  }
+]

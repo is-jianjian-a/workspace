@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝妈育儿场景用户需求分析报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; 
+            background: #fafafa; 
+            color: #333; 
+            line-height: 1.6; 
+            font-size: 14px;
+        }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        
+        .header { 
+            border-bottom: 2px solid #333; 
+            padding-bottom: 20px; 
+            margin-bottom: 40px; 
+        }
+        .header h1 { 
+            font-size: 28px; 
+            font-weight: 600; 
+            margin-bottom: 8px; 
+            color: #1a1a1a;
+            letter-spacing: -0.5px;
+        }
+        .header .subtitle { 
+            font-size: 14px; 
+            color: #666; 
+            margin-bottom: 12px; 
+        }
+        .header .meta { 
+            font-size: 12px; 
+            color: #999; 
+        }
+        
+        .section { 
+            margin-bottom: 48px; 
+        }
+        .section-title { 
+            font-size: 18px; 
+            font-weight: 600; 
+            margin-bottom: 16px; 
+            color: #1a1a1a;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .section-subtitle {
+            font-size: 14px;
+            font-weight: 600;
+            margin: 24px 0 12px;
+            color: #444;
+        }
+        
+        .metric-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .metric-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 4px;
+        }
+        .metric-card .label {
+            font-size: 12px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .metric-card .value {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        .metric-card .change {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+        
+        table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 12px 0; 
+            font-size: 13px;
+        }
+        th { 
+            background: #f5f5f5; 
+            padding: 10px 12px; 
+            text-align: left; 
+            font-weight: 600; 
+            color: #555; 
+            border-bottom: 1px solid #ddd; 
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        td { 
+            padding: 10px 12px; 
+            border-bottom: 1px solid #eee; 
+            color: #444;
+        }
+        tr:hover { background: #fafafa; }
+        
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            background: #f0f0f0;
+            border-radius: 3px;
+            font-size: 11px;
+            color: #666;
+            margin-right: 6px;
+        }
+        .tag-p0 { background: #333; color: #fff; }
+        .tag-p1 { background: #666; color: #fff; }
+        .tag-p2 { background: #999; color: #fff; }
+        .tag-highlight { background: #333; color: #fff; }
+        
+        .insight-box { 
+            background: #fff; 
+            border-left: 3px solid #333; 
+            padding: 16px; 
+            margin: 16px 0; 
+            font-size: 13px;
+            color: #555;
+        }
+        .insight-box strong {
+            color: #1a1a1a;
+        }
+        
+        .footer { 
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            text-align: center; 
+            color: #999; 
+            font-size: 12px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>宝妈育儿场景用户需求分析报告</h1>
+            <div class="subtitle">基于社交媒体数据的AI产品需求调研 · 第一阶段场景发现</div>
+            <div class="meta">2025年5月13日 · 660条小红书笔记 · 新增三维标签化分析</div>
+        </div>
+        
+        <!-- 核心指标 -->
+        <div class="section">
+            <div class="section-title">核心指标概览</div>
+            <div class="metric-grid">
+                <div class="metric-card">
+                    <div class="label">数据总量</div>
+                    <div class="value">660</div>
+                    <div class="change">条笔记</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">平均互动</div>
+                    <div class="value">30359</div>
+                    <div class="change">点赞+收藏+评论+分享</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">痛点覆盖率</div>
+                    <div class="value">26.5%</div>
+                    <div class="change">175条含痛点信号</div>
+                </div>
+                <div class="metric-card">
+                    <div class="label">纯UGC占比</div>
+                    <div class="value">37.3%</div>
+                    <div class="change">246条真实用户内容</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 主题分布 -->
+        <div class="section">
+            <div class="section-title">主题分布与供给缺口</div>
+            <table>
+                <thead>
+                    <tr><th>主题</th><th>覆盖数</th><th>覆盖率</th><th>平均互动</th><th>痛点率</th><th>机会等级</th></tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>教育引导</td>
+                        <td>183</td>
+                        <td>27.7%</td>
+                        <td>43139</td>
+                        <td>13.1%</td>
+                        <td><span class="tag tag-p2">P2</span></td>
+                    </tr>
+                    <tr>
+                        <td>发育成长</td>
+                        <td>168</td>
+                        <td>25.5%</td>
+                        <td>33453</td>
+                        <td>21.4%</td>
+                        <td><span class="tag tag-p2">P2</span></td>
+                    </tr>
+                    <tr>
+                        <td>夫妻关系</td>
+                        <td>126</td>
+                        <td>19.1%</td>
+                        <td>29413</td>
+                        <td>39.7%</td>
+                        <td><span class="tag tag-p1">P1</span></td>
+                    </tr>
+                    <tr>
+                        <td>母婴用品</td>
+                        <td>57</td>
+                        <td>8.6%</td>
+                        <td>22688</td>
+                        <td>45.6%</td>
+                        <td><span class="tag tag-p0">P0</span></td>
+                    </tr>
+                    <tr>
+                        <td>健康疾病</td>
+                        <td>67</td>
+                        <td>10.2%</td>
+                        <td>18769</td>
+                        <td>59.7%</td>
+                        <td><span class="tag tag-p0">P0</span></td>
+                    </tr>
+                    <tr>
+                        <td>职场平衡</td>
+                        <td>53</td>
+                        <td>8.0%</td>
+                        <td>16237</td>
+                        <td>62.3%</td>
+                        <td><span class="tag tag-p0">P0</span></td>
+                    </tr>
+                    <tr>
+                        <td>喂养辅食</td>
+                        <td>95</td>
+                        <td>14.4%</td>
+                        <td>16138</td>
+                        <td>60.0%</td>
+                        <td><span class="tag tag-p0">P0</span></td>
+                    </tr>
+                    <tr>
+                        <td>妈妈恢复</td>
+                        <td>119</td>
+                        <td>18.0%</td>
+                        <td>15127</td>
+                        <td>48.7%</td>
+                        <td><span class="tag tag-p1">P1</span></td>
+                    </tr>
+                    <tr>
+                        <td>情绪心理</td>
+                        <td>110</td>
+                        <td>16.7%</td>
+                        <td>14090</td>
+                        <td>73.6%</td>
+                        <td><span class="tag tag-p1">P1</span></td>
+                    </tr>
+                    <tr>
+                        <td>睡眠作息</td>
+                        <td>52</td>
+                        <td>7.9%</td>
+                        <td>12105</td>
+                        <td>69.2%</td>
+                        <td><span class="tag tag-p1">P1</span></td>
+                    </tr>
+                    <tr>
+                        <td>备孕怀孕</td>
+                        <td>252</td>
+                        <td>38.2%</td>
+                        <td>11792</td>
+                        <td>40.5%</td>
+                        <td><span class="tag tag-p1">P1</span></td>
+                    </tr>
+                    <tr>
+                        <td>日常护理</td>
+                        <td>40</td>
+                        <td>6.1%</td>
+                        <td>11253</td>
+                        <td>65.0%</td>
+                        <td><span class="tag tag-p1">P1</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <strong>供给缺口识别</strong>：P0机会（低覆盖+高互动）集中在<br>
+                • 母婴用品（8.6%覆盖，22,688互动）— 选品决策困难<br>
+                • 健康疾病（10.2%覆盖，18,769互动）— 症状判断焦虑<br>
+                • 职场平衡（8.0%覆盖，16,237互动）— 工作家庭冲突<br>
+                • 喂养辅食（14.4%覆盖，16,138互动）— 添加时机迷茫
+            </div>
+        </div>
+        
+        <!-- 需求信号 -->
+        <div class="section">
+            <div class="section-title">需求信号分析</div>
+            <table>
+                <thead>
+                    <tr><th>信号类型</th><th>数量</th><th>占比</th><th>平均互动</th></tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>痛点信号</td>
+                        <td>175</td>
+                        <td>26.5%</td>
+                        <td>12266</td>
+                    </tr>
+                    <tr>
+                        <td>决策信号</td>
+                        <td>126</td>
+                        <td>19.1%</td>
+                        <td>14603</td>
+                    </tr>
+                    <tr>
+                        <td>求助信号</td>
+                        <td>71</td>
+                        <td>10.8%</td>
+                        <td>12350</td>
+                    </tr>
+                    <tr>
+                        <td>期望信号</td>
+                        <td>221</td>
+                        <td>33.5%</td>
+                        <td>21878</td>
+                    </tr>
+                    <tr>
+                        <td>行为信号</td>
+                        <td>367</td>
+                        <td>55.6%</td>
+                        <td>23079</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <!-- 新增维度1: 使用情境 -->
+        <div class="section">
+            <div class="section-title">新增维度一：使用情境分析</div>
+            
+            <div class="section-subtitle">空间情境</div>
+            <table>
+                <thead><tr><th>情境</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>家庭场景</td><td>105</td><td>15.9%</td></tr>
+                    <tr><td>户外等待</td><td>78</td><td>11.8%</td></tr>
+                    <tr><td>床上睡前</td><td>41</td><td>6.2%</td></tr>
+                    <tr><td>工作间隙</td><td>37</td><td>5.6%</td></tr>
+                    <tr><td>通勤路上</td><td>5</td><td>0.8%</td></tr>
+                    <tr><td>厕所</td><td>4</td><td>0.6%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="section-subtitle">身体状态</div>
+            <table>
+                <thead><tr><th>状态</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>焦虑</td><td>71</td><td>10.8%</td></tr>
+                    <tr><td>兴奋</td><td>52</td><td>7.9%</td></tr>
+                    <tr><td>疲惫</td><td>46</td><td>7.0%</td></tr>
+                    <tr><td>困倦</td><td>30</td><td>4.5%</td></tr>
+                    <tr><td>无聊</td><td>5</td><td>0.8%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="section-subtitle">并行活动</div>
+            <table>
+                <thead><tr><th>活动</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>带娃时</td><td>84</td><td>12.7%</td></tr>
+                    <tr><td>运动时</td><td>64</td><td>9.7%</td></tr>
+                    <tr><td>学习工作时</td><td>52</td><td>7.9%</td></tr>
+                    <tr><td>吃饭时</td><td>18</td><td>2.7%</td></tr>
+                    <tr><td>做家务</td><td>3</td><td>0.5%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <strong>关键发现</strong>：<br>
+                • 家庭场景（15.9%）和带娃时（12.8%）是主要使用情境，说明育儿内容消费与 caregiving 高度绑定<br>
+                • 焦虑状态（10.7%）远高于无聊（0.8%），用户主动搜索而非被动消费<br>
+                • 运动时（9.8%）和睡前（6.2%）是重要场景，可设计音频/免手操作模式
+            </div>
+        </div>
+        
+        <!-- 新增维度2: 触发-退出机制 -->
+        <div class="section">
+            <div class="section-title">新增维度二：触发-退出机制分析</div>
+            
+            <div class="section-subtitle">触发因素</div>
+            <table>
+                <thead><tr><th>触发类型</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>社交需求</td><td>613</td><td>92.9%</td></tr>
+                    <tr><td>信息获取</td><td>132</td><td>20.0%</td></tr>
+                    <tr><td>内容吸引</td><td>69</td><td>10.5%</td></tr>
+                    <tr><td>通知推送</td><td>17</td><td>2.6%</td></tr>
+                    <tr><td>情绪逃避</td><td>16</td><td>2.4%</td></tr>
+                    <tr><td>习惯性打开</td><td>6</td><td>0.9%</td></tr>
+                    <tr><td>无聊驱动</td><td>5</td><td>0.8%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="section-subtitle">退出障碍</div>
+            <table>
+                <thead><tr><th>障碍类型</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>算法陷阱</td><td>65</td><td>9.8%</td></tr>
+                    <tr><td>情绪依赖</td><td>4</td><td>0.6%</td></tr>
+                    <tr><td>内容未完成</td><td>2</td><td>0.3%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="section-subtitle">使用后情绪</div>
+            <table>
+                <thead><tr><th>情绪类型</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>放松满足</td><td>71</td><td>10.8%</td></tr>
+                    <tr><td>无感</td><td>19</td><td>2.9%</td></tr>
+                    <tr><td>充实</td><td>14</td><td>2.1%</td></tr>
+                    <tr><td>空虚后悔</td><td>7</td><td>1.1%</td></tr>
+                    <tr><td>更焦虑</td><td>1</td><td>0.2%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <strong>关键发现</strong>：<br>
+                • 社交需求（92.9%）是最大触发因素，但多为"大家都在看"的从众心理，非真实需求<br>
+                • 算法陷阱（9.8%）是主要退出障碍，用户意识到被算法控制但难以自拔<br>
+                • 放松满足（10.8%）vs 空虚后悔（1.1%）— 正面情绪占主导，但负面情绪的深度更强
+            </div>
+        </div>
+        
+        <!-- 新增维度3: 用户群体 -->
+        <div class="section">
+            <div class="section-title">新增维度三：用户群体画像</div>
+            
+            <div class="section-subtitle">身份标签</div>
+            <table>
+                <thead><tr><th>身份</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>孕期</td><td>222</td><td>33.6%</td></tr>
+                    <tr><td>备孕</td><td>114</td><td>17.3%</td></tr>
+                    <tr><td>产后</td><td>107</td><td>16.2%</td></tr>
+                    <tr><td>新手妈妈</td><td>106</td><td>16.1%</td></tr>
+                    <tr><td>二胎妈妈</td><td>28</td><td>4.2%</td></tr>
+                    <tr><td>全职妈妈</td><td>4</td><td>0.6%</td></tr>
+                    <tr><td>职场妈妈</td><td>3</td><td>0.5%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="section-subtitle">宝宝阶段</div>
+            <table>
+                <thead><tr><th>阶段</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>新生儿</td><td>59</td><td>8.9%</td></tr>
+                    <tr><td>幼儿期</td><td>57</td><td>8.6%</td></tr>
+                    <tr><td>学龄前</td><td>24</td><td>3.6%</td></tr>
+                    <tr><td>婴儿期</td><td>21</td><td>3.2%</td></tr>
+                    <tr><td>小月龄</td><td>21</td><td>3.2%</td></tr>
+                    <tr><td>辅食期</td><td>11</td><td>1.7%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="section-subtitle">使用深度</div>
+            <table>
+                <thead><tr><th>深度</th><th>数量</th><th>占比</th></tr></thead>
+                <tbody>
+
+                    <tr><td>中度用户</td><td>104</td><td>15.8%</td></tr>
+                    <tr><td>轻度用户</td><td>16</td><td>2.4%</td></tr>
+                    <tr><td>重度用户</td><td>7</td><td>1.1%</td></tr>
+                </tbody>
+            </table>
+            
+            <div class="insight-box">
+                <strong>关键发现</strong>：<br>
+                • 孕期（33.6%）和备孕（17.3%）是主要群体，产前焦虑是核心诉求<br>
+                • 新生儿（8.9%）和幼儿期（8.6%）内容集中，小月龄（3.2%）供给不足<br>
+                • 中度用户（15.8%）占主导，重度用户仅1.1% — 用户有自控意识，非成瘾型消费
+            </div>
+        </div>
+        
+        <!-- 产品机会 -->
+        <div class="section">
+            <div class="section-title">产品机会清单</div>
+            
+            <div class="section-subtitle">P0机会（立即做）</div>
+            <div class="insight-box">
+
+                <strong>母婴用品</strong>：覆盖8.6% | 平均互动22688 | 痛点率45.6%<br>
+                <strong>健康疾病</strong>：覆盖10.2% | 平均互动18769 | 痛点率59.7%<br>
+                <strong>职场平衡</strong>：覆盖8.0% | 平均互动16237 | 痛点率62.3%<br>
+                <strong>喂养辅食</strong>：覆盖14.4% | 平均互动16138 | 痛点率60.0%<br>
+            </div>
+            
+            <div class="section-subtitle">P1机会（短期规划）</div>
+            <div class="insight-box">
+
+                <strong>夫妻关系</strong>：覆盖19.1% | 平均互动29413 | 痛点率39.7%<br>
+                <strong>妈妈恢复</strong>：覆盖18.0% | 平均互动15127 | 痛点率48.7%<br>
+                <strong>情绪心理</strong>：覆盖16.7% | 平均互动14090 | 痛点率73.6%<br>
+                <strong>睡眠作息</strong>：覆盖7.9% | 平均互动12105 | 痛点率69.2%<br>
+                <strong>备孕怀孕</strong>：覆盖38.2% | 平均互动11792 | 痛点率40.5%<br>
+                <strong>日常护理</strong>：覆盖6.1% | 平均互动11253 | 痛点率65.0%<br>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <div class="footer">
+            <p>宝妈育儿场景用户需求分析报告 · 第一阶段场景发现</p>
+            <p>方法论: ai-demand-research-v2 · 数据源: 小红书SQLite</p>
+        </div>
+    </div>
+</body>
+</html>

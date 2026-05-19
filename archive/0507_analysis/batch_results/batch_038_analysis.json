@@ -1,0 +1,342 @@
+{
+  "batch_id": 38,
+  "total_items": 26,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 4,
+      "general_video": 22
+    },
+    "type_distribution": {
+      "behavior_description": 26
+    },
+    "topic_distribution": {
+      "other": 6,
+      "video_quality": 3,
+      "subtitle_translate": 1,
+      "content_recommend": 12,
+      "ai_feature": 2,
+      "download_cache": 1,
+      "ad_experience": 1
+    },
+    "ai_statistics": {
+      "total_ai": 15,
+      "explicit": 15,
+      "implicit": 0,
+      "not_ai": 11
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_contents_194",
+      "text": "第2个运动模糊滤镜在评论区 #不火就删系列  #精选 #桂家团播 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @桂哥.M🖤(O3xxzjtscihp8zwi)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_195",
+      "text": "视频画面老是变模糊，可能这几步做错了。 #视频模糊 #画质不清晰 #干货分享 #变清晰",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_196",
+      "text": "快影剪辑教程（一）丨用蒙版模糊字幕条 #快影星火计划 #剪辑用快影 #剪辑软件",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_197",
+      "text": "视频拍摄的时候很清晰，一上传就模糊，是怎么回事呢？今天小创来讲讲如何上传高清视频～",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_199",
+      "text": "你们一直问的画质教程#私信教你 #画质修复",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_2",
+      "text": "主播你是说真话的人[赞][赞][爱心]！刚才我听到一个女的说快手点赞不占内存",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_6",
+      "text": "谢谢妹妹的分享[玫瑰][玫瑰][玫瑰]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_12",
+      "text": "@AI小快(O2467565973) 少给我推荐老年人看的视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_13",
+      "text": "@AI小快(O2467565973) 多给我推荐羽毛球",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_14",
+      "text": "@AI小快(O2467565973) 多给我推荐伤感音乐",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_15",
+      "text": "@AI小快(O2467565973) 不要给我推荐，幼稚和无脑，视频了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_16",
+      "text": "@AI小快(O2467565973) 给我多推荐一点点点穿书的内容呀",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_17",
+      "text": "@AI小快(O2467565973) 多给我推荐近期热门",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_18",
+      "text": "@AI小快别给我推游戏",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_19",
+      "text": "@AI小快(O2467565973) 给我多推oc互动",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_49",
+      "text": "@汪你好我早说可以视频我方便你和加微信我们天天看到我了我做什么你会知道我心里想的全是你不变",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_65",
+      "text": "一共9个多G，缓存占用200多G[捂脸][捂脸]你看好了再说",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_88",
+      "text": "每个视频都有喜爱度激励计划，感觉是西瓜冰的男朋友有特殊爱好，喜欢让自己女友把照片公开",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_97",
+      "text": "@AI小快(O2467565973) 怎么把广告关掉？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_98",
+      "text": "@AI小快(O2467565973)  关闭快手个性化设置",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_99",
+      "text": "@AI小快(O2467565973) 关闭快手个性化设置",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_100",
+      "text": "@打开个性化设置@AI小快 打开个性化设置 @AI小快（Deepseek满血版）(O2467565973)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_101",
+      "text": "真的有用，之前全是小说，我都看不到娱乐视频，现在什么视频都有",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_102",
+      "text": "@AI小快(O2467565973) 关闭个性化推荐",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_104",
+      "text": "@AI小快 打开个性化设置",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_106",
+      "text": "@AI小快 关闭个性化设置",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

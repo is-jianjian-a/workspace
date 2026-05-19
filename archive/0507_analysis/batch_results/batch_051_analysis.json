@@ -1,0 +1,706 @@
+{
+  "batch_id": 51,
+  "total_items": 56,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 29,
+      "short_video": 23,
+      "long_video": 3,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "feature_request": 2,
+      "behavior_description": 43,
+      "pain_point": 11
+    },
+    "topic_distribution": {
+      "other": 37,
+      "payment_member": 5,
+      "download_cache": 1,
+      "content_recommend": 6,
+      "screen_cast": 3,
+      "playback_control": 1,
+      "video_quality": 3
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 0,
+      "implicit": 3,
+      "not_ai": 53
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_contents_175",
+      "text": "哪些章节需要重点阅读。视频行吗？不行，只能从头到尾，看完整个视频。看完才发现，10分钟的视频，只有1分钟是想听的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_176",
+      "text": "我身边有些朋友，哪怕正版内容价格不高，他们也更倾向于找各种盗版资源，这让我挺不解的。究竟是什么原因让他们做出这样的选择呢？是付费习惯、内容稀缺性还是其他因素？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_177",
+      "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_contents_178",
+      "text": "一刷短视频就停不下来，本想着只看几分钟，结果不知不觉就过去了几小时。晚上熬夜刷到眼睛酸涩，白天工作学习也总走神，耽误了很多正事。试过卸载软件、设置使用时长，但还是忍不住重新下载，反复“真香”。到底怎样才能戒掉短视频瘾，夺回对时间的掌控权？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_179",
+      "text": "我发现自己每天刷短视频的时间越来越长，有时候会觉得虚度光阴，甚至影响了工作和学习，想知道大家有没有类似的困扰，是如何平衡的？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_180",
+      "text": "感觉短视频占据我生活很大一部分，影响我了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_182",
+      "text": "我感觉我的手机除了刷短视频都不知道干嘛，对我来说手机就是一个刷短视频的工具，而它的其他手机的功能对我来说都没有什么用或者说不知道除了短视频我还能干嘛？我想提升自己于是我去阅读，发现自己对书实在提不起什么兴趣，翻遍了这个软件都不知道该看什么，玩游戏也不是很提得起劲，可能因为之前报复性升段位，现在觉得打游戏都是很累的事情，该怎么办啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_183",
+      "text": "看视频时看不进去，看书时总是可以深入思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_184",
+      "text": "我是几家主流视频网站的忠实付费用户，每月都要贡献一笔会员费。最初的目的很明确，就是想摆脱广告，享受高清无阻碍的观影体验。然而，现在即便开了会员，片头广告依然存在，剧集中间还时常出现植入广告或会员专属的「超前点播」选项，仿佛付费只是获得了一张入场券，真正的好内容还要额外花钱。更令人头疼的是，想看的热门剧集往往分散在不同平台，导致我需要购买多个会员，钱包负担越来越重。我开始困惑，这种「会员」模式是不是",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_185",
+      "text": "很多人不是离不开短视频，而是离不开那种“立刻被填满”的感觉。 很多人不是在用短视频休息，而是在用短视频逃避疲惫",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_186",
+      "text": "00后是一个分水岭见证了1G到5G代代更替的时代 有的还在上学 有的已经工作  有的结婚 有的离婚 有的不想结婚  有的躺平",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_188",
+      "text": "相关：优酷网有哪些体验不好的地方？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_189",
+      "text": "用阅读软件，你一年看短视频的时间也许能读上几十本好书。一年之后，看短视频的人，修养明显比看书的人差。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_190",
+      "text": "我很少刷视频，最多也就刷个半个小时，因为我一刷视频久了就恶心，我起初以为是辐射中毒，但哪有这么可笑的理由，然后我又怀疑是不是我我的眼睛调节前置有关，眼睛时刻保持高度紧张，导致大脑神经什么一堆的东西我也不清楚，然后导致恶心，这样久了之后我就不敢去刷视频因为上瘾然后恶心，我以为别人也是这样，但是我听说他们一刷就是一天半天，我才发现我有问题。但是这个刷手机会恶心给我也带来了好处，当别人刷手机的时候我去出",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_191",
+      "text": "晚上翻来覆去睡不着，想起来很久没翻过他手机了，随手翻了一下。一开始翻抖音喜欢关注还很正常，我跟他强调过不下十遍，不准看擦边，他也有改变（虽然还是被发现了五遍左右）然后他说是不小心点到的，本着可以理解的原则，发了几遍誓就算过去了。言归正传，翻到后面看到有一个黑色的X（应该叫推特）我知道他一直都有，但是因为信任吧，一直没在意。今天晚上鬼使神差打开了，然后看见有一些最近的点赞记录，还有一些回复信息，全都",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_192",
+      "text": "人人视频。想看个电视剧，超级多广告。本来说是一天五个，结果有时候看八九个还是不能，看电视剧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_193",
+      "text": "我身边有些朋友，哪怕正版内容价格不高，他们也更倾向于找各种盗版资源，这让我挺不解的。究竟是什么原因让他们做出这样的选择呢？是付费习惯、内容稀缺性还是其他因素？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_194",
+      "text": "用手机怎样找大人看的视频资源网站？成人网是一个特定的网站，要找到它你要在浏览器输入-网p75.站xyz就ok",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_197",
+      "text": "看惯了文字，视频给我的感觉是节奏太慢了，看电视剧，电影都是这样。视频一打开，我第一眼就是找文字，粗略扫一遍了解大概",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_198",
+      "text": "不爱刷的人通常对这种快速的视频感到反感，他们或许更喜欢长视频 2.给自己贴不刷短视频这个标签的人 能指： “我不刷短视频”",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_199",
+      "text": "我身边有些朋友，哪怕正版内容价格不高，他们也更倾向于找各种盗版资源，这让我挺不解的。究竟是什么原因让他们做出这样的选择呢？是付费习惯、内容稀缺性还是其他因素？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_201",
+      "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_contents_202",
+      "text": "看视频时看不进去，看书时总是可以深入思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_203",
+      "text": "我很少刷视频，最多也就刷个半个小时，因为我一刷视频久了就恶心，我起初以为是辐射中毒，但哪有这么可笑的理由，然后我又怀疑是不是我我的眼睛调节前置有关，眼睛时刻保持高度紧张，导致大脑神经什么一堆的东西我也不清楚，然后导致恶心，这样久了之后我就不敢去刷视频因为上瘾然后恶心，我以为别人也是这样，但是我听说他们一刷就是一天半天，我才发现我有问题。但是这个刷手机会恶心给我也带来了好处，当别人刷手机的时候我去出",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_204",
+      "text": "你不是一个人，我看到抖音的很多博主那么聒噪，我就觉得很恶心，很反感，特别烦人。 全是博人眼球的，挑动情绪的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_205",
+      "text": "我和我女朋友异地恋一周见一次，说实话长时间视频确实真的烦。一般这种每天打视频就是极度缺爱的人格，很容易让伴侣窒息",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_206",
+      "text": "抖音、快手、微博等软件上的很多视频，本来内容可能很优秀很好看，一加上BGM整个视频就给毁了。这样的BGM不加不好吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_207",
+      "text": "感觉看短视频，几分钟甚至十几分钟，必须要从头看到尾，才能知道里边讲了什么。而且有些关键点还不容易捕捉到必须得反复看，特别浪费时间，根本没耐心看下去。但阅读文字就不一样了，一目了然，很容易抓住重点，通过文字对文章内容的关键点把握的也会更准确，效率更高。所以我觉得现在短视频只是一个红利期，过几年可能就不流行了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_209",
+      "text": "虽未明示政治要求，但审核系统背后往往集成了舆情模型。例如，某短视频平台的“优质创作者计划”实际通过 过去90天内内容的安全评分均值",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_211",
+      "text": "烧钱玩更多好玩的东西。 一般的穷人，单身也没有钱。 刷短视频是他们能够接触世界和对抗无聊的最好办法。 整个大脑放松",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_212",
+      "text": "上周我在地铁里遇到过两个孩子。 一个五六岁，想从妈妈手里抢手机看短视频，妈妈不给，他就在地上打滚、大叫。妈妈假装抬手打他",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_213",
+      "text": "如今大家日常都离不开短视频，习惯碎片化快速浏览信息，很少静下心长时间钻研、深度琢磨事物，因此我好奇它是否在悄悄削弱我们专注思考的能力。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_214",
+      "text": "高中生感觉大家放假放松的方式不外乎是 刷短视频 打游戏 这两样娱乐方式占超大比 好像随着时间的推移 自己逐渐对这些提不起兴趣了（不是歧视）反而是电影 囤了很多想看的并抽出时间去看 打死让我刷短视频我都不想 要不就是有很喜欢的书籍要看 或者自己在家做美食 做实验 学习 不想玩手机…",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_215",
+      "text": "已经很少看电视剧了，最近抖音刷到一个现偶有点吸引我，就去看了。看到一个明明很甜很正常的片段，可我却感觉心里面可烦躁，还哭了几滴，我是不是神经病不适合看剧了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_216",
+      "text": "我恍然大悟，然后我开了倍速来看，果然，原本没有耐心看的视频和一些剧也可以看一看了。那些无聊的剧情和没营养的对白以及不优美的画面都可以快速略过了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_217",
+      "text": "还会导致肩颈酸痛，浑身哪哪难受。 拿手机玩游戏、刷视频，你感觉到你一旦喜欢上这种短暂的视频带来的快乐，大脑就会越来越不爱思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_219",
+      "text": "下班回家的路，感觉身体特别的疲惫，心想着回家睡会儿觉，但到家后躺在床上还是装手机",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_222",
+      "text": "我感觉我的手机除了刷短视频都不知道干嘛，对我来说手机就是一个刷短视频的工具，而它的其他手机的功能对我来说都没有什么用或者说不知道除了短视频我还能干嘛？我想提升自己于是我去阅读，发现自己对书实在提不起什么兴趣，翻遍了这个软件都不知道该看什么，玩游戏也不是很提得起劲，可能因为之前报复性升段位，现在觉得打游戏都是很累的事情，该怎么办啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_224",
+      "text": "“他们不看短视频，也不会去看正经有用的书的，去看垃圾书，脑子看坏了更要命，还不如看小姐姐跳舞。” 我当时听完以后",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_225",
+      "text": "很多人不是离不开短视频，而是离不开那种“立刻被填满”的感觉。 很多人不是在用短视频休息，而是在用短视频逃避疲惫",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_226",
+      "text": "为什么短视频越看越累？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_227",
+      "text": "时而欢笑、时而伤感…大脑不断思考并处理情绪自然感到疲惫，同时眼晴长时间直视电子设备，造成眼晴疲劳，刷视频时我们运动量低，身体代谢缓，身体处于放松状态",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_228",
+      "text": "明明没有花费很多精力不是吗？也不用大脑去思考。按照《认知觉醒：开启自我改变的原动力》这本书里的意思，我们有理智脑、情绪脑、本能脑，当情绪脑和本能脑已经“做到了”降低自身能量消耗来维持生存之后会做什么呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_229",
+      "text": "用个小实验也可以验证以上观点： 连续刷手机 1 小时，不闭眼、不远眺，然后看远处 5 秒，再低头看手机，是不是感觉对焦变慢、眼睛酸胀发紧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_230",
+      "text": "我的视力一直很好，可近两年耍手机多。一边是在手机上办公看文件、聊天儿，一边又刷剧、玩游戏舒缓压力……导致眼睛干涩、视力下降。去年看手机都总觉得字小，从小字体调到标准字体，这几天又放大了一号。如果这样下去，视力不断下降可咋办呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_231",
+      "text": "明明工作一天很累，晚上刷会手机，可是看的越多越会焦虑，是接受的信息太多了吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_232",
+      "text": "是你的大脑累了。 当你在刷视频，刷手机的时候你的大脑会持续运作。会分泌一种物质，当你休息放松的时候，他会被慢慢降解",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_233",
+      "text": "这个屏幕看文字，看视频，真的不累。上了一年网课视力急剧下降，才入坑的这个屏幕。现在很多手机都眼睛疼头疼",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_234",
+      "text": "知乎上很多问题都在强调说碎片化信息无用，甚至号召戒掉手机。但是我从各种app上也学到了很多我不知道知识点，认识了很多我不曾认识的世界角落。碎片化信息真的有那么害人吗？手机这种技术进步的产物，什么时候成了洪水猛兽了？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_236",
+      "text": "在其他视频网站看视频或者直播完全没问题，B站看视频就特别卡。经常看着看着加载速度就变为0了，过一会又正常。或者干脆直接加载失败，视频结束。而且是所有视频，不管什么清晰度都是这样。最近一段时间才出现，也不知道为什么",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_237",
+      "text": "我以为是自己上传的像素太高，平时都是2k起步，后面改成1080依然卡，甚至720都会偶尔卡。然后刷别人的视频号流畅的很，非常困惑。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_238",
+      "text": "为什么B站装机推荐视频有一半都推荐A卡，结果steam占用率前十显卡没有一个A卡？AMD和intel上榜的还是核显。。。所以这些B站装机的真的靠谱吗？为什么与事实相悖啊。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_contents_239",
+      "text": "我身边有些朋友，哪怕正版内容价格不高，他们也更倾向于找各种盗版资源，这让我挺不解的。究竟是什么原因让他们做出这样的选择呢？是付费习惯、内容稀缺性还是其他因素？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_240",
+      "text": "关闭掉视频客户端或系统的硬件加速功能即可解决。 （1）【客户端解决方法】： 1.『优酷视频』（在客户端主界面设置选项中",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_241",
+      "text": "大家是不是总有这种感觉，明明已经更换了宽带，但是打游戏还是会突然掉线，看视频也总是在加载中，究竟是什么原因导致的，有什么好的解决方案吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_243",
+      "text": "看的是腾讯体育里的NBA回放，看缓冲条明明已经缓冲好了，但是画面还是不连续，经常一卡一卡的，用的是笔记本电脑，5年前的老电脑了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

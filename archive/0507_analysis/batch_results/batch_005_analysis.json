@@ -1,0 +1,271 @@
+{
+  "batch_id": 5,
+  "total_items": 20,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 18,
+      "short_video": 1,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "pain_point": 3,
+      "behavior_description": 15,
+      "feature_request": 2
+    },
+    "topic_distribution": {
+      "other": 15,
+      "ai_feature": 1,
+      "screen_cast": 2,
+      "content_recommend": 1,
+      "video_quality": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 18
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_243",
+      "text": "虽然王者玩的少，我还是渣渣没时间玩，燕云3000多小时还是有些资格说下的 就单纯战斗而言，燕云比王者差了至少两个层次😂，画风各有各的好，王者看起来整体更加清爽，燕云看起来更复杂，不过就风景而言燕云还是做的好些，不过材质精细度我反而觉得王者做的更好点，但是有些说不通呀，王者这么小素材材质应该更低才对，有么有大手解释下image_emoticon16 然后就是光影燕云拉中拉，我特么最不能忍的就是这个批",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_247",
+      "text": "当时不想污染电脑，用手机搓玻璃过的，你伽神力",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_248",
+      "text": "这人什么憨憨，我燕云辅助卸式的自动看剧情的玩家怎么打红buff很好打啊。什么浴血代打的吗？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_249",
+      "text": "上一个开局报菜名的玩家群体是什么都忘了吗？这才六年啊image_emoticon22动脑子思考这种人说的话纯浪费思考时间",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_271",
+      "text": "随便骂，我先把贴吧卸载一段时间image_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_272",
+      "text": "那你有没有想过以后的忍者也可以体验呢image_emoticon15",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_273",
+      "text": "我建议折中一下，改成高招，金币忍者，蓝卷忍者，和其他免费忍者全免费体验",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_274",
+      "text": "火影想更好留住新玩家角色试用肯定得开忍者数量太多了，不然萌新都分不清假后摇真后摇，还有某些忍者的技能和技能范围，上试用也行加个限制比如练习场一天只能试用3个忍者，火影还是主流忍者玩的多但打架能选三个，来个偏门忍者不奇怪",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_281",
+      "text": "老人不会玩手机也看不懂时间只能看电视了，收视率我只能呵呵了也有确实是喜欢看的有的是没办法才看的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_283",
+      "text": "作者总结的今年电视剧央八收视率，感觉很靠谱，很棒shoubai_emoji_face_60shoubai_emoji_face_60shoubai_emoji_face_60应该来自于中国大视听统计的数字，是官方机构具有权威性。至于说到电视机端的观众，都是中老年人，70岁左右的观众，大都受过高等教育，有很高的文化素养，对文娱作品的鉴赏力很强。为中国大视听对国产剧收视率的统计数字的认真严谨精神点赞。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_291",
+      "text": "至戒靠德，一定要积德行善，做到正己化人，把玩手机，看小说的时间分一部分出来帮助戒友才是正解。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_292",
+      "text": "经常SY的人，会导致注意力下降，集中力下降，智力下降，影响学业和工作，因为肾上通于脑。经常SY的人，会导致雄性激素增多，内分泌失调，就容易长痘，长痤疮，很影响一个人的心情和自信。经常SY的人，会导致脱发，发为肾之华，脱发就很影响外在形象，对个人自信心也会受到很大打击，也会显老。经常SY的人，会耳鸣耳聋，因为肾开窍于耳。经常SY的人，会导致腰酸背痛，因为腰为肾之府。经常SY的人，会腿软，因为肾主骨。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_296",
+      "text": "赶紧戒掉加强学习。多学习戒炉知识，看看了凡四训，寿康宝鉴，多学习传统文化积累福德智慧获得正能量更容易成功，推荐几个微信公众号关注学习，湖心亭看雪客，天悦名坊，大愿小跟班，",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_297",
+      "text": "神经症的本质是阴阳失衡了，比如阳盛阴衰，晚上阳不入阴，人就会过度亢奋，翻来覆去睡不着觉。要调节神经症，首先睡好子午觉，作息规律远远不够，有的人每天凌晨1点睡早上6点起这也很规律，但对身体伤害却很大。建议每天11点前必须上床，中午11点后小憩20分钟。另外跑步的话可以减少频率，长期sy的人身体往往比较虚，过度有氧反而耗费气血，加重神经衰弱。最后希望楼主放平心态吧，以一个人过来人的身份讲，高考这种考试",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_299",
+      "text": "楼主加油！经常邪淫，会导致脑袋骨髓空洞，记忆力思维能力下降，丢三落四，做事经常出错，学习能力下降。女色本来就是不净的，薄皮之下骨肉脓血，屎尿毛发，秽臭不堪，有什么值得贪恋的？一定要戒除邪淫，不然贫贱一生！我戒了321天了，我的戒色方法你可以参考一下：第一，多看看戒为良药，好的语句可以记下来或者手机截图，平时多复习自己喜欢的语句截图或笔记，你的感悟会越来越深。第二，要远离黄源，千万不要看黄，黄片是最",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_305",
+      "text": "同遇到过这种问题，虽然有这份研究的心是好的，但这东西b站上就有教程",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_310",
+      "text": "实在不行，双持吧，回家用小平板",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_315",
+      "text": "Z11X和G100和畅享90 流畅度高的就是Z11X了 不过打游戏流畅就别想了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_316",
+      "text": "有钱直接上贵点的LCD手机，一分钱一分货",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_317",
+      "text": "lz试一下我这个设置，我摸索出来的，多一格少一格都会更刺眼。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "batch_id": 34,
+  "total_items": 37,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 34,
+      "live_stream": 1,
+      "long_video": 2
+    },
+    "type_distribution": {
+      "pain_point": 9,
+      "behavior_description": 21,
+      "positive_feedback": 1,
+      "feature_request": 6
+    },
+    "topic_distribution": {
+      "ai_feature": 1,
+      "video_quality": 10,
+      "other": 22,
+      "screen_cast": 1,
+      "content_recommend": 1,
+      "payment_member": 2
+    },
+    "ai_statistics": {
+      "total_ai": 4,
+      "explicit": 3,
+      "implicit": 1,
+      "not_ai": 33
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1650",
+      "text": "AI补分辨率和超清有啥差别么？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_1651",
+      "text": "大佬，问一下去水印后加在哪一步好点，直接先去水印跑一次会不会影响画质",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1654",
+      "text": "老大新工作流视频出了吗[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1655",
+      "text": "00:10 导入\n01:13 分辨率\n03:36 帧率\n06:46 视频格式\n-08:03 常见封装-编码格式表\n08:27 码率\n-09:25 B站二压线\n-09:48 H.264详解\n--10:25 帧内压缩\n--11:11 帧间压缩\n14:15 GOP\n14:46 CBR VBR CRF\n-16:45 MC对应\n-16:59 MC预设\n18:11直播\n-18:39 OBS预设\n19:42 M",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1656",
+      "text": "补足与纠正：\n1，PR导出的时候，视频一般选择5.6，最大22。因为1Mbps不等于1000Kbps。还要考虑到H.264对码率控制并不严格，可能会出现超码率的情况。此外，PR输出的音频是变频率的。\n2，H.264的预设从mid开始，每提升一级，编码时间延长20%左右，画质提升5%。简单来说，游戏录像，画面特别激烈的那种，slower就足够了。如果是MC，2D，像素游戏，那么mid就可以，画质差别",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_1657",
+      "text": "无损画质：一秒钟近300m\n如何把300m压缩到1m？接着看吧\n列举一些视频的属性\n1.分辨率：横纵像素相乘\n1080p：逐行扫描\n1080i：隔行扫描\n...",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1659",
+      "text": "请问有没有编码能压下大圆脸呢？[小电视_嘟嘴]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1660",
+      "text": "b站可以投稿H.265那时候就更好了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1661",
+      "text": "弹幕里一直在说程序员怎样怎样，所以我还是想纠正一下，不是所有与电脑相关的东西都是程序员做出来的。这个视频里面提到的大部分技术都是通信、数学领域的学者提出的，尤其是通信中的信息论、编码学的学者。他们当然也会编程，但是编程只是他们众多技能中的一项，并不是他们的专长，写代码也只是他们科研工作中的一小部分。IT行业里电子、通信、计算机可能很多知识都是相通的，但不要觉得他们都是程序员",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1663",
+      "text": "刚开始做后期不久：哇绘声绘影是真滴好用\n随后：绘声绘影，启动\n绘声绘影，无响应\n绘声绘影，退出\n“您是否要将绘声绘影从您的计算机里永久删除？”是。\n卸载后：哇PR好像很厉害啊\n用PR五分钟后：用不来，告辞\n正在安装“爱剪辑”......",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1664",
+      "text": "这个视频有意思，我很早就想知道为什么一个av它有2g那么大，结果画质很差，时长也没有长到那里去，有些视频800多m时长也有一个多小时结果很清晰，我要好好学习，以解答心中疑惑[小电视_吃惊]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1672",
+      "text": "b站的1080绝对不够",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1674",
+      "text": "事实上没有完全的cbr编码，不管你是不是恒定码率压缩，出来的视频都是动态码率[抠鼻]\n小白经常说的分辨率越高视频越清晰，虽然不完整但是也没错。没必要矫枉过正去否定，无脑追求码率。\n你一个360p的视频不压缩码率老高了，有用么？同样清晰度同样编码技术同样分辨率的码率也天差地别。压缩时间参数设置硬件配置都很重要。有的人无脑压缩出来的视频比别人大几倍，清晰度还糊的一比。\n一部90分钟电影无论是264还是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_1683",
+      "text": "哥已三连求视频清晰插件",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1685",
+      "text": "省流：\n1.达芬奇超分+增加调光\n2.Topaz超分细节（推荐）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1686",
+      "text": "学长，现在即梦生视频效率奇差，动不动就要等3-4h，kling可以平替seedance吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1687",
+      "text": "那为啥最后不放对比视频啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1688",
+      "text": "这些软件收费吗，或者这些软件的这些功能收费吗？费用是多少？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1690",
+      "text": "topaz的话还是starlight模型去ai涂抹感强一点，劣势就是跑的真的巨慢，4090跑10s左右视频都要一刻钟[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1691",
+      "text": "UP求个科普，Topaz是不是很吃性能，你是pc还是mac ，能给个大概硬件和处理时间做个参考吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1692",
+      "text": "请问大家，即梦现在是不是不能输出1080的视频呀！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1693",
+      "text": "这些软件对硬件有什么要求，生成15秒视频要多久？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1694",
+      "text": "请问达芬奇用的是什么版本啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1696",
+      "text": "扯吧，这就是误人子弟，浪费人算力，看下Seedance 2.0技术手持，人家连人物一致性参考图都有建议越简单越好！你这把算力都消耗在分析图片行了，生成复杂一点的动作就崩！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1697",
+      "text": "这样所有参考图都变小了，生成视频的细节和画质不是会下降很多吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1698",
+      "text": "gpt就是生假照片厉害。出图还是用的sd底模，画面控制能力强，审美跟香蕉差的有点多",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1699",
+      "text": "seedance2以前可以直接用参考图人物和提示词修改上传的参考视频内容 也可以用提示词让它直接从参考视频结尾继续生成 我以前最高把一个15秒的视频生成到一分钟 后来过了测试期就把这些功能全砍了 好东西不少就是不放出来给用户用 最近明显感觉seedance2智商遍低了很多",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1700",
+      "text": "想要文字准确率高，最好选择高质量，高质量文字准确率97%，中质量91%，低质量百分之六十多，低质量绝对不能用来生成带文字细节的图，价格是挺贵，但是如果能搞定现在seedance2.0降智带来的反复抽卡，其实是非常划算的，毕竟runninghub上做一条15秒720p的seedance2.0视频要18元，钱的花在合适的地方。即梦网页版全线降智降到离谱，seedance2.0做出来的画面还不如即梦ap",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1701",
+      "text": "之前分镜参考最大的问题就是分镜图画质太低，会影响ai参考导致画面质量下降，以及生成分镜图时，分镜图本身对故事的叙事混乱。image2出来后感觉这个方向确实有说法了。不知道up有没有试过分镜卡扔即梦的时候再单独喂一张高清全景俯视图当场景参考？俯视图场景信息量大，让ai有足够的场景元素参考来提高画质和保持场景一致性。而分镜卡里的俯视图占比太小，分辨率降低导致画面细节丢失严重，给ai参考生视频的话会降低",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1703",
+      "text": "你这个有两个问题，第一图片带人脸，根本通不过啊，第二提示词根据视频效果往往需要修改，你这个修改多出了好多步骤，改一次得重新生图一次，很麻烦啊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1704",
+      "text": "这不是关键帧吗[doge]单张关键帧+提示词。先生成一张25宫格的分镜，这样角色和场景，氛围感都能统一了，再截出来单张高清化，但运镜和画面连贯性比不上纯提示词的。这个方法我一直在用，优点是提示词不用些太复杂，下限高，但上限也低。除非你的运镜描述和分镜图很连贯。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1716",
+      "text": "对于非大会员，视频前半部分根本没有感受（（（",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1719",
+      "text": "建议视频全程60帧，然后故意配个数字倒数，看看有多少人认为的卡其实是心理作用，tm50多帧就有人刷卡真是离谱[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1720",
+      "text": "实际上只要你每秒内帧数的分布是相等的，在23.9fps以上的都不会有不连贯感，更高的帧数只是看起来更自然。实际上决定影像流不流畅的还有动态模糊，游戏之所以需要更高的帧数是因为游戏无法保证渲染出的画面在每秒内是平均分布的，所以30帧的游戏和30帧的视频完全是两个概念。[捂脸]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1722",
+      "text": "如果大家这个视频不觉得卡很正常，因为这是真实世界的视频，每一帧都含有一段时间的信息，电影帧率才24帧。游戏就不一样了，那是显卡渲染出来的画面，显卡可没有曝光时间，如果习惯了144帧，猛降到60，应该具有明显的差别。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1723",
+      "text": "以前我觉得60帧能玩，后来我玩惯了120帧，这60帧是什么东西玩不了。再然后我舍友告诉我他是200帧，问我要不要体验几把，我说算了。[微笑]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1727",
+      "text": "其实普通视频，特别是用稳定器多，普通客户真的不需要那么讲究，，，我以前也是用可变ND，后来我嫌麻烦，用的单片ND8的磁吸，白天的时候往上一粘，把ND盒子放兜里，转室内直接就能取下来，不用拧[笑哭]感觉越来越懒了，还一个问题是可变的相对重，上稳定器镜头遮光罩拧不上。快门晴天的时候300 400照常拍，只要不是上千的那种快门速度我感觉都还好。。。。而且还一种玄学是老感觉单片滤镜画质有保障。其实也就那样",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

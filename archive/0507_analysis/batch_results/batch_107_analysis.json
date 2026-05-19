@@ -1,0 +1,416 @@
+{
+  "batch_id": 107,
+  "total_items": 32,
+  "statistics": {
+    "scene_distribution": {
+      "long_video": 1,
+      "general_video": 23,
+      "short_video": 8
+    },
+    "type_distribution": {
+      "behavior_description": 22,
+      "pain_point": 7,
+      "feature_request": 3
+    },
+    "topic_distribution": {
+      "other": 17,
+      "video_quality": 10,
+      "ad_experience": 1,
+      "content_recommend": 2,
+      "download_cache": 1,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 2,
+      "implicit": 0,
+      "not_ai": 30
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4281",
+      "text": "[doge]我用浏览器看b站。就b站那个4k我用gpu硬解能占用到百分之60，70。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4282",
+      "text": "大佬，请问edge浏览器看B站四个小时的正义联盟都好好的，看UP主发的三小时视频整个浏览器都卡死是什么原因呀？[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4286",
+      "text": "牛啊，解决了。我倒不是看4k的，网速也很好，就是每次想空降就卡很久，这么操作完后不卡了。[惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4287",
+      "text": "QQ浏览器也能用，不开这个的话4K视频卡成狗，edge最新版反而不卡",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4294",
+      "text": "可我的网络是5G网，而且，开热点一分钟用掉我将近300MB的流量，见一个视频的影子都看不到",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4295",
+      "text": "视频慢是代理和网络的问题[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4296",
+      "text": "你根本没玩明白，电报群是更新最快最全的了，比网站软件强一万倍",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4297",
+      "text": "视频慢是你梯子的问题，不是tel的问题。我这个梯子除了每天晚上9点左右慢点，其他低峰期随便下。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4304",
+      "text": "实测 电脑比手机加载快很多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4307",
+      "text": "视频加载慢，有没有可能是你自己的网络问题",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4316",
+      "text": "浏览器广告太麻烦，滑一下就跳转广告了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4317",
+      "text": "tel主要是能当云盘存视频，一个收藏夹就算网页没了，资源还在",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4326",
+      "text": "[脑爆][脑爆]我的视频一直秒开啊老师",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4327",
+      "text": "网络问题吧，加载一般不慢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4330",
+      "text": "我们沉迷的，是被算法精心投喂的“廉价快乐”。这实则是场认知剥削——我们将专注力与思考能力廉价出售，换来的却是内心的空洞与贫瘠。真正的突破在于：意识到自己正被消费，并夺回注意力的掌控权。当你主动选择放下，便是重塑深度的开始。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4331",
+      "text": "兄弟们，让我们开始下载知乎吧[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4332",
+      "text": "我最近突然觉醒，是因为我发现我妈每天也捧着手机刷视频，睡觉也不睡，她以前总说我们玩手机怎样怎样。现在她也成了“网瘾老年”“网银”，很恐怖勒。还有朋友经常给我给我讲故事，讲着讲着，我就发现我刷到过，哈哈哈哈哈，也很恐怖啊，信息茧房。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4333",
+      "text": "在小学初中时，一放学我就会打开电视。到了高中大学有了手机后，我会花很多时间刷短视频。这种成瘾的情况，我感觉单纯的卸载抖音是没有用的，没有抖音又会找其他方式去排解自己的无聊。说白了还是得\"了解\"自己，然后再根据情况去控制",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4335",
+      "text": "很少刷，尤其早期的结尾还来一句抖音语音，和当初酷狗打开时一样，俗不可耐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4336",
+      "text": "因为在刷短视频的过程中，时间就会在不知不觉中悄悄溜走，这种奶头乐的行为非常让人容易上瘾，以至于丧失斗志，然后浪费时间，并且还会让我们有严重的拖延，抖音确实改变了我们的生活，无聊的时候就刷一刷，没事做的时候刷一刷，",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4337",
+      "text": "是的，短视频刷多了会形成脑雾，应该找一些其他的有意义的事情去替代刷视频",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4339",
+      "text": "短视频不单是视频评论区都是算法推荐最能吸引力调动情绪的评论优先推荐给你，不同的人刷到同一个视频评论区评论都不一样。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4341",
+      "text": "这篇文章是关于短视频成瘾原因和危险很详细的好文章。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4343",
+      "text": "很少刷，尤其早期的结尾还来一句抖音语音，和当初酷狗打开时一样，俗不可耐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4344",
+      "text": "抖音确实很影响我们的生活，看的时候时间不知不觉就流逝了，一个小时，两个小时在不断刷刷刷的时候浪费了，放下手机之后还什么都没得到，只有空虚，浪费的时间也回不来了 于是一遍遍的怪自己。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4348",
+      "text": "帝国时代2，稍微高清一下，放在现在都是画质最好的战略游戏[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4350",
+      "text": "我觉得画质在满足该游戏需要的层次就可以了，没必要搞太高",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4354",
+      "text": "红警3最大的问题是画面太干净了，地上没尘没土水清澈的像泳池，画质越高看着越假。同时代的命令与征服就好很多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4356",
+      "text": "这个其实可以论证，【画面清晰】和【单位辨识度】是两个互不相关的层面。这一点在魔兽和重置版上显得尤其明显，明明重置版的画面光影都在技术上进步了，但是我却分辨不出单位了。反例就是帝国时代，画质变高了，但是老风格继承下来了，差距就是美术到底有没有把辨识度当回事。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4361",
+      "text": "其实建议你开一下最高画质[捂脸]你这红三不如我当年配的8500GT的电脑打开的红三画质。。。当然你也可以说光污染[捂嘴]除了红三那个采矿机制，和一些所谓的美术，我是不知道三比二差在哪。。。尤其是PVP。当然一些mod美化之后的二我还是蛮喜欢的，点名心灵终结好吧[爱]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4364",
+      "text": "美术设计确实很重要，再以前即便有机能限制，美术设计不仅能掩盖机能的不足，还能把游戏特点给渲染表达出来。但现在这些大厂就只是会无脑堆画质，太敷衍了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4368",
+      "text": "RTS游戏，一个是需要单位的辨识度，一个是需要独特的美术风格，做好这两点玩家其实就对画面满意了，画质是真的排在很后面的指标[害羞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

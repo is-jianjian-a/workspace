@@ -1,0 +1,23 @@
+{
+  "step_id": "project-init",
+  "step_name": "项目初始化",
+  "version": 1,
+  "timestamp": "2026-05-14T16:16:03.929913",
+  "status": "completed",
+  "input": {
+    "files": [],
+    "checksum": null
+  },
+  "code": {
+    "file": "scripts/init_project.py",
+    "checksum": null
+  },
+  "output": {
+    "files": [],
+    "checksums": {}
+  },
+  "parameters": {
+    "topic": "手机AI功能用户诉求调研"
+  },
+  "notes": "项目目录结构创建完成"
+}

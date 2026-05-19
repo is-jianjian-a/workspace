@@ -1,0 +1,45 @@
+{
+  "round_1_evaluation": {
+    "搜索词": "长视频",
+    "数据量": 508,
+    "相关率": 58.0,
+    "主要问题": "搜索词过于宽泛，导致大量内容分享类笔记混入，用户真实诉求表达被稀释"
+  },
+  "round_2_suggestions": [
+    {
+      "keyword": "长视频 熬夜",
+      "reason": "时间失控痛点突出，高互动",
+      "expected_focus": "时长控制、睡前场景"
+    },
+    {
+      "keyword": "长视频 眼睛酸",
+      "reason": "身体疲劳问题明确，需求强烈",
+      "expected_focus": "观看体验、护眼功能"
+    },
+    {
+      "keyword": "长视频 收藏夹吃灰",
+      "reason": "知识焦虑+信息过载的典型场景",
+      "expected_focus": "知识管理、系统学习"
+    },
+    {
+      "keyword": "长视频 倍速",
+      "reason": "时长控制的核心诉求",
+      "expected_focus": "播放控制、智能倍速"
+    },
+    {
+      "keyword": "长视频 不知道看啥",
+      "reason": "选择困难的直接表达",
+      "expected_focus": "内容发现、个性化推荐"
+    },
+    {
+      "keyword": "看视频 停不下来",
+      "reason": "算法陷阱+情绪依赖",
+      "expected_focus": "使用控制、健康提醒"
+    }
+  ],
+  "optimization_principles": [
+    "从宽泛词转向'场景+痛点'组合词",
+    "增加情绪词提高UGC内容比例",
+    "针对P0机会点设计聚焦搜索词"
+  ]
+}

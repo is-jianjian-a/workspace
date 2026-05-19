@@ -1,0 +1,549 @@
+{
+  "batch_id": 118,
+  "total_items": 43,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 39,
+      "long_video": 3,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 32,
+      "pain_point": 5,
+      "feature_request": 5,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "video_quality": 6,
+      "download_cache": 3,
+      "other": 26,
+      "payment_member": 4,
+      "screen_cast": 2,
+      "ad_experience": 2
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 43
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_5164",
+      "text": "个人认为VCD画质还不如VHS录像带。DVD是明显超过VHS的画质的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5165",
+      "text": "没怎么关注过宽带，但是关注过IDC的价格，服务器和存储就不说了，阿里云多少年了还是8毛钱1G的流量，而国外随便开个5刀小鸡就1T、2T的免费流量。。。痛心啊！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5166",
+      "text": "[飙泪笑]答主，不是我说，我本来和你观点一样，但是，你自己看看你的内容，是谁在情绪输出，你谁听不得反对意见，是谁没在好好讨论，提一句反对意见都被你打成骂街这不合适吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5167",
+      "text": "大家的评论回复大约5成已被删除，我看不到。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5169",
+      "text": "违反网络中立性原则。不过这个角度很有趣",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5171",
+      "text": "国外是家宽补贴商宽吧，你去看看azure，aws同样是按流量计费，价格也不便宜",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5172",
+      "text": "之前在🇫🇷工作的时候宽带非常贵，一个月手机和宽带的花费在50欧以上，因为家里没法通光纤用的还是adsl。就算是有光纤的地区也做不到上下行同速，当自己在骨干网嘛[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5173",
+      "text": "我有一个疑问 不管是啥模式，线路网和基础设施总得有，难道谷歌之类的是自建了基础设施吗，不然这个钱谁出",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5174",
+      "text": "中国是商用补民用，很多国家是民用补商用。中国的模式主要是利出一孔，不利于对isp议价权差，同时流量成本较高的中型企业。不过中国其实各个方面的制度都是不利于中型企业的，不差这一点。包括监管也是，能搞定监管的大企业和打游击的小企业占便宜，合法运营的中型企业成本会高非常多。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5176",
+      "text": "腾讯在某地的机房有专班",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5180",
+      "text": "天天喊着上下行对等，中国90%以上的宽带用户需要吗？上行宽带小限制了你遨游互联网吗？你具体说说都怎么限制你了？我看看你说的点普通人能用到几个？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5181",
+      "text": "为什么不用P2P呢？用户之间互传，充分利用稀缺的上传带宽资源。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5183",
+      "text": "我觉得中国的宽带很不错，普惠了大中国。国外不是说偏远地区都网络不好。对我来说够用了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5184",
+      "text": "105澳币一个月50Mbps还天天断网满意不，而且 ISP 同时还向服务商收取高额费用，peering 不代表免费，建议了解 paid peering，流量价格看看 AWS 和 GCP 是什么价格。但凡出过国也说不出这种话。[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5185",
+      "text": "电信家庭宽带，一个月200多点，送千兆光猫，6个手机号，一个座机号，还有网络电视。这个也不能说多贵吧…",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5187",
+      "text": "问题是国内的宽带相对国人的收入是相对便宜的，如果用Peering模式国内的宽带费会增加。idc费用会降低。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5189",
+      "text": "美国是p2p,点对点，中国是p2mp,点对多点，一个pon口带宽1g，下面挂了32户，就只能保证30M带宽呀",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5192",
+      "text": "国内家宽和移动数据无论是下行还是稳定性都是相对来说都是世界上第一档的，当前国内的政策实际上是在用大企业的钱的补贴民用和基站建设的支出。在英国这边我用的套餐大概10镑/10G每月，还要忍受街上走几步没信号，进店不问WiFi直接失联的待遇，哪个好见仁见智吧[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5193",
+      "text": "也就是何同学的95后、00后粉丝们会捧5G",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5194",
+      "text": "美国宽带运营商并非是不想收，而是暂时收不上来而已，前几天还看了，国外几大运营商放出口风，说油管，奈飞之类的视频网站占用了大量的带宽，要他们付费。说话要说事实，非不想，实不能",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5195",
+      "text": "国外模式对用户来讲除了更高码率的清晰度还有哪些其它优点呢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5196",
+      "text": "美国300Mbps的民用宽带月租不利用各种折扣（直接和网络商谈）是50美元一个月，1000Mbps是70美元。上下速度相等中国的宽带下载快上传慢，价格便宜",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5198",
+      "text": "[尴尬]唉，时过境迁，现在省之间流量都要结算了[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5199",
+      "text": "运营商不是做慈善的，谷歌这种大公司省了钱，那就会从别的地方找补回去，比如宽带覆盖率 小公司和客户的资费 网速啥的谷歌这种行为等于是挟持用户与运营商谈判，已经可以算垄断了我觉得还是那些大公司多付点好，毕竟不用我花钱我130人民币一个月 四张卡 共用60G流量1000分钟通话，500M下行70M上行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5201",
+      "text": "就这么贵的上行带宽，三大运营商还年年亏损。因为我国政策干预的下行带宽太便宜了，你能想象500M带宽每年才700元，还带5G电话卡套餐。最关键的是这光纤宽带几乎村村通，铺设成本太高了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5203",
+      "text": "怪不得国外服务器这么便宜 几十兆带宽只要几刀",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5204",
+      "text": "确实。用户接入的带宽上去了，网络服务的带宽价格也要降降啊，否则阻碍技术发展了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5206",
+      "text": "我在加拿大，我这里的宽带用的Shaw，每个月1TB流量限制",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5209",
+      "text": "最有意思的是，大家都同意上下行不对等，要对等需要加钱。无线上我觉得上下行不对等还好说，比如TDD可以号称（实际上没用）灵活使用上下行占比。但有线网络搞什么上下行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5210",
+      "text": "了解了，原来如此。没看过国外的流媒体，国内点播流媒体码率是比有线电视的高不少，有线直播高清频道大概一小时3.3g出头",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5211",
+      "text": "移动不用交流量结算费其实是国家要把三家强行扶起来进行所谓竞争，用户起来已经是后话，移动固网用户主要还是靠套餐送宽带吸流的，如果还需要结算流量费的话就不会有这个措施了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5214",
+      "text": "其实开放高画质做贴片广告更适合B站，看来是被宽带费用限制了方向。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5216",
+      "text": "国内宽带对大众不错的，真正做到以人为本，要公网IP也给。对企业来说，收费贵罢了。至于限制经济发展，大流量主要在视频传输方面，这些做流媒体的，你说人人都看4K，能拖动经济几个点？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5220",
+      "text": "现在移动宽带玩腾讯游戏延迟已经很低了，即便是标称的电信服务器，电信的网玩联通的服务器也不卡，按道理不同供应商接入同一个路由架构就行了。而且三网融合也加了不少机房增加联通性，垄断只能靠行政命令解决问题[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5221",
+      "text": "只可能腾讯花钱给移动，移动不可能花钱给腾讯的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5224",
+      "text": "国外某运营商的家用宽带5G对等，每月180刀。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5228",
+      "text": "国内也有上下行对等的优质专用线路民用网络，你视而不见还是出不起那个钱？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5229",
+      "text": "YT的画质确实高，但广告也很多，隔几分钟就喂你一个，虽然看几秒后可以点跳过。阿b算是很良心了，视频过程中一个广告也没有",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5230",
+      "text": "降本增效，成本大头就是无休止增长的视频存储+带宽成本，不拿这个开刀是怎么都说不过去的，又不可能把旧视频不让你看（即使是十年前的），又要应对视频爆炸增长，只能从压缩这里开刀了呗还有就是手机端的流行，为了不让你手机流量爆炸，就只能压缩再压缩了。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5231",
+      "text": "主要是没知识的用户太多了。一堆人只认“分辨率”、“像素”。码率很低的4k真的清晰吗？手机拍摄的1亿像素真的比专业单反无反的24千万像素清晰吗？大多数普通消费者真正需要的不是清晰，而是“4k”字样和“一亿像素”这些噱头带来的优越感和自我安慰罢了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5232",
+      "text": "我宁愿糊一点，也不要隔一会看几秒广告。阿B这块没得黑",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5233",
+      "text": "就冲着 b 站无广告，我理解它降本降码率，别真搞倒闭了，以后就只能 10 秒钟视频先看 120 秒广告了[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_5235",
+      "text": "看过某网站的关于不同格式码率和画质的，1080P30到8M附近才有边际效应（也就是一小时3.6G）在B站缓存一个1080P的视频，一小时才0.5G[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

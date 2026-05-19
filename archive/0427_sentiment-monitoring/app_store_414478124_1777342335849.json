@@ -1,0 +1,331 @@
+{
+  "appName": "WeChat",
+  "appId": 414478124,
+  "timestamp": "2026-04-28T02:12:15.846Z",
+  "analysis": {
+    "total": 50,
+    "ratings": {
+      "1": 27,
+      "2": 6,
+      "3": 6,
+      "4": 3,
+      "5": 8
+    },
+    "issues": [
+      {
+        "rating": 3,
+        "text": "真的无语了，每次发朋友圈，不管是照片还是视频都吃像素，真的会谢……",
+        "title": "微信朋友圈能不能不要吃像素？"
+      },
+      {
+        "rating": 2,
+        "text": "微信能不能关闭作者音色朗读？？只想要ai朗读的声线。各种公众号主理人的口音和声线实在太难听了",
+        "title": "怎么关闭作者音色朗读？？"
+      },
+      {
+        "rating": 2,
+        "text": "不能连AirPlay听音乐的同时看视频了，以前都可以，然后微信电话也是",
+        "title": "功能倒退"
+      },
+      {
+        "rating": 1,
+        "text": "一直可以边连AirPlay一边看视频，突然就不行了",
+        "title": "无法边听连AirPlay音乐边看视频"
+      },
+      {
+        "rating": 1,
+        "text": "存在隐私问题 建议优化",
+        "title": "为什么不能取消地区显示"
+      },
+      {
+        "rating": 3,
+        "text": "总不能UI万年不变吧？",
+        "title": "请升级至液态玻璃UI"
+      },
+      {
+        "rating": 1,
+        "text": "Very annoying",
+        "title": "Crash all the time"
+      },
+      {
+        "rating": 5,
+        "text": "如题",
+        "title": "iPad上的微信不能接入微信bot嘛"
+      },
+      {
+        "rating": 1,
+        "text": "都是AI写的代码了？用着用着就突然闪退，重启手机都没用！👍",
+        "title": "莫名其妙打不开了，数据全没"
+      }
+    ],
+    "praise": [
+      {
+        "rating": 1,
+        "text": "发现入口可以关闭会更好用哟",
+        "title": "👎"
+      },
+      {
+        "rating": 4,
+        "text": "This lets me communicate with my friends and girlfriend. Something to update her",
+        "title": "Best app"
+      },
+      {
+        "rating": 5,
+        "text": "我朋友说好像很好用呢",
+        "title": "我虽然还没开始用，但是我觉得还是很可以的！"
+      }
+    ],
+    "recentReviews": [
+      {
+        "rating": 3,
+        "title": "声音炸裂",
+        "text": "如果手机接着蓝牙音响，接电话后音响音量会被微信自动调到炸裂音量，都想卸载微信了。"
+      },
+      {
+        "rating": 3,
+        "title": "微信朋友圈能不能不要吃像素？",
+        "text": "真的无语了，每次发朋友圈，不管是照片还是视频都吃像素，真的会谢……"
+      },
+      {
+        "rating": 1,
+        "title": "a",
+        "text": "བོད་ནང་ན་ཕྱིའི་མ་ལག་ལེན་མཁན་མེད་ནི་འི་རེད།"
+      },
+      {
+        "rating": 1,
+        "title": "Logging in",
+        "text": "It is really hard to log in after you haven’t in a while as you don’t have many options and it’s pra"
+      },
+      {
+        "rating": 2,
+        "title": "图标没有深色",
+        "text": "macos图标是深色的，ios内容是深色但就图标不是……"
+      },
+      {
+        "rating": 1,
+        "title": "Sign up",
+        "text": "Sign up is so harddddd"
+      },
+      {
+        "rating": 1,
+        "title": "越弄占用存储空间越大",
+        "text": "难用，随便用一下就几个g空间没有了。"
+      },
+      {
+        "rating": 2,
+        "title": "怎么关闭作者音色朗读？？",
+        "text": "微信能不能关闭作者音色朗读？？只想要ai朗读的声线。各种公众号主理人的口音和声线实在太难听了"
+      },
+      {
+        "rating": 1,
+        "title": "这是中国的监控工具，异常耗电！",
+        "text": "微信是中国政府的监控人的工具，马化腾是中国政府豢养的虎伥、爪牙！微信异常耗电，在我所有应用中它最耗电最臃肿，最占内存！"
+      },
+      {
+        "rating": 3,
+        "title": "Лагает",
+        "text": "Проверка на бота сработала только с 5 раза звонки лагают"
+      },
+      {
+        "rating": 1,
+        "title": "👎",
+        "text": "发现入口可以关闭会更好用哟"
+      },
+      {
+        "rating": 1,
+        "title": "Не работает",
+        "text": "Пытаюсь зайти в приложение. Во время звонка сообщают код. Ввожу — не получается. Потом вовсе звонок "
+      },
+      {
+        "rating": 3,
+        "title": "Why no screen share",
+        "text": "Man why can’t we screen share I wanna do it but WeChat doesn’t have the option"
+      },
+      {
+        "rating": 2,
+        "title": "…",
+        "text": "Funny app ,can only for job"
+      },
+      {
+        "rating": 2,
+        "title": "功能倒退",
+        "text": "不能连AirPlay听音乐的同时看视频了，以前都可以，然后微信电话也是"
+      },
+      {
+        "rating": 1,
+        "title": "bad app",
+        "text": "so big storage and cant link ai"
+      },
+      {
+        "rating": 1,
+        "title": "无法边听连AirPlay音乐边看视频",
+        "text": "一直可以边连AirPlay一边看视频，突然就不行了"
+      },
+      {
+        "rating": 1,
+        "title": "Real name verification",
+        "text": "Real name verification is unnecessary, it’s too frequently. And registration is too difficulty."
+      },
+      {
+        "rating": 4,
+        "title": "Chat UI",
+        "text": "When will WeChat get a Liquid Glass update for the UI?"
+      },
+      {
+        "rating": 1,
+        "title": "为什么不能取消地区显示",
+        "text": "存在隐私问题 建议优化"
+      },
+      {
+        "rating": 3,
+        "title": "请升级至液态玻璃UI",
+        "text": "总不能UI万年不变吧？"
+      },
+      {
+        "rating": 1,
+        "title": "Be aware of the communists",
+        "text": "Data is ALWAYS being monitored and stole by the commies"
+      },
+      {
+        "rating": 4,
+        "title": "不咋滴",
+        "text": "毫无意义的更新"
+      },
+      {
+        "rating": 5,
+        "title": "Топ",
+        "text": "Мне нравится WeChat за интерфейс и качество это прям как icq!!"
+      },
+      {
+        "rating": 5,
+        "title": "Прекрасное приложение",
+        "text": "Лучшее предложение, я в восторге пользуюсь всей семьей"
+      },
+      {
+        "rating": 1,
+        "title": "Crash all the time",
+        "text": "Very annoying"
+      },
+      {
+        "rating": 1,
+        "title": "好恶心强制升级版本",
+        "text": "旧手机强制升级微信版本，强行加塞广告呢"
+      },
+      {
+        "rating": 1,
+        "title": "Disabled so many features for WeChat users",
+        "text": "it is lacking so many functions that Weixin provides."
+      },
+      {
+        "rating": 5,
+        "title": "nice",
+        "text": "very nice"
+      },
+      {
+        "rating": 1,
+        "title": "Voice/Video calls get interrupted whenever swap to home screen or another app.",
+        "text": "It’s not used to be that way."
+      },
+      {
+        "rating": 5,
+        "title": "好",
+        "text": "好是真好，可为什么iPad不可以用视频号登录账号，下一个版本加一下吧"
+      },
+      {
+        "rating": 1,
+        "title": "微信拍照卡死",
+        "text": "用微信app内置拍照就卡死…"
+      },
+      {
+        "rating": 1,
+        "title": "解决掉老机，朋友圈现在只能发15秒视频，感谢你八辈祖宗",
+        "text": "iPhone8plus老机，iOS16.7系统，这次微信更新，朋友圈原来直接60秒的视频可以发，现在只能直接发15秒的了，麻花腾，你就只能坚持15秒吗？"
+      },
+      {
+        "rating": 1,
+        "title": "Terrible",
+        "text": "Got a new phone and was locked out. Extremely hard to get back in and I was not able to with the unc"
+      },
+      {
+        "rating": 1,
+        "title": "iPhone 17系列适配度非常低",
+        "text": "不太懂一个微信这么大的平台，这么大的平台，天天的用那个微信的那个拍照功能天天都是一个死机状态，手机系统天天更新，微信也天天更新，结果一点拍照就死机一点，拍照就死机，天天反馈也没有用，不知道微信想干吗？"
+      },
+      {
+        "rating": 1,
+        "title": "Lost my account",
+        "text": "Why it want a qr code scan?"
+      },
+      {
+        "rating": 5,
+        "title": "Internationally convenient",
+        "text": "You know how in China, YouTube is banned, it’s really annoying, but WeChat is really convenient if y"
+      },
+      {
+        "rating": 1,
+        "title": "越拉越冗余",
+        "text": "暂用空间太大了，我就只是想用你完成交流的功能，然后你恨不得把所以其他软件的功能都集成进来"
+      },
+      {
+        "rating": 3,
+        "title": "Disaster",
+        "text": "It logged me out and the login code via the call isn’t coming through. I’ve been talking for a week "
+      },
+      {
+        "rating": 2,
+        "title": "这么久了还不适配，卡死",
+        "text": "垃圾"
+      },
+      {
+        "rating": 1,
+        "title": "恶意封禁用户功能",
+        "text": "真垃圾无故封禁用户功能"
+      },
+      {
+        "rating": 5,
+        "title": "iPad上的微信不能接入微信bot嘛",
+        "text": "如题"
+      },
+      {
+        "rating": 5,
+        "title": "В России нет альтернатив",
+        "text": "Телеграмм заблокировали, WhatsApp тоже заблокировали и Дискорд тоже в прочем не чего нового поэтому "
+      },
+      {
+        "rating": 2,
+        "title": "Verification code too many attempts and I’m not receiving any codes",
+        "text": "I’m trying to add a friend but it wants me to verify it first"
+      },
+      {
+        "rating": 1,
+        "title": "莫名其妙打不开了，数据全没",
+        "text": "都是AI写的代码了？用着用着就突然闪退，重启手机都没用！👍"
+      },
+      {
+        "rating": 4,
+        "title": "Best app",
+        "text": "This lets me communicate with my friends and girlfriend. Something to update here. Too hard to log i"
+      },
+      {
+        "rating": 1,
+        "title": "。。。",
+        "text": "最近使用的小程序和常用小程序有什么区别？凭什么要把我真的收藏的小程序隐藏在下一个按钮的菜单里？？？"
+      },
+      {
+        "rating": 1,
+        "title": "什么时候能一号双设备在线？双设备党，这微信用的特难受，别的很多软件都可以，微信就一直不行！",
+        "text": "什么时候能一号双设备在线？双设备党，这微信用的特难受，别的很多软件都可以，微信就一直不行！"
+      },
+      {
+        "rating": 1,
+        "title": "Don’t use it",
+        "text": "Don’t download it unless you don’t have a choice. \nDon’t use it unless you have to. \nDon’t open it u"
+      },
+      {
+        "rating": 5,
+        "title": "我虽然还没开始用，但是我觉得还是很可以的！",
+        "text": "我朋友说好像很好用呢"
+      }
+    ]
+  }
+}

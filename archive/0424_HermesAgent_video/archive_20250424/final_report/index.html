@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机用户视频场景AI诉求调研报告</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #08090a;
+            --bg-panel: #0f1011;
+            --bg-surface: #191a1b;
+            --bg-secondary: #28282c;
+            --text-primary: #f7f8f8;
+            --text-secondary: #d0d6e0;
+            --text-tertiary: #8a8f98;
+            --text-muted: #62666d;
+            --brand-indigo: #5e6ad2;
+            --accent-violet: #7170ff;
+            --accent-hover: #828fff;
+            --border-subtle: rgba(255,255,255,0.05);
+            --border-standard: rgba(255,255,255,0.08);
+            --border-solid: #23252a;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Navigation */
+        .nav {
+            position: sticky;
+            top: 0;
+            background: rgba(8,9,10,0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--border-subtle);
+            z-index: 100;
+            padding: 0 24px;
+        }
+
+        .nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 56px;
+        }
+
+        .nav-logo {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            color: var(--text-tertiary);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--text-primary);
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 24px 60px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            background: rgba(94,106,210,0.15);
+            border: 1px solid rgba(94,106,210,0.3);
+            border-radius: 9999px;
+            color: var(--accent-violet);
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 510;
+            color: var(--text-primary);
+            letter-spacing: -1.056px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-tertiary);
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 36px;
+            font-weight: 600;
+            color: var(--text-primary);
+            letter-spacing: -1px;
+        }
+
+        .stat-label {
+            font-size: 14px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Section */
+        .section {
+            padding: 60px 0;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: 400;
+            color: var(--text-primary);
+            letter-spacing: -0.704px;
+            margin-bottom: 12px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: var(--text-tertiary);
+            margin-bottom: 40px;
+            line-height: 1.5;
+        }
+
+        /* Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border-standard);
+            border-radius: 8px;
+            padding: 24px;
+            transition: all 0.2s;
+        }
+
+        .card:hover {
+            background: rgba(255,255,255,0.04);
+            border-color: rgba(255,255,255,0.12);
+        }
+
+        .card-icon {
+            width: 40px;
+            height: 40px;
+            background: rgba(94,106,210,0.15);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            font-size: 20px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: 590;
+            color: var(--text-primary);
+            margin-bottom: 8px;
+        }
+
+        .card-text {
+            font-size: 15px;
+            color: var(--text-tertiary);
+            line-height: 1.5;
+        }
+
+        .card-meta {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid var(--border-subtle);
+            display: flex;
+            justify-content: space-between;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        /* Tables */
+        .table-container {
+            overflow-x: auto;
+            margin-top: 24px;
+            border: 1px solid var(--border-standard);
+            border-radius: 8px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+
+        th {
+            background: var(--bg-panel);
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 590;
+            color: var(--text-secondary);
+            border-bottom: 1px solid var(--border-standard);
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-subtle);
+            color: var(--text-secondary);
+        }
+
+        tr:last-child td {
+            border-bottom: none;
+        }
+
+        tr:hover td {
+            background: rgba(255,255,255,0.02);
+        }
+
+        /* Progress bar */
+        .progress-bar {
+            height: 8px;
+            background: var(--bg-surface);
+            border-radius: 9999px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--brand-indigo), var(--accent-violet));
+            border-radius: 9999px;
+            transition: width 0.5s ease;
+        }
+
+        /* Tags */
+        .tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+            margin-right: 6px;
+        }
+
+        .tag-positive {
+            background: rgba(16,185,129,0.15);
+            color: var(--success);
+        }
+
+        .tag-negative {
+            background: rgba(239,68,68,0.15);
+            color: var(--danger);
+        }
+
+        .tag-neutral {
+            background: rgba(138,143,152,0.15);
+            color: var(--text-tertiary);
+        }
+
+        .tag-expectation {
+            background: rgba(94,106,210,0.15);
+            color: var(--accent-violet);
+        }
+
+        /* VOC Quotes */
+        .voc-quote {
+            background: var(--bg-panel);
+            border-left: 3px solid var(--brand-indigo);
+            padding: 16px 20px;
+            margin: 12px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .voc-quote-text {
+            font-size: 15px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            font-style: italic;
+        }
+
+        .voc-quote-meta {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        /* Priority Matrix */
+        .matrix-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .matrix-quadrant {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border-standard);
+            border-radius: 8px;
+            padding: 24px;
+        }
+
+        .matrix-quadrant h4 {
+            font-size: 16px;
+            font-weight: 590;
+            color: var(--text-primary);
+            margin-bottom: 16px;
+        }
+
+        .matrix-item {
+            padding: 8px 0;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 14px;
+        }
+
+        .matrix-item:last-child {
+            border-bottom: none;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 24px;
+            border-top: 1px solid var(--border-subtle);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 14px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            .hero-stats {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+            .matrix-container {
+                grid-template-columns: 1fr;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--bg-surface);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--bg-secondary);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <div class="nav-logo">📱 视频AI调研</div>
+            <div class="nav-links">
+                <a href="#summary">执行摘要</a>
+                <a href="#analysis">VOC分析</a>
+                <a href="#features">行业功能</a>
+                <a href="#cross-device">多终端</a>
+                <a href="#priority">优先级</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-badge">2025年4月 · 569条真实用户原声</div>
+        <h1>手机用户视频场景<br>AI诉求调研报告</h1>
+        <p>基于569条真实用户原声（VOC）、行业功能特性分析和开源社区能力扫描，深度洞察手机用户在短视频和长视频场景中的AI诉求</p>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-value">569</div>
+                <div class="stat-label">VOC样本</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">12</div>
+                <div class="stat-label">覆盖应用</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-value">67.5%</div>
+                <div class="stat-label">负面反馈</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section class="section" id="summary">
+        <div class="container">
+            <h2 class="section-title">执行摘要</h2>
+            <p class="section-subtitle">核心发现与关键洞察</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <div class="card-title">最大痛点：广告体验</div>
+                    <div class="card-text">206条VOC（36.2%）涉及广告体验，76.7%为负面。用户对广告频率、形式和侵入性极度不满。</div>
+                    <div class="card-meta">
+                        <span>206条VOC</span>
+                        <span class="tag tag-negative">76.7%负面</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-title">AI机会：推荐算法</div>
+                    <div class="card-text">26条VOC涉及推荐算法，84.6%负面。用户渴望更精准、可解释的个性化推荐。</div>
+                    <div class="card-meta">
+                        <span>26条VOC</span>
+                        <span class="tag tag-negative">84.6%负面</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <div class="card-title">跨端差距明显</div>
+                    <div class="card-text">电脑/平板的大屏+多任务体验是手机用户最渴望但难以获得的，AI可显著缩小差距。</div>
+                    <div class="card-meta">
+                        <span>5个终端对比</span>
+                        <span class="tag tag-expectation">高价值</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <div class="card-title">学生群体诉求最强</div>
+                    <div class="card-text">学习场景下对AI笔记提取、知识点总结、时间戳标记等功能需求最为迫切。</div>
+                    <div class="card-meta">
+                        <span>特定职业</span>
+                        <span class="tag tag-positive">高优先级</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VOC Analysis -->
+    <section class="section" id="analysis">
+        <div class="container">
+            <h2 class="section-title">VOC深度分析</h2>
+            <p class="section-subtitle">基于569条用户原声的主题聚类与情感分析</p>
+            
+            <h3 style="font-size: 20px; font-weight: 590; color: var(--text-primary); margin: 32px 0 16px;">主题分布</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>主题</th>
+                            <th>VOC数量</th>
+                            <th>占比</th>
+                            <th>负面率</th>
+                            <th>主要涉及应用</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>广告体验</strong></td>
+                            <td>206</td>
+                            <td>36.2%</td>
+                            <td><span class="tag tag-negative">76.7%</span></td>
+                            <td>TikTok、YouTube、腾讯视频</td>
+                        </tr>
+                        <tr>
+                            <td><strong>推荐算法</strong></td>
+                            <td>26</td>
+                            <td>4.6%</td>
+                            <td><span class="tag tag-negative">84.6%</span></td>
+                            <td>抖音、TikTok</td>
+                        </tr>
+                        <tr>
+                            <td>内容质量</td>
+                            <td>9</td>
+                            <td>1.6%</td>
+                            <td><span class="tag tag-negative">77.8%</span></td>
+                            <td>抖音</td>
+                        </tr>
+                        <tr>
+                            <td>播放体验</td>
+                            <td>7</td>
+                            <td>1.2%</td>
+                            <td>57.1%</td>
+                            <td>腾讯视频</td>
+                        </tr>
+                        <tr>
+                            <td>搜索发现</td>
+                            <td>6</td>
+                            <td>1.1%</td>
+                            <td><span class="tag tag-negative">100%</span></td>
+                            <td>抖音</td>
+                        </tr>
+                        <tr>
+                            <td>画质音质</td>
+                            <td>6</td>
+                            <td>1.1%</td>
+                            <td><span class="tag tag-negative">100%</span></td>
+                            <td>TikTok、Netflix</td>
+                        </tr>
+                        <tr>
+                            <td>字幕翻译</td>
+                            <td>1</td>
+                            <td>0.2%</td>
+                            <td>-</td>
+                            <td>YouTube</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 style="font-size: 20px; font-weight: 590; color: var(--text-primary); margin: 32px 0 16px;">典型用户原声</h3>
+            
+            <div class="voc-quote">
+                <div class="voc-quote-text">"刷短视频经常会遇到锁屏的几秒秒钟的广告，这个很奇怪，我仔细看了，我没有点到某一个合集里面，说明这不是作者的公告，就是平台的广告；在推荐页经常会看到"</div>
+                <div class="voc-quote-meta">— 抖音用户 [VOC-001] · 广告体验</div>
+            </div>
+            
+            <div class="voc-quote">
+                <div class="voc-quote-text">"抖音会反复推送一些我点过不感兴趣的内容，然后进行关键词屏蔽也没有用。"</div>
+                <div class="voc-quote-meta">— 抖音用户 [VOC-001] · 推荐算法</div>
+            </div>
+            
+            <div class="voc-quote">
+                <div class="voc-quote-text">"一堆色情擦边内容，我承认我有时候对这类视频感了兴趣，但也不至于你疯狂推这种吧，要留人吃相也没必要这么难看吧"</div>
+                <div class="voc-quote-meta">— 抖音用户 [VOC-002] · 推荐算法</div>
+            </div>
+
+            <h3 style="font-size: 20px; font-weight: 590; color: var(--text-primary); margin: 32px 0 16px;">平台分布</h3>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>平台</th>
+                            <th>VOC数量</th>
+                            <th>占比</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>App Store</td>
+                            <td>560</td>
+                            <td>98.4%</td>
+                        </tr>
+                        <tr>
+                            <td>V2EX</td>
+                            <td>8</td>
+                            <td>1.4%</td>
+                        </tr>
+                        <tr>
+                            <td>GitHub</td>
+                            <td>1</td>
+                            <td>0.2%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Industry Features -->
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">行业功能特性全景</h2>
+            <p class="section-subtitle">国内外主流视频应用的AI功能对比</p>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>功能</th>
+                            <th>抖音</th>
+                            <th>B站</th>
+                            <th>YouTube</th>
+                            <th>TikTok</th>
+                            <th>Netflix</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>AI字幕</strong></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>AI翻译</strong></td>
+                            <td><span class="tag tag-neutral">△</span></td>
+                            <td><span class="tag tag-neutral">△</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-neutral">△</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>视频总结</strong></td>
+                            <td><span class="tag tag-neutral">测试中</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>画质增强</strong></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>智能推荐</strong></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                        </tr>
+                        <tr>
+                            <td><strong>弹幕优化</strong></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-positive">✓</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                            <td><span class="tag tag-neutral">✗</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cross Device -->
+    <section class="section" id="cross-device">
+        <div class="container">
+            <h2 class="section-title">多终端对比分析</h2>
+            <p class="section-subtitle">手机以外的终端有什么优秀体验，以及迁移到手机的价值和可行性</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <div class="card-title">电脑（PC/Mac）</div>
+                    <div class="card-text">
+                        <strong>优势：</strong>大屏多窗口、键盘快捷键、浏览器插件生态<br><br>
+                        <strong>AI迁移：</strong>智能分屏建议、语音快捷键替代、插件功能原生集成<br><br>
+                        <span style="color: var(--success);">价值：高</span> · <span style="color: var(--warning);">可行性：中</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📱</div>
+                    <div class="card-title">平板（iPad/安卓）</div>
+                    <div class="card-text">
+                        <strong>优势：</strong>大屏+便携平衡、手写批注、多种支撑方式<br><br>
+                        <strong>AI迁移：</strong>手势识别替代手写笔、自适应布局、智能支架检测<br><br>
+                        <span style="color: var(--success);">价值：高</span> · <span style="color: var(--warning);">可行性：中</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚗</div>
+                    <div class="card-title">车机</div>
+                    <div class="card-text">
+                        <strong>优势：</strong>语音控制、场景感知、车载音响效果好<br><br>
+                        <strong>AI迁移：</strong>语音助手增强、场景感知自动切换、音频摘要<br><br>
+                        <span style="color: var(--warning);">价值：中</span> · <span style="color: var(--success);">可行性：高</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📲</div>
+                    <div class="card-title">折叠屏手机</div>
+                    <div class="card-text">
+                        <strong>优势：</strong>展开大屏、悬停交互、合上便携<br><br>
+                        <strong>AI迁移：</strong>模拟大屏体验、展开意图预测、内容自适应<br><br>
+                        <span style="color: var(--success);">价值：高</span> · <span style="color: var(--danger);">可行性：低</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Priority -->
+    <section class="section" id="priority">
+        <div class="container">
+            <h2 class="section-title">机会洞察与优先级建议</h2>
+            <p class="section-subtitle">基于影响力和实现难度的优先级矩阵</p>
+            
+            <div class="matrix-container">
+                <div class="matrix-quadrant">
+                    <h4>🚀 立即做（高价值×低/中难度）</h4>
+                    <div class="matrix-item">
+                        <strong>AI广告智能识别与跳过</strong><br>
+                        <span style="color: var(--text-tertiary);">解决最大痛点（206条VOC）</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>推荐算法可解释性</strong><br>
+                        <span style="color: var(--text-tertiary);">让用户理解为什么推荐这个内容</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI字幕自动生成</strong><br>
+                        <span style="color: var(--text-tertiary);">低技术门槛，高用户价值</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>语义搜索</strong><br>
+                        <span style="color: var(--text-tertiary);">解决"搜不到"问题</span>
+                    </div>
+                </div>
+                <div class="matrix-quadrant">
+                    <h4>📋 规划做（高价值×高难度）</h4>
+                    <div class="matrix-item">
+                        <strong>AI视频内容总结</strong><br>
+                        <span style="color: var(--text-tertiary);">学习场景刚需，需多模态LLM</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI画质实时增强</strong><br>
+                        <span style="color: var(--text-tertiary);">老旧视频修复，超分技术</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI跨端无缝同步</strong><br>
+                        <span style="color: var(--text-tertiary);">多端体验一致性</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI创作辅助工具</strong><br>
+                        <span style="color: var(--text-tertiary);">降低二创门槛</span>
+                    </div>
+                </div>
+                <div class="matrix-quadrant">
+                    <h4>⚡ 低成本做（中价值）</h4>
+                    <div class="matrix-item">
+                        <strong>AI播放体验优化</strong><br>
+                        <span style="color: var(--text-tertiary);">智能倍速、断点续播</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI后台音频模式</strong><br>
+                        <span style="color: var(--text-tertiary);">锁屏/后台音频优先</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI省流量模式</strong><br>
+                        <span style="color: var(--text-tertiary);">通勤场景刚需</span>
+                    </div>
+                </div>
+                <div class="matrix-quadrant">
+                    <h4>🔮 长期探索（创新机会）</h4>
+                    <div class="matrix-item">
+                        <strong>AI场景感知播放器</strong><br>
+                        <span style="color: var(--text-tertiary);">检测姿态自动切换模式</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI学习伴侣</strong><br>
+                        <span style="color: var(--text-tertiary);">自动生成知识图谱</span>
+                    </div>
+                    <div class="matrix-item">
+                        <strong>AI跨端接力</strong><br>
+                        <span style="color: var(--text-tertiary);">手机→电脑→车机无缝切换</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reference -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Reference</h2>
+            <p class="section-subtitle">数据来源与引用</p>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <div class="card-title">VOC数据来源</div>
+                    <div class="card-text">
+                        <strong>App Store评论</strong><br>
+                        560条用户评论，覆盖12个主流视频应用<br>
+                        时间范围：2024-2025<br><br>
+                        <strong>V2EX技术社区</strong><br>
+                        8条技术社区讨论<br>
+                        <a href="https://www.v2ex.com" style="color: var(--accent-violet);">https://www.v2ex.com</a><br><br>
+                        <strong>GitHub Issues</strong><br>
+                        VideoLingo项目用户反馈<br>
+                        <a href="https://github.com/Huanshere/VideoLingo" style="color: var(--accent-violet);">https://github.com/Huanshere/VideoLingo</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">行业功能来源</div>
+                    <div class="card-text">
+                        <strong>国内应用</strong><br>
+                        抖音、B站、快手、爱奇艺、优酷、腾讯视频、芒果TV<br><br>
+                        <strong>海外应用</strong><br>
+                        YouTube、TikTok、Netflix、Instagram、Snapchat<br><br>
+                        <strong>信息来源</strong><br>
+                        各应用官方更新日志、帮助中心、媒体报道
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">开源项目来源</div>
+                    <div class="card-text">
+                        <strong>VideoLingo</strong> - 16,879 stars<br>
+                        AI字幕翻译<br><br>
+                        <strong>VideoCaptioner</strong> - 14,214 stars<br>
+                        AI字幕生成<br><br>
+                        <strong>Whisper</strong> - OpenAI<br>
+                        语音识别
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>手机用户视频场景AI诉求调研报告 · 2025年4月</p>
+        <p style="margin-top: 8px; font-size: 13px;">数据收集时间范围：2024-04-24 至 2025-04-24 · 总VOC样本：569条</p>
+    </footer>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

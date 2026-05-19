@@ -1,0 +1,89 @@
+[
+  {
+    "name": "育儿知识智能收集与整理",
+    "description": "帮助宝妈自动收集、分类、整理散落在各平台的育儿知识，支持按月龄/主题/场景自动归档",
+    "evidence_notes": 275,
+    "evidence_interaction": 708150,
+    "evidence_collects": 439616,
+    "score": 1587382,
+    "signals": [
+      "知识收集",
+      "信息获取"
+    ],
+    "keywords": [
+      "孕期",
+      "早教",
+      "育儿",
+      "备孕",
+      "产后"
+    ]
+  },
+  {
+    "name": "育儿内容个性化推荐",
+    "description": "根据宝宝月龄、宝妈需求、当前场景推荐精准的育儿内容，解决信息过载问题",
+    "evidence_notes": 179,
+    "evidence_interaction": 548114,
+    "evidence_collects": 372103,
+    "score": 1292320,
+    "signals": [
+      "知识分享",
+      "决策信号"
+    ],
+    "keywords": [
+      "早教",
+      "育儿",
+      "孕期"
+    ]
+  },
+  {
+    "name": "产后情绪支持与心理疏导",
+    "description": "识别宝妈产后情绪状态，提供个性化情绪支持和心理疏导，预防产后抑郁",
+    "evidence_notes": 107,
+    "evidence_interaction": 360828,
+    "evidence_collects": 152106,
+    "score": 665040,
+    "signals": [
+      "情绪表达",
+      "产后抑郁",
+      "焦虑"
+    ],
+    "keywords": [
+      "产后",
+      "新手妈妈"
+    ]
+  },
+  {
+    "name": "育儿经验智能问答",
+    "description": "基于海量UGC内容的智能问答，解决宝妈具体育儿问题，提供过来人经验",
+    "evidence_notes": 84,
+    "evidence_interaction": 246385,
+    "evidence_collects": 142944,
+    "score": 532273,
+    "signals": [
+      "经验求助",
+      "求助信号"
+    ],
+    "keywords": [
+      "产后",
+      "育儿",
+      "孕期"
+    ]
+  },
+  {
+    "name": "育儿工具评测与推荐",
+    "description": "智能推荐和评测育儿相关绘本、玩具、APP、工具，解决选择困难",
+    "evidence_notes": 78,
+    "evidence_interaction": 231257,
+    "evidence_collects": 145513,
+    "score": 522283,
+    "signals": [
+      "产品工具",
+      "决策信号"
+    ],
+    "keywords": [
+      "早教",
+      "新手妈妈",
+      "产后"
+    ]
+  }
+]

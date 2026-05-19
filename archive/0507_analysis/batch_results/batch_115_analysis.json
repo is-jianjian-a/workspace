@@ -1,0 +1,375 @@
+{
+  "batch_id": 115,
+  "total_items": 29,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 29
+    },
+    "type_distribution": {
+      "behavior_description": 25,
+      "pain_point": 4
+    },
+    "topic_distribution": {
+      "other": 18,
+      "video_quality": 8,
+      "content_recommend": 1,
+      "screen_cast": 2
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 2,
+      "implicit": 0,
+      "not_ai": 27
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4916",
+      "text": "老实交代，你是不是贤者模式写的这个回答",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4919",
+      "text": "久妈发言真是重量级，不知道灵魂状态下的哈克回怎么想",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4922",
+      "text": "我就想知道，如果我点收藏，别人看不到吧？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4931",
+      "text": "冲就完了，要什么剧情，大家都是成年人，时间很紧张的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4942",
+      "text": "新游戏分享我帮你测评一下，不然不敢给你点赞，我是个认真的人。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4945",
+      "text": "两年前重新买相机就是因为手机照片在平板上看就是一坨屎。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4947",
+      "text": "你拿4433和不知道多少年前的手机传感器比，这不是在田忌赛马吗？这是现在的一英寸手机和主流c幅相机的比较[大笑]查看图片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4952",
+      "text": "手机是通过算法补充的。算法本质就是推测的，细节显然不如光学准确清晰真实。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4956",
+      "text": "这么说吧、要是传感器尺寸不是越大越好、为什么手机传感器越来越大、至今已经有旗舰手机用上1英寸了呢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4959",
+      "text": "扯犊子呢？是发朋友圈看不出来，但是你放大一点看看，手机的细节我就不说了，懂得都懂",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4960",
+      "text": "从摄影的角度来看，画质不是第一位的，记录才是第一位的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4961",
+      "text": "手机拍风景锐化痕迹太明显了 不用放大都能看出来",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4963",
+      "text": "你这就是纯欺负人，都上中画幅了。其实M43都比手机强，主要是手机锐化太恶心了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4964",
+      "text": "我几年前亲自用几台旗舰拍照手机对比过几台相机了，有全画幅的尼康Z6，有半画幅，还有一寸底的黑卡2，我可以负责任的说，即便黑卡2和半画幅画质都远胜手机，拍人物的时候放大看看人的面部、脸部边缘、头发、脖子边缘。拍风景放大看看树叶、云彩细节。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4965",
+      "text": "分辨率就不一样，放大后的模糊程度都不同。至少要设置到同样分辨率的情况下再比吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4972",
+      "text": "楼主用手机拍下面的图看看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4973",
+      "text": "手机锐化太严重了，不过算法也挺强",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4974",
+      "text": "[飙泪笑]昨天我也是这样的那个哥们来了一句你的相机贵一般人不舍得买，手机大家都舍得买。第2句就是。你的相机又打不了原神。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4976",
+      "text": "画质再好，一坨屎也没什么可照的。除了某些炫技的摄影，普通人记录生活手机就够了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4978",
+      "text": "具体还是要看输出的画面尺寸，展示的距离，限定图片的场景，画质才有够用的说法",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4979",
+      "text": "这年头谁还用手机拍照，然后传到电脑上用大屏看呢？所以在实际使用上手机和单反拍的真的没啥差别，甚至比单反还讨好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4980",
+      "text": "为啥你的手机和相机焦距可以对到一模一样",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4981",
+      "text": "旅游发朋友圈那还是手机方便，随着ai越来越成熟，手机随便拍一张，再交给ai，分分钟渲染出矢量级别的画质[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4982",
+      "text": "题主很给手机面子了，甚至都没用全画幅来比较[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4985",
+      "text": "又有人来讨论这个问题了。手机1英寸对比半画幅，还是手机1/2英寸对比全画幅？咱找个1英寸对比全画幅吧1.说画质差不差的，首先你要搞明白你经常看图的显示器是什么，如果是手机屏幕，那画质还真差不多，难以分辨。如果你经常在看电脑屏幕（包含平板电脑），那手机画质劣势就能看出来了。但是我相信99%的人是在用手机屏幕看的更多吧，不管是文字信息还是图片信息2.你要硬说放大看，手机有1亿像素的放大岂不是秒杀相机，",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4988",
+      "text": "视频时代用户对变焦的需求增大，也促进厂商把更多资源投入到变焦的研发上",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4991",
+      "text": "老蛙10/4是那个饼干头吗？我本来想买一个玩一玩，看评测说，边缘画质太差了，没敢买",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4992",
+      "text": "我觉得你说得很对，你还少说了一点，就是音响品质很差，环绕声就不提了，基本没有，还不如自己在家下4k片源，给电视机接个音箱看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4994",
+      "text": "谢谢专业评论，今天才知道全国电影院也如此大跃进、最后成烂尾楼了[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

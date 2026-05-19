@@ -1,0 +1,739 @@
+{
+  "batch_id": 36,
+  "total_items": 59,
+  "statistics": {
+    "scene_distribution": {
+      "long_video": 2,
+      "general_video": 43,
+      "short_video": 13,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 50,
+      "pain_point": 9
+    },
+    "topic_distribution": {
+      "other": 46,
+      "content_recommend": 3,
+      "video_quality": 8,
+      "ai_feature": 1,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 0,
+      "implicit": 3,
+      "not_ai": 56
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_contents_43",
+      "text": "追剧、刷视频竟然还有这样的危害？ #正能量专递 #人生智慧 #追剧一夏",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_44",
+      "text": " @苡菲(O3xjg6y3zkcgwpde) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_45",
+      "text": "#冷知识 #刷快手要知道的 #芳芳冷知识",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_46",
+      "text": "不懂的评论区尽管问！29号上午十点女性私护体验专场！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_48",
+      "text": "快手减少刷到不喜欢的视频，老年人学会不喜欢视频减少推荐，老人云快手教程。 #教老年人用手机 #快手教程 #老年人 #老人云 ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_contents_49",
+      "text": "一刷短视频就停不下来？警惕眼睛疲劳、视力下降、肩颈疼痛等身体健康问题，长时间刷短视频还会给大脑带来负面影响。#短视频  #手机",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_50",
+      "text": "看图片没感觉了怎么办？ #两性  #亲密关系  #情感  ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_52",
+      "text": "想随时随地畅快追剧、听音乐、看小说吗？普通平板追剧卡顿、听音乐音质差、携带还不方便，真让人头疼！别愁啦，苹果 iPad air 款平板电脑来救你啦！它有九寸七屏幕，视野超棒，追剧超爽！音质更是出色，听音乐时能带来清晰、立体的音效体验，仿佛置身音乐现场，让你沉浸在音乐世界里！而且它轻薄便携，不管是在公交上、地铁里，还是户外休闲时，都能轻松拿着追剧、听音乐、看小说，不受空间限制，随时随地开启娱乐模式！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_53",
+      "text": " @晓鑫鑫努力加油(O3xbys4hzq6yq584) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_54",
+      "text": "为什么我的第一次体验糟？#恋爱 #感情 #知识",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_55",
+      "text": "夫妻亲热，体验感差怎么办？ #医学知识科普  #夫妻  #健康科普",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_56",
+      "text": "当男领导的手机被美女同事拿到之后……",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_57",
+      "text": "女人没有感觉，是男人的问题还是女人的问题？ #女人 #女性成长 #夫妻相处 #婚姻情感 ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_58",
+      "text": "第1集｜@陈老九·【九門】户外探险 #体验差宅 #坤素初体验 #精彩片段",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_59",
+      "text": "刷视频不够清晰，这样设置 #手机维修 #原装二手机 #5g新机出售",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_60",
+      "text": " @露呆呆(O3xtjxinmh3etqju) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_61",
+      "text": "#儿童动画 #启蒙幼儿早教 #儿童玩具 #小朋友都爱看 小朋友喜欢看的视频，儿童看的视频，小朋友喜欢看的搞笑视频。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_63",
+      "text": " @浅安！(O3xunm9ruqw3vt66) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_65",
+      "text": "#不许笑 看把美猴王气成啥样了，吃吃吃，就知道吃，烦死了！哼💢 #西游记精彩片段分享",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_66",
+      "text": " @我与生俱来的温柔(O3xutppmpkkzncr4) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_67",
+      "text": "情绪发挥的很稳定，每天都是：烦死了，咋还不开学😓😓",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_68",
+      "text": "看啥都不顺眼！烦死了😩 #皮肤管理大师 #美容护肤正能量 #美容护肤团购附近面部清洁",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_70",
+      "text": " @月知忆(O3xq4sx6aidwmasa) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_71",
+      "text": " @张浩宇(O3xt35zcf9f6969i) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_74",
+      "text": "网络热梗之猴哥烦死了 #好剧推荐  #搞笑西游记 #网络热梗 #西游记",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_contents_76",
+      "text": " #小孩子爱看的视频  #小孩子爱看的搞笑视频  #快手二次创作激励计划  ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_77",
+      "text": "指令:帮我生成一个视频：让她看着手机，生气的对着屏幕说：这些人类怎么天天让我做视频，烦死了。然后对着了手机说：现在人数较多，预计两个小时。然后图片中的人物就拿开手机躺在床上睡了觉，然后过了一会儿，忽然醒来，惊慌的说：我还没生成视频！然后忽然灵机一动说：没事，我还有一招！然后对着手机说：您的视频疑似违规，下次试试吧。然后大笑。模型 2.0 Fast，原比例，时长 10s。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_79",
+      "text": " @青提.k🍐(O3xu6fyzwerjhiqg) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_80",
+      "text": "#搞笑视频 #潇洒一点 #身材 #健身",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_81",
+      "text": "我自认为对眼镜伤害没那么大 #护眼 #手机屏幕 #玩手机",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_83",
+      "text": "#健康生活 #范凡凡 #玩手机危害 #愿所有人越来越好看手机时间长了\n刷短视频 \n会有什么样的危害?\n\n第一个 是你内心会越来越\n空虚! 它会带走你很多能量!\n\n第二个 是你的眼睛会非常\n没有神! 眼神涣散没有定力\n\n为什么眼神涣散?\n因为眼睛他是“心”的表达! \n刷手机真的特别耗精气神!\n\n尽量少刷!  少刷! 少刷！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_84",
+      "text": "简单一步，设置视频自动滑动#快成长计划 #文娱百科明日之星  不出镜怎么做短视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_contents_85",
+      "text": "感觉还是拔盘快，坐下半个小时多点就干了好几个，看着手机干点也挺好，不干也是看手机，不困再干个",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_86",
+      "text": "#手机 #老年人 #健康科普 ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_88",
+      "text": " @舒嬷嬷MOMO(O3xmnws832r4u4gq) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_89",
+      "text": "越累越爱刷短视频不是闲的，是情绪在 “找出口” #知识播种计划 #内容启发分享计划 #老铁知识百科 #比武招亲大会 ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_90",
+      "text": "看手机久了眼睛累，你有这样的烦恼吗？ #烟台配镜 #烟台验光 #验光配镜 #近视眼镜",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_91",
+      "text": "家有爱看手机不听劝的小朋友请看看，长时间看手机的危害！ #爱眼护眼",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_93",
+      "text": "你刷手机，辛苦了。记得注意时间，别刷到太晚～ #内容过于真实 #晚安 #快来过暑期",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_94",
+      "text": "#玩手机上瘾 不要再 #玩手机",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_96",
+      "text": "为什么越刷手机越累，真正的休息是什么？ #每日分享  #心理学 #心理咨询师说 #心理学改变生活",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_97",
+      "text": "教你如何屏蔽不感兴趣的视频 #每日分享 #快手知识分享 #电商知识讲解",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_98",
+      "text": " @苡菲(O3xjg6y3zkcgwpde) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_99",
+      "text": "现在没有手机就没有安全感，看久了又累，分享简单的茶饮\n  #知识分享  #记录日常 #正能量",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_100",
+      "text": " @苡菲(O3xjg6y3zkcgwpde) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_101",
+      "text": "关闭这三个烦人的开关 #知识分享 #自媒体 #短视频创业",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_102",
+      "text": "学好手机摄影，记录美好生活～#手机摄影 #今天拍点啥",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_103",
+      "text": "转发给你身边爱看颜色视频的朋友 #数码科技 #苹果手机 #艾特你的兄弟",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_104",
+      "text": "视频卡顿，林静茹教剪顺畅视频 #林静茹",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_106",
+      "text": "关闭这个开关，手机跟新买的一样流畅，一点也不卡顿 #知识分享 #自媒体创业 #自媒体",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_107",
+      "text": "玩快手关闭这两个功能，您的手机不再卡顿！ @快手创作者中心(O3xrgtux2ehryffe) @快手光合计划助手(O3xxpf2m4brbf3pe) #快手清理缓存",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_108",
+      "text": "为什么你办的百兆宽带，但是看个视频都卡的不行，教你一招解决  #程序员  #电脑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_109",
+      "text": "快手清理缓存，让运行更加流畅稳定。快手如何运行速度快。 #磁力万合 #快手短视频 #知识分享 @快手热点(O3xddgkd5fav5if9) @我要上热门(O3x8er38dpbhvbaa) @快手粉条(O3xhcy6vhfzcu3qe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_110",
+      "text": "播放量卡着不动，为啥？ #干货分享 #知识分享 #短视频创业 #自媒体",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_111",
+      "text": "刷视频越来越卡，三步教会你让手机更流畅 #手机技巧  #知识分享  #手机使用小技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_112",
+      "text": "#苹果手机  #网速  #苹果手机使用小技巧 ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_113",
+      "text": "观看在线视频或直播时，画面频繁卡顿加载缓慢怎么办？ #网速慢 #无线网卡  #comfast ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_114",
+      "text": "解除网速限制，你不是最后一个知道的 #电脑知识 #程序员 #编程",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_115",
+      "text": "@快手新知(O3xvmqt3emychk29)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "high": {
+    "count": 33,
+    "total_interaction": 480721
+  },
+  "medium": {
+    "count": 52,
+    "total_interaction": 348123
+  },
+  "low": {
+    "count": 56,
+    "total_interaction": 227677
+  }
+}

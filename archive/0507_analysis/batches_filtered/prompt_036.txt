@@ -1,0 +1,713 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下59条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 36/120)
+
+--- ITEM #1 ---
+ID: kuaishou_contents_43
+平台: kuaishou
+类型: contents
+内容: 追剧、刷视频竟然还有这样的危害？ #正能量专递 #人生智慧 #追剧一夏
+
+--- ITEM #2 ---
+ID: kuaishou_contents_44
+平台: kuaishou
+类型: contents
+内容:  @苡菲(O3xjg6y3zkcgwpde) 的精彩视频
+
+--- ITEM #3 ---
+ID: kuaishou_contents_45
+平台: kuaishou
+类型: contents
+内容: #冷知识 #刷快手要知道的 #芳芳冷知识
+
+--- ITEM #4 ---
+ID: kuaishou_contents_46
+平台: kuaishou
+类型: contents
+内容: 不懂的评论区尽管问！29号上午十点女性私护体验专场！
+
+--- ITEM #5 ---
+ID: kuaishou_contents_48
+平台: kuaishou
+类型: contents
+内容: 快手减少刷到不喜欢的视频，老年人学会不喜欢视频减少推荐，老人云快手教程。 #教老年人用手机 #快手教程 #老年人 #老人云 
+
+--- ITEM #6 ---
+ID: kuaishou_contents_49
+平台: kuaishou
+类型: contents
+内容: 一刷短视频就停不下来？警惕眼睛疲劳、视力下降、肩颈疼痛等身体健康问题，长时间刷短视频还会给大脑带来负面影响。#短视频  #手机
+
+--- ITEM #7 ---
+ID: kuaishou_contents_50
+平台: kuaishou
+类型: contents
+内容: 看图片没感觉了怎么办？ #两性  #亲密关系  #情感  
+
+--- ITEM #8 ---
+ID: kuaishou_contents_52
+平台: kuaishou
+类型: contents
+内容: 想随时随地畅快追剧、听音乐、看小说吗？普通平板追剧卡顿、听音乐音质差、携带还不方便，真让人头疼！别愁啦，苹果 iPad air 款平板电脑来救你啦！它有九寸七屏幕，视野超棒，追剧超爽！音质更是出色，听音乐时能带来清晰、立体的音效体验，仿佛置身音乐现场，让你沉浸在音乐世界里！而且它轻薄便携，不管是在公交上、地铁里，还是户外休闲时，都能轻松拿着追剧、听音乐、看小说，不受空间限制，随时随地开启娱乐模式！系统流畅稳定，运行各类音视频及阅读应用都不卡顿，让你畅享娱乐时光！电池续航也持久，长时间追剧、听音乐、看小说都不断电，完全满足你的娱乐需求！这么棒的平板电脑，现在商家推出限时粉丝价，性价比超高，价格超
+
+--- ITEM #9 ---
+ID: kuaishou_contents_53
+平台: kuaishou
+类型: contents
+内容:  @晓鑫鑫努力加油(O3xbys4hzq6yq584) 的精彩视频
+
+--- ITEM #10 ---
+ID: kuaishou_contents_54
+平台: kuaishou
+类型: contents
+内容: 为什么我的第一次体验糟？#恋爱 #感情 #知识
+
+--- ITEM #11 ---
+ID: kuaishou_contents_55
+平台: kuaishou
+类型: contents
+内容: 夫妻亲热，体验感差怎么办？ #医学知识科普  #夫妻  #健康科普
+
+--- ITEM #12 ---
+ID: kuaishou_contents_56
+平台: kuaishou
+类型: contents
+内容: 当男领导的手机被美女同事拿到之后……
+
+--- ITEM #13 ---
+ID: kuaishou_contents_57
+平台: kuaishou
+类型: contents
+内容: 女人没有感觉，是男人的问题还是女人的问题？ #女人 #女性成长 #夫妻相处 #婚姻情感 
+
+--- ITEM #14 ---
+ID: kuaishou_contents_58
+平台: kuaishou
+类型: contents
+内容: 第1集｜@陈老九·【九門】户外探险 #体验差宅 #坤素初体验 #精彩片段
+
+--- ITEM #15 ---
+ID: kuaishou_contents_59
+平台: kuaishou
+类型: contents
+内容: 刷视频不够清晰，这样设置 #手机维修 #原装二手机 #5g新机出售
+
+--- ITEM #16 ---
+ID: kuaishou_contents_60
+平台: kuaishou
+类型: contents
+内容:  @露呆呆(O3xtjxinmh3etqju) 的精彩视频
+
+--- ITEM #17 ---
+ID: kuaishou_contents_61
+平台: kuaishou
+类型: contents
+内容: #儿童动画 #启蒙幼儿早教 #儿童玩具 #小朋友都爱看 小朋友喜欢看的视频，儿童看的视频，小朋友喜欢看的搞笑视频。
+
+--- ITEM #18 ---
+ID: kuaishou_contents_63
+平台: kuaishou
+类型: contents
+内容:  @浅安！(O3xunm9ruqw3vt66) 的精彩视频
+
+--- ITEM #19 ---
+ID: kuaishou_contents_65
+平台: kuaishou
+类型: contents
+内容: #不许笑 看把美猴王气成啥样了，吃吃吃，就知道吃，烦死了！哼💢 #西游记精彩片段分享
+
+--- ITEM #20 ---
+ID: kuaishou_contents_66
+平台: kuaishou
+类型: contents
+内容:  @我与生俱来的温柔(O3xutppmpkkzncr4) 的精彩视频
+
+--- ITEM #21 ---
+ID: kuaishou_contents_67
+平台: kuaishou
+类型: contents
+内容: 情绪发挥的很稳定，每天都是：烦死了，咋还不开学😓😓
+
+--- ITEM #22 ---
+ID: kuaishou_contents_68
+平台: kuaishou
+类型: contents
+内容: 看啥都不顺眼！烦死了😩 #皮肤管理大师 #美容护肤正能量 #美容护肤团购附近面部清洁
+
+--- ITEM #23 ---
+ID: kuaishou_contents_70
+平台: kuaishou
+类型: contents
+内容:  @月知忆(O3xq4sx6aidwmasa) 的精彩视频
+
+--- ITEM #24 ---
+ID: kuaishou_contents_71
+平台: kuaishou
+类型: contents
+内容:  @张浩宇(O3xt35zcf9f6969i) 的精彩视频
+
+--- ITEM #25 ---
+ID: kuaishou_contents_74
+平台: kuaishou
+类型: contents
+内容: 网络热梗之猴哥烦死了 #好剧推荐  #搞笑西游记 #网络热梗 #西游记
+
+--- ITEM #26 ---
+ID: kuaishou_contents_76
+平台: kuaishou
+类型: contents
+内容:  #小孩子爱看的视频  #小孩子爱看的搞笑视频  #快手二次创作激励计划  
+
+--- ITEM #27 ---
+ID: kuaishou_contents_77
+平台: kuaishou
+类型: contents
+内容: 指令:帮我生成一个视频：让她看着手机，生气的对着屏幕说：这些人类怎么天天让我做视频，烦死了。然后对着了手机说：现在人数较多，预计两个小时。然后图片中的人物就拿开手机躺在床上睡了觉，然后过了一会儿，忽然醒来，惊慌的说：我还没生成视频！然后忽然灵机一动说：没事，我还有一招！然后对着手机说：您的视频疑似违规，下次试试吧。然后大笑。模型 2.0 Fast，原比例，时长 10s。
+
+--- ITEM #28 ---
+ID: kuaishou_contents_79
+平台: kuaishou
+类型: contents
+内容:  @青提.k🍐(O3xu6fyzwerjhiqg) 的精彩视频
+
+--- ITEM #29 ---
+ID: kuaishou_contents_80
+平台: kuaishou
+类型: contents
+内容: #搞笑视频 #潇洒一点 #身材 #健身
+
+--- ITEM #30 ---
+ID: kuaishou_contents_81
+平台: kuaishou
+类型: contents
+内容: 我自认为对眼镜伤害没那么大 #护眼 #手机屏幕 #玩手机
+
+--- ITEM #31 ---
+ID: kuaishou_contents_83
+平台: kuaishou
+类型: contents
+内容: #健康生活 #范凡凡 #玩手机危害 #愿所有人越来越好看手机时间长了
+刷短视频 
+会有什么样的危害?
+
+第一个 是你内心会越来越
+空虚! 它会带走你很多能量!
+
+第二个 是你的眼睛会非常
+没有神! 眼神涣散没有定力
+
+为什么眼神涣散?
+因为眼睛他是“心”的表达! 
+刷手机真的特别耗精气神!
+
+尽量少刷!  少刷! 少刷！
+
+--- ITEM #32 ---
+ID: kuaishou_contents_84
+平台: kuaishou
+类型: contents
+内容: 简单一步，设置视频自动滑动#快成长计划 #文娱百科明日之星  不出镜怎么做短视频
+
+--- ITEM #33 ---
+ID: kuaishou_contents_85
+平台: kuaishou
+类型: contents
+内容: 感觉还是拔盘快，坐下半个小时多点就干了好几个，看着手机干点也挺好，不干也是看手机，不困再干个
+
+--- ITEM #34 ---
+ID: kuaishou_contents_86
+平台: kuaishou
+类型: contents
+内容: #手机 #老年人 #健康科普 
+
+--- ITEM #35 ---
+ID: kuaishou_contents_88
+平台: kuaishou
+类型: contents
+内容:  @舒嬷嬷MOMO(O3xmnws832r4u4gq) 的精彩视频
+
+--- ITEM #36 ---
+ID: kuaishou_contents_89
+平台: kuaishou
+类型: contents
+内容: 越累越爱刷短视频不是闲的，是情绪在 “找出口” #知识播种计划 #内容启发分享计划 #老铁知识百科 #比武招亲大会 
+
+--- ITEM #37 ---
+ID: kuaishou_contents_90
+平台: kuaishou
+类型: contents
+内容: 看手机久了眼睛累，你有这样的烦恼吗？ #烟台配镜 #烟台验光 #验光配镜 #近视眼镜
+
+--- ITEM #38 ---
+ID: kuaishou_contents_91
+平台: kuaishou
+类型: contents
+内容: 家有爱看手机不听劝的小朋友请看看，长时间看手机的危害！ #爱眼护眼
+
+--- ITEM #39 ---
+ID: kuaishou_contents_93
+平台: kuaishou
+类型: contents
+内容: 你刷手机，辛苦了。记得注意时间，别刷到太晚～ #内容过于真实 #晚安 #快来过暑期
+
+--- ITEM #40 ---
+ID: kuaishou_contents_94
+平台: kuaishou
+类型: contents
+内容: #玩手机上瘾 不要再 #玩手机
+
+--- ITEM #41 ---
+ID: kuaishou_contents_96
+平台: kuaishou
+类型: contents
+内容: 为什么越刷手机越累，真正的休息是什么？ #每日分享  #心理学 #心理咨询师说 #心理学改变生活
+
+--- ITEM #42 ---
+ID: kuaishou_contents_97
+平台: kuaishou
+类型: contents
+内容: 教你如何屏蔽不感兴趣的视频 #每日分享 #快手知识分享 #电商知识讲解
+
+--- ITEM #43 ---
+ID: kuaishou_contents_98
+平台: kuaishou
+类型: contents
+内容:  @苡菲(O3xjg6y3zkcgwpde) 的精彩视频
+
+--- ITEM #44 ---
+ID: kuaishou_contents_99
+平台: kuaishou
+类型: contents
+内容: 现在没有手机就没有安全感，看久了又累，分享简单的茶饮
+  #知识分享  #记录日常 #正能量
+
+--- ITEM #45 ---
+ID: kuaishou_contents_100
+平台: kuaishou
+类型: contents
+内容:  @苡菲(O3xjg6y3zkcgwpde) 的精彩视频
+
+--- ITEM #46 ---
+ID: kuaishou_contents_101
+平台: kuaishou
+类型: contents
+内容: 关闭这三个烦人的开关 #知识分享 #自媒体 #短视频创业
+
+--- ITEM #47 ---
+ID: kuaishou_contents_102
+平台: kuaishou
+类型: contents
+内容: 学好手机摄影，记录美好生活～#手机摄影 #今天拍点啥
+
+--- ITEM #48 ---
+ID: kuaishou_contents_103
+平台: kuaishou
+类型: contents
+内容: 转发给你身边爱看颜色视频的朋友 #数码科技 #苹果手机 #艾特你的兄弟
+
+--- ITEM #49 ---
+ID: kuaishou_contents_104
+平台: kuaishou
+类型: contents
+内容: 视频卡顿，林静茹教剪顺畅视频 #林静茹
+
+--- ITEM #50 ---
+ID: kuaishou_contents_106
+平台: kuaishou
+类型: contents
+内容: 关闭这个开关，手机跟新买的一样流畅，一点也不卡顿 #知识分享 #自媒体创业 #自媒体
+
+--- ITEM #51 ---
+ID: kuaishou_contents_107
+平台: kuaishou
+类型: contents
+内容: 玩快手关闭这两个功能，您的手机不再卡顿！ @快手创作者中心(O3xrgtux2ehryffe) @快手光合计划助手(O3xxpf2m4brbf3pe) #快手清理缓存
+
+--- ITEM #52 ---
+ID: kuaishou_contents_108
+平台: kuaishou
+类型: contents
+内容: 为什么你办的百兆宽带，但是看个视频都卡的不行，教你一招解决  #程序员  #电脑
+
+--- ITEM #53 ---
+ID: kuaishou_contents_109
+平台: kuaishou
+类型: contents
+内容: 快手清理缓存，让运行更加流畅稳定。快手如何运行速度快。 #磁力万合 #快手短视频 #知识分享 @快手热点(O3xddgkd5fav5if9) @我要上热门(O3x8er38dpbhvbaa) @快手粉条(O3xhcy6vhfzcu3qe)
+
+--- ITEM #54 ---
+ID: kuaishou_contents_110
+平台: kuaishou
+类型: contents
+内容: 播放量卡着不动，为啥？ #干货分享 #知识分享 #短视频创业 #自媒体
+
+--- ITEM #55 ---
+ID: kuaishou_contents_111
+平台: kuaishou
+类型: contents
+内容: 刷视频越来越卡，三步教会你让手机更流畅 #手机技巧  #知识分享  #手机使用小技巧
+
+--- ITEM #56 ---
+ID: kuaishou_contents_112
+平台: kuaishou
+类型: contents
+内容: #苹果手机  #网速  #苹果手机使用小技巧 
+
+--- ITEM #57 ---
+ID: kuaishou_contents_113
+平台: kuaishou
+类型: contents
+内容: 观看在线视频或直播时，画面频繁卡顿加载缓慢怎么办？ #网速慢 #无线网卡  #comfast 
+
+--- ITEM #58 ---
+ID: kuaishou_contents_114
+平台: kuaishou
+类型: contents
+内容: 解除网速限制，你不是最后一个知道的 #电脑知识 #程序员 #编程
+
+--- ITEM #59 ---
+ID: kuaishou_contents_115
+平台: kuaishou
+类型: contents
+内容: @快手新知(O3xvmqt3emychk29)
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_036
+
+开始分析：

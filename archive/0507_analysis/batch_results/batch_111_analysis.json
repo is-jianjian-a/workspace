@@ -1,0 +1,376 @@
+{
+  "batch_id": 111,
+  "total_items": 29,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 29
+    },
+    "type_distribution": {
+      "behavior_description": 21,
+      "pain_point": 5,
+      "positive_feedback": 3
+    },
+    "topic_distribution": {
+      "other": 20,
+      "video_quality": 7,
+      "content_recommend": 1,
+      "screen_cast": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 28
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_4604",
+      "text": "因为他们既有好手机，也有全画幅相机",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4605",
+      "text": "2025年在拍照或者录像方面，价位接近的情况下，个人认为手机吊打相机的应该是便携性，易用性和续航，可能还有防抖（可能而已）。而不是画质，画质，画质。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4608",
+      "text": "我的感受是在较暗的光线下拍照片，手机比全幅相机差很多。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4611",
+      "text": "摄影穷三代，还没听说过手机穷几代的[捂脸]都不是一个层级的东西，怎么比。。[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4613",
+      "text": "你的g7x不能玩原神，手机赢！[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4618",
+      "text": "我用手机也经常对焦失败。大哥我请教一下，为什么手机经常对不上焦？按理来说中间对焦很容易啊。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4620",
+      "text": "别说超越了   就是靠近都绝无可能    手机领先的是方便  易拍   保有量大   性价比高但是单说相机那个头  那个进光量      几百倍有了吧？    拿啥靠近？  拿啥超越？    手机只是算法牛逼   可以取悦大众而已",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_4621",
+      "text": "朋友，你怎么可以用GFX来欺负手机相机这种垃圾玩意呢？这不是丢GFX的份么？给你点赞了！[打招呼]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4622",
+      "text": "很现实的问题，当你去拍婚纱照的时候，影楼只给你用手机拍。你只会骂一句：我草……",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4628",
+      "text": "你恐怕连手机都不知道怎么用[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4631",
+      "text": "好镜头可以用几十年，人走头还在[飙泪笑]机身基本每年都更新，买新不买旧。富士用户请忽视",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4635",
+      "text": "保值的这个问题得看你是爱好者还是职业用户了。对于职业用户来说，用一个烂机身各种规格限制，接活一堆限制，几年下来少挣的钱够买好几个牛头了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4641",
+      "text": "但是好机身已经好体验了很久，。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4643",
+      "text": "给你一个5D，你拿什么和R5拼画质？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4646",
+      "text": "世界上90%以上的照片是手机拍的，4/3相机的照片比手机还是强太多了。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4648",
+      "text": "实际上你用防抖好的奥巴机身会觉得晚上太好用了，比没防抖的全幅残幅都好用。更不用说现在ai降噪有多强",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4652",
+      "text": "你的回答是正确的。本来就是个梗。很早以前的AV画面都很糊。因为针对这个梗还有后续比如你评论一段视频你可以调侃说。现在AV都是蓝光的了。形容UP主上传的视频画面太渣。不清晰",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4654",
+      "text": "没买4k之前，我一直觉得2k极致一定好于4k中高。。很大程度我是受了各种评测视频的观看影响…但是实际上云完了根本得不出客观的结论买完之后4k之后发现4k中高比2k极致看着爽多了…甚至为了高帧率，把游戏渲染调低都比2k100%渲染强…（可能也有整数倍缩放的原因）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4655",
+      "text": "现在才知道？什么鬼扯带不动4K，我2016年就用1060上4K了，玩wow和gta5，特效低点就行，就算最低，也是吊打1080P全开的。看了4K显示器再看其他的，眼睛真的会瞎。最扯淡的是7年后的今天，网上的主流舆论还是4070Ti只能带2K[发呆]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4656",
+      "text": "和你的显示器尺寸有关，我的体验是4k 27寸和2k24寸可以来回换着用，类似于1080p手机和2k手机，不会有明显落差",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4657",
+      "text": "我6年前的卡都可以轻松4K，现在蹦出一群40系显卡不能玩4K的云玩家，敢情显卡这6年还退步了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4658",
+      "text": "游戏画质选择就应该是分辨率排第一，保底60帧放第二，其他的特效往后放放",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4662",
+      "text": "我是直接上4K 165HZ的屏，玩的不要太好。你听网友瞎讲肯定误事，这就和有点症状一百度就是癌症同道理，上网上多了就是这样的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4663",
+      "text": "屏幕尺寸加清晰度加画质加帧数，这种程度才会给人很大的震撼，尤其屏幕尺寸，从16寸到32寸那感觉简直了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4665",
+      "text": "[捂脸]我也是买电脑和显示器的时候看到各种人性能焦虑，说 4060ti 是跑 1080p 的，后面买了 4k160hz 的 miniled，太爽了，玩大表哥 2 高画质开 dlss3 质量档有 80 帧，比 2k 画面清晰太多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4667",
+      "text": "我感觉无所谓，我看玩游戏，电影注意力都没多少在画质上",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4668",
+      "text": "我是1080P60hz直接到4K144hz的，那感觉，再也不可能回去了[捂脸][捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4672",
+      "text": "我玩游戏是用4K120的电视玩的，我感觉2K和4K的不大啊，甚至感觉不出来，只是跟1080P差距很大，是不是都是在同一个显示器上所以感觉不明显？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_4673",
+      "text": "[好奇]55寸电池玩ps5和27寸2k显示器电脑之间来回切换，并没有被震撼到",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

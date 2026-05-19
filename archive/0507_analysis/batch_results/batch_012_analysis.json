@@ -1,0 +1,815 @@
+{
+  "batch_id": 12,
+  "total_items": 65,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 57,
+      "long_video": 7,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "pain_point": 18,
+      "behavior_description": 32,
+      "feature_request": 14,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 30,
+      "payment_member": 1,
+      "playback_control": 2,
+      "video_quality": 23,
+      "subtitle_translate": 4,
+      "download_cache": 3,
+      "content_recommend": 1,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 3,
+      "implicit": 0,
+      "not_ai": 62
+    }
+  },
+  "results": [
+    {
+      "id": "bili_contents_92",
+      "text": "本期视频讲了一些关于护眼模式/护眼屏是否护眼的问题。\n为什么玩手机会近视？会伤眼睛？\n这背后的机制是什么？如何保护我们的眼睛？\n看完这个视频你就会有答案了~\n您可能还喜欢：\n【如何选纸】BV1AG411S765\n【去除油腻】BV1GH4y197gT\n【兴奋剂】BV15m4y137Wr\n【口腔清洁】BV1HK4y1F76u\n【挑选牙膏】BV1h8411i7Hi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_95",
+      "text": "听劝！千万不躺着样玩手机了，否则“视频终端综合征”找上门！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_96",
+      "text": "他们都说拍视频一部iPhone就够了，我信了...\n我的上一期视频全片用iPhone断断续续拍摄了两年：\nhttps://www.bilibili.com/video/BV1mqmGBaEpe/?spm_id_from=333.1387.homepage.video_card.click&vd_source=d57b447cf9e23efff8ee7a1eb88dd181\niPhone 拍视频真的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_98",
+      "text": "这是我 2021 年所有的时间记录了，在这一整年里边儿呢，我刷手机一共用了 44 小时 26 分钟，平均下来，我每天刷手机就是 7 分钟。但是，这一年里边儿，我从来没有强迫自己说“千万别玩儿手机、离手机远一点啊！” 反而帮我远离手机瘾的，就是手机。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_99",
+      "text": "马上开学了！\n假期作业是没有写的\n制定的目标是没完成的\n开学准备是没做好的\n手机也是无聊的\n学习是绝对不会开始的\n\n为什么明知道该学\n却还在猛猛刷手机？\n\n为什么手机都已经无聊了\n却还不愿意开始学习？\n\n本期视频\n对比手机与学习背后的逻辑\n逐一分析“手机依赖症”三大原因\n\n只有搞清楚原因\n我们才能针对性设计解决方案\n\n带你看穿“手机依赖”的幻象\n一招立刻抽身！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_103",
+      "text": "4K 120帧威力加强版掉帧检测视频",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_105",
+      "text": "过了将近8年的时间，我们决定将频道的大部分节目帧率都改为29.97帧和59.94帧。至于这其中的原因，欢迎收看本期节目～如果这期视频对你有帮助，请多多支持我们，并把视频分享给有需要的人！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_106",
+      "text": "iPad2021升级26.4之后出现全屏卡住不动的问题，各种尝试，包括抹除设备，更换ID，重装App，HD版，都试过了，没有用，B站播放设置里面的选项本来就少，找不到兼容类的选项，有什么办法吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_107",
+      "text": "Potplayer 播放4K视频的时候卡顿，或者音画不同步，怎么办？这里分享4种解决办法",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_109",
+      "text": "重制了60fps掉帧检测视频，这个效果应该会更好，补充了文字说明。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_110",
+      "text": "由于太逆天了，懒得录屏配字幕了，长话短说就是直接关就完事了.....\nEdge真是越更新越难用，怀念20年5月的新Edge（刚去掉旧版Edge时候，都管这个叫新Edge）....",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_111",
+      "text": "做这个视频主要是自己看视频时老是卡顿，但是搜相关方法却没什么视频，所以做了一个视频来帮需要帮助的人",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_112",
+      "text": "b站卡顿的手机都试试看能解决问题不，之前卡顿没有录下来，反正是这个操作，目前刷b站没有卡顿和黑屏",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_114",
+      "text": "大概每3秒一次\n下方数字表示当前视频的帧率\n喜欢这个视频就给个三连哦~\n视频下载链接：链接：https://pan.baidu.com/s/1oRho4UIqJGUDIHypJhGqWg?pwd=fkdi \n提取码：fkdi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_115",
+      "text": "如果发现自己的高端显卡放视频却很卡，可以看看这个视频。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_116",
+      "text": "视频提及的up主@直接包走\n感谢这名up主，解决了我的问题\n另外这个垂直同步也可以在游戏里关的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_117",
+      "text": "目前看了一圈，绝对是全网最大的卡雕！A3大小！没记错的话是15层？很适合立在桌上当摆件~37的泉眼深处真的好好看！喜欢喜欢~目前只会在b站上发，过几天米游社会发，不会发到其他任何的平台嗷！37过几天要准备发车，出去新家啦！希望这个的视频的浏览量破万，这次剪了很长时间，音乐也找了一个比较合适的，尽量都卡点了，趁今天肚子难受的睡不着，大概从11点剪到现在。哎，明天肯定要补觉了，真心希望浏览量要高一点，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_118",
+      "text": "升级后的配置\t\nCPU：英特尔  i7-6700K\n主板：华硕Z170-A\n硬盘：英特尔 256G M.2 SSD+2TB机械\n内存\t：影驰 GAMER Ⅱ PLUS DDR4-3200 8G*4\n显卡\t：影驰 RTX 2080 SUPER 大将\n电源：迎广 额定650w PB650\n机箱：迎广 101 黑色 电脑主机箱\n散热器：迎广 R24 一体式CPU水冷散热器\n机箱风扇：迎广 天狼星ASL1",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_119",
+      "text": "本课程目的只用于教学，切勿使用课程中的技术进行违法活动，利用课程中的技术造成的后果与本人无关，倡导维护网络安全人人有责，共同维护网络文明和谐。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_122",
+      "text": "本期视频，我将带你用三步从根源上解决问题，让你的路由器稳如老狗！\n我们将从最容易忽略的物理环境入手，教你如何正确摆放路由器、解决散热、调整天线；再深入后台，通过优化信道、带宽等核心设置，不花一分钱榨干路由器性能；最后直面硬件根本，教你判断何时该果断升级。这是一份保姆级的WiFi自救指南，助你彻底告别断流、掉线和卡顿的烦恼！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_123",
+      "text": "过了将近8年的时间，我们决定将频道的大部分节目帧率都改为29.97帧和59.94帧。至于这其中的原因，欢迎收看本期节目～如果这期视频对你有帮助，请多多支持我们，并把视频分享给有需要的人！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_125",
+      "text": "还在为网络卡顿、视频转圈、游戏掉线而抓狂吗？别再只会反复重启路由器了！其实，你的电脑里就藏着一个网络“神探”，它就是——Ping命令。\n本期视频将用最通俗易懂的方式，手把手教你如何使用这条简单的命令，给你的家庭网络做一次全面的“体检”。我们将带你像侦探一样，分四步走，一步步缩小问题范围：\n第一步：自检电脑。 用ping 127.0.0.1看看是不是电脑自身网络功能出了问题。\n第二步：排查内网。 用",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_126",
+      "text": "由于太逆天了，懒得录屏配字幕了，长话短说就是直接关就完事了.....\nEdge真是越更新越难用，怀念20年5月的新Edge（刚去掉旧版Edge时候，都管这个叫新Edge）....",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_127",
+      "text": "b站卡顿的手机都试试看能解决问题不，之前卡顿没有录下来，反正是这个操作，目前刷b站没有卡顿和黑屏",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_129",
+      "text": "做这个视频主要是自己看视频时老是卡顿，但是搜相关方法却没什么视频，所以做了一个视频来帮需要帮助的人",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_131",
+      "text": "4K 120帧威力加强版掉帧检测视频",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_132",
+      "text": "同样是利用人眼的错觉，为什么游戏的帧数要求比电影高得多？以及，游戏设置里的「动态模糊」和「垂直同步」，都和这个问题有关~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_134",
+      "text": "Potplayer 播放4K视频的时候卡顿，或者音画不同步，怎么办？这里分享4种解决办法",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_135",
+      "text": "卡顿包括不限于：桌面鼠标拖动卡顿，游戏卡顿，看直播卡顿，听音乐卡顿，剪辑视频卡顿，拖动窗口卡顿\n可以尝试卸载最近更新的KB5049622(如果更新了的话）此补丁为安全更新",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_137",
+      "text": "重制了60fps掉帧检测视频，这个效果应该会更好，补充了文字说明。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_138",
+      "text": "大概每3秒一次\n下方数字表示当前视频的帧率\n喜欢这个视频就给个三连哦~\n视频下载链接：链接：https://pan.baidu.com/s/1oRho4UIqJGUDIHypJhGqWg?pwd=fkdi \n提取码：fkdi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_139",
+      "text": "你的手机能流畅打开这个视频？\r\n关于16K，UP主弄来四台4K显示器，然后把N卡控制面板上面DSR功能打开，分辨率就能调出15360*8640！\r\n其实是我把录像放慢了100倍！哈哈哈哈哈哈哈，谢谢大家！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_141",
+      "text": "本期视频将从图片、视频、服务器三个部分来讲讲，如何提升网站的加载速度。\n\n👇 视频中提到的所有完整流程、工具、代码，都整理在我的博客了： \n🔗 独家完整版教程：madsgogo.life （建议收藏，防止迷路）\n\n【我是谁？】 \n大家好，我是烧麦。 曾是一名外卖众包骑手，但现在的行情下，时薪甚至不足 10 块。 现实告诉我：外卖或许能糊口，但无法支撑我想养家和自由生活的未来。 所以我决定换一种活法",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_contents_144",
+      "text": "网络没问题但打开网页卡顿网页载入慢可以试试这个设置，如有帮助记得三连收藏，以免找不到",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_145",
+      "text": "内存虚拟硬盘工具：https://pan.quark.cn/s/b6225acdc765\n\n其他更多神器合集：https://flowus.cn/cbge/share/0afc7b92-da3a-4938-8917-2da16ca496aa?code=7CMHHU",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_146",
+      "text": "教程制作不易，感谢支持！\r\n大家一键三连~up熬夜更新\r\n本套视频内容过于详细零基础都能学，仅用于信息安全教学，请遵守相关法律法规，严禁用于非法途径。若观众因此作出任何危害网络安全的行为，后果自负，与UP主无关！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_148",
+      "text": "做这个视频主要是自己看视频时老是卡顿，但是搜相关方法却没什么视频，所以做了一个视频来帮需要帮助的人",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_149",
+      "text": "制作不易，大家记得一键三连呀【点赞、投币、收藏】您的支持就是我更新的动力！\r\n视频中配套的网络安全学习笔记可以加VX：yj0002233 备注【XQ】即可领取，还有更多网安工具包大全等你白嫖哦！\r\n本视频目的只用于观看， 切勿使用视频中的技术进行违法活动， 倡导维护网络安全人人有责！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_150",
+      "text": "由于太逆天了，懒得录屏配字幕了，长话短说就是直接关就完事了.....\nEdge真是越更新越难用，怀念20年5月的新Edge（刚去掉旧版Edge时候，都管这个叫新Edge）....",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_151",
+      "text": "中年人的百科全书——路由器网络优化",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_155",
+      "text": "首先还是要感谢“尚未命名”的分享。\n\n阿里无影灵构镜像平台：https://lincore.wuying.aliyun.com/，兑换码：t8WorkF\n粉丝福利免费领取200核时算力，登录后右上角核时算力，购买，右上角兑换码，输入t8WorkFi，可领取200核（如显示9.9，是没有实名认证，实名后则变成0）\n\n新手基础入门教程（必看）：\nhttps://www.bilibili.com/vid",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_156",
+      "text": "看视频太卡？网络太慢？你的网络很可能被限速了！\n\n那有没有什么小妙招解决呢？\n\n别急！小叶这就给大家分享一个快速解除网络限速的办法！\n\n视频在下面哦~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_157",
+      "text": "这期视频真的是做了很久，程序我去年11月就写完了，本来想接着做视频的，但是感觉难度太高了，制作比较复杂就一直没下定决心做，直到清明节开始终于下定决心开始做，整整做了一个月的时间，这也是我第一次正式用达芬奇来剪辑视频。求观众老爷们多点点赞吧，跪求了┭┮﹏┭┮。\n\n应广大观众要求，特此补充相关的程序，书籍和网页\n视频帧分析软件：VQ Analyzer\n使用的书籍：H.264 and MPEG-4 Vi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_159",
+      "text": "给加载缓慢的域名修改一下 hosts 指向的 IP",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_160",
+      "text": "你有没有发现，你看电视的时候画面越来越鲜艳了，甚至有点滑滑腻腻的感觉。这是电视给画面动了手脚吗？这期节目我们想和你聊聊为什么电视的「画质优化」并不一定是好事，我们能不能用更专业的方式，来看电视。如果你喜欢这期视频，请多多支持我们，并把视频分享给你的朋友们一起看看！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_161",
+      "text": "为什么游戏开发商和硬件公司每年都向我们推出新的革命性技术，而游戏的画面水平不仅没有得到提升，有时甚至还在下降？为什么那些超过10年的老游戏，其画面往往比那些运用了最新技术的现代游戏还要好得多？而且，为什么画面越拉跨，反而越需要强大的电脑配置？\n但是，究竟是什么阻止了技术和强大的硬件为我们带来真正的突破性图形效果和良好的优化呢？这一切都与……有关。\n\n原视频链接：https://youtu.be/S",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_163",
+      "text": "过了将近8年的时间，我们决定将频道的大部分节目帧率都改为29.97帧和59.94帧。至于这其中的原因，欢迎收看本期节目～如果这期视频对你有帮助，请多多支持我们，并把视频分享给有需要的人！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_164",
+      "text": "从21补到157，游戏帧率确实提高了，但也引来许多质疑：你这拼好帧拼出来的数据，算什么本事？\n今天来聊聊通过AI算法提高的帧数真的有意义吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_contents_166",
+      "text": "第30期视频讨论了图形性能退化危机背后的历史轨迹，并试图提供一种更加有意义的、厂商中立（Vendor Agnostic）的图形技术视角。同时也回应了一些试图拉低消费者标准的荒谬评论。\n\n时间轴：\n0:00 — 这个测试很愚蠢\n2:12 — 无能的图形技术如何伤害消费者\n5:10 — 开发者努力的历史曾击败厂商锁定的图形技术\n6:47 — 优化价值在市场中的缓慢毁灭\n10:15 — 停止为那些被故意",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_167",
+      "text": "分辨率作为显示器最重要的参数，一直很好奇不同分辨率的差距有多大，这次我们联合@星屏测STARLAB  我们准备了1080p、2K、4K、5K，4台不同分辨率的三星显示器，通过镜头、显微镜等工具实拍出区别，希望能给到大家提供参考~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_169",
+      "text": "好UI，决定游戏的一生。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_170",
+      "text": "AVATA2采用1/1.3英寸的sensor\n使用体验：相比第一代有质的提升\n\n制作｜ Produce ：悟影INSFINITY \nFPV ：李子韬DavidLee\n***合法报备飞行，请遵守当地法律法规***\n***视频素材均为原创，受知识产权保护，未经授权禁止任何形式使用/商用/转载***\n***商务合作TEL详见简介🔝****",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_171",
+      "text": "本期视频是『4K-HDR丨画质鉴赏室』系列的第一期，视频里的所有游戏只是出场顺序而已，没有高低排名，一期视频最多放个十款游戏，因为不想水视频随随便便录个片段进来，每期视频至少保持在二十分钟以上，下期还有另外的游戏，如果这一期视频效果不错的话，会做长期系列视频，包大家看个够！\n视频里的游戏画面全部都是本人自己游玩录制，录制采用OBS搭配RTX5090显卡PS5pro 4K-HDR最高画质 来进行录制",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_173",
+      "text": "叮！你的画质敏感度属于哪一级？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_174",
+      "text": "测试中大家说的清晰度是画面在移动中会更加清晰，这个也是60真到144最明显的特征之一。不过也真的会有人对游戏中的60和144不敏感，但总的来说帧数的变化大家基本都多少能感觉到区别，只是感受明显不明显的区别~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_177",
+      "text": "在你斥巨资开通视频网站的会员之后，是不是发现自己终于可以享用“1080P蓝光”画质？然后又发现这个“蓝光”......好像也没有多清晰嘛！所谓的“1080P蓝光”究竟是怎么回事？为什么有些1080P视频还是那么糊？视频网站的蓝光是真蓝光吗？怎么判断视频画质的好坏？MP4和MKV谁更清晰？为了讲清这些问题，我们做了这期15分钟的视频，相信能和你一起搞清楚这些问题~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_178",
+      "text": "这期视频中的镜头是特意选的，非常普遍的镜头，这样大家可以自己进行测试。测试方法就是找到一个相机位置，在这个位置上，刚刚好不能完全解析出某个细节，最好是有标准的细节。然后，用4张像素位移，和16张像素位移拍摄，看看结果如何。\n\n视频中的测试卡是4000线的，背光式，所以这颗微距镜头的中心解析力是相当高的，而能不能充分利用它的解析力，就看相机了。\n\n总之，现在看来，光学解析力可能还是能满足大多高像素相",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_180",
+      "text": "千元素材福利包限名额领取了：https://www.bilibili.com/read/cv42451141/\nTopaz Video AI 更新来到7.1.0版本，实时预览和导出首选项设置，帧插值慢动作的大升级全新引入强大的场景检测功能，星光迷你模型再次更新，新更新 MiniDV 预设和胶片 4K 预设；EXR 的 Alpha 通道支持；DPX 文件直接使用。\n~ Topaz Video AI ",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_contents_181",
+      "text": "通过百度网盘分享的文件：工具\n链接:https://pan.baidu.com/s/1UI1_zM3MqqNY6f3iyMTfCg?pwd=hiox \n复制这段内容打开「百度网盘APP 即可获取」",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_183",
+      "text": "本期视频科普视频的分辨率与码率对画面清晰度的影响，感谢收看\n\n视频使用设备\n相机：索尼a7s3,索尼a7c\n镜头：腾龙20-40 F2.8，腾龙17-28 F2.8，索尼24-105 F4 G\n麦克风：索尼ECM-B10，Rode videomic NTG",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_184",
+      "text": "你有没有发现，你看电视的时候画面越来越鲜艳了，甚至有点滑滑腻腻的感觉。这是电视给画面动了手脚吗？这期节目我们想和你聊聊为什么电视的「画质优化」并不一定是好事，我们能不能用更专业的方式，来看电视。如果你喜欢这期视频，请多多支持我们，并把视频分享给你的朋友们一起看看！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_185",
+      "text": "希望这个视频，对你在自媒体的道路上有所帮助",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_186",
+      "text": "为什么明明拍摄视频很清晰发布之后总是感觉模糊？今天一个视频讲明白导出这点事！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_189",
+      "text": "听到H.264、码率、MP4这些词，是不是有些似懂非懂的感觉呢？\n今天我们就和大家科普一下，你平时听到的那些视频参数都是什么意思……",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_contents_190",
+      "text": "按常理来讲，视频的分辨率越高，看起来也会更清晰，但是在某些情况下，4K的视频甚至会比1080P还模糊。其实有个东西，对视频来讲，比分辨率更加重要，那就是码率。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

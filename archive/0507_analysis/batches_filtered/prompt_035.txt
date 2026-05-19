@@ -1,0 +1,637 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下48条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 35/120)
+
+--- ITEM #1 ---
+ID: bili_comments_1730
+平台: bili
+类型: comments
+内容: 本期视频使用滤镜：
+Freewell V2 套装（可调nd）
+Freewell M2 套装（固定nd）
+
+--- ITEM #2 ---
+ID: bili_comments_1733
+平台: bili
+类型: comments
+内容: 我一直不理解拍视频为什么会有快门速度。拍摄视频时快门帘不是一直打开的吗？
+
+--- ITEM #3 ---
+ID: bili_comments_1736
+平台: bili
+类型: comments
+内容: 剪映有没有边缘模糊的功能？就是剪映的抠图感觉很生硬，想把边缘模糊一下，没找到
+
+--- ITEM #4 ---
+ID: bili_comments_1741
+平台: bili
+类型: comments
+内容: 太牛了吧，这种局部特效的使用方法，直接免去的用VIP的蒙版特效[喜欢][星星眼]
+
+--- ITEM #5 ---
+ID: bili_comments_1744
+平台: bili
+类型: comments
+内容: 手机版可以出一个吗？手机搞不懂~！
+
+--- ITEM #6 ---
+ID: bili_comments_1745
+平台: bili
+类型: comments
+内容: lris修复人脸是最屌的，没有之一
+
+--- ITEM #7 ---
+ID: bili_comments_1747
+平台: bili
+类型: comments
+内容: 不好用，我都怀疑这个软件在挖矿，我3080ti 5800x 32G，1080转4K，100MB视频要我35分钟？然后我用1080P转成720P 也要20分钟，半小时视频我用音频分离后期都没这么久，搞笑呢？
+
+--- ITEM #8 ---
+ID: bili_comments_1748
+平台: bili
+类型: comments
+内容: ProRess和422HQ是影视级别渲染时常用的，我之前做电视剧的片头就用这个，文件非常的大，如果不是影视上用的，可以选压缩更小的格式。
+
+--- ITEM #9 ---
+ID: bili_comments_1749
+平台: bili
+类型: comments
+内容: win激活失败的指一条路：不要用最开始生成的快捷键。去根目录文件夹里面找激活替换后的应用程序，把原来那个桌面的快捷键删掉，可以用根目录的这个应用程序重新创建一个快捷键放桌面就行了
+
+--- ITEM #10 ---
+ID: bili_comments_1750
+平台: bili
+类型: comments
+内容: 请问一下up所有视频修复参数设置除了模型选择外，其他参数（杂色、修复细节、颗粒这些）都是按照视频中设置吗？我按照视频中设置参数，分辨率选择768x576导出播放画面是在正中间周边有黑边没有铺满播放器，分辨率选择1280x720导出播放画面是铺满整个播放器，这是怎么回事？原视频是640x360播放铺满整个播放器的@一只小辉金吖
+
+--- ITEM #11 ---
+ID: bili_comments_1751
+平台: bili
+类型: comments
+内容: 70m的存储视频，处理成1080的分辨率，2g，太大了，不知道是不是我设置的原因，别人都是几百兆
+
+--- ITEM #12 ---
+ID: bili_comments_1753
+平台: bili
+类型: comments
+内容: up，感谢你的分享，画质真的好了不少，但是不知道为什么画面变窄了[笑哭]有没有哪位大佬能告诉我怎么调画面比例
+
+--- ITEM #13 ---
+ID: bili_comments_1755
+平台: bili
+类型: comments
+内容: 非常有帮助，后期加动态模糊的方式我还真没想过，用nd滤镜其实还有个大问题就是在进光不够的情况下，由于运动相机是电子防抖所以可能防抖就直接废掉了，我之前就是加滤镜结果整个素材报废[笑哭]。吐槽一下b站给的码率真的太低了，gopro随便一个视频二十万的码率b站就给个两万上限，油管1080的视频比b站的4k清晰好几倍。
+
+--- ITEM #14 ---
+ID: bili_comments_1756
+平台: bili
+类型: comments
+内容: 链接：https://pan.baidu.com/s/1tX6XYFKLmHwy5HQO_JktLA 
+提取码：g9jg
+
+--- ITEM #15 ---
+ID: bili_comments_1758
+平台: bili
+类型: comments
+内容: 我的大疆action4拍出来的视频特别大，但是如果拍d log视频然后还原的话，大小就会变小一半，好神奇啊
+
+--- ITEM #16 ---
+ID: bili_comments_1759
+平台: bili
+类型: comments
+内容: 好强，刚发了几个视频，都糊的不行[笑哭]
+
+--- ITEM #17 ---
+ID: bili_comments_1760
+平台: bili
+类型: comments
+内容: up淘宝几十块的nd滤镜能买不会影响画质嘛
+
+--- ITEM #18 ---
+ID: kuaishou_contents_0
+平台: kuaishou
+类型: contents
+内容: #性感女神 #长腿美女 ，还挺心疼的自己闷天天坐着想拍视频就视频玩玩手机他呢天天都很忙又累的，辛苦了 💗💖@♡ ᒪOᐯe拘༗宝(O3xdf5qqwcc9w3fs)
+
+--- ITEM #19 ---
+ID: kuaishou_contents_1
+平台: kuaishou
+类型: contents
+内容: #怎么样删除快手里看过的视频，防止手机卡顿，学习多多，益处多多！
+
+--- ITEM #20 ---
+ID: kuaishou_contents_2
+平台: kuaishou
+类型: contents
+内容: #冷知识 #刷快手要知道的 #芳芳冷知识
+
+--- ITEM #21 ---
+ID: kuaishou_contents_4
+平台: kuaishou
+类型: contents
+内容: @快手粉条(O3xhcy6vhfzcu3qe) @快影学苑(O3xbw6yu9c8tw6xg) @快手创作者中心(O3xrgtux2ehryffe) #新光合计划 #短视频制作 #快影教程
+
+--- ITEM #22 ---
+ID: kuaishou_contents_5
+平台: kuaishou
+类型: contents
+内容: 小男孩被细菌抓走。#夏日清凉计划 #动画 #搞笑动画 #儿童动画 @快手二次元(O3x52iyv6bx2chie) @快手粉条(O3xhcy6vhfzcu3qe) @快手热点(O3xddgkd5fav5if9)
+
+--- ITEM #23 ---
+ID: kuaishou_contents_7
+平台: kuaishou
+类型: contents
+内容: #儿童动画 #小朋友都爱看 #儿童玩具 #亲子 小朋友喜欢看的视频，儿童看的视频，小朋友喜欢看的搞笑视频。
+
+--- ITEM #24 ---
+ID: kuaishou_contents_8
+平台: kuaishou
+类型: contents
+内容: #知识播种计划 #技能速成宝典  刷快手短视频如何正确清理内存
+清理后多了二百多G #开学季 #快手老铁帮帮团 @快手教育(O3xs4pwkr6yf6g56) @快手光合计划助手(O3xxpf2m4brbf3pe) @粉条上热门(O3x3t62ghyg2f43c) @快手创作者中心(O3xrgtux2ehryffe)
+
+--- ITEM #25 ---
+ID: kuaishou_contents_11
+平台: kuaishou
+类型: contents
+内容: #影视剪辑 #疫情看片 3，女大学生衣着光鲜暴Iu坐出租车没想到却因此惹来了麻烦
+
+--- ITEM #26 ---
+ID: kuaishou_contents_12
+平台: kuaishou
+类型: contents
+内容: 当你刷视频刷着刷着觉得无聊，你可以试试打开这个设置 #涨知识 #冷知识
+
+--- ITEM #27 ---
+ID: kuaishou_contents_13
+平台: kuaishou
+类型: contents
+内容: 我是孩纸，我不想看的，所以发这类快手的请屏蔽我 #小小年纪不学好 #清晨第一缕阳光
+
+--- ITEM #28 ---
+ID: kuaishou_contents_14
+平台: kuaishou
+类型: contents
+内容: 通通通通看电视#儿童动画 #有趣 #太好玩了 #内容启发搜索
+
+--- ITEM #29 ---
+ID: kuaishou_contents_15
+平台: kuaishou
+类型: contents
+内容: 手机看得太久了，听一听音束，放空大脑 #音疗
+
+--- ITEM #30 ---
+ID: kuaishou_contents_16
+平台: kuaishou
+类型: contents
+内容: 刷了个寂寞 #真实 #搞笑视频
+
+--- ITEM #31 ---
+ID: kuaishou_contents_17
+平台: kuaishou
+类型: contents
+内容: 第44集｜小男孩看到爸爸脚上长茧子了#3一6岁儿童视频 #小孩子爱看的小视频   儿童0一3岁动画片，儿童爱看搞笑小视频，儿童搞笑视频3至6岁，3到6岁儿童益智早教动画 ，3一6岁搞笑视频@快手创作者中心(O3xrgtux2ehryffe) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)
+
+--- ITEM #32 ---
+ID: kuaishou_contents_18
+平台: kuaishou
+类型: contents
+内容:  @苡菲(O3xjg6y3zkcgwpde) 的精彩视频
+
+--- ITEM #33 ---
+ID: kuaishou_contents_19
+平台: kuaishou
+类型: contents
+内容: #儿童动画 #启蒙幼儿早教 #儿童玩具 #小朋友都爱看 小朋友喜欢看的视频，儿童看的视频，小朋友喜欢看的搞笑视频。
+
+--- ITEM #34 ---
+ID: kuaishou_contents_21
+平台: kuaishou
+类型: contents
+内容: #短视频流量变现 #短视频创业分享 #视频变现
+
+--- ITEM #35 ---
+ID: kuaishou_contents_22
+平台: kuaishou
+类型: contents
+内容: 总是忍不住看小片，忍不住的  #手艺活 该怎么办？ #男科 #健康科普在快手
+
+--- ITEM #36 ---
+ID: kuaishou_contents_24
+平台: kuaishou
+类型: contents
+内容: 忍不住是本性，没有问题，答应我下次一定忍住了 #男性健康  #健康科普在快手  #两性
+
+--- ITEM #37 ---
+ID: kuaishou_contents_25
+平台: kuaishou
+类型: contents
+内容: 不用手就能自动刷视频？原来只需这一步设置，你也可以解放双手 #有用内容创作计划 #快成长计划 #知识百科明日之星 #关注我每天分享手机使用技巧
+
+--- ITEM #38 ---
+ID: kuaishou_contents_26
+平台: kuaishou
+类型: contents
+内容: 快手如何设置内容偏好 #互联网一部手机创业
+
+--- ITEM #39 ---
+ID: kuaishou_contents_27
+平台: kuaishou
+类型: contents
+内容: #知识播种计划 #技能速成宝典  快手新功能
+无网照样看视频 #内容启发分享计刬 #老铁知识百科 @快手光合计划助手(O3xxpf2m4brbf3pe) @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xrgtux2ehryffe)
+
+--- ITEM #40 ---
+ID: kuaishou_contents_29
+平台: kuaishou
+类型: contents
+内容: 快手如何开启省流模式，省流70％！ #知识播种计划 #技能速成宝典 #快手实用小技巧
+
+--- ITEM #41 ---
+ID: kuaishou_contents_30
+平台: kuaishou
+类型: contents
+内容: 在没网的情况下 照样可以刷快手视频 #知识迎新年 #春节新知锦囊 #有用内容创作计划 #技能速成宝典 @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa) @快手热点(O3xddgkd5fav5if9)
+
+--- ITEM #42 ---
+ID: kuaishou_contents_32
+平台: kuaishou
+类型: contents
+内容: 没网的情况下也可以看快手。
+
+--- ITEM #43 ---
+ID: kuaishou_contents_33
+平台: kuaishou
+类型: contents
+内容: 励志视频 #浅浅更个新 #真实还原 #有趣人类争霸赛 #浅浅更个新 @快手创作者小助手(O3xkzswpkrqacs8s) @快手平台帐号(O3xa3cpv8sghbu8m) @快手创作者中心(O3xrgtux2ehryffe) @快手热点(O3xddgkd5fav5if9)
+
+--- ITEM #44 ---
+ID: kuaishou_contents_34
+平台: kuaishou
+类型: contents
+内容: 网恋对象就是爱打视频怎么办 #微信虚拟视频 #虚拟视频教程 #虚拟摄像头 #网恋需谨慎
+
+--- ITEM #45 ---
+ID: kuaishou_contents_35
+平台: kuaishou
+类型: contents
+内容: 我的视频怎么那么清晰，看实操#百万宝妈计划 #百万宝妈学员 #怎样才能拍出高清视频 #口播类视频拍摄技巧
+
+--- ITEM #46 ---
+ID: kuaishou_contents_39
+平台: kuaishou
+类型: contents
+内容: 手机没网的情况下也可以刷快手视频 #有用内容创作计划 #技能速成宝典 #知识播种计划 #喜爱度激励计划 @快手光合计划助手(O3xxpf2m4brbf3pe) @粉条上热门(O3x3t62ghyg2f43c) @我要上热门(O3x8er38dpbhvbaa)
+
+--- ITEM #47 ---
+ID: kuaishou_contents_40
+平台: kuaishou
+类型: contents
+内容: 兄弟们，像这种品质体验差的怎么去处理？ #快手小店 #无货源电商 #新手开网店
+
+--- ITEM #48 ---
+ID: kuaishou_contents_41
+平台: kuaishou
+类型: contents
+内容: 新手机刷快手模糊，如何解决 #数码新品种草官 #手机小知识 #手机小技巧 #暑期玩机攻略
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_035
+
+开始分析：

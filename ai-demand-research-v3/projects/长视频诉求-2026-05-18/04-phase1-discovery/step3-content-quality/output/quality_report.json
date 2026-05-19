@@ -1,0 +1,13 @@
+{
+  "quality_distribution": {
+    "中性": 229,
+    "纯UGC": 42,
+    "纯营销": 11,
+    "混合": 9
+  },
+  "ugc_count": 42,
+  "marketing_count": 11,
+  "mixed_count": 9,
+  "neutral_count": 229,
+  "ugc_ratio": 14.4
+}

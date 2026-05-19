@@ -1,0 +1,500 @@
+{
+  "batch_id": 88,
+  "total_items": 39,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 26,
+      "long_video": 5,
+      "short_video": 8
+    },
+    "type_distribution": {
+      "behavior_description": 31,
+      "pain_point": 6,
+      "feature_request": 2
+    },
+    "topic_distribution": {
+      "ad_experience": 1,
+      "video_quality": 9,
+      "payment_member": 1,
+      "other": 24,
+      "content_recommend": 2,
+      "screen_cast": 2
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 2,
+      "implicit": 1,
+      "not_ai": 36
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_2778",
+      "text": "这事儿还有好多人为视频方说话，自己作为用户，被假4K骗了，还要给平台找理由，什么不打广告啊，带宽贵啊，平台也不容易啊，没啥大不了啊。搞不懂，是五毛一条？还是屁股坐自己脑袋上去了？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2779",
+      "text": "很多年前我就发现了，yt上480P的画质比我在国内几家主流视频网站上看到的720P要清晰不少[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2780",
+      "text": "记得前年，刚买了新款的相对很贵的电视，不记得是在QIYI上还是TX上，看《爱宠大机密》《疯狂动物城》，视频弹出推荐试用高大上的名称的清晰度，应为首次使用支持动态对比度的电视，试用时，那惊艳的裸眼3D效果+从未看过的清晰质感，之后开了会员，过了一个月重新再看之前看过的电影和动画时，就感觉很奇怪，怎么不那么好看了，画面变得“很平”，还把电视重置了一次，然而依旧没啥改变，之后放弃，现在看到影视飓风这个视",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2781",
+      "text": "更难绷的是b站pc上莫名其妙吃调度，真是为了极致省成本无所不用其极了。既然想盈利那就把广告的口子开了得了，然后卖真会员，但估计会死的更惨。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2783",
+      "text": "所有问题都可以用经济来解答，前几年视频平台跑马圈地当然要砸成本卷画质，这两年用户基本饱和了，这就得开始去本增效了呗。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2784",
+      "text": "这事儿好几年前就有人科普过,或者是因为仅仅是普通用户的分享所以并没有太大波澜,然而影视飓风的观众似乎多了一点儿,那就直接斩杀了[飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2786",
+      "text": "你说他们有钱吧，他们给你降画质，降码率，可你说他们没钱吧，他们还有钱搞算法那套，我在想算法这套设备不花钱啊？个中缘由我就不解释了吧[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2788",
+      "text": "回去看看黑神话那段6分钟4K实机演示，音频码率9.9MB 视频码率2.7MB",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2789",
+      "text": "b站的1080简直开玩笑 早就发现了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2790",
+      "text": "经常在大法的miniled 上看b站， 很多时候真是模糊得肉眼可见，看着不适",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2791",
+      "text": "b站直播原画甚至比正常1080的都差，离谱的很",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2794",
+      "text": "解惑了我说用手机看B站总是开始几秒模糊 后面变清晰 还以为是手机问题 原来是gou的B站",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2796",
+      "text": "感觉答主很外行，关键是码率不是算法，跟ai也没啥关系",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_2797",
+      "text": "你干的时间没有4年前长，难道不是你的错？[doge][doge][doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2799",
+      "text": "锐化他只会让颗粒状更明显，而不是480P与4K本质的不一样…有些视频一发出去的确就是1080P画质，但是绝大多数人发出去还是480P或者更低…如何从本质做出改变呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2801",
+      "text": "你好 我上传视频后感觉画面被放大了 怎么解决",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2806",
+      "text": "所以怎么拍视频画质不糊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2811",
+      "text": "讲得很好，我的黑卡7现在由于拍视频很暗，现在正在吃灰中，求大神出教程",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2812",
+      "text": "所以平时上传视频平台30帧够了吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2815",
+      "text": "所以我视频截图糊 是手机垃圾了对吗[流泪][流泪]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2817",
+      "text": "电视是25fps，电影才是24fps",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2818",
+      "text": "评论为什么这么少[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2824",
+      "text": "讲得很好，我的黑卡7现在由于拍视频很暗，现在正在吃灰中，求大神出教程",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2825",
+      "text": "所以平时上传视频平台30帧够了吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2829",
+      "text": "那时候我记得优酷的有些视频被反复上传，logo重叠了三四个。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2831",
+      "text": "除了题主说的片源，显示器匹配外。主要是没对比，当时人没看过更清晰的。比如第一次接触800×600大屁股显示器时，哪怕是dos游戏，觉得好清晰，比电视清晰多了，后来进去2000年，第一次看到1024×768，觉得又清晰了很多。1920×1080又提升很多。对比下，看以前的颗粒感非常大。但当时没参照物对比，感觉真清楚。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2832",
+      "text": "个人认为VCD画质还不如VHS录像带。DVD是明显超过VHS的画质的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2834",
+      "text": "说的太好啦，给你点赞，现代人深度思考能力真的不行。我以前沉迷短视频的时候每天浑浑噩噩，虽然没体会过吸大烟是什么感觉，但是我想这样的感觉也差不多。只想快乐几分钟是几分钟，刷上就根本停不下来。只有后来我读完了一本书决心改变，读完一本又一本。最起码我现在知道什么对我是正确的，我也能抵制住诱惑。比如我要去点外卖，突然淘宝跳出一个链接，我会关掉。要是换以前没准先要刷20分钟才想起来原来我是要点外卖的。许许多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2836",
+      "text": "视频简单些，读书需要更多的思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2838",
+      "text": "写得真好，短视频从各维度俘获我们的注意力和时间，需要有意识地剥离",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2841",
+      "text": "大脑是个小孩，追求快乐是本能。如果放任，就会一直追求快乐，胃口还会变得越来越大，这也就是为什么刷完短视频停止后会感到空虚。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2843",
+      "text": "看短视频和看书啥的都一样没问题喜欢就行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2848",
+      "text": "戒了n次短视频，继续努力[握手]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2856",
+      "text": "1. 占用大量时间，让人难集中注意力做正事；​2. 部分内容低俗，可能传递不好的信息；​3. 容易让人沉迷，耽误学习、工作或休息。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2861",
+      "text": "占用大量时间，能学到有用的信息很少，太碎片化，在有就是已经成为一些人抱怨的发泄地，全是负能量，内耗太严重，一定要严格控制看的时间。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2862",
+      "text": "这玩意和以前东西有个主要区别是以前那些是朝里努力污名化想办法控制的，而短视频是朝里主动推的。这是个很重要的区别，不是你可以抖机灵去类比的。这玩意的后劲会比你想象中的大，反噬随时能来。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2864",
+      "text": "电视，游戏，电脑，短视频，一个比一个厉害，一个比一个毒害深。这个短视频真的就是精神鸦片，不加以控制，真的会坏事",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2865",
+      "text": "我是农村的，我现在学习都是在手机上。以前想都不敢想的大学老师就在眼前，感觉真的太好了。并且，我也可以把自己的想法发出来，别人也能看到了，以前我写的东西可不会轻易在报纸和期刊上发表，因为没有老师指点。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_2868",
+      "text": "刷短视频停不下来，是大脑“被劫持”了，刷手机上瘾的核心原因是大脑的奖赏回路被过度激活，多巴胺的分泌让你对下一个视频充满期待，形成类似‘老虎机效应’的循环刺激。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

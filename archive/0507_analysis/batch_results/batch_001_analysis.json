@@ -1,0 +1,805 @@
+{
+  "batch_id": 1,
+  "total_items": 64,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 49,
+      "long_video": 6,
+      "short_video": 7,
+      "live_stream": 2
+    },
+    "type_distribution": {
+      "pain_point": 35,
+      "feature_request": 15,
+      "behavior_description": 13,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 34,
+      "payment_member": 1,
+      "playback_control": 5,
+      "content_recommend": 2,
+      "screen_cast": 1,
+      "background_play": 1,
+      "download_cache": 1,
+      "video_quality": 18,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 6,
+      "explicit": 2,
+      "implicit": 4,
+      "not_ai": 58
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_contents_0",
+      "text": "去异环wiki看了一下啥都没有，原神跟星铁不也才开服不到1周就有那玩意了，看别人视频找乌鸦跟箱子好麻烦image_emoticon16",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_1",
+      "text": "可露希尔暂且当成有吧，准备等免费抽数最后一天再抽。 我缺的基建干员 挂件：裂响 苍苔组：引星棘刺 莱茵组：娜斯提 红松林组：薇薇安娜 我没精二的基建干员 挂件：阿罗玛，圣约送葬人，深巡，蕾缪安，魔王 鸿雪组：图耶，绮良 莱茵组：星源 叙拉古组：贝洛内 推王组：戴菲恩，摩根 红松林组：焰尾，远牙，灰毫 黑钢组：涤火杰西卡，杏仁 烟火组：桑葚 有没有干员池和精二情况跟我差不多的，有自己现成的作业能让我",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_2",
+      "text": "我有几个疑问，麻烦你们解答一下: 1、既然是玩家开了死号，那请问为什么我机器码没封，异地登陆IP也没有？ 2、你们这么相信官方的反外挂不会出错，那为什么还一直在贴吧里骂策划怎么还不封某些锁子？ 3、这次封的好几个负战绩奶妈号，你要说连坐吧，某些天梯导盲犬奶妈也最多是禁赛，怎么这些奶妈玩家就封号了？ 4、为什么这次封的都有相同点，封号时间大部分集中在23号早上，且都经历过局内所有人不停地断线重连 5",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_3",
+      "text": "希望yj能把蓝图大小扩大到整个主基地大小 每次抄蓝图都要分好几个蓝图码对着视频摆 多少有点繁琐 吧里最近又在吵蓝图和基建玩法 关于基建玩法我1.0有时间 自己整发现确实不够深基本上随便摆摆就能满效 也就武陵被蓝矿卡 唯一难点就是排线压缩空间搞美观点 但如果不追求美观 真没啥难的 零件做好往仓库送 然后换个地方取零件随便拉满效率产线 配平这块都不需要什么脑子 算一下理论每分钟每个据点产多少券 看看收",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_4",
+      "text": "但是总让我开盲盒就很过分了。 好歹我会现拍原相机视频一点不隐瞒的，直接开视频当然更好了。一从对方要就没照片不上镜不方便，实在没有发个sfz上照片也行呀，非要见面看，好像见面我就能接受丑比了一样。虽然我不颜控，我不在意对方颜值的高低，顺眼就行，但有些人真的丑的猎奇了。 面基最不喜欢约吃饭了，本来我就不爱吃东西，吃又吃不下多少，还不合胃口，还要硬着头皮陪着尬聊，怎么说呢，公共场合和一个非常非常丑的人有",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_5",
+      "text": "什么卖数值，套装能力膨胀 强行延长在线时间之类的，评论区看完我发现要不然还是舍弃手机老用户，说什么战斗膨胀只是加血量很无聊要做成机制boss，真做成机制我看这些人也玩不明白的啊 还有就是巨婴太多了，一边说材料完全移出一边又说拿材料很麻烦到底是要干嘛真挠头了 第一次觉得太简单化也一种不健康发展了image_emoticon86",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_6",
+      "text": "如题，楼主本来说找个图文攻略玩玩，结果发现没有，看视频攻略又好麻烦，想问问这游戏自由玩达成完美结局概率大不大（最多偶尔看看几个关键节点的选择），想要一周目就不留遗憾的那种完美结局",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_7",
+      "text": "BV11JChYkEc3，md社管现在彻底不演了打过来了。不想看视频的可以看我的稿子，但是视频麻烦转发一下这个真的很重要！这可以让更多尘白玩家看见，特别是mmr！别让他们一个劲共振滑坡把尘白毁了 社管已经彻底不演了开始围攻尘白 请大伙务必做好准备 请各位多相信狸花猫一些 别啥bug都赖狸花猫 我图片上那个水军真是演都不带演的， 但这还算好分辨 毕竟演戏都不愿意买个贵一点百级号来演还有名字头像都不换",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_8",
+      "text": "这是以前的视频截图的照片，生日时辰农历1962-11-12，时辰不清（大概是晚上7点到9点）属虎，名叫蔡凤芝。 一直身体状况不好，今年加重，怎么看都不好，面色发灰黄了，能不能熬过今年？ 医院检查特别全面，外科以前也看了，怎么都不好，是不是寿命在走下坡了？能不能熬过今年？求大师告知。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_9",
+      "text": "身高173，体重80kg，整车预算4k封顶，在珠海市工作生活（珠海北站附近，看高德地图门店只有2km喜德盛，6km捷安特，17km瑞豹，18km美利达和坎普，java，20km迪卡侬）。 建议线上买还是直接去线下店呢，只有以前上学骑过两年美利达的一辆山地车，骑行知识都还在b站看视频学习的程度，看珠海路况还可以，想要平常周末骑去市区几十公里来回锻炼身体➕减重的目的。 各位大佬看到麻烦回答一下，谢谢各",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_10",
+      "text": "跑了4S店一趟，经理二话不说：“换总成，800元。”我心想这价格太高，转头跑到街边的维修小店，一问，580元，还是得换总成。我就想不通，一镜片掉了，怎么非要换整个总成呢？ 我干脆上电商平台查查看。好家伙，同款镜片才55元，还带邮费，外加教学视频。快递一到，我自己动手，对照视频检查，这不一会儿就明白了——实体店肯定是为了挣钱。他们把55元的镜片卖到几百块，这得多赚多少倍啊。我就纳闷，这装镜片的事，自",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_11",
+      "text": "但是总让我开盲盒就很过分了。 好歹我会现拍原相机视频一点不隐瞒的，直接开视频当然更好了。一从对方要就没照片不上镜不方便，实在没有发个sfz上照片也行呀，非要见面看，好像见面我就能接受丑比了一样。虽然我不颜控，我不在意对方颜值的高低，顺眼就行，但有些人真的丑的猎奇了。 面基最不喜欢约吃饭了，本来我就不爱吃东西，吃又吃不下多少，还不合胃口，还要硬着头皮陪着尬聊，怎么说呢，公共场合和一个非常非常丑的人有",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_12",
+      "text": "image_emoticon9大伙骑车一定要戴头盔，注意路况。 绿灯起步走神，没注意左侧有摩托车闯红灯，与他侧面接触被掀飞 头先落地，然后左手手肘落地，最后手肘膝盖全破皮。包里的ep321装在保护盒里应该没事。骑的铝架子砾石车，车头被顶歪，不知道其他部位有没有问题。 幸好看多了车祸视频UP，没给头盔省钱，头没有事，只飞出去一圈的情况下，PITS的卸力是真强。 缓过来后，发现对面直接逃逸了，连个影都",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_13",
+      "text": "上周在南山科技园喝咖啡，隔壁桌的女孩一边回TikTok信息一边笑得很开心——上午在华强北收了批新型智能穿戴样品，下午去坂田的3C配件工厂确认了几百条快充数据线的定制logo，晚上发了条工厂自动化产线组装的短视频，直接被中东的客户全部订走。这种场景我太熟悉了，在深圳做跨境这几年，“被订单找上门”早就是平常事。 刚开始我也摸索了很久，曾经窝在龙华公寓里埋头修图，把蓝牙耳机拍得很有科技感，结果却没什么人",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_contents_14",
+      "text": "震惊！百万配置带紫开压制效果竟然几乎等于0。 前几篇写过一些PK相关物品和属性解析，算是科普性质，那么本篇就来一把猛的，不怕掀起一番腥风血雨，来锤一锤紫开压制，不同意的尽管发表意见，但是不要老说感觉怎么怎么地，请拿出实测视频图片，或者理论数据支持，否则一律不予回复。 先上理论，紫开压制属性，基础属性，物伤法伤减免12%，开灵属性，受到的暴击伤害降低13%。压制属性，受伤超过HP25%，其余伤害降低",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_16",
+      "text": "正规流量卡 # 宝子们！移动飞笙卡杀疯啦！ 家人们苦流量不够用久矣！今天必须给大家分享这款移动飞笙卡，简直就是救星！ ## 超高性价比，流量管够，直接拥有210G超大全国流量！不管是刷短视频、追剧、打游戏，还是办公学习用流量，统统都能满足你。再也不用为流量告急而担惊受怕，随时随地，尽情畅玩网络世界。 ## 贴心小细节，满足多样需求 虽然这款卡通话时长为0分钟，但现在线上交流方式这么丰富，语音通话、",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_17",
+      "text": "有没有这样的手机呢：手机方便挂在一边耳朵上或眼睛附近或磁吸夹在眼镜腿上，手机拍视频防抖性能好，手机无需连接耳机手机就可以直接挂在耳边听音乐，手机主屏幕只有指头大小，手机主机模块化一样可与手机副屏组合成正常比例手机，手机副屏幕有正常手机大小，手机大约两指宽长条形，手机摄像头可旋转或有多摄像头，手机摄像头带红外夜视功能，手机与诺基亚手机类似可以换电池，手机防水，手机自带防抖追踪云台或防抖云台式保护壳…",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_18",
+      "text": "本人装机小白学生党，618快来了想着配个主机，平时用来跑一些简单的本地深度学习demo，不打电脑游戏，想找图吧的各位大佬们求个推荐！ 自己有一根16g的光威内存，其他配件预算最好8k以内，在不损失性能的情况下越少越好 cpu：之前一直看的270k，但是我去装机直播间一般都推的14600或者amd的9700x，不知道咋选了，求推荐一个性价比高的就行，平时看看直播看看视频跑跑深度学习啥的 主板：这个我",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_contents_19",
+      "text": "我买的xs。看完视频觉得也不后悔。 大就是大 不方便携带。拿了四年的6p。够够的了。 夏天放裤兜里 粉红色的花边小裤衩都露出来了image_emoticon68image_emoticon25image_emoticon25",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_20",
+      "text": "本来是想买顶配的，昨晚刷到个1800的8g2的8g版本就激情下单了 手里有ns2和steamdeck，没有模拟ns和pc需求 想问一下，不玩手游，8g版本是不是就够用了 模拟3ds游戏会有问题吗？手里的老大三玩时之笛的体验太差了 能模拟ps3游戏吗，暂定只有一个如龙见参要玩，模拟不了的话用电脑也可以 模拟其他游戏，副屏播放视频的话内存压力会比较大吗 一般模拟器支持更新这些资讯在哪看呢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_21",
+      "text": "本来想好的补6，珊瑚还没换呢，可今天刷视频，看不少人说6绯不如6爱，说是伤害上差挺多的，本来280抽出的41还挺高兴的，结果现在纠结上了，没抽过高链，本想体验下别人口中的破解版是什么感觉，说好的抽新不抽旧呢image_emoticon9",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_22",
+      "text": "真的好喜欢这么小巧的，精致，今天去了店里体验了下，手感真好啊，他有什么缺点啊，我平常打游戏打的少，手机拍照虽然不是特别多，但也希望有时候看演唱会座位差的话能拍的清前面，看视频刷抖音最多，15t到底合不合适啊，吧友们怎么看",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_23",
+      "text": "图是随便放的 楼主上大学的时候入坑了国服星际战甲，玩到九段因为没钱买战甲槽位退了image_emoticon6 后面毕业了上班有钱了，前段时间闲的无聊去网吧玩，实在找不到有啥游戏好玩又启动了这游戏，结果一下上头了image_emoticon3image_emoticon3 然后就火速回坑，天天猛肝，肝到现在差不多一个月了，现在十五段了，氪金也氪了几百块image_emoticon3image_em",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_24",
+      "text": "基本全勤，但是戏剧经常拖到最后打。昨日上线的时候发现戏剧要截止了，告诉自己晚上再打。 结果下午打了几十把迷津忘记了，我还查了一下苏乙还是夫人好用，看视频感觉270感觉不如夫人，继续刷迷津去了。我多么希望我昨天有个念头是去试试苏乙。晚上猛猛乱斗，头昏昏地就睡觉了。 今早起床一看B站发现有人已经在刷卡米拉，坏了，想起来了。 幸好留了周本次数，然而二十多次两片也只出了一次，根本拼不出来。真的该改了这个爆",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_25",
+      "text": "我是一个回归玩家，契机是刷视频时刷到了洛克王国世界，然后我就由此联想到了我童年的这款游戏，于是直接回归。 前几天都在瞎玩。等到要领神宠三选一的时候，我才想起来要去看回归视频。由于我上一次登录是600多天。那个时候时代是什么？可能是神运，不过那个时代我也就刚玩了一两天就下线了。在神运时代那时候我也回归，我记得当时是差不多300多天。 由于我入坑的时候已经是今年4月份的。刚好就领个送的无敌阵，为了纪念",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_26",
+      "text": "随便看了个视频这个人说浴血全通被红buff的体验模式（拿红buff称号那个）折磨了40多分钟才打过。然后就说王世界的动作很差。浴血无伤全通是什么强度，我没玩过。但是这个红buff不是很简单吗，我打了2把就过了也没折磨啊。原来是燕云太简单了吗？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_27",
+      "text": "二游纯粹的强度党是最少的。 xp党是最多的，至少占星铁90％以上 真厨子和纯强度党一样稀少，绝大部分是xp党装厨子，和xp党装强度党。 - xp党是先偏xp，再偏强度。 举个简单的例子。 一男一女＝选女。 两女＝选强度高的。 当两女强度差距模糊的时候。 那就人脑打成狗脑，一定要让更偏向自己喜欢的。 直到分出胜负，最后回上一个选项，两女选强的。 这就是所谓的xp党。 - 纯粹的强度根本不会下场和人汴",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_28",
+      "text": "xr用了一周的体验 1、屏幕没有想象的差，反而看着很温和很舒服！！非常赞，对比了朋友的安卓机oled屏幕，感觉还是xr的更舒服，没有去对比max，我不是很挑的那种，感觉这个屏幕对我而言看视频玩游戏已经很足够了 2、边框厚，带了黑色边框的壳子以后显得更加厚，有点无法忍受，不带壳子的边框还是挺好的 3、信号基本可以忍受，有时候联网慢些。但是通话还比我之前的7Plus好很多。 4、续航没有想象的那么好，",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_29",
+      "text": "首先我是不支持的，原因很简单，我花了钱才能玩到的东西凭什么让别人白玩？ - 其次基本上所有想要全忍者免费体验的人都有两大借口：一是信息差，二是隔壁可以全部体验 - 先来说信息差，我说白了信息差就是你们白嫖的借口而已，有信息差不会看技能视频？这么多平台这么多视频随便搜搜就能掌握这个忍者的情况了，或者花五块钱租个号上手体验一下也行呀，五块钱都没有吗？还是懒得去找租号渠道？都信息时代了什么东西还有信息差",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_30",
+      "text": "杨幂、欧豪那部《生万物》大结局，酷云峰值直接飙到4.3535%！啥概念？就是全家老小都得放下手机来看的水平。 这还不是个例…… 全年黄金档，平均收视率破2%的剧，网友扒拉了一下，居然有10部之多。 讲保险民生的《蛮好的人生》，单集最高冲到2.17%，拿下了年度收视冠军，据说触达了超8.2亿人次。 前几年总说没人看电视了，现在看来，不是大家抛弃了电视，而是好内容永远能把人拽回来。 刷短视频刷累了，一",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_31",
+      "text": "本人今年十八岁，高三，距高考还剩35天，饱受神经症的折磨，头痛从高一开始断断续续，直至现在。为此，我不知请了多少次假，看了多少次医生，但一直都没有治好。我很困惑，因为我一直坚持早睡早起，饮食清淡，每天锻炼（跑步），按理来说，这样的生活习惯应该不会引发神经症，但是事实上神经症就是爆发了。我一度思考过，是否是因为高三压力大导致的偏头痛，但事实上不是的，我曾经多次做过测试，假期的一两天什么作业都不做，完",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_32",
+      "text": "帖主最近通关了一款用RPG Maker引擎开发的游戏《CHANGED》 因为它的难度系数非常具有挑战性，彻底通关后所感受到的成就感非凡，同时也想给大结局的剧情CG画面截个图留作纪念，并且上传到steam社区分享这份情绪 可是steam的截图功能此时出现了问题，按动时快捷键无法进行截图，于是我构思了另一条思路，那便是先用其他工具将结局画面截取下来，再手动创建属于这款游戏的截图文件夹并手动导入图片让s",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "background_play",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "tieba_contents_33",
+      "text": "唉，难顶啊，买了荣耀90lus，又自欺欺人想着都是lcd为啥就不能适应呢，慢慢来，结果呢，用了3次，每天1.2个小时，用到30分钟开始就后脑勺无比的累，酸涩。坚持到1小时感觉脑子都有点浆糊，玩了这手机晚上后劲也大，第二天后脑勺都还累，跟宿醉了似的。后面立马用回8p，或者y700后脑勺就能好。 有时候真是的憋屈啊，我踏马存款都百万，过得舒服的一批，结果被这手机的破事被恶心的要死，现在用8p游戏打不了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_34",
+      "text": "邪淫有一个巨大的危害，就是会让人丧失“收神”的能力。 不知道大家有没有注意过，很多人喜欢刷短视频来放松休息，但往往是越刷越累，明明也没动脑，但就是很累，而且往往是越累越想刷，这就陷入了恶性循环，最后让自己陷入了疲惫和烦躁交织的状态。 但如果去观察那些肾比较好的人，却发现就不会这样。 这是因为正常人是拥有“收神”的能力的，在刷视频时，他们能把神收回自身的意识中，不会跟着短视频的内容乱跑。也就是说，短",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_35",
+      "text": "本人没有游戏需求，也没有拍照需求。就想要耐用毛病少。耐摔耐用。这俩个款应该选择哪款。需求就看视频看小说。要求屏幕好看的眼睛不累舒适。比较喜欢手持看视频。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_36",
+      "text": "《先总大体介绍下自己眼睛及历史使用手机和机型眼睛度变化情况》注:一直用的便宜手机，因为不打游戏。 一、30多岁近视10多年，今年更换以下两台手机时400度，更换后8个月升到550度了。 二、办公工作，夜晚工作几乎到0辰，夜晚光线不是很好，平均每天看手机10个小时。 三、本人一直是双手机或三手机使用: 2016年之前的不一一列举了机型忘的差不多了，好像用的诺基亚N81、多普达C750W、HTC A7",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_39",
+      "text": "1. 拼死戒，戒到死！ （关键时候念，猛念可过生死关，断念时我发现有时候缺乏那种勇猛的气势与坚决，这句话给了我力量！大家可以尝试，这句话出自戒为良药，它的灵感来自一位高僧在暴风雨中纹丝不动，猛然一心念佛，最后丝毫不伤，高僧的秘诀是: 拼死念，念到死！大家念这句话的时候，可以观想或者想象自己就是那位高僧，双手合十猛然念佛！） 戒色效果提升10倍的方法总结: 大声念，不停念，同时观想自己就是那位暴风雨",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_40",
+      "text": "四川电信，前俩月之前都是正常的。 最近看视频很卡，就试了下，我上传到各大网盘上传速度都是正常的，中科大测速也正常的。但是我和朋友用iperf3测速只有4Mbps左右，用900，30000和54000端口，tcp和udp都试了。发群晖共享文件给他下载也是这个速度。不知道怎么排查了。群晖到内网其他设备，iperf3上传下载速度都是满的2.5g。 不知道是不是被电信封端口了？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_41",
+      "text": "家里的老机子了 当年被坑现在很卡 花个400-500升级一下流畅运行 看网课和视频 主打办公 因为母亲要用 电脑给病人开方子 家里是中医诊所 超级卡顿 打字反应特别慢 跪求大佬们帮帮忙，拜托拜托❗ 给写个需要更换的配件 做一下升级@##",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_42",
+      "text": "跟🐔🐶原住民不一样，我是因为🐔🐶火出圈才来看机构的，而看🐔🐶的时候都已经是看gbc以后的事了。gbc与🐔🐶有很多梗相互重合，互相套用的话感觉挺有意思的。 看母鸡卡的时候已经很晚了，那个时候动画都已经播到第7集了，对我而言是中途追番的，跟某个锐评up梁某人属于同一时期被吸引过来。那个时候的视频评论区风气很差，我只看到了丰川祥子这个角色被大多数人骂，而且是全网骂的那一种。而且，更是看到了不少人聊“立希",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_43",
+      "text": "RT 看腾讯视频，选择清晰度4K就卡，也不是那种很卡的，就是画面经常卡卡的不流畅。 电脑上一年新买的挺贵的，应该不是配置问题。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_44",
+      "text": "每次想开新档就去看看视频学学职业流程玩法，一开始好好的，然后突然就是卡吸血鬼bug，三段龙吼吹训练师白嫖，还有的直接卡bug练100级战斗技能，问他为什么不直接代码100，他说这样有成就感 感觉我还不如去玩三神呢，起码三神只要不循环也不是很影响体验，而且捡到的东西都能用上，禁三神每次看到背包一堆炼金材料和铁锭没地方用就很难受浑身痒痒 顺便问一下，不卡任何bug的情况下禁三神中后期体验到底咋样，特别",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_45",
+      "text": "以我个人的体验和思考给大伙看看别的视角 我自认是中度玩家，多人入坑所以一直在打多人，稍微有一点理解以后开始打单人，一直随机角色直到骨头N6开始一个劲打骨头解锁N10，打算全部角色N10达成目标以后以后N0游龙奖励自己 直到那一天的上午唐突更新，我甚至都没意识到更新了，N6战士毫无经验拿上版本思路抓牌，二层看见坚定不移buff改了才发觉不对，三层发现门扉心中大感不妙，但是走易伤巨像防杀基本没掉血干掉",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_46",
+      "text": "lz之前完全没了解过光美，被探Q引流以后，等更新的时候看了看初代的前几集。最近又刷到了小麦，小雪的相关视频，感觉蛮有意思的，遂在这周开了汪Q。没想到意外的观感非常不错，从第一集开始就很好看，这一周不到的时间看到了第9集（对于我这种社畜大友已经很夸张了），基本上集集都不无聊，都很有趣。但是刷到的介绍各种介绍向视频里面，基本上对汪Q的评价都比较一般，这是为啥呢 就我个人而言，目前看下来主要有三大优点：",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_47",
+      "text": "眼神不好了，想换个平板大一点，想买基础款，可是很多人说8+126用不了一年就会特别卡，我就是看视频多，偶尔玩一玩金铲铲，8+126够用吗？ 我看了两个荣耀gt 2 Pro，和小米7s Pro屏大一点，不过最近好像都不便宜，还有点犹豫，有没便宜点的大屏平板推荐？image_emoticon24image_emoticon66",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_contents_48",
+      "text": "磊哥发的原神视频内容就是很正常的抽卡游玩，但是看这个视频评论区不知道的还以为磊哥吃黑流了，真不知道该咋形容kyg了😅",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_49",
+      "text": "京东买的2060，为什么玩游戏很流畅，看网页的直播视频却很卡，跟ppt一样",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_50",
+      "text": "更新可最新系统，心心念念了均衡器来了，但是打来均衡器无论听歌还是看视频声音都卡顿image_emoticon10而且来了效果不是很明显 真是白瞎1511这么好的硬件了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_51",
+      "text": "小弟最近用老笔记本装了个飞牛os，拿来看视频的，然后发现有几个视频就是卡顿掉帧，手机端没问题，然后换了几个浏览器，最后试了五六个浏览器，只有夸 ke浏览器是不掉帧的，这个是啥原因？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_52",
+      "text": "在绿联云里面看视频拖动视频有明显加载卡顿 简而言之就是一拖视频就转圈 （图一） 反而是挂载samba看视频拖动几乎无明显顿感（图二） 网络是光猫-路由器-交换机-nas/pc/安卓/ios nas是dxp4800plus 16g版 机械盘是wd43purz监控紫盘 路由器是中兴的问天 信号顶格 网线接口也都确认是2.5g全双工 就很奇怪 怎么会卡顿 难道说绿联云还不如老前辈x-plore么 小白能",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_53",
+      "text": "不懂就问，看视频掉帧卡顿什么问题，各位大佬",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_54",
+      "text": "新换的9700X跑分正常，但是看视频玩游戏有明显的顿一下的卡顿，这咋解决",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_55",
+      "text": "泰坦18pro5090在打游戏/看视频/听音乐时，经常出现0.5s左右瞬时卡顿，并爆音，随后恢复正常 已更新window系统，重装显卡驱动，声卡驱动，刷BIOS，均无法解决 通过LatencyMon程序测试，有如下描述并截图： 请各位大佬帮忙看下是什么问题，该如何解决，谢谢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_56",
+      "text": "在b站看4k60帧视频会频繁掉到30导致画面看起来非常卡顿，不管调智能帧数还是设置最高都会掉帧，别的手机看丝滑，就gtpro会掉帧。大伙可以去试下【【MMD-异度之刃3】弥央『脳内革命ガール』(4K-60FPS)-哔哩哔哩】 要维持不卡顿要不停点击屏幕维持120hz",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_contents_57",
+      "text": "换了4K 60Hz的显示器，但是一播放B站视频就GPU爆满，滑动网页也卡，求问各位吧友有没有解决办法",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_58",
+      "text": "我是7900xt显卡，cpu是7800x3d，驱动版本：25.6.3 。用Google Chrome在b站看4k分辨率视频，视频和弹幕卡得一顿一顿的，全屏后正常，有8u遇到吗？image_emoticon33用edge浏览器都是正常的，是不是A卡硬解有啥bug？我在浏览器把硬件加速关闭后，b站4k视频不卡了，YouTube看1080p 60fps视频开始卡了image_emoticon16问了AI",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "tieba_contents_60",
+      "text": "我飞牛刚组没几天 视频加载的很慢 是网络还是硬件的问题？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_61",
+      "text": "手机插卡联网使用一个星期了，一直不激活正常吗？而且经常出现这种刷视频，或开软件加载贼慢的情况，要么根本加载不出来，这种情况所有人都这样吗",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_62",
+      "text": "我家是千兆，电脑上速度是正常的，下载速度能有个80.90没问题，但就是wifi很慢，经常图片，视频加载不出来，路由器也换了，用的中兴问天，wifi6是肯定支持的，但就是WiFi速度特别慢，重启光猫，路由器也都没用，信号模式也开的穿墙模式，双频合一，求大佬帮帮忙",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_63",
+      "text": "19年的老机器，三星256g的白卡，也有4年多了。 最近重温dq11s，发现进入游戏，切换地图什么的，加载速度变慢了。 比如沙漠王国萨玛迪那里，进入王宫要加载9秒，出王宫要读加载15秒。我看b站视频，别人同样机器玩的，进入王宫只加载4-5秒，出王宫也只要8秒。 是tf卡不行了吗？还是正常现象？ 我记得以前我玩dq11s的时候加载时间也挺长的，但是没感觉这么长啊",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_64",
+      "text": "10元流量安心包限速测试一下，试了几个软件，购物软件多多，刷新浏览商品这些比较流畅的，没比正常慢什么，也试了贴吧和小黑盒，贴吧基本没问题，小黑盒图片加载慢一些。最后就是抖音啦，看视频卡，但有的时候也还行，可能是有些视频画质还有大小问题不一样吧。这条帖子也是用限速流量发的。以上是我个人体验的感受，不代表所有啊。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_65",
+      "text": "原使用联通冰淇淋130A套餐，搭配1000M宽带，网速一直很稳定，测速达标、延迟很低，日常刷视频、玩游戏毫无压力近期将套餐更换为广东流量王58元+20元，组成畅越79A套餐，宽带办理平移（未到营业厅现场办理），设备无任何变动但更换套餐后，1000M宽带网速骤降，延迟明显升高，刷视频频繁转圈、网页加载缓慢，甚至出现卡顿断流，与之前的流畅体验天差地别，已尝试重启光猫、路由器，检查网线连接，均无改善，帮",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_66",
+      "text": "家里是电信1000M 送的tc7102路由器 好像就是华为的AX3路由器 网速是正常的么有问题 隔4-7天重启一次光猫路由器 但是用了1-2天就开始出现卡了 不是加载慢就是图片啥的打不开 不管手机电脑都一样 反正下载上传都正常 但是就是网页加载慢啊 视频无法加载等等 找电话投诉了那边也正常 然后网上看到说路由器的ipv6关闭就行 就关闭了 现在一个月过去了没重启光猫路由器 没出现卡顿问题了 这到底",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_contents_67",
+      "text": "芒果冰b站新视频：黑猴由于模型精度高，对硬盘加载速度是机械硬盘不能满足的，如果把游戏安装在机械硬盘里，会出现启动、加载慢，游戏卡顿等问题，比用垃圾显卡玩的体验都差 而且这点在黑猴基准测试工具里体现不明显 Lz在是电子盲的时候就给自己的电脑加装了块1t机械盘，由于固态是512的，而且空间已经不够了，故把黑猴安装在了机械硬盘里。期待了四年，开了无数次香槟，明天早上都已经准备玩了，今天晚上得知这个消息，",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

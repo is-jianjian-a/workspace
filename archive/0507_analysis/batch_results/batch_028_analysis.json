@@ -1,0 +1,680 @@
+{
+  "batch_id": 28,
+  "total_items": 54,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 43,
+      "long_video": 11
+    },
+    "type_distribution": {
+      "behavior_description": 36,
+      "pain_point": 14,
+      "feature_request": 4
+    },
+    "topic_distribution": {
+      "video_quality": 16,
+      "playback_control": 5,
+      "ai_feature": 2,
+      "other": 24,
+      "download_cache": 2,
+      "payment_member": 4,
+      "ad_experience": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 52
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1183",
+      "text": "我是i5 12500没有独显，所有方法都不管用，但是在PR里播放很流畅可以排除硬件原因。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1184",
+      "text": "4K视频快进卡是怎么回事 还有倍速会音画不同步[大哭][大哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1185",
+      "text": "如果近期突然出现卡顿可以试一下，可能是特定的条件才会触发，在这里我仅提供一个线索、排查方向，至少在我这里是会卡顿的，可以复现。电脑是一个复杂的东西，每个人用的硬件、操作系统、软件、使用习惯都是不同的，如果电脑卡顿了请仔细排查，不一定是哪个部分出现了问题。\n还有谁用AMD让我电脑都卡了[热词系列_知识增加][热词系列_知识增加][热词系列_知识增加]（bushi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1186",
+      "text": "晃晃鼠标卡顿，然后打字也卡。。cpu频率也没问题，感觉就是系统有毛病，但是好久没更新了呀",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1187",
+      "text": "敢于更新的都是勇士呀\n我大多数玩电脑的朋友都还在win10\n像我这种刚接触的人，也是经历更新bug之后\n决定退守在某一版本的人\n直接关掉自动更新驻扎23H2版本，等到二四足够稳定再上[tv_doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1188",
+      "text": "删除了还是卡，几秒一卡，桌面也卡，安全模式不卡……",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1189",
+      "text": "看了一下，我确实更新了这个。但我卸了之后，多次重启，还是卡顿咋办[大哭][大哭][大哭]\n我这个补丁的更新时间是昨天，我电脑也是今天才卡顿的，应该就是这个补丁的问题[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1190",
+      "text": "up我的电脑不知道为什么这两天老是过个十秒左右就会卡死六七秒，之前开机还会卡死发怪声，然后我把KB5049624卸载再重启就没怪声了，但是电脑还是隔一会就卡死[大哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1191",
+      "text": "有没有人和我一样，以为是电脑里面的问题，结果是忘记插电源，导致电脑快关机了，才知道原来是没充电💀💀💀",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1192",
+      "text": "卸载更新不好用的，关闭edge的硬件加速功能就好了，具体是点击edge右上三个点——设置——系统和性能——系统——在可用时使用图形加速，关闭后重启浏览器就好了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1195",
+      "text": "我发现b站的每次点击进度条都重新请求了片段，是不是每次点击进度条都需要把之前的sourceBuffer删除掉",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1196",
+      "text": "我发现我没有设置过默认就是分片下载[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1197",
+      "text": "这几种方式种，那种更加节约带宽呢？大厂每节约点带宽都是巨量的节约成本吧。目前已经知道是mp4切成m3u8会使得文件总体更大",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1198",
+      "text": "vue这么智能么？[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1199",
+      "text": "现在上传文件是直接与OSS交互还是通过后端上传",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1201",
+      "text": "看到好多人发帧率曲线。。不是，视频掉帧是要你用眼睛去看。一秒掉一帧眼睛一下就看出来了，你帧率曲线上是几乎没有波动的。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1202",
+      "text": "然而并没有会员来看60帧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1204",
+      "text": "这个视频证明了没会员的视频就是30帧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1206",
+      "text": "别骂b站了，大会员没好到哪里去，我这边分别从头看了一遍，三个清晰度分别是4k，1080p60和1080p，说下结论：普通1080p左边的圆圈是半圆。开了1080p60之后，左边的圆圈变成了两个半圆在不停闪烁，在刚切换的一瞬间闪烁比较均匀，但是之后过了一秒就瞬间变得不均匀了。开了4k情况下，闪烁反而变得更不均匀了，左边的圆通常都是某一边的半圆颜色特别深，另一边特别浅，而且闪烁更明显了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1207",
+      "text": "多半是b站播放器有问题老掉帧[笑哭]观感很难受，但相册一直都很稳",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1208",
+      "text": "骁龙8gen3也掉就离谱[吃瓜]下载下来mx播放器播放不会掉，所以说结论已经很明显了[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1209",
+      "text": "4K和1080p一样，大约2.5-2.8s有一次帧率很明显的波动，我肉眼看大概掉了三到六帧，就是很规整的隔一帧跳一帧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1210",
+      "text": "温馨提示:缺帧不是你的问题，而是非大会员默认30帧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1212",
+      "text": "对于非大会员，视频前半部分根本没有感受（（（",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1215",
+      "text": "建议视频全程60帧，然后故意配个数字倒数，看看有多少人认为的卡其实是心理作用，tm50多帧就有人刷卡真是离谱[辣眼睛]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1216",
+      "text": "实际上只要你每秒内帧数的分布是相等的，在23.9fps以上的都不会有不连贯感，更高的帧数只是看起来更自然。实际上决定影像流不流畅的还有动态模糊，游戏之所以需要更高的帧数是因为游戏无法保证渲染出的画面在每秒内是平均分布的，所以30帧的游戏和30帧的视频完全是两个概念。[捂脸]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1218",
+      "text": "如果大家这个视频不觉得卡很正常，因为这是真实世界的视频，每一帧都含有一段时间的信息，电影帧率才24帧。游戏就不一样了，那是显卡渲染出来的画面，显卡可没有曝光时间，如果习惯了144帧，猛降到60，应该具有明显的差别。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1219",
+      "text": "以前我觉得60帧能玩，后来我玩惯了120帧，这60帧是什么东西玩不了。再然后我舍友告诉我他是200帧，问我要不要体验几把，我说算了。[微笑]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1221",
+      "text": "就算你码率再高，分辨率再高，放b站还是给你压到1080p",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1222",
+      "text": "视频时间正常流动，视频却卡的一批，怎么想都是UP的错(°∀°)ﾉ（滑稽）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1227",
+      "text": "是这个视频一卡一卡的吧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1229",
+      "text": "我觉得我也能做一个128k的视频：\n1.录一个1080p的游戏视频\n2.把帧率降到2帧\n3.发b站\n反正那些萌新看不出来，说画质不好就是b站的锅\"视频压过了\"",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1230",
+      "text": "https://www.bilibili.com/video/BV1MF411n7j8/ 飞跃5300米！世界记录！ \nhttps://www.bilibili.com/video/BV14L4y137PX/ 高速测速720KM/H 世界记录！\nhttps://www.bilibili.com/video/BV1ft411U7qB/ 32K已出\nhttps://www.bilibili.com/v",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1231",
+      "text": "你敢信我300兆的宽带看B站的4K视频要加载好几秒，我看YouTube的真4k都不需要这么长时间",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1232",
+      "text": "我偶然发现的[doge]，重新插拔电脑的耳机孔就可以结束B站视频的卡顿。外放的时候突然变卡就插入耳机，立刻流畅；反过来插入耳机的时候突然变卡，拔出耳机就能流畅，然后短时间内再插拔耳机也没影响。不知道是什么原理。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1233",
+      "text": "最近不知道b站怎么了，我1000兆光纤手机看卡死了[doge]包括看这个视频，跑38kb每秒给我，气死了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1234",
+      "text": "B站最近是被攻击了吗？梯子油管不卡，其他平台也不卡，唯独B站卡顿丢包。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1235",
+      "text": "用的Edge看B站，有几个视频页面原来不卡，突然不知怎么就卡了，以后每次进就卡了，这个会是什么情况",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1236",
+      "text": "重度B站用户苦卡顿久矣，之前还以为电脑配置问题升级了4090显卡但还是卡顿，直到用了up的办法终于解决了[脱单doge]给up三连了（要是早点看到说不定就不买4090了[微笑]）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1237",
+      "text": "网页版只要全屏后就会掉帧卡顿，大会员买了个寂寞，显示器是3440*1440 60hz的，不知道有没有关系",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1238",
+      "text": "千兆网+双播链路聚合，用steam下载都能跑到970m的速度，在手机上看b站只有645kb/s，每次都卡在这个速度[呲牙]气笑了给我，不说看本地nas的视频了，就看腾讯视频、看爱奇艺等app，从来没卡过，就b站卡加载，牛逼[呲牙]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1239",
+      "text": "就连点进这个视频都是黑屏的[星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1242",
+      "text": "期待持续更新独立站提高访问量以及转化率高质量内容，永远支持你[打call]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1244",
+      "text": "本期视频观看指南：\n观看指南：\n00:49 为什么图片大小会影响加载速度\n02:29 图片压缩\n08:06 视频提速\n12:03 服务器提速",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1245",
+      "text": "网页端可能和耳机有关，耳机重连就能播放了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1246",
+      "text": "网速啥的完全正常，网页也能打开，是个视频就加载不出来[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1247",
+      "text": "这个视频都在缓冲[微笑][微笑]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1248",
+      "text": "我也出现过这个情况，打开b站pc端设置，把“禁用GPU加速”这个选项勾上重启客户端就好了[OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1249",
+      "text": "注意注意，也有一种可能是音响的问题。\n我的情况是音响驱动有问题，可能是耳机或者是某种原因导致系统的音频功能离线，重启电脑或者是拔插耳机，或者是断开蓝牙耳机",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1250",
+      "text": "艹，开关GPU加速，开关ipv6，换dns，开关广告过滤全都没用。b站，金凡！！！[生气_金箍]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1252",
+      "text": "我现在就是 up的视频加载不出 但可以正常评论 头像什么的也都能看到…",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1253",
+      "text": "太幽默了，教你如何解决缓冲不了的视频缓冲不出来",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1254",
+      "text": "我靠，我现在也是这种情况，WIFI，流量一切正常打开b站，功能一切正常，就是打开视频一直卡在缓冲不动",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1256",
+      "text": "我什么时候关注的？[藏狐]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

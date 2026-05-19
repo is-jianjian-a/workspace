@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI需求调研工作流 - {PROJECT_NAME}</title>
+    <style>
+        :root {
+            --bg-primary: #0a0e1a;
+            --bg-secondary: #111827;
+            --bg-card: #1a1f2e;
+            --bg-hover: #252b3d;
+            --border-color: #2d3748;
+            --text-primary: #e2e8f0;
+            --text-secondary: #94a3b8;
+            --text-muted: #64748b;
+            --accent-blue: #3b82f6;
+            --accent-cyan: #06b6d4;
+            --accent-green: #10b981;
+            --accent-yellow: #f59e0b;
+            --accent-red: #ef4444;
+            --accent-purple: #8b5cf6;
+            --gradient-primary: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+            --gradient-success: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+            --shadow-glow: 0 0 20px rgba(59, 130, 246, 0.15);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .project-meta {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+        }
+
+        .meta-item .label {
+            color: var(--text-muted);
+        }
+
+        .meta-item .value {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.375rem;
+            padding: 0.375rem 0.875rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .status-active {
+            background: rgba(16, 185, 129, 0.15);
+            color: var(--accent-green);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+        }
+
+        .status-pending {
+            background: rgba(245, 158, 11, 0.15);
+            color: var(--accent-yellow);
+            border: 1px solid rgba(245, 158, 11, 0.3);
+        }
+
+        /* Progress Bar */
+        .progress-section {
+            background: var(--bg-secondary);
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .progress-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.75rem;
+        }
+
+        .progress-title {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        .progress-percent {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--accent-cyan);
+        }
+
+        .progress-bar-bg {
+            height: 8px;
+            background: var(--bg-card);
+            border-radius: 9999px;
+            overflow: hidden;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: 9999px;
+            transition: width 0.5s ease;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .progress-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 0.75rem;
+            font-size: 0.875rem;
+        }
+
+        .progress-stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .stat-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .dot-completed { background: var(--accent-green); }
+        .dot-in-progress { background: var(--accent-blue); }
+        .dot-pending { background: var(--text-muted); }
+        .dot-failed { background: var(--accent-red); }
+
+        /* Main Content */
+        .main-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* Phase Section */
+        .phase {
+            margin-bottom: 2rem;
+        }
+
+        .phase-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem 1rem;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .phase-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.25rem;
+        }
+
+        .phase-sensing .phase-icon { background: rgba(59, 130, 246, 0.15); }
+        .phase-understanding .phase-icon { background: rgba(139, 92, 246, 0.15); }
+        .phase-validation .phase-icon { background: rgba(245, 158, 11, 0.15); }
+        .phase-delivery .phase-icon { background: rgba(16, 185, 129, 0.15); }
+
+        .phase-title-group {
+            flex: 1;
+        }
+
+        .phase-title {
+            font-size: 1.125rem;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .phase-subtitle {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        .phase-progress {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 600;
+        }
+
+        /* Steps Grid */
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        /* Step Card */
+        .step-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 1.25rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .step-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .step-card::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            border-radius: 12px 0 0 12px;
+        }
+
+        .step-card.completed::before { background: var(--accent-green); }
+        .step-card.in-progress::before { background: var(--accent-blue); }
+        .step-card.pending::before { background: var(--text-muted); }
+        .step-card.failed::before { background: var(--accent-red); }
+
+        .step-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .step-number {
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--text-muted);
+            background: var(--bg-secondary);
+            padding: 0.25rem 0.625rem;
+            border-radius: 6px;
+        }
+
+        .step-status {
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .status-icon {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .completed .status-icon {
+            background: var(--accent-green);
+            color: white;
+        }
+
+        .in-progress .status-icon {
+            background: var(--accent-blue);
+            color: white;
+            animation: pulse 2s infinite;
+        }
+
+        .pending .status-icon {
+            background: var(--text-muted);
+            color: var(--bg-card);
+        }
+
+        .failed .status-icon {
+            background: var(--accent-red);
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .step-name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .step-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .step-meta-item {
+            display: flex;
+            align-items: center;
+            gap: 0.375rem;
+        }
+
+        .step-files {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid var(--border-color);
+            display: none;
+        }
+
+        .step-card.expanded .step-files {
+            display: block;
+        }
+
+        .file-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem;
+            background: var(--bg-secondary);
+            border-radius: 6px;
+            font-size: 0.8125rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .file-item:hover {
+            background: var(--bg-hover);
+            color: var(--text-primary);
+        }
+
+        .file-icon {
+            font-size: 1rem;
+        }
+
+        .file-name {
+            flex: 1;
+        }
+
+        .file-type {
+            font-size: 0.6875rem;
+            color: var(--text-muted);
+            background: var(--bg-card);
+            padding: 0.125rem 0.375rem;
+            border-radius: 4px;
+        }
+
+        /* Action Buttons */
+        .actions-bar {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            display: flex;
+            gap: 0.75rem;
+            z-index: 50;
+        }
+
+        .action-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.25rem;
+            border-radius: 10px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background: var(--gradient-primary);
+            color: white;
+            box-shadow: var(--shadow-glow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-secondary {
+            background: var(--bg-card);
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
+        }
+
+        .btn-secondary:hover {
+            background: var(--bg-hover);
+            border-color: var(--accent-blue);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 2rem;
+        }
+
+        .footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .steps-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .actions-bar {
+                left: 1rem;
+                right: 1rem;
+                justify-content: center;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--border-color);
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="project-title">📱 手机AI功能用户诉求调研</h1>
+            <div class="project-meta">
+                <div class="meta-item">
+                    <span class="label">项目ID:</span>
+                    <span class="value">手机AI功能用户诉求调研_20260514</span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">版本:</span>
+                    <span class="value">v4.0.0</span>
+                </div>
+                <div class="meta-item">
+                    <span class="label">轮次:</span>
+                    <span class="value">Round 1</span>
+                </div>
+                <span class="status-badge status-active">
+                    <span>●</span> 进行中
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Progress Section -->
+    <section class="progress-section">
+        <div class="progress-content">
+            <div class="progress-header">
+                <span class="progress-title">整体进度</span>
+                <span class="progress-percent">43%</span>
+            </div>
+            <div class="progress-bar-bg">
+                <div class="progress-bar-fill" style="width: 43%"></div>
+            </div>
+            <div class="progress-stats">
+                <div class="progress-stat">
+                    <span class="stat-dot dot-completed"></span>
+                    <span>已完成 7</span>
+                </div>
+                <div class="progress-stat">
+                    <span class="stat-dot dot-in-progress"></span>
+                    <span>进行中 1</span>
+                </div>
+                <div class="progress-stat">
+                    <span class="stat-dot dot-pending"></span>
+                    <span>未开始 8</span>
+                </div>
+                <div class="progress-stat">
+                    <span class="stat-dot dot-failed"></span>
+                    <span>失败 0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Phase 1: Sensing -->
+        <section class="phase phase-sensing">
+            <div class="phase-header">
+                <div class="phase-icon">🔍</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">阶段一：感知 (SENSING)</div>
+                    <div class="phase-subtitle">数据采集与清洗</div>
+                </div>
+                <div class="phase-progress">4/4 完成</div>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 1</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">项目初始化</div>
+                    <div class="step-desc">创建项目目录结构，初始化元数据和工作流看板</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 2分钟</span>
+                        <span class="step-meta-item">📄 2个文件</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../00-meta/project_manifest.json" class="file-item">
+                                <span class="file-icon">📋</span>
+                                <span class="file-name">project_manifest.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../00-meta/workflow_status.html" class="file-item">
+                                <span class="file-icon">📊</span>
+                                <span class="file-name">workflow_status.html</span>
+                                <span class="file-type">HTML</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 2</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">搜索词设计</div>
+                    <div class="step-desc">基于主题设计多轮搜索词，覆盖场景发现所需数据维度</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 15分钟</span>
+                        <span class="step-meta-item">📄 1个文件</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../04-searches/search_terms_round1.json" class="file-item">
+                                <span class="file-icon">🔍</span>
+                                <span class="file-name">search_terms_round1.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 3</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">数据采集</div>
+                    <div class="step-desc">从UGC平台采集原始数据，保存原始响应和采集日志</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 45分钟</span>
+                        <span class="step-meta-item">📄 5个文件</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../01-raw/xiaohongshu_20260514.json" class="file-item">
+                                <span class="file-icon">📱</span>
+                                <span class="file-name">xiaohongshu_20260514.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../01-raw/bilibili_20260514.json" class="file-item">
+                                <span class="file-icon">📺</span>
+                                <span class="file-name">bilibili_20260514.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../01-raw/crawl_log.json" class="file-item">
+                                <span class="file-icon">📝</span>
+                                <span class="file-name">crawl_log.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 4</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">数据清洗</div>
+                    <div class="step-desc">去重、过滤、结构化、质量评分</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 10分钟</span>
+                        <span class="step-meta-item">📄 2个文件</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../03-cleaned/cleaned_data.json" class="file-item">
+                                <span class="file-icon">🧹</span>
+                                <span class="file-name">cleaned_data.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../03-cleaned/quality_report.json" class="file-item">
+                                <span class="file-icon">📊</span>
+                                <span class="file-name">quality_report.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 2: Understanding -->
+        <section class="phase phase-understanding">
+            <div class="phase-header">
+                <div class="phase-icon">🧠</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">阶段二：理解 (UNDERSTANDING)</div>
+                    <div class="phase-subtitle">JTBD分析、Kano分类、RICE评分</div>
+                </div>
+                <div class="phase-progress">3/5 完成</div>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 5</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">Job Story提取</div>
+                    <div class="step-desc">从UGC文本中提取 Job Story（情境+动机+期望结果）</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 30分钟</span>
+                        <span class="step-meta-item">📄 2个文件</span>
+                        <span class="step-meta-item">🎯 JTBD</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../05-jobs/job_stories.json" class="file-item">
+                                <span class="file-icon">📋</span>
+                                <span class="file-name">job_stories.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../05-jobs/job_stories.md" class="file-item">
+                                <span class="file-icon">📝</span>
+                                <span class="file-name">job_stories.md</span>
+                                <span class="file-type">Markdown</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 6</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">Job地图绘制</div>
+                    <div class="step-desc">将Job Stories组织成可视化地图，识别任务流程中的痛点分布</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 20分钟</span>
+                        <span class="step-meta-item">📄 2个文件</span>
+                        <span class="step-meta-item">🎯 Job Map</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../06-jobmap/job_map.json" class="file-item">
+                                <span class="file-icon">🗺</span>
+                                <span class="file-name">job_map.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../06-jobmap/job_map.html" class="file-item">
+                                <span class="file-icon">🌐</span>
+                                <span class="file-name">job_map.html</span>
+                                <span class="file-type">HTML</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card completed" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 7</span>
+                        <span class="step-status">
+                            <span class="status-icon">✓</span>
+                            已完成
+                        </span>
+                    </div>
+                    <div class="step-name">用户画像分析</div>
+                    <div class="step-desc">基于UGC数据构建用户画像，聚类用户群体</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 15分钟</span>
+                        <span class="step-meta-item">📄 2个文件</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <a href="../07-personas/user_personas.json" class="file-item">
+                                <span class="file-icon">👥</span>
+                                <span class="file-name">user_personas.json</span>
+                                <span class="file-type">JSON</span>
+                            </a>
+                            <a href="../07-personas/user_personas.md" class="file-item">
+                                <span class="file-icon">📝</span>
+                                <span class="file-name">user_personas.md</span>
+                                <span class="file-type">Markdown</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card in-progress" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 8</span>
+                        <span class="step-status">
+                            <span class="status-icon">◉</span>
+                            进行中
+                        </span>
+                    </div>
+                    <div class="step-name">Kano分类</div>
+                    <div class="step-desc">对每个高优先级Job进行Kano分类（基本型/期望型/兴奋型）</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 进行中</span>
+                        <span class="step-meta-item">🎯 Kano Model</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <span class="file-item">
+                                <span class="file-icon">⏳</span>
+                                <span class="file-name">处理中...</span>
+                                <span class="file-type">等待完成</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 9</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">RICE评分</div>
+                    <div class="step-desc">对机会进行量化评分：(Reach × Impact × Confidence) / Effort</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                        <span class="step-meta-item">🎯 RICE</span>
+                    </div>
+                    <div class="step-files">
+                        <div class="file-list">
+                            <span class="file-item">
+                                <span class="file-icon">⏳</span>
+                                <span class="file-name">等待上一步完成</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 3: Validation -->
+        <section class="phase phase-validation">
+            <div class="phase-header">
+                <div class="phase-icon">🧪</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">阶段三：验证 (VALIDATION)</div>
+                    <div class="phase-subtitle">假设形成、实验设计、快速验证、学习闭环</div>
+                </div>
+                <div class="phase-progress">0/4 完成</div>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 10</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">假设形成</div>
+                    <div class="step-desc">将洞察转化为可验证的假设陈述（If...Then...Because...）</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                        <span class="step-meta-item">🎯 假设驱动</span>
+                    </div>
+                </div>
+
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 11</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">实验设计</div>
+                    <div class="step-desc">为每个假设设计最小可行实验</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                        <span class="step-meta-item">🎯 实验设计</span>
+                    </div>
+                </div>
+
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 12</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">快速验证</div>
+                    <div class="step-desc">执行实验，收集验证数据</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                        <span class="step-meta-item">🎯 验证执行</span>
+                    </div>
+                </div>
+
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 13</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">学习闭环</div>
+                    <div class="step-desc">分析验证结果，更新机会评估</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                        <span class="step-meta-item">🎯 学习闭环</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Phase 4: Delivery -->
+        <section class="phase phase-delivery">
+            <div class="phase-header">
+                <div class="phase-icon">📦</div>
+                <div class="phase-title-group">
+                    <div class="phase-title">阶段四：交付 (DELIVERY)</div>
+                    <div class="phase-subtitle">洞察生成、搜索词优化、三件套交付</div>
+                </div>
+                <div class="phase-progress">0/3 完成</div>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 14</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">洞察生成</div>
+                    <div class="step-desc">综合所有分析，生成结构化洞察卡片</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                    </div>
+                </div>
+
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 15</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">搜索词优化</div>
+                    <div class="step-desc">基于本轮发现，优化下一轮搜索词</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                    </div>
+                </div>
+
+                <div class="step-card pending" onclick="toggleStep(this)">
+                    <div class="step-header">
+                        <span class="step-number">步骤 16</span>
+                        <span class="step-status">
+                            <span class="status-icon">○</span>
+                            等待中
+                        </span>
+                    </div>
+                    <div class="step-name">三件套交付</div>
+                    <div class="step-desc">生成最终分析报告、技术报告、改进建议报告</div>
+                    <div class="step-meta">
+                        <span class="step-meta-item">⏱ 等待</span>
+                        <span class="step-meta-item">📄 3个报告</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Action Buttons -->
+    <div class="actions-bar">
+        <a href="./project_manifest.json" class="action-btn btn-secondary">
+            <span>📋</span> 项目清单
+        </a>
+        <a href="../16-reports/" class="action-btn btn-secondary">
+            <span>📁</span> 打开目录
+        </a>
+        <button class="action-btn btn-primary" onclick="location.reload()">
+            <span>🔄</span> 刷新状态
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>AI产品需求调研工作流 v4.0.0 | 基于 JTBD + Kano + RICE 方法论</p>
+        <p style="margin-top: 0.5rem;">最后更新: <span id="last-updated">2026-05-14 14:30:00</span></p>
+    </footer>
+
+    <script>
+        function toggleStep(card) {
+            card.classList.toggle('expanded');
+        }
+
+        // Auto-refresh every 30 seconds if in progress
+        const hasInProgress = document.querySelector('.step-card.in-progress') !== null;
+        if (hasInProgress) {
+            setTimeout(() => {
+                location.reload();
+            }, 30000);
+        }
+
+        // Update timestamp
+        document.getElementById('last-updated').textContent = new Date().toLocaleString('zh-CN');
+    </script>
+</body>
+</html>

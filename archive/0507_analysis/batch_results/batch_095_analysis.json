@@ -1,0 +1,634 @@
+{
+  "batch_id": 95,
+  "total_items": 50,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 41,
+      "short_video": 6,
+      "long_video": 3
+    },
+    "type_distribution": {
+      "behavior_description": 42,
+      "feature_request": 3,
+      "pain_point": 4,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 15,
+      "playback_control": 11,
+      "payment_member": 13,
+      "ad_experience": 6,
+      "video_quality": 3,
+      "screen_cast": 1,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 48
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_3336",
+      "text": "少看视频，多看书，多输出[害羞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3337",
+      "text": "家庭层面固然很重要：陪伴、榜样以及树立正确的价值观。关键是不仅青少年，大人们也无法控制自己。那从政策、平台层面，是不是应该有明确的限制或者保护呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3338",
+      "text": "[捂脸]我33，疫情前不刷短视频，还能自己好好学习，看长视频学习，自从22年23年之后，刷短视频多后，现在长视频已经看不下去了，觉得废话很多，只想看快速获取核心信息。有时候我也觉得是自己没耐心，但是也不知道是不是国内视频内容太水",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3340",
+      "text": "知识碎片化其实也不是完全没有用，你拿到这个碎片确实可以在你不知道在什么时候可以发挥意想不到的效果，短视频真正的危害是让你不断切换，让人变得越来越难以集中注意力，而且短视频消耗的精力是非常大的，因为我们的大脑是单核处理器，无法同时运行多个任务，除了你刷视频本身的消耗还有切换时关闭一个任务再开启一个任务的额外消耗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3341",
+      "text": "父母陪伴孩子很重要，你多些时间陪孩子，孩子看电子产品的时间就少些，然后在陪伴孩子的过程树立孩子正确的价值观，让孩子知道起码的是非对错，遇到一些事情时告诉孩子这件事情的利与弊，不论孩子如何选择，都要自己承担相应的后果。父母不可能陪伴庇护孩子一辈子，要从小就教给孩子自我生存的能力啊。个人观点，仅供参考，祝福[拜托][感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3344",
+      "text": "社会在进步，科技在发展，连大人都走不出短视频，小孩子也一样",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3346",
+      "text": "短视频带来的持续性短暂的快乐连成年人都抵挡不了，要想孩子远离短视频，不仅需要家长以身作则，还要帮助孩子建立和保持正常的大脑运行模式",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3347",
+      "text": "跟之前的家长觉得是游戏毁掉了孩子一模一样，笑死",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3348",
+      "text": "元认知不好搭建啊，孩子就觉得短视频好看，就没觉得空虚，想要一直看下去。这种状态已经把孩子自己的认知给覆盖掉了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3349",
+      "text": "感谢分享，分享的很全面，电子产品确实很害人，大人小孩都中毒",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3355",
+      "text": "我现在喜欢看视频了[捂脸][捂脸][感谢][感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3357",
+      "text": "说得对，赌场广告很良心，拖进度条就能跳过去，那些正版视频的广告，呵呵。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3360",
+      "text": "开会员也有会员专属广告哦[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3361",
+      "text": "盗版这几秒钟还是插在进度条里的，不想看直接拉进度条",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3362",
+      "text": "这么多年了，有的正版网站连个弹幕功能都做不好，播放的各种变化下，弹幕的适配一塌糊涂。这种版权规则真的严重限制了商家进步",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3363",
+      "text": "花钱开会员可以享受高级定制尊贵广告。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3364",
+      "text": "开了会员还有会员专属广告[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3365",
+      "text": "这才是真正的广告，因为你已经记住了赌场的名字。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3368",
+      "text": "甚至盗版广告是做在视频里的，可以拖进度条跳过，正版广告呵呵",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3369",
+      "text": "有广告的盗版谁看啊，开个迅雷会员，比正版高清的画质加无广告，谁看正版会员专属广告啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3370",
+      "text": "我怀疑赌场可能花了钱买了正版，而视频平台可能纯白嫖",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3372",
+      "text": "平台默认观众是“用户”，而不是“观众”，默认屏幕是流量入口，而不是叙事窗口，于是我们付费买来的不是沉浸，而是更高清的广告，我们支持的正版，反而成了被官方打断次数最多的那个版本，我们把不被干扰当作一种奢侈，把完整看完一段戏当作侥幸……这本该是最基本的体验，如今却像是一种恩赐。我本将心向明月，奈何明月照沟渠里，哎，看盗版起码不球气。[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3373",
+      "text": "更顶的是，开了会员仍然有会员专属广告[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3374",
+      "text": "很多是为了支持哥哥的数据吧，看剧的初心不一样了，现在看剧都是为了做数据。反正我已经很久没看过国产电视剧了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3375",
+      "text": "没错，暂停想细看屏幕上小字时，还把画面缩小广告放大，什么神操作",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3376",
+      "text": "正版受害者忍受力高的原因。第一，已经付费了，不看心疼钱，哪怕是很不爽，最多以后不续费；第二是懒或者以及不会找资源了，这也是拜百度所赐。讲真不用梯子来用谷歌，我也不知道怎么找资源。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3377",
+      "text": "最牛逼的是我最近用爱奇艺 发现 “我的”页面上边竟然插播了一个小屏幕广告，你懂什么是“我的”吗[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3379",
+      "text": "会员专属广告是真烦[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3381",
+      "text": "正版只管加广告就可以了，盗版要考虑的就多了[调皮]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3382",
+      "text": "我很受不了“正版”在屏幕四个角上打广告。有些剧，是需要“沉浸感”的。比如你在看罗马古装剧，这边角斗士们正在拼命，右下角硕大的金色字体让你去抢红包，非常割裂违和。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3383",
+      "text": "啊？大部分新葡京的时长都在三分钟到五分钟吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3385",
+      "text": "错，是“国内正版受害者”。国外会员用过了就知道什么才是“会员”的意义。[发呆]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3386",
+      "text": "这就是pc没落的表现，互联网精神的倒退。手里有个电脑，稍微懂一点点网络，都不会问这个问题。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3389",
+      "text": "暂停还满屏广告，真服了，各种恶心得不行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3390",
+      "text": "凡事这样插播广告的统统抵制  不买就完了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3391",
+      "text": "还记得大概十年前吧，那个时候也就片头有广告，许多影视都免费，充了会员就能跳过而且费用也还行，后来越来越多的影视作品都要会员才能看而且还有中场广告，后面更甚，买了会员还有小广告要充超级会员才能看，为了赚钱，正在更新的影视前面也要钱了，只能看近期更新的，但免费的可以省去很多不必要的麻烦，画质也还不错何乐而不为呢？[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3393",
+      "text": "正版的除了画质可能高清一点以外暂时没找到其他好处[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3394",
+      "text": "最恶心的是越改版越那啥，我有时候暂停是想看细节，人家直接屏幕缩小，给你弹出一个大广告，铺满屏幕[大笑][大笑][大笑][大笑][大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3395",
+      "text": "别说b站，现在抖音直接给你出了一个分段，就是视频博主里的广告都能直接拉进度条跳，那几个视频网站是真的恶心",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3396",
+      "text": "B站还可以，为了看凡人修仙传开了大会员，在我的印象中，好像没怎么看到过广告",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3397",
+      "text": "盗版的广告是可以直接拖进度条跳过的[生气]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3398",
+      "text": "正版还有阉割，我都不知道b站上黑袍纠察队，剪辑得多累[发呆]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3399",
+      "text": "你充过那种正版的就知道了，除了一个弹幕功能，别的哪儿比得过盗版，盗版一集广告才几秒还能跳过，正版呢，开头先一堆广告，中间看着看着毫无预料又是广告，不是为了自己喜欢的明星冲销量没几个愿意充会员",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3400",
+      "text": "以为花几十块开了会员，就能享受无广告的完整内容？现实是，开了会员有 “会员专属广告”，片头有推荐贴片，剧中有植入弹窗，甚至暂停都会跳出广告；想投屏？不好意思，普通会员只能投 480P，想投高清要升级更贵的会员；想在电视上看？手机会员和电视会员不通用，必须再花一份钱开大屏端会员；更别说曾经泛滥、如今换皮回归的超前点播 —— 会员已经付了费，想看大结局、看高光剧情，还要再按集、按部额外掏钱。反观盗版资",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3401",
+      "text": "b站开了会员也看不了，还得再买才能看[大哭]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3402",
+      "text": "没错没错,最烦的就是一暂停就弹,最烦人了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3403",
+      "text": "是的，盗版的广告反而要收敛很多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3404",
+      "text": "会员专属广告   花钱去看专门为你制作的广告[害羞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3405",
+      "text": "最主要的是，正版的暂停想看什么东西的时候，会自动变成小屏，无敌恶心",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3406",
+      "text": "现在受不了的是，开了会员他们又升级会员。你现在的会员买不了升级会员的内容呢。真踏🐎会玩啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

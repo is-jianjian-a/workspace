@@ -1,0 +1,849 @@
+{
+  "total_batches": 120,
+  "total_items": 4579,
+  "total_ai": 437,
+  "total_explicit": 287,
+  "total_implicit": 150,
+  "batch_stats": [
+    {
+      "batch_id": 1,
+      "total_items": 64,
+      "ai_count": 6,
+      "ai_explicit": 2,
+      "ai_implicit": 4
+    },
+    {
+      "batch_id": 2,
+      "total_items": 34,
+      "ai_count": 4,
+      "ai_explicit": 0,
+      "ai_implicit": 4
+    },
+    {
+      "batch_id": 3,
+      "total_items": 13,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 4,
+      "total_items": 25,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 5,
+      "total_items": 20,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 6,
+      "total_items": 28,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 7,
+      "total_items": 30,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 8,
+      "total_items": 43,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 9,
+      "total_items": 36,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 10,
+      "total_items": 24,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 11,
+      "total_items": 44,
+      "ai_count": 4,
+      "ai_explicit": 2,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 12,
+      "total_items": 65,
+      "ai_count": 3,
+      "ai_explicit": 3,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 13,
+      "total_items": 34,
+      "ai_count": 3,
+      "ai_explicit": 3,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 14,
+      "total_items": 19,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 15,
+      "total_items": 48,
+      "ai_count": 4,
+      "ai_explicit": 0,
+      "ai_implicit": 4
+    },
+    {
+      "batch_id": 16,
+      "total_items": 43,
+      "ai_count": 5,
+      "ai_explicit": 0,
+      "ai_implicit": 5
+    },
+    {
+      "batch_id": 17,
+      "total_items": 48,
+      "ai_count": 7,
+      "ai_explicit": 2,
+      "ai_implicit": 5
+    },
+    {
+      "batch_id": 18,
+      "total_items": 35,
+      "ai_count": 5,
+      "ai_explicit": 3,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 19,
+      "total_items": 39,
+      "ai_count": 3,
+      "ai_explicit": 3,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 20,
+      "total_items": 27,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 21,
+      "total_items": 27,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 22,
+      "total_items": 50,
+      "ai_count": 10,
+      "ai_explicit": 4,
+      "ai_implicit": 6
+    },
+    {
+      "batch_id": 23,
+      "total_items": 46,
+      "ai_count": 4,
+      "ai_explicit": 1,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 24,
+      "total_items": 52,
+      "ai_count": 2,
+      "ai_explicit": 1,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 25,
+      "total_items": 46,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 26,
+      "total_items": 48,
+      "ai_count": 3,
+      "ai_explicit": 0,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 27,
+      "total_items": 48,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 28,
+      "total_items": 54,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 29,
+      "total_items": 37,
+      "ai_count": 3,
+      "ai_explicit": 0,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 30,
+      "total_items": 41,
+      "ai_count": 5,
+      "ai_explicit": 2,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 31,
+      "total_items": 41,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 32,
+      "total_items": 43,
+      "ai_count": 3,
+      "ai_explicit": 1,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 33,
+      "total_items": 45,
+      "ai_count": 3,
+      "ai_explicit": 1,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 34,
+      "total_items": 37,
+      "ai_count": 4,
+      "ai_explicit": 3,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 35,
+      "total_items": 48,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 36,
+      "total_items": 59,
+      "ai_count": 3,
+      "ai_explicit": 0,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 37,
+      "total_items": 60,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 38,
+      "total_items": 26,
+      "ai_count": 15,
+      "ai_explicit": 15,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 39,
+      "total_items": 34,
+      "ai_count": 26,
+      "ai_explicit": 24,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 40,
+      "total_items": 24,
+      "ai_count": 13,
+      "ai_explicit": 12,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 41,
+      "total_items": 31,
+      "ai_count": 23,
+      "ai_explicit": 21,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 42,
+      "total_items": 19,
+      "ai_count": 7,
+      "ai_explicit": 6,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 43,
+      "total_items": 25,
+      "ai_count": 9,
+      "ai_explicit": 9,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 44,
+      "total_items": 38,
+      "ai_count": 2,
+      "ai_explicit": 1,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 45,
+      "total_items": 29,
+      "ai_count": 7,
+      "ai_explicit": 7,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 46,
+      "total_items": 40,
+      "ai_count": 19,
+      "ai_explicit": 19,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 47,
+      "total_items": 16,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 48,
+      "total_items": 36,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 49,
+      "total_items": 56,
+      "ai_count": 4,
+      "ai_explicit": 1,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 50,
+      "total_items": 53,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 51,
+      "total_items": 56,
+      "ai_count": 3,
+      "ai_explicit": 0,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 52,
+      "total_items": 53,
+      "ai_count": 5,
+      "ai_explicit": 4,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 53,
+      "total_items": 38,
+      "ai_count": 5,
+      "ai_explicit": 2,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 54,
+      "total_items": 41,
+      "ai_count": 6,
+      "ai_explicit": 3,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 55,
+      "total_items": 42,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 56,
+      "total_items": 42,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 57,
+      "total_items": 47,
+      "ai_count": 2,
+      "ai_explicit": 1,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 58,
+      "total_items": 27,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 59,
+      "total_items": 39,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 60,
+      "total_items": 43,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 61,
+      "total_items": 31,
+      "ai_count": 5,
+      "ai_explicit": 3,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 62,
+      "total_items": 42,
+      "ai_count": 4,
+      "ai_explicit": 4,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 63,
+      "total_items": 51,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 64,
+      "total_items": 55,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 65,
+      "total_items": 47,
+      "ai_count": 2,
+      "ai_explicit": 1,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 66,
+      "total_items": 42,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 67,
+      "total_items": 45,
+      "ai_count": 12,
+      "ai_explicit": 9,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 68,
+      "total_items": 39,
+      "ai_count": 14,
+      "ai_explicit": 13,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 69,
+      "total_items": 41,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 70,
+      "total_items": 33,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 71,
+      "total_items": 38,
+      "ai_count": 3,
+      "ai_explicit": 0,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 72,
+      "total_items": 45,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 73,
+      "total_items": 44,
+      "ai_count": 2,
+      "ai_explicit": 1,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 74,
+      "total_items": 39,
+      "ai_count": 5,
+      "ai_explicit": 2,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 75,
+      "total_items": 20,
+      "ai_count": 2,
+      "ai_explicit": 1,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 76,
+      "total_items": 25,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 77,
+      "total_items": 37,
+      "ai_count": 7,
+      "ai_explicit": 6,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 78,
+      "total_items": 33,
+      "ai_count": 4,
+      "ai_explicit": 3,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 79,
+      "total_items": 33,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 80,
+      "total_items": 27,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 81,
+      "total_items": 16,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 82,
+      "total_items": 15,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 83,
+      "total_items": 36,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 84,
+      "total_items": 27,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 85,
+      "total_items": 40,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 86,
+      "total_items": 45,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 87,
+      "total_items": 47,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 88,
+      "total_items": 39,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 89,
+      "total_items": 43,
+      "ai_count": 9,
+      "ai_explicit": 5,
+      "ai_implicit": 4
+    },
+    {
+      "batch_id": 90,
+      "total_items": 38,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 91,
+      "total_items": 42,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 92,
+      "total_items": 41,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 93,
+      "total_items": 31,
+      "ai_count": 6,
+      "ai_explicit": 4,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 94,
+      "total_items": 44,
+      "ai_count": 4,
+      "ai_explicit": 3,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 95,
+      "total_items": 50,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 96,
+      "total_items": 55,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 97,
+      "total_items": 49,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 98,
+      "total_items": 41,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 99,
+      "total_items": 47,
+      "ai_count": 8,
+      "ai_explicit": 6,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 100,
+      "total_items": 36,
+      "ai_count": 12,
+      "ai_explicit": 10,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 101,
+      "total_items": 43,
+      "ai_count": 10,
+      "ai_explicit": 9,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 102,
+      "total_items": 35,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 103,
+      "total_items": 31,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 104,
+      "total_items": 49,
+      "ai_count": 3,
+      "ai_explicit": 0,
+      "ai_implicit": 3
+    },
+    {
+      "batch_id": 105,
+      "total_items": 39,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 106,
+      "total_items": 42,
+      "ai_count": 6,
+      "ai_explicit": 2,
+      "ai_implicit": 4
+    },
+    {
+      "batch_id": 107,
+      "total_items": 32,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 108,
+      "total_items": 22,
+      "ai_count": 2,
+      "ai_explicit": 0,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 109,
+      "total_items": 22,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 110,
+      "total_items": 45,
+      "ai_count": 9,
+      "ai_explicit": 7,
+      "ai_implicit": 2
+    },
+    {
+      "batch_id": 111,
+      "total_items": 29,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 112,
+      "total_items": 30,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 113,
+      "total_items": 21,
+      "ai_count": 1,
+      "ai_explicit": 1,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 114,
+      "total_items": 14,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 115,
+      "total_items": 29,
+      "ai_count": 2,
+      "ai_explicit": 2,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 116,
+      "total_items": 30,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 117,
+      "total_items": 27,
+      "ai_count": 1,
+      "ai_explicit": 0,
+      "ai_implicit": 1
+    },
+    {
+      "batch_id": 118,
+      "total_items": 43,
+      "ai_count": 0,
+      "ai_explicit": 0,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 119,
+      "total_items": 46,
+      "ai_count": 3,
+      "ai_explicit": 3,
+      "ai_implicit": 0
+    },
+    {
+      "batch_id": 120,
+      "total_items": 45,
+      "ai_count": 3,
+      "ai_explicit": 2,
+      "ai_implicit": 1
+    }
+  ]
+}

@@ -1,0 +1,471 @@
+{
+  "schema_version": "1.0",
+  "project": "video_ai_research",
+  "description": "手机用户视频场景AI诉求调研 - 行业功能特性数据库",
+  "last_updated": "2025-04-24",
+  "companies": [
+    {
+      "name": "抖音",
+      "category": "domestic_short_video",
+      "region": "CN",
+      "features": [
+        {
+          "id": "douyin_001",
+          "name": "AI字幕",
+          "description": "自动生成视频字幕，支持多语言",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video",
+            "live"
+          ],
+          "ai_tech_type": "NLP/Speech",
+          "user_feedback": "好评较多，但准确性有待提升",
+          "source_url": "https://www.douyin.com/",
+          "source_type": "产品功能",
+          "announcement_date": "2023",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "douyin_002",
+          "name": "AI特效/滤镜",
+          "description": "基于AI的人脸识别、美颜、特效",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "非常受欢迎，年轻用户高频使用",
+          "source_url": "https://www.douyin.com/",
+          "source_type": "产品功能",
+          "announcement_date": "2019",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "douyin_003",
+          "name": "AI推荐算法",
+          "description": "个性化内容推荐，兴趣识别",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video",
+            "live"
+          ],
+          "ai_tech_type": "ML/Recommendation",
+          "user_feedback": "精准但存在信息茧房争议",
+          "source_url": "https://www.douyin.com/",
+          "source_type": "产品功能",
+          "announcement_date": "2016",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "douyin_004",
+          "name": "AI视频总结",
+          "description": "长视频自动提取关键内容摘要",
+          "status": "测试中",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "NLP/Multimodal",
+          "user_feedback": "内测中",
+          "source_url": "https://www.douyin.com/",
+          "source_type": "媒体报道",
+          "announcement_date": "2025",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    },
+    {
+      "name": "快手",
+      "category": "domestic_short_video",
+      "region": "CN",
+      "features": [
+        {
+          "id": "kuaishou_001",
+          "name": "AI字幕",
+          "description": "自动生成字幕",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "NLP/Speech",
+          "user_feedback": "一般",
+          "source_url": "https://www.kuaishou.com/",
+          "source_type": "产品功能",
+          "announcement_date": "2022",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "kuaishou_002",
+          "name": "AI魔法表情",
+          "description": "实时人脸特效",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "受欢迎",
+          "source_url": "https://www.kuaishou.com/",
+          "source_type": "产品功能",
+          "announcement_date": "2018",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    },
+    {
+      "name": "B站",
+      "category": "domestic_long_video",
+      "region": "CN",
+      "features": [
+        {
+          "id": "bilibili_001",
+          "name": "AI字幕（CC字幕）",
+          "description": "UP主可上传AI生成的字幕，观众可选开启",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video",
+            "short_video"
+          ],
+          "ai_tech_type": "NLP/Speech",
+          "user_feedback": "好评，但覆盖率不高",
+          "source_url": "https://www.bilibili.com",
+          "source_type": "产品功能",
+          "announcement_date": "2020",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "bilibili_002",
+          "name": "AI视频总结",
+          "description": "视频内容自动摘要，显示在评论区上方",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "NLP/Multimodal",
+          "user_feedback": "有争议，部分用户觉得有用，部分觉得不准",
+          "source_url": "https://www.bilibili.com",
+          "source_type": "产品功能",
+          "announcement_date": "2024",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "bilibili_003",
+          "name": "AI弹幕优化",
+          "description": "智能弹幕密度调节、关键词过滤",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "NLP",
+          "user_feedback": "好评",
+          "source_url": "https://www.bilibili.com",
+          "source_type": "产品功能",
+          "announcement_date": "2021",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "bilibili_004",
+          "name": "AI画质增强",
+          "description": "老旧视频AI修复、画质提升",
+          "status": "已上线",
+          "platforms": [
+            "Web"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "好评",
+          "source_url": "https://www.bilibili.com",
+          "source_type": "产品功能",
+          "announcement_date": "2022",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    },
+    {
+      "name": "YouTube",
+      "category": "overseas_long_video",
+      "region": "Global",
+      "features": [
+        {
+          "id": "youtube_001",
+          "name": "AI自动生成字幕",
+          "description": "自动语音识别生成字幕，支持100+语言",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video",
+            "short_video"
+          ],
+          "ai_tech_type": "NLP/Speech",
+          "user_feedback": "非常好评，准确率高",
+          "source_url": "https://youtube.com",
+          "source_type": "产品功能",
+          "announcement_date": "2009",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "youtube_002",
+          "name": "AI视频章节",
+          "description": "自动识别视频内容分段，生成章节",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "NLP/Multimodal",
+          "user_feedback": "好评",
+          "source_url": "https://youtube.com",
+          "source_type": "产品功能",
+          "announcement_date": "2021",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "youtube_003",
+          "name": "AI推荐算法",
+          "description": "个性化推荐、首页Feed",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video",
+            "short_video"
+          ],
+          "ai_tech_type": "ML/Recommendation",
+          "user_feedback": "精准但存在争议",
+          "source_url": "https://youtube.com",
+          "source_type": "产品功能",
+          "announcement_date": "2008",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "youtube_004",
+          "name": "AI Shorts推荐",
+          "description": "短视频AI推荐",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "ML/Recommendation",
+          "user_feedback": "一般",
+          "source_url": "https://youtube.com/shorts",
+          "source_type": "产品功能",
+          "announcement_date": "2021",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    },
+    {
+      "name": "TikTok",
+      "category": "overseas_short_video",
+      "region": "Global",
+      "features": [
+        {
+          "id": "tiktok_001",
+          "name": "AI推荐算法",
+          "description": "For You Page个性化推荐",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "ML/Recommendation",
+          "user_feedback": "行业标杆级别",
+          "source_url": "https://www.tiktok.com",
+          "source_type": "产品功能",
+          "announcement_date": "2016",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "tiktok_002",
+          "name": "AI特效",
+          "description": "丰富的人脸/身体特效",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "非常受欢迎",
+          "source_url": "https://www.tiktok.com",
+          "source_type": "产品功能",
+          "announcement_date": "2017",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "tiktok_003",
+          "name": "AI字幕",
+          "description": "自动生成字幕",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "short_video"
+          ],
+          "ai_tech_type": "NLP/Speech",
+          "user_feedback": "一般",
+          "source_url": "https://www.tiktok.com",
+          "source_type": "产品功能",
+          "announcement_date": "2022",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    },
+    {
+      "name": "Netflix",
+      "category": "overseas_long_video",
+      "region": "Global",
+      "features": [
+        {
+          "id": "netflix_001",
+          "name": "AI推荐系统",
+          "description": "个性化内容推荐",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web",
+            "TV"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "ML/Recommendation",
+          "user_feedback": "好评",
+          "source_url": "https://www.netflix.com",
+          "source_type": "产品功能",
+          "announcement_date": "2006",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "netflix_002",
+          "name": "AI画质优化",
+          "description": "动态码率调整、画质增强",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web",
+            "TV"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "好评",
+          "source_url": "https://www.netflix.com",
+          "source_type": "产品功能",
+          "announcement_date": "2015",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    },
+    {
+      "name": "爱奇艺",
+      "category": "domestic_long_video",
+      "region": "CN",
+      "features": [
+        {
+          "id": "iqiyi_001",
+          "name": "AI弹幕",
+          "description": "智能弹幕防遮挡",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "好评",
+          "source_url": "https://www.iqiyi.com",
+          "source_type": "产品功能",
+          "announcement_date": "2019",
+          "collection_date": "2025-04-24"
+        },
+        {
+          "id": "iqiyi_002",
+          "name": "AI画质增强",
+          "description": "ZoomAI画质提升",
+          "status": "已上线",
+          "platforms": [
+            "iOS",
+            "Android",
+            "Web"
+          ],
+          "video_types": [
+            "long_video"
+          ],
+          "ai_tech_type": "CV",
+          "user_feedback": "好评",
+          "source_url": "https://www.iqiyi.com",
+          "source_type": "产品功能",
+          "announcement_date": "2018",
+          "collection_date": "2025-04-24"
+        }
+      ]
+    }
+  ]
+}

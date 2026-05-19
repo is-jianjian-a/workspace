@@ -1,0 +1,234 @@
+{
+  "智能推荐": {
+    "count": 35,
+    "total_interaction": 183661,
+    "avg_interaction": 5247.457142857143,
+    "related_themes": [
+      "社交互动",
+      "行为习惯",
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 33,
+        "title": "百年百本诺贝尔奖作品解读：第一本《窄门》",
+        "interaction": 20200,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "推荐"
+        ]
+      },
+      {
+        "idx": 40,
+        "title": "求推荐b站下饭or唠嗑长视频，适合当背景板时不时看一眼的那种。做事情的时候总喜欢电脑播点什么玩意儿听个声，时不时抬头看一",
+        "interaction": 20038,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "推荐"
+        ]
+      },
+      {
+        "idx": 45,
+        "title": "女宝！不要让短视频吞没你的脑子2.0🎬",
+        "interaction": 15129,
+        "l1_theme": "社交互动",
+        "matched_keywords": [
+          "推荐"
+        ]
+      }
+    ]
+  },
+  "AI总结": {
+    "count": 2,
+    "total_interaction": 4066,
+    "avg_interaction": 2033.0,
+    "related_themes": [
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 102,
+        "title": "推荐我的电子榨菜！！宝藏的长视频up们",
+        "interaction": 3912,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "总结"
+        ]
+      },
+      {
+        "idx": 183,
+        "title": "2025用过最靠谱的长视频总结ai工具",
+        "interaction": 154,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "总结",
+          "AI总结",
+          "视频总结"
+        ]
+      }
+    ]
+  },
+  "倍速控制": {
+    "count": 3,
+    "total_interaction": 82885,
+    "avg_interaction": 27628.333333333332,
+    "related_themes": [
+      "时长控制"
+    ],
+    "examples": [
+      {
+        "idx": 5,
+        "title": "长视频，建议1.5倍速观看。长期处于慢性压力，容易导致低效和沉溺幻想#慢性压力[话题]# #身体健康[话题]# #心理压",
+        "interaction": 82459,
+        "l1_theme": "时长控制",
+        "matched_keywords": [
+          "倍速"
+        ]
+      },
+      {
+        "idx": 165,
+        "title": "如何用AI十倍速吸收知识（长视频学习）",
+        "interaction": 404,
+        "l1_theme": "时长控制",
+        "matched_keywords": [
+          "倍速"
+        ]
+      },
+      {
+        "idx": 203,
+        "title": "又是一段长视频呀",
+        "interaction": 22,
+        "l1_theme": "时长控制",
+        "matched_keywords": [
+          "倍速"
+        ]
+      }
+    ]
+  },
+  "同步观看": {
+    "count": 1,
+    "total_interaction": 135436,
+    "avg_interaction": 135436.0,
+    "related_themes": [
+      "社交互动"
+    ],
+    "examples": [
+      {
+        "idx": 2,
+        "title": "【长视频】一份人生使用手册：观察并爱自己",
+        "interaction": 135436,
+        "l1_theme": "社交互动",
+        "matched_keywords": [
+          "同步"
+        ]
+      }
+    ]
+  },
+  "笔记功能": {
+    "count": 6,
+    "total_interaction": 60225,
+    "avg_interaction": 10037.5,
+    "related_themes": [
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 33,
+        "title": "百年百本诺贝尔奖作品解读：第一本《窄门》",
+        "interaction": 20200,
+        "l1_theme": "内容质量",
+        "matched_keywords": [
+          "收藏"
+        ]
+      },
+      {
+        "idx": 51,
+        "title": "最好是恐游/剧情向，视频越长越好",
+        "interaction": 15178,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "标签"
+        ]
+      },
+      {
+        "idx": 52,
+        "title": "一些我画画的时候听的东西",
+        "interaction": 15058,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "整理"
+        ]
+      }
+    ]
+  },
+  "字幕翻译": {
+    "count": 2,
+    "total_interaction": 35096,
+    "avg_interaction": 17548.0,
+    "related_themes": [
+      "内容发现"
+    ],
+    "examples": [
+      {
+        "idx": 40,
+        "title": "求推荐b站下饭or唠嗑长视频，适合当背景板时不时看一眼的那种。做事情的时候总喜欢电脑播点什么玩意儿听个声，时不时抬头看一",
+        "interaction": 20038,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "字幕"
+        ]
+      },
+      {
+        "idx": 52,
+        "title": "一些我画画的时候听的东西",
+        "interaction": 15058,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "字幕"
+        ]
+      }
+    ]
+  },
+  "内容筛选": {
+    "count": 4,
+    "total_interaction": 15754,
+    "avg_interaction": 3938.5,
+    "related_themes": [
+      "时长控制",
+      "内容发现",
+      "内容质量"
+    ],
+    "examples": [
+      {
+        "idx": 51,
+        "title": "最好是恐游/剧情向，视频越长越好",
+        "interaction": 15178,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "标签"
+        ]
+      },
+      {
+        "idx": 165,
+        "title": "如何用AI十倍速吸收知识（长视频学习）",
+        "interaction": 404,
+        "l1_theme": "时长控制",
+        "matched_keywords": [
+          "筛选"
+        ]
+      },
+      {
+        "idx": 183,
+        "title": "2025用过最靠谱的长视频总结ai工具",
+        "interaction": 154,
+        "l1_theme": "内容发现",
+        "matched_keywords": [
+          "过滤"
+        ]
+      }
+    ]
+  }
+}

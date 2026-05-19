@@ -1,0 +1,497 @@
+{
+  "batch_id": 59,
+  "total_items": 39,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 24,
+      "short_video": 15
+    },
+    "type_distribution": {
+      "behavior_description": 33,
+      "pain_point": 5,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 36,
+      "ai_feature": 1,
+      "subtitle_translate": 1,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 1,
+      "implicit": 0,
+      "not_ai": 38
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_505",
+      "text": "理性理解，这样的男朋友心理是不是有点故障，视频不出去有可能会发到各大网站，千万不可接受",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_510",
+      "text": "然后女方修手机不小心泄露了，又是个国产大瓜",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_516",
+      "text": "现在怕啥，都推给AI就行啦，不要有太多体表特征啥的就行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_520",
+      "text": "[捂脸]我想录但是我只会用我女朋友手机录 而且我们看完立马删除 (不是你说的那个) 当然 我支持你的想法 不能拍 就算拍了也别露脸 男女一样 自己当时欣赏下当时看完就删除  最近删除云端什么也全部删除 当然 [捂脸]不是所有人都能这样尊重彼此 所以 不缺乏会传播的人",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_521",
+      "text": "不录是最好的。现在 的手机一不小心就被云备份了，那玩意儿泄露出去了就容易生事端。网盘可一点儿也不安全呢，在很多网站上都已经成了一个专题了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_522",
+      "text": "现在的相册都是在你不经意间上传到云空间的，不少流出来的视频是从云空间偷的；也有远程操控你手机，再从你手机提取上传到网上的。保护自己，从不录开始！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_527",
+      "text": "小心你将来如果和他分手他用不雅视频威胁敲诈你。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_528",
+      "text": "扯淡，没结婚录这个都是人品差的表现，结婚有娃了你们是利益共同体，录视频没有问题。只是男女朋友录这个，你会万劫不复，未来的老公发现了，你等着家庭破碎吧[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_529",
+      "text": "这种事情录视频！现在社会能过一辈子的有多少！真是幼稚。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_531",
+      "text": "我跟我女朋友在一起四年。她27岁，今年她突然离开我去了深圳说上班。后面才知道是去了酒吧陪酒，然后被一个四十多岁的看上了，带出去开房了。然后跟那个男的在一起了。没错，我跟她分手了。我知道她一直老实，也不是很物质的女人。问她，为什么会这样？真的那么缺钱么？我给的钱不够生活么？更何况她自己也挣钱。她哭着告诉我，今年年初，她前男友，用好几段他们做的视频威胁她，叫她去开房，还要给他钱，前前后后给了将近二十多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_535",
+      "text": "这样男朋友。赶紧分手吧。你男朋友。不是个变态。也是一个混蛋。一旦有不顺心了，他会把你发到网上给别人看。曝光你觉得。这样对你妥吗？不知道，看看也就罢了，知道的话。你怎么去面对？别人看完了。你的视频。你出去。怎么面对这些个事实？你想好了吗？如果你想好了。你。就让他录，如果。你觉得。不妥，那就赶紧分手吧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_536",
+      "text": "直接录个视频告他强奸[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_537",
+      "text": "善于学习的人会认为生活中的一切都具备着学习的价值，但短视频真的不合适。不加以加工的信息太少、精加工的信息深度又不够。引用《如何读一本书》当中的一个观点“信息过多和信息过少都会成为理解事件的阻力”，恰恰短视频同时具备二者，可以说是天选垃圾信息源",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_540",
+      "text": "纸质书也好，短视频也好，其实都是工具，主要取决于人本身怎么用这些工具。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_541",
+      "text": "短视频让我失去了很多。我失去了陪伴父母的时间。我失去了提升自我的时间。我失去了真正快乐的时间。我失去了体会自然的时间。……短视频真的是把双刃剑。[大哭][大哭][大哭]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_543",
+      "text": "错过什么都可以。我反正不看小视频。这是我的选择。而且我看纸书。而作为背包客，我还从未见到一个用小红书旅行的人比我旅得精彩的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_545",
+      "text": "耍视频不重要，重要的是哪些制造焦虑的人会让你越来越焦虑，每天深陷其中，不能自拔。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_547",
+      "text": "作者的观点很好，人一定要主动去思考，而不是被动的接受短视频的内容，要自己去辨别，比如看到一个新的内容的时候，脑子里要思考这是真实的还是虚构的，到底有没有真实性，而不能被它牵着走，另外我也有思考很长一段时间是否要留着短视频，但是我最终还是留下了，也和作者说的一样不看短视频也会错过很多信息，只要合理的安排使用短视频的时间也能提高很多效率同时也能了解和扩展知识面",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_548",
+      "text": "垃圾短视频太多了，抄袭搬运擦边博眼球啥都有，浪费精力",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_549",
+      "text": "短视频只会让你的时间在指甲间不知不觉溜走，而时间就是金钱，相当于你在浪费金钱，浪费一个有限的生命。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_550",
+      "text": "额😅短视频给我们带来了什么好处呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_551",
+      "text": "就是因为人人都可以发，人人都可以说自己的观点，你会发现很多新闻的观点都很奇葩，角度也很稀奇，这就不乏以前什么苹果手机会爆炸，屯盐的闹剧了。当你半天一天一直不停刷刷的都是这种无脑的奇葩视频，最后你会发现半天都刷到了啥？所以我更倾向于看些权威媒体的账号，虽然说是信息茧房，被人过滤编辑之后才发出来的，但是就是因为这些部门的专业编辑，才是通过审核之后发出来的权威可信的东西，否则现在自媒体网络时代，这些权威",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_552",
+      "text": "短视频肯定不会一无是处，但很多人忽略的是，无论短视频还是影视剧，都是一种距离人类情绪最近的艺术，而这种艺术才是让人觉得爽令人上瘾的根本，所以本质上说短视频输出的是情绪，而不是价值，像我这种极少刷短视频的人，除了不想被短视频的情绪裹挟而浪费时间之外，更重要的是从价值层面它不会给我带来巨大的输入和波澜，这与特立独行无关！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_553",
+      "text": "我倒觉得我们应该想我们在自己关注的领域得到了什么？而不是想没有做过的事失去了什么。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_554",
+      "text": "1. 社交场上的“硬通货”这可能是最直接的影响。现在的很多社交话题（尤其是年轻人之间）都源于短视频。失去共同话题： 你可能听不懂朋友间流行的“梗”（网络流行语），不知道最近爆火的BGM（背景音乐）是什么，也无法参与讨论某个突然走红的网红或事件 。社交互动减少： 现在的社交方式变了，很多人习惯通过分享视频来互动（比如养火花、分享搞笑段子）。如果你完全不接触，这种“分享的乐趣”和共同语言就会变少，甚至",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_555",
+      "text": "常年不刷短视频的人，会感觉人生没有乐趣，因为只有经常刷短视频，人们才会非常的热爱生活，并且会增长很多的知识，成为一个知识渊博的人！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_557",
+      "text": "我用的是低价位手机，从来没有安装过小红书、抖音、快手、哔哩哔哩、微博、今日头条、百度、视频号这些玩意儿，当然也不看手机视频，至于错过哪些新闻也根本不重要。因为我虽然已经退休很多年，但实在没空去关心计较那些东西。我安装了微信、拼多多、支付宝、文心、知乎。有空时读点书、看看微信上的C刊公众号及其扩展版公众号文章、科学技术类公众号的长文章，用用文心大模型、上知乎写点内容就足够忙了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_558",
+      "text": "作为消遣，短视频刷刷还是可以的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_559",
+      "text": "同意主要观点，但是网课（尤指视频课）因其可以随时倍速和暂停，再考虑到课堂老师又不可能追踪每个学生的状态，效果可能比老师现场讲课好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_562",
+      "text": "国内的大学教材太差了，真的没法靠它们来自学。偏偏很多大学老师上课就是照着课本和ppt来讲，真的是雪上加霜。真的很后悔大学的时候不懂多找几个版本的教材来看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_564",
+      "text": "自己思考直接无敌。 我时间慢 但是效率巨高 通常理解的很深。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_566",
+      "text": "看书学习效果好是有利边读边思考，而视频参杂了太多干扰思考的东西，让我们不能深入思考了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_570",
+      "text": "另外提个思路，现在视频的制作成本很低，有一些做长尾的营销号完全使用ai内容，不加审查（主要也没能力、没时间审查），这种东西学的越多效果越差[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_571",
+      "text": "看视频像我就很少积极主动跟上细维来思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_572",
+      "text": "因为看视频总是会其他信息吸引[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_573",
+      "text": "看视频直接睡着[飙泪笑][飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_576",
+      "text": "分析透彻。短视频占据大脑发呆的时间，占据人们聊天的时间，可是人们还自以为在休息，在放松。实际上看短视频的过程中，手没有停歇，眼睛没有休息，脑袋也在高速运转，情绪和内心也在不断变化，这是一种没有感觉到疲劳的疲劳。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_584",
+      "text": "我没有抖音快手，天天对着小红书看图文，对着网文小说，对着动漫电影，对着知乎刷回答[尴尬][尴尬][尴尬]感觉没有短视频也是各种浪费时间，根本不提升自己[衰]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_585",
+      "text": "b站不就是短视频吗？大哥别笑话二哥",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

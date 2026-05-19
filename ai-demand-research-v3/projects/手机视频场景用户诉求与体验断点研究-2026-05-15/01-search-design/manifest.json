@@ -1,0 +1,35 @@
+{
+  "step_id": "step0-2",
+  "step_name": "搜索词设计",
+  "version": 2,
+  "timestamp": "2026-05-15T11:35:00+08:00",
+  "status": "completed",
+  "input": {
+    "files": [],
+    "checksum": null
+  },
+  "code": {
+    "file": null,
+    "checksum": null
+  },
+  "output": {
+    "files": [
+      "01-search-design/output/search-keywords.json",
+      "01-search-design/output/search-keywords.md"
+    ],
+    "checksums": {}
+  },
+  "parameters": {
+    "design_principle": "正交搭配：场景词/平台词/行为词 × 功能/缺点/体验词",
+    "total_keywords": 26,
+    "platforms": ["抖音", "B站", "小红书", "视频号", "快手"],
+    "generic_behaviors": ["手机看视频", "刷视频"],
+    "query_types": ["功能", "缺点", "不好用", "问题"],
+    "key_rules": [
+      "不预设具体功能方向",
+      "从手机系统层面出发，非APP功能层面",
+      "语义不通的组合剔除"
+    ]
+  },
+  "notes": "v2修正：用户指出初始设计预设了功能方向（沉迷/算法/广告等），改为正交搭配原则。A轴=平台名+泛化行为，B轴=功能/缺点/不好用/问题，组合出26个搜索词。"
+}

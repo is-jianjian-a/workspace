@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Kano分类矩阵 - 长视频用户诉求</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #0a0e1a; color: #e2e8f0; padding: 2rem; }
+        .header { text-align: center; margin-bottom: 2rem; }
+        .header h1 { background: linear-gradient(135deg, #3b82f6, #06b6d4); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .matrix { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; max-width: 800px; margin: 0 auto; }
+        .quadrant { background: #1a1f2e; border: 1px solid #2d3748; border-radius: 12px; padding: 1.5rem; }
+        .quadrant.must-be { border-color: #ef4444; }
+        .quadrant.performance { border-color: #3b82f6; }
+        .quadrant.delighter { border-color: #10b981; }
+        .quadrant.indifferent { border-color: #64748b; }
+        .quadrant-title { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .must-be .quadrant-title { color: #ef4444; }
+        .performance .quadrant-title { color: #3b82f6; }
+        .delighter .quadrant-title { color: #10b981; }
+        .indifferent .quadrant-title { color: #64748b; }
+        .job-item { background: #252b3d; border-radius: 6px; padding: 0.75rem; margin-bottom: 0.5rem; font-size: 0.875rem; }
+        .job-meta { color: #64748b; font-size: 0.75rem; margin-top: 0.25rem; }
+        .stats { text-align: center; margin-top: 2rem; color: #64748b; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 Kano分类矩阵</h1>
+        <p>基于UGC情感倾向的需求类型分析</p>
+    </div>
+    <div class="matrix">
+
+        <div class="quadrant must_be">
+            <div class="quadrant-title">基本型 (Must-be)</div>
+            <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 1rem;">必须具备，缺失导致不满</div>
+
+            <div class="job-item">
+                当我在周末时，我想要当前长视频体验存在痛点: 没有关注，两个视频，这样我就可以希望能够解决这些问题，获得更流畅的观看体验...
+                <div class="job-meta">频次: 60 | 置信度: 1.00</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要在没有网络或网络不稳定的情况下观看长视频，这样我就可以能够随时随地观看已下载的长...
+                <div class="job-meta">频次: 16 | 置信度: 0.33</div>
+            </div>
+
+            <div class="job-item">
+                当我在睡前时，我想要想要在使用其他应用的同时继续观看或收听长视频，这样我就可以能够多任务处理，不中断视频内容消费...
+                <div class="job-meta">频次: 2 | 置信度: 0.67</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要无缝连续观看多个长视频，这样我就可以能够不间断地消费内容，减少操作步骤...
+                <div class="job-meta">频次: 1 | 置信度: 0.67</div>
+            </div>
+        </div>
+
+        <div class="quadrant performance">
+            <div class="quadrant-title">期望型 (Performance)</div>
+            <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 1rem;">表现越好满意度越高</div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要更快或更慢地观看长视频内容，这样我就可以能够根据自己的节奏控制视频播放速度...
+                <div class="job-meta">频次: 10 | 置信度: 0.67</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要获得更好的视觉体验，这样我就可以能够清晰观看视频细节，提升观看满意度...
+                <div class="job-meta">频次: 7 | 置信度: 1.00</div>
+            </div>
+        </div>
+
+        <div class="quadrant delighter">
+            <div class="quadrant-title">兴奋型 (Delighter)</div>
+            <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 1rem;">超出预期，显著提升满意度</div>
+        </div>
+
+        <div class="quadrant indifferent">
+            <div class="quadrant-title">无差异型 (Indifferent)</div>
+            <div style="color: #64748b; font-size: 0.875rem; margin-bottom: 1rem;">用户不在意</div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费...
+                <div class="job-meta">频次: 332 | 置信度: 0.30</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费...
+                <div class="job-meta">频次: 37 | 置信度: 0.30</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费...
+                <div class="job-meta">频次: 25 | 置信度: 0.30</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要与其他观众互动，分享观看体验，这样我就可以能够感受到社区氛围，获得共鸣和讨论...
+                <div class="job-meta">频次: 19 | 置信度: 0.30</div>
+            </div>
+
+            <div class="job-item">
+                当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费...
+                <div class="job-meta">频次: 15 | 置信度: 0.30</div>
+            </div>
+        </div>
+
+    </div>
+    <div class="stats">
+        <p>无差异型 (Indifferent): 460次提及</p>
+        <p>基本型 (Must-be): 79次提及</p>
+        <p>期望型 (Performance): 17次提及</p>
+
+    </div>
+</body>
+</html>

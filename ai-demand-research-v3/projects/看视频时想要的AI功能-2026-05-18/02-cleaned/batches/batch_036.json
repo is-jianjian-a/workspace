@@ -1,0 +1,98 @@
+{
+  "batch_id": 36,
+  "start_idx": 350,
+  "end_idx": 360,
+  "total_batches": 53,
+  "ugcs": [
+    {
+      "id": "116152944561203",
+      "platform": "bili",
+      "title": "为什么大家不爱看AI视频了",
+      "content": "人类史上最快的视觉通胀出现了，你有没有发现，你已经不想再刷AI视频和图片了，看到有AI迹象的就想立即划走。\n当视觉奇观的生产成本降为零时，奇观本身就贬值成了垃圾。",
+      "liked_count": 452,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "为什么大家不爱看AI视频了\n人类史上最快的视觉通胀出现了，你有没有发现，你已经不想再刷AI视频和图片了，看到有AI迹象的就想立即划走。\n当视觉奇观的生产成本降为零时，奇观本身就贬值成了垃圾。"
+    },
+    {
+      "id": "116559439727464",
+      "platform": "bili",
+      "title": "【全30集】吊打付费！目前B站最全最细的即梦AI视频制作保姆级教程！2026最新版AI视频生成全流程教学！七天就能从小白到大神！零基础入门到精通实现商业变现",
+      "content": "视频制作不易，希望各位观众老爷能给个免费的三联！！祝你学习愉快~",
+      "liked_count": 72,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "【全30集】吊打付费！目前B站最全最细的即梦AI视频制作保姆级教程！2026最新版AI视频生成全流程教学！七天就能从小白到大神！零基础入门到精通实现商业变现\n视频制作不易，希望各位观众老爷能给个免费的三联！！祝你学习愉快~"
+    },
+    {
+      "id": "116316505642073",
+      "platform": "bili",
+      "title": "AI漫剧制作全教程（2026全新AI教程）AI视频生成+AI短剧+豆包+即梦AI教程+ComfyUI教程+AI动态漫制作+AI动画+ai漫剧制作教程，漫剧工作流",
+      "content": "AI漫剧制作全教程（2026全新AI教程）AI视频生成+AI短剧+豆包+即梦AI教程+ComfyUI教程+AI动态漫制作+AI动画+ai漫剧制作教程，漫剧工作流",
+      "liked_count": 22297,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "AI漫剧制作全教程（2026全新AI教程）AI视频生成+AI短剧+豆包+即梦AI教程+ComfyUI教程+AI动态漫制作+AI动画+ai漫剧制作教程，漫剧工作流\nAI漫剧制作全教程（2026全新AI教程）AI视频生成+AI短剧+豆包+即梦AI教程+ComfyUI教程+AI动态漫制作+AI动画+ai漫剧制作教程，漫剧工作流"
+    },
+    {
+      "id": "1401637939",
+      "platform": "bili",
+      "title": "【硬核分享】99%的人都不知道的几款超绝AI视频神器！",
+      "content": "AI视频还只知道Sora，runway和Pika吗？\n后悔没有早点知道这些小众AI视频神器，超绝！\n一个人用AI干掉一整个视频团队，就靠他们了！\n【本期测评四款AI视频神器分别是】：\n1. leonardo.AI\n2.assistive video\n3.Magic video\n4.SVD\n---------------------------\n更详细的资料看评论区~",
+      "liked_count": 405,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "【硬核分享】99%的人都不知道的几款超绝AI视频神器！\nAI视频还只知道Sora，runway和Pika吗？\n后悔没有早点知道这些小众AI视频神器，超绝！\n一个人用AI干掉一整个视频团队，就靠他们了！\n【本期测评四款AI视频神器分别是】：\n1. leonardo.AI\n2.assistive video\n3.Magic video\n4.SVD\n---------------------------\n更详细的资料看评论区~"
+    },
+    {
+      "id": "115826460066554",
+      "platform": "bili",
+      "title": "【中配】AI视频无限生成：免费开源长视频工具Stable Video Infinity - AI Search",
+      "content": "原视频：Long continuous AI video is here! Free & open-source\n原作者：AI Search\n发布日期：2026-01-01\n视频链接：https://www.youtube.com/watch?v=-3DVJu72VhE\n\n✨ 想看英文原声？请关注 @英文白斑马\n\n00:00 SVI 2.0 Pro 简介与演示\n介绍 Stable Video Infinity v2.0 Pro 的核心优势，包括其如何通过基于 Wan2.1 模型的片段衔接技术实现高质量、低显存占用且视觉连贯的长视频生成。\n\n02:58 安装 KJNodes 插件\n详细讲解如何在 ComfyUI 的自定义节点目录中使用 git clone 指令安装 kj-nodes 及其依赖项，这是运行 SVI 工作流的基础。\n\n05:10 导入 SVI 2 Pro 工作流\n启动 ComfyUI 并更新至最新版本后，演示如何下载并拖放官方推荐的 SVI 2 Pro JSON 配置文件来加载完整的工作流界面。\n\n06:09 模型下载指南\n指导用户下载 Wan2.1 的 fp8 权重、Lig",
+      "liked_count": 849,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "【中配】AI视频无限生成：免费开源长视频工具Stable Video Infinity - AI Search\n原视频：Long continuous AI video is here! Free & open-source\n原作者：AI Search\n发布日期：2026-01-01\n视频链接：https://www.youtube.com/watch?v=-3DVJu72VhE\n\n✨ 想看英文原声？请关注 @英文白斑马\n\n00:00 SVI 2.0 Pro 简介与演示\n介绍 Stable Video Infinity v2.0 Pro 的核心优势，包括其如何通过基于 Wan2.1 模型的片段衔接技术实现高质量、低显存占用且视觉连贯的长视频生成。\n\n02:58 安装 KJNodes 插件\n详细讲解如何在 ComfyUI 的自定义节点目录中使用 git clone 指令安装 kj-nodes 及其依赖项，这是运行 SVI 工作流的基础。\n\n05:10 导入 SVI 2 Pro 工作流\n启动 ComfyUI 并更新至最新版本后，演示如何下载并拖放官方推荐的 SVI 2 Pro JSON 配置文件来加载完整的工作流界面。\n\n06:09 模型下载指南\n指导用户下载 Wan2.1 的 fp8 权重、Lig"
+    },
+    {
+      "id": "116491341011003",
+      "platform": "bili",
+      "title": "AI漫剧风口来了！新手小白也能看懂的教程！",
+      "content": "",
+      "liked_count": 358,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "AI漫剧风口来了！新手小白也能看懂的教程！"
+    },
+    {
+      "id": "846130553",
+      "platform": "bili",
+      "title": "沙雕4",
+      "content": "-",
+      "liked_count": 18,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "沙雕4\n-"
+    },
+    {
+      "id": "116284779928435",
+      "platform": "bili",
+      "title": "告别AI视频僵硬假脸！3招让你的AI人物表情活起来",
+      "content": "分享3个告别AI视频假脸感的方法，新手也能直接套用，配合联想YOGA Pro 16 Aura AI元启版，第三代英特尔® 酷睿™ Ultra 7处理器，全能旗舰、大“显”身手，实现沉浸式、高效率创作。",
+      "liked_count": 9634,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "告别AI视频僵硬假脸！3招让你的AI人物表情活起来\n分享3个告别AI视频假脸感的方法，新手也能直接套用，配合联想YOGA Pro 16 Aura AI元启版，第三代英特尔® 酷睿™ Ultra 7处理器，全能旗舰、大“显”身手，实现沉浸式、高效率创作。"
+    },
+    {
+      "id": "116380225570473",
+      "platform": "bili",
+      "title": "【AI音乐MV制作全攻略】保姆级全步骤流程教学，从音乐生成到MV剪辑一站式搞定，零基础也能做质感成品",
+      "content": "-",
+      "liked_count": 332,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "【AI音乐MV制作全攻略】保姆级全步骤流程教学，从音乐生成到MV剪辑一站式搞定，零基础也能做质感成品\n-"
+    },
+    {
+      "id": "116528435567247",
+      "platform": "bili",
+      "title": "如何用Grok做出这种极致代入感的AI视频？第一人称神仙玩法公开！",
+      "content": "体验地址：https://www.runninghub.cn/?inviteCode=rh-v1520 注册领1000RH币可以免费生成好多图片视频哦！\n邀请码：rh-v1520\n\n@Work-Fisher  大家可以关注一下鱼佬\n\n本期提示词模板下载：\n链接：https://pan.quark.cn/s/2b36c3ad78c3?pwd=i5Yy\n提取码：i5Yy\n\nGROK体验地址：https://www.runninghub.cn/call-api/api-detail/2043991611295436802（需要充值不免费）",
+      "liked_count": 39,
+      "source_keyword": "看视频时想要的AI功能",
+      "full_text": "如何用Grok做出这种极致代入感的AI视频？第一人称神仙玩法公开！\n体验地址：https://www.runninghub.cn/?inviteCode=rh-v1520 注册领1000RH币可以免费生成好多图片视频哦！\n邀请码：rh-v1520\n\n@Work-Fisher  大家可以关注一下鱼佬\n\n本期提示词模板下载：\n链接：https://pan.quark.cn/s/2b36c3ad78c3?pwd=i5Yy\n提取码：i5Yy\n\nGROK体验地址：https://www.runninghub.cn/call-api/api-detail/2043991611295436802（需要充值不免费）"
+    }
+  ]
+}

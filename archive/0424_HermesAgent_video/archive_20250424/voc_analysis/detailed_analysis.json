@@ -1,0 +1,375 @@
+{
+  "analysis_date": "2025-04-24",
+  "total_voc": 569,
+  "theme_analysis": {
+    "推荐算法": {
+      "count": 26,
+      "sentiment_distribution": {
+        "negative": 22,
+        "positive": 3,
+        "neutral": 1
+      },
+      "top_apps": {
+        "抖音": 6,
+        "TikTok": 5,
+        "腾讯视频": 4,
+        "Instagram": 4,
+        "YouTube": 3
+      }
+    },
+    "搜索发现": {
+      "count": 6,
+      "sentiment_distribution": {
+        "negative": 6
+      },
+      "top_apps": {
+        "抖音": 4,
+        "腾讯视频": 2
+      }
+    },
+    "互动功能": {
+      "count": 3,
+      "sentiment_distribution": {
+        "negative": 3
+      },
+      "top_apps": {
+        "抖音": 2,
+        "快手": 1
+      }
+    },
+    "创作辅助": {
+      "count": 4,
+      "sentiment_distribution": {
+        "negative": 4
+      },
+      "top_apps": {
+        "抖音": 3,
+        "腾讯视频": 1
+      }
+    },
+    "内容质量": {
+      "count": 9,
+      "sentiment_distribution": {
+        "negative": 7,
+        "positive": 1,
+        "neutral": 1
+      },
+      "top_apps": {
+        "抖音": 4,
+        "腾讯视频": 4,
+        "其他": 1
+      }
+    },
+    "广告体验": {
+      "count": 206,
+      "sentiment_distribution": {
+        "negative": 158,
+        "positive": 36,
+        "neutral": 11,
+        "expectation": 1
+      },
+      "top_apps": {
+        "TikTok": 60,
+        "YouTube": 46,
+        "Netflix": 26,
+        "Instagram": 25,
+        "腾讯视频": 23
+      }
+    },
+    "播放体验": {
+      "count": 7,
+      "sentiment_distribution": {
+        "negative": 4,
+        "neutral": 2,
+        "positive": 1
+      },
+      "top_apps": {
+        "腾讯视频": 4,
+        "其他": 2,
+        "抖音": 1
+      }
+    },
+    "画质音质": {
+      "count": 6,
+      "sentiment_distribution": {
+        "negative": 6
+      },
+      "top_apps": {
+        "Netflix": 2,
+        "腾讯视频": 2,
+        "抖音": 1,
+        "YouTube": 1
+      }
+    },
+    "下载缓存": {
+      "count": 7,
+      "sentiment_distribution": {
+        "negative": 4,
+        "neutral": 2,
+        "expectation": 1
+      },
+      "top_apps": {
+        "其他": 3,
+        "腾讯视频": 3,
+        "快手": 1
+      }
+    },
+    "隐私安全": {
+      "count": 1,
+      "sentiment_distribution": {
+        "positive": 1
+      },
+      "top_apps": {
+        "其他": 1
+      }
+    },
+    "字幕翻译": {
+      "count": 1,
+      "sentiment_distribution": {
+        "negative": 1
+      },
+      "top_apps": {
+        "YouTube": 1
+      }
+    },
+    "跨端同步": {
+      "count": 4,
+      "sentiment_distribution": {
+        "negative": 4
+      },
+      "top_apps": {
+        "腾讯视频": 4
+      }
+    }
+  },
+  "representative_voc": {
+    "推荐算法": {
+      "positive_count": 2,
+      "negative_count": 2,
+      "positive_samples": [
+        {
+          "id": "voc_appstore_000012",
+          "content": "[中规中矩] 好：推荐内容包括了各种各样不同类型的人 我喜欢🐈♈️🎵🎮推荐的东西也符合我的兴趣爱好 \n不好：……",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_v2ex_000115",
+          "content": "[推荐一个我在做的开源桌面工具 CC Archive] 大家好，给大家推荐一个我在做的开源桌面工具 CC Archive：它可以一键扫描、导出和迁移 Claude Code 会话数据，后续还将支持 Codex 的会话迁移与备份，项目地址： https://github.com/chunxue-ai/cc-archive",
+          "source": "V2EX create 节点"
+        }
+      ],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000001",
+          "content": "[关于抖音的一些反馈仅供参考] 1.关于抖音推送问题：抖音会反复推送一些我点过不感兴趣的内容，然后进行关键词屏蔽也没有用。\n2.关于抖音审核问题：抖音关于营销号的审核以及对于评论的审核不合理。第一营销号的很多内容为恶意剪辑曲解，目的为获取流量，很多不明真相的人会跟风发表一些不正当言论\n3.抖音在搜索词推送问题：我主动多次搜索并且已经关注本人为粉丝的情况下会推很多恶意p图，恶意剪辑，网暴他人的引导性",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000002",
+          "content": "[推荐机制比我喜欢擦边内容] 一堆色情擦边内容，我承认我有时候对这类视频感了兴趣，但也不至于你疯狂推这种吧，要留人吃相也没必要这么难看吧，我难道只对擦边感兴趣吗？知识、宠物、做饭我平时也很兴趣呀，妈的是一点不推或者相对擦边内容来说很少",
+          "source": "抖音 App Store评论"
+        }
+      ]
+    },
+    "搜索发现": {
+      "positive_count": 0,
+      "negative_count": 2,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000001",
+          "content": "[关于抖音的一些反馈仅供参考] 1.关于抖音推送问题：抖音会反复推送一些我点过不感兴趣的内容，然后进行关键词屏蔽也没有用。\n2.关于抖音审核问题：抖音关于营销号的审核以及对于评论的审核不合理。第一营销号的很多内容为恶意剪辑曲解，目的为获取流量，很多不明真相的人会跟风发表一些不正当言论\n3.抖音在搜索词推送问题：我主动多次搜索并且已经关注本人为粉丝的情况下会推很多恶意p图，恶意剪辑，网暴他人的引导性",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000004",
+          "content": "[垃圾] 连着无线网可以正常刷视频，搜索却显示无网络连接。无论是手机网络还是无线网",
+          "source": "抖音 App Store评论"
+        }
+      ]
+    },
+    "互动功能": {
+      "positive_count": 0,
+      "negative_count": 2,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000001",
+          "content": "[关于抖音的一些反馈仅供参考] 1.关于抖音推送问题：抖音会反复推送一些我点过不感兴趣的内容，然后进行关键词屏蔽也没有用。\n2.关于抖音审核问题：抖音关于营销号的审核以及对于评论的审核不合理。第一营销号的很多内容为恶意剪辑曲解，目的为获取流量，很多不明真相的人会跟风发表一些不正当言论\n3.抖音在搜索词推送问题：我主动多次搜索并且已经关注本人为粉丝的情况下会推很多恶意p图，恶意剪辑，网暴他人的引导性",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000005",
+          "content": "[广告锁屏太恶心了] 刷短视频经常会遇到锁屏的几秒秒钟的广告，这个很奇怪，我仔细看了，我没有点到某一个合集里面，说明这不是作者的公告，就是平台的广告；在推荐页经常会看到；\n还有一个问题就是根本找不到反映问题的人，这条评论官方很可能也会给我一个途径去找这个客服在哪里，但是根本就找不到，抖音这个app之后还是少用吧\n还有一点是抖音提供的购物功能，其实也没有相比之下也没有很好的优势",
+          "source": "抖音 App Store评论"
+        }
+      ]
+    },
+    "创作辅助": {
+      "positive_count": 0,
+      "negative_count": 2,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000001",
+          "content": "[关于抖音的一些反馈仅供参考] 1.关于抖音推送问题：抖音会反复推送一些我点过不感兴趣的内容，然后进行关键词屏蔽也没有用。\n2.关于抖音审核问题：抖音关于营销号的审核以及对于评论的审核不合理。第一营销号的很多内容为恶意剪辑曲解，目的为获取流量，很多不明真相的人会跟风发表一些不正当言论\n3.抖音在搜索词推送问题：我主动多次搜索并且已经关注本人为粉丝的情况下会推很多恶意p图，恶意剪辑，网暴他人的引导性",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000007",
+          "content": "[抖音直接拍照没有轻微美颜效果] 超级不方便，这样以后就不需要抖音拍照和视频了！",
+          "source": "抖音 App Store评论"
+        }
+      ]
+    },
+    "内容质量": {
+      "positive_count": 1,
+      "negative_count": 2,
+      "positive_samples": [
+        {
+          "id": "voc_appstore_000012",
+          "content": "[中规中矩] 好：推荐内容包括了各种各样不同类型的人 我喜欢🐈♈️🎵🎮推荐的东西也符合我的兴趣爱好 \n不好：……",
+          "source": "抖音 App Store评论"
+        }
+      ],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000001",
+          "content": "[关于抖音的一些反馈仅供参考] 1.关于抖音推送问题：抖音会反复推送一些我点过不感兴趣的内容，然后进行关键词屏蔽也没有用。\n2.关于抖音审核问题：抖音关于营销号的审核以及对于评论的审核不合理。第一营销号的很多内容为恶意剪辑曲解，目的为获取流量，很多不明真相的人会跟风发表一些不正当言论\n3.抖音在搜索词推送问题：我主动多次搜索并且已经关注本人为粉丝的情况下会推很多恶意p图，恶意剪辑，网暴他人的引导性",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000002",
+          "content": "[推荐机制比我喜欢擦边内容] 一堆色情擦边内容，我承认我有时候对这类视频感了兴趣，但也不至于你疯狂推这种吧，要留人吃相也没必要这么难看吧，我难道只对擦边感兴趣吗？知识、宠物、做饭我平时也很兴趣呀，妈的是一点不推或者相对擦边内容来说很少",
+          "source": "抖音 App Store评论"
+        }
+      ]
+    },
+    "广告体验": {
+      "positive_count": 2,
+      "negative_count": 2,
+      "positive_samples": [
+        {
+          "id": "voc_appstore_000026",
+          "content": "[Best social media app] If u never download this, I recommend u to download this ASAP, you won’t regret it.",
+          "source": "TikTok App Store评论"
+        },
+        {
+          "id": "voc_appstore_000060",
+          "content": "[I’m sad] Tik tok had banned my for no reason i was watching reels until it said ur account have been banned. I rate 5",
+          "source": "TikTok App Store评论"
+        }
+      ],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000005",
+          "content": "[广告锁屏太恶心了] 刷短视频经常会遇到锁屏的几秒秒钟的广告，这个很奇怪，我仔细看了，我没有点到某一个合集里面，说明这不是作者的公告，就是平台的广告；在推荐页经常会看到；\n还有一个问题就是根本找不到反映问题的人，这条评论官方很可能也会给我一个途径去找这个客服在哪里，但是根本就找不到，抖音这个app之后还是少用吧\n还有一点是抖音提供的购物功能，其实也没有相比之下也没有很好的优势",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000011",
+          "content": "[垃圾广告] 有些小游戏有广告就算了你连那些博主的合集中间都要插广告你说合集看几个视频就有一个广告就无所谓了你每个视频自动连播之后都插一个广告是什么意思难道这么大一个平台吃不起饭了要？",
+          "source": "抖音 App Store评论"
+        }
+      ]
+    },
+    "播放体验": {
+      "positive_count": 1,
+      "negative_count": 2,
+      "positive_samples": [
+        {
+          "id": "voc_appstore_000397",
+          "content": "[垃圾流氓软件] 为了圈圈钱，搞个什么只允许一个设备播放，状态更新还不准，手机播放后想用pad看还提示播放中，恶心死了",
+          "source": "腾讯视频 App Store评论"
+        }
+      ],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000005",
+          "content": "[广告锁屏太恶心了] 刷短视频经常会遇到锁屏的几秒秒钟的广告，这个很奇怪，我仔细看了，我没有点到某一个合集里面，说明这不是作者的公告，就是平台的广告；在推荐页经常会看到；\n还有一个问题就是根本找不到反映问题的人，这条评论官方很可能也会给我一个途径去找这个客服在哪里，但是根本就找不到，抖音这个app之后还是少用吧\n还有一点是抖音提供的购物功能，其实也没有相比之下也没有很好的优势",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000401",
+          "content": "[🌶︎🐔腾讯，狗东西] 垃圾腾讯视频，到处都是广告，开了 svip 都还得看广告，暂停一下也有广告，主页也有广告，哪里都有广告，真的恶心，介意卸载。",
+          "source": "腾讯视频 App Store评论"
+        }
+      ]
+    },
+    "画质音质": {
+      "positive_count": 0,
+      "negative_count": 2,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000009",
+          "content": "[假货平台客服都是人机] 除了作品被抄袭，平台画质还垃圾不如B站，除了剧本还是剧本没意思",
+          "source": "抖音 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000102",
+          "content": "[New AppleTV app is unusable] I can’t seem to write a review for AppleTV directly so I’m using this platform instead. The AppleTV app only shows 4 tiles of content on an AppleTV anymore with a 50% scr",
+          "source": "Netflix App Store评论"
+        }
+      ]
+    },
+    "下载缓存": {
+      "positive_count": 0,
+      "negative_count": 2,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000014",
+          "content": "[乱封号不推荐不要下载] 抖音还好",
+          "source": "快手 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000387",
+          "content": "[不要下载这个软件，交费了很多电影还看不了，而且很多电影没有国语版] 很多电影都看不了，而且没有国语版，不值得推荐垃圾软件",
+          "source": "腾讯视频 App Store评论"
+        }
+      ]
+    },
+    "隐私安全": {
+      "positive_count": 1,
+      "negative_count": 0,
+      "positive_samples": [
+        {
+          "id": "voc_v2ex_000115",
+          "content": "[推荐一个我在做的开源桌面工具 CC Archive] 大家好，给大家推荐一个我在做的开源桌面工具 CC Archive：它可以一键扫描、导出和迁移 Claude Code 会话数据，后续还将支持 Codex 的会话迁移与备份，项目地址： https://github.com/chunxue-ai/cc-archive",
+          "source": "V2EX create 节点"
+        }
+      ],
+      "negative_samples": []
+    },
+    "字幕翻译": {
+      "positive_count": 0,
+      "negative_count": 1,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000175",
+          "content": "[Moving to TikTok] Ads that pop up while watching videos in full screen are annoying. Trying to relax and you have to manually click out. It’s almost like Google watts to push the line to see how far ",
+          "source": "YouTube App Store评论"
+        }
+      ]
+    },
+    "跨端同步": {
+      "positive_count": 0,
+      "negative_count": 2,
+      "positive_samples": [],
+      "negative_samples": [
+        {
+          "id": "voc_appstore_000386",
+          "content": "[切换设备延时15分钟以上] 开了会员也有层出不穷的广告，vip说是可以三台设备同时登，但使用微信登陆（没有打开手机腾讯视频），就显示主设备登录，不准在电脑上看电视，延时要15分钟以上，这损失的15分钟平台会赔给消费者吗？吃相越来越难看，垃圾软件。",
+          "source": "腾讯视频 App Store评论"
+        },
+        {
+          "id": "voc_appstore_000390",
+          "content": "[敷衍用户的猎奇平台] 太差了，腾讯自己看看，会员制度改之后差评多了多少？该说的其他用户都说了，大多数视频平台都改变了会员制度，但是腾讯是我见过的最离谱。VIP都有广告。真正的好剧不推，推的都是明星电视剧。请考虑一些不追星的人，不是所有的人都喜欢看明星。我想要的是不要敷衍我的剧情，而不是奇形怪状光看脸的电视剧。极其差，以后不会再用了！",
+          "source": "腾讯视频 App Store评论"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+[
+  {
+    "hypothesis_id": "H001",
+    "method": "A/B测试",
+    "sample_size": 1000,
+    "duration": "4周",
+    "metrics": [
+      "核心指标变化",
+      "统计显著性(p<0.05)",
+      "效应量"
+    ],
+    "success_criteria": "核心指标提升≥10%且统计显著",
+    "resources": [
+      "数据分析师1名",
+      "后端开发1名",
+      "灰度发布平台"
+    ]
+  },
+  {
+    "hypothesis_id": "H002",
+    "method": "A/B测试",
+    "sample_size": 1000,
+    "duration": "4周",
+    "metrics": [
+      "核心指标变化",
+      "统计显著性(p<0.05)",
+      "效应量"
+    ],
+    "success_criteria": "核心指标提升≥10%且统计显著",
+    "resources": [
+      "数据分析师1名",
+      "后端开发1名",
+      "灰度发布平台"
+    ]
+  },
+  {
+    "hypothesis_id": "H003",
+    "method": "A/B测试",
+    "sample_size": 1000,
+    "duration": "4周",
+    "metrics": [
+      "核心指标变化",
+      "统计显著性(p<0.05)",
+      "效应量"
+    ],
+    "success_criteria": "核心指标提升≥10%且统计显著",
+    "resources": [
+      "数据分析师1名",
+      "后端开发1名",
+      "灰度发布平台"
+    ]
+  },
+  {
+    "hypothesis_id": "H004",
+    "method": "原型测试",
+    "sample_size": 15,
+    "duration": "2周",
+    "metrics": [
+      "任务完成率",
+      "满意度评分(1-5)",
+      "NPS"
+    ],
+    "success_criteria": "满意度≥4.0且任务完成率≥80%",
+    "resources": [
+      "UX设计师1名",
+      "前端开发1名",
+      "测试用户15名"
+    ]
+  },
+  {
+    "hypothesis_id": "H005",
+    "method": "A/B测试",
+    "sample_size": 1000,
+    "duration": "4周",
+    "metrics": [
+      "核心指标变化",
+      "统计显著性(p<0.05)",
+      "效应量"
+    ],
+    "success_criteria": "核心指标提升≥10%且统计显著",
+    "resources": [
+      "数据分析师1名",
+      "后端开发1名",
+      "灰度发布平台"
+    ]
+  }
+]

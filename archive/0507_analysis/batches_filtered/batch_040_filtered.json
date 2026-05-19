@@ -1,0 +1,415 @@
+{
+  "batch_id": 40,
+  "original_count": 68,
+  "filtered_count": 24,
+  "items": [
+    {
+      "id": "kuaishou_comments_263",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 帮我打开省流模式",
+      "raw_data": {
+        "comment_id": "1117126039100",
+        "create_time": 1775109396465,
+        "video_id": "3xzrp6cjrrbprfy",
+        "content": "@AI小快 帮我打开省流模式",
+        "user_id": "3xr3n27e75ugbf4",
+        "nickname": "无妄生欢",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/01/30/15/BMjAyNjAxMzAxNTUzNTJfMTIyMzczNjAyNV8yX2hkNTkyXzE2MQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144141569
+      }
+    },
+    {
+      "id": "kuaishou_comments_264",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 帮我打开省流模式",
+      "raw_data": {
+        "comment_id": "1117074456170",
+        "create_time": 1775094686596,
+        "video_id": "3xzrp6cjrrbprfy",
+        "content": "@AI小快 帮我打开省流模式",
+        "user_id": "3x4psx45z9k9z3a",
+        "nickname": "特大大西瓜",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2021/01/07/22/BMjAyMTAxMDcyMjM3NDlfMTUxNDU5MDgzM18yX2hkNDM3XzkzMg==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144141569
+      }
+    },
+    {
+      "id": "kuaishou_comments_265",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973)  帮我打开省流模式",
+      "raw_data": {
+        "comment_id": "1116947714839",
+        "create_time": 1775047265091,
+        "video_id": "3xzrp6cjrrbprfy",
+        "content": "@AI小快(O2467565973)  帮我打开省流模式",
+        "user_id": "3x5usyrxq755aiw",
+        "nickname": "初寻泽序言^",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/08/06/06/BMjAyNTA4MDYwNjQ2MTFfMzY3MDA5OTg4NF8yX2hkMjE2XzEx_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144141569
+      }
+    },
+    {
+      "id": "kuaishou_comments_271",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "谢谢敬姐分享[赞][赞][赞]",
+      "raw_data": {
+        "comment_id": "939531197917",
+        "create_time": 1735999287473,
+        "video_id": "3xdcp4gmfdnqtg9",
+        "content": "谢谢敬姐分享[赞][赞][赞]",
+        "user_id": "3x2dwqq3jj6a6t6",
+        "nickname": "旺旺优选",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/03/01/23/BMjAyNjAzMDEyMzIzMjhfMTQwMDM4MTg2OF8yX2hkMzNfOTQw_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144145867
+      }
+    },
+    {
+      "id": "kuaishou_comments_279",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@Al小快打开离线模式",
+      "raw_data": {
+        "comment_id": "1127771241424",
+        "create_time": 1777735177641,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@Al小快打开离线模式",
+        "user_id": "3x64cb9iyi33nfm",
+        "nickname": "AA制",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/06/06/00/BMjAyNDA2MDYwMDQxMjBfMjM4NzkzOTU0NF8yX2hkNjc0XzU3Nw==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154409
+      }
+    },
+    {
+      "id": "kuaishou_comments_280",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 帮我打开离线模式",
+      "raw_data": {
+        "comment_id": "1108010440583",
+        "create_time": 1772617504024,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快(O2467565973) 帮我打开离线模式",
+        "user_id": "3xjf64me9cnx4mw",
+        "nickname": "小栋",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/04/20/22/BMjAyNjA0MjAyMjExNTVfNDYxNjY5Nzc0NV8yX2hkNTczXzI1Mg==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154409
+      }
+    },
+    {
+      "id": "kuaishou_comments_282",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 帮我更新并打开离线模式",
+      "raw_data": {
+        "comment_id": "1082121367758",
+        "create_time": 1767011629703,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快 帮我更新并打开离线模式",
+        "user_id": "3xxbrw7fjitv5s9",
+        "nickname": "^一颗痣^",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/05/01/19/BMjAyNjA1MDExOTE4MTlfNDM0NDkyMzUxMV8yX2hkMzUyXzY4Ng==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154410
+      }
+    },
+    {
+      "id": "kuaishou_comments_283",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 打开离线模式",
+      "raw_data": {
+        "comment_id": "1079166926878",
+        "create_time": 1766242807865,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快 打开离线模式",
+        "user_id": "3xqxhannqhkjbxq",
+        "nickname": "User_1609069702070",
+        "avatar": "http://p23-plat.wsukwai.com/s1/i/def/head_u.png?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154410
+      }
+    },
+    {
+      "id": "kuaishou_comments_284",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快 我打开离线模式",
+      "raw_data": {
+        "comment_id": "1074658806941",
+        "create_time": 1765077328821,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快 我打开离线模式",
+        "user_id": "3xch9hij9yq5tda",
+        "nickname": "Sad°",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2017/12/15/11/BMjAxNzEyMTUxMTE2MDlfMTI4MTA2ODhfMV9oZDM3M183MjY=_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154410
+      }
+    },
+    {
+      "id": "kuaishou_comments_285",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 我打开离线模式",
+      "raw_data": {
+        "comment_id": "1069712940504",
+        "create_time": 1763802604168,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快(O2467565973) 我打开离线模式",
+        "user_id": "3x62syehctgwqji",
+        "nickname": "偷吃外卖和野味",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/10/07/09/BMjAyNTEwMDcwOTM4NDFfMzMzNjg1NzAzN18yX2hkNDYzXzI0Mw==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154410
+      }
+    },
+    {
+      "id": "kuaishou_comments_286",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 给我打开离线模式",
+      "raw_data": {
+        "comment_id": "1068454702098",
+        "create_time": 1763445947386,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快(O2467565973) 给我打开离线模式",
+        "user_id": "3xttghbns6sgchw",
+        "nickname": "快手用户1754288482050",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/07/07/18/BMjAyNDA3MDcxODQ0MDVfMjkyNDc3MjQwMV8xX2hkODFfNjkw_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154411
+      }
+    },
+    {
+      "id": "kuaishou_comments_287",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 给我打开离线模式",
+      "raw_data": {
+        "comment_id": "1068451912010",
+        "create_time": 1763444937512,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快(O2467565973) 给我打开离线模式",
+        "user_id": "3xttghbns6sgchw",
+        "nickname": "快手用户1754288482050",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/07/07/18/BMjAyNDA3MDcxODQ0MDVfMjkyNDc3MjQwMV8xX2hkODFfNjkw_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154411
+      }
+    },
+    {
+      "id": "kuaishou_comments_288",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 打开离线模式",
+      "raw_data": {
+        "comment_id": "1066573679794",
+        "create_time": 1762960154601,
+        "video_id": "3x5ibp7k576gfdk",
+        "content": "@AI小快(O2467565973) 打开离线模式",
+        "user_id": "3x7wkt6nr27fffa",
+        "nickname": "。。",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/04/07/20/BMjAyNjA0MDcyMDUyMzJfMzM0ODU1NzAyNl8yX2hkNjcwXzMxMQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144154411
+      }
+    },
+    {
+      "id": "kuaishou_comments_290",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "刷视频刷多了，都不知道该干什么了，退出快手，在桌面找了一圈，最后又点进了快手[憨笑]",
+      "raw_data": {
+        "comment_id": "977534309780",
+        "create_time": 1743483431858,
+        "video_id": "3xpt4jwmst5gpd9",
+        "content": "刷视频刷多了，都不知道该干什么了，退出快手，在桌面找了一圈，最后又点进了快手[憨笑]",
+        "user_id": "3xx99mj9sgmjsqw",
+        "nickname": "小ʸ",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/11/30/23/BMjAyNTExMzAyMzE0NTZfMjI1MzQwODU5OV8yX2hkNjA2Xzc2Nw==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144158686
+      }
+    },
+    {
+      "id": "kuaishou_comments_305",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "我的这个键盘的声音特别好听强烈推荐[憨笑哪吒]",
+      "raw_data": {
+        "comment_id": "1124994674746",
+        "create_time": 1777106873422,
+        "video_id": "3xhv37x3vcc6df9",
+        "content": "我的这个键盘的声音特别好听强烈推荐[憨笑哪吒]",
+        "user_id": "3x3xtyiur26cttm",
+        "nickname": "软萌泣．",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/05/07/13/BMjAyNjA1MDcxMzM4MTRfMzMzMDkzMjk2MV8yX2hkNzFfMTcz_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144162970
+      }
+    },
+    {
+      "id": "kuaishou_comments_318",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "老师讲的不错啊。给你点赞。",
+      "raw_data": {
+        "comment_id": "1060867114563",
+        "create_time": 1761414198468,
+        "video_id": "3xbwqugraushn99",
+        "content": "老师讲的不错啊。给你点赞。",
+        "user_id": "3xbtwvq3a5ghthw",
+        "nickname": "琴姐对口型",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/05/06/09/BMjAyNjA1MDYwOTQ4MDNfMTIwNTIxNDg3NF8yX2hkMjkwXzQ3OQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144167294
+      }
+    },
+    {
+      "id": "kuaishou_comments_327",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@＠  L(O1028803348) 去看评论",
+      "raw_data": {
+        "comment_id": "1056153918636",
+        "create_time": 1760151413205,
+        "video_id": "3xw83zvjyuamcig",
+        "content": "@＠  L(O1028803348) 去看评论",
+        "user_id": "3xe5xabdexybcrc",
+        "nickname": "芄涵",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/10/26/17/BMjAyNTEwMjYxNzI1NDBfMzc3MjE4NTc0NV8yX2hkMTQ5XzY2NQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144171613
+      }
+    },
+    {
+      "id": "kuaishou_comments_334",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "你控制，关系熟了之后可以打语音通话，不要买太大的，会坏",
+      "raw_data": {
+        "comment_id": "1126397391873",
+        "create_time": 1777470792091,
+        "video_id": "3x5ywuq89d6z4j2",
+        "content": "你控制，关系熟了之后可以打语音通话，不要买太大的，会坏",
+        "user_id": "3xwjwpr3jipjke2",
+        "nickname": "瑾宝",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/04/29/21/BMjAyNjA0MjkyMTQ5MzNfNDUzOTA3MzI4OV8yX2hkOTMwXzM3MA==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144175854
+      }
+    },
+    {
+      "id": "kuaishou_comments_343",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "我的怎么没有这个功能啊？",
+      "raw_data": {
+        "comment_id": "1073278671791",
+        "create_time": 1764724464442,
+        "video_id": "3x6a4d4rnvc6gfm",
+        "content": "我的怎么没有这个功能啊？",
+        "user_id": "3xym67tetvwx52u",
+        "nickname": "ξ（ ✿＞◡❛）",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/10/25/21/BMjAyNTEwMjUyMTIxMjZfMTQ5NzcxODc5N18yX2hkNTEyXzExNQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144182363
+      }
+    },
+    {
+      "id": "kuaishou_comments_347",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "@AI小快(O2467565973) 开启离线模式",
+      "raw_data": {
+        "comment_id": "1079566020862",
+        "create_time": 1766320045605,
+        "video_id": "3xt6y8b772irunk",
+        "content": "@AI小快(O2467565973) 开启离线模式",
+        "user_id": "3xnvjk4xq2hjh9q",
+        "nickname": "迦一",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/02/26/23/BMjAyNjAyMjYyMzExMzJfNDYzNTczMTIzMl8yX2hkNzM3XzE0OA==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144186647
+      }
+    },
+    {
+      "id": "kuaishou_comments_349",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "照顾好自己的情绪，挑剔的胃和爱笑的眼睛",
+      "raw_data": {
+        "comment_id": "1006017064449",
+        "create_time": 1749671649422,
+        "video_id": "3xt6y8b772irunk",
+        "content": "照顾好自己的情绪，挑剔的胃和爱笑的眼睛",
+        "user_id": "3xs2hazewkmyyn4",
+        "nickname": "红红好物分享",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2025/12/08/22/BMjAyNTEyMDgyMjAzNTBfMzA0ODY1NDQ2OF8yX2hkNDQyXzM5MQ==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144186648
+      }
+    },
+    {
+      "id": "kuaishou_comments_359",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "但是为什么我的画质真的挺糊",
+      "raw_data": {
+        "comment_id": "1123676737340",
+        "create_time": 1776695709259,
+        "video_id": "3x9xuxghpzjt7sq",
+        "content": "但是为什么我的画质真的挺糊",
+        "user_id": "3xxqdknu4twpmis",
+        "nickname": "芷间有辰",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2026/05/03/12/BMjAyNjA1MDMxMjQ4MTFfNTMwNjU1NTEzMV8yX2hkOTQ0XzQ3Nw==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144198203
+      }
+    },
+    {
+      "id": "kuaishou_comments_368",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "内心强大的，看短剧是为舒心，而不是闹心，我是看美女和帅哥。自从有短剧，很少看电视剧[捂脸]",
+      "raw_data": {
+        "comment_id": "1060126308431",
+        "create_time": 1761283857169,
+        "video_id": "3xzktayufvyh9ua",
+        "content": "内心强大的，看短剧是为舒心，而不是闹心，我是看美女和帅哥。自从有短剧，很少看电视剧[捂脸]",
+        "user_id": "3xfrwd2rq8h8gau",
+        "nickname": "香香",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2019/09/16/11/BMjAxOTA5MTYxMTUzNTZfMTQ5ODM4NTY1Nl8yX2hkMzdfNzY0_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144202500
+      }
+    },
+    {
+      "id": "kuaishou_comments_380",
+      "platform": "kuaishou",
+      "file_type": "comments",
+      "text": "快手无响应。是否将其关？x关闭应用？等，这是什么链接？",
+      "raw_data": {
+        "comment_id": "926056994440",
+        "create_time": 1733037027993,
+        "video_id": "3x6p4mxurb4ws42",
+        "content": "快手无响应。是否将其关？x关闭应用？等，这是什么链接？",
+        "user_id": "3xwsvyr4n36k4ng",
+        "nickname": "艳",
+        "avatar": "http://p23-plat.wsukwai.com/uhead/AB/2024/12/23/15/BMjAyNDEyMjMxNTAwMDBfMjE5MzI0NzcwOF8yX2hkOTMyXzQxOA==_s.jpg?x-kcdn-pid=112530",
+        "sub_comment_count": "0",
+        "last_modify_ts": 1778144211035
+      }
+    }
+  ]
+}

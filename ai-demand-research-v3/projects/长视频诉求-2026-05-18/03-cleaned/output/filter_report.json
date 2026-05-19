@@ -1,0 +1,13 @@
+{
+  "step_id": "03-data-filtering",
+  "step_name": "内容相关性筛选",
+  "timestamp": "2026-05-18T15:25:50.742654",
+  "input_count": 502,
+  "output_count": 291,
+  "relevant_count": 291,
+  "irrelevant_count": 211,
+  "relevant_ratio": 58.0,
+  "filter_rules": {
+    "description": "基于关键词匹配+互动量权重的筛选，与'用户观看长视频的想法、诉求'相关的内容保留"
+  }
+}

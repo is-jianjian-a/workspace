@@ -1,0 +1,184 @@
+{
+  "batch_id": 3,
+  "total_items": 13,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 13
+    },
+    "type_distribution": {
+      "behavior_description": 10,
+      "feature_request": 2,
+      "pain_point": 1
+    },
+    "topic_distribution": {
+      "content_recommend": 1,
+      "other": 9,
+      "video_quality": 1,
+      "screen_cast": 2
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 12
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_76",
+      "text": "阿姨 我在去年的时候给我妈妈找人看过，看的挺好的 我推荐你把",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_79",
+      "text": "因果报应了，还能活一段时间，但是会有些痛苦，给他祈福吧",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_86",
+      "text": "喜德盛新款350 瑞豹新款Robin al 捷安特这价位买不到 建议加1k能上碳了image_emoticon2",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_88",
+      "text": "我跟你差不多体型甚至更重一点，我的建议是预算要么减到2k买入门油碟圈刹要么升到5k买碳架，中间的升级点只有碳叉和速别，碳叉+300可以改，速别区别不算不大，两千买radon，海王，superal各有各的优势，5k就上版本答案supersport蓝图",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_91",
+      "text": "网上卖的镜片清晰度没有原厂的看着清楚，你可以对比一下",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_92",
+      "text": "前几天，我给我老爹老妈客厅装的大屏电视机居然没声音没图像了，客厅顿时不热闹了。找修电视的来，说这得换1000多的电路板，接收器坏了。我爹一琢磨，一万多的电视，花个一千多能修好也可以。那师傅说等他爸来修，还要订原装电路板，约1500块。 我刚好回家，一调试，觉得可能只是遥控器坏了。于是网上买了5个遥控器，花了我9块钱，还送电池。 一天后，遥控器到货，一按，电视好了。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_93",
+      "text": "我手机摔了一次，后面摸着有点鼓包，以为是电池出问题了。先是找了个路边小店，那人看了之后说是电池出问题了，看了型号直接报价130。然后去了电脑城，那种一大堆修手机的地方，那师傅看了下也说应该是电池出问题了，然后他在他们的群里问了下，说是没我这个手机的电池，让我可以去网上买一个电池，他们可以帮忙换。最后我去了官方售后的地方，接待的人看了下说不一定是电池出问题了，可能是摔了后盖变形了。然后让店里师傅拆开",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_108",
+      "text": "点了 谁说男的不P图 我很多年前遇到的一个长得特别白皙清秀长在我审美点上的男的 后面其他的对象都直接加上我q了才知道他同时多线好多个 唯一一个跟他奔过现的妹妹发的他拍在家看电视的照片简直一个是帅哥一个是毫不相干的路人😅",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_112",
+      "text": "感觉可以打开各种软件看看怎么升级耳机前端了image_emoticon67",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_130",
+      "text": "确实很好赚，我三个月赚了一个小目标。具体怎么操作可以私信我，免费分享！",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_134",
+      "text": "写的有点快了，忘了感谢两位up的精彩PK视频，还有感谢贴吧以往拆包大佬的精准数据了，感谢image_emoticon34image_emoticon34image_emoticon34",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_137",
+      "text": "视频更高清，可以自己搜压制触发条件测试视频观看，懒得看的，明白原理就行，感觉你带压制硬，你就带，真实的触发条件，你自己看看，如果说带压制和带复苏都是被秒，那你8000的东西和4000多的东西，可以相提并论了？还帮你省药呢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_149",
+      "text": "这不是很正常吗？每天除了工作就是睡觉，每天都在按老板要求完成任务，其它事情没时间也没精力去管，最想做的就是找个可以带来快乐又不会沉迷其中的娱乐项目短暂放松一下",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

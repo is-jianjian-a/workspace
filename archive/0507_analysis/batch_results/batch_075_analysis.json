@@ -1,0 +1,270 @@
+{
+  "batch_id": 75,
+  "total_items": 20,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 6,
+      "general_video": 14
+    },
+    "type_distribution": {
+      "behavior_description": 12,
+      "feature_request": 3,
+      "pain_point": 4,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 7,
+      "content_recommend": 1,
+      "video_quality": 11,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 1,
+      "implicit": 1,
+      "not_ai": 18
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1764",
+      "text": "因为在刷短视频的过程中，时间就会在不知不觉中悄悄溜走，这种奶头乐的行为非常让人容易上瘾，以至于丧失斗志，然后浪费时间，并且还会让我们有严重的拖延，抖音确实改变了我们的生活，无聊的时候就刷一刷，没事做的时候刷一刷，",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1765",
+      "text": "是的，短视频刷多了会形成脑雾，应该找一些其他的有意义的事情去替代刷视频",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1767",
+      "text": "短视频不单是视频评论区都是算法推荐最能吸引力调动情绪的评论优先推荐给你，不同的人刷到同一个视频评论区评论都不一样。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1769",
+      "text": "这篇文章是关于短视频成瘾原因和危险很详细的好文章。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1771",
+      "text": "很少刷，尤其早期的结尾还来一句抖音语音，和当初酷狗打开时一样，俗不可耐",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1772",
+      "text": "抖音确实很影响我们的生活，看的时候时间不知不觉就流逝了，一个小时，两个小时在不断刷刷刷的时候浪费了，放下手机之后还什么都没得到，只有空虚，浪费的时间也回不来了 于是一遍遍的怪自己。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1776",
+      "text": "帝国时代2，稍微高清一下，放在现在都是画质最好的战略游戏[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1778",
+      "text": "我觉得画质在满足该游戏需要的层次就可以了，没必要搞太高",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1782",
+      "text": "红警3最大的问题是画面太干净了，地上没尘没土水清澈的像泳池，画质越高看着越假。同时代的命令与征服就好很多",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1784",
+      "text": "这个其实可以论证，【画面清晰】和【单位辨识度】是两个互不相关的层面。这一点在魔兽和重置版上显得尤其明显，明明重置版的画面光影都在技术上进步了，但是我却分辨不出单位了。反例就是帝国时代，画质变高了，但是老风格继承下来了，差距就是美术到底有没有把辨识度当回事。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1789",
+      "text": "其实建议你开一下最高画质[捂脸]你这红三不如我当年配的8500GT的电脑打开的红三画质。。。当然你也可以说光污染[捂嘴]除了红三那个采矿机制，和一些所谓的美术，我是不知道三比二差在哪。。。尤其是PVP。当然一些mod美化之后的二我还是蛮喜欢的，点名心灵终结好吧[爱]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1792",
+      "text": "美术设计确实很重要，再以前即便有机能限制，美术设计不仅能掩盖机能的不足，还能把游戏特点给渲染表达出来。但现在这些大厂就只是会无脑堆画质，太敷衍了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1796",
+      "text": "RTS游戏，一个是需要单位的辨识度，一个是需要独特的美术风格，做好这两点玩家其实就对画面满意了，画质是真的排在很后面的指标[害羞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1800",
+      "text": "配了台9950x3d +dv2+40寸5120x2160分辨率的显示器，试玩了一圈3a，实在玩不来。又试ra3，感觉体验没提升（视野没提升,画质方面能看见马赛克，不知道是不是没设置好反正都选最高了）。最想玩的还是尤里复仇，配合大屏可以看见全世界。这次最值得的花费就是显示器了。 查看图片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1817",
+      "text": "回答说美术，挽尊的说画质，说明还是没懂",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1818",
+      "text": "警3的画面问题非常严重，在于其发售的2008年，玩家的硬件普遍跟不上只能开低画质或中画质。这两种画质下建筑和单位看起来非常玩具化和模糊，典型如你最后那张图。高和最高画质下这种情况改善了很多，水面也很漂亮",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1819",
+      "text": "2005年到2010前后的游戏基本上都吃了这个亏，等距视角的游戏几乎各个都是重灾区，帝国3cnc将军红警3英雄无敌5基本上视觉表现都相比前作反而倒退了。星际2算是作为这个时代末期的作品有大量cnc团队的人，不仅从技术到美术都拉满了还吸取了红警3画面饱和度过高的教训，但仍然免不了被诟病过分卡通:t和p机械不如1代硬朗，z不够1代诡异恶心。除了大家诟病的色彩饱和度过高和模型精细度不足，还有2d和3d不",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1822",
+      "text": "英雄无敌才明显，除了3代其他所有版本都让我觉得出戏",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1828",
+      "text": "建筑设计拉了，没内容没识别度",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1833",
+      "text": "红警的画质在当年的SLG里，也算很顶的了。在美术上，建筑刻画的细节其实也挺不错，质感很强。3代虽然技术全面升级，但整体美术水平却是全方位倒退。说个题外话，现在的很多游戏，都在本末倒置的一味追求画质，却忽略了游戏最核心的部分是创意和可玩性。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

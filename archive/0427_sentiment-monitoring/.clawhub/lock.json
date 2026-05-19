@@ -1,0 +1,113 @@
+{
+  "version": 1,
+  "skills": {
+    "daily-hot-news": {
+      "version": "1.0.1",
+      "installedAt": 1777270572880
+    },
+    "xhs-crawler": {
+      "version": "1.0.0",
+      "installedAt": 1777271282628
+    },
+    "douyin-hot": {
+      "version": "1.0.5",
+      "installedAt": 1777271822496
+    },
+    "zhihu-hot-cn": {
+      "version": "1.0.0",
+      "installedAt": 1777271881832
+    },
+    "bilibili-hot-monitor": {
+      "version": "1.0.21",
+      "installedAt": 1777279204338
+    },
+    "toutiao-hot": {
+      "version": "1.0.0",
+      "installedAt": 1777279322906
+    },
+    "app-store-optimization": {
+      "version": "2.1.1",
+      "installedAt": 1777297863348
+    },
+    "app-store": {
+      "version": "1.0.0",
+      "installedAt": 1777341244774
+    },
+    "app-review-intelligence": {
+      "version": "1.0.0",
+      "installedAt": 1777341302083
+    },
+    "x-twitter-collector": {
+      "version": "1.0.0",
+      "installedAt": 1777342803462
+    },
+    "twitter-monitor-by-longge": {
+      "version": "1.0.0",
+      "installedAt": 1777342742246
+    },
+    "aisa-twitter-skill": {
+      "version": "1.0.6",
+      "installedAt": 1777342802833
+    },
+    "reddit-readonly": {
+      "version": "1.0.0",
+      "installedAt": 1777343041867
+    },
+    "youtube-watcher": {
+      "version": "1.0.0",
+      "installedAt": 1777343161427
+    },
+    "youtube-transcript": {
+      "version": "1.0.1",
+      "installedAt": 1777343162741
+    },
+    "instagram-search": {
+      "version": "1.1.1",
+      "installedAt": 1777343943651
+    },
+    "instagram-analyzer": {
+      "version": "1.0.0",
+      "installedAt": 1777343522205
+    },
+    "twitter-api": {
+      "version": "1.0.0",
+      "installedAt": 1777343704334
+    },
+    "facebook-page": {
+      "version": "1.0.16",
+      "installedAt": 1777344004650
+    },
+    "news-aggregator": {
+      "version": "1.0.3",
+      "installedAt": 1777344063851
+    },
+    "web-scraping": {
+      "version": "1.0.0",
+      "installedAt": 1777345202231
+    },
+    "weibo": {
+      "version": "1.0.1",
+      "installedAt": 1777362126535
+    },
+    "weibo-scraper": {
+      "version": "1.0.0",
+      "installedAt": 1777362241610
+    },
+    "douyin-search-keyword": {
+      "version": "1.1.1",
+      "installedAt": 1777362556268
+    },
+    "xiaohongshu-search": {
+      "version": "1.0.0",
+      "installedAt": 1777362662385
+    },
+    "bing-cn-search": {
+      "version": "1.0.1",
+      "installedAt": 1777362725874
+    },
+    "web-search-skill": {
+      "version": "1.0.0",
+      "installedAt": 1777362782663
+    }
+  }
+}

@@ -1,0 +1,460 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下19条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 14/120)
+
+--- ITEM #1 ---
+ID: bili_comments_92
+平台: bili
+类型: comments
+内容: 让我想起来一个视频，警察叔叔，我能在这放烟花吗？不能。那为什么他能放？因为他没问[喜极而泣][喜极而泣][喜极而泣]
+
+--- ITEM #2 ---
+ID: bili_comments_112
+平台: bili
+类型: comments
+内容: 像这种视频我都直接选择不感兴趣的
+
+毕竟我知道对于部分人而言（如图）：
+
+--- ITEM #3 ---
+ID: bili_comments_114
+平台: bili
+类型: comments
+内容: 我因为每天开车通勤时间较长，来回得两个多小时，听视频已经有两三年了。个人感觉听视频的内容还是以新闻、聊天类为好，让自己多涉猎一点知识。真正学习研究就算了，这种还是得伏案拿笔拿书本好好看、思考[doge]
+
+--- ITEM #4 ---
+ID: bili_comments_115
+平台: bili
+类型: comments
+内容: 本视频没有任何一位桂纶镁女士遭到窃听，请大家放心观看[doge]
+
+--- ITEM #5 ---
+ID: bili_comments_116
+平台: bili
+类型: comments
+内容: 感觉说得很好，自己最近也有听视频的习惯，有一种确实学到一点东西的感觉，但一回头又想不起来什么[笑哭]可能听观点或者时事类的视频比较合适，真想学点东西就不适合光听了
+
+--- ITEM #6 ---
+ID: bili_comments_117
+平台: bili
+类型: comments
+内容: 短视频太占眼睛，质量太低，所以还是b站刚刚好
+
+--- ITEM #7 ---
+ID: bili_comments_118
+平台: bili
+类型: comments
+内容: 之前分享的网址失效了[大哭][大哭][大哭][大哭]
+
+--- ITEM #8 ---
+ID: bili_comments_129
+平台: bili
+类型: comments
+内容: 孩子是保胎技术保下来的  家长也是  真的是技术太好了
+
+--- ITEM #9 ---
+ID: bili_comments_134
+平台: bili
+类型: comments
+内容: 人类能不能不要再玩用精子和卵子合成傻叉的游戏了
+
+--- ITEM #10 ---
+ID: bili_comments_143
+平台: bili
+类型: comments
+内容: up的视频是我了解上海的唯一方式[保佑]
+
+--- ITEM #11 ---
+ID: bili_comments_146
+平台: bili
+类型: comments
+内容: up主说得不完全对，但说得很实际……对人生许多表象性的东西一下子就跳过……直接迫入问题的核心……常听up主的话语，是能让小年青的思路能少绕圈……（当然我已經步油腻大叔行列了）
+
+--- ITEM #12 ---
+ID: bili_comments_147
+平台: bili
+类型: comments
+内容: 我刷短视频也容易焦虑，总是会觉得自己不够优秀。
+
+--- ITEM #13 ---
+ID: bili_comments_152
+平台: bili
+类型: comments
+内容: 1:23喜欢我手上长嘴和鼻孔吗[doge]美颜算法谁写的？
+
+--- ITEM #14 ---
+ID: bili_comments_160
+平台: bili
+类型: comments
+内容: 白菜捂屁股是本视频最有创意，无低俗，不尴尬的一段
+
+--- ITEM #15 ---
+ID: bili_comments_162
+平台: bili
+类型: comments
+内容: ins更深神鬼二象性，我都是刷大雷还有那种美国网红的，然后莫名其妙的给我推一些变性后的女的健身露上半身的一些网红，鼓励人改变性别的这种视频，tiktok就没有这些，
+
+--- ITEM #16 ---
+ID: bili_comments_167
+平台: bili
+类型: comments
+内容: 给我干哪来了，无意中刷到这个视频，为什么里面的每一个短视频我都看不懂什么意思[辣眼睛]
+
+--- ITEM #17 ---
+ID: bili_comments_169
+平台: bili
+类型: comments
+内容: 很喜欢史东！我是想戒断社交媒体来b站搜索并关注的，作为普通的社交媒体用户也有很拧巴的一面在、、在我主动搜索的时候还蛮好，但是只要变成无意识的习惯我就很崩溃、、我尝试各种方法好像都没什么大用。没用的前提感觉是：我本来也没有很想戒断。得到奶头乐确实是一件太轻松的事了、、或许史东有什么方法吗？
+
+--- ITEM #18 ---
+ID: bili_comments_170
+平台: bili
+类型: comments
+内容: 发现就算是知识学习类up的视频，我也乏了，真的不如自己看一本正经的书，以为看短视频就掌握知识掌握真理了吗，no no，不过是吃别人嚼过的甘蔗罢了，万事需躬行啊，自己不亲自感受一遍，听再多道理都不是自己的东西。现在大家都在玩短视频，不爱读书，只爱赚钱，因此大家都被各种乱七八糟真真假假的视频洗脑了，辩证思考逐渐减少，感觉大家戾气变重了，警惕性更高了，更加没人情味了。所以，我[doge][doge][doge]给自己的要求就是，多看几本书，多保护自己的磁场，外面还是蛮乱的。
+
+--- ITEM #19 ---
+ID: bili_comments_175
+平台: bili
+类型: comments
+内容: 戴锦华老师说的那句话太对了，当今信息来源丰富了，但社会的反馈却越来越相近。
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_014
+
+开始分析：

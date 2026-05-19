@@ -1,0 +1,518 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下29条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 111/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_4604
+平台: zhihu
+类型: comments
+内容: 因为他们既有好手机，也有全画幅相机
+
+--- ITEM #2 ---
+ID: zhihu_comments_4605
+平台: zhihu
+类型: comments
+内容: 2025年在拍照或者录像方面，价位接近的情况下，个人认为手机吊打相机的应该是便携性，易用性和续航，可能还有防抖（可能而已）。而不是画质，画质，画质。
+
+--- ITEM #3 ---
+ID: zhihu_comments_4608
+平台: zhihu
+类型: comments
+内容: 我的感受是在较暗的光线下拍照片，手机比全幅相机差很多。
+
+--- ITEM #4 ---
+ID: zhihu_comments_4611
+平台: zhihu
+类型: comments
+内容: 摄影穷三代，还没听说过手机穷几代的[捂脸]都不是一个层级的东西，怎么比。。[酷]
+
+--- ITEM #5 ---
+ID: zhihu_comments_4613
+平台: zhihu
+类型: comments
+内容: 你的g7x不能玩原神，手机赢！[doge]
+
+--- ITEM #6 ---
+ID: zhihu_comments_4618
+平台: zhihu
+类型: comments
+内容: 我用手机也经常对焦失败。大哥我请教一下，为什么手机经常对不上焦？按理来说中间对焦很容易啊。
+
+--- ITEM #7 ---
+ID: zhihu_comments_4620
+平台: zhihu
+类型: comments
+内容: 别说超越了   就是靠近都绝无可能    手机领先的是方便  易拍   保有量大   性价比高但是单说相机那个头  那个进光量      几百倍有了吧？    拿啥靠近？  拿啥超越？    手机只是算法牛逼   可以取悦大众而已
+
+--- ITEM #8 ---
+ID: zhihu_comments_4621
+平台: zhihu
+类型: comments
+内容: 朋友，你怎么可以用GFX来欺负手机相机这种垃圾玩意呢？这不是丢GFX的份么？给你点赞了！[打招呼]
+
+--- ITEM #9 ---
+ID: zhihu_comments_4622
+平台: zhihu
+类型: comments
+内容: 很现实的问题，当你去拍婚纱照的时候，影楼只给你用手机拍。你只会骂一句：我草……
+
+--- ITEM #10 ---
+ID: zhihu_comments_4628
+平台: zhihu
+类型: comments
+内容: 你恐怕连手机都不知道怎么用[赞同]
+
+--- ITEM #11 ---
+ID: zhihu_comments_4631
+平台: zhihu
+类型: comments
+内容: 好镜头可以用几十年，人走头还在[飙泪笑]机身基本每年都更新，买新不买旧。富士用户请忽视
+
+--- ITEM #12 ---
+ID: zhihu_comments_4635
+平台: zhihu
+类型: comments
+内容: 保值的这个问题得看你是爱好者还是职业用户了。对于职业用户来说，用一个烂机身各种规格限制，接活一堆限制，几年下来少挣的钱够买好几个牛头了。
+
+--- ITEM #13 ---
+ID: zhihu_comments_4641
+平台: zhihu
+类型: comments
+内容: 但是好机身已经好体验了很久，。
+
+--- ITEM #14 ---
+ID: zhihu_comments_4643
+平台: zhihu
+类型: comments
+内容: 给你一个5D，你拿什么和R5拼画质？
+
+--- ITEM #15 ---
+ID: zhihu_comments_4646
+平台: zhihu
+类型: comments
+内容: 世界上90%以上的照片是手机拍的，4/3相机的照片比手机还是强太多了。。
+
+--- ITEM #16 ---
+ID: zhihu_comments_4648
+平台: zhihu
+类型: comments
+内容: 实际上你用防抖好的奥巴机身会觉得晚上太好用了，比没防抖的全幅残幅都好用。更不用说现在ai降噪有多强
+
+--- ITEM #17 ---
+ID: zhihu_comments_4652
+平台: zhihu
+类型: comments
+内容: 你的回答是正确的。本来就是个梗。很早以前的AV画面都很糊。因为针对这个梗还有后续比如你评论一段视频你可以调侃说。现在AV都是蓝光的了。形容UP主上传的视频画面太渣。不清晰
+
+--- ITEM #18 ---
+ID: zhihu_comments_4654
+平台: zhihu
+类型: comments
+内容: 没买4k之前，我一直觉得2k极致一定好于4k中高。。很大程度我是受了各种评测视频的观看影响…但是实际上云完了根本得不出客观的结论买完之后4k之后发现4k中高比2k极致看着爽多了…甚至为了高帧率，把游戏渲染调低都比2k100%渲染强…（可能也有整数倍缩放的原因）
+
+--- ITEM #19 ---
+ID: zhihu_comments_4655
+平台: zhihu
+类型: comments
+内容: 现在才知道？什么鬼扯带不动4K，我2016年就用1060上4K了，玩wow和gta5，特效低点就行，就算最低，也是吊打1080P全开的。看了4K显示器再看其他的，眼睛真的会瞎。最扯淡的是7年后的今天，网上的主流舆论还是4070Ti只能带2K[发呆]
+
+--- ITEM #20 ---
+ID: zhihu_comments_4656
+平台: zhihu
+类型: comments
+内容: 和你的显示器尺寸有关，我的体验是4k 27寸和2k24寸可以来回换着用，类似于1080p手机和2k手机，不会有明显落差
+
+--- ITEM #21 ---
+ID: zhihu_comments_4657
+平台: zhihu
+类型: comments
+内容: 我6年前的卡都可以轻松4K，现在蹦出一群40系显卡不能玩4K的云玩家，敢情显卡这6年还退步了
+
+--- ITEM #22 ---
+ID: zhihu_comments_4658
+平台: zhihu
+类型: comments
+内容: 游戏画质选择就应该是分辨率排第一，保底60帧放第二，其他的特效往后放放
+
+--- ITEM #23 ---
+ID: zhihu_comments_4662
+平台: zhihu
+类型: comments
+内容: 我是直接上4K 165HZ的屏，玩的不要太好。你听网友瞎讲肯定误事，这就和有点症状一百度就是癌症同道理，上网上多了就是这样的。
+
+--- ITEM #24 ---
+ID: zhihu_comments_4663
+平台: zhihu
+类型: comments
+内容: 屏幕尺寸加清晰度加画质加帧数，这种程度才会给人很大的震撼，尤其屏幕尺寸，从16寸到32寸那感觉简直了
+
+--- ITEM #25 ---
+ID: zhihu_comments_4665
+平台: zhihu
+类型: comments
+内容: [捂脸]我也是买电脑和显示器的时候看到各种人性能焦虑，说 4060ti 是跑 1080p 的，后面买了 4k160hz 的 miniled，太爽了，玩大表哥 2 高画质开 dlss3 质量档有 80 帧，比 2k 画面清晰太多
+
+--- ITEM #26 ---
+ID: zhihu_comments_4667
+平台: zhihu
+类型: comments
+内容: 我感觉无所谓，我看玩游戏，电影注意力都没多少在画质上
+
+--- ITEM #27 ---
+ID: zhihu_comments_4668
+平台: zhihu
+类型: comments
+内容: 我是1080P60hz直接到4K144hz的，那感觉，再也不可能回去了[捂脸][捂脸]
+
+--- ITEM #28 ---
+ID: zhihu_comments_4672
+平台: zhihu
+类型: comments
+内容: 我玩游戏是用4K120的电视玩的，我感觉2K和4K的不大啊，甚至感觉不出来，只是跟1080P差距很大，是不是都是在同一个显示器上所以感觉不明显？
+
+--- ITEM #29 ---
+ID: zhihu_comments_4673
+平台: zhihu
+类型: comments
+内容: [好奇]55寸电池玩ps5和27寸2k显示器电脑之间来回切换，并没有被震撼到
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_111
+
+开始分析：

@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UGC内容标签检查表</title>
+<style>
+:root { --bg:#0f0f1a; --card:#1a1a2e; --accent:#6366f1; --accent2:#8b5cf6; --text:#e2e8f0; --text2:#94a3b8; }
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:var(--bg); color:var(--text); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; line-height:1.6; }
+.container { max-width:1400px; margin:0 auto; padding:40px 20px; }
+.header { text-align:center; padding:40px 20px; background:linear-gradient(135deg,var(--card) 0%,#16213e 100%); border-radius:16px; margin-bottom:30px; }
+.header h1 { font-size:2em; background:linear-gradient(90deg,var(--accent),var(--accent2)); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.header .meta { color:var(--text2); font-size:0.9em; margin-top:10px; }
+.filter-bar { display:flex; gap:15px; margin-bottom:20px; flex-wrap:wrap; }
+.filter-bar button { padding:8px 16px; border:none; border-radius:8px; background:var(--card); color:var(--text); cursor:pointer; border:1px solid rgba(99,102,241,0.2); }
+.filter-bar button:hover, .filter-bar button.active { background:var(--accent); color:white; }
+.ugc-card { background:var(--card); padding:20px; border-radius:12px; margin-bottom:15px; border:1px solid rgba(99,102,241,0.1); }
+.ugc-card .title { font-size:1.1em; font-weight:600; margin-bottom:8px; color:var(--text); }
+.ugc-card .desc { color:var(--text2); font-size:0.9em; margin-bottom:12px; line-height:1.5; }
+.ugc-card .meta { display:flex; gap:20px; font-size:0.8em; color:var(--text2); margin-bottom:10px; }
+.ugc-card .tags { display:flex; gap:8px; flex-wrap:wrap; }
+.tag { padding:4px 10px; border-radius:6px; font-size:0.75em; }
+.tag-l1 { background:rgba(99,102,241,0.2); color:#a5b4fc; border:1px solid rgba(99,102,241,0.3); }
+.tag-l2 { background:rgba(139,92,246,0.2); color:#c4b5fd; border:1px solid rgba(139,92,246,0.3); }
+.tag-emotion { background:rgba(16,185,129,0.2); color:#6ee7b7; border:1px solid rgba(16,185,129,0.3); }
+.tag-scene { background:rgba(245,158,11,0.2); color:#fcd34d; border:1px solid rgba(245,158,11,0.3); }
+.tag-signal { background:rgba(239,68,68,0.2); color:#fca5a5; border:1px solid rgba(239,68,68,0.3); }
+.stats { display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:15px; margin-bottom:30px; }
+.stat-box { background:var(--card); padding:20px; border-radius:12px; text-align:center; }
+.stat-box .num { font-size:2em; font-weight:bold; color:var(--accent); }
+.stat-box .lbl { color:var(--text2); font-size:0.8em; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>📝 UGC内容标签检查表</h1>
+<p class="meta">项目：长视频诉求调研 | 共筛选出 85 条UGC内容 | 请检查标签是否正确</p>
+</div>
+
+<div class="stats">
+<div class="stat-box"><div class="num">85</div><div class="lbl">UGC内容数</div></div>
+<div class="stat-box"><div class="num">291</div><div class="lbl">总相关数据</div></div>
+<div class="stat-box"><div class="num">29.2%</div><div class="lbl">UGC占比</div></div>
+</div>
+
+<div class="filter-bar">
+<button onclick="filterAll()" class="active" id="btn-all">全部</button>
+<button onclick="filterTopic('观看体验')" id="btn-观看体验">观看体验</button>
+<button onclick="filterTopic('功能需求')" id="btn-功能需求">功能需求</button>
+<button onclick="filterTopic('内容质量')" id="btn-内容质量">内容质量</button>
+<button onclick="filterTopic('时长控制')" id="btn-时长控制">时长控制</button>
+<button onclick="filterTopic('场景使用')" id="btn-场景使用">场景使用</button>
+<button onclick="filterTopic('行为习惯')" id="btn-行为习惯">行为习惯</button>
+</div>
+
+<div id="ugc-list">
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">台球公主发癔症</div>
+<div class="desc">#炸裂[话题]# #睡前故事[话题]# #女大学生[话题]# #情感[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 61113</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">你凭啥免费啊.....</div>
+<div class="desc">库存（发现漏发了一篇）嘻嘻#中尖商[话题]# #抽象[话题]# #真实还原[话题]# #真实事件[话题]# #搞笑[话题]# #吐槽[话题]# #电子榨菜[话题]# #睡前故事[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 49671</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">有被种草的热歌合集～🎧</div>
+<div class="desc">送给大家一小时的音乐#主要是歌好听[话题]# #一直循环播放[话题]# #宝藏歌曲[话题]# #氛围感歌曲[话题]# #宝藏音乐[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 62507</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">哥们你真是那个....</div>
+<div class="desc">#中尖商[话题]# #电子榨菜[话题]##睡前故事[话题]##书亦烧仙草[话题]# #书亦超有料[话题]##红豆夹心糯糯珠抹茶[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 29091</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">来看看我在上海GAF怒花4K买了些啥🍡长视频</div>
+<div class="desc">剪完视频发现光在杉跟杏两个区逛了
+其他的一家没逛到哈哈哈
+#00:05[时刻]# 杏406
+#00:22[时刻]# 杏254
+#00:41[时刻]# 杏255
+#01:19[时刻]# 杏107
+#02:07[时刻]# 杉434
+#02:32[时刻]# 杉413
+#03:01[时刻]# 杏209
+#03:23[时刻]# 杏232
+#03:48[时刻]# 杏244
+#03:59[时刻]# 杏111
+#</div>
+<div class="meta">
+<span>💬 互动量: 23710</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">超长完整版！一口气看完莉莉末日囤货完整版</div>
+<div class="desc">#原创动画[话题]# #末日求生[话题]# #末日生存[话题]# #睡前故事[话题]# #末日[话题]# #解说[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 23478</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">百年百本诺贝尔奖作品解读：第一本《窄门》</div>
+<div class="desc">百年百本诺贝尔奖作品解读——第1本：1947年诺奖得主纪德的《窄门》。这是一个全新的栏目。书虫将向你详细讲解百年来诺贝尔文学奖的必读经典，我们一起去品读那些被时间加冕的不朽名著。视频有点长，你可以收藏起来慢慢听。我们的第一站，便是1947年诺奖得主安德烈·纪德笔下那扇令人心碎的《窄门》。分享书里的一段美文：“我常常感到爱情是我身上最美好的东西，我的一切美德都由此而来。是爱情使我超过我自己。要是没有</div>
+<div class="meta">
+<span>💬 互动量: 20200</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">求推荐b站下饭or唠嗑长视频，适合当背景板时不时看一眼的那种。做事情的时候总喜欢电脑播点什么玩意儿听个声，时不时抬头看一眼。看日漫或者美剧呢需要时刻盯着字幕，游</div>
+<div class="desc">求推荐b站下饭or唠嗑长视频，适合当背景板时不时看一眼的那种。做事情的时候总喜欢电脑播点什么玩意儿听个声，时不时抬头看一眼。看日漫或者美剧呢需要时刻盯着字幕，游戏实况呢也没找到合心意的...
+	
+二编:可自荐。个人喜好thh的游戏实况，影视飓风团队的长视频，还有罗永浩访谈这一类的视频。</div>
+<div class="meta">
+<span>💬 互动量: 20038</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 制作水平</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 用餐时间</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">求学习时可以放的视频推荐</div>
+<div class="desc">如题，是那种一个人安静做自己事的长视频推荐(无bgm)看别人在自己面前做点事情会觉得很踏实
+想学习的时候在旁边放着看，内容是做手帐拼贴造景贴纸学习生活助眠视频还是vlog都可以，不太无聊的，看着会有一种更热爱生活的感觉，希望有半小时以上的长度
+	
+请直接把视频甩我脸上🥺
+不看综艺小说电视剧
+	
+我自己看的：阿b：混搭战神（一边聊天做手帐）
+声格cresound（混音师听歌评价歌曲的，主要是kpop</div>
+<div class="meta">
+<span>💬 互动量: 17190</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 疲惫/厌倦</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">ASMR 1小时温柔眼部清洁｜黏腻嘴部音｜超近距</div>
+<div class="desc">沉浸式1小时温柔眼部护理 ✨
+超近距离的细腻清洁、黏腻嘴部音与轻柔环境音乐，带来放松又安心的ASMR体验。适合睡前、学习放松或减压时收听，让自己慢慢进入平静状态💤
+🌙 无人声
+🎧 建议佩戴耳机获得更佳体验
+✨ 包含：眼部清洁 / 轻柔护理 / Sticky Mouth Sounds / Ambient Music
+#ASMR[话题]#
+#眼部清洁[话题]#
+#无人声ASMR[话题]#
+#嘴部音[话</div>
+<div class="meta">
+<span>💬 互动量: 13529</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">女宝！不要让短视频吞没你的脑子2.0🎬</div>
+<div class="desc">长视频&播客推荐第二期来啦！希望大家喜欢🫶
+	
+也欢迎大家在评论区互相分享宝藏电影/播客哟
+	
+#电影推荐[话题]# #女性主义[话题]# #穿普拉达的女王[话题]# #播客推荐[话题]# #女性成长[话题]#  #自我提升[话题]# #高中生[话题]# #女大学生[话题]# #Allin我自己[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 15129</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">就他了！开睡！</div>
+<div class="desc">一口气听完张居正的一生！#历史集说[话题]# #明朝[话题]# #张居正[话题]# #历史人物[话题]# #睡前故事[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 14859</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">最好是恐游/剧情向，视频越长越好</div>
+<div class="desc">如题，是苦逼小画手需要一边敲屏幕一边看(听？)，抬头频率特别特别低，又听的很认真不想错过各种剧情细节[完啦R]
+各位一线例如桃黑黑散人都快要听完了，最喜欢的是岚少所有视频都已经看包浆了....
+想求助一下大家还有没有什么珍藏....(私心是比较喜欢声音好听的、不要太嗲女声)
+	
+#不知道打什么标签[话题]# #求助[话题]# #up主推荐[话题]# #生活小妙招[话题]# #宝宝辅食[话题]# #</div>
+<div class="meta">
+<span>💬 互动量: 15178</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">一些我画画的时候听的东西</div>
+<div class="desc">唐突汇总一下我的电子榨菜，因为博主属于非常喜欢听故事并且画画的时候一定要听点有情节的东西的人，同时发现大家好像都有点头疼画画的时候听什么的问题，于是把我的私货整理了一下…具体如下图，分为讲故事/游戏实况/跑团实况/公开课四部分:
+	
+因为博主学历也比较一般所以知识密度高的低的都有，大家各取所需，总的来说大概标准如下:
+1.口条清晰，不需要字幕
+2.没有很晦涩的内容
+3.够长，能看到天荒地老
+4.游</div>
+<div class="meta">
+<span>💬 互动量: 15058</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">一口气看完（大胃王吃播）完结文小故事</div>
+<div class="desc">#一口气看完[话题]# #沙雕动画[话题]# #完结文[话题]# #爽文[话题]# #电子榨菜[话题]# #睡前故事[话题]# #动画小故事[话题]# #吃播[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 10473</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">求推荐挂机视频</div>
+<div class="desc">画作业的时候用，所以不能经常抬头看
+比较倾向于长视频，比如电影拉片解说，科普视频和游戏实况。
+科普的话不限语种，听了能在我光滑的大脑上留下一点印象就行。游戏的话中英文都可以，最好是mc那种类型的，场景不用太吸睛但是内容有的看。
+up主声音要温柔一点最好普通话标准口齿清晰。我比较喜欢的类似吾乃肆玖或者fafaidv那种声音你们听过就知道大概是半死不活但是淡淡幽默的
+谢谢！
+#求助[话题]# #软件推</div>
+<div class="meta">
+<span>💬 互动量: 14240</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">超好听的粉丝投稿音乐合集（一个小时版）</div>
+<div class="desc">#音乐推荐[话题]# #歌曲推荐[话题]# #音乐分享[话题]# #戴上耳机[话题]# #0:00[时刻]# 心如止水
+#2:54[时刻]# 绝对占有  相对自由
+#8:11[时刻]# Time machine
+#11:34[时刻]# 阳光下的星星
+#15:49[时刻]# 太聪明
+#20:02[时刻]# After17
+#22:26[时刻]# 听夜雨
+#25:47[时刻]# 迷宫
+#29:09[时</div>
+<div class="meta">
+<span>💬 互动量: 11425</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">求推荐不太需要眼睛的</div>
+<div class="desc">工作和做手工的时候喜欢放点视频当背景音，想找点不需要太用眼睛看的视频。
+个人常看类型：单机恐怖游戏（包括实况和直播录播）
+常看游戏类型：日式RPG、MC长期生存、其它单机恐游……
+单个视频长度希望不小于三十分钟。
+常看的UP：中国BOY、与山、Airly、谜之声、某幻（直播录播）、盒子酸奶（直播录播）
+	
+另外我最近也在找悬疑类的电视剧（想稍微老点的剧），或者有那种影视剧长解读视频也想了解一下
+谢</div>
+<div class="meta">
+<span>💬 互动量: 15198</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 视觉疲劳</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">看完两个长视频感觉还能溺爱B站很久…</div>
+<div class="desc">两个昨天更新的视频，今天在电视首页刷到，一个是轨迹球TRACKBALL的《互联网上，没人知道内蒙草原的这些神秘图案》，另一个是江寻千的《这里的女孩不嫁人，永远都跟妈妈在一起》，两个up我都没有关注，两个视频加一起快半个小时，我都静静看完了，每一个都让人动容，看完后下面相关推荐了HOPICO最新一期视频，质量也是一如既往的高，很喜欢这种有点电台式安安静静讲音乐的视频，能发掘很多宝藏歌曲。
+平时都是手</div>
+<div class="meta">
+<span>💬 互动量: 8799</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 身体疲劳</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 居家休闲</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">爆肝一坤年，带你一口气看完《鬼灭之刃》</div>
+<div class="desc">1-4季全部内容，总时长186分钟，建议收藏后观看_鬼灭之刃 _一口气看完系列#鬼灭之刃[话题]# #动画解说[话题]# #日漫推荐[话题]# #番剧推荐[话题]# #动漫[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 11788</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">一口气看完（金钱的诱惑）完结版小故事</div>
+<div class="desc">#一口气看完[话题]# #沙雕动画[话题]# #睡前故事[话题]# #电子榨菜[话题]# #爽文[话题]# #完结文[话题]# #重生[话题]# #结局令人舒适[话题]# #情感故事[话题]# #小故事[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 6346</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">别开倍速 怕你痛痛~</div>
+<div class="desc">#推荐[话题]# #新人博主[话题]# #带上耳机聆听效果更佳[话题]# #助眠[话题]#  #助眠解压伴你入睡[话题]# #轻轻敲醒沉睡的心灵[话题]# #解压助眠[话题]# #没有不良导向的意思[话题]# #此处无声胜有声[话题]# #请看到最后[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 6528</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 倍速播放</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">最近迷上了看mc长视频</div>
+<div class="desc">求推荐，画稿看这种视频太舒服了，最好是国内软件能看到的
+#mc[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 7281</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="未分类">
+<div class="title">一到半夜就想吃东西怎么办？那就看集蜡笔小</div>
+<div class="desc"></div>
+<div class="meta">
+<span>💬 互动量: 4001</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 未分类</span>
+<span class="tag tag-l2">二层: 未分类</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">地球曾失忆10亿年？！那些被抹去的远古记录……</div>
+<div class="desc">#当然要记录啊[话题]# #每秒都值得记录[话题]# #奇闻趣事[话题]# #真实还原[话题]# #历史那些事儿[话题]# #奇闻异事[话题]# #悬疑[话题]# #地球[话题]# #历史[话题]# #内容过于真实[话题]# #老雷的睡前故事[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 5114</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">求推荐长时绘画陪伴视频</div>
+<div class="desc">本人注意力涣散+厚涂喜欢拉长战线绘画。
+倾向看长主机游戏实况或动物旅行纪录片。
+视频可以是无解说沉浸。
+	
+类似赛万味超人《寂静岭一周目》和昭霖黄瓜小卷《生化危机4高难无伤》的长度。（这两个分别是9h和11h）
+	
+【PS:摸鱼事务、散人、戒社不用推荐，一小时内对我来说时常不够，且不喜欢听赛博反省/他人苦难。】
+	
+后编:
+回不过来，慢慢看后评了，感谢大家留言分享💖，收藏随意。再推荐散人和戒社我会</div>
+<div class="meta">
+<span>💬 互动量: 5859</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 通勤/出行</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">以森为翼 飞往氤氲之春 | 25分钟治愈轻音乐</div>
+<div class="desc">日常推荐英文歌曲和轻音乐，欢迎来到我的音乐旅程！
+氤氳之森 -  CMJ
+春天是一首浪漫诗 -  Youzee Music
+林涧回响 -  CMJ
+与你续写春诗 -  Hea2t
+猫眼中的森林 -  CMJ
+视频制作：Ellie的音乐屋（网易云用户同名）
+本视频歌曲仅作为安利分享，歌曲版权和封面版权均属于其原创作者所有，侵权请联系删除
+	
+#宝藏歌单[话题]# #分享音乐[话题]# #戴上耳机[话</div>
+<div class="meta">
+<span>💬 互动量: 5689</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 制作水平</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">这还是短视频app吗？</div>
+<div class="desc">最近痴迷《红楼梦》，原著看起来有点慢，就想看看解说和87版电视剧，偶然间发现了这个博主，这视频真不是一般的长啊，花了7个半小时刷完了，真的从白天看到了黑夜，比看过的电影还要长的多，唯一的遗憾是只讲了前八十回，后面二十回没有讲解，有一百二十回详细解说的博主推荐吗？
+———————分割线—————————
+记录一下，2025年5月25日终于一字不差的看完了全书，心中感慨万千，为什么选择看这本书？我看了</div>
+<div class="meta">
+<span>💬 互动量: 3775</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 愤怒/失望</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">真·一刀未剪！155分钟量大管饱！鬼灭之刃</div>
+<div class="desc">真·一刀未剪！155分钟量大管饱！《鬼灭之刃：无限城篇》太好看啦！#出影院就发repo[话题]# #小红书电影假日[话题]# #鬼灭之刃[话题]# #影评[话题]# #无一郎的无是无限的无[话题]# #动漫推荐[话题]# #祢豆子[话题]# #番剧推荐[话题]# #热血动漫[话题]#  #红薯地宝藏片单[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 4271</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">有没有适合画画听的长视频</div>
+<div class="desc">之前看很多人推戒社结果我听了几期发现听这个up一谈到赌狗心理我就会生出一股强烈的赌博欲望所以不敢再听了，除此之外对电视剧/电影解说和网文小说兴趣不大，也听不下去投稿式电台。个人偏好更喜欢女声，想问问除了这些有没有不用看只用听的长视频博主推荐，特别是会做读对白的游戏剧情实况、讲史讲得没那么像在上课的、案件解说和地方怪谈内容的博主🥹
+#画画[话题]# #画画听什么[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 4737</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">奔跑吧第12期完整版(上)</div>
+<div class="desc">晚上会更新后面！#正在追的综艺[话题]# #综艺[话题]# #好看的综艺[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 3816</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 观看频率</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">233集🧺超解压长视频🧹</div>
+<div class="desc">节日狂欢过后的收场
+#沉浸式[话题]# #解压日常[话题]# #客厅[话题]# #家是我的能量场[话题]# #家的养成计划[话题]# #换个角度看我家[话题]# #家务[话题]# #每天都有值得记录的瞬间[话题]# #解压[话题]# #沉浸式清洁[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 2935</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">维多利亚时期，欧洲的贵妇每天都在忙什么？</div>
+<div class="desc">#历史[话题]# #贵妇[话题]# #睡前故事[话题]# #助眠[话题]# #维多利亚[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 3443</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">推荐我的电子榨菜！！宝藏的长视频up们</div>
+<div class="desc">从收藏夹里整理了我最常看的下饭up们～
+每一个都好喜欢，总结了频道的特点和我常看的几期经典佳作，大家放心种草，每个都很有意思
+	
+推荐的博主包括：
+@大物是也 ：小电视最喜欢的up主[皱眉R]从《令人心动的offer》医学季开始关注的。后面一步步看着频道成长，做各种医学相关的科普，超级有趣
+	
+@王一快 ：另一个做reaction的宝藏up。re综艺的时候笑点超多，聊职业发展的视频也很值得一看，对</div>
+<div class="meta">
+<span>💬 互动量: 3912</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 愤怒/失望</span>
+<span class="tag tag-scene">场景: 用餐时间</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">最顶级的下饭细糠！越品越有味的养老神剧！</div>
+<div class="desc">万字精讲经典古装家庭剧《知否》P1#知否知否应是绿肥红瘦[话题]# #放大镜追剧[话题]# #电视剧解说[话题]# #小红书追剧人[话题]# #好看国产剧推荐[话题]# #我的观影报告[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 2983</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 用餐时间</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">推荐一个免费古代推理破案游戏！长视频</div>
+<div class="desc">#二点五次元[话题]# #RED新生代创作大赛[话题]# #大家一起聊游戏[话题]# #游戏日常[话题]# #游戏[话题]# #游戏分享[话题]# #游戏推荐[话题]# #游戏实况[话题]# #宝藏游戏推荐[话题]##二次元看见计划[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 3968</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">笑疯了😂怎么有这么不正经的纪录片‼️</div>
+<div class="desc">🎬🎬片名《扯淡地球史》
+😂喜剧|纪录片
+30分钟/集【共5集】
+推荐指数⭐⭐⭐⭐⭐
+	
+👍🏻全程爆笑、巨下饭、超级解压又涨知识～
+	
+主持人以其无厘头的提问和奇葩的理论，挑战专家的底线，让观众在笑声中重新审视历史。专家们满头问号还得认真解答，显得渊博、弱小、又无助😵‍💫
+	
+⛰️“金字塔为什么是尖的？”
+“是为了阻止流浪汉在上面睡觉吗？”
+	
+主持人脑洞真大真可爱啊啊啊啊😄😄😄“马斯克梗”，“吐槽</div>
+<div class="meta">
+<span>💬 互动量: 2838</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="社交互动">
+<div class="title">求安利长视频up主</div>
+<div class="desc">虽然现在是短视频时代
+但可能因为我是从长视频一路看过来的
+对于长视频的喜欢已经已经刻在骨子里了
+短视频虽然好但是没有任何让我看第二遍的欲望
+以前喜欢的长视频up主大多数也都转短视频赛道放弃长视频了
+反反复复盘她们19 20年左右的视频
+急需一些新鲜的没看过的视频当bgm
+#长视频[话题]# #up主[话题]# #求安利[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 4408</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 社交互动</span>
+<span class="tag tag-l2">二层: B站体验</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">一口气看完高质量重生爽文小说大女主推荐</div>
+<div class="desc">一口气看完高质量重生爽文小说大女主推荐家庭纠纷全文已完结 ﻿#清醒大女主小说推荐[话题]#﻿ ﻿#一口气系列[话题]#﻿ ﻿#大女主漫画[话题]#﻿  ﻿#现言[话题]#﻿  ﻿#多肉浅浅[话题]#﻿</div>
+<div class="meta">
+<span>💬 互动量: 1959</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">分享一些前额叶友好博主！！</div>
+<div class="desc">今年是脑科学元年吗……
+又给自己确诊了新问题：前额叶损伤
+上一秒想的事情下一秒就忘了，吃个饭都能走神，
+看完一段非常精彩深刻的文字之后，留下一句发自肺腑的评论：啥意思？
+	
+这下真是玩手机玩的，刷短视频刷的了、、
+因为实在戒不掉短视频，所以我尝试用中长视频代替它，给前额叶做修复训练
+最近薯在搞的一个新生代创作大赛就有几个长视频拍得很好的博主，
+	
+作为一个纯纯文科生，我自己都没想到最看得进去的竟然</div>
+<div class="meta">
+<span>💬 互动量: 2319</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">229集🧺这是一个解压长视频</div>
+<div class="desc">每到周末分外乱#解压日常[话题]# #沉浸式[话题]# #家是我的能量场[话题]# #家的养成计划[话题]# #客厅[话题]# #卧室[话题]# #换个角度看我家[话题]# #解压[话题]# #家务[话题]# #减压视频[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1750</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 居家休闲</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">study vlog🌧️30min原倍速伴学•白噪音</div>
+<div class="desc">大家晚上好呀我回来啦～超想大家✨
+欢迎宝宝们来点菜下期背景音想听什么💗
+#vlog[话题]# #治愈系vlog[话题]# #沉浸式学习[话题]# #学习vlog[话题]# #study_account[话题]# #studyvlog[话题]# #原倍速伴学[话题]# #伴学视频[话题]# #白噪音[话题]# #infj[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1795</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">全网视频都能整理成笔记的神奇网站</div>
+<div class="desc">步骤：
+①下载视频
+②提取文字
+③AI总结视频知识点
+全过程🆓，没有总时长、次数限制
+	
+网课、办公、日常不想刷长视频超好用～
+﻿#视频下载[话题]#﻿ ﻿#Flowin[话题]#﻿ ﻿#视频转文字[话题]#﻿ ﻿#AI工具种草[话题]#﻿ ﻿#网课[话题]#﻿</div>
+<div class="meta">
+<span>💬 互动量: 2678</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">成年人哄睡电台第五期：这些都是我给你的爱</div>
+<div class="desc">两年了，我还是想来哄你睡。
+这段时间还好吗？
+是否被工作追得喘不过气？身边的人有没有让你安心？你还乐意迎接下一个清晨吗？
+今夜，我想和你分享一个关于雨林、疼痛与爱的故事。
+给我几分钟，让我用声音紧紧抱住你。
+请收下吧，这些都是我给你的爱。
+	
+#正念[话题]# #睡前小故事[话题]# #哄睡[话题]# #爱[话题]# #深夜情感电台[话题]# #治愈系声音[话题]# #晚安[话题]# #助眠[话题</div>
+<div class="meta">
+<span>💬 互动量: 1692</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">全文27分钟，末世小说一口气看完系列天灾</div>
+<div class="desc">即使困得睁不开眼了，也要在入睡前一秒打开末日小说后台播放才能安稳睡去，好小众的癖好#末世文[话题]# #完结文[话题]# #一口气看完系列[话题]# #小说热门[话题]# #宝藏小说[话题]# #阿鲤mua_[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1481</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 身体疲劳</span>
+<span class="tag tag-emotion">情绪: 疲惫/厌倦</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">长视频转文字，谁还在花钱整</div>
+<div class="desc">哎呀呀，好多小可爱都在催我分享视频转文字的小技巧啦！🤔作为一个超会分享的博主，怎么可能让你们失望呢？
+今天就来给大家安利一个超级好用的视频转文字小程序，赶紧mark起来哦～
+🌟1️⃣ 小喵文案提取神器
+这个叫“小喵文案提取神器”的小程序，简直太棒了！它有个音频转文字的功能，能把视频里的文字都提取出来，变成文本哦~
+﻿#视频转文字[话题]#﻿ ﻿#视频提取文本[话题]#﻿ ﻿#视频提取文字[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1879</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 分享推荐</span>
+<span class="tag tag-emotion">情绪: 愤怒/失望</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">S7赛季讲了啥？时长一小时建议睡前看!</div>
+<div class="desc">S7赛季讲了啥？时长一小时建议睡前看!三角洲行动#三角洲行动[话题]# #三角洲s7阿拉萨新赛季[话题]# #三角洲联动逆战未来[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1950</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">四十岁“微”退休vlog|人到中年可以吃玩儿练</div>
+<div class="desc">好久不见大家！今天是长视频版本的姥爷～
+这次攒了满满一筐的有趣素材，全部一次性倒给大家！！
+希望万宁的欢声笑语也能治愈屏幕前的你们，祝大家周末愉快～
+	
+#vlog[话题]# #日记复兴计划[话题]# #运动年度影像[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1185</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 身体疲劳</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 居家休闲</span>
+<span class="tag tag-signal">期望</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">1080倍速看哪吒2</div>
+<div class="desc">准备好了吗？
+#哪吒之魔童闹海[话题]# #国产动画[话题]# #动画推荐[话题]# #人生的意义[话题]# #好看吗？[PK]# #经典动漫推荐[话题]# #国漫剪辑[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1061</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 制作水平</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">求推荐长视频up主</div>
+<div class="desc">本人吃饭还有没事的时候喜欢看一点长视频 美食区主要是看芳婷 了in林还有我们最可爱的小露妍嘿嘿嘿嘿嘿 游戏的话会看桃黑黑老师 但他直播的太勤快了（主包非常敬业且宠粉且辛苦 没有说讨厌他直播不想看直播的意思）第一次打王者的录屏我到现在都没补完！主包的文游系列我需要在自己完全没事干的时候才会打开然后认认真真的看完不然本人非常容易半途而废🆘
+哦对对还有reaction博主俺也看 最近在看铁豆钢蛋的（哎我</div>
+<div class="meta">
+<span>💬 互动量: 1892</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 用餐时间</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">想找一些长视频up主，最好是知识区的，可以用来当做手工写写画画时候的背景音。
+平时看得比较多的就是毕导、大物是也、芳斯塔芙、小亮这些
+想找一些质量高一些的、时长</div>
+<div class="desc">想找一些长视频up主，最好是知识区的，可以用来当做手工写写画画时候的背景音。
+平时看得比较多的就是毕导、大物是也、芳斯塔芙、小亮这些
+想找一些质量高一些的、时长长一些的博主
+求推荐求推荐
+#视频分享[话题]# #好物推荐[话题]# #知识科普[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1367</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">通勤 走路 干活的时候当背景声音用</div>
+<div class="desc">主用b站平台 自己能找到的适合自己的视频都全部听完了  一天通勤时间3h 希望视频时长长些
+	
+已听过的：
+warma的爆炸电台
+莴苣某人玩无限暖暖时候的生活碎碎念录播
+核电波的部分（乙游讲解 北欧神话）
+个人应该是喜好生活故事分享这样的视频[害羞R]
+#播客[话题]# #播客推荐[话题]##长视频[话题]##陪伴[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1113</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 通勤/出行</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">三小时超长末世合集</div>
+<div class="desc">：宝子们，三小时超长合集来啦，全文没有吓人的音效，十分适合睡前助眠，祝大家晚安好梦！#原创动画[话题]# #末日[话题]# #末世[话题]# #一口气看完[话题]# #助眠[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1146</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 睡前场景</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">“超下饭”up主推荐！（个人向）</div>
+<div class="desc">作为一名在b站粉上千名up的老玩家
+想分享一些我日常喜欢看的“下饭博主”们
+👉首先我对“下饭”的定义是：内容要轻松有趣➕时长>10min
+	
+1️⃣蕾儿乔什看世界——作为旅行博主他们很真实给人感觉很亲切 新系列“南北极穿越”巨有意思！
+2️⃣hellotina陈甜甜——tina是我最最最喜欢的博主之一 她的视频既下饭又治愈 lvy icyn简直是梦中情宝！
+3️⃣庄子HD——最近很喜欢的一个博主 </div>
+<div class="meta">
+<span>💬 互动量: 1249</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 通勤/出行</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">一口气看完高质量大女主爽文超长全文已完结</div>
+<div class="desc">一口气看完高质量大女主爽文超长自我救赎虐渣男全文已完结推荐 #大女主漫画[话题]#  #一口气系列[话题]#  #有声小说[话题]#  #配享太庙[话题]#  #元宝桃桃[话题]# #宝藏小说[话题]# #每日小说[话题]# #爽文女主[话题]# #拯救文荒[话题]# #女频小说[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 682</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">高质量长视频推荐，新年不用看书也能涨知识</div>
+<div class="desc">看好的长视频，把被短视频“啃废”的脑子补回来！都是个人看过的好的up，有局限性，欢迎大家在下面留言推荐哦～﻿#电子榨菜[话题]#﻿ ﻿#电子榨菜下饭神器[话题]#﻿ ﻿#互联网细糠[话题]#﻿ ﻿#知识以一种卑鄙的方式进入脑子[话题]#﻿ ﻿#分享你近期最爱的视频[话题]#﻿ ﻿#知识[话题]#﻿ ﻿#长视频[话题]#﻿ ﻿#带上兴趣出门[话题]#﻿</div>
+<div class="meta">
+<span>💬 互动量: 945</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 用餐时间</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">东南亚民俗恐怖游戏！长视频送key</div>
+<div class="desc">#红薯游戏导演大赛[话题]# #游戏日常[话题]# #游戏[话题]# #游戏分享[话题]# #游戏推荐[话题]# #宝藏游戏推荐[话题]# #游戏实况[话题]# #大家一起聊游戏[话题]# #独立游戏[话题]# #我在小红书做游戏[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 630</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">一口气，捋清魏晋南北朝369年的混乱历史！</div>
+<div class="desc">﻿#知识[话题]#﻿ ﻿#历史[话题]#﻿ ﻿#助眠[话题]#﻿ ﻿#睡前故事[话题]#﻿ ﻿#长视频[话题]#﻿﻿</div>
+<div class="meta">
+<span>💬 互动量: 367</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">研三写论文陪伴长视频合集（无ai声音</div>
+<div class="desc">本人非常喜欢边写论文边看视频，但视频必须同时满足：非ai声音讲解，时长＞30min，普通话，无恐怖元素，解说原片我看过，不催眠，不用带脑子看
+	
+精挑细选这些好好论文伴侣[得意R]
+p1 赛万味超人：亿万恋人，寂静岭f，老爹汉堡店切片[自拍R]
+p2 花神打喷嚏-安娜拉片
+九十九棵树的森林-善意的竞争拉片
+p3 辣椒梦话-寄生虫拉片
+到詹庞的世界逛一逛-詹庞直播辩论切片
+p4 方芳的快乐生活-耶呼</div>
+<div class="meta">
+<span>💬 互动量: 259</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">假期电子榨菜！囤了一年的宝藏UP主片单</div>
+<div class="desc">[皱眉R][皱眉R][皱眉R] 假期宅家的快乐
+一半是零食给的
+一半是这些宝藏UP主给的！
+	
+年前比较忙，看小破站的时间也直接砍半，囤了一年的电子榨菜终于可以开吃了，分享给大家我反复刷都不会腻的几个宝藏UP~点开就停不下来，适合拯救假期无聊！
+	
+✅ 食贫道
+潜伏人间干大事！推荐韩国、泰国、日本那几个专栏，第一次看是早几年的韩国篇，纪录片的观看体验，但是因为话题选择自由度高，一两个小时的视频完全</div>
+<div class="meta">
+<span>💬 互动量: 227</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 通勤/出行</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">现在长视频越来越少了。</div>
+<div class="desc">最好是一个小时以上的那种，我喜欢干活的时候看
+	
+#b站[话题]# #up主推荐[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 335</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">解压洗皂|舒肤佳柠檬长视频</div>
+<div class="desc">巨巨巨喜欢这个味道 床头也摆了好几块当床边皂 喜欢刮皂洗皂 但是洗皂的长视频好少 自己录了个长一些的 发布打算晚上听着睡 [害羞R][害羞R]
+	
+#解压声控[话题]# #沉浸式解压[话题]# #解压视频[话题]# #洗皂[话题]# #amsr[话题]# #皂门[话题]# #皂唤青春多巴胺[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 113</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">真的没办法错过任何一个解说花少的视频</div>
+<div class="desc">推荐一下这个up主
+是我看过所有分析中我觉得最好的
+	
+#花儿与少年[话题]#
+#花儿与少年第一季[话题]#
+#花儿与少年第二季[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 132</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">油管长视频封面图自测工具</div>
+<div class="desc">📸 很多大博主会在开始制作一个视频之前先创作视频封面，把封面放在整个视频里最重要的地位。
+🤔 俗话说得好，如果一个视频你在制作封面时都感觉这个东西也不会想点进去看吧，那这个视频项目也可以直接换了…
+📊 那么封面这里我们涉及到：
+做一个好封面
+测一个好封面
+🔧 在你给油管自带的封面测试功能或者第三方工具去给真实用户做封面测试之前，你当然会自己先选。
+✨ 那怎么更好的在自己选封面时把自己带入一个用户的</div>
+<div class="meta">
+<span>💬 互动量: 223</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 制作水平</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">2025用过最靠谱的长视频总结ai工具</div>
+<div class="desc">年末了，分享一个最近发现的小工具，briefly
+	
+昨天​看了一眼日历，又要年底了。我的YouTube稍后观看列表里还躺着几十个视频没动[汗颜R][汗颜R]
+	
+​这可能是信息爆炸时代我们共同的焦虑，列表里全是那些如果不看就感觉会落伍的硬核内容：Andrej Karpathy刚更新的LLM课程，a16z对明年科技趋势的年度预测，或者是Joe Rogan那些动不动就三小时起步的深度访谈。。
+	
+虽</div>
+<div class="meta">
+<span>💬 互动量: 154</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 身体疲劳</span>
+<span class="tag tag-emotion">情绪: 焦虑/压力</span>
+<span class="tag tag-scene">场景: 居家休闲</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">本人在杂食的同时又很挑剔。。</div>
+<div class="desc">如题，B站长视频只看过恐怖游戏实况和相关综艺节目，有与山，郎中，某幻，中国boy，老番茄，散人，鲤鱼，雀巢，还有特别嘉宾某幻录屏组（不看小潮是因为太多广了，很烦啊）
+	
+接下来就是比较杂的：有mc的，大橙子五歌
+有火柴人的，Alan
+有国内综艺的，只看对眼明星大侦探
+有日本番的，最近看了胆大党
+甚至还有腐剧，泰腐多一点，韩剧目前只看过苦尽甘来，韩腐没涉及（欢迎推荐啊，正剧腐剧，好看就行！）
+	
+考</div>
+<div class="meta">
+<span>💬 互动量: 84</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 焦虑/压力</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">长视频行业一定会“秒死”</div>
+<div class="desc">影视行业的真正危机不在于市场下滑、资本撤离，也不在于短视频威胁长视频，也不在于审查，而在于：贸易战。
+	
+贸易战终归要以协议告终，这意味着：视频行业，不放奈飞进来是不可能的。
+	
+奈飞第一天进来，国内所有长视频平台连一秒钟都活不下去。我称这样的行业为“秒死行业”。
+	
+很多人制造焦虑，说影视行业秒死的话，是不是大家都跟着失业了？要不要起身保护长视频平台呢？这是一种混沌的思维方式，典型的将杨白劳的利</div>
+<div class="meta">
+<span>💬 互动量: 87</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 焦虑/压力</span>
+<span class="tag tag-scene">场景: 通勤/出行</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">写作业的时候必须得来点（附推荐）</div>
+<div class="desc">我先来推荐一点：
+	
+1.神秘园（主要讲洞潜事故，每一条都十分详细，作品高质很上头。缺点是可能无法做到不看屏幕，因为会配套事故所在地的位置图片，不看的话容易懵）
+	
+2.诗食史事（奇闻逸事各种都有涉及范围很广，内容较详细，更新较快，大部分视频都可以不看屏幕也能听懂。非常全面的up主，但每方面可能都不如专业领域的up来的详细）
+	
+3.酒痴东梦（主要讲史事、政界杂谈等，内容很详细，更新速度很快，基本</div>
+<div class="meta">
+<span>💬 互动量: 62</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 沉浸感</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 工作/学习间隙</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">有无长视频推荐？</div>
+<div class="desc">如题，本人疑似adhd，焦虑的时候一直想要接收大量信息，静不下心学习。所以想问问有没有什么视频：要有画面；比较轻松，不需要花精力理解；一段时间不认真看错过一些片段也没关系；篇幅比较长可以不用一直刷/选集。
+之前尝试过阿尔法波音乐和纯音乐跟学视频，但是太焦虑的时候没用，会觉得很无聊很焦虑静不下来。
+#求助[话题]# #adhd[话题]# #学习[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 57</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 焦虑/压力</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">这是一个原声长视频~#斯巴达勇士赛[话题]# #斯巴达勇士赛2026[话题]# #斯巴达勇士赛北京[话题]# #三色周末[话题]#</div>
+<div class="desc">这是一个原声长视频~#斯巴达勇士赛[话题]# #斯巴达勇士赛2026[话题]# #斯巴达勇士赛北京[话题]# #三色周末[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 23</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 观看频率</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 居家休闲</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">二刷小怪兽👾 | 长视频记录版📸</div>
+<div class="desc">跟着大佬们去打怪兽🏃🏻‍♂️
+机会难得用大疆记录下
+————————
+水平不够 爬坡跟不上🐶
+跑完回来赶紧冰敷
+继续养伤 慢慢恢复⛽
+————————
+周末运动量够够的
+周六跑步+游泳
+周日撸山⛰️
+运动让我快乐
+#跑步打卡[话题]# #撸山[话题]# #越野跑[话题]# #碎片是生活的记录[话题]# #vlog[话题]# #跑友圈[话题]# #跑友[话题]# #周末[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 26</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 碎片时间</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 居家休闲</span>
+<span class="tag tag-signal">痛点</span> <span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">求推荐有趣有内容的长视频博主，最好是可以只听不用看着屏幕的那种
+	
+各种类型的都可以，最好内容形式是讲故事的#</div>
+<div class="desc">求推荐有趣有内容的长视频博主，最好是可以只听不用看着屏幕的那种
+	
+各种类型的都可以，最好内容形式是讲故事的#</div>
+<div class="meta">
+<span>💬 互动量: 16</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="平台对比">
+<div class="title">求助帖！</div>
+<div class="desc">Bilibili上有没有什么值得观看的长视频？[萌萌哒R]#哔哩哔哩[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 26</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 平台对比</span>
+<span class="tag tag-l2">二层: B站体验</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">切花长视频</div>
+<div class="desc">不爱看要及时划走哦
+#花情实况播报[话题]# #花园[话题]# #爱园艺爱生活[话题]# #爱园艺爱生活[话题]# #切花自由[话题]# #种花[话题]# #每天都有值得记录的瞬间[话题]# #养花爱好者[话题]# #养花的乐趣[话题]# #鲜切花自由[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 5</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 观看频率</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">想听唠嗑长视频，求安利！</div>
+<div class="desc">⭐恐怖类除外（吻）
+⭐时长20min~90min左右都中
+⭐谢谢 owo
+#博主安利[话题]# #长视频[话题]# #视频博主[话题]# #唠嗑[话题]# #故事[话题]# #推荐[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 2</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">#戒社[话题]##求推荐[话题]##长视频[话题]# #工作[话题]##人际往来[话题]##社交[话题]#</div>
+<div class="desc">#戒社[话题]##求推荐[话题]##长视频[话题]# #工作[话题]##人际往来[话题]##社交[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 1</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">又是你们喜欢的长视频#蛋仔乐园[话题]# #推荐地图[话题]# #蛋仔派对[话题]# #老玩家的回忆[话题]# #蛋仔派对地图推荐[话题]#</div>
+<div class="desc">又是你们喜欢的长视频#蛋仔乐园[话题]# #推荐地图[话题]# #蛋仔派对[话题]# #老玩家的回忆[话题]# #蛋仔派对地图推荐[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 0</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="内容质量">
+<div class="title">做了这么多年培训，终于学会把长视频变爆款</div>
+<div class="desc">📝 正文内容
+上周帮一位行业老师处理了他的录播课视频
+他讲了整整两个小时的专业内容，干货满满
+但直接发到短视频平台上——播放量不到 500 😅
+后来我们重新拆解了一版，第一条就跑了 3w+
+🤔 问题在哪？​
+长视频 ≠ 短视频
+观众刷到视频的黄金时间只有前 3 秒
+60 分钟的完整课程，他们没耐心看完
+而且算法也推不动"太长太深"的内容
+✅ 我们是怎么做的？​
+先把完整视频导入工具
+AI 自动识别</div>
+<div class="meta">
+<span>💬 互动量: 3</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 内容质量</span>
+<span class="tag tag-l2">二层: 制作水平</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 社交场合</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">行为</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">谁能拒绝来上一集早期跑男呢？搞笑的哈哈哈
+#搞笑[话题]##奔跑吧[话题]# #奔跑吧兄弟[话题]#  #综艺[话题]#  #跑男[话题]#  #邓超[话题]#</div>
+<div class="desc">谁能拒绝来上一集早期跑男呢？搞笑的哈哈哈
+#搞笑[话题]##奔跑吧[话题]# #奔跑吧兄弟[话题]#  #综艺[话题]#  #跑男[话题]#  #邓超[话题]# #angelababy[话题]##陈赫[话题]# #李晨[话题]# #郑恺[话题]# #综艺[话题]# #名场面[话题]#  #跑男早期无敌[话题]#  #热门[话题]#  #李晨[话题]# #王祖蓝[话题]# #综艺推荐[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 15879</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="时长控制">
+<div class="title">请给我一些使用📺平台的理由</div>
+<div class="desc">首先是更喜欢图文阅读，可以准确捕捉喜欢的内容，很少看视频，有时候一条视频看完才清楚它想表达什么，时间都浪费了。
+	
+其次，可能也没养成使用b站的习惯吧，社媒平台中小红书我用的多，可以检索+购物，用抖音记录生活（刷的不多，自己设置了私密账号发作品），然后在ai没有出现之前，工具类检索会使用微信搜索，也可以获得很多公众号内容和文章。
+	
+所以基于以上，有什么B站可以弥补的内容嘛，或许它更擅长的功能我没</div>
+<div class="meta">
+<span>💬 互动量: 1567</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 时长控制</span>
+<span class="tag tag-l2">二层: 时长偏好</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">期望</span> <span class="tag tag-signal">行为</span> <span class="tag tag-signal">求助</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">一小时超长末世合集（原声版/无配音）</div>
+<div class="desc">：宝子们，一小时超长合集（原声/无配音版本）终于来啦，全文没有吓人的音效，十分适合睡前助眠，祝大家晚安好梦~#末日[话题]# #末世[话题]# #原创动画[话题]# #一口气看完[话题]# #末日生存[话题]# #助眠[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 3393</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 制作水平</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="功能需求">
+<div class="title">没有人能拒绝吃饭的时候看蜡笔小新!</div>
+<div class="desc">野原广志的独自露营#动画片[话题]# #蜡笔小新动漫[话题]# #蜡笔小新[话题]# #怀旧动画片[话题]# #经典动漫推荐[话题]# #小新的存在就是治愈[话题]# #童年动漫回忆杀[话题]# #蜡笔小新日常系列[话题]# #电子榨菜[话题]# #童年的回忆总是美好的[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 187</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 功能需求</span>
+<span class="tag tag-l2">二层: 智能推荐</span>
+<span class="tag tag-emotion">情绪: 满足/放松</span>
+<span class="tag tag-scene">场景: 用餐时间</span>
+<span class="tag tag-signal">行为</span> <span class="tag tag-signal">决策</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="平台对比">
+<div class="title">长视频和短视频的推送逻辑</div>
+<div class="desc">终于知道B站为什么
+越来越不行了
+听一个博主说的，我觉得非常有道理
+核心是B站作为一个长视频平台，它的推送逻辑是短视频的推送逻辑
+只推送新的视频，很多几年前的优质视频几乎推送不到观众的面前，导致优质视频的浏览量并不高，新视频又无法吸引观众，观众自然觉得越来越没意思了</div>
+<div class="meta">
+<span>💬 互动量: 9506</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 平台对比</span>
+<span class="tag tag-l2">二层: 剧情评价</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 未分类</span>
+<span class="tag tag-signal">无明确信号</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="场景使用">
+<div class="title">三小时超长末世合集</div>
+<div class="desc">宝子们，三小时超长合集来啦，全文没有吓人的音效，十分适合睡前助眠，祝大家有个好梦。#原创动画[话题]# #末日[话题]# #末世[话题]# #一口气看完系列[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 168392</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 场景使用</span>
+<span class="tag tag-l2">二层: 睡前场景</span>
+<span class="tag tag-emotion">情绪: 未分类</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">行为</span>
+</div>
+</div>
+
+<div class="ugc-card" data-topic="观看体验">
+<div class="title">晚上三篇视频
+是我第一次录的长视频 好累[暗中观察R][暗中观察R][暗中观察R]
+我不会你们说的剪切
+我都是一次录玩
+错了就重拍
+哎！！大家多点赞收藏吧
+#小</div>
+<div class="desc">晚上三篇视频
+是我第一次录的长视频 好累[暗中观察R][暗中观察R][暗中观察R]
+我不会你们说的剪切
+我都是一次录玩
+错了就重拍
+哎！！大家多点赞收藏吧
+#小红书评论区可以发视频了[话题]# #请耐心看完[话题]# #谢谢大家的支持[话题]# #重要的事情[话题]# #非常感谢大家[话题]# #录屏[话题]# #谢谢宝宝们的支持[话题]# #拖更使我快乐[话题]# #不知道更什么[话题]#</div>
+<div class="meta">
+<span>💬 互动量: 2415</span>
+<span>📌 来源: 长视频</span>
+</div>
+<div class="tags">
+<span class="tag tag-l1">一层: 观看体验</span>
+<span class="tag tag-l2">二层: 视觉疲劳</span>
+<span class="tag tag-emotion">情绪: 兴奋/愉悦</span>
+<span class="tag tag-scene">场景: 睡前/夜间</span>
+<span class="tag tag-signal">痛点</span>
+</div>
+</div>
+
+</div>
+
+<script>
+function filterAll() {
+    document.querySelectorAll('.ugc-card').forEach(c => c.style.display = 'block');
+    document.querySelectorAll('.filter-bar button').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-all').classList.add('active');
+}
+function filterTopic(topic) {
+    document.querySelectorAll('.ugc-card').forEach(c => {
+        c.style.display = c.dataset.topic === topic ? 'block' : 'none';
+    });
+    document.querySelectorAll('.filter-bar button').forEach(b => b.classList.remove('active'));
+    document.getElementById('btn-' + topic).classList.add('active');
+}
+</script>
+
+</div>
+</body>
+</html>

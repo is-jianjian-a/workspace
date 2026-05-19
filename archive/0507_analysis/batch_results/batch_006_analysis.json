@@ -1,0 +1,367 @@
+{
+  "batch_id": 6,
+  "total_items": 28,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 22,
+      "short_video": 2,
+      "long_video": 4
+    },
+    "type_distribution": {
+      "behavior_description": 15,
+      "feature_request": 6,
+      "pain_point": 6,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 23,
+      "download_cache": 1,
+      "content_recommend": 1,
+      "video_quality": 3
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 27
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_321",
+      "text": "感谢师兄的分享，学习到了image_emoticon13image_emoticon13image_emoticon13",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_322",
+      "text": "说的非常好，感谢分享，楼主加油，保持警惕，戒掉邪淫！",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_327",
+      "text": "感谢分享说的很对，但是现代人静心有点难",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_329",
+      "text": "各位吧友，京东今天刚出的手机的600卷，首页搜“每日福利666”就有了image_emoticon18",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_331",
+      "text": "建议win， 倒不是配置层面上的事， 荣耀旗舰机标准版的品控，一直不如他家性能机，甚至中端拍照机",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_355",
+      "text": "鬼扯，空心这样表现很正常，你觉得他对你不好是因为你也没用感情填满他，你天天抱着他说我爱你，不需要任何理由和前提，也给他各种惊喜，主动陪他，关心他真正需要的东西（足够的休息，独处空间，默契感）他就会给你你要的感觉。空心本身就是一面镜子，谁对他真的好（不是表面为了你实则为了我）他就会对谁好",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_358",
+      "text": "戒邪淫是建立在“德行”的基础上（戒邪淫第211天） 谈谈我的戒色安排 1、多孝顺父母：我每周会打一个电话问候，每月买一两个地区特产给家里，每年给钱供养父母。 2、多行善积德，多放生：每周买带籽鲫鱼 鲤鱼放生，捐款重病患 3、多宣传邪淫危害以及如何科学戒邪淫：我现在有三个账号，戒色吧+抖音+快手 4、戒酒饮食清淡：有助于消化吸收 5、每天学习戒为良药一章：好的内容会记录到备忘录，早晚去看 6、读了凡",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_361",
+      "text": "那，有时候会发现自己的行动力很拉跨，很拖延，不能每天认真去练习 去断念 去纠正坏习惯，是怎么回事呢？所谓的行动力提升的关键是: 1.提升动力（不做带来的痛苦，做了带来的好处） 2. 简单方便容易 （如果一件事太难了，太复杂了，我们也会没有行动力，那就把它分解到每一天，从小事，从最容易的地方入手，一天天的慢慢改变！） 当持续行动后 会形成习惯，有了习惯的力量加持 你就不会觉得很难，你戒色断念的习惯就",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_362",
+      "text": "科学的戒色养生不是蛮戒强戒，而是修心行善尽孝 【戒色指导文正】 戒色的第一步，不是克制，而是静 很多人一提到“戒色”，第一反应是“我要控制住自己”“不能手冲了”“不能再看黄片”。 听起来挺有决心，问题是，你连心都静不下来，谈什么控制？ 在这个到处是声音的时代，不管你想不想安静，信息都会强行涌进来。手机一响，注意力就走神。打开短视频，一刷就是一小时。你以为自己在放松，其实是在被牵着走。 不是你不知道",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_365",
+      "text": "感谢分享，楼主加油，保持警惕，戒掉邪淫！",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_367",
+      "text": "自打我去年公网ip被收回，第二天区域经理上门检查，并且签了一份不利用电信网络进行违法用途的文件后，经过1个月的审批后再次拿到公网ip。但是之后感觉上行明显被限速，之前站点免费时基本满速，一天能上传2t，现在速度大概就只有500k/s了。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_369",
+      "text": "想知道是不是限速，装个测速的反代到外网，在外网测试下载速度，跟内网测速是不一样的，就是限速了，现在限速太普遍了，宽带耍流氓太难了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_372",
+      "text": "up ，大概率 是 被 “标记” （维护小哥 原话）了， 建议，别先打10000，试这先联系 本区域或者小区的 电信装维人员，确认 原因， 然后 ，再定 处理方案",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_376",
+      "text": "显卡和固态可以保留，只需升级cpu+内存+显卡，由于预算就500，建议主板上A320,大概130左右，cpu可以考虑.AMD的3500X , 270左右，内存搞个8g的ddr4 8G, 大概150左右，总价550。 或者上X99平台，这个便宜，pdd上全新的x99 ddr3 C612芯片组主板大概160，搭配e5 1650v3 ，淘宝卖78，ddr3内存单条8g的淘宝卖60左右，两条16G120，",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_378",
+      "text": "升级前想想你用来干嘛？你预算够吗？提升后能改善多少？然后在做决定image_emoticon67",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_379",
+      "text": "中古时期的配置了，775 处理器dd2内存。酷睿i系列的前辈。现在酷睿i系列都更迭14代了，目前是U系列ddr5内存。 从intel cpu架构和指令集等综合性能来看，4代酷睿起步勉强能跟上现代pc使用的脚步。 所以肯定是三大件要全换的。 花少钱的话，只有考虑e3或者e5，内存上ddr3两条4g凑合。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_384",
+      "text": "这垃圾没有升级的必要，500块钱可以配台性能更好的image_emoticon16",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_385",
+      "text": "主打办公需要专业软件吗？不需要的话直接放弃Windows装Linux发行版就能流畅运行",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_386",
+      "text": "直到真正看完了母鸡卡一段时间，祥子的热度一直都是仅次于爱音的，但是在某些黑子的眼里就觉得黑红也是红，黑的部分占了绝大部分，只有结晶粉才会粉，正常人都不可能有粉。说这句话也非常的搞笑，结晶粉仅次于爱音怎么可能真的认为正常人不可能粉上祥子呢？明明是自己认知偏差，智力缺陷，活在自己的的梦里罢了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_388",
+      "text": "gbc确实好看…花田在写梦想这方面，很有朝气。我记得是泛式吧，他在评价第八集还是哪一集时就在想第13集时的情形了，这个队伍，在面对真正的挫折和功名时，她们到底会怎么做。可以说花田还是给了一个让人意外的答案。倒不如说，刺团这个恰好和旧钻尘的对比在文本结构上，早就该被预料到的…我自看仁菜对昴的未来犹犹豫豫，连意见都不敢提时，我就已经有了相似的疑问。个人评价上，gbc几乎完美，唯一美中不足的只有第13集",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_389",
+      "text": "巧了，我也是先看的gbc再看的mygo。由于先看了gbc，导致我对mygo那些什么“压力怪”啊，“灯卫兵”啊的弹幕下意识抵触，然后慢慢就养成了把弹幕当耳旁风、找二创尽量避开特别以单独一个任意角色为中心的。当时只是观感上“压力怪”这一说法一般都是从这种二创出来的，结果到了mujica发现原来那些东西都是些毒唯二创的萌芽，现在想来我是真的庆幸我先看了gbc，至少gbc的价值观是真的朴素。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_390",
+      "text": "不然你以为b站为啥会被人叫童厕，里面的小朋友太多了，以至于每当你想反驳的时候，都有种对牛弹琴的感觉，仿佛智商跟你不是同一个水准 ，但一想到对面年龄可能还没祥子大，就释怀了image_emoticon",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_392",
+      "text": "说起来我还是因为看完gbc才去看到mygo，之前虽然一直刷到客服小祥的梗图，但对少女乐队无感就没想过去看番",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_394",
+      "text": "有部分真的恨（圈内），一部分跟风黑（up吃黑流量），一部分脑补黑点（可能看切片可能看完忘了想象出来的）。真是奇观image_emoticon25",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_399",
+      "text": "会不会是也朋友帮我换内存换坏了啊？一开始是32G的内存，后来我朋友帮我换了64G的内存。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_400",
+      "text": "硬件没问题，那就是解码问题，你看看腾讯视频是核显工作还是独显工作",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_404",
+      "text": "你用Chrome在网页看试试卡不卡，我的i9CPU和4070用客户端和edge看4k卡顿感很严重，只有Chrome看4k很流畅其他浏览器都很卡，奇怪的是不选4k就正常，又或者是Chrome支持的东西比较多，我两台电脑都是这个情况",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_405",
+      "text": "老哥，这是腾讯视频软件的问题，我测试了就只有小破站4k流畅，其他平台看4k画质，严重掉帧感不流畅拖影，看的眼疼",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

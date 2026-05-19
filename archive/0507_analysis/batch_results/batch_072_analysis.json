@@ -1,0 +1,569 @@
+{
+  "batch_id": 72,
+  "total_items": 45,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 44,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "pain_point": 13,
+      "behavior_description": 30,
+      "feature_request": 2
+    },
+    "topic_distribution": {
+      "other": 9,
+      "playback_control": 34,
+      "screen_cast": 1,
+      "video_quality": 1
+    },
+    "ai_statistics": {
+      "total_ai": 0,
+      "explicit": 0,
+      "implicit": 0,
+      "not_ai": 45
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1514",
+      "text": "2k看视频糊这个问题，n卡有super resolution技术可以解决",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1515",
+      "text": "看完这篇回答之后，好像懂了又好像没懂，是不是因为倍速看完的原因[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1517",
+      "text": "开倍速是因为up主语速太慢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1518",
+      "text": "所以意思是适当的快进没问题，但是太快了会导致大脑来不及思考，反而干脆放弃思考，导致理解力下降？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1520",
+      "text": "我觉得只有倍速的时候我才能集中精神去听每一句话，反而记得住，如果速度太慢，容易开小差。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1521",
+      "text": "回答得太专业了，“经常倍速看视频竟然容易伤脑”这个研究结论究其原因是，加速观看视频会使大脑接受的刺激更强、转换频率更快、更没有时间思考。长此以往，人们在面对复杂的文化和艺术作品时，会失去细致的感知能力。不仅如此，加速观看视频还会习惯于快速获取信息，导致做需要耐心和深度分析的任务时，难以集中注意力。西班牙马德里自治大学神经科学家警告说，这种做法会对短期记忆功能产生负面影响，尤其是对于发育阶段的大脑。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1522",
+      "text": "倍速看没什么意思，我一般都是快进着看",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1524",
+      "text": "具体来说，年轻人在2倍速播放时的心流体验显著低于1倍速播放时，这有可能有利于年轻人保持记忆。这里应该是显著高于吧？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1526",
+      "text": "自从有了倍数，就没正常速看过电视局",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1527",
+      "text": "我来结合日常需求总结一下年轻人，1-2倍速，刷剧，学习，都可以，不影响短期记忆和理解，但是不利于长期记忆，且为了理解可能不能分心",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1528",
+      "text": "有一说一，三倍速看动作片儿，那真是啥也看不清。[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1529",
+      "text": "我觉得相关研究最大的问题是没有定义清楚一倍速是什么，不同的视频单位时间信息量本来就不同，这种情况下谈几倍速没有什么意义。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1530",
+      "text": "要什么加速啊，直接抖音几分钟看完一部电影不就好了，一点脑子都不用动。[惊喜][惊喜][惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1531",
+      "text": "还有一个变量没有控制，有些人说话太慢，视频正常速度对我来说是0.5倍速，所以2倍速对我来说才是正常速度，对理解不造成任何障碍同时还减少了因内心烦躁导致的注意力降低。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1532",
+      "text": "心流那部分，我觉得这样梳理一下会更好理解:一方面，二倍速减少分心机会，有助于集中认知资源促进理解；另一方面，二倍速心流体验降低，避免完全沉浸、无差别接收传递过来的全部新知识造成认知负荷，而是有选择地、批判性的、带有主观意识地接受吸收，这样有助于长期记忆",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1533",
+      "text": "倍速没有思考时间。没有回顾时间",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1534",
+      "text": "我现在几乎已经没有用过原速看视频了，大多数视频节奏都太慢了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1535",
+      "text": "从节省时间的角度，1.5~2倍速看视频是合适的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1536",
+      "text": "要看是看什么，刷脱口秀节目不开倍速，因为演员语速本身较快且梗密集，开倍速影响脑子跟不上，但是看一般的连续剧那语速跟蜗牛一样，不开倍速饭都吃不下去",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1538",
+      "text": "开倍速会看不懂的，有时候要回放的，但总体上还是比不倍速花的时间少",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1539",
+      "text": "大前提是视频有学习价值[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1540",
+      "text": "细说倍速看视频[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1542",
+      "text": "我看视频课就会开倍速，有时候1.5倍速，有时候2倍速。2倍速下，注意力更集中，因为语速足够快，有一点走神就听不懂说的啥，所以2倍速下注意力高度集中。1.5倍速也有这个效果，听不熟悉的课1.5比2效果好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1543",
+      "text": "我听我妈的语音都想开倍速，一句话的事翻来覆去车轱辘话来回说[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1544",
+      "text": "倍速还不是因为垃圾视频5分钟有效信息就2句话导致的么[捂脸]，我上网课都恨不得开0.5",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1545",
+      "text": "我其实都没太理解论文逻辑[捂脸]如果想说的是“倍速降低对这个视频的理解”，那不是废话吗，倍速肯定比慢速难理解啊；如果想说的是“经常看倍速视频会降低人日常生活中的理解能力”，但从头到尾没看到怎么得到“理解能力降低”这个结论的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1547",
+      "text": "主要是因为视频内容啰嗦又怕跳过漏了关键信息，只能倍速，精彩剧情或信息量很大的时候自然会原速甚至多次欣赏[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1549",
+      "text": "考过证书的，没几个听课的时候不开倍速吧？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1551",
+      "text": "可能是年轻人已经习惯了倍速，老年人日常不太使用这个功能。如果让被试的老年人适应一段时间倍速功能，可能也不会有这么大差异。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1552",
+      "text": "一般都是快进或直接拖进度条。。。倍速还是太慢。。。[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1554",
+      "text": "生活中你会遇见几个人快速，偶尔，但是是小视频是每天，没有逻辑思维，就会让大脑变得懒惰，不去用“心”理解，逐渐不想学习新东西，",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1559",
+      "text": "能三倍看视频的也是人才",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1560",
+      "text": "刷网课，两倍速YYDS",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1561",
+      "text": "这句话是不是写错了？是高于不是低于？？[好奇]“具体来说，年轻人在2倍速播放时的心流体验显著低于1倍速播放时，这有可能有利于年轻人保持记忆。[1]”",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1562",
+      "text": "视频给出文字稿，排版清晰点，配合视频看，效率才是最高的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1564",
+      "text": "刷网课，两倍速YYDS",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1565",
+      "text": "倍速节奏太快了，对心脏不好[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1569",
+      "text": "这不得和视频原来的速度有关。。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1570",
+      "text": "我看带字幕的学习视频，语速慢点的，直接五倍速",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1576",
+      "text": "之前法考的时候考前一个月复习就是靠倍速视频过的[蹲]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1577",
+      "text": "这个要通过长时间的训练，才能适应，并不会损伤大脑！太低估大脑的潜能了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1578",
+      "text": "我就说看政治要两倍速吧[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1579",
+      "text": "不开倍速老打瞌睡，开了一点五倍才能感觉一点点紧张，开两倍速感觉很舒适。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1580",
+      "text": "美剧和国产剧剧情密度能一样吗，越狱哪怕看了好几遍倍速你也跟不上[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1581",
+      "text": "原先只知道开倍速注意力会更集中，现在更了解运作机理了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

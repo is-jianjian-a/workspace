@@ -1,0 +1,595 @@
+{
+  "batch_id": 99,
+  "total_items": 47,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 25,
+      "general_video": 22
+    },
+    "type_distribution": {
+      "behavior_description": 34,
+      "pain_point": 7,
+      "feature_request": 5,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 35,
+      "ai_feature": 5,
+      "content_recommend": 5,
+      "playback_control": 1,
+      "subtitle_translate": 1
+    },
+    "ai_statistics": {
+      "total_ai": 8,
+      "explicit": 6,
+      "implicit": 2,
+      "not_ai": 39
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_3636",
+      "text": "以毒攻毒 每次看完短视频就写长一点的有逻辑的评论，增加看短视频的附加成本",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3642",
+      "text": "沉浸式读网文的逻辑和短视频有区别么？会被分类为深度思考者还是多巴胺宿主",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3644",
+      "text": "当你感到痛苦、想放弃、想拿手机的时候，告诉自己，这正是你的前额叶皮层在进行高强度的举铁训练。这种痛苦，就是大脑在“除锈”的证明。[赞][赞][赞][赞][赞][赞][赞][赞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3645",
+      "text": "虽然有点像AI，但paperpass给的AIGC疑似是0%）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3647",
+      "text": "之前眼睛看不清东西治疗了几个月，刚开始很难受，很强烈的戒断反应。游戏玩不了了，视频看不了了，就找一些替代品，比如看看书，出去玩。偶尔逛逛街冲动性消费一波，类似于用弱一些的成瘾物质替代了之前的强成瘾物质。人的眼睛一看不清东西，真的能节约巨量的能量，熬过刚开始一两个月，整个人精神状态好了很多。之前想不清楚的问题现在能想清楚了。我是个极其I的人，没什么朋友。之前工作的时候开会发言都很少，现在说话都敢于直",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3648",
+      "text": "生锈不知道，但是长期沉迷于刷短视频刷社交app的人肯定会不知不觉中丧失自己的注意力。没有比刷这些更容易短时间获得即时喜悦更容易的方式了。影响自己做事情的专注力，独立思考独立分析独立观察能力都会受到影响。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3649",
+      "text": "作者的文章写的特别好，我这边有几个问题想咨询咨询作者：1. 既然长期刷短视频会导致大脑废用性萎缩，那我工作中间想放空大脑，想放松10-20分钟，应该怎么做呢？2. 还有因为工作烦恼，想通过打游戏，或者切换一个场景来转移注意力，这样对大脑是好的吧，建议就是不要频繁切换注意力是吗？3. 我经常想听一些国际政治等催眠的入睡，是不是会干扰大脑休息呢，有什么好的建议呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3650",
+      "text": "知乎的日活量远低于抖音是不是因为具备阅读长文字，观看长视频的人在群体中本来就是少数？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3651",
+      "text": "灰度模式确实有用，就像蓝色的菜一样，直接就没了欲望",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3652",
+      "text": "感谢干货分享。我在多年与手机，电脑的博弈中总结出来的手机自然显示,电纸书模式和纸质书对人的影响很不同，影响身心，脑子，情绪",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3653",
+      "text": "灰阶模式开了很不方便[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3654",
+      "text": "说白了就是审美疲劳。1、一段时间喜欢一个内容，不停的推送刷的次数足够多后，就会对此内容审美疲劳，提不起兴趣了；2、新的兴趣点出现，重复1；3、重复2。以此类推，就会对所有内容提不起兴趣了。。。[发呆]PS：前提是有足够的寿命来支撑你刷完所有的兴趣点内容。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3655",
+      "text": "不仅仅是短视频，哪怕是户外运动多的人，脑子都是短期刺激为主，搞学习搞不进去。因为现实世界就是一个个短视频。很多孩子学习不好，就是小时候没有专注于某件事，而是被不爱学习的父母带着到处玩。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3656",
+      "text": "确实是这样，每次刷视频就停不下来，并且注意力涣散",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3658",
+      "text": "人们忘记了，短视频里和小红书好看的那个人，只是她拍出来的照片视频的作品好看。对于现实生活中，是什么样的人完全不知道。社交媒体的展示是精心设计过和有选择性的，关于这个人其他的地方完全不知道。短视频里学到什么，完全没有，只有强烈的情绪波动，看多了只会更加EMO。多巴胺的阈值变高了，确实会觉得现实生活里那些需要长期投入才能看见成效的、枯燥的、无聊的事不耐受了。我有个朋友小红书看久了，接收了那些所谓女性的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3659",
+      "text": "倍速就是因为时间不够用，实际上依旧能看一本书看的津津有味，但被迫做作业是真的难受",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3660",
+      "text": "先收藏再看，总有一天有空看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3662",
+      "text": "手机上信息太多了，很多人已经形成习惯，走路也要看手机，去拿个快递，坐电梯，等人，那么几分钟甚至只是十几秒，也会拿出手机，看看时间，看看有没有人发消息，看看朋友圈，看看短视频，大家都知道碎片化时间，但都用来看手机了。而且看手机很多人都不有不良习惯，就是长期低头，驼背，手机光线刺激，夜晚躺着看手机等。这些习惯也更加影响身体健康。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3663",
+      "text": "算法会让你大脑持续“同质化”，你刷到的视频文字决定了你接下来的内容，而接下来刷到的内容又给你重新定义算法逻辑，循环往复，形成一个闭环。而你就在这个圈里，自己请自己住进了一个信息茧房。[发呆]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3664",
+      "text": "注意力就是流量，大家都在绞尽脑汁的吸引你去奉献。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3666",
+      "text": "在神经科学中，我们关注一个叫默认模式网络的脑区。这个网络通常在你发呆、休息、无所事事时被激活。它负责自传体记忆的整合、未来的规划以及创造性思维的涌现。[打招呼]怪不得洗澡的时候大脑特别跳脱和活跃",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3667",
+      "text": "你写的太好了。我很少看知乎。最近刚刚开始进来。看到你的文章，觉得知乎上的文章确实是我们网络上的一股清流。你从底层逻辑解释了短视频的问题所在。而我的相反感觉是，短视频我反倒看不下去。他一上来的那种轰炸般的感觉让我本能的抗拒。无法融入。看来你是专业人士，我的问题是，与AI长时间的的深度对话，会对大脑产生什么样的影响呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3669",
+      "text": "[捂脸][捂脸]我每天玩弱智游戏是不是也跟刷短视频一个道理？休闲娱乐放松大脑太久，大脑突触就越来越多被修剪了。[飙泪笑][飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3671",
+      "text": "抖音推给我的全是我不喜欢的垃圾 它从来没有推荐给我一些我喜欢的知识类内容 无论编程 音乐 摄影 绘画 建筑 语言 甚至金融知识 当然 抖音上的金融知识垃圾的多 后来我就把它卸载了 刷它纯粹浪费时间",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3672",
+      "text": "等一下，为什么深度思考和看书是低刺激活动？感觉这些活动的爽感远超短视频。一些时候，刚刷几条短视频，正好想到有关内容了就会立马跑去看书写作了，所以就我个人而言，一直都是很难长时间持续刷视频，一旦视频内容有联想马上去深入获取，极其渴望思考带来的极致愉悦。不理解为什么这是低刺激活动？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3673",
+      "text": "短视频刷久了感觉自己都没什么耐性了，看电影什么比较长时间东西都想快进。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3676",
+      "text": "很有意思，可能不得不赞同。但，我确不会被短视频所左右。我可读长文，也可读短文，这是为什么？不他如此，一篇长文章，我可以迅速提取它的中心思想，为什么？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3678",
+      "text": "阿b用户可能部分像我一样对这种随机性有根本的不安，在短视频的随机刷的模式体现上就是无趣",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3679",
+      "text": "我去，看完这句话我要留下我的评论，大脑不会生锈但是会退化",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3680",
+      "text": "会。而且比你能想到的“生锈”更可怕——它不是让大脑静止，而是让你在“忙碌”中废掉。这个问题我也纠结过。明明刷的时候挺开心，刷完却觉得脑子里空空如也，像被人用勺子挖走了一块。后来翻了些神经科学的资料，发现这事有科学依据。1. 它在物理上改变你的大脑我们大脑有个特性叫“神经可塑性”——你用进废退，哪块用得勤，哪块就发达。刷短视频时，你在高频使用什么？是即时满足、快速切换、被动接收。对应的，大脑里负责深",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3681",
+      "text": "真的是很赞同，希望自己可以减少使用手机的频率，也在想购买一些纸质书籍像以前上学一样，专注到书籍里去，从而实现一场拯救大脑的运动[思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3682",
+      "text": "刷短视频会让我们注意力分散，会浑浑噩噩的过完一天[赞同][赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3684",
+      "text": "真的是，刷多了视频，整个人都晕沉沉，不知道想做什么，什么都提不起兴趣。现在在截断，有时候还是忍不住疯狂刷",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3686",
+      "text": "自从上了大学，时间会比高中充裕很多，我有大把大把时间去休闲娱乐，但我一般都选择呆在宿舍刷短视频，无聊也在那刷，刷完脑子是空虚的，跟感觉自己忘记吃饭一样，吃完又吃一边，肚子都撑不下了，但是脑子告诉我还要继续吃。打开手机，我已经不自觉的会点短视频，双手不自觉的往下滑，久而久之，很明显我能感觉到的是，我大脑退化了，语言组织能力也退化了，我思考不了太复杂的问题，注意力不集中，眼神空洞，心情急躁，表达能力严",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "subtitle_translate",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3689",
+      "text": "是真的我是一位高中生，每次放假都会拿起手机点开那个熟悉的软件，然后一刷就又不知不觉的过了1、2个小时。我刷视频的目的起初只是想放松一下大脑，但每次停下来后却发现我不仅没得到放松反而更累了。后来刷视频的目的就变成了消遣时间，就像你们所说的一样，在短视频里获得多巴胺是比看书来得更简单。这样做的后果就是，我的注意力明显下降了，每次开学回到学校都感觉自己智力下降了。然后浪费了自己的时间，刷完视频并没有让我",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3690",
+      "text": "作者是说，脑子不是生锈了，是因为我们一直只用最不费力气的神经，那些神经越来越粗壮，需要费力气的神经退化了。而且控制欲望满足的阈值之前太高也太容易达到，所以现在稍微复杂一点就很累。所以想要恢复之前那些处理复杂工作的神经，需要减少简单输入，增加复杂工作。最主要要动脑子，要输出",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3696",
+      "text": "会导致大脑的反应速度变慢，因为短视频太碎片了，太短了，每一个视频都是不同的刺激和领域，所以让大脑频繁的受到这种兴奋，最后大脑就变得麻木了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3698",
+      "text": "大脑具备强大的可朔性，如果你长时间刷短视频就会被洗脑，说明你大脑本身不行了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3702",
+      "text": "科普视频，内容还是有的，但是能不能记得住还真要打一个问号？之前自己看过很多地理和历史科普视频，以为自己记住了，现在想想记住的寥寥无几[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3703",
+      "text": "确实，感觉短视频刷久了，大脑都已经不思考了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3704",
+      "text": "想学用什么提示词生成[抱抱] ds生成的尽是政治正确的车轱辘废话。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3711",
+      "text": "我说我现在怎么会很暴躁，我发现我做一件事如果没有正反馈，就特别容易发火，即使我的理智知道发火没用，但是我的感性上还是很暴躁。我以前也不这样啊，难道是因为前额叶不行了，越来越情绪化了[大哭]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3712",
+      "text": "虽然疑似AI生成，但是还是挺有道理的，提取到一个有效信息，就是要强迫大脑高频率运动。[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3713",
+      "text": "总有人说像 AI 润色什么的，其实反过来想，AI能给你带来这样的想法或者文章，不比某音无聊的视频有趣吗？人脑也好 AI也罢，关键你是否能受益。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3714",
+      "text": "最简单最容易的解决依赖刷短视频的方法，关闭抖音的 个性化内容推荐 如图。 关闭后给你随机推送内容，看两眼后，也不会感兴趣，自然而言就不想刷短视频了  查看图片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3715",
+      "text": "并不会，新刺激随着时间会越来少，抖音连续刷了2年，之后就不想看",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3716",
+      "text": "这是一个非常精彩的“现场解剖”机会。既然你花了 10 分钟在知乎上读完这篇，那我们就用你刚才提到的“贝叶斯推理机”和“信息熵”视角，来拆解一下这篇文章中显而易见的 AI 生成痕迹与逻辑构造套路。这篇回答是典型的**“高迷惑性、中等信息熵、标准结构化”**的 AI 产物。以下是详细拆解：1. 结构上的“模版化”痕迹AI 生成长文时，为了保证逻辑不散架，通常会采用**“总-分-总”加“跨学科术语堆砌”",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    }
+  ]
+}

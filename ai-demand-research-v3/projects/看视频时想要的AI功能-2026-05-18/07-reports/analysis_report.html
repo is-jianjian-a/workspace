@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>看视频时想要的AI功能 - 需求调研报告</title>
+    <style>
+        :root {
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-card: #1a1a2e;
+            --border: #2a2a3e;
+            --text-primary: #e0e0e0;
+            --text-secondary: #8888a0;
+            --accent: #6366f1;
+            --accent-glow: rgba(99, 102, 241, 0.3);
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-card) 100%);
+            border-radius: 16px;
+            margin-bottom: 40px;
+            border: 1px solid var(--border);
+        }
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, var(--accent), #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .header .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1em;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .stat-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            text-align: center;
+        }
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .stat-card .label {
+            color: var(--text-secondary);
+            margin-top: 8px;
+        }
+        .section {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 24px;
+            color: var(--text-primary);
+            border-left: 4px solid var(--accent);
+            padding-left: 16px;
+        }
+        .signal-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+        .signal-card:hover {
+            border-color: var(--accent);
+            box-shadow: 0 0 20px var(--accent-glow);
+        }
+        .signal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+        .signal-name {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: var(--accent);
+        }
+        .signal-stats {
+            display: flex;
+            gap: 20px;
+        }
+        .stat {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--success);
+        }
+        .stat-label {
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+        .signal-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-top: 16px;
+        }
+        .detail-block {
+            background: var(--bg-primary);
+            border-radius: 8px;
+            padding: 16px;
+        }
+        .detail-block h4 {
+            color: var(--text-secondary);
+            font-size: 0.9em;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+        .tag {
+            display: inline-block;
+            background: rgba(99, 102, 241, 0.2);
+            color: var(--accent);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 4px 4px 0 0;
+        }
+        .sample-text {
+            background: var(--bg-primary);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+            border-left: 3px solid var(--warning);
+        }
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--bg-primary);
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 8px;
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), #a78bfa);
+            border-radius: 4px;
+            transition: width 0.5s ease;
+        }
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>看视频时想要的AI功能</h1>
+            <p class="subtitle">基于UGC数据的AI产品需求调研报告 | 2026-05-18</p>
+        </div>
+        
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="number">521</div>
+                <div class="label">分析样本数</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">5</div>
+                <div class="label">数据源平台</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">12</div>
+                <div class="label">AI功能信号</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">63%</div>
+                <div class="label">信号覆盖率</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#1 视频生成/编辑</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">177</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">33.97%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">36,739</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 100.0%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">zhihu</span><span class="tag">bilibili</span><span class="tag">kuaishou</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (29)</span><span class="tag">惊喜/兴奋 (14)</span><span class="tag">困惑/迷茫 (9)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (32)</span><span class="tag">家庭/陪伴 (3)</span><span class="tag">运动/健身 (2)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频 一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#2 社交/分享</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">97</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">18.62%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">51,978</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 54.80225988700565%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">kuaishou</span><span class="tag">bilibili</span><span class="tag">xhs</span><span class="tag">douyin</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (16)</span><span class="tag">困惑/迷茫 (7)</span><span class="tag">惊喜/兴奋 (5)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (12)</span><span class="tag">家庭/陪伴 (6)</span><span class="tag">睡前/休息 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 上期32万观看被催爆的AI视频教程来了｜别再抽卡了 
+为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精准分配模型的"交叉注意力权重" 
+用假面骑士变身×拿破仑加冕两个实战案例，手把手教你建立五维控制坐标系，让AI把100%算力砸在画面质量上。...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#3 学习/笔记</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">64</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">12.28%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">22,297</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 36.15819209039548%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">bilibili</span><span class="tag">zhihu</span><span class="tag">douyin</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (25)</span><span class="tag">惊喜/兴奋 (13)</span><span class="tag">困惑/迷茫 (6)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (46)</span><span class="tag">家庭/陪伴 (3)</span><span class="tag">吃饭/碎片 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/ 这个视频的课程研发 整体特别特别辛苦的···
+然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#4 互动/问答</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">49</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">9.4%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">62,385</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 27.683615819209038%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">zhihu</span><span class="tag">xhs</span><span class="tag">douyin</span><span class="tag">bilibili</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">困惑/迷茫 (8)</span><span class="tag">期待/渴望 (8)</span><span class="tag">惊喜/兴奋 (5)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (6)</span><span class="tag">家庭/陪伴 (1)</span><span class="tag">睡前/休息 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 上期32万观看被催爆的AI视频教程来了｜别再抽卡了 
+为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精准分配模型的"交叉注意力权重" 
+用假面骑士变身×拿破仑加冕两个实战案例，手把手教你建立五维控制坐标系，让AI把100%算力砸在画面质量上。...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#5 内容搜索/定位</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">43</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">8.25%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">19,876</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 24.293785310734464%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">douyin</span><span class="tag">zhihu</span><span class="tag">bilibili</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (15)</span><span class="tag">惊喜/兴奋 (8)</span><span class="tag">困惑/迷茫 (3)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (8)</span><span class="tag">吃饭/碎片 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索  快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#6 视频摘要/总结</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">37</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">7.1%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">5,722</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 20.903954802259886%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">bilibili</span><span class="tag">zhihu</span><span class="tag">douyin</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (13)</span><span class="tag">惊喜/兴奋 (9)</span><span class="tag">困惑/迷茫 (5)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (13)</span><span class="tag">家庭/陪伴 (2)</span><span class="tag">通勤/路上 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 才知道不同的AI竟然有不同的分工 一开始我啥都往 ChatGPT 上丢，写文案、写报告，结果经常不在线、听不懂人话，整得我比自己写还累。
+后来把那几个工具都试了一圈，才发现它们竟然各司其职。工具用对了，效率是真的能翻几倍，感觉像给自己配了牛马。😄
+	
+1️⃣ ChatGPT（通用型对话最强，适合结构...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#7 智能推荐/过滤</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">30</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">5.76%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">38,311</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 16.94915254237288%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">douyin</span><span class="tag">zhihu</span><span class="tag">bilibili</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (9)</span><span class="tag">惊喜/兴奋 (5)</span><span class="tag">疲惫/厌倦 (4)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (10)</span><span class="tag">家庭/陪伴 (2)</span><span class="tag">吃饭/碎片 (2)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程 最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#8 语音/字幕相关</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">20</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">3.84%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">11,962</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 11.299435028248588%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">bilibili</span><span class="tag">xhs</span><span class="tag">douyin</span><span class="tag">kuaishou</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (7)</span><span class="tag">惊喜/兴奋 (5)</span><span class="tag">困惑/迷茫 (2)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (7)</span><span class="tag">家庭/陪伴 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 家人们，今天给你们分享一个超棒的用 AI 做视频的方法。
+
+这个方法适用于多种类型的视频，像小说推文、知识科普、育儿教育之类的都没问题。
+
+咱就用 AI 视频宝写标题，挑个合适的写稿子，再用 AI 成片生成视频。而且啊，在 AI 成片里可以设置视频类型、配音和字幕呢。视频生成好后就可以发布啦。 #自...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#9 画质/修复</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">15</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">2.88%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">6,849</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 8.47457627118644%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">bilibili</span><span class="tag">douyin</span><span class="tag">zhihu</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (7)</span><span class="tag">惊喜/兴奋 (4)</span><span class="tag">frustration (3)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (6)</span><span class="tag">通勤/路上 (1)</span><span class="tag">吃饭/碎片 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 才知道不同的AI竟然有不同的分工 一开始我啥都往 ChatGPT 上丢，写文案、写报告，结果经常不在线、听不懂人话，整得我比自己写还累。
+后来把那几个工具都试了一圈，才发现它们竟然各司其职。工具用对了，效率是真的能翻几倍，感觉像给自己配了牛马。😄
+	
+1️⃣ ChatGPT（通用型对话最强，适合结构...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#10 情感/氛围</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">13</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">2.5%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">60,997</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 7.344632768361582%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span><span class="tag">bilibili</span><span class="tag">douyin</span><span class="tag">zhihu</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">期待/渴望 (5)</span><span class="tag">frustration (3)</span><span class="tag">焦虑/急迫 (2)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (3)</span><span class="tag">吃饭/碎片 (2)</span><span class="tag">通勤/路上 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/ 这个视频的课程研发 整体特别特别辛苦的···
+然后课程本身我们也是直接做的免费课~真的太太太不容易了 课程的特效和后期包装和课程大纲都是原创然后肝了很...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#11 效率/倍速</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">8</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">1.54%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">3,445</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 4.519774011299435%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">xhs</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        <span class="tag">惊喜/兴奋 (4)</span><span class="tag">frustration (2)</span><span class="tag">期待/渴望 (2)</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">工作/学习 (4)</span><span class="tag">通勤/路上 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 看多了AI模仿手搓，来看看手搓模仿AI的 AI渗透广告业的当下，还有人在“手搓”广告——不是用CGI，而是实打实用真人、实景、实体道具硬生生造出一个像素游戏世界。
+说的就是这支《Your Way Out》（你的破局之路）。创意机构Isle of Any和导演Oscar Hudson在奥斯卡期间投放的...</div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="signal-card">
+                <div class="signal-header">
+                    <div class="signal-name">#12 跨设备/同步</div>
+                    <div class="signal-stats">
+                        <div class="stat">
+                            <div class="stat-value">1</div>
+                            <div class="stat-label">提及</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">0.19%</div>
+                            <div class="stat-label">占比</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-value">152</div>
+                            <div class="stat-label">平均互动</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 0.5649717514124294%"></div>
+                </div>
+                <div class="signal-details">
+                    <div class="detail-block">
+                        <h4>主要平台</h4>
+                        <span class="tag">douyin</span>
+                    </div>
+                    <div class="detail-block">
+                        <h4>情绪关联</h4>
+                        
+                    </div>
+                    <div class="detail-block">
+                        <h4>场景关联</h4>
+                        <span class="tag">家庭/陪伴 (1)</span>
+                    </div>
+                </div>
+                <div class="sample-text">💬 一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑 一键自动生成影视解说视频的AI神器，免费分享，纯干货 #电影解说 #电视剧解说 #AI工具  #影视解说 #影视解说剪辑...</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>报告生成时间: 2026-05-18 | 数据来源: 小红书、B站、抖音、快手、知乎</p>
+            <p>方法论: AI产品需求调研 v3.0 | 基于UGC信号提取与情绪场景分析</p>
+        </div>
+    </div>
+</body>
+</html>

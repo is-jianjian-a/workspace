@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝妈/育儿场景用户需求分析过程</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif; background: #f5f5f7; color: #1d1d1f; line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Header */
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 40px; border-radius: 20px; margin-bottom: 40px; }
+        .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 16px; }
+        .header .subtitle { font-size: 18px; opacity: 0.9; margin-bottom: 24px; }
+        .header .meta { display: flex; gap: 24px; font-size: 14px; opacity: 0.8; flex-wrap: wrap; }
+        
+        /* Cards */
+        .card { background: white; border-radius: 16px; padding: 32px; margin-bottom: 24px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .card h2 { font-size: 24px; font-weight: 600; margin-bottom: 20px; color: #1d1d1f; display: flex; align-items: center; gap: 12px; }
+        .card h2 .icon { width: 32px; height: 32px; background: linear-gradient(135deg, #667eea, #764ba2); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: white; font-size: 16px; }
+        .card h3 { font-size: 18px; font-weight: 600; margin: 24px 0 16px; color: #333; }
+        
+        /* Process Steps */
+        .process-step { border-left: 4px solid #667eea; padding-left: 24px; margin: 24px 0; position: relative; }
+        .process-step::before { content: attr(data-step); position: absolute; left: -16px; top: 0; width: 28px; height: 28px; background: #667eea; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; }
+        .process-step .step-title { font-size: 18px; font-weight: 600; color: #667eea; margin-bottom: 12px; }
+        .process-step .step-desc { font-size: 14px; color: #666; margin-bottom: 16px; }
+        
+        /* Code Block */
+        .code-block { background: #1e1e1e; color: #d4d4d4; padding: 20px; border-radius: 12px; font-family: 'Consolas', 'Monaco', monospace; font-size: 13px; line-height: 1.6; overflow-x: auto; margin: 16px 0; }
+        .code-block .comment { color: #6a9955; }
+        .code-block .keyword { color: #569cd6; }
+        .code-block .string { color: #ce9178; }
+        .code-block .function { color: #dcdcaa; }
+        .code-block .number { color: #b5cea8; }
+        
+        /* Result Box */
+        .result-box { background: #f8f9fa; border: 1px solid #e9ecef; border-radius: 12px; padding: 20px; margin: 16px 0; }
+        .result-box .result-title { font-weight: 600; font-size: 15px; margin-bottom: 12px; color: #333; }
+        .result-box .result-content { font-size: 14px; color: #555; line-height: 1.6; }
+        
+        /* Tables */
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th { background: #f8f9fa; padding: 12px 16px; text-align: left; font-weight: 600; font-size: 14px; color: #666; border-bottom: 2px solid #e9ecef; }
+        td { padding: 12px 16px; border-bottom: 1px solid #f0f0f0; font-size: 14px; }
+        tr:hover { background: #fafafa; }
+        
+        /* Tags */
+        .tag { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500; margin: 4px; }
+        .tag-keyword { background: #e3f2fd; color: #1976d2; }
+        .tag-signal { background: #fce4ec; color: #c2185b; }
+        .tag-result { background: #e8f5e9; color: #388e3c; }
+        
+        /* Flow Diagram */
+        .flow-diagram { display: flex; align-items: center; justify-content: center; gap: 16px; margin: 24px 0; flex-wrap: wrap; }
+        .flow-box { background: white; border: 2px solid #667eea; border-radius: 12px; padding: 16px 24px; text-align: center; min-width: 120px; }
+        .flow-box .flow-title { font-weight: 600; font-size: 14px; color: #667eea; }
+        .flow-box .flow-desc { font-size: 12px; color: #666; margin-top: 4px; }
+        .flow-arrow { font-size: 24px; color: #667eea; }
+        
+        /* Insight Box */
+        .insight-box { background: linear-gradient(135deg, #667eea15, #764ba215); border-left: 4px solid #667eea; padding: 20px; border-radius: 12px; margin: 16px 0; }
+        .insight-box .insight-title { font-weight: 600; font-size: 16px; margin-bottom: 8px; color: #667eea; }
+        .insight-box .insight-text { font-size: 14px; color: #555; line-height: 1.6; }
+        
+        /* Footer */
+        .footer { text-align: center; padding: 40px; color: #999; font-size: 14px; }
+        
+        @media (max-width: 768px) {
+            .header h1 { font-size: 24px; }
+            .flow-diagram { flex-direction: column; }
+            .flow-arrow { transform: rotate(90deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>宝妈/育儿场景用户需求分析过程</h1>
+            <div class="subtitle">从原始数据到高价值需求洞察的完整方法论</div>
+            <div class="meta">
+                <span>📅 2025年5月9日</span>
+                <span>📊 样本：140条小红书笔记</span>
+                <span>🔍 搜索词：7个维度</span>
+                <span>👤 覆盖：孕妇/新手/老手宝妈</span>
+            </div>
+        </div>
+
+        <!-- Analysis Framework -->
+        <div class="card">
+            <h2><span class="icon">🎯</span>分析框架设计</h2>
+            
+            <div class="flow-diagram">
+                <div class="flow-box">
+                    <div class="flow-title">原始数据</div>
+                    <div class="flow-desc">140条笔记<br>21个字段</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="flow-title">数据清洗</div>
+                    <div class="flow-desc">类型转换<br>缺失值处理</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="flow-title">主题聚类</div>
+                    <div class="flow-desc">12个主题<br>关键词匹配</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="flow-title">信号提取</div>
+                    <div class="flow-desc">4类需求信号<br>痛点/决策/求助/行为</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="flow-title">质量评估</div>
+                    <div class="flow-desc">UGC vs 营销<br>可信度筛选</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="flow-title">价值识别</div>
+                    <div class="flow-desc">高互动内容<br>需求强度排序</div>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-box">
+                    <div class="flow-title">机会映射</div>
+                    <div class="flow-desc">8个产品机会<br>P0-P2优先级</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 1: Data Loading -->
+        <div class="card">
+            <h2><span class="icon">📥</span>Step 1: 数据加载与清洗</h2>
+            
+            <div class="process-step" data-step="1">
+                <div class="step-title">读取Excel文件</div>
+                <div class="step-desc">使用pandas读取原始数据，检查数据结构和基本统计信息</div>
+                
+                <div class="code-block">
+<span class="comment"># 读取原始数据</span>
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+
+file_path = <span class="string">'/Users/zhijian/workspace-strict/MediaCrawler/data/xhs/xhs_search_20260509_195316.xlsx'</span>
+df = pd.read_excel(file_path)
+
+<span class="comment"># 基本数据检查</span>
+<span class="function">print</span>(<span class="string">f"总行数: {len(df)}"</span>)
+<span class="function">print</span>(<span class="string">f"总列数: {len(df.columns)}"</span>)
+<span class="function">print</span>(<span class="string">f"列名: {list(df.columns)}"</span>)
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">输出结果</div>
+                    <div class="result-content">
+                        总行数: 140<br>
+                        总列数: 21<br>
+                        列名: ['note_id', 'type', 'title', 'desc', 'video_url', 'time', 'last_update_time', 'user_id', 'nickname', 'avatar', 'liked_count', 'collected_count', 'comment_count', 'share_count', 'ip_location', 'image_list', 'tag_list', 'last_modify_ts', 'note_url', 'source_keyword', 'xsec_token']
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="2">
+                <div class="step-title">数据类型转换</div>
+                <div class="step-desc">将互动数据转换为数值类型，计算总互动量</div>
+                
+                <div class="code-block">
+<span class="comment"># 数据类型转换 - 互动字段可能为字符串</span>
+df[<span class="string">'liked_count_num'</span>] = pd.to_numeric(df[<span class="string">'liked_count'</span>], errors=<span class="string">'coerce'</span>).fillna(<span class="number">0</span>)
+df[<span class="string">'collected_count_num'</span>] = pd.to_numeric(df[<span class="string">'collected_count'</span>], errors=<span class="string">'coerce'</span>).fillna(<span class="number">0</span>)
+df[<span class="string">'comment_count_num'</span>] = pd.to_numeric(df[<span class="string">'comment_count'</span>], errors=<span class="string">'coerce'</span>).fillna(<span class="number">0</span>)
+df[<span class="string">'share_count_num'</span>] = pd.to_numeric(df[<span class="string">'share_count'</span>], errors=<span class="string">'coerce'</span>).fillna(<span class="number">0</span>)
+
+<span class="comment"># 计算总互动量</span>
+df[<span class="string">'total_interaction'</span>] = (
+    df[<span class="string">'liked_count_num'</span>] + 
+    df[<span class="string">'collected_count_num'</span>] + 
+    df[<span class="string">'comment_count_num'</span>] + 
+    df[<span class="string">'share_count_num'</span>]
+)
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">关键发现</div>
+                    <div class="result-content">
+                        互动数据统计：<br>
+                        - 平均点赞: 1,245 | 平均收藏: 1,941 | 平均评论: 1,507 | 平均分享: 2,232<br>
+                        - 总互动均值: 6,925<br>
+                        - 中位数: 6,211（说明数据分布相对均匀，无极端异常值）
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="3">
+                <div class="step-title">搜索词分布检查</div>
+                <div class="step-desc">分析各搜索词的样本分布，评估覆盖均衡性</div>
+                
+                <div class="code-block">
+<span class="comment"># 搜索词分布</span>
+<span class="function">print</span>(df[<span class="string">'source_keyword'</span>].value_counts())
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">输出结果</div>
+                    <div class="result-content">
+                        孕妇妈妈: 20条 (14.3%)<br>
+                        新手宝妈: 20条 (14.3%)<br>
+                        老手宝妈: 20条 (14.3%)<br>
+                        家有萌娃: 20条 (14.3%)<br>
+                        家庭妇女: 20条 (14.3%)<br>
+                        备孕宝妈: 20条 (14.3%)<br>
+                        备孕待产: 20条 (14.3%)
+                    </div>
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">⚠️ 初步判断</div>
+                    <div class="insight-text">
+                        搜索词均为<strong>身份标签</strong>（孕妇妈妈、新手宝妈等），而非<strong>场景/痛点词</strong>。<br>
+                        这可能导致内容同质化，真实痛点覆盖不足。后续分析需验证此假设。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 2: Theme Analysis -->
+        <div class="card">
+            <h2><span class="icon">🎨</span>Step 2: 主题聚类分析</h2>
+            
+            <div class="process-step" data-step="4">
+                <div class="step-title">定义主题关键词词典</div>
+                <div class="step-desc">基于育儿领域知识，构建12个主题的关键词集合</div>
+                
+                <div class="code-block">
+<span class="comment"># 主题关键词词典构建</span>
+themes = {
+    <span class="string">'备孕怀孕'</span>: [<span class="string">'备孕'</span>, <span class="string">'怀孕'</span>, <span class="string">'孕期'</span>, <span class="string">'产检'</span>, <span class="string">'待产'</span>, <span class="string">'顺产'</span>, <span class="string">'剖腹产'</span>, 
+                <span class="string">'孕晚期'</span>, <span class="string">'孕早期'</span>, <span class="string">'孕中期'</span>, <span class="string">'分娩'</span>, <span class="string">'宫缩'</span>, <span class="string">'胎动'</span>],
+    <span class="string">'新生儿护理'</span>: [<span class="string">'新生儿'</span>, <span class="string">'小月龄'</span>, <span class="string">'月子'</span>, <span class="string">'坐月子'</span>, <span class="string">'喂奶'</span>, <span class="string">'母乳'</span>, 
+                    <span class="string">'奶粉'</span>, <span class="string">'奶瓶'</span>, <span class="string">'拍嗝'</span>, <span class="string">'黄疸'</span>, <span class="string">'脐带'</span>],
+    <span class="string">'喂养辅食'</span>: [<span class="string">'辅食'</span>, <span class="string">'喂养'</span>, <span class="string">'吃饭'</span>, <span class="string">'挑食'</span>, <span class="string">'厌食'</span>, <span class="string">'追奶'</span>, 
+                  <span class="string">'断奶'</span>, <span class="string">'转奶'</span>, <span class="string">'奶量'</span>, <span class="string">'食谱'</span>, <span class="string">'零食'</span>],
+    <span class="string">'睡眠作息'</span>: [<span class="string">'睡觉'</span>, <span class="string">'睡眠'</span>, <span class="string">'哄睡'</span>, <span class="string">'夜醒'</span>, <span class="string">'自主入睡'</span>, <span class="string">'落地醒'</span>, 
+                  <span class="string">'作息'</span>, <span class="string">'午睡'</span>, <span class="string">'夜奶'</span>, <span class="string">'睡整觉'</span>],
+    <span class="string">'健康疾病'</span>: [<span class="string">'发烧'</span>, <span class="string">'感冒'</span>, <span class="string">'咳嗽'</span>, <span class="string">'腹泻'</span>, <span class="string">'湿疹'</span>, <span class="string">'过敏'</span>, 
+                  <span class="string">'红屁屁'</span>, <span class="string">'疫苗'</span>, <span class="string">'生病'</span>, <span class="string">'医院'</span>, <span class="string">'用药'</span>],
+    <span class="string">'发育早教'</span>: [<span class="string">'早教'</span>, <span class="string">'启蒙'</span>, <span class="string">'绘本'</span>, <span class="string">'玩具'</span>, <span class="string">'说话'</span>, <span class="string">'走路'</span>, 
+                  <span class="string">'大运动'</span>, <span class="string">'精细动作'</span>, <span class="string">'认知'</span>, <span class="string">'感统'</span>],
+    <span class="string">'行为习惯'</span>: [<span class="string">'terrible'</span>, <span class="string">'发脾气'</span>, <span class="string">'打人'</span>, <span class="string">'咬人'</span>, <span class="string">'分享'</span>, <span class="string">'规矩'</span>, 
+                  <span class="string">'potty'</span>, <span class="string">'如厕'</span>, <span class="string">'分离焦虑'</span>, <span class="string">'安全感'</span>],
+    <span class="string">'妈妈自身'</span>: [<span class="string">'产后'</span>, <span class="string">'恢复'</span>, <span class="string">'减肥'</span>, <span class="string">'脱发'</span>, <span class="string">'抑郁'</span>, <span class="string">'焦虑'</span>, 
+                  <span class="string">'重返职场'</span>, <span class="string">'全职妈妈'</span>, <span class="string">'职场妈妈'</span>, <span class="string">'时间管理'</span>],
+    <span class="string">'家庭关系'</span>: [<span class="string">'婆媳'</span>, <span class="string">'老公'</span>, <span class="string">'队友'</span>, <span class="string">'老人带娃'</span>, <span class="string">'丧偶式'</span>, <span class="string">'育儿分歧'</span>, 
+                  <span class="string">'家庭分工'</span>, <span class="string">'夫妻关系'</span>],
+    <span class="string">'购物消费'</span>: [<span class="string">'好物'</span>, <span class="string">'推荐'</span>, <span class="string">'测评'</span>, <span class="string">'避雷'</span>, <span class="string">'智商税'</span>, <span class="string">'省钱'</span>, 
+                  <span class="string">'囤货'</span>, <span class="string">'必买'</span>, <span class="string">'清单'</span>, <span class="string">'性价比'</span>],
+    <span class="string">'情绪共鸣'</span>: [<span class="string">'崩溃'</span>, <span class="string">'治愈'</span>, <span class="string">'暖心'</span>, <span class="string">'泪目'</span>, <span class="string">'破防'</span>, <span class="string">'焦虑'</span>, 
+                  <span class="string">'孤独'</span>, <span class="string">'无助'</span>, <span class="string">'后悔'</span>, <span class="string">'辛苦'</span>],
+    <span class="string">'生活记录'</span>: [<span class="string">'日常'</span>, <span class="string">'vlog'</span>, <span class="string">'记录'</span>, <span class="string">'拍照'</span>, <span class="string">'穿搭'</span>, <span class="string">'出行'</span>, 
+                  <span class="string">'旅游'</span>, <span class="string">'亲子游'</span>, <span class="string">'遛娃'</span>]
+}
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">💡 设计思路</div>
+                    <div class="insight-text">
+                        主题划分基于<strong>用户生命周期</strong>（备孕→怀孕→新生儿→婴幼儿→学龄前）和<strong>需求类型</strong>（健康/教育/情绪/关系）。<br>
+                        关键词选择兼顾<strong>专业术语</strong>（如"感统"、"terrible two"）和<strong>口语表达</strong>（如"落地醒"、"丧偶式"），确保覆盖不同表达习惯。
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="5">
+                <div class="step-title">关键词匹配与统计</div>
+                <div class="step-desc">遍历所有内容，匹配主题关键词，统计各主题的覆盖率和互动表现</div>
+                
+                <div class="code-block">
+<span class="comment"># 主题匹配算法</span>
+<span class="keyword">for</span> theme, keywords <span class="keyword">in</span> themes.items():
+    matched = []
+    <span class="keyword">for</span> content <span class="keyword">in</span> all_content:
+        <span class="comment"># 只要匹配任意一个关键词即归入该主题</span>
+        <span class="keyword">for</span> kw <span class="keyword">in</span> keywords:
+            <span class="keyword">if</span> kw <span class="keyword">in</span> content[<span class="string">'text'</span>]:
+                matched.append(content)
+                <span class="keyword">break</span>  <span class="comment"># 避免重复计数</span>
+    
+    <span class="keyword">if</span> matched:
+        avg_interaction = <span class="function">sum</span>(c[<span class="string">'total_interaction'</span>] <span class="keyword">for</span> c <span class="keyword">in</span> matched) / <span class="function">len</span>(matched)
+        avg_comments = <span class="function">sum</span>(c[<span class="string">'comment_count'</span>] <span class="keyword">for</span> c <span class="keyword">in</span> matched) / <span class="function">len</span>(matched)
+        
+        <span class="function">print</span>(<span class="string">f"{theme}: {len(matched)}条 ({len(matched)/len(all_content)*100:.1f}%), "</span>
+              <span class="string">f"平均互动{avg_interaction:.0f}, 平均评论{avg_comments:.0f}"</span>)
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">主题分布结果（按覆盖率排序）</div>
+                    <div class="result-content">
+                        <table>
+                            <thead>
+                                <tr><th>主题</th><th>覆盖率</th><th>平均互动</th><th>平均评论</th><th>需求强度</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>备孕怀孕</td><td>41.4%</td><td>7,592</td><td>1,157</td><td>高</td></tr>
+                                <tr><td>情绪共鸣</td><td>35.0%</td><td>6,554</td><td>1,400</td><td>高</td></tr>
+                                <tr><td>生活记录</td><td>34.3%</td><td>6,845</td><td>1,578</td><td>中</td></tr>
+                                <tr><td>行为习惯</td><td>23.6%</td><td>6,748</td><td>1,238</td><td>中</td></tr>
+                                <tr><td>妈妈自身</td><td>22.1%</td><td>6,726</td><td>1,118</td><td>高</td></tr>
+                                <tr><td>家庭关系</td><td>16.4%</td><td>7,229</td><td>1,376</td><td>中</td></tr>
+                                <tr><td>新生儿护理</td><td>15.7%</td><td>7,870</td><td>1,091</td><td>高</td></tr>
+                                <tr><td>购物消费</td><td>15.0%</td><td>6,693</td><td>924</td><td>低</td></tr>
+                                <tr><td>睡眠作息</td><td>10.0%</td><td>9,227</td><td>1,611</td><td>极高</td></tr>
+                                <tr><td>喂养辅食</td><td>9.3%</td><td>7,151</td><td>1,072</td><td>高</td></tr>
+                                <tr><td>发育早教</td><td>8.6%</td><td>6,355</td><td>870</td><td>中</td></tr>
+                                <tr><td>健康疾病</td><td>5.7%</td><td>7,735</td><td>794</td><td>高</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">🔍 异常检测</div>
+                    <div class="insight-text">
+                        <strong>睡眠作息</strong>覆盖率仅10.0%，但平均互动高达9,227（全主题最高），说明此类内容稀缺但需求强烈。<br><br>
+                        <strong>健康疾病</strong>覆盖率仅5.7%，但平均互动7,735，同样呈现"低供给-高需求"特征。<br><br>
+                        <strong>根因判断</strong>：搜索词使用身份标签（孕妇妈妈、新手宝妈），而非痛点词（夜醒、发烧），导致真实痛点内容被淹没在生活记录中。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 3: Signal Extraction -->
+        <div class="card">
+            <h2><span class="icon">📡</span>Step 3: 需求信号提取</h2>
+            
+            <div class="process-step" data-step="6">
+                <div class="step-title">定义需求信号词典</div>
+                <div class="step-desc">从内容中提取4类真实需求信号：痛点、决策、求助、行为</div>
+                
+                <div class="code-block">
+<span class="comment"># 需求信号词典</span>
+pain_signals = [<span class="string">'崩溃'</span>, <span class="string">'焦虑'</span>, <span class="string">'后悔'</span>, <span class="string">'踩雷'</span>, <span class="string">'避雷'</span>, <span class="string">'智商税'</span>, 
+                <span class="string">'翻车'</span>, <span class="string">'失败'</span>, <span class="string">'痛苦'</span>, <span class="string">'煎熬'</span>, <span class="string">'折磨'</span>, 
+                <span class="string">'难'</span>, <span class="string">'累'</span>, <span class="string">'烦'</span>, <span class="string">'慌'</span>, <span class="string">'担心'</span>, <span class="string">'害怕'</span>, 
+                <span class="string">'无助'</span>, <span class="string">'孤独'</span>, <span class="string">'抑郁'</span>]
+
+decision_signals = [<span class="string">'选哪个'</span>, <span class="string">'还是'</span>, <span class="string">'对比'</span>, <span class="string">'有必要吗'</span>, <span class="string">'值不值'</span>, 
+                    <span class="string">'要不要'</span>, <span class="string">'买不买'</span>, <span class="string">'去不去'</span>, <span class="string">'怎么选'</span>, <span class="string">'纠结'</span>]
+
+seeking_signals = [<span class="string">'求推荐'</span>, <span class="string">'求分享'</span>, <span class="string">'求攻略'</span>, <span class="string">'求经验'</span>, <span class="string">'怎么'</span>, 
+                   <span class="string">'怎么办'</span>, <span class="string">'怎么做'</span>, <span class="string">'怎么解决'</span>, <span class="string">'如何'</span>, <span class="string">'怎样'</span>, 
+                   <span class="string">'求助'</span>, <span class="string">'求救'</span>]
+
+action_signals = [<span class="string">'记录'</span>, <span class="string">'打卡'</span>, <span class="string">'整理'</span>, <span class="string">'统计'</span>, <span class="string">'算'</span>, <span class="string">'查'</span>, 
+                  <span class="string">'搜'</span>, <span class="string">'问'</span>, <span class="string">'对比'</span>, <span class="string">'备忘'</span>, <span class="string">'提醒'</span>, 
+                  <span class="string">'设置'</span>, <span class="string">'下载'</span>, <span class="string">'收藏'</span>]
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">💡 信号设计逻辑</div>
+                    <div class="insight-text">
+                        <strong>痛点信号</strong>：负面情绪词 → 暴露真实困境<br>
+                        <strong>决策信号</strong>：对比/选择词 → 消费/行为决策前<br>
+                        <strong>求助信号</strong>：疑问/请求词 → 主动寻求帮助<br>
+                        <strong>行为信号</strong>：动作词 → 当前使用的工具/方法
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="7">
+                <div class="step-title">信号匹配与统计</div>
+                <div class="step-desc">遍历所有内容，匹配需求信号，统计各类信号的覆盖率和互动表现</div>
+                
+                <div class="code-block">
+<span class="comment"># 信号提取算法</span>
+<span class="keyword">for</span> signal_name, signals <span class="keyword">in</span> [(<span class="string">'痛点'</span>, pain_signals), 
+                                    (<span class="string">'决策'</span>, decision_signals),
+                                    (<span class="string">'求助'</span>, seeking_signals), 
+                                    (<span class="string">'行为'</span>, action_signals)]:
+    matched = []
+    <span class="keyword">for</span> content <span class="keyword">in</span> all_content:
+        has_signal = <span class="function">any</span>(s <span class="keyword">in</span> content[<span class="string">'text'</span>] <span class="keyword">for</span> s <span class="keyword">in</span> signals)
+        <span class="keyword">if</span> has_signal:
+            matched.append(content)
+    
+    <span class="comment"># 统计词频</span>
+    word_freq = {}
+    <span class="keyword">for</span> content <span class="keyword">in</span> matched:
+        <span class="keyword">for</span> s <span class="keyword">in</span> signals:
+            <span class="keyword">if</span> s <span class="keyword">in</span> content[<span class="string">'text'</span>]:
+                word_freq[s] = word_freq.get(s, <span class="number">0</span>) + <span class="number">1</span>
+    
+    <span class="function">print</span>(<span class="string">f"{signal_name}: {len(matched)}条 ({len(matched)/len(all_content)*100:.1f}%)"</span>)
+    <span class="function">print</span>(<span class="string">f"  高频词: {sorted(word_freq.items(), key=lambda x: x[1], reverse=True)[:5]}"</span>)
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">需求信号统计结果</div>
+                    <div class="result-content">
+                        <table>
+                            <thead>
+                                <tr><th>信号类型</th><th>覆盖率</th><th>平均互动</th><th>平均评论</th><th>需求强度</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>痛点</td><td>33.6%</td><td>7,321</td><td>1,618</td><td>高</td></tr>
+                                <tr><td>决策</td><td>22.9%</td><td>7,982</td><td>1,888</td><td>高</td></tr>
+                                <tr><td>求助</td><td>22.9%</td><td>6,253</td><td>1,075</td><td>中</td></tr>
+                                <tr><td>行为</td><td>37.1%</td><td>7,401</td><td>1,588</td><td>高</td></tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <strong>痛点词频TOP5：</strong><br>
+                        "难"(18次) → 哄睡难、带娃难、决策难<br>
+                        "焦虑"(11次) → 发育焦虑、健康焦虑、选择焦虑<br>
+                        "累"(10次) → 身体累、心累、睡眠不足<br>
+                        "担心"(8次) → 担心健康、担心发育、担心安全<br>
+                        "慌"(7次) → 突发状况（发烧、摔伤）时的慌乱
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="8">
+                <div class="step-title">信号交叉分析</div>
+                <div class="step-desc">分析同时包含多类信号的内容，识别复合需求场景</div>
+                
+                <div class="code-block">
+<span class="comment"># 复合信号分析</span>
+<span class="keyword">for</span> content <span class="keyword">in</span> all_content:
+    has_pain = <span class="function">any</span>(s <span class="keyword">in</span> content[<span class="string">'text'</span>] <span class="keyword">for</span> s <span class="keyword">in</span> pain_signals)
+    has_decision = <span class="function">any</span>(s <span class="keyword">in</span> content[<span class="string">'text'</span>] <span class="keyword">for</span> s <span class="keyword">in</span> decision_signals)
+    has_seeking = <span class="function">any</span>(s <span class="keyword">in</span> content[<span class="string">'text'</span>] <span class="keyword">for</span> s <span class="keyword">in</span> seeking_signals)
+    
+    <span class="comment"># 识别高价值复合信号</span>
+    <span class="keyword">if</span> has_pain <span class="keyword">and</span> has_decision:
+        <span class="function">print</span>(<span class="string">f"[痛点+决策] {content['title']}"</span>)
+    <span class="keyword">elif</span> has_pain <span class="keyword">and</span> has_seeking:
+        <span class="function">print</span>(<span class="string">f"[痛点+求助] {content['title']}"</span>)
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">复合信号案例</div>
+                    <div class="result-content">
+                        <strong>[痛点+决策]</strong> "没有人值得我为他生孩子🥀" — 痛苦体验 + 生育决策反思<br>
+                        <strong>[痛点+求助]</strong> "室友在寝室smoke而我在备孕" — 焦虑 + 环境求助<br>
+                        <strong>[决策+求助]</strong> "丑话说在前面，达不成共识不怀孕" — 决策前置 + 经验求助<br>
+                        <br>
+                        <strong>洞察：</strong>复合信号内容往往互动更高，因为同时触达情绪共鸣和实用价值。
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 4: Quality Assessment -->
+        <div class="card">
+            <h2><span class="icon">🔍</span>Step 4: 内容质量评估</h2>
+            
+            <div class="process-step" data-step="9">
+                <div class="step-title">定义内容类型判断规则</div>
+                <div class="step-desc">基于营销信号和UGC信号，将内容分为4类：纯营销、混合、纯UGC、中性</div>
+                
+                <div class="code-block">
+<span class="comment"># 内容类型判断规则</span>
+marketing_signals = [<span class="string">'好物'</span>, <span class="string">'推荐'</span>, <span class="string">'测评'</span>, <span class="string">'必买'</span>, <span class="string">'清单'</span>, <span class="string">'品牌'</span>, 
+                     <span class="string">'链接'</span>, <span class="string">'优惠'</span>, <span class="string">'团购'</span>, <span class="string">'种草'</span>, <span class="string">'带货'</span>, <span class="string">'广告'</span>, <span class="string">'赞助'</span>]
+
+ugc_signals = [<span class="string">'求助'</span>, <span class="string">'怎么办'</span>, <span class="string">'正常吗'</span>, <span class="string">'崩溃'</span>, <span class="string">'焦虑'</span>, <span class="string">'后悔'</span>, 
+               <span class="string">'吐槽'</span>, <span class="string">'日记'</span>, <span class="string">'记录'</span>, <span class="string">'日常'</span>, <span class="string">'vlog'</span>, <span class="string">'我的'</span>, <span class="string">'我家'</span>, <span class="string">'我娃'</span>]
+
+<span class="keyword">def</span> <span class="function">classify_content</span>(text):
+    has_marketing = <span class="function">any</span>(s <span class="keyword">in</span> text <span class="keyword">for</span> s <span class="keyword">in</span> marketing_signals)
+    has_ugc = <span class="function">any</span>(s <span class="keyword">in</span> text <span class="keyword">for</span> s <span class="keyword">in</span> ugc_signals)
+    
+    <span class="keyword">if</span> has_marketing <span class="keyword">and</span> <span class="keyword">not</span> has_ugc:
+        <span class="keyword">return</span> <span class="string">'纯营销'</span>
+    <span class="keyword">elif</span> has_ugc <span class="keyword">and</span> <span class="keyword">not</span> has_marketing:
+        <span class="keyword">return</span> <span class="string">'纯UGC'</span>
+    <span class="keyword">elif</span> has_marketing <span class="keyword">and</span> has_ugc:
+        <span class="keyword">return</span> <span class="string">'混合'</span>
+    <span class="keyword">else</span>:
+        <span class="keyword">return</span> <span class="string">'中性'</span>
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">💡 判断逻辑</div>
+                    <div class="insight-text">
+                        <strong>纯营销</strong>：只有商业推广信号，无个人叙事 → 可信度低<br>
+                        <strong>纯UGC</strong>：只有个人叙事信号，无商业推广 → 可信度极高<br>
+                        <strong>混合</strong>：两者兼有 → 可能是真实体验后的推荐，需进一步判断<br>
+                        <strong>中性</strong>：两者皆无 → 可能是知识分享或纯记录
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="10">
+                <div class="step-title">内容分类与统计</div>
+                <div class="step-desc">对所有内容进行分类，统计各类型的分布和互动表现</div>
+                
+                <div class="code-block">
+<span class="comment"># 内容分类统计</span>
+type_counts = {}
+type_interactions = {}
+
+<span class="keyword">for</span> content <span class="keyword">in</span> all_content:
+    content_type = classify_content(content[<span class="string">'text'</span>])
+    type_counts[content_type] = type_counts.get(content_type, <span class="number">0</span>) + <span class="number">1</span>
+    
+    <span class="keyword">if</span> content_type <span class="keyword">not</span> <span class="keyword">in</span> type_interactions:
+        type_interactions[content_type] = []
+    type_interactions[content_type].append(content[<span class="string">'total_interaction'</span>])
+
+<span class="comment"># 输出统计结果</span>
+<span class="keyword">for</span> content_type, count <span class="keyword">in</span> <span class="function">sorted</span>(type_counts.items(), key=<span class="keyword">lambda</span> x: x[<span class="number">1</span>], reverse=<span class="keyword">True</span>):
+    avg_interaction = <span class="function">sum</span>(type_interactions[content_type]) / <span class="function">len</span>(type_interactions[content_type])
+    <span class="function">print</span>(<span class="string">f"{content_type}: {count}条 ({count/len(all_content)*100:.1f}%), 平均互动{avg_interaction:.0f}"</span>)
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">内容类型分布</div>
+                    <div class="result-content">
+                        <table>
+                            <thead>
+                                <tr><th>内容类型</th><th>占比</th><th>平均互动</th><th>平均评论</th><th>可信度</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>纯UGC</td><td>46.4%</td><td>7,698</td><td>1,824</td><td>极高</td></tr>
+                                <tr><td>中性</td><td>40.0%</td><td>6,350</td><td>1,370</td><td>中</td></tr>
+                                <tr><td>混合</td><td>10.7%</td><td>7,359</td><td>858</td><td>中</td></tr>
+                                <tr><td>纯营销</td><td>2.9%</td><td>774</td><td>702</td><td>低</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">🔍 关键发现</div>
+                    <div class="insight-text">
+                        <strong>纯UGC内容（46.4%）</strong>的平均评论数（1,824）显著高于其他类型，说明真实用户生成的内容更能引发共鸣和互动。<br><br>
+                        <strong>纯营销内容（2.9%）</strong>平均互动仅774，且评论数702（可能是刷量），可信度最低。<br><br>
+                        <strong>策略</strong>：后续分析重点聚焦纯UGC内容，过滤纯营销内容。
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="11">
+                <div class="step-title">单条内容分析示例</div>
+                <div class="step-desc">展示具体内容的判断过程，验证规则有效性</div>
+                
+                <div class="result-box">
+                    <div class="result-title">案例分析："我很庆幸此刻没有吼她"</div>
+                    <div class="result-content">
+                        <strong>文本片段：</strong>"在厨房给她泡奶，她也跟着在厨房翻柜子...我的怒气一下就上来了...但还是忍住了..."<br><br>
+                        <strong>信号检测：</strong><br>
+                        - 营销信号：无（无好物/推荐/品牌等）<br>
+                        - UGC信号："我"、"我的"、个人叙事<br>
+                        <strong>判断结果：纯UGC</strong><br><br>
+                        <strong>互动数据：</strong>评论4,460 | 收藏7,797 | 分享6,837 | 总互动19,094<br>
+                        <strong>价值分析：</strong>高评论+高分享 → 引发强烈共鸣，是情绪管理需求的典型代表
+                    </div>
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">案例分析："做了全网的功课！待产包一定要带上这些！"</div>
+                    <div class="result-content">
+                        <strong>文本片段：</strong>"做了全网的功课！待产包一定要带上这些！#待产包# #好物分享#"<br><br>
+                        <strong>信号检测：</strong><br>
+                        - 营销信号："好物"、"一定要"<br>
+                        - UGC信号："做了功课"、个人经验<br>
+                        <strong>判断结果：混合</strong><br><br>
+                        <strong>互动数据：</strong>评论580 | 收藏7,540 | 分享1,996 | 总互动18,763<br>
+                        <strong>价值分析：</strong>高收藏 → 实用价值高，但评论低说明争议性小
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 5: Value Identification -->
+        <div class="card">
+            <h2><span class="icon">💎</span>Step 5: 高价值内容识别</h2>
+            
+            <div class="process-step" data-step="12">
+                <div class="step-title">定义高价值内容标准</div>
+                <div class="step-desc">基于互动数据和内容质量，识别高价值需求内容</div>
+                
+                <div class="code-block">
+<span class="comment"># 高价值内容筛选标准</span>
+<span class="keyword">def</span> <span class="function">identify_high_value</span>(content):
+    value_factors = []
+    
+    <span class="comment"># 互动阈值</span>
+    <span class="keyword">if</span> content[<span class="string">'total_interaction'</span>] > <span class="number">5000</span>:
+        value_factors.append(<span class="string">'高互动'</span>)
+    
+    <span class="comment"># 评论阈值（共鸣指标）</span>
+    <span class="keyword">if</span> content[<span class="string">'comment_count'</span>] > <span class="number">1000</span>:
+        value_factors.append(<span class="string">'高评论'</span>)
+    
+    <span class="comment"># 分享阈值（传播指标）</span>
+    <span class="keyword">if</span> content[<span class="string">'share_count'</span>] > <span class="number">1000</span>:
+        value_factors.append(<span class="string">'高分享'</span>)
+    
+    <span class="comment"># 收藏阈值（实用指标）</span>
+    <span class="keyword">if</span> content[<span class="string">'collected_count'</span>] > <span class="number">1000</span>:
+        value_factors.append(<span class="string">'高收藏'</span>)
+    
+    <span class="comment"># 需求信号</span>
+    <span class="keyword">if</span> <span class="function">any</span>(s <span class="keyword">in</span> content[<span class="string">'text'</span>] <span class="keyword">for</span> s <span class="keyword">in</span> pain_signals):
+        value_factors.append(<span class="string">'含痛点'</span>)
+    
+    <span class="keyword">if</span> <span class="function">any</span>(s <span class="keyword">in</span> content[<span class="string">'text'</span>] <span class="keyword">for</span> s <span class="keyword">in</span> seeking_signals):
+        value_factors.append(<span class="string">'含求助'</span>)
+    
+    <span class="keyword">return</span> value_factors
+
+<span class="comment"># 筛选高价值内容</span>
+high_value = [c <span class="keyword">for</span> c <span class="keyword">in</span> all_content 
+              <span class="keyword">if</span> classify_content(c[<span class="string">'text'</span>]) <span class="keyword">in</span> [<span class="string">'纯UGC'</span>, <span class="string">'混合'</span>] 
+              <span class="keyword">and</span> c[<span class="string">'total_interaction'</span>] > <span class="number">5000</span>]
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">💡 价值判断逻辑</div>
+                    <div class="insight-text">
+                        <strong>高互动</strong> = 内容触达广泛<br>
+                        <strong>高评论</strong> = 引发情感共鸣/争议<br>
+                        <strong>高分享</strong> = 社交货币价值<br>
+                        <strong>高收藏</strong> = 实用参考价值<br>
+                        <strong>含痛点/求助</strong> = 真实需求暴露<br><br>
+                        同时满足"UGC/混合"+"高互动"+"需求信号"的内容，是<strong>产品机会的金矿</strong>。
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="13">
+                <div class="step-title">高价值内容分析</div>
+                <div class="step-desc">对筛选出的高价值内容进行深度分析，提取需求特征</div>
+                
+                <div class="result-box">
+                    <div class="result-title">TOP5 高价值内容</div>
+                    <div class="result-content">
+                        <table>
+                            <thead>
+                                <tr><th>排名</th><th>标题</th><th>来源</th><th>总互动</th><th>价值因素</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>记录2025.6.23湖南省妇幼保健水中分娩体验</td>
+                                    <td>备孕待产</td>
+                                    <td>20,542</td>
+                                    <td>高互动、高收藏、经验分享</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>女生要同步月经安排生活｜娇生惯养计划</td>
+                                    <td>备孕宝妈</td>
+                                    <td>19,419</td>
+                                    <td>高收藏、高分享、实用价值</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>我很庆幸此刻没有吼她</td>
+                                    <td>老手宝妈</td>
+                                    <td>19,094</td>
+                                    <td>高评论、高分享、情绪共鸣</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>做了全网的功课！待产包一定要带上这些！</td>
+                                    <td>备孕待产</td>
+                                    <td>18,763</td>
+                                    <td>高收藏、实用清单</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>🎂</td>
+                                    <td>家有萌娃</td>
+                                    <td>17,653</td>
+                                    <td>高评论、高分享、情感价值</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="result-box">
+                    <div class="result-title">价值因素分析</div>
+                    <div class="result-content">
+                        <strong>高评论内容特征：</strong><br>
+                        - 争议性话题：生育意义、婚姻价值、育儿方式<br>
+                        - 真实经历：顺产日记、产后恢复、情绪崩溃<br>
+                        - 求助问答：怎么办、正常吗、求建议<br><br>
+                        
+                        <strong>高收藏内容特征：</strong><br>
+                        - 实用清单：待产包、疫苗时间表、辅食食谱<br>
+                        - 知识科普：发育里程碑、疾病判断、护理技巧<br>
+                        - 经验总结：避坑指南、省钱攻略、效率方法<br><br>
+                        
+                        <strong>高分享内容特征：</strong><br>
+                        - 情感共鸣：治愈、暖心、泪目、破防<br>
+                        - 社交货币：展示育儿成果、晒娃、里程碑<br>
+                        - 争议话题：引发讨论和站队
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Step 6: Opportunity Mapping -->
+        <div class="card">
+            <h2><span class="icon">🚀</span>Step 6: 产品机会映射</h2>
+            
+            <div class="process-step" data-step="14">
+                <div class="step-title">机会点提取逻辑</div>
+                <div class="step-desc">将高价值内容中的需求映射到手机功能机会</div>
+                
+                <div class="code-block">
+<span class="comment"># 机会点映射规则</span>
+opportunity_mapping = {
+    <span class="string">'睡眠作息'</span>: {
+        <span class="string">'痛点'</span>: [<span class="string">'夜醒频繁'</span>, <span class="string">'哄睡难'</span>, <span class="string">'落地醒'</span>, <span class="string">'睡眠倒退'</span>],
+        <span class="string">'当前行为'</span>: [<span class="string">'手动记录'</span>, <span class="string">'查攻略'</span>, <span class="string">'问群友'</span>],
+        <span class="string">'手机机会'</span>: [<span class="string">'哭声识别'</span>, <span class="string">'睡眠分析'</span>, <span class="string">'智能安抚'</span>, <span class="string">'环境监控'</span>]
+    },
+    <span class="string">'健康疾病'</span>: {
+        <span class="string">'痛点'</span>: [<span class="string">'发烧慌乱'</span>, <span class="string">'症状判断难'</span>, <span class="string">'就医决策纠结'</span>],
+        <span class="string">'当前行为'</span>: [<span class="string">'百度搜索'</span>, <span class="string">'信息过载'</span>, <span class="string">'更焦虑'</span>],
+        <span class="string">'手机机会'</span>: [<span class="string">'拍照识别'</span>, <span class="string">'体温趋势'</span>, <span class="string">'就医建议'</span>, <span class="string">'症状时间线'</span>]
+    },
+    <span class="string">'喂养辅食'</span>: {
+        <span class="string">'痛点'</span>: [<span class="string">'辅食不吃'</span>, <span class="string">'奶量纠结'</span>, <span class="string">'过敏判断'</span>, <span class="string">'转奶困难'</span>],
+        <span class="string">'当前行为'</span>: [<span class="string">'查食谱'</span>, <span class="string">'问经验'</span>, <span class="string">'试各种方法'</span>],
+        <span class="string">'手机机会'</span>: [<span class="string">'智能规划'</span>, <span class="string">'过敏预警'</span>, <span class="string">'记录分析'</span>, <span class="string">'个性化食谱'</span>]
+    },
+    <span class="string">'妈妈自身'</span>: {
+        <span class="string">'痛点'</span>: [<span class="string">'产后抑郁'</span>, <span class="string">'情绪崩溃'</span>, <span class="string">'无人理解'</span>, <span class="string">'自我怀疑'</span>],
+        <span class="string">'当前行为'</span>: [<span class="string">'独自承受'</span>, <span class="string">'偶尔日记'</span>, <span class="string">'硬撑'</span>],
+        <span class="string">'手机机会'</span>: [<span class="string">'语音日记'</span>, <span class="string">'情绪分析'</span>, <span class="string">'轻度干预'</span>, <span class="string">'重度预警'</span>]
+    }
+}
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">💡 映射逻辑</div>
+                    <div class="insight-text">
+                        <strong>Step 1:</strong> 从主题分析识别高互动但低覆盖的主题（睡眠、健康）<br>
+                        <strong>Step 2:</strong> 从需求信号提取具体痛点词（难、焦虑、慌）<br>
+                        <strong>Step 3:</strong> 从行为信号了解当前解决方案（搜、查、问）<br>
+                        <strong>Step 4:</strong> 从UGC内容了解期望体验（自动、智能、一键）<br>
+                        <strong>Step 5:</strong> 综合映射到手机系统级功能机会
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="15">
+                <div class="step-title">优先级排序</div>
+                <div class="step-desc">基于需求强度、覆盖率和实现复杂度，对机会点进行优先级排序</div>
+                
+                <div class="result-box">
+                    <div class="result-title">优先级评估矩阵</div>
+                    <div class="result-content">
+                        <table>
+                            <thead>
+                                <tr><th>机会点</th><th>需求强度</th><th>覆盖率</th><th>互动表现</th><th>实现难度</th><th>优先级</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>智能睡眠助手</td><td>极高</td><td>10%</td><td>9,227</td><td>中</td><td>P0</td></tr>
+                                <tr><td>症状快速判断</td><td>极高</td><td>5.7%</td><td>7,735</td><td>高</td><td>P0</td></tr>
+                                <tr><td>喂养决策助手</td><td>高</td><td>9.3%</td><td>7,151</td><td>中</td><td>P1</td></tr>
+                                <tr><td>成长自动记录</td><td>高</td><td>30%</td><td>6,556</td><td>低</td><td>P1</td></tr>
+                                <tr><td>妈妈情绪健康</td><td>高</td><td>22.1%</td><td>6,726</td><td>高</td><td>P1</td></tr>
+                                <tr><td>疫苗接种管理</td><td>中</td><td>5.7%</td><td>7,735</td><td>低</td><td>P1</td></tr>
+                                <tr><td>家庭协作中枢</td><td>中</td><td>16.4%</td><td>7,229</td><td>中</td><td>P2</td></tr>
+                                <tr><td>知识即时问答</td><td>中</td><td>52.9%</td><td>6,512</td><td>中</td><td>P2</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="insight-box">
+                    <div class="insight-title">📊 排序逻辑</div>
+                    <div class="insight-text">
+                        <strong>P0（立即做）</strong>：需求强度极高 + 当前供给极低 + 互动表现极佳<br>
+                        → 睡眠助手、症状判断：用户痛点最强烈，现有解决方案最差<br><br>
+                        <strong>P1（短期）</strong>：需求强度高 + 覆盖率中等 + 实现难度可控<br>
+                        → 喂养助手、成长记录、情绪健康：有明确用户基础，技术可行<br><br>
+                        <strong>P2（中期）</strong>：需求强度中 + 覆盖率低/高 + 实现复杂<br>
+                        → 家庭协作、知识问答：需要生态建设，长期价值大
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Methodology Summary -->
+        <div class="card">
+            <h2><span class="icon">📚</span>方法论总结</h2>
+            
+            <div class="process-step" data-step="16">
+                <div class="step-title">分析流程回顾</div>
+                <div class="step-desc">从数据到洞察的完整方法论</div>
+                
+                <div class="flow-diagram">
+                    <div class="flow-box">
+                        <div class="flow-title">数据层</div>
+                        <div class="flow-desc">140条笔记<br>21个字段</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="flow-title">清洗层</div>
+                        <div class="flow-desc">类型转换<br>缺失值处理<br>互动量计算</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="flow-title">分析层</div>
+                        <div class="flow-desc">主题聚类<br>信号提取<br>质量评估</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="flow-title">洞察层</div>
+                        <div class="flow-desc">高价值识别<br>需求强度排序<br>机会映射</div>
+                    </div>
+                    <div class="flow-arrow">→</div>
+                    <div class="flow-box">
+                        <div class="flow-title">输出层</div>
+                        <div class="flow-desc">8个机会点<br>P0-P2优先级<br>行动建议</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="17">
+                <div class="step-title">关键方法论原则</div>
+                <div class="step-desc">确保分析客观性和洞察深度的核心原则</div>
+                
+                <div class="result-box">
+                    <div class="result-title">原则清单</div>
+                    <div class="result-content">
+                        <strong>1. 不预设需求</strong><br>
+                        使用身份标签搜索词导致内容同质化，后续改用场景+情绪词（如"半夜 崩溃"）<br><br>
+                        
+                        <strong>2. 多维度交叉验证</strong><br>
+                        主题覆盖率 + 互动表现 + 需求信号 + 内容质量，四维度交叉识别真实需求<br><br>
+                        
+                        <strong>3. 区分UGC与营销</strong><br>
+                        纯UGC内容（46.4%）评论数1,824 vs 纯营销（2.9%）评论数702，可信度差异显著<br><br>
+                        
+                        <strong>4. 关注"低覆盖-高互动"异常</strong><br>
+                        睡眠作息覆盖率10%但互动9,227，健康疾病覆盖率5.7%但互动7,735 → 供给缺口<br><br>
+                        
+                        <strong>5. 从情绪到功能</strong><br>
+                        痛点词（难、焦虑、慌）→ 行为词（搜、查、问）→ 期望词（自动、智能、一键）→ 功能机会
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-step" data-step="18">
+                <div class="step-title">工具与代码</div>
+                <div class="step-desc">分析过程中使用的核心工具和代码片段</div>
+                
+                <div class="code-block">
+<span class="comment"># 核心依赖</span>
+<span class="keyword">import</span> pandas <span class="keyword">as</span> pd          <span class="comment"># 数据处理</span>
+<span class="keyword">import</span> re                   <span class="comment"># 正则匹配</span>
+<span class="keyword">from</span> collections <span class="keyword">import</span> Counter  <span class="comment"># 词频统计</span>
+
+<span class="comment"># 数据读取</span>
+df = pd.read_excel(file_path)
+
+<span class="comment"># 类型转换</span>
+df[<span class="string">'liked_count_num'</span>] = pd.to_numeric(df[<span class="string">'liked_count'</span>], errors=<span class="string">'coerce'</span>).fillna(<span class="number">0</span>)
+
+<span class="comment"># 主题匹配</span>
+<span class="keyword">for</span> theme, keywords <span class="keyword">in</span> themes.items():
+    matched = [c <span class="keyword">for</span> c <span class="keyword">in</span> all_content 
+               <span class="keyword">if</span> <span class="function">any</span>(kw <span class="keyword">in</span> c[<span class="string">'text'</span>] <span class="keyword">for</span> kw <span class="keyword">in</span> keywords)]
+
+<span class="comment"># 信号提取</span>
+pain_signals = [<span class="string">'崩溃'</span>, <span class="string">'焦虑'</span>, <span class="string">'后悔'</span>, <span class="string">'难'</span>, <span class="string">'累'</span>, <span class="string">'慌'</span>]
+has_pain = <span class="function">any</span>(s <span class="keyword">in</span> text <span class="keyword">for</span> s <span class="keyword">in</span> pain_signals)
+
+<span class="comment"># 质量评估</span>
+<span class="keyword">def</span> <span class="function">classify_content</span>(text):
+    has_marketing = <span class="function">any</span>(s <span class="keyword">in</span> text <span class="keyword">for</span> s <span class="keyword">in</span> marketing_signals)
+    has_ugc = <span class="function">any</span>(s <span class="keyword">in</span> text <span class="keyword">for</span> s <span class="keyword">in</span> ugc_signals)
+    <span class="keyword">return</span> <span class="string">'纯UGC'</span> <span class="keyword">if</span> has_ugc <span class="keyword">and</span> <span class="keyword">not</span> has_marketing <span class="keyword">else</span> <span class="string">'其他'</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>本报告展示从原始数据到高价值需求洞察的完整分析过程 | 数据采集时间：2025年5月9日</p>
+            <p style="margin-top: 8px; font-size: 12px;">分析方法：主题聚类 + 需求信号提取 + 互动价值评估 + UGC质量筛选 + 机会映射</p>
+        </div>
+    </div>
+</body>
+</html>

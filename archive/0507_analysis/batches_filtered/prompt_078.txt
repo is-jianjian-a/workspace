@@ -1,0 +1,542 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下33条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 78/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_1992
+平台: zhihu
+类型: comments
+内容: 你就臆想吧，15年前的中低端全幅相机，能把目前最好的手机摄像按在地板上摩擦到冒烟
+
+--- ITEM #2 ---
+ID: zhihu_comments_1994
+平台: zhihu
+类型: comments
+内容: 所以你觉得摄影师会用手机当商业拍摄吗
+
+--- ITEM #3 ---
+ID: zhihu_comments_1995
+平台: zhihu
+类型: comments
+内容: 我有个疑问，手机拍不出身份证和钞票上的超清细节会不会是因为政策的原因，导致手机ai自动屏蔽了这些细节？
+
+--- ITEM #4 ---
+ID: zhihu_comments_1996
+平台: zhihu
+类型: comments
+内容: 这是很好的问题，为什么会这么问。说一个自己近期的感受，夏天的时候去非洲大草原，带了富士xe3+适马16 1.4拍星空+腾龙18-300（相当于450）拍远处动物，设备简陋了点。又带了个vivox200u+增距镜。前几天还会拿出相机拍一拍，后来直接相机不带出门了。我是从sony f717开始玩的，底大一级压死人，这个对也不对。光圈+焦距+大底=清晰，这样看大底确实更好，但是要搭配这样的大底需要怎样的配套来驱动呢？微距：大底+灯光+老蛙，远距离：大底+大炮（大光圈+大变焦）这样才能喂饱这个大底，是不是真的需要这么大的底，猫头鹰鹰眼底有多大呢？小的底像素不够么？我觉得你给他足够的光线一样能做到高像素
+
+--- ITEM #5 ---
+ID: zhihu_comments_1997
+平台: zhihu
+类型: comments
+内容: 手机的画质怎么可能碰瓷相机？尤其是iPhone，最新最好的Pro Max的底甚至没有Vivo X200 ultra大，拍照直接被Vivo不知道秒到哪里去了，尤其是在拍飞机起飞时候的跑道，永远无法对焦到跑道上，永远是对焦到飞机舷窗上面的灰尘上。连碰瓷别的手机都没法碰，还想碰瓷相机镜头，那就实在是图样图森破了。
+
+--- ITEM #6 ---
+ID: zhihu_comments_2001
+平台: zhihu
+类型: comments
+内容: 可以速速快进到手机发抖音比相机有性价比[捂嘴]
+
+--- ITEM #7 ---
+ID: zhihu_comments_2002
+平台: zhihu
+类型: comments
+内容: X200 Pro这个AI不能完全关闭就让人很恼火[生气]
+
+--- ITEM #8 ---
+ID: zhihu_comments_2004
+平台: zhihu
+类型: comments
+内容: 有啥好对比的，就问问题主，他的结婚照用手机拍不
+
+--- ITEM #9 ---
+ID: zhihu_comments_2005
+平台: zhihu
+类型: comments
+内容: 随便拿个相机也吊打手机了，手机拍照只能和手机比，比相机是天方夜谭
+
+--- ITEM #10 ---
+ID: zhihu_comments_2006
+平台: zhihu
+类型: comments
+内容: 手机拍出来的粗看是没啥问题的，放朋友圈也足够，甚至优于绝大多数相机原图直出。但是根本经不起推敲，放在电脑屏幕上一放大就不忍直视。而相机直出确实没那么好看，但是放进lr里套个预设就知道什么叫眼前一亮。
+
+--- ITEM #11 ---
+ID: zhihu_comments_2008
+平台: zhihu
+类型: comments
+内容: 也不太懂 就觉得手机莲花都惨白色的
+
+--- ITEM #12 ---
+ID: zhihu_comments_2010
+平台: zhihu
+类型: comments
+内容: 手机那么小的镜头，光学系统怎么做，也比不上最差的相机
+
+--- ITEM #13 ---
+ID: zhihu_comments_2011
+平台: zhihu
+类型: comments
+内容: 成像质量的好坏，大部分取决于cmos，手机的做不到相机那么大，成像质量不会太好
+
+--- ITEM #14 ---
+ID: zhihu_comments_2014
+平台: zhihu
+类型: comments
+内容: 没有可比性的东西，就是鸡对鸭讲，手机摄影？哈哈哈
+
+--- ITEM #15 ---
+ID: zhihu_comments_2016
+平台: zhihu
+类型: comments
+内容: 手机就是经不起放大，只能看看小图，手机党会选择性无视的，我现在正打算买相机，回看之前旅游的照片，没有一张放大能看的，真的非常后悔以前没有买相机
+
+--- ITEM #16 ---
+ID: zhihu_comments_2020
+平台: zhihu
+类型: comments
+内容: 现在什么相机不用算法？
+
+--- ITEM #17 ---
+ID: zhihu_comments_2021
+平台: zhihu
+类型: comments
+内容: 终于看到有人说手机长焦端的对焦。手里两部旗舰拍照手机，亲身体验，长焦鼓捣半天对上了焦，鸟都飞没影了。
+
+--- ITEM #18 ---
+ID: zhihu_comments_2024
+平台: zhihu
+类型: comments
+内容: 水果手机拍照高根本不怎么样。拿华为PURA试试
+
+--- ITEM #19 ---
+ID: zhihu_comments_2026
+平台: zhihu
+类型: comments
+内容: 行家一出手就知有没有，手机cmos还是太小了
+
+--- ITEM #20 ---
+ID: zhihu_comments_2028
+平台: zhihu
+类型: comments
+内容: 手机拍照画质来碰瓷A7M3真的过于离谱了。。。我跟朋友举过例子，手机之间拍照能力对比可能8分，8.5分，9分这样；相机满分100，60分及格开始对比，A7M3当年评个85-88分，现在水涨船高打个78-80吧，不是任何手机能碰瓷的。。
+
+--- ITEM #21 ---
+ID: zhihu_comments_2029
+平台: zhihu
+类型: comments
+内容: 在我拿手机拍黄昏下漂亮的街道时，出现了恐怖的鬼影，我果断拿打算升级手机成光学变焦的钱买相机了
+
+--- ITEM #22 ---
+ID: zhihu_comments_2033
+平台: zhihu
+类型: comments
+内容: 因为他们既有好手机，也有全画幅相机
+
+--- ITEM #23 ---
+ID: zhihu_comments_2034
+平台: zhihu
+类型: comments
+内容: 2025年在拍照或者录像方面，价位接近的情况下，个人认为手机吊打相机的应该是便携性，易用性和续航，可能还有防抖（可能而已）。而不是画质，画质，画质。
+
+--- ITEM #24 ---
+ID: zhihu_comments_2037
+平台: zhihu
+类型: comments
+内容: 我的感受是在较暗的光线下拍照片，手机比全幅相机差很多。
+
+--- ITEM #25 ---
+ID: zhihu_comments_2040
+平台: zhihu
+类型: comments
+内容: 摄影穷三代，还没听说过手机穷几代的[捂脸]都不是一个层级的东西，怎么比。。[酷]
+
+--- ITEM #26 ---
+ID: zhihu_comments_2042
+平台: zhihu
+类型: comments
+内容: 你的g7x不能玩原神，手机赢！[doge]
+
+--- ITEM #27 ---
+ID: zhihu_comments_2047
+平台: zhihu
+类型: comments
+内容: 我用手机也经常对焦失败。大哥我请教一下，为什么手机经常对不上焦？按理来说中间对焦很容易啊。
+
+--- ITEM #28 ---
+ID: zhihu_comments_2049
+平台: zhihu
+类型: comments
+内容: 别说超越了   就是靠近都绝无可能    手机领先的是方便  易拍   保有量大   性价比高但是单说相机那个头  那个进光量      几百倍有了吧？    拿啥靠近？  拿啥超越？    手机只是算法牛逼   可以取悦大众而已
+
+--- ITEM #29 ---
+ID: zhihu_comments_2050
+平台: zhihu
+类型: comments
+内容: 朋友，你怎么可以用GFX来欺负手机相机这种垃圾玩意呢？这不是丢GFX的份么？给你点赞了！[打招呼]
+
+--- ITEM #30 ---
+ID: zhihu_comments_2051
+平台: zhihu
+类型: comments
+内容: 很现实的问题，当你去拍婚纱照的时候，影楼只给你用手机拍。你只会骂一句：我草……
+
+--- ITEM #31 ---
+ID: zhihu_comments_2057
+平台: zhihu
+类型: comments
+内容: 你恐怕连手机都不知道怎么用[赞同]
+
+--- ITEM #32 ---
+ID: zhihu_comments_2060
+平台: zhihu
+类型: comments
+内容: 好镜头可以用几十年，人走头还在[飙泪笑]机身基本每年都更新，买新不买旧。富士用户请忽视
+
+--- ITEM #33 ---
+ID: zhihu_comments_2064
+平台: zhihu
+类型: comments
+内容: 保值的这个问题得看你是爱好者还是职业用户了。对于职业用户来说，用一个烂机身各种规格限制，接活一堆限制，几年下来少挣的钱够买好几个牛头了。
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_078
+
+开始分析：

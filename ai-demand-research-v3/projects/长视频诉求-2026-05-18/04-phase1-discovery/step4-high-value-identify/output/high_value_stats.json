@@ -1,0 +1,13 @@
+{
+  "threshold": 15178,
+  "high_value_count": 16,
+  "high_value_ratio": 5.5,
+  "avg_interaction": 38875,
+  "top_l1_topics": {
+    "观看体验": 5,
+    "功能需求": 4,
+    "内容质量": 3,
+    "行为习惯": 2,
+    "时长控制": 2
+  }
+}

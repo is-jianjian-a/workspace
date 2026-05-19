@@ -1,0 +1,535 @@
+{
+  "batch_id": 66,
+  "total_items": 42,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 24,
+      "short_video": 18
+    },
+    "type_distribution": {
+      "behavior_description": 30,
+      "pain_point": 7,
+      "feature_request": 4,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "playback_control": 1,
+      "other": 36,
+      "content_recommend": 3,
+      "background_play": 1,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 2,
+      "implicit": 1,
+      "not_ai": 39
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_1033",
+      "text": "同意主要观点，但是网课（尤指视频课）因其可以随时倍速和暂停，再考虑到课堂老师又不可能追踪每个学生的状态，效果可能比老师现场讲课好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1036",
+      "text": "国内的大学教材太差了，真的没法靠它们来自学。偏偏很多大学老师上课就是照着课本和ppt来讲，真的是雪上加霜。真的很后悔大学的时候不懂多找几个版本的教材来看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1038",
+      "text": "自己思考直接无敌。 我时间慢 但是效率巨高 通常理解的很深。。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1040",
+      "text": "看书学习效果好是有利边读边思考，而视频参杂了太多干扰思考的东西，让我们不能深入思考了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1044",
+      "text": "另外提个思路，现在视频的制作成本很低，有一些做长尾的营销号完全使用ai内容，不加审查（主要也没能力、没时间审查），这种东西学的越多效果越差[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1045",
+      "text": "看视频像我就很少积极主动跟上细维来思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1046",
+      "text": "因为看视频总是会其他信息吸引[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1047",
+      "text": "看视频直接睡着[飙泪笑][飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1050",
+      "text": "视觉听觉会占用大脑带宽进一步压缩理解能力",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1051",
+      "text": "真没耐心 不感兴趣的视频看的很烦躁",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1052",
+      "text": "分析透彻。短视频占据大脑发呆的时间，占据人们聊天的时间，可是人们还自以为在休息，在放松。实际上看短视频的过程中，手没有停歇，眼睛没有休息，脑袋也在高速运转，情绪和内心也在不断变化，这是一种没有感觉到疲劳的疲劳。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1056",
+      "text": "学到一个新名词：脑腐[赞同]感觉确实是的，自从22年以来，手机使用时间每天就越来越长，也越来越不爱思考了。还是需要有意控制控制，多看看长篇资源。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1057",
+      "text": "如果上班，手机使用时间大概能控制在3-5小时以内。如果不上班，8小时都可能打不住。结论：上班是一种有偿帮助我戒手机的福利[飙泪笑][飙泪笑][飙泪笑]哈哈哈哈哈哈",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1059",
+      "text": "受益匪浅，看来短视频还是需要少刷[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1061",
+      "text": "短视频能看见很多美好，但是也有很大的坏处",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1063",
+      "text": "感觉答主的回答对我有很大帮助 谢谢！！我也有这种经历 就好像今天说好了要学习 却又控制不住的刷了半天手机 但这其实也不是我想要的 有时候我只是打开视频软件回个消息 或者查点什么东西 就走不出来了 我觉得一部分原因是我目的性不够强 刚打开就被视频吸引住了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1066",
+      "text": "我也算是个十年小网虫了，也是那种在很小年纪就玩上网络的那种人，就对文章上面所描述的症状深有体会，这篇帖子就非常好的指出了这种问题，并且给出了些解决方案，感觉挺好的比，比焦虑的刷着短视频好很多[赞同]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1068",
+      "text": "沉迷短视频自然能弱化我们的大脑，但是我们也不要强制戒掉，你强制的戒掉过段时间你就会更加沉迷短视频，应该合理规划自己看短视频的时间，比如说打开之前我就看十分钟，我就看半个小时，时间一到立马关注，即使大脑再想刷，也要停止，这样也能锻炼我们的执行力[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1071",
+      "text": "戒手机感觉比戒烟还难[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1072",
+      "text": "现在真觉得刷短视频，这种短时间信息大又上瘾的娱乐方式佷无益[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1073",
+      "text": "本来刷短视频就会让我们的大脑接触更多信息，但是又保存不了很多[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1076",
+      "text": "同感同感[生气][生气]卸载了小红书，但凡控制力差的，不但脑子退化，还引起攀比心理、消费心理、傻x心理……总之是扭曲心理……抖音还在戒当中，一时半会狠不下心来卸载，不过已经减少上线时间。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1078",
+      "text": "确实，目前其实最多刷到短视频的就是淘宝和B站，前者是很容易被首页推荐的商品介绍吸引然后一不小心划十几个然后突然反应过来卧槽我来干啥来着，后者就是手机点进推荐视频往下滑，但是很容易划几个后推荐的视频就开始跑偏了回过味来也就退出了。现在连B站订阅更新都不会全看了，吃饭的时候拉着更新列表挑几个打开标签页看看。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1081",
+      "text": "「短视频在扩张的过程中成为了最下沉，受众最广的媒体形式，所以我们从商业上很难忽略它。」十分喜欢这个结论，一下子道破了短视频无孔不入的真相。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1082",
+      "text": "碎片不是主要问题，是要短平快的刺激，很多东西做出来，就是为了让人看赚流量 里面几乎没有有用的东西",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1084",
+      "text": "之前看过一本书，大概意思是：现在这个世界最重要的资源，不是钱，而是注意力。各方势力都在不惜一切、全力以赴、变本加厉、狗急跳墙地瓜分我们的注意力，导致我们现在人大多处于一种支离破碎的状态，已经无法静心、专心地去做一件事了。其实，注意力最终都会变成钱。就像我们买了某家的会员，就会倾向于去某家消费。我们的注意力被吸引到哪里，我们最终就要在哪里消费。算法，说得形象点，就是在争抢会员。说得难听点，人，在某种",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1085",
+      "text": "“我们在后台监控数据时发现，当用户处于这种随机奖励模式下，腹侧被盖区（VTA）的多巴胺释放频率会显著高于获得固定奖励时。”请问你们是怎么通过监控拿到用户的多巴胺释放频率的[思考][思考][思考]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1087",
+      "text": "1.多巴胺斋戒：把手机屏幕设置为灰阶模式；2.认知耐受度重塑：每天15分钟的大脑放空，望着窗外发呆；3.主动重构训练：每天看长内容，看完后主动再大脑中回忆看了发生了什么事，脉络是怎么样，结果是如何的；4.养成看纸质书的习惯：强迫自己看纸质长篇内容，阅读并理解没有图、逻辑复杂的长文，强化前额叶皮层功能性。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1088",
+      "text": "大学之前没有长期持有手机过，然后大学之后也会电子阅读，可能因为这种习惯，反而更喜欢阅读长文，专著，论文。奖励回路确立。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1089",
+      "text": "我已经开始进行自我训练了，并没有卸载短视频软件，我要求自己不允许同时做两件事情，例如我以前经常做的：上厕所看手机，吃饭时看视频，做家务时听播音，运动时听歌等。因为，这种情况会训练我分散注意力，并且会降低集中力。之前的情况是我想专注做一会工作时，就会想干别的，大脑无法专注，总会走神想别的。最开始训练时特别痛苦，例如吃饭时，不看点视频，就感觉吃不下式的，吃一顿盒饭，前后拿起来手机得有十几次，但我还克制",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1090",
+      "text": "写的很有道理。自己经常感觉看到长文章虽然觉得很有道理，但是就是不想读，或者收藏等待以后读，这其实放弃了大脑深度思考的能力。还是要通过对复杂事物的阅读来加强这个能力[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1092",
+      "text": "分享个好习惯：读到不错的回答时，点一下作者的主页，看看ta近期发布回答的频率，想想这个频率对于普通人类是否合理，然后再反思自己是否还要刷知乎[飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1094",
+      "text": "搞那么复杂却忽略一个权重值最大的点，给你们说个好方法，关闭声音，将手机调成静音，你将成为一个充满逻辑智慧的阅读者。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1097",
+      "text": "以毒攻毒 每次看完短视频就写长一点的有逻辑的评论，增加看短视频的附加成本",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1103",
+      "text": "沉浸式读网文的逻辑和短视频有区别么？会被分类为深度思考者还是多巴胺宿主",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1105",
+      "text": "当你感到痛苦、想放弃、想拿手机的时候，告诉自己，这正是你的前额叶皮层在进行高强度的举铁训练。这种痛苦，就是大脑在“除锈”的证明。[赞][赞][赞][赞][赞][赞][赞][赞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1106",
+      "text": "虽然有点像AI，但paperpass给的AIGC疑似是0%）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_1108",
+      "text": "之前眼睛看不清东西治疗了几个月，刚开始很难受，很强烈的戒断反应。游戏玩不了了，视频看不了了，就找一些替代品，比如看看书，出去玩。偶尔逛逛街冲动性消费一波，类似于用弱一些的成瘾物质替代了之前的强成瘾物质。人的眼睛一看不清东西，真的能节约巨量的能量，熬过刚开始一两个月，整个人精神状态好了很多。之前想不清楚的问题现在能想清楚了。我是个极其I的人，没什么朋友。之前工作的时候开会发言都很少，现在说话都敢于直",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1109",
+      "text": "生锈不知道，但是长期沉迷于刷短视频刷社交app的人肯定会不知不觉中丧失自己的注意力。没有比刷这些更容易短时间获得即时喜悦更容易的方式了。影响自己做事情的专注力，独立思考独立分析独立观察能力都会受到影响。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1110",
+      "text": "作者的文章写的特别好，我这边有几个问题想咨询咨询作者：1. 既然长期刷短视频会导致大脑废用性萎缩，那我工作中间想放空大脑，想放松10-20分钟，应该怎么做呢？2. 还有因为工作烦恼，想通过打游戏，或者切换一个场景来转移注意力，这样对大脑是好的吧，建议就是不要频繁切换注意力是吗？3. 我经常想听一些国际政治等催眠的入睡，是不是会干扰大脑休息呢，有什么好的建议呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1111",
+      "text": "知乎的日活量远低于抖音是不是因为具备阅读长文字，观看长视频的人在群体中本来就是少数？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_1112",
+      "text": "灰度模式确实有用，就像蓝色的菜一样，直接就没了欲望",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

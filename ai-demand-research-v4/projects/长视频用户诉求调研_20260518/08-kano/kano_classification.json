@@ -1,0 +1,209 @@
+[
+  {
+    "job_id": "J002",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 332,
+    "total_interaction": 1887909
+  },
+  {
+    "job_id": "J051",
+    "job_statement": "当我在周末时，我想要当前长视频体验存在痛点: 没有关注，两个视频，这样我就可以希望能够解决这些问题，获得更流畅的观看体验",
+    "job_type": "emotional",
+    "kano_type": "must_be",
+    "confidence": 1.0,
+    "frequency": 60,
+    "total_interaction": 58104
+  },
+  {
+    "job_id": "J013",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 37,
+    "total_interaction": 259567
+  },
+  {
+    "job_id": "J007",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 25,
+    "total_interaction": 447200
+  },
+  {
+    "job_id": "J047",
+    "job_statement": "当我在 unspecified时，我想要想要与其他观众互动，分享观看体验，这样我就可以能够感受到社区氛围，获得共鸣和讨论",
+    "job_type": "social",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 19,
+    "total_interaction": 138409
+  },
+  {
+    "job_id": "J107",
+    "job_statement": "当我在 unspecified时，我想要在没有网络或网络不稳定的情况下观看长视频，这样我就可以能够随时随地观看已下载的长视频内容",
+    "job_type": "functional",
+    "kano_type": "must_be",
+    "confidence": 0.3333333333333333,
+    "frequency": 16,
+    "total_interaction": 13121
+  },
+  {
+    "job_id": "J026",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 15,
+    "total_interaction": 104338
+  },
+  {
+    "job_id": "J024",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 12,
+    "total_interaction": 133210
+  },
+  {
+    "job_id": "J005",
+    "job_statement": "当我在 unspecified时，我想要想要更快或更慢地观看长视频内容，这样我就可以能够根据自己的节奏控制视频播放速度",
+    "job_type": "functional",
+    "kano_type": "performance",
+    "confidence": 0.6666666666666666,
+    "frequency": 10,
+    "total_interaction": 144805
+  },
+  {
+    "job_id": "J195",
+    "job_statement": "当我在 unspecified时，我想要想要获得更好的视觉体验，这样我就可以能够清晰观看视频细节，提升观看满意度",
+    "job_type": "functional",
+    "kano_type": "performance",
+    "confidence": 1.0,
+    "frequency": 7,
+    "total_interaction": 2694
+  },
+  {
+    "job_id": "J037",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 6,
+    "total_interaction": 43611
+  },
+  {
+    "job_id": "J001",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 2,
+    "total_interaction": 219579
+  },
+  {
+    "job_id": "J304",
+    "job_statement": "当我在开车时，我想要想要在开车观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 2,
+    "total_interaction": 35170
+  },
+  {
+    "job_id": "J081",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 2,
+    "total_interaction": 4115
+  },
+  {
+    "job_id": "J306",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 2,
+    "total_interaction": 2310
+  },
+  {
+    "job_id": "J118",
+    "job_statement": "当我在睡前时，我想要想要在使用其他应用的同时继续观看或收听长视频，这样我就可以能够多任务处理，不中断视频内容消费",
+    "job_type": "functional",
+    "kano_type": "must_be",
+    "confidence": 0.6666666666666666,
+    "frequency": 2,
+    "total_interaction": 1670
+  },
+  {
+    "job_id": "J011",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 1,
+    "total_interaction": 40646
+  },
+  {
+    "job_id": "J513",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 1,
+    "total_interaction": 10986
+  },
+  {
+    "job_id": "J070",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 1,
+    "total_interaction": 5344
+  },
+  {
+    "job_id": "J075",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 1,
+    "total_interaction": 4271
+  },
+  {
+    "job_id": "J069",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 1,
+    "total_interaction": 4024
+  },
+  {
+    "job_id": "J085",
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "confidence": 0.3,
+    "frequency": 1,
+    "total_interaction": 2633
+  },
+  {
+    "job_id": "J167",
+    "job_statement": "当我在 unspecified时，我想要想要无缝连续观看多个长视频，这样我就可以能够不间断地消费内容，减少操作步骤",
+    "job_type": "functional",
+    "kano_type": "must_be",
+    "confidence": 0.6666666666666666,
+    "frequency": 1,
+    "total_interaction": 214
+  }
+]

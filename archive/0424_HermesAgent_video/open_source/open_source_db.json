@@ -1,0 +1,64 @@
+{
+  "schema_version": "1.0",
+  "project": "video_ai_research",
+  "description": "手机用户视频场景AI诉求调研 - 开源社区功能数据库",
+  "last_updated": "2025-04-24",
+  "sources": [
+    {
+      "name": "GitHub",
+      "search_keywords": [
+        "video AI",
+        "AI subtitle",
+        "video summary",
+        "smart player",
+        "video understanding",
+        "video captioning",
+        "whisper",
+        "video transcription",
+        "video analysis"
+      ],
+      "projects": []
+    },
+    {
+      "name": "HuggingFace",
+      "search_keywords": [
+        "video understanding",
+        "video QA",
+        "video captioning",
+        "video classification"
+      ],
+      "projects": []
+    },
+    {
+      "name": "开源播放器插件",
+      "projects": [
+        {
+          "name": "MPV",
+          "plugins": []
+        },
+        {
+          "name": "VLC",
+          "plugins": []
+        },
+        {
+          "name": "Kodi",
+          "plugins": []
+        }
+      ]
+    }
+  ],
+  "project_template": {
+    "id": "",
+    "name": "",
+    "description": "",
+    "url": "",
+    "stars": 0,
+    "language": "",
+    "category": "",
+    "ai_capabilities": [],
+    "applicable_scenes": [],
+    "last_updated": "",
+    "collection_date": "",
+    "notes": ""
+  }
+}

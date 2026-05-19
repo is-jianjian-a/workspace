@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>长视频诉求调研 - 过程技术报告</title>
+    <style>
+        body { font-family: -apple-system, monospace; background: #1e1e1e; color: #d4d4d4; padding: 40px; max-width: 1000px; margin: 0 auto; }
+        h1 { color: #4ec9b0; border-bottom: 2px solid #4ec9b0; padding-bottom: 10px; }
+        h2 { color: #569cd6; margin-top: 30px; }
+        h3 { color: #ce9178; }
+        .code { background: #252526; padding: 15px; border-radius: 8px; overflow-x: auto; font-size: 0.9em; }
+        .param { color: #9cdcfe; }
+        .value { color: #ce9178; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { padding: 10px; text-align: left; border: 1px solid #3c3c3c; }
+        th { background: #252526; color: #4ec9b0; }
+        .step { background: #252526; padding: 20px; border-radius: 10px; margin: 20px 0; border-left: 4px solid #4ec9b0; }
+    </style>
+</head>
+<body>
+    <h1>📋 过程技术报告</h1>
+    <p>项目: 长视频诉求调研 | 日期: 2026-05-18 | 平台: 小红书</p>
+    
+    <h2>1. 数据采集</h2>
+    <div class="step">
+        <h3>1.1 搜索词设计</h3>
+        <p>搜索词: <span class="value">"长视频"</span></p>
+        <p>平台: <span class="value">xhs (小红书)</span></p>
+        <p>数据来源: <span class="value">/Users/zhijian/workspace/MediaCrawler/database/sqlite_tables.db</span></p>
+    </div>
+    
+    <h2>2. 数据清洗</h2>
+    <div class="step">
+        <h3>2.1 清洗参数</h3>
+        <table>
+            <tr><th>参数</th><th>值</th><th>说明</th></tr>
+            <tr><td>原始数据</td><td>508</td><td>xhs_note表中source_keyword='长视频'</td></tr>
+            <tr><td>去重后</td><td>508</td><td>基于note_id去重</td></tr>
+            <tr><td>有效数据</td><td>502</td><td>去除text长度<5的短文本</td></tr>
+            <tr><td>互动量解析</td><td>custom parse_count</td><td>支持万/千/w/k/逗号格式</td></tr>
+        </table>
+    </div>
+    
+    <h2>3. 相关性筛选</h2>
+    <div class="step">
+        <h3>3.1 筛选规则</h3>
+        <div class="code">
+正向关键词: 看/刷/追/观/播放/时长/倍速/累/困/眼睛/剧情/想要/希望/睡前/通勤/焦虑/长视频/短视频/b站/手机等<br>
+负向关键词: 特价/优惠/折扣/剪辑教程/拍摄教程/招聘/求职/时政/新闻等<br>
+判断逻辑: 含负向词→无关 | 长视频+2个正向词→相关 | ≥4个正向词→相关 | ≥2个正向词+互动量>3000→相关
+        </div>
+        <p>筛选结果: <span class="value">相关291条(58.0%) | 无关211条(42.0%)</span></p>
+    </div>
+    
+    <h2>4. 标签体系</h2>
+    <div class="step">
+        <h3>4.1 标签结构</h3>
+        <table>
+            <tr><th>层级</th><th>数量</th><th>匹配方式</th></tr>
+            <tr><td>一层主题</td><td>12个</td><td>关键词包含匹配</td></tr>
+            <tr><td>二层主题</td><td>32个</td><td>关键词包含匹配</td></tr>
+            <tr><td>情绪标签</td><td>6类</td><td>关键词包含匹配</td></tr>
+            <tr><td>场景标签</td><td>6类</td><td>关键词包含匹配</td></tr>
+        </table>
+        <p>标签文件: <span class="value">02-cleaned/tagging_keywords.json + tagging_keywords.py</span></p>
+    </div>
+    
+    <h2>5. 分析方法</h2>
+    <div class="step">
+        <h3>5.1 需求信号提取</h3>
+        <div class="code">
+信号词典: 痛点信号(20词) / 决策信号(12词) / 求助信号(9词) / 行为信号(12词) / 期望信号(12词)<br>
+提取方式: 文本包含匹配，统计出现次数和匹配词
+        </div>
+        
+        <h3>5.2 内容质量评估</h3>
+        <div class="code">
+UGC信号: 我觉得/我认为/习惯/经常/怎么办/痛点/困扰等<br>
+营销信号: 特价/优惠/广告/品牌/关注/点赞/福利等<br>
+分类: 纯UGC(UGC>0,营销=0) / 纯营销(营销>0,UGC=0) / 混合 / 中性
+        </div>
+        
+        <h3>5.3 机会评估矩阵</h3>
+        <div class="code">
+评分维度: 需求强度(30%) + 供给缺口(25%) + 技术可行性(20%) + 商业价值(15%) + 竞争壁垒(10%)<br>
+分级: P0(≥60分) / P1(45-60分) / P2(<45分)
+        </div>
+    </div>
+    
+    <h2>6. 输出文件清单</h2>
+    <div class="step">
+        <table>
+            <tr><th>路径</th><th>文件</th><th>说明</th></tr>
+            <tr><td>02-cleaned/</td><td>tagging_keywords.json</td><td>标签匹配关键词词典</td></tr>
+            <tr><td>02-cleaned/</td><td>tagging_keywords.py</td><td>标签提取脚本</td></tr>
+            <tr><td>03-cleaned/output/</td><td>cleaned_data.json</td><td>清洗后数据</td></tr>
+            <tr><td>03-cleaned/output/</td><td>relevant_data.json</td><td>筛选后相关数据(291条)</td></tr>
+            <tr><td>03-cleaned/output/</td><td>labeled_data.json</td><td>标签化数据</td></tr>
+            <tr><td>04-phase1-discovery/</td><td>各步骤output/</td><td>第一阶段分析结果</td></tr>
+            <tr><td>05-phase2-analysis/</td><td>各步骤output/</td><td>第二阶段分析结果</td></tr>
+            <tr><td>06-insights/output/</td><td>insights.json</td><td>洞察结果</td></tr>
+            <tr><td>08-reports/</td><td>final-analysis-report.html</td><td>最终分析报告</td></tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+[
+  {
+    "id": "H001",
+    "opportunity_id": "O002",
+    "statement": "如果我们优化长视频推荐算法，提升个性化推荐准确度，那么用户日均观看时长会提升30%，因为调研显示用户希望更快找到感兴趣的长视频内容",
+    "type": "solution_attractiveness",
+    "validation_method": "ab_test",
+    "validation_timeline": "2-4周",
+    "source_jobs": [
+      "J002"
+    ],
+    "status": "pending_validation",
+    "rice_score": 249000.0
+  },
+  {
+    "id": "H002",
+    "opportunity_id": "O051",
+    "statement": "如果我们优化长视频推荐算法，提升个性化推荐准确度，那么用户日均观看时长会提升30%，因为调研显示用户希望更快找到感兴趣的长视频内容",
+    "type": "solution_attractiveness",
+    "validation_method": "ab_test",
+    "validation_timeline": "2-4周",
+    "source_jobs": [
+      "J051"
+    ],
+    "status": "pending_validation",
+    "rice_score": 72000.0
+  },
+  {
+    "id": "H003",
+    "opportunity_id": "O013",
+    "statement": "如果我们优化长视频推荐算法，提升个性化推荐准确度，那么用户日均观看时长会提升30%，因为调研显示用户希望更快找到感兴趣的长视频内容",
+    "type": "solution_attractiveness",
+    "validation_method": "ab_test",
+    "validation_timeline": "2-4周",
+    "source_jobs": [
+      "J013"
+    ],
+    "status": "pending_validation",
+    "rice_score": 27750.0
+  },
+  {
+    "id": "H004",
+    "opportunity_id": "O005",
+    "statement": "如果我们为长视频提供1.5x/2x倍速播放功能，那么用户平均观看完成率会提升20%，因为调研显示大量用户希望在有限时间内消费更多内容",
+    "type": "solution_attractiveness",
+    "validation_method": "prototype_test",
+    "validation_timeline": "2-4周",
+    "source_jobs": [
+      "J005"
+    ],
+    "status": "pending_validation",
+    "rice_score": 26000.0
+  },
+  {
+    "id": "H005",
+    "opportunity_id": "O007",
+    "statement": "如果我们优化长视频推荐算法，提升个性化推荐准确度，那么用户日均观看时长会提升30%，因为调研显示用户希望更快找到感兴趣的长视频内容",
+    "type": "solution_attractiveness",
+    "validation_method": "ab_test",
+    "validation_timeline": "2-4周",
+    "source_jobs": [
+      "J007"
+    ],
+    "status": "pending_validation",
+    "rice_score": 18750.0
+  }
+]

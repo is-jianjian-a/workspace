@@ -1,0 +1,689 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下54条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 28/120)
+
+--- ITEM #1 ---
+ID: bili_comments_1183
+平台: bili
+类型: comments
+内容: 我是i5 12500没有独显，所有方法都不管用，但是在PR里播放很流畅可以排除硬件原因。
+
+--- ITEM #2 ---
+ID: bili_comments_1184
+平台: bili
+类型: comments
+内容: 4K视频快进卡是怎么回事 还有倍速会音画不同步[大哭][大哭]
+
+--- ITEM #3 ---
+ID: bili_comments_1185
+平台: bili
+类型: comments
+内容: 如果近期突然出现卡顿可以试一下，可能是特定的条件才会触发，在这里我仅提供一个线索、排查方向，至少在我这里是会卡顿的，可以复现。电脑是一个复杂的东西，每个人用的硬件、操作系统、软件、使用习惯都是不同的，如果电脑卡顿了请仔细排查，不一定是哪个部分出现了问题。
+还有谁用AMD让我电脑都卡了[热词系列_知识增加][热词系列_知识增加][热词系列_知识增加]（bushi
+
+--- ITEM #4 ---
+ID: bili_comments_1186
+平台: bili
+类型: comments
+内容: 晃晃鼠标卡顿，然后打字也卡。。cpu频率也没问题，感觉就是系统有毛病，但是好久没更新了呀
+
+--- ITEM #5 ---
+ID: bili_comments_1187
+平台: bili
+类型: comments
+内容: 敢于更新的都是勇士呀
+我大多数玩电脑的朋友都还在win10
+像我这种刚接触的人，也是经历更新bug之后
+决定退守在某一版本的人
+直接关掉自动更新驻扎23H2版本，等到二四足够稳定再上[tv_doge]
+
+--- ITEM #6 ---
+ID: bili_comments_1188
+平台: bili
+类型: comments
+内容: 删除了还是卡，几秒一卡，桌面也卡，安全模式不卡……
+
+--- ITEM #7 ---
+ID: bili_comments_1189
+平台: bili
+类型: comments
+内容: 看了一下，我确实更新了这个。但我卸了之后，多次重启，还是卡顿咋办[大哭][大哭][大哭]
+我这个补丁的更新时间是昨天，我电脑也是今天才卡顿的，应该就是这个补丁的问题[笑哭]
+
+--- ITEM #8 ---
+ID: bili_comments_1190
+平台: bili
+类型: comments
+内容: up我的电脑不知道为什么这两天老是过个十秒左右就会卡死六七秒，之前开机还会卡死发怪声，然后我把KB5049624卸载再重启就没怪声了，但是电脑还是隔一会就卡死[大哭]
+
+--- ITEM #9 ---
+ID: bili_comments_1191
+平台: bili
+类型: comments
+内容: 有没有人和我一样，以为是电脑里面的问题，结果是忘记插电源，导致电脑快关机了，才知道原来是没充电💀💀💀
+
+--- ITEM #10 ---
+ID: bili_comments_1192
+平台: bili
+类型: comments
+内容: 卸载更新不好用的，关闭edge的硬件加速功能就好了，具体是点击edge右上三个点——设置——系统和性能——系统——在可用时使用图形加速，关闭后重启浏览器就好了
+
+--- ITEM #11 ---
+ID: bili_comments_1195
+平台: bili
+类型: comments
+内容: 我发现b站的每次点击进度条都重新请求了片段，是不是每次点击进度条都需要把之前的sourceBuffer删除掉
+
+--- ITEM #12 ---
+ID: bili_comments_1196
+平台: bili
+类型: comments
+内容: 我发现我没有设置过默认就是分片下载[doge]
+
+--- ITEM #13 ---
+ID: bili_comments_1197
+平台: bili
+类型: comments
+内容: 这几种方式种，那种更加节约带宽呢？大厂每节约点带宽都是巨量的节约成本吧。目前已经知道是mp4切成m3u8会使得文件总体更大
+
+--- ITEM #14 ---
+ID: bili_comments_1198
+平台: bili
+类型: comments
+内容: vue这么智能么？[doge]
+
+--- ITEM #15 ---
+ID: bili_comments_1199
+平台: bili
+类型: comments
+内容: 现在上传文件是直接与OSS交互还是通过后端上传
+
+--- ITEM #16 ---
+ID: bili_comments_1201
+平台: bili
+类型: comments
+内容: 看到好多人发帧率曲线。。不是，视频掉帧是要你用眼睛去看。一秒掉一帧眼睛一下就看出来了，你帧率曲线上是几乎没有波动的。
+
+--- ITEM #17 ---
+ID: bili_comments_1202
+平台: bili
+类型: comments
+内容: 然而并没有会员来看60帧
+
+--- ITEM #18 ---
+ID: bili_comments_1204
+平台: bili
+类型: comments
+内容: 这个视频证明了没会员的视频就是30帧
+
+--- ITEM #19 ---
+ID: bili_comments_1206
+平台: bili
+类型: comments
+内容: 别骂b站了，大会员没好到哪里去，我这边分别从头看了一遍，三个清晰度分别是4k，1080p60和1080p，说下结论：普通1080p左边的圆圈是半圆。开了1080p60之后，左边的圆圈变成了两个半圆在不停闪烁，在刚切换的一瞬间闪烁比较均匀，但是之后过了一秒就瞬间变得不均匀了。开了4k情况下，闪烁反而变得更不均匀了，左边的圆通常都是某一边的半圆颜色特别深，另一边特别浅，而且闪烁更明显了
+
+--- ITEM #20 ---
+ID: bili_comments_1207
+平台: bili
+类型: comments
+内容: 多半是b站播放器有问题老掉帧[笑哭]观感很难受，但相册一直都很稳
+
+--- ITEM #21 ---
+ID: bili_comments_1208
+平台: bili
+类型: comments
+内容: 骁龙8gen3也掉就离谱[吃瓜]下载下来mx播放器播放不会掉，所以说结论已经很明显了[doge]
+
+--- ITEM #22 ---
+ID: bili_comments_1209
+平台: bili
+类型: comments
+内容: 4K和1080p一样，大约2.5-2.8s有一次帧率很明显的波动，我肉眼看大概掉了三到六帧，就是很规整的隔一帧跳一帧
+
+--- ITEM #23 ---
+ID: bili_comments_1210
+平台: bili
+类型: comments
+内容: 温馨提示:缺帧不是你的问题，而是非大会员默认30帧
+
+--- ITEM #24 ---
+ID: bili_comments_1212
+平台: bili
+类型: comments
+内容: 对于非大会员，视频前半部分根本没有感受（（（
+
+--- ITEM #25 ---
+ID: bili_comments_1215
+平台: bili
+类型: comments
+内容: 建议视频全程60帧，然后故意配个数字倒数，看看有多少人认为的卡其实是心理作用，tm50多帧就有人刷卡真是离谱[辣眼睛]
+
+--- ITEM #26 ---
+ID: bili_comments_1216
+平台: bili
+类型: comments
+内容: 实际上只要你每秒内帧数的分布是相等的，在23.9fps以上的都不会有不连贯感，更高的帧数只是看起来更自然。实际上决定影像流不流畅的还有动态模糊，游戏之所以需要更高的帧数是因为游戏无法保证渲染出的画面在每秒内是平均分布的，所以30帧的游戏和30帧的视频完全是两个概念。[捂脸]
+
+--- ITEM #27 ---
+ID: bili_comments_1218
+平台: bili
+类型: comments
+内容: 如果大家这个视频不觉得卡很正常，因为这是真实世界的视频，每一帧都含有一段时间的信息，电影帧率才24帧。游戏就不一样了，那是显卡渲染出来的画面，显卡可没有曝光时间，如果习惯了144帧，猛降到60，应该具有明显的差别。
+
+--- ITEM #28 ---
+ID: bili_comments_1219
+平台: bili
+类型: comments
+内容: 以前我觉得60帧能玩，后来我玩惯了120帧，这60帧是什么东西玩不了。再然后我舍友告诉我他是200帧，问我要不要体验几把，我说算了。[微笑]
+
+--- ITEM #29 ---
+ID: bili_comments_1221
+平台: bili
+类型: comments
+内容: 就算你码率再高，分辨率再高，放b站还是给你压到1080p
+
+--- ITEM #30 ---
+ID: bili_comments_1222
+平台: bili
+类型: comments
+内容: 视频时间正常流动，视频却卡的一批，怎么想都是UP的错(°∀°)ﾉ（滑稽）
+
+--- ITEM #31 ---
+ID: bili_comments_1227
+平台: bili
+类型: comments
+内容: 是这个视频一卡一卡的吧
+
+--- ITEM #32 ---
+ID: bili_comments_1229
+平台: bili
+类型: comments
+内容: 我觉得我也能做一个128k的视频：
+1.录一个1080p的游戏视频
+2.把帧率降到2帧
+3.发b站
+反正那些萌新看不出来，说画质不好就是b站的锅"视频压过了"
+
+--- ITEM #33 ---
+ID: bili_comments_1230
+平台: bili
+类型: comments
+内容: https://www.bilibili.com/video/BV1MF411n7j8/ 飞跃5300米！世界记录！ 
+https://www.bilibili.com/video/BV14L4y137PX/ 高速测速720KM/H 世界记录！
+https://www.bilibili.com/video/BV1ft411U7qB/ 32K已出
+https://www.bilibili.com/video/av37834571 64K已出
+https://www.bilibili.com/video/BV1Bb411Y76M/ 128K已出
+https://www.bilibili.com/v
+
+--- ITEM #34 ---
+ID: bili_comments_1231
+平台: bili
+类型: comments
+内容: 你敢信我300兆的宽带看B站的4K视频要加载好几秒，我看YouTube的真4k都不需要这么长时间
+
+--- ITEM #35 ---
+ID: bili_comments_1232
+平台: bili
+类型: comments
+内容: 我偶然发现的[doge]，重新插拔电脑的耳机孔就可以结束B站视频的卡顿。外放的时候突然变卡就插入耳机，立刻流畅；反过来插入耳机的时候突然变卡，拔出耳机就能流畅，然后短时间内再插拔耳机也没影响。不知道是什么原理。
+
+--- ITEM #36 ---
+ID: bili_comments_1233
+平台: bili
+类型: comments
+内容: 最近不知道b站怎么了，我1000兆光纤手机看卡死了[doge]包括看这个视频，跑38kb每秒给我，气死了
+
+--- ITEM #37 ---
+ID: bili_comments_1234
+平台: bili
+类型: comments
+内容: B站最近是被攻击了吗？梯子油管不卡，其他平台也不卡，唯独B站卡顿丢包。
+
+--- ITEM #38 ---
+ID: bili_comments_1235
+平台: bili
+类型: comments
+内容: 用的Edge看B站，有几个视频页面原来不卡，突然不知怎么就卡了，以后每次进就卡了，这个会是什么情况
+
+--- ITEM #39 ---
+ID: bili_comments_1236
+平台: bili
+类型: comments
+内容: 重度B站用户苦卡顿久矣，之前还以为电脑配置问题升级了4090显卡但还是卡顿，直到用了up的办法终于解决了[脱单doge]给up三连了（要是早点看到说不定就不买4090了[微笑]）
+
+--- ITEM #40 ---
+ID: bili_comments_1237
+平台: bili
+类型: comments
+内容: 网页版只要全屏后就会掉帧卡顿，大会员买了个寂寞，显示器是3440*1440 60hz的，不知道有没有关系
+
+--- ITEM #41 ---
+ID: bili_comments_1238
+平台: bili
+类型: comments
+内容: 千兆网+双播链路聚合，用steam下载都能跑到970m的速度，在手机上看b站只有645kb/s，每次都卡在这个速度[呲牙]气笑了给我，不说看本地nas的视频了，就看腾讯视频、看爱奇艺等app，从来没卡过，就b站卡加载，牛逼[呲牙]
+
+--- ITEM #42 ---
+ID: bili_comments_1239
+平台: bili
+类型: comments
+内容: 就连点进这个视频都是黑屏的[星星眼]
+
+--- ITEM #43 ---
+ID: bili_comments_1242
+平台: bili
+类型: comments
+内容: 期待持续更新独立站提高访问量以及转化率高质量内容，永远支持你[打call]
+
+--- ITEM #44 ---
+ID: bili_comments_1244
+平台: bili
+类型: comments
+内容: 本期视频观看指南：
+观看指南：
+00:49 为什么图片大小会影响加载速度
+02:29 图片压缩
+08:06 视频提速
+12:03 服务器提速
+
+--- ITEM #45 ---
+ID: bili_comments_1245
+平台: bili
+类型: comments
+内容: 网页端可能和耳机有关，耳机重连就能播放了
+
+--- ITEM #46 ---
+ID: bili_comments_1246
+平台: bili
+类型: comments
+内容: 网速啥的完全正常，网页也能打开，是个视频就加载不出来[笑哭]
+
+--- ITEM #47 ---
+ID: bili_comments_1247
+平台: bili
+类型: comments
+内容: 这个视频都在缓冲[微笑][微笑]
+
+--- ITEM #48 ---
+ID: bili_comments_1248
+平台: bili
+类型: comments
+内容: 我也出现过这个情况，打开b站pc端设置，把“禁用GPU加速”这个选项勾上重启客户端就好了[OK]
+
+--- ITEM #49 ---
+ID: bili_comments_1249
+平台: bili
+类型: comments
+内容: 注意注意，也有一种可能是音响的问题。
+我的情况是音响驱动有问题，可能是耳机或者是某种原因导致系统的音频功能离线，重启电脑或者是拔插耳机，或者是断开蓝牙耳机
+
+--- ITEM #50 ---
+ID: bili_comments_1250
+平台: bili
+类型: comments
+内容: 艹，开关GPU加速，开关ipv6，换dns，开关广告过滤全都没用。b站，金凡！！！[生气_金箍]
+
+--- ITEM #51 ---
+ID: bili_comments_1252
+平台: bili
+类型: comments
+内容: 我现在就是 up的视频加载不出 但可以正常评论 头像什么的也都能看到…
+
+--- ITEM #52 ---
+ID: bili_comments_1253
+平台: bili
+类型: comments
+内容: 太幽默了，教你如何解决缓冲不了的视频缓冲不出来
+
+--- ITEM #53 ---
+ID: bili_comments_1254
+平台: bili
+类型: comments
+内容: 我靠，我现在也是这种情况，WIFI，流量一切正常打开b站，功能一切正常，就是打开视频一直卡在缓冲不动
+
+--- ITEM #54 ---
+ID: bili_comments_1256
+平台: bili
+类型: comments
+内容: 我什么时候关注的？[藏狐]
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_028
+
+开始分析：

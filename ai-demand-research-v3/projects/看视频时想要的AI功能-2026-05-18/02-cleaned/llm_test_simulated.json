@@ -1,0 +1,771 @@
+{
+  "version": "3.2-simulated",
+  "total": 50,
+  "note": "此为模拟结果，实际运行需要有效的API Key",
+  "results": [
+    {
+      "id": "ks_55",
+      "platform": "ks",
+      "interaction": 2723680,
+      "text_preview": "Ai科技与狠活真是越来越炸裂了！！这些工具你都见过吗？#ai分身 #deepseek#短视频带货##ai工具 Ai科技与狠活真是越来越炸裂了！！这些工具你都见过...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_39",
+      "platform": "dy",
+      "interaction": 1464489,
+      "text_preview": "上期32万观看被催爆的AI视频教程来了｜别再抽卡了 \n为什么随便写的提示词反而出大片，认真写反而融化变形？这期直接从技术原理讲透——关键不是字数多少，而是谁能精...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_18",
+      "platform": "ks",
+      "interaction": 1090160,
+      "text_preview": "一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑教程 #ai短视频 一分钟用Deepseek生成50条原创视频 #DeepSeek #剪辑...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_38",
+      "platform": "dy",
+      "interaction": 953673,
+      "text_preview": "改变视频行业的Ai，快来了(但有点恐怖)#人工智能 #AI  #ai新星计划 #影视飓风#seedance 改变视频行业的Ai，快来了(但有点恐怖)#人工智能 ...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_45",
+      "platform": "dy",
+      "interaction": 775101,
+      "text_preview": "最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程 最近爆火的AI视频工具推荐！ #AI视频   #AI...",
+      "layer1": [
+        "视频生成/编辑",
+        "智能推荐/过滤"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_50",
+      "platform": "ks",
+      "interaction": 707935,
+      "text_preview": "AI胖贵妃视频咋做的？简单一看就会 #胖贵妃  #大唐胖妞  #ai视频制作 AI胖贵妃视频咋做的？简单一看就会 #胖贵妃  #大唐胖妞  #ai视频制作",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "bili_32",
+      "platform": "bili",
+      "interaction": 665926,
+      "text_preview": "【AI 教程】拜托三连了！这绝对是你能找到的最良心AI教程 『只用90分钟』       AI基础系统教程/海报设计/排版/详细步骤/软件排版学习/ 这个视频的...",
+      "layer1": [
+        "视频生成/编辑",
+        "学习/笔记"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_10",
+      "platform": "ks",
+      "interaction": 576879,
+      "text_preview": "快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索  快手AI深度思考搜索，最简单的“开挂”利器？！ #ai #快手智能搜索",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_35",
+      "platform": "ks",
+      "interaction": 549779,
+      "text_preview": "快手ai功能#短视频创业 #互联网创业 #快手知识分享 快手ai功能#短视频创业 #互联网创业 #快手知识分享",
+      "layer1": [
+        "视频生成/编辑",
+        "学习/笔记",
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_31",
+      "platform": "dy",
+      "interaction": 528350,
+      "text_preview": "【一口气系列】带你一口气学会用即梦AI制作视频 #跟着抖音学AI #AI #即梦ai #AI视频 #即梦 【一口气系列】带你一口气学会用即梦AI制作视频 #跟着...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_27",
+      "platform": "ks",
+      "interaction": 483726,
+      "text_preview": "国产免费的AI生成视频工具，你用过几个？#AI视频 #AI工具 #视频工具 #干货 国产免费的AI生成视频工具，你用过几个？#AI视频 #AI工具 #视频工具 ...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_33",
+      "platform": "ks",
+      "interaction": 462667,
+      "text_preview": "快手AI对话功能 #短视频创业 #互联网创业 #快手知识分享 快手AI对话功能 #短视频创业 #互联网创业 #快手知识分享",
+      "layer1": [
+        "视频生成/编辑",
+        "学习/笔记",
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_19",
+      "platform": "dy",
+      "interaction": 369439,
+      "text_preview": "还能这么用？超全！豆包 AI 使用指南 #豆包 #AI #硬核玩家计划 还能这么用？超全！豆包 AI 使用指南 #豆包 #AI #硬核玩家计划",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_90",
+      "platform": "ks",
+      "interaction": 362545,
+      "text_preview": "快手自动直播，一分不花，免费用！ #知识播种计划 #教新人如何玩好快手 #短视频创业 #口播 快手自动直播，一分不花，免费用！ #知识播种计划 #教新人如何玩好...",
+      "layer1": [
+        "学习/笔记"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_41",
+      "platform": "dy",
+      "interaction": 317084,
+      "text_preview": "国产免费的AI生成视频工具！让你悄悄躺平！🔥 #ai #ai工具 #自媒体 #干货分享 #短视频 国产免费的AI生成视频工具！让你悄悄躺平！🔥 #ai #ai工...",
+      "layer1": [
+        "视频生成/编辑",
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_471",
+      "platform": "xhs",
+      "interaction": 302346,
+      "text_preview": "16岁的我想告诉您：男孩应该怎么养！ #亲子教育[话题]##孩子教育[话题]# #家长和孩子[话题]#",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_88",
+      "platform": "ks",
+      "interaction": 294157,
+      "text_preview": "用快手Ai制作短视频的方法。 用快手Ai制作短视频的方法。",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_598",
+      "platform": "xhs",
+      "interaction": 270000,
+      "text_preview": "怀胎十月，女性到底经历了什么？ #科普[话题]# #女性[话题]# #母亲[话题]# #人体的奥秘[话题]# #RED新生代创作大赛[话题]#  #科学向导[话...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_14",
+      "platform": "ks",
+      "interaction": 265016,
+      "text_preview": "第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶...",
+      "layer1": [
+        "视频生成/编辑",
+        "学习/笔记",
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_483",
+      "platform": "xhs",
+      "interaction": 263091,
+      "text_preview": "爸爸的陪伴到底有多重要？爸爸常带的孩子抗压能力会更强，性格也更开朗活泼！转给孩子爸爸看看！#爸爸带娃[话题]# #亲子互动游戏[话题]# #亲子陪伴[话题]# ...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_39",
+      "platform": "ks",
+      "interaction": 243174,
+      "text_preview": "热门视频一键生成#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享   @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhf...",
+      "layer1": [
+        "视频生成/编辑",
+        "学习/笔记",
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_41",
+      "platform": "ks",
+      "interaction": 234325,
+      "text_preview": "一分钟学会用ai生成原创视频 #教程 #ai #人工智能 #短视频 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_382",
+      "platform": "xhs",
+      "interaction": 233772,
+      "text_preview": "科学小实验｜简单好学，孩子超喜欢 有趣的科学小实验，孩子超喜欢，快带孩子玩起来吧#自制玩具教程[话题]# #手工制作玩具[话题]# #科学小实验[话题]# #科...",
+      "layer1": [
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_383",
+      "platform": "xhs",
+      "interaction": 231039,
+      "text_preview": "不花一分钱在家玩早教 培养宝宝专注力，锻炼手部精细动作，激发好奇心，培养解决问题的能力。新手爸妈抓紧带宝宝玩起来#启蒙早教[话题]# #在家早教小游戏[话题]#...",
+      "layer1": [
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_476",
+      "platform": "xhs",
+      "interaction": 227223,
+      "text_preview": "几个月什么都不懂，羞羞的事情当面做？ 绝对不能！#育儿经验分享[话题]#",
+      "layer1": [
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "dy_87",
+      "platform": "dy",
+      "interaction": 226681,
+      "text_preview": "一天一个神奇网站【第100期】 在线AI视频生成工具，文字生视频、图片生视频、照片说话全都有，480p无限免费生成不限次数，不用登录/注册就能用，拿来测测创意、...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_19",
+      "platform": "ks",
+      "interaction": 225263,
+      "text_preview": "教你用AI工具，一键生成原创视频 #剪辑 #自媒体 #ai #视频剪辑 教你用AI工具，一键生成原创视频 #剪辑 #自媒体 #ai #视频剪辑",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_602",
+      "platform": "xhs",
+      "interaction": 223740,
+      "text_preview": "备孕前没人告诉你的事 #听医生的真心话[话题]# #白大褂朋友已在线[话题]# #健康知识科普[话题]# #涨知识[话题]# #备孕[话题]# #孕产经验分享[...",
+      "layer1": [
+        "学习/笔记",
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_79",
+      "platform": "ks",
+      "interaction": 222039,
+      "text_preview": "#短视频带货 #短视频变现 #短视频创业 #光和计划激励任务 #短视频带货 #短视频变现 #短视频创业 #光和计划激励任务",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_1264",
+      "platform": "xhs",
+      "interaction": 219246,
+      "text_preview": "时长半小时！光遇竞速大电影《时代》上线！ 送给光遇竞速五周年，送给竞速赛场上的每一个人#光遇[话题]# #光遇竞速大电影时代[话题]# #光遇花憩节[话题]# ...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_469",
+      "platform": "xhs",
+      "interaction": 218000,
+      "text_preview": "你知道，为什么不能让孩子上交压岁钱吗 #压岁钱[话题]##育儿[话题]##财商[话题]##孩子的底气[话题]#",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_1088",
+      "platform": "xhs",
+      "interaction": 215923,
+      "text_preview": "《朋友们的百种人生》 用恶意剪辑的方式解锁朋友，发现他们个个深藏不露~#朋友[话题]# #人生[话题]#",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_111",
+      "platform": "xhs",
+      "interaction": 212522,
+      "text_preview": "孕期这样吃，宝宝聪明又好看 #健康科普[话题]# #儿科医生[话题]# #孕产[话题]# #胎儿[话题]# #胎儿成长发育[话题]# #孕产经验分享[话题]# ...",
+      "layer1": [
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "bili_50",
+      "platform": "bili",
+      "interaction": 212436,
+      "text_preview": "4个AI神器，满足你的特殊需求...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_34",
+      "platform": "ks",
+      "interaction": 206969,
+      "text_preview": "快手新功能AI自动生成视频 #老铁知识百科发文征集令 #有用内容创作计划 #光合计划 #快影AI生视频 @快手热点(O3xddgkd5fav5if9) @我要上...",
+      "layer1": [
+        "视频生成/编辑",
+        "学习/笔记"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_1089",
+      "platform": "xhs",
+      "interaction": 204629,
+      "text_preview": "你这个阶层的人会极力阻止你刷到这个视频 #女性成长[话题]# #颠覆你的认知[话题]# #AI[话题]# #Gemini[话题]# #话袋智能语音系统[话题]#...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_1677",
+      "platform": "xhs",
+      "interaction": 199000,
+      "text_preview": "模仿不同平台旅行vlog的区别！ #vlog[话题]# #模仿[话题]# #搞笑[话题]#",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_616",
+      "platform": "xhs",
+      "interaction": 198248,
+      "text_preview": "感觉生孩子就是在走捷径 规避了人生课题 人穷极一生都在探索的课题：自己想成为什么样的人，自己想要过什么样的生活。而生孩子，就是将自己的人生课题暂时搁置逃避，将自...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_1117",
+      "platform": "xhs",
+      "interaction": 197637,
+      "text_preview": "能解决问题的男人真的很厉害… #情侣日常[话题]# #搞笑[话题]# #反转[话题]#",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_662",
+      "platform": "xhs",
+      "interaction": 190817,
+      "text_preview": "开会时，眼睁睁看着同事追完一部剧… 公司每天都要开大会，没啥实质内容，特别无聊...[抠鼻R]\n大志为了能在会上摸鱼看剧，她把鞋子改造出一个抽屉，把手机装在抽屉...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_475",
+      "platform": "xhs",
+      "interaction": 190585,
+      "text_preview": "你知道餐桌规矩会影响孩子的一生吗？ #剧情[话题]# #情感[话题]# #育儿[话题]# #餐桌礼仪[话题]#",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_385",
+      "platform": "xhs",
+      "interaction": 190337,
+      "text_preview": "早教中心的价值三百一节的早教内容，咱们不花钱在家就能玩，锻炼宝宝手部精细动作和手眼协调能力，培养专注力,宝宝越玩越聪明，家长们快带宝宝玩起来吧~ #在家早教小游...",
+      "layer1": [
+        "社交/分享"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_487",
+      "platform": "xhs",
+      "interaction": 189782,
+      "text_preview": "时刻提醒自己，歇着点，歇着点 #带娃日常[话题]# #爸爸带娃[话题]# #内容过于真实[话题]# #育儿[话题]# #人类幼崽[话题]# #亲子互动[话题]#...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_42",
+      "platform": "ks",
+      "interaction": 188209,
+      "text_preview": "今天给大家推荐几个国产AI视频神器，不用花钱，效率逆天，赶紧收藏。#AI#AI技能AIGC#AI视频#人工智能 今天给大家推荐几个国产AI视频神器，不用花钱，效...",
+      "layer1": [
+        "视频生成/编辑",
+        "智能推荐/过滤"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_564",
+      "platform": "xhs",
+      "interaction": 186219,
+      "text_preview": "新手爸妈一定要警惕这些藏在新生儿身边的恶意#新生儿[话题]# #父母必看[话题]# #人性[话题]# 新手爸妈一定要警惕这些藏在新生儿身边的恶意#新生儿[话题]...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "ks_1",
+      "platform": "ks",
+      "interaction": 181839,
+      "text_preview": "AI怎么做视频\n既赚钱 又有流量\n一分钟看明白\n #文娱百科明日之星 #快成长计划 #智能Ai #短视频变现赚钱 @快手创作者中心(O3xrgtux2ehryf...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_1171",
+      "platform": "xhs",
+      "interaction": 181803,
+      "text_preview": "不花钱也能用AI？不同场景的AI工具指南来啦 ﻿#AI短视频[话题]#﻿ ﻿#ai短视频制作[话题]#﻿ ﻿#个人IP[话题]#﻿ ﻿#aiIP[话题]#﻿ ﻿...",
+      "layer1": [
+        "视频生成/编辑"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_387",
+      "platform": "xhs",
+      "interaction": 181290,
+      "text_preview": "幼儿音乐律动完整版《身体音阶歌》 幼儿音乐律动完整版《身体音阶歌》有趣好玩的身体音阶歌来啦～跟着思思老师一起跳起来吧～#幼儿音乐律动[话题]##奥尔夫音乐律动[...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_871",
+      "platform": "xhs",
+      "interaction": 180936,
+      "text_preview": "你在下面干什么老师都看的清清楚楚 #沉浸式体验[话题]# #沉浸式[话题]# #真实还原[话题]# #老师[话题]# #校园[话题]#",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    },
+    {
+      "id": "xhs_384",
+      "platform": "xhs",
+      "interaction": 179845,
+      "text_preview": "老妈带娃超省！7天早教零成本！ 1-2岁高质量早教  带娃不是砸钱是用心！！     ​ #亲子互动[话题]#  ​ #不花钱早教[话题]#  ​ #早教游戏[...",
+      "layer1": [
+        "其他"
+      ],
+      "layer2": [],
+      "emotions": [],
+      "scenes": [],
+      "confidence": 0.75,
+      "reasoning": "",
+      "status": "simulated"
+    }
+  ]
+}

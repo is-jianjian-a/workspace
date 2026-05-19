@@ -1,0 +1,363 @@
+{
+  "version": "v3",
+  "created_at": "2025-05-08",
+  "description": "手机视频观看场景VOC分析分类体系 - 半开放结构",
+  "layer1_scene": {
+    "description": "用户观看视频的场景维度",
+    "categories": [
+      {
+        "id": "short_video",
+        "name": "短视频消费",
+        "definition": "抖音、快手、小红书等短视频平台的观看体验"
+      },
+      {
+        "id": "long_video",
+        "name": "长视频消费",
+        "definition": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+      },
+      {
+        "id": "live_stream",
+        "name": "直播观看",
+        "definition": "抖音直播、淘宝直播等实时直播观看体验"
+      },
+      {
+        "id": "video_creation",
+        "name": "视频创作",
+        "definition": "用户使用手机拍摄、剪辑、发布视频的体验"
+      }
+    ]
+  },
+  "layer2_type": {
+    "description": "用户诉求的类型维度",
+    "categories": [
+      {
+        "id": "feature_request",
+        "name": "功能需求",
+        "definition": "用户明确提出的功能期望或建议"
+      },
+      {
+        "id": "pain_point",
+        "name": "体验痛点",
+        "definition": "用户抱怨的现有问题或不满"
+      },
+      {
+        "id": "emotion",
+        "name": "情感表达",
+        "definition": "用户的情绪反应、态度表达"
+      },
+      {
+        "id": "expectation",
+        "name": "期望建议",
+        "definition": "用户对未来功能或体验的期望"
+      },
+      {
+        "id": "behavior",
+        "name": "行为描述",
+        "definition": "用户描述自己的使用行为或习惯"
+      }
+    ]
+  },
+  "layer3_topic": {
+    "description": "主题标签 - 预定义20个，允许LLM建议新增",
+    "predefined": [
+      {
+        "id": "playback_control",
+        "name": "播放控制",
+        "examples": [
+          "倍速播放",
+          "进度条",
+          "暂停/续播",
+          "手势操作"
+        ],
+        "definition": "用户对视频播放控制功能的诉求"
+      },
+      {
+        "id": "video_quality",
+        "name": "画质音质",
+        "examples": [
+          "4K/高清",
+          "卡顿",
+          "清晰度",
+          "音质",
+          "HDR"
+        ],
+        "definition": "用户对视频和音频质量的诉求"
+      },
+      {
+        "id": "content_recommend",
+        "name": "内容推荐",
+        "examples": [
+          "推荐算法",
+          "个性化",
+          "不感兴趣",
+          "内容重复"
+        ],
+        "definition": "用户对内容推荐系统的诉求"
+      },
+      {
+        "id": "social_interaction",
+        "name": "社交互动",
+        "examples": [
+          "弹幕",
+          "评论",
+          "点赞",
+          "分享",
+          "互动功能"
+        ],
+        "definition": "用户对视频社交互动功能的诉求"
+      },
+      {
+        "id": "payment_member",
+        "name": "付费会员",
+        "examples": [
+          "会员价格",
+          "VIP权益",
+          "自动续费",
+          "付费内容"
+        ],
+        "definition": "用户对付费和会员体系的诉求"
+      },
+      {
+        "id": "ad_experience",
+        "name": "广告体验",
+        "examples": [
+          "广告时长",
+          "广告数量",
+          "跳过广告",
+          "广告质量"
+        ],
+        "definition": "用户对广告体验的诉求"
+      },
+      {
+        "id": "multi_device",
+        "name": "多设备同步",
+        "examples": [
+          "手机投屏",
+          "跨设备续播",
+          "多终端登录",
+          "历史同步"
+        ],
+        "definition": "用户跨设备观看体验的诉求"
+      },
+      {
+        "id": "download_cache",
+        "name": "下载缓存",
+        "examples": [
+          "离线观看",
+          "下载速度",
+          "缓存管理",
+          "存储空间"
+        ],
+        "definition": "用户对视频下载和缓存功能的诉求"
+      },
+      {
+        "id": "subtitle_translate",
+        "name": "字幕翻译",
+        "examples": [
+          "自动生成字幕",
+          "多语言翻译",
+          "字幕样式",
+          "实时翻译"
+        ],
+        "definition": "用户对字幕和翻译功能的诉求"
+      },
+      {
+        "id": "screen_cast",
+        "name": "投屏大屏",
+        "examples": [
+          "电视投屏",
+          "投影仪",
+          "大屏体验",
+          "无线投屏"
+        ],
+        "definition": "用户投屏到大屏幕观看的诉求"
+      },
+      {
+        "id": "background_play",
+        "name": "后台播放",
+        "examples": [
+          "锁屏播放",
+          "听视频",
+          "后台音频",
+          "小窗播放"
+        ],
+        "definition": "用户后台或锁屏状态下播放的诉求"
+      },
+      {
+        "id": "search_discover",
+        "name": "搜索发现",
+        "examples": [
+          "搜索功能",
+          "内容发现",
+          "分类浏览",
+          "筛选功能"
+        ],
+        "definition": "用户搜索和发现内容的诉求"
+      },
+      {
+        "id": "privacy_security",
+        "name": "隐私安全",
+        "examples": [
+          "观看历史",
+          "隐私模式",
+          "数据安全",
+          "青少年模式"
+        ],
+        "definition": "用户对隐私和安全功能的诉求"
+      },
+      {
+        "id": "youth_mode",
+        "name": "青少年模式",
+        "examples": [
+          "家长控制",
+          "时长限制",
+          "内容过滤",
+          "防沉迷"
+        ],
+        "definition": "用户对青少年保护功能的诉求"
+      },
+      {
+        "id": "accessibility",
+        "name": "无障碍辅助",
+        "examples": [
+          "字幕辅助",
+          "语音控制",
+          "大字体",
+          "色弱适配"
+        ],
+        "definition": "用户对无障碍功能的诉求"
+      },
+      {
+        "id": "time_addiction",
+        "name": "时间沉迷",
+        "examples": [
+          "刷视频时间太长",
+          "停不下来",
+          "时间黑洞",
+          "防沉迷",
+          "使用时长"
+        ],
+        "definition": "用户对视频使用时间管理和沉迷控制的诉求"
+      },
+      {
+        "id": "ai_feature",
+        "name": "AI功能",
+        "examples": [
+          "AI总结",
+          "智能推荐",
+          "AI字幕",
+          "内容理解",
+          "智能剪辑"
+        ],
+        "definition": "用户对AI相关功能的诉求"
+      },
+      {
+        "id": "creation_tool",
+        "name": "创作工具",
+        "examples": [
+          "剪辑功能",
+          "特效",
+          "滤镜",
+          "配乐",
+          "模板"
+        ],
+        "definition": "用户对视频创作工具的诉求"
+      },
+      {
+        "id": "cross_platform",
+        "name": "跨平台体验",
+        "examples": [
+          "网页版",
+          "平板适配",
+          "车机支持",
+          "折叠屏"
+        ],
+        "definition": "用户跨平台/终端观看体验的诉求"
+      },
+      {
+        "id": "notification",
+        "name": "通知提醒",
+        "examples": [
+          "更新提醒",
+          "直播通知",
+          "推送频率",
+          "免打扰"
+        ],
+        "definition": "用户对通知和提醒功能的诉求"
+      },
+      {
+        "id": "other",
+        "name": "其他",
+        "examples": [],
+        "definition": "不属于以上类别的其他诉求"
+      }
+    ],
+    "dynamic_rules": {
+      "allow_new_topics": true,
+      "new_topic_threshold": "当单批次中出现≥3条无法匹配预定义主题时，建议新增主题",
+      "new_topic_review": "LLM建议新增主题后，需人工确认或自动记录供后续review"
+    }
+  },
+  "ai_classification": {
+    "description": "AI相关诉求的细分维度",
+    "ai_categories": [
+      {
+        "id": "content_understanding",
+        "name": "内容理解",
+        "examples": [
+          "AI总结",
+          "内容摘要",
+          "关键点提取"
+        ]
+      },
+      {
+        "id": "smart_recommend",
+        "name": "智能推荐",
+        "examples": [
+          "AI个性化推荐",
+          "兴趣预测",
+          "智能排序"
+        ]
+      },
+      {
+        "id": "generation_assist",
+        "name": "生成辅助",
+        "examples": [
+          "AI字幕生成",
+          "AI翻译",
+          "AI配音",
+          "智能剪辑"
+        ]
+      },
+      {
+        "id": "interaction_enhance",
+        "name": "交互增强",
+        "examples": [
+          "语音控制",
+          "手势识别",
+          "智能搜索",
+          "问答助手"
+        ]
+      },
+      {
+        "id": "quality_optimize",
+        "name": "质量优化",
+        "examples": [
+          "AI画质增强",
+          "AI降噪",
+          "智能码率"
+        ]
+      },
+      {
+        "id": "other_ai",
+        "name": "其他AI",
+        "examples": []
+      }
+    ],
+    "specificity_levels": {
+      "explicit": "用户明确提到AI、人工智能、智能等关键词",
+      "implicit": "用户描述的功能需要AI技术实现但未明确提及AI",
+      "not_ai": "与AI无关"
+    }
+  }
+}

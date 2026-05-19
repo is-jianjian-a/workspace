@@ -1,0 +1,537 @@
+{
+  "batch_id": 91,
+  "total_items": 42,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 28,
+      "short_video": 11,
+      "long_video": 3
+    },
+    "type_distribution": {
+      "behavior_description": 36,
+      "pain_point": 4,
+      "feature_request": 2
+    },
+    "topic_distribution": {
+      "other": 16,
+      "content_recommend": 2,
+      "screen_cast": 10,
+      "payment_member": 5,
+      "video_quality": 3,
+      "playback_control": 1,
+      "ad_experience": 5
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 40
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_3033",
+      "text": "看视频直接睡着[飙泪笑][飙泪笑][飙泪笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3036",
+      "text": "没必要卸载哔站吧，别没事打开刷，但是也没必要卸载。哔站也是一个很好的知识平台，平时遇到什么不懂的比如安装网线修电脑都可以去哔站上面找教程",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3038",
+      "text": "我2025年360小时阅读时长，但眼睛是真的伤，有点遭住不了，准备365打卡结束后换回kindle墨水屏了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3041",
+      "text": "博主有什么书单推荐吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3042",
+      "text": "怎么设置时间限制？求问[拜托]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3043",
+      "text": "果断卸载短视频软件，是最好的办法。自然会找些有意义的事做。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3044",
+      "text": "以前挑战过一个月不看抖音，小红书，b站，期间想看视频的时候，就用听音乐或者读书来代替。运动属于健康类的问题，和手机使用关系不大",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3046",
+      "text": "卸载抖音，b站，微信设置青少年模式，关闭短视频。有点像古人戒大烟。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3047",
+      "text": "不碰电脑，不看短视频，一个月看一两次电视，生活会变得更精彩。而且不止一点点，而是差十万八千里。 思想的贫穷限制了普通人的想象。除了玩手机，很多更有意义的事情都发生在人与人，人与自然，运动，冥想，等其他范围中。[图片]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3049",
+      "text": "短视频应用都卸载光了，除了微信视频号(可以隐藏起来)",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3052",
+      "text": "嗯？条条大路通废柴 你要真是那块料  一个抖音 b站能给你废了？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3054",
+      "text": "别人家电视用来看节目的，我家电视主打一个沉浸式静态观赏，其实就是一张糊墙纸。为了不显得太寒酸，我往上面糊了两张画。现在只要有人来，我都假装自己是搞艺术的，骂我装X可以，但千万别让我开机…[捂脸]查看图片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3055",
+      "text": "央视频可不是免费的[捂脸]而且宽带根本不含着IPTV[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3056",
+      "text": "一般是过年用几天，其它时间都是连插头都拔了，还看什么电视呢，许多台看着都是收费，收费，或者是广告，广告，于是干脆关了，不看了，玩玩手机吧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3057",
+      "text": "“开通宽带附赠的免费IPTV”，然而我是第二年告知你需要付费，我取消还要亲自拿去营业厅办理",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3059",
+      "text": "别推电视了，谁看这玩意儿，老东西还想拿出来收割韭菜",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3062",
+      "text": "地面波不稳定，有的地方之间收不到。那么卫星接收器 启动！国内的有免费的中星6看，中央电视台加各地卫视，这些足以满足观看了。外面的加密就收费了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3063",
+      "text": "问题是，电视好看吗，机顶盒好几年没开过了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3064",
+      "text": "给家里长辈看看还行，年轻一代越来越多人已经不看电视了，更别提这种传统电视频道了，内容都是千篇一律的主旋律。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3066",
+      "text": "一根铜丝就搞定了，家住24楼，徐州市区，可以收到十几个电视台和十几个广播台，就是画质除了个别高清频道都是一般，但是够用了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3068",
+      "text": "给家里长辈看看还行，年轻一代越来越多人已经不看电视了，更别提这种传统电视频道了，内容都是千篇一律的主旋律，除了宣传，毫无价值",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3069",
+      "text": "资源全，国内外都有，内含电视剧电影动漫，高清不卡顿，最主要它免费哎！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3070",
+      "text": "不如花钱搞一个小电脑主机，能开浏览器就行",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3072",
+      "text": "免费看电视去家电城待着，电视都不用买哈哈哈[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3076",
+      "text": "坐牢就可以天天24小时看电视",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3080",
+      "text": "还有删减呢，你升级多高的会员都没用[尴尬]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3081",
+      "text": "爱奇艺开了会员还是会有弹窗广告，而且很容易误触，按了叉还是会进入广告界面。暂停的时候为了看一下细节，结果界面缩小，放大广告，真的无语了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3083",
+      "text": "而且花多少钱都去不掉内容内的广告[doge]这个盗版都贴心的帮你去掉了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3085",
+      "text": "盗版唯一的坏处就是赌场广告[大哭]。最大的好处是没有分级，想看啥都有。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3087",
+      "text": "b站广告是几乎没有的，或者说即使有，也很友善",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3089",
+      "text": "盗版全高清4K，爱奇艺会员就搞笑了，想看最高帧率还得升级最恶心的是开黄金会员还有会员专属广告，以前我开了好几年的，一气之下卸载转威尼斯人了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3090",
+      "text": "盗版视频怎么没广告看到激动时“澳门新普京……”[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3091",
+      "text": "要4K普通会员还得升级[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3092",
+      "text": "正版自带广告，盗版可以给你删减了广告",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3094",
+      "text": "我现在都是在网站收藏到网盘，直接在网盘里看，清晰，片全，又没广告",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3096",
+      "text": "VIP还看不了4K还得SVIP才行   真是逆天   我TMD直接看盗版不要钱的4K不香吗",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3097",
+      "text": "确实是堵不如疏。要像管孩子的手机一样，自己制定个使用规则并自己执行。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3098",
+      "text": "短视频长久刷的话，对自己确实有一定的影响，我们不可能一瞬间就能做出改变，现在很多年轻人，不管老人和小孩都在通过短视频获取信息，成为娱乐消遣最多的，对任何事物都要有双面性的看待，任何事物都有利有弊，想要戒掉的话，只能通过慢慢的改变",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3106",
+      "text": "我没有抖音快手，天天对着小红书看图文，对着网文小说，对着动漫电影，对着知乎刷回答[尴尬][尴尬][尴尬]感觉没有短视频也是各种浪费时间，根本不提升自己[衰]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3107",
+      "text": "b站不就是短视频吗？大哥别笑话二哥",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3108",
+      "text": "b站不就是短视频吗？大哥别笑话二哥。而且我除了耍手机就是玩游戏",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3110",
+      "text": "正常人用手机我敢说99.99%的人一个星期都不可能不看一次短视频都不看只有是低于5分钟的视频都算短视频不是只有抖音快手才叫短视频百度推荐的视频的今日头条的视频都算短视频，少看就行了完全不看一点不现实除非极度自律。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    }
+  ]
+}

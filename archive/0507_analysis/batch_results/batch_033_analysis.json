@@ -1,0 +1,572 @@
+{
+  "batch_id": 33,
+  "total_items": 45,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 38,
+      "short_video": 4,
+      "long_video": 3
+    },
+    "type_distribution": {
+      "behavior_description": 31,
+      "pain_point": 8,
+      "feature_request": 5,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "video_quality": 11,
+      "other": 23,
+      "download_cache": 4,
+      "screen_cast": 6,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 1,
+      "implicit": 2,
+      "not_ai": 42
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1564",
+      "text": "其实地球Online也是，你看不到的地方就不加载地图[doge_金箍]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1565",
+      "text": "以前为了让游戏流畅运行：榨干游戏机机能，大量降低压力的优化，巧妙重复利用的素材\n现在为了让游戏流畅运行：我们的最低配置是xxx，你们该换电脑了，不然玩不了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1566",
+      "text": "还是地球ol优化的好啊，很真实[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1569",
+      "text": "我去，居然是《消逝的光芒：困兽》吗？怪不得，我之前用手机玩手机都差点卡爆了，顺便问一下大家用过的手机怎么处理？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1575",
+      "text": "主动下载AI模型会出现connection handling canceled是正常现象。要随便找个视频然后在应用调整里面应用没下载的AI模型，然后导出，这样它就会成功下载。下载完在模型管理器里还是不会显示但实际上已经下载好了，下次用的时候是不需要下载的。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_1576",
+      "text": "帮xdm上传到夸克了[OK]直接转存up的东西，还有些我下载好的模型也在里面\n我用夸克网盘给你分享了「topaz」，链接：https://pan.quark.cn/s/435376bb3216",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1577",
+      "text": "我怎么感觉越更新这软件越不好用[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1579",
+      "text": "天啊，一个几分钟的视频，要花几个小时。。。果断劝退。本想修复长度在1小时的视频，估计得修复到下个月了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1582",
+      "text": "是关闭了防病毒使用破解程序的时候，也必定报错，就是在已经下载好星光模型之后，再次使用的时候，也是必定会报错，它能破解，但是唯独星光模型用不了，会有一部分报错，但是我什么都是按照默认的来的，至少我能确定我我的操作完全正确，而且它必定没有被防病毒拦截，但是还是用不了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1584",
+      "text": "已三连，UP主提取码[吃瓜][吃瓜][吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1596",
+      "text": "如果原视频的码率就很低，设置成超过原视频的码率是不是没有用",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1597",
+      "text": "同意，我觉得B站1080P的视频清晰度都下降了[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1598",
+      "text": "想知道b站抖音一般最高多少码率不会被二次压缩呢？我的4k上传抖音直接变480p",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1599",
+      "text": "Up帧率对清晰度有影响吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1600",
+      "text": "在b站想看4K充值太贵了。相同视频我肯定是愿意去油管看。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1601",
+      "text": "影视飓风视频补档都搜不到了，太难绷了[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1602",
+      "text": "找分辨率适合的码率网上一搜一大把，也有很多up讲，可惜没两个讲的更深入，包括这个up。想真学懂的同学建议买本多媒体通信看看。不想那么深入只想弄个高清视频的同学，以h264为例建议了解下什么是i p b帧 gop值，压缩软件也得学比如mediacoder， megui，不过后者得学会avisynth脚本",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1605",
+      "text": "这就跟网速一个道理，厂家专门看你们不懂，国内网络提速，现在人均千兆了，乍一看确实下载速度快了。网课时代就暴露出问题了，老师说，我家都开千兆宽带了，怎么网课还这么卡，一查速率，下载500m/s，上传才10m/s",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1606",
+      "text": "说不看电视的，可能你只是不看传统的电视节目了。但是电视机本身是一个超大显示屏，你可以用它看4k电影，可以连Switch/PS5/Xbox这类游戏机玩游戏，甚至你可以连电脑在85寸大屏幕上刷b站。我本人就在装修时铺了线，书房的电脑既可以连屋内显示器也可以连客厅大电视。相信我 你看熟了大屏幕后，再看小屏幕真的是无比难受。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1607",
+      "text": "拍了这么多和“看”相关的视频，什么时候能拍拍“听”相关的，hifi也好降噪也好，很希望看到更专业的解读",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1608",
+      "text": "那电脑屏幕呢？怎么设置画质好，Windows的一些自动增强是不是也影响画质？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1609",
+      "text": "现在有很多投影仪会默认开启ai补帧，可是实际上没有必要吧？要是看电影或者动画都会觉得画面很不对劲，然而又鲜有人知道怎么关，算是行业通病了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1610",
+      "text": "英伟达DLSS的补帧功能不会有电视运动补偿出现的那些缺点吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1611",
+      "text": "看完了稍微总结一下，举个例子就是，如果你想吃到更加原汁原味的饭菜，(比如刺身)，而不是做好之后，又被别人加了调料去调味，那就关闭那些设置，去感受原汁原味的画面和色彩，而这期视频也不是一种要求什么的，让你必须关掉这些设置，而是告诉你，如果你想要更原汁原味的感受那么该怎么做",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1612",
+      "text": "作为在这个时代少有的经常看电视的人，\n我个人认为，\nmemc在大尺寸电视上是非常有必要的，\n尤其是在观看一些低帧率的电视节目时候，\n硕大的屏幕搭配着显而易见的卡顿，\n非常容易让人视觉疲劳。\n但是，tim说的也是事实，在看一些特定片源的时候，再关闭不迟。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1613",
+      "text": "MEMC在一些特定场景我认为还是不错的，之前在电视上玩塞尔达旷野之息，电视从30帧补到60帧，感觉上还是很不错的[七濑胡桃_乖巧]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1614",
+      "text": "作为00后，现在真的有很多家里还看电视嘛，感觉现在基本上都是平板和手机还有电脑充斥着整个生活，有很多新家装修直接搞个投影仪也可以代替电视[脱单doge]所以电视的优势在哪……",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1617",
+      "text": "选择问题，觉得自己视频清晰本身就是因为码率高，如果按照平台不压码率的标准制作视频，其他参数相同码率低了清晰度肯定也是下降，只能说觉得自己转码率后的清晰度比b站压的清晰度好点，不过之前我测试的是就算按照b站要求的码率上传后b站还是会转码，所以现在都是以最高码率上传。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1618",
+      "text": "我还是有点不太理解……如果我手机的话，是不是要不断调整分辨率和码率，然后从中找一个平衡点上传才是最好的？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1619",
+      "text": "我发的4K视频，上传抖音被压缩后，有些是1K的，有些是2K的，有些是4K, 大部分是720。\n为了找规律，做了一个测试：同一个内容的4K视频，用剪影导出设置为1k,2k,4k,并用不同的速率，10个组合，全部传抖音后，结局都是720 。  大家可以自己测试一下。似乎什么内容直接就被划档了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1620",
+      "text": "我一直奇怪那些大V上传的视频为什么那么高清的离谱，是不是针对新人有限制的，他们的画面看着像4K高清，如果控制在3500以内，很多画面会有噪点的[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1621",
+      "text": "那么问题来了，Weixin朋友圈视频码率最大是多少呢",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1623",
+      "text": "我记得之前的建议影视飓风是4k25帧35000，50帧55000。现在是平台整体又降码率了吗up",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1624",
+      "text": "实测，自己压缩的画质比抖音压缩的画质差多了，还是高码率直接发抖音交给抖音压缩靠谱",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1625",
+      "text": "老套路了，本来用ADOBE pr转码很方便。而且上传也能保持清晰度。\n但是被JS们发现后，只要你上传的转码视频头文件里有adoberp的签r，立马就给你压缩掉\n目的就是让你去下载国产软件去用，那些国产软件都是国外拿过来披上层皮而已",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1626",
+      "text": "请问发在B站上4K 60帧视频用多少码合适？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1628",
+      "text": "up您好，想请教一下如何导出120帧的视频呢？我的素材是120帧的但是导出选项里没有120帧选项",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1630",
+      "text": "拍视频还行，但如果我是2K 165帧的电脑录制，那这种情况下该怎么设置才能发到类似抖音还有朋友圈之类的，是维持2K分辨率还是降低到1080P",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1631",
+      "text": "怎么查看视频原始码率呀，剪映和原始视频码率设置一样行吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1632",
+      "text": "有没有那种一键增强视频画质的软件？感觉哪怕是拍4K，设置也是对的，导出的视频还是很糊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1633",
+      "text": "up，1080p 30帧导出速度有点慢，有推荐的笔记本电脑吗，谢谢",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1636",
+      "text": "我可不可以插电视当电脑屏幕用",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1641",
+      "text": "我显卡一般，用的 24 寸高清高刷屏，玩游戏全程都很流畅",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1643",
+      "text": "电竞屏的响应速度，看灰阶响应会比全程响应更参考",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1644",
+      "text": "低蓝光模式其实分档位，选可调节的会更适配不同使用场景",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

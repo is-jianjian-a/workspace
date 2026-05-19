@@ -1,0 +1,489 @@
+{
+  "batch_id": 44,
+  "total_items": 38,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 32,
+      "short_video": 5,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 28,
+      "pain_point": 8,
+      "positive_feedback": 1,
+      "feature_request": 1
+    },
+    "topic_distribution": {
+      "other": 25,
+      "video_quality": 6,
+      "download_cache": 1,
+      "ad_experience": 1,
+      "playback_control": 4,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 1,
+      "implicit": 1,
+      "not_ai": 36
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_comments_727",
+      "text": "还废话不多说，一个视频说了一大半废话[捂脸][ok]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_733",
+      "text": "@小涛(O2405754678) @L  i(O875954691) @缘…(O2660155833) 看到没有录制视频都要技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_734",
+      "text": "谁知道这是怎么回事啊，我这华为980处理器微信视频不卡但是画面卡顿的要死，处理器还不到垃圾的地步啊，愁死我了，除了微信视频画面卡顿其他任何流畅到无可挑剔",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_739",
+      "text": "六十帧拍出来发快手更卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_744",
+      "text": "再也不搜了，手机差点废了[头盔]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_748",
+      "text": "千万不要展开，千万千万千万千万千万别展开，千万不要展开，不能展开，不能展开，反正就是不要展开，千万别展开，千万千万千万不要展开，不能展开，别展开，别展开，别展开，别展开，别展开，别展开，别展开，千万不要展开，别展开，别展开，别展开，不要展开，别给自己找麻烦，就别展开，千万不要展开别展开，不要展开，别展开，\n别展开好吧(눈눈)好吧，你竟然展开，这也在我意料之内，都怪你的好奇心，既然展开了那就把这条信",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_752",
+      "text": "千万不要展开，千万千万千万千万千万别展开，千万不要展开，不能展开，不能展开，反正就是不要展开，千万别展开，千万千万千万不要展开，不能展开，别展开，别展开，别展开，别展开，别展开，别展开，别展开，千万不要展开，别展开，别展开，别展开，不要展开，别给自己找麻烦，就别展开，千万不要展开别展开，不要展开，别展开，\n别展开好吧(눈눈)好吧，你竟然展开，这也在我意料之内，都怪你的好奇心，既然展开了那就把这条信",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_758",
+      "text": "老是说内存占用 我都恢复出厂设置了都没用",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_759",
+      "text": "应用还原可以彻底删除数据，但同时你的账号各种数据也将同步删除",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_760",
+      "text": "每次看快手都会卡，其他的就非常流畅，是快手针对吗",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_762",
+      "text": "删除等同于重新登录号。也没啥用[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_764",
+      "text": "一秒一卡，十分潇洒，两走一停，十分有型，三秒一卡，等到你傻，四步一停，摆个造型，一心等待，缓冲失败，闪退黑屏，无奈失灵，关机重启，还是不行，卡卡停停，不服不行，运行流畅，无法运行!死神降临，我也差评。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_765",
+      "text": "哎妈呀每次看快手都想骂人[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_767",
+      "text": "谢谢分享[玫瑰][玫瑰][玫瑰][玫瑰][玫瑰][玫瑰]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_771",
+      "text": "我给别人点赞九千多怎么能快速删除一些",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_773",
+      "text": "不管用，还是卡顿，我都散了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_779",
+      "text": "@AI小快 打开离线模式",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_780",
+      "text": "我都清理了，你说的没啥大用，还是卡顿",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_782",
+      "text": "每天给别人点赞很多显示自己给别人点了一万多赞赞怎么办手机卡了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_792",
+      "text": "看电脑。网络视频全屏卡顿怎么回事？什么办法解决。？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_796",
+      "text": "有手机操作的吗@[奸笑][奸笑]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_800",
+      "text": "这样清理真的好用了！！！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_803",
+      "text": "我去 把我12 GB直接变成了2.4GB",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_805",
+      "text": "快手极速版历史观看记录功能我已关闭和广告也已关闭，怎么进入界面还是这么卡",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ad_experience",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_808",
+      "text": "播放量就很低[玫瑰][玫瑰][玫瑰][玫瑰]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_810",
+      "text": "我是新手上路，入驻了磁力聚星做短剧推广，发布了50多个作品，播放量都是几个，请问老师：我还要继续发布作品吗？[抱拳][抱拳][抱拳]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_813",
+      "text": "我发的作品，以前播放量还是1千多2千多，最近播放量一直卡到300~500",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_814",
+      "text": "没有流量[捂脸]没关注[捂脸]没点赞[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_815",
+      "text": "播放量40其中38个都是自己看的[笑哭]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_817",
+      "text": "感谢分享，希望对你有帮助",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_822",
+      "text": "人家安卓Wi-Fi切流量直接无缝衔接就能使用了，但是苹果的断开Wi-Fi之后他还要卡几秒钟，而且有时候甚至是无网络的状态，必须要打开飞行模式重新重启才能使用，我真的服了，搞得我玩游戏都掉装备了[吐血]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_829",
+      "text": "我的卡，一个月就29，用了一年多了，流量185G，每个月用不完，推给了好多人[捂脸]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_831",
+      "text": "观看微信视频号直播时太卡怎么办？怎么调节分辨率？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_834",
+      "text": "谢谢推荐但下次不要推荐了用了更卡了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_comments_836",
+      "text": "万一我没有那个无线和网络呢？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_842",
+      "text": "@快手用户1643629569931(O2737402964)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_855",
+      "text": "我在看你这条视频的时候就很卡，哈哈看了好久才看完",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_859",
+      "text": "生产手机厂家设计套路，老是不换手机赚谁的钱啊",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

@@ -1,0 +1,461 @@
+{
+  "batch_id": 100,
+  "total_items": 36,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 18,
+      "short_video": 18
+    },
+    "type_distribution": {
+      "behavior_description": 29,
+      "pain_point": 3,
+      "feature_request": 3,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "content_recommend": 8,
+      "ai_feature": 4,
+      "other": 24
+    },
+    "ai_statistics": {
+      "total_ai": 12,
+      "explicit": 10,
+      "implicit": 2,
+      "not_ai": 24
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_3718",
+      "text": "那可以说是这些公司/算法工程师坏吗？还是这是社会科技发展的必然性呢",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3722",
+      "text": "虽然我不刷短视频，但我最近觉得过于依赖AI工具的“外包思考”也会带来退化。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3723",
+      "text": "我认识的算法工程师熬夜刷视频打游戏比我还狠[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3725",
+      "text": "当我关闭个性化推荐后，我刷短视频的欲望很小了[大笑][大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3731",
+      "text": "大脑生不生锈不好说，但是长时间看低质量，只追求感官刺激的短视频，越来越降智是肯定的。而且很多视频是根据算法推送的，重复率很高。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3732",
+      "text": "为了避免生锈，还是远离短视频吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3733",
+      "text": "短视频接收的都是碎片化知识，感觉会越来越没有耐心了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3735",
+      "text": "感谢分享，看完作者的回答，感觉太可怕了，确实，我每次视频刷久一点就感觉特别累，甚至会烦躁，本是在休息，只是动动手指，人反而比出去转一圈还累，可是又控制不住，总想看下一条内容。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3736",
+      "text": "感谢答主，我花了一个小时逐字逐句和孩子一起阅读，分析，发散，总结。孩子和我非常认可前面的分析和观点，并且一边总结出来避免两种认知误差的方案，然后发现好几点居然和答主后面给出的方法是相似的，孩子非常有收获和成就感。[握手][握手][握手]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3737",
+      "text": "发现自己的专注力和耐心在慢慢消耗完，很难再专注完成一件需要长时间完成的事情了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3738",
+      "text": "他们一些人喜欢短视频，不喜欢思考，节省脑力。喜欢爱情证明他们存在的价值。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3739",
+      "text": "我反思了一下，确实刷视频的瞬间我有期待，如果刷到的是我爱看的，会产生愉悦感",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3742",
+      "text": "感谢答主把我觉得\"看书有用\"从一种没观点蕴含的情绪转化成一种有知识支撑的观点。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3743",
+      "text": "啊这篇文章怎么说呢，有一定的情绪诱导作用强迫自己阅读那些晦涩难懂的、没有配图的、逻辑紧密的长文。   这个结论明显就具有局限性有点过时了，然后其中关于多巴安的描述，还有前额叶的描述比较专业，然后作者的简介是算法工程师，怎么会对生物这方面这么了解？算法应该依靠心理学比较多，这点有待讨论",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3747",
+      "text": "也没有很难吧。看知乎长文获取知识让我感到愉悦，但是一打开短视频没看2秒我就觉得无聊[机智]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3749",
+      "text": "持续的快乐，持续的多巴胺，算法把我们安排的太明白了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3751",
+      "text": "不刷短视频也不会自动构建出知识，即使看书也可能是过目忘，刷短视频也只是打发时间的一种方式，跟刷知乎没有区别",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3752",
+      "text": "在这个信息爆炸的时代，刷短视频，读网红小说，玩游戏，很容易大脑过载，不会去深度思考，偶尔使用可以锻炼大脑，如果不加以控制，让情绪和本能做主导，上瘾程度和毒品也差不了多少",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3754",
+      "text": "有这么复杂吗？我不看短视频不就行了嘛",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3755",
+      "text": "短视频让很多人的大脑严重overfit是真的，有些小孩看起来啥都懂但是成本纯名词党，自己一点思考空间都没有了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3756",
+      "text": "看评论就知道大家都不喜欢看长文。。。[酷]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3757",
+      "text": "每次观看较长时间的视频或游戏时，心里感觉莫名的空虚，感觉自己在颓废，但就是上瘾式的戒不掉，就是不自觉的去想看，想玩，这种短暂的快感确是会摧残大脑",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3759",
+      "text": "现在的短视频，真的就像点子毒品一样，刷短视频，只是一时的快乐，缺乏思考的话思维只会越来越迟钝，大脑会生锈。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3761",
+      "text": "碳基神经网络和硅基神经网络就此连在一起了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3763",
+      "text": "俺就是在公司用脑过度，回来刷视频调节一下。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3768",
+      "text": "某短视频平台的推荐机制我就非常不喜欢，至少我看b站的时候我知道看完一个视频后往哪探索，但是某短视频平台刷完一个视频后就会强制跳转到下一个视频，没有选择没有探索，感觉我的智商正在被算法侮辱",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3770",
+      "text": "[酷][赞同]我就发现散步遛弯的魅力从未消失，这种放空的魅力实在是太上头了，甚至不能理解手机有什么好玩的，虽然我现在用手机打的这段话",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3772",
+      "text": "…………以前还喜欢刷短剧，那种反转打脸的爽的很。但是现在看多了，估计都是AI编剧的，几乎都一样。看个开头就知道过程结尾。现在变成，开个开头，然后拉到3/4的地方，应该是打脸爽点的地方，看个几集也就是爽完了就换下一个视频。好像可以理解为追求多巴胺分泌。但是更多的现在更喜欢看长时间的科普类视频了。其实兴趣转移也快，应该根本够不到大脑退化这说法吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3774",
+      "text": "@任意一个AI 总结一下[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3779",
+      "text": "那我在抖音上做数学题和背单词，学习西海岸口音，应该能稍微延缓一下这个症状吧",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3783",
+      "text": "读了两遍，很让人警醒，深深反思且希望能按照文中介绍的方法修复&amp;激活大脑，做一个深度思考者。感谢作者[感谢][感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3784",
+      "text": "让AI来帮我们思考就好了，多方便",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_3787",
+      "text": "在这个充斥着奶头乐的时代，保持清醒是一种稀缺的特权。在这个被短视频充斥的时代，保持清醒和专注力真的越来越难了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3790",
+      "text": "我一直同身边的人说不要刷短视频，不要刷短视频，貌似回应不多，如今也不再多说了，看自己的书，让别人去刷视频吧。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3792",
+      "text": "很庆幸我从来没有陷入多巴胺过载中，我从不刷短视频，每天都阅读长文章，也是这样以身作则引导上小学的儿子，他的很多同学已经彻底成为短视频的奴隶了，形同同行尸走肉[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_3795",
+      "text": "建议国家立法，将短视频某厂商的这种故意诱人上瘾的行为，按制毒贩毒罪制裁！精神鸦片！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

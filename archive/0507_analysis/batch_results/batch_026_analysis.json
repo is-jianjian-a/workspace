@@ -1,0 +1,610 @@
+{
+  "batch_id": 26,
+  "total_items": 48,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 41,
+      "long_video": 5,
+      "live_stream": 1,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 25,
+      "pain_point": 19,
+      "feature_request": 3,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 32,
+      "content_recommend": 1,
+      "video_quality": 12,
+      "ai_feature": 1,
+      "screen_cast": 1,
+      "playback_control": 1
+    },
+    "ai_statistics": {
+      "total_ai": 3,
+      "explicit": 0,
+      "implicit": 3,
+      "not_ai": 45
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1036",
+      "text": "🎅🏻也算是剪视频的，能给我搞一个不[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1039",
+      "text": "“视频做得不好吗”\n“很好”\n“老师讲的不清楚吗”\n“很清楚”\n“讲解听不懂吗”\n“都能听懂，也很有趣”\n“？那为什么扔收藏夹就不学了”\n“太长了懒得看”",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1041",
+      "text": "我始终坚信你就是一个优秀的人，你制作的视频真的非常有创意，让",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1045",
+      "text": "我始终坚信你就是一个优秀的人，你制作的视频真的非常有创意，让",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1050",
+      "text": "我什么时候关注的？[藏狐]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1054",
+      "text": "所以手机呢？[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1056",
+      "text": "我家这种是什么情况啊，信号一直满格，但是老是时不时的断网，完了过一段时间又好了，每次都感觉特别玄学，这怎么办啊[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1057",
+      "text": "我家里有个究极神奇的现象，因为频率不高以及好修复所以我就一直没管，每当我电脑关机之后有极低概率wifi会断网，因为频率较低目前就出现过六次好像，所以我的样本有限，暂时没有彻底摸清规律，起初我是没发现关机会断网这个规律的，前两次都是我半夜电脑关了之后准备刷会手机睡觉，结果wifi断了，我就直接睡，第二天起床wifi正常，所以就没管，第三次是第二天早上起来还是没网，即便我懒癌也的处理了，先是重启路由发",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1058",
+      "text": "隔三差五说密码错误连不上呢？是手机问题还是路由问题？用了半年的荣耀Gt，偶尔链不上无线，",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1059",
+      "text": "家里小米AX3000T路由器的2.4g wifi总是突然无法上网1-2分钟，5G wifi正常，有线正常，需要怎么排查合适呀？\n\n但我之前用蒲公英x3a路由器不会出现这个问题，蒲公英x3a是wifi4，小米AX3000T是wifi6。固定信道和关闭了wifi6功能也试过了，都有这个问题。[笑哭][笑哭][笑哭]甚至之前用的小米BE5000(wifi7路由器) 也存在这个问题，BE5000也换过货了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1061",
+      "text": "所以有啥推荐的好用的路由器吗大佬",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1062",
+      "text": "真会胡扯，我的中兴路由器也就两百多WiFi 实际传输超100兆，2.5g全双工，上下带宽同时传输写入和读取分辨能到280Mb。路由器没必要买那些贵的，特别是坑爹的华为h3c，华硕我也用过五年坏、",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1063",
+      "text": "我的是网线直连电脑没问题，但是手机连无线网很抽象，看视频不卡基本上点进去就播放了，b站搜索栏输入关键词搜索经常一直转圈圈加载，有的查看评论也是点进去一直加载不出来，很多应用点开某些界面都是转圈圈，看视频下载这些吃流量的他不卡，那些加载评论界面搜索东西他卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1064",
+      "text": "有没有大佬解释一下，为什么我电脑一开就断网手机也连不上断断续续的，一关又好了，现在路由器管理界面也登不上识别不到",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1065",
+      "text": "你们都说是62.5帧，但我4K导出之后发现也是59.94帧，应该是B站的问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1066",
+      "text": "一直在用mpv-player的display-resample音画同步模式加超采样的时域插值模式看视频以减轻帧率和刷新率的不匹配观感，个人认为在正常速度下播放视频卡顿对观感的影响是远超重采样所带来的伪影的，对视频进行时域重采样的方法在这一点上做得确实聪明[OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1067",
+      "text": "我个人拍视频都是用24FPS来拍，一个是因为它是“绝大多数电影的帧率”；二个是我的手机屏幕刷新率是120，电脑屏幕刷新率是240，正好都是24的倍数，所以是不是在这样的屏幕内，24FPS的视频可能观感也会比25FPS更好呢？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1068",
+      "text": "说是一个改变视频，更像是一个科普视频，谢谢tim",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1069",
+      "text": "我的工作流一直是4k30p或者4k60p，主要就是30和60对于网络支持比较好，虽然国内pal制一直是25和50但是现在没人用电视信号看了吧，电脑的刷新率都是60hz为主~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1070",
+      "text": "热知识，这期视频的B站web端播放器参数是：\n\n1080P 高清：1920 x 1080@30.303\n1080P 60帧：1920 x 1080@58.824\n4K 超清：3840 x 2160@62.500\n\n[笑哭]这三个帧率又是什么原因",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1071",
+      "text": "作为一个专门压片的老司机，自从10年前发现日本动作片全是用29.97压制后，果断选择了NTSC。虽然29.97被保留至今，但有些老古董比如隔行扫描已经被抛弃了。当年因为隔行+帧率问题，能看到一堆百叶窗视频[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1072",
+      "text": "这种帧率无法被整除导致出现「均匀的卡顿」的现象，它有个专门的名字，叫 judder \n\n而我推荐所有使用 Potplayer 的用户都安装 madVR 的原因是，madVR 正好有个功能叫 smooth motion，它通过简单的补帧来消除 judder\n\n我在进行 60/120 FPS 屏幕录制的时候也会把屏幕刷新率从 165/144 Hz 下降到 120 Hz，一是我硬件的性能可能无法同时兼顾",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1074",
+      "text": "作为一个一直在用 25 帧拍摄的小Up，只想说如果想升级到 4k 60，不仅是相机，电脑性能，储存空间都得翻倍地升级[笑哭]所以还是先老老实实跑 25帧吧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1075",
+      "text": "你敢信我300兆的宽带看B站的4K视频要加载好几秒，我看YouTube的真4k都不需要这么长时间",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1076",
+      "text": "我偶然发现的[doge]，重新插拔电脑的耳机孔就可以结束B站视频的卡顿。外放的时候突然变卡就插入耳机，立刻流畅；反过来插入耳机的时候突然变卡，拔出耳机就能流畅，然后短时间内再插拔耳机也没影响。不知道是什么原理。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1077",
+      "text": "最近不知道b站怎么了，我1000兆光纤手机看卡死了[doge]包括看这个视频，跑38kb每秒给我，气死了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1078",
+      "text": "B站最近是被攻击了吗？梯子油管不卡，其他平台也不卡，唯独B站卡顿丢包。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1079",
+      "text": "用的Edge看B站，有几个视频页面原来不卡，突然不知怎么就卡了，以后每次进就卡了，这个会是什么情况",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1080",
+      "text": "重度B站用户苦卡顿久矣，之前还以为电脑配置问题升级了4090显卡但还是卡顿，直到用了up的办法终于解决了[脱单doge]给up三连了（要是早点看到说不定就不买4090了[微笑]）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1081",
+      "text": "网页版只要全屏后就会掉帧卡顿，大会员买了个寂寞，显示器是3440*1440 60hz的，不知道有没有关系",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1082",
+      "text": "千兆网+双播链路聚合，用steam下载都能跑到970m的速度，在手机上看b站只有645kb/s，每次都卡在这个速度[呲牙]气笑了给我，不说看本地nas的视频了，就看腾讯视频、看爱奇艺等app，从来没卡过，就b站卡加载，牛逼[呲牙]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1083",
+      "text": "就连点进这个视频都是黑屏的[星星眼]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1085",
+      "text": "ping 电脑自身263次0延迟  ping网关 数据包: 已发送 = 359，已接收 = 359，丢失 = 0 (0% 丢失)，\n\n往返行程的估计时间(以毫秒为单位):\n\n    最短 = 1ms，最长 = 711ms，平均 = 9ms  偶尔就会出现来自 192.168.10.1 的回复: 字节=32 时间=1ms TTL=64\n\n来自 192.168.10.1 的回复: 字节=32 时间=8",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1087",
+      "text": "很有帮助。最近游戏延迟偶尔很高，找了联通工作人员来检测也没查出问题。通过这个方式确定是“台式机使用无线方式和路由器通讯时偶尔延迟变高”，用有线没问题，其他电脑也没问题。\n现在有三种猜测，台式机网卡坏了，无线天线坏了，网卡偶尔过热性能下降。我比较倾向第三种。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1088",
+      "text": "c NB真有用 手动改了下dns  链接速度从100多涨到649（无线网卡ax210）给朋友鼓捣半宿了 最直观的感受就是B站能看1080p了 原先720都一卡一卡的[doge][doge][脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1091",
+      "text": "来自 8.8.8.8 的回复: 字节=32 时间=35ms TTL=113\n来自 8.8.8.8 的回复: 字节=32 时间=35ms TTL=113\n来自 8.8.8.8 的回复: 字节=32 时间=35ms TTL=113 \n请求超时\n请求超时\n来自 8.8.8.8 的回复: 字节=32 时间=35ms TTL=113\n请求超时\nup主你好，一直这样循环，是不是宽带的问题？宽带测速正常，但就是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1092",
+      "text": "ping完了，没有任何问题，延迟还是在500ms左右，我现在怀疑是运营商在搞事[吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1093",
+      "text": "正在 Ping 8.8.8.8 具有 32 字节的数据:\n\n来自 8.8.8.8 的回复: 字节=32 时间=195ms TTL=108\n\n来自 8.8.8.8 的回复: 字节=32 时间=194ms TTL=108\n\n来自 8.8.8.8 的回复: 字节=32 时间=194ms TTL=108\n\n来自 8.8.8.8 的回复: 字节=32 时间=194ms TTL=1088.8.8.8 的 Pi",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1096",
+      "text": "这个功能其实早就有了，但是默认关闭，现在默认打开了挺逆天的",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1097",
+      "text": "他这个占用是真的高，不过最大的问题不是占用高，是我感觉他效果不怎么样，感觉就是锐化了一下没有让视频变得更清晰，占用这么高就为了锐化一下这说不过去[脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1098",
+      "text": "谢谢你哥们。不管你的建议好不好用，我都提前感谢你。[笑哭]之前我电脑浏览网页，视频都卡顿，排查了一大通。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1099",
+      "text": "我记得这个增强视频有三个选项，一个是调用nv显卡的视频超分，一个是浏览器自带的超分，调用核心，还有一个是类似锐化滤镜的，前两者启用会占用20左右的性能，有时候画面色块会糊在一坨。但是加滤镜的那个就占用很小，而且视觉上也有明显增强，所以我一般看b站视频会开",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1100",
+      "text": "太感谢了[笑哭]，服了，最近一直打不开直播间，网页打开也是转圈，关了瞬间没事了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1103",
+      "text": "[笑哭]本来都要开始骂B站垃圾优化了，顶配放视频都能卡，结果又是Edge的问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1105",
+      "text": "我是华为Mate30  5G手机，刷任何软件都不会出现像刷B站这么卡的情况！！（B站短视频看超过俩小时绝对会越来越开，直到非常卡！）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1106",
+      "text": "本来想看看怎么解决的，结果你这个视频也卡了[抓狂]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1107",
+      "text": "卡到视频都看不了 0kb/s",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1109",
+      "text": "刚买没多久的一加ace2，b站刷一会就卡起来，视频卡顿，滑动也卡顿，每次退出视频都会给我重新加载页面。用了好几年的老手机都没问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

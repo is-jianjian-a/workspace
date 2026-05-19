@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "app-store-scraper": "^0.18.0",
+    "google-play-scraper": "^10.1.2",
+    "https-proxy-agent": "^9.0.0",
+    "node-fetch": "^3.3.2"
+  }
+}

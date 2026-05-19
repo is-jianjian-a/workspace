@@ -1,0 +1,535 @@
+{
+  "batch_id": 62,
+  "total_items": 42,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 23,
+      "general_video": 18,
+      "long_video": 1
+    },
+    "type_distribution": {
+      "behavior_description": 29,
+      "pain_point": 8,
+      "feature_request": 5
+    },
+    "topic_distribution": {
+      "other": 35,
+      "content_recommend": 3,
+      "video_quality": 1,
+      "ai_feature": 1,
+      "payment_member": 2
+    },
+    "ai_statistics": {
+      "total_ai": 4,
+      "explicit": 4,
+      "implicit": 0,
+      "not_ai": 38
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_732",
+      "text": "见了鬼了，二十年前就有搜索引擎能搜全部的知识了，怎么现在出来个短视频才开始知道看知识",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_733",
+      "text": "应该归功于移动互联，而不是短视频，归根到底是科技的进步。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_735",
+      "text": "为什么我的短视频只看到美女扭扭[惊喜]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_736",
+      "text": "就这短视频，毁了多少孩子了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_737",
+      "text": "看归看，还是得自己真实去体验，跟真实的世界一手互动哈",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_744",
+      "text": "信息发达，不代表没有信息差，关键在于鉴别，因为真真假假的东西太多了，当所谓的原本不可泄密的东西发到网络上了，那就只能跟这个类似加上曲解的内容在发出去就好了，太多人分辨不出来了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_746",
+      "text": "他去了长安，知道的应是牛李党争，是韩愈对教师身份的重新定义，是儒和佛之间的生死利益冲突，这些只存在于权力高层的争斗，你以为靠刷几个短视频就想知道？靠短视频摸平信息差，那是幻觉。记住股市的原则，你知道的信息是有人想让你知道，你永远是最后一个知道真相的人，俗称韭菜。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_748",
+      "text": "他们常常给一个过来人看起来明显有问题的视频点赞[思考]而且点赞评论的一看就是同类人我稍微点破，就会被他们攻击但是跟我一样的过来人也会声援我你说这跟自欺欺人有什么区别[大笑][大笑][大笑]没有啥意义，你喜欢啥，算法就推给你啥",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_749",
+      "text": "可是平凡的人生在流量为王的短视频里，并没有流量。绝大多数人过的都是平凡的小日子，平凡的小日子没什么不好的，却让孩子们过不下去，也走不下去。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_751",
+      "text": "我是一个冷门行业创业者，经常在网上发自己日常，我这个行业利润还可以，也不违法，其实同行也经常在网上讨论，但事实上真正进入的人不多，目前也算蓝海，一个路人刷到了哪怕看个几百个短视频也不明白咋玩的，很多人想做但根本做不了，靠刷短视频根本无法增长系统的知识 甚至连碎片知识也很难，不知道你理财不理财，如果理财的话就会发现短视频理财收益率宣称的特别高，流量也有放大器效应，让世界失真。所以我的看法是短视频也好",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_755",
+      "text": "你在短视频学到的信息差一般也就止于视频卖货时货比三家，真格的东西（哪个局长有空缺、今年高考的方向、资金偷入的股票、某厂投入了新技术、修高速要占那片地、轻松出国赚钱的门道等等吧）都学不到。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_756",
+      "text": "确实现在很多短视频就把很多经验总结好了直接喂给你，才兴起的时候我感觉生活很有希望，慢慢地看多了就全都扔进收藏夹吃灰了[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_757",
+      "text": "假通透而已，过几天就忘，没有亲身体验过的经历，很难成为自己的阅历，",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_758",
+      "text": "短视频是工具，作者描述了这个“工具”可以发挥的益处，那么“工具”自然也能发挥出害处，“工具”本身是无善无恶的，是善是恶得看使用工具的人。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_759",
+      "text": "短视频就算了吧，人没有现实中的经历，看再多也是长了见识没长能力而已。而且短视频极端上瘾，信息建房，价值观怎么说呢歪的极多，再加上高赞高评论视频大多是以宣泄情绪，制造冲突为主。没自控力的小孩早被带偏了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_760",
+      "text": "前提是看短视频还思考的人，不是无脑跟风",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_764",
+      "text": "明明是阶级固化造成的，某些短视频让人看见了这种阶级固化，但是也有很多短视频对你进行各种PUA让你继续内卷的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_765",
+      "text": "人是王者选拔游戏，但大家都明白的时候还是选拔。就好像大家都去读大学大学生就不值钱一个道理。哦吃饱穿暖感谢这个时代，不需要感谢短视频，让大部分麻木且自私且不犯法的活着",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_769",
+      "text": "挺有道理的，特别那种“只可意会，不可言传”的认知，原来要么靠自己慢慢领悟，要么有贵人指点，现在一大把人天天总结了快速传输给你，再结合自己身边的事一看，原来是这样",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_770",
+      "text": "我想知道作者流畅的文笔和清晰的文章思路是靠刷短视频达到的吗？！如果不是，那这就是误导。短视频当然可以看，也不乏优质的内容，但一个没有独立思考逻辑的人，看到的除热闹外无他。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_771",
+      "text": "网络时代之前的知识，得到一点学习一点；网络时代之后的知识，得到一点收藏一点。反正多的是，需要的时候再找，但是一直没有需要的时候，因为一直在寻找不同的知识在收藏的路上。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_772",
+      "text": "短视频要是能干这些，早被禁了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_777",
+      "text": "“所有的圈子，都被算法击穿了。”你未免高估自己和短视频了。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_778",
+      "text": "这种认知升级，不要也罢。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_779",
+      "text": "这不就是信息茧房吗，信这玩意只会让你越来越无知，短视频算法会让你只相信自己的那一套，因为你根本就没有独立思考过，全是别人的观点给你洗脑。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_782",
+      "text": "看一千株花开的视频，也不会比亲自在路边闻一朵花香有趣。眼睛不能代替鼻子，嘴巴，手脚去感受世界。所以，这就是现代人总觉得活着无趣的原因吧—他自己并没有真正的活过，他只是看过无数个别人活。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_787",
+      "text": "还感谢短视频，有多少人就像你这样被洗脑了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_788",
+      "text": "现在有了AI了，想经历什么人生可以自己编然后自己参与进去[笑哭][笑哭]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_789",
+      "text": "短视频就算了吧，还没知乎有用。知乎一大堆字有用信息已经少的可怜了。短视频更属于强灌观点连个解题思路都没有，吃这种东西出来的只会成为跟着噱头热点叫唤的小洗脑包。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_790",
+      "text": "信刷视频就能提高认知的这辈子有了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_794",
+      "text": "[doge]谁告诉你你买的是视频本身？你只是花钱让平台同意你看平台的东西",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_795",
+      "text": "就一句话，我充了会员追剧，发现剧质量太差了，能退款不？不能，那我就看新葡京。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_797",
+      "text": "开了会员还有会员专属广告，而且那所谓的正版视频没准还有删减呢。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_798",
+      "text": "当一篇文章长篇大论说一个产品不好时，就是想推送另一个产品。[doge]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_800",
+      "text": "读一本书，你可能要读很久才能有收获。学一个技能，你可能要练习几个月才能看到进步。做一件事情，你可能要坚持很长时间才能得到结果。这些都是\"延迟反馈\"。它们需要耐心，需要坚持，需要对抗大脑的本能冲动。如果你真这么想，不好说。读书为啥要有收获？我喜欢看书，我就看。做事情就真的要有结果吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_801",
+      "text": "我咋不爱看，闲的无聊b9n站乱翻，没一个喜欢的视频很反感，还不如打打小游戏。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_802",
+      "text": "我孩子也喜欢看红果短视频，也是喜欢看霸道总裁爱上绝经奶？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_803",
+      "text": "竟然喜欢被动接受模式，那就让他上网课。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_805",
+      "text": "以前没有手机短视频也没个个都是聪明人。个个都是学霸。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_806",
+      "text": "少看视频，多看书，多输出[害羞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_807",
+      "text": "跟之前的家长觉得是游戏毁掉了孩子一模一样，笑死",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_808",
+      "text": "元认知不好搭建啊，孩子就觉得短视频好看，就没觉得空虚，想要一直看下去。这种状态已经把孩子自己的认知给覆盖掉了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

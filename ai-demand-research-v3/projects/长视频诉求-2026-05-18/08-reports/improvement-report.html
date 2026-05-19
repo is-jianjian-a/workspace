@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>长视频诉求调研 - 任务改进建议</title>
+    <style>
+        body { font-family: -apple-system, sans-serif; background: #f8fafc; color: #334155; padding: 40px; max-width: 900px; margin: 0 auto; }
+        h1 { color: #0f172a; }
+        h2 { color: #1e293b; margin-top: 30px; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; }
+        .issue { background: white; padding: 20px; border-radius: 12px; margin: 15px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #ef4444; }
+        .improvement { background: white; padding: 20px; border-radius: 12px; margin: 15px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); border-left: 4px solid #10b981; }
+        .suggestion { background: #f1f5f9; padding: 15px; border-radius: 8px; margin: 10px 0; }
+        .priority { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 0.8em; font-weight: bold; }
+        .p-high { background: #fee2e2; color: #dc2626; }
+        .p-medium { background: #fef3c7; color: #d97706; }
+        .p-low { background: #dbeafe; color: #2563eb; }
+    </style>
+</head>
+<body>
+    <h1>📋 任务改进建议</h1>
+    <p>项目: 长视频诉求调研 | 基于本次执行的经验总结</p>
+    
+    <h2>🔴 发现的问题</h2>
+    
+    <div class="issue">
+        <h3>问题1：搜索词过于宽泛导致相关率偏低</h3>
+        <p>搜索词"长视频"过于宽泛，导致大量内容创作者分享类笔记混入（无关率42%），用户真实诉求表达被稀释。</p>
+        <span class="priority p-high">高优先级</span>
+    </div>
+    
+    <div class="issue">
+        <h3>问题2：情绪标签识别率偏低</h3>
+        <p>情绪标签"未分类"占比71.5%（208/291），说明现有情绪关键词覆盖不足，用户情绪表达较为隐晦。</p>
+        <span class="priority p-high">高优先级</span>
+    </div>
+    
+    <div class="issue">
+        <h3>问题3：UGC内容识别率有待提升</h3>
+        <p>纯UGC内容仅占14.4%，中性内容占78.7%。UGC信号词典可能过于严格，导致大量真实用户表达被归为中性。</p>
+        <span class="priority p-medium">中优先级</span>
+    </div>
+    
+    <div class="issue">
+        <h3>问题4：设备偏好数据几乎缺失</h3>
+        <p>设备偏好标签中iPhone仅2条、华为1条，说明用户很少在内容中提及具体设备型号，需要更智能的推断方式。</p>
+        <span class="priority p-medium">中优先级</span>
+    </div>
+    
+    <h2>🟢 改进建议</h2>
+    
+    <div class="improvement">
+        <h3>建议1：采用"场景+痛点"组合搜索词</h3>
+        <div class="suggestion">
+            <p><strong>具体措施：</strong></p>
+            <ul>
+                <li>第一轮用宽泛词（如"长视频"）进行场景发现</li>
+                <li>第二轮用"场景+痛点"组合词（如"长视频 熬夜"、"长视频 眼睛酸"）进行聚焦验证</li>
+                <li>第三轮用"功能+情绪"词（如"倍速 焦虑"、"护眼 累"）进行深度挖掘</li>
+            </ul>
+        </div>
+        <span class="priority p-high">高优先级</span>
+    </div>
+    
+    <div class="improvement">
+        <h3>建议2：增强情绪识别能力</h3>
+        <div class="suggestion">
+            <p><strong>具体措施：</strong></p>
+            <ul>
+                <li>增加emoji情绪映射（😭→焦虑/后悔、😂→愉悦、😴→疲惫等）</li>
+                <li>引入语义级情绪分析（不仅是关键词匹配）</li>
+                <li>增加"隐式情绪"识别（如"又熬夜了"→后悔，"停不下来"→焦虑+依赖）</li>
+            </ul>
+        </div>
+        <span class="priority p-high">高优先级</span>
+    </div>
+    
+    <div class="improvement">
+        <h3>建议3：优化UGC识别算法</h3>
+        <div class="suggestion">
+            <p><strong>具体措施：</strong></p>
+            <ul>
+                <li>放宽UGC信号阈值（当前要求明确的第一人称表达，可加入隐性表达）</li>
+                <li>增加"体验描述"类信号（如"看了之后"、"结果发现"、"没想到"）</li>
+                <li>结合互动量权重（高互动+中性内容可能隐含UGC属性）</li>
+            </ul>
+        </div>
+        <span class="priority p-medium">中优先级</span>
+    </div>
+    
+    <div class="improvement">
+        <h3>建议4：丰富标签体系</h3>
+        <div class="suggestion">
+            <p><strong>具体措施：</strong></p>
+            <ul>
+                <li>增加"内容类型"标签（vlog/纪录片/电影/电视剧/综艺/教程）</li>
+                <li>增加"观看目的"标签（娱乐/学习/陪伴/助眠/kill time）</li>
+                <li>增加"内容来源"标签（原创/搬运/二创/合集）</li>
+            </ul>
+        </div>
+        <span class="priority p-low">低优先级</span>
+    </div>
+    
+    <div class="improvement">
+        <h3>建议5：建立用户原声库</h3>
+        <div class="suggestion">
+            <p><strong>具体措施：</strong></p>
+            <ul>
+                <li>将高价值内容中的用户原声按主题分类归档</li>
+                <li>建立"金句"库，用于后续报告撰写和产品设计参考</li>
+                <li>定期更新，形成用户语言风格的语料库</li>
+            </ul>
+        </div>
+        <span class="priority p-medium">中优先级</span>
+    </div>
+    
+    <h2>📊 方法论改进</h2>
+    
+    <div class="improvement">
+        <h3>改进1：引入交叉验证机制</h3>
+        <p>当前分析主要基于单一数据源（小红书），建议增加跨平台验证（B站、抖音、知乎），确认洞察的普适性。</p>
+    </div>
+    
+    <div class="improvement">
+        <h3>改进2：增加定量验证环节</h3>
+        <p>在定性洞察基础上，设计问卷或A/B测试进行定量验证，确认需求的真实性和优先级。</p>
+    </div>
+    
+    <div class="improvement">
+        <h3>改进3：建立洞察追踪机制</h3>
+        <p>对本次提出的P0机会点，建立后续追踪机制，定期更新数据验证洞察是否持续有效。</p>
+    </div>
+</body>
+</html>

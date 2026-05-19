@@ -1,0 +1,463 @@
+{
+  "batch_id": 48,
+  "total_items": 36,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 14,
+      "general_video": 22
+    },
+    "type_distribution": {
+      "behavior_description": 28,
+      "feature_request": 5,
+      "pain_point": 3
+    },
+    "topic_distribution": {
+      "other": 26,
+      "video_quality": 1,
+      "download_cache": 4,
+      "screen_cast": 1,
+      "content_recommend": 2,
+      "payment_member": 2
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 35
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_comments_1366",
+      "text": "@新亮(O3563726936) @快手用户1718025009550(O3103505469) 早期的快影[柴犬]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_1401",
+      "text": "有没有人告诉我画质突然模糊然后抖一下怎么弄",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_1405",
+      "text": "优秀作品就该点赞和评论[赞][赞][赞]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_1423",
+      "text": "感谢分享，支持支持优秀主播老师分享，[赞][赞]支持久了正能量正能量，",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_1426",
+      "text": "[爱心][爱心]平台官方主播老师，谢谢你的留言。关注友谊长长久久",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_1431",
+      "text": "怎么我用了高清上传，还是模糊了，怎么回事",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_comments_1447",
+      "text": "怎么下载呢宝宝们[爱心]",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_0",
+      "text": "以前只需要打开电视机就可以，现在反而需要看各种广告，科技的发达不是应该方便人类吗？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_2",
+      "text": "好多浏览器看不了了，以前用手机自带浏览器可以看，现在只有UC能用，但是总是缓存，有没有可以替代的浏览器？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_3",
+      "text": "看视频时看不进去，看书时总是可以深入思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_4",
+      "text": "我发现自己每天刷短视频的时间越来越长，有时候会觉得虚度光阴，甚至影响了工作和学习，想知道大家有没有类似的困扰，是如何平衡的？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_5",
+      "text": "我的父亲是一个40多岁的普通中年人，曾经像大多数人一样勤勤恳恳，是个顾家的好父亲。可是自从他沉迷抖音之后，一切都改变了，父母关系越来越糟糕，他的脾气越来越暴躁，身体也越来越差。甚至很晚的时间，凌晨三点我起来上厕所，都可以看到他还在看抖音。知乎大佬很多，我希望能够收集足够多的资料和说法，劝说我的父亲，甚至千千万万人的父亲、配偶，从这个毒品里解放出来。希望各位大佬真的能帮我，也希望我这个高中生的一点点",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_7",
+      "text": "不看手机了，让生活变得充实起来，有意义而且还有乐趣，该干什么？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_8",
+      "text": "很多人不是离不开短视频，而是离不开那种“立刻被填满”的感觉。 很多人不是在用短视频休息，而是在用短视频逃避疲惫",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_10",
+      "text": "我感觉我的手机除了刷短视频都不知道干嘛，对我来说手机就是一个刷短视频的工具，而它的其他手机的功能对我来说都没有什么用或者说不知道除了短视频我还能干嘛？我想提升自己于是我去阅读，发现自己对书实在提不起什么兴趣，翻遍了这个软件都不知道该看什么，玩游戏也不是很提得起劲，可能因为之前报复性升段位，现在觉得打游戏都是很累的事情，该怎么办啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_11",
+      "text": "我身边有些朋友，哪怕正版内容价格不高，他们也更倾向于找各种盗版资源，这让我挺不解的。究竟是什么原因让他们做出这样的选择呢？是付费习惯、内容稀缺性还是其他因素？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_12",
+      "text": "看视频学习，总感觉效率很慢，记忆效果也不好，还看的很累，大家有什么好的学习方法么？或者看视频学习方的建议",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_13",
+      "text": "最近想看看视频，又找不到网站，付费开vip感觉又太贵了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "payment_member",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_14",
+      "text": "导致了后果的程度和性质有所不同。 刷短视频本质上是一种行为成瘾的潜在模式。它通过提供即时、高密度、不可预测（下一个视频内容总是未知）的视听刺激和社交反馈（点赞、评论）",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_contents_15",
+      "text": "如果真有小朋友信以为真，那这一批娃在未来还真是个大麻烦事。 总之，据我观察，短视频刷的越多，做事越没耐心，长此以往，这批孩子就很难理解“一分耕耘一分收获”、“付出才有回报”等等基本道理",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_16",
+      "text": "如果你控制不住自己，总是想看抖音，快手之类的短视频的话，那我建议你赶紧卸载掉。 卸载了之后呢，你再想看的时候还得下载安装",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_17",
+      "text": "为什么短视频越看越累？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_19",
+      "text": "为什么在网上遇到的女生都说自己社恐 ？一开视频就说不方便是不喜欢啊还是真社恐啊？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_20",
+      "text": "感觉好奇怪各位大佬，我问这个问题只是想知道有多少人会因为看抖音而有优越感，我和我的朋友都很讨厌抖音，我没说看不起玩抖音的人，更没说我有看抖音2019.2.23",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_21",
+      "text": "我感觉我的手机除了刷短视频都不知道干嘛，对我来说手机就是一个刷短视频的工具，而它的其他手机的功能对我来说都没有什么用或者说不知道除了短视频我还能干嘛？我想提升自己于是我去阅读，发现自己对书实在提不起什么兴趣，翻遍了这个软件都不知道该看什么，玩游戏也不是很提得起劲，可能因为之前报复性升段位，现在觉得打游戏都是很累的事情，该怎么办啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_23",
+      "text": "为什么有些人打死也不愿意视频聊天呢?是对自己相貌的不自信吗?",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_24",
+      "text": "现在很多人都是刷视频，看视频了，文字消息还有多少人愿意看？还能写吗？我主要是分享理财经历，感觉文字确实难写学写，看的人也很少。很多人喜欢直接视频，直接告诉他买那个可以赚钱。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_25",
+      "text": "和男票快一年了，感情稳定向好，但是我俩都属于比较内向不太会说话的人，手机打字能冒火星子了，现实见面也腻腻歪歪的很正常，可是异地一打语音双方就非常的尴尬双双沉默无言，打视频就刚认识那会儿打了一次场面更尴尬惨不忍睹不想回忆，所以至今再也没打过语音更没有视频通话过，想问一下这种是什么情况呢？明明双方都非常非常非常思念对方很想很想对方，可就是宁愿打字也不语音视频？这正常吗？怎么解决这个和对象的语音视频困难",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_26",
+      "text": "用手机怎样找大人看的视频资源网站？成人网是一个特定的网站，要找到它你要在浏览器输入-网p75.站xyz就ok",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_27",
+      "text": "我也是啊，到底是怎么找的视频？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_29",
+      "text": "很多女生不想接视频的原因是觉得视频里不好看，对视频里的自己不自信，如果是微信视频通话，那更不想视频了，就很多人吐槽微信视频不好看啊",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_30",
+      "text": "就会越发想要录制视频寻求刺激。 其实很少人在乎或者喜欢看那种无灯光、无剧情的劣质手段拍摄的视频，也不会人肉到你家门口",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_31",
+      "text": "如果你完全不刷短视频，有可能这类内容就完全看不到，这就导致用户无法看到更真实的世界。 短视频的社会性和普遍性",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_32",
+      "text": "看视频时看不进去，看书时总是可以深入思考",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_33",
+      "text": "很多人不是离不开短视频，而是离不开那种“立刻被填满”的感觉。 很多人不是在用短视频休息，而是在用短视频逃避疲惫",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_contents_35",
+      "text": "前几天在网上刷抖音看普法视频，有一个大V说是浏览黄色网站属于违法行为，会被处罚。后面又在抖音刷到另一个大V的普法视频说在家自己网上浏览、观看、下载黄片",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

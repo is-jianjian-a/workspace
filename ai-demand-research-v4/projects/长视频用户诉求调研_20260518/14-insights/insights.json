@@ -1,0 +1,92 @@
+[
+  {
+    "id": "I001",
+    "rank": 1,
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "rice_score": 249000.0,
+    "reach": 332000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "evidence": {
+      "frequency": 332,
+      "total_interaction": 1887909,
+      "source_ugc_count": 332
+    },
+    "recommendation": "建议基于用户画像优化推荐算法，提升长视频内容发现效率"
+  },
+  {
+    "id": "I002",
+    "rank": 2,
+    "job_statement": "当我在周末时，我想要当前长视频体验存在痛点: 没有关注，两个视频，这样我就可以希望能够解决这些问题，获得更流畅的观看体验",
+    "job_type": "emotional",
+    "kano_type": "must_be",
+    "rice_score": 72000.0,
+    "reach": 60000,
+    "impact": 2.4,
+    "confidence": 1.0,
+    "effort": 2,
+    "evidence": {
+      "frequency": 60,
+      "total_interaction": 58104,
+      "source_ugc_count": 60
+    },
+    "recommendation": "建议基于用户画像优化推荐算法，提升长视频内容发现效率"
+  },
+  {
+    "id": "I003",
+    "rank": 3,
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "rice_score": 27750.0,
+    "reach": 37000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "evidence": {
+      "frequency": 37,
+      "total_interaction": 259567,
+      "source_ugc_count": 37
+    },
+    "recommendation": "建议基于用户画像优化推荐算法，提升长视频内容发现效率"
+  },
+  {
+    "id": "I004",
+    "rank": 4,
+    "job_statement": "当我在 unspecified时，我想要想要更快或更慢地观看长视频内容，这样我就可以能够根据自己的节奏控制视频播放速度",
+    "job_type": "functional",
+    "kano_type": "performance",
+    "rice_score": 26000.0,
+    "reach": 10000,
+    "impact": 3,
+    "confidence": 0.8666666666666667,
+    "effort": 1,
+    "evidence": {
+      "frequency": 10,
+      "total_interaction": 144805,
+      "source_ugc_count": 10
+    },
+    "recommendation": "建议开发智能倍速功能：根据内容类型自动推荐最佳播放速度（如知识类1.5x，剧情类1.0x），支持自定义速度记忆"
+  },
+  {
+    "id": "I005",
+    "rank": 5,
+    "job_statement": "当我在 unspecified时，我想要想要在 unspecified观看长视频内容，这样我就可以能够获得满足的内容消费体验",
+    "job_type": "functional",
+    "kano_type": "indifferent",
+    "rice_score": 18750.0,
+    "reach": 25000,
+    "impact": 3,
+    "confidence": 0.5,
+    "effort": 2,
+    "evidence": {
+      "frequency": 25,
+      "total_interaction": 447200,
+      "source_ugc_count": 25
+    },
+    "recommendation": "建议基于用户画像优化推荐算法，提升长视频内容发现效率"
+  }
+]

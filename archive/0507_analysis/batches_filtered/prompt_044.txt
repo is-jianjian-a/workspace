@@ -1,0 +1,574 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下38条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 44/120)
+
+--- ITEM #1 ---
+ID: kuaishou_comments_727
+平台: kuaishou
+类型: comments
+内容: 还废话不多说，一个视频说了一大半废话[捂脸][ok]
+
+--- ITEM #2 ---
+ID: kuaishou_comments_733
+平台: kuaishou
+类型: comments
+内容: @小涛(O2405754678) @L  i(O875954691) @缘…(O2660155833) 看到没有录制视频都要技巧
+
+--- ITEM #3 ---
+ID: kuaishou_comments_734
+平台: kuaishou
+类型: comments
+内容: 谁知道这是怎么回事啊，我这华为980处理器微信视频不卡但是画面卡顿的要死，处理器还不到垃圾的地步啊，愁死我了，除了微信视频画面卡顿其他任何流畅到无可挑剔
+
+--- ITEM #4 ---
+ID: kuaishou_comments_739
+平台: kuaishou
+类型: comments
+内容: 六十帧拍出来发快手更卡
+
+--- ITEM #5 ---
+ID: kuaishou_comments_744
+平台: kuaishou
+类型: comments
+内容: 再也不搜了，手机差点废了[头盔]
+
+--- ITEM #6 ---
+ID: kuaishou_comments_748
+平台: kuaishou
+类型: comments
+内容: 千万不要展开，千万千万千万千万千万别展开，千万不要展开，不能展开，不能展开，反正就是不要展开，千万别展开，千万千万千万不要展开，不能展开，别展开，别展开，别展开，别展开，别展开，别展开，别展开，千万不要展开，别展开，别展开，别展开，不要展开，别给自己找麻烦，就别展开，千万不要展开别展开，不要展开，别展开，
+别展开好吧(눈눈)好吧，你竟然展开，这也在我意料之内，都怪你的好奇心，既然展开了那就把这条信息发到十个评论区里吧要是不按我说的做，在一天之内会发生可怕的事情😱你就等着吧（别怪我，我也是受害者）
+
+--- ITEM #7 ---
+ID: kuaishou_comments_752
+平台: kuaishou
+类型: comments
+内容: 千万不要展开，千万千万千万千万千万别展开，千万不要展开，不能展开，不能展开，反正就是不要展开，千万别展开，千万千万千万不要展开，不能展开，别展开，别展开，别展开，别展开，别展开，别展开，别展开，千万不要展开，别展开，别展开，别展开，不要展开，别给自己找麻烦，就别展开，千万不要展开别展开，不要展开，别展开，
+别展开好吧(눈눈)好吧，你竟然展开，这也在我意料之内，都怪你的好奇心，既然展开了那就把这条信息发到十个评论区里吧要是不按我说的做，在一天之内会发生可怕的事情😱你就等着吧（别怪我，我也是受害者）
+
+--- ITEM #8 ---
+ID: kuaishou_comments_758
+平台: kuaishou
+类型: comments
+内容: 老是说内存占用 我都恢复出厂设置了都没用
+
+--- ITEM #9 ---
+ID: kuaishou_comments_759
+平台: kuaishou
+类型: comments
+内容: 应用还原可以彻底删除数据，但同时你的账号各种数据也将同步删除
+
+--- ITEM #10 ---
+ID: kuaishou_comments_760
+平台: kuaishou
+类型: comments
+内容: 每次看快手都会卡，其他的就非常流畅，是快手针对吗
+
+--- ITEM #11 ---
+ID: kuaishou_comments_762
+平台: kuaishou
+类型: comments
+内容: 删除等同于重新登录号。也没啥用[捂脸]
+
+--- ITEM #12 ---
+ID: kuaishou_comments_764
+平台: kuaishou
+类型: comments
+内容: 一秒一卡，十分潇洒，两走一停，十分有型，三秒一卡，等到你傻，四步一停，摆个造型，一心等待，缓冲失败，闪退黑屏，无奈失灵，关机重启，还是不行，卡卡停停，不服不行，运行流畅，无法运行!死神降临，我也差评。
+
+--- ITEM #13 ---
+ID: kuaishou_comments_765
+平台: kuaishou
+类型: comments
+内容: 哎妈呀每次看快手都想骂人[捂脸]
+
+--- ITEM #14 ---
+ID: kuaishou_comments_767
+平台: kuaishou
+类型: comments
+内容: 谢谢分享[玫瑰][玫瑰][玫瑰][玫瑰][玫瑰][玫瑰]
+
+--- ITEM #15 ---
+ID: kuaishou_comments_771
+平台: kuaishou
+类型: comments
+内容: 我给别人点赞九千多怎么能快速删除一些
+
+--- ITEM #16 ---
+ID: kuaishou_comments_773
+平台: kuaishou
+类型: comments
+内容: 不管用，还是卡顿，我都散了
+
+--- ITEM #17 ---
+ID: kuaishou_comments_779
+平台: kuaishou
+类型: comments
+内容: @AI小快 打开离线模式
+
+--- ITEM #18 ---
+ID: kuaishou_comments_780
+平台: kuaishou
+类型: comments
+内容: 我都清理了，你说的没啥大用，还是卡顿
+
+--- ITEM #19 ---
+ID: kuaishou_comments_782
+平台: kuaishou
+类型: comments
+内容: 每天给别人点赞很多显示自己给别人点了一万多赞赞怎么办手机卡了
+
+--- ITEM #20 ---
+ID: kuaishou_comments_792
+平台: kuaishou
+类型: comments
+内容: 看电脑。网络视频全屏卡顿怎么回事？什么办法解决。？
+
+--- ITEM #21 ---
+ID: kuaishou_comments_796
+平台: kuaishou
+类型: comments
+内容: 有手机操作的吗@[奸笑][奸笑]
+
+--- ITEM #22 ---
+ID: kuaishou_comments_800
+平台: kuaishou
+类型: comments
+内容: 这样清理真的好用了！！！
+
+--- ITEM #23 ---
+ID: kuaishou_comments_803
+平台: kuaishou
+类型: comments
+内容: 我去 把我12 GB直接变成了2.4GB
+
+--- ITEM #24 ---
+ID: kuaishou_comments_805
+平台: kuaishou
+类型: comments
+内容: 快手极速版历史观看记录功能我已关闭和广告也已关闭，怎么进入界面还是这么卡
+
+--- ITEM #25 ---
+ID: kuaishou_comments_808
+平台: kuaishou
+类型: comments
+内容: 播放量就很低[玫瑰][玫瑰][玫瑰][玫瑰]
+
+--- ITEM #26 ---
+ID: kuaishou_comments_810
+平台: kuaishou
+类型: comments
+内容: 我是新手上路，入驻了磁力聚星做短剧推广，发布了50多个作品，播放量都是几个，请问老师：我还要继续发布作品吗？[抱拳][抱拳][抱拳]
+
+--- ITEM #27 ---
+ID: kuaishou_comments_813
+平台: kuaishou
+类型: comments
+内容: 我发的作品，以前播放量还是1千多2千多，最近播放量一直卡到300~500
+
+--- ITEM #28 ---
+ID: kuaishou_comments_814
+平台: kuaishou
+类型: comments
+内容: 没有流量[捂脸]没关注[捂脸]没点赞[捂脸]
+
+--- ITEM #29 ---
+ID: kuaishou_comments_815
+平台: kuaishou
+类型: comments
+内容: 播放量40其中38个都是自己看的[笑哭]
+
+--- ITEM #30 ---
+ID: kuaishou_comments_817
+平台: kuaishou
+类型: comments
+内容: 感谢分享，希望对你有帮助
+
+--- ITEM #31 ---
+ID: kuaishou_comments_822
+平台: kuaishou
+类型: comments
+内容: 人家安卓Wi-Fi切流量直接无缝衔接就能使用了，但是苹果的断开Wi-Fi之后他还要卡几秒钟，而且有时候甚至是无网络的状态，必须要打开飞行模式重新重启才能使用，我真的服了，搞得我玩游戏都掉装备了[吐血]
+
+--- ITEM #32 ---
+ID: kuaishou_comments_829
+平台: kuaishou
+类型: comments
+内容: 我的卡，一个月就29，用了一年多了，流量185G，每个月用不完，推给了好多人[捂脸]
+
+--- ITEM #33 ---
+ID: kuaishou_comments_831
+平台: kuaishou
+类型: comments
+内容: 观看微信视频号直播时太卡怎么办？怎么调节分辨率？
+
+--- ITEM #34 ---
+ID: kuaishou_comments_834
+平台: kuaishou
+类型: comments
+内容: 谢谢推荐但下次不要推荐了用了更卡了
+
+--- ITEM #35 ---
+ID: kuaishou_comments_836
+平台: kuaishou
+类型: comments
+内容: 万一我没有那个无线和网络呢？
+
+--- ITEM #36 ---
+ID: kuaishou_comments_842
+平台: kuaishou
+类型: comments
+内容: @快手用户1643629569931(O2737402964)
+
+--- ITEM #37 ---
+ID: kuaishou_comments_855
+平台: kuaishou
+类型: comments
+内容: 我在看你这条视频的时候就很卡，哈哈看了好久才看完
+
+--- ITEM #38 ---
+ID: kuaishou_comments_859
+平台: kuaishou
+类型: comments
+内容: 生产手机厂家设计套路，老是不换手机赚谁的钱啊
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_044
+
+开始分析：

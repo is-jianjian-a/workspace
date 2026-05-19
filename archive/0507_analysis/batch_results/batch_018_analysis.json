@@ -1,0 +1,452 @@
+{
+  "batch_id": 18,
+  "total_items": 35,
+  "statistics": {
+    "scene_distribution": {
+      "long_video": 2,
+      "general_video": 26,
+      "live_stream": 1,
+      "short_video": 6
+    },
+    "type_distribution": {
+      "behavior_description": 24,
+      "feature_request": 4,
+      "pain_point": 5,
+      "positive_feedback": 2
+    },
+    "topic_distribution": {
+      "other": 26,
+      "content_recommend": 3,
+      "ai_feature": 3,
+      "screen_cast": 3
+    },
+    "ai_statistics": {
+      "total_ai": 5,
+      "explicit": 3,
+      "implicit": 2,
+      "not_ai": 30
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_405",
+      "text": "首页进来的，我已经忘记是因为什么留在b站的了[喜极而泣]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_406",
+      "text": "参与者众多，导致视频质量回归均值。也就是低智化，尤其是在金融领域或者说一切细分领域都是如此。\n在这个人人自媒体的时代，每个人仿佛都成了金融学神、军事学神、社会学神、搞笑学神。\n现在首页的推荐大多是跟风而来的投机者，没有专业学识没见识没眼界，纯纯就是凑数的数据垃圾，除了叫的响亮，这些视频本身无法提供任何有意义的信息。\n“开口闭口高谈论阔，睁眼闭眼指点江山，一个视频除了情绪没有半点文字。横看竖看，仔细",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_412",
+      "text": "哈哈野生的手机[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_418",
+      "text": "说实话，有些直男因为自身的原因，有莫名其妙的洁癖、或者心理阴影、或者担忧，而不愿意和gay打交道或亲密。\n\n只要别上升到歧视、攻击、打压，我都能理解。\n\n倒是，仅仅因为网络人物或公众人物是个gay，甚至人家也没有表现的很刻板印象的gay，聊的内容也不是gay，你就接受不了看不下去了。\n\n我建议看看心理医生🧑‍⚕️，认真的。\n\n因为占据人类社会5%的性少数群体，对于你来说是一个充满着过敏源的不健康社",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_420",
+      "text": "明道采访有个问题，就是不太给回答的人气口，还没答完就被打岔了，他总结太快，对我自己来讲，因为我也是这样的说话方式，就是别人还没说完，我就以我的想法尽快总结了，这个对答者来说，思维容易别不过来。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_421",
+      "text": "事实上是，我未必是想要学到某一些东西才看大物视频的。我其实可能更多是这个时候什么都不想，就轻轻松松的放个背景音，然后听一下。或者是开一个轻轻松松的视频，然后吃饭这样子。现在B站的算法推给我的就没有多少个轻松的综艺类型的长视频。我就很缺这种！所以大物发的那些好物推荐我也有在看，我就是想要一个轻轻松松的中长度的综艺，还不能很尬！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "feature_request",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_424",
+      "text": "（我天天看明老师的视频[doge]）",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_428",
+      "text": "笑死这不就是我吗？自己单身天天做别人的情感导师。自己每天心态爆炸800次，安慰别人头头是道。 视频收藏了，也该学学怎么安慰自己了555",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_430",
+      "text": "避雷：\n1立马开一把游戏，应该会加倍压力大\n2放着不管睡一觉就好了，这样大脑会承担消耗，会做噩梦睡不好睡眠质量下降，身体更累，心情更糟糕\n3立刻开始思考人...",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_434",
+      "text": "罗翔老师说的，请你一而再再而三千次万次毫不犹豫地救自己于世间水火，想知道是老师在读书直播里说的嘛是哪个地方属于最原始出处还是就是他的言论火起来的呢，今年已经被这句话治愈了不下三次了，有幸学法了解罗翔是个什么样的老师也有幸有看见这句话的机缘巧合认识到这些是真人的网友",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_435",
+      "text": "想的太多，做的太少，又患得患失，时而充满期望，时而怀疑人生。从小学到现在，语文书已经告诉我们很多道理，不要杞人忧天，有愚公移山的精神，虽然有时候像苏轼一样知不可乎骤得，托遗响于悲风。但也应该悟已往之不谏，知来者之可追。心情不好就出去透透气，或者听听纯音乐，在或者把脑子放空小息一会。放下手机，该干什么干什么，自己调节调节，也要学会放下，何苦给自己逼得难受，尽力就好了。等你过去了你的坎儿或者是心结，回",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_436",
+      "text": "今天被一帮人给扒出我的B号了，心态崩了，气得我今天罢了不知道多少节课[笑哭]，昨天发的动态被他们给说出来了，简直让我火上加油，搞得我心情都慌的一批，学习都有影响了[大哭]，唉，好难[笑哭][笑哭][笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_447",
+      "text": "是真的。我家这孩子没给爷买智能手机前，菜地里几乎都没草。买了手机后。菜地里几乎没有菜[笑哭][笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_448",
+      "text": "我觉得不是人对手机有瘾，而是人想找一个放松的地方，而手机是最有性价比的方式了，其他的娱乐方式不是刺激不够就是太贵。说白了还是钱包空空加上一堆烦心事导致的，有点钱的人反而不会天天刷手机。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_449",
+      "text": "建议开启老年人防沉迷模式",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_453",
+      "text": "当大人们说游戏动漫毁掉孩子的时候，殊不知他们自己也在被短视频侵蚀大脑",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_455",
+      "text": "父母刷手机，草盛豆苗稀；小孩刷手机，嘴应脚不移。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_457",
+      "text": "这是UP主与AI关系最为恶劣的时候",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_459",
+      "text": "网站的七个阶段：\n第一，无伤大雅有意思的小新闻小消息到一些独特罕见的内容，只是一个消遣\n第二，大家发现这些可以带来流量，于是主动寻找或者主动制造，利用网站达成自己目的\n第三，网站极速发展，陷入狂热的混乱。随后政策开始限制强制一些内容的消失，不见即未发生\n第四，人类的好奇无限制的发展，向着更猎奇更残忍更难得一见去窥探，尽管有人主动提出不对，但于事无补。\n第五，网站彻底爆发，骂战抹黑对线无处不在，舆论",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_465",
+      "text": "这个能拿奖了吧，虽然ai创作还有争议，但是这个质量已经远远高出常规ai创作视频了吧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_466",
+      "text": "那个，我想聊些其他的。首先up非常棒！非常非常的厉害，这个不必多说。\n我想说的是，up可能要注意一下自己相同或者类似的画面了？当然，现在up的作品不多，这个问题并不显著，但是随着up作品越来越多，观众就会发现很多场景很接近，一次两次还能当个彩蛋，次数多了就成视觉和审美疲劳了。\n为啥会想到这个，因为之前看了一个关于许愿的AI短篇，里面有些画面和场景和sign很像，比如那个直升机吊犀牛，那个直升机飞离",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_467",
+      "text": "其他不说，视频短时间给大脑的刺激，看久了，你会发现你看不了长点的电影，电视剧，就没耐心了，[笑哭]我直接拉快进看电视剧了……[笑哭][笑哭][笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_468",
+      "text": "短视频的话，就爱看沙雕爆笑集锦，其他的都不太爱看，主要就是太跳跃了，聚精会神的看短视频，感觉多看一会反而脑子更累[笑哭]\n更喜欢看长视频，看一个视频，然后花点时间在评论区写写笔记，谈谈自己的看法和心得，或者和其他网友交流一下，给思绪留下一个缓冲和整理的时间，这样就挺好。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_469",
+      "text": "@擔橙右勝 @鱼啊渔啊一条doge @雪莉-Evergarden @幻雪舞霜華 @兼职兀汐见萤 视频刷多了感觉脑子都晕晕的[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_470",
+      "text": "对啊，一直在提醒，为何就是没人管呢？\n\n游戏玩家问媒体：为何要指责游戏玩家成瘾？\n媒体说：那是因为家长说那影响孩子学习\n那游戏玩家又问媒体：那为何不指责刷短视频成瘾呢？\n媒体说：那是因为家长自己也刷~[笑哭][OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_471",
+      "text": "如果你能完整看完这个视频那已经算好的了，视频没看几秒就直奔评论区才是没救了[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_472",
+      "text": "看别人用过DY，它的刷视频功能 你根本无法选择，不像B站 它至少会在封面 标题里放一些东西 让你提前有个印象，你还有自主选择的权力（不感兴趣的 根本不可能点开去看），不会陷入 无关联的信息洪流的轰炸。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_474",
+      "text": "刷的多确实觉得很累，感觉被吸走了精气，甚至都觉得整个人有点痴呆的状态了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_475",
+      "text": "我在看短视频说刷短视频有害[doge][doge_金箍][doge_金箍][doge_金箍]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_476",
+      "text": "刷短视频上瘾，晚期就像中邪，会变成机械地刷，好像脑子被夺舍一样，最开始看感觉好玩有趣，但看多了也没之前那么开心，可就停不下来，当大脑长期适应这种快速、高频的刺激后，就会陷入注意力被耗尽的脑雾状态，这种状态并非病理性，而是注意力经短视频“训练”后，难以长时间集中在单一事件上，这种我们常不屑地认为“只是看视频”的习惯，实际上正在改变我们大脑的运作方式，它们会降低我们的专注力、削弱记忆力，甚至干扰决策能",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_479",
+      "text": "纯看书无论怎么样都会脱节的，哪怕看最新出版的。虽然现在对网络的非议很大，但我认为还是功大于过，没有网络，可能很多人一辈子都不知道外面的世界是什么样子",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_481",
+      "text": "所谓的脱节是指什么，是梗吗？是穿衣打扮吗？是今年热词吗？是谁家发财了取美妻旅游了？是那里开餐厅了？是什么新手机新车上市？还是什么明星总裁花边新闻了？哪里又旅游火了？哪里有什么节目火了？\n这和我又有什么关系呢？？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_482",
+      "text": "问得好，高中不就是不刷小视频吗，不也是读书吗，脱不脱节不是很清楚吗[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_483",
+      "text": "当然不会，最多就是不清楚最近网络上的热梗，不至于与社会脱节。\n短视频的内容是多，是杂，但是它大部分都是没用的信息，即使天天刷短视频也不一定就是和社会接轨了，你看到的都是别人想让你看到的，以及你自己愿意看到的。\n读了一本好书的收益是可以影响一辈子的，即使书里头的具体内容，随着时间慢慢会忘却，但是它的影响是潜移默化的。\n了解新闻有报纸，收音机以及电视台的消息，不刷短视频又不等于与世隔绝了，只要有网络不",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_485",
+      "text": "看看电视的新闻联播和报纸就可以",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

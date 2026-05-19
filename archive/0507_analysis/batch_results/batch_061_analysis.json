@@ -1,0 +1,402 @@
+{
+  "batch_id": 61,
+  "total_items": 31,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 10,
+      "short_video": 21
+    },
+    "type_distribution": {
+      "behavior_description": 25,
+      "feature_request": 3,
+      "pain_point": 2,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "content_recommend": 3,
+      "other": 24,
+      "playback_control": 1,
+      "ai_feature": 3
+    },
+    "ai_statistics": {
+      "total_ai": 5,
+      "explicit": 3,
+      "implicit": 2,
+      "not_ai": 26
+    }
+  },
+  "results": [
+    {
+      "id": "zhihu_comments_658",
+      "text": "就是这个分享的时代，裤衩都让人看光了，谁还有兴趣继续探索，路就在哪里，看过无数人走过，结果就摆在哪里，根本激不起一点想重复一遍的水花，年轻本来就是因为无知而无畏，现在好了什么知道了，还无畏个屁啊。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_659",
+      "text": "先不说短视频很多无用、虚假信息，还有很多是审核过滤后想让你看到的，不想给你看的你普通人依旧看不到",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_661",
+      "text": "表面的信息差没有了，但是结构化思维的认知差距还是有[捂脸]对事情本质的解构，不是让别人帮忙解构，然后录成短视频，自己看了就能彻底领悟的[飙泪笑]以后的信息差，就是需要思考、筛选和审美的部分",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_662",
+      "text": "短视频还是刺激性太强了，年轻人应该多读读书，局外人，莫失莫忘，变形记之类的。或者多看看电影和剧，何以为家，无人知晓，切尔诺贝利之类的。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_666",
+      "text": "我周围以及我的来看，短视频就是注意力分解器，刷时间长了没什么好处，会形成依赖和习惯，获得信息方面，如果主动筛选，也是有优质的，大多数面向大众的都是带有情绪、颜色的信息，实际没有什么营养",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_667",
+      "text": "评论区有点低估了抖音的含金量；    不理解抖音对全民再教育的重要性；",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_668",
+      "text": "陷入了虚无主义而已。短视频也不是什么真知灼见，大部分都是噱头、极端例子。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_671",
+      "text": "现在的人通透的早了是都知道你无论多厉害权利富贵多大，人都是向死而生，你这辈子能明白了解自己，认识看透自己的擅长喜好，用自己喜欢的方式度过一生是你 最幸福的事。你的健康是最真实的，你在世界就在，你不在世界就没了，你的情绪，剩下的你控制不了。去迎接他们。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_675",
+      "text": "能用短视频去体会人生，博主也是神人",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_677",
+      "text": "信息差是真实存在的，短视频会让你找到你所谓的灵魂伴侣，实际上还是个小笼子。[大笑]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_686",
+      "text": "但是短视频的信息也真真假假，导致很多人没有独立思考能力了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_687",
+      "text": "视频确实很大程度上的打破了一些信息差，比如之前的高考报名，可能本来没有网络很多人都不知道一些专业，但是有了张雪峰，有了很多分享信息的视频。但是吧，网络是把双刃剑[小情绪]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_690",
+      "text": "用抖音的三个阶段1：刚开始，觉得新奇2：沉迷，一天恨不得住里头（我就在这样混了五年，一天至少四五个小时）3：大道至简，一个视频刚开头你就知道他要讲什么，没意思了，删了，开始回归现实",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_691",
+      "text": "你信短视频也是这辈子有了[赞]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_692",
+      "text": "三个小时的电影，在短视频上有人三分钟就给你讲得明明白白的，再加上三倍速，一分钟看完[捂脸]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_693",
+      "text": "看短视频看到你这个境界真是。甘",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_699",
+      "text": "其实跟视频没太大关系，只是大部分人能看清当下很多事情很难改变，还不如顺其自然",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_700",
+      "text": "认知其实也是随着你的生活经历一步步在发生改变的，道理不是别人说了就懂了，而是自己总结出来的才是属于我们自己的！就像现在网上很多高认知高层次的解说视频，可能刷到了会为之停留，驻足，但是刷到下一个的视频的时候，就会完全忘记上一条讲了什么。获取知识和认知能力更便捷的时候，更加考验人的耐力和分辨能力，因为说什么的声音都有。当然了，有时候我们也可以选择只听我们想听的，喜欢听的，对那些可能正确，但是难听的话直",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_701",
+      "text": "我大学读的动画系，那时候还没有智能手机，网络还是2G的，也没有网课，学校教的东西其实是很落后的，想学软件就只能花几千到上万钱去线下培训班。现在只要想学什么，一打开B站就有各种免费的教程。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_704",
+      "text": "刷短视频，只不过是把自己困在信息茧房里罢了，算法会给你最优解，你喜欢什么就给你什么",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_705",
+      "text": "一切的前提是短视频内容说的都对，但事实上99%都是博眼球。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_710",
+      "text": "短视频是把双刃剑[感谢]",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_716",
+      "text": "哎，亲身经历那种天人交战不是电影短视频演的出来的",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_720",
+      "text": "其实我一直觉得短视频是有两面性的，如果能控制好时间也是有一定益处的，无法自控的话那还是不要刷了",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_721",
+      "text": "被算法追击，怎么不算另一种局限呢？",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_722",
+      "text": "这个话题在去年给学生上新媒体课时聊过，从早期互联网到后来的新媒体、再到现在的ai智能体，这一发展历程中，有一点是不变的：信息的来源在递增，信息的真实度在递减。信息来源递增带来了更多的选择，真实度递减则带来了更多诱骗人光阴的陷阱。好也罢，坏也罢，只是从某一角度的评判，而时光这条长河是截不住的，更应该考虑的是，怎么让它为你这条船带来动力，或者至少不是阻力。这其中就需要老师家长共同努力，带着孩子去建立一",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_724",
+      "text": "短视频就是爽剧，可重来，可以复仇。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_725",
+      "text": "你口中古人一辈子能说过话的人，多说万人左右，其中最少100个是骗子，多说10个能点醒自己的贵人，其它的9890是无关紧要的闲杂信息。有了段视频，粗算提升百倍。你要在1万个骗子和近百万的无用信息里，找到那100个贵人。足不出户就能把一辈子吃不完的亏在一天吃完。",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_726",
+      "text": "这是短视频的话你觉吧这是短视频的幻觉罢了，就像你在短视频上学习了一套，去五星级酒店该怎么吃饭，怎么点菜，怎么说话当你真正去的五星级酒店的时候你还是会腿软还是会不知所措当你真正去到五星级酒店的时候，你还是会腿软，还是会不知所措",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "zhihu_comments_729",
+      "text": "碎片化的海量信息，无差别，高频次的冲击的生活中的我们，大多数普通人还处在人生可争取的阶段，既然是普通人，即内核并不是十分稳固，纵使明显的垃圾信息可以屏蔽，也会为某次情绪买单某份垃圾信息的汲取，并不断延伸，相关搜索，甚至于借助AI。我以前会算命，会星盘，会奇门遁甲，可当这两年AI开始兴起，各大平台掀起AI赛博算命等所谓“第三视角”解读并建议你的人生时，大多数人并不能意识到，自己已经在AI资本局内，大",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "zhihu_comments_730",
+      "text": "听说门槛越低，竞争越残酷。耍短视频的收获大概类似吧！",
+      "platform": "zhihu",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

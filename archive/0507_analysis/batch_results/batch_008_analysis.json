@@ -1,0 +1,547 @@
+{
+  "batch_id": 8,
+  "total_items": 43,
+  "statistics": {
+    "scene_distribution": {
+      "long_video": 4,
+      "general_video": 39
+    },
+    "type_distribution": {
+      "behavior_description": 27,
+      "pain_point": 9,
+      "feature_request": 4,
+      "positive_feedback": 3
+    },
+    "topic_distribution": {
+      "other": 34,
+      "playback_control": 1,
+      "video_quality": 6,
+      "background_play": 1,
+      "download_cache": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 42
+    }
+  },
+  "results": [
+    {
+      "id": "tieba_comments_510",
+      "text": "楼主解决了吗我也是看b站老是掉30帧",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_511",
+      "text": "一样的问题，放着视频不动会掉30帧，点一下屏幕就恢复120",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_512",
+      "text": "b站网页端有一个播放策略设置，改成avc编码",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_514",
+      "text": "浏览器实验室功能有个图形驱动，ctrl+f搜graphics，换一个。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_515",
+      "text": "显卡跟bios更新到最新。如果还是不行bios调SOC SA电压，低于1.02即可，一般调到0.9",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_516",
+      "text": "这核显有玩腾讯网游吗？流畅不？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_517",
+      "text": "把GPU加速关了，用CPU解码视频就好了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_518",
+      "text": "把浏览器的视频增强关了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_521",
+      "text": "同样7900xt，没碰到过4k视频卡的，更新下Chrome试试看",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_522",
+      "text": "7900xt就不要新驱动了，装回老版本",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_523",
+      "text": "6.1还是5.1之后chrome确实有新的毛病 特殊文本会有粉色方块闪烁的问题。不过关闭硬件加速就没事了，其实不关也不影响使用 只是看着别扭。。。 弹幕卡顿倒是没遇到 试下改屏幕刷新度或者开垂直同步看看？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_524",
+      "text": "7000系A卡视频编解码这部分确实不行，我也有类似情况换了9000系后好多了，正好9000系编解码性能有提升",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_525",
+      "text": "浏览器硬件加速打开就卡，这是微软的问题，升级win11Beta版就好了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_528",
+      "text": "b站那个4k开不开都一样糊，国内几个视频网站就没真4k的",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_529",
+      "text": "手机问题吧，我这里没事",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_535",
+      "text": "建了多少个号？我一百个号的账号就这样，它有些功能需要确认账号级别，我怀疑是小号太多拖后腿，但没有证据",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_538",
+      "text": "入手了realme系列手机发现只要下拉显示状态栏百分百就会幻灯片，退出到登陆界面重新进就好，游戏中有信息来下拉看后这样突然卡就蛋疼",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_539",
+      "text": "加载时观察资源监视cpu占用，如一直满载那就是硬件弱",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_540",
+      "text": "我也一样配置，挂载的网盘电影一样加载很慢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_541",
+      "text": "j4125 PvE虚拟化的飞牛本地视频没事。720p、1080p都秒播，核显直通给飞牛。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_544",
+      "text": "3160没办法核显解码，升级主板吧",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_545",
+      "text": "cpu和gpu核显不够，换11代以上秒解，不想花钱升级就老老实实挂载网络驱动器用potplayer观看",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_546",
+      "text": "OPPO一加真我的手机都是要手动激活的，你去设置里面找一找，不然一直都不显示激活。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_548",
+      "text": "看了你的贴，我的和你一样，我买来有十天我一直没插卡都是连着WiFi在用，但我的没发现你的这种情况，却也显示未激活",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_550",
+      "text": "问下，这个牌子的手机有没有自带的一键锁屏插件？一直没找到，对相机还算满意，续航如果还行就准备正式使用了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "background_play",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_552",
+      "text": "试试qq发送个大文件到手机试试内网速度？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_554",
+      "text": "不要用双频合一，5G和2.5G分开，单独连接5G",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_555",
+      "text": "把ipv6关了 我7200pro＋也是开了刷网页就加载不出图片 速度慢可能是自动切换到2.4g了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "tieba_comments_558",
+      "text": "这个网站的问题 ，国内的这个测速网 网速管家不行",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_560",
+      "text": "手机用花瓣测速，电脑电信的话用电信的测速网",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_563",
+      "text": "有可能是内存卡快满了，降速。还有可能你看人家用的是NS1不，别搞差了如果人家是NS2，或者NS1存进了机身存储，那速度自然都快",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_566",
+      "text": "你把三星白卡拿出来往里面复制个文件试试。看看速度多少。我的128三星白卡放了三年。拿出来后电脑上写入速度1.6M/sshoubai_emoji_face_07京东小哥拿走，售后秒换新shoubai_emoji_face_71",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_568",
+      "text": "定向流量包含在2G限速规则内吗？",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_569",
+      "text": "有明确的到期时间 不上也罢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_571",
+      "text": "对一个轻度流量用户来说已经算是不错了",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_575",
+      "text": "有些人的目的就不纯，这个安心包不是让你用得爽的，是让你主套餐流量用超了之后不会扣费。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_576",
+      "text": "其他流量多的那么多，为什么非得接受限速的网速呢",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_578",
+      "text": "重启电脑后，刚刚测的。",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_579",
+      "text": "楼上图发了3遍，终于不删了。 广州 黄埔区 低消500M NAT4 我之前从来没ping过这种，现学现卖的。 我的光猫还是默认的“智慧沃家” 双天线wifi光猫。 建议找装维上门检查，我试过让上门重置光猫。加微信 要超管密码。免费image_emoticon8",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_582",
+      "text": "我也是冰淇淋千兆换79a，2月份刚刚换黄金尊享套餐，就是自己换一个2.5g光猫和一个WiFi7路由器，反正我测试下来跟原来宽带体验一模一样的，下班刚刚测的image_emoticon66",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_586",
+      "text": "因为你的光猫是私自更换的， 里面设置对应的是你旧套餐的设置。 换新套餐后，数据有冲突，建议找装维上门.image_emoticon8",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_588",
+      "text": "直接关闭行了，很多ipv6完全没普及 打开只会卡图片 卡视频进度 反正各种卡顿",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "tieba_comments_595",
+      "text": "ipv6需要 设置mtu 1280 dns也要后ipv6的dns 默认的mtu1500不行",
+      "platform": "tieba",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

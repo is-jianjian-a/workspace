@@ -1,0 +1,752 @@
+{
+  "batch_id": 37,
+  "total_items": 60,
+  "statistics": {
+    "scene_distribution": {
+      "short_video": 18,
+      "general_video": 41,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "behavior_description": 37,
+      "pain_point": 22,
+      "positive_feedback": 1
+    },
+    "topic_distribution": {
+      "other": 22,
+      "video_quality": 33,
+      "screen_cast": 1,
+      "download_cache": 2,
+      "playback_control": 1,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 1,
+      "explicit": 0,
+      "implicit": 1,
+      "not_ai": 59
+    }
+  },
+  "results": [
+    {
+      "id": "kuaishou_contents_116",
+      "text": "20秒让你旧手机刷视频像新的一样湿滑！ #涨知识 #快手短视频 #手机使用小技巧 @快手涨粉助手(O3xzyh4epbkwm6i6) @快手热点(O3xddgkd5fav5if9)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_117",
+      "text": " @幸福生活，(O3xddqiz2gcqdjkk) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_118",
+      "text": "教你两招解决手机卡顿问题#老铁知识百科 #快手知识分享",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_119",
+      "text": "别再乱清理快手了这样清理瞬间流畅到起飞 #知识播种计划 #技能速成宝典 #开学季 #老铁帮老铁 @快手公益(O3xdup4zhfqzcdae) @快手热点(O3xddgkd5fav5if9) @快手教育(O3xs4pwkr6yf6g56)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_120",
+      "text": "卡帧真的很影响观看体验，这个小按钮不起眼，作用是真的大亲测有效！#经验分享 #干货分享 #视频太卡怎么变流畅",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_121",
+      "text": "用了好几年的卡顿手机，如何瞬间变流畅？ #涨知识  #冷知识   #干货   #手机使用技巧 ",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_122",
+      "text": "视频卡顿或无画面的解决方法 #手机使用小技巧  #软件分享  #电子产品分享",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_123",
+      "text": "刷快手如何正确清理内存，清理后让手机更流畅。\n#有用内容创作计划 #清理手机内存 #开学季 #技能速成宝典",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_124",
+      "text": "#我就是个卖手机的  #高通数码  #华为使用技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_125",
+      "text": "#短视频流量变现 #短视频创业分享 #视频变现",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_129",
+      "text": " @幸福生活，(O3xddqiz2gcqdjkk) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_130",
+      "text": "电视卡机的素材，别再掉粉了",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_131",
+      "text": "#知识播种计划 #技能速成宝典 #快影光合计划 #实用知识分享",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_132",
+      "text": "快手清理缓存，让运行更加流畅稳定。快手如何运行速度快。 #磁力万合 #快手短视频 #知识分享 @快手热点(O3xddgkd5fav5if9) @我要上热门(O3x8er38dpbhvbaa) @快手粉条(O3xhcy6vhfzcu3qe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_133",
+      "text": "给大家看一下这个垃圾手机 开两个后台就卡顿我发这个视频就是避免大家上当去买这个手机。刷视频都卡l垃圾红米Note 12。turbo王者开完之后，那个菜单键要好几下才关卡的要死。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_134",
+      "text": "20秒让你旧手机刷视频像新的一样湿滑！ #涨知识 #快手短视频 #手机使用小技巧 @快手涨粉助手(O3xzyh4epbkwm6i6) @快手热点(O3xddgkd5fav5if9)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_135",
+      "text": "教你两招解决手机卡顿问题#老铁知识百科 #快手知识分享",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_136",
+      "text": " @手机知识分享(O3x7psk6vgymdyg2) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_137",
+      "text": "#网络卡顿 #家庭网络 #信号覆盖",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_140",
+      "text": "让快手更流畅 #手机 #手机技巧 #手机使用小技巧",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_141",
+      "text": "手机卡顿原来是这两个开关没打开 #老铁知识百科 #数码玩机攻略 #数码年度好物盘点  #喜爱度激励计划",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_142",
+      "text": "图片加载失败一大片！！！不活了！ #抽象 #二次元 #漫画 #图片加载失败",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_145",
+      "text": "原来手机里都有一个网络加速开关，打开后，再也不会卡顿掉线",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_146",
+      "text": "#知识播种计划 #技能速成宝典  快手新功能\n无网照样看视频 #内容启发分享计刬 #老铁知识百科 @快手光合计划助手(O3xxpf2m4brbf3pe) @我要上热门(O3x8er38dpbhvbaa) @快手创作者中心(O3xrgtux2ehryffe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_147",
+      "text": "都加载一晚上了，还没好！！！海信你不行呀！",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_149",
+      "text": "@快手新知(O3xvmqt3emychk29) #技能速成宝典  #老铁知识百科  #知识播种计划  #喜爱度激劢计划",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_150",
+      "text": "网站建设公司教你免费传视频 #网站建设公司 #网站建设多少钱 #网站建设公司哪家好 #网站建设费用",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_151",
+      "text": "苹果手机下载软件慢，我教大家轻松解决，",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_152",
+      "text": "#离线模式 #快手新功能 #知识分享干货主播",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_153",
+      "text": "设置快速播放#老铁知识百科发文征集令 #2025高考 #数码玩机攻略 #暑期玩机攻略",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_154",
+      "text": "朋友叫我下载一个手机，请问这个加载画面怎么这么慢啊？",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_155",
+      "text": "进度条卡住不动的原因 #光源万创 #进度条 #进度条警告 #加载",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_156",
+      "text": "#短剧追到爽 #好剧推荐 #精彩片段",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "kuaishou_contents_157",
+      "text": "三种提高作品清晰度的方法#快手知识分享 #老铁知识百科",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_159",
+      "text": " @苡菲(O3xjg6y3zkcgwpde) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_160",
+      "text": "好朋友。手机画质好差 。ರ_ರ ...",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_161",
+      "text": "Am别吞我画质，还有很多人没做，我要累死了 #Sprunki #预告 #火 #端午赛龙舟",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_163",
+      "text": "这画质也太逆天了吧 #无限暖暖 #无限暖暖全球公测 #无限暖暖包出片的",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_164",
+      "text": "#画质差不要喷 爱和爱过一字之差却隔了一个曾经 #装萌o",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_165",
+      "text": "【酸奶布丁】手游画质太差，手机画质参数都拉满了都没效果？ #画质参数 #游戏画质帧率 #画质核心参数 #画质助手",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_166",
+      "text": "#黑板画 给光遇朋友们画的，画质比较差。祝在坐的朋友们岁岁常欢愉，年年皆胜意。",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_167",
+      "text": "画质好差 #心动小镇  #晚安的怜雨幽 #心动小镇创作计划 （yc： @时屿(O3xayc844s7ncryc) ）（陪拍 @失鸽(O3x8dqw95k7qyfsa) ）",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_168",
+      "text": "“画质那么差，就叫它童年吧”",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_169",
+      "text": " @娇徒弟²¹⁰🌶️兰🚪扛旗人(O3xfrg2hmuift6v2) 的精彩视频",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_170",
+      "text": "“嗯？”\n唉……手机画质好差 #富冈义勇旧设 #COS #鬼灭之刃 #富冈义勇",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_174",
+      "text": "爆改后的摄像头 #改装 #手工制作@快手粉条(O3xhcy6vhfzcu3qe) @航拍A(O3x2wddtaquz3spq) @白子数码(O3x2khk3jkcq8wt2) @不想炸机的小威（实习中）(O3xur5q98y7ekrhu) @没缘也要航拍的HUH(O3xm2fs46ynd33gu) @爷爷u-v(O3xgmeh6ctqgs9qi) @🐾琼羽🐾（开学中）(O3xa8ieba4rmji",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_175",
+      "text": "为啥拍出来画质好差\nps:四肢不协调见谅#浅浅扭一下  #不露脸 #不是很会跳 #慢摇",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_176",
+      "text": "#OC #btd致歉 #摸鱼 我不行了，画质好差😦",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_178",
+      "text": "这个画质修复每次都搞得像ai生成的一样，丑的要命，不修复呢画质又差 鬼知道我拍了多少遍 给我腿都跳抽筋了😭😭 #pumpitup #留个小心心支持一下吧 #正常穿搭无不良引导 #原创隔壁",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_179",
+      "text": "再糊的画质也挡不住宁慢走的帅气。（不知为何画质好差） #刘宇宁 #宁慢走 ks说我违规，我可不管你，继续发，有本事把我封了 @尘时的缚线☃️(O3xaquqk98b5zr86) @MD🍊(O3x8h59pbn423xqe) @𝙄𝘿昀 悦 昕.(O3xpbgeq29xam956) @MD.宇檸^（上学）(O3xrr7ixaryram84) @宁梓(O3xby9xchpktqtg9) @对白(O3xr",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_180",
+      "text": "#剪辑教程 #运动模糊 #和平精英 喜欢初依老师的教学吗？🐯 @也许(O3xnntsivfgkb4wk)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_181",
+      "text": "这画面太神秘了，到底藏着什么？ #看看这是啥 #模糊感 #视频剪辑 @快手热点(O3xddgkd5fav5if9) @快手图文(O3xmf9qa959unqze)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_183",
+      "text": "结尾模糊教程 #剪辑教学  #剪辑  #教程 #剪辑教程",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_184",
+      "text": "第一次剪辑模糊背景的视频好难，有点小失败了 #好想再爱你DJ舞蹈  #快手热门热点 #慢摇  @快手热点(O3xddgkd5fav5if9) #管方大大让我火一次",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_185",
+      "text": "煎饼偶遇#模糊画质  #十年变化 #vwepr",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_186",
+      "text": "#快影剪辑教程 #教程 #教你去除视频中的文字 @快影学苑(O3xbw6yu9c8tw6xg) @快影剪辑(O3xuyizj23gp77g9) @快手粉条(O3xhcy6vhfzcu3qe)",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_187",
+      "text": "明明很清晰的视频一上传快手快手画质就变渣、这是怎么回事儿？一分钟讲清楚！ #画质 #手机画质 #画质感人",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_188",
+      "text": "1分钟教会你—模糊定格!让你视频更有趣 #干货分享 #直播切片 #剪辑教程 #剪辑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_190",
+      "text": "#上快影学剪辑 怎么给视频添加模糊效果",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "kuaishou_contents_191",
+      "text": "视频调色，频闪模糊。 #第五人格 #快成长计划 #潮流生活成长之星 #零基础学剪辑",
+      "platform": "kuaishou",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

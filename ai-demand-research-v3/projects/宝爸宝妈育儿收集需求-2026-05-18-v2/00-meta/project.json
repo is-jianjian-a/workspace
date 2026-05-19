@@ -1,0 +1,45 @@
+{
+  "project_id": "parenting-needs-2026-05-18-v2",
+  "topic": "宝爸宝妈育儿收集需求",
+  "description": "基于社交媒体数据的宝爸宝妈育儿场景需求调研，聚焦育儿知识收集、经验整理、信息管理等诉求",
+  "platforms": ["xhs"],
+  "created_at": "2026-05-18T19:00:00+08:00",
+  "updated_at": "2026-05-18T19:15:00+08:00",
+  "version": "1.0",
+  "status": "phase1_completed",
+  "data_source": "/Users/zhijian/workspace/MediaCrawler/database/sqlite_tables.db",
+  "search_keywords": [
+    "孕期",
+    "产后",
+    "早教",
+    "备孕",
+    "育儿"
+  ],
+  "total_ugc": 508,
+  "phases": {
+    "phase0_init": "completed",
+    "phase1_search_design": "completed",
+    "phase2_data_collection": "completed",
+    "phase3_data_cleaning": "completed",
+    "phase4_discovery": "completed",
+    "phase5_analysis": "pending",
+    "phase6_insights": "completed",
+    "phase7_search_optimize": "pending",
+    "phase8_reports": "completed"
+  },
+  "phase1_summary": {
+    "total_notes": 508,
+    "total_likes": 847026,
+    "total_collects": 562055,
+    "top_opportunities": [
+      "育儿知识智能收集与整理",
+      "育儿内容个性化推荐",
+      "产后情绪支持与心理疏导",
+      "育儿经验智能问答",
+      "育儿工具评测与推荐"
+    ]
+  },
+  "output_files": [
+    "08-reports/final-analysis-report.html"
+  ]
+}

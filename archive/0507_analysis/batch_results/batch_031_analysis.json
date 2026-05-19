@@ -1,0 +1,523 @@
+{
+  "batch_id": 31,
+  "total_items": 41,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 38,
+      "long_video": 2,
+      "short_video": 1
+    },
+    "type_distribution": {
+      "pain_point": 9,
+      "behavior_description": 28,
+      "feature_request": 4
+    },
+    "topic_distribution": {
+      "video_quality": 16,
+      "other": 21,
+      "screen_cast": 1,
+      "playback_control": 2,
+      "content_recommend": 1
+    },
+    "ai_statistics": {
+      "total_ai": 2,
+      "explicit": 0,
+      "implicit": 2,
+      "not_ai": 39
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1410",
+      "text": "你这视频面向的基本是没啥配置的学生，玩老游戏带情怀，请问当年980你跑刺客信条，跑全境封锁都是什么帧数什么体验心里没数吗，960那就是没有画质，你用着当今的卡玩老游戏那肯定乱杀啊，即便是2026年也没几个人体验过完整的全景光追的游戏，那怎么又能说现在的画质不好呢，ai的快速飞跃进步极大的带动了画面的发展，这本质是全体玩家的好事，那你说画面退步的核心问题在哪呢，开发者都是混子呗，所有人最应该做的就是",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1411",
+      "text": "我们预想的ai，原本100个人能做出100分的团队，使用ai做出500分的游戏\n现实的ai，把100个人的团队优化到10个人，做出67分的游戏",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1412",
+      "text": "半个多世纪世纪的人类：依靠4KB RAM、74KB ROM、1MHz的电脑把人类送上月球\n现如今的人类：刚买的5090终于把248帧提升到250帧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1417",
+      "text": "你们都说是62.5帧，但我4K导出之后发现也是59.94帧，应该是B站的问题",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1418",
+      "text": "一直在用mpv-player的display-resample音画同步模式加超采样的时域插值模式看视频以减轻帧率和刷新率的不匹配观感，个人认为在正常速度下播放视频卡顿对观感的影响是远超重采样所带来的伪影的，对视频进行时域重采样的方法在这一点上做得确实聪明[OK]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1419",
+      "text": "我个人拍视频都是用24FPS来拍，一个是因为它是“绝大多数电影的帧率”；二个是我的手机屏幕刷新率是120，电脑屏幕刷新率是240，正好都是24的倍数，所以是不是在这样的屏幕内，24FPS的视频可能观感也会比25FPS更好呢？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1420",
+      "text": "说是一个改变视频，更像是一个科普视频，谢谢tim",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1421",
+      "text": "我的工作流一直是4k30p或者4k60p，主要就是30和60对于网络支持比较好，虽然国内pal制一直是25和50但是现在没人用电视信号看了吧，电脑的刷新率都是60hz为主~",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1422",
+      "text": "热知识，这期视频的B站web端播放器参数是：\n\n1080P 高清：1920 x 1080@30.303\n1080P 60帧：1920 x 1080@58.824\n4K 超清：3840 x 2160@62.500\n\n[笑哭]这三个帧率又是什么原因",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1423",
+      "text": "作为一个专门压片的老司机，自从10年前发现日本动作片全是用29.97压制后，果断选择了NTSC。虽然29.97被保留至今，但有些老古董比如隔行扫描已经被抛弃了。当年因为隔行+帧率问题，能看到一堆百叶窗视频[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1424",
+      "text": "这种帧率无法被整除导致出现「均匀的卡顿」的现象，它有个专门的名字，叫 judder \n\n而我推荐所有使用 Potplayer 的用户都安装 madVR 的原因是，madVR 正好有个功能叫 smooth motion，它通过简单的补帧来消除 judder\n\n我在进行 60/120 FPS 屏幕录制的时候也会把屏幕刷新率从 165/144 Hz 下降到 120 Hz，一是我硬件的性能可能无法同时兼顾",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1426",
+      "text": "作为一个一直在用 25 帧拍摄的小Up，只想说如果想升级到 4k 60，不仅是相机，电脑性能，储存空间都得翻倍地升级[笑哭]所以还是先老老实实跑 25帧吧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1427",
+      "text": "这本身是个好技术，但带来的两个负面影响才是大家对它观感不好的原因\n1.玩家更多是把dlss当成了附赠品，但显卡厂商却把dlss带来的提升也要算进售价里\n2.dlss诞生之后纵容了一些游戏不认真做优化，导致就算开了dlss帧数也表现平平",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1428",
+      "text": "这下厂商更懒得优化游戏了，以后只要能保证稳定30帧，剩下全靠ai补就完事了[吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1430",
+      "text": "真就只讲好的，补帧造成的帧延迟就只字不提[藏狐]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1431",
+      "text": "最后洗地味也太冲了，游戏厂商本该拿来做优化的成本却反而转嫁到要玩家更新设备上了，大家讨厌ai补帧只是因为他纵容了游戏厂商的不思进取",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1432",
+      "text": "能接受拼好帧是先进的计算技术 但不能接受它作为硬件升级涨价的理由",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1433",
+      "text": "插出来的帧是糊的，顶多是个流畅点的动态模糊",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1434",
+      "text": "超分本质上是一种“反锯齿”，提升是立竿见影的；但帧生成却是一柄双刃剑，它实际上只能让显示器输出的图像看起来更流畅，并不能提升可操作帧，甚至还会因为增加延迟而降低流畅度",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1435",
+      "text": "从原理就能知道，这玩意儿只能让本就流畅的画面看起来更丝滑，并不能解决低帧率下操作不跟手的问题，该卡还是卡",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1436",
+      "text": "生成出来的帧是不受玩家控制的，就是单纯地让眼睛看着更流畅了，实际手上玩的还是原来那么低的帧率。这玩意儿在插1帧的时候感知还不是那么地强烈，玩儿点激烈的动作游戏还是有点感觉，插3帧那就是纯纯的乐子了，明显感觉人物的动作不跟手。你想嘛，4帧里面你才只能操作1帧，这都感觉不出来的人怕不是在玩天天象棋了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1437",
+      "text": "B站占用带宽这事儿搜一下",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1438",
+      "text": "b站1080p不如油管720p清晰这一块",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1441",
+      "text": "在降低高清视频码率的同时，为了不让用户察觉，还顺带把其他清晰度的视频码率降低了[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1444",
+      "text": "我是在抖音发现的，一个视频火之前，我把它在第三方平台下载的是4k的[笑哭]现在几千万点赞我一看清晰的只有720p了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "short_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1445",
+      "text": "其实如果看过真正的1080p画质，或者自己拍视频，基本都会早早明白的，特别是2d动画[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1446",
+      "text": "突然想起来有这事，结果一搜就只有这个不到一万播放的视频记录了，唉",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1454",
+      "text": "光栅需要开发者手动调才能有这么好画质，也不吃性能。光追不用调也没法调，上限还被硬件算力封死了。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1460",
+      "text": "ppi才是画质的本质，我手机6寸左右的1080P看你视频播放的1080P日剧来说，又是oled，画面锯齿感也比你5K的小，总结，现在的眼睛都被手机养习惯了，4K要15寸才觉得肉眼清晰，27寸就得去到8K了[doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1461",
+      "text": "只提分辨率不说屏幕尺寸就是耍流氓。\n4K27寸和14寸1080P差不多。\n所以27寸推荐4K",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1462",
+      "text": "那些没什么资金有还想入手4k显示器打游戏的朋友们，请谨慎，就目前的一个游戏质量环境，1080p所需要的全套设备估计是三五千，而2k估计是五千到八千，而4k则是七千往上了，如果还想非常流畅的游玩4k分辨率下的游戏体验，一万出头是算少的，请根据自己的合理情况来进行选购。另外，温馨提示：在购买自己喜欢的物品之前，一定要预留足够的资源以应对生活突发情况。别看网上人人4090+4k，他们要么梭哈，不需要承担",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1463",
+      "text": "京东直达：https://b23.tv/mall-1MaYwe-uRUHCd1ZQ0 \n-----------------------------\n想白嫖戳这里：https://b23.tv/wOBrKnD[脱单doge]\n给大家准备了一台4k的S27B800P和多份三星定制周边，谢谢大家的支持噢[奥比岛_点赞]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1464",
+      "text": "我自己组装电脑，上 4070ti 的显卡，本来想上 4k 屏的，但是都说 4070ti 带不动 4k，所以后来决定换 2k，现在我又纠结了， up 里的视频给我的感觉，1080p 到 2k 提升好像不大，4k 才是质的飞跃。纠结",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1469",
+      "text": "哪个UI最好肯定会有争议😅但哪个最差这个绝对没有争议",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1471",
+      "text": "改UI改成💩的，我还知道一位",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1473",
+      "text": "玩家想要的UI:\n开始游戏\n角色\n商店\n好友\n设定\n关于\n退出\n\n国产游戏策划眼里的UI\n首冲奖励    特权     心动活动    签到     玩家社区     限时折扣\n开始游戏    中秋活动    道具仓库-----\n\n我不理解大部分中国玩家是怎么适应这种东西的，反正我看一眼就会直接pass",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1474",
+      "text": "红点        充值 充值 充值 充值\n红点\n红点                           开始游戏",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1478",
+      "text": "到底还是小底，4K也只有60帧，过程不够丝滑，还是有太多模糊的。可能我4K160帧的屏幕看多了，眼睛被我养刁了。。。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1479",
+      "text": "画质感觉一般，是不是b站压码率了，另外夜景感觉确实不太行，小底➕快速运动简直难蚌[吃瓜]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1481",
+      "text": "avatar能不能像普通航拍机那样，就是可以拍画面不倾斜的、地平线是平的视频？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1482",
+      "text": "这个色块有点多哦，上传画质被压缩了吗？  还是说画质就是这样？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

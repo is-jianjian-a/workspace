@@ -1,0 +1,275 @@
+{
+  "total_records_analyzed": 521,
+  "signal_coverage": 329,
+  "signal_coverage_rate": 63.15,
+  "overall_signal_ranking": [
+    {
+      "signal": "视频生成/编辑",
+      "count": 177,
+      "percentage": 33.97
+    },
+    {
+      "signal": "社交/分享",
+      "count": 97,
+      "percentage": 18.62
+    },
+    {
+      "signal": "学习/笔记",
+      "count": 64,
+      "percentage": 12.28
+    },
+    {
+      "signal": "互动/问答",
+      "count": 49,
+      "percentage": 9.4
+    },
+    {
+      "signal": "内容搜索/定位",
+      "count": 43,
+      "percentage": 8.25
+    },
+    {
+      "signal": "视频摘要/总结",
+      "count": 37,
+      "percentage": 7.1
+    },
+    {
+      "signal": "智能推荐/过滤",
+      "count": 30,
+      "percentage": 5.76
+    },
+    {
+      "signal": "语音/字幕相关",
+      "count": 20,
+      "percentage": 3.84
+    },
+    {
+      "signal": "画质/修复",
+      "count": 15,
+      "percentage": 2.88
+    },
+    {
+      "signal": "情感/氛围",
+      "count": 13,
+      "percentage": 2.5
+    },
+    {
+      "signal": "效率/倍速",
+      "count": 8,
+      "percentage": 1.54
+    },
+    {
+      "signal": "跨设备/同步",
+      "count": 1,
+      "percentage": 0.19
+    }
+  ],
+  "platform_breakdown": {
+    "xhs": [
+      {
+        "signal": "视频生成/编辑",
+        "count": 43
+      },
+      {
+        "signal": "学习/笔记",
+        "count": 23
+      },
+      {
+        "signal": "社交/分享",
+        "count": 20
+      },
+      {
+        "signal": "内容搜索/定位",
+        "count": 17
+      },
+      {
+        "signal": "视频摘要/总结",
+        "count": 16
+      },
+      {
+        "signal": "互动/问答",
+        "count": 14
+      },
+      {
+        "signal": "智能推荐/过滤",
+        "count": 12
+      },
+      {
+        "signal": "画质/修复",
+        "count": 11
+      },
+      {
+        "signal": "效率/倍速",
+        "count": 8
+      },
+      {
+        "signal": "情感/氛围",
+        "count": 8
+      },
+      {
+        "signal": "语音/字幕相关",
+        "count": 6
+      }
+    ],
+    "bilibili": [
+      {
+        "signal": "视频生成/编辑",
+        "count": 36
+      },
+      {
+        "signal": "社交/分享",
+        "count": 24
+      },
+      {
+        "signal": "学习/笔记",
+        "count": 16
+      },
+      {
+        "signal": "视频摘要/总结",
+        "count": 10
+      },
+      {
+        "signal": "语音/字幕相关",
+        "count": 7
+      },
+      {
+        "signal": "互动/问答",
+        "count": 6
+      },
+      {
+        "signal": "智能推荐/过滤",
+        "count": 4
+      },
+      {
+        "signal": "内容搜索/定位",
+        "count": 3
+      },
+      {
+        "signal": "画质/修复",
+        "count": 2
+      },
+      {
+        "signal": "情感/氛围",
+        "count": 2
+      }
+    ],
+    "douyin": [
+      {
+        "signal": "视频生成/编辑",
+        "count": 21
+      },
+      {
+        "signal": "内容搜索/定位",
+        "count": 15
+      },
+      {
+        "signal": "社交/分享",
+        "count": 10
+      },
+      {
+        "signal": "学习/笔记",
+        "count": 10
+      },
+      {
+        "signal": "互动/问答",
+        "count": 7
+      },
+      {
+        "signal": "智能推荐/过滤",
+        "count": 6
+      },
+      {
+        "signal": "视频摘要/总结",
+        "count": 5
+      },
+      {
+        "signal": "语音/字幕相关",
+        "count": 3
+      },
+      {
+        "signal": "情感/氛围",
+        "count": 2
+      },
+      {
+        "signal": "画质/修复",
+        "count": 1
+      },
+      {
+        "signal": "跨设备/同步",
+        "count": 1
+      }
+    ],
+    "kuaishou": [
+      {
+        "signal": "社交/分享",
+        "count": 36
+      },
+      {
+        "signal": "视频生成/编辑",
+        "count": 35
+      },
+      {
+        "signal": "互动/问答",
+        "count": 5
+      },
+      {
+        "signal": "学习/笔记",
+        "count": 3
+      },
+      {
+        "signal": "内容搜索/定位",
+        "count": 3
+      },
+      {
+        "signal": "智能推荐/过滤",
+        "count": 2
+      },
+      {
+        "signal": "语音/字幕相关",
+        "count": 2
+      }
+    ],
+    "zhihu": [
+      {
+        "signal": "视频生成/编辑",
+        "count": 42
+      },
+      {
+        "signal": "互动/问答",
+        "count": 17
+      },
+      {
+        "signal": "学习/笔记",
+        "count": 12
+      },
+      {
+        "signal": "社交/分享",
+        "count": 7
+      },
+      {
+        "signal": "视频摘要/总结",
+        "count": 6
+      },
+      {
+        "signal": "智能推荐/过滤",
+        "count": 6
+      },
+      {
+        "signal": "内容搜索/定位",
+        "count": 5
+      },
+      {
+        "signal": "语音/字幕相关",
+        "count": 2
+      },
+      {
+        "signal": "情感/氛围",
+        "count": 1
+      },
+      {
+        "signal": "画质/修复",
+        "count": 1
+      }
+    ]
+  }
+}

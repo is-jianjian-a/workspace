@@ -1,0 +1,526 @@
+{
+  "batch_id": 30,
+  "total_items": 41,
+  "statistics": {
+    "scene_distribution": {
+      "general_video": 38,
+      "long_video": 2,
+      "live_stream": 1
+    },
+    "type_distribution": {
+      "pain_point": 7,
+      "behavior_description": 27,
+      "feature_request": 5,
+      "positive_feedback": 2
+    },
+    "topic_distribution": {
+      "other": 21,
+      "download_cache": 4,
+      "playback_control": 1,
+      "content_recommend": 1,
+      "video_quality": 8,
+      "screen_cast": 5,
+      "ai_feature": 1
+    },
+    "ai_statistics": {
+      "total_ai": 5,
+      "explicit": 2,
+      "implicit": 3,
+      "not_ai": 36
+    }
+  },
+  "results": [
+    {
+      "id": "bili_comments_1338",
+      "text": "为什么用手机就没事呢，在同一个局域网，电脑打开B站就很慢，手机B站APP就很快",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1339",
+      "text": "路由器里的DNS缓存多久",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1340",
+      "text": "看到如此好评的视频我立刻给了up一键三连，在人均4090，5090的时代都不敢随便开口说话[笑哭]，回头试试5060ti 16G的效果",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1341",
+      "text": "感谢分享！wan刚出的时候用原始模型，我的显卡2080super 8G，根本跑不起来，现在用UP主视频中的Q4_K_S量化模型，还有lightning的加速lora，速度快了很多，分辨率800×480，5秒视频，会使用少量共享显存，大概需要12-20分钟，分辨率再大就爆显存，如果分辨率720×480，不会用共享显存，大概6.5分钟。另外20系显卡好像不支持sageAttention，会报错不支持显",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1342",
+      "text": "成功了，图生图454s，4060 8G\n............................\nlora key not loaded: diffusion_model.img_emb.proj.3.lora_up.weight\n\nlora key not loaded: diffusion_model.img_emb.proj.4.diff\n\nlora key not loaded: diff",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1344",
+      "text": "已经三连，我的是4070tis16g，32g内存，加了虚拟内存的，昨天跑的有点慢，模型是fp8的，1280×720，81帧，先用wan2.2的4步lora，虽然快点但效果很差，改成6步也是如此，后来改成wan2.1lora,light2x的设置8步,效果好多了，但跑了550秒。up主的方法晚上我试试，谢谢分享！",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1345",
+      "text": "激动啊，小白捣鼓了几天终于成功生成视频了！！之前看了各种教程，下载了一大堆东西，要么报错，要么生成的视频都是奇行种。我的配置是3060TI 8G+32内存，今天用了UP的整合包，没想到我也能生成AI视频。哈哈哈哈哈哈哈哈哈哈",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_1346",
+      "text": "4070tis，Q6，图生视频官流加saga+triton+lightingwan2.1i2v256，5秒720×480最快88秒，实际跑的时候我还另外加了两个你懂的lora，提示词就自己写，别整那些花里花哨的，我现在已经摸透wan2.2的提示词写法了，基本上我写的都能跑出来。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1348",
+      "text": "显存一点事没有，32g内存给我库库爆。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1349",
+      "text": "可以的兄弟，我8G的魔改显卡。用的pytorch2.6+cu124 , triton 3.2 ,sageattention-1.0.6 , 能跑文成视频 5秒的480*832分辨率的。跑了350秒，能跑通已经很开心了，之前的WAN2.1工作流可跑不了这么高分辨率。下午再试试图生视频[打call][打call]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1350",
+      "text": "实测，下载速度并没有变快，依然几十KB/s",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "download_cache",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1351",
+      "text": "这限速不是你电脑限速的是百度限速的，你改自己电脑设置和改网络游戏的金币数量有啥区别，自己骗自己呢",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1352",
+      "text": "秋叶这一个视频，破坏了我对他们的所有好感",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1353",
+      "text": "但凡你们公司有一个计算机科班出身的员工，都不至于发这辣鸡视频",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1360",
+      "text": "好像确实是除了课本之外，中文互联网唯一见到讲解视频编码原理的。这样努力下去，总有一天也会不输ytb的吧",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1362",
+      "text": "所以视频编码能节省空间的原因就和压缩字典一样？\n把图像用有限的现有的拼图拼出来？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1363",
+      "text": "现实是，如果没有缓存到这里就把进度拖过去，大概率会卡很久，甚至彻底卡死。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "playback_control",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1364",
+      "text": "可以分享一下视频中出现的软件吗\n还想问一下你是如何学习这些的，学习路径参考[脱单doge][脱单doge]\n我之前也了解学习过相关内容，但是发现无论是网络上还是资料很稀少，中文书籍内容偏向ffmpeg的使用[笑哭]\n而且感觉这方面相关内容都有些太硬核了偏算法[笑哭]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "content_recommend",
+        "is_ai_related": true,
+        "ai_specificity": "explicit"
+      }
+    },
+    {
+      "id": "bili_comments_1365",
+      "text": "太酷了！前段时间刚被“data-moshing”那种“中幻术了”的视频效果惊艳，想去研究一下怎么提取帧间运动预测呢[脱单doge]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1368",
+      "text": "之前做JT/T 1078的时候天天研究音视频编解码，后面买了一本《视频编码全角度详解》从AVC、HEVC再到VP系列，啃了2星期，发现真啃不动了，做编码器的人都是真的大佬，感觉自己算是入了个门吧。个人感觉国内入门音视频的话，不过的不提下雷霄骅，雷神了，他的文章真的很有价值，他做的VideoEye工具也是真的好用，现在分析音视频问题的时候还会用，不得不说实在可惜，天妒英才。\nUP主的讲解算是我自己在",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1369",
+      "text": "以前就发现过当原画面变H.264视频，画面就不再无损，每个干净的色块均出现了洇色，颜色也有点小偏差，且复杂动起来变复杂会更脏，这证明记录方式是不一样的。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1378",
+      "text": "最近也遇到这个问题了，用视频里的方法解决了。而且我这里白天是正常的，晚上7点到12点之间b站就没法加载了（但是挂了梯子到国外节点就可以，很神秘）。补充一下后面改host选ip地址的时候，筛选一下运营商，比如我这里就是辣鸡移动，后面换成安徽合肥的节点刷新一下网页立马就正常了。之前有看别人说是b站降本增效，晚上高峰期服务器就这样。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1379",
+      "text": "这个视频有用，但是和我想的不太一样，刚看完视频还没实践呢就好了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1380",
+      "text": "这个视频我就一直加载不出来 怎么解？[嫌弃]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1381",
+      "text": "如果同一个域名添加多个ip会怎么样，按顺序加载吗",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1385",
+      "text": "我的电脑客户端限速10mbps也就是1mb/s，卡的死死的，家里入户千兆加超6类线，也是没招了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1387",
+      "text": "说不看电视的，可能你只是不看传统的电视节目了。但是电视机本身是一个超大显示屏，你可以用它看4k电影，可以连Switch/PS5/Xbox这类游戏机玩游戏，甚至你可以连电脑在85寸大屏幕上刷b站。我本人就在装修时铺了线，书房的电脑既可以连屋内显示器也可以连客厅大电视。相信我 你看熟了大屏幕后，再看小屏幕真的是无比难受。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "long_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1388",
+      "text": "拍了这么多和“看”相关的视频，什么时候能拍拍“听”相关的，hifi也好降噪也好，很希望看到更专业的解读",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1389",
+      "text": "那电脑屏幕呢？怎么设置画质好，Windows的一些自动增强是不是也影响画质？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1390",
+      "text": "现在有很多投影仪会默认开启ai补帧，可是实际上没有必要吧？要是看电影或者动画都会觉得画面很不对劲，然而又鲜有人知道怎么关，算是行业通病了",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1391",
+      "text": "英伟达DLSS的补帧功能不会有电视运动补偿出现的那些缺点吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1392",
+      "text": "看完了稍微总结一下，举个例子就是，如果你想吃到更加原汁原味的饭菜，(比如刺身)，而不是做好之后，又被别人加了调料去调味，那就关闭那些设置，去感受原汁原味的画面和色彩，而这期视频也不是一种要求什么的，让你必须关掉这些设置，而是告诉你，如果你想要更原汁原味的感受那么该怎么做",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1393",
+      "text": "作为在这个时代少有的经常看电视的人，\n我个人认为，\nmemc在大尺寸电视上是非常有必要的，\n尤其是在观看一些低帧率的电视节目时候，\n硕大的屏幕搭配着显而易见的卡顿，\n非常容易让人视觉疲劳。\n但是，tim说的也是事实，在看一些特定片源的时候，再关闭不迟。",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "pain_point",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1394",
+      "text": "MEMC在一些特定场景我认为还是不错的，之前在电视上玩塞尔达旷野之息，电视从30帧补到60帧，感觉上还是很不错的[七濑胡桃_乖巧]",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "positive_feedback",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1395",
+      "text": "作为00后，现在真的有很多家里还看电视嘛，感觉现在基本上都是平板和手机还有电脑充斥着整个生活，有很多新家装修直接搞个投影仪也可以代替电视[脱单doge]所以电视的优势在哪……",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "screen_cast",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1399",
+      "text": "必须说一下怪猎荒野，明明画质没有特别好但是确特别吃配置",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1400",
+      "text": "不知道大家有没有这种感觉，就是这几年的游戏都特别黑，亮的地方还能接受，暗的地方路都看不见，如果调高了伽马就会导致灰蒙蒙的，以前不都是进入暗的地方自动变亮一点吗，而且现在也有HDR技术，但是很多时候好像都没什么用",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "ai_feature",
+        "is_ai_related": true,
+        "ai_specificity": "implicit"
+      }
+    },
+    {
+      "id": "bili_comments_1401",
+      "text": "人像越做越细，越真实，需要强大的配置去体验，可是你会在游戏的时候去看人物的毫毛吗？",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "feature_request",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1406",
+      "text": "我一直以为就我感觉到了这个问题，没想到大家都能感受到，挺让我感动的，我时常抱怨现在的游戏画质也就那样，为什么配置反而要求越来越高了，直到有人告诉我，一个花盆上面的n个面，以及制作人说出的那句话，我知道现在的玩家显卡不能流畅运行，但是以后会有更高的显卡，那个时候，大伙就知道，我的游戏有多棒了，他还自我感动上了，当年gta5给我带来的震撼就是为什么世界上有那么真实的游戏，但是家里的集显笔记本告诉我我根",
+      "platform": "bili",
+      "analysis": {
+        "scene": "live_stream",
+        "type": "feature_request",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1407",
+      "text": "标题党，先拿个没证明的错结论，然后网上东拼西凑偷东西编个视频出来",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "other",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    },
+    {
+      "id": "bili_comments_1408",
+      "text": "不少人分不清画质和画风的区别，这也是up中间提到的关于虚幻5引擎画面的那个论点。从ue4到ue5，因为引擎的强大，画质确实提升了，但是画风呢？都交给引擎了，库库往里怼公共素材和光源，算出来的画面都是一个样。国内近些年的手游在这方面尤其明显，因为根本没做画风的调整，tmd游戏里的人物和场景都不是一个风格的，割裂的要死。\n外拿自己库里的俩游戏对比一下，我没挑特别出名的游戏，如果都没玩过的，放截图你们猜",
+      "platform": "bili",
+      "analysis": {
+        "scene": "general_video",
+        "type": "behavior_description",
+        "topic": "video_quality",
+        "is_ai_related": false,
+        "ai_specificity": "not_ai"
+      }
+    }
+  ]
+}

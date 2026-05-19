@@ -1,0 +1,281 @@
+{
+  "核心洞察": [
+    {
+      "id": 1,
+      "title": "长视频用户的核心矛盾：深度沉浸 vs 时间焦虑",
+      "description": "用户既渴望长视频带来的深度沉浸体验（37条沉浸感内容），又担心时间失控（26条时间失控痛点）。'一口气看完'与'又熬夜了'形成强烈反差，反映出用户对'可控的沉浸'有强烈需求。",
+      "data_support": {
+        "沉浸感内容": 37,
+        "时间失控痛点": 26,
+        "平均互动量_沉浸": 11292,
+        "行为信号占比": 32.6
+      },
+      "opportunity": "P0"
+    },
+    {
+      "id": 2,
+      "title": "知识焦虑驱动长视频消费，但信息过载导致收藏即放弃",
+      "description": "知识类长视频（知识库47条、视频学习38条）互动量极高（均互动14299），但用户普遍面临'收藏夹吃灰'困境。知识焦虑（37条）与信息过载（13条）并存，用户需要系统化的知识管理工具。",
+      "data_support": {
+        "知识焦虑": 37,
+        "知识库期望": 47,
+        "信息过载": 13,
+        "平均互动量_知识库": 14299
+      },
+      "opportunity": "P0"
+    },
+    {
+      "id": 3,
+      "title": "睡前场景是长视频的高频使用场景，但身体疲劳问题突出",
+      "description": "睡前/夜间场景（50条）是长视频最高频的使用场景，但伴随严重的身体疲劳问题：视觉疲劳（7条）、身体疲劳（15条）。用户'想睡但停不下来'，需要护眼+定时+助眠的组合功能。",
+      "data_support": {
+        "睡前场景": 50,
+        "视觉疲劳": 7,
+        "身体疲劳": 15,
+        "算法陷阱": 53
+      },
+      "opportunity": "P0"
+    },
+    {
+      "id": 4,
+      "title": "算法推荐是双刃剑：既带来便利也造成信息茧房和选择困难",
+      "description": "个性化推荐（50条）是用户最期望的功能，但算法陷阱（53条）也是最大的退出障碍。用户既依赖推荐又感到被束缚，'不知道看啥'（选择困难25条）反映出推荐系统的局限性。",
+      "data_support": {
+        "个性化推荐期望": 50,
+        "算法陷阱": 53,
+        "选择困难": 25
+      },
+      "opportunity": "P1"
+    },
+    {
+      "id": 5,
+      "title": "社交需求是长视频传播的重要驱动力，但现有社交功能不足",
+      "description": "社交需求（44条）是用户打开长视频的重要触发因素，但社交互动主题仅7条，说明现有平台的社交功能未能满足用户需求。'一起'、'分享'、'讨论'等关键词高频出现。",
+      "data_support": {
+        "社交需求触发": 44,
+        "社交互动主题": 7,
+        "社区交流期望": 39
+      },
+      "opportunity": "P1"
+    }
+  ],
+  "机会矩阵": [
+    {
+      "topic": "场景使用",
+      "content_count": 15,
+      "avg_interaction": 25261,
+      "pain_ratio": 0.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 100,
+      "supply_gap": 50.5,
+      "feasibility": 75,
+      "business_value": 100,
+      "barrier": 65,
+      "total_score": 79.1
+    },
+    {
+      "topic": "时长控制",
+      "content_count": 28,
+      "avg_interaction": 16135,
+      "pain_ratio": 7.1,
+      "expect_ratio": 14.3,
+      "demand_strength": 100,
+      "supply_gap": 39.4,
+      "feasibility": 90,
+      "business_value": 94.7,
+      "barrier": 55,
+      "total_score": 77.6
+    },
+    {
+      "topic": "社交互动",
+      "content_count": 7,
+      "avg_interaction": 21507,
+      "pain_ratio": 0.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 100,
+      "supply_gap": 43.0,
+      "feasibility": 75,
+      "business_value": 100,
+      "barrier": 50,
+      "total_score": 75.8
+    },
+    {
+      "topic": "观看体验",
+      "content_count": 70,
+      "avg_interaction": 6718,
+      "pain_ratio": 21.4,
+      "expect_ratio": 11.4,
+      "demand_strength": 90.4,
+      "supply_gap": 25.4,
+      "feasibility": 85,
+      "business_value": 68.6,
+      "barrier": 60,
+      "total_score": 66.8
+    },
+    {
+      "topic": "功能需求",
+      "content_count": 44,
+      "avg_interaction": 8225,
+      "pain_ratio": 4.5,
+      "expect_ratio": 34.1,
+      "demand_strength": 79.6,
+      "supply_gap": 28.5,
+      "feasibility": 80,
+      "business_value": 63.1,
+      "barrier": 50,
+      "total_score": 61.5
+    },
+    {
+      "topic": "行为习惯",
+      "content_count": 30,
+      "avg_interaction": 11299,
+      "pain_ratio": 6.7,
+      "expect_ratio": 0.0,
+      "demand_strength": 79.1,
+      "supply_gap": 25.3,
+      "feasibility": 65,
+      "business_value": 71.5,
+      "barrier": 55,
+      "total_score": 59.3
+    },
+    {
+      "topic": "情绪感受",
+      "content_count": 8,
+      "avg_interaction": 12748,
+      "pain_ratio": 0.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 69.2,
+      "supply_gap": 25.5,
+      "feasibility": 55,
+      "business_value": 67.7,
+      "barrier": 75,
+      "total_score": 55.8
+    },
+    {
+      "topic": "内容质量",
+      "content_count": 40,
+      "avg_interaction": 8761,
+      "pain_ratio": 7.5,
+      "expect_ratio": 12.5,
+      "demand_strength": 76.0,
+      "supply_gap": 24.3,
+      "feasibility": 60,
+      "business_value": 63.8,
+      "barrier": 40,
+      "total_score": 54.5
+    },
+    {
+      "topic": "付费会员",
+      "content_count": 1,
+      "avg_interaction": 10913,
+      "pain_ratio": 0.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 55.3,
+      "supply_gap": 21.8,
+      "feasibility": 70,
+      "business_value": 55.1,
+      "barrier": 65,
+      "total_score": 50.8
+    },
+    {
+      "topic": "内容发现",
+      "content_count": 2,
+      "avg_interaction": 587,
+      "pain_ratio": 50.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 19.3,
+      "supply_gap": 21.2,
+      "feasibility": 80,
+      "business_value": 3.9,
+      "barrier": 45,
+      "total_score": 32.2
+    },
+    {
+      "topic": "平台对比",
+      "content_count": 9,
+      "avg_interaction": 3706,
+      "pain_ratio": 0.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 24.7,
+      "supply_gap": 7.4,
+      "feasibility": 70,
+      "business_value": 23.0,
+      "barrier": 30,
+      "total_score": 29.7
+    },
+    {
+      "topic": "设备相关",
+      "content_count": 1,
+      "avg_interaction": 298,
+      "pain_ratio": 0.0,
+      "expect_ratio": 0.0,
+      "demand_strength": 2.2,
+      "supply_gap": 0.6,
+      "feasibility": 85,
+      "business_value": 2.0,
+      "barrier": 70,
+      "total_score": 25.1
+    }
+  ],
+  "P0机会详解": [
+    {
+      "theme": "场景使用",
+      "score": 79.1,
+      "user_voice": [
+        "睡前必看长视频，但总是熬夜",
+        "通勤路上看长视频，但地铁信号不好",
+        "吃饭时看长视频，但找不到合适的"
+      ],
+      "suggestion": "开发场景感知播放功能：根据时间、地点、设备状态自动推荐合适的内容长度和类型；睡前模式自动降低亮度、定时关闭、护眼提醒"
+    },
+    {
+      "theme": "时长控制",
+      "score": 77.6,
+      "user_voice": [
+        "想要倍速但不想错过细节",
+        "希望能自动跳过片头片尾",
+        "想看完整版但时间不够"
+      ],
+      "suggestion": "AI智能时长适配：根据用户可用时间自动剪辑内容精华版；智能倍速（对话加速、精彩部分原速）；进度预测和提醒"
+    },
+    {
+      "theme": "观看体验",
+      "score": 66.8,
+      "user_voice": [
+        "看久了眼睛酸",
+        "躺着看脖子疼",
+        "想护眼但不想关屏幕"
+      ],
+      "suggestion": "硬件级护眼方案：自动色温调节、蓝光过滤、观看姿势检测和提醒、定时休息提醒；配合手机系统的健康使用功能"
+    },
+    {
+      "theme": "功能需求",
+      "score": 61.5,
+      "user_voice": [
+        "希望AI能帮我总结视频内容",
+        "想要个性化的学习路径",
+        "希望能跨设备无缝切换"
+      ],
+      "suggestion": "AI辅助功能套件：视频内容智能摘要、知识点提取、个性化学习路径规划、跨端同步和续播、语音搜索和问答"
+    }
+  ],
+  "用户诉求热力图": {
+    "高需求高可行": [
+      "播放控制",
+      "护眼模式",
+      "跨端同步"
+    ],
+    "高需求低可行": [
+      "情绪识别",
+      "内容质量评估"
+    ],
+    "低需求高可行": [
+      "内容筛选",
+      "专家服务"
+    ],
+    "低需求低可行": [
+      "社交互动",
+      "平台对比"
+    ]
+  }
+}

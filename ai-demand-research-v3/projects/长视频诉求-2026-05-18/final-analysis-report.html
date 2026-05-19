@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>长视频诉求 - AI需求调研报告</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.8;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            color: #333;
+            background: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1a1a1a;
+            font-size: 32px;
+            border-bottom: 3px solid #ff2442;
+            padding-bottom: 16px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: #1a1a1a;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-left: 16px;
+            border-left: 4px solid #ff2442;
+        }
+        h3 {
+            color: #333;
+            font-size: 18px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+        }
+        .summary-box {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .metric {
+            display: inline-block;
+            margin: 10px 20px 10px 0;
+            padding: 10px 16px;
+            background: #fff;
+            border-radius: 6px;
+            border: 1px solid #e9ecef;
+        }
+        .metric-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff2442;
+        }
+        .metric-label {
+            font-size: 12px;
+            color: #666;
+        }
+        .bar-chart {
+            margin: 20px 0;
+        }
+        .bar-item {
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+        }
+        .bar-label {
+            width: 200px;
+            font-size: 14px;
+            text-align: right;
+            padding-right: 12px;
+        }
+        .bar-track {
+            flex: 1;
+            height: 24px;
+            background: #f0f0f0;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        .bar-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff2442, #ff6b6b);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 8px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        .formula-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+        .insight-card {
+            background: #fff;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 16px 0;
+            border-left: 4px solid #ff2442;
+        }
+        .insight-title {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        .insight-data {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .opportunity-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .opportunity-table th {
+            background: #f8f9fa;
+            padding: 12px;
+            text-align: left;
+            border-bottom: 2px solid #dee2e6;
+            font-weight: 600;
+        }
+        .opportunity-table td {
+            padding: 12px;
+            border-bottom: 1px solid #e9ecef;
+        }
+        .priority-p0 {
+            color: #ff2442;
+            font-weight: bold;
+        }
+        .priority-p1 {
+            color: #ff9500;
+            font-weight: bold;
+        }
+        .priority-p2 {
+            color: #666;
+        }
+        .score-detail {
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>长视频诉求 - AI需求调研报告</h1>
+        
+        <div class="summary-box">
+            <h3>调研概况</h3>
+            <div class="metric">
+                <div class="metric-value">126</div>
+                <div class="metric-label">有效UGC样本</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">1,056,521</div>
+                <div class="metric-label">总互动量</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">8,385</div>
+                <div class="metric-label">平均互动</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">12</div>
+                <div class="metric-label">一层主题</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">37</div>
+                <div class="metric-label">二层主题</div>
+            </div>
+            <div class="metric">
+                <div class="metric-value">5</div>
+                <div class="metric-label">P0机会</div>
+            </div>
+        </div>
+
+        <h2>一、主题聚类分析</h2>
+        
+        <h3>1.1 一层主题分布</h3>
+        <div class="bar-chart">
+
+            <div class="bar-item">
+                <div class="bar-label">内容发现</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 100.0%">39 (31.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">观看体验</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 48.717948717948715%">19 (15.1%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容质量</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 43.58974358974359%">17 (13.5%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">行为习惯</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 33.33333333333333%">13 (10.3%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">场景使用</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 33.33333333333333%">13 (10.3%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">功能需求</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 30.76923076923077%">12 (9.5%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">情绪感受</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 20.51282051282051%">8 (6.3%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">未分类</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 12.82051282051282%">5 (4.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">平台对比</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 12.82051282051282%">5 (4.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">时长控制</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 10.256410256410255%">4 (3.2%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">社交互动</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 7.6923076923076925%">3 (2.4%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">设备环境</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 5.128205128205128%">2 (1.6%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">付费会员</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 2.564102564102564%">1 (0.8%)</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>1.2 二层主题分布（Top 15）</h3>
+        <div class="bar-chart">
+
+            <div class="bar-item">
+                <div class="bar-label">内容发现_推荐系统</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 100.0%">28 (22.2%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">观看体验_沉浸感</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 57.14285714285714%">16 (12.7%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容发现_主动搜索</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 32.142857142857146%">9 (7.1%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">行为习惯_记录打卡</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 25.0%">7 (5.6%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">场景使用_学习工作</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 21.428571428571427%">6 (4.8%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容质量_深度干货</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 21.428571428571427%">6 (4.8%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">功能需求_其他</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 17.857142857142858%">5 (4.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容质量_其他</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 17.857142857142858%">5 (4.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">未分类_其他</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 17.857142857142858%">5 (4.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容质量_内容水化</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 14.285714285714285%">4 (3.2%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">情绪感受_负面情绪</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 14.285714285714285%">4 (3.2%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">情绪感受_正面情绪</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 14.285714285714285%">4 (3.2%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">场景使用_睡前</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 14.285714285714285%">4 (3.2%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">时长控制_倍速播放</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 10.714285714285714%">3 (2.4%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">场景使用_下饭</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 10.714285714285714%">3 (2.4%)</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>二、需求信号提取</h2>
+        
+        <h3>2.1 信号类型分布</h3>
+        <div class="bar-chart">
+
+            <div class="bar-item">
+                <div class="bar-label">痛点信号</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 34.0%">24 (17.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">决策信号</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 68.0%">48 (34.0%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">求助信号</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 22.6%">16 (11.3%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">行为信号</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 55.39999999999999%">39 (27.7%)</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">期望信号</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 56.8%">40 (28.4%)</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>三、产品机会映射</h2>
+        
+        <h3>3.1 评分公式</h3>
+        <div class="formula-box">
+五维评分矩阵（每个维度0-100分）：<br><br>
+1. 需求强度 = min(100, (内容数量/总数量×100)×2 + (平均互动量/1000)×5 + 痛点覆盖率×30 + 期望覆盖率×20)<br>
+   - 权重: 30%<br><br>
+2. 供给缺口 = min(100, 平均互动量/500 + 痛点覆盖率×40 + 期望覆盖率×30)<br>
+   - 权重: 25%<br><br>
+3. 技术可行性 = 基于主题的人工评估（0-100）<br>
+   - 权重: 20%<br><br>
+4. 商业价值 = min(100, 平均互动量/200 + 内容数量/2)<br>
+   - 权重: 15%<br><br>
+5. 竞争壁垒 = 基于主题的人工评估（0-100）<br>
+   - 权重: 10%<br><br>
+总分 = 需求强度×0.30 + 供给缺口×0.25 + 技术可行性×0.20 + 商业价值×0.15 + 竞争壁垒×0.10<br><br>
+分级标准:<br>
+- P0（高优先级）: 总分 ≥ 60<br>
+- P1（中优先级）: 45 ≤ 总分 < 60<br>
+- P2（低优先级）: 总分 < 45
+        </div>
+
+        <h3>3.2 机会评分表</h3>
+        <table class="opportunity-table">
+            <tr>
+                <th>优先级</th>
+                <th>主题</th>
+                <th>总分</th>
+                <th>需求强度</th>
+                <th>供给缺口</th>
+                <th>技术可行</th>
+                <th>商业价值</th>
+                <th>竞争壁垒</th>
+            </tr>
+
+            <tr>
+                <td class="priority-p0">P0</td>
+                <td>社交互动</td>
+                <td><strong>92.0</strong></td>
+                <td class="score-detail">100</td>
+                <td class="score-detail">100</td>
+                <td class="score-detail">70</td>
+                <td class="score-detail">100</td>
+                <td class="score-detail">80</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p0">P0</td>
+                <td>时长控制</td>
+                <td><strong>77.6</strong></td>
+                <td class="score-detail">100</td>
+                <td class="score-detail">42.4</td>
+                <td class="score-detail">85</td>
+                <td class="score-detail">100</td>
+                <td class="score-detail">50</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p0">P0</td>
+                <td>内容质量</td>
+                <td><strong>74.5</strong></td>
+                <td class="score-detail">100</td>
+                <td class="score-detail">50.8</td>
+                <td class="score-detail">70</td>
+                <td class="score-detail">75.3</td>
+                <td class="score-detail">65</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p0">P0</td>
+                <td>内容发现</td>
+                <td><strong>64.8</strong></td>
+                <td class="score-detail">91.9</td>
+                <td class="score-detail">26.4</td>
+                <td class="score-detail">85</td>
+                <td class="score-detail">44.5</td>
+                <td class="score-detail">70</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p0">P0</td>
+                <td>行为习惯</td>
+                <td><strong>62.2</strong></td>
+                <td class="score-detail">75.6</td>
+                <td class="score-detail">31.0</td>
+                <td class="score-detail">80</td>
+                <td class="score-detail">55.2</td>
+                <td class="score-detail">75</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p1">P1</td>
+                <td>功能需求</td>
+                <td><strong>55.3</strong></td>
+                <td class="score-detail">59.8</td>
+                <td class="score-detail">38.3</td>
+                <td class="score-detail">85</td>
+                <td class="score-detail">28.7</td>
+                <td class="score-detail">65</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p1">P1</td>
+                <td>情绪感受</td>
+                <td><strong>49.9</strong></td>
+                <td class="score-detail">57.5</td>
+                <td class="score-detail">35.2</td>
+                <td class="score-detail">60</td>
+                <td class="score-detail">32.6</td>
+                <td class="score-detail">70</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p1">P1</td>
+                <td>场景使用</td>
+                <td><strong>49.3</strong></td>
+                <td class="score-detail">53.2</td>
+                <td class="score-detail">15.6</td>
+                <td class="score-detail">90</td>
+                <td class="score-detail">39.7</td>
+                <td class="score-detail">55</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p2">P2</td>
+                <td>观看体验</td>
+                <td><strong>43.4</strong></td>
+                <td class="score-detail">48.6</td>
+                <td class="score-detail">17.4</td>
+                <td class="score-detail">75</td>
+                <td class="score-detail">22.8</td>
+                <td class="score-detail">60</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p2">P2</td>
+                <td>付费会员</td>
+                <td><strong>42.5</strong></td>
+                <td class="score-detail">56.0</td>
+                <td class="score-detail">21.8</td>
+                <td class="score-detail">40</td>
+                <td class="score-detail">55.1</td>
+                <td class="score-detail">40</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p2">P2</td>
+                <td>设备环境</td>
+                <td><strong>41.2</strong></td>
+                <td class="score-detail">35.8</td>
+                <td class="score-detail">13.2</td>
+                <td class="score-detail">80</td>
+                <td class="score-detail">34.0</td>
+                <td class="score-detail">60</td>
+            </tr>
+
+            <tr>
+                <td class="priority-p2">P2</td>
+                <td>平台对比</td>
+                <td><strong>23.3</strong></td>
+                <td class="score-detail">19.4</td>
+                <td class="score-detail">14.9</td>
+                <td class="score-detail">50</td>
+                <td class="score-detail">4.8</td>
+                <td class="score-detail">30</td>
+            </tr>
+
+        </table>
+
+        <h2>四、核心洞察</h2>
+
+        <div class="insight-card">
+            <div class="insight-title">洞察1: 内容发现是用户最大痛点，"求推荐"类需求占27.7%</div>
+            <div class="insight-data"><strong>数据支撑:</strong> 一层主题'内容发现'以39条(27.7%)位居第一，其中'内容发现_推荐系统'子主题占19.9%</div>
+            <div class="insight-data"><strong>含义:</strong> 用户面临严重的"选择困难"，需要更智能的推荐和发现机制</div>
+            <div class="insight-data"><strong>机会:</strong> P0机会：智能推荐算法优化、个性化内容发现</div>
+        </div>
+
+        <div class="insight-card">
+            <div class="insight-title">洞察2: 用户偏好"音频优先"的观看方式，19.9%的内容涉及音频/背景播放</div>
+            <div class="insight-data"><strong>数据支撑:</strong> 设备偏好中"音频优先"28条(19.9%)，并行活动中"学习工作时"27条(19.1%)、"手工/创作"27条(19.1%)</div>
+            <div class="insight-data"><strong>含义:</strong> 用户将长视频作为"背景音"使用，视觉注意力有限</div>
+            <div class="insight-data"><strong>机会:</strong> P0机会：音频模式优化、语音交互、后台播放体验</div>
+        </div>
+
+        <div class="insight-card">
+            <div class="insight-title">洞察3: 倍速播放是刚需，时间压力与内容质量矛盾突出</div>
+            <div class="insight-data"><strong>数据支撑:</strong> 时长控制主题4条(2.8%)但平均互动21208.8，倍速控制期望出现3次，总互动82885</div>
+            <div class="insight-data"><strong>含义:</strong> 用户希望在有限时间内获取更多内容，对效率工具需求强烈</div>
+            <div class="insight-data"><strong>机会:</strong> P0机会：智能倍速、内容摘要、AI总结</div>
+        </div>
+
+        <div class="insight-card">
+            <div class="insight-title">洞察4: 社交互动需求被严重低估，高互动内容凸显社交价值</div>
+            <div class="insight-data"><strong>数据支撑:</strong> 社交互动仅3条(2.1%)但平均互动50367.7，为所有主题最高</div>
+            <div class="insight-data"><strong>含义:</strong> 用户渴望"一起看"的社交体验，现有产品未能满足</div>
+            <div class="insight-data"><strong>机会:</strong> P0机会：同步观看、社交互动功能</div>
+        </div>
+
+        <div class="insight-card">
+            <div class="insight-title">洞察5: 内容质量是核心诉求，"干货"与"水内容"矛盾突出</div>
+            <div class="insight-data"><strong>数据支撑:</strong> 内容质量主题17条(12.1%)，其中"深度干货"6条，"内容水化"4条，痛点"内容质量差"平均互动16047.9</div>
+            <div class="insight-data"><strong>含义:</strong> 用户对内容质量敏感，愿意为高质量内容付出更多时间</div>
+            <div class="insight-data"><strong>机会:</strong> P0机会：内容质量评估、优质内容筛选</div>
+        </div>
+
+        <h2>五、痛点深度分析</h2>
+        <div class="bar-chart">
+
+            <div class="bar-item">
+                <div class="bar-label">选择困难</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 93.33333333333333%">14次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容质量差</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 66.66666666666666%">10次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">时间压力</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 33.33333333333333%">5次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">信息过载</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 33.33333333333333%">5次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">沉迷问题</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 20.0%">3次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">付费压力</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 13.333333333333334%">2次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">社交孤独</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 13.333333333333334%">2次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">眼睛疲劳</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 6.666666666666667%">1次</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>六、期望功能分析</h2>
+        <div class="bar-chart">
+
+            <div class="bar-item">
+                <div class="bar-label">智能推荐</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 87.5%">35次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">笔记功能</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 15.0%">6次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">内容筛选</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 10.0%">4次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">倍速控制</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 7.5%">3次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">AI总结</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 5.0%">2次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">字幕翻译</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 5.0%">2次</div>
+                </div>
+            </div>
+
+            <div class="bar-item">
+                <div class="bar-label">同步观看</div>
+                <div class="bar-track">
+                    <div class="bar-fill" style="width: 2.5%">1次</div>
+                </div>
+            </div>
+
+        </div>
+
+        <h2>七、优化搜索关键词</h2>
+        <table class="opportunity-table">
+            <tr>
+                <th>关键词</th>
+                <th>平台</th>
+                <th>预期量级</th>
+                <th>优化理由</th>
+            </tr>
+
+            <tr>
+                <td><strong>长视频推荐</strong></td>
+                <td>xhs</td>
+                <td>高</td>
+                <td>内容发现是最大痛点(27.7%)，用户主动求推荐</td>
+            </tr>
+
+            <tr>
+                <td><strong>下饭视频</strong></td>
+                <td>xhs</td>
+                <td>高</td>
+                <td>下饭场景13条(9.2%)，高频使用场景</td>
+            </tr>
+
+            <tr>
+                <td><strong>倍速播放</strong></td>
+                <td>xhs</td>
+                <td>中</td>
+                <td>倍速控制期望总互动82885，时间压力痛点</td>
+            </tr>
+
+            <tr>
+                <td><strong>视频背景音</strong></td>
+                <td>xhs</td>
+                <td>中</td>
+                <td>音频优先19.9%，学习/工作/手工场景高频</td>
+            </tr>
+
+            <tr>
+                <td><strong>一起看视频</strong></td>
+                <td>xhs</td>
+                <td>中</td>
+                <td>社交互动平均互动最高(50367.7)，社交需求强烈</td>
+            </tr>
+
+            <tr>
+                <td><strong>视频质量</strong></td>
+                <td>xhs</td>
+                <td>中</td>
+                <td>内容质量主题12.1%，深度干货 vs 水化内容矛盾</td>
+            </tr>
+
+        </table>
+
+        <h2>八、数据来源与方法论</h2>
+        <div class="summary-box">
+            <h3>数据来源</h3>
+            <p><strong>搜索词:</strong> "长视频"</p>
+            <p><strong>平台:</strong> 小红书 (xhs)</p>
+            <p><strong>原始数据:</strong> 508条</p>
+            <p><strong>有效数据:</strong> 126条（严格筛选后）</p>
+            <p><strong>筛选标准:</strong> 排除创作者分享类内容，仅保留与用户观看长视频的诉求、痛点、期望直接相关的UGC</p>
+            
+            <h3>分析方法</h3>
+            <p>1. 主题聚类：一层主题12个，二层主题37个</p>
+            <p>2. 需求信号：痛点/决策/求助/行为/期望五类信号</p>
+            <p>3. 内容质量：高/中/低三级评估</p>
+            <p>4. 机会映射：五维评分矩阵（需求强度×30% + 供给缺口×25% + 技术可行性×20% + 商业价值×15% + 竞争壁垒×10%）</p>
+            <p>5. 三维标签：使用情境/触发退出/用户群体</p>
+        </div>
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e9ecef; color: #666; font-size: 12px; text-align: center;">
+            报告生成时间: 2026-05-18 | 数据来源: 小红书 | 样本量: 126条有效UGC
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,674 @@
+你是一位专业的用户研究分析师，擅长从用户原声(VOC)中提取结构化洞察。
+
+## 任务说明
+请对以下55条用户内容进行批量分析。每条内容可能包含1个或多个"观点单元"(Opinion Unit)。
+只关注与【手机观看短视频/长视频/直播】相关的内容。
+
+## 分类体系
+
+### 场景维度 (Layer 1)
+[
+  {
+    "id": "short_video",
+    "name": "短视频消费",
+    "def": "抖音、快手、小红书等短视频平台的观看体验"
+  },
+  {
+    "id": "long_video",
+    "name": "长视频消费",
+    "def": "B站、爱奇艺、腾讯视频等长视频平台的观看体验"
+  },
+  {
+    "id": "live_stream",
+    "name": "直播观看",
+    "def": "抖音直播、淘宝直播等实时直播观看体验"
+  },
+  {
+    "id": "video_creation",
+    "name": "视频创作",
+    "def": "用户使用手机拍摄、剪辑、发布视频的体验"
+  }
+]
+
+### 诉求类型 (Layer 2)
+[
+  {
+    "id": "feature_request",
+    "name": "功能需求",
+    "def": "用户明确提出的功能期望或建议"
+  },
+  {
+    "id": "pain_point",
+    "name": "体验痛点",
+    "def": "用户抱怨的现有问题或不满"
+  },
+  {
+    "id": "emotion",
+    "name": "情感表达",
+    "def": "用户的情绪反应、态度表达"
+  },
+  {
+    "id": "expectation",
+    "name": "期望建议",
+    "def": "用户对未来功能或体验的期望"
+  },
+  {
+    "id": "behavior",
+    "name": "行为描述",
+    "def": "用户描述自己的使用行为或习惯"
+  }
+]
+
+### 主题标签 (Layer 3) - 预定义21个
+[
+  {
+    "id": "playback_control",
+    "name": "播放控制",
+    "examples": [
+      "倍速播放",
+      "进度条",
+      "暂停/续播",
+      "手势操作"
+    ],
+    "def": "用户对视频播放控制功能的诉求"
+  },
+  {
+    "id": "video_quality",
+    "name": "画质音质",
+    "examples": [
+      "4K/高清",
+      "卡顿",
+      "清晰度",
+      "音质",
+      "HDR"
+    ],
+    "def": "用户对视频和音频质量的诉求"
+  },
+  {
+    "id": "content_recommend",
+    "name": "内容推荐",
+    "examples": [
+      "推荐算法",
+      "个性化",
+      "不感兴趣",
+      "内容重复"
+    ],
+    "def": "用户对内容推荐系统的诉求"
+  },
+  {
+    "id": "social_interaction",
+    "name": "社交互动",
+    "examples": [
+      "弹幕",
+      "评论",
+      "点赞",
+      "分享",
+      "互动功能"
+    ],
+    "def": "用户对视频社交互动功能的诉求"
+  },
+  {
+    "id": "payment_member",
+    "name": "付费会员",
+    "examples": [
+      "会员价格",
+      "VIP权益",
+      "自动续费",
+      "付费内容"
+    ],
+    "def": "用户对付费和会员体系的诉求"
+  },
+  {
+    "id": "ad_experience",
+    "name": "广告体验",
+    "examples": [
+      "广告时长",
+      "广告数量",
+      "跳过广告",
+      "广告质量"
+    ],
+    "def": "用户对广告体验的诉求"
+  },
+  {
+    "id": "multi_device",
+    "name": "多设备同步",
+    "examples": [
+      "手机投屏",
+      "跨设备续播",
+      "多终端登录",
+      "历史同步"
+    ],
+    "def": "用户跨设备观看体验的诉求"
+  },
+  {
+    "id": "download_cache",
+    "name": "下载缓存",
+    "examples": [
+      "离线观看",
+      "下载速度",
+      "缓存管理",
+      "存储空间"
+    ],
+    "def": "用户对视频下载和缓存功能的诉求"
+  },
+  {
+    "id": "subtitle_translate",
+    "name": "字幕翻译",
+    "examples": [
+      "自动生成字幕",
+      "多语言翻译",
+      "字幕样式",
+      "实时翻译"
+    ],
+    "def": "用户对字幕和翻译功能的诉求"
+  },
+  {
+    "id": "screen_cast",
+    "name": "投屏大屏",
+    "examples": [
+      "电视投屏",
+      "投影仪",
+      "大屏体验",
+      "无线投屏"
+    ],
+    "def": "用户投屏到大屏幕观看的诉求"
+  },
+  {
+    "id": "background_play",
+    "name": "后台播放",
+    "examples": [
+      "锁屏播放",
+      "听视频",
+      "后台音频",
+      "小窗播放"
+    ],
+    "def": "用户后台或锁屏状态下播放的诉求"
+  },
+  {
+    "id": "search_discover",
+    "name": "搜索发现",
+    "examples": [
+      "搜索功能",
+      "内容发现",
+      "分类浏览",
+      "筛选功能"
+    ],
+    "def": "用户搜索和发现内容的诉求"
+  },
+  {
+    "id": "privacy_security",
+    "name": "隐私安全",
+    "examples": [
+      "观看历史",
+      "隐私模式",
+      "数据安全",
+      "青少年模式"
+    ],
+    "def": "用户对隐私和安全功能的诉求"
+  },
+  {
+    "id": "youth_mode",
+    "name": "青少年模式",
+    "examples": [
+      "家长控制",
+      "时长限制",
+      "内容过滤",
+      "防沉迷"
+    ],
+    "def": "用户对青少年保护功能的诉求"
+  },
+  {
+    "id": "accessibility",
+    "name": "无障碍辅助",
+    "examples": [
+      "字幕辅助",
+      "语音控制",
+      "大字体",
+      "色弱适配"
+    ],
+    "def": "用户对无障碍功能的诉求"
+  },
+  {
+    "id": "time_addiction",
+    "name": "时间沉迷",
+    "examples": [
+      "刷视频时间太长",
+      "停不下来",
+      "时间黑洞",
+      "防沉迷",
+      "使用时长"
+    ],
+    "def": "用户对视频使用时间管理和沉迷控制的诉求"
+  },
+  {
+    "id": "ai_feature",
+    "name": "AI功能",
+    "examples": [
+      "AI总结",
+      "智能推荐",
+      "AI字幕",
+      "内容理解",
+      "智能剪辑"
+    ],
+    "def": "用户对AI相关功能的诉求"
+  },
+  {
+    "id": "creation_tool",
+    "name": "创作工具",
+    "examples": [
+      "剪辑功能",
+      "特效",
+      "滤镜",
+      "配乐",
+      "模板"
+    ],
+    "def": "用户对视频创作工具的诉求"
+  },
+  {
+    "id": "cross_platform",
+    "name": "跨平台体验",
+    "examples": [
+      "网页版",
+      "平板适配",
+      "车机支持",
+      "折叠屏"
+    ],
+    "def": "用户跨平台/终端观看体验的诉求"
+  },
+  {
+    "id": "notification",
+    "name": "通知提醒",
+    "examples": [
+      "更新提醒",
+      "直播通知",
+      "推送频率",
+      "免打扰"
+    ],
+    "def": "用户对通知和提醒功能的诉求"
+  },
+  {
+    "id": "other",
+    "name": "其他",
+    "examples": [],
+    "def": "不属于以上类别的其他诉求"
+  }
+]
+
+**重要**: 如果某条观点无法匹配以上21个预定义主题，请标记主题为"other"，并在"new_topic_suggestion"字段建议一个新主题名称。
+
+### 情感维度
+- "positive": 正面/满意/赞赏
+- "neutral": 中性/客观描述/无明确情感
+- "negative": 负面/不满/抱怨
+
+### AI相关分类
+- is_ai_related: true/false
+- ai_specificity: "explicit"(明确提到AI)/"implicit"(隐含AI需求)/"not_ai"
+- ai_category: 如果is_ai_related为true，从以下选择：
+  [{"id": "content_understanding", "name": "内容理解"}, {"id": "smart_recommend", "name": "智能推荐"}, {"id": "generation_assist", "name": "生成辅助"}, {"id": "interaction_enhance", "name": "交互增强"}, {"id": "quality_optimize", "name": "质量优化"}, {"id": "other_ai", "name": "其他AI"}]
+
+## 输出格式
+必须为每条内容的每个Opinion Unit输出一个JSON对象：
+
+```json
+{
+  "item_id": "原始内容编号",
+  "unit_id": "批次内唯一编号",
+  "excerpt": "原文摘录",
+  "scene": "场景ID",
+  "scene_name": "场景名称",
+  "type": "类型ID",
+  "type_name": "类型名称",
+  "topic": "主题ID",
+  "topic_name": "主题名称",
+  "new_topic_suggestion": "如果topic是other，建议的新主题名称；否则空字符串",
+  "sentiment": "positive/neutral/negative",
+  "is_ai_related": true/false,
+  "ai_specificity": "explicit/implicit/not_ai",
+  "ai_category": "AI分类ID或空字符串",
+  "confidence": 0.0-1.0,
+  "reason": "分类理由"
+}
+```
+
+## 待分析的用户内容 (批次 96/120)
+
+--- ITEM #1 ---
+ID: zhihu_comments_3407
+平台: zhihu
+类型: comments
+内容: 澳门新葡京会员[吃瓜]
+
+--- ITEM #2 ---
+ID: zhihu_comments_3408
+平台: zhihu
+类型: comments
+内容: 会员还有专属广告，还有电视自带的广告
+
+--- ITEM #3 ---
+ID: zhihu_comments_3409
+平台: zhihu
+类型: comments
+内容: 会员专属广告让我彻底绷不住了[大哭]还有每当我暂停要看看细节的时候，巨大的广告把屏幕全部遮挡死[生气]
+
+--- ITEM #4 ---
+ID: zhihu_comments_3410
+平台: zhihu
+类型: comments
+内容: 自从发现家里投屏还需要开更高级的会员以后发誓以后再不开任何一个正版会员，感觉在被人当傻子调教
+
+--- ITEM #5 ---
+ID: zhihu_comments_3411
+平台: zhihu
+类型: comments
+内容: 还有删减问题，正版有时候删的剧情都不连贯了，翻译也没盗版靠谱[飙泪笑]
+
+--- ITEM #6 ---
+ID: zhihu_comments_3412
+平台: zhihu
+类型: comments
+内容: 我现在都买光盘看，正版除了广告之外，他居然有删减，你花了钱看的电影是阉割版，甚至你都不知道阉割的攒劲的镜头有多少。
+
+--- ITEM #7 ---
+ID: zhihu_comments_3413
+平台: zhihu
+类型: comments
+内容: 刚性成本太高（带宽，版权等），付费意愿低，会员付费率低，并且金额低，需要用一层层的套娃来让用户购买更多权益（其实就是增加付费金额）。这片土地，收入太低。导致其他地方能省则省，付费意愿很难提上来。另外一方面，也反映了版权价格的虚高，导致长视频网站生存艰难。 @知乎直答 。你怎么看
+
+--- ITEM #8 ---
+ID: zhihu_comments_3415
+平台: zhihu
+类型: comments
+内容: 广告展示给了没有付款意愿的非会员[酷]广告商不干了,所以推出了VIP广告,这部分人都是愿意出钱的,给会员放VIP广告
+
+--- ITEM #9 ---
+ID: zhihu_comments_3417
+平台: zhihu
+类型: comments
+内容: 每个剧在不同的软件上，你要开许许多多的会员，会员的作用也只能让你的广告从100秒减到30秒，一个盗版网站全部搞定，一条龙服务，谁不喜欢[看看你]
+
+--- ITEM #10 ---
+ID: zhihu_comments_3421
+平台: zhihu
+类型: comments
+内容: 你的第一段话打动了我，还真是这样啊！买了vip也有广告
+
+--- ITEM #11 ---
+ID: zhihu_comments_3422
+平台: zhihu
+类型: comments
+内容: 哈哈哈，笑喷了。还别说，盗版的还真的挺讲究，现在会员套会员，交了会员还有广告。手机APP和电视APP还是两套体系[飙泪笑]
+
+--- ITEM #12 ---
+ID: zhihu_comments_3423
+平台: zhihu
+类型: comments
+内容: 我特么腾讯，爱奇艺的包年会员都开过，但是平台是真不拿你当然人，广告简直令人发指，好不容易有个新剧，一会抢先看，一会超级点映，花样百出就是让你继续掏钱。看DB就和你简单了，我管你超前点映还是抢先看，反正只要有人能看我就能看
+
+--- ITEM #13 ---
+ID: zhihu_comments_3424
+平台: zhihu
+类型: comments
+内容: 信用卡积分兑换的腾讯会员，看个网剧各种弹广告，后来还是受不了跑去看影视仓了[思考]
+
+--- ITEM #14 ---
+ID: zhihu_comments_3425
+平台: zhihu
+类型: comments
+内容: 相信我，有钱开会员的才是广告的目标客户，我扣扣搜搜会员有没钱开，给我看广告有啥用啊！所以给会员放广告才是有效投放！
+
+--- ITEM #15 ---
+ID: zhihu_comments_3427
+平台: zhihu
+类型: comments
+内容: 听说爱奇艺VIP电视剧看不了最后一集，要SVIP。[捂脸][捂脸]
+
+--- ITEM #16 ---
+ID: zhihu_comments_3428
+平台: zhihu
+类型: comments
+内容: 所以还是本地电影香，想看就看，随意拖动，看一夜都没广告。
+
+--- ITEM #17 ---
+ID: zhihu_comments_3429
+平台: zhihu
+类型: comments
+内容: 最讨厌的就是暂停广告，艹
+
+--- ITEM #18 ---
+ID: zhihu_comments_3430
+平台: zhihu
+类型: comments
+内容: 盗版你能看最清晰的，正版你要充各种会员。更不要说那些广告了，之前全屏看都能弹出来，你不点X,还不会消失
+
+--- ITEM #19 ---
+ID: zhihu_comments_3431
+平台: zhihu
+类型: comments
+内容: 现在用插件也不用看广告，就是清晰度不是很高清，有点模糊，但是不妨碍看的
+
+--- ITEM #20 ---
+ID: zhihu_comments_3432
+平台: zhihu
+类型: comments
+内容: 我付费的正班只有番茄和B站。因为会员是真的会员
+
+--- ITEM #21 ---
+ID: zhihu_comments_3433
+平台: zhihu
+类型: comments
+内容: 我买了WPS，他居然告诉我SVIP没有取消广告的功能，哈哈，直接把我干破防了，WPS再见，我打算会员到期就用破解版了，本来想着支持正版的，可是他不把我当人看啊！！！
+
+--- ITEM #22 ---
+ID: zhihu_comments_3434
+平台: zhihu
+类型: comments
+内容: 开屏广告，弹窗广告，首页广告，播放前广告，片头曲放完广告，暂停广告，剧中广告，结尾广告，退出之后还有通知栏广告哦~
+
+--- ITEM #23 ---
+ID: zhihu_comments_3435
+平台: zhihu
+类型: comments
+内容: 没错，就跟玩小游戏一样，如果98能够永久关掉广告，游戏好玩我就充了。但是他们要按照一个月68给你个月卡关广告，每个月都要68，仅仅关个广告，还月月缴费，再好玩我也不玩。
+
+--- ITEM #24 ---
+ID: zhihu_comments_3438
+平台: zhihu
+类型: comments
+内容: 你以为的盗版带赌博广告，实际的盗版高清无广告
+
+--- ITEM #25 ---
+ID: zhihu_comments_3439
+平台: zhihu
+类型: comments
+内容: 其实没那么多原因，付了钱还得看广告是一点最重要的是我付了钱看的全是删减版，就例如一到部分场景就是黑屏之类的谁受得了，这是钱多了没地方花吗？
+
+--- ITEM #26 ---
+ID: zhihu_comments_3441
+平台: zhihu
+类型: comments
+内容: 我支持的正版是netflix，开了会员之后一条广告都没有
+
+--- ITEM #27 ---
+ID: zhihu_comments_3442
+平台: zhihu
+类型: comments
+内容: 我遇到的插播广告基本都是20秒，没有3、5秒的，半小时不到的视频，愣是丧心病狂地插了6、7个广告。好处是可以拖进度条，不怕麻烦可以把文件过滤掉
+
+--- ITEM #28 ---
+ID: zhihu_comments_3443
+平台: zhihu
+类型: comments
+内容: 因为正版的一堆广告，不想看你就只能开会员
+
+--- ITEM #29 ---
+ID: zhihu_comments_3445
+平台: zhihu
+类型: comments
+内容: 盗版做的逼真了而且价格不贵，所以就不愿意为正版付费了
+
+--- ITEM #30 ---
+ID: zhihu_comments_3447
+平台: zhihu
+类型: comments
+内容: 某视频svip，电视剧开始有广告，中间有广告，片尾都给你加广告。。。。[大笑]
+
+--- ITEM #31 ---
+ID: zhihu_comments_3448
+平台: zhihu
+类型: comments
+内容: 买了某正版后，都整出条件反射了，暂停看细节，暂停之后必须鼠标移到右下角把画面放大，因为tmd暂停画面主体变成广告了…以至于看自己本地的视频这个反射还在，后来大夫开了两个月盗版，才治好。
+
+--- ITEM #32 ---
+ID: zhihu_comments_3450
+平台: zhihu
+类型: comments
+内容: 会员专属广告真的是太坑会员了。
+
+--- ITEM #33 ---
+ID: zhihu_comments_3453
+平台: zhihu
+类型: comments
+内容: 开元棋牌，业界最好棋牌*3，每个15秒，总计45秒。可以直接跳过[酷]
+
+--- ITEM #34 ---
+ID: zhihu_comments_3454
+平台: zhihu
+类型: comments
+内容: 从来没开过会员[大笑]
+
+--- ITEM #35 ---
+ID: zhihu_comments_3456
+平台: zhihu
+类型: comments
+内容: 哈哈哈哈[赞同]吐槽的太真实了，就因为广告太多太烦，我已经戒掉电视机看剧了，全是广告，还看个der。
+
+--- ITEM #36 ---
+ID: zhihu_comments_3457
+平台: zhihu
+类型: comments
+内容: 会员专属广告我是真没绷住[捂脸]
+
+--- ITEM #37 ---
+ID: zhihu_comments_3460
+平台: zhihu
+类型: comments
+内容: 广告真的太多了，就算充了钱也有广告。这谁乐意啊
+
+--- ITEM #38 ---
+ID: zhihu_comments_3462
+平台: zhihu
+类型: comments
+内容: 最恶心的爱 会员分了369等 开的普通会员还得看九十秒广告
+
+--- ITEM #39 ---
+ID: zhihu_comments_3464
+平台: zhihu
+类型: comments
+内容: 开会员也有广告，我点个暂停，暂停界面变成小屏，主屏幕变成广告大屏，想点了重新开始，每次都不小心点到广告，然后这时候就会飞速跳转到广告通向的那个app或者网页[尴尬]
+
+--- ITEM #40 ---
+ID: zhihu_comments_3465
+平台: zhihu
+类型: comments
+内容: 正版你点个暂停都能给你满屏广告画面[捂脸][捂脸]，哪个丧尽天良的想出来的！！！
+
+--- ITEM #41 ---
+ID: zhihu_comments_3466
+平台: zhihu
+类型: comments
+内容: 会员也有广告，手机app会员交完了，电视app还要会员……
+
+--- ITEM #42 ---
+ID: zhihu_comments_3467
+平台: zhihu
+类型: comments
+内容: 充了会员也有广告，还是所谓的会员专属广告，不能加速不能跳过，看个电视还得几个平台到处跑，还得充不同的会员，连十几年前的卫星电视都比不上，真是吃相难看
+
+--- ITEM #43 ---
+ID: zhihu_comments_3468
+平台: zhihu
+类型: comments
+内容: 我当初在网上看电视就是因为不想看tv的广告插播，图的就是网络看剧一气呵成[为难]结果现在搞这玩意儿，快十年前各大app开始收费的时候我就不看追正版了。
+
+--- ITEM #44 ---
+ID: zhihu_comments_3470
+平台: zhihu
+类型: comments
+内容: 电视里装个影视仓，要看啥剧有啥剧，片源不限，不然不知道要充多少个svip，关键每个花几十块还都是看的烂剧，这谁受得了
+
+--- ITEM #45 ---
+ID: zhihu_comments_3471
+平台: zhihu
+类型: comments
+内容: [尴尬]还有暂停一下也跳广告一不小心就会点进去
+
+--- ITEM #46 ---
+ID: zhihu_comments_3472
+平台: zhihu
+类型: comments
+内容: 哈哈哈哈[赞同]吐槽的太真实了，就因为广告太多太烦，我已经戒掉电视机看剧了，全是广告，还看个der。
+
+--- ITEM #47 ---
+ID: zhihu_comments_3473
+平台: zhihu
+类型: comments
+内容: 当初在爱奇艺开了会员居然还有广告，我大受震惊，第二天在媒体上看见爱奇艺的CEO在那里大谈特谈爱奇艺的会员分级制度如何创收还不影响体验，我只觉得恶心想吐
+
+--- ITEM #48 ---
+ID: zhihu_comments_3474
+平台: zhihu
+类型: comments
+内容: 开个网盘会员 啥不能看？
+
+--- ITEM #49 ---
+ID: zhihu_comments_3476
+平台: zhihu
+类型: comments
+内容: 我要看的剧分布在各个平台，都开会员也太贵了吧
+
+--- ITEM #50 ---
+ID: zhihu_comments_3477
+平台: zhihu
+类型: comments
+内容: 因为你付费，所以有钱，有钱人看广告万一会买东西了。那不就赚大发了
+
+--- ITEM #51 ---
+ID: zhihu_comments_3478
+平台: zhihu
+类型: comments
+内容: 实际就在于正版没有给到我们付费后应有服务，那我们何必花钱呢是吧。
+
+--- ITEM #52 ---
+ID: zhihu_comments_3479
+平台: zhihu
+类型: comments
+内容: 现在免费看电视好方便哦，一搜就出来了，还不用看广告，
+
+--- ITEM #53 ---
+ID: zhihu_comments_3480
+平台: zhihu
+类型: comments
+内容: [大笑][大笑]好久不开会员了，想看的剧不在一个平台
+
+--- ITEM #54 ---
+ID: zhihu_comments_3481
+平台: zhihu
+类型: comments
+内容: 就应该花钱创造，然后免费分享，拿来卖钱就是资本家
+
+--- ITEM #55 ---
+ID: zhihu_comments_3482
+平台: zhihu
+类型: comments
+内容: 开了会员依旧有会员专属广告呀 没必要再花钱[思考]
+
+
+## 输出要求
+1. 只输出JSON数组，不要输出任何其他文字
+2. 每条内容可能产生0-2个Opinion Unit（如果与手机视频无关，产生0个）
+3. 确保JSON格式正确
+4. 摘录尽量引用原文原话
+5. 批次编号: batch_096
+
+开始分析：
