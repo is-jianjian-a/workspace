@@ -1,0 +1,1334 @@
+[
+  {
+    "id": "61125846026",
+    "platform": "zhihu",
+    "title": "为什么用AI通过技术性炒股没有盛行？",
+    "content": "能用来炒股的AI只有O1、gpt4o、claude、gemini、llama。所以国内用不了，用得了，也只能偷偷摸摸用。那不是行内人，又不是搞AI的，怎么可能知道？之前，朋友搞了个GPT炒股的测试。后面deepseek r1发布了，算力能达到gpt4o水平，便可以用deepseek来替代。用O1模型来炒股，真的比人要靠谱，O1能根据你设定的规则来控制卖买。跟GPT相比，GPT比较不亏钱。目前O1支持图片分析，因此，基本上用好了GPT和O1，真的能把「经纪人」丢掉了。先看看是怎用O1模型来创建算法交易策略的。朋友构建了算法交易平台NexusTrade，使其能够与任何大型语言模型配合使用。虽然后端允许它与 Gemini、Llama 等开源模型和其他 LLM 配合使用，但前端目前仅支持 OpenAI 和 Anthropic 模型。其工作方式是一个多步骤的过程：发送请求：用户的消息发送到服务器对请求进行分类：从提示列表中，例如“AI 股票筛选器提示”、“创建投资组合提示”和“分析基本面”提示，模型确定最相关的提示来处理请求转发至提示：将消息发送到最相关的提示并获得回复后处理响应：根据提示，我们将执行其他操作。例如，使用“AI Stock Screener Prompt”提示，我们将生成一个 SQL 查询，然后在后处理步骤中，我们将针对数据库执行查询。当模型解读出用户想要创建交易策略的时候，就会创建一个“提示链”！首先，我们创建投资组合，包括其名称、初始值和策略描述。然后，根据策略描述，我们创建策略流程。其中包括策略名称、操作（“买入”或“卖出”）、我们想要购买的资产、金额（例如，购买力的 10% 或 100 股）以及我们想要执行操作的时间描述。最后，对条件重复此过程，并将描述转换为可以通过 NexusTrade 的回溯测试和实时交易功能解释的条件，这个过程使我们能够使用 AI 创建投资组合。国内由于地域不太方便，我当时用的API中转，我就用的这三个API ，非常丝滑：A. AI 云原生：https://http://aicloud.mygptmeta.com/B.渗透智能-ShirtAI:https://www.http://myshirtai.com/C.GPTMeta API：全球大模型APIhttps://http://api.mygptmeta.com/在 OpenAI 推出O1模型之前，GPT会很注重Prompt工程的步骤以及你想要实现的方向。但是O1的出现，Prompt的写法只会更简洁，讲重点即可！用使用完全相同的Prompt来创建两个投资组合。第一个投资组合将由 GPT-4 创建。第二个投资组合将由 GPT-o1-mini 创建。使用 GPT-4 创建投资组合为了创建投资组合，提到了以下内容：创建一个名为 Omni 的投资组合，初始价值为 10,000 美元Aurora，你想在你的“Omni”投资组合中实现什么策略？例如，你可以指定买入或卖出特定股票或加密货币的条件。我想在 TQQQ 上采用 SMA 交叉策略。我想采用获利策略，但不设止损 — 我看好科技股的长期走势，不想止损。我还想分散买入，而不是一次性全押。这是我第一次尝试用 GPT-4 创建的投资方案：百分比回报率比持有 SPY 差很多，风险调整后的回报率也差很多，而且它进行了大量交易（这在现实生活中会产生税收影响，进一步降低您的实际实现利润）。相比之下，这是用O1模型创建的投资组合。创建这个投资组合的过程实际上完全相同。这两个请求之间的唯一区别是我使用了更强大的O1模型。但结果却非常很好！结果就是：百分比变化比持有 SPY 高 3 倍，达到 268%夏普比率高得多，为 0.71，而 0.51最大回撤为 37%，而持有 SPY 的回撤为 34%但平均回撤幅度较小，为 4.35%，而持有 SPY 的平均回撤幅度接近 7%。典型的是降风险增利！很多小伙伴都想尝试用AI辅助炒股，关键在于：1.没有AI使用权限2.不知道怎么写Prompt这里推荐一个教程，是知乎知学堂官方推出的「AI数据训练课」，专门针对AI入门者而设的。不仅有AI工具限免权限，还有各种AI做数据分析的实操演示，从0到1教你玩各种数据分析AI，还是很靠谱的。建议对着视频边学边练，小白也可以轻松上手，入口就在下面:点击上面卡片，添加工作人员，领取ai工具、教程和Prompt资源。 文中的Prompt都是经过多次测试可用的，想要大数据专用的Prompt，得到助教老师那里领取，千万別忘了！其实有一个关键的细节：在为该策略生成卖出条件时，如果头寸上涨哪怕一点点，达到 0.15%，GPT-4 就会卖出，相比之下，如果股票 14 天平均价格上涨 15% 或更多，则由O1模型创建的投资组合将会出售。想要GPT达到O1的效果，可以小调一下：微调后的投资方案也取得了好的回报。OpenAI 的两种语言模型都可以创建高利润的算法交易策略，o1 模型无需任何人工干预即可做到这一点，而 GPT-4 模型则需要专家的帮助。顺便可以看一下，怎么用GPT来分析企业的股票数据：为什么不专门用训练过大量股票数据的大模型预测股票？用开源ai搭建炒股助理你用 GPT-4o 干了些什么非常厉害的事情？用DeepSeek做战略分析：Deepseek能为我做什么？有兴趣可以看看其它AI知识：AI大千宇宙AI写小说精华教程可以直达专栏→→：0基础AI写作：12招让小白秒变作家",
+    "likes": 0,
+    "layer1": [
+      "视频摘要/总结",
+      "智能推荐/过滤",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "兴趣推荐",
+      "去重过滤",
+      "知识提取"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "疲惫/厌倦",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "116142609864862",
+    "platform": "bili",
+    "title": "AI视频太模糊？3步输出电影级4k质感画面",
+    "content": "这是一段ai生成的视频，粗看还行，但是放大一看，全是噪点，一点细节没有；\n如果直接点击这里的放大，你会发现出来的质感很塑料，涂抹感极强。\n那这个视频学长将会介绍三种方式让你的AI视频拥有4k级别的清晰度；\n话不多说，点赞收藏，开始上课。",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记",
+      "画质/修复"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "画质增强"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "7566461609298136346",
+    "platform": "dy",
+    "title": "白色Ai抖音app，既能提升刷视频乐趣，又能解决棘手问题#ai抖音app #购物决策",
+    "content": "白色Ai抖音app，既能提升刷视频乐趣，又能解决棘手问题#ai抖音app #购物决策",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3x69etpeiepv5us",
+    "platform": "ks",
+    "title": "上一期有老铁问快手可灵如何进入，来，今天手把手带大家走一遍！操作起来～ #可灵 #快手融媒研修院 #创意 继续抽奖！欢迎老铁们评论区留言，抽取幸运铁送出《快手参考》可灵专刊和官方小礼品～",
+    "content": "上一期有老铁问快手可灵如何进入，来，今天手把手带大家走一遍！操作起来～ #可灵 #快手融媒研修院 #创意 继续抽奖！欢迎老铁们评论区留言，抽取幸运铁送出《快手参考》可灵专刊和官方小礼品～",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "1967518267359888341",
+    "platform": "zhihu",
+    "title": "十年后人眼还能分辨ai视频吗？",
+    "content": "新出生的一代人从小看AI视频，很可能会出现认知错乱，分不清真假，甚至对事理逻辑产生根本性的认知扭曲。比如猫就是猫，狗就是狗。从小通过各种媒体接触过猫和狗的影像的儿童，会在头脑中建立起“猫”和“狗”这两个分类概念。但是现在AI视频可以创造出既是猫又是狗的动物，或者在猫和狗之间反复切换的动物，儿童的分类认知可能就会陷入混乱。再比如说，想把一个长的东西放进一个短的盒子里是放不进去的，这是观察实践产生的空间感认知。AI视频可以把大的东西塞进小的空间里，这会造成儿童空间认知混乱。再比如说，手里没东西那就是没东西，AI视频让空的手掌中凭空变出东西来，会造成儿童有无认知混乱。还有一些别的比如桌上的饭团变成一只只兔子之类的，而且变化的过程极为丝滑。我很难想象看着这些视频长大的儿童会不会出现认知障碍。",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116024582146289",
+    "platform": "bili",
+    "title": "给AI看的“成人网站”Molthub！追觅老总要当世界首富？",
+    "content": "聊姐带你了解科技信息差！",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "6944d26a000000001e014691",
+    "platform": "xhs",
+    "title": "车被蹭了，AI用几秒找到了肇事者",
+    "content": "车被剐蹭，在一段1小时4分钟的监控视频里，AI用几秒就找出了肇事车辆。\n\t\n这就是这两天在火山引擎2025年冬季FORCE原动力大会上，发布的豆包大模型1.8。\n\t\n今年AI圈儿这么卷，居然还能在年末杀出一匹黑马。\n\t\n实测中，上传监控视频后，豆包先用低帧率浏览全片，锁定异常时间段，再高帧率“放大”细节。\n\t\n短短几秒，它就精准报出了肇事车辆的特征和事故发生的具体时间。\n\t\n这要是人眼看，真得结结实实盯屏幕1小时。\n\t\n这就是豆包1.8升级后的多模态理解能力。\n\t\n视觉理解基础能力跃升，单次视频理解帧数从640帧提升至1280帧，而且更省tokens。\n\t\n除了眼尖，脑子也更灵了，它的Agent能力更像人的思维了。\n\t\n推理和规划能力大大提升了，适合复杂多步多分支的企业级Agent任务。\n\t\n比如电商场景，就像一个成熟的采购，调用十几个工具，在各平台比价选品。实测完感觉，好省人啊[笑哭R]\n\t\n本次升级，我觉得突破最大的是，256K上下文窗口，长文本处理、复杂的流程任务，不用反复提出指令，它都记得，而且这是国内首个支持原生API进行上下文管理的模型。\n\t\n年底了，被年度报告、投研报告，写标书折磨的打工人们，算你们赶上了，豆包大法好！[笑哭R]\n\t\n多长的文本，它能和你聊到底，直到解决。\n\t\n总的来说，豆包1.8把Ai能力从网络拉进了现实，“做”、“想”、“看”，串联起来了，更像一个智能大脑，确实蛮省力实用的。\n\t\n#豆包1[话题]#.8 #大模型[话题]##火山引擎[话题]##Agent[话题]# #科技内场[话题]#",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "115826460066554",
+    "platform": "bili",
+    "title": "【中配】AI视频无限生成：免费开源长视频工具Stable Video Infinity - AI Search",
+    "content": "原视频：Long continuous AI video is here! Free & open-source\n原作者：AI Search\n发布日期：2026-01-01\n视频链接：https://www.youtube.com/watch?v=-3DVJu72VhE\n\n✨ 想看英文原声？请关注 @英文白斑马\n\n00:00 SVI 2.0 Pro 简介与演示\n介绍 Stable Video Infinity v2.0 Pro 的核心优势，包括其如何通过基于 Wan2.1 模型的片段衔接技术实现高质量、低显存占用且视觉连贯的长视频生成。\n\n02:58 安装 KJNodes 插件\n详细讲解如何在 ComfyUI 的自定义节点目录中使用 git clone 指令安装 kj-nodes 及其依赖项，这是运行 SVI 工作流的基础。\n\n05:10 导入 SVI 2 Pro 工作流\n启动 ComfyUI 并更新至最新版本后，演示如何下载并拖放官方推荐的 SVI 2 Pro JSON 配置文件来加载完整的工作流界面。\n\n06:09 模型下载指南\n指导用户下载 Wan2.1 的 fp8 权重、Lig",
+    "likes": 0,
+    "layer1": [
+      "语音/字幕相关",
+      "智能推荐/过滤",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "7641044633007302009",
+    "platform": "dy",
+    "title": "不想学剪辑？AI帮你做短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程",
+    "content": "不想学剪辑？AI帮你做短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7522034115986640180",
+    "platform": "dy",
+    "title": "AI视频总结工具合集，30选3免费工具，3小时视频1分钟总结 免费好用的ai视频总结工具，3小时视频1分钟总结核心要点，总结大纲，思维导图，生成博客，甚至出ppt一次性搞定。 \n我使用了超过30款AI视频总结工具，个人体验非常好用的3款，﻿﻿免费够用。  均支持 ﻿﻿B站、﻿﻿抖音、﻿﻿小红书、﻿﻿YouTube 全平台；！",
+    "content": "AI视频总结工具合集，30选3免费工具，3小时视频1分钟总结 免费好用的ai视频总结工具，3小时视频1分钟总结核心要点，总结大纲，思维导图，生成博客，甚至出ppt一次性搞定。 \n我使用了超过30款AI视频总结工具，个人体验非常好用的3款，﻿﻿免费够用。  均支持 ﻿﻿B站、﻿﻿抖音、﻿﻿小红书、﻿﻿YouTube 全平台；！",
+    "likes": 0,
+    "layer1": [
+      "视频摘要/总结",
+      "视频生成/编辑",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "智能摘要",
+      "AI生成视频",
+      "知识提取"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "846130553",
+    "platform": "bili",
+    "title": "沙雕4",
+    "content": "-",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "893343648",
+    "platform": "bili",
+    "title": "斗猫（1）",
+    "content": "斗猫不是动词",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7640083733606140019",
+    "platform": "dy",
+    "title": "让你视频不白刷的小功能 #大学生#大学#抖音精选#问问AI",
+    "content": "让你视频不白刷的小功能 #大学生#大学#抖音精选#问问AI",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "3xq9udrf5z4k3z6",
+    "platform": "ks",
+    "title": "#快影激励计划 ai #推文羊 #短视频变现@快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)",
+    "content": "#快影激励计划 ai #推文羊 #短视频变现@快影(O3xsdhwemvmeynnq) @快手热点(O3xddgkd5fav5if9) @快手新知(O3xvmqt3emychk29)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "68cec5070000000012017fbb",
+    "platform": "xhs",
+    "title": "这种功能到底是谁在用啊？！",
+    "content": "#闺蜜日常[话题]# #搞笑[话题]# #抽象[话题]# #ios26[话题]# #iphone[话题]# #闺蜜日常[话题]# #搞笑[话题]# #用上iOS26就这样刷视频[话题]#",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xnvnhpyad4ssme",
+    "platform": "ks",
+    "title": "#aAi时代来了  #aAi时代来了",
+    "content": "#aAi时代来了  #aAi时代来了",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xiiw8ed4sqgv5m",
+    "platform": "ks",
+    "title": "#ai #次元世界AI快穿 #今天来教你们怎么艾特AI小快",
+    "content": "#ai #次元世界AI快穿 #今天来教你们怎么艾特AI小快",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116502565100964",
+    "platform": "bili",
+    "title": "（已离职）冒死上传！已经替大家付费了，花9880买的AI动态漫制作全套系统教程，从脚本撰写到制作剪辑成片，一周学完成，即可接单变现！",
+    "content": "创作不易，感谢大家的三连与支持！\n本套教程从最基础的AI漫剧核心开始，全程结合项目实战，不仅适合零基础小白学习，也适合有一定基础的同学进阶提升、巩固学习。\n如果觉得视频对你有帮助，就动手多多转发一下吧~",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "自动剪辑",
+      "学习管理"
+    ],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "116549625120227",
+    "platform": "bili",
+    "title": "一个人手搓80集AI短剧 updream 创作体验",
+    "content": "https://www.updream.cn/login一个人全流程制作80集AI短剧《一吻维他命》",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7641044106320317105",
+    "platform": "dy",
+    "title": "快速上手！AI短剧解说技巧 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程",
+    "content": "快速上手！AI短剧解说技巧 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xwwcmjjpcsmjyk",
+    "platform": "ks",
+    "title": "盘点一下，最火的5款手机AI软件。\n#AI #创业 #商业 #个人ip",
+    "content": "盘点一下，最火的5款手机AI软件。\n#AI #创业 #商业 #个人ip",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "6940a752000000001e0338c6",
+    "platform": "xhs",
+    "title": "求问[喝奶茶R]\n哪个ai可以将视频发给它，让它去分析\n最好能免费",
+    "content": "求问[喝奶茶R]\n哪个ai可以将视频发给它，让它去分析\n最好能免费",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "6712faf9000000001b03feeb",
+    "platform": "xhs",
+    "title": "感谢Google这个AI让我实现无痛看paper",
+    "content": "📝谷歌推出的笔记AI工具NotebookLM！好用！\n\t\n📝可以上传文档，网页链接，youtube链接，也可以直接倒入google drive里的doc和slides，很方便\n\t\n📝它会以你想要的形式自己帮你概括重点，也可以直接以提问的方式让它把你需要的信息定位到paper的具体位置，喂教授的slide给它可以自动生成课程笔记📝\n\t\n📻最牛的是可以把文章直接转成播客的形式，AI会生成一男一女对话，把你上传的文章内容像聊天一样生动地聊出来，两个人就是像唠嗑一样还会笑，最多一次可以上传十篇，但一直都是同样的两个人的声音不知道以后会不会有更多选择\n\t\n📻我尝试了传不同类型的几十页的paper，信息量不同生成的播客时长会有些差异，有个20页的质性研究生成了二十几分钟，但有的四十五十页的可以就十分钟左右\n\t\n📻在reading特别多的情况它可以精准概括最重要的重点然后一起喂给你，我喜欢做一些不动脑子的家务的时候放着，然后结束后再凭记忆针对性地让它生成我需要的文字重点\n\t\n📻缺点是现在这个ui我用着不是特别喜欢，我老是找不到之前的页面，感觉跳来跳去的，还有就是我尝试让它分析视频网站文章以及有一部分论文我觉得有点太重点了，还不如自己去看原文\n\t\n#notebookLM[话题]# #谷歌ai[话题]# #留子日常[话题]# #记录我的生活[话题]# #文献查找[话题]#",
+    "likes": 0,
+    "layer1": [
+      "内容搜索/定位",
+      "学习/笔记"
+    ],
+    "layer2": [
+      "片段定位",
+      "知识提取",
+      "学习管理"
+    ],
+    "emotions": [
+      "困惑/迷茫",
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xguyirh8u43rdc",
+    "platform": "ks",
+    "title": "用快手Ai制作短视频的方法。",
+    "content": "用快手Ai制作短视频的方法。",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "114912856641023",
+    "platform": "bili",
+    "title": "当AI能时刻盯着我的电脑屏幕、读取我的软件数据...",
+    "content": "豆包电脑版能看见东西了！随时可以查看你的屏幕，还能一边共享屏幕一边语音通话，写作、视频分析功能也更进一步",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7617103234452213030",
+    "platform": "dy",
+    "title": "这是一个非常专注且实用的开源工具，核心目标是用通义千问视觉大模型对视频进行逐帧解析，解决目前大多数视频理解模型在长视频、细节密集场景下表现不佳的问题。模型逐帧/分段描述画面内容 → 最终合并成完整的视频内容理解报告（或结构化输出）",
+    "content": "这是一个非常专注且实用的开源工具，核心目标是用通义千问视觉大模型对视频进行逐帧解析，解决目前大多数视频理解模型在长视频、细节密集场景下表现不佳的问题。模型逐帧/分段描述画面内容 → 最终合并成完整的视频内容理解报告（或结构化输出）",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "769455144",
+    "platform": "bili",
+    "title": "陈鸿宇1",
+    "content": "-",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "1971046132848260458",
+    "platform": "zhihu",
+    "title": "为什么现在 AI 已经没啥热度了？",
+    "content": "因为没用。倒不是ai没用，而是“我们的ai”没用。再进一步说，是“我们的ai对老百姓毫无卵用”。00年代用百度，10年代用博客，我都有那种醍醐灌顶的冲击感，当时超级有用的信息，可真是直冲我的天灵盖。但后来，就很难再有这种感觉了，倒不是我的兴奋阈值提高了，而后来的许多平台，要么倒闭了，要么垃圾化了。总之，就变得很没用，能刷到的都是电子榨菜。到2023年用chatgpt，又找到那种醍醐灌顶的感觉了。不过没多久，就不能用了。接着我用 某某一言，某包，某克，某ek……这些全都给我一种心肌梗塞的感觉，勾起我的愤怒情绪。以前很多人都在调侃苹果的siri，最大的作用不过是问天气预报。但说句心里话，现在我们2025年的ai，还没有2011年siri有用。因为这些ai，连最基本的日期问题都能给你搞错。然后计算一些账单的总数，明明就只是很简单的加减乘除，可就是每次都计算结果都不一样。面对能力之外的问题，siri是一问一不知，而这些ai，在大数据范围内，却是一问三不知，但又不说不知，还要整一堆无效信息。姑且不谈图片搜索和视频搜索了，就说这个文字搜索，这些ai的信息收集能力也非常的拉胯，还不如直接用人力去收集信息。特别是你问ai一些关于你从事领域的专业问题，它们能提供全错的信息，而且错地非常离谱。而更神奇的一点事，我们这些下载过无数tb资源，从容应对过无数电脑病毒的老司机，在这时代用ai，却总会被气到五颜六色。就是它们的情绪调动能力很强，所以我才说有一种心肌梗塞的感觉，因为太气人了。所以就很神奇，这些人工智障就让人火大！",
+    "likes": 0,
+    "layer1": [
+      "内容搜索/定位",
+      "情感/氛围"
+    ],
+    "layer2": [
+      "情绪适配"
+    ],
+    "emotions": [
+      "frustration",
+      "惊喜/兴奋"
+    ],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3x482xy5zxhzy5m",
+    "platform": "ks",
+    "title": "豆包新功能你可以不用，但必须要懂#内容启发分享计划 #快影激励计划 #老铁知识百科 #2025高考 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)",
+    "content": "豆包新功能你可以不用，但必须要懂#内容启发分享计划 #快影激励计划 #老铁知识百科 #2025高考 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xzk9c6x4ws49ww",
+    "platform": "ks",
+    "title": "如何用AI一键生成橘猫做饭视频 #AI工具 #橘猫做饭 #",
+    "content": "如何用AI一键生成橘猫做饭视频 #AI工具 #橘猫做饭 #",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "63843",
+    "platform": "bili",
+    "title": "【MAT】IS〈インフィニット・ストラトス〉ED 小提琴試演",
+    "content": "原創 渣技術又來了-.- 話說今天才發現這曲子不錯聽的(平時都是不看ED) 無中生有(我指的是由第一次聽到做好視頻)大約花了我4小時....唉(沒技術就是這樣WW) 好吧, 盡情吐槽吧",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116565345373002",
+    "platform": "bili",
+    "title": "这视频一放出来！有些人可坐不住了，AI还是太可恶了",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xy43rfybmqqpyk",
+    "platform": "ks",
+    "title": "#知识播种计划 #技能速成宝典",
+    "content": "#知识播种计划 #技能速成宝典",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3x6jkfn799fm8js",
+    "platform": "ks",
+    "title": "Ai科技与狠活真是越来越炸裂了！！这些工具你都见过吗？#ai分身 #deepseek#短视频带货##ai工具",
+    "content": "Ai科技与狠活真是越来越炸裂了！！这些工具你都见过吗？#ai分身 #deepseek#短视频带货##ai工具",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "115559064673823",
+    "platform": "bili",
+    "title": "利用AI反推你喜欢的任何视频实现一键复刻！",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "113973517096147",
+    "platform": "bili",
+    "title": "用Deepseek生成照片和视频，1分钟搞定",
+    "content": "-",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "114512166453751",
+    "platform": "bili",
+    "title": "如何使用豆包快速去制作一个短片",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xerdj5wpe4inuy",
+    "platform": "ks",
+    "title": "#无人直播带货 #无人直播带货 #老铁知识百科 #快影光合计划 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)",
+    "content": "#无人直播带货 #无人直播带货 #老铁知识百科 #快影光合计划 @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "68f381900000000004005d88",
+    "platform": "xhs",
+    "title": "用AI帮你提取视频内容",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "6922d586000000001e03a9f7",
+    "platform": "xhs",
+    "title": "Gemini最疯狂的功能…吗？",
+    "content": "今天逛 Reddit 时刷到这样一个帖子：网友表示 Gemini 其实拥有超强的视频和音频分析能力，但似乎被大部分人低估了（图1-2）。\n许多人认为 AI 只是读取了 YouTube 自带的字幕进行总结，但在实际测试中，即使是没有任何字幕和旁白的烹饪视频，Gemini 也能通过识别画面动作生成完整的食谱。\n\t\n评论区也有用户进行了验证。如传了一首音乐并询问“前5秒使用了什么乐器”，Gemini 也能准确识别出了具体的乐器配置。同时也有家长将教学视频上传并生成测验题辅助教学。\n\t\n但Gemini是真的能看到画面，还是只是读取字幕的噱头？\n评论区的技术人员解释了背后的运行逻辑：\nGemini 默认处于“节省算力”的模式。如果你只是要求“总结视频”，它会优先读取元数据和字幕层，因为这不仅速度快，而且计算成本低。\n\t\n而只有当满足特定条件时，Gemini 才会激活真正的多模态分析（即分析画面和声波）：\n视频没有字幕，或者字幕质量极差。\n你的提问必须是“仅靠字幕无法回答”的。\n\t\n如果需要它分析画面，不要使用“总结全文”这种笼统指令。尝试具体的视觉/听觉问题，例如描述一下视频第10秒背景里的布景是什么样的，演讲者的语气等需要画面和声音才能得到的内容。\n\t\n虽然功能存在，但必须客观认识到它的不足：\n并非完整“观看”：即使激活了多模态模式，模型也不是像人类一样逐帧完整看完视频。它是通过周期性采样画面数据点，并结合音频进行分析。\n准确率问题：相关人员透露，该功能在处理长视频时准确率会下降，目前并非 100% 可靠。它更多是基于采样片段的推断，而非全量信息的处理。\n\t\n同时我也亲自尝试了下这个功能，选取了一个油管的教学视频并分别要求它总结视频内容和尝试读取图像（图9-10）。Gemini在内容总结上表现得很好，只给出了视频标题就能锁定到视频，并很快给出了结论。但图像读取部分明显是错误的（我有理由怀疑它根本没看在敷衍我…）\n\t\n就像p7中人员所说言，Gemini长视频分析功能进步飞快，还有些路要走。\n\t\n“改进速度虽快但仍不完美，准确率约 70%，尤其处理长视频时会下降。这大概就是谷歌没有大力推广的原因吧。”\n\t\n#Gemini3[话题]# #GoogleGemini[话题]# #AI测评[话题]# #人工智能[话题]#  #Reddit[话题]# #科技资讯[话题]#",
+    "likes": 0,
+    "layer1": [
+      "视频摘要/总结",
+      "语音/字幕相关"
+    ],
+    "layer2": [
+      "智能摘要",
+      "字幕生成"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "114408869137408",
+    "platform": "bili",
+    "title": "4个AI神器，满足你的特殊需求...",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "1753735373",
+    "platform": "bili",
+    "title": "绅士必备，老司机狂喜的Ai软件",
+    "content": "云界AI网站：https://yunjie.art/register?channel=3\n更多GPT会员：https://nf.video/iG0KR",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xh9v8b7uwmgjmm",
+    "platform": "ks",
+    "title": "快手新功能如何制作自己的AI形象#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享  #快影 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @快手光合计划助手(O3xxpf2m4brbf3pe)",
+    "content": "快手新功能如何制作自己的AI形象#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享  #快影 @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @快手光合计划助手(O3xxpf2m4brbf3pe)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xtfvstun6ihtjc",
+    "platform": "ks",
+    "title": "#老铁知识百科 #经典重燃计划 #2025高考 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9)",
+    "content": "#老铁知识百科 #经典重燃计划 #2025高考 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116213006995806",
+    "platform": "bili",
+    "title": "大黄AI剧《红墙3.1》后面彩蛋...【B站AI创作大赛-开放赛道】",
+    "content": "这应该是我所有剧里面尺度最大的了~AI估计被我整崩溃了...\n这次的模型出图老规矩BANANA PRO 视频这次单出VEO3.1\n因为上班的缘故这个做了将近4天。前面李弘的剧情做的有一丢丢粗糙，实在是没时间改了……为了保证内容和质感，之后可能会差不多1周内更新一次。希望大家多多关注，一键三连哦！！！！！！",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [
+      "frustration",
+      "焦虑/急迫",
+      "期待/渴望"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "3xcf5a75gcacdh6",
+    "platform": "ks",
+    "title": "#短视频创业 #短视频变现 #短视频教学 #AI",
+    "content": "#短视频创业 #短视频变现 #短视频教学 #AI",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xtateuqi3vxdi4",
+    "platform": "ks",
+    "title": "ai带货，短视频带货的新玩法#短视频带货#带货达人#ai",
+    "content": "ai带货，短视频带货的新玩法#短视频带货#带货达人#ai",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7641043826748030692",
+    "platform": "dy",
+    "title": "懒人必备！AI短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程",
+    "content": "懒人必备！AI短剧解说 #推剧助手#短剧#短剧解说#ai剪辑#剪辑教程",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "自动剪辑"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3x5qfzdidfwmqru",
+    "platform": "ks",
+    "title": "#短视频带货 #短视频创业 #老铁知识百科 #经典重燃计划 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9)",
+    "content": "#短视频带货 #短视频创业 #老铁知识百科 #经典重燃计划 @快手直播（颜值&户外）(O3xu5p4yajk74zcs) @快手新知(O3xvmqt3emychk29) @快手热点(O3xddgkd5fav5if9)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7564233734799854907",
+    "platform": "dy",
+    "title": "AI抖音APP能解决你日常生活中遇到的问题 #AI抖音APP #生活经验",
+    "content": "AI抖音APP能解决你日常生活中遇到的问题 #AI抖音APP #生活经验",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "115705211065400",
+    "platform": "bili",
+    "title": "AI界王炸，一次性生成长达6分钟短片！",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xtkyapjhf9aba6",
+    "platform": "ks",
+    "title": "#短视频带货 #带货 #图文带货 #副业",
+    "content": "#短视频带货 #带货 #图文带货 #副业",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7569020763269807483",
+    "platform": "dy",
+    "title": "#AI抖音APP 职场人的好帮手#职场",
+    "content": "#AI抖音APP 职场人的好帮手#职场",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "68df647900000000040027af",
+    "platform": "xhs",
+    "title": "不要拿🐦喂AI",
+    "content": "不要拿🐦喂AI\n不要拿🐦喂AI\n不要拿🐦喂AI\n#张远[话题]#",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7523532482748337467",
+    "platform": "dy",
+    "title": "#投资人 #meta眼镜 #长视频 #生活小妙招",
+    "content": "#投资人 #meta眼镜 #长视频 #生活小妙招",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7485951726198050089",
+    "platform": "dy",
+    "title": "视频分析AI工具，你们要的终于来了 之前不少老师问我咨询过能够对视频进行分析的AI工具。\n这不就来了嘛。\n能力TOP级，速度快，且免费。\n冲冲冲。\n﻿#AI教育 ﻿#ai教学  ﻿#创新教育 ﻿#aistudio #视频分析",
+    "content": "视频分析AI工具，你们要的终于来了 之前不少老师问我咨询过能够对视频进行分析的AI工具。\n这不就来了嘛。\n能力TOP级，速度快，且免费。\n冲冲冲。\n﻿#AI教育 ﻿#ai教学  ﻿#创新教育 ﻿#aistudio #视频分析",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xvk3kidspfwr7k",
+    "platform": "ks",
+    "title": "快手自动直播，一分不花，免费用！ #知识播种计划 #教新人如何玩好快手 #短视频创业 #口播",
+    "content": "快手自动直播，一分不花，免费用！ #知识播种计划 #教新人如何玩好快手 #短视频创业 #口播",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7570640673586548011",
+    "platform": "dy",
+    "title": "最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程",
+    "content": "最近爆火的AI视频工具推荐！ #AI视频   #AI工具  #AI特效  #comfyui   #AI教程",
+    "likes": 0,
+    "layer1": [
+      "智能推荐/过滤",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116542310253574",
+    "platform": "bili",
+    "title": "【深度】AI来了，你失业了吗？一个视频看懂AI重构社会的逻辑",
+    "content": "-",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "67b687c7000000000703445b",
+    "platform": "xhs",
+    "title": "Safari 隐藏功能大揭秘！还有超绝翻译神器",
+    "content": "宝子们，今天来给大家分享 Safari 浏览器那些超实用的隐藏功能，简直是生活和工作的小帮手！\n-\n🎬免费看电影：这个功能简直是追剧党福音！再也不用到处找资源，轻松实现观影自由，省下的会员钱又可以多喝几杯奶茶啦！\n.\n🚫屏蔽网页广告：上网再也不用被各种弹窗广告打扰，浏览体验直线上升，清爽上网的快乐谁懂啊！\n.\n✋一键关闭所有网页：再也不用一个一个点关闭，手残党和懒癌患者的救星，瞬间让浏览器界面干干净净！\n.\n📖一键翻译：重点来啦！搭配【沉浸式翻译】插件，简直无敌！安装好【沉浸式翻译】插件后，在Safari浏览器上，点一下翻译小图标或四指触摸，即可实现网页瞬间一秒钟翻译，效率超高。要是入手了沉浸式翻译 Pro 版会员，更是开挂般的存在！PDF、表格、漫画全都能完美识别翻译，学习、工作都超省心！\n.\n而且现在沉浸式翻译和得到联合推出了《如何用沉浸式翻译又快又准实时翻译？》这门课，特别适合经常阅读海外文献的学生、跨境电商从业者、外网编辑这些宝子们，学完翻译水平直接起飞！\n.\nSafari浏览器的这些隐藏功能，每一个都能实实在在地提升我们的生活和工作效率。要是你还没用过，赶紧试试！要是你已经是这些功能的忠实用户，也欢迎在评论区分享你的使用小技巧。说不定还有更多隐藏的宝藏玩法，等着我们一起去挖掘呢，让我们一起把Safari浏览器的价值发挥到最大！\n\t\n#沉浸式翻译[话题]# #翻译插件[话题]# #网页翻译[话题]# #会议翻译[话题]# #漫画翻译[话题]# #效率工具[话题]# #AI工具[话题]# #浏览器插件[话题]# #Safari[话题]# #翻译工具[话题]# #英语翻译[话题]# #学习必备app推荐[话题]# #学英语[话题]# #Safari浏览器[话题]#",
+    "likes": 0,
+    "layer1": [
+      "语音/字幕相关",
+      "智能推荐/过滤",
+      "学习/笔记",
+      "情感/氛围",
+      "效率/倍速"
+    ],
+    "layer2": [
+      "实时翻译",
+      "负面屏蔽",
+      "知识提取",
+      "学习管理",
+      "氛围音效",
+      "跳过广告"
+    ],
+    "emotions": [
+      "期待/渴望",
+      "惊喜/兴奋"
+    ],
+    "scenes": [
+      "工作/学习"
+    ],
+    "related": true
+  },
+  {
+    "id": "3xhamrfzb6v5dym",
+    "platform": "ks",
+    "title": "一定要学会用这个功能作品不违规 #知识播种计划 #技能速成宝典 #老铁知识百科 #2025高考 @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa) @快手光合计划助手(O3xxpf2m4brbf3pe)",
+    "content": "一定要学会用这个功能作品不违规 #知识播种计划 #技能速成宝典 #老铁知识百科 #2025高考 @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa) @快手光合计划助手(O3xxpf2m4brbf3pe)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "33121",
+    "platform": "bili",
+    "title": "被开启的禁忌之门",
+    "content": "自压 秀逗第24集 最给力的一集",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "1940171712789459466",
+    "platform": "zhihu",
+    "title": "你有什么莫名其妙的生理反应？",
+    "content": "我识别AI的方式很简单：只要看到AI图或AI视频，我就会有强烈的不适感，感觉恶心想吐。有同样感觉的人点个赞，我看看有多少。",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "AI生成视频"
+    ],
+    "emotions": [
+      "frustration",
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xt26jwjrfk8sse",
+    "platform": "ks",
+    "title": "热门视频一键生成#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享   @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa)",
+    "content": "热门视频一键生成#老铁知识百科发文征集令 #教新人如何玩好快手 #知识分享   @快手热点(O3xddgkd5fav5if9) @快手粉条(O3xhcy6vhfzcu3qe) @我要上热门(O3x8er38dpbhvbaa)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116540649248100",
+    "platform": "bili",
+    "title": "【无限白嫖】即梦AI免费用积分，即梦生图4.5、视频3.5pro、3.0pro无限用；无限生成图片",
+    "content": "需要的兄弟们记得  关驻+三联，丝信“即梦”看思信即可收到，一定要先关驻。\n没收到的评伦“已彡联”后，等我手动发",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "1990175904534659242",
+    "platform": "zhihu",
+    "title": "利用Ai如何做一分钟的视频？",
+    "content": "我没有完整做过，但尝试过，需要自己写好分镜头表，一般我们用的免费的模型，每次只能生成几秒的视频，需要自己拼接收费的我没有试，据说可以分步生成，最后自动合并",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116350294956030",
+    "platform": "bili",
+    "title": "AI真正的意义！",
+    "content": "-",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7559897158728584467",
+    "platform": "dy",
+    "title": "白色AI抖音APP，AI时代刷视频新体验，用过就停不下来#AI抖音app#生活经验",
+    "content": "白色AI抖音APP，AI时代刷视频新体验，用过就停不下来#AI抖音app#生活经验",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7575436040547126580",
+    "platform": "dy",
+    "title": "Ai时代的刷视频新体验 #AI抖音App #健康养生",
+    "content": "Ai时代的刷视频新体验 #AI抖音App #健康养生",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "7640432852181939813",
+    "platform": "dy",
+    "title": "悟空浏览器#短剧#Al功能#",
+    "content": "悟空浏览器#短剧#Al功能#",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116559456573687",
+    "platform": "bili",
+    "title": "爆火的“无审查”AI 视频模型来了！Sulphur 2 本地部署实测：8G 显存也能跑！完全免费开源 | 零度解说",
+    "content": "Sulphur 2 开源模型下载：https://bittly.cc/Sulphur",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "115604983911345",
+    "platform": "bili",
+    "title": "全网爆火的 AI 角色唱歌视频！零基础也能做，流程全公开 、 免费开源！保姆级教学及工具下载！ | 零度解说",
+    "content": "【AI工具下载】：https://bittly.cc/AItool",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xceq9r98dsphz2",
+    "platform": "ks",
+    "title": "炸了，我趣，短剧赛道，我们普通人能上桌了？ #创业 #创业项目 #项目",
+    "content": "炸了，我趣，短剧赛道，我们普通人能上桌了？ #创业 #创业项目 #项目",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xhanywtsqxyr64",
+    "platform": "ks",
+    "title": "第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶置）(O3xiyc3mx7mt7b3i) @快手热点(O3xddgkd5fav5if9)",
+    "content": "第110集｜教你如何使用快手AI对话。 #快手知识分享 #快手知识市集 #老铁知识百科 @小绵羊（看顶置）(O3x4shntmxq94i79) @小绵羊头（看顶置）(O3xiyc3mx7mt7b3i) @快手热点(O3xddgkd5fav5if9)",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3x2juj7dmja3s36",
+    "platform": "ks",
+    "title": "首次扒开互联网变态软件之【即梦ai】 #即梦ai #即梦 #软件分享 #干货分享",
+    "content": "首次扒开互联网变态软件之【即梦ai】 #即梦ai #即梦 #软件分享 #干货分享",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3x6ww52rtr6yux6",
+    "platform": "ks",
+    "title": "AI与外国人热吻 | 导入一张照片替换即可。 #AI #创意无极限",
+    "content": "AI与外国人热吻 | 导入一张照片替换即可。 #AI #创意无极限",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "69f4abd60000000023017989",
+    "platform": "xhs",
+    "title": "用一张图延展出整支视频：多宫格分镜玩法！",
+    "content": "一张图+一句故事就能拓展整套视频分镜，用视频多宫格分镜的玩法可以轻松解决画面不一致的难题。为大家总结了3个核心技巧，希望能帮你做出好看的短片。#视频分镜[话题]#  #多宫格分镜[话题]#  #AI视频[话题]# #海螺AI[话题]# #人物一致性[话题]# #分镜图[话题]#",
+    "likes": 0,
+    "layer1": [
+      "视频摘要/总结",
+      "视频生成/编辑"
+    ],
+    "layer2": [
+      "智能摘要",
+      "AI生成视频"
+    ],
+    "emotions": [
+      "期待/渴望"
+    ],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116284779928435",
+    "platform": "bili",
+    "title": "告别AI视频僵硬假脸！3招让你的AI人物表情活起来",
+    "content": "分享3个告别AI视频假脸感的方法，新手也能直接套用，配合联想YOGA Pro 16 Aura AI元启版，第三代英特尔® 酷睿™ Ultra 7处理器，全能旗舰、大“显”身手，实现沉浸式、高效率创作。",
+    "likes": 0,
+    "layer1": [
+      "视频生成/编辑",
+      "情感/氛围"
+    ],
+    "layer2": [
+      "AI生成视频",
+      "氛围音效"
+    ],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "1753376680",
+    "platform": "bili",
+    "title": "这3个视频Ai神器，打死都不删！",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xmxyrfmktgfg6q",
+    "platform": "ks",
+    "title": "6个隐藏玩法：100%解锁元宝AI超能力   #玩机技巧  #软件分享  #ai ",
+    "content": "6个隐藏玩法：100%解锁元宝AI超能力   #玩机技巧  #软件分享  #ai ",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xsgz8fgxcaxt7a",
+    "platform": "ks",
+    "title": "#ai  #认知  #知识分享  #周文强 ",
+    "content": "#ai  #认知  #知识分享  #周文强 ",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "411204975",
+    "platform": "bili",
+    "title": "月老掉线",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xstj6r3csyz5hg",
+    "platform": "ks",
+    "title": "#短视频带货 #短视频变现 #短视频创业 #光和计划激励任务",
+    "content": "#短视频带货 #短视频变现 #短视频创业 #光和计划激励任务",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116413595392812",
+    "platform": "bili",
+    "title": "【王德峰】慎用AI，别自以为是！",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xgz7gd5a6vi4jc",
+    "platform": "ks",
+    "title": " @江南长老(O3ximwbufpnddq3a) 的精彩视频",
+    "content": " @江南长老(O3ximwbufpnddq3a) 的精彩视频",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "116564523226208",
+    "platform": "bili",
+    "title": "AI会员到底要不要充？要看“用不用得上”",
+    "content": "",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  },
+  {
+    "id": "3xm565zd5kcyj4w",
+    "platform": "ks",
+    "title": "ai对话功能使用#快手知识分享 #老铁知识百科",
+    "content": "ai对话功能使用#快手知识分享 #老铁知识百科",
+    "likes": 0,
+    "layer1": [
+      "其他"
+    ],
+    "layer2": [],
+    "emotions": [],
+    "scenes": [],
+    "related": true
+  }
+]
