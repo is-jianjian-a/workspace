@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>宝爸宝妈育儿收集需求 - 主题关键词匹配关系与数量统计</title>
+<style>
+:root{--primary:#4f46e5;--secondary:#7c3aed;--bg:#f8fafc;--card:#fff;--text:#1e293b;--text-light:#64748b;--border:#e2e8f0;--success:#10b981;--warning:#f59e0b;--info:#3b82f6;--danger:#ef4444;}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.7}
+.container{max-width:1400px;margin:0 auto;padding:20px}
+.header{background:linear-gradient(135deg,var(--primary) 0%,var(--secondary) 100%);color:white;padding:40px;border-radius:16px;margin-bottom:30px}
+.header h1{font-size:2em;margin-bottom:10px}
+.header .subtitle{font-size:1em;opacity:0.9;margin-bottom:16px}
+.header .meta{display:flex;gap:20px;flex-wrap:wrap;font-size:0.85em;opacity:0.85}
+.section{background:var(--card);padding:28px;border-radius:12px;margin-bottom:20px;box-shadow:0 1px 3px rgba(0,0,0,0.08)}
+.section h2{font-size:1.3em;margin-bottom:16px;padding-bottom:10px;border-bottom:2px solid var(--border);color:var(--primary)}
+.section h3{font-size:1.1em;margin:20px 0 10px;color:var(--secondary)}
+.theme-block{background:#f8fafc;border:1px solid var(--border);border-radius:8px;padding:16px;margin-bottom:16px}
+.theme-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;flex-wrap:wrap;gap:8px}
+.theme-name{font-size:1.1em;font-weight:600;color:var(--primary)}
+.theme-count{background:var(--primary);color:white;padding:2px 12px;border-radius:12px;font-size:0.85em}
+.theme-desc{color:var(--text-light);font-size:0.9em;margin-bottom:10px}
+.keyword-table{width:100%;border-collapse:collapse;font-size:0.85em;margin-top:8px}
+.keyword-table th{background:#e0e7ff;color:var(--primary);padding:6px 10px;text-align:left;font-weight:600}
+.keyword-table td{padding:6px 10px;border-bottom:1px solid var(--border)}
+.keyword-table tr:hover{background:#f0f4ff}
+.keyword-table .kw-matched{color:var(--success);font-weight:600}
+.keyword-table .kw-unmatched{color:var(--text-light)}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:16px}
+.stat-card{background:linear-gradient(135deg,#f0f4ff 0%,#e0e7ff 100%);padding:16px;border-radius:10px;border-left:4px solid var(--primary)}
+.stat-card .number{font-size:1.8em;font-weight:700;color:var(--primary)}
+.stat-card .label{color:var(--text-light);font-size:0.85em;margin-top:4px}
+.summary-box{background:#f0f4ff;border-radius:8px;padding:16px;margin-bottom:16px;border-left:4px solid var(--info)}
+.summary-box h4{color:var(--primary);margin-bottom:8px}
+.tag{display:inline-block;padding:2px 8px;border-radius:10px;font-size:0.78em;font-weight:500;margin:2px}
+.tag-matched{background:#d1fae5;color:#065f46}
+.tag-unmatched{background:#f3f4f6;color:#9ca3af}
+.tabs{display:flex;gap:8px;margin-bottom:20px;flex-wrap:wrap}
+.tab{padding:8px 16px;border-radius:20px;background:#e0e7ff;color:var(--primary);cursor:pointer;font-size:0.9em;font-weight:600;border:none}
+.tab.active{background:var(--primary);color:white}
+.content-panel{display:none}
+.content-panel.active{display:block}
+@media(max-width:768px){.container{padding:12px}.header{padding:24px}.header h1{font-size:1.5em}}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+<h1>👶 宝爸宝妈育儿收集需求</h1>
+<div class="subtitle">主题关键词匹配关系与数量统计 - 分类逻辑透明化报告</div>
+<div class="meta">
+<span>📅 2026-05-18</span>
+<span>📊 总UGC: 508条</span>
+<span>🏷️ 标签维度: 5层</span>
+<span>🔑 关键词总数: 298个</span>
+</div>
+</div>
+
+<div class="summary-box">
+<h4>📋 分类逻辑说明</h4>
+<p style="font-size:0.9em;color:var(--text-light)">
+本报告采用<strong>关键词匹配法</strong>对UGC进行分类。每条笔记的标题+内容文本会与各主题的关键词列表进行匹配，
+若包含该主题的任意关键词，则标记为该主题。一条笔记可同时匹配多个主题（多标签）。
+</p>
+<p style="font-size:0.9em;color:var(--text-light);margin-top:8px">
+<strong>匹配规则</strong>: 文本包含关键词即匹配 | <strong>多标签</strong>: 允许一条笔记属于多个主题 | <strong>优先级</strong>: 无优先级，全部并列
+</p>
+</div>
+
+<div class="tabs">
+<button class="tab active" onclick="showTab('layer1')">一层主题 (6个)</button>
+<button class="tab" onclick="showTab('layer2')">二层主题 (16个)</button>
+<button class="tab" onclick="showTab('emotions')">情绪 (6个)</button>
+<button class="tab" onclick="showTab('scenes')">场景 (6个)</button>
+<button class="tab" onclick="showTab('signals')">信号 (5个)</button>
+</div>
+<div id="layer1" class="content-panel active">
+<div class="section">
+<h2>🏷️ 一层主题关键词匹配统计</h2>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集</span>
+<span class="theme-count">标记 147 条笔记</span>
+</div>
+<div class="theme-desc">用户主动收集、整理育儿知识的行为</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">收藏</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">保存</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">记下来</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">整理</td><td>25</td><td>4.9%</td></tr>
+<tr><td class="kw-unmatched">汇总</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">攻略</td><td>43</td><td>8.5%</td></tr>
+<tr><td class="kw-matched">干货</td><td>20</td><td>3.9%</td></tr>
+<tr><td class="kw-matched">笔记</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">记录</td><td>37</td><td>7.3%</td></tr>
+<tr><td class="kw-unmatched">备忘</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">收集</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">归纳</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">分类</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">建档</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">抄作业</td><td>6</td><td>1.2%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">经验求助</span>
+<span class="theme-count">标记 84 条笔记</span>
+</div>
+<div class="theme-desc">用户向他人寻求育儿经验和建议</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">怎么办</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">求助</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">请教</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">过来人</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-matched">有经验</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">建议</td><td>27</td><td>5.3%</td></tr>
+<tr><td class="kw-matched">推荐</td><td>19</td><td>3.7%</td></tr>
+<tr><td class="kw-matched">怎么选</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">哪个好</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">正常吗</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">可以吗</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">有用吗</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">靠谱吗</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识分享</span>
+<span class="theme-count">标记 145 条笔记</span>
+</div>
+<div class="theme-desc">用户分享自己的育儿经验和知识</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">分享</td><td>74</td><td>14.6%</td></tr>
+<tr><td class="kw-matched">经验</td><td>35</td><td>6.9%</td></tr>
+<tr><td class="kw-matched">心得</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">总结</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">干货分享</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">亲测</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">实测</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">避坑</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">踩雷</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">推荐</td><td>19</td><td>3.7%</td></tr>
+<tr><td class="kw-matched">整理出</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">合集</td><td>4</td><td>0.8%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">情绪表达</span>
+<span class="theme-count">标记 145 条笔记</span>
+</div>
+<div class="theme-desc">用户在育儿过程中的情绪表达</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">焦虑</td><td>42</td><td>8.3%</td></tr>
+<tr><td class="kw-matched">崩溃</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">累</td><td>25</td><td>4.9%</td></tr>
+<tr><td class="kw-matched">烦</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">担心</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">害怕</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">无助</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">绝望</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">后悔</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">自责</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">内疚</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">压力大</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">心累</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">emo</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">抑郁</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">委屈</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">恐惧</td><td>3</td><td>0.6%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">产品工具</span>
+<span class="theme-count">标记 78 条笔记</span>
+</div>
+<div class="theme-desc">用户对育儿相关产品工具的讨论</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">APP</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-unmatched">软件</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">工具</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">神器</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">好物</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">推荐</td><td>19</td><td>3.7%</td></tr>
+<tr><td class="kw-matched">测评</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">对比</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">好用</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-unmatched">不好用</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">鸡肋</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">智商税</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">绘本</td><td>14</td><td>2.8%</td></tr>
+<tr><td class="kw-matched">玩具</td><td>19</td><td>3.7%</td></tr>
+<tr><td class="kw-matched">教具</td><td>3</td><td>0.6%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">信息获取</span>
+<span class="theme-count">标记 235 条笔记</span>
+</div>
+<div class="theme-desc">用户获取育儿信息的行为</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">查</td><td>38</td><td>7.5%</td></tr>
+<tr><td class="kw-matched">搜</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">找</td><td>38</td><td>7.5%</td></tr>
+<tr><td class="kw-matched">了解</td><td>17</td><td>3.3%</td></tr>
+<tr><td class="kw-matched">学习</td><td>26</td><td>5.1%</td></tr>
+<tr><td class="kw-matched">科普</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">知识</td><td>32</td><td>6.3%</td></tr>
+<tr><td class="kw-matched">文章</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">视频</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">教程</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">课程</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">书</td><td>45</td><td>8.9%</td></tr>
+<tr><td class="kw-matched">资料</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">指南</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-matched">攻略</td><td>43</td><td>8.5%</td></tr>
+</table></div>
+</div></div><div id="layer2" class="content-panel">
+<div class="section">
+<h2>🔍 二层主题关键词匹配统计</h2>
+<h3>知识收集</h3>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集 → 喂养知识</span>
+<span class="theme-count">标记 47 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">喂养</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">奶粉</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-matched">母乳</td><td>13</td><td>2.6%</td></tr>
+<tr><td class="kw-matched">辅食</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">奶量</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">转奶</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">断奶</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">追奶</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">堵奶</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">涨奶</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">喂奶</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-unmatched">奶瓶</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集 → 睡眠知识</span>
+<span class="theme-count">标记 35 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">睡眠</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">哄睡</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">夜醒</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">落地醒</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">自主入睡</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">睡整觉</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">睡眠倒退</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">抱睡</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">奶睡</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">入睡</td><td>2</td><td>0.4%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集 → 发育知识</span>
+<span class="theme-count">标记 83 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">发育</td><td>21</td><td>4.1%</td></tr>
+<tr><td class="kw-matched">生长</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-unmatched">里程碑</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">大运动</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">精细动作</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">语言</td><td>20</td><td>3.9%</td></tr>
+<tr><td class="kw-matched">认知</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">身高</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">体重</td><td>13</td><td>2.6%</td></tr>
+<tr><td class="kw-unmatched">头围</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">智力</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集 → 健康护理</span>
+<span class="theme-count">标记 79 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">健康</td><td>30</td><td>5.9%</td></tr>
+<tr><td class="kw-matched">生病</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">发烧</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">感冒</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">咳嗽</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">湿疹</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">过敏</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">疫苗</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">体检</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">就医</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">护理</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-unmatched">黄疸</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集 → 早教启蒙</span>
+<span class="theme-count">标记 120 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">早教</td><td>67</td><td>13.2%</td></tr>
+<tr><td class="kw-matched">启蒙</td><td>23</td><td>4.5%</td></tr>
+<tr><td class="kw-matched">绘本</td><td>14</td><td>2.8%</td></tr>
+<tr><td class="kw-matched">儿歌</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">玩具</td><td>19</td><td>3.7%</td></tr>
+<tr><td class="kw-matched">游戏</td><td>17</td><td>3.3%</td></tr>
+<tr><td class="kw-matched">互动</td><td>13</td><td>2.6%</td></tr>
+<tr><td class="kw-matched">认知</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">语言启蒙</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">音乐</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">全脑</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">感统</td><td>2</td><td>0.4%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">知识收集 → 心理情绪</span>
+<span class="theme-count">标记 75 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">心理</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">情绪</td><td>26</td><td>5.1%</td></tr>
+<tr><td class="kw-matched">性格</td><td>8</td><td>1.6%</td></tr>
+<tr><td class="kw-matched">安全感</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">依恋</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">分离焦虑</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">叛逆</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">哭闹</td><td>8</td><td>1.6%</td></tr>
+<tr><td class="kw-matched">发脾气</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">内向</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">胆小</td><td>1</td><td>0.2%</td></tr>
+</table></div>
+<h3>经验求助</h3>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">经验求助 → 喂养问题</span>
+<span class="theme-count">标记 15 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">不吃</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-unmatched">挑食</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">厌奶</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">吐奶</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">便秘</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-unmatched">腹泻</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">过敏</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">营养不良</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">拒食</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">经验求助 → 睡眠问题</span>
+<span class="theme-count">标记 5 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-unmatched">不睡</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">晚睡</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">早醒</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">夜哭</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">睡眠少</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">哄睡难</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">落地醒</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">夜奶</td><td>2</td><td>0.4%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">经验求助 → 行为问题</span>
+<span class="theme-count">标记 14 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-unmatched">不听话</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">打人</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">咬人</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">抢玩具</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">不爱分享</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">胆小</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">粘人</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">哭闹</td><td>8</td><td>1.6%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">经验求助 → 教育问题</span>
+<span class="theme-count">标记 96 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">早教</td><td>67</td><td>13.2%</td></tr>
+<tr><td class="kw-matched">幼儿园</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-matched">学习习惯</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">注意力</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">兴趣班</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-unmatched">择校</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">升学</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">幼小衔接</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<h3>产后恢复</h3>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">产后恢复 → 身体恢复</span>
+<span class="theme-count">标记 55 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">产后恢复</td><td>12</td><td>2.4%</td></tr>
+<tr><td class="kw-matched">月子</td><td>22</td><td>4.3%</td></tr>
+<tr><td class="kw-matched">恶露</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">伤口</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">腹直肌</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">盆底肌</td><td>14</td><td>2.8%</td></tr>
+<tr><td class="kw-unmatched">瘦身</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">减肥</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-unmatched">塑形</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">产后恢复 → 情绪心理</span>
+<span class="theme-count">标记 85 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">产后抑郁</td><td>8</td><td>1.6%</td></tr>
+<tr><td class="kw-unmatched">情绪低落</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">焦虑</td><td>42</td><td>8.3%</td></tr>
+<tr><td class="kw-matched">失眠</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">激素</td><td>16</td><td>3.1%</td></tr>
+<tr><td class="kw-matched">情绪崩溃</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">心理调适</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">产后恢复 → 职场回归</span>
+<span class="theme-count">标记 61 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">产假</td><td>8</td><td>1.6%</td></tr>
+<tr><td class="kw-matched">复工</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">职场</td><td>8</td><td>1.6%</td></tr>
+<tr><td class="kw-matched">跳槽</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">工作</td><td>35</td><td>6.9%</td></tr>
+<tr><td class="kw-matched">绩效</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">边缘化</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">哺乳期</td><td>5</td><td>1.0%</td></tr>
+</table></div>
+<h3>孕期管理</h3>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">孕期管理 → 孕期知识</span>
+<span class="theme-count">标记 46 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">孕检</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">产检</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">B超</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">胎心</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">胎动</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">预产期</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">孕吐</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">水肿</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">贫血</td><td>3</td><td>0.6%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">孕期管理 → 营养饮食</span>
+<span class="theme-count">标记 29 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">叶酸</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">DHA</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">钙</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">铁</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">维生素</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-unmatched">孕期饮食</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">控糖</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">妊娠糖尿病</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">孕期管理 → 孕期不适</span>
+<span class="theme-count">标记 19 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">孕吐</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">反酸</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">腰酸</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-unmatched">腿抽筋</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">失眠</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">尿频</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">便秘</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">水肿</td><td>1</td><td>0.2%</td></tr>
+</table></div>
+</div></div><div id="emotions" class="content-panel">
+<div class="section">
+<h2>😊 情绪关键词匹配统计</h2>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">焦虑</span>
+<span class="theme-count">标记 87 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">焦虑</td><td>42</td><td>8.3%</td></tr>
+<tr><td class="kw-matched">担心</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">紧张</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">不安</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-unmatched">发愁</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">纠结</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">迷茫</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">忐忑</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">害怕</td><td>6</td><td>1.2%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">疲惫</span>
+<span class="theme-count">标记 80 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">累</td><td>25</td><td>4.9%</td></tr>
+<tr><td class="kw-matched">疲惫</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">困</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-unmatched">睡眠不足</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">精力不够</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">虚</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-unmatched">乏力</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">透支</td><td>2</td><td>0.4%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">无助</span>
+<span class="theme-count">标记 11 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">无助</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">无奈</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">没办法</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">不知所措</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">力不从心</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">孤立无援</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">愤怒</span>
+<span class="theme-count">标记 41 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">烦</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">生气</td><td>8</td><td>1.6%</td></tr>
+<tr><td class="kw-unmatched">愤怒</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">恼火</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">暴躁</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">崩溃</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">受不了</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">恨</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">幸福</span>
+<span class="theme-count">标记 67 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">幸福</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">满足</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">开心</td><td>17</td><td>3.3%</td></tr>
+<tr><td class="kw-unmatched">欣慰</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">感动</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">温暖</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-unmatched">感恩</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">值得</td><td>6</td><td>1.2%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">后悔</span>
+<span class="theme-count">标记 66 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">后悔</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">自责</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">内疚</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">愧疚</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">遗憾</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">不该</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">如果</td><td>30</td><td>5.9%</td></tr>
+</table></div>
+</div></div><div id="scenes" class="content-panel">
+<div class="section">
+<h2>📍 场景关键词匹配统计</h2>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">睡前</span>
+<span class="theme-count">标记 47 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">睡前</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">晚上</td><td>17</td><td>3.3%</td></tr>
+<tr><td class="kw-matched">哄睡</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">夜醒</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">半夜</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">凌晨</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">夜奶</td><td>2</td><td>0.4%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">喂养时</span>
+<span class="theme-count">标记 40 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">喂奶</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">吃饭</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">辅食</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-unmatched">泡奶</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">冲奶粉</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">喂饭</td><td>1</td><td>0.2%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">外出</span>
+<span class="theme-count">标记 44 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">出门</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">遛娃</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">逛街</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">公园</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">超市</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">医院</td><td>16</td><td>3.1%</td></tr>
+<tr><td class="kw-unmatched">打疫苗</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">工作间隙</span>
+<span class="theme-count">标记 56 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">上班</td><td>13</td><td>2.6%</td></tr>
+<tr><td class="kw-matched">工作</td><td>35</td><td>6.9%</td></tr>
+<tr><td class="kw-unmatched">午休</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">摸鱼</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">碎片时间</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-unmatched">通勤</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">家务时</span>
+<span class="theme-count">标记 74 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">做家务</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">做饭</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">打扫</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">洗衣</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">带娃</td><td>39</td><td>7.7%</td></tr>
+<tr><td class="kw-matched">陪玩</td><td>5</td><td>1.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">学习时</span>
+<span class="theme-count">标记 52 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">学习</td><td>26</td><td>5.1%</td></tr>
+<tr><td class="kw-matched">看书</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">查资料</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">做功课</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">备课</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">研究</td><td>5</td><td>1.0%</td></tr>
+</table></div>
+</div></div><div id="signals" class="content-panel">
+<div class="section">
+<h2>📡 信号关键词匹配统计</h2>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">痛点信号</span>
+<span class="theme-count">标记 180 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">难</td><td>60</td><td>11.8%</td></tr>
+<tr><td class="kw-matched">痛苦</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">崩溃</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">焦虑</td><td>42</td><td>8.3%</td></tr>
+<tr><td class="kw-matched">担心</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">害怕</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">慌</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">烦</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">累</td><td>25</td><td>4.9%</td></tr>
+<tr><td class="kw-matched">困</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">无助</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">绝望</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">后悔</td><td>4</td><td>0.8%</td></tr>
+<tr><td class="kw-matched">自责</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-unmatched">内疚</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">受不了</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">折磨</td><td>3</td><td>0.6%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">决策信号</span>
+<span class="theme-count">标记 105 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">怎么选</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">哪个好</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">推荐</td><td>19</td><td>3.7%</td></tr>
+<tr><td class="kw-matched">对比</td><td>6</td><td>1.2%</td></tr>
+<tr><td class="kw-matched">测评</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">攻略</td><td>43</td><td>8.5%</td></tr>
+<tr><td class="kw-matched">清单</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-unmatched">必买</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">种草</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">闭眼入</td><td>1</td><td>0.2%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">求助信号</span>
+<span class="theme-count">标记 63 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">怎么办</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">正常吗</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-matched">求助</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">请教</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">有经验</td><td>2</td><td>0.4%</td></tr>
+<tr><td class="kw-matched">过来人</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-matched">建议</td><td>27</td><td>5.3%</td></tr>
+<tr><td class="kw-matched">有用吗</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">靠谱吗</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">行为信号</span>
+<span class="theme-count">标记 209 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">每天</td><td>52</td><td>10.2%</td></tr>
+<tr><td class="kw-matched">经常</td><td>10</td><td>2.0%</td></tr>
+<tr><td class="kw-matched">总是</td><td>11</td><td>2.2%</td></tr>
+<tr><td class="kw-matched">习惯</td><td>17</td><td>3.3%</td></tr>
+<tr><td class="kw-matched">规律</td><td>12</td><td>2.4%</td></tr>
+<tr><td class="kw-matched">记录</td><td>37</td><td>7.3%</td></tr>
+<tr><td class="kw-matched">打卡</td><td>7</td><td>1.4%</td></tr>
+<tr><td class="kw-matched">坚持</td><td>26</td><td>5.1%</td></tr>
+<tr><td class="kw-matched">反复</td><td>9</td><td>1.8%</td></tr>
+<tr><td class="kw-matched">一直</td><td>46</td><td>9.1%</td></tr>
+</table></div>
+<div class="theme-block">
+<div class="theme-header">
+<span class="theme-name">期望信号</span>
+<span class="theme-count">标记 124 条笔记</span>
+</div>
+<table class="keyword-table">
+<tr><th>关键词</th><th>匹配笔记数</th><th>占比</th></tr>
+<tr><td class="kw-matched">希望</td><td>27</td><td>5.3%</td></tr>
+<tr><td class="kw-matched">想要</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-matched">期待</td><td>25</td><td>4.9%</td></tr>
+<tr><td class="kw-unmatched">如果能</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">要是</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">最好</td><td>15</td><td>3.0%</td></tr>
+<tr><td class="kw-unmatched">理想</td><td>0</td><td>0.0%</td></tr>
+<tr><td class="kw-matched">完美</td><td>3</td><td>0.6%</td></tr>
+<tr><td class="kw-matched">解决</td><td>5</td><td>1.0%</td></tr>
+<tr><td class="kw-matched">急需</td><td>1</td><td>0.2%</td></tr>
+<tr><td class="kw-unmatched">盼望</td><td>0</td><td>0.0%</td></tr>
+</table></div>
+</div>
+</div>
+
+<script>
+function showTab(tabId) {
+    document.querySelectorAll('.content-panel').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.getElementById(tabId).classList.add('active');
+    event.target.classList.add('active');
+}
+</script>
+
+</body>
+</html>
