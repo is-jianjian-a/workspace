@@ -1,0 +1,191 @@
+[
+  {
+    "note_id": "69896b9a000000001a01cba4",
+    "title_cleaned": "鸿蒙6.0.0.328开始内测：更加丝滑但像苹果",
+    "content_cleaned": "鸿蒙6的下一个版本6.0.0.328已经正在内测了，此版本主要升级有两点，一是操作更加丝滑流畅，肉眼可见的更加流畅，操作起来非常舒服，比130版本还要丝滑很多；二是操作界面设计优化了，修改了很多，但改得很像iPhone的iOS界面。",
+    "classification": "valid",
+    "reason": "鸿蒙6.0新版本内测，明确提及操作更加丝滑流畅，并与iOS界面设计对比"
+  },
+  {
+    "note_id": "6989d64600000000280219bb",
+    "title_cleaned": "华为拍个短片都要找营销号拉踩苹果",
+    "content_cleaned": "给营销号的文案几乎就是一模一样了，连广告片都要拉踩苹果",
+    "classification": "unrelated",
+    "reason": "内容为营销/销量/市场份额讨论，不涉及性能/流畅度/稳定性/卡顿/丝滑对比"
+  },
+  {
+    "note_id": "69918b91000000000a03ca4f",
+    "title_cleaned": "华为手机常用的快捷手势你都知道几个？",
+    "content_cleaned": "",
+    "classification": "incomplete",
+    "reason": "内容为空或过于简短，无法判断主题"
+  },
+  {
+    "note_id": "699c7040000000001502315c",
+    "title_cleaned": "还有纠结Mate80和Mate80Pro的同学么",
+    "content_cleaned": "差价1500左右，主要体现在处理器，主摄和长焦。\n不玩游戏的日常使用基本没有差别，预算充足的不用纠结直接上Mate80ProMax\n还有啥有需要了解的，评论区说说看",
+    "classification": "unrelated",
+    "reason": "仅为华为Mate80系列内部选购建议，不涉及苹果"
+  },
+  {
+    "note_id": "699fca860000000023038d40",
+    "title_cleaned": "入手华为mate80pro后粉转黑",
+    "content_cleaned": "从19年入手华为p30pro到21年入手p50pro到现在的mate80pro，华为你真让我失望啊，不理解为什么东西会越做越差？入手一周记录的真实感受",
+    "classification": "unrelated",
+    "reason": "仅为华为mate80pro使用吐槽，未提及苹果，不涉及性能对比"
+  },
+  {
+    "note_id": "69a4e37900000000220301ae",
+    "title_cleaned": "你们的华为mate80pm卡顿么？我咋感觉没之前的mate70p+好用呢？",
+    "content_cleaned": "你们的华为mate80pm卡顿么？我咋感觉没之前的mate70p+好用呢？",
+    "classification": "valid",
+    "reason": "华为手机卡顿问题讨论，涉及性能/流畅度体验"
+  },
+  {
+    "note_id": "69a50401000000002800a69e",
+    "title_cleaned": "到底是Pocket3出了轨，还是手机劈了腿",
+    "content_cleaned": "",
+    "classification": "unrelated",
+    "reason": "仅为Pocket3与华为产品组合展示，无性能对比内容"
+  },
+  {
+    "note_id": "69a814820000000015023c15",
+    "title_cleaned": "对比荣耀和苹果",
+    "content_cleaned": "。双持这两台手机三四个月了，其实用起来不会有很强的差距感\n。首先续航是在全wifi情况下用的，荣耀大概多了四个小时上下。最高屏幕亮度荣耀会稍微亮一点，我对护眼不敏感所以没感觉，清晰度和色准差不多。重量上苹果轻不少\n。拍照上苹果三个摄像头色差小一些，荣耀白平衡容易飘，就像那个主摄明显很黄，苹果有些照片也容易黄，而且长焦因为硬件原因会明显不如荣耀。\n。拍视频在不动的情况下差不太多，但是摄像头移动变焦的",
+    "classification": "unrelated",
+    "reason": "仅为荣耀与苹果对比，未涉及华为/鸿蒙"
+  },
+  {
+    "note_id": "69a8da46000000002602fc28",
+    "title_cleaned": "华为手表睡眠检测对比苹果手表睡眠检测",
+    "content_cleaned": "左手戴的华为GT5（左图），右手戴的苹果SE（右图）\n图中是检测数据，睡眠时间倒是差不多，苹果分的更细，但是深度睡眠居然差那么多，华为深度睡眠是2小时39分，苹果居然只有41分钟，差了近两个小时！这差距是啥原因呢？有知道的友友嘛",
+    "classification": "unrelated",
+    "reason": "仅为手表/穿戴设备对比，不涉及手机性能/流畅度/稳定性/卡顿/丝滑维度"
+  },
+  {
+    "note_id": "69b6cbb60000000021039283",
+    "title_cleaned": "鸿蒙丝滑的秘密是什么？",
+    "content_cleaned": "很多用华为手机、鸿蒙电脑的人都说用起来很丝滑，就像苹果iOS一样，鸿蒙用起来有人很流畅\n说华为卡的应该用的不是mate或者pura，如果说是华为畅享或者nova，还真有可能会有卡顿，毕竟配置摆在那了，就连给我妈妈转转整得三年前的mate60Pro用起来也是流畅的，才一千九要啥自行车，肯定是比现在的千元机要好用的\n还有鸿蒙电脑刚出没多久不知道体验感怎么样，感觉应该也是走的办公本路线吧🤔",
+    "classification": "valid",
+    "reason": "鸿蒙与iOS系统流畅度/丝滑度/性能对比"
+  },
+  {
+    "note_id": "69b7e4f2000000001d01e441",
+    "title_cleaned": "预算拉满✅万元旗舰三选一！看完不踩雷",
+    "content_cleaned": "预算拉满冲万元旗舰的集合📣！不搞虚的，全程中立不拉踩\n华为Mate80 RS 非凡大师、Mate X7、苹果17 Pro Max 三款顶流实测整理\n只讲核心优势+适配人群，帮你精准匹配，再也不用纠结到底买哪台👇\n重点先划死：三款都是各品牌天花板配置，没有好坏之分，只看你适配哪种场景、喜欢哪种手感！\n🟣【华为Mate80 RS 非凡大师】｜商务党本命旗舰\n▫️核心buff叠满✨：20GB超大内存+6",
+    "classification": "valid",
+    "reason": "万元旗舰三选一导购内容，明确对比华为Mate80 RS、Mate X7与苹果17 Pro Max的性能、流畅度、系统稳定性"
+  },
+  {
+    "note_id": "69bfb74f000000002103bef2",
+    "title_cleaned": "10多年花了近十万用iPhone，真的不如安卓，",
+    "content_cleaned": "从初中的4s，到高中的6sp，大二的x，再到毕业的13pm，真的不知道这么折磨的手机我怎么用下来的，说买一个安卓试试，花6000买了个iQOO，好家伙，原来还有手机不断流呀，还可以独立调各个软件的音量呀，微信消息可以实时到达呀，手机打游戏还能不发烫呀等等等等，早知道那些年都用安卓了，买iPhone全家桶至少把近十几万都用了，以前没有认知，总觉得最贵的就是最好的",
+    "classification": "unrelated",
+    "reason": "仅为iPhone与安卓(iQOO)对比，未涉及华为/鸿蒙"
+  },
+  {
+    "note_id": "69c0f28400000000230104a4",
+    "title_cleaned": "华为80rs",
+    "content_cleaned": "大家的80rs屏幕左上角边缘处黑边 有没有多处一点点的，感觉跟“骨质增生”一样，有说是屏幕抗锯齿系统原因没做好的，有说系统更新就好了，我更了两次系统貌似没啥变化，简直逼死强迫症！实体店新机购入的！",
+    "classification": "unrelated",
+    "reason": "仅为华为80rs屏幕品控问题，不涉及苹果"
+  },
+  {
+    "note_id": "69c38436000000002003ad2f",
+    "title_cleaned": "从苹果换到华为Mate 80 Pro Max我的体验",
+    "content_cleaned": "从17p换过来我只知道\n看屏幕不头晕易疲劳了，而且这个屏幕真的透\n不锁帧了\n莫名其妙的bug消失了\n信号好不断流了\n充电快了\n拍照好了\n手机助手不是智障了（小艺帮帮忙真好用）\n虽然也可以都是安卓手机都能提到的通用好处，但主要鸿蒙用着真的很顺手丝滑\n续航很惊喜，日用能到8h\n\t\n疑难杂症都消失了\n\t\n缺点也很明显\n1. 性能上限不够，如果想玩二游得三思，但我不在手机上玩没有感知\n2. 应用依然缺一些",
+    "classification": "valid",
+    "reason": "苹果转华为换机体验，明确对比系统流畅度、丝滑度、性能等维度"
+  },
+  {
+    "note_id": "69c4f21a000000001a023547",
+    "title_cleaned": "苹果和华为！我选择了……",
+    "content_cleaned": "犹豫X6还是苹果17，最终还是苹果输给了华为！因为看文件还是大屏舒服。",
+    "classification": "unrelated",
+    "reason": "仅为华为与苹果选购决策，未涉及性能/流畅度体验"
+  },
+  {
+    "note_id": "69c8c6b100000000230170ab",
+    "title_cleaned": "全球科技大佬使用什么手机？和你是同款吗",
+    "content_cleaned": "蒂姆・库克｜Tim Cook\n苹果 CEO，主导 iPhone、Mac 等全生态\n使用自家的 17Pro Max\n\t\n马克・扎克伯格｜Mark Zuckerberg\nMeta 创始人，社交平台帝国缔造者\n使用的是三星S24 Ultra\n\t\n桑达尔・皮查伊｜Sundar Pichai\n谷歌 CEO，掌控安卓、搜索、AI 核心业务\n使用的自家的Piexl Fold\n\t\n沃伦・巴菲特｜Warren Bu",
+    "classification": "unrelated",
+    "reason": "内容为科技大佬使用手机盘点，不涉及华为苹果性能对比"
+  },
+  {
+    "note_id": "69c906290000000023016f2f",
+    "title_cleaned": "iPhone 17 Pro 体验：从安卓回归 iOS 后的真",
+    "content_cleaned": "【红榜：为什么回苹果？】\n• 车机联动： 特斯拉手机钥匙识别率极高，彻底告别 App 手动解锁。\n• 散热进化： 散热改善巨大，重度游戏不降亮度、不掉帧。\n• 续航表现： 优于华为 Pura，持平 OPPO X8。优于我这台是美版，美版续航会比国行强 30 分钟左右\n• 系统生态： 生态优秀 系统极度稳定，（对比安卓的莫名小 bug 和鸿蒙现在的不成熟 ）视频拍摄能力依然保持领先。\n【黑榜：槽点依",
+    "classification": "valid",
+    "reason": "鸿蒙与iOS系统流畅度/丝滑度/性能对比"
+  },
+  {
+    "note_id": "69cb3eba000000001a032c68",
+    "title_cleaned": "都卖5999‼️苹果，华为极限二选一！\n💥真的没有对比就没有伤害\n✅ 256GB iPhone17，卖5999\n✅ 256GB 华为mate80 Pro，也卖5999\n不少人拿iPhone17跟mate80标准版比，\n其实同价格比才更有说服力啊？\n\t\n👉iPhone17跟mate80 Pro配置对比请看图，\n苹果除了A19和前置镜头确实领先，\n其它方面明显华为更像一款旗舰机\n如果让各位极限二选一，你选哪个？",
+    "content_cleaned": "都卖5999‼️苹果，华为极限二选一！\n💥真的没有对比就没有伤害\n✅ 256GB iPhone17，卖5999\n✅ 256GB 华为mate80 Pro，也卖5999\n不少人拿iPhone17跟mate80标准版比，\n其实同价格比才更有说服力啊？\n\t\n👉iPhone17跟mate80 Pro配置对比请看图，\n苹果除了A19和前置镜头确实领先，\n其它方面明显华为更像一款旗舰机\n如果让各位极限二选一，",
+    "classification": "valid",
+    "reason": "华为与苹果旗舰机型对比，涉及性能/流畅度/系统稳定性"
+  },
+  {
+    "note_id": "69cb7113000000002003bc73",
+    "title_cleaned": "鸿蒙6这UI真是差点意思",
+    "content_cleaned": "刚从苹果换过来，没想到最大不适竟然是UI，一眼看上去就很low，甚至不如前几代鸿蒙精致。",
+    "classification": "unrelated",
+    "reason": "仅为鸿蒙6 UI设计吐槽，未涉及性能/流畅度/丝滑/卡顿维度"
+  },
+  {
+    "note_id": "69d3c7cc000000002302482b",
+    "title_cleaned": "原本买个备用机，结果OPPO Find N6把主机活全干了!\n\t\n用惯了苹果全家桶，一直觉得iPhone是绕不开的核心。这次想买个折叠屏当娱乐备用机，选了OPPO Find N6，结果用着用着发现——主力机快下岗了。\n\t\n分工是这样的：\niPhone继续负责稳定、生态基础操作，0但日常办公、看剧、处理文档，全被Find N6承包了。折叠大屏分屏太顺手，左边微信右边WPS，开会记笔记用AI手写笔，画个表格直接生成图表。哈苏2亿四摄随手拍，出去玩不用带相机了。\n\t\n最意外的是互联体验：\nAirPods Pro",
+    "content_cleaned": "原本买个备用机，结果OPPO Find N6把主机活全干了!\n\t\n用惯了苹果全家桶，一直觉得iPhone是绕不开的核心。这次想买个折叠屏当娱乐备用机，选了OPPO Find N6，结果用着用着发现——主力机快下岗了。\n\t\n分工是这样的：\niPhone继续负责稳定、生态基础操作，0但日常办公、看剧、处理文档，全被Find N6承包了。折叠大屏分屏太顺手，左边微信右边WPS，开会记笔记用AI手写笔，画",
+    "classification": "unrelated",
+    "reason": "仅为OPPO Find N6与苹果全家桶体验，未涉及华为"
+  },
+  {
+    "note_id": "69d8c5ae0000000023024dcc",
+    "title_cleaned": "2026 手机系统阵营对比🔥",
+    "content_cleaned": "宝子们 2026 年手机系统格局真的很清晰了！\niOS、鸿蒙、安卓三大阵营各走各的路，\n一篇讲清特点 + 优缺点，看完直接不纠结👇\n\t\n🍎 iOS｜苹果生态\n流畅度常年在线，隐私保护强，系统干净无广告\n和 iPhone、Mac、iPad、AirPods 无缝联动\n通用剪贴板、接力、隔空投送超丝滑\nApp 质量高、不流氓、不卡顿\n\t\n‼️缺点\n自由度低，不能深度自定义\n文件管理麻烦，传输限制多\n价格",
+    "classification": "valid",
+    "reason": "鸿蒙与iOS系统流畅度/丝滑度/性能对比"
+  },
+  {
+    "note_id": "69ddf64d00000000230061ec",
+    "title_cleaned": "有两部手机的人都是怎么用的",
+    "content_cleaned": "我自己主力机选的是华为Pura X，备用机是iPhone 14 Pro\n小胖墩是半年前用的，颜值真的很高，太喜欢了，每次上班带着它，心情都会变好\niPhone 14 Pro是我的旧手机，用习惯了，没舍得放咸鱼，现在主要就是让它存存照片\n主要还是用小阔折比较多！毕竟真的是很香好吧，听说还会出紫色配色，不知道是不是真的捏，有点期待,,,\n\t\n X",
+    "classification": "unrelated",
+    "reason": "仅为双持手机日常分享，未涉及性能/流畅度对比"
+  },
+  {
+    "note_id": "69e0b476000000002200132d",
+    "title_cleaned": "都是mini平板，为什么差别这么大……",
+    "content_cleaned": "小平板市场是不是又重新火热起来了？发现越来越多品牌加入进来了，最近有朋友看到OPPO Pad mini要上市了，问我跟iPad mini7、华为Mate Pad mini比起来如何？\n其实吧在我看来，这三款机子各有各的好，更重要还是根据自己的需求来！\niPad mini：作为小平板里的常青树，苹果生态确实很顶，A17 Pro处理器目前也够用，主要是软硬件协同做的很好，苹果全家桶用户可冲；就是这些年",
+    "classification": "unrelated",
+    "reason": "仅为mini平板选购对比，不涉及手机性能/流畅度"
+  },
+  {
+    "note_id": "69e0da31000000001d01a1f2",
+    "title_cleaned": "Mate80应该比Pura90更值得买吧？",
+    "content_cleaned": "Mate80VsPura90\n我感觉是Mate80更胜一筹也更值得买\n为什么呢\n是Mate80有3D人脸识别，不管是人脸解锁、安全支付都很方便。比Pura90的2D人脸＋侧边指纹体验好\n都是麒麟9020处理器，Pura90多等了大半年升级还不大，反而价格却是新机价→而Mate80现在已经来到了3700！\nMate外观经典星环，更有高端质感。Pura90的渐变色反而土土的....\n所以我登都不登，直",
+    "classification": "unrelated",
+    "reason": "仅为华为内部Mate80 vs Pura90对比，不涉及苹果"
+  },
+  {
+    "note_id": "69e414730000000023004fe1",
+    "title_cleaned": "遥遥领先",
+    "content_cleaned": "",
+    "classification": "incomplete",
+    "reason": "仅有标题和标签，无正文内容，无法判断主题"
+  },
+  {
+    "note_id": "69e6d39100000000210395f1",
+    "title_cleaned": "Pura X Max 鸿蒙 OS，体验再升级💚（办",
+    "content_cleaned": "鸿蒙加持，折叠屏更丝滑～ 对比苹果iOS、三星One UI，\nPura X Max 搭载新版鸿蒙OS，每一处升级都贴合日常办\n公、用机需求，尤其是多设备用户，体验直接翻倍！\n网传新版鸿蒙，实际帮助：\n✅ 多任务、分屏更强（比苹果iOS分屏更灵活，比三星One\nUI更流畅，同时开3个APP，切换无延迟，办公时文档+会议+微信同步搞，效率翻倍）\n✅ 跨设备协同更强（和华为平板、笔记本无缝互联，文件互传",
+    "classification": "valid",
+    "reason": "鸿蒙与iOS系统流畅度/丝滑度/性能对比"
+  },
+  {
+    "note_id": "69e793ab000000002200dce1",
+    "title_cleaned": "两台华为新机都好好用",
+    "content_cleaned": "华为Pura 90 Pro Max和华为Pura X Max两台手机全部导完资料，彻彻底底当做主力机猛猛的用了一整天，真的爽啊！\n\t\n这一天里有大半的时间是反复转动手机欣赏外观，橘子海配色我可太喜欢了！大阔折屏幕也是一展开就一眼心动，怎么会有这么完美的显示体验[哇][哇][哇]\n\t\n伴随式AI玩了一会感觉大有可为，阔屏就该这样吃满比例优势。",
+    "classification": "unrelated",
+    "reason": "仅为华为新机开箱晒单，不涉及苹果"
+  }
+]

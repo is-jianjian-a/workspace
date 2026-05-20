@@ -1,0 +1,549 @@
+[
+  {
+    "index": 0,
+    "note_id": "68c281ed000000001c00b7de",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "通勤、走路、干活时当背景声音用，主用B站平台",
+            "pain_point": "自己能找到的适合自己的视频都全部听完了，一天通勤时间3h",
+            "demand": "希望视频时长长些",
+            "emotion": "正向期待"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "通勤时听长视频当背景音",
+            "mentioned_object": "warma的爆炸电台、莴苣某人玩无限暖暖生活碎碎念录播、核电波（乙游讲解、北欧神话）",
+            "attention_point": "生活故事分享类视频",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 1,
+    "note_id": "68fcca89000000000503b51e",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "兴奋",
+            "intensity": "强",
+            "target": "内容"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "note_id": "67e7809e000000001e0040ba",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/标签式发布，无体验描述、无诉求表达、无情绪反馈，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "note_id": "6831a52b000000002300ed73",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/资源分享，无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "note_id": "69b70553000000001d019124",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/个人收藏标记，无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "note_id": "699ea9bb000000000d00a91b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/歌单分享，无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "note_id": "6a09947f0000000035022be1",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "ASMR视频创作者发布自己的作品，属于创作者发布内容，从消费者视角看是纯内容推荐，无体验描述或诉求"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "note_id": "691dff8e000000001b0235c3",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/歌单分享，无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "note_id": "690303ef00000000070080ab",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "刷到干货视频想学习、开会录像、网课视频等场景",
+            "pain_point": "一看时长40分钟，上班/学习忙根本没时间看完；内容重要但太长，想快速抓重点又怕漏掉关键信息",
+            "demand": "视频太长不想看时，能自动总结重点",
+            "emotion": "焦虑急迫"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "长视频总结/视频总结APP",
+            "mentioned_object": "听脑AI",
+            "attention_point": "视频自动总结、逻辑理顺、重点分点列出、带时间戳",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "note_id": "6943ff77000000001e011362",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "画图时听什么视频当背景音",
+            "mentioned_object": "HOPICO、Linksphotograph、食贫道、阿言说",
+            "attention_point": "不需要高度专注或动脑子的内容，可以当音频听的长视频",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "建筑学画图时",
+            "pain_point": "不太能看需要高度专注或动脑子的内容",
+            "demand": "想找点不需要太用眼睛看的视频当背景音",
+            "emotion": "中性描述"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "note_id": "66a10b9e000000000a0248d7",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐，虽有'下饭神剧'但无具体体验描述或诉求，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "note_id": "69f351e70000000036003e71",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "ASMR视频创作者发布自己的定制视频作品，属于创作者发布内容，从消费者视角看是纯内容推荐"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "note_id": "69a9cdc3000000002603e487",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "旅行长视频博主推荐",
+            "mentioned_object": "小可追太阳、巡游轨迹",
+            "attention_point": "没有抓马、没有剧本、配乐舒缓、剪辑节奏好、娓娓道来的叙事感",
+            "emotion_tendency": "正向",
+            "heat": "低"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "兴奋",
+            "intensity": "中",
+            "target": "内容"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "note_id": "69ea2048000000001f007203",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "其他",
+            "intensity": "中",
+            "target": "内容"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "note_id": "68d80e1f00000000130299f2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/资源分享，无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "note_id": "69df3493000000001f00435d",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "海绵宝宝视频的资源分享/剧集推荐，纯内容推荐无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "note_id": "69706c62000000000a028095",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯内容推荐/资源分享，无体验描述、无诉求、无情绪表达，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "note_id": "68539d4b00000000170363f2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "工作和做手工的时候",
+            "pain_point": "想找点不需要太用眼睛看的视频当背景音",
+            "demand": "求推荐不太需要眼睛的、单个视频长度希望不小于三十分钟的视频；想找悬疑类电视剧或影视剧长解读视频",
+            "emotion": "正向期待"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "工作/做手工时背景音视频推荐",
+            "mentioned_object": "中国BOY、与山、Airly、谜之声、某幻、盒子酸奶",
+            "attention_point": "单机恐怖游戏实况和直播录播、日式RPG、MC长期生存",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "note_id": "69350ce8000000000d0384c3",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "慢性压力导致低效和沉溺幻想",
+            "mentioned_object": "未明确提及",
+            "attention_point": "长期处于慢性压力的影响",
+            "emotion_tendency": "中性",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "note_id": "69ff8146000000003503bac1",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "高质量女UP主在电子榨菜赛道",
+            "mentioned_object": "未明确提及",
+            "attention_point": "原声配音、没有让人不适的颜色梗、对剧情和人物有自己的见解",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "兴奋",
+            "intensity": "中",
+            "target": "内容"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "note_id": "65bf799f0000000007029e29",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "每次打开小红书",
+            "pain_point": "被主页各种个性化推荐的帖子吸引，忘记自己到底要用它来搜索什么，一不小心半个小时就过去了，什么都没从脑子里留下",
+            "demand": "减少花费在浏览碎片信息的时间，高效使用小红书",
+            "emotion": "焦虑急迫"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "手机防沉迷自救方法/高效使用小红书",
+            "mentioned_object": "iPhone快捷指令",
+            "attention_point": "通过自动化设置限时使用、及时打断无用信息浏览",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "note_id": "69ce26dc000000001a0359a2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "兴奋",
+            "intensity": "强",
+            "target": "体验"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "note_id": "69057e1100000000070330c5",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "整理学习资料、复习视频课程",
+            "pain_point": "很多好的视频课程没有文档，想复习的时候很不方便，手动整理笔记太费时间",
+            "demand": "想找自动化的工具把视频、音频自动转换成结构化文档",
+            "emotion": "正向期待"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "视频自动转笔记工具",
+            "mentioned_object": "AI-Media2Doc、GitHub",
+            "attention_point": "视频转文字、音频转写、自动生成大纲和总结、带时间戳的笔记",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "note_id": "68f8106c0000000007038722",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "AI陪看剧体验",
+            "mentioned_object": "ChatGPT Atlas、欢乐颂",
+            "attention_point": "用新浏览器和GPT一起看剧吐槽",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 24,
+    "note_id": "685d36c60000000023004ac5",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯工具/产品推荐（YARN），内容仅有产品名和大量空格，无体验描述、无诉求、无情绪表达，信息价值极低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 25,
+    "note_id": "682f0f52000000000c038fe6",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "每天要看和处理大量的视频、播客和会议录音",
+            "pain_point": "明知道内容优质，却一看到时长动辄一小时甚至更久，就开始犯难，经常还没看几分钟就被其他事情打断，最后不了了之",
+            "demand": "希望能自动提取原文稿/翻译、提取摘要和关键帧、识别不同说话人、思维导图等，将长内容可视化",
+            "emotion": "焦虑急迫"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "视频知识管理新方法",
+            "mentioned_object": "Ai好记、Obsidian",
+            "attention_point": "视频→AI提取→Obsidian入库的工作流，将线性长内容摊开成可视化二维知识平面",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 26,
+    "note_id": "6972000f0000000022033107",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "荣耀Magic8 Pro Air手机的软广/种草内容，描述同事开会摸鱼看剧的场景，从消费者视角看是产品推广内容，无真实用户诉求或情绪表达"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 27,
+    "note_id": "65def522000000000b015af0",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "日常使用手机时",
+            "pain_point": "不让时间偷偷溜走，告别无意识刷手机",
+            "demand": "用iPhone自带快捷指令设置时间限制，夺回时间掌控权",
+            "emotion": "正向期待"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "手机使用自律/时间管理",
+            "mentioned_object": "iPhone快捷指令",
+            "attention_point": "设置自动化操作，打开APP时显示提醒并计时，限时浏览",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  }
+]

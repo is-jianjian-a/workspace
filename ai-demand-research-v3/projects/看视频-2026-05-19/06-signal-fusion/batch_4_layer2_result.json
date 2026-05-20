@@ -1,0 +1,631 @@
+[
+  {
+    "index": 0,
+    "note_id": "696f2a24000000001a024b2f",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "高铁上刷视频卡顿的原因",
+            "mentioned_object": "高铁、短视频、多普勒效应",
+            "attention_point": "高铁场景下网络体验差的原因",
+            "emotion_tendency": "困惑",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 1,
+    "note_id": "66ba087b000000001e01edde",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "空虚",
+            "intensity": "强",
+            "target": "刷短视频后的自身感受"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频沉迷与卸载建议",
+            "mentioned_object": "抖音、星链、短视频、书籍、运动",
+            "attention_point": "短视频与其他美好事物的区别、短视频对人性的影响",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "note_id": "65fd3d79000000000d00dfa1",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "打开小红书时容易被首页推荐吸引，忘记原本要搜索的内容",
+            "pain_point": "小红书上瘾，一打开就忘记正事，刷得不亦乐乎",
+            "demand": "希望小红书界面变成搜索引擎界面，打开直接显示搜索界面而非首页推荐",
+            "emotion": "焦虑急迫"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "中",
+            "target": "自身刷小红书上瘾的行为"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "note_id": "65d998160000000007025001",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "小红书「好视频」新功能上线",
+            "mentioned_object": "小红书、好视频功能、点赞、点好",
+            "attention_point": "新功能的使用方法和社交推荐机制",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "note_id": "69f01e06000000001a037b9b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "刷短视频走火入魔的朋友",
+            "mentioned_object": "朋友、家人、短视频",
+            "attention_point": "身边人受短视频影响产生的离谱说法",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "note_id": "66607e52000000000c018595",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "每个APP都加短视频功能的现象",
+            "mentioned_object": "淘系APP、腾讯系APP、短视频功能",
+            "attention_point": "为什么各大APP都要加入短视频功能",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "其他",
+            "intensity": "弱",
+            "target": "每个APP都加短视频功能的现象"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "note_id": "6762c702000000000b0175df",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "在B站刷到让自己不爽的视频",
+            "pain_point": "总能刷到不想看的视频，影响观看体验",
+            "demand": "希望能够屏蔽不想看的视频，按关键词匹配视频标题并隐藏",
+            "emotion": "负面抱怨"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望",
+            "intensity": "中",
+            "target": "B站推荐的不爽视频"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "note_id": "69f2f2bf00000000370343fd",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "有效刷视频保护大脑的方法",
+            "mentioned_object": "短视频、大脑",
+            "attention_point": "如何在刷视频的同时保护大脑",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "note_id": "69bfcf0c000000002102fd53",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "把刷视频变成自我提升工具的方法",
+            "mentioned_object": "短视频、自我提升",
+            "attention_point": "如何将刷视频转化为自我提升的工具",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "note_id": "6a03529c0000000038020927",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "内容仅为重复的调侃语句，信息过短且无实质意义"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "note_id": "68410d1d000000000c03a503",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "在B站看课程或合集视频时难以管理学习进度",
+            "pain_point": "看网课备考、学技能时进度不清晰，容易遗忘学到哪里",
+            "demand": "需要一个工具导入课程视频，手动标注学过和未学过的集数，支持快速跳转和进度总览",
+            "emotion": "正向期待"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "B站看课/合集视频进度管理工具",
+            "mentioned_object": "B站、课程视频、合集视频、浏览器插件",
+            "attention_point": "如何高效管理B站学习视频的观看进度",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "note_id": "697dbe21000000002200bcae",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "长期刷短视频后如何恢复大脑",
+            "mentioned_object": "短视频、大脑",
+            "attention_point": "长期刷短视频对大脑的危害及恢复方法",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "中",
+            "target": "长期刷短视频对大脑的影响"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "note_id": "6956123e000000002103e653",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何有效整理各类信息",
+            "mentioned_object": "短视频、长视频、文章、书籍、播客、碎片信息",
+            "attention_point": "6类信息的整理方法，避免看完就忘",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "note_id": "69411a89000000001b031a89",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "只想刷手机是刻板行为而非懒惰",
+            "mentioned_object": "手机、刻板行为",
+            "attention_point": "对只想刷手机这一行为的心理学解读",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "自责",
+            "intensity": "中",
+            "target": "自身只想刷手机、缺乏动力的状态"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "note_id": "690d6377000000000401299b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "恋爱中观看擦边视频的思考",
+            "mentioned_object": "恋爱关系、擦边视频、福柯权力理论",
+            "attention_point": "从权力理论角度分析恋爱中观看擦边视频对关系的影响",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "note_id": "67e90929000000001b03a2e2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "内容仅为刷视频的我belike，无实质内容描述，信息过短且无明确信号"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "note_id": "69e0aedc0000000022002d17",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "内容仅为当代年轻人刷视频，无实质内容描述，信息过短且无明确信号"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "note_id": "6583b86300000000380343ad",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "短视频上瘾对自身生活的负面影响"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频上瘾对生活的全方位负面影响",
+            "mentioned_object": "短视频、微信短视频、英文阅读、推/ins、NYT",
+            "attention_point": "短视频如何吞噬时间、消解深度思考能力",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "note_id": "65b7b65700000000110046c3",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "在该干活的时候无意识刷小红书，但无法卸载因为需要查东西",
+            "pain_point": "不想无节制刷小红书，但又不能卸载，需要平衡使用",
+            "demand": "希望有一个弹窗询问打开目的+设置计时器提醒的系统，记录使用时间和原因",
+            "emotion": "焦虑急迫"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "中",
+            "target": "无意识刷手机影响实现梦想的困扰"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "note_id": "68ce136c000000001203e87b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "自责",
+            "intensity": "强",
+            "target": "刷短视频后心变得浮躁、专注力下降"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "刷短视频导致专注力下降和心浮气躁",
+            "mentioned_object": "短视频、抖音、学习、证书、书籍",
+            "attention_point": "刷短视频前后专注力的对比变化",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "note_id": "68a90ee9000000001b036d65",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "愤怒",
+            "intensity": "强",
+            "target": "电子鸦片（短视频）对青少年的侵蚀"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "电子鸦片对青少年大脑的危害",
+            "mentioned_object": "短视频、游戏、手机、青少年、脑腐",
+            "attention_point": "短视频导致思考力、专注力、记忆力全面崩塌",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "note_id": "69d1f31a000000001a03170c",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "自责",
+            "intensity": "中",
+            "target": "收藏视频不执行、学习产生惰性、花太多时间窥探他人生活"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "清理收藏视频后的反思与感悟",
+            "mentioned_object": "收藏视频、发型教程、妆容教程、摄影教程、运动视频",
+            "attention_point": "收藏不等于学习，当下不执行以后也不会做",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "note_id": "6950d8bd000000001d039214",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频带来的危害",
+            "mentioned_object": "短视频、算法、幸存者偏差",
+            "attention_point": "短视频如何通过成瘾机制影响注意力、思维和价值观",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "中",
+            "target": "短视频对认知的侵蚀"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "note_id": "6595094e000000001d0274ad",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "逃离短视频刷不停的方法",
+            "mentioned_object": "短视频、手机",
+            "attention_point": "利用内心阴暗面或负面情绪来停止刷短视频",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 24,
+    "note_id": "65f6e572000000000d00dc37",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "自责",
+            "intensity": "强",
+            "target": "整天刷手机啥也没干的行为"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒掉手机的方法和理解少刷手机的人",
+            "mentioned_object": "手机、短视频、朋友圈、直播、大数据",
+            "attention_point": "大数据精准投喂的可怕之处，以及如何主动放下手机",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 25,
+    "note_id": "6748161e0000000002019b5f",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "愤怒",
+            "intensity": "强",
+            "target": "小红书碎片化、同质化的低质量内容"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "小红书内容同质化、碎片化问题",
+            "mentioned_object": "小红书、切片up主、武志红、阿德勒、原生家庭、NPD",
+            "attention_point": "内容重复、质量低下、博主蹭热点无实质内容",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 26,
+    "note_id": "68fca5ea0000000005038037",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "每天短视频超过3小时导致脑腐化",
+            "mentioned_object": "短视频、大脑、脑腐化",
+            "attention_point": "长时间刷短视频对大脑的损害",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "中",
+            "target": "短视频导致脑腐化"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 27,
+    "note_id": "68ac41bc000000001d016337",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "频繁刷小红书后的自身状态"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "频繁刷小红书上瘾的真实体验",
+            "mentioned_object": "小红书、手机",
+            "attention_point": "刷小红书后的抓耳挠腮、坐立不安、没有安全感等上瘾表现",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  }
+]

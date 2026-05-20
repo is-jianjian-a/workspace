@@ -1,0 +1,557 @@
+[
+  {
+    "index": 0,
+    "note_id": "6954ec980000000022020806",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频成瘾机制与多巴胺陷阱",
+            "mentioned_object": "短视频、手机、多巴胺受体",
+            "attention_point": "为什么刷手机停不下来，大脑被高刺激喂刁，快乐阈值被拉高",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 1,
+    "note_id": "645523af000000001300b431",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯数码产品功能介绍/推荐内容，属于博主的内容分享，从消费者视角看，没有表达任何个人需求、关注或情绪，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "note_id": "69f323ed000000003601c9e3",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频对大脑和决策的影响",
+            "mentioned_object": "短视频、大脑皮层、电影、综艺",
+            "attention_point": "短视频堆积无效信息导致决策变愚蠢，注意力被不需要用力就能得到快乐的捷径吸引",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "自身"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "note_id": "69402e1d000000000d038f9c",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何不刷手机专注学习和工作",
+            "mentioned_object": "手机、大冰方法、ADHD",
+            "attention_point": "ADHD成年人无法集中注意力，控制不住刷手机导致效率低下，大冰的物理隔离方法亲测有效",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "note_id": "6921660f000000001e03af35",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯小米手机自动任务设置教程分享，属于技术/功能介绍内容，从消费者视角看，没有表达个人需求、关注或情绪，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "note_id": "69c682cc000000001d018967",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯综艺/活动宣传内容，属于营销/推广性质，从消费者视角看，没有表达个人需求、关注或情绪，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "note_id": "65bb4f98000000000a03034e",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "异地恋情侣想一起同步看电影",
+            "pain_point": "一方没会员没视频app不能一起同步看电影",
+            "demand": "能够同步一起看电影的解决方案",
+            "emotion": "正向期待"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "note_id": "66acae1f000000002701d591",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒除短视频的实践经历",
+            "mentioned_object": "短视频",
+            "attention_point": "七天不刷短视频的实践效果",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "note_id": "68331545000000002001f414",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "摆脱手机依赖的方法",
+            "mentioned_object": "手机",
+            "attention_point": "7秒法则和五小时理论等摆脱手机的具体方法",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "note_id": "69e6bb1e000000001d01956b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何不沉迷短视频浪费时间",
+            "mentioned_object": "短视频",
+            "attention_point": "书友分享的实用防沉迷方法",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "note_id": "62791bd2000000000102c085",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "纯技巧/攻略分享内容（看电影不花钱），属于信息推荐，从消费者视角看，没有表达个人需求、关注或情绪，信息价值低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "note_id": "683bf71d0000000021003c6d",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "婴幼儿看短视频的问题",
+            "mentioned_object": "短视频、手机、婴幼儿、烂手机",
+            "attention_point": "家人给婴幼儿看短视频哄吃饭，用碎屏烂手机，伤眼又伤脑",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "愤怒",
+            "intensity": "强",
+            "target": "功能"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "note_id": "69a6d77d0000000015038cc4",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "少刷手机的方法",
+            "mentioned_object": "手机",
+            "attention_point": "5个少刷手机的具体方法",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "note_id": "67e41ee4000000001d02c2ba",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频对大脑发育和思考能力的影响",
+            "mentioned_object": "短视频、dy、小红书",
+            "attention_point": "短视频导致浮躁、大脑整合信息能力和思考能力下降，片面观点侵蚀大脑",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "自身"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "note_id": "686a6493000000001203139b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "放下手机的好处",
+            "mentioned_object": "手机",
+            "attention_point": "放下手机能解决很多问题",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "note_id": "665d6810000000001500bff0",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频APP隐私泄露问题",
+            "mentioned_object": "某抖App",
+            "attention_point": "刷过的视频和买过的东西被家人同事同步看到，隐私被泄露",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "功能"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "note_id": "68ff4f300000000004017005",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频防成瘾方法",
+            "mentioned_object": "短视频",
+            "attention_point": "巨有效的短视频防成瘾小方法",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "note_id": "6801ce23000000000d0177cf",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "放下手机解决空虚焦虑问题",
+            "mentioned_object": "手机、视频、社交软件",
+            "attention_point": "手机并没有让人真正放松反而越来越累，越刷越空虚越玩越焦虑，影响学业状态",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "自身"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "note_id": "68e39281000000000301e44b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "少玩手机的原因",
+            "mentioned_object": "手机、游戏、视频",
+            "attention_point": "打游戏多了人会越来越暴躁，刷视频久了专注力很差很难定下心来做事",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "愤怒",
+            "intensity": "中",
+            "target": "自身"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "note_id": "6892ee450000000004001331",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "早上刷手机对ADHD的影响",
+            "mentioned_object": "手机、Reddit",
+            "attention_point": "早上刷手机会放大ADHD的创伤反应",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "note_id": "6853c8b6000000000b01d0d7",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "过度刷手机的问题",
+            "mentioned_object": "手机",
+            "attention_point": "过度刷手机是一种暴饮暴食",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "note_id": "699179b3000000000903b9b9",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "手机使用与创造力的关系",
+            "mentioned_object": "手机、短视频、信息流",
+            "attention_point": "每天玩手机3小时正在杀死创造力，刷短视频是高级耗能，注意力被切成碎片",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "自身"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "note_id": "69c796aa00000000200381b0",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "睡前刷视频的困扰",
+            "mentioned_object": "视频",
+            "attention_point": "睡前最怕刷到的视频",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "note_id": "671278b4000000001600c739",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "通过录屏观察戒除手机网瘾",
+            "mentioned_object": "手机、录屏、AI制图",
+            "attention_point": "通过录屏旁观自己刷手机行为产生生理性恶心，从而戒除网瘾",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望",
+            "intensity": "强",
+            "target": "自身"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 24,
+    "note_id": "67f21cf5000000001c02abda",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "避免起床刷手机的方法",
+            "mentioned_object": "手机、有声书、播客、音乐",
+            "attention_point": "早上起床刷手机会让多巴胺系统崩溃，分享手机戒断、切换到心流模式、冷水洗脸三个方法",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 25,
+    "note_id": "67f75d9a000000001c02cc6d",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "睡前报复性刷手机的心理机制",
+            "mentioned_object": "手机、视频",
+            "attention_point": "奖赏桶理论，白天奖赏没给够导致睡前报复性刷手机，要在白天填满奖赏桶",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 26,
+    "note_id": "68372ae0000000002101af2b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "不用短视频APP看短视频的方式",
+            "mentioned_object": "短视频APP、其他APP",
+            "attention_point": "朋友坚持不用短视频APP但用其他APP看短视频",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 27,
+    "note_id": "69356e3b000000000d00efba",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "停下玩手机的奇怪有效方法",
+            "mentioned_object": "手机",
+            "attention_point": "奇怪但非常有效的停下玩手机方法",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  }
+]

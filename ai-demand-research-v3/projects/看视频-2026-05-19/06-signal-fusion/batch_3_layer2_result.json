@@ -1,0 +1,621 @@
+[
+  {
+    "index": 0,
+    "note_id": "69b0bd06000000000503301c",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "睡眠不足与信息过载对现代人精气神的负面影响",
+            "mentioned_object": "手机、短视频app",
+            "attention_point": "刷手机导致精力耗散、越刷越累越走不出来的恶性循环",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "刷手机看视频带来的精力耗散和失控感"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 1,
+    "note_id": "69f72c15000000001a02ff9b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "焦虑时刷短视频成瘾的行为机制",
+            "mentioned_object": "短视频、vx视频号、小说app",
+            "attention_point": "焦虑导致刷短视频成瘾的原因及如何解决",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "因焦虑而刷视频浪费时间后的空虚和懊悔"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "note_id": "6869f812000000000d01860e",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "无关信息对精力和时间的消耗",
+            "mentioned_object": "短视频、朋友圈、热搜、推送通知",
+            "attention_point": "关闭推送通知后生活变得充实踏实的体验",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "其他",
+            "intensity": "中",
+            "target": "看到无关信息时产生的比较和烦躁"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "note_id": "69d8c5e7000000002300472a",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "少用手机、拿回注意力对缓解焦虑的作用",
+            "mentioned_object": "手机",
+            "attention_point": "放下手机后内心踏实平静、不再被焦虑裹挟的体验",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "其他",
+            "intensity": "中",
+            "target": "放下手机后感受到的踏实、平静和自我掌控感"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "note_id": "65c177b5000000002c0362ab",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频对底层孩子专注力和思维模式的危害",
+            "mentioned_object": "短视频、手机",
+            "attention_point": "农村孩子沉迷短视频导致专注力缺失、没有耐心",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "短视频像毒品一样蔓延对儿童造成的危害"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "note_id": "69e600df0000000021007801",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "长期无意识刷手机导致执行力和注意力下降",
+            "mentioned_object": "手机",
+            "attention_point": "无意识刷手机成瘾对认知能力的负面影响",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "note_id": "69aa781c000000001b01d1d6",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "不看短视频后获得的注意力容量",
+            "mentioned_object": "短视频",
+            "attention_point": "不看短视频后可以投入真实生活的各种事项",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "note_id": "69b6e657000000001d01c6d1",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "愤怒",
+            "intensity": "中",
+            "target": "舍友开手电筒看电视剧影响自己休息"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "宿舍内看视频影响他人的困扰",
+            "mentioned_object": "手电筒、手机、电视剧",
+            "attention_point": "舍友深夜看视频影响自己睡眠的问题",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "note_id": "686f29eb000000002203df76",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "为逃避痛苦而玩手机导致更大痛苦的恶性循环",
+            "mentioned_object": "手机、视频",
+            "attention_point": "用手机逃避学习痛苦后的自我调整方法",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望",
+            "intensity": "强",
+            "target": "逃避学习刷手机后产生的沮丧和自我怀疑"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "note_id": "6986228d000000000c03510f",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "刷短视频的矛盾心理——既想获取高质量内容又担心浪费时间",
+            "mentioned_object": "短视频",
+            "attention_point": "高质量视频与浪费时间之间的取舍纠结",
+            "emotion_tendency": "矛盾",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "其他",
+            "intensity": "中",
+            "target": "想戒掉短视频又怕错过好内容的纠结"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "note_id": "68b78b02000000001b01c6ef",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "睡前刷手机对睡眠的影响",
+            "mentioned_object": "手机",
+            "attention_point": "睡前刷8分钟手机导致身体兴奋1小时",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "note_id": "68e7a21f000000000302c814",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒掉看小说和刷视频后的无聊感和适应困难",
+            "mentioned_object": "小说、视频、书",
+            "attention_point": "戒掉刷视频后时间变多但无所适从的体验",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "空虚",
+            "intensity": "中",
+            "target": "戒掉刷视频后生活变得无聊、无所适从"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "note_id": "67e2be2f000000000603dd98",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "使用安卓手机浏览小红书、抖音、系统浏览器时",
+            "pain_point": "小红书不能丝滑放大浏览、抖音底部大灰bar碍眼、浏览器广告多、纯色壁纸有横纹、拍照油腻",
+            "demand": "改进安卓手机的视频浏览体验和拍照效果",
+            "emotion": "负面抱怨"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望",
+            "intensity": "强",
+            "target": "安卓手机看视频和拍照体验差"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "note_id": "64ad83ec000000002b038a95",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "连续刷短视频后的生理和心理失控体验",
+            "mentioned_object": "短视频",
+            "attention_point": "刷短视频成瘾后的悬浮、游离、机械性下滑状态",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望",
+            "intensity": "强",
+            "target": "刷短视频失控后产生的厌恶和自我厌恶"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "note_id": "69b01623000000001d027aa5",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "刷手机是高压下的刻板行为",
+            "mentioned_object": "手机",
+            "attention_point": "高压状态下刷手机作为一种刻板行为的心理机制",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "note_id": "68bab535000000001d037e36",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "经常刷视频是否会让大脑衰老",
+            "mentioned_object": "视频",
+            "attention_point": "刷视频对大脑健康的潜在危害",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "note_id": "6841c498000000002101ab3d",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒掉手机的关键是允许自己痛苦",
+            "mentioned_object": "手机",
+            "attention_point": "用手机逃避痛苦的行为模式及戒除方法",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "自责",
+            "intensity": "中",
+            "target": "遇到痛苦就拿起手机逃避的行为"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "note_id": "66754bb7000000001c021dab",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "在电脑上观看视频学习或工作时",
+            "pain_point": "视频播放速度无法灵活控制",
+            "demand": "电脑视频倍速播放功能，提高学习工作效率",
+            "emotion": "正向期待"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "note_id": "66baeea2000000001e01800e",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "不同视频平台对大学生关键词的内容差异",
+            "mentioned_object": "b站、ks、dy、xhs",
+            "attention_point": "各平台内容定位差异及内容生态问题",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "中",
+            "target": "各平台内容生态差异带来的担忧"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "note_id": "68c66de2000000001b033354",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "听网课学习时，网课时长过长",
+            "pain_point": "网课冗长、动辄3-4个小时，学习效率低",
+            "demand": "AI总结、文稿、AI课件功能帮助高效学习",
+            "emotion": "正向期待"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "网课平台的AI辅助学习功能",
+            "mentioned_object": "AI总结tab、文稿tab、AI课件tab",
+            "attention_point": "利用AI功能解决网课时长过长的问题",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "note_id": "67261fc4000000001901a4c6",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "支付宝视频红包的刷取技巧和使用方法",
+            "mentioned_object": "支付宝视频入口、红包",
+            "attention_point": "如何高效刷视频红包及在支付宝下单使用",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "note_id": "69ff0136000000001f006226",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "无效内容",
+          "structured": {
+            "is_invalid": true,
+            "reason": "标题和内容过于简短（\"刷视频看到想到了……\"），无明确信号，信息价值低，无法判断具体关注什么"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "note_id": "690062490000000007022735",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "小红书算法如何预测用户观看时长",
+            "mentioned_object": "EGMN模型、短视频平台算法",
+            "attention_point": "EGMN模型如何区分用户不耐烦和感兴趣的行为",
+            "emotion_tendency": "中性",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "note_id": "6870d240000000000d0276a2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何在不想刷手机的时候停下来",
+            "mentioned_object": "手机",
+            "attention_point": "区分解离和FOMO来帮助停止刷手机",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 24,
+    "note_id": "64650e6f0000000013034833",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "功能诉求",
+          "structured": {
+            "scene": "想打开短视频app或社交软件时",
+            "pain_point": "无意识刷短视频浪费时间",
+            "demand": "一个能在打开短视频app前跳入呼吸页面的app，帮助恢复理性",
+            "emotion": "正向期待"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 25,
+    "note_id": "69f47c2a000000003502e990",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "长期刷视频后如何恢复大脑前额叶",
+            "mentioned_object": "视频、大脑前额叶",
+            "attention_point": "刷视频对大脑前额叶的损害及恢复方法",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 26,
+    "note_id": "69e0d817000000002003a15c",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "境外平台刷到自己的不雅视频的隐私安全问题",
+            "mentioned_object": "境外平台、不雅视频",
+            "attention_point": "视频平台内容安全和隐私泄露问题",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑",
+            "intensity": "强",
+            "target": "在境外平台刷到自己不雅视频的隐私安全担忧"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 27,
+    "note_id": "65dae8d700000000010299fd",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "小红书\"好视频\"新功能上线",
+            "mentioned_object": "小红书好视频功能",
+            "attention_point": "新功能的玩法和体验",
+            "emotion_tendency": "正向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,528 @@
+[
+  {
+    "index": 0,
+    "note_id": "67f63635000000001c013e27",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "愤怒/困惑",
+            "intensity": "强",
+            "target": "B站拉黑功能失效"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "B站黑名单功能失效问题",
+            "mentioned_object": "B站、黑名单/拉黑功能、up主",
+            "attention_point": "拉黑后仍刷到视频的原因",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 1,
+    "note_id": "69b021e8000000002603c4e3",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频对孩子大脑的危害及应对方法",
+            "mentioned_object": "短视频、孩子大脑、前额叶皮质",
+            "attention_point": "四大危害和四招破解方法",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "note_id": "66fcdfec000000002a0356a2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频对年轻人的毒害",
+            "mentioned_object": "短视频、年轻人、碎片时间",
+            "attention_point": "短视频导致失去深度思考和耐心",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "担忧",
+            "intensity": "中",
+            "target": "短视频对年轻人的影响"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "note_id": "69c91802000000002103a488",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "为什么劝大家减少对网络世界的关注",
+            "mentioned_object": "社交媒体、网络世界",
+            "attention_point": "网络的不可验证性和情绪放大效应",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "note_id": "67473bdd000000000202e048",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "恐惧/不适",
+            "intensity": "强",
+            "target": "刷到某个博主的视频"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "note_id": "69e876a5000000002102d7b0",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "抖音评论区跟风现象",
+            "mentioned_object": "抖音、评论区",
+            "attention_point": "评论区跟着前几个评论思想走的现象",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望",
+            "intensity": "弱",
+            "target": "抖音评论区生态"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "note_id": "683f4969000000000c0397d1",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "恐惧/震惊",
+            "intensity": "强",
+            "target": "娱乐直播的快速发展"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "娱乐至死/娱乐直播现象",
+            "mentioned_object": "直播、团播、小鱼",
+            "attention_point": "娱乐直播的服道化、运镜、流水线模式",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "note_id": "66197bc7000000001a013da5",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何有目的地看短视频积累知识",
+            "mentioned_object": "短视频",
+            "attention_point": "通过复盘提高专注力和批判性思维",
+            "emotion_tendency": "正向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "note_id": "68ad3171000000001b021f2e",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何恢复被短视频影响的大脑",
+            "mentioned_object": "短视频",
+            "attention_point": "被短视频吃掉的脑子如何补回来",
+            "emotion_tendency": "负向",
+            "heat": "低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "note_id": "684ff374000000002101bd44",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "为什么短视频越刷越累",
+            "mentioned_object": "短视频",
+            "attention_point": "短视频疲劳感的原因",
+            "emotion_tendency": "负向",
+            "heat": "低"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "note_id": "697777bc00000000210335f9",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒除社媒的21天数据记录",
+            "mentioned_object": "QQ空间、微博、iPad、7个APP",
+            "attention_point": "社交媒体使用行为的数据化分析",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "note_id": "680a10ca000000000f03329a",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频成瘾与抑郁的关系（清华研究）",
+            "mentioned_object": "清华大学、短视频成瘾、抑郁症状",
+            "attention_point": "短视频成瘾与抑郁症状的纵向关联",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "note_id": "685abc56000000001202c8fe",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑/愤怒",
+            "intensity": "强",
+            "target": "社交媒体制造焦虑"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "不再偏信小红书上关乎个人前途的建议",
+            "mentioned_object": "小红书、抖音、出国留学、找工作",
+            "attention_point": "社交媒体制造焦虑和信息两极分化",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "note_id": "69f616f0000000001a034d89",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "不看短视频的人的特质",
+            "mentioned_object": "短视频",
+            "attention_point": "不看短视频人群的特征和原因",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "不适/痛苦",
+            "intensity": "中",
+            "target": "短视频带来的感官过载"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "note_id": "69d8f18c000000001a02f33b",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何让刷短视频废掉的脑子长回来",
+            "mentioned_object": "短视频、手机",
+            "attention_point": "短视频对专注力和阅读能力的破坏",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "担忧/反思",
+            "intensity": "中",
+            "target": "自身状态变化"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "note_id": "66c2f24a000000001d0183e1",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "震惊/烦躁",
+            "intensity": "强",
+            "target": "社交媒体侵占时间"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "社交媒体侵占时间的具象化认识",
+            "mentioned_object": "小红书",
+            "attention_point": "通过记录标题量化时间被侵占的程度",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "note_id": "643fe6bf0000000012033fac",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒除短视频的方法",
+            "mentioned_object": "短视频",
+            "attention_point": "刷短视频的负面影响和戒除方法",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        },
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "失望/麻木",
+            "intensity": "中",
+            "target": "刷短视频带来的身心影响"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "note_id": "6936fada000000001e0174d2",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "恐惧/反思",
+            "intensity": "强",
+            "target": "碎片化信息侵蚀大脑"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频随机推送形式对大脑的影响",
+            "mentioned_object": "短视频、直播",
+            "attention_point": "从最初不适应随机推送到习以为常的变化",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "note_id": "66d4345a000000001d03afcd",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频成瘾让生活失控",
+            "mentioned_object": "短视频",
+            "attention_point": "短视频成瘾导致生活失控",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "note_id": "64c11d11000000001700ca78",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "恐惧/担忧",
+            "intensity": "强",
+            "target": "短视频对普通人的危害"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "短视频吞噬普通人改变命运的机会",
+            "mentioned_object": "短视频、煎饼摊小女孩",
+            "attention_point": "短视频对普通家庭孩子的危害和阶层固化",
+            "emotion_tendency": "负向",
+            "heat": "高"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "note_id": "69302977000000001f00774f",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "如何让大脑真正觉得刷手机不值",
+            "mentioned_object": "手机、大脑",
+            "attention_point": "利用损失厌恶机制减少无意义刷手机",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "note_id": "66c05def000000001e01dd89",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "沉迷色情片让大脑萎缩的辟谣",
+            "mentioned_object": "色情片、大脑、YouTube视频",
+            "attention_point": "辟谣网络谣言，澄清科学依据",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "note_id": "681f15d3000000002100358f",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "为什么刷短视频是认知超载而看书不是",
+            "mentioned_object": "短视频、看书",
+            "attention_point": "信息摄入方式差异的理性讨论",
+            "emotion_tendency": "中性",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "note_id": "684d5085000000002102fe0d",
+    "layer2": {
+      "signals": [
+        {
+          "signal_type": "情绪反馈",
+          "structured": {
+            "emotion_type": "焦虑/恐慌",
+            "intensity": "强",
+            "target": "自身认知能力下降"
+          }
+        },
+        {
+          "signal_type": "话题关注",
+          "structured": {
+            "topic": "戒掉短视频恢复专注力",
+            "mentioned_object": "短视频、文献、论文",
+            "attention_point": "短视频导致认知能力下降及恢复方法",
+            "emotion_tendency": "负向",
+            "heat": "中"
+          }
+        }
+      ]
+    }
+  }
+]
