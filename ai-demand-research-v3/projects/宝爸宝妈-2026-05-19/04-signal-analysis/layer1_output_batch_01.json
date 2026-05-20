@@ -1,0 +1,152 @@
+[
+  {
+    "note_id": "68602d19000000000b02ce4d",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "围绕打孩子育儿话题展开深度讨论，提出理性分析框架，引发社区热议",
+    "confidence": "高"
+  },
+  {
+    "note_id": "6778f90f00000000130188b1",
+    "signal_types": ["使用反馈信号", "关注讨论信号"],
+    "signal_reason": "育儿嫂吐槽雇主，反映家政服务供需双方的矛盾与体验痛点，引发广泛讨论",
+    "confidence": "高"
+  },
+  {
+    "note_id": "66a8d5d3000000002701f0a9",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "讨论攀比式育儿现象，倡导理性教育理念，属于育儿观点分享",
+    "confidence": "高"
+  },
+  {
+    "note_id": "693a3106000000001e020f70",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "分享育儿开支明细，讨论养娃成本话题，引发对生育成本的思考",
+    "confidence": "高"
+  },
+  {
+    "note_id": "683bb2f5000000002301c1bf",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "讨论父亲参与育儿的社会议题，倡导爸爸带娃观念",
+    "confidence": "高"
+  },
+  {
+    "note_id": "69247e2e000000001d03a17f",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "系统阐述凝视式育儿概念，结合研究分析过度控制对孩子的影响",
+    "confidence": "高"
+  },
+  {
+    "note_id": "65ff96c6000000001203c535",
+    "signal_types": ["使用反馈信号", "关注讨论信号"],
+    "signal_reason": "分享个人成长经历，反映父母容错率对孩子心理的影响，引发共鸣讨论",
+    "confidence": "高"
+  },
+  {
+    "note_id": "69f977480000000035029127",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "讨论亲子称呼背后的权力关系，属于育儿观念的深度探讨",
+    "confidence": "高"
+  },
+  {
+    "note_id": "6986ccde000000000a029ab4",
+    "signal_types": ["需求信号", "使用反馈信号"],
+    "signal_reason": "曝光育儿嫂暴力行为，表达安全担忧和避雷需求，反映家政服务信任危机",
+    "confidence": "高"
+  },
+  {
+    "note_id": "685d0963000000001203e32d",
+    "signal_types": ["使用反馈信号"],
+    "signal_reason": "吐槽长辈育儿观念冲突，表达代际育儿分歧带来的困扰",
+    "confidence": "高"
+  },
+  {
+    "note_id": "684fdacd000000002001d9c8",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "分享男孩各阶段父亲角色建议，属于育儿知识观点输出",
+    "confidence": "高"
+  },
+  {
+    "note_id": "6868cf1d0000000013012b8e",
+    "signal_types": ["使用反馈信号", "关注讨论信号"],
+    "signal_reason": "全职爸爸倾诉带娃身心疲惫的真实体验，引发对父职压力的讨论",
+    "confidence": "高"
+  },
+  {
+    "note_id": "6937b071000000000d036140",
+    "signal_types": ["使用反馈信号", "关注讨论信号"],
+    "signal_reason": "表达教育无力感的个人感悟，引发大量家长共鸣讨论",
+    "confidence": "高"
+  },
+  {
+    "note_id": "68de38db0000000003037e27",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "呼吁终结打压式教育，属于育儿理念的倡导和讨论",
+    "confidence": "高"
+  },
+  {
+    "note_id": "69fc504900000000230151d6",
+    "signal_types": ["需求信号"],
+    "signal_reason": "求助育儿补贴被侵占的法律问题，明确表达解决诉求",
+    "confidence": "高"
+  },
+  {
+    "note_id": "695be531000000001a035371",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "分享生育决策思考框架，引导讨论是否生娃的话题",
+    "confidence": "高"
+  },
+  {
+    "note_id": "674daec6000000000702ba90",
+    "signal_types": ["使用反馈信号"],
+    "signal_reason": "表达对孩子学业表现的无奈和情绪宣泄，短但有明确情感反馈",
+    "confidence": "中"
+  },
+  {
+    "note_id": "691dacc1000000001f0047ad",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "讨论鸡娃现象，转载网友观点引发对过度教育的批判",
+    "confidence": "高"
+  },
+  {
+    "note_id": "68cb653d000000000e00fa48",
+    "signal_types": ["使用反馈信号"],
+    "signal_reason": "分享三胎育儿感悟，表达对孩子性格的观察和当父母的满足感",
+    "confidence": "高"
+  },
+  {
+    "note_id": "68c13f3d000000001d02e51a",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "纠正传统育儿误区，分享权威育儿知识，引导关注",
+    "confidence": "高"
+  },
+  {
+    "note_id": "69f0a0c5000000001a02d8b5",
+    "signal_types": ["关注讨论信号", "使用反馈信号"],
+    "signal_reason": "展示带娃日程引发对育儿负担的讨论，反映带娃精力消耗",
+    "confidence": "高"
+  },
+  {
+    "note_id": "67b8ae71000000002902c210",
+    "signal_types": ["使用反馈信号", "关注讨论信号"],
+    "signal_reason": "分享二胎育儿中老大心理变化的困扰，表达愧疚和努力",
+    "confidence": "高"
+  },
+  {
+    "note_id": "67c519e1000000000e005d29",
+    "signal_types": ["使用反馈信号"],
+    "signal_reason": "吐槽育儿嫂缺乏边界感的行为，表达不满和困扰",
+    "confidence": "高"
+  },
+  {
+    "note_id": "68987b7f0000000023031dd9",
+    "signal_types": ["关注讨论信号"],
+    "signal_reason": "分享宠爱与溺爱的育儿认知，提供教育理念观点",
+    "confidence": "高"
+  },
+  {
+    "note_id": "684af466000000002301d260",
+    "signal_types": ["使用反馈信号", "需求信号"],
+    "signal_reason": "详细吐槽找育儿嫂的多次踩坑经历，反映家政服务信任缺失和避雷需求",
+    "confidence": "高"
+  }
+]

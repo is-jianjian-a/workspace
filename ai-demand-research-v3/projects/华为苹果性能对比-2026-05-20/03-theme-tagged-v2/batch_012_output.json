@@ -1,0 +1,227 @@
+[
+  {
+    "note_id": "69d63643000000001b000681",
+    "title": "华为和苹果都用过的宝子们？你觉得鸿蒙6的流畅度达到iOS水平了吗？",
+    "theme": "流畅丝滑",
+    "quote": "你觉得鸿蒙6的流畅度达到iOS水平了吗？",
+    "brand_model": "华为/苹果",
+    "sentiment": "中性",
+    "reason": "用户在询问鸿蒙6流畅度是否达到iOS水平"
+  },
+  {
+    "note_id": "69e5feda000000002200326f",
+    "title": "全网手机系统排行榜大曝光！谁更流畅？",
+    "theme": "流畅丝滑",
+    "quote": "鸿蒙 4.2 紧随其后拿了第二，鸿蒙 6、ColorOS 15 并列第三",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "排行榜显示鸿蒙系统排名靠前"
+  },
+  {
+    "note_id": "69e5feda000000002200326f",
+    "title": "全网手机系统排行榜大曝光！谁更流畅？",
+    "theme": "流畅丝滑",
+    "quote": "iOS 16、iOS 18 直接排到了末尾，分数还不到 5 分",
+    "brand_model": "苹果",
+    "sentiment": "负面",
+    "reason": "排行榜显示iOS排名末尾"
+  },
+  {
+    "note_id": "69e70452000000002003a78b",
+    "title": "据说鸿蒙6.1强的可怕，比ios更流畅，我这就试试。",
+    "theme": "流畅丝滑",
+    "quote": "据说鸿蒙6.1强的可怕，比ios更流畅",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙6.1比iOS更流畅"
+  },
+  {
+    "note_id": "69ec072d0000000035025be7",
+    "title": "华为的鸿蒙系统比苹果还流畅了？",
+    "theme": "流畅丝滑",
+    "quote": "华为的鸿蒙系统比苹果还流畅了？",
+    "brand_model": "华为/苹果",
+    "sentiment": "中性",
+    "reason": "用户在询问鸿蒙是否比苹果流畅"
+  },
+  {
+    "note_id": "69f309a7000000002300519f",
+    "title": "安卓为什么过几年就很卡？",
+    "theme": "卡顿问题",
+    "quote": "为什么安卓手机配置更高，但三四年后流畅度就是打不过同期的iPhone？",
+    "brand_model": "不明确",
+    "sentiment": "负面",
+    "reason": "用户表达安卓三四年后流畅度打不过iPhone"
+  },
+  {
+    "note_id": "69f5d172000000001a02dbb3",
+    "title": "事实证明，芯片性能无法决定一切！",
+    "theme": "流畅丝滑",
+    "quote": "目前新麒麟芯片虽然制程上不占优势，但是流畅度上配合自研纯血鸿蒙系统足以跟 iOS 和安卓掰手腕了，甚至丝毫不落下风",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达华为新麒麟+鸿蒙流畅度足以跟iOS掰手腕"
+  },
+  {
+    "note_id": "69fafb1500000000350328de",
+    "title": "换机流水账之华为mate x3",
+    "theme": "稳定性",
+    "quote": "接了一个父亲的微信电话，烫到手机不能贴耳朵。7月份，作为导航去了趟北京，在车上是边充电边导航，中途由于过热手机直接卡死",
+    "brand_model": "华为MateX3",
+    "sentiment": "负面",
+    "reason": "用户表达华为MateX3过热导致卡死"
+  },
+  {
+    "note_id": "69fafb1500000000350328de",
+    "title": "换机流水账之华为mate x3",
+    "theme": "卡顿问题",
+    "quote": "淘宝和京东，体验特别差，就是卡、慢",
+    "brand_model": "华为MateX3",
+    "sentiment": "负面",
+    "reason": "用户表达华为MateX3淘宝京东卡顿慢"
+  },
+  {
+    "note_id": "69fafb1500000000350328de",
+    "title": "换机流水账之华为mate x3",
+    "theme": "稳定性",
+    "quote": "发热严重、掉电很快",
+    "brand_model": "华为MateX3",
+    "sentiment": "负面",
+    "reason": "用户表达华为MateX3发热严重掉电快"
+  },
+  {
+    "note_id": "69fd54a8000000001a03412a",
+    "title": "从苹果换华为的使用感，还在观望的可以看看",
+    "theme": "流畅丝滑",
+    "quote": "屏幕质感和触感还有跟手成度都有细微差别，其他基本与ios没差什么",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达华为跟手程度与iOS没差"
+  },
+  {
+    "note_id": "69fee36200000000230177df",
+    "title": "苹果和华为选择哪一个能用好几年呢？",
+    "theme": "流畅丝滑",
+    "quote": "买苹果主要就是拍照好看，还非常的流畅",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果非常流畅"
+  },
+  {
+    "note_id": "69fee4f6000000001e00cac1",
+    "title": "排除所有情怀不谈，华为到底好不好用啊🤔",
+    "theme": "卡顿问题",
+    "quote": "用久了感觉也那样，打游戏发热严重",
+    "brand_model": "小米",
+    "sentiment": "负面",
+    "reason": "用户表达小米手机用久了打游戏发热严重"
+  },
+  {
+    "note_id": "69fee4f6000000001e00cac1",
+    "title": "排除所有情怀不谈，华为到底好不好用啊🤔",
+    "theme": "流畅丝滑",
+    "quote": "发热、流畅度如何？",
+    "brand_model": "华为",
+    "sentiment": "中性",
+    "reason": "用户在询问华为发热和流畅度"
+  },
+  {
+    "note_id": "6a0305de00000000060239be",
+    "title": "安卓VS鸿蒙VS苹果，手机系统大比拼！",
+    "theme": "流畅丝滑",
+    "quote": "iOS：极致流畅稳定，用 3 年不卡",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达iOS极致流畅稳定"
+  },
+  {
+    "note_id": "6a0305de00000000060239be",
+    "title": "安卓VS鸿蒙VS苹果，手机系统大比拼！",
+    "theme": "卡顿问题",
+    "quote": "安卓：碎片化严重，久用易卡",
+    "brand_model": "不明确",
+    "sentiment": "负面",
+    "reason": "用户表达安卓久用易卡"
+  },
+  {
+    "note_id": "6a0305de00000000060239be",
+    "title": "安卓VS鸿蒙VS苹果，手机系统大比拼！",
+    "theme": "流畅丝滑",
+    "quote": "鸿蒙：微内核更安全，长期流畅",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙长期流畅"
+  },
+  {
+    "note_id": "6a0845a70000000006023633",
+    "title": "完了，我的 mate80 逐渐 60 化",
+    "theme": "稳定性",
+    "quote": "mate80 就很烫，飞速掉电",
+    "brand_model": "华为Mate80",
+    "sentiment": "负面",
+    "reason": "用户表达华为Mate80发烫飞速掉电"
+  },
+  {
+    "note_id": "6a09c6b40000000038023754",
+    "title": "苹果16pro还是华为pura90pro",
+    "theme": "流畅丝滑",
+    "quote": "流畅度和耐用性好",
+    "brand_model": "华为/苹果",
+    "sentiment": "中性",
+    "reason": "用户表达需求是流畅度和耐用性"
+  },
+  {
+    "note_id": "6a09c6b40000000038023754",
+    "title": "苹果16pro还是华为pura90pro",
+    "theme": "卡顿问题",
+    "quote": "现在感觉到流畅度不够，很卡，尤其是视频和另一个软件同开的时候，手机都点不动了",
+    "brand_model": "小米",
+    "sentiment": "负面",
+    "reason": "用户表达小米手机现在很卡"
+  },
+  {
+    "note_id": "6a0b0594000000003502123d",
+    "title": "华为mate80pm动态图卡",
+    "theme": "卡顿问题",
+    "quote": "你们的实况图也这么卡吗",
+    "brand_model": "华为Mate80ProMax",
+    "sentiment": "负面",
+    "reason": "用户表达华为Mate80PM实况图卡"
+  },
+  {
+    "note_id": "6a0c20dd0000000035029da5",
+    "title": "聊聊产品",
+    "theme": "流畅丝滑",
+    "quote": "系统是否流畅好用",
+    "brand_model": "不明确",
+    "sentiment": "中性",
+    "reason": "用户在讨论系统是否流畅"
+  },
+  {
+    "note_id": "6a0c20dd0000000035029da5",
+    "title": "聊聊产品",
+    "theme": "稳定性",
+    "quote": "日常功耗稳定性",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户提到苹果日常功耗稳定性"
+  },
+  {
+    "note_id": "6a0c6850000000000602186e",
+    "title": "苹果对比华为真是输惨了",
+    "theme": "流畅丝滑",
+    "quote": "鸿蒙流畅度很惊喜，跟苹果不相上下",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙流畅度跟苹果不相上下"
+  },
+  {
+    "note_id": "64c0db63000000000103c073",
+    "title": "不同手机的保值率，iphone 12还能再战？",
+    "theme": "流畅丝滑",
+    "quote": "苹果属于怎么用都很流畅的",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果怎么用都很流畅"
+  }
+]

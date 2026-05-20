@@ -1,0 +1,235 @@
+[
+  {
+    "index": 60,
+    "note_id": "69bfcf0c000000002102fd53",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户分享把刷视频变成自我提升工具的经验方法，属于经验分享类内容，没有明确表达功能诉求或指向任何产品功能需求"
+    }
+  },
+  {
+    "index": 61,
+    "note_id": "68410d1d000000000c03a503",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F02-进度管理",
+          "name": "进度管理",
+          "connection_reason": "用户明确开发B站合集视频进度管理工具，解决'看网课备考、学技能时进度不清晰'的痛点，支持手动标注学过/未学过的集数、快速跳转和进度总览"
+        },
+        {
+          "code": "F27-合集管理",
+          "name": "合集管理",
+          "connection_reason": "用户工具的核心场景是'在B站看各种合集视频'，需要导入合集视频并统一管理学习进度"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 62,
+    "note_id": "697dbe21000000002200bcae",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户围绕长期刷短视频如何恢复大脑展开讨论，属于健康/认知类话题关注，没有表达任何产品功能诉求"
+    }
+  },
+  {
+    "index": 63,
+    "note_id": "6956123e000000002103e653",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F25-收藏管理",
+          "name": "收藏管理",
+          "connection_reason": "用户提到'收藏从未停止，遗忘从未改变'，讨论如何有效整理收藏的各类信息（短视频、长视频、文章等），核心痛点是收藏后无法有效管理和回顾"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 64,
+    "note_id": "690d6377000000000401299b",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户从福柯权力理论角度分析恋爱中观看擦边视频的问题，属于纯学术/情感话题讨论，不涉及任何产品功能需求"
+    }
+  },
+  {
+    "index": 65,
+    "note_id": "6583b86300000000380343ad",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户表达对短视频上瘾的负面态度和反思，属于情绪反馈和话题关注，没有提出具体的功能改进诉求"
+    }
+  },
+  {
+    "index": 66,
+    "note_id": "65b7b65700000000110046c3",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户设计了'设置计时器，是否倒计时提醒'的系统，明确提到'设个2min'来限制使用时间，属于使用时长统计和提醒需求"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户设计了'每次打开小红书会弹窗询问打开小红书时为了做什么'的系统，目的是在打开APP前强制暂停思考，帮助恢复理性，符合防沉迷工具的定义"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 67,
+    "note_id": "68ce136c000000001203e87b",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户表达刷短视频后心变得浮躁的负面情绪，属于情绪反馈和话题关注，虽然提到'原倍速看完电视剧'但只是回忆对比，不构成对倍速播放功能的需求"
+    }
+  },
+  {
+    "index": 68,
+    "note_id": "68a90ee9000000001b036d65",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户围绕电子鸦片对青少年的危害展开讨论，属于教育/健康类话题关注，没有表达任何产品功能诉求"
+    }
+  },
+  {
+    "index": 69,
+    "note_id": "69d1f31a000000001a03170c",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F25-收藏管理",
+          "name": "收藏管理",
+          "connection_reason": "用户明确提到'清理了收藏两万个视频'，核心痛点是收藏视频后从不执行、学习产生惰性，需要更好的收藏管理和回顾机制"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 70,
+    "note_id": "6950d8bd000000001d039214",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户围绕短视频带来的危害展开讨论，属于话题关注和情绪反馈，没有表达具体的功能诉求"
+    }
+  },
+  {
+    "index": 71,
+    "note_id": "6595094e000000001d0274ad",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户分享逃离短视频刷不停的心理技巧，属于经验分享类内容，没有表达对产品功能的需求"
+    }
+  },
+  {
+    "index": 72,
+    "note_id": "65f6e572000000000d00dc37",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F07-精准推荐",
+          "name": "精准推荐",
+          "connection_reason": "用户明确提到'大数据的精准投喂'导致整天刷手机停不下来，隐含对更合理、不过度精准的推荐机制的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 73,
+    "note_id": "6748161e0000000002019b5f",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F19-内容去重",
+          "name": "内容去重",
+          "connection_reason": "用户强烈抱怨'一旦你在xhs点开一个命题，就会有无数相同的东西推给你''那些up说着80%相似的话'，明确表达对同质化重复内容的厌恶"
+        },
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户抱怨'养活了一群切片up主和自已瞎延伸博主'，希望过滤掉低质量、蹭热点的同质化内容"
+        },
+        {
+          "code": "F07-精准推荐",
+          "name": "精准推荐",
+          "connection_reason": "用户不满推荐系统反复推送相同命题的同质化内容，隐含对避免同质化、更精准推荐的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 74,
+    "note_id": "68fca5ea0000000005038037",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户围绕每天短视频超过3小时导致脑腐化展开讨论，属于健康类话题关注，没有表达产品功能诉求"
+    }
+  },
+  {
+    "index": 75,
+    "note_id": "67f636350000000001c013e27",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F09-拉黑功能",
+          "name": "拉黑功能",
+          "connection_reason": "用户明确提到'已经把这个up拉入黑名单了，还是会刷到她的视频'，直接指向B站拉黑功能失效的问题"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 76,
+    "note_id": "69b021e8000000002603c4e3",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户围绕短视频对孩子大脑的危害展开教育类话题讨论，属于科普/教育内容，没有表达功能诉求"
+    }
+  },
+  {
+    "index": 77,
+    "note_id": "66fcdfec000000002a0356a2",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户围绕短视频对年轻人的毒害展开讨论，属于话题关注和情绪反馈，没有表达具体的功能诉求"
+    }
+  },
+  {
+    "index": 78,
+    "note_id": "67473bdd000000000202e048",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F09-拉黑功能",
+          "name": "拉黑功能",
+          "connection_reason": "用户表达'每次刷到这个博主的视频我都很害怕，而且还有一种生理的不适'，明确需要屏蔽/拉黑该博主的功能来避免再次刷到"
+        },
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户对特定博主的内容产生强烈不适，需要按博主/内容类型过滤不想看到的内容"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 79,
+    "note_id": "69e876a5000000002102d7b0",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户讨论抖音评论区跟风现象，属于平台生态话题关注，没有表达产品功能诉求"
+    }
+  }
+]

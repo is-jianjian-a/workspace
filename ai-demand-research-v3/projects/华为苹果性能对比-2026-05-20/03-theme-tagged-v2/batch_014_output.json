@@ -1,0 +1,254 @@
+[
+  {
+    "note_id": "67ce7dd5000000002a00c0ca",
+    "title": "双击持有变为单机",
+    "theme": "稳定性",
+    "quote": "苹果剪辑视频的速度也很慢，效率不高，需要我等很久，续航速度也不行，时间一久容易发热",
+    "brand_model": "苹果",
+    "sentiment": "负面",
+    "reason": "用户表达苹果剪辑视频慢、续航不行、容易发热"
+  },
+  {
+    "note_id": "67dd5f2d000000000d01500a",
+    "title": "不同品牌手机寿命大揭秘，谁才是耐用之王",
+    "theme": "流畅丝滑",
+    "quote": "苹果手机的寿命普遍3年起步，保养得好甚至能用10年 。只要内存足够，就无需急着换新",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果手机寿命长、耐用"
+  },
+  {
+    "note_id": "67dd5f2d000000000d01500a",
+    "title": "不同品牌手机寿命大揭秘，谁才是耐用之王",
+    "theme": "流畅丝滑",
+    "quote": "华为手机正常使用3 - 5年没问题",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达华为手机正常使用3-5年没问题"
+  },
+  {
+    "note_id": "67dd5f2d000000000d01500a",
+    "title": "不同品牌手机寿命大揭秘，谁才是耐用之王",
+    "theme": "卡顿问题",
+    "quote": "OPPO手机使用寿命约2年，由于系统优化方面存在短板，使用时间长了容易卡顿",
+    "brand_model": "OPPO",
+    "sentiment": "负面",
+    "reason": "用户表达OPPO使用时间长了容易卡顿"
+  },
+  {
+    "note_id": "681d3d24000000000c03ae53",
+    "title": "从 iPhone 16 Pro 换到华为 Mate 70 Pro+的真实体验",
+    "theme": "流畅丝滑",
+    "quote": "Mate 70 Pro+搭载自研麒麟 9020 芯片，日常使用流畅得很，视频、图片编辑，还有 WPS，都能轻松搞定",
+    "brand_model": "华为Mate70Pro+",
+    "sentiment": "正面",
+    "reason": "用户表达华为Mate70Pro+日常使用流畅"
+  },
+  {
+    "note_id": "681d3d24000000000c03ae53",
+    "title": "从 iPhone 16 Pro 换到华为 Mate 70 Pro+的真实体验",
+    "theme": "卡顿问题",
+    "quote": "不过在多人游戏战场中，Mate 70 Pro+偶尔会有点卡顿",
+    "brand_model": "华为Mate70Pro+",
+    "sentiment": "负面",
+    "reason": "用户表达华为Mate70Pro+多人游戏偶尔卡顿"
+  },
+  {
+    "note_id": "6821adf1000000002300c6bd",
+    "title": "iPhone和华为选哪个？🤔",
+    "theme": "流畅丝滑",
+    "quote": "Mate70 Pro搭载自研麒麟9020芯片，日常使用流畅",
+    "brand_model": "华为Mate70Pro",
+    "sentiment": "正面",
+    "reason": "用户表达华为Mate70Pro日常使用流畅"
+  },
+  {
+    "note_id": "68235ccc00000000220296d9",
+    "title": "安卓转苹果的人太能忍了",
+    "theme": "稳定性",
+    "quote": "发烫如热水袋",
+    "brand_model": "苹果",
+    "sentiment": "负面",
+    "reason": "用户表达苹果发烫严重"
+  },
+  {
+    "note_id": "68235ccc00000000220296d9",
+    "title": "安卓转苹果的人太能忍了",
+    "theme": "卡顿问题",
+    "quote": "拍照对不上焦，夜景拍照延时",
+    "brand_model": "苹果",
+    "sentiment": "负面",
+    "reason": "用户表达苹果拍照对不上焦、夜景延时"
+  },
+  {
+    "note_id": "68529935000000002400e957",
+    "title": "摸着良心说,华为和苹果你觉得哪个更好用？",
+    "theme": "流畅丝滑",
+    "quote": "系统流畅性： 旗舰机的话, 安卓也好鸿蒙也好, 也不会卡, 至少我的用了两三年, 目前不卡",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达旗舰机两三年不卡"
+  },
+  {
+    "note_id": "68529935000000002400e957",
+    "title": "摸着良心说,华为和苹果你觉得哪个更好用？",
+    "theme": "流畅丝滑",
+    "quote": "苹果胜在系统吧, 能坚持好多年用起来依旧流畅, 很少出现死机,卡屏现象",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果系统多年依旧流畅"
+  },
+  {
+    "note_id": "6864efb9000000001c03470a",
+    "title": "你的双持是什么？",
+    "theme": "流畅丝滑",
+    "quote": "华为Mate70 RS绝对是办公首选！麒麟9020芯片搭配鸿蒙4.3系统，多任务处理轻松无压力。经常需要开视频，一边处理文档，它都能流畅运行，毫无卡顿",
+    "brand_model": "华为Mate70RS",
+    "sentiment": "正面",
+    "reason": "用户表达华为Mate70RS流畅运行、毫无卡顿"
+  },
+  {
+    "note_id": "6864efb9000000001c03470a",
+    "title": "你的双持是什么？",
+    "theme": "流畅丝滑",
+    "quote": "iPhone 16 Pro的A18 Pro芯片性能也很强劲",
+    "brand_model": "iPhone16Pro",
+    "sentiment": "正面",
+    "reason": "用户表达iPhone16Pro芯片性能强劲"
+  },
+  {
+    "note_id": "6864efb9000000001c03470a",
+    "title": "你的双持是什么？",
+    "theme": "流畅丝滑",
+    "quote": "玩游戏我一般会用iPhone 16 Pro，A18 Pro芯片的强大性能，能让游戏始终保持高帧率运行，画面流畅丝滑",
+    "brand_model": "iPhone16Pro",
+    "sentiment": "正面",
+    "reason": "用户表达iPhone16Pro游戏画面流畅丝滑"
+  },
+  {
+    "note_id": "6864efb9000000001c03470a",
+    "title": "你的双持是什么？",
+    "theme": "稳定性",
+    "quote": "而且苹果的信号大家都懂的，在一些信号不好的地方，真的很影响效率",
+    "brand_model": "iPhone16Pro",
+    "sentiment": "负面",
+    "reason": "用户表达苹果信号不好影响效率"
+  },
+  {
+    "note_id": "688c8d570000000025012b08",
+    "title": "四大数码全家桶怎么选？看完不纠结💡",
+    "theme": "流畅丝滑",
+    "quote": "iOS生态闭环太丝滑！iPhone+Mac+AirPods协同无压力",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达iOS生态闭环太丝滑"
+  },
+  {
+    "note_id": "68c62a39000000001c0113bc",
+    "title": "iPhone17和mate80Pro应该怎么选？",
+    "theme": "稳定性",
+    "quote": "iPhone 17适合省心流畅，iOS稳定性强",
+    "brand_model": "iPhone17",
+    "sentiment": "正面",
+    "reason": "用户表达iOS稳定性强"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "title": "iphone17 mate70pro+",
+    "theme": "卡顿问题",
+    "quote": "Ios26还不稳定，把苹果17的配置浪费了，硬生生把17变成16,使用两天后明显能感觉掉帧和卡顿了杀后台挺厉害的",
+    "brand_model": "iPhone17",
+    "sentiment": "负面",
+    "reason": "用户表达iOS26不稳定、掉帧卡顿、杀后台"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "title": "iphone17 mate70pro+",
+    "theme": "流畅丝滑",
+    "quote": "系统流畅性，华为苹果差不多",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达华为苹果系统流畅性差不多"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "title": "iphone17 mate70pro+",
+    "theme": "稳定性",
+    "quote": "华为毕竟cpu不行，最少落后苹果三年，时不时发热",
+    "brand_model": "华为Mate70Pro+",
+    "sentiment": "负面",
+    "reason": "用户表达华为Mate70Pro+时不时发热"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "title": "iphone17 mate70pro+",
+    "theme": "稳定性",
+    "quote": "这几天ios26感觉不如鸿蒙next,时不时卡顿卡死，鸿蒙next只是软件功能不完善，从来没有出现卡死的",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙next从未卡死，iOS26时不时卡顿卡死"
+  },
+  {
+    "note_id": "68dc7914000000000400700a",
+    "title": "华子换回苹果",
+    "theme": "稳定性",
+    "quote": "信号📶真的烂到爆炸",
+    "brand_model": "华为",
+    "sentiment": "负面",
+    "reason": "用户表达华为信号烂"
+  },
+  {
+    "note_id": "68dc7914000000000400700a",
+    "title": "华子换回苹果",
+    "theme": "稳定性",
+    "quote": "华为充电🔋速度是绝了但是掉电也绝了",
+    "brand_model": "华为",
+    "sentiment": "负面",
+    "reason": "用户表达华为掉电快"
+  },
+  {
+    "note_id": "68dc7914000000000400700a",
+    "title": "华子换回苹果",
+    "theme": "流畅丝滑",
+    "quote": "手机流畅度，这次17pm真的从看不顺眼到非常喜爱仅仅深度使用一天，可能是一年没用苹果，真的感觉差别很大啦，系统更流畅啦",
+    "brand_model": "iPhone17ProMax",
+    "sentiment": "正面",
+    "reason": "用户表达iPhone17PM系统更流畅"
+  },
+  {
+    "note_id": "6913685b0000000005038c6b",
+    "title": "体验一个半月的华为X6最终还是又买了🍎",
+    "theme": "稳定性",
+    "quote": "华为很好 不卡顿 不发烫 信号好 功能多 快充方便",
+    "brand_model": "华为X6",
+    "sentiment": "正面",
+    "reason": "用户表达华为X6不卡顿不发烫"
+  },
+  {
+    "note_id": "69338f09000000000d03bbfd",
+    "title": "纯血鸿蒙好像也没有那么难用",
+    "theme": "流畅丝滑",
+    "quote": "整体下来体验良好。甚至某些功能比苹果更好用，比如拍照比如信号比如无广告",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达纯血鸿蒙体验良好"
+  },
+  {
+    "note_id": "693a74f6000000001e039925",
+    "title": "苹果手机比华为耐用不接受反驳！",
+    "theme": "流畅丝滑",
+    "quote": "苹果比华为耐用！用了这么多年手机，真心觉得苹果的 \"抗造度\" 和 \"长期流畅度\" 更能打",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果长期流畅度更能打"
+  },
+  {
+    "note_id": "69721f12000000001a025ea7",
+    "title": "又换回了mate",
+    "theme": "流畅丝滑",
+    "quote": "用了两天丝滑流畅",
+    "brand_model": "华为Mate80",
+    "sentiment": "正面",
+    "reason": "用户表达华为Mate80丝滑流畅"
+  }
+]

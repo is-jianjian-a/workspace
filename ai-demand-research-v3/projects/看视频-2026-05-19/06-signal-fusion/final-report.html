@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>看视频场景 - 用户信号融合分析报告</title>
+    <script src="report_data.js"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .header h1 { font-size: 24px; margin-bottom: 8px; }
+        .header .subtitle { font-size: 14px; opacity: 0.9; }
+        .global-filter {
+            background: white;
+            padding: 15px 30px;
+            border-bottom: 1px solid #e0e0e0;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 80px;
+            z-index: 90;
+        }
+        .global-filter label { font-size: 13px; color: #666; font-weight: 600; }
+        .global-filter select, .global-filter input {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 13px;
+            background: white;
+        }
+        .global-filter button {
+            padding: 8px 16px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 13px;
+        }
+        .global-filter button.secondary {
+            background: #f5f5f5;
+            color: #666;
+            border: 1px solid #ddd;
+        }
+        .stats-section {
+            padding: 20px 30px;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+        .stat-box {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .stat-box .number {
+            font-size: 28px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .stat-box .label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 4px;
+        }
+        .tab-nav {
+            display: flex;
+            gap: 0;
+            background: white;
+            border-bottom: 1px solid #e0e0e0;
+            padding: 0 30px;
+        }
+        .tab-btn {
+            padding: 15px 25px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            cursor: pointer;
+            font-size: 14px;
+            color: #666;
+            font-weight: 600;
+            transition: all 0.2s;
+        }
+        .tab-btn:hover { color: #667eea; }
+        .tab-btn.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+        .content {
+            padding: 20px 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+        .section-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .section-title .count {
+            background: #667eea;
+            color: white;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .card-meta {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .badge {
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+        }
+        .badge.keyword { background: #667eea; color: white; }
+        .badge.demand { background: #e3f2fd; color: #1565c0; }
+        .badge.topic { background: #e8f5e9; color: #2e7d32; }
+        .badge.emotion { background: #fff3e0; color: #e65100; }
+        .badge.fd {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-size: 11px;
+        }
+        .card-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .card-text {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .card-fields {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 12px;
+            font-size: 12px;
+        }
+        .field-row {
+            display: flex;
+            margin-bottom: 4px;
+        }
+        .field-row:last-child { margin-bottom: 0; }
+        .field-name {
+            color: #888;
+            min-width: 80px;
+            flex-shrink: 0;
+        }
+        .field-value {
+            color: #333;
+            flex: 1;
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #f0f0f0;
+            font-size: 12px;
+            color: #888;
+        }
+        .fd-category {
+            margin-bottom: 20px;
+        }
+        .fd-category-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #667eea;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+        .fd-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 10px;
+        }
+        .fd-item {
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .fd-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        .fd-code {
+            font-weight: 600;
+            color: #667eea;
+            font-size: 13px;
+        }
+        .fd-count {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+        .fd-name {
+            font-size: 13px;
+            color: #333;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        .fd-desc {
+            font-size: 11px;
+            color: #888;
+        }
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+        }
+        .data-table th {
+            background: #f8f9fa;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+            color: #666;
+            border-bottom: 2px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+        }
+        .data-table td {
+            padding: 12px;
+            border-bottom: 1px solid #f0f0f0;
+            vertical-align: top;
+        }
+        .data-table tr:hover { background: #f8f9fa; }
+        .empty-state {
+            text-align: center;
+            padding: 60px;
+            color: #999;
+        }
+        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #c1c1c1; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #a8a8a8; }
+    
+        .sort-btn {
+            padding: 4px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+            color: #666;
+        }
+        .sort-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+        .sort-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📺 看视频场景 - 用户信号融合分析报告</h1>
+        <div class="subtitle">基于92条UGC的三层信号分析 | 排除纯情绪反馈+无效内容 | 30个功能域映射 | 消费者视角</div>
+    </div>
+    
+    <div class="global-filter">
+        <label>🎯 全局筛选（搜索词）：</label>
+        <select id="global-keyword">
+            <option value="all">全部搜索词</option>
+        </select>
+        <input type="text" id="global-search" placeholder="搜索标题或内容..." style="width: 250px;">
+        <button onclick="applyGlobalFilter()">应用筛选</button>
+        <button class="secondary" onclick="resetGlobalFilter()">重置</button>
+        <span id="filter-info" style="margin-left: auto; font-size: 13px; color: #666;"></span>
+    </div>
+    
+    <div class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-box"><div class="number" id="stat-valid">0</div><div class="label">有效UGC</div></div>
+            <div class="stat-box"><div class="number" id="stat-demands">0</div><div class="label">需求信号</div></div>
+            <div class="stat-box"><div class="number" id="stat-topics">0</div><div class="label">话题关注</div></div>
+            <div class="stat-box"><div class="number" id="stat-emotions">0</div><div class="label">情绪反馈</div></div>
+            <div class="stat-box"><div class="number" id="stat-fd">0</div><div class="label">功能域</div></div>
+            <div class="stat-box"><div class="number" id="stat-mapped">0</div><div class="label">已映射</div></div>
+        </div>
+    </div>
+    
+    <div class="tab-nav">
+        <button class="tab-btn active" onclick="switchTab('overview')">📊 总览</button>
+        <button class="tab-btn" onclick="switchTab('demands')">📋 需求列表</button>
+        <button class="tab-btn" onclick="switchTab('topics')">💬 话题列表</button>
+        <button class="tab-btn" onclick="switchTab('architecture')">🏗️ 功能域架构</button>
+        <button class="tab-btn" onclick="switchTab('details')">🔍 逐条详情</button>
+    </div>
+    
+    <div class="content">
+        <div id="tab-overview" class="tab-panel active">
+            <div class="section-title">📈 数据概览</div>
+            <div class="card">
+                <div class="card-title">信号类型分布</div>
+                <div id="signal-distribution"></div>
+            </div>
+            <div class="card">
+                <div class="card-title">功能域热度Top 10</div>
+                <div id="fd-top10"></div>
+            </div>
+            <div class="card">
+                <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
+                    <span>功能诉求聚合统计</span>
+                    <div style="display:flex;gap:8px;">
+                        <button onclick="sortDemands('count')" class="sort-btn" id="demand-sort-count">按数量排序</button>
+                        <button onclick="sortDemands('likes')" class="sort-btn" id="demand-sort-likes">按互动量排序</button>
+                    </div>
+                </div>
+                <div id="demand-aggregation"></div>
+            </div>
+            <div class="card">
+                <div class="card-title" style="display:flex;justify-content:space-between;align-items:center;">
+                    <span>话题关注聚合统计</span>
+                    <div style="display:flex;gap:8px;">
+                        <button onclick="sortTopics('count')" class="sort-btn" id="topic-sort-count">按数量排序</button>
+                        <button onclick="sortTopics('likes')" class="sort-btn" id="topic-sort-likes">按互动量排序</button>
+                    </div>
+                </div>
+                <div id="topic-aggregation"></div>
+            </div>
+            <div class="card">
+                <div class="card-title">搜索词分布</div>
+                <div id="keyword-distribution"></div>
+            </div>
+        </div>
+        
+        <div id="tab-demands" class="tab-panel">
+            <div class="section-title">📋 所有需求列表<span class="count" id="demands-count">0</span></div>
+            <div id="demands-list"></div>
+        </div>
+        
+        <div id="tab-topics" class="tab-panel">
+            <div class="section-title">💬 所有话题列表<span class="count" id="topics-count">0</span></div>
+            <div id="topics-list"></div>
+        </div>
+        
+        <div id="tab-architecture" class="tab-panel">
+            <div class="section-title">🏗️ 功能域架构</div>
+            <div id="fd-architecture"></div>
+        </div>
+        
+        <div id="tab-details" class="tab-panel">
+            <div class="section-title">🔍 逐条UGC详情</div>
+            <div id="details-list"></div>
+        </div>
+    </div>
+
+    <script>
+        let currentKeyword = 'all';
+        let currentSearch = '';
+        
+        function init() {
+            const data = REPORT_DATA;
+            const keywords = [...new Set(data.valid_items.map(u => u.source_keyword))];
+            const kwSelect = document.getElementById('global-keyword');
+            keywords.forEach(kw => {
+                const opt = document.createElement('option');
+                opt.value = kw;
+                opt.textContent = kw;
+                kwSelect.appendChild(opt);
+            });
+            updateStats();
+            renderOverview();
+            // 设置默认排序按钮状态
+            document.getElementById('demand-sort-count').classList.add('active');
+            document.getElementById('topic-sort-count').classList.add('active');
+            renderAggregation();
+            renderDemands();
+            renderTopics();
+            renderArchitecture();
+            renderDetails();
+        }
+        
+        function getFilteredItems() {
+            let items = REPORT_DATA.valid_items;
+            if (currentKeyword !== 'all') {
+                items = items.filter(u => u.source_keyword === currentKeyword);
+            }
+            if (currentSearch) {
+                const q = currentSearch.toLowerCase();
+                items = items.filter(u => 
+                    u.title.toLowerCase().includes(q) ||
+                    u.cleaned_text.toLowerCase().includes(q)
+                );
+            }
+            return items;
+        }
+        
+        function getFilteredDemands() {
+            const items = getFilteredItems();
+            const noteIds = new Set(items.map(u => u.note_id));
+            return REPORT_DATA.all_demands.filter(d => noteIds.has(d.note_id));
+        }
+        
+        function getFilteredTopics() {
+            const items = getFilteredItems();
+            const noteIds = new Set(items.map(u => u.note_id));
+            return REPORT_DATA.all_topics.filter(t => noteIds.has(t.note_id));
+        }
+        
+        function updateStats() {
+            const items = getFilteredItems();
+            const demands = getFilteredDemands();
+            const topics = getFilteredTopics();
+            document.getElementById('stat-valid').textContent = items.length;
+            document.getElementById('stat-demands').textContent = demands.length;
+            document.getElementById('stat-topics').textContent = topics.length;
+            document.getElementById('stat-emotions').textContent = items.filter(u => 
+                u.layer2.signals.some(s => s.signal_type === '情绪反馈')
+            ).length;
+            document.getElementById('stat-fd').textContent = Object.keys(REPORT_DATA.func_domains).length;
+            document.getElementById('stat-mapped').textContent = items.filter(u => 
+                u.layer3.function_domains.length > 0
+            ).length;
+            document.getElementById('filter-info').textContent = 
+                `当前显示: ${items.length}条UGC / ${demands.length}个需求 / ${topics.length}个话题`;
+        }
+        
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+            event.target.classList.add('active');
+        }
+        
+        function getFDName(code) {
+            return REPORT_DATA.func_domains[code] || code;
+        }
+        
+        function renderFDTag(code) {
+            const name = getFDName(code);
+            return `<span class="badge fd" title="${name}">${code}</span>`;
+        }
+        
+        
+        
+        let currentDemandSort = 'count';
+        let currentTopicSort = 'count';
+        
+        function sortDemands(sortBy) {
+            currentDemandSort = sortBy;
+            document.querySelectorAll('#demand-sort-count, #demand-sort-likes').forEach(b => b.classList.remove('active'));
+            document.getElementById('demand-sort-' + (sortBy === 'count' ? 'count' : 'likes')).classList.add('active');
+            renderAggregation();
+        }
+        
+        function sortTopics(sortBy) {
+            currentTopicSort = sortBy;
+            document.querySelectorAll('#topic-sort-count, #topic-sort-likes').forEach(b => b.classList.remove('active'));
+            document.getElementById('topic-sort-' + (sortBy === 'count' ? 'count' : 'likes')).classList.add('active');
+            renderAggregation();
+        }
+        
+        function renderAggregation() {
+            // 功能诉求聚合
+            let demandAgg = [...REPORT_DATA.aggregation.demand_aggregation];
+            if (currentDemandSort === 'likes') {
+                demandAgg.sort((a, b) => b.total_likes - a.total_likes);
+            } else {
+                demandAgg.sort((a, b) => b.count - a.count || b.total_likes - a.total_likes);
+            }
+            let demandHtml = '<table class="data-table"><thead><tr><th>排名</th><th>需求类别</th><th>需求数量</th><th>总互动量</th><th>具体需求</th></tr></thead><tbody>';
+            
+            demandAgg.forEach((ds, idx) => {
+                const isTop3 = idx < 3;
+                const bgStyle = isTop3 ? 'style="background:#fff8e1;"' : '';
+                const rankBadge = isTop3 ? `<span style="background:#ff6f00;color:white;padding:2px 8px;border-radius:10px;font-size:11px;">TOP${idx+1}</span>` : `${idx+1}`;
+                
+                demandHtml += `<tr ${bgStyle}>
+                    <td>${rankBadge}</td>
+                    <td><strong>${ds.category}</strong></td>
+                    <td>${ds.count}</td>
+                    <td>${ds.total_likes.toLocaleString()}</td>
+                    <td><ul style="margin:0;padding-left:16px;">${ds.demands.map(d => `<li>${escapeHtml(d)}</li>`).join('')}</ul></td>
+                </tr>`;
+            });
+            demandHtml += '</tbody></table>';
+            document.getElementById('demand-aggregation').innerHTML = demandHtml;
+            
+            // 话题聚合
+            let topicAgg = [...REPORT_DATA.aggregation.topic_aggregation];
+            if (currentTopicSort === 'likes') {
+                topicAgg.sort((a, b) => b.total_likes - a.total_likes);
+            } else {
+                topicAgg.sort((a, b) => b.count - a.count || b.total_likes - a.total_likes);
+            }
+            let topicHtml = '<table class="data-table"><thead><tr><th>排名</th><th>话题类别</th><th>话题数量</th><th>总互动量</th><th>情绪分布</th><th>代表性话题</th></tr></thead><tbody>';
+            
+            topicAgg.forEach((ts, idx) => {
+                const isTop3 = idx < 3;
+                const bgStyle = isTop3 ? 'style="background:#fff8e1;"' : '';
+                const rankBadge = isTop3 ? `<span style="background:#ff6f00;color:white;padding:2px 8px;border-radius:10px;font-size:11px;">TOP${idx+1}</span>` : `${idx+1}`;
+                
+                const emotionHtml = Object.entries(ts.emotion_distribution).map(([k, v]) => 
+                    `<span class="badge" style="background:#e3f2fd;color:#1565c0;">${k}:${v}</span>`
+                ).join(' ');
+                
+                topicHtml += `<tr ${bgStyle}>
+                    <td>${rankBadge}</td>
+                    <td><strong>${ts.category}</strong></td>
+                    <td>${ts.count}</td>
+                    <td>${ts.total_likes.toLocaleString()}</td>
+                    <td>${emotionHtml}</td>
+                    <td><ul style="margin:0;padding-left:16px;">${ts.topics.slice(0, 3).map(t => `<li>${escapeHtml(t)}</li>`).join('')}</ul></td>
+                </tr>`;
+            });
+            topicHtml += '</tbody></table>';
+            document.getElementById('topic-aggregation').innerHTML = topicHtml;
+        }
+
+        function renderOverview() {
+            const items = getFilteredItems();
+            
+            const signalCounts = {};
+            items.forEach(u => {
+                u.layer1.signal_types.forEach(st => {
+                    signalCounts[st] = (signalCounts[st] || 0) + 1;
+                });
+            });
+            
+            let signalHtml = '<div style="display:flex;gap:15px;flex-wrap:wrap;">';
+            Object.entries(signalCounts).forEach(([st, count]) => {
+                const colors = {'功能诉求': '#1565c0', '话题关注': '#2e7d32', '情绪反馈': '#e65100'};
+                signalHtml += `
+                    <div style="background:${colors[st] || '#666'};color:white;padding:10px 20px;border-radius:8px;">
+                        <div style="font-size:20px;font-weight:bold;">${count}</div>
+                        <div style="font-size:12px;">${st}</div>
+                    </div>`;
+            });
+            signalHtml += '</div>';
+            document.getElementById('signal-distribution').innerHTML = signalHtml;
+            
+            const fdCounts = {};
+            items.forEach(u => {
+                u.layer3.function_domains.forEach(fd => {
+                    fdCounts[fd.code] = (fdCounts[fd.code] || 0) + 1;
+                });
+            });
+            
+            let fdHtml = '<table class="data-table"><thead><tr><th>排名</th><th>功能域</th><th>映射次数</th><th>占比</th></tr></thead><tbody>';
+            Object.entries(fdCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 10)
+                .forEach(([code, count], idx) => {
+                    const fullName = getFDName(code);
+                    const pct = ((count / items.length) * 100).toFixed(1);
+                    fdHtml += `<tr>
+                        <td>${idx + 1}</td>
+                        <td><strong style="color:#667eea;">${code}</strong><br><span style="color:#888;font-size:11px;">${fullName}</span></td>
+                        <td>${count}</td>
+                        <td>${pct}%</td>
+                    </tr>`;
+                });
+            fdHtml += '</tbody></table>';
+            document.getElementById('fd-top10').innerHTML = fdHtml;
+            
+            const kwCounts = {};
+            items.forEach(u => {
+                kwCounts[u.source_keyword] = (kwCounts[u.source_keyword] || 0) + 1;
+            });
+            let kwHtml = '<div style="display:flex;gap:10px;flex-wrap:wrap;">';
+            Object.entries(kwCounts).forEach(([kw, count]) => {
+                kwHtml += `<span class="badge keyword">${kw}: ${count}条</span>`;
+            });
+            kwHtml += '</div>';
+            document.getElementById('keyword-distribution').innerHTML = kwHtml;
+        }
+        
+        function renderDemands() {
+            const demands = getFilteredDemands();
+            document.getElementById('demands-count').textContent = demands.length;
+            if (demands.length === 0) {
+                document.getElementById('demands-list').innerHTML = '<div class="empty-state">暂无需求数据</div>';
+                return;
+            }
+            let html = '';
+            demands.forEach((d, idx) => {
+                const fdTags = d.function_domains.map(code => renderFDTag(code)).join('');
+                html += `
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-meta">
+                                <span class="badge keyword">${d.source_keyword}</span>
+                                <span class="badge demand">功能诉求</span>
+                                ${fdTags}
+                            </div>
+                        </div>
+                        <div class="card-title">${escapeHtml(d.title)}</div>
+                        <div class="card-text">${escapeHtml(d.cleaned_text)}</div>
+                        <div class="card-fields">
+                            <div class="field-row"><span class="field-name">场景:</span><span class="field-value">${escapeHtml(d.scene)}</span></div>
+                            <div class="field-row"><span class="field-name">痛点:</span><span class="field-value">${escapeHtml(d.pain_point)}</span></div>
+                            <div class="field-row"><span class="field-name">需求:</span><span class="field-value" style="color:#1565c0;font-weight:600;">${escapeHtml(d.demand)}</span></div>
+                            <div class="field-row"><span class="field-name">情绪:</span><span class="field-value">${escapeHtml(d.emotion)}</span></div>
+                        </div>
+                        <div class="card-footer">
+                            <span>👍 ${d.liked_count || 0}</span>
+                            <span>#${idx + 1}</span>
+                        </div>
+                    </div>`;
+            });
+            document.getElementById('demands-list').innerHTML = html;
+        }
+        
+        function renderTopics() {
+            const topics = getFilteredTopics();
+            document.getElementById('topics-count').textContent = topics.length;
+            if (topics.length === 0) {
+                document.getElementById('topics-list').innerHTML = '<div class="empty-state">暂无话题数据</div>';
+                return;
+            }
+            let html = '';
+            topics.forEach((t, idx) => {
+                const fdTags = t.function_domains.map(code => renderFDTag(code)).join('');
+                html += `
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-meta">
+                                <span class="badge keyword">${t.source_keyword}</span>
+                                <span class="badge topic">话题关注</span>
+                                <span class="badge emotion">${t.heat}热度</span>
+                                ${fdTags}
+                            </div>
+                        </div>
+                        <div class="card-title">${escapeHtml(t.title)}</div>
+                        <div class="card-text">${escapeHtml(t.cleaned_text)}</div>
+                        <div class="card-fields">
+                            <div class="field-row"><span class="field-name">讨论主题:</span><span class="field-value" style="color:#2e7d32;font-weight:600;">${escapeHtml(t.topic)}</span></div>
+                            <div class="field-row"><span class="field-name">提及对象:</span><span class="field-value">${escapeHtml(t.mentioned_object)}</span></div>
+                            <div class="field-row"><span class="field-name">关注点:</span><span class="field-value">${escapeHtml(t.attention_point)}</span></div>
+                            <div class="field-row"><span class="field-name">情绪倾向:</span><span class="field-value">${escapeHtml(t.emotion_tendency)}</span></div>
+                        </div>
+                        <div class="card-footer">
+                            <span>👍 ${t.liked_count || 0}</span>
+                            <span>#${idx + 1}</span>
+                        </div>
+                    </div>`;
+            });
+            document.getElementById('topics-list').innerHTML = html;
+        }
+        
+        function renderArchitecture() {
+            const items = getFilteredItems();
+            const fdCounts = {};
+            items.forEach(u => {
+                u.layer3.function_domains.forEach(fd => {
+                    fdCounts[fd.code] = (fdCounts[fd.code] || 0) + 1;
+                });
+            });
+            
+            let html = '';
+            Object.entries(REPORT_DATA.fd_categories).forEach(([category, codes]) => {
+                html += `<div class="fd-category">`;
+                html += `<div class="fd-category-title">${category} (${codes.length}个功能域)</div>`;
+                html += `<div class="fd-grid">`;
+                
+                codes.forEach(code => {
+                    const count = fdCounts[code] || 0;
+                    const desc = getFDName(code);
+                    const opacity = count > 0 ? 1 : 0.4;
+                    
+                    html += `
+                        <div class="fd-item" style="opacity:${opacity}">
+                            <div class="fd-item-header">
+                                <span class="fd-code">${code}</span>
+                                <span class="fd-count">${count}条</span>
+                            </div>
+                            <div class="fd-name">${desc}</div>
+                        </div>`;
+                });
+                
+                html += `</div></div>`;
+            });
+            
+            document.getElementById('fd-architecture').innerHTML = html;
+        }
+        
+        function renderDetails() {
+            const items = getFilteredItems();
+            if (items.length === 0) {
+                document.getElementById('details-list').innerHTML = '<div class="empty-state">暂无数据</div>';
+                return;
+            }
+            
+            let html = '';
+            items.forEach((item, idx) => {
+                const signalTags = item.layer1.signal_types.map(st => 
+                    `<span class="badge ${st === '功能诉求' ? 'demand' : st === '话题关注' ? 'topic' : 'emotion'}">${st}</span>`
+                ).join('');
+                
+                const fdTags = item.layer3.function_domains.map(fd => 
+                    renderFDTag(fd.code)
+                ).join('');
+                
+                let layer2Html = '';
+                item.layer2.signals.forEach(signal => {
+                    const fields = Object.entries(signal.structured)
+                        .filter(([k]) => k !== 'is_invalid')
+                        .map(([k, v]) => {
+                            const labelMap = {
+                                scene: '场景', pain_point: '痛点', demand: '需求', emotion: '情绪',
+                                topic: '讨论主题', mentioned_object: '提及对象', attention_point: '关注点',
+                                emotion_tendency: '情绪倾向', heat: '热度',
+                                emotion_type: '情绪类型', intensity: '强度', target: '指向',
+                                reason: '原因'
+                            };
+                            return `<div class="field-row"><span class="field-name">${labelMap[k] || k}:</span><span class="field-value">${escapeHtml(String(v))}</span></div>`;
+                        }).join('');
+                    
+                    layer2Html += `
+                        <div style="margin-bottom:10px;padding-bottom:10px;border-bottom:1px dashed #e0e0e0;">
+                            <div style="font-weight:600;color:#667eea;margin-bottom:4px;">${signal.signal_type}</div>
+                            ${fields}
+                        </div>`;
+                });
+                
+                html += `
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-meta">
+                                <span class="badge keyword">${item.source_keyword}</span>
+                                ${signalTags}
+                            </div>
+                        </div>
+                        <div class="card-title">${escapeHtml(item.title)}</div>
+                        <div class="card-text">${escapeHtml(item.cleaned_text)}</div>
+                        
+                        <div style="background:#f8f9fa;border-radius:8px;padding:12px;margin-bottom:10px;">
+                            <div style="font-weight:600;color:#667eea;margin-bottom:8px;">第一层：信号识别</div>
+                            <div class="field-row"><span class="field-name">信号类型:</span><span class="field-value">${item.layer1.signal_types.join(', ')}</span></div>
+                            <div class="field-row"><span class="field-name">识别理由:</span><span class="field-value">${escapeHtml(item.layer1.signal_reason)}</span></div>
+                        </div>
+                        
+                        <div style="background:#f8f9fa;border-radius:8px;padding:12px;margin-bottom:10px;">
+                            <div style="font-weight:600;color:#667eea;margin-bottom:8px;">第二层：信号结构化</div>
+                            ${layer2Html}
+                        </div>
+                        
+                        <div style="background:#f8f9fa;border-radius:8px;padding:12px;">
+                            <div style="font-weight:600;color:#667eea;margin-bottom:8px;">第三层：功能域映射</div>
+                            <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+                                ${fdTags || '<span style="color:#999;">无功能域映射</span>'}
+                            </div>
+                            ${item.layer3.no_mapping_reason ? `<div style="color:#999;font-size:12px;">无映射原因: ${escapeHtml(item.layer3.no_mapping_reason)}</div>` : ''}
+                        </div>
+                        
+                        <div class="card-footer">
+                            <span>👍 ${item.liked_count || 0} ⭐ ${item.collected_count || 0} 💬 ${item.comment_count || 0}</span>
+                            <span>#${idx + 1}</span>
+                        </div>
+                    </div>`;
+            });
+            
+            document.getElementById('details-list').innerHTML = html;
+        }
+        
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+        
+        function applyGlobalFilter() {
+            currentKeyword = document.getElementById('global-keyword').value;
+            currentSearch = document.getElementById('global-search').value.trim();
+            updateStats();
+            renderOverview();
+            // 设置默认排序按钮状态
+            document.getElementById('demand-sort-count').classList.add('active');
+            document.getElementById('topic-sort-count').classList.add('active');
+            renderAggregation();
+            renderDemands();
+            renderTopics();
+            renderArchitecture();
+            renderDetails();
+        }
+        
+        function resetGlobalFilter() {
+            currentKeyword = 'all';
+            currentSearch = '';
+            document.getElementById('global-keyword').value = 'all';
+            document.getElementById('global-search').value = '';
+            updateStats();
+            renderOverview();
+            // 设置默认排序按钮状态
+            document.getElementById('demand-sort-count').classList.add('active');
+            document.getElementById('topic-sort-count').classList.add('active');
+            renderAggregation();
+            renderDemands();
+            renderTopics();
+            renderArchitecture();
+            renderDetails();
+        }
+        
+        init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+[
+  {
+    "note_id": "686de7f8000000000b02dfb4",
+    "title": "感觉华为比苹果好用，是错觉吗？",
+    "theme": "流畅丝滑",
+    "quote": "系统也流畅",
+    "brand_model": "华为Pura80 Pro+",
+    "sentiment": "正面",
+    "reason": "用户明确表达华为系统流畅"
+  },
+  {
+    "note_id": "686e8be000000000230066d9",
+    "title": "华为、苹果、小米手机长期主义选哪个？",
+    "theme": "卡顿问题",
+    "quote": "现在用的是华为mate30，用了五年变卡了想换手机",
+    "brand_model": "华为Mate30",
+    "sentiment": "负面",
+    "reason": "用户明确说用了五年变卡"
+  },
+  {
+    "note_id": "686e8be000000000230066d9",
+    "title": "华为、苹果、小米手机长期主义选哪个？",
+    "theme": "流畅丝滑",
+    "quote": "总体不错很丝滑",
+    "brand_model": "iPhone",
+    "sentiment": "正面",
+    "reason": "用户明确表达iPhone很丝滑"
+  },
+  {
+    "note_id": "68c79751000000001d02dd54",
+    "title": "十年果粉换华为，有什么区别？",
+    "theme": "流畅丝滑",
+    "quote": "流畅度：两部手机都非常流畅，完全感觉不到卡的地方",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户明确表达两部手机都非常流畅"
+  },
+  {
+    "note_id": "68c79751000000001d02dd54",
+    "title": "十年果粉换华为，有什么区别？",
+    "theme": "稳定性",
+    "quote": "华为在信号切换的时候比苹果顺畅很多，比如从家里出门，从WiFi环境切换到5G，苹果会卡一段时间，华为很丝滑",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达华为信号切换比苹果顺畅"
+  },
+  {
+    "note_id": "68c79751000000001d02dd54",
+    "title": "十年果粉换华为，有什么区别？",
+    "theme": "稳定性",
+    "quote": "华为看b站视频快进的时候声音会一卡一卡的，b站党崩溃",
+    "brand_model": "华为Mate60Pro",
+    "sentiment": "负面",
+    "reason": "用户表达华为看b站快进时声音卡顿"
+  },
+  {
+    "note_id": "68f0c0210000000007033c15",
+    "title": "四大系统流畅度对比，谁家这么丝滑？！",
+    "theme": "流畅丝滑",
+    "quote": "不止动画德芙般丝滑，系统各方面也做得很不错",
+    "brand_model": "OPPO",
+    "sentiment": "正面",
+    "reason": "用户表达ColorOS动画德芙般丝滑"
+  },
+  {
+    "note_id": "68f0c0210000000007033c15",
+    "title": "四大系统流畅度对比，谁家这么丝滑？！",
+    "theme": "卡顿问题",
+    "quote": "以前开着游戏团战又和朋友连麦，手机分分钟卡or发烫",
+    "brand_model": "不明确",
+    "sentiment": "负面",
+    "reason": "用户描述以前手机卡顿发烫"
+  },
+  {
+    "note_id": "68f61a3d0000000003021774",
+    "title": "系统流畅度横评，苹果华为小米OPPO谁更好？",
+    "theme": "流畅丝滑",
+    "quote": "四家确实都很流畅，跟手性感觉还是苹果华为OPPO要好一点点",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果华为OPPO跟手性好"
+  },
+  {
+    "note_id": "68f61a3d0000000003021774",
+    "title": "系统流畅度横评，苹果华为小米OPPO谁更好？",
+    "theme": "流畅丝滑",
+    "quote": "华为鸿蒙OS 5目前轻量化流畅性还是不错的",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达华为鸿蒙OS 5流畅性不错"
+  },
+  {
+    "note_id": "68f61a3d0000000003021774",
+    "title": "系统流畅度横评，苹果华为小米OPPO谁更好？",
+    "theme": "流畅丝滑",
+    "quote": "OPPO的ColorOS 16毫无疑问达到了安卓的流畅巅峰，动效做得确实丝滑",
+    "brand_model": "OPPO",
+    "sentiment": "正面",
+    "reason": "用户表达ColorOS 16流畅巅峰、动效丝滑"
+  },
+  {
+    "note_id": "6901e07f00000000030378cc",
+    "title": "2025年，上手mate60pro流畅度已经吊打了iOS",
+    "theme": "流畅丝滑",
+    "quote": "初上手感觉鸿蒙6很丝滑啊，发热和续航比4.2好太多了，感觉流畅度和稳定性已经超越了iOS",
+    "brand_model": "华为Mate60Pro",
+    "sentiment": "正面",
+    "reason": "用户明确表达鸿蒙6很丝滑，流畅度超越iOS"
+  },
+  {
+    "note_id": "6901e07f00000000030378cc",
+    "title": "2025年，上手mate60pro流畅度已经吊打了iOS",
+    "theme": "稳定性",
+    "quote": "感觉流畅度和稳定性已经超越了iOS",
+    "brand_model": "华为Mate60Pro",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙6稳定性超越iOS"
+  },
+  {
+    "note_id": "6904ae570000000005013541",
+    "title": "mate40p换17pm好不习惯",
+    "theme": "流畅丝滑",
+    "quote": "用了一会儿也没觉得17pm到底哪里好，哪里值得上万的价格",
+    "brand_model": "iPhone17ProMax",
+    "sentiment": "负面",
+    "reason": "用户表达iPhone17PM没有感觉出好"
+  },
+  {
+    "note_id": "69083d9d0000000007016b4a",
+    "title": "华为换苹果🍎一个半月体验！真的没话说",
+    "theme": "卡顿问题",
+    "quote": "苹果微信，会卡，聊天框里拍照会卡",
+    "brand_model": "iPhone17Pro",
+    "sentiment": "负面",
+    "reason": "用户明确表达苹果微信会卡"
+  },
+  {
+    "note_id": "69083d9d0000000007016b4a",
+    "title": "华为换苹果🍎一个半月体验！真的没话说",
+    "theme": "稳定性",
+    "quote": "wifi 切换移动数据的时候真卡。电梯里也好卡",
+    "brand_model": "iPhone17Pro",
+    "sentiment": "负面",
+    "reason": "用户表达苹果WiFi切换和电梯里信号卡"
+  },
+  {
+    "note_id": "694cecfe000000001e021e36",
+    "title": "华为苹果双持两年，手机现状对比....",
+    "theme": "流畅丝滑",
+    "quote": "日常用不管是UI动画丝滑程度还是跟手度，都跟刚买时候无异",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达两部手机UI动画丝滑、跟手度如初"
+  },
+  {
+    "note_id": "694cecfe000000001e021e36",
+    "title": "华为苹果双持两年，手机现状对比....",
+    "theme": "稳定性",
+    "quote": "两年来也都那遇到过卡死机、闪退等莫名其妙的问题",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达两年没遇到卡死机、闪退问题"
+  },
+  {
+    "note_id": "694cecfe000000001e021e36",
+    "title": "华为苹果双持两年，手机现状对比....",
+    "theme": "卡顿问题",
+    "quote": "用流量玩王者之类，常常460",
+    "brand_model": "iPhone15Pro",
+    "sentiment": "负面",
+    "reason": "用户表达iPhone15Pro玩游戏网络延迟460"
+  },
+  {
+    "note_id": "694cecfe000000001e021e36",
+    "title": "华为苹果双持两年，手机现状对比....",
+    "theme": "卡顿问题",
+    "quote": "夏天时候玩王者温度一上去，60帧都不咋稳得住",
+    "brand_model": "华为Mate60Pro",
+    "sentiment": "负面",
+    "reason": "用户表达华为Mate60Pro玩游戏温度高时帧率不稳"
+  },
+  {
+    "note_id": "694f6805000000001e0099c6",
+    "title": "刚体验了苹果，vivo，华为。感觉系统流畅度还是苹果最好。",
+    "theme": "流畅丝滑",
+    "quote": "感觉系统流畅度还是苹果最好。安卓和鸿蒙流畅度差不多",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达苹果系统流畅度最好"
+  },
+  {
+    "note_id": "69626250000000000e03e7b0",
+    "title": "mate80pro与iPhone17pro体验对比分享",
+    "theme": "流畅丝滑",
+    "quote": "鸿蒙6.0非常流畅，不卡，但手感上个人还是喜欢iOS",
+    "brand_model": "华为Mate80Pro",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙6.0非常流畅不卡"
+  },
+  {
+    "note_id": "69626250000000000e03e7b0",
+    "title": "mate80pro与iPhone17pro体验对比分享",
+    "theme": "流畅丝滑",
+    "quote": "英雄联盟非常流畅，不会发热，和17没啥区别",
+    "brand_model": "华为Mate80Pro",
+    "sentiment": "正面",
+    "reason": "用户表达华为Mate80Pro游戏流畅不发热"
+  },
+  {
+    "note_id": "69626250000000000e03e7b0",
+    "title": "mate80pro与iPhone17pro体验对比分享",
+    "theme": "卡顿问题",
+    "quote": "我的15p杀后台严重",
+    "brand_model": "iPhone15Pro",
+    "sentiment": "负面",
+    "reason": "用户表达iPhone15Pro杀后台严重"
+  },
+  {
+    "note_id": "697ec145000000000903a207",
+    "title": "华为转iPhone17用后感（1）",
+    "theme": "卡顿问题",
+    "quote": "手机用久之后软件切换就会卡，内存还有50g的，我怀疑是系统问题",
+    "brand_model": "华为nova7pro",
+    "sentiment": "负面",
+    "reason": "用户表达华为手机用久后软件切换会卡"
+  },
+  {
+    "note_id": "697ec145000000000903a207",
+    "title": "华为转iPhone17用后感（1）",
+    "theme": "流畅丝滑",
+    "quote": "17屏幕反应也很快，还有高刷",
+    "brand_model": "iPhone17",
+    "sentiment": "正面",
+    "reason": "用户表达iPhone17屏幕反应快有高刷"
+  },
+  {
+    "note_id": "6988504f000000000e03ee1f",
+    "title": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了",
+    "theme": "流畅丝滑",
+    "quote": "流畅都不行",
+    "brand_model": "华为Mate70Pro+",
+    "sentiment": "负面",
+    "reason": "用户明确表达华为Mate70Pro+流畅不行"
+  },
+  {
+    "note_id": "6988504f000000000e03ee1f",
+    "title": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了",
+    "theme": "稳定性",
+    "quote": "待机和流畅都不行",
+    "brand_model": "华为Mate70Pro+",
+    "sentiment": "负面",
+    "reason": "用户表达华为Mate70Pro+待机不行"
+  },
+  {
+    "note_id": "6991bebf000000001a02ec29",
+    "title": "十几年果粉转华为失败",
+    "theme": "稳定性",
+    "quote": "结果还是受不了鸿蒙系统，用了一个多月，还是回到苹果的怀抱了",
+    "brand_model": "华为",
+    "sentiment": "负面",
+    "reason": "用户表达受不了鸿蒙系统"
+  },
+  {
+    "note_id": "699a9f5a000000001a0238f5",
+    "title": "鸿蒙真的好流畅",
+    "theme": "流畅丝滑",
+    "quote": "鸿蒙系统真的好方便，显得苹果好笨。网速和处理速度也好快",
+    "brand_model": "华为X7",
+    "sentiment": "正面",
+    "reason": "用户明确表达鸿蒙系统处理速度快"
+  },
+  {
+    "note_id": "699d48dd000000002800b6bc",
+    "title": "15年苹果转华为(纯个人分享)",
+    "theme": "稳定性",
+    "quote": "输入法响应的速度比苹果慢",
+    "brand_model": "华为Mate80ProMax",
+    "sentiment": "负面",
+    "reason": "用户表达华为输入法响应速度比苹果慢"
+  }
+]

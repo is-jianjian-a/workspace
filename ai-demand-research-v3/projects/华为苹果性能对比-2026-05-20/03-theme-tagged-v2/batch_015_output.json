@@ -1,0 +1,128 @@
+[
+  {
+    "note_id": "698174c6000000000e00f4a1",
+    "title": "2026手机信号排行！苹果垫底不意外，但华为",
+    "theme": "稳定性",
+    "quote": "iPhone 17系列垫底这事儿，咱也就忍了。 毕竟大家都懂，苹果的信号就是\"随缘\"",
+    "brand_model": "iPhone17",
+    "sentiment": "负面",
+    "reason": "用户表达苹果信号垫底"
+  },
+  {
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "theme": "稳定性",
+    "quote": "软件适配度拉垮 败给纯血鸿蒙\n特别是微信功能阉割得厉害",
+    "brand_model": "华为PuraX",
+    "sentiment": "负面",
+    "reason": "用户表达华为PuraX软件适配度拉垮"
+  },
+  {
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "theme": "流畅丝滑",
+    "quote": "ios系统最好用",
+    "brand_model": "苹果",
+    "sentiment": "正面",
+    "reason": "用户表达iOS系统最好用"
+  },
+  {
+    "note_id": "6991e2080000000015021e23",
+    "title": "花5千买OPPO不如加钱上iPhone 17",
+    "theme": "稳定性",
+    "quote": "加点钱上iPhone 17，稳定用四五年不比安卓香吗",
+    "brand_model": "iPhone17",
+    "sentiment": "正面",
+    "reason": "用户表达iPhone17稳定用四五年"
+  },
+  {
+    "note_id": "6992b518000000001a02ac5e",
+    "title": "10年果粉转华为一点感触",
+    "theme": "流畅丝滑",
+    "quote": "芯片绝对够用，内存够大",
+    "brand_model": "华为Mate80ProMax",
+    "sentiment": "正面",
+    "reason": "用户表达华为芯片够用"
+  },
+  {
+    "note_id": "6992b518000000001a02ac5e",
+    "title": "10年果粉转华为一点感触",
+    "theme": "流畅丝滑",
+    "quote": "系统，我尽量用鸿蒙自带软件，体验比ios略差一点，但是要有包容的心，多给点时间，更何况基本功能都有",
+    "brand_model": "华为",
+    "sentiment": "中性",
+    "reason": "用户表达鸿蒙自带软件体验比iOS略差"
+  },
+  {
+    "note_id": "6992b518000000001a02ac5e",
+    "title": "10年果粉转华为一点感触",
+    "theme": "稳定性",
+    "quote": "续航，也没什么可比性，碎片时间，海量电量",
+    "brand_model": "华为Mate80ProMax",
+    "sentiment": "正面",
+    "reason": "用户表达华为续航好"
+  },
+  {
+    "note_id": "69996201000000000a02b511",
+    "title": "为什么华为手机信号好苹果的很差",
+    "theme": "稳定性",
+    "quote": "苹果手机信号的长期用户诟病，并非缺乏底层技术能力，而是源于工业设计优先的工程取舍、功耗优先的保守通信调校，以及全球通用方案对国内运营商网络的深度适配不足",
+    "brand_model": "苹果",
+    "sentiment": "负面",
+    "reason": "用户分析苹果信号差的原因"
+  },
+  {
+    "note_id": "69996201000000000a02b511",
+    "title": "为什么华为手机信号好苹果的很差",
+    "theme": "稳定性",
+    "quote": "华为手机的信号优势，是其作为全球头部通信设备商，蜂窝通信全链路自研技术积累的必然结果",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达华为信号优势是技术积累结果"
+  },
+  {
+    "note_id": "69aac007000000000e00d677",
+    "title": "高考后买苹果还是华为？",
+    "theme": "卡顿问题",
+    "quote": "我现在用的是畅享70，前年夏天买来作为过渡机，不太流畅",
+    "brand_model": "华为畅享70",
+    "sentiment": "负面",
+    "reason": "用户表达华为畅享70不太流畅"
+  },
+  {
+    "note_id": "69b0d9020000000009021ebc",
+    "title": "苹果电池不行换的华为刚到手时心情跌宕起伏",
+    "theme": "稳定性",
+    "quote": "感觉电池用下来真的很一般\n不怎么用都要一天一充\n刚到当天半天冲2次",
+    "brand_model": "华为",
+    "sentiment": "负面",
+    "reason": "用户表达华为电池续航一般"
+  },
+  {
+    "note_id": "69b0d9020000000009021ebc",
+    "title": "苹果电池不行换的华为刚到手时心情跌宕起伏",
+    "theme": "稳定性",
+    "quote": "华为充电确实比苹果确实快",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达华为充电快"
+  },
+  {
+    "note_id": "69e57cef000000001a02eaa6",
+    "title": "一点小建议",
+    "theme": "流畅丝滑",
+    "quote": "至少我觉得特别丝滑",
+    "brand_model": "华为",
+    "sentiment": "正面",
+    "reason": "用户表达鸿蒙特别丝滑"
+  },
+  {
+    "note_id": "6a031f330000000036032a96",
+    "title": "苹果的iOS很流畅，但是华为的鸿蒙系统更流畅且更智能",
+    "theme": "流畅丝滑",
+    "quote": "苹果的iOS很流畅，但是华为的鸿蒙系统更流畅且更智能",
+    "brand_model": "华为/苹果",
+    "sentiment": "正面",
+    "reason": "用户表达华为鸿蒙更流畅且更智能"
+  }
+]

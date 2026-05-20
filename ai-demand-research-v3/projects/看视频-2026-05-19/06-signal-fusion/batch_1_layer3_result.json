@@ -1,0 +1,325 @@
+[
+  {
+    "index": 0,
+    "note_id": "68c281ed000000001c00b7de",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F10",
+          "name": "背景音模式",
+          "connection_reason": "用户明确表达'通勤 走路 干活的时候当背景声音用'，主用B站平台，将视频当背景音听而非看"
+        },
+        {
+          "code": "F03",
+          "name": "后台播放",
+          "connection_reason": "通勤走路干活时听视频，需要切换应用到后台时继续播放音频"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 1,
+    "note_id": "68fcca89000000000503b51e",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F20",
+          "name": "原创度标识",
+          "connection_reason": "用户明确提到'是博主的原创视频'，并特别为此充电支持原创，体现了对原创内容的重视"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 2,
+    "note_id": "690303ef00000000070080ab",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F04",
+          "name": "AI视频总结",
+          "connection_reason": "用户明确描述'视频太长不想看''想快速抓重点'的痛点，推荐听脑AI视频总结APP，能'把整个视频的逻辑理顺，重点内容分点列出来'，35分钟视频30秒出总结"
+        },
+        {
+          "code": "F05",
+          "name": "视频转笔记",
+          "connection_reason": "用户提到'像有个人帮你认真听完全程，然后把笔记整理好递给你'，体现视频转笔记的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 3,
+    "note_id": "6943ff770000000001e011362",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F10",
+          "name": "背景音模式",
+          "connection_reason": "用户明确说'在旁边放点视频听''基本可以当音频听，偶尔抬头看两眼画面'，画图时把视频当背景音"
+        },
+        {
+          "code": "F12",
+          "name": "小窗播放",
+          "connection_reason": "用户画图时需要在旁边放视频，'偶尔抬头看两眼画面'，隐含边做其他事边用小窗口看视频的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 4,
+    "note_id": "69a9cdc3000000002603e487",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F07",
+          "name": "精准推荐",
+          "connection_reason": "用户提到'自巡游轨迹断更后，系统给我推送了一个旅行博主'，说明系统推荐机制触发了用户发现新内容，且用户对推荐结果非常满意"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 5,
+    "note_id": "69ea2048000000001f007203",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "该UGC仅为情绪反馈（喜欢又心疼博主更新），未涉及任何具体功能域诉求或讨论"
+    }
+  },
+  {
+    "index": 6,
+    "note_id": "68539d4b00000000170363f2",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F10",
+          "name": "背景音模式",
+          "connection_reason": "用户明确说'工作和做手工的时候喜欢放点视频当背景音，想找点不需要太用眼睛看的视频'，需求非常明确"
+        },
+        {
+          "code": "F12",
+          "name": "小窗播放",
+          "connection_reason": "用户工作和做手工时需要放视频当背景音，隐含边做其他事边看/听视频的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 7,
+    "note_id": "69ff8146000000003503bac1",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F20",
+          "name": "原创度标识",
+          "connection_reason": "用户明确提到'都是原声配音，在ai横行的年代，还有老艺术家坚持手搓（指的是小美小帅之类的ai配音）'，表达了对原声vs AI配音的区分需求"
+        },
+        {
+          "code": "F19",
+          "name": "内容去重",
+          "connection_reason": "用户提到'不是流水线工程'，暗示对同质化、流水线内容的排斥，希望识别高质量非同质化内容"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 8,
+    "note_id": "69ce26dc000000001a0359a2",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F17",
+          "name": "AI陪看",
+          "connection_reason": "用户提到'用它写的清透感撩人脚本拍的视频'，体现AI辅助视频创作/内容生成的能力，但更接近AI创作而非陪看，无直接功能映射"
+        }
+      ],
+      "no_mapping_reason": "该UGC主要表达对千问AI生成视频脚本的兴奋情绪，属于AI创作领域，与'AI陪看、吐槽、解说'的功能域定义不完全匹配，无直接功能映射"
+    }
+  },
+  {
+    "index": 9,
+    "note_id": "69057e1100000000070330c5",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F05",
+          "name": "视频转笔记",
+          "connection_reason": "用户明确表达'手动整理笔记太费时间，一直想找个自动化的工具'，推荐AI-Media2Doc项目，能将'视频、音频这些媒体内容自动转换成结构化的文档''生成带时间戳的笔记'"
+        },
+        {
+          "code": "F04",
+          "name": "AI视频总结",
+          "connection_reason": "用户提到工具能'自动生成大纲和总结'，体现AI总结视频内容的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 10,
+    "note_id": "68f8106c0000000007038722",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F17",
+          "name": "AI陪看",
+          "connection_reason": "用户明确描述'和ChatGPT Atlas一起看剧吐槽'，使用GPT一起看剧并进行吐槽互动，属于AI实时陪看"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 11,
+    "note_id": "682f0f52000000000c038fe6",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F04",
+          "name": "AI视频总结",
+          "connection_reason": "用户描述'一看到时长动辄一小时甚至更久，就开始犯难'，使用Ai好记'自动提取原文稿/翻译、提取摘要和关键帧'，将长视频内容提取重点"
+        },
+        {
+          "code": "F05",
+          "name": "视频转笔记",
+          "connection_reason": "用户提到'自动提取原文稿/翻译'，将视频内容转为文字笔记"
+        },
+        {
+          "code": "F06",
+          "name": "视频转知识图谱",
+          "connection_reason": "用户提到'将线性长内容摊开成可视化二维知识平面''思维导图'，体现视频内容结构化、生成知识图谱的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 12,
+    "note_id": "6972000f0000000022033107",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "该UGC为荣耀Magic8 Pro Air手机的软广/种草内容，无真实用户功能诉求，属于无效内容"
+    }
+  },
+  {
+    "index": 13,
+    "note_id": "65def522000000000b015af0",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13",
+          "name": "使用时长提醒",
+          "connection_reason": "用户描述'不让时间偷偷溜走''告别无意识刷手机'，设置iPhone快捷指令'选浏览时长，让倒计时提醒你珍惜时间'，属于使用时长统计和提醒"
+        },
+        {
+          "code": "F14",
+          "name": "防沉迷工具",
+          "connection_reason": "用户提到'打开那些时间黑洞APP时，瞬间清醒'，通过设置自动化操作在打开APP时显示提醒，帮助恢复理性，属于防沉迷工具"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 14,
+    "note_id": "6954ec980000000022020806",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14",
+          "name": "防沉迷工具",
+          "connection_reason": "用户分享'多巴胺斋戒'自救方案：'每天给自己一段绝对无聊的时间。不看手机，不听歌，只发呆'，帮助降低快乐阈值、恢复理性，属于防沉迷工具"
+        },
+        {
+          "code": "F13",
+          "name": "使用时长提醒",
+          "connection_reason": "用户描述'每天晚上发誓就看最后一个视频，结果一眨眼就凌晨3点'，隐含对使用时长失控的反思和管控需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 15,
+    "note_id": "69f323ed000000003601c9e3",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14",
+          "name": "防沉迷工具",
+          "connection_reason": "用户反思'思想想偷懒的时候，是很希望瞬间把注意力趴在一个不需要用力就能得到快乐的捷径上的比如电影、综艺、短视频'，并有意识地在吃饭时专注吃饭'别打开什么其他的脏东西'，属于主动防沉迷行为"
+        },
+        {
+          "code": "F08",
+          "name": "内容过滤",
+          "connection_reason": "用户担忧'大脑会堆积多少无效信息'，隐含对低质量/无效内容的过滤需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 16,
+    "note_id": "69402e1d000000000d038f9c",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14",
+          "name": "防沉迷工具",
+          "connection_reason": "用户作为ADHD成年人，'经常无法集中注意力，常常事情还没做几分钟就开始玩手机'，测试大冰的物理隔离方法（手机静音扣着放并压住）来防止刷手机，属于防沉迷工具"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 17,
+    "note_id": "65bb4f98000000000a03034e",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F16",
+          "name": "同步观看",
+          "connection_reason": "用户明确表达'一方没会员没视频app不能一起同步看电影的烦恼'，通过FaceTime共享屏幕解决异地恋同步看电影问题，属于同步观看需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 18,
+    "note_id": "66acae1f000000002701d591",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14",
+          "name": "防沉迷工具",
+          "connection_reason": "用户实践'再也不刷短视频了，七天实践'，属于主动戒除短视频的防沉迷行为"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 19,
+    "note_id": "68331545000000002001f414",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14",
+          "name": "防沉迷工具",
+          "connection_reason": "用户分享'7秒法则'和'五小时理论'等摆脱手机依赖的具体方法，'想立刻放下手机'时心里数七个数就去做，属于防沉迷工具"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  }
+]

@@ -1,0 +1,253 @@
+[
+  {
+    "index": 20,
+    "note_id": "69e6bb1e000000001d01956b",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户围绕如何不沉迷短视频展开讨论，引用了书友的实用防沉迷方法，表达了对防沉迷解决方案的关注"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 21,
+    "note_id": "683bf71d0000000021003c6d",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户担忧婴幼儿沉迷短视频，提到'吃饭也玩、睡觉也玩'，隐含对使用时长控制的需求"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户明确表达对婴幼儿沉迷短视频的担忧，提到'又伤眼又伤脑'，需要防沉迷机制保护儿童"
+        },
+        {
+          "code": "F23-夜间护眼",
+          "name": "夜间护眼",
+          "connection_reason": "用户提到用碎屏烂手机看短视频'又伤眼'，表达了对护眼功能的关注"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 22,
+    "note_id": "67e41ee4000000001d02c2ba",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论短视频对大脑思考能力和信息整合能力的负面影响，属于认知层面的反思，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 23,
+    "note_id": "665d6810000000001500bff0",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F21-隐私模式",
+          "name": "隐私模式",
+          "connection_reason": "用户明确表达隐私泄露痛点——'刷过的视频，买过的东西，你老公或者同事过一会儿也看到了'，需求是'希望关闭隐私泄露功能，保护个人浏览记录'"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 24,
+    "note_id": "68ff4f300000000004017005",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户标题明确为'巨有效的短视频防成瘾的小方法'，直接关注防成瘾/防沉迷解决方案"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 25,
+    "note_id": "68e39281000000000301e44b",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论刷视频对专注力和情绪的负面影响，属于话题关注和情绪表达，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 26,
+    "note_id": "699179b3000000000903b9b9",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论手机使用对创造力和注意力的消耗，属于认知层面的反思和情绪表达，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 27,
+    "note_id": "69c796aa00000000200381b0",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F15-定时关闭",
+          "name": "定时关闭",
+          "connection_reason": "用户标题为'睡前最怕刷到的视频'，表达睡前刷视频的困扰，隐含对定时关闭播放功能的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 28,
+    "note_id": "671278b4000000001600c739",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户标题为'刷手机的时候做这个动作可以戒网瘾'，通过录屏观察自己刷手机行为来戒除网瘾，属于防沉迷/戒瘾方法"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 29,
+    "note_id": "67f75d9a000000001c02cc6d",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F15-定时关闭",
+          "name": "定时关闭",
+          "connection_reason": "用户围绕'睡前报复性刷手机'展开讨论，分析睡前刷手机的心理机制，隐含对定时关闭播放以帮助控制睡前刷手机的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 30,
+    "note_id": "68372ae0000000002101af2b",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论用其他APP看短视频的替代方式，属于话题关注和社交分享，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 31,
+    "note_id": "69b0bd06000000000503301c",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论睡眠不足和信息过载对精气神的负面影响，建议少看手机少刷视频，属于生活方式反思，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 32,
+    "note_id": "69f72c15000000001a02ff9b",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户提到'我甚至关闭vx视频号的入口'，通过关闭内容入口来减少刷视频，属于内容过滤/屏蔽功能"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户详细描述因焦虑而刷短视频成瘾的行为，并探索如何戒除，属于防沉迷/戒瘾需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 33,
+    "note_id": "6869f812000000000d01860e",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户引用他人经验'把所有推送通知都关了，刻意不去看热搜、不刷朋友圈'，通过关闭推送和过滤无关信息来减少干扰"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 34,
+    "note_id": "69d8c5e7000000002300472a",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论少用手机、拿回注意力对缓解焦虑的作用，属于自律和生活方式反思，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 35,
+    "note_id": "65c177b5000000002c0362ab",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论短视频对底层孩子专注力和思维模式的危害，属于社会观察和话题关注，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 36,
+    "note_id": "69aa781c000000001b01d1d6",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论不看短视频后获得的注意力容量，属于生活方式反思和替代方案关注，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 37,
+    "note_id": "69b6e657000000001d01c6d1",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F23-夜间护眼",
+          "name": "夜间护眼",
+          "connection_reason": "用户提到舍友'为了不伤眼睛开手电筒玩手机'，标题和内容都围绕夜间看视频伤眼问题，涉及夜间护眼需求"
+        },
+        {
+          "code": "F15-定时关闭",
+          "name": "定时关闭",
+          "connection_reason": "用户描述舍友'凌晨一点'还在看电视剧影响自己休息，隐含对定时关闭播放以避免深夜打扰他人的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 38,
+    "note_id": "686f29eb000000002203df76",
+    "layer3": {
+      "function_domains": [],
+      "no_mapping_reason": "用户主要讨论为逃避痛苦而玩手机导致更大痛苦的心理机制，属于自我反思和情绪表达，未涉及具体功能诉求"
+    }
+  },
+  {
+    "index": 39,
+    "note_id": "6986228d000000000c03510f",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F07-精准推荐",
+          "name": "精准推荐",
+          "connection_reason": "用户提到'10个可能有1个觉得非常有价值，其余其实都是在浪费时间'，希望获得更高质量、更有价值的内容推荐，减少低质量内容"
+        },
+        {
+          "code": "F19-内容去重",
+          "name": "内容去重",
+          "connection_reason": "用户提到'看多了之后，大脑会厌倦那些要思考的视频，然后继续刷无脑的'，反映了内容同质化问题，希望过滤重复/低质内容"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  }
+]

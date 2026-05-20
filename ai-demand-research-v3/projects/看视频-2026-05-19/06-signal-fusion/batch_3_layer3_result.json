@@ -1,0 +1,337 @@
+[
+  {
+    "index": 40,
+    "note_id": "68e7a21f000000000302c814",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户描述'戒掉刷视频后时间变多但无所适从'，反映了对刷视频时间消耗的感知，隐含了对使用时长管理的关注"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户提到'戒掉刷视频'，说明存在刷视频成瘾后的戒断行为，与防沉迷工具帮助恢复理性的目标一致"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 41,
+    "note_id": "67e2be2f000000000603dd98",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F11-沉浸式播放",
+          "name": "沉浸式播放",
+          "connection_reason": "用户明确吐槽'抖音都无法沉浸式看视频，底部一条大灰bar好碍眼'，直接表达了对沉浸式播放的需求"
+        },
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户抱怨'系统浏览器一打开全是广告推荐流看得眼都花了'，隐含了对广告内容过滤的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 42,
+    "note_id": "64ad83ec000000002b038a95",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户描述'连续刷两三个小时短视频'后的失控状态，说明缺乏使用时长提醒机制导致过度沉迷"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户提到'理性偶尔会提醒自己该停下了'，说明需要外部工具帮助恢复理性、控制刷视频行为"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 43,
+    "note_id": "68bab535000000001d037e36",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户关注'经常刷视频会让大脑衰老'，反映了对过度刷视频健康危害的担忧，与使用时长管理相关"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 44,
+    "note_id": "66754bb7000000001c021dab",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F01-倍速播放",
+          "name": "倍速播放",
+          "connection_reason": "用户分享'电脑倍速还可以这么玩'，明确提到'有了这个倍数扩展，视频速度控制不是梦'，直接关联倍速播放功能"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 45,
+    "note_id": "66baeea2000000001e01800e",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F07-精准推荐",
+          "name": "精准推荐",
+          "connection_reason": "用户讨论不同平台对'大学生'关键词的内容差异（b站知识、ks擦边、dy购物），反映了对精准推荐内容质量的关注"
+        },
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户提到'ks好多擦边'，隐含了对不良内容过滤的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 46,
+    "note_id": "68c66de2000000001b033354",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F04-AI视频总结",
+          "name": "AI视频总结",
+          "connection_reason": "用户明确提到'AI总结tab'，'简单粗暴地将对应题目的大致解析呈现在眼前'，直接对应AI视频总结功能"
+        },
+        {
+          "code": "F05-视频转笔记",
+          "name": "视频转笔记",
+          "connection_reason": "用户提到'文稿tab'，'整个视频对应的文案，且会根据当前的进度条将正在说的话标蓝显示'，对应视频转文字笔记功能"
+        },
+        {
+          "code": "F30-AI课件生成",
+          "name": "AI课件生成",
+          "connection_reason": "用户提到'AI课件'功能，用于解决网课时长过长的问题，与AI课件生成功能直接对应"
+        },
+        {
+          "code": "F01-倍速播放",
+          "name": "倍速播放",
+          "connection_reason": "用户痛点是'网课冗长、动辄3-4个小时'，隐含了对倍速播放提升效率的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 47,
+    "note_id": "690062490000000007022735",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F07-精准推荐",
+          "name": "精准推荐",
+          "connection_reason": "用户讨论'算法如何读懂你的不耐烦'和EGMN模型预测用户观看时长，直接关联精准推荐算法优化"
+        },
+        {
+          "code": "F19-内容去重",
+          "name": "内容去重",
+          "connection_reason": "用户提到'绝大多数是瞬间划走的快速跳过'，反映了对低质量重复内容的过滤需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 48,
+    "note_id": "64650e6f0000000013034833",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户明确推荐'阻止刷短视频浪费时间的app'，描述'打开短视频app前跳入呼吸页面，帮助恢复理性'，直接对应防沉迷工具"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 49,
+    "note_id": "69f47c2a000000003502e990",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户关注'长期刷视频怎么恢复大脑前额叶'，反映了对长期过度刷视频危害的认知，与使用时长管理相关"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 50,
+    "note_id": "69e0d817000000002003a15c",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F21-隐私模式",
+          "name": "隐私模式",
+          "connection_reason": "用户讨论'境外平台刷到自己的不雅视频'，反映了对隐私泄露和内容安全的担忧，与隐私模式保护浏览记录相关"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 51,
+    "note_id": "65dae8d700000000010299fd",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F18-社交推荐",
+          "name": "社交推荐",
+          "connection_reason": "用户介绍小红书'好视频'功能，属于平台新功能介绍，但内容较泛，未明确涉及具体功能域"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 52,
+    "note_id": "696f2a24000000001a024b2f",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F22-弱网优化",
+          "name": "弱网优化",
+          "connection_reason": "用户讨论'高铁上刷视频那么卡'，直接关联弱网环境下的视频加载优化需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 53,
+    "note_id": "66ba087b000000001e01edde",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户提到刷视频后'茫然与空虚'，反映了对短视频过度消费的反思，与使用时长管理相关"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户建议'卸载抖音'，认为短视频是'普通人的绝症'，隐含了对防沉迷工具帮助恢复理性的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 54,
+    "note_id": "65fd3d79000000000d00dfa1",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户希望'小红书的界面直接变成搜索引擎界面'，'不再显示首页推荐'，直接关联内容过滤和推荐内容屏蔽需求"
+        },
+        {
+          "code": "F14-防沉迷工具",
+          "name": "防沉迷工具",
+          "connection_reason": "用户描述'每次想着在小红书搜点什么，一点开就忘记了正事，刷得不亦乐乎'，需要工具帮助恢复理性、防止沉迷"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 55,
+    "note_id": "65d998160000000007025001",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F18-社交推荐",
+          "name": "社交推荐",
+          "connection_reason": "用户介绍'被你点好的视频也会被推荐给你的粉丝和好友'，直接对应社交推荐功能"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 56,
+    "note_id": "69f01e06000000001a037b9b",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户讨论'刷短视频走火入魔的朋友'，反映了对过度刷视频行为的关注，与使用时长管理相关"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 57,
+    "note_id": "66607e52000000000c018595",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F29-跨平台聚合",
+          "name": "跨平台聚合",
+          "connection_reason": "用户讨论'每个APP都要加短视频功能'，反映了对多平台短视频功能泛滥的关注，与跨平台内容聚合相关"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 58,
+    "note_id": "6762c702000000000b0175df",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F08-内容过滤",
+          "name": "内容过滤",
+          "connection_reason": "用户明确表达'屏蔽掉那些不想看的视频'，'按照关键词去匹配视频标题，标题中有就把这视频隐藏了'，直接对应内容过滤功能"
+        },
+        {
+          "code": "F09-拉黑功能",
+          "name": "拉黑功能",
+          "connection_reason": "用户希望屏蔽B站'让自己不爽的视频'，隐含了对特定内容或UP主彻底屏蔽（拉黑）的需求"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  },
+  {
+    "index": 59,
+    "note_id": "69f2f2bf00000000370343fd",
+    "layer3": {
+      "function_domains": [
+        {
+          "code": "F13-使用时长提醒",
+          "name": "使用时长提醒",
+          "connection_reason": "用户分享'有效刷视频3个方法保护大脑'，反映了对健康刷视频方式的关注，与使用时长管理相关"
+        }
+      ],
+      "no_mapping_reason": ""
+    }
+  }
+]
