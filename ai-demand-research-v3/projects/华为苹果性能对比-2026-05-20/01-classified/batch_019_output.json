@@ -1,0 +1,191 @@
+[
+  {
+    "note_id": "6960e186000000001a01d5cc",
+    "title_cleaned": "全球企业研发投入前十名，华为杀入第六！",
+    "content_cleaned": "全球企业研发投入Top10榜单出炉：\n\t\n前五名被美国企业霸榜：亚马逊、谷歌、Meta、微软、苹果，科技巨头实力确实强悍；\n\t\n华为是唯一进入前十的中国企业，以229亿欧元的投入稳居全球第六，研发占销售额比例高达20%，真正的技术至上，这也是华为能突破技术封锁的底气所在；\n\t\n韩国三星、德国大众、美国的强生和英特尔等熟悉的国际大厂也都在前十行列；\n\t\n这份榜单符合你的感知吗？",
+    "classification": "unrelated",
+    "reason": "全球企业研发投入排名，华为和苹果只是作为企业被提及，无性能/流畅度/稳定性对比"
+  },
+  {
+    "note_id": "6968df24000000000e03e215",
+    "title_cleaned": "余总余总",
+    "content_cleaned": "看手机用的是 80RS 啊， 折叠是工作，直板才是生活？",
+    "classification": "unrelated",
+    "reason": "仅提及余承东使用华为手机，无华为苹果对比"
+  },
+  {
+    "note_id": "696af29f00000000220207e3",
+    "title_cleaned": "华为和苹果的 Pro Max 的常规焦段拍照对比。",
+    "content_cleaned": "十七 Pro Max 和 Mate 80 Pro M",
+    "classification": "unrelated",
+    "reason": "华为和苹果拍照对比，但内容残缺且主题是拍照而非性能/流畅度"
+  },
+  {
+    "note_id": "696c8dee000000000e00d12b",
+    "title_cleaned": "苹果折叠屏曝光，这配置真敢给",
+    "content_cleaned": "如果这张图是真的，那苹果这波思路其实挺明确的：Pro 系列继续稳住基本盘，Fold 纯粹是给想尝鲜的人准备的。\n配置上看，折叠并没比 Pro 强多少，反而在影像上还收着来，核心卖点只剩形态本身。\n问题是，如果价格真上两万，你会为了能折一下，多花这笔钱吗？\n还是说，大多数人最终还是会选更稳的 Pro？",
+    "classification": "unrelated",
+    "reason": "仅讨论苹果折叠屏产品本身，无华为苹果对比"
+  },
+  {
+    "note_id": "69736dea000000000a02b0ad",
+    "title_cleaned": "白送的话，你们会选苹果还是华为？",
+    "content_cleaned": "先不要吵，华为Mate80Pro和iPhone17Pro都是好手机，日用都是很流畅，华为的优势是信号和拍照，苹果则是系统生态成熟和录像牛，看自己需求，喜欢哪个就选哪个。",
+    "classification": "valid",
+    "reason": "明确对比华为Mate80Pro和iPhone17Pro，提到\"日用都是很流畅\"，涉及流畅度体验对比"
+  },
+  {
+    "note_id": "6979cf2d000000001a02d6a1",
+    "title_cleaned": "还好没买17Pro，18Pro升级太大了！",
+    "content_cleaned": "对比了下iPhone17 Pro和iPhone18 Pro的爆料配置，感觉18Pro升级还挺明显的\n\t\n最实用的是屏下FaceID，灵动岛更小，屏占比会好看很多，A20Pro芯片从3nm升级到2nm，性能肯定更强。\n\t\n还有新的C2、N2芯片，据说能提升网络信号！我现在做地铁拿16Pro老是信号差，玩手机都不爽了，期待这个18Pro！\n我16Pro用着还可以，感觉18Pro可以再等等真机出来看看口",
+    "classification": "unrelated",
+    "reason": "仅讨论iPhone17Pro和18Pro的对比，无华为参与"
+  },
+  {
+    "note_id": "698054b7000000002800b824",
+    "title_cleaned": "华为mate x7拍照有点怪",
+    "content_cleaned": "怪好看的",
+    "classification": "unrelated",
+    "reason": "仅讨论华为mate x7拍照，无苹果对比"
+  },
+  {
+    "note_id": "698466ab000000000e03ea14",
+    "title_cleaned": "5499的air好还是4499的proair香",
+    "content_cleaned": "",
+    "classification": "unrelated",
+    "reason": "荣耀手机对比，不涉及华为苹果"
+  },
+  {
+    "note_id": "6985718c000000002203ba81",
+    "title_cleaned": "苹果外观变化",
+    "content_cleaned": "📱iPhone 发展史：你用过哪几部iPhone ❓\n🤔还记得你的第一个iPhone 是哪一年入的吗？\n🎹从2007年初代iPhone，到如今iPhone系列家族愈发壮大，每一代机型都承载着不同的故事与回忆。\n🐣初代iPhone 那时候还只有128MB运行内存。\n🌙iPhone 4的玻璃背板+金属中框，至今仍是设计界的“白月光”；\n🫆iPhone 5s带来Touch ID，运行内存上到1GB，指纹",
+    "classification": "unrelated",
+    "reason": "仅回顾iPhone发展史，无华为对比"
+  },
+  {
+    "note_id": "698918b2000000001b01e433",
+    "title_cleaned": "2026华为建议入的4款机型✨闭眼冲不亏",
+    "content_cleaned": "2026年华为这4款手机直接封神！覆盖旗舰到中端，麒麟芯加持，需求不同也能精准匹配，整理了详细参数对比，选机不纠结👇\n✅华为Mate70Pro\n麒麟9020旗舰芯拉满性能，6.9英寸微曲屏视觉超沉浸，5500mAh+100W快充续航无焦虑，影像三摄全焦段覆盖，商务办公+影像创作都能打，旗舰党闭眼冲！\n✅华为Pura80Pro\n同搭麒麟9020，6.8英寸微曲屏更轻盈，5700mAh大电池续航拉满，",
+    "classification": "unrelated",
+    "reason": "仅推荐华为手机，无苹果对比"
+  },
+  {
+    "note_id": "69918ee2000000001a028c59",
+    "title_cleaned": "26年手机芯片CPU性能天梯图📲",
+    "content_cleaned": "数据基于geekbench6的CPU单核与多核跑分对比\n关联了对应的测试机型\n基本是近两年耳熟能详的机型\n几家大厂的同档次芯片性能也很接近\n但有时命名过于混乱导致消费者分不太清性能究竟如何\n特别梳理一下，供大家购机时可参照对比",
+    "classification": "unrelated",
+    "reason": "手机芯片天梯图，是行业整体对比，非华为vs苹果专项对比"
+  },
+  {
+    "note_id": "6995a524000000001a01c960",
+    "title_cleaned": "不一样的黑色",
+    "content_cleaned": "猜猜哪个是16 哪个是17\n都是黑色 又不太一样 更喜欢16的黑 给要买手机的朋友们一个参考",
+    "classification": "unrelated",
+    "reason": "仅对比iPhone16和17颜色，无华为"
+  },
+  {
+    "note_id": "6999a186000000001b01c7f4",
+    "title_cleaned": "怎么选，是mate80还是iphone17",
+    "content_cleaned": "怎么选，是mate80还是iphone17",
+    "classification": "incomplete",
+    "reason": "标题仅问怎么选，内容完全重复标题，无实质信息"
+  },
+  {
+    "note_id": "699d3995000000001b01d9bd",
+    "title_cleaned": "从17pro转华为p80u，现双持，主要用80u弥补苹果长焦与信号问题，优缺点如下。\n(非专业人士，不玩游戏，仅从日常办公、摸鱼看小红书刷短视频看小说出发)\n\t\n优点：\n1.信号是真的好，苹果进电梯就无信号，华为从5G变4G但不影响使用。\n2.屏幕视觉精细感可以对标苹果，在握感、操作流畅度等方面体验优于其他厂商(这点让我在vivo x300和华为p80之间选择了🌸)。\n3.广告变少，各app在iOS 端也开始大量放广告，打开部分app就各种跳转，目前鸿蒙暂无此问题。\n4.卡片/组件能真正发挥用处，能不花钱",
+    "content_cleaned": "从17pro转华为p80u，现双持，主要用80u弥补苹果长焦与信号问题，优缺点如下。\n(非专业人士，不玩游戏，仅从日常办公、摸鱼看小红书刷短视频看小说出发)\n\t\n优点：\n1.信号是真的好，苹果进电梯就无信号，华为从5G变4G但不影响使用。\n2.屏幕视觉精细感可以对标苹果，在握感、操作流畅度等方面体验优于其他厂商(这点让我在vivo x300和华为p80之间选择了🌸)。\n3.广告变少，各app在iO",
+    "classification": "valid",
+    "reason": "从17pro转华为p80u双持，明确提到\"操作流畅度等方面体验优于其他厂商\"，涉及流畅度对比"
+  },
+  {
+    "note_id": "699d7c61000000001a033dba",
+    "title_cleaned": "好像知道iPhone18和华为mate90长啥样了",
+    "content_cleaned": "搜集手机摄像头变化的时候，发现一个“规律”，iPhone11-iPhone17pro都是“家族式语言设计”，而华为mate30pro-华为mate80pro是“隔代遗传”。\n\t\n那么，好像有点知道iPhone18pro和华为mate90pro的背面设计会是怎么样的了哎~~",
+    "classification": "unrelated",
+    "reason": "讨论手机外观设计规律，无性能/流畅度对比"
+  },
+  {
+    "note_id": "69a40388000000000e00ccf7",
+    "title_cleaned": "历代高通骁龙8系列芯片，哪代是MVP？",
+    "content_cleaned": "想必大家都知道，高通骁龙8系列属于高通旗下的旗舰芯片，每一代骁龙8系列芯片的性能都是一大看点。\n-\n今天汇总一下从2017年的骁龙835，到如今的骁龙8EliteGen5，这十年间高通芯片有多少提升[doge][doge]。\n-\n咱们以Geekbench6的跑分数据作为参考，可以看出，相较于十年前，骁龙8EliteGen5的性能狂飙了将近十倍，不过实际体验中或许没有那么明显。\n-\n大家觉得哪一代芯",
+    "classification": "unrelated",
+    "reason": "仅讨论高通骁龙芯片，无华为苹果对比"
+  },
+  {
+    "note_id": "69a5f5c400000000220323c4",
+    "title_cleaned": "iPhone 16e vs iPhone 17e",
+    "content_cleaned": "一图看懂新旧两款入门 iphone 硬件配置！",
+    "classification": "unrelated",
+    "reason": "仅对比iPhone16e和17e，无华为"
+  },
+  {
+    "note_id": "69a676e5000000001a032d4c",
+    "title_cleaned": "iPhone17e 正式发布，这价格“太香了”！",
+    "content_cleaned": "苹果新品正在陆续发布，今晚正式发布了iPhone17e，简单说说升级了什么吧\n\t\n✅外观方面\n与iPhone16e几乎无区别，同样的刘海屏，同样的60Hz，不过屏幕玻璃升级到了第二代超瓷晶面板，会更耐刮一些\n\t\n✅性能上\n搭载A19芯片（4核）依旧阉割版，8GB运存，配置C1X调制解调器\n\t\n✅影像与iPhone16e差别不大\n\t\n✅续航方面\n支持Magsafa无线充电，最高15w，整体续航和16",
+    "classification": "unrelated",
+    "reason": "仅介绍iPhone17e，无华为对比"
+  },
+  {
+    "note_id": "69b2aea400000000220338c3",
+    "title_cleaned": "iPhone17全系列参数对比",
+    "content_cleaned": "今年其他国产手机都在涨价，iPhone闷声干大事。\n17e到17PM，对4000以上价位全覆盖。\n甚至笔记本都出了neo～\n你今年入手了哪款？[doge]",
+    "classification": "unrelated",
+    "reason": "仅介绍iPhone17系列，无华为对比"
+  },
+  {
+    "note_id": "69bce520000000001a023a03",
+    "title_cleaned": "华为Mate80风驰版镜头变化",
+    "content_cleaned": "找不同！目前找到两处！欢迎补充！\n1️⃣镜头处，似乎少了东西\n2️⃣多了一圈出风口",
+    "classification": "unrelated",
+    "reason": "仅讨论华为Mate80镜头外观，无苹果对比"
+  },
+  {
+    "note_id": "69bf7da10000000021011db9",
+    "title_cleaned": "不买iphone18我会后悔吗",
+    "content_cleaned": "从纯性价比这个角度看，iPhone，一年一换真的最香吗\n\t\n❗️❗️算一笔很真实的账：\n年均成本 = （买新机价格 - 卖旧机 / 折抵价格 + 中间维修 / 换电池成本） ÷ 使用年数\n一般会出现这种趋势：\n1 年换：分母小，年均成本偏高\n2 年换：开始下降\n3 年换：通常最漂亮\n4 年以上：现金最省，但体验损失开始放大\n\t\n我对于苹果手机最均衡的换机节奏，通常是 2 到 3 年一换。再往后拖，",
+    "classification": "unrelated",
+    "reason": "仅讨论iPhone换机性价比，无华为对比"
+  },
+  {
+    "note_id": "69c145ec000000002301fa4f",
+    "title_cleaned": "一篇看懂华为手机，选手机不反复纠结！",
+    "content_cleaned": "一次都没用过华为手机的朋友，从其他手机换到华为，这篇简单了解，也好做选择。\n·\n最近宝子们想选哪款华为手机📱",
+    "classification": "unrelated",
+    "reason": "仅介绍华为手机选购，无苹果对比"
+  },
+  {
+    "note_id": "69c3835e0000000023015ddb",
+    "title_cleaned": "不看品牌，你觉得哪一个手机设计更好看？",
+    "content_cleaned": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo，有控制中心、灵动岛类似物通知、锁屏界面等，你们觉得哪一个好看？",
+    "classification": "unrelated",
+    "reason": "多品牌手机设计审美对比，非华为苹果性能对比"
+  },
+  {
+    "note_id": "69c4f6d3000000001a021341",
+    "title_cleaned": "一图看懂｜手机处理器排行",
+    "content_cleaned": "处理器强决定了手机上限有多高，来看看你的手机是哪一梯队，一图看懂\n\t\n目前安卓端最强的就是骁龙8E5，绝大多数直板旗舰用的就是这颗处理器，而折叠屏这边有且仅有荣耀Magic V6一款用的是满血骁龙8E5，所以不用担心性能释放\n\t\n另外，在其他方面荣耀Magic V6也是按照直板旗舰的理念设计的，比如说后置镜头组有一颗防抖等级达到CIPA 6.5级的6400万像素潜望长焦，电池容量最高达到了7150",
+    "classification": "unrelated",
+    "reason": "手机处理器排行，主要讲荣耀Magic V6，非华为苹果对比"
+  },
+  {
+    "note_id": "69c6057d0000000023005a3d",
+    "title_cleaned": "华为、苹果、三星阔折叠全曝光！谁能卖爆？",
+    "content_cleaned": "真的没想到啊，自从苹果被爆出要做阔比例的折叠屏，然后阔折叠的热度好像很高，现在三星也来蹭一波，加上华为，高端手机御三家凑齐了！\n\t\n华为是有两款阔折叠，小尺寸是Pura X2，大尺寸是PuraFold，据说定档4月，比苹果三星都早，感觉华为销量会更高[doge]",
+    "classification": "unrelated",
+    "reason": "华为苹果三星折叠屏产品曝光，无性能/流畅度对比"
+  },
+  {
+    "note_id": "69c74283000000001d01d028",
+    "title_cleaned": "这才是live图的意义！动起来那刻苹果赢麻了！",
+    "content_cleaned": "去年秋天和朋友去捡秋，用相机和手机分别拍了一下照片\n索尼拍出来的通透感很好，人物更清冷清瘦一些。\n\t\n苹果拍出来的色调更好看，但是人会臃肿一些\n虽然相机拍的更好看，但是不得不说的是，live图真的太生动了（上传画质好像被压缩了qwq）尤其是过了大半年在回顾的时候……live确实冲击力更大一点啊……\n\t\n📷索尼A6700 转转价6568\n镜头：索尼FE24-70mm f/2.8 GM ||\n📱iph",
+    "classification": "unrelated",
+    "reason": "苹果与索尼相机拍照对比，无华为"
+  },
+  {
+    "note_id": "69cdfd1e000000001f0014a7",
+    "title_cleaned": "2026没涨价手机大盘点！这几款真的太良心了",
+    "content_cleaned": "家人们谁懂啊！今年好多新机都悄悄涨价了，本来想换手机都被劝退了😭\n还好挖到了这几款硬抗不涨价的神机，有的甚至价格更友好了！刚需换机直接抄作业！\n✅ 良心不涨价梯队\n\t\n🔴 努比亚\n\t\nZ80u / Z70su / Z70 全系列价格纹丝不动！\n尤其是Z80U，512G版本不到5k就能拿下，和去年价格一毛一样，真·良心国企！\n性能、影像、续航全在线，性价比直接拉满✨\n\t\n🔴 华为\n\t\nPura 80",
+    "classification": "unrelated",
+    "reason": "多品牌手机价格盘点，无性能/流畅度对比"
+  }
+]

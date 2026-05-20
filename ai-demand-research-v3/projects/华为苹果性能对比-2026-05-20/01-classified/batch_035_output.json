@@ -1,0 +1,121 @@
+[
+  {
+    "note_id": "69f89e5f000000003703414e",
+    "title_cleaned": "华为和苹果怎么选？",
+    "content_cleaned": "",
+    "classification": "incomplete",
+    "reason": "内容为空，仅标题问华为和苹果怎么选，无实质内容"
+  },
+  {
+    "note_id": "69fd4f3d000000003601bace",
+    "title_cleaned": "到底是买苹果还是华为啊！",
+    "content_cleaned": "想换手机了，老公让我买苹果。但最近刷视频看到这两个照片视频对比，感觉华为比较胜出。有懂手机的能给个建议嘛？",
+    "classification": "unrelated",
+    "reason": "提到华为苹果照片视频对比，但内容侧重照片/视频拍摄效果，未涉及性能/流畅度/稳定性/卡顿/丝滑"
+  },
+  {
+    "note_id": "69fda088000000003501f08c",
+    "title_cleaned": "每天骂Apple Watch续航的人，求你们先搞懂",
+    "content_cleaned": "全智能手表如Apple Watch搭载完整操作系统，功能丰富但功耗大，一天一充是常态。轻智能手表如华为GT系列则功能有限，续航更长。两者定位不同，不能简单对比。",
+    "classification": "unrelated",
+    "reason": "讨论Apple Watch与华为GT手表续航对比，属于智能手表领域，非手机性能/流畅度/稳定性"
+  },
+  {
+    "note_id": "69ff0b78000000003501edfc",
+    "title_cleaned": "华为Mate80Pro🆚华为Mate90Pro😳你最喜",
+    "content_cleaned": "",
+    "classification": "unrelated",
+    "reason": "仅对比华为Mate80Pro与Mate90Pro，未涉及苹果"
+  },
+  {
+    "note_id": "6a0199e7000000000803ff2f",
+    "title_cleaned": "一图看懂：国行版iPhone阉割了哪些功能？",
+    "content_cleaned": "iPhone在全球市场一直都维持着高度的硬件一致性，但受限于不同市场的法律法规、行业标准及运营商环境，国行版与海外版在功能体验上还是有一些差别。\n\t\n今天我们就来做一个盘点和分析，看看国行版iPhone对比海外版本有哪些功能是被阉割了的。\n\t\n第一类就是硬件层面的差异。\n\t\n卫星通信（Satellite Connectivity）： 海外版支持在无网络环境下发送卫星消息，国行版暂不支持该功能。主要",
+    "classification": "unrelated",
+    "reason": "仅介绍国行iPhone阉割功能，未涉及华为"
+  },
+  {
+    "note_id": "6a031f330000000036032a96",
+    "title_cleaned": "苹果的iOS很流畅，但是华为的鸿蒙系统更流畅且更智能，信号也更好。大家说说华为好还是苹果好",
+    "content_cleaned": "苹果的iOS很流畅，但是华为的鸿蒙系统更流畅且更智能，信号也更好。大家说说华为好还是苹果好",
+    "classification": "valid",
+    "reason": "明确对比苹果iOS与华为鸿蒙系统流畅度，称鸿蒙更流畅更智能，属于性能/流畅度维度对比"
+  },
+  {
+    "note_id": "6a041206000000000803f56e",
+    "title_cleaned": "华为今年势头有点吓人啊，全年第一基本稳了",
+    "content_cleaned": "旗舰Mate80系列爆了，口碑和销量都远超上一代；中端线nova15线下机销量第一；折叠屏PuraXMax大爆，历史首销最高折叠、大折叠MateX7稳定发挥基本看齐X6；次旗舰Pura90销量相比上代大幅回升；低端线畅享90系列大爆，周销量甚至超过苹果pm……可以说今年已发布的机型中没有一款拖后腿，势头甚至比mate60/p70时期更强（中低端线更成功），最关键是口碑极好，mate80/pxm/m",
+    "classification": "unrelated",
+    "reason": "讨论华为销量势头，提到周销量超过苹果pm，但核心是销量/市场分析，未涉及性能/流畅度/稳定性/卡顿/丝滑对比"
+  },
+  {
+    "note_id": "6a0667a500000000350277f4",
+    "title_cleaned": "苹果突然宣布降价",
+    "content_cleaned": "5月15日零点，苹果手机突然降价，iPhone17 Pro系列全线下调1000元。\n\t\n电商平台Apple产品自营旗舰店已经第一时间调价，iPhone 17 pro系列直降叠加以旧换新，双重补贴优惠2000元，到手价6999元。\n\t\niPhone 17 Pro迎来史上最低价，正式进入6000元档位。iPhone17更是迎来上市后首次降价，多重补贴以旧换新到手价只要4499元。（证券时报） @热点薯",
+    "classification": "unrelated",
+    "reason": "报道苹果降价新闻，未涉及华为"
+  },
+  {
+    "note_id": "6a06a6ff000000000f03ac02",
+    "title_cleaned": "iPhone17还是等18？",
+    "content_cleaned": "苹果最近真的把数码圈搞乱了。\n三个话题一起冲热搜：\niPhone17 Pro降价2000\n买iPhone17还是等iPhone18\niPhone18 Pro新配色到底是封神还是翻车\n现在很多人最纠结的已经不是“买不买”，而是：\n“现在冲17值不值，18又到底香不香。”\n\t\n先说降价。\n很多人以为苹果官方直接降2000，实际上不是。\n现在大部分是：\n官方降1000\n平台券+以旧换新再补1000\n但不",
+    "classification": "unrelated",
+    "reason": "讨论iPhone17与18选择，提到稳定、信号等，但未涉及华为"
+  },
+  {
+    "note_id": "6a07ecac000000000803f39e",
+    "title_cleaned": "6年安卓转iphone17感受",
+    "content_cleaned": "最近几年都在用安卓手机（hw），昨天刷到苹果降价，正好需要换手机了，果断入手。\n今天拿到手，夸夸顺f小哥的速度\n讲一下自己的感受：\n外观上，17拿到手比较轻，外观更简洁素雅。安卓机身稍微重一点，后置摄像头比较繁多。拍照对比一下，17光线更还原。\n使用上，17没找到指纹解锁，可以密码和面容，但我不太习惯，指纹更方便。17账号注册之类的激活比较严谨，可能更保护玩家，安卓的话懂得都懂。\n17最大的问题是",
+    "classification": "unrelated",
+    "reason": "分享从华为(安卓)转iPhone17感受，侧重外观、指纹、微信双开、账号互通等，未涉及性能/流畅度/稳定性/卡顿/丝滑对比"
+  },
+  {
+    "note_id": "6a081abf0000000038036b60",
+    "title_cleaned": "苹果华为小米都在降价，vivo你为什么不降啊",
+    "content_cleaned": "618打算想换vivo x300pro16+1T的，价都在5500以上。而且6500的电池虽然不小了，但友商都已经干到七八千了，还是差点意思啊\n\t\n今天看到专业人士爆料，9月10月左右发布的新机会配更好的芯片和更大的电池，扬声器音质也有所升级，再等三四个月换也不是不行\n\t\n再不降价，我可真不买了哦",
+    "classification": "unrelated",
+    "reason": "讨论vivo降价，提到苹果华为小米都在降价，未涉及性能对比"
+  },
+  {
+    "note_id": "6a0868810000000008002cb4",
+    "title_cleaned": "Mate90已经没有悬念了👀",
+    "content_cleaned": "毫无悬念，不管是外观还是配置方面\n已经能看穿的差不多：\n外观肯定是👆上面这种火山口deco，再回归大圆饼造型\n处理器升级成麒麟9040系列，麒麟9040Pro性能很强\nPM的影像配置看齐Mate80PM＋Pura90PM，双长焦搭配2亿像素\n双层OLED屏幕，或许会下放到Pro版本，PM以及非凡大师屏幕再度升级\n鸿蒙7的各种配套新功能....\n反正我觉得八九不离十，80%可能性就是这样",
+    "classification": "unrelated",
+    "reason": "仅预测华为Mate90配置，未涉及苹果"
+  },
+  {
+    "note_id": "6a08695e000000000803de3b",
+    "title_cleaned": "2026热门小平板｜看完再决定换不换",
+    "content_cleaned": "2026年小平板市场突然热闹起来了🔥\n这5款热门机型全部整理了一遍，参数、亮点、适合人群，一张一张讲清楚。\n对号入座就能找到适合你的那款。\n你目前在用哪款？或者正在关注哪款？",
+    "classification": "unrelated",
+    "reason": "介绍2026小平板推荐，未聚焦华为vs苹果性能对比"
+  },
+  {
+    "note_id": "6a0876e10000000007010af8",
+    "title_cleaned": "iPhone17 Pro全线下调1000元！",
+    "content_cleaned": "亲们，在部分电商平台，iPhone 17 pro系列直降叠加以旧换新，双重补贴优惠2000元，到手价6999元。iPhone 17 Pro正式进入6000元档位。iPhone17更是迎来上市后首次降价，多重补贴以旧换新到手价只要4499元。\n不但苹果系列大降价，华为，小米也集体官宣降价，幅度还比较狠。",
+    "classification": "unrelated",
+    "reason": "报道iPhone17 Pro降价，顺带提华为小米也降价，未涉及性能对比"
+  },
+  {
+    "note_id": "6a0890d50000000035028bd7",
+    "title_cleaned": "华为手机全系列对比[2026年618]",
+    "content_cleaned": "华为手机4个系列的定位分别是：Mate系列>Pura系列>nova系列>畅享系列。\n现在Mate系列仍然是旗舰机。Pura系列主打拍照旗舰，但定位相比往代有所下沉，华为Pura90标准版不如选nova15 Ultra版本。\nnova系列主打人像自拍。畅享系列是入门机型。\n华为nova16系列也快来了。",
+    "classification": "unrelated",
+    "reason": "仅介绍华为手机全系列定位，未涉及苹果"
+  },
+  {
+    "note_id": "6a09c786000000000702314a",
+    "title_cleaned": "618 买手机到底怎么买？别再只看价格了",
+    "content_cleaned": "很多人一到 618第一反应就是：“哪台降价最多？”\n但其实真正决定值不值得买的是：配置 + 芯片 + 需求。\n一、先看处理器\n因为芯片基本决定流畅度、 游戏、 发热、手机寿命\n第一梯队｜闭眼旗舰\n* 骁龙 8 Elite Gen 5\n* 苹果 A19 Pro\n* 天玑 9500\n这一档基本属于 “未来三四年都不会卡”。\n适合：重度用户、游戏党、旗舰党。\n第二梯队｜618 最香\n* 骁龙 8 Eli",
+    "classification": "unrelated",
+    "reason": "618买手机攻略，提到处理器决定流畅度，但属于通用购机指南，未聚焦华为vs苹果性能对比"
+  },
+  {
+    "note_id": "6a0a99d70000000037037a2f",
+    "title_cleaned": "苹果现在信号怎么样了，实体店销售说看缘分，每台都不太一样，想从三星换回苹果，实在担心信号还是拉胯",
+    "content_cleaned": "苹果现在信号怎么样了，实体店销售说看缘分，每台都不太一样，想从三星换回苹果，实在担心信号还是拉胯",
+    "classification": "unrelated",
+    "reason": "仅询问苹果信号情况，想从三星换回苹果，未涉及华为"
+  }
+]
