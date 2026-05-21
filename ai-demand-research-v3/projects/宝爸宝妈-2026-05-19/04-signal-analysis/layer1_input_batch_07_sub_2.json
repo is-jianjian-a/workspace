@@ -1,78 +1,5 @@
 [
   {
-    "note_id": "699a7c8d0000000009038b63",
-    "signal_reason": "宝妈表达自我态度，讨论社会对女性/母亲身份的刻板印象和舆论压力，属于价值观表达和情感共鸣类内容，无明确需求或产品使用反馈。",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "68d4e7be0000000013034ccc",
-    "signal_reason": "分享孕期自豪感和身体变化的积极体验，传递孕期正能量，属于情感分享和价值观倡导，无具体需求或产品使用反馈。",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "696b5b56000000000a0284d8",
-    "signal_reason": "明确询问'孕妇照还有必要拍吗'，表达对是否拍摄孕妇照的犹豫和决策需求，属于信息/决策类需求。",
-    "signal_types": [
-      "需求信号"
-    ]
-  },
-  {
-    "note_id": "69cb7784000000002102fc6a",
-    "signal_reason": "详细分享了纽乐葆妊娠油的使用体验（成分、肤感、效果），属于产品使用反馈；同时隐含了孕期防妊娠纹的需求背景。",
-    "signal_types": [
-      "使用反馈信号",
-      "需求信号"
-    ]
-  },
-  {
-    "note_id": "699492c7000000001a0347f6",
-    "signal_reason": "邀请其他宝妈分享孕肚照片，属于社交互动和话题讨论，无明确需求或产品使用反馈。",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "69cfb941000000002200fac4",
-    "signal_reason": "表达了怀孕后胸部变化的担忧（哺乳后更瘪、下垂），隐含对胸部护理/恢复的信息需求；同时带有情感倾诉性质。",
-    "signal_types": [
-      "需求信号",
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "690b22930000000004029a6a",
-    "signal_reason": "纯自媒体运营内容，分享做博主的心路历程、设备和目标，与宝妈育儿核心需求无关，属于营销/运营类内容。",
-    "signal_types": [
-      "噪声"
-    ]
-  },
-  {
-    "note_id": "69cc9f99000000001a02ad04",
-    "signal_reason": "孕期全周期情感记录和感悟分享，表达对宝宝的期待，属于情感抒发和生活记录，无明确需求或产品使用反馈。",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "68862567000000002203de7a",
-    "signal_reason": "描述孕晚期身体不适（肚皮紧绷、胃顶、膀胱挤压、行动不便），隐含缓解孕晚期不适的需求；同时带有情感倾诉。",
-    "signal_types": [
-      "需求信号",
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "697beefc0000000021033d6d",
-    "signal_reason": "提供孕期每周任务清单攻略，直接回应'怀孕后每周要做什么'的信息需求，属于知识/信息类需求内容。",
-    "signal_types": [
-      "需求信号"
-    ]
-  },
-  {
     "note_id": "6954f9a9000000001f00e5cd",
     "source_keyword": "孕期",
     "title": "🤰🏻孕26w｜日渐圆润的小腹婆幸福日常",
@@ -82,10 +9,7 @@
     "collected_count": "873",
     "comment_count": "123",
     "share_count": "147",
-    "nickname": "FISH（小月龄）",
-    "signal_types": [
-      "关注讨论信号"
-    ]
+    "nickname": "FISH（小月龄）"
   },
   {
     "note_id": "69d8cd8c000000001d0181bd",
@@ -97,10 +21,7 @@
     "collected_count": "742",
     "comment_count": "46",
     "share_count": "29",
-    "nickname": "Hellokiki（月子中）",
-    "signal_types": [
-      "关注讨论信号"
-    ]
+    "nickname": "Hellokiki（月子中）"
   },
   {
     "note_id": "69bd22560000000022029d7e",
@@ -112,10 +33,7 @@
     "collected_count": "293",
     "comment_count": "56",
     "share_count": "32",
-    "nickname": "懒懒_",
-    "signal_types": [
-      "关注讨论信号"
-    ]
+    "nickname": "懒懒_"
   },
   {
     "note_id": "695cac14000000002102a361",
@@ -127,11 +45,7 @@
     "collected_count": "280",
     "comment_count": "2555",
     "share_count": "2628",
-    "nickname": "是十一吖🌱～",
-    "signal_types": [
-      "需求信号",
-      "使用反馈信号"
-    ]
+    "nickname": "是十一吖🌱～"
   },
   {
     "note_id": "67b3fefb000000000603cb19",
@@ -143,10 +57,7 @@
     "collected_count": 0,
     "comment_count": "10",
     "share_count": 0,
-    "nickname": "Alice疗愈漫游记",
-    "signal_types": [
-      "需求信号"
-    ]
+    "nickname": "Alice疗愈漫游记"
   },
   {
     "note_id": "69feb84700000000360012b4",
@@ -158,10 +69,7 @@
     "collected_count": "174",
     "comment_count": "5",
     "share_count": "26",
-    "nickname": "Hellokiki（月子中）",
-    "signal_types": [
-      "使用反馈信号"
-    ]
+    "nickname": "Hellokiki（月子中）"
   },
   {
     "note_id": "68c66487000000001d0145fa",
@@ -173,11 +81,7 @@
     "collected_count": "44",
     "comment_count": "36",
     "share_count": "87",
-    "nickname": "奔跑的自由",
-    "signal_types": [
-      "需求信号",
-      "使用反馈信号"
-    ]
+    "nickname": "奔跑的自由"
   },
   {
     "note_id": "69f382380000000035027fb5",
@@ -189,10 +93,7 @@
     "collected_count": "447",
     "comment_count": "803",
     "share_count": "108",
-    "nickname": "花花是一只猫",
-    "signal_types": [
-      "需求信号"
-    ]
+    "nickname": "花花是一只猫"
   },
   {
     "note_id": "69d4b911000000002102eef3",
@@ -204,10 +105,7 @@
     "collected_count": "6",
     "comment_count": "291",
     "share_count": "8",
-    "nickname": "Nicole🍃",
-    "signal_types": [
-      "关注讨论信号"
-    ]
+    "nickname": "Nicole🍃"
   },
   {
     "note_id": "675ffabb000000000b017931",
@@ -219,85 +117,6 @@
     "collected_count": "432",
     "comment_count": "83",
     "share_count": "141",
-    "nickname": "小雷困困z",
-    "signal_types": [
-      "需求信号",
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "66e99b99000000000c019114",
-    "source_keyword": "孕期",
-    "title": "怀孕生子是我自愿选择的人生体验卡！",
-    "content": "自从我发现了一个超级无敌的孕期心态 我感觉整个人都晴朗起来了☀️ 再也没有那么多无端的牢骚和抱怨😓 那就是：怀孕生子是我自愿选择的人生体验卡💳 这件事与任何人无关 我在意的不是怀孕带来的【后果】 而是体验怀孕生子养娃这个全新的过程 所以我会正视身材的变化、身体的不适、心态的偶尔崩塌、与老公的关系…… 无敌的心态真的会凝聚正能量，从此天天都是好心情✅",
-    "full_text": "怀孕生子是我自愿选择的人生体验卡！ 自从我发现了一个超级无敌的孕期心态 我感觉整个人都晴朗起来了☀️ 再也没有那么多无端的牢骚和抱怨😓 那就是：怀孕生子是我自愿选择的人生体验卡💳 这件事与任何人无关 我在意的不是怀孕带来的【后果】 而是体验怀孕生子养娃这个全新的过程 所以我会正视身材的变化、身体的不适、心态的偶尔崩塌、与老公的关系…… 无敌的心态真的会凝聚正能量，从此天天都是好心情✅",
-    "liked_count": "2168",
-    "collected_count": "1074",
-    "comment_count": "447",
-    "share_count": "160",
-    "nickname": "清秋",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "69f7320000000000230150f8",
-    "source_keyword": "孕期",
-    "title": "孕37周居家孕妇照，可以和猫猫们这样拍",
-    "content": "终于熬到足月了，想快点卸货，跟风拍了居家孕妇照，我的三个崽子都超级不配合哈哈哈，勉强抓拍了几张，是个记录就好，爱我的崽崽们，一起迎接小老四的到来呀",
-    "full_text": "孕37周居家孕妇照，可以和猫猫们这样拍 终于熬到足月了，想快点卸货，跟风拍了居家孕妇照，我的三个崽子都超级不配合哈哈哈，勉强抓拍了几张，是个记录就好，爱我的崽崽们，一起迎接小老四的到来呀",
-    "liked_count": "2079",
-    "collected_count": "1043",
-    "comment_count": "192",
-    "share_count": "2087",
-    "nickname": "娇娇",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "69ad3f3c000000002202e510",
-    "source_keyword": "孕期",
-    "title": "🤰孕34+丨肚子越大穿的越辣 早春出游ootd",
-    "content": "早春的杭州太美了🌸 孕妈也要穿上小裙子出门美美出片 体重从86飙到110 再休闲的裤子都穿不上了 针织弹力的衣服好看又好穿～ [自拍R]",
-    "full_text": "🤰孕34+丨肚子越大穿的越辣 早春出游ootd 早春的杭州太美了🌸 孕妈也要穿上小裙子出门美美出片 体重从86飙到110 再休闲的裤子都穿不上了 针织弹力的衣服好看又好穿～ [自拍R]",
-    "liked_count": "394",
-    "collected_count": "169",
-    "comment_count": "14",
-    "share_count": "19",
-    "nickname": "Hellokiki（月子中）",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "693ed627000000001e03abb2",
-    "source_keyword": "孕期",
-    "title": "有没有睡不着的小孕妇[萌萌哒R][萌萌哒R][萌萌哒R] 出来聊聊最近的状态呀[偷笑R][偷笑R][偷笑R]",
-    "content": "有没有睡不着的小孕妇[萌萌哒R][萌萌哒R][萌萌哒R] 出来聊聊最近的状态呀[偷笑R][偷笑R][偷笑R]",
-    "full_text": "有没有睡不着的小孕妇[萌萌哒R][萌萌哒R][萌萌哒R] 出来聊聊最近的状态呀[偷笑R][偷笑R][偷笑R] 有没有睡不着的小孕妇[萌萌哒R][萌萌哒R][萌萌哒R] 出来聊聊最近的状态呀[偷笑R][偷笑R][偷笑R]",
-    "liked_count": "155",
-    "collected_count": "69",
-    "comment_count": "496",
-    "share_count": "23",
-    "nickname": "一只泡芙.",
-    "signal_types": [
-      "关注讨论信号"
-    ]
-  },
-  {
-    "note_id": "68beddf4000000001c036b39",
-    "source_keyword": "孕期",
-    "title": "分享我的孕妇照～",
-    "content": "",
-    "full_text": "分享我的孕妇照～",
-    "liked_count": "793",
-    "collected_count": "413",
-    "comment_count": "7",
-    "share_count": "55",
-    "nickname": "桃🍑（偶尔模特版）",
-    "signal_types": [
-      "关注讨论信号"
-    ]
+    "nickname": "小雷困困z"
   }
 ]
