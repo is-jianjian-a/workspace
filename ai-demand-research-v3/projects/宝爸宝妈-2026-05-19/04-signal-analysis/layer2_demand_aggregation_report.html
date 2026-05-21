@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>功能诉求聚合分析 - TOP3高亮</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header .subtitle { font-size: 14px; opacity: 0.9; }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .summary-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .summary-card .label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .theme-section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .theme-section.top1 { border-left: 5px solid #ef4444; }
+        .theme-section.top2 { border-left: 5px solid #f59e0b; }
+        .theme-section.top3 { border-left: 5px solid #22c55e; }
+        .theme-section.other { border-left: 5px solid #9ca3af; }
+        
+        .theme-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .theme-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .theme-count {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .theme-section.top1 .theme-count { background: #ef4444; }
+        .theme-section.top2 .theme-count { background: #f59e0b; }
+        .theme-section.top3 .theme-count { background: #22c55e; }
+        
+        .theme-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        
+        .ugc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .ugc-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #ddd;
+        }
+        .ugc-item .ugc-title {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+            color: #333;
+        }
+        .ugc-item .ugc-need {
+            font-size: 13px;
+            color: #667eea;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        .ugc-item .ugc-quote {
+            font-size: 12px;
+            color: #555;
+            line-height: 1.6;
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            border-left: 3px solid #667eea;
+        }
+        .ugc-item .ugc-meta {
+            font-size: 11px;
+            color: #999;
+            margin-top: 8px;
+        }
+        
+        .top-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .top-badge.top1 { background: #fee2e2; color: #dc2626; }
+        .top-badge.top2 { background: #fef3c7; color: #d97706; }
+        .top-badge.top3 { background: #dcfce7; color: #16a34a; }
+        
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .stats-table th, .stats-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .stats-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .stats-table td {
+            font-size: 13px;
+        }
+        .stats-table tr:hover {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>📊 功能诉求聚合分析报告</h1>
+        <div class="subtitle">基于87条需求信号UGC · 细粒度需求聚合 · TOP3高亮</div>
+    </div>
+    
+    <div class="container">
+        <div class="summary-cards">
+            <div class="summary-card">
+                <div class="number">87</div>
+                <div class="label">需求信号UGC总数</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">30</div>
+                <div class="label">功能诉求主题数</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">12</div>
+                <div class="label">TOP3覆盖条数</div>
+            </div>
+        </div>
+        
+        <h2 style="margin-bottom: 20px;">🏆 TOP3 核心功能诉求</h2>
+
+        <div class="theme-section top1">
+            <div class="theme-header">
+                <div>
+                    <span class="top-badge top1">TOP1</span>
+                    <span class="theme-title">产后身体修复</span>
+                </div>
+                <span class="theme-count">12条</span>
+            </div>
+            <div class="theme-desc">
+                <strong>核心痛点:</strong> 产后最大的问题是松弛，很多人修复方法错误，凯格尔运动效果有限... | 
+                <strong>情绪分布:</strong> 中:8 / 高:4
+            </div>
+            <div class="ugc-list">
+
+                <div class="ugc-item">
+                    <div class="ugc-title">恢复一个半月够了</div>
+                    <div class="ugc-need">💡 需求: 产后松弛的有效修复方法（顺产/剖腹产不同时间开始）、了解kresm等修复手段</div>
+                    <div class="ugc-quote">"产后最大的问题是松弛，很多人的修复方法是错的，不如凯格尔运动，这个完全不管用，只是提升一点点肌肉收缩力而已。 生完宝宝，首先要分清： 1 顺产，产后7天开始kresm 2 剖腹产，一定要当心，这样生了以后也会出现松弛，产后10天需要开始缩。 因为我是剖腹产的，生完以后松弛2.5指，一个半月缩回了1指，顺产以后修复可能时间会多一点。""""</div>
+                    <div class="ugc-meta">
+                        👍 20 · 产后 · 情绪: 期待(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">允许自己产后这三年，可以得罪任何人</div>
+                    <div class="ugc-need">💡 需求: 产后各阶段身心恢复指导、拒绝无效社交和越界关心的方法、自我空间和时间管理</div>
+                    <div class="ugc-quote">"作为母亲，尤其是在宝宝三岁以前，你完全有权利“得罪”任何人，允许给自己一份“三年免责声明” [微笑R]产后第一年：你拥有“不解释”的权利 此时我们的身体正处在恢复的关键期，同时J素带来了敏感焦虑，甚至出现了产后抑郁。 1，接纳你的身材，你可以为此感到自豪，这是生命的勋章 2，自主选择喂养方式，母乳/奶粉，亲喂/瓶喂，你才是做决策的人 3，主动留出恢复身体和安放情绪的时间，学会从琐事中抽离，学会好好爱自己 这一年，你不需要向任何人证明你是个好妈妈，任何让你不舒服的行为都可以摒弃。 [微笑R]产后第...""""</div>
+                    <div class="ugc-meta">
+                        👍 3775 · 产后 · 情绪: 无奈(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">为啥奶奶辈的生好几个身体还那么好？</div>
+                    <div class="ugc-need">💡 需求: 产后漏尿治疗方法、产后身体后遗症（肉啾啾等）的处理建议</div>
+                    <div class="ugc-quote">"按理说现在生孩子要更轻松呀！我本来想要俩娃的，生完一个就断念想了，折磨人的小毛病出来好多。。咳嗽就漏，牙疼，好几颗肉啾啾，还越来越大，还不敢去噶，一点办法也没有！有没有懂得姐妹，咋办呀""""</div>
+                    <div class="ugc-meta">
+                        👍 29 · 产后 · 情绪: 焦虑(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">产后10个月｜求减悬浮肚运动清单（上班族）</div>
+                    <div class="ugc-need">💡 需求: 剖宫产妈妈友好的减悬浮肚运动清单、碎片时间可练的居家运动、不用器械的恢复方法</div>
+                    <div class="ugc-quote">"救命啊姐妹们！谁懂剖宫产+上班族+独自带娃的痛啊😭 今天产后整整10个月，肚子还是这个样子… 侧面看像揣了个小皮球，正面和侧面的肚型完全不一样，典型的悬浮肚，还有松垮的肚皮和淡淡的妊娠纹，穿紧身衣、高腰裤真的太自卑了… 白天上班，对着电脑就是一整天，根本没机会动。 晚上下班回家，就是无缝衔接带娃，哄睡、夜奶，忙完自己瘫在床上只想闭眼，健身房根本想都不敢想。 试过跟着网上的帕梅拉做了两次，第二天腰酸得直不起来，又怕影响盆底肌，直接放弃了… [泪崩R]真的不想就这么摆烂下去！有没有和我一样情况的姐妹...""""</div>
+                    <div class="ugc-meta">
+                        👍 1020 · 产后 · 情绪: 焦虑(高)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">白人产康项目貌似不包括收骨盆。是因为她们觉得没必要收；还是因为她们胯宽不需要打开骨盆呢? 最近在了解悉尼产康的诊所。发现白人的店貌似都不包括收盆骨的项目，只有腹</div>
+                    <div class="ugc-need">💡 需求: 了解白人产康是否包含收骨盆项目、中西方产康项目差异、悉尼产康诊所推荐</div>
+                    <div class="ugc-quote">"白人产康项目貌似不包括收骨盆。是因为她们觉得没必要收；还是因为她们胯宽不需要打开骨盆呢? 最近在了解悉尼产康的诊所。发现白人的店貌似都不包括收盆骨的项目，只有腹直肌和盆底肌的。所以产生了这个疑问！难道是我看错了地方？还是因为她们根本不做这个项目？求解惑""""</div>
+                    <div class="ugc-meta">
+                        👍 515 · 产后 · 情绪: 焦虑(中)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="theme-section top2">
+            <div class="theme-header">
+                <div>
+                    <span class="top-badge top2">TOP2</span>
+                    <span class="theme-title">夫妻关系/育儿共识</span>
+                </div>
+                <span class="theme-count">8条</span>
+            </div>
+            <div class="theme-desc">
+                <strong>核心痛点:</strong> 丈夫对育儿不上心、疏于学习，与妻子在思维方式和决策逻辑方面差距拉大，加上老人参与导致决策权争夺... | 
+                <strong>情绪分布:</strong> 中:7 / 高:1
+            </div>
+            <div class="ugc-list">
+
+                <div class="ugc-item">
+                    <div class="ugc-title">有一个群体，离婚率奇高</div>
+                    <div class="ugc-need">💡 需求: 寻求避免/缓解因育儿认知差异导致婚姻危机的方法和经验，希望丈夫也能同步学习育儿知识</div>
+                    <div class="ugc-quote">"那天我看做医学科普的项栋梁说： "因为做医学科普的缘故，我了解到一个叫“循证妈妈”的群体，也是一个离婚率奇高的群体。她们中很多人是从备孕怀孕开始接触现代yi学知识，建立起讲证据和讲逻辑的底层观念，如果这时丈夫因为对育儿不上心而疏于学习，从此在认知水平层面落后，并且差距越来越大，最后大概率就会走向离婚。" 哈哈，你看😂 结婚生子前：会觉得男人财力、性格、对自己好不好很重要 结婚生子后：会发现科学素养是否有相同认知也很重要。 ✅头两三年婴幼儿生病的几率很高 所以发生冲突的频率也更高。 有时也不是两口...""""</div>
+                    <div class="ugc-meta">
+                        👍 4662 · 育儿 · 情绪: 无奈、焦虑(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">在魔都，年薪50W左右，会比较忙。太太10W，事业心不是很强。目前租房，房租6K每月，就有一辆车，无负债。本来计划买房，但被不稳定的房价暂时劝退。今年刚生了宝宝</div>
+                    <div class="ugc-need">💡 需求: 希望获得过来人的建议，了解全职带娃的实际体验和潜在问题，帮助做出家庭决策</div>
+                    <div class="ugc-quote">"在魔都，年薪50W左右，会比较忙。太太10W，事业心不是很强。目前租房，房租6K每月，就有一辆车，无负债。本来计划买房，但被不稳定的房价暂时劝退。今年刚生了宝宝，我妈来帮忙了月子。太太一是想要给孩子更多的陪伴，二是和老人住也会有不自在，所以想要全职自己带娃。 确实这样就不用处理婆媳矛盾了，心理上会轻松一些。但我是有一些担心我们两个能否照顾好宝宝，再就是会不会有一些其他的现在不能预料的问题，有没有过来人给点建议！""""</div>
+                    <div class="ugc-meta">
+                        👍 386 · 育儿 · 情绪: 犹豫、担忧(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">备孕哪有不疯的！又是想创飞老公的一天</div>
+                    <div class="ugc-need">💡 需求: 寻求情感共鸣，了解其他家庭中老公在备孕中的表现，获得心理平衡</div>
+                    <div class="ugc-quote">"备孕太苦，队友太佛… 快说说你们的老公，让我高兴高兴[doge]""""</div>
+                    <div class="ugc-meta">
+                        👍 354 · 备孕 · 情绪: 愤怒、无奈(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">怀上宝宝的人跟队友都是怎么安排的？</div>
+                    <div class="ugc-need">💡 需求: 了解成功怀孕的夫妻在备孕期间的安排和经验</div>
+                    <div class="ugc-quote">"""""</div>
+                    <div class="ugc-meta">
+                        👍 38 · 备孕 · 情绪: 期待(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">以前以为不避孕马上就会中招😂</div>
+                    <div class="ugc-need">💡 需求: 推荐准确的备孕APP、了解排卵试纸是否有用、获取备孕技巧</div>
+                    <div class="ugc-quote">"总是小心谨慎的，现在发现真是自己想太多了，周末夫妻佛系备孕，三四个月了都没中招，这个月终于下了APP，准备仔细研究一下[捂脸R][捂脸R][捂脸R]不知道还有没有希望冲一个马宝宝，各位姐妹有没有推荐的APP，哪个APP备孕比较准，或者排卵试纸有用没有啊？请各位姐妹支支招～""""</div>
+                    <div class="ugc-meta">
+                        👍 100 · 备孕 · 情绪: 期待(中)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="theme-section top3">
+            <div class="theme-header">
+                <div>
+                    <span class="top-badge top3">TOP3</span>
+                    <span class="theme-title">早教课程/机构选择</span>
+                </div>
+                <span class="theme-count">7条</span>
+            </div>
+            <div class="theme-desc">
+                <strong>核心痛点:</strong> 早教课内容杂乱、节奏过快、像流水线作业，体验感差，不确定是否值得投入... | 
+                <strong>情绪分布:</strong> 中:7
+            </div>
+            <div class="ugc-list">
+
+                <div class="ugc-item">
+                    <div class="ugc-title">早教课有用么？</div>
+                    <div class="ugc-need">💡 需求: 了解其他家长对早教课的真实评价，判断是否有必要上早教课</div>
+                    <div class="ugc-quote">"今天一家三口逛商场遇到早教班在推销体验课，爸爸就说去体验一下，好奇这些课具体在教什么，同时也想带着心理学的角度去看看现在这对儿童心理发展起到什么作用。 全课程50分钟，一会儿图卡、一会儿积木、一会儿玩偶、一会儿数数、一会儿又唱歌、一会儿吹泡泡，一会儿荡秋千，一会儿滑滑梯，其中最奇特的是“快速闪卡”一秒一张的速度略过一张张的图卡，同时还念着图卡上物品的名称，每当宝宝才对老师手里的东西感兴趣就拿走了，然后马上上下一个项目，最搞笑的是老师辅助孩子翻跟头，排队一人翻一个，然后就结束了，就又马上做下一件事...""""</div>
+                    <div class="ugc-meta">
+                        👍 124 · 早教 · 情绪: 失望、困惑(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">我真的好费解</div>
+                    <div class="ugc-need">💡 需求: 了解蒙氏早教的核心概念和推荐购买清单</div>
+                    <div class="ugc-quote">"有没有人可以教教我，到底什么算是蒙氏早教[皱眉R] 想趁着双11买点啥，也不知道要买啥🥲""""</div>
+                    <div class="ugc-meta">
+                        👍 242 · 早教 · 情绪: 困惑(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">1岁宝宝 有没有必要上早教 双职工，爷奶带娃</div>
+                    <div class="ugc-need">💡 需求: 了解1岁宝宝上早教的必要性，获得针对双职工/老人带娃家庭的早教建议</div>
+                    <div class="ugc-quote">"1岁宝宝 有没有必要上早教 双职工，爷奶带娃""""</div>
+                    <div class="ugc-meta">
+                        👍 7 · 早教 · 情绪: 犹豫(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">孩子上了早教和没上有区别吗</div>
+                    <div class="ugc-need">💡 需求: 了解上过早教和没上过早教的孩子在实际发展上是否有区别</div>
+                    <div class="ugc-quote">"孩子上了早教和没上有区别吗""""</div>
+                    <div class="ugc-meta">
+                        👍 43 · 早教 · 情绪: 犹豫(中)
+                    </div>
+                </div>
+
+                <div class="ugc-item">
+                    <div class="ugc-title">早教班真的有必要上吗？不上早教班和上过早教班的孩子在哪些方面有区别</div>
+                    <div class="ugc-need">💡 需求: 了解早教班的实际价值和必要性，以及对孩子发展的具体影响</div>
+                    <div class="ugc-quote">"早教班真的有必要上吗？不上早教班和上过早教班的孩子在哪些方面有区别""""</div>
+                    <div class="ugc-meta">
+                        👍 19 · 早教 · 情绪: 犹豫(中)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin: 40px 0 20px;">📋 全部需求统计</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>需求主题</th>
+                    <th>数量</th>
+                    <th>占比</th>
+                    <th>主要情绪</th>
+                    <th>典型需求</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>产后身体修复</td>
+                    <td><strong>12</strong></td>
+                    <td>13.8%</td>
+                    <td>焦虑</td>
+                    <td>产后松弛的有效修复方法（顺产/剖腹产不同时间开始）、了解kresm等修复手段...</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>夫妻关系/育儿共识</td>
+                    <td><strong>8</strong></td>
+                    <td>9.2%</td>
+                    <td>期待</td>
+                    <td>寻求避免/缓解因育儿认知差异导致婚姻危机的方法和经验，希望丈夫也能同步学习育儿知识...</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>早教课程/机构选择</td>
+                    <td><strong>7</strong></td>
+                    <td>8.0%</td>
+                    <td>犹豫</td>
+                    <td>了解其他家长对早教课的真实评价，判断是否有必要上早教课...</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>产后心理/职场</td>
+                    <td><strong>7</strong></td>
+                    <td>8.0%</td>
+                    <td>无奈</td>
+                    <td>寻求高龄备孕的成功经验和心理支持...</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>备孕知识/经验</td>
+                    <td><strong>6</strong></td>
+                    <td>6.9%</td>
+                    <td>期待</td>
+                    <td>通过减肥、养生、科学备孕重塑健康身体，希望获得备孕知识和经验分享...</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>久备不孕/医疗</td>
+                    <td><strong>6</strong></td>
+                    <td>6.9%</td>
+                    <td>焦虑</td>
+                    <td>学习备孕心态调整方法，停止自我PUA和盲目攀比，获得情感支持和正向思维指导...</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>备孕心理/情绪</td>
+                    <td><strong>5</strong></td>
+                    <td>5.7%</td>
+                    <td>焦虑</td>
+                    <td>情感宣泄和共鸣，希望获得备孕心态调整的建议...</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>妊娠纹/孕期护理</td>
+                    <td><strong>3</strong></td>
+                    <td>3.4%</td>
+                    <td>焦虑</td>
+                    <td>寻找有效的防妊娠纹产品（妊娠油），了解产品成分安全性和使用效果...</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>孕妇穿搭/形象</td>
+                    <td><strong>3</strong></td>
+                    <td>3.4%</td>
+                    <td>期待</td>
+                    <td>了解孕妇照拍摄的最佳孕周和风格推荐...</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>孕期睡眠/不适</td>
+                    <td><strong>3</strong></td>
+                    <td>3.4%</td>
+                    <td>崩溃、煎熬</td>
+                    <td>找到同样失眠的孕妇交流近况，获得情感支持和共鸣...</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>辅食/喂养</td>
+                    <td><strong>3</strong></td>
+                    <td>3.4%</td>
+                    <td>焦虑</td>
+                    <td>断奶方法和心理准备、断奶后宝宝适应指导、妈妈自我身份重建...</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>育儿嫂筛选/背调</td>
+                    <td><strong>2</strong></td>
+                    <td>2.3%</td>
+                    <td>失望、心累</td>
+                    <td>希望获得可靠的育儿嫂筛选/背调渠道，建立家政服务黑名单共享机制，保障宝宝安全...</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>育儿嫂招聘/寻找</td>
+                    <td><strong>2</strong></td>
+                    <td>2.3%</td>
+                    <td>期待</td>
+                    <td>寻找一位长期住家、爱干净、懂育儿、能独立带娃的育儿嫂（不加中介）...</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>早教内容安全审核</td>
+                    <td><strong>2</strong></td>
+                    <td>2.3%</td>
+                    <td>担忧</td>
+                    <td>希望获得对具体早教视频内容的安全性判断和建议...</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>英语启蒙资源</td>
+                    <td><strong>2</strong></td>
+                    <td>2.3%</td>
+                    <td>焦虑、无奈</td>
+                    <td>希望获得Lingumi等英语启蒙产品的真实使用反馈，找到适合懒妈的入门方案...</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>性别选择</td>
+                    <td><strong>2</strong></td>
+                    <td>2.3%</td>
+                    <td>期待</td>
+                    <td>获得过来人提高生男孩概率的经验和方法分享...</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>法律维权/补贴</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>无奈、焦虑</td>
+                    <td>了解法律维权途径，寻求重新申请育儿补贴的方法，获得公平的经济支持...</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>育儿记录/管理系统</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>焦虑</td>
+                    <td>需要一个多人共享的育儿记录/管理系统，能自动算月龄、提醒疫苗/体检、推荐适龄早教和菜谱...</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>高敏感儿童养育</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>困惑</td>
+                    <td>希望获得其他高敏感孩子家长的心得体会和有效养育方法...</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>早教陪伴/互动</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>期待</td>
+                    <td>招聘幼师/学前教育专业学生，陪伴宝宝读绘本、玩游戏、做早教互动...</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>社区服务/宝宝屋</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>不满</td>
+                    <td>希望社区宝宝屋增加开放时段和免费服务名额，让亲子空间真正惠及居民...</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>孕期知识/经验</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>期待、幸福</td>
+                    <td>希望找到同款孕期体验的姐妹，获得情感共鸣和交流...</td>
+                </tr>
+                <tr>
+                    <td>23</td>
+                    <td>孕期收入/副业</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>焦虑</td>
+                    <td>寻求孕期增加收入的方法或副业建议...</td>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>高龄备孕</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>崩溃、恐惧</td>
+                    <td>了解95年同龄人的生育情况，获得是否可以晚生的建议和情感支持...</td>
+                </tr>
+                <tr>
+                    <td>25</td>
+                    <td>生育时间规划</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>焦虑</td>
+                    <td>女博士群体生育时间规划建议、学业与生育平衡的经验分享...</td>
+                </tr>
+                <tr>
+                    <td>26</td>
+                    <td>特殊疾病备孕</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>期待</td>
+                    <td>桥本备孕的用药指导（优甲乐剂量）、叶酸和维D补充剂量、甲功监测建议...</td>
+                </tr>
+                <tr>
+                    <td>27</td>
+                    <td>产后身材恢复</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>焦虑</td>
+                    <td>产后身材恢复方法、老公可以提供的支持和准备...</td>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>产后营养/补剂</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>期待</td>
+                    <td>产后维生素D补充指导（大剂量补充）、补钙和维D的平衡、适合宝妈的补剂推荐...</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>分娩方式选择</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>期待</td>
+                    <td>顺产和剖腹产的优缺点对比、分娩方式选择的医学建议...</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>失独/高龄生育</td>
+                    <td><strong>1</strong></td>
+                    <td>1.1%</td>
+                    <td>期待</td>
+                    <td>高龄生育的身体评估和准备、失独后心理重建、重新安排日常和未来...</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

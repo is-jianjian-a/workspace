@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关心话题产品机会映射报告</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        .header h1 { font-size: 28px; margin-bottom: 10px; }
+        .header .subtitle { font-size: 14px; opacity: 0.9; }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+        .summary-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .summary-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        .summary-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #667eea;
+        }
+        .summary-card .label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .product-section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .product-section.top1 { border-left: 5px solid #ef4444; }
+        .product-section.top2 { border-left: 5px solid #f59e0b; }
+        .product-section.top3 { border-left: 5px solid #22c55e; }
+        .product-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .product-title {
+            font-size: 20px;
+            font-weight: 600;
+        }
+        .product-stats {
+            display: flex;
+            gap: 15px;
+        }
+        .stat-badge {
+            background: #667eea;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        .product-section.top1 .stat-badge { background: #ef4444; }
+        .product-section.top2 .stat-badge { background: #f59e0b; }
+        .product-section.top3 .stat-badge { background: #22c55e; }
+        .product-desc {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 15px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .product-value {
+            font-size: 13px;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+        .theme-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        .theme-item {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 3px solid #667eea;
+        }
+        .theme-item .theme-name {
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+        .theme-item .theme-count {
+            font-size: 12px;
+            color: #999;
+            margin-bottom: 10px;
+        }
+        .ugc-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .ugc-item {
+            padding: 10px;
+            background: white;
+            border-radius: 6px;
+            border-left: 2px solid #ddd;
+        }
+        .ugc-item .ugc-title {
+            font-weight: 500;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        .ugc-item .ugc-quote {
+            font-size: 11px;
+            color: #666;
+            line-height: 1.5;
+        }
+        .ugc-item .ugc-meta {
+            font-size: 10px;
+            color: #999;
+            margin-top: 5px;
+        }
+        .top-badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+        .top-badge.top1 { background: #fee2e2; color: #dc2626; }
+        .top-badge.top2 { background: #fef3c7; color: #d97706; }
+        .top-badge.top3 { background: #dcfce7; color: #16a34a; }
+        .stats-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .stats-table th, .stats-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .stats-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            font-size: 13px;
+        }
+        .stats-table td {
+            font-size: 13px;
+        }
+        .stats-table tr:hover {
+            background: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>🎯 关心话题 → 产品机会映射报告</h1>
+        <div class="subtitle">基于285条关注讨论信号UGC · 话题聚合 · 产品映射 · 按互动量排序</div>
+    </div>
+    
+    <div class="container">
+        <div class="summary-cards">
+            <div class="summary-card">
+                <div class="number">5</div>
+                <div class="label">产品机会数</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">285</div>
+                <div class="label">关注讨论信号UGC数</div>
+            </div>
+            <div class="summary-card">
+                <div class="number">658047</div>
+                <div class="label">总互动量</div>
+            </div>
+        </div>
+        
+        <h2 style="margin-bottom: 20px;">🏆 TOP3 产品机会（按互动量排序）</h2>
+
+        <div class="product-section top1">
+            <div class="product-header">
+                <div>
+                    <span class="top-badge top1">TOP1</span>
+                    <span class="product-title">育儿知识智能收集与整理</span>
+                </div>
+                <div class="product-stats">
+                    <span class="stat-badge">41条UGC</span>
+                    <span class="stat-badge">215088互动</span>
+                </div>
+            </div>
+            <div class="product-desc">自动收集、分类、整理各平台育儿观念和方法，支持按月龄/主题/场景归档</div>
+            <div class="product-value">💡 价值主张: 解决育儿知识碎片化，建立系统化育儿知识库</div>
+            
+            <div class="theme-list">
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 育儿观念与方法</div>
+                    <div class="theme-count">34条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">天呐！我们刷到的是同一个帖子吗！</div>
+                            <div class="ugc-quote">"这个帖子我也刷到了。然后又刷到这个截图，比原帖还热门。 我以为那句评论是玩抽象、反讽，结果是认真的？？ “点赞”？？？“止损”？？ ——— 后悔是一时情绪，打孩子也是一时情绪。 情绪pk情绪，情绪的波动可以改变根深蒂固的习惯吗？ ———— 后悔是后悔的，但大概就类似“我犯了天下男人都会犯的错”式歉意吧。 ——— 这条突然爆了？补充： 评论区有一种句型：“小孩做了…（事），该不该打？”我建议这样问：...""""</div>
+                            <div class="ugc-meta">👍 1381 · 打孩子管教 · 负向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">你觉得你的孩子不行，其实是你不行！</div>
+                            <div class="ugc-quote">"很多家长总是喜欢拿自家的孩子和别人家的孩子比较，仿佛别人家的孩子永远是样样出色，而自己的孩子总是处处不如人。比如有的家长会因为别人的孩子学业成绩优异或者拥有某项特长而感到焦虑，急于求成，不自觉地向孩子施压。 然而，我们往往忽视了背后的差别——每个孩子的成长环境、家庭资源都大不相同。拿学业来说，有些孩子家里能提供全方位的学习支持，比如请家教、参与高端的夏令营等。在这样的环境下孩子表现出色，并不令人意...""""</div>
+                            <div class="ugc-meta">👍 1513 · 攀比式育儿 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">离谱｜单亲爸爸在上海养2个孩子，每月6W开支</div>
+                            <div class="ugc-quote">"作为一个95后，还不到30岁的单亲爸爸，要在上海养两个孩子，又不降低自己的生活质量，一个月要花多少钱呢？🤔 这个问题是个好问题，一直想算算我家的开销💰 今天细细算下来吓一跳，一个月竟然要花到6w🙀 👧女儿上公立2年级。学费不高，但是每个月的课后兴趣班和家教是大头 👦儿子上私立小学。贵在每个学期的学费！ 🏠家庭开销都是生活日常，房租+房贷，养车方面 吃喝穿搭出行！ ⚪️我给家人每年都要买了保险，我作...""""</div>
+                            <div class="ugc-meta">👍 551 · 养娃成本 · 中性</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 早教方法与内容</div>
+                    <div class="theme-count">5条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">100天专注力游戏打卡！ Day4</div>
+                            <div class="ugc-quote">"😍今天给大家分享一个超有趣的专注力训练小游戏哦！🎉 💪就是这些五彩斑斓的字啦，要求只读颜色不读字哦！是不是听起来很简单，但做起来可不容易呢！😜 💕这可是锻炼宝贝专注力的绝佳方法哦，能让宝贝们集中精力，挑战大脑的反应速度呢！快来和宝贝一起试试吧，看看谁能又快又准地完成，让宝贝在玩乐中提升专注力哦！💖""""</div>
+                            <div class="ugc-meta">👍 8179 · 专注力训练方法 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">女🦢一口气玩了两个小时不理我🥹</div>
+                            <div class="ugc-quote">"这本感官书直接把“五感启蒙”做成了娃的玩具！ 大象鼻子能摸（绒绒的像真皮肤）、青蛙舌头能“尝”（假装舔葡萄）、兔子耳朵能听声音（按按钮就出音效），连花的香味都藏在书页里！ 每本对应一个感官 ✅《这个好闻吗》摸大象鼻+闻花香 ✅《可以握手吗》捏章鱼爪+感知“烫” ✅《让我来尝尝》伸青蛙舌+辨味道 ✅《什么声音啊》动兔耳朵+听音效 软乎乎的立体材质，娃边玩边练触觉/嗅觉/听觉，老母亲终于不用愁“怎么教...""""</div>
+                            <div class="ugc-meta">👍 99 · 感官绘本推荐 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">被这本绘本感动得稀里哗啦🥹🥹🥹</div>
+                            <div class="ugc-quote">"🌈这本生命教育绘本，让孩子在温暖的故事里获得新知，获得安全感，让孩子收获爱，学会爱‼️""""</div>
+                            <div class="ugc-meta">👍 7556 · 生命教育绘本 · 正向</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 家庭育儿分工</div>
+                    <div class="theme-count">2条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">男孩每个阶段，喜欢的爸爸</div>
+                            <div class="ugc-quote">"可以看到，随着男孩不断成长，爸爸所扮演的角色也在持续变化。在每个阶段，孩子的需求不一样，爸爸陪伴孩子的方式也得跟着做出调整。不管是通过一起做游戏来和孩子建立信任，还是借助讲故事向孩子传递正确的价值观，又或是在青春期给予孩子足够的空间，充分信任孩子，爸爸的爱永远是孩子成长路上最坚实可靠的后盾。""""</div>
+                            <div class="ugc-meta">👍 3187 · 父亲角色 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">他们说，这日程是生育率杀手，我发出试试</div>
+                            <div class="ugc-quote">"周末我跟了完整的一天带娃日程，整理出时间表。看过的人都说这是生育率杀手[失望R]。 如果再配上 “娃睡你也睡”，“我白天还要上班” “我们当年哪有这么麻烦”“你们事儿太多了”那就是绝杀。""""</div>
+                            <div class="ugc-meta">👍 3800 · 带娃负担 · 负向</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-section top2">
+            <div class="product-header">
+                <div>
+                    <span class="top-badge top2">TOP2</span>
+                    <span class="product-title">备孕知识智能收集与整理</span>
+                </div>
+                <div class="product-stats">
+                    <span class="stat-badge">76条UGC</span>
+                    <span class="stat-badge">176698互动</span>
+                </div>
+            </div>
+            <div class="product-desc">自动收集、分类、整理各平台备孕知识，支持按备孕阶段/体质/年龄自动归档</div>
+            <div class="product-value">💡 价值主张: 解决备孕信息碎片化，提供系统化知识管理</div>
+            
+            <div class="theme-list">
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 备孕方法与经验</div>
+                    <div class="theme-count">76条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">备孕最佳地点</div>
+                            <div class="ugc-quote">"是海岛！ 回想我备孕那阵子，每天紧绷得像个发条，结果越想要越没动静，后来干脆和老公去海岛躺平了一周。 说实话，在那儿根本没想“造人”这回事[笑哭R]每天看海吹风喝椰子做按摩，再到点评找吃的，那种在城市里压抑已久的感官突然全开了。身体彻底松弛下来，心情好到起飞，连带着看老公都顺眼了超多[doge]。 然后回来后第二个月，嘿，您猜怎么着，小宝贝就真的不请自来了！ 现在想想，海岛那种隔绝喧嚣的磁场，真的...""""</div>
+                            <div class="ugc-meta">👍 657 · 备孕放松助孕 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">备孕，老公不配合</div>
+                            <div class="ugc-quote">"我老公已经35+ 为了让他40岁前当上爸爸 经友好商量 决定将备孕排上日程 但是老公三天打鱼两日晒网 总是觉得这个饭局不喝酒不好 今天抽一根半根烟不碍事 还会躲起来抽烟 好像跟我捉迷藏一样 真的觉得心好累 你不配合 那我也无所谓了 着急的又不是我 父母催的时候 我就说是我老公不行吧[微笑R]""""</div>
+                            <div class="ugc-meta">👍 1161 · 备孕老公配合 · 负向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">夫妻备孕超全攻略！备孕的姐妹们收下吧！</div>
+                            <div class="ugc-quote">"今天给大家整理了一份夫妻备孕超全攻略，姐妹们快拉上老公一起看！！👀 ✅本文重点 1️⃣备孕提前准备事项 2️⃣ 为什么要提前3-6个月开始备孕？ 3️⃣备孕，需要先禁欲吗？ 4️⃣受孕黄金时间 5️⃣备孕准备 6️⃣孕前检查 7️⃣助孕小妙招 8️⃣备孕提前准备事项 9️⃣营养补充 1️⃣0️⃣5款女性备孕暖宫汤 ❤️最后祝姐妹们一次中，迎接健康宝宝🍼[赞R]""""</div>
+                            <div class="ugc-meta">👍 3.7万 · 夫妻备孕攻略 · 中性</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-section top3">
+            <div class="product-header">
+                <div>
+                    <span class="top-badge top3">TOP3</span>
+                    <span class="product-title">育儿内容个性化推荐</span>
+                </div>
+                <div class="product-stats">
+                    <span class="stat-badge">58条UGC</span>
+                    <span class="stat-badge">134773互动</span>
+                </div>
+            </div>
+            <div class="product-desc">根据孕周/宝妈需求/当前场景推荐精准的孕期护理内容，解决信息过载</div>
+            <div class="product-value">💡 价值主张: 精准匹配孕期需求，减少信息筛选成本</div>
+            
+            <div class="theme-list">
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 孕期生活与护理</div>
+                    <div class="theme-count">45条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">养娃太难了，在家也要注意啊</div>
+                            <div class="ugc-quote">"亲爱的新手爸妈们，每一个小生命的降临都承载着无尽 的爱与期待，而守护宝宝的安全更是重中之重。 以下这些宝宝睡眠安全要点，一定要牢牢记住，为宝宝 筑起坚实的安全防线！ 1.分床不分房，守护每一个甜梦 为宝宝准备一张专属的婴儿床，打造独立又温馨的睡眠 小天地，有效避免大人翻身时的意外挤压，也能防止厚重的被子捂住宝宝口鼻。若想时刻与宝宝亲近，可以选择侧边可调节的低床边婴儿床，并确保稳固安装、无缝衔接，既...""""</div>
+                            <div class="ugc-meta">👍 36 · 睡眠安全 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">孕期必看❗️4种胎教方式生出高智商宝宝</div>
+                            <div class="ugc-quote">"✅胎教的好处👇 一、对宝宝的好处： 👉促进大脑发育 👉稳定情绪性格 👉建立早期亲密感 👉培养音乐和语言感知 二、对妈妈的好处： 👉缓解孕期焦虑：专注于和宝宝的互动，心情变平静。 👉建立母亲角色认同：每天固定的交流，让“妈妈”这个身份更真实。 👉拉近夫妻关系：爸爸参与进来，共同期待新生命。""""</div>
+                            <div class="ugc-meta">👍 2628 · 胎教方式 · 正向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">为什么当了妈以后继续做自己要被指责？？</div>
+                            <div class="ugc-quote">"孕晚期做个指甲会被说对肚里的宝宝不负责任 稍微穿点露肤度高一点的衣服就被说是给老男人生孩子 是被包Y，被造谣是“zyz” 笔记里面不出现老公就被说是单亲妈妈说肚子的孩子不知道是谁的 我想说我从来都没变过爱臭美爱打扮爱拍照爱分享 就算当了妈妈我也在努力维持着自己的“精致” 每天营养丰富，坚持锻炼 保持好状态 业余时间我还做了账号接G赚钱 我不会被“妈妈”的身份束缚住而放任自己 也更关心宝宝的状态，产...""""</div>
+                            <div class="ugc-meta">👍 7086 · 孕期自我认同 · 负向</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 英语启蒙</div>
+                    <div class="theme-count">6条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">魔都幼儿英语启蒙有多卷</div>
+                            <div class="ugc-quote">"今天在少年儿童图书馆里看到一个老爷爷（约70岁）全程用英语在跟2岁孙女讲书和对话，讲的书也是那种孙女可以互动的，不是干巴巴的书。关键老爷爷虽然有点口音，但基本语法什么都没问题，还让孩子对我说excuse me。小娃娃虽不能全部都用英语回答，但听力绝对也没问题。我后来好奇问了老爷爷是不是英语老师，英语好厉害，老爷爷说不是。今天被卷到了。。。果然英语没有天花板。。""""</div>
+                            <div class="ugc-meta">👍 111 · 英语启蒙内卷 · 复杂</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">真的没人质疑用SSS做英语启蒙的有效性嘛？</div>
+                            <div class="ugc-quote">"低幼零基础英语启蒙，90%都推荐先刷SSS儿歌。但我一直有个疑问： [私信R]歌曲的发音和断句难免需要根据节奏而调整，语调更是要随旋律变化。对零基础的孩子来说，直接说的（而非唱出来的）不是更容易听清吗？ 类比到娃一开始学普通话，中文儿童歌曲肯定也算是增强语感的一种方式，但是效率感觉不如朗读的儿歌和日常对话？ 相比之下，yakka dee我觉得特别好（至少从大人视角来看）：每集有高频重复的关键词、有...""""</div>
+                            <div class="ugc-meta">👍 1030 · 英语启蒙方法 · 复杂</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">英语启蒙动画顺序看对，寒假英语词汇暴增❗</div>
+                            <div class="ugc-quote">"英语启蒙动画片观看顺序，都整理好啦！ 利用马上到来的寒假，给孩子看起来。 每天30分钟，按顺序来看，效果翻倍✌🏻 记住，看完后一定记得熏听音频哦❗❗""""</div>
+                            <div class="ugc-meta">👍 598 · 英语启蒙动画 · 正向</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 生育决策与经济</div>
+                    <div class="theme-count">4条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">10个问题，帮你判断：你究竟要不要生小孩？</div>
+                            <div class="ugc-quote">"作为一个新手奶爸，我觉得每个面对人生节点的人都应该去想明白这是个问题。 只有得到了确切的答案后，才可以去考虑生小孩。""""</div>
+                            <div class="ugc-meta">👍 8765 · 生育决策 · 中性</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">我会永远的爱你 用我全部的生命</div>
+                            <div class="ugc-quote">"我算是在爱里长大的小孩，有一个比我小十岁的弟弟，没打过架，刚有弟弟的时候，因为“闹着玩”的亲戚说“有了小弟弟你爸妈就不喜欢你了”也难过过。 但是我的妈妈告诉我“爸爸妈妈的爱会分给小弟弟一部分，但是你也会收获来自弟弟的爱，总体得到的爱并没有减少”。 我非常自信地要了老二，觉得自己一定能平衡好姐弟之间的关系，然而…… 两岁半的女儿 开始会说“小弟弟好可爱啊”，后来变成了“我不要小弟弟”；开始女儿会说“...""""</div>
+                            <div class="ugc-meta">👍 1208 · 二胎心理 · 复杂</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">秦昊：孩子，才是人生最大的奢侈品</div>
+                            <div class="ugc-quote">"真的被秦昊这段话狠狠共情了✨ 原来我们纠结生不生，从来不是怕疼、怕麻烦 而是怕自己扛不起那份沉甸甸的一生责任 现在越来越多年轻人选择晚婚晚育、甚至丁克 不是不爱孩子，不是不想拥有家庭 是见过生活的难，懂前路的迷茫 不想让小小的生命，重复自己的奔波与委屈 不敢轻易把一个人带来世间，却给不了稳稳的底气 秦昊说，孩子是世界上最大的奢侈品 这句话真的太通透了 它从来不是奶粉、学区房、衣食住行的金钱堆砌 而...""""</div>
+                            <div class="ugc-meta">👍 1635 · 生育观 · 复杂</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 儿童健康</div>
+                    <div class="theme-count">2条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">哄睡真的太费妈了，我可不是什么恶毒后妈啊</div>
+                            <div class="ugc-quote">"哄睡真的太费妈了，我可不是什么恶毒后妈啊""""</div>
+                            <div class="ugc-meta">👍 621 · 哄睡困难 · 负向</div>
+                        </div>
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">我真想扇死自己，差一点就失去了我的儿子</div>
+                            <div class="ugc-quote">"姐妹们！必须用我的血泪教训给你们敲个警钟！今晚七点发生的事我现在手还在发抖，我们家差点就失去了一岁半的宝宝！ 当时娃他爸在次卧加班，我和儿子在客厅玩玩具。就低头回个信息的功夫，突然听见"呕呕"的干咳声。一回头看见娃背对着我撅着小屁股，我还以为是玩具戳到嘴了。等把他翻过来要拍背时，孩子突然像被掐住脖子的小猫，整张脸涨得血红，眼睛瞪得老大，小手在空中乱抓——和平时噎到的样子完全不一样！ "快来人啊！"...""""</div>
+                            <div class="ugc-meta">👍 3059 · 宝宝急救 · 负向</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="theme-item">
+                    <div class="theme-name">📌 特殊儿童养育</div>
+                    <div class="theme-count">1条相关UGC</div>
+                    <div class="ugc-list">
+
+                        <div class="ugc-item">
+                            <div class="ugc-title">不要过度共情高敏感孩子</div>
+                            <div class="ugc-quote">"你有没有发现过这样的时刻：对高敏感孩子，当你在努力“共情”后，却发现效果“不尽如意”，甚至“适得其反”？ 对此，你的心得、体会是？ 欢迎在评论区分享给其他敏娃爹娘，带娃不易，咱们相互取暖~""""</div>
+                            <div class="ugc-meta">👍 77 · 高敏感孩子 · 复杂</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin: 40px 0 20px;">📋 全部产品机会（按互动量排序）</h2>
+        <table class="stats-table">
+            <thead>
+                <tr>
+                    <th>排名</th>
+                    <th>产品机会</th>
+                    <th>相关UGC</th>
+                    <th>总互动量</th>
+                    <th>覆盖话题</th>
+                    <th>价值主张</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><strong>育儿知识智能收集与整理</strong></td>
+                    <td>41</td>
+                    <td>215088</td>
+                    <td>3个</td>
+                    <td>解决育儿知识碎片化，建立系统化育儿知识库</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><strong>备孕知识智能收集与整理</strong></td>
+                    <td>76</td>
+                    <td>176698</td>
+                    <td>1个</td>
+                    <td>解决备孕信息碎片化，提供系统化知识管理</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><strong>育儿内容个性化推荐</strong></td>
+                    <td>58</td>
+                    <td>134773</td>
+                    <td>5个</td>
+                    <td>精准匹配孕期需求，减少信息筛选成本</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><strong>产后情绪支持与心理疏导</strong></td>
+                    <td>41</td>
+                    <td>83801</td>
+                    <td>2个</td>
+                    <td>关注产后心理健康，提供及时情绪干预</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><strong>育儿工具对比评测</strong></td>
+                    <td>42</td>
+                    <td>47687</td>
+                    <td>2个</td>
+                    <td>解决早教选择困难，优化教育投资</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

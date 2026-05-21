@@ -1,0 +1,452 @@
+[
+  {
+    "note_id": "66bff687000000001e01c68b",
+    "topic": "备孕情绪困扰",
+    "sub_topic": "吐槽备孕辛苦，寻求情感共鸣",
+    "mentioned": "老公/队友",
+    "focus": "情感",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "68ab063a000000001c007caf",
+    "topic": "备孕成功经验",
+    "sub_topic": "排卵监测、饮食、运动等科学备孕方法分享",
+    "mentioned": "排卵监测、叶酸、B超",
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69e5e93f0000000021013597",
+    "topic": "备孕失败焦虑",
+    "sub_topic": "五六个月未成功，各项检查正常但仍焦虑",
+    "mentioned": "性激素六项、AMH、输卵管",
+    "focus": "效果/安全性",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "699ca83c000000001a0310fb",
+    "topic": "备孕医疗求助",
+    "sub_topic": "黄体低、月经不规律、测不到强阳等问题求助",
+    "mentioned": "黄体、促排、排卵试纸",
+    "focus": "效果/安全性",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "694825b4000000001b030890",
+    "topic": "备孕流程指南",
+    "sub_topic": "从备孕到生产的SOP表格分享",
+    "mentioned": "SOP表格、PDF",
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "低"
+  },
+  {
+    "note_id": "69e45f42000000002103b6a8",
+    "topic": "高龄备孕经历",
+    "sub_topic": "40岁胎停后再次备孕成功的崩溃与重生",
+    "mentioned": "胎停、甲减、染色体检查",
+    "focus": "情感/安全性",
+    "emotion": "复杂",
+    "heat": "中"
+  },
+  {
+    "note_id": "67b4964a000000002901a2b9",
+    "topic": "生男孩经验",
+    "sub_topic": "询问生男孩的方法和经验",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "68ff0b91000000000302ee3f",
+    "topic": "备孕期待",
+    "sub_topic": "00后首次备孕，表达对宝宝的期待",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "68ae69eb000000001d00406d",
+    "topic": "备孕饮食禁忌",
+    "sub_topic": "备孕期间宜吃与慎吃食物清单",
+    "mentioned": "高糖食物、咖啡因、酒精、油炸食品",
+    "focus": "安全性",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "661fb1a90000000003023d63",
+    "topic": "备孕成功分享",
+    "sub_topic": "备孕一年多最终成功，分享心路历程",
+    "mentioned": "排卵药、破卵针、中药",
+    "focus": "效果/情感",
+    "emotion": "复杂",
+    "heat": "中"
+  },
+  {
+    "note_id": "69e63882000000002102d6b6",
+    "topic": "备孕安排咨询",
+    "sub_topic": "询问他人备孕期间的安排和计划",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "低"
+  },
+  {
+    "note_id": "688216ff000000001203c22c",
+    "topic": "备孕失败崩溃",
+    "sub_topic": "多年备孕未成功，表达极度沮丧和愤怒",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "67b544330000000029012318",
+    "topic": "备孕焦虑",
+    "sub_topic": "备孕八个月未成功，表达强烈怀孕愿望",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "683ef36b0000000023016755",
+    "topic": "备孕年龄焦虑",
+    "sub_topic": "95年因工作、身体问题纠结是否晚育",
+    "mentioned": null,
+    "focus": "情感/安全性",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "69209390000000000d0354be",
+    "topic": "二胎备孕指南",
+    "sub_topic": "二胎妈妈分享科学备孕指南（饮食、运动、检查）",
+    "mentioned": "叶酸、锌、维生素D",
+    "focus": "效果/安全性",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "68ad67a6000000001b0364c8",
+    "topic": "备孕生活记录",
+    "sub_topic": "记录备孕日记和被公婆投喂的日常",
+    "mentioned": "公婆",
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "67fd25e4000000000d014889",
+    "topic": "备孕心得分享",
+    "sub_topic": "分享一次成功怀孕的心得和鼓励",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69dd89e00000000023007b67",
+    "topic": "高龄备孕风险焦虑",
+    "sub_topic": "87年被医生告知染色体异常风险后焦虑",
+    "mentioned": "染色体异常",
+    "focus": "安全性/情感",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "6957cd2e000000001e012024",
+    "topic": "备孕内容创作",
+    "sub_topic": "分享备孕爆款选题清单，面向备孕博主",
+    "mentioned": "排卵试纸、叶酸",
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "低"
+  },
+  {
+    "note_id": "69feab9a0000000036033948",
+    "topic": "大龄备孕交流",
+    "sub_topic": "36岁大龄备孕，寻求备孕搭子和社群交流",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "685a391f0000000024008081",
+    "topic": "男性备孕指南",
+    "sub_topic": "分享老公备孕指南，强调男性备孕重要性",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "69e6d376000000001e00e6a0",
+    "topic": "养卵泡方法",
+    "sub_topic": "分享养卵泡的饮食、运动、艾灸、泡脚方法",
+    "mentioned": "艾灸、泡脚、豆浆",
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "66ae388e000000000600f371",
+    "topic": "二胎备孕愿望",
+    "sub_topic": "表达想备孕二胎的愿望",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "695e2c34000000000b00842d",
+    "topic": "男性精子质量",
+    "sub_topic": "提醒怀不上可能是弱精问题",
+    "mentioned": "弱精",
+    "focus": "安全性",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "69390ee7000000001b024ee7",
+    "topic": "高龄备孕焦虑",
+    "sub_topic": "33岁备孕一胎，分享焦虑与自我调节方法",
+    "mentioned": "验孕棒、瑜伽",
+    "focus": "情感/效果",
+    "emotion": "复杂",
+    "heat": "中"
+  },
+  {
+    "note_id": "69fe9a93000000002301fc7a",
+    "topic": "备孕成功报喜",
+    "sub_topic": "备孕一个月成功怀孕，分享喜悦",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "6898bcd7000000002501c297",
+    "topic": "闷声备孕心态",
+    "sub_topic": "分享闷声备孕的心态调节和隐私保护建议",
+    "mentioned": "排卵试纸、基础体温",
+    "focus": "情感",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "69e8b1e70000000023022054",
+    "topic": "备孕月月失败",
+    "sub_topic": "表达月月备孕失败的沮丧心情",
+    "mentioned": "排卵期",
+    "focus": "情感",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "67d2d899000000000900e2e7",
+    "topic": "备孕优生优育",
+    "sub_topic": "分享备孕和改善下一代基因的方法",
+    "mentioned": "叶酸、维生素、蛋白质",
+    "focus": "效果/安全性",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69c104ce0000000023024ef9",
+    "topic": "备孕APP推荐",
+    "sub_topic": "询问备孕APP和排卵试纸推荐",
+    "mentioned": "备孕APP、排卵试纸",
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "67d9524a000000001d01da59",
+    "topic": "备孕现实认知",
+    "sub_topic": "对比小时候对怀孕的误解和实际备孕的辛苦",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "复杂",
+    "heat": "高"
+  },
+  {
+    "note_id": "6a0597b3000000000702027a",
+    "topic": "备孕月份推荐",
+    "sub_topic": "整理12个月份备孕时间线推荐",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "低"
+  },
+  {
+    "note_id": "68e12661000000000501108f",
+    "topic": "高龄修心备孕",
+    "sub_topic": "42岁备孕成功，分享修心备孕法",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "6932903e000000000d03d378",
+    "topic": "备孕学业冲突",
+    "sub_topic": "已婚在读女博士纠结是否毕业前要小孩",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "66efc7ef0000000012013f1d",
+    "topic": "夫妻备孕攻略",
+    "sub_topic": "分享夫妻备孕超全攻略，强调男性备孕",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "699afc5c000000000903a785",
+    "topic": "放松备孕成功",
+    "sub_topic": "紧张备孕未成功，放松后反而怀孕",
+    "mentioned": "豆浆、牛奶、排卵试纸",
+    "focus": "情感/效果",
+    "emotion": "复杂",
+    "heat": "高"
+  },
+  {
+    "note_id": "697337ff000000000a02a032",
+    "topic": "备孕通关攻略",
+    "sub_topic": "分享夫妻备孕通关攻略和心态调节",
+    "mentioned": null,
+    "focus": "效果/情感",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "67ab41210000000029016d96",
+    "topic": "准爸爸运动备孕",
+    "sub_topic": "分享准爸爸备孕6个月运动打卡提升精子质量",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69038f6a0000000004017241",
+    "topic": "熬夜影响备孕",
+    "sub_topic": "老公加班熬夜影响备孕安排，询问精子质量影响",
+    "mentioned": "排卵试纸",
+    "focus": "安全性/情感",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69618047000000001a02015b",
+    "topic": "2026高效备孕",
+    "sub_topic": "分享2026年高效备孕指南（饮食、检查、禁忌）",
+    "mentioned": "叶酸、维生素C/E、基因检测",
+    "focus": "效果/安全性",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69f0abb5000000003601a554",
+    "topic": "精准备孕技巧",
+    "sub_topic": "分享抓准排卵日、同房细节的备孕技巧",
+    "mentioned": "排卵试纸、早孕试纸",
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "67c7bc560000000003028d72",
+    "topic": "男性备孕重要性",
+    "sub_topic": "强调男性在备孕中的关键作用和精子质量",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "68a44553000000001d01fcc1",
+    "topic": "男性生育力下降",
+    "sub_topic": "科普男性精子质量下降数据和防护建议",
+    "mentioned": "精液检查、地中海饮食、南瓜籽",
+    "focus": "安全性",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "69fe95e00000000035021ef8",
+    "topic": "卵泡质量调理",
+    "sub_topic": "询问卵泡质量差的调理方法",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "68eba28b000000000402bc90",
+    "topic": "暖宫备孕习惯",
+    "sub_topic": "分享养宫暖宫的5个懒人习惯",
+    "mentioned": "生姜、艾草、红枣、枸杞、维生素D",
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "6a0187ea000000000702b076",
+    "topic": "备孕恐惧焦虑",
+    "sub_topic": "28岁女生表达对备孕的恐惧和不期待",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "6902e6ec00000000050325ae",
+    "topic": "备孕增肌建议",
+    "sub_topic": "建议备孕期间做无氧增肌运动预防产后问题",
+    "mentioned": "产康",
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69fc59150000000023007f46",
+    "topic": "大龄备孕成功",
+    "sub_topic": "34岁备孕成功经验总结（同房频率、事后注意事项）",
+    "mentioned": "排卵试纸",
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "6896237b00000000230204ef",
+    "topic": "促着床动作",
+    "sub_topic": "分享促着床的简单动作",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "693bb88c000000001e028902",
+    "topic": "备孕自查禁忌",
+    "sub_topic": "分享9种不适合马上要小孩的情况",
+    "mentioned": null,
+    "focus": "安全性",
+    "emotion": "中性",
+    "heat": "高"
+  }
+]

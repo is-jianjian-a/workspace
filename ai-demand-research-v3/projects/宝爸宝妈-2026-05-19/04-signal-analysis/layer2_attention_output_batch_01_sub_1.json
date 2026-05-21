@@ -1,0 +1,652 @@
+[
+  {
+    "note_id": "68602d19000000000b02ce4d",
+    "topics": [
+      {
+        "topic": "打孩子管教",
+        "sub_topic": "体罚的合理性与替代方案",
+        "mentioned": "无",
+        "focus": "安全性/方法",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6778f90f00000000130188b1",
+    "topics": [
+      {
+        "topic": "育儿嫂服务",
+        "sub_topic": "家政服务质量与雇主矛盾",
+        "mentioned": "育儿嫂/中介",
+        "focus": "质量",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "66a8d5d3000000002701f0a9",
+    "topics": [
+      {
+        "topic": "攀比式育儿",
+        "sub_topic": "拒绝盲目比较，倡导理性教育",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "693a3106000000001e020f70",
+    "topics": [
+      {
+        "topic": "养娃成本",
+        "sub_topic": "一线城市育儿开支明细",
+        "mentioned": "公立/私立/保险",
+        "focus": "价格",
+        "emotion": "中性",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "683bb2f5000000002301c1bf",
+    "topics": [
+      {
+        "topic": "爸爸带娃",
+        "sub_topic": "父亲参与育儿的社会议题",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "69247e2e000000001d03a17f",
+    "topics": [
+      {
+        "topic": "凝视式育儿",
+        "sub_topic": "过度控制对孩子主体性的损害",
+        "mentioned": "蒙台梭利",
+        "focus": "效果",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "65ff96c6000000001203c535",
+    "topics": [
+      {
+        "topic": "父母容错率",
+        "sub_topic": "容错环境对孩子创造力与勇气的影响",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "69f977480000000035029127",
+    "topics": [
+      {
+        "topic": "亲子称呼",
+        "sub_topic": "称呼背后的权力关系与独立人格",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "复杂",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "684fdacd000000002001d9c8",
+    "topics": [
+      {
+        "topic": "父亲角色",
+        "sub_topic": "男孩各成长阶段父亲陪伴方式",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6868cf1d0000000013012b8e",
+    "topics": [
+      {
+        "topic": "全职爸爸",
+        "sub_topic": "全职带娃的身心压力与社会认同",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6937b071000000000d036140",
+    "topics": [
+      {
+        "topic": "教育无力感",
+        "sub_topic": "孩子成长与家长教育作用的落差",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "68de38db0000000003037e27",
+    "topics": [
+      {
+        "topic": "打压式教育",
+        "sub_topic": "终结打压教育，倡导健康育儿",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "695be531000000001a035371",
+    "topics": [
+      {
+        "topic": "生育决策",
+        "sub_topic": "判断是否生孩子的思考框架",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "中性",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "691dacc1000000001f0047ad",
+    "topics": [
+      {
+        "topic": "鸡娃现象",
+        "sub_topic": "过度教育的批判与反思",
+        "mentioned": "无",
+        "focus": "效果",
+        "emotion": "负向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "68c13f3d000000001d02e51a",
+    "topics": [
+      {
+        "topic": "育儿误区",
+        "sub_topic": "传统育儿常识的科学纠偏",
+        "mentioned": "人民日报",
+        "focus": "安全性",
+        "emotion": "中性",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "69f0a0c5000000001a02d8b5",
+    "topics": [
+      {
+        "topic": "带娃负担",
+        "sub_topic": "带娃日程对生育意愿的影响",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "67b8ae71000000002902c210",
+    "topics": [
+      {
+        "topic": "二胎心理",
+        "sub_topic": "老大在二胎家庭中的心理变化",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "复杂",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "68987b7f0000000023031dd9",
+    "topics": [
+      {
+        "topic": "宠爱与溺爱",
+        "sub_topic": "有边界的爱与无边界的纵容",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "68429fa9000000001101d90e",
+    "topics": [
+      {
+        "topic": "育儿嫂依赖",
+        "sub_topic": "高需求宝宝的真实性及自主带娃",
+        "mentioned": "安抚奶嘴",
+        "focus": "质量/效果",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6859f9b800000000200196f9",
+    "topics": [
+      {
+        "topic": "西式育儿",
+        "sub_topic": "快乐教育理念的质疑与反思",
+        "mentioned": "特朗普",
+        "focus": "效果",
+        "emotion": "复杂",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "68d6b7fb000000000e00c1be",
+    "topics": [
+      {
+        "topic": "生长发育",
+        "sub_topic": "1岁内宝宝发育对照与焦虑缓解",
+        "mentioned": "无",
+        "focus": "安全性",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6881963d0000000010024acf",
+    "topics": [
+      {
+        "topic": "母职外包",
+        "sub_topic": "雇佣育儿嫂实现性别分工平等",
+        "mentioned": "育儿嫂",
+        "focus": "价格/情感",
+        "emotion": "复杂",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6949c78e000000001b022f16",
+    "topics": [
+      {
+        "topic": "城市育儿成本",
+        "sub_topic": "双职工家庭育儿困境与劳动力缺口",
+        "mentioned": "无",
+        "focus": "价格",
+        "emotion": "负向",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "67e4a596000000001b03be0e",
+    "topics": [
+      {
+        "topic": "母子定律",
+        "sub_topic": "妈妈行为对孩子性格的影响",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "69492aa3000000001e008790",
+    "topics": [
+      {
+        "topic": "育儿博主",
+        "sub_topic": "博主人设与真实育儿效果的差距",
+        "mentioned": "无",
+        "focus": "效果",
+        "emotion": "复杂",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "693fcf62000000001e016fb5",
+    "topics": [
+      {
+        "topic": "过度商量",
+        "sub_topic": "边界里的自由与规则感培养",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "6a08563700000000080278bc",
+    "topics": [
+      {
+        "topic": "生育福利",
+        "sub_topic": "企业生育奖励与育儿假政策",
+        "mentioned": "Krafton",
+        "focus": "价格",
+        "emotion": "正向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "6816b106000000000e006588",
+    "topics": [
+      {
+        "topic": "睡眠安全",
+        "sub_topic": "宝宝睡眠环境与安全姿势",
+        "mentioned": "无",
+        "focus": "安全性",
+        "emotion": "正向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "67ef9f3c000000001d0232f0",
+    "topics": [
+      {
+        "topic": "循证育儿",
+        "sub_topic": "夫妻育儿认知差异导致婚姻危机",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "68d9357e000000001003e0f1",
+    "topics": [
+      {
+        "topic": "奶爸经济",
+        "sub_topic": "经济发达与父亲育儿参与度",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "中性",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "67792797000000000800e6bb",
+    "topics": [
+      {
+        "topic": "二胎平衡",
+        "sub_topic": "孙俪二胎育儿经验分享",
+        "mentioned": "孙俪/小花/等等",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "67b1e02d000000001801b5c9",
+    "topics": [
+      {
+        "topic": "多支点托举",
+        "sub_topic": "生活/情感/兴趣/学习多维度教育",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6898adcb00000000250224f3",
+    "topics": [
+      {
+        "topic": "一年级习惯",
+        "sub_topic": "低年级学习习惯培养黄金期",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6803c205000000000b014293",
+    "topics": [
+      {
+        "topic": "全职带娃",
+        "sub_topic": "双职工家庭是否让太太全职育儿",
+        "mentioned": "无",
+        "focus": "价格/情感",
+        "emotion": "复杂",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "660a5143000000001b011584",
+    "topics": [
+      {
+        "topic": "摧毁孩子",
+        "sub_topic": "错误育儿方式对孩子自尊的破坏",
+        "mentioned": "郑渊洁",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "68bff125000000001d035d09",
+    "topics": [
+      {
+        "topic": "宝妈恶意",
+        "sub_topic": "网络对宝妈群体的偏见与嘲弄",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "6984300a000000001a02fa9b",
+    "topics": [
+      {
+        "topic": "高敏感孩子",
+        "sub_topic": "过度共情对高敏感孩子的反效果",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "复杂",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "6a0ac8b30000000008027ca7",
+    "topics": [
+      {
+        "topic": "育儿嫂错误",
+        "sub_topic": "育儿嫂低级错误对宝宝发育的危害",
+        "mentioned": "育儿嫂",
+        "focus": "安全性",
+        "emotion": "负向",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "66dc0e00000000002603e758",
+    "topics": [
+      {
+        "topic": "父性松弛",
+        "sub_topic": "夫妻育儿分工冲突与父亲角色",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "68411be1000000000f03a2d9",
+    "topics": [
+      {
+        "topic": "中外育儿差异",
+        "sub_topic": "国内外带娃轻松度对比",
+        "mentioned": "无",
+        "focus": "方法",
+        "emotion": "复杂",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "67dcbb38000000000603c6e0",
+    "topics": [
+      {
+        "topic": "母子定律",
+        "sub_topic": "妈妈自我状态对孩子的影响",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "695f4b7d000000001a0376a3",
+    "topics": [
+      {
+        "topic": "独立带娃",
+        "sub_topic": "一线城市无老人支持带娃的挑战",
+        "mentioned": "育儿嫂",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "6938e436000000001e0273dd",
+    "topics": [
+      {
+        "topic": "宝妈就业",
+        "sub_topic": "宁愿低薪工作也要请育儿嫂的现象",
+        "mentioned": "育儿嫂",
+        "focus": "价格/情感",
+        "emotion": "复杂",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "68c1f345000000001d024ea4",
+    "topics": [
+      {
+        "topic": "生娃利弊",
+        "sub_topic": "生育带来的情绪价值与个人成长",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "正向",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "687704a50000000013011f16",
+    "topics": [
+      {
+        "topic": "爸爸参与育儿",
+        "sub_topic": "父亲带娃不再是妈妈一个人的事",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "正向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6884f1a6000000000d01ba91",
+    "topics": [
+      {
+        "topic": "哄睡困难",
+        "sub_topic": "哄睡过程对妈妈的精力消耗",
+        "mentioned": "无",
+        "focus": "情感",
+        "emotion": "负向",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "69ffedef00000000060373d0",
+    "topics": [
+      {
+        "topic": "生育观",
+        "sub_topic": "孩子作为人生奢侈品的责任思考",
+        "mentioned": "秦昊",
+        "focus": "情感",
+        "emotion": "复杂",
+        "heat": "中"
+      }
+    ]
+  },
+  {
+    "note_id": "67d6d0bc0000000006028885",
+    "topics": [
+      {
+        "topic": "宝宝急救",
+        "sub_topic": "异物卡喉与海姆立克急救",
+        "mentioned": "海姆立克",
+        "focus": "安全性",
+        "emotion": "负向",
+        "heat": "高"
+      }
+    ]
+  },
+  {
+    "note_id": "6819a3c20000000020028e27",
+    "topics": [
+      {
+        "topic": "育儿嫂依赖",
+        "sub_topic": "有阿姨后夫妻家务能力退化",
+        "mentioned": "育儿嫂",
+        "focus": "情感",
+        "emotion": "复杂",
+        "heat": "低"
+      }
+    ]
+  },
+  {
+    "note_id": "67cdc953000000001203c5e2",
+    "topics": [
+      {
+        "topic": "双语教育",
+        "sub_topic": "双语宝宝的语言混淆与误解",
+        "mentioned": "无",
+        "focus": "效果",
+        "emotion": "复杂",
+        "heat": "低"
+      }
+    ]
+  }
+]

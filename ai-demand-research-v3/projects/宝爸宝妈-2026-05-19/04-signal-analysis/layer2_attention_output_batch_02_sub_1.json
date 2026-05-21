@@ -1,0 +1,502 @@
+[
+  {
+    "note_id": "6768fe69000000000b00dd02",
+    "source_keyword": "孕期",
+    "topic": "孕期消费避雷",
+    "sub_topic": "征集不必要孕期消费，避免踩坑",
+    "mentioned": null,
+    "focus": "价格/实用性",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "694005d9000000001e00b58a",
+    "source_keyword": "孕期",
+    "topic": "孕期工作与自我",
+    "sub_topic": "孕妇坚持工作学习运动，反驳同情观点",
+    "mentioned": null,
+    "focus": "情感/自我认同",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "67f78ea6000000001e00917a",
+    "source_keyword": "孕期",
+    "topic": "孕肚大小焦虑",
+    "sub_topic": "肚子小担心胎儿发育，小排畸后安心",
+    "mentioned": null,
+    "focus": "安全性/健康",
+    "emotion": "复杂",
+    "heat": "高"
+  },
+  {
+    "note_id": "660604830000000012022a1a",
+    "source_keyword": "孕期",
+    "topic": "孕期夫妻互动",
+    "sub_topic": "怀孕后对丈夫的照顾期待",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "684393d500000000120036ac",
+    "source_keyword": "孕期",
+    "topic": "孕期身材管理",
+    "sub_topic": "孕34周身材保持惊讶",
+    "mentioned": null,
+    "focus": "效果/自我管理",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "698a98c9000000001502323b",
+    "source_keyword": "孕期",
+    "topic": "孕期社交边界",
+    "sub_topic": "反感他人随意摸孕肚",
+    "mentioned": null,
+    "focus": "情感/隐私",
+    "emotion": "负向",
+    "heat": "低"
+  },
+  {
+    "note_id": "6983077f000000001a0305cb",
+    "source_keyword": "孕期",
+    "topic": "孕妇照风格",
+    "sub_topic": "征集孕妇照风格参考",
+    "mentioned": null,
+    "focus": "审美/选择",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "680b2e31000000000b02fada",
+    "source_keyword": "孕期",
+    "topic": "孕晚期生活趣事",
+    "sub_topic": "衣服滴油猜测宝宝想吃",
+    "mentioned": null,
+    "focus": "情感/趣味",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "668e55ab000000000a007cdb",
+    "source_keyword": "孕期",
+    "topic": "母爱情感觉醒",
+    "sub_topic": "分享母爱逐渐浓烈的过程",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "68a7d7a4000000001c006656",
+    "source_keyword": "孕期",
+    "topic": "孕期行为讨论",
+    "sub_topic": "讨论怀孕后是否频繁摸肚子",
+    "mentioned": "电视剧《生万物》",
+    "focus": "行为/社交",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "69285bcd000000000d037d5a",
+    "source_keyword": "孕期",
+    "topic": "孕肚大小交流",
+    "sub_topic": "足月孕肚大小对比讨论",
+    "mentioned": null,
+    "focus": "健康/比较",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "68d907390000000013011448",
+    "source_keyword": "孕期",
+    "topic": "分娩姿势知识",
+    "sub_topic": "开指时平躺不利于分娩，应多变换姿势",
+    "mentioned": "《海蒂怀孕大百科》",
+    "focus": "知识/安全性",
+    "emotion": "中性",
+    "heat": "低"
+  },
+  {
+    "note_id": "67fcc715000000001d02c24b",
+    "source_keyword": "孕期",
+    "topic": "孕期夫妻关系",
+    "sub_topic": "丈夫调侃妻子怀孕注意力转移",
+    "mentioned": null,
+    "focus": "情感/幽默",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69cf4d99000000002300535a",
+    "source_keyword": "孕期",
+    "topic": "胎动感受",
+    "sub_topic": "对胎动的奇妙/克苏鲁式感受",
+    "mentioned": null,
+    "focus": "情感/哲学",
+    "emotion": "复杂",
+    "heat": "高"
+  },
+  {
+    "note_id": "68455f5f000000002202c89b",
+    "source_keyword": "孕期",
+    "topic": "孕晚期筑巢行为",
+    "sub_topic": "孕晚期大量购物准备宝宝用品",
+    "mentioned": null,
+    "focus": "情感/准备",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "66aeb71700000000050224c5",
+    "source_keyword": "孕期",
+    "topic": "母乳喂养羞耻感",
+    "sub_topic": "分享喂奶经历，逐渐放下身体羞耻",
+    "mentioned": "@coco的屌丝妈",
+    "focus": "情感/社会观念",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "67b877ef000000002901a49a",
+    "source_keyword": "孕期",
+    "topic": "孕晚期身体感受",
+    "sub_topic": "孕晚期倒计时担心撑不到预产期",
+    "mentioned": null,
+    "focus": "健康/焦虑",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "6827466f0000000003039271",
+    "source_keyword": "孕期",
+    "topic": "孕期每周注意事项",
+    "sub_topic": "整理怀孕40周每周注意事项干货",
+    "mentioned": null,
+    "focus": "知识/准备",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "687f454a00000000230079fc",
+    "source_keyword": "孕期",
+    "topic": "孕晚期状态",
+    "sub_topic": "孕晚期鼓励自己再坚持",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "69b298ce000000000601c4ff",
+    "source_keyword": "孕期",
+    "topic": "孕期夫妻温馨日常",
+    "sub_topic": "丈夫关注胎动，分享温馨时刻",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "665a6d1b0000000014018920",
+    "source_keyword": "孕期",
+    "topic": "孕妇照创意",
+    "sub_topic": "自制富贵商务版孕妇照",
+    "mentioned": null,
+    "focus": "趣味/创意",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "6926f88f000000001e02ac83",
+    "source_keyword": "孕期",
+    "topic": "孕期运动健身",
+    "sub_topic": "分享孕期器械、瑜伽、颠球、会阴按摩经验",
+    "mentioned": null,
+    "focus": "效果/健康",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "69d385ad0000000021039754",
+    "source_keyword": "孕期",
+    "topic": "孕期辛苦吐槽",
+    "sub_topic": "讨论怀孕是否最累的事",
+    "mentioned": null,
+    "focus": "情感/共鸣",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "68a9264c000000001d010f57",
+    "source_keyword": "孕期",
+    "topic": "布雷希氏宫缩",
+    "sub_topic": "科普孕中晚期肚子发紧原因及缓解方法",
+    "mentioned": "《海蒂怀孕大百科》",
+    "focus": "知识/安全性",
+    "emotion": "中性",
+    "heat": "低"
+  },
+  {
+    "note_id": "69f19b8d0000000013020402",
+    "source_keyword": "备孕",
+    "topic": "备孕放松助孕",
+    "sub_topic": "海岛度假放松后成功怀孕",
+    "mentioned": null,
+    "focus": "效果/心理",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "67c960ac000000002903bac9",
+    "source_keyword": "备孕",
+    "topic": "备孕老公配合",
+    "sub_topic": "吐槽老公备孕不配合，抽烟喝酒",
+    "mentioned": null,
+    "focus": "情感/责任",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "67d8be52000000000603c71a",
+    "source_keyword": "备孕",
+    "topic": "夫妻备孕攻略",
+    "sub_topic": "整理夫妻备孕全攻略干货",
+    "mentioned": null,
+    "focus": "知识/准备",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "69e866d6000000002200cf62",
+    "source_keyword": "备孕",
+    "topic": "备孕生肖选择",
+    "sub_topic": "讨论马年后是否备孕羊宝宝",
+    "mentioned": null,
+    "focus": "传统观念/选择",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "69b270ed000000001b016bd6",
+    "source_keyword": "备孕",
+    "topic": "胎停后备孕",
+    "sub_topic": "两次胎停后决心科学备孕减肥养生",
+    "mentioned": null,
+    "focus": "健康/心理",
+    "emotion": "复杂",
+    "heat": "中"
+  },
+  {
+    "note_id": "69a559ce0000000022032367",
+    "source_keyword": "备孕",
+    "topic": "排卵期同房不孕",
+    "sub_topic": "科普排卵期同房仍不孕的原因",
+    "mentioned": null,
+    "focus": "知识/健康",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "6a05316c000000003502f1a3",
+    "source_keyword": "备孕",
+    "topic": "备孕时间表",
+    "sub_topic": "2027羊宝宝备孕时间表",
+    "mentioned": null,
+    "focus": "知识/规划",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "69dfa48e000000001f002ed8",
+    "source_keyword": "备孕",
+    "topic": "备孕生肖偏见",
+    "sub_topic": "反驳羊宝宝不好的偏见，分析利弊",
+    "mentioned": "霍启刚、肖战、沈腾、谷爱凌、章子怡、何超莲",
+    "focus": "观念/社会",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "6a01577e000000000803ff34",
+    "source_keyword": "备孕",
+    "topic": "备孕焦虑吐槽",
+    "sub_topic": "久备不孕的挫败感和心态转变",
+    "mentioned": null,
+    "focus": "情感/心理",
+    "emotion": "负向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69a942ef000000001d01146a",
+    "source_keyword": "备孕",
+    "topic": "养卵泡方法",
+    "sub_topic": "10招养出优质卵泡的备孕技巧",
+    "mentioned": null,
+    "focus": "知识/效果",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69ddae42000000002200ecfc",
+    "source_keyword": "备孕",
+    "topic": "高龄备孕困难",
+    "sub_topic": "35岁备孕一胎一年未成功的焦虑",
+    "mentioned": null,
+    "focus": "情感/健康",
+    "emotion": "负向",
+    "heat": "中"
+  },
+  {
+    "note_id": "6a007af9000000003700db56",
+    "source_keyword": "备孕",
+    "topic": "久备不孕原因",
+    "sub_topic": "分析久坐贪凉导致宫寒难孕",
+    "mentioned": null,
+    "focus": "知识/健康",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "69c7687a0000000022001f8e",
+    "source_keyword": "备孕",
+    "topic": "科学备孕方法",
+    "sub_topic": "从选月份到找排卵期的备孕指南",
+    "mentioned": null,
+    "focus": "知识/规划",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "66cc3ea6000000001d0144d1",
+    "source_keyword": "备孕",
+    "topic": "男性备孕营养",
+    "sub_topic": "左卡尼丁提升精子质量助孕",
+    "mentioned": "warnke左卡尼丁",
+    "focus": "效果/产品",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "693c1216000000001d0382b3",
+    "source_keyword": "备孕",
+    "topic": "备孕每周计划",
+    "sub_topic": "老公打印备孕每周要做什么",
+    "mentioned": null,
+    "focus": "情感/准备",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "670e7f0e000000002100a686",
+    "source_keyword": "备孕",
+    "topic": "初次备孕知识",
+    "sub_topic": "整理初次备孕60件事干货",
+    "mentioned": null,
+    "focus": "知识/准备",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "6915b64900000000070019d6",
+    "source_keyword": "备孕",
+    "topic": "备孕同房姿势",
+    "sub_topic": "分享认为有效的备孕姿势",
+    "mentioned": null,
+    "focus": "效果",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "68ee405e000000000301ee43",
+    "source_keyword": "备孕",
+    "topic": "备孕心路历程",
+    "sub_topic": "记录从备孕到生子的心路历程",
+    "mentioned": null,
+    "focus": "情感/分享",
+    "emotion": "正向",
+    "heat": "高"
+  },
+  {
+    "note_id": "67c83692000000000e007829",
+    "source_keyword": "备孕",
+    "topic": "备孕前夫妻共识",
+    "sub_topic": "备孕前需和老公达成的9点共识",
+    "mentioned": null,
+    "focus": "情感/规划",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "69aeb646000000002603d35f",
+    "source_keyword": "备孕",
+    "topic": "备孕回忆",
+    "sub_topic": "备孕时光的难忘回忆",
+    "mentioned": null,
+    "focus": "情感",
+    "emotion": "复杂",
+    "heat": "高"
+  },
+  {
+    "note_id": "6846cd3f000000000c03bf83",
+    "source_keyword": "备孕",
+    "topic": "备孕焦虑缓解",
+    "sub_topic": "5个方法缓解备孕焦虑",
+    "mentioned": null,
+    "focus": "心理/情感",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "69eb7789000000003503b1da",
+    "source_keyword": "备孕",
+    "topic": "易孕体质调理",
+    "sub_topic": "易孕与难孕体质区别及改善方法",
+    "mentioned": null,
+    "focus": "知识/健康",
+    "emotion": "正向",
+    "heat": "低"
+  },
+  {
+    "note_id": "67dbfab6000000001c004cbe",
+    "source_keyword": "备孕",
+    "topic": "高龄备孕经验",
+    "sub_topic": "30+备孕成功经验分享",
+    "mentioned": "优甲乐、补铁剂、维生素D、叶酸、美柚",
+    "focus": "知识/效果",
+    "emotion": "正向",
+    "heat": "中"
+  },
+  {
+    "note_id": "67922546000000002a00ca22",
+    "source_keyword": "备孕",
+    "topic": "职场备孕选择",
+    "sub_topic": "讨论是否辞职备孕",
+    "mentioned": null,
+    "focus": "经济/职业",
+    "emotion": "中性",
+    "heat": "高"
+  },
+  {
+    "note_id": "68d4af5a000000000e026099",
+    "source_keyword": "备孕",
+    "topic": "新手备孕知识",
+    "sub_topic": "分享备孕知识给粉丝",
+    "mentioned": null,
+    "focus": "知识",
+    "emotion": "中性",
+    "heat": "中"
+  },
+  {
+    "note_id": "687e3ec3000000001203c600",
+    "source_keyword": "备孕",
+    "topic": "备孕成功经验",
+    "sub_topic": "分享备孕一次成功的方法",
+    "mentioned": null,
+    "focus": "知识/效果",
+    "emotion": "正向",
+    "heat": "中"
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "total": 570,
+  "relevant": 187,
+  "opportunity_stats": {
+    "none": {
+      "total": 391,
+      "relevant": 8
+    },
+    "P2": {
+      "total": 52,
+      "relevant": 52
+    },
+    "P0": {
+      "total": 51,
+      "relevant": 51
+    },
+    "P3": {
+      "total": 37,
+      "relevant": 37
+    },
+    "P4": {
+      "total": 36,
+      "relevant": 36
+    },
+    "P1": {
+      "total": 3,
+      "relevant": 3
+    }
+  }
+}
