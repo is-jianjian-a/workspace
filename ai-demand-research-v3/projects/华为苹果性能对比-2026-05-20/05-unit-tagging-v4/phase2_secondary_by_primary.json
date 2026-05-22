@@ -1,0 +1,107 @@
+{
+  "丝滑流畅": {
+    "total_units": 236,
+    "secondary_stats": {
+      "日常使用": {
+        "count": 30,
+        "note_count": 27,
+        "interaction": 37520
+      },
+      "UI交互": {
+        "count": 10,
+        "note_count": 9,
+        "interaction": 23676
+      },
+      "主观": {
+        "count": 110,
+        "note_count": 90,
+        "interaction": 59297
+      },
+      "系统动画": {
+        "count": 30,
+        "note_count": 25,
+        "interaction": 12513
+      },
+      "长期使用": {
+        "count": 32,
+        "note_count": 28,
+        "interaction": 23382
+      },
+      "打游戏": {
+        "count": 13,
+        "note_count": 12,
+        "interaction": 4863
+      },
+      "多APP": {
+        "count": 11,
+        "note_count": 9,
+        "interaction": 2445
+      }
+    }
+  },
+  "稳定性": {
+    "total_units": 27,
+    "secondary_stats": {
+      "主观": {
+        "count": 19,
+        "note_count": 17,
+        "interaction": 9062
+      },
+      "长期使用": {
+        "count": 5,
+        "note_count": 5,
+        "interaction": 12117
+      },
+      "日常使用": {
+        "count": 1,
+        "note_count": 1,
+        "interaction": 859
+      },
+      "多APP": {
+        "count": 2,
+        "note_count": 2,
+        "interaction": 912
+      }
+    }
+  },
+  "卡顿": {
+    "total_units": 121,
+    "secondary_stats": {
+      "系统动画": {
+        "count": 12,
+        "note_count": 11,
+        "interaction": 42337
+      },
+      "打游戏": {
+        "count": 14,
+        "note_count": 13,
+        "interaction": 5846
+      },
+      "长期使用": {
+        "count": 22,
+        "note_count": 19,
+        "interaction": 9804
+      },
+      "主观": {
+        "count": 42,
+        "note_count": 32,
+        "interaction": 36245
+      },
+      "多APP": {
+        "count": 5,
+        "note_count": 5,
+        "interaction": 5296
+      },
+      "日常使用": {
+        "count": 24,
+        "note_count": 20,
+        "interaction": 17855
+      },
+      "UI交互": {
+        "count": 2,
+        "note_count": 2,
+        "interaction": 690
+      }
+    }
+  }
+}
