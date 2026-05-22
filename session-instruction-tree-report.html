@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session指令树复盘 - 宝爸宝妈育儿需求调研</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { 
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
+    background: #0d1117; 
+    color: #c9d1d9; 
+    line-height: 1.6; 
+    padding: 40px 24px;
+  }
+  .container { max-width: 1100px; margin: 0 auto; }
+  
+  h1 { font-size: 1.6em; color: #f0f6fc; margin-bottom: 8px; }
+  .subtitle { color: #8b949e; font-size: 0.9em; margin-bottom: 40px; }
+  
+  /* Git树样式 */
+  .git-tree { position: relative; }
+  
+  .commit-node { 
+    display: flex; 
+    align-items: flex-start; 
+    margin-bottom: 8px;
+    position: relative;
+  }
+  
+  /* 竖线 */
+  .commit-node::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 28px;
+    bottom: -8px;
+    width: 2px;
+    background: #30363d;
+  }
+  .commit-node:last-child::before { display: none; }
+  
+  /* 节点圆圈 */
+  .node-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #238636;
+    border: 2px solid #0d1117;
+    flex-shrink: 0;
+    margin-top: 6px;
+    margin-right: 16px;
+    z-index: 1;
+  }
+  .node-dot.negated { background: #da3633; }
+  .node-dot.branch { background: #58a6ff; }
+  .node-dot.merge { background: #8957e5; }
+  
+  /* 提交内容 */
+  .commit-content {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 8px;
+    padding: 12px 16px;
+    flex: 1;
+    margin-bottom: 16px;
+  }
+  
+  .commit-hash {
+    font-family: "SFMono-Regular", Consolas, monospace;
+    font-size: 0.75em;
+    color: #58a6ff;
+    margin-bottom: 4px;
+  }
+  
+  .commit-msg {
+    color: #f0f6fc;
+    font-size: 0.95em;
+    line-height: 1.5;
+  }
+  .commit-msg.negated {
+    text-decoration: line-through;
+    color: #8b949e;
+  }
+  
+  .commit-meta {
+    margin-top: 8px;
+    font-size: 0.8em;
+    color: #8b949e;
+  }
+  
+  .workspace-tag {
+    background: #1f6feb33;
+    color: #58a6ff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    font-family: monospace;
+  }
+  
+  .file-output {
+    color: #3fb950;
+    font-family: monospace;
+    font-size: 0.85em;
+  }
+  .file-output::before { content: "→ "; }
+  
+  /* 分支标签 */
+  .branch-label {
+    display: inline-block;
+    background: #1f6feb;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.75em;
+    margin-left: 8px;
+  }
+  
+  /* 关键转折点标记 */
+  .turning-point {
+    border-left: 3px solid #f0883e;
+    padding-left: 12px;
+    margin-top: 8px;
+    color: #f0883e;
+    font-size: 0.85em;
+  }
+  
+  /* 分析区域 */
+  .analysis-section {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 12px;
+    padding: 24px;
+    margin-top: 40px;
+  }
+  .analysis-section h2 {
+    color: #f0f6fc;
+    font-size: 1.2em;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #30363d;
+    padding-bottom: 8px;
+  }
+  .pattern-item {
+    margin-bottom: 16px;
+    padding: 12px;
+    background: #0d1117;
+    border-radius: 6px;
+  }
+  .pattern-item h3 {
+    color: #3fb950;
+    font-size: 0.95em;
+    margin-bottom: 6px;
+  }
+  .pattern-item.fail h3 { color: #f85149; }
+  .pattern-item p {
+    color: #8b949e;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+  
+  /* 因果链图 */
+  .causal-chain {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 16px 0;
+    padding: 12px;
+    background: #0d1117;
+    border-radius: 6px;
+    overflow-x: auto;
+  }
+  .causal-step {
+    background: #21262d;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85em;
+    white-space: nowrap;
+  }
+  .causal-arrow { color: #58a6ff; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🌳 Session指令树复盘</h1>
+<p class="subtitle">宝爸宝妈育儿需求调研 | 因果链分析 | 关键转折点提取</p>
+
+<div class="git-tree">
+
+  <!-- 根节点 -->
+  <div class="commit-node">
+    <div class="node-dot"></div>
+    <div class="commit-content">
+      <div class="commit-hash">commit root</div>
+      <div class="commit-msg">
+        按照我们之前做AI需求调研的方法，对以下主题进行第一步的场景分析、用户路程分析和搜索关键词分解：宝妈、育儿场景下的手机用户需求
+      </div>
+      <div class="commit-meta">
+        <span class="workspace-tag">/workspace</span>
+        <span style="margin-left:12px">🏷️ 继承历史session上下文（ai-demand-research-v3方法论）</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 分支1：直接生成报告（被否定） -->
+  <div class="commit-node">
+    <div class="node-dot negated"></div>
+    <div class="commit-content">
+      <div class="commit-hash">commit v1 ❌ 被否定</div>
+      <div class="commit-msg negated">
+        把产品机会点、具体需求、总互动量、相关原声使用等合成一个HTML报告展示
+      </div>
+      <div class="commit-meta">
+        <span class="workspace-tag">/workspace</span>
+        <div class="file-output">final-analysis-report-v4.html (38,532字符)</div>
+        <div class="turning-point">
+          🔴 失败模式：未明确约束格式，模型沿用旧模板（带P0/P1优先级标签、功能视角描述需求），输出与用户期望不符
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 关键修正节点 -->
+  <div class="commit-node">
+    <div class="node-dot merge"></div>
+    <div class="commit-content">
+      <div class="commit-hash">commit v2 ✅ 关键约束</div>
+      <div class="commit-msg">
+        1、把P0、P1那些去掉；按照UGC条数来排序。<br>
+        2、每个产品机会点要给三条需求点，尽可能使用用户原声的视角来描述，类似下面：<br>
+        <pre style="background:#0d1117;padding:8px;border-radius:4px;margin-top:8px;font-size:0.85em;color:#8b949e">
+TOP1  内容发现与推荐  4  34,437
+希望视频时长更长
+找不需要眼睛看的背景音视频
+求推荐适合当背景音的长视频
+界面变成搜索引擎而非推荐流</pre>
+      </div>
+      <div class="commit-meta">
+        <span class="workspace-tag">/workspace</span>
+        <div class="turning-point">
+          🟢 关键转折点：提供【具体示例】作为格式约束，模型从"发散"变"收敛"<br>
+          🟢 成功模式：用示例替代抽象描述，精确控制输出格式和语言风格
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 修正后输出 -->
+  <div class="commit-node">
+    <div class="node-dot"></div>
+    <div class="commit-content">
+      <div class="commit-hash">commit v2-output</div>
+      <div class="commit-msg">
+        报告已按要求重新生成
+      </div>
+      <div class="commit-meta">
+        <div class="file-output">final-analysis-report-v5.html (10,320字符)</div>
+        <div style="margin-top:8px;color:#8b949e">
+          ✅ 去掉P0/P1 → 改用TOP1-TOP4排名<br>
+          ✅ 按UGC条数排序 → 52 > 51 > 41 > 32<br>
+          ✅ 用户原声视角 → "备孕反复失败时有人能懂这种心情"<br>
+          ✅ 紧凑篇幅 → 类似示例格式
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 当前任务：复盘 -->
+  <div class="commit-node">
+    <div class="node-dot branch"></div>
+    <div class="commit-content">
+      <div class="commit-hash">commit v3 🔄 当前</div>
+      <div class="commit-msg">
+        给我出一份HTML报告，内容为本session的指令总结...<br>
+        （按逻辑串成git树，标记否定指令，指示工作目录和文件输出）
+      </div>
+      <div class="commit-meta">
+        <span class="workspace-tag">/workspace</span>
+        <span class="branch-label">meta-analysis</span>
+      </div㸼/div>
+  </div>
+
+</div>
+
+<!-- 因果链分析 -->
+<div class="analysis-section">
+  <h2>🔗 因果链：Prompt → 上下文 → 模型行为 → 新上下文</h2>
+  
+  <div class="causal-chain">
+    <div class="causal-step">Prompt v1<br><small>"合成HTML报告"</small></div>
+    <span class="causal-arrow">→</span>
+    <div class="causal-step">上下文<br><small>继承v3方法论</small></div>
+    <span class="causal-arrow">→</span>
+    <div class="causal-step">模型行为<br><small>发散：沿用旧模板</small></div>
+    <span class="causal-arrow">→</span>
+    <div class="causal-step">输出 v4<br><small>❌ 不符合期望</small></div>
+  </div>
+
+  <div class="causal-chain">
+    <div class="causal-step">Prompt v2<br><small>"去掉P0/P1...类似下面："</small></div>
+    <span class="causal-arrow">→</span>
+    <div class="causal-step">上下文<br><small>+具体示例约束</small></div>
+    <span class="causal-arrow">→</span>
+    <div class="causal-step">模型行为<br><small>收敛：匹配示例格式</small></div>
+    <span class="causal-arrow">→</span>
+    <div class="causal-step">输出 v5<br><small>✅ 符合期望</small></div>
+  </div>
+</div>
+
+<!-- 成功模式 -->
+<div class="analysis-section">
+  <h2>✅ 成功模式（要保留）</h2>
+  
+  <div class="pattern-item">
+    <h3>1. 示例驱动约束（Example-Driven Constraint）</h3>
+    <p>
+      <strong>关键帧：</strong> Prompt v2 提供了完整的TOP1/TOP2/TOP3示例格式<br>
+      <strong>效果：</strong> 模型从"抽象理解"转为"模式匹配"，输出精确符合期望<br>
+      <strong>本质：</strong> 用<code>少样本提示(Few-shot)</code>替代自然语言描述，消除歧义
+    </p>
+  </div>
+  
+  <div class="pattern-item">
+    <h3>2. 否定+重构的修正模式</h3>
+    <p>
+      <strong>关键帧：</strong> "把P0、P1那些去掉"（否定旧格式）+ "按照UGC条数来排序"（给出新规则）+ "类似下面："（给出示例）<br>
+      <strong>效果：</strong> 一次性完成"去旧+立新+示范"三重约束<br>
+      <strong>本质：</strong> 否定必须伴随替代方案，否则模型会自由发挥
+    </p>
+  </div>
+  
+  <div class="pattern-item">
+    <h3>3. 用户原声视角的语言锚定</h3>
+    <p>
+      <strong>关键帧：</strong> "尽可能使用用户原声的视角来描述"<br>
+      <strong>效果：</strong> 需求描述从"功能视角"（提供情绪识别）转为"用户视角"（备孕反复失败时有人能懂）<br>
+      <strong>本质：</strong> 语言风格约束比内容约束更根本，决定了输出的"气味"
+    </p>
+  </div>
+</div>
+
+<!-- 失败模式 -->
+<div class="analysis-section">
+  <h2>❌ 失败模式（要剔除）</h2>
+  
+  <div class="pattern-item fail">
+    <h3>1. 抽象描述陷阱</h3>
+    <p>
+      <strong>错误：</strong> "把产品机会点、具体需求、总互动量、相关原声使用等合成一个HTML报告展示"<br>
+      <strong>问题：</strong> 只描述了"要什么"，没描述"不要什么"和"像什么样子"<br>
+      <strong>后果：</strong> 模型沿用历史session的v3报告模板（带P0/P1标签、功能视角、详细分析），与用户期望的紧凑格式偏离<br>
+      <strong>教训：</strong> 抽象描述 = 模型自由发挥 = 路径依赖错误
+    </p>
+  </div>
+  
+  <div class="pattern-item fail">
+    <h3>2. 隐式上下文依赖</h3>
+    <p>
+      <strong>错误：</strong> 假设模型会"理解"当前session的上下文状态<br>
+      <strong>问题：</strong> 当前session实际继承的是历史session（ai-demand-research-v3）的方法论和模板<br>
+      <strong>后果：</strong> 模型输出的是历史项目的"完整分析报告"格式，而非用户当前想要的"紧凑机会点列表"<br>
+      <strong>教训：</strong> 跨session上下文是双刃剑，必须显式覆盖或重置
+    </p>
+  </div>
+</div>
+
+<!-- 关键认知 -->
+<div class="analysis-section">
+  <h2>💡 关键认知</h2>
+  <p style="color:#8b949e;line-height:1.8">
+    <strong style="color:#f0883e">成功不是"写对一句话"，而是"控制了模型的搜索空间"</strong><br><br>
+    
+    本session的v1→v2转变验证了这一点：<br>
+    • v1 给了<code>目标</code>（合成报告）→ 模型搜索空间大 → 输出偏离<br>
+    • v2 给了<code>目标+否定+示例</code> → 搜索空间被三重约束压缩 → 输出精确匹配<br><br>
+    
+    <strong style="color:#3fb950">最有效的prompt结构：</strong><br>
+    1. 否定旧模式（"去掉P0/P1"）<br>
+    2. 建立新规则（"按UGC条数排序"）<br>
+    3. 提供具体示例（"类似下面：TOP1..."）<br>
+    4. 语言风格锚定（"用户原声的视角"）
+  </p>
+</div>
+
+<div class="footer" style="text-align:center;color:#484f58;margin-top:40px;font-size:0.8em">
+  生成时间：2026-05-21 | Session ID：20260521_142158_e8e091 | 共4条用户指令
+</div>
+
+</div>
+</body>
+</html>

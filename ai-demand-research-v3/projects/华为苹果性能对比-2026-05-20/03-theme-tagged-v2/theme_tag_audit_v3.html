@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华为苹果性能对比 - 主题标注审核 v3</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #f5f5f5; padding: 20px; }
+  .container { max-width: 1400px; margin: 0 auto; }
+  h1 { text-align: center; margin-bottom: 10px; color: #333; }
+  .stats { text-align: center; color: #666; margin-bottom: 20px; font-size: 14px; }
+  .controls { background: #fff; padding: 15px 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; flex-wrap: wrap; gap: 15px; align-items: center; }
+  .control-group { display: flex; align-items: center; gap: 8px; }
+  .control-group label { font-weight: 600; font-size: 13px; color: #555; }
+  select, input[type="text"] { padding: 6px 10px; border: 1px solid #ddd; border-radius: 4px; font-size: 13px; }
+  input[type="text"] { width: 200px; }
+  .btn { padding: 8px 16px; border: none; border-radius: 4px; cursor: pointer; font-size: 13px; transition: all 0.2s; }
+  .btn-primary { background: #1890ff; color: white; }
+  .btn-primary:hover { background: #40a9ff; }
+  .btn-success { background: #52c41a; color: white; }
+  .btn-success:hover { background: #73d13d; }
+  .btn-warning { background: #faad14; color: white; }
+  .btn-warning:hover { background: #ffc53d; }
+  .btn-danger { background: #ff4d4f; color: white; }
+  .btn-danger:hover { background: #ff7875; }
+  .card { background: #fff; border-radius: 8px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  .card-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
+  .card-title { font-size: 16px; font-weight: 600; color: #333; line-height: 1.4; flex: 1; }
+  .card-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; font-size: 12px; color: #888; }
+  .badge { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 600; }
+  .badge-huawei { background: #ff4d4f; color: white; }
+  .badge-apple { background: #1890ff; color: white; }
+  .badge-other { background: #999; color: white; }
+  .badge-dual { background: #722ed1; color: white; }
+  .badge-theme { background: #e6f7ff; color: #1890ff; border: 1px solid #91d5ff; }
+  .card-content { color: #555; font-size: 14px; line-height: 1.7; margin-bottom: 12px; white-space: pre-wrap; }
+  .tags-section { margin-bottom: 12px; }
+  .tag-item { background: #f6ffed; border: 1px solid #b7eb8f; border-radius: 6px; padding: 10px 14px; margin-bottom: 8px; }
+  .tag-item .tag-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px; }
+  .tag-item .tag-theme { font-weight: 600; color: #389e0d; font-size: 13px; }
+  .tag-item .tag-quote { color: #555; font-size: 13px; line-height: 1.6; font-style: italic; padding-left: 10px; border-left: 3px solid #b7eb8f; }
+  .tag-item .tag-brand { font-size: 12px; color: #888; margin-top: 4px; }
+  .reclassify-section { background: #fff7e6; border: 1px solid #ffd591; border-radius: 6px; padding: 12px; margin-top: 10px; }
+  .reclassify-section label { font-weight: 600; font-size: 13px; color: #d46b08; display: block; margin-bottom: 8px; }
+  .reclassify-btns { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 10px; }
+  .reclassify-btns .btn { padding: 4px 12px; font-size: 12px; }
+  .reclassify-btns .btn.active { box-shadow: 0 0 0 2px #1890ff; }
+  .feedback-input { width: 100%; padding: 8px; border: 1px solid #d9d9d9; border-radius: 4px; font-size: 13px; margin-top: 8px; }
+  .hidden { display: none !important; }
+  .no-results { text-align: center; padding: 40px; color: #999; font-size: 16px; }
+  
+  .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000; display: none; justify-content: center; align-items: center; }
+  .modal-overlay.active { display: flex; }
+  .modal-content { background: #fff; border-radius: 8px; padding: 24px; max-width: 800px; width: 90%; max-height: 80vh; overflow-y: auto; box-shadow: 0 4px 20px rgba(0,0,0,0.2); }
+  .modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .modal-header h3 { margin: 0; color: #333; }
+  .modal-close { background: none; border: none; font-size: 24px; cursor: pointer; color: #999; }
+  .modal-close:hover { color: #333; }
+  .modal-body { font-size: 14px; line-height: 1.7; }
+  .modal-body textarea { width: 100%; min-height: 300px; padding: 12px; border: 1px solid #d9d9d9; border-radius: 4px; font-family: monospace; font-size: 13px; resize: vertical; }
+  .modal-footer { margin-top: 16px; display: flex; gap: 10px; justify-content: flex-end; }
+  
+  .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px; }
+  .top-bar .left { display: flex; gap: 10px; align-items: center; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🎯 华为苹果性能对比 - 主题标注审核 v3</h1>
+  <div class="stats" id="statsBar">加载中...</div>
+  
+  <div class="top-bar">
+    <div class="left">
+      <button class="btn btn-success" id="btnExportFeedback">💬 导出所有修改意见</button>
+      <button class="btn btn-primary" id="btnExportModified">📋 导出修改过的UGC</button>
+    </div>
+    <div style="color:#888;font-size:13px;">💡 点击每条UGC下方的按钮可重新分类，修改意见会自动收集</div>
+  </div>
+  
+  <div class="controls">
+    <div class="control-group">
+      <label>主题筛选:</label>
+      <select id="themeFilter">
+        <option value="all">全部主题</option>
+        <option value="流畅丝滑">流畅丝滑</option>
+        <option value="卡顿问题">卡顿问题</option>
+        <option value="稳定性">稳定性</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label>情感倾向:</label>
+      <select id="sentimentFilter">
+        <option value="all">全部</option>
+        <option value="华为好">华为好</option>
+        <option value="苹果好">苹果好</option>
+        <option value="其他">其他</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label>双持用户:</label>
+      <select id="dualFilter">
+        <option value="all">全部</option>
+        <option value="true">仅双持</option>
+        <option value="false">非双持</option>
+      </select>
+    </div>
+    <div class="control-group">
+      <label>关键词:</label>
+      <input type="text" id="keywordFilter" placeholder="搜索标题或内容...">
+    </div>
+    <div class="control-group">
+      <label>排序:</label>
+      <select id="sortBy">
+        <option value="interaction">互动量</option>
+        <option value="time">发布时间</option>
+        <option value="tone">消费者口吻</option>
+      </select>
+    </div>
+    <button class="btn btn-warning" id="btnReset">重置</button>
+  </div>
+  
+  <div id="ugcList"></div>
+  <div id="noResults" class="no-results hidden">没有找到匹配的UGC</div>
+</div>
+
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 id="modalTitle">导出内容</h3>
+      <button class="modal-close" id="btnModalClose">&times;</button>
+    </div>
+    <div class="modal-body">
+      <textarea id="modalTextarea" readonly></textarea>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-primary" id="btnModalCopy">📋 复制到剪贴板</button>
+      <button class="btn btn-danger" id="btnModalClose2">关闭</button>
+    </div>
+  </div>
+</div>
+
+<script>
+var ugcData = [{"note_id": "668e6cf40000000003025462", "title": "给华为换苹果的人的建议！！", "content": "针对眼睛敏感人群，我是高度近视660轻微散光。\n华为MATE40换手机苹果15Pro Max\n使用习惯什么的都能克服，苹果手感不错，非常流畅。\n\t\n但是！！！\n万万没想到，苹果15pm的屏幕也太废眼睛了吧\n看了就眼球发胀，眼睛发酸\n实在受不了了，怒亏五百卖掉了，就激活用了一天\n研究了一下好像是苹果的低频PWM刷新会让眼睛很累，为什么我之前没刷到", "interaction": 0, "create_time": "2024-07-10 19:13:56", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户认可苹果手感好、流畅，但核心诉求是屏幕伤眼导致无法使用，最终卖掉苹果，无明确品牌偏好倾向", "tags": [{"note_id": "668e6cf40000000003025462", "title": "给华为换苹果的人的建议！！", "theme": "流畅丝滑", "quote": "使用习惯什么的都能克服，苹果手感不错，非常流畅。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "66f62b08000000002a0308e2", "title": "又到了一年一度的换机时刻，但是相较于往年，貌似多了一些犹豫。\n经过了一系列的思想斗争之后\n决定从iPhone 15 Pro 换成了iPhone 16，在使用了一段时间后，我来和你分享我的得与失吧\n1️⃣高刷，从Pro 版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了，让我不时回想起从iPad Pro 换到iPad mini 的那种感觉。\n2️⃣混音，这也许是这次换到iPhone 16 最我兴奋的功能点吧，当我在给朋友展示这项功能的时候，朋友们都说以后拍视频很大程度上不再需要外接麦克风🎤", "content": "又到了一年一度的换机时刻，但是相较于往年，貌似多了一些犹豫。\n经过了一系列的思想斗争之后\n决定从iPhone 15 Pro 换成了iPhone 16，在使用了一段时间后，我来和你分享我的得与失吧\n1️⃣高刷，从Pro 版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了，让我不时回想起从iPad Pro 换到iPad mini 的那种感觉。\n2️⃣混音，这也许是这次换到iPhone 16 最我兴奋的功能点吧，当我在给朋友展示这项功能的时候，朋友们都说以后拍视频很大程度上不再需要外接麦克风🎤 了\n3️⃣空间音频，这代基础款因为改变了摄像头排布之后，也支持了空间视频的拍摄，自从有了Vision Pro 之后，就很喜欢拍空间视频了，虽然只是1080P 分辨率，但是所带来的沉浸感只有亲自体验了才知道，这个属于老话说的「只可意会，不可言传」\n4️⃣相机键，这次在外观上的另一大不同吧，不过在目前实际的体验上确实不是很理想，触控位置离手指就比较远，需要换手姿才行，其次就是需要一定的学习成本来适应操作，并且滑动过程中的流畅度也欠缺。\n\t\n最后说一说自己为什么从Pro 系列换到数字系列，最主要的原因就是现在使用的频率不高了，基本上iPhone 就是用来处理工作，另一个原因就是生态，所以今年换数字款，并且重量也更轻了。", "interaction": 0, "create_time": "2024-09-27 21:00:53", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "内容为iPhone 15 Pro换iPhone 16的个人使用体验，纯苹果产品内部对比，未涉及华为", "tags": [{"note_id": "66f62b08000000002a0308e2", "title": "又到了一年一度的换机时刻，但是相较于往年，貌似多了一些犹豫。\n经过了一系列的思想斗争之后\n决定从iPhone 15 Pro 换成了iPhone 16，在使用了一段时间后，我来和你分享我的得与失吧\n1️⃣高刷，从Pro 版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了，让我不时回想起从iPad Pro 换到iPad mini 的那种感觉。\n2️⃣混音，这也许是这次换到iPhone 16 最我兴奋的功能点吧，当我在给朋友展示这项功能的时候，朋友们都说以后拍视频很大程度上不再需要外接麦克风🎤", "theme": "流畅丝滑", "quote": "1️⃣高刷，从Pro 版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了，让我不时回想起从iPad Pro 换到iPad mini 的那种感觉，4️⃣相机键，这次在外观上的另一大不同吧，不过在目前实际的体验上确实不是很理想，触控位置离手指就比较远，需要换手姿才行，其次就是需要一定的学习成本来适应操作，并且滑动过程中的流畅度也欠缺。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}, {"note_id": "66f62b08000000002a0308e2", "title": "又到了一年一度的换机时刻，但是相较于往年，貌似多了一些犹豫。\n经过了一系列的思想斗争之后\n决定从iPhone 15 Pro 换成了iPhone 16，在使用了一段时间后，我来和你分享我的得与失吧\n1️⃣高刷，从Pro 版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了，让我不时回想起从iPad Pro 换到iPad mini 的那种感觉。\n2️⃣混音，这也许是这次换到iPhone 16 最我兴奋的功能点吧，当我在给朋友展示这项功能的时候，朋友们都说以后拍视频很大程度上不再需要外接麦克风🎤", "theme": "卡顿问题", "quote": "1️⃣高刷，从Pro 版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了，让我不时回想起从iPad Pro 换到iPad mini 的那种感觉。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "67062187000000001b021353", "title": "苹果安卓机对比", "content": "经过用安卓和苹果的对比，现在的安卓功能真的比苹果好太多了，我是用安卓时间比较长，以前觉得苹果好，换了苹果以后用了一阵子作出的对比。\n安卓主打就是便捷，机型之间或有差异，但用下来，方便程度还是安卓的好，手机重量普遍还是安卓更轻，用久了安卓换苹果会觉得很沉。而且安卓还有小屏单手模式，一手玩转全屏\n男生和女生关注的点不太一样，我个人更喜欢安卓的便捷、轻、天气、拍照和nfc！而且现在的安卓不会像以前这么卡，用了三四年依然很顺滑\n如有其他不同的地方欢迎补充和更正", "interaction": 0, "create_time": "2024-10-09 14:24:07", "is_dual": false, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户明确表达安卓在功能、便捷性、重量、流畅度等方面优于苹果，且长期用安卓后认为安卓更好", "tags": [{"note_id": "67062187000000001b021353", "title": "苹果安卓机对比", "theme": "流畅丝滑", "quote": "而且现在的安卓不会像以前这么卡，用了三四年依然很顺滑。", "brand_model": "苹果", "sentiment": "正面", "reason": ""}, {"note_id": "67062187000000001b021353", "title": "苹果安卓机对比", "theme": "卡顿问题", "quote": "而且现在的安卓不会像以前这么卡，用了三四年依然很顺滑。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "67865ea0000000000b00f949", "title": "不服来辩", "content": "苹果就是比安卓流畅，不服来辩", "interaction": 0, "create_time": "2025-01-14 20:54:56", "is_dual": false, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确断言苹果比安卓流畅，语气强烈，属于明确站队苹果", "tags": [{"note_id": "67865ea0000000000b00f949", "title": "不服来辩", "theme": "流畅丝滑", "quote": "苹果就是比安卓流畅，不服来辩。", "brand_model": "苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "68975a6300000000250176f0", "title": "华为手机用五年不卡是梗还是实话", "content": "华为mate40 pro，说实话，20年11月份买的到现在还在用一点也不卡\n\t\n现在终于换了pura80，鸿蒙5系统，丝滑流畅", "interaction": 0, "create_time": "2025-08-09 22:25:39", "is_dual": false, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户通过自身体验证明华为手机长期使用不卡顿，且新机鸿蒙系统丝滑流畅，隐含华为性能/稳定性优秀", "tags": [{"note_id": "68975a6300000000250176f0", "title": "华为手机用五年不卡是梗还是实话", "theme": "稳定性", "quote": "华为手机用五年不卡是梗还是实话。", "brand_model": "华为", "sentiment": "中性", "reason": ""}, {"note_id": "68975a6300000000250176f0", "title": "华为手机用五年不卡是梗还是实话", "theme": "流畅丝滑", "quote": "华为手机用五年不卡是梗还是实话，华为mate40 pro，说实话，20年11月份买的到现在还在用一点也不卡，现在终于换了pura80，鸿蒙5系统，丝滑流畅。", "brand_model": "华为", "sentiment": "正面", "reason": ""}, {"note_id": "68975a6300000000250176f0", "title": "华为手机用五年不卡是梗还是实话", "theme": "卡顿问题", "quote": "华为手机用五年不卡是梗还是实话，华为mate40 pro，说实话，20年11月份买的到现在还在用一点也不卡。", "brand_model": "华为", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "68bdad93000000001d019c97", "title": "感觉苹果打游戏比安卓丝滑，是我的错觉吗", "content": "感觉苹果打游戏比安卓丝滑，是我的错觉吗", "interaction": 0, "create_time": "2025-09-08 00:06:43", "is_dual": false, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户表达个人感觉苹果打游戏比安卓更丝滑，属于明确倾向苹果的对比判断", "tags": [{"note_id": "68bdad93000000001d019c97", "title": "感觉苹果打游戏比安卓丝滑，是我的错觉吗", "theme": "流畅丝滑", "quote": "感觉苹果打游戏比安卓丝滑，是我的错觉吗。", "brand_model": "苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "68ef265300000000050116f9", "title": "四大系统同台PK，哪个设计好看？", "content": "现在各个手机品牌硬件都很强且有点同质化，所以系统体验才是更重要的，那系统谁做的好，哪一个好看呢？\n-\n好不容易凑齐的四大系统啊家人们~😄\niOS26、鸿蒙OS和ColorOS1 6、澎湃OS3，你们觉得哪个耐看？最喜欢哪种风格呢？\n-\n说我自己的喜好哈，别喷我😂~\n我比较喜欢OPPO，也算是抢先体验Find X9的系统ColorOS 16了，因为今年致敬苹果液态玻璃的很多，反而oppo比较克制有自己风格~\n-\n据说ColorOS 16用的是全新的光场设计，看后面几张图~\nUI界面采用细腻光边和渐变模糊、光晕效果，发给我的设计师朋友看了表示感觉比较耐看🔥\n-\n重点是没有照搬硬搬iOS26的液态玻璃👍🏻，控制中心图标并没有像某些系统那么强的玻璃效果。\n-\n另外流畅度这一块ColorOS 16也很给力，动画丝滑得一比。\n即便是在负一屏和侧边栏这种安卓定制系统容易卡的地方，ColorOS 16也完全不卡~\n这个真不是我吹，有机会你们去体验下懂了！！\n-\n看之前说是机圈德芙本来以为是吹的，实际情况是oppo可能还过于谦虚了~哈哈\n这流畅度说是安卓最强也不为过，还有和ColorOS 16流畅度不相上下的还有鸿蒙OS，iOS26说实话用过ColorOS16后，感觉也就那么回事了。\n以上仅是我的个人观点哈~\n-\n还有就是细节功能上ColorOS 16做得也还行，AI人像补光，便签AI写作、AI实景对话这些实用性都很强。\n-\n反正让我选的话，在对比体验后会闭眼选ColorOS 16，首发机型是Find X9系列，10月16亮相，想抢先体验话，蹲Find X9完事~", "interaction": 0, "create_time": "2025-10-15 12:42:59", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "内容主要推崇ColorOS 16，虽提到iOS和鸿蒙，但核心倾向是OPPO，非华为vs苹果的明确对比", "tags": [{"note_id": "68ef265300000000050116f9", "title": "四大系统同台PK，哪个设计好看？", "theme": "流畅丝滑", "quote": "另外流畅度这一块ColorOS 16也很给力，动画丝滑得一比，即便是在负一屏和侧边栏这种安卓定制系统容易卡的地方，ColorOS 16也完全不卡~，看之前说是机圈德芙本来以为是吹的，实际情况是oppo可能还过于谦虚了~哈哈。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}, {"note_id": "68ef265300000000050116f9", "title": "四大系统同台PK，哪个设计好看？", "theme": "卡顿问题", "quote": "即便是在负一屏和侧边栏这种安卓定制系统容易卡的地方，ColorOS 16也完全不卡~。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "6932b88d000000001e0054b5", "title": "放以前不敢想，三大系统体验一目了然!", "content": "以前都是iOS丝滑程度领先，但近几年iOS、鸿蒙、ColorOS三大系统丝滑程度都是T0级别的了！下面就是鸿蒙6、iOS26以及ColorOS 16三大系统，流畅度的对比很明显了吧？\n\t\n这三都是T0级别的手机系统，动画效果都很到位了，只是部分细节有差异。像打断动画这种基础，这三家都做得很到位了。\n\t\n而灵动岛回收的动画，苹果和OPPO的会更圆润一些。小窗这块苹果还是画中画，华为OPPO是都已经支持多窗口了。全局搜索处的打断动画华为反应很快，OPPO则还能做到从哪来回哪去，苹果就稍微有点延迟了。\n\t\n实际差距很小的，今年搭载这三大系统的旗舰机型都挺值得入的。像华为Mate80 Pro，在鸿蒙6的加持下日常使用流畅体验有保障。iPhone 17 Pro配置全面升级后，iOS 26也更好发挥了。OPPO Find X9 Pro在ColorOS 16的加持下，已经成为安卓流畅的代表了，2亿像素、丹霞色彩还原镜头、7500mAh等配置也让它体验更全面。\n\t\n大家觉得，这三大系统哪个更强？你现在用的手机是什么系统呢？", "interaction": 0, "create_time": "2025-12-05 18:48:46", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户认为iOS、鸿蒙、ColorOS三大系统流畅度都是T0级别，实际差距很小，属于中性客观对比", "tags": [{"note_id": "6932b88d000000001e0054b5", "title": "放以前不敢想，三大系统体验一目了然!", "theme": "流畅丝滑", "quote": "以前都是iOS丝滑程度领先，但近几年iOS、鸿蒙、ColorOS三大系统丝滑程度都是T0级别的了，下面就是鸿蒙6、iOS26以及ColorOS 16三大系统，流畅度的对比很明显了吧，这三都是T0级别的手机系统，动画效果都很到位了，只是部分细节有差异。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "6937ee45000000001f00c76b", "title": "就这？三款ProMax人像对比谁好看？", "content": "📷后置P1\n📷自拍P2\n\t\n先说我没想到的，那就是华为Mate80 Pro Max拍出来，色调会冷很多，不说是有第二代红枫原色镜头，色温更精准吗？\n但感觉好像没有iPhone17 Pro Max准……\n不过华为的美颜把控非常好，介于iPhone的真实和小米美颜之间，会给我一种刚刚好的感觉，特别是在自拍的时候！\n\t\n小米的照片对比度更高一些，可能这就是徕卡味？\n\t\niPhone的皮肤最真实自然，色调也是我最喜欢的\n你们觉得哪一款Pro Max的表现最好？", "interaction": 0, "create_time": "2025-12-09 17:39:17", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "内容为华为、iPhone、小米三款手机人像拍照的客观对比，各有优劣，无明确站队", "tags": [{"note_id": "6937ee45000000001f00c76b", "title": "就这？三款ProMax人像对比谁好看？", "theme": "卡顿问题", "quote": "小米的照片对比度更高一些，可能这就是徕卡味。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "698448bc000000000a029496", "title": "说出来你可能会骂我，鸿蒙6比苹果丝滑！", "content": "我的直观感受，帧率不抽不卡，太稳定了！买之前也没人告诉我鸿蒙6没有广告啊！用起来太爽了，之前用苹果安卓，例如水印相机、CAD看图这些软件，进去就是5 秒倒计时的广告，一按关闭广告就特么跳转，手忙脚乱的，特么的气的想开会员，现在广告全没了！\n另外这个手机的屏幕跟外放音质实在是太好了！顶中顶给到！\n相机算法很强，人像、动感摇拍、闪拍、色卡非常好用！望远差点意思。\n视频收音跟丝滑程度干不过苹果这个bug，但是长焦跟光高压制比苹果强。\n想过这代遥遥领先会很好用，没想到这么好用啊[doge]", "interaction": 0, "create_time": "2026-02-05 15:37:32", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户明确表达鸿蒙6比苹果更丝滑、更稳定，且整体使用体验超出预期，强烈推荐", "tags": [{"note_id": "698448bc000000000a029496", "title": "说出来你可能会骂我，鸿蒙6比苹果丝滑！", "theme": "稳定性", "quote": "我的直观感受，帧率不抽不卡，太稳定了，视频收音跟丝滑程度干不过苹果这个bug，但是长焦跟光高压制比苹果强。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}, {"note_id": "698448bc000000000a029496", "title": "说出来你可能会骂我，鸿蒙6比苹果丝滑！", "theme": "流畅丝滑", "quote": "说出来你可能会骂我，鸿蒙6比苹果丝滑，我的直观感受，帧率不抽不卡，太稳定了，视频收音跟丝滑程度干不过苹果这个bug，但是长焦跟光高压制比苹果强。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}, {"note_id": "698448bc000000000a029496", "title": "说出来你可能会骂我，鸿蒙6比苹果丝滑！", "theme": "卡顿问题", "quote": "我的直观感受，帧率不抽不卡，太稳定了，相机算法很强，人像、动感摇拍、闪拍、色卡非常好用。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "69896b9a000000001a01cba4", "title": "鸿蒙6.0.0.328开始内测：更加丝滑但像苹果", "content": "鸿蒙6的下一个版本6.0.0.328已经正在内测了，此版本主要升级有两点，一是操作更加丝滑流畅，肉眼可见的更加流畅，操作起来非常舒服，比130版本还要丝滑很多；二是操作界面设计优化了，修改了很多，但改得很像iPhone的iOS界面。", "interaction": 0, "create_time": "2026-02-09 13:07:38", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "内容描述鸿蒙新版本更丝滑且界面改得像iOS，属于客观描述更新内容，无明确品牌优劣倾向", "tags": [{"note_id": "69896b9a000000001a01cba4", "title": "鸿蒙6.0.0.328开始内测：更加丝滑但像苹果", "theme": "流畅丝滑", "quote": "鸿蒙6.0.0.328开始内测：更加丝滑但像苹果，鸿蒙6的下一个版本6.0.0.328已经正在内测了，此版本主要升级有两点，一是操作更加丝滑流畅，肉眼可见的更加流畅，操作起来非常舒服，比130版本还要丝滑很多；二是操作界面设计优化了，修改了很多，但改得很像iPhone的iOS界面。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "69a4e37900000000220301ae", "title": "你们的华为mate80pm卡顿么？我咋感觉没之前的mate70p+好用呢？", "content": "你们的华为mate80pm卡顿么？我咋感觉没之前的mate70p+好用呢？", "interaction": 0, "create_time": "2026-03-02 09:10:17", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户纯提问询问华为mate80pm是否卡顿，无明确情感倾向", "tags": [{"note_id": "69a4e37900000000220301ae", "title": "你们的华为mate80pm卡顿么？我咋感觉没之前的mate70p+好用呢？", "theme": "卡顿问题", "quote": "你们的华为mate80pm卡顿么。", "brand_model": "华为", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "69b6cbb60000000021039283", "title": "鸿蒙丝滑的秘密是什么？", "content": "很多用华为手机、鸿蒙电脑的人都说用起来很丝滑，就像苹果iOS一样，鸿蒙用起来有人很流畅\n说华为卡的应该用的不是mate或者pura，如果说是华为畅享或者nova，还真有可能会有卡顿，毕竟配置摆在那了，就连给我妈妈转转整得三年前的mate60Pro用起来也是流畅的，才一千九要啥自行车，肯定是比现在的千元机要好用的\n还有鸿蒙电脑刚出没多久不知道体验感怎么样，感觉应该也是走的办公本路线吧🤔", "interaction": 0, "create_time": "2026-03-15 23:43:58", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户强调华为手机（mate/pura系列）使用体验丝滑流畅，与iOS相当，且旧机型依然流畅", "tags": [{"note_id": "69b6cbb60000000021039283", "title": "鸿蒙丝滑的秘密是什么？", "theme": "流畅丝滑", "quote": "鸿蒙丝滑的秘密是什么，很多用华为手机、鸿蒙电脑的人都说用起来很丝滑，就像苹果iOS一样，鸿蒙用起来有人很流畅，说华为卡的应该用的不是mate或者pura，如果说是华为畅享或者nova，还真有可能会有卡顿，毕竟配置摆在那了，就连给我妈妈转转整得三年前的mate60Pro用起来也是流畅的，才一千九要啥自行车，肯定是比现在的千元机要好用的。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}, {"note_id": "69b6cbb60000000021039283", "title": "鸿蒙丝滑的秘密是什么？", "theme": "卡顿问题", "quote": "说华为卡的应该用的不是mate或者pura，如果说是华为畅享或者nova，还真有可能会有卡顿，毕竟配置摆在那了，就连给我妈妈转转整得三年前的mate60Pro用起来也是流畅的，才一千九要啥自行车，肯定是比现在的千元机要好用的。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "69e6d39100000000210395f1", "title": "Pura X Max 鸿蒙 OS，体验再升级💚（办", "content": "鸿蒙加持，折叠屏更丝滑～ 对比苹果iOS、三星One UI，\nPura X Max 搭载新版鸿蒙OS，每一处升级都贴合日常办\n公、用机需求，尤其是多设备用户，体验直接翻倍！\n网传新版鸿蒙，实际帮助：\n✅ 多任务、分屏更强（比苹果iOS分屏更灵活，比三星One\nUI更流畅，同时开3个APP，切换无延迟，办公时文档+会议+微信同步搞，效率翻倍）\n✅ 跨设备协同更强（和华为平板、笔记本无缝互联，文件互传不用数据线，复制粘贴跨设备同步，比苹果AirDrop更便捷，比三星多设备协同更稳定）\n✅ 隐私安全升级（比苹果、三星更注重隐私，应用权限管控更严格，不用担心信息泄露，适合办公党、有隐私需求的人）\n✅ 动画更流畅（比上代鸿蒙更丝滑，比苹果iOS动画更自然，长时间用也不卡顿，越用越顺）\n无真机上手，纯分享系统消息，鸿蒙党、办公党，是不是已经期待了？\n“华为Pura 90系列现已开启预订，6000+至高立减900，30号截止，时间有限！”", "interaction": 0, "create_time": "2026-04-21 09:32:01", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "内容多处明确对比，认为鸿蒙在分屏灵活性、跨设备协同便捷性、动画自然度等方面优于苹果iOS", "tags": [{"note_id": "69e6d39100000000210395f1", "title": "Pura X Max 鸿蒙 OS，体验再升级💚（办", "theme": "稳定性", "quote": "✅ 跨设备协同更强（和华为平板、笔记本无缝互联，文件互传不用数据线，复制粘贴跨设备同步，比苹果AirDrop更便捷，比三星多设备协同更稳定）。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}, {"note_id": "69e6d39100000000210395f1", "title": "Pura X Max 鸿蒙 OS，体验再升级💚（办", "theme": "流畅丝滑", "quote": "鸿蒙加持，折叠屏更丝滑～ 对比苹果iOS、三星One UI，，UI更流畅，同时开3个APP，切换无延迟，办公时文档+会议+微信同步搞，效率翻倍），✅ 动画更流畅（比上代鸿蒙更丝滑，比苹果iOS动画更自然，长时间用也不卡顿，越用越顺）。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}, {"note_id": "69e6d39100000000210395f1", "title": "Pura X Max 鸿蒙 OS，体验再升级💚（办", "theme": "卡顿问题", "quote": "✅ 动画更流畅（比上代鸿蒙更丝滑，比苹果iOS动画更自然，长时间用也不卡顿，越用越顺）。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "69ec731f00000000350254fe", "title": "🍎忠实用户 喜提华为 pura x max！", "content": "资深苹果忠实用户，一直习惯iOS的丝滑流畅。之前用过华为Mate X5大折叠，太沉，拍照表现普通，系统流畅度一般，用了几个月还是换回了🍎。\n前两天线下亲眼见到华为Pura X Max真机，挺有趣。今天早上拿到了新机。开合铰链丝滑，使用时看不到折痕。屏幕利用率高，影像质感和系统流畅度都提升很明显。\n我的🍎17 Pro Max重量大概288g，Pura X Max大概237g，单手拿没负担。\n唯一的bug就是赠送的壳只包后面，店里也没有新壳，网上买的迟迟不发货。", "interaction": 0, "create_time": "2026-04-25 15:54:07", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "资深苹果用户转华为后，明确认可华为系统流畅度和影像质感有明显提升，且重量更轻", "tags": [{"note_id": "69ec731f00000000350254fe", "title": "🍎忠实用户 喜提华为 pura x max！", "theme": "稳定性", "quote": "唯一的bug就是赠送的壳只包后面，店里也没有新壳，网上买的迟迟不发货。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}, {"note_id": "69ec731f00000000350254fe", "title": "🍎忠实用户 喜提华为 pura x max！", "theme": "流畅丝滑", "quote": "资深苹果忠实用户，一直习惯iOS的丝滑流畅，之前用过华为Mate X5大折叠，太沉，拍照表现普通，系统流畅度一般，用了几个月还是换回了🍎，开合铰链丝滑，使用时看不到折痕。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "69edc524000000003703586a", "title": "店里玩了下，知道P90系列争议为什这么大了", "content": "⚠️缺点\n1️⃣标准版配置不够，跟nova15ultra比，配置差不多，但价格高了一大截\n2️⃣质感一般，印象中pura系列是华为的颜值担当，这一代无论是外观还是质感都差点意思\n3️⃣频闪问题，亮度调到最高还是有，眼睛敏感的建议直接选nova 15ultra\n\t\n✅优点\n1️⃣鸿蒙真的很流畅，即使是标准版，也是非常的丝滑，我平时用的iPhone 17，上手P90，特别是P90 Pro Max感觉特别流畅跟手\n2️⃣这代价格降了很多，标准版国补后能到4199，这个价格能入手华为旗舰还是很不错的\n3️⃣上面说到的外观问题，如果用的是白色，我觉得还是非常好看的\n\t\n入手建议\n1️⃣手上有P70、P80系列的，可以不用换，前面两代完全够用\n2️⃣预算不足的，建议上nova 15ultra，它的配置跟P90标准版比起来差不多，同时nova用的是物理可变光圈，影像上更胜一筹\n3️⃣预算充足的，直接上Pro/Pro Max 系列，处理器更新到了9030s，性能、影像能力更强", "interaction": 0, "create_time": "2026-04-26 15:56:20", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户作为iPhone 17用户，上手华为P90后明确感觉鸿蒙系统特别流畅跟手，优于日常使用的iPhone", "tags": [{"note_id": "69edc524000000003703586a", "title": "店里玩了下，知道P90系列争议为什这么大了", "theme": "流畅丝滑", "quote": "1️⃣鸿蒙真的很流畅，即使是标准版，也是非常的丝滑，我平时用的iPhone 17，上手P90，特别是P90 Pro Max感觉特别流畅跟手。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "6a0b15b7000000003701ea45", "title": "华为mate80pro，截屏隐私保护，怎么关？？真是服了\n图二，朋友问我在干嘛，想截图告诉他在追剧，发现根本截不了，只能掏出苹果手机试就能截。\n\t\n图四，用了苹果十多年，因为工作需要，这次换了个华为，基本功能过渡没有什么大碍，但是细节真是不行，很不适应。\n尤其是工作时候微信和WPS的联动！\n微信收到文件直接用WPS打开，文件形式的转化发送，真是不如苹果丝滑方便\n今天收到一个压缩包，华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，只能用苹果手机登录微信完成解压保存，而且解压后能", "content": "华为mate80pro，截屏隐私保护，怎么关？？真是服了\n图二，朋友问我在干嘛，想截图告诉他在追剧，发现根本截不了，只能掏出苹果手机试就能截。\n\t\n图四，用了苹果十多年，因为工作需要，这次换了个华为，基本功能过渡没有什么大碍，但是细节真是不行，很不适应。\n尤其是工作时候微信和WPS的联动！\n微信收到文件直接用WPS打开，文件形式的转化发送，真是不如苹果丝滑方便\n今天收到一个压缩包，华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，只能用苹果手机登录微信完成解压保存，而且解压后能直接预览文件，华为的解压后无法预览，只能再点开WPS点开看，真是影响工作丝滑度！\n图六，支付宝设置“心愿储蓄”，最后就是弹不出输入密码的口，也真是无语，反馈给客服，客服说是支付宝的问题，让联系支付宝，但是明明在苹果上就没问题，还是得联系支付宝吗，整不会了\n\t\n求解，求解，还是就这么挺着？\n真是理解那句话，你要是心疼华为就买华为，要是心疼自己就买苹果\n ＃华为＃隐私保护", "interaction": 0, "create_time": "2026-05-18 21:35:51", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确表达华为在办公场景（微信WPS联动、文件解压预览等）不如苹果丝滑方便，且引用'心疼自己就买苹果'", "tags": [{"note_id": "6a0b15b7000000003701ea45", "title": "华为mate80pro，截屏隐私保护，怎么关？？真是服了\n图二，朋友问我在干嘛，想截图告诉他在追剧，发现根本截不了，只能掏出苹果手机试就能截。\n\t\n图四，用了苹果十多年，因为工作需要，这次换了个华为，基本功能过渡没有什么大碍，但是细节真是不行，很不适应。\n尤其是工作时候微信和WPS的联动！\n微信收到文件直接用WPS打开，文件形式的转化发送，真是不如苹果丝滑方便\n今天收到一个压缩包，华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，只能用苹果手机登录微信完成解压保存，而且解压后能", "theme": "流畅丝滑", "quote": "微信收到文件直接用WPS打开，文件形式的转化发送，真是不如苹果丝滑方便，今天收到一个压缩包，华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，只能用苹果手机登录微信完成解压保存，而且解压后能直接预览文件，华为的解压后无法预览，只能再点开WPS点开看，真是影响工作丝滑度。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "6a0c6e82000000003700dedb", "title": "用了一年purax我还是重回苹果大军", "content": "从iphone15 pro换成用华为系两年了，从mate60到pura x。\n华为整体体验也很好，但是换回苹果17pro之后，感受到的丝滑程度华为不可比拟。\n说下 purax和苹果17pro的使用对比\n\t\nPurax 体验主要在新形态，换回苹果后我瞬间觉得我用的X系统像老古董哈哈哈，app功能简洁了之后，无法体验各种app产品经理的小巧思，感觉像2026年的诺基亚。\n\t\n苹果17 pro橙色也是一整个新形态，系统还是一样优秀丝滑，坏处是手机太好玩，导致我每天都在玩手机！", "interaction": 0, "create_time": "2026-05-19 22:06:58", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户从华为换回苹果后，明确表达苹果的丝滑程度华为不可比拟，系统优秀丝滑", "tags": [{"note_id": "6a0c6e82000000003700dedb", "title": "用了一年purax我还是重回苹果大军", "theme": "流畅丝滑", "quote": "华为整体体验也很好，但是换回苹果17pro之后，感受到的丝滑程度华为不可比拟，苹果17 pro橙色也是一整个新形态，系统还是一样优秀丝滑，坏处是手机太好玩，导致我每天都在玩手机。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "6628da47000000000401b4c3", "title": "华为mate60pro卡顿问题", "content": "求解\n元旦当天买的，刚上手只感觉手势截屏不灵敏\n最近越用越上头，打开网页，下载软件都转圈。\n\t\n看到小红薯有提醒关闭高级视觉效果，我也关了，但是无感\n\t\n我本身就是个数码白痴\n买了个1T把我整迷茫了\n\t\n有没有哪位高手指教一下，或者华为小哥哥来一下\n是不是我下载的App太多啦？\n\t\n我可是华为全家桶用户啊，真心不想换，又不得不换手机的节奏了……", "interaction": 0, "create_time": "2024-04-24 18:09:11", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户抱怨华为mate60pro卡顿并求助解决方案，虽有负面情绪但无与苹果的对比，且表示不想换品牌", "tags": [{"note_id": "6628da47000000000401b4c3", "title": "华为mate60pro卡顿问题", "theme": "卡顿问题", "quote": "华为mate60pro卡顿问题。", "brand_model": "华为", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "66bf6e480000000025031352", "title": "华为手机卡顿的其中一种原因", "content": "最近几天，本来丝滑流畅的华为手机，突然卡顿到像跳霹雳舞那个机器人的动作一样，一步一卡顿。手机管家清理了两三遍，没用；卸载一些软件，腾出点内存，还没用；更新一下系统，仍然没用。气死我了，以为又要砸钱换新机了。小红书上搜了下，有人说是关掉辅助功能→无障碍→高级视觉效果，会流畅很多。赶紧试了下，还是不太行。不过受此启发，想起来最近卡顿之前，把B站的悬浮窗功能打开了，看视频挺爽，爽了两天之后，就出现卡顿的情况了。立刻马上，关掉悬浮窗功能。哇撒，我熟悉的那个流畅丝滑的手机又回来了！哈哈哈哈嗝", "interaction": 0, "create_time": "2024-08-16 23:20:40", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户分享华为手机卡顿原因及解决方法，属于经验分享，未涉及苹果对比", "tags": [{"note_id": "66bf6e480000000025031352", "title": "华为手机卡顿的其中一种原因", "theme": "流畅丝滑", "quote": "最近几天，本来丝滑流畅的华为手机，突然卡顿到像跳霹雳舞那个机器人的动作一样，一步一卡顿，小红书上搜了下，有人说是关掉辅助功能→无障碍→高级视觉效果，会流畅很多，哇撒，我熟悉的那个流畅丝滑的手机又回来了。", "brand_model": "华为", "sentiment": "正面", "reason": ""}, {"note_id": "66bf6e480000000025031352", "title": "华为手机卡顿的其中一种原因", "theme": "卡顿问题", "quote": "华为手机卡顿的其中一种原因，最近几天，本来丝滑流畅的华为手机，突然卡顿到像跳霹雳舞那个机器人的动作一样，一步一卡顿，不过受此启发，想起来最近卡顿之前，把B站的悬浮窗功能打开了，看视频挺爽，爽了两天之后，就出现卡顿的情况了。", "brand_model": "华为", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "676e4ff60000000013008671", "title": "苹果转安卓两周个人体验", "content": "后续换回🍎了对我来讲有两个非常不能忍的问题\n1，工作软件（base 境外hk）通知有时候收不到，有时候闪退，不稳定\n2，Google pay有时候刷不了，打开卡解锁后靠近post 机没反应（已经删了自带vivo wallet，设定默认nfc 为google pay，需要重启才能解决，但是因为支付不了排队或者下电车真的很不靠谱）\n\t\n⭐现在的电子测评都像预制菜一样，没啥味道，流程走一遍看完并没有印象深刻的点\n⭐整体感觉网上测评声音多过使用体验，实际上周边生态也没有苹果丰富，双持苹果传照片到vivo有些麻烦\n⭐这几天用起来最惊喜的就是相机，很不错，预览框没有很清楚，一开始拍完后会不自信，但是现在基本上不担心，照片不会不好看，拍照的live图，在微信中一个图有两个文件\n⭐！滑动点击逻辑，🍎滑动时点击屏幕第一次逻辑是阻止滑动，然后可以其他操作，但是安卓滑动再点击可以点到❤很容易误操作，个人感觉🍎更加符合直觉一些(也可能习惯了，总之到现在还会误触)\n⭐产品背后的哲学，好用的东西不会感受到，感受到的设计就是查那么一些\n🍎是简单的哲学，靠谱，但是靠谱变化不多，也就变得没有那么有意思\n⭐通知弹窗延迟，以前的通知突然一个弹窗。邮件经常这样，看到之后，过一会又突然弹出来\n⭐苹果通讯录手动导出到vivo后原本通讯录的生日没有了vivo通讯录的生日在设置很深的里面\n⭐关于iCloud 使用技巧，浏览器新增页面到桌面做一个单独按钮，算是替代方案，可以临时查看苹果相册和iCloud 文件\n⭐微信的不适应，作为使用频率最多的微信，操作上有很多不适应的地方，比如下拉搜索，聊天框左滑右滑标记未读，公众号文章浮窗功能\n⭐一些乱码，有待优化\n⭐bili后台播放的时候没有显示控制栏，暂停需要打开程序\n⭐去了vivo店里摸了摸x200 pro 感觉没有比 pro mini大多少，横向尺寸上，已经适应大尺寸手机了", "interaction": 0, "create_time": "2024-12-27 14:57:58", "is_dual": false, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户从安卓(vivo)换回苹果，明确表达苹果更靠谱，吐槽安卓不稳定和交互不习惯", "tags": [{"note_id": "676e4ff60000000013008671", "title": "苹果转安卓两周个人体验", "theme": "稳定性", "quote": "1，工作软件（base 境外hk）通知有时候收不到，有时候闪退，不稳定，2，Google pay有时候刷不了，打开卡解锁后靠近post 机没反应（已经删了自带vivo wallet，设定默认nfc 为google pay，需要重启才能解决，但是因为支付不了排队或者下电车真的很不靠谱），🍎是简单的哲学，靠谱，但是靠谱变化不多，也就变得没有那么有意思。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}, {"note_id": "676e4ff60000000013008671", "title": "苹果转安卓两周个人体验", "theme": "卡顿问题", "quote": "1，工作软件（base 境外hk）通知有时候收不到，有时候闪退，不稳定，2，Google pay有时候刷不了，打开卡解锁后靠近post 机没反应（已经删了自带vivo wallet，设定默认nfc 为google pay，需要重启才能解决，但是因为支付不了排队或者下电车真的很不靠谱）。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "679ee243000000002503c2e3", "title": "以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆！", "content": "以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆！", "interaction": 0, "create_time": "2025-02-02 11:10:59", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽苹果也会卡顿，但未与华为做对比，也未表达华为更好的倾向", "tags": [{"note_id": "679ee243000000002503c2e3", "title": "以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆！", "theme": "卡顿问题", "quote": "以前用安卓机的时候，其他人都说苹果用久了不会卡，等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "68540862000000001d00fccd", "title": "P40有点卡了，但还是不想换", "content": "华为P40，从20年用到现在了，依旧觉着十分好用啊\n而且它6.1英寸小直屏真的才是手感绝佳，比现在动不动就又宽又大的Pura、mate手感好多了\n而且麒麟990，到现在也还是个性能小钢炮，日常用还行，玩游戏也能上压力\n但是要说一点不卡，那是吹牛的，之前买的时候没选好，整了个6＋128GB的配置，导致现在杀后台有点严重，内存也有一丢丢不够用\n不过还好吧现在当个备用机也挺好\n要不是真的内存坚持不了，还是真的一点不想换啊", "interaction": 0, "create_time": "2025-06-19 20:53:54", "is_dual": false, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户对华为P40使用5年仍高度认可，明确表示不想换机，体现对华为的喜爱", "tags": [{"note_id": "68540862000000001d00fccd", "title": "P40有点卡了，但还是不想换", "theme": "流畅丝滑", "quote": "但是要说一点不卡，那是吹牛的，之前买的时候没选好，整了个6＋128GB的配置，导致现在杀后台有点严重，内存也有一丢丢不够用。", "brand_model": "华为", "sentiment": "正面", "reason": ""}, {"note_id": "68540862000000001d00fccd", "title": "P40有点卡了，但还是不想换", "theme": "卡顿问题", "quote": "P40有点卡了，但还是不想换，但是要说一点不卡，那是吹牛的，之前买的时候没选好，整了个6＋128GB的配置，导致现在杀后台有点严重，内存也有一丢丢不够用。", "brand_model": "华为", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "6874f9bc000000001d00d3e7", "title": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#", "content": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#", "interaction": 0, "create_time": "2025-07-14 20:36:12", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽自己的鸿蒙系统卡顿，但未与苹果对比，无品牌倾向对比", "tags": [{"note_id": "6874f9bc000000001d00d3e7", "title": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#", "theme": "流畅丝滑", "quote": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#。", "brand_model": "华为", "sentiment": "正面", "reason": ""}, {"note_id": "6874f9bc000000001d00d3e7", "title": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#", "theme": "卡顿问题", "quote": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#。", "brand_model": "华为", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "689f1043000000001b020395", "title": "用苹果手机的，你们嘴真严啊，打游戏这么卡硬是没人吭声😭😭", "content": "用苹果手机的，你们嘴真严啊，打游戏这么卡硬是没人吭声😭😭", "interaction": 0, "create_time": "2025-08-15 18:47:31", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽苹果手机打游戏卡顿，但未与华为做性能对比，无明确品牌倾向", "tags": [{"note_id": "689f1043000000001b020395", "title": "用苹果手机的，你们嘴真严啊，打游戏这么卡硬是没人吭声😭😭", "theme": "卡顿问题", "quote": "用苹果手机的，你们嘴真严啊，打游戏这么卡硬是没人吭声😭😭。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "68ac1f5b000000001d0075f0", "title": "苹果手机真的不卡吗？", "content": "华为十多年的老用户了，每台手机用个两三年就卡的不行，这台手机当时也花了七八千买的，现在才两年，卡哭了听周边的苹果用户都说苹果不卡，真的吗？苹果都有什么优缺点？我有点想换苹果手机了。 [PK]#", "interaction": 0, "create_time": "2025-08-25 16:31:23", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户认为华为手机卡顿，听闻苹果不卡后明确表示想换苹果手机", "tags": [{"note_id": "68ac1f5b000000001d0075f0", "title": "苹果手机真的不卡吗？", "theme": "流畅丝滑", "quote": "苹果手机真的不卡吗，华为十多年的老用户了，每台手机用个两三年就卡的不行，这台手机当时也花了七八千买的，现在才两年，卡哭了听周边的苹果用户都说苹果不卡，真的吗。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}, {"note_id": "68ac1f5b000000001d0075f0", "title": "苹果手机真的不卡吗？", "theme": "卡顿问题", "quote": "苹果手机真的不卡吗，华为十多年的老用户了，每台手机用个两三年就卡的不行，这台手机当时也花了七八千买的，现在才两年，卡哭了听周边的苹果用户都说苹果不卡，真的吗。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "68cfa25f00000000120309cf", "title": "iPhone17绷不住了", "content": "刚上手就这么卡，试了17其他型号也是这样，过度动画也改成史了，跟安卓比就是一坨，这下真不如安卓了不知道的还以为是山寨机", "interaction": 0, "create_time": "2025-09-21 14:59:43", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽iPhone17卡顿不如安卓，但未明确提及华为，倾向指向安卓整体而非华为", "tags": [{"note_id": "68cfa25f00000000120309cf", "title": "iPhone17绷不住了", "theme": "卡顿问题", "quote": "刚上手就这么卡，试了17其他型号也是这样，过度动画也改成史了，跟安卓比就是一坨，这下真不如安卓了不知道的还以为是山寨机。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "68f6e8b80000000007021d70", "title": "我知道华为耳机卡顿的原因了", "content": "我是苹果手机➕华为cilp2，后台打开华为智慧生活就不会卡，关掉就会偶尔停顿，难怪专柜试音的时候无比流畅，第二天听着就咔咔咔", "interaction": 0, "create_time": "2025-10-21 09:58:16", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户分享华为耳机与苹果手机搭配的解决方案，无品牌优劣对比倾向", "tags": [{"note_id": "68f6e8b80000000007021d70", "title": "我知道华为耳机卡顿的原因了", "theme": "流畅丝滑", "quote": "我是苹果手机➕华为cilp2，后台打开华为智慧生活就不会卡，关掉就会偶尔停顿，难怪专柜试音的时候无比流畅，第二天听着就咔咔咔。", "brand_model": "华为/苹果", "sentiment": "正面", "reason": ""}, {"note_id": "68f6e8b80000000007021d70", "title": "我知道华为耳机卡顿的原因了", "theme": "卡顿问题", "quote": "我知道华为耳机卡顿的原因了，我是苹果手机➕华为cilp2，后台打开华为智慧生活就不会卡，关掉就会偶尔停顿，难怪专柜试音的时候无比流畅，第二天听着就咔咔咔。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "691011ce000000000700840f", "title": "Huawei Mate60pro＋巨卡卡卡卡卡", "content": "📱到底是不是我的错觉，最近我的mate60pro＋巨巨巨巨卡，打开app要等很久，点击任何链接都要等很久才显示出来，app之间跳转也巨巨巨巨卡。\n\t\n📱从mate20到mate30到mate40，都没有这样卡过…内存也没满，为啥会这样啊……是只有我这样吗？\n\t\n📱而且之前人脸识别支付莫名其妙的突然不能用了，大概得有大半年的时间，我也一直没去售后前两个月想起来打电话给售后服务，查不出原因，让去线下。结果正准备去，突然好了一部分，就是某些支付环境可以，有些还是无法识别…好无语😅\n\t\n📱这还怎么遥遥领先啊", "interaction": 0, "create_time": "2025-11-09 12:00:14", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽华为mate60pro+严重卡顿，但未与苹果对比，无品牌倾向", "tags": [{"note_id": "691011ce000000000700840f", "title": "Huawei Mate60pro＋巨卡卡卡卡卡", "theme": "稳定性", "quote": "📱而且之前人脸识别支付莫名其妙的突然不能用了，大概得有大半年的时间，我也一直没去售后前两个月想起来打电话给售后服务，查不出原因，让去线下。", "brand_model": "华为", "sentiment": "负面", "reason": ""}, {"note_id": "691011ce000000000700840f", "title": "Huawei Mate60pro＋巨卡卡卡卡卡", "theme": "卡顿问题", "quote": "Huawei Mate60pro＋巨卡卡卡卡卡，📱到底是不是我的错觉，最近我的mate60pro＋巨巨巨巨卡，打开app要等很久，点击任何链接都要等很久才显示出来，app之间跳转也巨巨巨巨卡，📱从mate20到mate30到mate40，都没有这样卡过…内存也没满，为啥会这样啊……是只有我这样吗。", "brand_model": "华为", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "692da99c000000001e017650", "title": "垃圾玩意儿", "content": "你们的华为mate60pro卡吗？我是卡的相当无语了，刷抖音掉帧、卡顿，进app反应慢，一直转圈圈，还不如我妈那1000多的手机反应快，还是换苹果吧，失望😔😔", "interaction": 0, "create_time": "2025-12-01 22:43:40", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户因华为mate60pro严重卡顿，明确表示要换苹果", "tags": [{"note_id": "692da99c000000001e017650", "title": "垃圾玩意儿", "theme": "卡顿问题", "quote": "你们的华为mate60pro卡吗，我是卡的相当无语了，刷抖音掉帧、卡顿，进app反应慢，一直转圈圈，还不如我妈那1000多的手机反应快，还是换苹果吧，失望😔😔。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "6936f5ad000000000d037a72", "title": "玩死鸟的一些返祖（针对苹果17的卡顿", "content": "一般手机默认的60帧，看起来流畅不卡顿应该是过渡掉了一些动画，所以ui点击反应很快，高刷让动画变得流畅，补足了动画（不是很专业的解说👉🏻👈🏻）所以录屏的时候看不出来任何问题，只能看出来动画流畅，实际上点击的时候就会出来反应不灵敏，虽然很早就跟客服反馈过了但好像并没有用如果想要玩鸢子流畅一点的可以开这个限制帧率，个人体感确实灵敏一些，但是手机使用很不舒服（尤其是开app关app动画不流畅）介意的要么换设备玩，要么只能接受（果子的自适应", "interaction": 0, "create_time": "2025-12-08 23:58:37", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽苹果17游戏卡顿，建议换设备，但未明确推荐华为", "tags": [{"note_id": "6936f5ad000000000d037a72", "title": "玩死鸟的一些返祖（针对苹果17的卡顿", "theme": "流畅丝滑", "quote": "一般手机默认的60帧，看起来流畅不卡顿应该是过渡掉了一些动画，所以ui点击反应很快，高刷让动画变得流畅，补足了动画（不是很专业的解说👉🏻👈🏻）所以录屏的时候看不出来任何问题，只能看出来动画流畅，实际上点击的时候就会出来反应不灵敏，虽然很早就跟客服反馈过了但好像并没有用如果想要玩鸢子流畅一点的可以开这个限制帧率，个人体感确实灵敏一些，但是手机使用很不舒服（尤其是开app关app动画不流畅）介意的要么换设备玩，要么只能接受（果子的自适应。", "brand_model": "苹果", "sentiment": "负面", "reason": ""}, {"note_id": "6936f5ad000000000d037a72", "title": "玩死鸟的一些返祖（针对苹果17的卡顿", "theme": "卡顿问题", "quote": "玩死鸟的一些返祖（针对苹果17的卡顿，一般手机默认的60帧，看起来流畅不卡顿应该是过渡掉了一些动画，所以ui点击反应很快，高刷让动画变得流畅，补足了动画（不是很专业的解说👉🏻👈🏻）所以录屏的时候看不出来任何问题，只能看出来动画流畅，实际上点击的时候就会出来反应不灵敏，虽然很早就跟客服反馈过了但好像并没有用如果想要玩鸢子流畅一点的可以开这个限制帧率，个人体感确实灵敏一些，但是手机使用很不舒服（尤其是开app关app动画不流畅）介意的要么换设备玩，要么只能接受（果子的自适应。", "brand_model": "苹果", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "69384838000000000d03ae23", "title": "你有遇到吗", "content": "华为mate70Pro 6.0相机卡的要死，现在一打开必卡，我真的服了 负优化也不带这样的", "interaction": 0, "create_time": "2025-12-10 00:03:04", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户吐槽华为mate70Pro相机卡顿，未与苹果对比，无品牌倾向", "tags": [{"note_id": "69384838000000000d03ae23", "title": "你有遇到吗", "theme": "卡顿问题", "quote": "华为mate70Pro 6.0相机卡的要死，现在一打开必卡，我真的服了 负优化也不带这样的。", "brand_model": "华为", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "693baab1000000001e00fbc4", "title": "流畅已经不是苹果的优势", "content": "流畅度早已不是苹果的专属优势——日常使用中频繁锁帧的体验，遇到安卓或鸿蒙系统优化到位的全局120hz高刷，两者根本不在一个量级，苹果所谓的流畅早已被甩在身后", "interaction": 0, "create_time": "2025-12-12 13:40:01", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户明确表达苹果流畅度已被安卓/鸿蒙超越，华为属于鸿蒙阵营", "tags": [{"note_id": "693baab1000000001e00fbc4", "title": "流畅已经不是苹果的优势", "theme": "流畅丝滑", "quote": "流畅已经不是苹果的优势，流畅度早已不是苹果的专属优势——日常使用中频繁锁帧的体验，遇到安卓或鸿蒙系统优化到位的全局120hz高刷，两者根本不在一个量级，苹果所谓的流畅早已被甩在身后。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}, {"note_id": "693baab1000000001e00fbc4", "title": "流畅已经不是苹果的优势", "theme": "卡顿问题", "quote": "流畅度早已不是苹果的专属优势——日常使用中频繁锁帧的体验，遇到安卓或鸿蒙系统优化到位的全局120hz高刷，两者根本不在一个量级，苹果所谓的流畅早已被甩在身后。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "69586ae9000000001e000b4e", "title": "为何安卓手机越用越卡，而鸿蒙系统和苹果系统不会越用越卡。", "content": "为何安卓手机越用越卡，而鸿蒙系统和苹果系统不会越用越卡。", "interaction": 0, "create_time": "2026-01-03 09:03:37", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户将鸿蒙和苹果并列认为都不会越用越卡，无优劣对比，是平等陈述", "tags": [{"note_id": "69586ae9000000001e000b4e", "title": "为何安卓手机越用越卡，而鸿蒙系统和苹果系统不会越用越卡。", "theme": "卡顿问题", "quote": "为何安卓手机越用越卡，而鸿蒙系统和苹果系统不会越用越卡。", "brand_model": "华为/苹果", "sentiment": "负面", "reason": ""}], "matched_keywords": []}, {"note_id": "6959dbd2000000001d03acc1", "title": "华为曾承诺“三年不卡顿”，如今三年之期已", "content": "华为承诺的“三年不卡顿”已到，华为手机在性能和流畅度上表现良好，用户反馈普遍满意。然而，部分用户反映系统优化和软件更新可能影响使用体验，但整体来看，华为手机在性能和流畅度上依然表现出色。", "interaction": 0, "create_time": "2026-01-04 11:17:38", "is_dual": false, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户肯定华为'三年不卡顿'承诺兑现，整体性能和流畅度表现满意", "tags": [{"note_id": "6959dbd2000000001d03acc1", "title": "华为曾承诺“三年不卡顿”，如今三年之期已", "theme": "流畅丝滑", "quote": "华为曾承诺“三年不卡顿”，如今三年之期已，华为承诺的“三年不卡顿”已到，华为手机在性能和流畅度上表现良好，用户反馈普遍满意，然而，部分用户反映系统优化和软件更新可能影响使用体验，但整体来看，华为手机在性能和流畅度上依然表现出色。", "brand_model": "华为", "sentiment": "正面", "reason": ""}, {"note_id": "6959dbd2000000001d03acc1", "title": "华为曾承诺“三年不卡顿”，如今三年之期已", "theme": "卡顿问题", "quote": "华为曾承诺“三年不卡顿”，如今三年之期已，华为承诺的“三年不卡顿”已到，华为手机在性能和流畅度上表现良好，用户反馈普遍满意。", "brand_model": "华为", "sentiment": "正面", "reason": ""}], "matched_keywords": []}, {"note_id": "686de7f8000000000b02dfb4", "title": "感觉华为比苹果好用，是错觉吗？", "content": "突然发现华为新的鸿蒙系统有些功能和苹果类似，音乐锁屏一样可以放大，有可以调节参数的滤镜，华为叫个性色卡，苹果是调色盘，还有专注模式，华为可以自定义一个“制冷模式”，哈哈\n这是华为pura80 Pro+，我觉得挺好用的，一英寸拍照好、系统也流畅，还挺省电的，你们觉得体验怎么样？\n（个人观点，仅供参考）", "interaction": 0, "create_time": "2025-07-09 11:54:32", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户标题直接表达华为比苹果好用，内容进一步肯定华为系统流畅、拍照好、省电", "tags": [{"note_id": "686de7f8000000000b02dfb4", "title": "感觉华为比苹果好用，是错觉吗？", "theme": "流畅丝滑", "quote": "系统也流畅", "brand_model": "华为Pura80 Pro+", "sentiment": "正面", "reason": "用户明确表达华为系统流畅"}], "matched_keywords": []}, {"note_id": "68f61a3d0000000003021774", "title": "系统流畅度横评，苹果华为小米OPPO谁更好？", "content": "听说有人想看苹果和国产手机系统流畅度对比？\n那就拿苹果iOS 26、华为鸿蒙OS 5、小米澎湃OS 3、OPPO ColorOS 16四大系统来对比一下吧\n看看国产系统和苹果在流畅度上还有多大差距~\n\t\n1️⃣解锁动画\n输完密码后进入桌面都很丝滑，就看入场动画你喜欢哪家了~\n\t\n2️⃣APP打断动画\n从我的操作体验来看，四家确实都很流畅，跟手性感觉还是苹果华为OPPO要好一点点。\n\t\n3️⃣负一屏切换\n这部分小米没有切换和打断动画，而苹果华为OPPO都做得不错，感觉ColorOS 16反应速度更快点？\n\t\n4️⃣后台任务管理\n滑动都没有卡顿，不过视觉上，还是苹果和OPPO的堆料后台更丝滑。\n\t\n5️⃣灵动岛切换\n各家灵动岛动画都不错，华为OPPO的逻辑相似，小米则有两种形式更丰富。\n\t\n6️⃣页面垂直滑动\n都没有感觉到卡顿，不过OPPO ColorOS 16好像更丝滑一点吧？\n\t\n个人总结一下，除了苹果iOS一贯流畅外，华为鸿蒙OS 5目前轻量化流畅性还是不错的，安卓这边小米澎湃OS 3确实提升很大，但还有提升空间；而OPPO的ColorOS 16毫无疑问达到了安卓的流畅巅峰，动效做得确实丝滑，不愧是机圈德芙。另外OPPO的AI功能也超级实用，像新增的AI补光等AI图像功能，还有全新AI一键闪记，非常聪明好用~\n\t\n那么对比下来，你们觉得谁更流畅呢？", "interaction": 0, "create_time": "2025-10-20 19:17:17", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "客观横评四大系统各有优劣，未明确表达华为或苹果谁更好，结尾反问读者", "tags": [{"note_id": "68f61a3d0000000003021774", "title": "系统流畅度横评，苹果华为小米OPPO谁更好？", "theme": "流畅丝滑", "quote": "四家确实都很流畅，跟手性感觉还是苹果华为OPPO要好一点点", "brand_model": "华为/苹果", "sentiment": "正面", "reason": "用户表达苹果华为OPPO跟手性好"}, {"note_id": "68f61a3d0000000003021774", "title": "系统流畅度横评，苹果华为小米OPPO谁更好？", "theme": "流畅丝滑", "quote": "华为鸿蒙OS 5目前轻量化流畅性还是不错的", "brand_model": "华为", "sentiment": "正面", "reason": "用户表达华为鸿蒙OS 5流畅性不错"}, {"note_id": "68f61a3d0000000003021774", "title": "系统流畅度横评，苹果华为小米OPPO谁更好？", "theme": "流畅丝滑", "quote": "OPPO的ColorOS 16毫无疑问达到了安卓的流畅巅峰，动效做得确实丝滑", "brand_model": "OPPO", "sentiment": "正面", "reason": "用户表达ColorOS 16流畅巅峰、动效丝滑"}], "matched_keywords": []}, {"note_id": "6904ae570000000005013541", "title": "mate40p换17pm好不习惯", "content": "上次用苹果还是iphone5s，之后一直用安卓，这部华为mate40pro用了5年整，最近寻思换苹果试试\n\t\n昨晚收到新手机，用了一会儿也没觉得17pm到底哪里好，哪里值得上万的价格\n\t\n不是所有界面都能左滑后退，偶尔还需要点左上角\n还没插sim卡就收到一堆垃圾广告，不都说苹果广告少吗\n\t\n今天上班都没带新手机去，完全不喜欢啊怎么办，现在看着总想退了，换pura x算了", "interaction": 0, "create_time": "2025-10-31 20:40:55", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户从华为换苹果后不适应，认为苹果不值上万价格，想退掉换回华为", "tags": [{"note_id": "6904ae570000000005013541", "title": "mate40p换17pm好不习惯", "theme": "流畅丝滑", "quote": "用了一会儿也没觉得17pm到底哪里好，哪里值得上万的价格", "brand_model": "iPhone17ProMax", "sentiment": "负面", "reason": "用户表达iPhone17PM没有感觉出好"}], "matched_keywords": []}, {"note_id": "694f6805000000001e0099c6", "title": "刚体验了苹果，vivo，华为。感觉系统流畅度还是苹果最好。安卓和鸿蒙流畅度差不多。vivo的屏幕感官比华为强一些，感觉华为的屏幕冷白冷白的。有没有同感的？为什么网上都说华为最强", "content": "刚体验了苹果，vivo，华为。感觉系统流畅度还是苹果最好。安卓和鸿蒙流畅度差不多。vivo的屏幕感官比华为强一些，感觉华为的屏幕冷白冷白的。有没有同感的？为什么网上都说华为最强", "interaction": 0, "create_time": "2025-12-27 13:00:53", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确表达系统流畅度苹果最好，安卓和鸿蒙差不多", "tags": [{"note_id": "694f6805000000001e0099c6", "title": "刚体验了苹果，vivo，华为。感觉系统流畅度还是苹果最好。", "theme": "流畅丝滑", "quote": "感觉系统流畅度还是苹果最好。安卓和鸿蒙流畅度差不多", "brand_model": "华为/苹果", "sentiment": "正面", "reason": "用户表达苹果系统流畅度最好"}], "matched_keywords": []}, {"note_id": "6988504f000000000e03ee1f", "title": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了", "content": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了", "interaction": 0, "create_time": "2026-02-08 16:58:55", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户认为华为mate70pro+流畅度不行，已换回苹果", "tags": [{"note_id": "6988504f000000000e03ee1f", "title": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了", "theme": "流畅丝滑", "quote": "流畅都不行", "brand_model": "华为Mate70Pro+", "sentiment": "负面", "reason": "用户明确表达华为Mate70Pro+流畅不行"}, {"note_id": "6988504f000000000e03ee1f", "title": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了", "theme": "稳定性", "quote": "待机和流畅都不行", "brand_model": "华为Mate70Pro+", "sentiment": "负面", "reason": "用户表达华为Mate70Pro+待机不行"}], "matched_keywords": []}, {"note_id": "6991bebf000000001a02ec29", "title": "十几年果粉转华为失败", "content": "苹果从4开始用，觉得真的用腻了，逛华为一眼心动，外表是真喜欢，1T才七千多，感觉性价比嘎嘎的，马上买了，想着拍照也不咋拍，游戏就玩玩消消乐，应该没啥问题，结果还是受不了鸿蒙系统，用了一个多月，还是回到苹果的怀抱了，我只能说，下次不会再尝试了", "interaction": 0, "create_time": "2026-02-15 20:40:31", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户从苹果转华为后，因受不了鸿蒙系统，用了一个多月还是回到苹果，明确表达苹果系统更适合自己。", "tags": [{"note_id": "6991bebf000000001a02ec29", "title": "十几年果粉转华为失败", "theme": "稳定性", "quote": "结果还是受不了鸿蒙系统，用了一个多月，还是回到苹果的怀抱了", "brand_model": "华为", "sentiment": "负面", "reason": "用户表达受不了鸿蒙系统"}], "matched_keywords": []}, {"note_id": "69d63643000000001b000681", "title": "华为和苹果都用过的宝子们？你觉得鸿蒙6的流畅度达到iOS水平了吗？", "content": "华为和苹果都用过的宝子们？你觉得鸿蒙6的流畅度达到iOS水平了吗？", "interaction": 0, "create_time": "2026-04-08 19:04:36", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "纯提问，询问鸿蒙6流畅度是否达到iOS水平，没有表达任何倾向性观点。", "tags": [{"note_id": "69d63643000000001b000681", "title": "华为和苹果都用过的宝子们？你觉得鸿蒙6的流畅度达到iOS水平了吗？", "theme": "流畅丝滑", "quote": "你觉得鸿蒙6的流畅度达到iOS水平了吗？", "brand_model": "华为/苹果", "sentiment": "中性", "reason": "用户在询问鸿蒙6流畅度是否达到iOS水平"}], "matched_keywords": []}, {"note_id": "69e5feda000000002200326f", "title": "全网手机系统排行榜大曝光！谁更流畅？", "content": "家人们谁懂啊！刷到这份手机系统排名直接看傻了！\n✅ 断层领先居然是 realme UI 6.0（9.5 分），鸿蒙 4.2 紧随其后拿了第二，鸿蒙 6、ColorOS 15 并列第三，国产系统直接屠榜前排！\n✅ 安卓原生 16、OriginOS 6 也冲进了前六，流畅度直接拉满\n✅ 没想到 iOS 16、iOS 18 直接排到了末尾，分数还不到 5 分，属实有点意外了\n\t\n你们现在用的是什么系统？用着顺手吗？聊聊你心中的系统天花板👇", "interaction": 0, "create_time": "2026-04-20 18:24:26", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "内容引用排名称鸿蒙4.2第二、鸿蒙6并列第三，而iOS排末尾分数不到5分，明确表达华为系统流畅度优于苹果。", "tags": [{"note_id": "69e5feda000000002200326f", "title": "全网手机系统排行榜大曝光！谁更流畅？", "theme": "流畅丝滑", "quote": "鸿蒙 4.2 紧随其后拿了第二，鸿蒙 6、ColorOS 15 并列第三", "brand_model": "华为", "sentiment": "正面", "reason": "排行榜显示鸿蒙系统排名靠前"}, {"note_id": "69e5feda000000002200326f", "title": "全网手机系统排行榜大曝光！谁更流畅？", "theme": "流畅丝滑", "quote": "iOS 16、iOS 18 直接排到了末尾，分数还不到 5 分", "brand_model": "苹果", "sentiment": "负面", "reason": "排行榜显示iOS排名末尾"}], "matched_keywords": []}, {"note_id": "69e70452000000002003a78b", "title": "据说鸿蒙6.1强的可怕，比ios更流畅，我这就试试。", "content": "据说鸿蒙6.1强的可怕，比ios更流畅，我这就试试。", "interaction": 0, "create_time": "2026-04-21 13:00:02", "is_dual": false, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户明确表示鸿蒙6.1比iOS更流畅，并打算亲自尝试，表达了对华为流畅度的认可。", "tags": [{"note_id": "69e70452000000002003a78b", "title": "据说鸿蒙6.1强的可怕，比ios更流畅，我这就试试。", "theme": "流畅丝滑", "quote": "据说鸿蒙6.1强的可怕，比ios更流畅", "brand_model": "华为", "sentiment": "正面", "reason": "用户表达鸿蒙6.1比iOS更流畅"}], "matched_keywords": []}, {"note_id": "69ec072d0000000035025be7", "title": "华为的鸿蒙系统比苹果还流畅了？", "content": "有没有华为和苹果都用过的，解答一下", "interaction": 0, "create_time": "2026-04-25 08:13:33", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "纯提问，询问鸿蒙是否比苹果流畅，没有表达任何倾向性观点。", "tags": [{"note_id": "69ec072d0000000035025be7", "title": "华为的鸿蒙系统比苹果还流畅了？", "theme": "流畅丝滑", "quote": "华为的鸿蒙系统比苹果还流畅了？", "brand_model": "华为/苹果", "sentiment": "中性", "reason": "用户在询问鸿蒙是否比苹果流畅"}], "matched_keywords": []}, {"note_id": "69f309a7000000002300519f", "title": "安卓为什么过几年就很卡？", "content": "为什么安卓手机配置更高，但三四年后流畅度就是打不过同期的iPhone？", "interaction": 0, "create_time": "2026-04-30 15:50:00", "is_dual": false, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户提问中明确表达安卓配置更高但三四年后流畅度打不过同期iPhone，暗示苹果长期流畅度更优。", "tags": [{"note_id": "69f309a7000000002300519f", "title": "安卓为什么过几年就很卡？", "theme": "卡顿问题", "quote": "为什么安卓手机配置更高，但三四年后流畅度就是打不过同期的iPhone？", "brand_model": "不明确", "sentiment": "负面", "reason": "用户表达安卓三四年后流畅度打不过iPhone"}], "matched_keywords": []}, {"note_id": "69f5d172000000001a02dbb3", "title": "事实证明，芯片性能无法决定一切！", "content": "众所周知的原因，华为从麒麟 9000 后就无法使用台积电跟高通联发科三星苹果站在同一起跑线同台竞技了，可以说遭受了巨大不公平对待，华为曲线图存，真自研芯片+真自研操作系统，软硬配合，目前新麒麟芯片虽然制程上不占优势，但是流畅度上配合自研纯血鸿蒙系统足以跟 iOS 和安卓掰手腕了，甚至丝毫不落下风。\n\t\n随机测试，你更喜欢哪个品牌的处理器？另外可以预测一下麒麟芯片何时能够性能满载而归！", "interaction": 0, "create_time": "2026-05-02 18:26:58", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户明确表示华为新麒麟芯片配合纯血鸿蒙系统流畅度足以跟iOS掰手腕甚至不落下风，肯定华为性能。", "tags": [{"note_id": "69f5d172000000001a02dbb3", "title": "事实证明，芯片性能无法决定一切！", "theme": "流畅丝滑", "quote": "目前新麒麟芯片虽然制程上不占优势，但是流畅度上配合自研纯血鸿蒙系统足以跟 iOS 和安卓掰手腕了，甚至丝毫不落下风", "brand_model": "华为", "sentiment": "正面", "reason": "用户表达华为新麒麟+鸿蒙流畅度足以跟iOS掰手腕"}], "matched_keywords": []}, {"note_id": "69fee36200000000230177df", "title": "苹果和华为选择哪一个能用好几年呢？", "content": "苹果和华为到底哪一个能用好几年都不会卡？我的朋友们用的都是苹果，感觉都还挺好的，拍照也都挺好的。我马上上大学了，家里面条件也不是很好，我想可能大学几年就不会再换手机了。平时的话我就喜欢打一打游戏，拍拍照片\n真的好纠结呀，买苹果主要就是拍照好看，还非常的流畅，朋友们用的也都是苹果，但是父母呢，比较喜欢华为，因为华为是国货，有没有懂的姐妹们帮我推荐一下？", "interaction": 0, "create_time": "2026-05-09 15:33:54", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户纠结买苹果还是华为，虽然提到苹果拍照好看且流畅，但也在考虑华为，没有明确倾向，属于求助型内容。", "tags": [{"note_id": "69fee36200000000230177df", "title": "苹果和华为选择哪一个能用好几年呢？", "theme": "流畅丝滑", "quote": "买苹果主要就是拍照好看，还非常的流畅", "brand_model": "苹果", "sentiment": "正面", "reason": "用户表达苹果非常流畅"}], "matched_keywords": []}, {"note_id": "6a0b0594000000003502123d", "title": "华为mate80pm动态图卡", "content": "你们的实况图也这么卡吗", "interaction": 0, "create_time": "2026-05-18 20:27:00", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户仅询问华为mate80pm动态图是否卡顿，没有与苹果对比，也没有明确倾向。", "tags": [{"note_id": "6a0b0594000000003502123d", "title": "华为mate80pm动态图卡", "theme": "卡顿问题", "quote": "你们的实况图也这么卡吗", "brand_model": "华为Mate80ProMax", "sentiment": "负面", "reason": "用户表达华为Mate80PM实况图卡"}], "matched_keywords": []}, {"note_id": "6a0c6850000000000602186e", "title": "苹果对比华为真是输惨了", "content": "转华为后，可玩性比苹果高了不止一个Level，质感很好，到手像第一次用iPhone5s和iPhoneX 一样惊喜，爱不释手！鸿蒙流畅度很惊喜，跟苹果不相上下，就创新而言，确实遥遥领先了", "interaction": 0, "create_time": "2026-05-19 21:40:32", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户转华为后表示可玩性比苹果高，鸿蒙流畅度跟苹果不相上下，创新遥遥领先，明确倾向华为。", "tags": [{"note_id": "6a0c6850000000000602186e", "title": "苹果对比华为真是输惨了", "theme": "流畅丝滑", "quote": "鸿蒙流畅度很惊喜，跟苹果不相上下", "brand_model": "华为", "sentiment": "正面", "reason": "用户表达鸿蒙流畅度跟苹果不相上下"}], "matched_keywords": []}, {"note_id": "64c0db63000000000103c073", "title": "不同手机的保值率，iphone 12还能再战？", "content": "可能很多小伙伴更在意的不是手机保不保值，而是手机的使用寿命，其实使用寿命跟手机的保值率也是有关系的哦\n苹果和华为的保值率都还蛮高的，苹果属于怎么用都很流畅的，保值率高也不意外，华为由于麒麟芯片的缘故，mate40Pro属于越旧越香的类型，当然也不排除mate50系列真的很难抢到，有钱都买不到，哪还有贬值的道理\n说起贬值，那就不得不提到三星了，名副其实的跳水王者，如果说想要保值率高的手机，那就别考虑三星了，其次还有红米、真我、iQOO这些。\n有一说一，安卓阵营保值率再怎么高也无法撼动苹果手机保值率第一的地位！ #", "interaction": 0, "create_time": "2023-07-26 16:37:55", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确表示苹果怎么用都很流畅，且强调安卓阵营保值率再高也无法撼动苹果保值率第一的地位，倾向苹果。", "tags": [{"note_id": "64c0db63000000000103c073", "title": "不同手机的保值率，iphone 12还能再战？", "theme": "流畅丝滑", "quote": "苹果属于怎么用都很流畅的", "brand_model": "苹果", "sentiment": "正面", "reason": "用户表达苹果怎么用都很流畅"}], "matched_keywords": []}, {"note_id": "65e31c35000000000b018f18", "title": "给娃入手matepadair，开始体验。", "content": "❤️今年过年时和朋友们聚餐，餐桌上几乎都是宝妈和奶爸，大家都是带着孩子来聚会的，平板电脑成为让孩子安静听话的神器，除了我家之外，几乎人手一个。\n❤️和朋友聊天知道了，如果孩子每天必须要对着电子屏幕看好一阵，手机真的不合适，尺寸太小，会让孩子视觉疲劳加重，进而影响视力。\n❤️所以这两天就在研究给孩子买个Pad玩，看了好几个产品，坠后定了华为的MatepadAir，其实ipad的体验感和稳定性都是坠好的，也坠喜欢，但是由于我们的需求以孩子为主，平时只是看动画片用，视频类居多，而ipad价格都太高，超预算太多，确实没必要，就选择了华为，也算是国货南玻万了。\n❤️Ipad9的价格倒是合适，但去了实体店真实体验后，真心感觉9已经是上个时代的产品了，有些脱节了，非全1面屏，单扬声器，60HZ屏幕，都不太符合我们的需求，苹果的AIR和PRO固然爽，质感没得挑，但看个动画片来说，这个价格确实是没必要。\n❤️然后就跑去了华为店，看了一圈，各种对比，坠后选择了matepadair，就一个理由，这款机器的屏幕好，144hz和2.8k，看着确实舒服，价格也合适，就果断入手了。\n❤️其实买国产平板还是有些担心的，怕的就是用个一两年以后就开始卡，犯安卓的老毛病，但看过网上很多评价后，觉得可以相信华为的产品力，而且我们的使用强度也达不到玩命榨取它的性能，所以赌它以后不会卡顿。\n❤️这篇笔记我准备当作长测笔记，长时间不断更新，和大家报告使用状况，大家有什么关于matepadair的问题也可以问我，我知道的都会回答。", "interaction": 0, "create_time": "2024-03-02 20:31:49", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确表示iPad的体验感和稳定性都是最好的，虽然因预算选择华为，但内心更认可苹果。", "tags": [{"note_id": "65e31c35000000000b018f18", "title": "给娃入手matepadair，开始体验。", "theme": "稳定性", "quote": "ipad的体验感和稳定性都是坠好的", "brand_model": "苹果", "sentiment": "正面", "reason": "用户表达iPad体验感和稳定性最好"}], "matched_keywords": []}, {"note_id": "666bba59000000001c0232a1", "title": "你觉得差距在哪？", "content": "明明安卓手机的耐用性、功能性、拍照、流畅度都追上来很多了呀。", "interaction": 0, "create_time": "2024-06-14 11:34:49", "is_dual": false, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "", "tags": [{"note_id": "666bba59000000001c0232a1", "title": "你觉得差距在哪？", "theme": "流畅丝滑", "quote": "明明安卓手机的耐用性、功能性、拍照、流畅度都追上来很多了呀", "brand_model": "不明确", "sentiment": "正面", "reason": "用户表达安卓流畅度追上来了"}], "matched_keywords": []}, {"note_id": "67dd5f2d000000000d01500a", "title": "不同品牌手机寿命大揭秘，谁才是耐用之王", "content": "宝子们在选手机时，除了性能、颜值，使用寿命也很关键！今天就给大家盘一盘各大品牌手机的耐用度👇\n📱苹果手机\n苹果手机的寿命普遍3年起步，保养得好甚至能用10年 。只要内存足够，就无需急着换新，像iPhone16系列，性能和系统都很能打。\n📱华为手机\n华为手机正常使用3 - 5年没问题，如果5G技术没有带来颠覆性的体验，现有的华为手机还能再战3 - 5年。推荐Mate70和P70系列，品质和性能都有保障。\n📱小米手机\n小米手机价格亲民还耐用，使用寿命大概3 - 5年，对于追求性价比的朋友来说，小米15系列是不错的选择。\n📱OPPO手机\nOPPO手机使用寿命约2年，由于系统优化方面存在短板，使用时间长了容易卡顿，推荐Reno系列和Find系列 。\n📱vivo手机\nvivo手机更新换代速度快，寿命在2 - 3年。vivo一年发布两次新机，iQOO一年发布三次。vivoX系列和iQOO系列值得入手。\n📱三星手机\n三星手机的使用寿命比较迷，有人觉得不耐用，也有人认为只要多包容，它就能一直陪伴。作为“演唱会神器”，S系列值得关注。\n大家的手机都用了多久呢？欢迎在评论区分享~", "interaction": 0, "create_time": "2025-03-21 20:44:29", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "内容是对多个品牌手机寿命的客观盘点，虽然提到苹果能用10年、华为3-5年，但整体是信息整理，没有明确倾向华为或苹果谁更好。", "tags": [{"note_id": "67dd5f2d000000000d01500a", "title": "不同品牌手机寿命大揭秘，谁才是耐用之王", "theme": "流畅丝滑", "quote": "苹果手机的寿命普遍3年起步，保养得好甚至能用10年 。只要内存足够，就无需急着换新", "brand_model": "苹果", "sentiment": "正面", "reason": "用户表达苹果手机寿命长、耐用"}, {"note_id": "67dd5f2d000000000d01500a", "title": "不同品牌手机寿命大揭秘，谁才是耐用之王", "theme": "流畅丝滑", "quote": "华为手机正常使用3 - 5年没问题", "brand_model": "华为", "sentiment": "正面", "reason": "用户表达华为手机正常使用3-5年没问题"}, {"note_id": "67dd5f2d000000000d01500a", "title": "不同品牌手机寿命大揭秘，谁才是耐用之王", "theme": "卡顿问题", "quote": "OPPO手机使用寿命约2年，由于系统优化方面存在短板，使用时间长了容易卡顿", "brand_model": "OPPO", "sentiment": "负面", "reason": "用户表达OPPO使用时间长了容易卡顿"}], "matched_keywords": []}, {"note_id": "68529935000000002400e957", "title": "摸着良心说,华为和苹果你觉得哪个更好用？\n1、苹果转华为, 差不多半个月了, 感觉用着都差不多, 鸿蒙系统不像苹果系统那么封闭, 体验都是一 流的。\n\t\n2、外观：我觉得华为好看, 摄像头居中对称远比在 一侧的看起来舒服, 至少我这么觉得。\n\t\n3、系统流畅性： 旗舰机的话, 安卓也好鸿蒙也好, 也不会卡, 至少我的用了两三年, 目前不卡。\n\t\n4、系统封闭： 老实说, 这点我是比较偏向于IOS，因为安卓、鸿蒙经常你一不小心就 裝了个垃圾app, 就很让人不爽。\n\t\n5、苹果华为我都有, 还是华为的用着安", "content": "摸着良心说,华为和苹果你觉得哪个更好用？\n1、苹果转华为, 差不多半个月了, 感觉用着都差不多, 鸿蒙系统不像苹果系统那么封闭, 体验都是一 流的。\n\t\n2、外观：我觉得华为好看, 摄像头居中对称远比在 一侧的看起来舒服, 至少我这么觉得。\n\t\n3、系统流畅性： 旗舰机的话, 安卓也好鸿蒙也好, 也不会卡, 至少我的用了两三年, 目前不卡。\n\t\n4、系统封闭： 老实说, 这点我是比较偏向于IOS，因为安卓、鸿蒙经常你一不小心就 裝了个垃圾app, 就很让人不爽。\n\t\n5、苹果华为我都有, 还是华为的用着安逸, 苹果的除了系统丝滑,其他功能没啥牛的, 而且很多华为在国內很好用、很实用的场景功能，苹果根本没有。\n\t\n6、同价位的手机拿来比，应该没有太大差距吧, 可能还是国产的功能更丰富一点, 苹果胜在系统吧, 能坚持好多年用起来依旧流畅, 很少出现死机,卡屏现象 。", "interaction": 0, "create_time": "2025-06-18 18:47:17", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户双面评价，既说华为用着安逸、功能丰富，又说苹果系统丝滑、很少死机卡屏，没有明确站队谁更好。", "tags": [{"note_id": "68529935000000002400e957", "title": "摸着良心说,华为和苹果你觉得哪个更好用？", "theme": "流畅丝滑", "quote": "系统流畅性： 旗舰机的话, 安卓也好鸿蒙也好, 也不会卡, 至少我的用了两三年, 目前不卡", "brand_model": "华为/苹果", "sentiment": "正面", "reason": "用户表达旗舰机两三年不卡"}, {"note_id": "68529935000000002400e957", "title": "摸着良心说,华为和苹果你觉得哪个更好用？", "theme": "流畅丝滑", "quote": "苹果胜在系统吧, 能坚持好多年用起来依旧流畅, 很少出现死机,卡屏现象", "brand_model": "苹果", "sentiment": "正面", "reason": "用户表达苹果系统多年依旧流畅"}], "matched_keywords": []}, {"note_id": "693a74f6000000001e039925", "title": "苹果手机比华为耐用不接受反驳！", "content": "苹果比华为耐用！用了这么多年手机，真心觉得苹果的 “抗造度” 和 “长期流畅度” 更能打。", "interaction": 0, "create_time": "2025-12-11 15:38:30", "is_dual": true, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确表示苹果比华为耐用，长期流畅度更能打，直接表达苹果优于华为。", "tags": [{"note_id": "693a74f6000000001e039925", "title": "苹果手机比华为耐用不接受反驳！", "theme": "流畅丝滑", "quote": "苹果比华为耐用！用了这么多年手机，真心觉得苹果的 \"抗造度\" 和 \"长期流畅度\" 更能打", "brand_model": "苹果", "sentiment": "正面", "reason": "用户表达苹果长期流畅度更能打"}], "matched_keywords": []}, {"note_id": "69721f12000000001a025ea7", "title": "又换回了mate", "content": "再次从苹果换回了华为。入手mate 80，用了两天丝滑流畅。第二代红枫影像，还在摸索中。小艺输入法，小艺AI反应灵敏，超级好用。\n\n期待记录美好生活", "interaction": 0, "create_time": "2026-01-22 20:58:58", "is_dual": true, "tone_score": 0, "sentiment": "华为好", "sentiment_reasoning": "用户从苹果换回华为，明确称赞mate80丝滑流畅、小艺AI超级好用，表达对华为的认可。", "tags": [{"note_id": "69721f12000000001a025ea7", "title": "又换回了mate", "theme": "流畅丝滑", "quote": "用了两天丝滑流畅", "brand_model": "华为Mate80", "sentiment": "正面", "reason": "用户表达华为Mate80丝滑流畅"}], "matched_keywords": []}, {"note_id": "6991e2080000000015021e23", "title": "花5千买OPPO不如加钱上iPhone 17", "content": "刚被朋友一句话整不会了——他说你都有五千预算了，加点钱上iPhone 17，稳定用四五年不比安卓香吗？\n\t\n我知道iPhone 17香啊！但咱就是说，同价位的安卓旗舰其实也害行的", "interaction": 0, "create_time": "2026-02-16 20:00:55", "is_dual": false, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户引用朋友观点，认为加钱上iPhone 17稳定用四五年比安卓香，虽然提到同价位安卓也行，但整体倾向苹果更稳定耐用。", "tags": [{"note_id": "6991e2080000000015021e23", "title": "花5千买OPPO不如加钱上iPhone 17", "theme": "稳定性", "quote": "加点钱上iPhone 17，稳定用四五年不比安卓香吗", "brand_model": "iPhone17", "sentiment": "正面", "reason": "用户表达iPhone17稳定用四五年"}], "matched_keywords": []}, {"note_id": "69aac007000000000e00d677", "title": "高考后买苹果还是华为？", "content": "我现在用的是华为手机＋平板\n目前来说没什么缺点，特别是分屏功能我比较喜欢\n但是我又很喜欢苹果的外观，并且周围的同学都是用苹果\n也有的功能苹果有但是华为没有\n不太在意价格，买哪个品牌好呢？\n好纠结啊！！！\nps.我现在用的是畅享70，前年夏天买来作为过渡机，不太流畅，以后勉强能当作备用机？", "interaction": 0, "create_time": "2026-03-06 19:52:39", "is_dual": true, "tone_score": 0, "sentiment": "其他", "sentiment_reasoning": "用户纠结买苹果还是华为，提到各自优缺点但没有明确倾向，属于求助型内容。", "tags": [{"note_id": "69aac007000000000e00d677", "title": "高考后买苹果还是华为？", "theme": "卡顿问题", "quote": "我现在用的是畅享70，前年夏天买来作为过渡机，不太流畅", "brand_model": "华为畅享70", "sentiment": "负面", "reason": "用户表达华为畅享70不太流畅"}], "matched_keywords": []}, {"note_id": "69e57cef000000001a02eaa6", "title": "一点小建议", "content": "如果你用的一直是ios系统\n从来没用过鸿蒙\n那真的不建议你轻易更换\n你会深刻体会到一夜回到解放前\n并不是说系统不流畅\n至少我觉得特别丝滑\n而是app的功能缺失的太多\n跟ios相比至少差了好几个版本\n甚至更多\n当个备用机倒是足够", "interaction": 0, "create_time": "2026-04-20 09:10:07", "is_dual": false, "tone_score": 0, "sentiment": "苹果好", "sentiment_reasoning": "用户明确建议iOS用户不要轻易换鸿蒙，认为鸿蒙app功能缺失比iOS差好几个版本，表达苹果生态更优。", "tags": [{"note_id": "69e57cef000000001a02eaa6", "title": "一点小建议", "theme": "流畅丝滑", "quote": "至少我觉得特别丝滑", "brand_model": "华为", "sentiment": "正面", "reason": "用户表达鸿蒙特别丝滑"}], "matched_keywords": []}];
+var modifiedNotes = {};
+var currentFiltered = [];
+
+function renderCards(data) {
+  currentFiltered = data;
+  var container = document.getElementById('ugcList');
+  var noResults = document.getElementById('noResults');
+  
+  if (data.length === 0) {
+    container.innerHTML = '';
+    noResults.classList.remove('hidden');
+    return;
+  }
+  noResults.classList.add('hidden');
+  
+  var html = '';
+  for (var i = 0; i < data.length; i++) {
+    var u = data[i];
+    var sentimentClass = u.sentiment === '华为好' ? 'badge-huawei' : (u.sentiment === '苹果好' ? 'badge-apple' : 'badge-other');
+    var dualBadge = u.is_dual ? '<span class="badge badge-dual">双持</span>' : '';
+    var tagsHtml = '';
+    for (var j = 0; j < u.tags.length; j++) {
+      var t = u.tags[j];
+      tagsHtml += '<div class="tag-item">';
+      tagsHtml += '<div class="tag-header"><span class="tag-theme">🎯 ' + t.theme + '</span></div>';
+      tagsHtml += '<div class="tag-quote">"' + escapeHtml(t.quote) + '"</div>';
+      tagsHtml += '<div class="tag-brand">📱 品牌/机型: ' + (t.brand_model || '未标注') + '</div>';
+      tagsHtml += '</div>';
+    }
+    
+    var mod = modifiedNotes[u.note_id] || {};
+    var currentSentiment = mod.sentiment || u.sentiment;
+    var huaweiActive = currentSentiment === '华为好' ? 'active' : '';
+    var appleActive = currentSentiment === '苹果好' ? 'active' : '';
+    var otherActive = currentSentiment === '其他' ? 'active' : '';
+    var feedbackVal = mod.feedback || '';
+    
+    html += '<div class="card" data-note-id="' + u.note_id + '">';
+    html += '<div class="card-header">';
+    html += '<div class="card-title">' + escapeHtml(u.title) + '</div>';
+    html += '<div class="card-meta">';
+    html += '<span>👍 ' + u.interaction + '</span>';
+    html += '<span>📅 ' + u.create_time + '</span>';
+    html += '<span class="badge ' + sentimentClass + '">' + u.sentiment + '</span>';
+    html += dualBadge;
+    html += '<span style="color:#fa8c16;">💬 口吻:' + u.tone_score + '</span>';
+    html += '</div></div>';
+    html += '<div class="card-content">' + escapeHtml(u.content) + '</div>';
+    html += '<div class="tags-section">' + tagsHtml + '</div>';
+    html += '<div style="font-size:12px;color:#888;margin-bottom:8px;">🤖 LLM判断依据: ' + escapeHtml(u.sentiment_reasoning) + '</div>';
+    html += '<div class="reclassify-section">';
+    html += '<label>重新分类情感倾向:</label>';
+    html += '<div class="reclassify-btns">';
+    html += '<button class="btn btn-danger sentiment-btn ' + huaweiActive + '" data-note-id="' + u.note_id + '" data-sentiment="华为好">华为好</button>';
+    html += '<button class="btn btn-primary sentiment-btn ' + appleActive + '" data-note-id="' + u.note_id + '" data-sentiment="苹果好">苹果好</button>';
+    html += '<button class="btn sentiment-btn ' + otherActive + '" style="background:#999;color:white;" data-note-id="' + u.note_id + '" data-sentiment="其他">其他</button>';
+    html += '</div>';
+    html += '<input type="text" class="feedback-input" placeholder="修改意见（可选）..." value="' + escapeHtml(feedbackVal) + '" data-note-id="' + u.note_id + '">';
+    html += '</div>';
+    html += '</div>';
+  }
+  container.innerHTML = html;
+  updateStats(data);
+}
+
+function escapeHtml(text) {
+  if (!text) return '';
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+}
+
+function updateStats(data) {
+  var total = ugcData.length;
+  var showing = data.length;
+  var huawei = 0, apple = 0, other = 0;
+  for (var i = 0; i < data.length; i++) {
+    var mod = modifiedNotes[data[i].note_id];
+    var s = mod && mod.sentiment ? mod.sentiment : data[i].sentiment;
+    if (s === '华为好') huawei++;
+    else if (s === '苹果好') apple++;
+    else other++;
+  }
+  document.getElementById('statsBar').innerHTML = 
+    '总计: ' + total + '条 | 当前显示: ' + showing + '条 | 华为好: ' + huawei + ' | 苹果好: ' + apple + ' | 其他: ' + other;
+}
+
+function applyFilters() {
+  var theme = document.getElementById('themeFilter').value;
+  var sentiment = document.getElementById('sentimentFilter').value;
+  var dual = document.getElementById('dualFilter').value;
+  var keyword = document.getElementById('keywordFilter').value.toLowerCase();
+  var sortBy = document.getElementById('sortBy').value;
+  
+  var filtered = [];
+  for (var i = 0; i < ugcData.length; i++) {
+    var u = ugcData[i];
+    
+    if (theme !== 'all') {
+      var hasTheme = false;
+      for (var j = 0; j < u.tags.length; j++) {
+        if (u.tags[j].theme === theme) { hasTheme = true; break; }
+      }
+      if (!hasTheme) continue;
+    }
+    
+    if (sentiment !== 'all') {
+      var mod = modifiedNotes[u.note_id];
+      var currentSentiment = mod && mod.sentiment ? mod.sentiment : u.sentiment;
+      if (currentSentiment !== sentiment) continue;
+    }
+    
+    if (dual !== 'all') {
+      var isDual = u.is_dual ? 'true' : 'false';
+      if (isDual !== dual) continue;
+    }
+    
+    if (keyword) {
+      var text = (u.title + ' ' + u.content).toLowerCase();
+      if (text.indexOf(keyword) === -1) continue;
+    }
+    
+    filtered.push(u);
+  }
+  
+  if (sortBy === 'interaction') {
+    filtered.sort(function(a, b) { return b.interaction - a.interaction; });
+  } else if (sortBy === 'time') {
+    filtered.sort(function(a, b) { return b.create_time.localeCompare(a.create_time); });
+  } else if (sortBy === 'tone') {
+    filtered.sort(function(a, b) { return b.tone_score - a.tone_score; });
+  }
+  
+  renderCards(filtered);
+}
+
+function setSentiment(noteId, sentiment) {
+  if (!modifiedNotes[noteId]) modifiedNotes[noteId] = {};
+  modifiedNotes[noteId].sentiment = sentiment;
+  applyFilters();
+}
+
+function setFeedback(noteId, feedback) {
+  if (!modifiedNotes[noteId]) modifiedNotes[noteId] = {};
+  modifiedNotes[noteId].feedback = feedback;
+}
+
+function resetFilters() {
+  document.getElementById('themeFilter').value = 'all';
+  document.getElementById('sentimentFilter').value = 'all';
+  document.getElementById('dualFilter').value = 'all';
+  document.getElementById('keywordFilter').value = '';
+  document.getElementById('sortBy').value = 'interaction';
+  applyFilters();
+}
+
+function showModal(title, content) {
+  document.getElementById('modalTitle').innerText = title;
+  document.getElementById('modalTextarea').value = content;
+  document.getElementById('modalOverlay').classList.add('active');
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('active');
+}
+
+function copyModalContent() {
+  var textarea = document.getElementById('modalTextarea');
+  textarea.select();
+  document.execCommand('copy');
+  alert('已复制到剪贴板！');
+}
+
+function exportAllFeedback() {
+  var lines = [];
+  for (var noteId in modifiedNotes) {
+    var mod = modifiedNotes[noteId];
+    if (mod.feedback && mod.feedback.trim()) {
+      var u = null;
+      for (var i = 0; i < ugcData.length; i++) {
+        if (ugcData[i].note_id === noteId) { u = ugcData[i]; break; }
+      }
+      if (u) {
+        lines.push('---');
+        lines.push('笔记ID: ' + noteId);
+        lines.push('标题: ' + u.title);
+        lines.push('原情感: ' + u.sentiment);
+        lines.push('修改后: ' + (mod.sentiment || u.sentiment));
+        lines.push('修改意见: ' + mod.feedback);
+        lines.push('');
+      }
+    }
+  }
+  
+  if (lines.length === 0) {
+    showModal('导出修改意见', '暂无修改意见。请在UGC卡片下方的输入框中填写修改意见后再导出。');
+  } else {
+    showModal('导出修改意见 (' + (lines.length / 6) + '条)', lines.join('\n'));
+  }
+}
+
+function exportModified() {
+  var lines = [];
+  for (var noteId in modifiedNotes) {
+    var mod = modifiedNotes[noteId];
+    var u = null;
+    for (var i = 0; i < ugcData.length; i++) {
+      if (ugcData[i].note_id === noteId) { u = ugcData[i]; break; }
+    }
+    if (!u) continue;
+    
+    var hasChange = (mod.sentiment && mod.sentiment !== u.sentiment) || (mod.feedback && mod.feedback.trim());
+    if (hasChange) {
+      lines.push('---');
+      lines.push('笔记ID: ' + noteId);
+      lines.push('标题: ' + u.title);
+      lines.push('内容: ' + u.content.substring(0, 200) + (u.content.length > 200 ? '...' : ''));
+      lines.push('原情感: ' + u.sentiment);
+      if (mod.sentiment) lines.push('新情感: ' + mod.sentiment);
+      if (mod.feedback) lines.push('修改意见: ' + mod.feedback);
+      lines.push('');
+    }
+  }
+  
+  if (lines.length === 0) {
+    showModal('导出修改过的UGC', '暂无修改过的UGC。请先点击重新分类按钮或填写修改意见。');
+  } else {
+    showModal('导出修改过的UGC (' + (lines.length / 7) + '条)', lines.join('\n'));
+  }
+}
+
+// 事件委托
+document.getElementById('ugcList').addEventListener('click', function(e) {
+  if (e.target.classList.contains('sentiment-btn')) {
+    var noteId = e.target.getAttribute('data-note-id');
+    var sentiment = e.target.getAttribute('data-sentiment');
+    setSentiment(noteId, sentiment);
+  }
+});
+
+document.getElementById('ugcList').addEventListener('change', function(e) {
+  if (e.target.classList.contains('feedback-input')) {
+    var noteId = e.target.getAttribute('data-note-id');
+    setFeedback(noteId, e.target.value);
+  }
+});
+
+document.getElementById('themeFilter').addEventListener('change', applyFilters);
+document.getElementById('sentimentFilter').addEventListener('change', applyFilters);
+document.getElementById('dualFilter').addEventListener('change', applyFilters);
+document.getElementById('keywordFilter').addEventListener('input', applyFilters);
+document.getElementById('sortBy').addEventListener('change', applyFilters);
+document.getElementById('btnReset').addEventListener('click', resetFilters);
+document.getElementById('btnExportFeedback').addEventListener('click', exportAllFeedback);
+document.getElementById('btnExportModified').addEventListener('click', exportModified);
+document.getElementById('btnModalClose').addEventListener('click', closeModal);
+document.getElementById('btnModalClose2').addEventListener('click', closeModal);
+document.getElementById('btnModalCopy').addEventListener('click', copyModalContent);
+
+applyFilters();
+</script>
+</body>
+</html>

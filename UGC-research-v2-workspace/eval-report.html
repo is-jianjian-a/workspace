@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UGC-research-v2 Skill Eval Report</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; padding: 40px 24px; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  h1 { color: #f0f6fc; margin-bottom: 8px; }
+  .subtitle { color: #8b949e; margin-bottom: 40px; }
+  
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 40px; }
+  .stat-card { background: #161b22; border: 1px solid #30363d; border-radius: 12px; padding: 24px; text-align: center; }
+  .stat-value { font-size: 2em; font-weight: 700; }
+  .stat-value.green { color: #3fb950; }
+  .stat-value.red { color: #f85149; }
+  .stat-label { color: #8b949e; font-size: 0.9em; margin-top: 4px; }
+  
+  .comparison { background: #161b22; border: 1px solid #30363d; border-radius: 16px; padding: 28px; margin-bottom: 24px; }
+  .comparison h2 { color: #f0f6fc; margin-bottom: 20px; font-size: 1.2em; }
+  
+  table { width: 100%; border-collapse: collapse; font-size: 0.9em; }
+  th { background: #0d1117; color: #8b949e; padding: 12px; text-align: left; font-weight: 600; border-bottom: 2px solid #30363d; }
+  td { padding: 12px; border-bottom: 1px solid #30363d; }
+  .pass { color: #3fb950; font-weight: 600; }
+  .fail { color: #f85149; font-weight: 600; }
+  
+  .detail-box { background: #0d1117; border-radius: 8px; padding: 16px; margin-top: 16px; }
+  .detail-box h3 { color: #f0f6fc; margin-bottom: 12px; font-size: 1em; }
+  .detail-item { margin-bottom: 12px; padding: 12px; background: #161b22; border-radius: 6px; border-left: 3px solid #30363d; }
+  .detail-item.pass { border-left-color: #3fb950; }
+  .detail-item.fail { border-left-color: #f85149; }
+  .detail-text { color: #c9d1d9; font-size: 0.9em; }
+  .detail-evidence { color: #8b949e; font-size: 0.8em; margin-top: 4px; }
+  
+  .footer { text-align: center; color: #484f58; margin-top: 40px; font-size: 0.8em; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>🧪 UGC-research-v2 Skill Eval Report</h1>
+<p class="subtitle">Iteration 1 | Eval: parenting-demand-research</p>
+
+<div class="stats-grid">
+  <div class="stat-card">
+    <div class="stat-value green">83%</div>
+    <div class="stat-label">with_skill Pass Rate</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value red">0%</div>
+    <div class="stat-label">without_skill Pass Rate</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">5/6</div>
+    <div class="stat-label">with_skill Passed</div>
+  </div>
+  <div class="stat-card">
+    <div class="stat-value">0/6</div>
+    <div class="stat-label">without_skill Passed</div>
+  </div>
+</div>
+
+<div class="comparison">
+  <h2>📊 Detailed Comparison</h2>
+  <table>
+    <tr>
+      <th>Assertion</th>
+      <th>with_skill</th>
+      <th>without_skill</th>
+    </tr>
+
+    <tr>
+      <td>报告包含TOP排名格式（TOP1/TOP2等）</td>
+      <td class="pass">✅ PASS</td>
+      <td class="fail">❌ FAIL</td>
+    </tr>
+
+    <tr>
+      <td>需求点使用用户原声视角描述</td>
+      <td class="pass">✅ PASS</td>
+      <td class="fail">❌ FAIL</td>
+    </tr>
+
+    <tr>
+      <td>按UGC条数排序而非互动量</td>
+      <td class="pass">✅ PASS</td>
+      <td class="fail">❌ FAIL</td>
+    </tr>
+
+    <tr>
+      <td>包含可交互UGC查看功能</td>
+      <td class="pass">✅ PASS</td>
+      <td class="fail">❌ FAIL</td>
+    </tr>
+
+    <tr>
+      <td>执行LLM逐条审核（非关键词匹配）</td>
+      <td class="fail">❌ FAIL</td>
+      <td class="fail">❌ FAIL</td>
+    </tr>
+
+    <tr>
+      <td>HTML通过JS语法验证</td>
+      <td class="pass">✅ PASS</td>
+      <td class="fail">❌ FAIL</td>
+    </tr>
+
+  </table>
+</div>
+
+<div class="comparison">
+  <h2>✅ with_skill Details</h2>
+
+  <div class="detail-item pass">
+    <div class="detail-text">✅ 报告包含TOP排名格式（TOP1/TOP2等）</div>
+    <div class="detail-evidence">HTML报告使用TOP1-TOP8排名，符合skill要求的紧凑格式</div>
+  </div>
+
+  <div class="detail-item pass">
+    <div class="detail-text">✅ 需求点使用用户原声视角描述</div>
+    <div class="detail-evidence">需求描述采用'用户想要什么'口吻，如'家务时想听长视频'</div>
+  </div>
+
+  <div class="detail-item pass">
+    <div class="detail-text">✅ 按UGC条数排序而非互动量</div>
+    <div class="detail-evidence">TOP1早教启蒙72条 > TOP2产后情绪60条，按条数排序</div>
+  </div>
+
+  <div class="detail-item pass">
+    <div class="detail-text">✅ 包含可交互UGC查看功能</div>
+    <div class="detail-evidence">HTML报告含筛选、排序、导出功能</div>
+  </div>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ 执行LLM逐条审核（非关键词匹配）</div>
+    <div class="detail-evidence">子Agent使用了现有标签进行规则映射，未完全独立LLM文本审核</div>
+  </div>
+
+  <div class="detail-item pass">
+    <div class="detail-text">✅ HTML通过JS语法验证</div>
+    <div class="detail-evidence">子Agent报告通过node --check验证</div>
+  </div>
+
+</div>
+
+<div class="comparison">
+  <h2>❌ without_skill Details>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ 报告包含TOP排名格式（TOP1/TOP2等）</div>
+    <div class="detail-evidence">报告为传统统计分析格式，无TOP排名结构</div>
+  </div>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ 需求点使用用户原声视角描述</div>
+    <div class="detail-evidence">输出为统计分布分析，无用户原声需求点描述</div>
+  </div>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ 按UGC条数排序而非互动量</div>
+    <div class="detail-evidence">无明确排序机制，以统计分布为主</div>
+  </div>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ 包含可交互UGC查看功能</div>
+    <div class="detail-evidence">HTML为静态统计报告，无交互功能</div>
+  </div>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ 执行LLM逐条审核（非关键词匹配）</div>
+    <div class="detail-evidence">基于现有标签统计，未进行独立审核</div>
+  </div>
+
+  <div class="detail-item fail">
+    <div class="detail-text">❌ HTML通过JS语法验证</div>
+    <div class="detail-evidence">未报告JS验证</div>
+  </div>
+
+</div>
+
+<div class="comparison">
+  <h2>💡 Key Insights</h2>
+  <div class="detail-box">
+    <div class="detail-item pass">
+      <div class="detail-text">🎯 Example-Driven Constraint Works</div>
+      <div class="detail-evidence">Skill successfully guided the model to produce TOP-ranked, user-voice-oriented output by providing few-shot examples in the prompt pattern.</div>
+    </div>
+    <div class="detail-item pass">
+      <div class="detail-text">📈 Massive Quality Improvement</div>
+      <div class="detail-evidence">with_skill: 83% pass rate vs without_skill: 0% pass rate. The skill made the difference between useful and useless output.</div>
+    </div>
+    <div class="detail-item fail">
+      <div class="detail-text">⚠️ LLM Audit Not Fully Independent</div>
+      <div class="detail-evidence">Subagent used existing labels for rule-based mapping rather than fully independent LLM text-level audit. This is a known gap in the current implementation.</div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  Generated: 2026-05-21 | Skill: UGC-research-v2 | Iteration: 1
+</div>
+
+</div>
+</body>
+</html>

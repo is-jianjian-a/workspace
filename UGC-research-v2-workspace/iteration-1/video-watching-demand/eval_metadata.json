@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "video-watching-demand",
+  "prompt": "帮我分析一下B站用户关于'看视频体验'的UGC数据，提取产品需求机会点。数据在 data/bilibili_video_ugc.json，大概200条。希望报告按UGC条数排序，每个机会点3条用户原声视角的需求描述。",
+  "assertions": []
+}

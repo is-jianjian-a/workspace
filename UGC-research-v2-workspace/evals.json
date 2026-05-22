@@ -1,0 +1,32 @@
+{
+  "skill_name": "UGC-research-v2",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "parenting-demand-research",
+      "prompt": "按照我们之前做AI需求调研的方法，对以下主题进行第一步的场景分析、用户路程分析和搜索关键词分解：宝妈、育儿场景下的手机用户需求。我已经有小红书采集的数据在 /Users/zhijian/workspace/ai-demand-research-v3/projects/宝爸宝妈育儿收集需求-2026-05-18-v2/03-cleaned/output/labeled_data.json，共508条。请分析并生成HTML报告。",
+      "expected_output": "生成基于UGC的产品机会分析报告，包含TOP排名、用户原声视角的需求点、可交互的UGC查看功能",
+      "files": [
+        "/Users/zhijian/workspace/ai-demand-research-v3/projects/宝爸宝妈育儿收集需求-2026-05-18-v2/03-cleaned/output/labeled_data.json"
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "video-watching-demand",
+      "prompt": "帮我分析一下B站用户关于'看视频体验'的UGC数据，提取产品需求机会点。数据在 data/bilibili_video_ugc.json，大概200条。希望报告按UGC条数排序，每个机会点3条用户原声视角的需求描述。",
+      "expected_output": "TOP排名的产品机会点列表，用户原声视角描述，紧凑格式",
+      "files": [
+        "data/bilibili_video_ugc.json"
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "format-correction-scenario",
+      "prompt": "把这份UGC分析结果合成HTML报告展示。/Users/zhijian/workspace/ai-demand-research-v3/projects/宝爸宝妈育儿收集需求-2026-05-18-v2/03-cleaned/output/labeled_data.json",
+      "expected_output": "用户后续会要求修正格式（去掉P0/P1、按UGC条数排序、用户原声视角），测试skill是否能正确处理格式修正指令",
+      "files": [
+        "/Users/zhijian/workspace/ai-demand-research-v3/projects/宝爸宝妈育儿收集需求-2026-05-18-v2/03-cleaned/output/labeled_data.json"
+      ]
+    }
+  ]
+}

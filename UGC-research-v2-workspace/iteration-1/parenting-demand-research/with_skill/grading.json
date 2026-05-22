@@ -1,0 +1,37 @@
+{
+  "run_id": "parenting-demand-research-with_skill",
+  "eval_name": "parenting-demand-research",
+  "configuration": "with_skill",
+  "expectations": [
+    {
+      "text": "报告包含TOP排名格式（TOP1/TOP2等）",
+      "passed": true,
+      "evidence": "HTML报告使用TOP1-TOP8排名，符合skill要求的紧凑格式"
+    },
+    {
+      "text": "需求点使用用户原声视角描述",
+      "passed": true,
+      "evidence": "需求描述采用'用户想要什么'口吻，如'家务时想听长视频'"
+    },
+    {
+      "text": "按UGC条数排序而非互动量",
+      "passed": true,
+      "evidence": "TOP1早教启蒙72条 > TOP2产后情绪60条，按条数排序"
+    },
+    {
+      "text": "包含可交互UGC查看功能",
+      "passed": true,
+      "evidence": "HTML报告含筛选、排序、导出功能"
+    },
+    {
+      "text": "执行LLM逐条审核（非关键词匹配）",
+      "passed": false,
+      "evidence": "子Agent使用了现有标签进行规则映射，未完全独立LLM文本审核"
+    },
+    {
+      "text": "HTML通过JS语法验证",
+      "passed": true,
+      "evidence": "子Agent报告通过node --check验证"
+    }
+  ]
+}

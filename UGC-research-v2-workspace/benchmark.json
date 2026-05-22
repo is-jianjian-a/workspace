@@ -1,0 +1,23 @@
+{
+  "skill_name": "UGC-research-v2",
+  "iteration": 1,
+  "evals": [
+    {
+      "eval_name": "parenting-demand-research",
+      "with_skill": {
+        "pass_rate": 0.8333333333333334,
+        "passed": 5,
+        "total": 6,
+        "duration_seconds": 452,
+        "total_tokens": 503007
+      },
+      "without_skill": {
+        "pass_rate": 0.0,
+        "passed": 0,
+        "total": 6,
+        "duration_seconds": 600,
+        "total_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "parenting-demand-research",
+  "prompt": "按照我们之前做AI需求调研的方法，对以下主题进行第一步的场景分析、用户路程分析和搜索关键词分解：宝妈、育儿场景下的手机用户需求。我已经有小红书采集的数据在 /Users/zhijian/workspace/ai-demand-research-v3/projects/宝爸宝妈育儿收集需求-2026-05-18-v2/03-cleaned/output/labeled_data.json，共508条。请分析并生成HTML报告。",
+  "assertions": []
+}

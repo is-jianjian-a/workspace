@@ -1,0 +1,114 @@
+{
+  "total_ugc": 508,
+  "relevant_ugc": 323,
+  "irrelevant_ugc": 185,
+  "relevance_rate": 63.6,
+  "opportunity_distribution": {
+    "产后情绪心理支持": {
+      "count": 60,
+      "interactions": 432360
+    },
+    "育儿信息获取": {
+      "count": 11,
+      "interactions": 105339
+    },
+    "教育问题求助与解答": {
+      "count": 12,
+      "interactions": 42817
+    },
+    "健康护理知识获取": {
+      "count": 29,
+      "interactions": 98749
+    },
+    "喂养知识获取": {
+      "count": 8,
+      "interactions": 68880
+    },
+    "育儿心理情绪支持": {
+      "count": 13,
+      "interactions": 59643
+    },
+    "产后身体恢复指导": {
+      "count": 8,
+      "interactions": 24732
+    },
+    "产后职场回归支持": {
+      "count": 9,
+      "interactions": 73789
+    },
+    "育儿工具与产品需求": {
+      "count": 5,
+      "interactions": 66172
+    },
+    "情绪表达与共鸣": {
+      "count": 16,
+      "interactions": 84221
+    },
+    "宝宝发育知识获取": {
+      "count": 19,
+      "interactions": 82311
+    },
+    "none": {
+      "count": 36,
+      "interactions": 219579
+    },
+    "早教启蒙与内容获取": {
+      "count": 72,
+      "interactions": 368065
+    },
+    "孕期知识获取": {
+      "count": 12,
+      "interactions": 61459
+    },
+    "孕期不适应对": {
+      "count": 1,
+      "interactions": 61
+    },
+    "育儿经验求助": {
+      "count": 9,
+      "interactions": 25397
+    },
+    "喂养问题求助": {
+      "count": 1,
+      "interactions": 755
+    },
+    "睡眠问题求助": {
+      "count": 1,
+      "interactions": 2747
+    },
+    "宝宝行为问题求助": {
+      "count": 1,
+      "interactions": 1535
+    }
+  },
+  "source_keyword_distribution": {
+    "产后": 104,
+    "备孕": 100,
+    "孕期": 105,
+    "早教": 101,
+    "育儿": 98
+  },
+  "signal_distribution": {
+    "痛点信号": 180,
+    "行为信号": 209,
+    "期望信号": 124,
+    "求助信号": 63,
+    "决策信号": 105
+  },
+  "emotion_distribution": {
+    "疲惫": 80,
+    "幸福": 67,
+    "后悔": 66,
+    "愤怒": 41,
+    "焦虑": 87,
+    "无助": 11
+  },
+  "scene_distribution": {
+    "睡前": 47,
+    "工作间隙": 56,
+    "外出": 44,
+    "喂养时": 40,
+    "家务时": 74,
+    "学习时": 52
+  }
+}

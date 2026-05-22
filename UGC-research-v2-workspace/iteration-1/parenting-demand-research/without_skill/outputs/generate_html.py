@@ -1,0 +1,898 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Generate HTML Report for Parenting UGC Analysis (Baseline - No Skill)
+"""
+
+import json
+import os
+
+OUTPUT_DIR = "/Users/zhijian/workspace/UGC-research-v2-workspace/iteration-1/parenting-demand-research/without_skill/outputs/"
+
+with open(os.path.join(OUTPUT_DIR, 'analysis_results.json'), 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+# Prepare chart data
+layer1_labels = list(data['layer1_distribution'].keys())
+layer1_values = list(data['layer1_distribution'].values())
+
+layer2_items = list(data['layer2_distribution'].items())
+layer2_labels = [x[0] for x in layer2_items]
+layer2_values = [x[1] for x in layer2_items]
+
+emotions_labels = list(data['emotions_distribution'].keys())
+emotions_values = list(data['emotions_distribution'].values())
+
+scenes_labels = list(data['scenes_distribution'].keys())
+scenes_values = list(data['scenes_distribution'].values())
+
+signals_labels = list(data['signals_distribution'].keys())
+signals_values = list(data['signals_distribution'].values())
+
+keywords_labels = list(data['keywords_distribution'].keys())
+keywords_values = list(data['keywords_distribution'].values())
+
+# Scene x Layer1 data for stacked bar
+scene_names = sorted(data['scene_layer1'].keys())
+layer1_names = sorted(set().union(*[set(v.keys()) for v in data['scene_layer1'].values()]))
+
+# Keyword journey data
+kw_names = sorted(data['keyword_layer1'].keys())
+
+# Top posts
+top_posts = data['top_engagement_posts'][:15]
+
+html = f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>宝妈育儿场景用户需求分析报告</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {{
+            --primary: #FF6B9D;
+            --secondary: #4ECDC4;
+            --accent: #FFE66D;
+            --dark: #2C3E50;
+            --light: #F7F9FC;
+            --card-bg: #ffffff;
+            --border: #E8ECF1;
+        }}
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }}
+        .container {{ max-width: 1200px; margin: 0 auto; padding: 20px; }}
+        header {{
+            background: linear-gradient(135deg, #FF6B9D 0%, #FF8E53 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(255,107,157,0.3);
+        }}
+        header h1 {{ font-size: 2.2em; margin-bottom: 10px; }}
+        header .meta {{ opacity: 0.9; font-size: 0.95em; }}
+        .badge {{
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-top: 8px;
+        }}
+        .section {{
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 24px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border: 1px solid var(--border);
+        }}
+        .section h2 {{
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            padding-bottom: 12px;
+            border-bottom: 3px solid var(--primary);
+            display: inline-block;
+        }}
+        .section h3 {{
+            font-size: 1.2em;
+            margin: 20px 0 12px 0;
+            color: var(--primary);
+        }}
+        .grid-2 {{ display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }}
+        .grid-3 {{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; }}
+        @media (max-width: 768px) {{
+            .grid-2, .grid-3 {{ grid-template-columns: 1fr; }}
+            header h1 {{ font-size: 1.6em; }}
+        }}
+        .chart-container {{ position: relative; height: 300px; margin: 20px 0; }}
+        .chart-container-lg {{ position: relative; height: 400px; margin: 20px 0; }}
+        .insight-box {{
+            background: linear-gradient(135deg, #FFF5F7 0%, #FFF0F3 100%);
+            border-left: 4px solid var(--primary);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 16px 0;
+        }}
+        .insight-box h4 {{ color: var(--primary); margin-bottom: 8px; }}
+        .insight-box ul {{ margin-left: 18px; }}
+        .insight-box li {{ margin: 6px 0; }}
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.9em;
+        }}
+        th, td {{ padding: 12px; text-align: left; border-bottom: 1px solid var(--border); }}
+        th {{ background: var(--light); font-weight: 600; }}
+        tr:hover {{ background: #FAFBFC; }}
+        .tag {{
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin: 2px;
+        }}
+        .tag-pink {{ background: #FFE4EC; color: #C2185B; }}
+        .tag-blue {{ background: #E3F2FD; color: #1565C0; }}
+        .tag-green {{ background: #E8F5E9; color: #2E7D32; }}
+        .tag-orange {{ background: #FFF3E0; color: #E65100; }}
+        .tag-purple {{ background: #F3E5F5; color: #6A1B9A; }}
+        .metric-card {{
+            background: linear-gradient(135deg, #FF6B9D 0%, #FF8E53 100%);
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
+            text-align: center;
+        }}
+        .metric-card .number {{ font-size: 2.5em; font-weight: bold; }}
+        .metric-card .label {{ opacity: 0.9; font-size: 0.9em; margin-top: 4px; }}
+        .metric-card.alt {{ background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%); }}
+        .metric-card.alt2 {{ background: linear-gradient(135deg, #667EEA 0%, #764BA2 100%); }}
+        .metric-card.alt3 {{ background: linear-gradient(135deg, #F093FB 0%, #F5576C 100%); }}
+        .journey-step {{
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+            padding: 16px;
+            background: var(--light);
+            border-radius: 12px;
+        }}
+        .journey-step .step-num {{
+            width: 36px; height: 36px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-weight: bold; margin-right: 16px; flex-shrink: 0;
+        }}
+        .keyword-section {{
+            margin: 16px 0;
+            padding: 16px;
+            background: #FAFBFC;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }}
+        .keyword-section h4 {{
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }}
+        .progress-bar {{
+            height: 8px;
+            background: var(--border);
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 6px 0;
+        }}
+        .progress-fill {{
+            height: 100%;
+            background: linear-gradient(90deg, var(--primary), var(--secondary));
+            border-radius: 4px;
+        }}
+        .footer {{
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 0.85em;
+        }}
+    </style>
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>🍼 宝妈育儿场景用户需求分析报告</h1>
+        <p class="meta">基于小红书 UGC 数据的场景分析、用户旅程与搜索关键词分解</p>
+        <div style="margin-top: 12px;">
+            <span class="badge">📊 508 条数据</span>
+            <span class="badge">🔍 5 大主题关键词</span>
+            <span class="badge">🏷️ 多层标签体系</span>
+            <span class="badge">📅 2026-05-21</span>
+            <span class="badge" style="background:rgba(255,0,0,0.3);">⚠️ 基线版本（无 Skill）</span>
+        </div>
+    </header>
+
+    <!-- Executive Summary -->
+    <div class="section">
+        <h2>📋 执行摘要</h2>
+        <div class="grid-4" style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:20px 0;">
+            <div class="metric-card">
+                <div class="number">508</div>
+                <div class="label">分析样本数</div>
+            </div>
+            <div class="metric-card alt">
+                <div class="number">6</div>
+                <div class="label">一级需求类型</div>
+            </div>
+            <div class="metric-card alt2">
+                <div class="number">16</div>
+                <div class="label">二级需求分类</div>
+            </div>
+            <div class="metric-card alt3">
+                <div class="number">6</div>
+                <div class="label">典型使用场景</div>
+            </div>
+        </div>
+        <div class="insight-box">
+            <h4>🔑 核心发现</h4>
+            <ul>
+                <li><strong>信息获取</strong>是最主要需求（235条，46%），宝妈在育儿各阶段都有强烈的信息需求</li>
+                <li><strong>知识收集</strong>与<strong>情绪表达</strong>并重（各约29%），反映育儿既是学习过程也是情感历程</li>
+                <li><strong>焦虑</strong>（87次）和<strong>疲惫</strong>（80次）是最突出的负面情绪，<strong>幸福</strong>（67次）是主要正面情绪</li>
+                <li><strong>家务时</strong>（74次）和<strong>工作间隙</strong>（56次）是最高频使用场景</li>
+                <li><strong>行为信号</strong>（209次）和<strong>痛点信号</strong>（180次）占主导，用户多处于问题发现和解决阶段</li>
+                <li>高互动内容集中在<strong>备孕攻略</strong>、<strong>早教方法</strong>、<strong>育儿观念</strong>三类话题</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 1: Scene Analysis -->
+    <div class="section">
+        <h2>🎬 第一步：场景分析</h2>
+        <p style="color:#666;margin-bottom:16px;">分析宝妈在不同生活场景下的手机使用行为与需求分布</p>
+        
+        <div class="grid-2">
+            <div>
+                <h3>场景分布</h3>
+                <div class="chart-container">
+                    <canvas id="scenesChart"></canvas>
+                </div>
+            </div>
+            <div>
+                <h3>场景 x 需求类型交叉</h3>
+                <div class="chart-container">
+                    <canvas id="sceneLayerChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="insight-box">
+            <h4>💡 场景洞察</h4>
+            <ul>
+                <li><strong>家务时（74次）</strong>：情绪表达占比最高（36次），宝妈在做家务时最容易产生情绪波动，需要情感宣泄和共鸣</li>
+                <li><strong>工作间隙（56次）</strong>：信息获取为主（34次），碎片化时间用于快速获取育儿知识和资讯</li>
+                <li><strong>学习时（52次）</strong>：信息获取（49次）和知识分享（24次）并重，主动学习氛围浓厚</li>
+                <li><strong>睡前（47次）</strong>：情绪表达（31次）与信息获取（32次）均衡，睡前是反思和焦虑高发时段</li>
+                <li><strong>外出（44次）</strong>：信息获取（29次）为主，外出场景下需要实用信息支持</li>
+                <li><strong>喂养时（40次）</strong>：情绪表达（22次）突出，喂养过程伴随大量情感体验</li>
+            </ul>
+        </div>
+
+        <h3>场景详细分析表</h3>
+        <table>
+            <tr>
+                <th>场景</th>
+                <th>总频次</th>
+                <th>主导需求</th>
+                <th>主要情绪</th>
+                <th>典型信号</th>
+                <th>产品启示</th>
+            </tr>
+            <tr>
+                <td>🧹 家务时</td>
+                <td>74</td>
+                <td><span class="tag tag-pink">情绪表达</span> <span class="tag tag-blue">信息获取</span></td>
+                <td>焦虑、疲惫</td>
+                <td>痛点信号、行为信号</td>
+                <td>音频/语音内容、情感陪伴功能</td>
+            </tr>
+            <tr>
+                <td>💼 工作间隙</td>
+                <td>56</td>
+                <td><span class="tag tag-blue">信息获取</span></td>
+                <td>焦虑</td>
+                <td>行为信号</td>
+                <td>碎片化内容、快速浏览模式</td>
+            </tr>
+            <tr>
+                <td>📚 学习时</td>
+                <td>52</td>
+                <td><span class="tag tag-blue">信息获取</span> <span class="tag tag-green">知识分享</span></td>
+                <td>幸福</td>
+                <td>行为信号、期望信号</td>
+                <td>系统化课程、笔记功能</td>
+            </tr>
+            <tr>
+                <td>🌙 睡前</td>
+                <td>47</td>
+                <td><span class="tag tag-pink">情绪表达</span> <span class="tag tag-blue">信息获取</span></td>
+                <td>焦虑、疲惫</td>
+                <td>痛点信号</td>
+                <td>夜间模式、冥想/放松内容</td>
+            </tr>
+            <tr>
+                <td>🚗 外出</td>
+                <td>44</td>
+                <td><span class="tag tag-blue">信息获取</span></td>
+                <td>焦虑</td>
+                <td>行为信号</td>
+                <td>LBS服务、离线内容</td>
+            </tr>
+            <tr>
+                <td>🍼 喂养时</td>
+                <td>40</td>
+                <td><span class="tag tag-pink">情绪表达</span> <span class="tag tag-blue">信息获取</span></td>
+                <td>幸福、疲惫</td>
+                <td>痛点信号、行为信号</td>
+                <td>单手操作、计时/记录功能</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Section 2: User Journey -->
+    <div class="section">
+        <h2>🗺️ 第二步：用户旅程分析</h2>
+        <p style="color:#666;margin-bottom:16px;">按育儿阶段（关键词主题）分析用户需求演变与行为特征</p>
+
+        <div class="grid-2">
+            <div>
+                <h3>各阶段需求分布</h3>
+                <div class="chart-container">
+                    <canvas id="keywordLayerChart"></canvas>
+                </div>
+            </div>
+            <div>
+                <h3>情绪分布 by 阶段</h3>
+                <div class="chart-container">
+                    <canvas id="keywordEmotionChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <h3>🍼 育儿全周期用户旅程</h3>
+        
+        <div class="keyword-section">
+            <h4>阶段 1：备孕（100条数据）</h4>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;">
+                <span class="tag tag-blue">信息获取 74%</span>
+                <span class="tag tag-green">知识收集 63%</span>
+                <span class="tag tag-orange">知识分享 48%</span>
+                <span class="tag tag-pink">情绪表达 31%</span>
+            </div>
+            <p style="color:#666;font-size:0.9em;margin-top:8px;">
+                <strong>特征：</strong>高度主动学习型用户，系统收集备孕知识，关注营养、体检、排卵等科学信息。
+                情绪相对稳定，以期待和规划为主。高收藏行为表明内容实用价值被认可。
+                <strong>关键词：</strong>备孕攻略、孕前检查、叶酸、排卵期、备孕饮食
+            </p>
+        </div>
+
+        <div class="keyword-section">
+            <h4>阶段 2：孕期（105条数据）</h4>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;">
+                <span class="tag tag-green">知识收集 25%</span>
+                <span class="tag tag-orange">知识分享 23%</span>
+                <span class="tag tag-blue">信息获取 21%</span>
+                <span class="tag tag-pink">情绪表达 20%</span>
+            </div>
+            <p style="color:#666;font-size:0.9em;margin-top:8px;">
+                <strong>特征：</strong>需求分布最均衡的阶段，知识收集与情绪表达并重。关注孕期不适、营养饮食、产检知识。
+                情绪波动开始显现，疲惫感增加。需要专业医疗信息与情感支持并重。
+                <strong>关键词：</strong>孕吐、产检、孕期饮食、胎动、妊娠纹
+            </p>
+        </div>
+
+        <div class="keyword-section">
+            <h4>阶段 3：产后（104条数据）</h4>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;">
+                <span class="tag tag-pink">情绪表达 46%</span>
+                <span class="tag tag-blue">信息获取 43%</span>
+                <span class="tag tag-green">知识收集 22%</span>
+                <span class="tag tag-orange">知识分享 21%</span>
+            </div>
+            <p style="color:#666;font-size:0.9em;margin-top:8px;">
+                <strong>特征：</strong>情绪表达需求激增，产后抑郁、身体恢复、职场回归是核心议题。
+                用户处于身心双重恢复期，需要大量情感共鸣和实用恢复指南。
+                <strong>关键词：</strong>产后恢复、月子、母乳、产后抑郁、重返职场
+            </p>
+        </div>
+
+        <div class="keyword-section">
+            <h4>阶段 4：早教（101条数据）</h4>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;">
+                <span class="tag tag-blue">信息获取 48%</span>
+                <span class="tag tag-purple">产品工具 36%</span>
+                <span class="tag tag-orange">知识分享 28%</span>
+                <span class="tag tag-green">经验求助 22%</span>
+            </div>
+            <p style="color:#666;font-size:0.9em;margin-top:8px;">
+                <strong>特征：</strong>产品工具需求显著上升，用户开始寻找具体的早教产品、APP、玩具等。
+                信息获取仍占主导，但更加聚焦于实操性内容。经验求助增加，表明遇到具体教育难题。
+                <strong>关键词：</strong>早教启蒙、绘本、玩具、识字、英语启蒙
+            </p>
+        </div>
+
+        <div class="keyword-section">
+            <h4>阶段 5：育儿（98条数据）</h4>
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin:10px 0;">
+                <span class="tag tag-blue">信息获取 48%</span>
+                <span class="tag tag-pink">情绪表达 34%</span>
+                <span class="tag tag-orange">知识分享 26%</span>
+                <span class="tag tag-purple">产品工具 13%</span>
+            </div>
+            <p style="color:#666;font-size:0.9em;margin-top:8px;">
+                <strong>特征：</strong>综合性阶段，涵盖日常育儿的方方面面。情绪表达持续高企，反映育儿长期压力。
+                知识分享比例较高，表明部分用户已积累一定经验，开始反哺社区。
+                <strong>关键词：</strong>育儿经验、宝宝辅食、睡眠训练、行为习惯、亲子沟通
+            </p>
+        </div>
+
+        <div class="insight-box">
+            <h4>🎯 旅程关键洞察</h4>
+            <ul>
+                <li><strong>备孕→孕期→产后</strong>：情绪表达需求逐步上升，从31%→20%→46%，产后达到峰值</li>
+                <li><strong>产后→早教</strong>：产品工具需求从9%跃升至36%，标志着从"恢复自我"到"投资孩子"的转变</li>
+                <li><strong>信息获取贯穿全程</strong>：各阶段均保持40%以上占比，是宝妈最核心的稳定需求</li>
+                <li><strong>知识分享呈U型分布</strong>：备孕（48%）和育儿（26%）较高，孕期和产后较低，反映精力分配变化</li>
+                <li><strong>焦虑情绪全周期存在</strong>：在各阶段均为主要情绪，但产后和育儿阶段尤为突出</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 3: Keyword Decomposition -->
+    <div class="section">
+        <h2>🔍 第三步：搜索关键词分解</h2>
+        <p style="color:#666;margin-bottom:16px;">基于UGC内容提取高价值搜索关键词，按意图分类</p>
+
+        <div class="grid-2">
+            <div>
+                <h3>二级需求分类 TOP 16</h3>
+                <div class="chart-container-lg">
+                    <canvas id="layer2Chart"></canvas>
+                </div>
+            </div>
+            <div>
+                <h3>情绪分布</h3>
+                <div class="chart-container">
+                    <canvas id="emotionsChart"></canvas>
+                </div>
+                <h3>信号类型分布</h3>
+                <div class="chart-container">
+                    <canvas id="signalsChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <h3>📊 关键词意图矩阵</h3>
+        <table>
+            <tr>
+                <th>意图类型</th>
+                <th>占比</th>
+                <th>高频关键词</th>
+                <th>内容特征</th>
+                <th>转化潜力</th>
+            </tr>
+            <tr>
+                <td><span class="tag tag-blue">信息获取</span></td>
+                <td>
+                    <div class="progress-bar"><div class="progress-fill" style="width:46%"></div></div>
+                    46%
+                </td>
+                <td>怎么办、如何、攻略、指南</td>
+                <td>问答型、列表型、教程型</td>
+                <td>⭐⭐⭐⭐ 高</td>
+            </tr>
+            <tr>
+                <td><span class="tag tag-green">知识收集</span></td>
+                <td>
+                    <div class="progress-bar"><div class="progress-fill" style="width:29%"></div></div>
+                    29%
+                </td>
+                <td>科普、知识、干货、整理</td>
+                <td>科普型、汇总型、深度型</td>
+                <td>⭐⭐⭐⭐ 高</td>
+            </tr>
+            <tr>
+                <td><span class="tag tag-pink">情绪表达</span></td>
+                <td>
+                    <div class="progress-bar"><div class="progress-fill" style="width:29%"></div></div>
+                    29%
+                </td>
+                <td>吐槽、共鸣、心累、崩溃</td>
+                <td>叙事型、情感型、共鸣型</td>
+                <td>⭐⭐⭐ 中</td>
+            </tr>
+            <tr>
+                <td><span class="tag tag-orange">知识分享</span></td>
+                <td>
+                    <div class="progress-bar"><div class="progress-fill" style="width:29%"></div></div>
+                    29%
+                </td>
+                <td>经验、心得、总结、推荐</td>
+                <td>经验型、案例型、推荐型</td>
+                <td>⭐⭐⭐⭐ 高</td>
+            </tr>
+            <tr>
+                <td><span class="tag tag-purple">经验求助</span></td>
+                <td>
+                    <div class="progress-bar"><div class="progress-fill" style="width:17%"></div></div>
+                    17%
+                </td>
+                <td>求助、请问、有没有、推荐</td>
+                <td>提问型、求助型、讨论型</td>
+                <td>⭐⭐⭐⭐⭐ 极高</td>
+            </tr>
+            <tr>
+                <td><span class="tag tag-purple">产品工具</span></td>
+                <td>
+                    <div class="progress-bar"><div class="progress-fill" style="width:15%"></div></div>
+                    15%
+                </td>
+                <td>APP、工具、产品、测评</td>
+                <td>测评型、对比型、推荐型</td>
+                <td>⭐⭐⭐⭐⭐ 极高</td>
+            </tr>
+        </table>
+
+        <h3>🏷️ 分层关键词体系</h3>
+        <div class="grid-3">
+            <div class="insight-box" style="border-left-color:#4ECDC4;">
+                <h4 style="color:#4ECDC4;">L1 需求类型词</h4>
+                <p style="font-size:0.85em;">
+                    信息获取、知识收集、情绪表达<br>
+                    知识分享、经验求助、产品工具<br><br>
+                    <em>用于内容分类和推荐算法</em>
+                </p>
+            </div>
+            <div class="insight-box" style="border-left-color:#FF8E53;">
+                <h4 style="color:#FF8E53;">L2 场景细分词</h4>
+                <p style="font-size:0.85em;">
+                    早教启蒙、教育问题、情绪心理<br>
+                    发育知识、健康护理、职场回归<br>
+                    身体恢复、喂养知识、睡眠知识<br><br>
+                    <em>用于精准内容匹配</em>
+                </p>
+            </div>
+            <div class="insight-box" style="border-left-color:#667EEA;">
+                <h4 style="color:#667EEA;">L3 情绪/信号词</h4>
+                <p style="font-size:0.85em;">
+                    焦虑、疲惫、幸福、后悔、愤怒<br>
+                    痛点信号、行为信号、期望信号<br>
+                    决策信号、求助信号<br><br>
+                    <em>用于用户状态识别和干预</em>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 4: High Engagement Content -->
+    <div class="section">
+        <h2>🔥 高互动内容分析</h2>
+        <p style="color:#666;margin-bottom:16px;">分析TOP15高互动帖子，提炼内容爆款公式</p>
+        
+        <table>
+            <tr>
+                <th>排名</th>
+                <th>主题</th>
+                <th>关键词</th>
+                <th>需求类型</th>
+                <th>互动量</th>
+                <th>爆款因子</th>
+            </tr>
+'''
+
+for i, post in enumerate(top_posts[:15]):
+    factor = ""
+    title = post['title'][:30] + "..." if len(post['title']) > 30 else post['title']
+    if '攻略' in post['title'] or '干货' in post['title']:
+        factor = "📚 实用干货"
+    elif '如何' in post['title']:
+        factor = "❓ 问题解答"
+    elif '禁止' in post['title'] or '不要' in post['title']:
+        factor = "⚠️ 警示提醒"
+    elif '沉默' in post['title'] or '普通' in post['title']:
+        factor = "💭 反常识观点"
+    elif '宝贝' in post['title'] or '妈妈' in post['title']:
+        factor = "💕 情感共鸣"
+    else:
+        factor = "📌 经验分享"
+    
+    l1_tags = " ".join([f'<span class="tag tag-blue">{x}</span>' for x in post['layer1'][:2]])
+    
+    html += f'''            <tr>
+                <td>{i+1}</td>
+                <td>{title}</td>
+                <td><span class="tag tag-pink">{post['keyword']}</span></td>
+                <td>{l1_tags}</td>
+                <td>{post['engagement']:,}</td>
+                <td>{factor}</td>
+            </tr>
+'''
+
+html += '''        </table>
+
+        <div class="insight-box">
+            <h4>💡 爆款内容公式</h4>
+            <ul>
+                <li><strong>公式 1：反常识 + 育儿观</strong> — "如何得到一个沉默的孩子"（互动115,752）— 挑战传统认知，引发讨论</li>
+                <li><strong>公式 2：全攻略 + 清单体</strong> — "夫妻备孕超全攻略"（互动218,710）— 系统化信息，高收藏价值</li>
+                <li><strong>公式 3：情感叙事 + 第一人称</strong> — "这是妈妈最后一次上班为你产neinei"（互动109,882）— 真实故事，强烈共鸣</li>
+                <li><strong>公式 4：警示 + 禁忌</strong> — "我禁止家人夸他聪明"（互动122,310）— 制造冲突，引发好奇</li>
+                <li><strong>公式 5：社会话题 + 育儿</strong> — "普通家庭最大的通病"（互动82,682）— 连接社会焦虑，扩大受众</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 5: Recommendations -->
+    <div class="section">
+        <h2>💎 产品策略建议</h2>
+        
+        <div class="grid-2">
+            <div class="insight-box" style="border-left-color:#2ECC71;">
+                <h4 style="color:#2ECC71;">🎯 内容策略</h4>
+                <ul>
+                    <li>建立<strong>备孕-孕期-产后-早教-育儿</strong>全周期内容矩阵</li>
+                    <li>增加<strong>情绪支持</strong>内容专区，尤其是产后和育儿阶段</li>
+                    <li>推广<strong>清单体/攻略型</strong>内容，满足信息获取需求</li>
+                    <li>引入<strong>专家科普</strong>内容，提升知识收集类内容权威性</li>
+                    <li>鼓励<strong>UGC经验分享</strong>，建立用户内容生态</li>
+                </ul>
+            </div>
+            <div class="insight-box" style="border-left-color:#3498DB;">
+                <h4 style="color:#3498DB;">📱 功能策略</h4>
+                <ul>
+                    <li><strong>场景化推送</strong>：根据时间/场景推荐内容（家务时推音频、睡前推放松内容）</li>
+                    <li><strong>情绪识别</strong>：基于内容情绪标签，主动推荐情感支持内容</li>
+                    <li><strong>工具集成</strong>：早教阶段增加产品测评、对比工具</li>
+                    <li><strong>社区互助</strong>：强化经验求助功能，建立问答机制</li>
+                    <li><strong>个性化旅程</strong>：根据所处阶段自动调整内容推荐策略</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid-2">
+            <div class="insight-box" style="border-left-color:#E74C3C;">
+                <h4 style="color:#E74C3C;">⚠️ 风险预警</h4>
+                <ul>
+                    <li>产后阶段情绪表达需求激增，需关注<strong>心理健康</strong>内容合规性</li>
+                    <li>医疗健康类内容（孕期、产后）需<strong>专业审核</strong>，避免误导</li>
+                    <li>焦虑情绪普遍存在，避免<strong>贩卖焦虑</strong>式内容运营</li>
+                    <li>产品工具推荐需保持<strong>中立客观</strong>，避免过度营销</li>
+                </ul>
+            </div>
+            <div class="insight-box" style="border-left-color:#9B59B6;">
+                <h4 style="color:#9B59B6;">📈 增长机会</h4>
+                <ul>
+                    <li><strong>备孕阶段</strong>：高主动学习意愿，适合知识付费转化</li>
+                    <li><strong>早教阶段</strong>：产品工具需求强，电商/广告变现空间大</li>
+                    <li><strong>知识分享者</strong>：培养KOC，建立内容创作者生态</li>
+                    <li><strong>职场妈妈</strong>：产后职场回归需求被低估，可深耕</li>
+                    <li><strong>爸爸用户</strong>：内容中"父子"话题互动高，可拓展宝爸内容</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>📊 宝妈育儿场景用户需求分析报告 | 基线版本（无 Skill 增强）</p>
+        <p>数据来源：小红书 UGC | 样本量：508 条 | 分析日期：2026-05-21</p>
+    </div>
+</div>
+
+<script>
+// Scene Distribution Chart
+new Chart(document.getElementById('scenesChart'), {
+    type: 'doughnut',
+    data: {
+        labels: {json.dumps(scenes_labels)},
+        datasets: [{{
+            data: {json.dumps(scenes_values)},
+            backgroundColor: ['#FF6B9D', '#4ECDC4', '#FFE66D', '#667EEA', '#F093FB', '#FF8E53'],
+            borderWidth: 0
+        }}]
+    },
+    options: {{
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {{
+            legend: {{ position: 'right' }}
+        }}
+    }}
+});
+
+// Scene x Layer1 Stacked Bar
+new Chart(document.getElementById('sceneLayerChart'), {
+    type: 'bar',
+    data: {
+        labels: {json.dumps(scene_names)},
+        datasets: [
+            {{
+                label: '信息获取',
+                data: {json.dumps([data['scene_layer1'].get(s, {}).get('信息获取', 0) for s in scene_names])},
+                backgroundColor: '#667EEA'
+            }},
+            {{
+                label: '情绪表达',
+                data: {json.dumps([data['scene_layer1'].get(s, {}).get('情绪表达', 0) for s in scene_names])},
+                backgroundColor: '#FF6B9D'
+            }},
+            {{
+                label: '知识分享',
+                data: {json.dumps([data['scene_layer1'].get(s, {}).get('知识分享', 0) for s in scene_names])},
+                backgroundColor: '#4ECDC4'
+            }},
+            {{
+                label: '知识收集',
+                data: {json.dumps([data['scene_layer1'].get(s, {}).get('知识收集', 0) for s in scene_names])},
+                backgroundColor: '#FFE66D'
+            }},
+            {{
+                label: '经验求助',
+                data: {json.dumps([data['scene_layer1'].get(s, {}).get('经验求助', 0) for s in scene_names])},
+                backgroundColor: '#FF8E53'
+            }},
+            {{
+                label: '产品工具',
+                data: {json.dumps([data['scene_layer1'].get(s, {}).get('产品工具', 0) for s in scene_names])},
+                backgroundColor: '#F093FB'
+            }}
+        ]
+    },
+    options: {{
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {{
+            x: {{ stacked: true }},
+            y: {{ stacked: true }}
+        }}
+    }}
+});
+
+// Keyword x Layer1
+new Chart(document.getElementById('keywordLayerChart'), {
+    type: 'bar',
+    data: {
+        labels: {json.dumps(kw_names)},
+        datasets: [
+            {{
+                label: '信息获取',
+                data: {json.dumps([data['keyword_layer1'].get(k, {}).get('信息获取', 0) for k in kw_names])},
+                backgroundColor: '#667EEA'
+            }},
+            {{
+                label: '知识收集',
+                data: {json.dumps([data['keyword_layer1'].get(k, {}).get('知识收集', 0) for k in kw_names])},
+                backgroundColor: '#FFE66D'
+            }},
+            {{
+                label: '情绪表达',
+                data: {json.dumps([data['keyword_layer1'].get(k, {}).get('情绪表达', 0) for k in kw_names])},
+                backgroundColor: '#FF6B9D'
+            }},
+            {{
+                label: '知识分享',
+                data: {json.dumps([data['keyword_layer1'].get(k, {}).get('知识分享', 0) for k in kw_names])},
+                backgroundColor: '#4ECDC4'
+            }},
+            {{
+                label: '产品工具',
+                data: {json.dumps([data['keyword_layer1'].get(k, {}).get('产品工具', 0) for k in kw_names])},
+                backgroundColor: '#F093FB'
+            }}
+        ]
+    },
+    options: {{
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {{
+            x: {{ stacked: true }},
+            y: {{ stacked: true }}
+        }}
+    }}
+});
+
+// Keyword Emotions
+const emotionColors = {{'焦虑': '#E74C3C', '疲惫': '#F39C12', '幸福': '#2ECC71', '后悔': '#9B59B6', '愤怒': '#E67E22', '无助': '#95A5A6'}};
+const allEmotions = {json.dumps(sorted(set().union(*[set(v.keys()) for v in data['keyword_emotions'].values()])))};
+new Chart(document.getElementById('keywordEmotionChart'), {{
+    type: 'bar',
+    data: {{
+        labels: {json.dumps(kw_names)},
+        datasets: allEmotions.map(emo => ({{
+            label: emo,
+            data: {json.dumps(kw_names)}.map(kw => {json.dumps(data['keyword_emotions'])}[kw]?.[emo] || 0),
+            backgroundColor: emotionColors[emo] || '#999'
+        }}))
+    }},
+    options: {{
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {{
+            x: {{ stacked: true }},
+            y: {{ stacked: true }}
+        }}
+    }}
+}});
+
+// Layer2 Chart
+new Chart(document.getElementById('layer2Chart'), {
+    type: 'bar',
+    data: {
+        labels: {json.dumps([x[0] for x in layer2_items[:16]])},
+        datasets: [{{
+            label: '出现频次',
+            data: {json.dumps([x[1] for x in layer2_items[:16]])},
+            backgroundColor: [
+                '#FF6B9D', '#FF6B9D', '#FF6B9D', '#FF6B9D',
+                '#4ECDC4', '#4ECDC4', '#4ECDC4', '#4ECDC4',
+                '#667EEA', '#667EEA', '#667EEA', '#667EEA',
+                '#FFE66D', '#FFE66D', '#FFE66D', '#FFE66D'
+            ]
+        }}]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        indexAxis: 'y'
+    }
+});
+
+// Emotions Chart
+new Chart(document.getElementById('emotionsChart'), {
+    type: 'polarArea',
+    data: {
+        labels: {json.dumps(emotions_labels)},
+        datasets: [{{
+            data: {json.dumps(emotions_values)},
+            backgroundColor: ['#E74C3C', '#F39C12', '#2ECC71', '#9B59B6', '#E67E22', '#95A5A6']
+        }}]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+
+// Signals Chart
+new Chart(document.getElementById('signalsChart'), {
+    type: 'doughnut',
+    data: {
+        labels: {json.dumps(signals_labels)},
+        datasets: [{{
+            data: {json.dumps(signals_values)},
+            backgroundColor: ['#FF6B9D', '#E74C3C', '#FFE66D', '#4ECDC4', '#667EEA']
+        }}]
+    },
+    options: {
+        responsive: true,
+        maintainAspectRatio: false
+    }
+});
+</script>
+</body>
+</html>
+'''
+
+# Write HTML file
+output_path = os.path.join(OUTPUT_DIR, 'report.html')
+with open(output_path, 'w', encoding='utf-8') as f:
+    f.write(html)
+
+print(f"✅ HTML report generated: {output_path}")
+print(f"   File size: {os.path.getsize(output_path):,} bytes")
