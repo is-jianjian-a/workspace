@@ -1,0 +1,115 @@
+{
+  "稳定性|多APP": {
+    "units": [
+      {
+        "note_id": "69a13183000000000d0095fa",
+        "text": "今天气急败坏想找代打打开咸鱼软件闪退。",
+        "label": "稳定性",
+        "secondary_label": "多APP",
+        "tertiary_extraction": {
+          "level3_category": "APP闪退",
+          "extraction_type": "有展开",
+          "details": "具体提到打开咸鱼软件时发生闪退，有具体场景和APP名称"
+        }
+      },
+      {
+        "note_id": "69626250000000000e03e7b0",
+        "text": "我的15p杀后台严重，80没感觉到杀后台",
+        "label": "稳定性",
+        "secondary_label": "多APP",
+        "tertiary_extraction": {
+          "level3_category": "后台保活/杀后台",
+          "extraction_type": "有展开",
+          "details": "明确对比15p杀后台严重，而华为80没感觉到杀后台，有具体机型对比和主观感受"
+        }
+      },
+      {
+        "note_id": "68d38546000000000b03fd8a",
+        "text": "杀后台挺厉害的，8g苹果17日常不太够用",
+        "label": "稳定性",
+        "secondary_label": "多APP",
+        "tertiary_extraction": {
+          "level3_category": "后台保活/杀后台",
+          "extraction_type": "有展开",
+          "details": "提到杀后台厉害，并指出8g苹果17日常不太够用，有具体内存规格和主观评价"
+        }
+      }
+    ],
+    "extracted_summary": {
+      "total_units": 3,
+      "extraction_breakdown": {
+        "仅提及": 0,
+        "有展开": 3
+      },
+      "key_themes": [
+        "APP闪退",
+        "后台保活/杀后台"
+      ],
+      "notes": "3个unit均有展开，涉及具体APP闪退场景和后台保活对比"
+    }
+  },
+  "卡顿|UI交互": {
+    "units": [
+      {
+        "note_id": "6a01cb530000000037035606",
+        "text": "换了之后嘞，手机感觉变得有点卡顿，我有点厌蠢症，别人跟不上我的反应速度我就会有点嫌弃，手机也是，最后决定把它优化了。",
+        "label": "卡顿",
+        "secondary_label": "UI交互",
+        "tertiary_extraction": {
+          "level3_category": "系统响应速度",
+          "extraction_type": "有展开",
+          "details": "描述手机变得卡顿，用'厌蠢症'比喻反应速度慢，表达嫌弃情绪，有具体感受和后续行动（优化）"
+        }
+      },
+      {
+        "note_id": "699d48dd000000002800b6bc",
+        "text": "输入法响应的速度比苹果慢",
+        "label": "卡顿",
+        "secondary_label": "UI交互",
+        "tertiary_extraction": {
+          "level3_category": "输入法响应",
+          "extraction_type": "有展开",
+          "details": "明确指出输入法响应速度比苹果慢，有具体对比对象（苹果）和具体功能（输入法）"
+        }
+      }
+    ],
+    "extracted_summary": {
+      "total_units": 2,
+      "extraction_breakdown": {
+        "仅提及": 0,
+        "有展开": 2
+      },
+      "key_themes": [
+        "系统响应速度",
+        "输入法响应"
+      ],
+      "notes": "2个unit均有展开，涉及系统整体响应速度和输入法具体功能响应"
+    }
+  },
+  "稳定性|日常使用": {
+    "units": [
+      {
+        "note_id": "66dc1944000000002603178d",
+        "text": "如果是希望续航好，信号好，不想微信有延迟，玩法多，稳定选华为。",
+        "label": "稳定性",
+        "secondary_label": "日常使用",
+        "tertiary_extraction": {
+          "level3_category": "微信延迟",
+          "extraction_type": "有展开",
+          "details": "提到不想微信有延迟，将微信延迟作为选择华为的理由之一，有具体APP和偏好表达"
+        }
+      }
+    ],
+    "extracted_summary": {
+      "total_units": 1,
+      "extraction_breakdown": {
+        "仅提及": 0,
+        "有展开": 1
+      },
+      "key_themes": [
+        "微信延迟"
+      ],
+      "notes": "1个unit有展开，涉及微信消息延迟问题"
+    }
+  }
+}

@@ -1,0 +1,210 @@
+[
+  {
+    "note_id": "6a0c6850000000000602186e",
+    "text": "鸿蒙流畅度很惊喜，跟苹果不相上下",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价鸿蒙流畅度惊喜，保持主观"
+  },
+  {
+    "note_id": "64c0db63000000000103c073",
+    "text": "苹果属于怎么用都很流畅的",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价苹果怎么用都流畅，保持主观"
+  },
+  {
+    "note_id": "65deb7a800000000040011ee",
+    "text": "实际体验就是拍摄流畅、色彩真实",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "日常使用",
+    "reasoning": "提到拍摄流畅，属于日常使用场景"
+  },
+  {
+    "note_id": "65e737f20000000003035452",
+    "text": "鸿蒙系统流畅",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "662e669c000000000d031721",
+    "text": "苹果App只能AppStore安装，上架的应用必须符合苹果的设计规范并且通过严格的审核才能被下载，如果不流畅卡死、有严重的bug、或是在后台做些伤害用户的勾当是无法通过审核上架的",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到App审核标准涉及流畅/卡死，属于系统级评价"
+  },
+  {
+    "note_id": "662e669c000000000d031721",
+    "text": "一部iPhone使用5年还能流畅运行",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "长期使用",
+    "reasoning": "提到5年还能流畅运行，属于长期使用场景"
+  },
+  {
+    "note_id": "67143fa2000000001b011224",
+    "text": "由于苹果系统的封闭也带来了好的感受，丝滑流畅，不懂手机胡乱点击也不会自动下载乱七八糟的软件",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到苹果系统封闭带来丝滑流畅，属于系统级评价"
+  },
+  {
+    "note_id": "67143fa2000000001b011224",
+    "text": "苹果胜在系统吧, 能坚持好多年用起来依旧流畅, 很少出现死机,卡屏现象",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到苹果系统流畅、很少死机卡屏，属于系统级评价"
+  },
+  {
+    "note_id": "67206047000000001b02f558",
+    "text": "注重流畅系统和苹果生态选iPhone16",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到流畅系统，属于系统级评价"
+  },
+  {
+    "note_id": "67277dc8000000001b02fbeb",
+    "text": "原生鸿蒙实现了系统底座的全部自研，系统的流畅度、性能、安全特性等提升显著",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统底座自研带来流畅度提升，属于系统级评价"
+  },
+  {
+    "note_id": "6734ae32000000001901b366",
+    "text": "打开微信每次都要转几圈，电梯厕所直接断网",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "多APP",
+    "reasoning": "明确提到打开微信转圈，属于多APP场景"
+  },
+  {
+    "note_id": "675a955b000000000603994c",
+    "text": "注重流畅系统和苹果生态选iPhone16",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到流畅系统，属于系统级评价"
+  },
+  {
+    "note_id": "67dd5f2d000000000d01500a",
+    "text": "华为手机正常使用3 - 5年没问题",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "长期使用",
+    "reasoning": "提到正常使用3-5年，属于长期使用场景"
+  },
+  {
+    "note_id": "68529935000000002400e957",
+    "text": "苹果的除了系统丝滑,其他功能没啥牛的",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统丝滑，属于系统级评价"
+  },
+  {
+    "note_id": "68529935000000002400e957",
+    "text": "苹果胜在系统吧, 能坚持好多年用起来依旧流畅, 很少出现死机,卡屏现象",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到苹果系统流畅、很少死机卡屏，属于系统级评价"
+  },
+  {
+    "note_id": "688c8d570000000025012b08",
+    "text": "iOS生态闭环太丝滑",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS生态闭环丝滑，属于系统级评价"
+  },
+  {
+    "note_id": "68c62a39000000001c0113bc",
+    "text": "iPhone 17适合省心流畅，iOS稳定性强",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS稳定性强，属于系统级评价"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "text": "Ios26还不稳定，把苹果17的配置浪费了，硬生生把17变成16,使用两天后明显能感觉掉帧和卡顿了",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS系统不稳定、掉帧卡顿，属于系统级评价"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "text": "系统流畅性，华为苹果差不多",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "对比系统流畅性，属于系统级评价"
+  },
+  {
+    "note_id": "68d38546000000000b03fd8a",
+    "text": "这几天ios26感觉不如鸿蒙next,时不时卡顿卡死，鸿蒙next只是软件功能不完善，从来没有出现卡死的",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS系统卡顿卡死，属于系统级评价"
+  },
+  {
+    "note_id": "68dc7914000000000400700a",
+    "text": "这次换回苹果从不熟悉到瞬间的熟悉感，屏幕细腻度，手机流畅度，这次17pm真的从看不顺眼到非常喜爱仅仅深度使用一天，可能是一年没用苹果，真的感觉差别很大啦，系统更流畅啦",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统更流畅，属于系统级评价"
+  },
+  {
+    "note_id": "6913685b0000000005038c6b",
+    "text": "声明一下：华为很好 不卡顿 不发烫 信号好 功能多 快充方便",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价不卡顿，保持主观"
+  },
+  {
+    "note_id": "69721f12000000001a025ea7",
+    "text": "再次从苹果换回了华为。入手mate 80，用了两天丝滑流畅",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价丝滑流畅，保持主观"
+  },
+  {
+    "note_id": "6992b518000000001a02ac5e",
+    "text": "并不是说系统不流畅\n至少我觉得特别丝滑",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价系统丝滑，保持主观"
+  },
+  {
+    "note_id": "69e57cef000000001a02eaa6",
+    "text": "并不是说系统不流畅\n至少我觉得特别丝滑",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价系统丝滑，保持主观"
+  },
+  {
+    "note_id": "6a031f330000000036032a96",
+    "text": "苹果的iOS很流畅，但是华为的鸿蒙系统更流畅且更智能，信号也更好",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "对比iOS和鸿蒙系统流畅度，属于系统级评价"
+  }
+]

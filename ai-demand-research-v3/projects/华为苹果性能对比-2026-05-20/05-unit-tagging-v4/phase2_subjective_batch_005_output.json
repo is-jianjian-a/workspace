@@ -1,0 +1,234 @@
+[
+  {
+    "note_id": "68c79751000000001d02dd54",
+    "text": "流畅度：两部手机都非常流畅，完全感觉不到卡的地方",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价两部手机都流畅，保持主观"
+  },
+  {
+    "note_id": "68f61a3d0000000003021774",
+    "text": "输完密码后进入桌面都很丝滑",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统动画",
+    "reasoning": "提到解锁进入桌面丝滑，属于系统动画场景"
+  },
+  {
+    "note_id": "68f61a3d0000000003021774",
+    "text": "华为鸿蒙OS 5目前轻量化流畅性还是不错的",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙OS流畅性，属于系统级评价"
+  },
+  {
+    "note_id": "6901e07f00000000030378cc",
+    "text": "初上手感觉鸿蒙6很丝滑啊，发热和续航比4.2好太多了",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙6系统丝滑，属于系统级评价"
+  },
+  {
+    "note_id": "6901e07f00000000030378cc",
+    "text": "感觉流畅度和稳定性已经超越了iOS",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "对比系统流畅度和稳定性，属于系统级评价"
+  },
+  {
+    "note_id": "6901e07f00000000030378cc",
+    "text": "鸿蒙真的是越升级越流畅，流畅度真遥遥领先",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙系统升级越流畅，属于系统级评价"
+  },
+  {
+    "note_id": "69083d9d0000000007016b4a",
+    "text": "17屏幕反应也很快，还有高刷",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "UI交互",
+    "reasoning": "提到屏幕反应快、高刷，属于UI交互层面"
+  },
+  {
+    "note_id": "693299a5000000001b021354",
+    "text": "随便切换App不会卡顿的仅这两家了，三星安卓系统是偶尔概率性卡顿",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "多APP",
+    "reasoning": "明确提到切换App不卡顿，属于多APP场景"
+  },
+  {
+    "note_id": "69350e8f000000001e008381",
+    "text": "流畅度：Mate80Pro Max>X8U>17Pro Max=17Pro",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "流畅度排名，笼统评价，保持主观"
+  },
+  {
+    "note_id": "694cecfe000000001e021e36",
+    "text": "两年来也都那遇到过卡死机、闪退等莫名其妙的问题",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到卡死机、闪退，属于系统级稳定性问题"
+  },
+  {
+    "note_id": "694f6805000000001e0099c6",
+    "text": "感觉系统流畅度还是苹果最好。安卓和鸿蒙流畅度差不多",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "明确提到系统流畅度，属于系统级评价"
+  },
+  {
+    "note_id": "69626250000000000e03e7b0",
+    "text": "系统层面，鸿蒙6.0非常流畅，不卡",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "明确提到'系统层面'流畅，属于系统级评价"
+  },
+  {
+    "note_id": "697ec145000000000903a207",
+    "text": "17屏幕反应也很快，还有高刷",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "UI交互",
+    "reasoning": "提到屏幕反应快、高刷，属于UI交互层面"
+  },
+  {
+    "note_id": "6988504f000000000e03ee1f",
+    "text": "用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价流畅不行，保持主观"
+  },
+  {
+    "note_id": "699a9f5a000000001a0238f5",
+    "text": "网速和处理速度也好快",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "提到网速和处理速度，非系统/场景流畅，保持主观"
+  },
+  {
+    "note_id": "69e5feda000000002200326f",
+    "text": "没想到 iOS 16、iOS 18 直接排到了末尾，分数还不到 5 分",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "系统排名，笼统评价，保持主观"
+  },
+  {
+    "note_id": "69e70452000000002003a78b",
+    "text": "据说鸿蒙6.1强的可怕，比ios更流畅，我这就试试",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "对比鸿蒙6.1和iOS流畅度，属于系统级评价"
+  },
+  {
+    "note_id": "69f5d172000000001a02dbb3",
+    "text": "目前新麒麟芯片虽然制程上不占优势，但是流畅度上配合自研纯血鸿蒙系统足以跟 iOS 和安卓掰手腕了，甚至丝毫不落下风",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到配合鸿蒙系统流畅度，属于系统级评价"
+  },
+  {
+    "note_id": "69f809bc000000001e00ead3",
+    "text": "鸿蒙7主打AI补强+体验打磨，流畅度、应用适配、AI落地才是关键",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙7流畅度，属于系统级评价"
+  },
+  {
+    "note_id": "69fafb1500000000350328de",
+    "text": "中途由于过热手机直接卡死",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到过热卡死，属于系统级稳定性问题"
+  },
+  {
+    "note_id": "69fd54a8000000001a03412a",
+    "text": "苹果主动降频很严重的东西",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到苹果主动降频，属于系统级性能问题"
+  },
+  {
+    "note_id": "69fee36200000000230177df",
+    "text": "买苹果主要就是拍照好看，还非常的流畅",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价非常流畅，保持主观"
+  },
+  {
+    "note_id": "6a0305de00000000060239be",
+    "text": "iOS：极致流畅稳定，用 3 年不卡",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS流畅稳定，属于系统级评价"
+  },
+  {
+    "note_id": "6a0845a70000000006023633",
+    "text": "之前的 mate60 升级了鸿蒙 6 其实挺丝滑",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙6丝滑，属于系统级评价"
+  },
+  {
+    "note_id": "6a09c6b40000000038023754",
+    "text": "苹果优点是使用时间可以很久很久",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "长期使用",
+    "reasoning": "提到使用时间很久，属于长期使用场景"
+  },
+  {
+    "note_id": "6a09c6b40000000038023754",
+    "text": "目前这个就是小米的，用了三年多了，现在感觉到流畅度不够，很卡",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "长期使用",
+    "reasoning": "提到用了三年多流畅度不够，属于长期使用场景"
+  },
+  {
+    "note_id": "6a09c6b40000000038023754",
+    "text": "主要是流畅度卡的问题",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "长期使用",
+    "reasoning": "承接上文三年使用后的卡顿，属于长期使用场景"
+  },
+  {
+    "note_id": "6a0b0594000000003502123d",
+    "text": "你们的实况图也这么卡吗",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "提到实况图卡，但属于笼统提问，保持主观"
+  },
+  {
+    "note_id": "6a0c20dd0000000035029da5",
+    "text": "OPPO这类厂商，依托开源底层+公版硬件，靠极致打磨系统流畅度、稳定性，同样实现了体验领先",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统流畅度、稳定性，属于系统级评价"
+  }
+]

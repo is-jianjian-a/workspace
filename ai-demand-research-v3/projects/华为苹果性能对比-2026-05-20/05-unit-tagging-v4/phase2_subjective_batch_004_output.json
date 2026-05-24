@@ -1,0 +1,234 @@
+[
+  {
+    "note_id": "68f8c58f00000000050315db",
+    "text": "用了才一年多就卡到炸裂，卡到什么程度呢？进一个程序要等好几秒才能反应过来，拍的照片要等几秒钟相册才显示，甚至会诡异的不见。",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "多APP",
+    "reasoning": "明确提到进程序、相册显示等具体多APP场景卡顿"
+  },
+  {
+    "note_id": "69736dea000000000a02b0ad",
+    "text": "先不要吵，华为Mate80Pro和iPhone17Pro都是好手机，日用都是很流畅。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "日常使用",
+    "reasoning": "明确提到'日用'场景流畅"
+  },
+  {
+    "note_id": "699d3995000000001b01d9bd",
+    "text": "屏幕视觉精细感可以对标苹果，在握感、操作流畅度等方面体验优于其他厂商(这点让我在vivo x300和华为p80之间选择了华为)。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "UI交互",
+    "reasoning": "提到操作流畅度，属于UI交互层面"
+  },
+  {
+    "note_id": "69e602be000000002301d025",
+    "text": "感觉华为这个沉浸光感还挺好看，华为的性能居然也能支撑得起来，而且还很流畅，这就是自研系统的好处吗？",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到'自研系统'的好处，属于系统级流畅评价"
+  },
+  {
+    "note_id": "69ec88c80000000035033c09",
+    "text": "华为Pura 90 Pro Max麒麟9030S芯片+鸿蒙OS 6.1，国产芯丝滑体验拉满。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到芯片+系统组合带来的丝滑体验，属于系统级评价"
+  },
+  {
+    "note_id": "6a01daef0000000035028430",
+    "text": "你们觉得华为好用吗？我觉得还不错，非常流畅，鸿蒙系统适配已经很好了。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "6a0a9164000000003502adc8",
+    "text": "一直都用的华为，感觉除了拍照不太行，系统和性能都很丝滑方便。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统和性能丝滑，属于系统级评价"
+  },
+  {
+    "note_id": "6a0abd660000000008000f17",
+    "text": "三星S26适合喜欢小屏高颜值的用户。性能没有缩水，机身轻盈，还支持IP68防水，系统流畅。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "6a0abd660000000008000f17",
+    "text": "iPhone 17 Air适合苹果生态中追求轻薄的用户。机身纤薄，性能强劲，iOS系统流畅。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "6a0abd660000000008000f17",
+    "text": "iPhone系统流畅，生态稳定。华为鸿蒙体验稳健，国产旗舰整体堆料都很足。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iPhone系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "6621d0ed0000000001033220",
+    "text": "性能方面：苹果搭载的ios系统在流畅度方面是绝对没有问题的，但是随着系统的更新，发现发热问题有点严重，电池续航能力也下降的有点快。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "明确提到iOS系统流畅度，属于系统级评价"
+  },
+  {
+    "note_id": "66a34bd1000000000600c692",
+    "text": "在性能优化方面，鸿蒙系统针对流畅性和低功耗进行了深度优化，能够更好地适应各种硬件配置。安卓系统由于设备的多样性，在性能优化上需要面对更多的挑战；iOS则凭借苹果硬件的高度整合，在性能和功耗平衡上有着出色的表现。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到鸿蒙系统针对流畅性优化，属于系统级评价"
+  },
+  {
+    "note_id": "66a58394000000002701e578",
+    "text": "苹果：系统封闭所以丝滑，机型不多适配性好，就是价格越来越贵。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统封闭所以丝滑，属于系统级评价"
+  },
+  {
+    "note_id": "66a58394000000002701e578",
+    "text": "VIVO：主打影像，系统也越来越流畅了，低端机慎买，容易被割韭菜。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "66b8963900000000050238e4",
+    "text": "体验了一下刚发布的MatePad Pro12.2柔光版，丝滑的想让我想换掉我的20款iPad Pro了，华为手机和平板之间的联动也非常好用，而iPhone和iPad之间可以说是几乎没有联动了。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "提到多设备联动，但核心评价是丝滑想换，未具体到单一设备场景，保持主观"
+  },
+  {
+    "note_id": "6753b723000000000601638a",
+    "text": "跑分不代表实际体验，苹果从不宣传A系列的跑分，但iOS的系统流畅度就是比安卓系统好。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "明确对比iOS系统流畅度，属于系统级评价"
+  },
+  {
+    "note_id": "675653b1000000000102bffc",
+    "text": "鸿蒙NEXT也好火，很多用华为的伙伴都说丝滑，还有不少个性化的功能，AI小艺神通广大。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价伙伴都说丝滑，保持主观"
+  },
+  {
+    "note_id": "675653b1000000000102bffc",
+    "text": "我觉得吧，目前iOS18、鸿蒙NEXT和ColorOS15几乎就是流畅系统top，ColorOS15其实也蛮卷的，没bug又稳定，口碑很好。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统没bug又稳定，属于系统级评价"
+  },
+  {
+    "note_id": "675653b1000000000102bffc",
+    "text": "摸过OPPO Reno13，很丝滑，流体云像是加强版灵动岛？实况玩法丰富，体验蛮ok的。",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价很丝滑，保持主观"
+  },
+  {
+    "note_id": "67f4ce51000000001202d3f4",
+    "text": "第1名 ColorOS （OPPO&一加）\n第2名 iOS （苹果）\n第3名 鸿蒙 （华为）",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "系统排名，笼统评价，保持主观"
+  },
+  {
+    "note_id": "680dee37000000001c0291fb",
+    "text": "苹果换了华为以后，心态崩了，苹果15pormax 换成华为70非凡大师，用了三天直接不想用了，没有苹果反应快，还会死机，散退",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到反应快/死机，属于系统级稳定性/流畅评价"
+  },
+  {
+    "note_id": "682bcd080000000021003c90",
+    "text": "升级了鸿蒙next 5.0系统，在流畅度上真正意义上能够与ios抗衡，甚至更加绵密",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统流畅度能与iOS抗衡，属于系统级评价"
+  },
+  {
+    "note_id": "682bcd080000000021003c90",
+    "text": "软件内的流畅度极高",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "多APP",
+    "reasoning": "提到软件内流畅度，属于多APP场景"
+  },
+  {
+    "note_id": "682bcd080000000021003c90",
+    "text": "安卓系统最大问题还是软件内流畅度太差了，割裂感太强了，始终无法像ios一样内外都很丝滑",
+    "label": "卡顿",
+    "old_secondary": "主观",
+    "new_secondary": "多APP",
+    "reasoning": "提到软件内流畅度差，属于多APP场景"
+  },
+  {
+    "note_id": "683d1ca2000000001101c50b",
+    "text": "刚买回来，就闪退过一次",
+    "label": "稳定性",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到闪退，属于系统级稳定性问题"
+  },
+  {
+    "note_id": "685bf3f1000000001c031673",
+    "text": "mate70Pro现在还是鸿蒙4.3版本，没升级鸿蒙5.0，但我觉着这版本系统有5.0的流畅优势",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统版本流畅优势，属于系统级评价"
+  },
+  {
+    "note_id": "685bf3f1000000001c031673",
+    "text": "iPhone这边是iOS17.2.6，也没更新过，用着依旧丝滑流畅",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到iOS版本丝滑流畅，属于系统级评价"
+  },
+  {
+    "note_id": "686de7f8000000000b02dfb4",
+    "text": "这是华为pura80 Pro+，我觉得挺好用的，一英寸拍照好、系统也流畅，还挺省电的",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "系统",
+    "reasoning": "提到系统流畅，属于系统级评价"
+  },
+  {
+    "note_id": "686e8be000000000230066d9",
+    "text": "我买了iphone，总体不错很丝滑但是也有小缺点",
+    "label": "丝滑流畅",
+    "old_secondary": "主观",
+    "new_secondary": "主观",
+    "reasoning": "笼统评价很丝滑，保持主观"
+  }
+]

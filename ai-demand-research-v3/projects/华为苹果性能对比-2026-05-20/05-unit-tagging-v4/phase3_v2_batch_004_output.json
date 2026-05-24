@@ -1,0 +1,346 @@
+{
+  "卡顿|打游戏": {
+    "units": [
+      {
+        "note_id": "6915e2ff0000000004013f0c",
+        "text": "标准版A19​ 芯片排名第三，虽GPU核心略有精简，但CPU架构先进，足以满足高帧率游戏与AI任务需求。A17 Pro​ 与 A16​ 芯片分列第四、五位，能效表现出色，是性价比之选",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69c906290000000023016f2f",
+        "text": "• 散热进化： 散热改善巨大，重度游戏不降亮度、不掉帧。• 续航表现： 优于华为 Pura，持平 OPPO X8",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "676a6c1c000000000800e642",
+        "text": "打着打着角色漂移，技能衔接不上被对面跑了，发烫、掉帧、网络卡顿，我都为了保帧率开中画质了还卡。我敢肯定不是网络问题",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "676e4fd5000000000b021fa4",
+        "text": "5️⃣游戏：有需求的，特别是玩儿3A游戏，无脑果子，这一代散热好了点，不会说发烫掉帧没法玩...数码产品使用体验[话题] 数码街区由我造[话题] 手机测评[话题] 手机体验感[话题] 鸿蒙[话题] 科技数码新鲜事儿[话题]",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "691afa37000000000700f024",
+        "text": "上周换了新手机，自带鸿蒙5.0，当天晚上刷小红书，视频页面就卡顿。换到吃鸡，页面卡了5次",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "695f2aed000000001a029c24",
+        "text": "玩燕云打侠境卡到一动不动，下地掉帧，图片跟雪花片一样",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "69a13183000000000d0095fa",
+        "text": "卡得像盗版一样，具体表现1饭前打王者或者lolm中途相机按钮切出来拍个菜，不到一分钟再切回游戏已经要重新加载了。",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "69a13183000000000d0095fa",
+        "text": "最近更恐怖到打王者一把就烫的掉帧，把壳摘了烫得拿不了只能用酒精湿巾垫着。",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "6a09d2580000000036031c05",
+        "text": "打开个王者荣耀，小米17Pro max也是卡到起飞，彻底帮我戒了网瘾。",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "6621d0ed0000000001033220",
+        "text": "游戏体验：目前苹果的游戏体验效果是强于mate60pro的，虽然说苹果玩游戏发热严重，但是没有明显的卡顿现象，而华为有明显的掉帧现象。",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "694cecfe000000001e021e36",
+        "text": "Mate60Pro：麒麟芯片的代差导致性能不好，夏天时候玩王者温度一上去，60帧都不咋稳得住",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "65deb7a800000000040011ee",
+        "text": "在游戏场景下，华为能够利用蜂窝数据加速，整体延迟卡顿较少",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "674997560000000002038359",
+        "text": "华为 Mate70 搭载麒麟 9020 处理器，大型游戏有些吃力",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "681d3d24000000000c03ae53",
+        "text": "不过在多人游戏战场中，Mate 70 Pro+偶尔会有点卡顿",
+        "label": "卡顿",
+        "secondary_label": "打游戏",
+        "tertiary_label": "仅提及"
+      }
+    ],
+    "extracted_summary": "共14条，仅提及7条，有展开7条。有展开的内容涉及：掉帧、吃鸡类游戏、燕云十六声、王者荣耀/LOLM等具体游戏场景及卡顿表现。"
+  },
+  "卡顿|长期使用": {
+    "units": [
+      {
+        "note_id": "697ef49a000000001a029ba0",
+        "text": "最主要的原因是会担心用久了会有卡顿的情况。另外看到网上说有些应用华为官方商店不支持下载，以及最新鸿蒙系统一些应用功能无法兼容",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69d8c5ae0000000023024dcc",
+        "text": "长期使用易卡顿，依赖品牌优化。多设备协同不如 iOS 和鸿蒙统一",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "636a039d0000000009006c2b",
+        "text": "如果你用的还是三五年前的机型，你的硬件跟不上新的系统，或者新的app，自然也会卡顿啦🤣。✅应对方法：打死也不升级系统跟app🤣，这个建议刚买到iphone就这么操作，或者你对目前手机流畅度比较满意就彻底放弃升级🤭",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "679ee243000000002503c2e3",
+        "text": "以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "679ee243000000002503c2e3",
+        "text": "以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "67e75caa000000001e004659",
+        "text": "三星也好用，即使用到后面电池不咋行了，但是很少卡顿",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "6825b133000000000f033010",
+        "text": "还是说移动网络本身就太垃圾了。或者是xr用了几年了手机太卡了么",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "有展开"
+      },
+      {
+        "note_id": "68540862000000001d00fccd",
+        "text": "P40有点卡了，但还是不想换。华为P40，从20年用到现在了，依旧觉着十分好用啊",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "692b64e8000000000d00d074",
+        "text": "现在国产机真的比不上苹果吗。我22年以前用的是几千块钱的安卓机确实用两年就卡了",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "692b64e8000000000d00d074",
+        "text": "现在国产机真的比不上苹果吗。我22年以前用的是几千块钱的安卓机确实用两年就卡了",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "6986dfb2000000000a03024e",
+        "text": "本来看着广电给的多就一直用，结果近几个月越来越卡。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69acd545000000001b017b23",
+        "text": "反过来看安卓旗舰，虽然也不是没毛病，我自己最烦的一点就是：有时候用久了会发热、会卡，而且你经常不知道它到底为什么突然这样。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69d3cbd1000000001a020313",
+        "text": "是谁说的iPhone用四五年都不卡呀，我用了两年多都开始卡了。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69ea22d30000000019032405",
+        "text": "苹果手机的卡顿与安卓手机的卡顿区别：苹果手机没有他们吹的那么神乎其神。什么苹果x，苹果11，苹果12用到现在还不卡。那是你卡习惯了。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69ea22d30000000019032405",
+        "text": "安卓手机用时间长了是一点一点地卡，慢慢折磨你的感觉。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69eb0fbf000000002301e558",
+        "text": "华为手机p60pro用了3年了，挺卡顿的。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "69fed2660000000036030162",
+        "text": "13pro确实挺凑合了。能用，但是经常有小卡顿，系统占的内存也是越来越多，app已经开始精简使用了。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "67d3db2200000000090396e9",
+        "text": "苹果用了两年多了，感觉各方面的性能变慢了一点，系统方面也没有很流畅了。",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "686e8be000000000230066d9",
+        "text": "现在用的是华为mate30，用了五年变卡了想换手机",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "697ec145000000000903a207",
+        "text": "手机用久之后软件切换就会卡，内存还有50g的，我怀疑是系统问题",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "6a0305de00000000060239be",
+        "text": "安卓：碎片化严重，久用易卡",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "6a09c6b40000000038023754",
+        "text": "目前这个就是小米的，用了三年多了，现在感觉到流畅度不够，很卡",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "6a09c6b40000000038023754",
+        "text": "主要是流畅度卡的问题",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "65e31c35000000000b018f18",
+        "text": "怕的就是用个一两年以后就开始卡，犯安卓的老毛病",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "662e669c000000000d031721",
+        "text": "iPhone虽然只是4G、Pro也只有6G但基本上都给了当前的App程序。而安卓系统目前至少6G起步最高到16G，长时间用久了依然会卡",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "67dd5f2d000000000d01500a",
+        "text": "OPPO手机使用寿命约2年，由于系统优化方面存在短板，使用时间长了容易卡顿",
+        "label": "卡顿",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      }
+    ],
+    "extracted_summary": "共26条，仅提及24条，有展开2条。主要围绕长期使用后的卡顿体验展开，部分有具体年限、机型和卡顿表现描述。"
+  },
+  "稳定性|长期使用": {
+    "units": [
+      {
+        "note_id": "69b7e4f2000000001d01e441",
+        "text": "✅适配人群：苹果生态深度用户（已有其他苹果设备）、视频创作者，看重系统长期稳定性的朋友。📌 懒人速看｜关键维度对比",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "6a09c6b40000000038023754",
+        "text": "苹果优点是使用时间可以很久很久",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "66eea845000000002603ce4d",
+        "text": "手机耐用选苹果，信号商务选华为",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "67dd5f2d000000000d01500a",
+        "text": "苹果手机的寿命普遍3年起步，保养得好甚至能用10年",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "67dd5f2d000000000d01500a",
+        "text": "华为手机正常使用3 - 5年没问题",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "693a74f6000000001e039925",
+        "text": "苹果比华为耐用！用了这么多年手机，真心觉得苹果的\"抗造度\"和\"长期流畅度\"更能打",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      },
+      {
+        "note_id": "6991e2080000000015021e23",
+        "text": "他说你都有五千预算了，加点钱上iPhone 17，稳定用四五年不比安卓香吗",
+        "label": "稳定性",
+        "secondary_label": "长期使用",
+        "tertiary_label": "仅提及"
+      }
+    ],
+    "extracted_summary": "共7条，仅提及7条，有展开0条。主要涉及手机长期使用的耐用性和稳定性评价。"
+  }
+}
