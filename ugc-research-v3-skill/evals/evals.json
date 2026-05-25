@@ -1,0 +1,68 @@
+{
+  "skill_name": "UGC-research-v3",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "consumer-viewpoint-filtering",
+      "prompt": "我有一个UGC数据集，主题是'看视频时想要的AI功能'。请帮我筛选出只保留内容消费者视角的UGC，排除内容创造者视角。数据在 /Users/zhijian/workspace/MediaCrawler/database/sqlite_tables.db 中。",
+      "expected_output": "生成relevant_ugcs.json和excluded_ugcs.json，并生成视角审核HTML报告",
+      "files": [],
+      "assertions": [
+        {
+          "name": "excludes_creator_content",
+          "description": "排除的UGC中应包含'AI生成视频'、'自动剪辑'等创造者视角内容"
+        },
+        {
+          "name": "keeps_consumer_content",
+          "description": "保留的UGC应包含'看视频'、'学习'、'摘要'等消费者视角内容"
+        },
+        {
+          "name": "generates_audit_html",
+          "description": "应生成视角审核HTML报告供用户检查"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "signal-layer1-classification",
+      "prompt": "我已经筛选出了200条相关UGC，请对这些UGC进行Layer 1信号识别分类，分为需求信号、使用反馈、关注讨论、噪声四类。",
+      "expected_output": "生成layer1_classified.json和可交互HTML审核报告",
+      "files": [],
+      "assertions": [
+        {
+          "name": "four_categories",
+          "description": "必须包含需求信号、使用反馈、关注讨论、噪声四个分类"
+        },
+        {
+          "name": "audit_report",
+          "description": "应生成可交互HTML审核报告"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "html-report-generation",
+      "prompt": "我已经完成了UGC的分类和结构化，请生成最终的HTML分析报告，包含统计数据、洞察分析和UGC原文支撑。",
+      "expected_output": "生成final_report.html和ugc_audit_report.html",
+      "files": [],
+      "assertions": [
+        {
+          "name": "embedded_data",
+          "description": "数据必须用json.dumps嵌入，不能依赖外部文件"
+        },
+        {
+          "name": "no_arrow_functions",
+          "description": "JS中不能使用箭头函数"
+        },
+        {
+          "name": "ugc_evidence",
+          "description": "每个结论应有15-20条UGC原文支撑"
+        },
+        {
+          "name": "js_syntax_valid",
+          "description": "JS语法必须通过node --check验证"
+        }
+      ]
+    }
+  ]
+}
