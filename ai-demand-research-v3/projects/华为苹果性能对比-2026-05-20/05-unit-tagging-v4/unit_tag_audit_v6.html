@@ -139,6 +139,51 @@ function escapeHtml(text) {
   return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 }
 
+function highlightText(content, unitTexts) {
+  if (!content || !unitTexts || unitTexts.length === 0) return escapeHtml(content);
+  
+  var escapedContent = escapeHtml(content);
+  var colors = ['#ffeb3b', '#81d4fa', '#a5d6a7', '#ffcc80', '#ce93d8', '#ef9a9a'];
+  
+  for (var i = 0; i < unitTexts.length; i++) {
+    var unitText = unitTexts[i];
+    if (!unitText) continue;
+    
+    // 规范化文本：移除换行、多余空格和标点差异
+    var normalizedUnit = unitText.replace(/\s+/g, '').replace(/[。，！？、；：""''（）【】]/g, '');
+    var normalizedContent = escapedContent.replace(/\s+/g, '').replace(/[。，！？、；：""''（）【】]/g, '');
+    
+    // 在规范化后的内容中查找位置
+    var idx = normalizedContent.indexOf(normalizedUnit);
+    if (idx >= 0) {
+      // 找到匹配，使用unitText的实际长度来限制高亮范围
+      var searchStart = unitText.substring(0, 10).replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+      var maxLen = Math.min(unitText.length + 5, 60); // 限制最大长度
+      var pattern = new RegExp(searchStart + '[^\u003c]{0,' + maxLen + '}(?![^<]*<\/mark>)', 'g');
+      
+      var color = colors[i % colors.length];
+      escapedContent = escapedContent.replace(pattern, function(match) {
+        // 精确截断到unitText长度附近
+        var targetLen = unitText.length;
+        if (match.length > targetLen + 3) {
+          // 尝试在句子结束处截断
+          var truncateIdx = targetLen;
+          for (var j = targetLen - 5; j < match.length && j < targetLen + 10; j++) {
+            if (match[j] && (match[j] === '。' || match[j] === '！' || match[j] === '？' || match[j] === '\n')) {
+              truncateIdx = j + 1;
+              break;
+            }
+          }
+          match = match.substring(0, truncateIdx);
+        }
+        return '<mark style="background:' + color + ';padding:1px 2px;border-radius:2px;">' + match + '</mark>';
+      });
+    }
+  }
+  
+  return escapedContent;
+}
+
 function renderUGC(data) {
   var container = document.getElementById('ugcList');
   var noResults = document.getElementById('ugcNoResults');
@@ -177,7 +222,13 @@ function renderUGC(data) {
       html += '<a href="' + u.note_url + '" target="_blank" class="url-link">🔗 查看原文</a>';
     }
     html += '</div></div>';
-    html += '<div class="card-content">' + escapeHtml(u.content) + '</div>';
+    
+    // 收集所有Unit text用于高亮
+    var unitTexts = [];
+    for (var j = 0; j < u.units.length; j++) {
+      unitTexts.push(u.units[j].text);
+    }
+    html += '<div class="card-content">' + highlightText(u.content, unitTexts) + '</div>';
     if (unitsHtml) {
       html += '<div class="unit-list">' + unitsHtml + '</div>';
     }
