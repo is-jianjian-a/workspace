@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>搜索有效性分析 - 入库顺序 vs 相关性</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; margin: 40px; background: #f5f5f5; }
+.container { max-width: 1200px; margin: 0 auto; background: white; padding: 40px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+h1 { color: #1a1a1a; border-bottom: 3px solid #ff2442; padding-bottom: 15px; }
+h2 { color: #333; margin-top: 35px; }
+.summary { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ff2442; }
+table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+th, td { padding: 12px; text-align: left; border-bottom: 1px solid #eee; }
+th { background: #fafafa; font-weight: 600; color: #555; }
+tr:hover { background: #f8f9fa; }
+.bar-container { width: 200px; height: 20px; background: #eee; border-radius: 10px; overflow: hidden; display: inline-block; vertical-align: middle; }
+.bar { height: 100%; background: linear-gradient(90deg, #ff2442, #ff6b6b); border-radius: 10px; }
+.bar-green { background: linear-gradient(90deg, #52c41a, #95de64); }
+.bar-yellow { background: linear-gradient(90deg, #faad14, #ffd666); }
+.metric { display: inline-block; padding: 4px 12px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.metric-good { background: #f6ffed; color: #52c41a; border: 1px solid #b7eb8f; }
+.metric-bad { background: #fff2f0; color: #ff4d4f; border: 1px solid #ffccc7; }
+.metric-warn { background: #fffbe6; color: #faad14; border: 1px solid #ffe58f; }
+.chart { margin: 30px 0; }
+</style>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+<div class="container">
+<h1>🔍 搜索有效性分析报告</h1>
+<p style="color:#666;">项目: mind-mining | 数据来源: 华为苹果性能对比（对比类关键词5个）</p>
+
+<div class="summary">
+<h3>📊 核心结论</h3>
+<p><strong>总帖子数:</strong> 935条 | <strong>有效(valid):</strong> 289条 (30.9%) | <strong>无关(unrelated):</strong> 594条 (63.5%) | <strong>不完整:</strong> 52条 (5.6%)</p>
+<p><strong>搜索有效性趋势:</strong> 相关性随入库顺序呈<strong>微弱下降趋势</strong>（斜率: -0.000116, R²: 0.076）</p>
+<p><strong>关键发现:</strong> 前200条新增valid率约30-50%，200-400条骤降至15-25%，之后波动在20-35%之间。不存在持续衰减到接近0的情况。</p>
+</div>
+
+<h2>📈 一、入库顺序-相关性散点图（滑动窗口分析）</h2>
+<div class="chart">
+<canvas id="scatterChart" width="1000" height="400"></canvas>
+</div>
+
+<h2>📊 二、累积搜索效益分析</h2>
+<div class="chart">
+<canvas id="cumulativeChart" width="1000" height="400"></canvas>
+</div>
+
+<h2>📋 三、分桶详细数据</h2>
+<table>
+<tr>
+<th>桶号</th>
+<th>入库序号范围</th>
+<th>valid数</th>
+<th>总数</th>
+<th>相关率</th>
+<th>可视化</th>
+<th>趋势</th>
+</tr>
+<tr>
+<td>1</td>
+<td>0-46</td>
+<td>13</td>
+<td>46</td>
+<td>28.3%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:56px"></div></div></td>
+<td><span class="metric "></span></td>
+</tr><tr>
+<td>2</td>
+<td>46-92</td>
+<td>21</td>
+<td>46</td>
+<td>45.7%</td>
+<td><div class="bar-container"><div class="bar bar-green" style="width:91px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>3</td>
+<td>92-138</td>
+<td>21</td>
+<td>46</td>
+<td>45.7%</td>
+<td><div class="bar-container"><div class="bar bar-green" style="width:91px"></div></div></td>
+<td><span class="metric metric-warn">→ 平稳</span></td>
+</tr><tr>
+<td>4</td>
+<td>138-184</td>
+<td>21</td>
+<td>46</td>
+<td>45.7%</td>
+<td><div class="bar-container"><div class="bar bar-green" style="width:91px"></div></div></td>
+<td><span class="metric metric-warn">→ 平稳</span></td>
+</tr><tr>
+<td>5</td>
+<td>184-230</td>
+<td>15</td>
+<td>46</td>
+<td>32.6%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:65px"></div></div></td>
+<td><span class="metric metric-bad">↓ 下降</span></td>
+</tr><tr>
+<td>6</td>
+<td>230-276</td>
+<td>10</td>
+<td>46</td>
+<td>21.7%</td>
+<td><div class="bar-container"><div class="bar " style="width:43px"></div></div></td>
+<td><span class="metric metric-bad">↓ 下降</span></td>
+</tr><tr>
+<td>7</td>
+<td>276-322</td>
+<td>10</td>
+<td>46</td>
+<td>21.7%</td>
+<td><div class="bar-container"><div class="bar " style="width:43px"></div></div></td>
+<td><span class="metric metric-warn">→ 平稳</span></td>
+</tr><tr>
+<td>8</td>
+<td>322-368</td>
+<td>6</td>
+<td>46</td>
+<td>13.0%</td>
+<td><div class="bar-container"><div class="bar " style="width:26px"></div></div></td>
+<td><span class="metric metric-bad">↓ 下降</span></td>
+</tr><tr>
+<td>9</td>
+<td>368-414</td>
+<td>10</td>
+<td>46</td>
+<td>21.7%</td>
+<td><div class="bar-container"><div class="bar " style="width:43px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>10</td>
+<td>414-460</td>
+<td>14</td>
+<td>46</td>
+<td>30.4%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:60px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>11</td>
+<td>460-506</td>
+<td>17</td>
+<td>46</td>
+<td>37.0%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:73px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>12</td>
+<td>506-552</td>
+<td>12</td>
+<td>46</td>
+<td>26.1%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:52px"></div></div></td>
+<td><span class="metric metric-bad">↓ 下降</span></td>
+</tr><tr>
+<td>13</td>
+<td>552-598</td>
+<td>18</td>
+<td>46</td>
+<td>39.1%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:78px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>14</td>
+<td>598-644</td>
+<td>21</td>
+<td>46</td>
+<td>45.7%</td>
+<td><div class="bar-container"><div class="bar bar-green" style="width:91px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>15</td>
+<td>644-690</td>
+<td>16</td>
+<td>46</td>
+<td>34.8%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:69px"></div></div></td>
+<td><span class="metric metric-bad">↓ 下降</span></td>
+</tr><tr>
+<td>16</td>
+<td>690-736</td>
+<td>10</td>
+<td>46</td>
+<td>21.7%</td>
+<td><div class="bar-container"><div class="bar " style="width:43px"></div></div></td>
+<td><span class="metric metric-bad">↓ 下降</span></td>
+</tr><tr>
+<td>17</td>
+<td>736-782</td>
+<td>10</td>
+<td>46</td>
+<td>21.7%</td>
+<td><div class="bar-container"><div class="bar " style="width:43px"></div></div></td>
+<td><span class="metric metric-warn">→ 平稳</span></td>
+</tr><tr>
+<td>18</td>
+<td>782-828</td>
+<td>13</td>
+<td>46</td>
+<td>28.3%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:56px"></div></div></td>
+<td><span class="metric metric-good">↑ 上升</span></td>
+</tr><tr>
+<td>19</td>
+<td>828-874</td>
+<td>14</td>
+<td>46</td>
+<td>30.4%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:60px"></div></div></td>
+<td><span class="metric metric-warn">→ 平稳</span></td>
+</tr><tr>
+<td>20</td>
+<td>874-935</td>
+<td>17</td>
+<td>61</td>
+<td>27.9%</td>
+<td><div class="bar-container"><div class="bar bar-yellow" style="width:55px"></div></div></td>
+<td><span class="metric metric-warn">→ 平稳</span></td>
+</tr></table>
+
+<h2>🎯 四、搜索条数建议</h2>
+<table>
+<tr><th>搜索策略</th><th>建议条数/关键词</th><th>预期valid率</th><th>理由</th></tr>
+<tr><td>保守策略</td><td>150-200条</td><td>35-45%</td><td>前200条效率最高，边际效益在200条后开始下降</td></tr>
+<tr><td>平衡策略</td><td>250-300条</td><td>30-35%</td><td>覆盖更多长尾内容，但新增有效率降至15-20%</td></tr>
+<tr><td> exhaustive</td><td>400+条</td><td>25-30%</td><td>当前数据显示400条后有效率波动，无明显持续衰减</td></tr>
+</table>
+
+<div class="summary" style="margin-top:30px;">
+<h3>⚠️ 重要说明</h3>
+<p>1. <strong>note_id排序 ≠ 严格的入库时间排序</strong>：小红书note_id包含时间戳，但爬虫入库顺序可能受多线程/重试影响</p>
+<p>2. <strong>当前数据未呈现典型的"衰减到0"模式</strong>：相关性波动较大，可能说明搜索算法本身在持续返回混合质量的结果</p>
+<p>3. <strong>更可靠的判断方法</strong>：应结合发布时间（note_id前8位十六进制时间戳）分析，而非仅入库顺序</p>
+</div>
+
+</div>
+
+<script>
+// 滑动窗口数据
+var windowData = {"centers": [25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475, 500, 525, 550, 575, 600, 625, 650, 675, 700, 725, 750, 775, 800, 825, 850, 875, 900], "ratios": [0.26, 0.38, 0.5, 0.44, 0.44, 0.48, 0.56, 0.38, 0.16, 0.2, 0.18, 0.22, 0.2, 0.16, 0.16, 0.24, 0.34, 0.3, 0.34, 0.38, 0.26, 0.22, 0.4, 0.52, 0.44, 0.34, 0.3, 0.28, 0.16, 0.22, 0.32, 0.28, 0.28, 0.28, 0.2, 0.26]};
+
+// 累积数据
+var cumulativeData = [{"N": 50, "valid": 13, "rate": 0.26}, {"N": 100, "valid": 38, "rate": 0.38}, {"N": 150, "valid": 60, "rate": 0.4}, {"N": 200, "valid": 88, "rate": 0.44}, {"N": 250, "valid": 96, "rate": 0.384}, {"N": 300, "valid": 105, "rate": 0.35}, {"N": 350, "valid": 115, "rate": 0.32857142857142857}, {"N": 400, "valid": 123, "rate": 0.3075}, {"N": 450, "valid": 140, "rate": 0.3111111111111111}, {"N": 500, "valid": 157, "rate": 0.314}, {"N": 550, "valid": 170, "rate": 0.3090909090909091}, {"N": 600, "valid": 190, "rate": 0.31666666666666665}, {"N": 650, "valid": 212, "rate": 0.3261538461538461}, {"N": 700, "valid": 227, "rate": 0.3242857142857143}, {"N": 750, "valid": 235, "rate": 0.31333333333333335}, {"N": 800, "valid": 251, "rate": 0.31375}, {"N": 850, "valid": 265, "rate": 0.31176470588235294}, {"N": 900, "valid": 275, "rate": 0.3055555555555556}];
+
+// 分桶数据
+var bucketData = [{"bucket": 1, "start": 0, "end": 46, "valid": 13, "total": 46, "ratio": 0.2826086956521739}, {"bucket": 2, "start": 46, "end": 92, "valid": 21, "total": 46, "ratio": 0.45652173913043476}, {"bucket": 3, "start": 92, "end": 138, "valid": 21, "total": 46, "ratio": 0.45652173913043476}, {"bucket": 4, "start": 138, "end": 184, "valid": 21, "total": 46, "ratio": 0.45652173913043476}, {"bucket": 5, "start": 184, "end": 230, "valid": 15, "total": 46, "ratio": 0.32608695652173914}, {"bucket": 6, "start": 230, "end": 276, "valid": 10, "total": 46, "ratio": 0.21739130434782608}, {"bucket": 7, "start": 276, "end": 322, "valid": 10, "total": 46, "ratio": 0.21739130434782608}, {"bucket": 8, "start": 322, "end": 368, "valid": 6, "total": 46, "ratio": 0.13043478260869565}, {"bucket": 9, "start": 368, "end": 414, "valid": 10, "total": 46, "ratio": 0.21739130434782608}, {"bucket": 10, "start": 414, "end": 460, "valid": 14, "total": 46, "ratio": 0.30434782608695654}, {"bucket": 11, "start": 460, "end": 506, "valid": 17, "total": 46, "ratio": 0.3695652173913043}, {"bucket": 12, "start": 506, "end": 552, "valid": 12, "total": 46, "ratio": 0.2608695652173913}, {"bucket": 13, "start": 552, "end": 598, "valid": 18, "total": 46, "ratio": 0.391304347826087}, {"bucket": 14, "start": 598, "end": 644, "valid": 21, "total": 46, "ratio": 0.45652173913043476}, {"bucket": 15, "start": 644, "end": 690, "valid": 16, "total": 46, "ratio": 0.34782608695652173}, {"bucket": 16, "start": 690, "end": 736, "valid": 10, "total": 46, "ratio": 0.21739130434782608}, {"bucket": 17, "start": 736, "end": 782, "valid": 10, "total": 46, "ratio": 0.21739130434782608}, {"bucket": 18, "start": 782, "end": 828, "valid": 13, "total": 46, "ratio": 0.2826086956521739}, {"bucket": 19, "start": 828, "end": 874, "valid": 14, "total": 46, "ratio": 0.30434782608695654}, {"bucket": 20, "start": 874, "end": 935, "valid": 17, "total": 61, "ratio": 0.2786885245901639}];
+
+// 散点图
+var ctx1 = document.getElementById("scatterChart").getContext("2d");
+new Chart(ctx1, {
+    type: "scatter",
+    data: {
+        datasets: [{
+            label: "相关率（滑动窗口50条）",
+            data: windowData.centers.map(function(c, i) { return {x: c, y: windowData.ratios[i]}; }),
+            backgroundColor: "rgba(255, 36, 66, 0.6)",
+            borderColor: "#ff2442",
+            pointRadius: 5
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: { title: { display: true, text: "入库顺序（帖子序号）" } },
+            y: { title: { display: true, text: "相关率（valid比例）" }, min: 0, max: 1 }
+        }
+    }
+});
+
+// 累积图
+var ctx2 = document.getElementById("cumulativeChart").getContext("2d");
+new Chart(ctx2, {
+    type: "line",
+    data: {
+        labels: cumulativeData.map(function(d) { return d.N; }),
+        datasets: [{
+            label: "累积valid数",
+            data: cumulativeData.map(function(d) { return d.valid; }),
+            borderColor: "#ff2442",
+            backgroundColor: "rgba(255, 36, 66, 0.1)",
+            fill: true,
+            yAxisID: "y"
+        }, {
+            label: "累积valid率",
+            data: cumulativeData.map(function(d) { return (d.rate * 100).toFixed(1); }),
+            borderColor: "#52c41a",
+            backgroundColor: "transparent",
+            yAxisID: "y1"
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: { title: { display: true, text: "搜索条数" } },
+            y: { type: "linear", display: true, position: "left", title: { display: true, text: "累积valid数" } },
+            y1: { type: "linear", display: true, position: "right", title: { display: true, text: "累积valid率(%)" }, min: 0, max: 60 }
+        }
+    }
+});
+</script>
+</body>
+</html>

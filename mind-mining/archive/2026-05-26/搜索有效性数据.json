@@ -1,0 +1,233 @@
+{
+  "window_data": [
+    {
+      "center": 50,
+      "ratio": 0.94,
+      "related": 94,
+      "total": 100
+    },
+    {
+      "center": 100,
+      "ratio": 0.96,
+      "related": 96,
+      "total": 100
+    },
+    {
+      "center": 150,
+      "ratio": 0.92,
+      "related": 92,
+      "total": 100
+    },
+    {
+      "center": 200,
+      "ratio": 0.91,
+      "related": 91,
+      "total": 100
+    },
+    {
+      "center": 250,
+      "ratio": 0.95,
+      "related": 95,
+      "total": 100
+    },
+    {
+      "center": 300,
+      "ratio": 0.93,
+      "related": 93,
+      "total": 100
+    },
+    {
+      "center": 350,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 400,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 450,
+      "ratio": 0.89,
+      "related": 89,
+      "total": 100
+    },
+    {
+      "center": 500,
+      "ratio": 0.85,
+      "related": 85,
+      "total": 100
+    },
+    {
+      "center": 550,
+      "ratio": 0.81,
+      "related": 81,
+      "total": 100
+    },
+    {
+      "center": 600,
+      "ratio": 0.83,
+      "related": 83,
+      "total": 100
+    },
+    {
+      "center": 650,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 700,
+      "ratio": 0.87,
+      "related": 87,
+      "total": 100
+    },
+    {
+      "center": 750,
+      "ratio": 0.87,
+      "related": 87,
+      "total": 100
+    },
+    {
+      "center": 800,
+      "ratio": 0.91,
+      "related": 91,
+      "total": 100
+    },
+    {
+      "center": 850,
+      "ratio": 0.91,
+      "related": 91,
+      "total": 100
+    },
+    {
+      "center": 900,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 950,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 1000,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 1050,
+      "ratio": 0.91,
+      "related": 91,
+      "total": 100
+    },
+    {
+      "center": 1100,
+      "ratio": 0.9,
+      "related": 90,
+      "total": 100
+    },
+    {
+      "center": 1150,
+      "ratio": 0.79,
+      "related": 79,
+      "total": 100
+    },
+    {
+      "center": 1200,
+      "ratio": 0.79,
+      "related": 79,
+      "total": 100
+    },
+    {
+      "center": 1250,
+      "ratio": 0.82,
+      "related": 82,
+      "total": 100
+    },
+    {
+      "center": 1300,
+      "ratio": 0.87,
+      "related": 87,
+      "total": 100
+    },
+    {
+      "center": 1350,
+      "ratio": 0.87,
+      "related": 87,
+      "total": 100
+    },
+    {
+      "center": 1400,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 1450,
+      "ratio": 0.93,
+      "related": 93,
+      "total": 100
+    },
+    {
+      "center": 1500,
+      "ratio": 0.88,
+      "related": 88,
+      "total": 100
+    },
+    {
+      "center": 1550,
+      "ratio": 0.87,
+      "related": 87,
+      "total": 100
+    },
+    {
+      "center": 1600,
+      "ratio": 0.86,
+      "related": 86,
+      "total": 100
+    },
+    {
+      "center": 1650,
+      "ratio": 0.83,
+      "related": 83,
+      "total": 100
+    },
+    {
+      "center": 1700,
+      "ratio": 0.79,
+      "related": 79,
+      "total": 100
+    },
+    {
+      "center": 1750,
+      "ratio": 0.76,
+      "related": 76,
+      "total": 100
+    },
+    {
+      "center": 1800,
+      "ratio": 0.84,
+      "related": 84,
+      "total": 100
+    },
+    {
+      "center": 1850,
+      "ratio": 0.85,
+      "related": 85,
+      "total": 100
+    }
+  ],
+  "summary": {
+    "total_posts": 1923,
+    "related_count": 1676,
+    "unrelated_count": 247,
+    "slope": -4.9359886201991476e-05,
+    "trend": "↓ 下降（搜索到后面相关性降低）"
+  }
+}

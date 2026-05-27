@@ -1,0 +1,994 @@
+{
+  "kw_trend_data": {
+    "华为丝滑": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.7,
+          "related": 21,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.6333333333333333,
+          "related": 19,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        }
+      ],
+      "slope": -0.0055555555555555575,
+      "total": 93,
+      "related_count": 74,
+      "unrelated_count": 19
+    },
+    "华为卡顿": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        }
+      ],
+      "slope": 0.00012698412698412695,
+      "total": 106,
+      "related_count": 93,
+      "unrelated_count": 13
+    },
+    "华为和苹果丝滑对比": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        },
+        {
+          "center": 105,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 90,
+          "end_idx": 120
+        },
+        {
+          "center": 120,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 105,
+          "end_idx": 135
+        },
+        {
+          "center": 135,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 120,
+          "end_idx": 150
+        }
+      ],
+      "slope": -7.407407407407405e-05,
+      "total": 154,
+      "related_count": 145,
+      "unrelated_count": 9
+    },
+    "华为和苹果卡顿对比": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        },
+        {
+          "center": 105,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 90,
+          "end_idx": 120
+        },
+        {
+          "center": 120,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 105,
+          "end_idx": 135
+        },
+        {
+          "center": 135,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 120,
+          "end_idx": 150
+        },
+        {
+          "center": 150,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 135,
+          "end_idx": 165
+        },
+        {
+          "center": 165,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 150,
+          "end_idx": 180
+        },
+        {
+          "center": 180,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 165,
+          "end_idx": 195
+        }
+      ],
+      "slope": -0.0006993006993006991,
+      "total": 209,
+      "related_count": 179,
+      "unrelated_count": 30
+    },
+    "华为和苹果性能对比": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.7333333333333333,
+          "related": 22,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        },
+        {
+          "center": 105,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 90,
+          "end_idx": 120
+        },
+        {
+          "center": 120,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 105,
+          "end_idx": 135
+        },
+        {
+          "center": 135,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 120,
+          "end_idx": 150
+        },
+        {
+          "center": 150,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 135,
+          "end_idx": 165
+        },
+        {
+          "center": 165,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 150,
+          "end_idx": 180
+        },
+        {
+          "center": 180,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 165,
+          "end_idx": 195
+        }
+      ],
+      "slope": 0.00034965034965034976,
+      "total": 202,
+      "related_count": 175,
+      "unrelated_count": 27
+    },
+    "华为和苹果流畅度对比": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        },
+        {
+          "center": 105,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 90,
+          "end_idx": 120
+        },
+        {
+          "center": 120,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 105,
+          "end_idx": 135
+        },
+        {
+          "center": 135,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 120,
+          "end_idx": 150
+        },
+        {
+          "center": 150,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 135,
+          "end_idx": 165
+        },
+        {
+          "center": 165,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 150,
+          "end_idx": 180
+        }
+      ],
+      "slope": -0.000303030303030303,
+      "total": 189,
+      "related_count": 176,
+      "unrelated_count": 13
+    },
+    "华为和苹果稳定性对比": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        },
+        {
+          "center": 105,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 90,
+          "end_idx": 120
+        },
+        {
+          "center": 120,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 105,
+          "end_idx": 135
+        },
+        {
+          "center": 135,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 120,
+          "end_idx": 150
+        },
+        {
+          "center": 150,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 135,
+          "end_idx": 165
+        },
+        {
+          "center": 165,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 150,
+          "end_idx": 180
+        }
+      ],
+      "slope": 6.06060606060606e-05,
+      "total": 181,
+      "related_count": 168,
+      "unrelated_count": 13
+    },
+    "华为性能": {
+      "windows": [
+        {
+          "center": 14,
+          "ratio": 0.7931034482758621,
+          "related": 23,
+          "total": 29,
+          "start_idx": 0,
+          "end_idx": 29
+        },
+        {
+          "center": 28,
+          "ratio": 0.9310344827586207,
+          "related": 27,
+          "total": 29,
+          "start_idx": 14,
+          "end_idx": 43
+        },
+        {
+          "center": 42,
+          "ratio": 0.9310344827586207,
+          "related": 27,
+          "total": 29,
+          "start_idx": 28,
+          "end_idx": 57
+        },
+        {
+          "center": 56,
+          "ratio": 0.896551724137931,
+          "related": 26,
+          "total": 29,
+          "start_idx": 42,
+          "end_idx": 71
+        },
+        {
+          "center": 70,
+          "ratio": 0.896551724137931,
+          "related": 26,
+          "total": 29,
+          "start_idx": 56,
+          "end_idx": 85
+        }
+      ],
+      "slope": 0.0012315270935960593,
+      "total": 87,
+      "related_count": 75,
+      "unrelated_count": 12
+    },
+    "华为流畅": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9666666666666667,
+          "related": 29,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 1.0,
+          "related": 30,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        }
+      ],
+      "slope": 0.0011111111111111107,
+      "total": 101,
+      "related_count": 98,
+      "unrelated_count": 3
+    },
+    "华为稳定": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.7333333333333333,
+          "related": 22,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        }
+      ],
+      "slope": 0.0008888888888888893,
+      "total": 91,
+      "related_count": 75,
+      "unrelated_count": 16
+    },
+    "苹果丝滑": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.7333333333333333,
+          "related": 22,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        }
+      ],
+      "slope": -0.0008888888888888901,
+      "total": 94,
+      "related_count": 75,
+      "unrelated_count": 19
+    },
+    "苹果卡顿": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.6333333333333333,
+          "related": 19,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        }
+      ],
+      "slope": -0.003555555555555556,
+      "total": 102,
+      "related_count": 80,
+      "unrelated_count": 22
+    },
+    "苹果性能": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.8666666666666667,
+          "related": 26,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        }
+      ],
+      "slope": -0.00031746031746031735,
+      "total": 105,
+      "related_count": 85,
+      "unrelated_count": 20
+    },
+    "苹果流畅": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.9,
+          "related": 27,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        }
+      ],
+      "slope": -0.00044444444444444436,
+      "total": 102,
+      "related_count": 87,
+      "unrelated_count": 15
+    },
+    "苹果稳定": {
+      "windows": [
+        {
+          "center": 15,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 0,
+          "end_idx": 30
+        },
+        {
+          "center": 30,
+          "ratio": 0.9333333333333333,
+          "related": 28,
+          "total": 30,
+          "start_idx": 15,
+          "end_idx": 45
+        },
+        {
+          "center": 45,
+          "ratio": 0.7666666666666667,
+          "related": 23,
+          "total": 30,
+          "start_idx": 30,
+          "end_idx": 60
+        },
+        {
+          "center": 60,
+          "ratio": 0.7333333333333333,
+          "related": 22,
+          "total": 30,
+          "start_idx": 45,
+          "end_idx": 75
+        },
+        {
+          "center": 75,
+          "ratio": 0.8,
+          "related": 24,
+          "total": 30,
+          "start_idx": 60,
+          "end_idx": 90
+        },
+        {
+          "center": 90,
+          "ratio": 0.8333333333333334,
+          "related": 25,
+          "total": 30,
+          "start_idx": 75,
+          "end_idx": 105
+        }
+      ],
+      "slope": -0.0017777777777777776,
+      "total": 107,
+      "related_count": 91,
+      "unrelated_count": 16
+    }
+  },
+  "summary": {
+    "total_posts": 1923,
+    "related_count": 1676,
+    "unrelated_count": 247,
+    "discussion_count": 77
+  }
+}

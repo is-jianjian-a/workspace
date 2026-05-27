@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind-Mining 数据质量诊断报告</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+:root{--primary:#ff2442;--bg:#f5f5f5;--card:#fff;--text:#333;--muted:#666;--border:#e0e0e0;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;}
+.container{max-width:1400px;margin:0 auto;padding:20px;}
+header{background:linear-gradient(135deg,#1a1a2e 0%,#16213e 100%);color:#fff;padding:40px 20px;text-align:center;border-radius:12px;margin-bottom:30px;}
+header h1{font-size:2.2em;margin-bottom:10px;}
+header p{color:#aaa;font-size:1.1em;}
+.card{background:var(--card);border-radius:12px;padding:25px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+.card h2{color:var(--primary);margin-bottom:15px;font-size:1.4em;border-bottom:2px solid var(--primary);padding-bottom:8px;display:inline-block;}
+.stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin:20px 0;}
+.stat-box{background:linear-gradient(135deg,#f8f9fa 0%,#fff 100%);border-radius:10px;padding:20px;text-align:center;border:1px solid var(--border);}
+.stat-box .number{font-size:2.5em;font-weight:bold;color:var(--primary);}
+.stat-box .label{color:var(--muted);font-size:0.9em;margin-top:5px;}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:0.9em;}
+th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--border);}
+th{background:#fafafa;font-weight:600;color:var(--muted);position:sticky;top:0;}
+tr:hover{background:#f8f9fa;}
+.badge{display:inline-block;padding:3px 10px;border-radius:12px;font-size:0.8em;font-weight:600;}
+.badge-related{background:#e8f5e9;color:#2e7d32;}
+.badge-unrelated{background:#ffebee;color:#c62828;}
+.badge-discussion{background:#fff3e0;color:#e65100;}
+.filter-bar{display:flex;gap:10px;margin-bottom:15px;flex-wrap:wrap;}
+.filter-btn{padding:8px 16px;border:1px solid var(--border);border-radius:20px;background:#fff;cursor:pointer;font-size:0.85em;transition:all 0.2s;}
+.filter-btn:hover,.filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary);}
+.search-box{width:100%;padding:10px 15px;border:1px solid var(--border);border-radius:8px;font-size:0.9em;margin-bottom:15px;}
+.pagination{display:flex;gap:10px;justify-content:center;margin:20px 0;}
+.page-btn{padding:8px 14px;border:1px solid var(--border);border-radius:6px;background:#fff;cursor:pointer;}
+.page-btn:hover{background:var(--primary);color:#fff;}
+.page-btn.active{background:var(--primary);color:#fff;}
+.hidden{display:none;}
+.chart-container{max-width:800px;margin:20px auto;}
+.discussion-hint{background:#fff8e1;border-left:4px solid #ffc107;padding:12px 15px;margin:10px 0;border-radius:4px;font-size:0.9em;}
+.discussion-hint strong{color:#e65100;}
+</style>
+</head>
+<body>
+<div class="container">
+<header>
+<h1>🔍 Mind-Mining 数据质量诊断报告</h1>
+<p>华为/苹果手机相关UGC数据清洗与质量分析 | 1,923条帖子</p>
+</header>
+
+<div class="card">
+<h2>📊 核心指标</h2>
+<div class="stats-grid">
+<div class="stat-box"><div class="number">1,923</div><div class="label">总帖子数</div></div>
+<div class="stat-box"><div class="number">1,676</div><div class="label">相关帖子</div></div>
+<div class="stat-box"><div class="number">87.2%</div><div class="label">相关率</div></div>
+<div class="stat-box"><div class="number">247</div><div class="label">无关帖子</div></div>
+<div class="stat-box"><div class="number">77</div><div class="label">讨论帖候选</div></div>
+<div class="stat-box"><div class="number">781K</div><div class="label">总点赞</div></div>
+</div>
+</div>
+
+<div class="card">
+<h2>📈 搜索有效性趋势</h2>
+<p style="color:#666;margin-bottom:15px;">横轴：入库顺序（帖子序号）| 纵轴：相关率 | 滑动窗口：100条，步长：50条</p>
+<div class="chart-container"><canvas id="trendChart"></canvas></div>
+<div style="background:#f8f9fa;padding:15px;border-radius:8px;margin-top:15px;">
+<p><strong>趋势分析：</strong>相关性随入库顺序微弱下降（斜率: -0.000049），前段相关率约93.7%，尾段降至83.0%。</p>
+<p><strong>结论：</strong>搜索有效性在前300条最高，之后缓慢衰减但无明显断崖。建议每个关键词搜索200-400条即可覆盖大部分有效内容。</p>
+</div>
+</div>
+
+<div class="card">
+<h2>📋 分类详情</h2>
+<div class="filter-bar">
+<button class="filter-btn active" onclick="filterTable('all')">全部</button>
+<button class="filter-btn" onclick="filterTable('related')">✅ 相关</button>
+<button class="filter-btn" onclick="filterTable('unrelated')">❌ 无关</button>
+<button class="filter-btn" onclick="filterTable('discussion')">💬 讨论帖</button>
+</div>
+<input type="text" class="search-box" id="searchInput" placeholder="搜索标题或内容..." onkeyup="searchTable()">
+<div style="overflow-x:auto;">
+<table id="dataTable">
+<thead>
+<tr>
+<th>#ID</th><th>标题</th><th>内容预览</th><th>赞</th><th>评</th><th>关键词</th><th>分类</th><th>原因</th>
+</tr>
+</thead>
+<tbody id="tableBody">
+
+<tr class="discussion-row" data-category="discussion">
+<td>1</td>
+<td>现在三大系统 鸿蒙 安卓 苹果 越来越像！</td>
+<td>主题是（珠穆朗玛）
+至于系统ui相似可能有人不认同  但是我主观觉得是差不多的， 两个系统使用无缝切换一点没有割裂感 都</td>
+<td>4750</td>
+<td>947</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（947条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>2</td>
+<td>同样是小红书，华为比苹果多出3个G？</td>
+<td>华为手机64G的，本身内存都小，没下载多少东西就用了50多G，想通过清理缓存挤出那么一点点儿空间，结果一对比我愣了
+同样</td>
+<td>214</td>
+<td>264</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>3</td>
+<td>手机品牌鄙视链已经细分到机型了！</td>
+<td>对于这个鄙视链，我发表一下我的看法。
+	
+iPhone 14 Pro Max确实是目前天花板机型，不过真果粉一般不会选它</td>
+<td>1831</td>
+<td>436</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>4</td>
+<td>iphone卡顿的5个原因，说的是你嘛🤭</td>
+<td>江湖里一直有个传说，iphone用三五年都不会卡，系统怎么怎么丝滑🤭，但是我相信使用iphone的小伙伴多多少少都会遇到</td>
+<td>1060</td>
+<td>160</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>5</td>
+<td>华为和苹果的频闪对比，有时候真不知道为什么大家喜欢苹果
+华为是1440Hz高频PWM调光，苹果是48</td>
+<td>华为和苹果的频闪对比，有时候真不知道为什么大家喜欢苹果
+华为是1440Hz高频PWM调光，苹果是480Hz低频PWM调光</td>
+<td>40</td>
+<td>11</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>6</td>
+<td>iPhone 16 Pro，我想过丑，但没想过这么丑</td>
+<td>苹果每次都这么快
+iPhone15系列还没发布，iPhone 16 Pro外观就被爆料出来了
+	
+正面依旧是灵动岛设计
+</td>
+<td>0</td>
+<td>3844</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>7</td>
+<td>为什么只有华为和苹果两家使用3D结构光技术</td>
+<td>3D结构光技术非常好用，无论是识别速度，识别精度还是安全性都要比指纹更好，而且更厉害的是可以在无光的条件下实现人脸解锁，</td>
+<td>11</td>
+<td>3</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>8</td>
+<td>苹果的售后和华为简直没法比</td>
+<td>去年6月份手机坏了，考虑到华为新款没有5G，换成了苹果13，这两天充不进去电，坐标合肥，就找了苹果售后电话问到了售后地址</td>
+<td>88</td>
+<td>150</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>9</td>
+<td>不同手机的保值率，iphone 12还能再战？</td>
+<td>可能很多小伙伴更在意的不是手机保不保值，而是手机的使用寿命，其实使用寿命跟手机的保值率也是有关系的哦
+[微笑R]苹果和华</td>
+<td>571</td>
+<td>35</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>10</td>
+<td>华为Mate60Pro优缺点大汇总</td>
+<td>华为Mate60Pro优缺点大汇总[哇R][哇R]
+优点：
+[一R]麒麟+鸿蒙日常流畅度好评，高刷策略偏激进
+[二R]后</td>
+<td>331</td>
+<td>42</td>
+<td>华为性能</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>11</td>
+<td>Mate60全系大盘点，三款机型你该怎么选？</td>
+<td>Mate 60系列三款主要机型，Mate60，Mate60 Pro，Mate60 Pro+现在都已经正式开卖，不过由于没</td>
+<td>2127</td>
+<td>118</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>12</td>
+<td>华为mate60pro手感</td>
+<td>不知道为什么这么多人说手感不好，我觉得手感挺好的，圆润➕几乎直屏，正面看很像iphone8plus，手感也像，轻薄，唯独</td>
+<td>875</td>
+<td>231</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>13</td>
+<td>这是iPhone14 和华为mate50Pro辐射值对比</td>
+<td>经过官网查证无论是iPhone还是华为电磁辐射比吸收率符合国家标准GB21288-2007 的要求
+最后是iPhone </td>
+<td>60</td>
+<td>15</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>14</td>
+<td>苹果-华为-双持  第一天使用苹果15感受</td>
+<td>从iphone4开始使用苹果
+更新迭代好几届后
+到2020年换了华为mate40pro
+现在虽然又跟风买了个15
+但华为</td>
+<td>3</td>
+<td>10</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>15</td>
+<td>华为和苹果原相机自拍/华为赢很大？</td>
+<td>设备：华为mate60pro、苹果iPhone14pro
+地点：阴天傍晚车内
+图一：原相机直出（都是广角）
+图二：华为原</td>
+<td>1602</td>
+<td>687</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>16</td>
+<td>华为与苹果历年销量对比，你贡献了几台？</td>
+<td>[电影R] 华为与苹果历年出货量对比（供参考）
+🔝 期待明年华为手机重回巅峰！
+[集美R] 你用过哪一款手机？你觉得哪一</td>
+<td>256</td>
+<td>574</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>17</td>
+<td>苹果15换到华为Mate 60Pro后的真实感受</td>
+<td>哈喽大家好
+9月入手了iPhone15Pro后接着入手了华为Mate 60Pro，使用2个多月了
+现在给大家聊一聊使用感</td>
+<td>7549</td>
+<td>1116</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>18</td>
+<td>华为换苹果对比</td>
+<td>这是我21年从安卓换到苹果的时候，用了2️⃣个多月之后记的一些缺点 跟我不习惯的地方😂。但现在已经很习惯了哈，反而不太习</td>
+<td>2026</td>
+<td>296</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>19</td>
+<td>一表看懂手机巨头的品牌差异化</td>
+<td>苹果、华为、小米的品牌策略的不同点分解。
+	
+#品牌策划[话题]#  #品牌营销[话题]#  #苹果手机[话题]#  #</td>
+<td>1161</td>
+<td>2</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>20</td>
+<td>华为拍的很好看，但我还是喜欢苹果的live图！</td>
+<td>📱华为P60Art
+📱iPhone14Promax
+⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，手机用的是95新
+</td>
+<td>3227</td>
+<td>893</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>21</td>
+<td>华为和苹果，谁拍的发光🍊橘子海更有高级感？</td>
+<td>📱华为P60Art
+📱iPhone14Promax
+⚠️两款手机均用的原相机拍摄，没有调过任何参数，🈚滤镜，天气不是很好</td>
+<td>78</td>
+<td>154</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>22</td>
+<td>提升华为流畅度的隐藏功能，必须要知道！</td>
+<td>我的Mate40Rs升级华为鸿蒙4.0后，流畅度更明显了。如果再简单设置一下，还能再次提升流畅度！吊打其它安卓机！
+	
+</td>
+<td>311</td>
+<td>56</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>23</td>
+<td>华为和苹果拍照对比，我宣布苹果赢麻了！</td>
+<td>📱华为P60Art
+📱iPhone14Promax
+⚠️均为原相机直出效果，没有调过任何参数，🈚滤镜，手机用的是95新
+</td>
+<td>6432</td>
+<td>2343</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>24</td>
+<td>苹果15卡顿！</td>
+<td>今天我解决了15切换界面卡顿问题！
+首先我的是基础国行版八月份生产的，买来更新17.1之后就再也没有关过机（三个月），这</td>
+<td>1752</td>
+<td>559</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>25</td>
+<td>苹果内部设计为啥比安卓“好看”？</td>
+<td>最近有个小伙伴问我，为啥安卓旗舰的内部做工没有苹果看上去那么规整和舒服。
+其实，归根结底就是一句话——量产成本。苹果内部</td>
+<td>68</td>
+<td>206</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>26</td>
+<td>华为🆚苹果🆚vivo🆚OPPO，拍人像谁赢了？</td>
+<td>📱华为P60Art
+📱iPhone14Promax
+📱vivoX90Pro+
+📱OPPOFindX6Pro
+⚠️均为原相</td>
+<td>77</td>
+<td>7</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>27</td>
+<td>苹果和华为 为什么这内存差这么多</td>
+<td>都在一个区 一个安卓平台一个iOS平台（雀之羽）
+尼玛</td>
+<td>777</td>
+<td>716</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（716条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>28</td>
+<td>如果只能选一部手机……</td>
+<td>一直是iPhone深度用户，去年9月华为发布了60系列和X5，一直想支持一下，终于在年底购入X5典藏版一台，还搭配周边购</td>
+<td>423</td>
+<td>114</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>29</td>
+<td>给娃入手matepadair，开始体验。</td>
+<td>❤️今年过年时和朋友们聚餐，餐桌上几乎都是宝妈和奶爸，大家都是带着孩子来聚会的，平板电脑成为让孩子安静听话的神器，除了我</td>
+<td>894</td>
+<td>29</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>30</td>
+<td>手机买哪个品牌好❓3.8买前看完轻松拿捏🤏</td>
+<td>38就要来了‼️激动的心颤抖的手～等了大半年准备换新手机的友友们，一定要看这篇再决定[赞R]
+·
+这次给友友们总结了各个</td>
+<td>1952</td>
+<td>189</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>31</td>
+<td>十年果粉换华为，有什么区别？</td>
+<td>去年十月份 iPhone13pm换华为mate60pro至今有小半年了，深度对比了两部手机的体验（纯主观，不含一点客观[</td>
+<td>3040</td>
+<td>1807</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>32</td>
+<td>真的牛批！！让你的iPhone纵享丝滑~</td>
+<td>不知道你们的iPhone有没有用用就有点卡顿的情况
+	
+其实遇到这种情况最简单直接的解决办法就是关机重启一下【长按电源键</td>
+<td>975</td>
+<td>47</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>33</td>
+<td>华为和苹果二选一你们选哪个</td>
+<td>只想自留一个，给点建议吧</td>
+<td>33</td>
+<td>105</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>34</td>
+<td>采访一下大家坚持用苹果的原因是？</td>
+<td>昨天看到一个标题
+苹果会成为下一个诺基亚吗？
+	
+15系列份额不及14&13系列同期
+对比国内公司动不动首发功能或者新技</td>
+<td>224</td>
+<td>518</td>
+<td>苹果性能</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>35</td>
+<td>要不是苹果live图，我都忘了当时有多美了！</td>
+<td>📱iPhone14Promax
+📱华为P60Art
+⚠️均为原相机直出，没有调过任何参数，🈚滤镜，近距离放大拍摄效果，手</td>
+<td>3708</td>
+<td>909</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>36</td>
+<td>是谁华为换苹果后悔了</td>
+<td>真的好不习惯啊[哭惹R]想截图给朋友分享半天找不到截图，只能最原始的电源键➕音量键，长截图也没有，录屏也找不到[哭惹R]</td>
+<td>612</td>
+<td>433</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（433条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>37</td>
+<td>华为Mate60Pro真是越用越流畅！</td>
+<td>这台华为Mate60Pro我用了大概四个多月，一开始给我的感受是还不如我之前用的荣耀magic6至臻，但是随着鸿蒙的优化</td>
+<td>210</td>
+<td>108</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>38</td>
+<td>华为P70配置详解❗️纠结买哪个版本看这里🎯</td>
+<td>[自拍R]期待已久的华为P70终于来了！不对…以后该叫Pura系列了，外观迎来了大更新，迎来了新的麒麟芯片9010，尤其</td>
+<td>5189</td>
+<td>598</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>39</td>
+<td>有对比才有伤害</td>
+<td>最近打算换手机，身边的朋友有推荐华为的，也有推荐苹果的，纠结了，华为pura70 pro➕和iphone15promax</td>
+<td>2221</td>
+<td>4519</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>40</td>
+<td>苹果华为区别有多大，半年真实体验</td>
+<td>大家好华为苹果这两款巨头手机该怎么选呢？如果是以前毫不犹豫选择苹果，但是如今的鸿蒙系统已经崛起来了，我苹果手机已经用了好</td>
+<td>11</td>
+<td>6</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>41</td>
+<td>选哪个⁉️华为Pura 70顶配🆚iPhone 15顶配</td>
+<td>📱华为Pura 70系列昨天终于发了，别说，把华为 Pura 70、 70 Pro的镜头模组遮住，还挺“果里果气”，质感</td>
+<td>584</td>
+<td>42</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>42</td>
+<td>华为Pura70与Mate60系列不同点！</td>
+<td>华为Pura70 系列已经发布，小陈猜有不少对其感兴趣的伙伴也没抢到吧！
+	
+也有不少伙伴在 华为Pura70 系列与 </td>
+<td>2929</td>
+<td>477</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>43</td>
+<td>我替你们对比了，苹果拍照真的赢啊！</td>
+<td>🔳机型信息
+▪️苹果：15promax
+▪️华为：mate30 pro
+✔️拍室内，苹果真的赢！
+	
+🤔这两款是我的自用</td>
+<td>110</td>
+<td>45</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>44</td>
+<td>华为的信号真是一绝！
+虽然说苹果手机那么强大，但是一到爬山或者坐地铁人多的时候，信号还就是不行，断断</td>
+<td>华为的信号真是一绝！
+虽然说苹果手机那么强大，但是一到爬山或者坐地铁人多的时候，信号还就是不行，断断续续的一会有一会没有</td>
+<td>14</td>
+<td>1</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>45</td>
+<td>华为和苹果的区别</td>
+<td>1、图1/2是华为拍摄，3/4是苹果拍摄…
+华为永远拍不出那种真实感，终于知道朋友圈为什么很多食物看起来都好假了，他们可</td>
+<td>12</td>
+<td>10</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>46</td>
+<td>华为mate60pro卡顿问题</td>
+<td>求解
+元旦当天买的，刚上手只感觉手势截屏不灵敏
+最近越用越上头，打开网页，下载软件都转圈。
+	
+看到小红薯有提醒关闭高级</td>
+<td>11</td>
+<td>18</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>47</td>
+<td>换手机必看❗苹果和安卓谁更好用，优劣对比</td>
+<td>准备换手机的宝子们看过来，跟着果哥带你了解苹果和安卓两大手机系统谁更好用、各有哪些优势。
+	
+⏳️系统流畅
+苹果App只</td>
+<td>37</td>
+<td>5</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>48</td>
+<td>苹果与华为手机天气预报对比</td>
+<td>此时外面正在下雨，就看了一下苹果和华为手机的天气预报</td>
+<td>220</td>
+<td>296</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>49</td>
+<td>现在的有钱人，果然用苹果手机的越来越少了，反倒是很多国产高端旗舰手机，比如华为、小米、Vivo等，已</td>
+<td>现在的有钱人，果然用苹果手机的越来越少了，反倒是很多国产高端旗舰手机，比如华为、小米、Vivo等，已经成功得到了有钱人的</td>
+<td>638</td>
+<td>1346</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1346条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>50</td>
+<td>华为Pura70Ultra、iPhone15ProMax📷人像对比</td>
+<td>📱iPhone15  ProMax：
+太真实了，没有什么美颜的痕迹，不过在背景元素较多的场景里，很难凸显出人像的美，而且</td>
+<td>438</td>
+<td>245</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>51</td>
+<td>旭旭宝宝评价华为Mate 60 Pro，性能很一般</td>
+<td>华为Mate 60究竟如何？旭旭宝宝回复一针见血。
+	
+#数码资讯[话题]# #数码[话题]# #鸿蒙[话题]# #华为</td>
+<td>255</td>
+<td>1037</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>52</td>
+<td>以前安卓的时候每天开着流量,90个g完全不担心，从来没出现过流量不够用。
+自从换了苹果手机两个月，每</td>
+<td>以前安卓的时候每天开着流量,90个g完全不担心，从来没出现过流量不够用。
+自从换了苹果手机两个月，每个月多出来30 40</td>
+<td>22</td>
+<td>8</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>53</td>
+<td>你们的华为吃流量吗？</td>
+<td>自从2月底从苹果换了华为，
+3月份把累积流量用光，
+4月份流量超出，
+5月份现在流量已经过半，
+该设置的已经设置了呀，我</td>
+<td>3</td>
+<td>6</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>54</td>
+<td>华为换苹果后才发现</td>
+<td>1. 习惯了右手拿手机刷屏，右手随意滑一下就返回上一级。但苹果屏幕从右向左滑无法返回，只能从左向右滑或者点屏幕左上角才能</td>
+<td>5423</td>
+<td>1568</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>55</td>
+<td>苹果、华为、vivo人像对比‼️</td>
+<td>姐妹们，[抓狂R]千万别用vivo X100 Ultra质感模式拍人！
+本来以为vivo X100 Ultra拍人那还不</td>
+<td>8924</td>
+<td>698</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>56</td>
+<td>哪款手机寿命最长，有你的没？</td>
+<td>1.一般来说，苹果手机在系统优化和硬件质量方面会有较好表现，只要正常使用，一般能使用很长时间不坏。
+2.华为 Mate </td>
+<td>350</td>
+<td>186</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>57</td>
+<td>安卓转苹果，真想摔了砸了它的冲动，</td>
+<td>怎么会有那么难用的手机？？？还比其他手机贵，除了系统更流畅，其他全是反人类操作，连个返回键都没有，花钱买难受。给我的感觉</td>
+<td>1097</td>
+<td>1563</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>58</td>
+<td>iPhone15换华为Mate 60后的感受</td>
+<td>哈喽大家好，iPhone、华为一直都是手机界的扛把子，那么它们两个使用起来究竟有什么区别呢🔍我分为了6个点来讲
+-
+1️</td>
+<td>1033</td>
+<td>317</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>59</td>
+<td>吐槽华为考评比例</td>
+<td>以前：
+刚入职b及以下40%，干活的人多，都是同盟，大家都有成长空间,
+领导说你是B里靠前的，可以为你争取下，也是相信的</td>
+<td>149</td>
+<td>18</td>
+<td>华为稳定</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>60</td>
+<td>📱iPhone 16 Pro系列，预测更新汇总</td>
+<td>🚀搜集整理了关于iPhone 16 Pro系列的曝光和预测，预测更新如下：#你期待iPhone 16 Pro系列吗？ [</td>
+<td>19</td>
+<td>3</td>
+<td>苹果性能</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>61</td>
+<td>鸿蒙现在流畅的吓人</td>
+<td>用了小半年，现在最新系统，真就越更越流畅，比之前的iPhone13还要流畅，而且不杀后台，几乎无卡顿无掉帧，bug有但是</td>
+<td>64</td>
+<td>81</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>62</td>
+<td>华为手机关闭这8个设置手机丝滑飞起</td>
+<td>华为手机关闭这8个设置手机丝滑飞起
+新买的华为手机想想用着清爽不卡顿，这8个设置一定定要关闭❗️❗️❗️
+用好了就真的是</td>
+<td>771</td>
+<td>3</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>63</td>
+<td>苹果换华为一个月，我的感受是</td>
+<td>第一次用华为还担心需要适应一段时间，实际上上手几天已经习惯。把壁纸设成之前手机的壁纸，输入法都弄一样把挖孔隐藏掉再加上底</td>
+<td>1303</td>
+<td>413</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>64</td>
+<td>你觉得差距在哪？</td>
+<td>明明安卓手机的耐用性、功能性、拍照、流畅度都追上来很多了呀。
+#安卓手机[话题]# #数码科技[话题]# #一起聊数码[</td>
+<td>781</td>
+<td>6195</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>65</td>
+<td>苹果曝光了Insta360新款手机稳定器</td>
+<td>苹果WWDC24官方视频里出现了影石insta360还没发布的新款手机稳定器。
+[鼓掌R]
+这很可能是首款接入苹果Doc</td>
+<td>22</td>
+<td>11</td>
+<td>苹果稳定</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>66</td>
+<td>没有比较就没有伤害.....</td>
+<td>不得不说，这两款手机开屏后，感觉是真的好看[看R][看R]
+同样丰富多彩拥有层次感色彩的桌面，同样具有辨识度的前摄设计[</td>
+<td>464</td>
+<td>241</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>67</td>
+<td>用上纯血版鸿蒙Next了！简单谈几点感受</td>
+<td>在华为的体验区，简单上手了一下鸿蒙Next系统，时间紧张，来谈谈几点看法：
+📱如果你一直都是华为手机用户，那么切换到鸿蒙</td>
+<td>473</td>
+<td>226</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>68</td>
+<td>弯着的腰终于能直起来了吗</td>
+<td>自研手机系统这条路很难，但我们坚持走了十年…现在回想真觉得挺受气的，但我觉得鸿蒙next是一个很好的开始，期待中国科技下</td>
+<td>499</td>
+<td>642</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>69</td>
+<td>iPhone手机的缺点和优势！用苹果还是安卓？</td>
+<td>七月今天来和大家谈一下苹果手机的缺点和优势[蹲后续H]
+	
+这些都是我从前几年安卓转到iOS之后体会到的一部分，当然有不</td>
+<td>1057</td>
+<td>80</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>70</td>
+<td>华为的工程师们辛苦了，
+你们辛苦开发出来的鸿蒙系统用起来很流畅，建议德芙找你打广告。
+我的华为P70</td>
+<td>华为的工程师们辛苦了，
+你们辛苦开发出来的鸿蒙系统用起来很流畅，建议德芙找你打广告。
+我的华为P70已经升级到华为最新的</td>
+<td>746</td>
+<td>476</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>71</td>
+<td>没有比较就没有伤害，华为这方面真🐮</td>
+<td>你可以说华为芯片制程差，性能不行，但你不能说华为在通信方面差[看R][看R]
+手机最基础的功能做不好，那再强的性能也不搭</td>
+<td>333</td>
+<td>208</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>72</td>
+<td>现阶段华为鸿蒙系统真不如荣耀magicos</td>
+<td>荣耀换华为我后悔了，之前用的是荣耀magic5Pro，现在是pura70，就日常体验而已，系统的稳定性和丝滑度上，华为比</td>
+<td>711</td>
+<td>498</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>73</td>
+<td>苹果和华为微距拍摄，差距竟然这么大？</td>
+<td>📱iPhone14Promax
+📱华为Mate60RS
+⚠️均为原相机直出照片，均为微距模式拍出效果，🈚滤镜，自动对焦，</td>
+<td>4331</td>
+<td>2779</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>74</td>
+<td>苹果跟安卓的区别</td>
+<td>苹果手机的优势：
+- 系统流畅性：iOS 系统相对封闭，能较好地保证长期使用的流畅性。
+- 软件生态：拥有高质量且丰富的</td>
+<td>9</td>
+<td>0</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>75</td>
+<td>巨丝滑🔥iPhone这样设置爽到飞起</td>
+<td>用苹果手机的宝子都给我设置起来[赞R] 虽说iPhone系统很流畅，但用的时间久了免不了会因为各种原因卡顿，这样设置手机</td>
+<td>158</td>
+<td>5</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>76</td>
+<td>苹果手机卡顿、反应慢怎么办？</td>
+<td>用了快三年的iPhone13，现在卡得还不如老年机，操作点击延迟、反应慢、卡顿、闪退….
+	
+教你这样设置，不用换机 重</td>
+<td>9079</td>
+<td>890</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>77</td>
+<td>给华为换苹果的人的建议！！</td>
+<td>针对眼睛敏感人群，我是高度近视660轻微散光。
+华为MATE40换手机苹果15Pro Max
+使用习惯什么的都能克服，苹</td>
+<td>73</td>
+<td>77</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>78</td>
+<td>华为VS苹果</td>
+<td>换了新机，苹果转华为，在华为p70和m60之间犹豫，最后选了mate60pro。
+	
+使用一个星期，说说苹果和华为最大的</td>
+<td>202</td>
+<td>38</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>79</td>
+<td>苹果13pm换华为Pura70pro+</td>
+<td>2011年第一台苹果手机iPhone4到2021年的iPhone13promax，用了十几年的果子，第一次正式使用华为手</td>
+<td>201</td>
+<td>101</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>80</td>
+<td>没有对比..就没有伤害～？</td>
+<td>华为新老旗舰屏幕对比，这样一看，突然发现老旗舰含金量依旧还在，很香啊！[看R]
+看看这mate60Pro和mate20P</td>
+<td>753</td>
+<td>232</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>81</td>
+<td>mate40pro居然已经是四年前的手机了❗</td>
+<td>今天拿老爸换下的m40玩发现离首发居然快过去4年了❗
+	
+四年前8g＋麒麟9000的配置现在不打吃鸡啥的依然能流畅使用，</td>
+<td>823</td>
+<td>519</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>82</td>
+<td>清晰易懂！鸿蒙和安卓、ios有哪些区别？</td>
+<td>1、从架构层面来看，鸿蒙系统采用了分布式架构，这是其与安卓和 iOS 的显著不同之处。鸿蒙系统能够实现不同设备之间的无缝</td>
+<td>39</td>
+<td>0</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>83</td>
+<td>iPhone15用了几天，科技从业者需要iPhone吗</td>
+<td>[哇R]我是十几年的安卓老用户，因为单位白送了一部iPhone15，就尝试iPhone安卓一起用
+	
+[赞R]iPhon</td>
+<td>136</td>
+<td>29</td>
+<td>苹果流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>84</td>
+<td>各品牌手机优缺点汇总，建议收藏。
+1. 华为: 信号处于行业领先地位，系统优化好，缺点是硬件整体性能</td>
+<td>各品牌手机优缺点汇总，建议收藏。
+1. 华为: 信号处于行业领先地位，系统优化好，缺点是硬件整体性能不强。
+2. 小米:</td>
+<td>2029</td>
+<td>295</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>85</td>
+<td>用苹果13的姐妹们，最近手机卡顿吗？</td>
+<td>我先说，卡死了！！！
+天天卡死，点都点不动，巨发热！！
+切换app就给我清后台，真服了！！
+我内存还有100G呢，怎么会</td>
+<td>291</td>
+<td>1514</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>86</td>
+<td>华为苹果后置相机拍照对比，华为你怎么回事</td>
+<td>这次不看美颜什么的，拍摄设备：
+🔥华为Mate 60  Pro
+🔥苹果15 Pro
+分别是原相机拍照模式1.5X和1.2</td>
+<td>998</td>
+<td>1038</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>87</td>
+<td>旗舰钢炮华为p40pro+鸿蒙系统依然流畅当下</td>
+<td>p40pro 作为4年+的机器 质感依然很好，做工质感都不错，日常使用非常流程无卡顿，系统信号依然很稳</td>
+<td>22</td>
+<td>2</td>
+<td>华为流畅</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>88</td>
+<td>千万别买华为MatePad Air，不然你会后悔的</td>
+<td>💥华为 MatePad Air ，让你心动的平板💥
+✨家人们，今天我必须要跟你们分享一下华为 MatePad Air ，</td>
+<td>2331</td>
+<td>498</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>89</td>
+<td>苹果这么难用为啥还那么多人买 想不通</td>
+<td>谁能说点好处平复一下我的落差 看我截图上可怜的两格信号📶[哭惹R]
+	
+#iphone[话题]# #手机选购[话题]# </td>
+<td>182</td>
+<td>228</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>90</td>
+<td>从苹果换到华为一个月，我好像回不去了</td>
+<td>每年iPhone最难用的时候一定是夏天，三十多度的天气稍微玩玩就发烫降亮度，所以我最近几年虽然都是首发ProMax当做主</td>
+<td>302</td>
+<td>295</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>91</td>
+<td>华为手机卡顿的其中一种原因</td>
+<td>最近几天，本来丝滑流畅的华为手机，突然卡顿到像跳霹雳舞那个机器人的动作一样，一步一卡顿。手机管家清理了两三遍，没用；卸载</td>
+<td>5</td>
+<td>2</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>92</td>
+<td>苹果和华为10年后，谁会赢？</td>
+<td>#不懂就问有问必答[话题]# #手机分享[话题]# #科普[话题]# ##</td>
+<td>18</td>
+<td>174</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>93</td>
+<td>华为和苹果拍食物，华为拍的我有点不敢吃…</td>
+<td>📱华为Pura70Ultra6️⃣4️⃣5️⃣8️⃣
+📱iPhone14Promax5️⃣3️⃣8️⃣8️⃣
+⚠️测评手</td>
+<td>5522</td>
+<td>0</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>94</td>
+<td>💥一张图教会你选华为手机</td>
+<td>- 畅享系列：中低端入门系列，适合对手机需求不高且喜欢华为的长辈。
+- nova系列：中端系列，主打注重颜值、自拍的年轻</td>
+<td>964</td>
+<td>28</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>95</td>
+<td>iPhone卡顿重启方案</td>
+<td>第一步：打开辅助触控（打开后会有一个圆悬浮球，可以进一步设置透明度）。
+第二步：点击悬浮球，点击➀设备→➁更多→➂重新启</td>
+<td>509</td>
+<td>16</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>96</td>
+<td>十年果粉🍎入手华为｜换机适应期真实感受</td>
+<td>作为iPhone十多年的忠实用户，一朝改投遥遥领先的怀抱，我纠结了很久，华为系统跟苹果系统有很多的不同，用惯苹果的我能适</td>
+<td>565</td>
+<td>599</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>97</td>
+<td>一直用苹果，想换华为，用过的给个建议，继续苹果还是华为</td>
+<td>一直用苹果，想换华为，用过的给个建议，继续苹果还是华为</td>
+<td>23</td>
+<td>167</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>98</td>
+<td>不用熬夜看苹果发布会9to5Mac已经全部剧透</td>
+<td>iPhone 16系列来袭，屏幕大升级，AI功能炸裂！📱✨
+	
+Hey小伙伴们，苹果的秋季发布会又要来了！🍎🎉 根据最新</td>
+<td>19</td>
+<td>26</td>
+<td>苹果性能</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>99</td>
+<td>选华为还是选苹果❓买对不买贵❗</td>
+<td>华为和苹果都上了新款，很多小伙伴纠结该选华为MatePad Air还是iPad Air 6呢？今天Make就给大家盘一盘</td>
+<td>1512</td>
+<td>408</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="related-row" data-category="related">
+<td>100</td>
+<td>从iPhone换到华为 很明显的感受❗️</td>
+<td>①信号变好了✅
+之前苹果微信有延迟，一直转圈圈，华为微信发消息这些没有延迟🔥在地铁里面信号也不错，像平时经常去户外运动，</td>
+<td>543</td>
+<td>30</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-related">✅ 相关</span></td>
+<td>涉及华为/苹果手机</td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>101</td>
+<td>60hz真的是苹果最骄傲的艺术</td>
+<td>不然为什么这么多年过去了，iPhone还在使用60hz。
+有理由相信苹果是真的觉得自己的60hz是伟大的艺术。
+#app</td>
+<td>820</td>
+<td>782</td>
+<td>苹果流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（782条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>102</td>
+<td>苹果15转华为p70p</td>
+<td>很多年前用过华为nova系列，也不是什么高端机，给小孩拍照一直都发白发灰不知道为什么，这次实在是因为苹果网络太差的问题换</td>
+<td>975</td>
+<td>437</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（437条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>103</td>
+<td>华为的信号真的比苹果信号好吗？</td>
+<td>#不懂就问有问必答[话题]# #玩机技巧[话题]# #数码资讯[话题]# #华为[话题]# #苹果16[话题]# #华为</td>
+<td>46</td>
+<td>455</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（455条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>104</td>
+<td>为什么苹果的溢价那么多人愿意买单？芯片厉害归厉害但是性能释放不出来先进的芯片又有什么用？#智能手机[</td>
+<td>为什么苹果的溢价那么多人愿意买单？芯片厉害归厉害但是性能释放不出来先进的芯片又有什么用？#智能手机[话题]# #苹果[话</td>
+<td>62</td>
+<td>962</td>
+<td>苹果性能</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（962条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>105</td>
+<td>华为VS苹果别纠结了直接看吧</td>
+<td>图二 华为原相机
+图三 苹果原相机#化妆[话题]# #无滤镜化妆[话题]# #日常妆容打卡[话题]# #手机分享[话题]</td>
+<td>4698</td>
+<td>1458</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1458条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>106</td>
+<td>pura70pro升级鸿蒙next了</td>
+<td>纵享丝滑，目前对于我而言还有10个未上架应用，但有备用机，不影响日常使用，就不打算回退了
+期待明天发布会不知道会不会推正</td>
+<td>244</td>
+<td>624</td>
+<td>华为流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（624条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>107</td>
+<td>弱弱的问一句华为这配置为什么能卖一万多啊</td>
+<td></td>
+<td>384</td>
+<td>2150</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（2150条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>108</td>
+<td>华为 VS 苹果，历年销量对比！</td>
+<td>华为触底反弹，轻舟已过万重山！
+﻿#华为[话题]#﻿ ﻿#华为手机[话题]#﻿ ﻿#iPhone[话题]#﻿ ﻿#苹果手</td>
+<td>280</td>
+<td>1052</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1052条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>109</td>
+<td>买华为还是苹果，好纠结#iPhone[话题]# #华为[话题]#</td>
+<td>买华为还是苹果，好纠结#iPhone[话题]# #华为[话题]#</td>
+<td>139</td>
+<td>863</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（863条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>110</td>
+<td>不服来辩</td>
+<td>苹果就是比安卓流畅，不服来辩</td>
+<td>62</td>
+<td>721</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（721条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>111</td>
+<td>华为mate60pro～</td>
+<td>好喜欢我的手机[害羞R]</td>
+<td>1179</td>
+<td>384</td>
+<td>华为流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（384条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>112</td>
+<td>以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆！</td>
+<td>以前用安卓机的时候，其他人都说苹果用久了不会卡。等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆！</td>
+<td>153</td>
+<td>520</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（520条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>113</td>
+<td>感觉华为比苹果好太多了</td>
+<td>感觉华为比苹果好太多了</td>
+<td>336</td>
+<td>1001</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1001条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>114</td>
+<td>华为P70和iPhone15有对比才有伤害！</td>
+<td>华为P70和iPhone15都是上一代的旗舰，价格来说华为便宜一点，性能来说苹果好一些，纠结选择哪一款。
+#鸿蒙[话题]</td>
+<td>707</td>
+<td>340</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（340条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>115</td>
+<td>苹果换了华为以后，心态崩了，苹果15pormax 换成华为70非凡大师，用了三天直接不想用了，没有苹</td>
+<td>苹果换了华为以后，心态崩了，苹果15pormax 换成华为70非凡大师，用了三天直接不想用了，没有苹果反应快，还会死机，</td>
+<td>178</td>
+<td>1290</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1290条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>116</td>
+<td>快来看看华为员工都在用什么手机</td>
+<td>快来看看华为员工都在用什么手机</td>
+<td>1790</td>
+<td>402</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（402条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>117</td>
+<td>苹果换安卓使用一天的感受，没苦硬吃</td>
+<td>苹果换安卓使用一天的感受，没苦硬吃</td>
+<td>170</td>
+<td>919</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（919条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>118</td>
+<td>华为最新的pura这配置敢卖一万？</td>
+<td>#华为[话题]##华为pura[话题]#</td>
+<td>174</td>
+<td>1480</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1480条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>119</td>
+<td>只有我一个人觉得升级后的鸿蒙好用么？既有iOS的丝滑，又有安卓的功能强大
+目前使用第二天，出乎意料的</td>
+<td>只有我一个人觉得升级后的鸿蒙好用么？既有iOS的丝滑，又有安卓的功能强大
+目前使用第二天，出乎意料的满意，之前还很担心，</td>
+<td>142</td>
+<td>315</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（315条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>120</td>
+<td>为什么都说苹果手机不会卡，可我的经常卡🫠</td>
+<td>为什么都说苹果手机不会卡，可我的经常卡🫠</td>
+<td>172</td>
+<td>1810</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1810条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>121</td>
+<td>华为设计师沉浸在自己的艺术里</td>
+<td>比例好奇怪啊，合上也奇怪，打开也奇怪🤔#折叠屏[话题]# #遥遥领先式[话题]# #华为手机[话题]#</td>
+<td>1431</td>
+<td>1027</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1027条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>122</td>
+<td>鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#华为[话题]##鸿蒙[话题]##</td>
+<td>鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了#华为[话题]##鸿蒙[话题]##</td>
+<td>78</td>
+<td>734</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（734条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>123</td>
+<td>华为P80 pro吐吐为快😡系统一言难尽</td>
+<td></td>
+<td>397</td>
+<td>698</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（698条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>124</td>
+<td>同价位，你选择苹果还是华为[坏笑R]</td>
+<td>同价位，你选择苹果还是华为[坏笑R]</td>
+<td>18</td>
+<td>583</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（583条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>125</td>
+<td>为什么iPhone的实况要比安卓的实况流畅很多，苹果的实况帧率感觉有60帧，安卓的顶多20-30帧</td>
+<td>为什么iPhone的实况要比安卓的实况流畅很多，苹果的实况帧率感觉有60帧，安卓的顶多20-30帧</td>
+<td>808</td>
+<td>4205</td>
+<td>苹果流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（4205条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>126</td>
+<td>为什么同样的机身尺寸，安卓可以塞入 6000 毫安时的电池，苹果却只能用 4500 毫安时的？🤔</td>
+<td>为什么同样的机身尺寸，安卓可以塞入 6000 毫安时的电池，苹果却只能用 4500 毫安时的？🤔</td>
+<td>45</td>
+<td>697</td>
+<td>苹果性能</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（697条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>127</td>
+<td>目前华为评分最高的8款手机</td>
+<td>#数码大玩家[话题]#</td>
+<td>523</td>
+<td>361</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（361条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>128</td>
+<td>旗舰手机哪个最好看？</td>
+<td>这么一对比，iPhone 17依然是眉清目秀[偷笑R]
+	
+#iphone[话题]# #iphone17[话题]# #旗</td>
+<td>261</td>
+<td>893</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（893条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>129</td>
+<td>原来mate60和iPhone17 pro才是绝配
+#iPhone17[话题]#</td>
+<td>原来mate60和iPhone17 pro才是绝配
+#iPhone17[话题]#</td>
+<td>899</td>
+<td>595</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（595条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>130</td>
+<td>这是我用过最难用的手机</td>
+<td>#华为purax[话题]# 我一度以为我用的是一个好几年的手机，很卡，打开个微信图片都要几秒钟…偶尔还会死机～一个经常让</td>
+<td>90</td>
+<td>618</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（618条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>131</td>
+<td>为什么最近苹果系统卡没人骂，小米系统稍稍有一点卡就被骂惨</td>
+<td>为什么最近苹果系统卡没人骂，小米系统稍稍有一点卡就被骂惨</td>
+<td>93</td>
+<td>1951</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1951条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>132</td>
+<td>你们觉得苹果有啥特殊的优点吗[微笑R]，刚从安卓转苹果感觉好难用#iPhone17[话题]#</td>
+<td>你们觉得苹果有啥特殊的优点吗[微笑R]，刚从安卓转苹果感觉好难用#iPhone17[话题]#</td>
+<td>299</td>
+<td>2432</td>
+<td>苹果丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（2432条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>133</td>
+<td>还是换回苹果了</td>
+<td>还是换回苹果了</td>
+<td>2251</td>
+<td>1928</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1928条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>134</td>
+<td>苹果手机不卡顿的原理是什么？是因为它经常定期清理缓存吗？不太理解</td>
+<td>苹果手机不卡顿的原理是什么？是因为它经常定期清理缓存吗？不太理解</td>
+<td>501</td>
+<td>1809</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1809条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>135</td>
+<td>iPhone17 深度使用一个月</td>
+<td>随便问#iphone小技巧[话题]# #手机分享[话题]# #iPhone17[话题]#</td>
+<td>1281</td>
+<td>992</td>
+<td>苹果稳定</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（992条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>136</td>
+<td>华为和苹果的Air哪个更有诚意啊？</td>
+<td>#华为[话题]# #数码大玩家[话题]# #红薯地新鲜事[话题]# #Mate70air海报曝光[话题]# @热点薯</td>
+<td>99</td>
+<td>812</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（812条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>137</td>
+<td>果粉换华为的一些对比</td>
+<td></td>
+<td>138</td>
+<td>401</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（401条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>138</td>
+<td>华为用户转用iPhone 一个月的痛苦</td>
+<td>#手机体验感[话题]# #iphone小技巧[话题]# #智能手机[话题]# #玩机攻略[话题]# #华为手机[话题]#</td>
+<td>458</td>
+<td>762</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（762条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>139</td>
+<td>苹果手机比华为耐用不接受反驳！</td>
+<td>苹果比华为耐用！用了这么多年手机，真心觉得苹果的 “抗造度” 和 “长期流畅度” 更能打。
+#苹果[话题]# #华为[话</td>
+<td>36</td>
+<td>472</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（472条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>140</td>
+<td>华为的品质，对得起遥遥领先四个大字！</td>
+<td>如题[暗中观察R]</td>
+<td>24</td>
+<td>301</td>
+<td>华为流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（301条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>141</td>
+<td>为什么会有人认为华为比苹果好？是信仰吗</td>
+<td>为什么会有人认为华为比苹果好？是信仰吗</td>
+<td>8</td>
+<td>397</td>
+<td>华为和苹果性能对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（397条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>142</td>
+<td>我一直以为 iPhone 强在性能，用了才发现根</td>
+<td>#iphone[话题]##苹果手机[话题]##真实使用体验[话题]#</td>
+<td>185</td>
+<td>436</td>
+<td>苹果流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（436条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>143</td>
+<td>手感超级好...</td>
+<td>华为 MatePad Mini，准备当手机用了 #华为MatePadMin[话题]# #数码大玩家[话题]#</td>
+<td>912</td>
+<td>593</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（593条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>144</td>
+<td>你选左边还是右边</td>
+<td>#华为手机[话题]# #华为mate80promax[话题]# #华为Pura80UItra[话题]# #选哪个[话题]</td>
+<td>458</td>
+<td>341</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（341条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>145</td>
+<td>为什么鸿蒙纯性能超越ios，满血鸿蒙优化到底有多恐怖
+#华为[话题]# #鸿蒙[话题]# #手机体验</td>
+<td>为什么鸿蒙纯性能超越ios，满血鸿蒙优化到底有多恐怖
+#华为[话题]# #鸿蒙[话题]# #手机体验感[话题]# #io</td>
+<td>26</td>
+<td>322</td>
+<td>华为流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（322条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>146</td>
+<td>华为NPU昇腾芯片是否属于重大战略方向性失误，应该选择GPGPU，导致CANN软件栈面临作废状态？
+</td>
+<td>华为NPU昇腾芯片是否属于重大战略方向性失误，应该选择GPGPU，导致CANN软件栈面临作废状态？
+#互联网大厂[话题]</td>
+<td>256</td>
+<td>335</td>
+<td>华为性能</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（335条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>147</td>
+<td>为什么很多人冲华为，但很少有人冲大疆？
+#互联网大厂[话题]# #大厂[话题]# #鸿蒙[话题]# </td>
+<td>为什么很多人冲华为，但很少有人冲大疆？
+#互联网大厂[话题]# #大厂[话题]# #鸿蒙[话题]# #华为[话题]#</td>
+<td>82</td>
+<td>719</td>
+<td>华为稳定</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（719条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>148</td>
+<td>用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了</td>
+<td>用了几天华为mate70pro+，待机和流畅都不行，换回苹果了，不折腾了</td>
+<td>64</td>
+<td>901</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（901条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>149</td>
+<td>是我的错觉吗没有觉得苹果很好用</td>
+<td>之前没有用过苹果，所以一直很想要，但是买了用了之后发现没有我想象中的好用[叹气R]还是说我用的是基础版的本身就不行#新手</td>
+<td>3676</td>
+<td>1537</td>
+<td>苹果丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1537条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>150</td>
+<td>大胆猜测，现阶段包括后面加入华为的应届生，发展会越来越差，进华为的性价比越来越低了</td>
+<td>大胆猜测，现阶段包括后面加入华为的应届生，发展会越来越差，进华为的性价比越来越低了</td>
+<td>710</td>
+<td>404</td>
+<td>华为稳定</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（404条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>151</td>
+<td>买这手机真的会被人瞧不起吗</td>
+<td>但真的挺好用阿#国产手机 #华为手机 #mate80promax</td>
+<td>111</td>
+<td>373</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（373条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>152</td>
+<td>华为 实况图你就是这么定格的吗</td>
+<td></td>
+<td>3056</td>
+<td>1085</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1085条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>153</td>
+<td>华为Mate90芯片会是5nm吗？</td>
+<td>#芯片[话题]# #华为手机[话题]# #euv光刻机[话题]#</td>
+<td>92</td>
+<td>643</td>
+<td>华为性能</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（643条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>154</td>
+<td>我怎么感觉更新ios26.4后如此丝滑…#ios[话题]# #苹果系统更新[话题]#</td>
+<td>我怎么感觉更新ios26.4后如此丝滑…#ios[话题]# #苹果系统更新[话题]#</td>
+<td>712</td>
+<td>1310</td>
+<td>苹果丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1310条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>155</td>
+<td>4.1号，华为 Last day👋</td>
+<td>感恩相遇，江湖再见🤗
+#华为离职人[话题]# #华为海思[话题]#</td>
+<td>260</td>
+<td>333</td>
+<td>华为稳定</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（333条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>156</td>
+<td>华为手机真的有那么差吗，为什么那么多人都在黑华为，说华为各种不好？#鸿蒙[话题]# #国产手机[话题</td>
+<td>华为手机真的有那么差吗，为什么那么多人都在黑华为，说华为各种不好？#鸿蒙[话题]# #国产手机[话题]#</td>
+<td>20</td>
+<td>462</td>
+<td>华为流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（462条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>157</td>
+<td>为什么现在不说华为系统卡不卡了，都说华为能不能打不打游戏这个事了[汗颜R]#手机操作系统[话题]# </td>
+<td>为什么现在不说华为系统卡不卡了，都说华为能不能打不打游戏这个事了[汗颜R]#手机操作系统[话题]# #鸿蒙[话题]# #</td>
+<td>176</td>
+<td>1630</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1630条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>158</td>
+<td>是谁说的iPhone用四五年都不卡呀，我用了两年多都开始卡了[失望R]</td>
+<td>是谁说的iPhone用四五年都不卡呀，我用了两年多都开始卡了[失望R]</td>
+<td>39</td>
+<td>1034</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1034条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>159</td>
+<td>华为和苹果都用过的宝子们？你觉得鸿蒙6的流畅度达到iOS水平了吗？#安卓和苹果[话题]# #鸿蒙[话</td>
+<td>华为和苹果都用过的宝子们？你觉得鸿蒙6的流畅度达到iOS水平了吗？#安卓和苹果[话题]# #鸿蒙[话题]#</td>
+<td>35</td>
+<td>509</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（509条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>160</td>
+<td>华为到底卡不卡🙈</td>
+<td>#华为[话题]# #华为手机[话题]# #鸿蒙[话题]#
+同个型号不同使用感受
+一个入坑一个退坑😐</td>
+<td>81</td>
+<td>2528</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（2528条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>161</td>
+<td>三选一大伙是三星还是苹果还是华为</td>
+<td>阔折叠三选一大伙选哪个？
+我自己是觉得要是阔折叠后置摄像头居中和信号用华为的，框架和屏幕用三星的，系统没广告和录视频防抖</td>
+<td>114</td>
+<td>535</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（535条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>162</td>
+<td>没别的意思，纯穷鬼吐槽罢了</td>
+<td>#真是被自己穷笑了[话题]# #华为手机[话题]# #华为pura90[话题]#</td>
+<td>467</td>
+<td>1931</td>
+<td>华为性能</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1931条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>163</td>
+<td>我艹，鸿蒙6.1太丝滑了吧，反应不过来了，太快了</td>
+<td>我艹，鸿蒙6.1太丝滑了吧，反应不过来了，太快了</td>
+<td>171</td>
+<td>703</td>
+<td>华为丝滑</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（703条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>164</td>
+<td>抄袭</td>
+<td>苹果为啥最终要抄袭华为的折叠屏？</td>
+<td>25</td>
+<td>422</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（422条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>165</td>
+<td>极限二选一，选哪个？</td>
+<td>和老闺的#极限二选一[话题]# #艰难的选择[话题]# #二选一[话题]# #iPhone17pro[话题]# #小米1</td>
+<td>4214</td>
+<td>1506</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（1506条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>166</td>
+<td>离职前想认识一些有趣的人</td>
+<td>欢迎交流 这是我奋斗过的地方
+#华为[话题]# #主动离职[话题]# #华为人[话题]#</td>
+<td>978</td>
+<td>763</td>
+<td>华为稳定</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（763条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>167</td>
+<td>华为的鸿蒙系统比苹果还流畅了？</td>
+<td>有没有华为和苹果都用过的，解答一下</td>
+<td>59</td>
+<td>561</td>
+<td>华为和苹果流畅度对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（561条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>168</td>
+<td>Pura Xmax 大阔还是忍不住拿下了</td>
+<td>80rs用了4个月，见到大阔折叠还是没忍住，太帅了
+不过还是有点可惜
+帅是真的帅，不过屏幕透亮度的确没发跟80rs比
+不</td>
+<td>1552</td>
+<td>783</td>
+<td>华为和苹果稳定性对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（783条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>169</td>
+<td>再选一次 HUAWEI还是iPhone</td>
+<td>有没有都体验过的来从多角度客观评价一下两款手机的系统流畅和拍摄方面
+#智能手机[话题]# #安卓和苹果[话题]# #鸿蒙</td>
+<td>112</td>
+<td>391</td>
+<td>华为流畅</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（391条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>170</td>
+<td>受不了了</td>
+<td>下个办公软件要一百个补丁……#鸿蒙[话题]#</td>
+<td>88</td>
+<td>566</td>
+<td>华为和苹果卡顿对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（566条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>171</td>
+<td>苹果准备换华为</td>
+<td>苹果准备换华为
+求骂醒</td>
+<td>256</td>
+<td>2820</td>
+<td>华为和苹果丝滑对比</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（2820条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>172</td>
+<td>iOS26.5 实测｜15PM养老版实锤</td>
+<td></td>
+<td>333</td>
+<td>770</td>
+<td>苹果卡顿</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（770条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+<tr class="discussion-row" data-category="discussion">
+<td>173</td>
+<td>华为为什么还没有开发出来</td>
+<td>华为为什么在投入如此巨大的情况下，却没有开发出来可用的通用大语言模型？
+#大厂[话题]# #互联网大厂[话题]# #鸿蒙</td>
+<td>87</td>
+<td>527</td>
+<td>华为稳定</td>
+<td><span class="badge badge-discussion">💬 讨论帖</span></td>
+<td>涉及华为/苹果手机</td>
+</tr><tr class="discussion-row" data-category="discussion">
+<td colspan="8" style="padding:0;border:none;"><div class="discussion-hint"><strong>💡 建议深挖：</strong>该帖子标题有讨论引子但正文内容较短，评论数高（527条），评论区可能蕴含大量UGC。</div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+<div class="card">
+<h2>📊 无关内容分析</h2>
+<div class="chart-container" style="max-width:500px;"><canvas id="unrelatedChart"></canvas></div>
+</div>
+
+</div>
+
+<script>
+// 趋势图
+var trendCtx = document.getElementById('trendChart').getContext('2d');
+var trendData = [{"center": 50, "ratio": 0.94, "related": 94, "total": 100}, {"center": 100, "ratio": 0.96, "related": 96, "total": 100}, {"center": 150, "ratio": 0.92, "related": 92, "total": 100}, {"center": 200, "ratio": 0.91, "related": 91, "total": 100}, {"center": 250, "ratio": 0.95, "related": 95, "total": 100}, {"center": 300, "ratio": 0.93, "related": 93, "total": 100}, {"center": 350, "ratio": 0.88, "related": 88, "total": 100}, {"center": 400, "ratio": 0.88, "related": 88, "total": 100}, {"center": 450, "ratio": 0.89, "related": 89, "total": 100}, {"center": 500, "ratio": 0.85, "related": 85, "total": 100}, {"center": 550, "ratio": 0.81, "related": 81, "total": 100}, {"center": 600, "ratio": 0.83, "related": 83, "total": 100}, {"center": 650, "ratio": 0.88, "related": 88, "total": 100}, {"center": 700, "ratio": 0.87, "related": 87, "total": 100}, {"center": 750, "ratio": 0.87, "related": 87, "total": 100}, {"center": 800, "ratio": 0.91, "related": 91, "total": 100}, {"center": 850, "ratio": 0.91, "related": 91, "total": 100}, {"center": 900, "ratio": 0.88, "related": 88, "total": 100}, {"center": 950, "ratio": 0.88, "related": 88, "total": 100}, {"center": 1000, "ratio": 0.88, "related": 88, "total": 100}, {"center": 1050, "ratio": 0.91, "related": 91, "total": 100}, {"center": 1100, "ratio": 0.9, "related": 90, "total": 100}, {"center": 1150, "ratio": 0.79, "related": 79, "total": 100}, {"center": 1200, "ratio": 0.79, "related": 79, "total": 100}, {"center": 1250, "ratio": 0.82, "related": 82, "total": 100}, {"center": 1300, "ratio": 0.87, "related": 87, "total": 100}, {"center": 1350, "ratio": 0.87, "related": 87, "total": 100}, {"center": 1400, "ratio": 0.88, "related": 88, "total": 100}, {"center": 1450, "ratio": 0.93, "related": 93, "total": 100}, {"center": 1500, "ratio": 0.88, "related": 88, "total": 100}, {"center": 1550, "ratio": 0.87, "related": 87, "total": 100}, {"center": 1600, "ratio": 0.86, "related": 86, "total": 100}, {"center": 1650, "ratio": 0.83, "related": 83, "total": 100}, {"center": 1700, "ratio": 0.79, "related": 79, "total": 100}, {"center": 1750, "ratio": 0.76, "related": 76, "total": 100}, {"center": 1800, "ratio": 0.84, "related": 84, "total": 100}, {"center": 1850, "ratio": 0.85, "related": 85, "total": 100}];
+new Chart(trendCtx, {
+    type: 'line',
+    data: {
+        labels: trendData.map(function(d) { return d.center; }),
+        datasets: [{
+            label: '相关率',
+            data: trendData.map(function(d) { return (d.ratio * 100).toFixed(1); }),
+            borderColor: '#ff2442',
+            backgroundColor: 'rgba(255,36,66,0.1)',
+            fill: true,
+            tension: 0.3,
+            pointRadius: 3
+        }]
+    },
+    options: {
+        responsive: true,
+        scales: {
+            x: { title: { display: true, text: '入库顺序（帖子序号）' } },
+            y: { title: { display: true, text: '相关率（%）' }, min: 60, max: 100 }
+        },
+        plugins: {
+            tooltip: {
+                callbacks: {
+                    label: function(ctx) {
+                        var d = trendData[ctx.dataIndex];
+                        return '相关: ' + d.related + '/' + d.total + ' (' + ctx.parsed.y + '%)';
+                    }
+                }
+            }
+        }
+    }
+});
+
+// 无关内容饼图
+var unrelatedCtx = document.getElementById('unrelatedChart').getContext('2d');
+new Chart(unrelatedCtx, {
+    type: 'doughnut',
+    data: {
+        labels: ['未提及华为/苹果手机', '纯非手机产品', '非手机产品（正文提及）', '内容过短/空'],
+        datasets: [{
+            data: [121, 81, 41, 4],
+            backgroundColor: ['#ff7043', '#ab47bc', '#42a5f5', '#bdbdbd']
+        }]
+    },
+    options: {
+        responsive: true,
+        plugins: {
+            legend: { position: 'bottom' }
+        }
+    }
+});
+
+// 筛选功能
+function filterTable(category) {
+    var rows = document.querySelectorAll('#tableBody tr');
+    var buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(function(btn) { btn.classList.remove('active'); });
+    event.target.classList.add('active');
+    
+    rows.forEach(function(row) {
+        if (category === 'all') {
+            row.style.display = '';
+        } else {
+            row.style.display = row.getAttribute('data-category') === category ? '' : 'none';
+        }
+    });
+}
+
+// 搜索功能
+function searchTable() {
+    var input = document.getElementById('searchInput').value.toLowerCase();
+    var rows = document.querySelectorAll('#tableBody tr');
+    rows.forEach(function(row) {
+        var text = row.innerText.toLowerCase();
+        row.style.display = text.indexOf(input) > -1 ? '' : 'none';
+    });
+}
+</script>
+</body>
+</html>

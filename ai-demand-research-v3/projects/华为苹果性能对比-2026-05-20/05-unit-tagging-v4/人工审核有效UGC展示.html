@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华为苹果性能对比 - 人工审核有效UGC分类汇总</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: #f5f5f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        /* 统计概览 */
+        .stats-overview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        .stat-card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .stat-card .number {
+            font-size: 36px;
+            font-weight: bold;
+            color: #007aff;
+        }
+        .stat-card .label {
+            color: #666;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        
+        /* 一级标签卡片 */
+        .primary-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .primary-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .primary-title {
+            font-size: 22px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .primary-badge {
+            background: #007aff;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .primary-stats {
+            display: flex;
+            gap: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .primary-stats span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .primary-stats .highlight {
+            color: #007aff;
+            font-weight: bold;
+        }
+        
+        /* 二级标签 */
+        .secondary-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 15px;
+        }
+        .secondary-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 15px;
+            border-left: 4px solid #007aff;
+        }
+        .secondary-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .secondary-title {
+            font-weight: bold;
+            font-size: 16px;
+        }
+        .secondary-count {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 2px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+        }
+        
+        /* 内容项 */
+        .content-list {
+            margin-top: 10px;
+        }
+        .content-item {
+            background: white;
+            border-radius: 8px;
+            padding: 12px;
+            margin-bottom: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .content-summary {
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+        .content-tags {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 6px;
+            flex-wrap: wrap;
+        }
+        .content-tag {
+            background: #fff3e0;
+            color: #e65100;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        .content-tag.sub {
+            background: #e8f5e9;
+            color: #2e7d32;
+        }
+        .content-example {
+            color: #555;
+            font-size: 13px;
+            line-height: 1.5;
+            background: #fafafa;
+            padding: 8px;
+            border-radius: 6px;
+            border-left: 3px solid #ddd;
+        }
+        .content-example .brand-huawei {
+            color: #cf0a2c;
+            font-weight: 600;
+        }
+        .content-example .brand-apple {
+            color: #007aff;
+            font-weight: 600;
+        }
+        
+        /* 仅提及提示 */
+        .mentioned-only {
+            color: #999;
+            font-style: italic;
+            font-size: 13px;
+            padding: 8px;
+            background: #f5f5f5;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        /* 筛选器 */
+        .filter-bar {
+            background: white;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .filter-label {
+            font-weight: 600;
+            color: #333;
+        }
+        .filter-btn {
+            padding: 6px 16px;
+            border: 1px solid #ddd;
+            background: white;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+        .filter-btn:hover, .filter-btn.active {
+            background: #007aff;
+            color: white;
+            border-color: #007aff;
+        }
+        
+        /* 分类说明 */
+        .logic-section {
+            background: white;
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        .logic-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #1d1d1f;
+        }
+        .logic-content {
+            color: #555;
+            line-height: 1.8;
+        }
+        .logic-content ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .logic-content li {
+            margin-bottom: 8px;
+        }
+        .logic-content .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: 600;
+        }
+        
+        /* 颜色主题 */
+        .theme-smooth { --primary-color: #4caf50; }
+        .theme-lag { --primary-color: #f44336; }
+        .theme-stable { --primary-color: #2196f3; }
+        
+        .theme-smooth .primary-badge,
+        .theme-smooth .secondary-card { border-left-color: #4caf50; }
+        .theme-smooth .stat-card .number,
+        .theme-smooth .filter-btn.active { color: #4caf50; }
+        .theme-smooth .filter-btn.active { background: #4caf50; border-color: #4caf50; color: white; }
+        
+        .theme-lag .primary-badge,
+        .theme-lag .secondary-card { border-left-color: #f44336; }
+        .theme-lag .stat-card .number,
+        .theme-lag .filter-btn.active { color: #f44336; }
+        .theme-lag .filter-btn.active { background: #f44336; border-color: #f44336; color: white; }
+        
+        .theme-stable .primary-badge,
+        .theme-stable .secondary-card { border-left-color: #2196f3; }
+        .theme-stable .stat-card .number,
+        .theme-stable .filter-btn.active { color: #2196f3; }
+        .theme-stable .filter-btn.active { background: #2196f3; border-color: #2196f3; color: white; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 华为苹果性能对比 - 人工审核有效UGC分类汇总</h1>
+        <p class="subtitle">基于人工审核，筛选出有信息量的UGC内容，按一级标签（丝滑流畅/卡顿/稳定性）和二级标签（场景/功能）分类展示</p>
+        
+        <!-- 统计概览 -->
+        <div class="stats-overview">
+            <div class="stat-card">
+                <div class="number">383</div>
+                <div class="label">有效UGC总数</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">83</div>
+                <div class="label">有信息量（展开）</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">300</div>
+                <div class="label">仅提及</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">21.7%</div>
+                <div class="label">信息密度</div>
+            </div>
+        </div>
+        
+        <!-- 分类逻辑说明 -->
+        <div class="logic-section">
+            <div class="logic-title">🧠 人工审核逻辑</div>
+            <div class="logic-content">
+                <p><strong>筛选标准：</strong>从全部UGC中人工筛选出"有信息量"的内容，排除以下类型：</p>
+                <ul>
+                    <li><span class="highlight">仅提及</span>：只提到"流畅""卡顿"等词，但没有具体场景、功能或体验的展开描述（如"华为很流畅""苹果有点卡"）</li>
+                    <li><span class="highlight">无具体指向</span>：没有说明是哪个品牌、哪个场景、哪个功能出现的问题或优势</li>
+                    <li><span class="highlight">重复/冗余</span>：同一用户在同一帖子中的重复表达</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>分类维度：</strong></p>
+                <ul>
+                    <li><strong>一级标签</strong>：丝滑流畅 / 卡顿 / 稳定性（单分类）</li>
+                    <li><strong>二级标签</strong>：系统 / 长期使用 / 日常使用 / 系统动画 / 打游戏 / 多APP / 主观（场景/功能维度）</li>
+                    <li><strong>小类/小小类</strong>：更细分的功能点（如微信、相机、王者荣耀等）</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>信息价值判断：</strong></p>
+                <ul>
+                    <li><span class="highlight">有展开</span>：包含具体场景、功能、对比细节、使用时长等信息，能支撑产品洞察</li>
+                    <li><span class="highlight">仅提及</span>：只有主观评价词，缺乏可落地的信息点</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 筛选器 -->
+        <div class="filter-bar">
+            <span class="filter-label">筛选：</span>
+            <button class="filter-btn active" onclick="filterAll()">全部</button>
+            <button class="filter-btn" onclick="filterPrimary('丝滑流畅')">丝滑流畅</button>
+            <button class="filter-btn" onclick="filterPrimary('卡顿')">卡顿</button>
+            <button class="filter-btn" onclick="filterPrimary('稳定性')">稳定性</button>
+            <button class="filter-btn" onclick="filterWithContent()">仅看有展开</button>
+        </div>
+
+        <div class="primary-section theme-smooth" data-primary="丝滑流畅">
+            <div class="primary-header">
+                <div class="primary-title">
+                    丝滑流畅
+                    <span class="primary-badge">236条</span>
+                </div>
+                <div class="primary-stats">
+                    <span>有展开: <span class="highlight">40</span></span>
+                    <span>仅提及: <span class="highlight">196</span></span>
+                    <span>信息密度: <span class="highlight">16.9%</span></span>
+                </div>
+            </div>
+            <div class="secondary-grid">
+
+                <div class="secondary-card" data-secondary="系统">
+                    <div class="secondary-header">
+                        <span class="secondary-title">系统</span>
+                        <span class="secondary-count">65条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 新系统版本 流畅</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">如题， <span class="brand-huawei">华为</span>mate60pro系统已升级<span class="brand-huawei">鸿蒙</span>6.0，初上手感觉<span class="brand-huawei">鸿蒙</span>6很丝滑啊，发热和续航比4.2好太多了[赞R]，感觉流畅度和稳定性已经超越了<span class="brand-apple">iOS</span>，特别是<span class="brand-apple">iOS</span>26那一坨，<span class="brand-huawei">鸿蒙</span>真的是越升级越流畅，流畅度真遥遥领先[汗颜R]</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">以下是升级近一个月使用感受： [微笑R]首先是好的地方，系统还是比<span class="brand-huawei">鸿蒙</span>4.2流畅不少，太丝滑了现在。</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">鸿蒙</span>6的下一个版本6.0.0.328已经正在内测了，此版本主要升级有两点，一是操作更加丝滑流畅，肉眼可见的更加流畅，操作起来非常舒服，比130版本还要丝滑很多；二是操作界面设计优化了，修改了很多，但改得很像<span class="brand-apple">iPhone</span>的<span class="brand-apple">iOS</span>界面。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 沉浸光感 流畅</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">感觉<span class="brand-huawei">华为</span>这个沉浸光感还挺好看，<span class="brand-huawei">华为</span>的性能居然也能支撑得起来，而且还很流畅，这就是自研系统的好处吗？ 液态玻璃[话题] <span class="brand-huawei">华为</span><span class="brand-huawei">鸿蒙</span>[话题] ios26[话题] 一起聊数码[话题] iphone[话题] huawei[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 帧率 流畅</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">说出来你可能会骂我，<span class="brand-huawei">鸿蒙</span>6比<span class="brand-apple">苹果</span>丝滑。我的直观感受，帧率不抽不卡，太稳定了</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>手机优点也很多，随便说如下三个： 1️⃣系统流畅 放大倍数也清晰</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="长期使用">
+                    <div class="secondary-header">
+                        <span class="secondary-title">长期使用</span>
+                        <span class="secondary-count">33条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">苹果 用3/4/5年 流畅</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">没用过<span class="brand-huawei">华为</span>产品，但是<span class="brand-apple">苹果</span>在用的手机最长使用年限会4年以上，如果我可以忍受后来电池不行，甚至可以用更久。之前ipadair5 应该已经用了小三年了吧，使用仍然很流畅</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">手里的13用上三年都不卡。</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-apple">iPhone</span>15Pro：芯片性能很强悍＋系统本身就做得好。哪怕过了两年，游戏方面表现依旧很不错</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">一部<span class="brand-apple">iPhone</span>使用5年还能流畅运行</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-apple">iOS</span>：极致流畅稳定，用 3 年不卡</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 用了2/3年 卡顿</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>p70换<span class="brand-apple">苹果</span>17p的失落感，谁懂啊。之前是用了10年左右的<span class="brand-apple">苹果</span>，最后一代是<span class="brand-apple">苹果</span>13，才用了两三年就开始卡顿，</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 用了5年 流畅</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>手机用五年不卡是梗还是实话。<span class="brand-huawei">华为</span>mate40 pro，说实话，20年11月份买的到现在还在用一点也不卡[偷笑R]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 用了5年 卡顿</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">现在用的是<span class="brand-huawei">华为</span>mate30，用了五年变卡了想换手机</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>p80现在就是软件适配问题，还有手机用久了会不会卡</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="日常使用">
+                    <div class="secondary-header">
+                        <span class="secondary-title">日常使用</span>
+                        <span class="secondary-count">32条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 WiFI自动切换/WIFI5G切换 丝滑</div>
+                            <div class="content-tags"><span class="content-tag">WIFI</span><span class="content-tag sub">WIFI</span></div>
+                            <div class="content-example">3️⃣wifi自动识别非常丝滑，家里有两个不同的wifi，以前用🍎经常需要手动切来切去，<span class="brand-huawei">华为</span>可以自动切换成网速更好的那个，这点真的是爱了。</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>在信号切换的时候比<span class="brand-apple">苹果</span>顺畅很多，比如从家里出门，从WiFi环境切换到5G，<span class="brand-apple">苹果</span>会卡一段时间，<span class="brand-huawei">华为</span>很丝滑</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-apple">苹果</span>那个信号我都无力说了，<span class="brand-huawei">华为</span>打王者比<span class="brand-apple">苹果</span>好多了。尤其是在路上的时候。wifi 切换移动数据的时候真卡。电梯里也好卡。</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">从WiFi切换到数据的过程比较丝滑，不像<span class="brand-apple">苹果</span>手机要等个四五秒</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 打开相机/相机放大 掉帧</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span><span class="content-tag sub">相机</span></div>
+                            <div class="content-example">5️⃣系统方面 两者其实感觉不出来 <span class="brand-apple">苹果</span><span class="brand-apple">iOS</span>系统很流畅 <span class="brand-huawei">华为</span><span class="brand-huawei">鸿蒙</span>系统也很流畅，唯一就是打开相机的时候拍摄视频会偶尔掉帧，相机放大的时候微微卡顿</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 阔屏剪辑4K 不卡顿</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">剪视频APP</span></div>
+                            <div class="content-example">阔屏搭配剪映剪视频，像16:9的长视频就是上下布局，底部工具栏无需拖拽，所有功能都能显示，比传统手机方便。▪️剪辑4K视频也完全不会卡顿，<span class="brand-huawei">华为</span>Pura X Max就是手机平板二合一</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 全局高刷 丝滑</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">不得不惊叹于<span class="brand-huawei">鸿蒙</span>系统的优化。<span class="brand-huawei">华为</span>在各种日常使用场景的丝滑程度远强于<span class="brand-apple">苹果</span>（开启了全局高刷）</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 小艺输入法、小艺AI 反映灵敏</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span><span class="content-tag sub">输入法</span></div>
+                            <div class="content-example">再次从<span class="brand-apple">苹果</span>换回了<span class="brand-huawei">华为</span>。入手mate 80，用了两天丝滑流畅。小艺输入法，小艺AI反应灵敏，超级好用。 我和我的mate[话题] 期待记录美好生活[大笑R]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 键盘打字 流畅</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span><span class="content-tag sub">输入法</span></div>
+                            <div class="content-example"><span class="brand-apple">苹果</span>的白色外壳看着珠光宝气，其他那几家真的没有高级感。我特意用<span class="brand-apple">苹果</span>键盘打字打电话号码，的确非常流畅，拼音排列是26英文字母，但是系统很聪明，打字很快</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 打字 不跟手</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span><span class="content-tag sub">输入法</span></div>
+                            <div class="content-example"><span class="brand-apple">苹果</span>用户的嘴这么严嘛，从<span class="brand-huawei">华为</span>mate60pro➕纯血<span class="brand-huawei">鸿蒙</span>转的17air，不打游戏，日常使用，打字不跟手，返回不顺滑，体验感真的拉，<span class="brand-huawei">华为</span>纯血是真的流畅，日常使用，不打游戏没有发表权。讲，<span class="brand-apple">苹果</span>真不如<span class="brand-huawei">华为</span>。但不吹不黑，手感是真的好，续航也能接受。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 微信和WPS联动 丝滑</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">WPS</span></div>
+                            <div class="content-example">微信收到文件直接用WPS打开，文件形式的转化发送，真是不如<span class="brand-apple">苹果</span>丝滑方便。今天收到一个压缩包，<span class="brand-huawei">华为</span>手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，只能用<span class="brand-apple">苹果</span>手机登录微信完成解压保存，而且解压后能直接预览文件，<span class="brand-huawei">华为</span>的解压后无法预览，只能再点开WPS点开看[哭惹R]，真是影响工作丝滑度</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>mate70Pro 6.0相机卡的要死，现在一打开必卡，我真的服了[生气R] 负优化也不带这样的<span class="brand-huawei">华为</span>手机[话题] 卡顿[话题] 相机掉帧[话题]</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="系统动画">
+                    <div class="secondary-header">
+                        <span class="secondary-title">系统动画</span>
+                        <span class="secondary-count">31条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">苹果 相机键滑动流畅度 欠缺</div>
+                            <div class="content-tags"><span class="content-tag">系统类</span></div>
+                            <div class="content-example">相机键，这次在外观上的另一大不同吧，不过在目前实际的体验上确实不是很理想，触控位置离手指就比较远，需要换手姿才行，其次就是需要一定的学习成本来适应操作，并且滑动过程中的流畅度也欠缺</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 运动健康动画 流畅</div>
+                            <div class="content-tags"><span class="content-tag">APP类</span></div>
+                            <div class="content-example">明明有对标<span class="brand-apple">iOS</span>的流畅动画，有更精准的运动监测，却非要让本应高效的体验变得焦躁。就像走进精心布置的书房，发现墙上贴满促销海报，那种割裂感让人瞬间出戏</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 ProMotion高刷丝滑</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">屏幕 & 体验。<span class="brand-apple">iPhone</span> Air：6.5 英寸 OLED 屏，120Hz ProMotion 刷新技术确实丝滑</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 动画比苹果 更自然</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">✅ 动画更流畅（比上代<span class="brand-huawei">鸿蒙</span>更丝滑，比<span class="brand-apple">苹果</span><span class="brand-apple">iOS</span>动画更自然，长时间用也不卡顿，越用越顺）</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 全局搜索打断动画 灵敏</div>
+                            <div class="content-tags"><span class="content-tag">系统类</span></div>
+                            <div class="content-example">这三都是T0级别的手机系统，动画效果都很到位了，只是部分细节有差异。像打断动画这种基础，这三家都做得很到位了。 而灵动岛回收的动画，<span class="brand-apple">苹果</span>和OPPO的会更圆润一些。小窗这块<span class="brand-apple">苹果</span>还是画中画，<span class="brand-huawei">华为</span>OPPO是都已经支持多窗口了。全局搜索处的打断动画<span class="brand-huawei">华为</span>反应很快，OPPO则还能做到从哪来回哪去，<span class="brand-apple">苹果</span>就稍微有点延迟了。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 APP打断动画、负一屏切换、后台任务管理、灵动岛切换 丝滑</div>
+                            <div class="content-tags"><span class="content-tag">系统类</span></div>
+                            <div class="content-example">听说有人想看<span class="brand-apple">苹果</span>和国产手机系统流畅度对比？ 那就拿<span class="brand-apple">苹果</span><span class="brand-apple">iOS</span> 26、<span class="brand-huawei">华为</span><span class="brand-huawei">鸿蒙</span>OS 5、小米澎湃OS 3、OPPO ColorOS 16四大系统来对比一下吧 看看国产系统和<span class="brand-apple">苹果</span>在流畅度上还有多大差距~ 1️⃣解锁动画 输完密码后进入桌面都很丝滑，就看入场动画你喜欢哪家了~ 2️⃣APP打断动画 从我的操作体验来看，四家确实都很流畅，跟手性感觉还是<span class="brand-apple">苹果</span><span class="brand-huawei">华为</span>OPPO要好一点点。 3️⃣负一屏切换 这部分小米没有切换和打断动画，而<span class="brand-apple">苹果</span><span class="brand-huawei">华为</span>OPPO都做得不错，感觉ColorOS 16反应速度更快点？ 4️⃣后台任务管理 滑动都没有卡顿，不过视觉上，还是<span class="brand-apple">苹果</span>和OPPO的堆料后台更丝滑。 5️⃣灵动岛切换 各家灵动岛动画都不错，<span class="brand-huawei">华为</span>OPPO的逻辑相似，小米则有两种形式更丰富。 6️⃣页面垂直滑动 都没有感觉到卡顿，不过OPPO ColorOS 16好像更丝滑一点吧？ 个人总结一下，除了<span class="brand-apple">苹果</span><span class="brand-apple">iOS</span>一贯流畅外，<span class="brand-huawei">华为</span><span class="brand-huawei">鸿蒙</span>OS 5目前轻量化流畅性还是不错的，安卓这边小米澎湃OS 3确实提升很大，但还有提升空间；而OPPO的ColorOS 16毫无疑问达到了安卓的流畅巅峰，动效做得确实丝滑，不愧是机圈德芙。另外OPPO的AI功能也超级实用，像新增的AI补光等AI图像功能，还有全新AI一键闪记，非常聪明好用~ 那么对比下来，你们觉得谁更流畅呢？</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 控制中心，天气APP过渡动画 不细腻</div>
+                            <div class="content-tags"><span class="content-tag">系统类</span></div>
+                            <div class="content-example">⚠️精致感略逊一筹：在控制中心，天气APP等界面设计和过渡动画还是没<span class="brand-apple">iOS</span>细腻自然️</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="打游戏">
+                    <div class="secondary-header">
+                        <span class="secondary-title">打游戏</span>
+                        <span class="secondary-count">13条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 王者荣耀 帧率、分辨率、画质 高</div>
+                            <div class="content-tags"><span class="content-tag">王者</span></div>
+                            <div class="content-example">mate70Air在王者荣耀上可以做到【帧率极高、分辨率超高、画面总画质高清】的惊人表现！反而是<span class="brand-apple">iPhone</span>17Air目前只能锁60帧[失望R]（腾讯你这次是故意的吗？）但是其他重负载游戏，在没有厂家积极适配的情况下，<span class="brand-huawei">华为</span>的表现都是不如<span class="brand-apple">苹果</span>的（<span class="brand-apple">苹果</span>不过热的情况下）！</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 玩二次元游性能不足</div>
+                            <div class="content-tags"><span class="content-tag">二次元</span></div>
+                            <div class="content-example">1. 性能上限不够，如果想玩二游得三思，但我不在手机上玩没有感知</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 英雄联盟</div>
+                            <div class="content-tags"><span class="content-tag">联盟</span></div>
+                            <div class="content-example">游戏：本人只玩英雄联盟，不长时间玩的话，<span class="brand-huawei">华为</span>还是可以的。网上测评都说<span class="brand-huawei">华为</span>手机不适合游戏，应该还是处理器的原因，这也很无奈，毕竟被白宫严选了。</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">性能 1）玩手游比较少，英雄联盟非常流畅，不会发热，和17没啥区别； 80没感觉到杀后台；</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="多APP">
+                    <div class="secondary-header">
+                        <span class="secondary-title">多APP</span>
+                        <span class="secondary-count">12条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">不会卡顿，后台开了很多APP依然很丝滑，还是蛮喜欢的。</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="主观">
+                    <div class="secondary-header">
+                        <span class="secondary-title">主观</span>
+                        <span class="secondary-count">50条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>MATE40换手机<span class="brand-apple">苹果</span>15Pro Max。使用习惯什么的都能克服，<span class="brand-apple">苹果</span>手感不错，非常流畅</div>
+                        </div>
+</div></div>
+            </div>
+        </div>
+
+        <div class="primary-section theme-lag" data-primary="卡顿">
+            <div class="primary-header">
+                <div class="primary-title">
+                    卡顿
+                    <span class="primary-badge">120条</span>
+                </div>
+                <div class="primary-stats">
+                    <span>有展开: <span class="highlight">38</span></span>
+                    <span>仅提及: <span class="highlight">82</span></span>
+                    <span>信息密度: <span class="highlight">31.7%</span></span>
+                </div>
+            </div>
+            <div class="secondary-grid">
+
+                <div class="secondary-card" data-secondary="日常使用">
+                    <div class="secondary-header">
+                        <span class="secondary-title">日常使用</span>
+                        <span class="secondary-count">25条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">苹果 微信 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">微信</span></div>
+                            <div class="content-example">要不是我在实体店买的 真的怀疑是假货…… 微信打视频黑屏卡顿 打字卡顿 手机慢半拍 声音调节卡顿…… 要不是我老十四摔得稀烂，哪轮得到你上位！ <span class="brand-apple">苹果</span>17pro[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">17pro为什么这么卡，真是要疯了，真的受不了手机有一点卡顿，日常微信卡住不动，退后台好几次，微信拍小视频也卡顿，扫码付款卡住付不了，真的很社死，才用了几个月摄像头还有黑点，怕不是买到残次品了，又没有时间去等维修，手机里面的视频照片资料贼多，真的没招了，真的是我用<span class="brand-apple">苹果</span>以来最拉的一台手机apple售后[话题] Apple手机卡顿[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">[火R]<span class="brand-apple">苹果</span>缺点： 1.<span class="brand-apple">苹果</span>微信，会卡，聊天框里拍照会卡。。但是可以发 live 图。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 刷小红书视频 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">小红书</span></div>
+                            <div class="content-example">真的没人觉得纯血<span class="brand-huawei">鸿蒙</span>卡吗？上周换了新手机，自带<span class="brand-huawei">鸿蒙</span>5.0，当天晚上刷小红书，视频页面就卡顿。换到吃鸡，页面卡了5次。第二天抖音也卡，就在卡的页面不动了。比我旧手机还卡，旧手机卡还能理解，毕竟内存不够了！！！可谁曾想新手机也卡！！！第三天更新到6.0。以上问题依然存在！我能理解那些软件功能适配不全，我也接受，但我接受不了，我就刷个视频也卡！！不是很丝滑吗？我完全没感受到<span class="brand-huawei">鸿蒙</span>[话题] 遥遥领先遥遥领先[话题] @<span class="brand-huawei">华为</span>终端客户服务 @<span class="brand-huawei">华为</span>终端 <span class="brand-huawei">鸿蒙</span>6.0[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 抖音 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">抖音</span></div>
+                            <div class="content-example">真的没人觉得纯血<span class="brand-huawei">鸿蒙</span>卡吗？上周换了新手机，自带<span class="brand-huawei">鸿蒙</span>5.0，当天晚上刷小红书，视频页面就卡顿。换到吃鸡，页面卡了5次。第二天抖音也卡，就在卡的页面不动了。比我旧手机还卡，旧手机卡还能理解，毕竟内存不够了！！！可谁曾想新手机也卡！！！第三天更新到6.0。以上问题依然存在！我能理解那些软件功能适配不全，我也接受，但我接受不了，我就刷个视频也卡！！不是很丝滑吗？我完全没感受到<span class="brand-huawei">鸿蒙</span>[话题] 遥遥领先遥遥领先[话题] @<span class="brand-huawei">华为</span>终端客户服务 @<span class="brand-huawei">华为</span>终端 <span class="brand-huawei">鸿蒙</span>6.0[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 打开关闭APP、打开链接、app跳转 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">其他</span></div>
+                            <div class="content-example">📱到底是不是我的错觉，最近我的mate60pro＋巨巨巨巨卡，打开app要等很久，点击任何链接都要等很久才显示出来，app之间跳转也巨巨巨巨卡[抓狂R]。 📱从mate20到mate30到mate40，都没有这样卡过…内存也没满，为啥会这样啊……是只有我这样吗[抓狂R]？ 📱而且之前人脸识别支付莫名其妙的突然不能用了，大概得有大半年的时间，我也一直没去售后[抓狂R]前两个月想起来打电话给售后服务，查不出原因，让去线下。结果正准备去，突然好了一部分，就是某些支付环境可以，有些还是无法识别…好无语😅</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">你们的<span class="brand-huawei">华为</span>mate60pro卡吗？我是卡的相当无语了，刷抖音掉帧、卡顿，进app反应慢，一直转圈圈，还不如我妈那1000多的手机反应快，还是换<span class="brand-apple">苹果</span>吧，失望😔😔</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 淘宝、京东 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">淘宝京东</span></div>
+                            <div class="content-example">流畅度：整体流畅度基本是没问题的，给我留下最深的印象就是淘宝和京东，体验特别差，就是卡、慢。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 特斯拉APP定位 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">特斯拉</span></div>
+                            <div class="content-example">记录从<span class="brand-apple">苹果</span>转<span class="brand-huawei">华为</span>一些应用程序使用的变化。 什么要换<span class="brand-huawei">华为</span>？ [刀R]<span class="brand-apple">苹果</span>出现烧卡，开会开着开着断掉了，影响工作。 [刀R]信号太差，演唱会完全失联。 [刀R]电池已经拉胯到极致。 目前p90promax 用了三四天了，体验如下: 更新中 1，手机太重了。 2，不少应用没有<span class="brand-huawei">鸿蒙</span>适配版本，甚至有的还得出境。 3，特斯拉界面显示很难看，定位卡顿，不显示车速。在<span class="brand-huawei">华为</span>钱包里进行了车钥匙绑定，车速可以显示了，定位也及时多了，未罚站） 4,我的老天，高德导航造孽了，志玲姐姐声音变了，断句也很奇葩，最奇葩的是他居然给我导航到死胡同。 5，最近开小白的时候把蓝牙从原先m40p切换到90，同样qq音乐播放器，声音小了，音质也变差了，为此我这几天一度怀疑自己听力下降了。今晚切换回40，顿时听力恢复。 基于目前的体验，已经决定继续保持<span class="brand-apple">苹果</span>和<span class="brand-huawei">华为</span>共存。pura90promax[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 输入法 响应慢</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span><span class="content-tag sub">输入法</span></div>
+                            <div class="content-example">输入法响应的速度比<span class="brand-apple">苹果</span>慢</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 打开关闭APP、app滑动</div>
+                            <div class="content-tags"><span class="content-tag">其他</span></div>
+                            <div class="content-example">关于<span class="brand-huawei">华为</span> 1. 屏幕精细度不足： 感知力较强的用户能明显发现<span class="brand-huawei">华为</span>屏幕不如 Apple 细腻。尤其在白色背景或恢复出厂设置界面，四角有严重的锯齿感。 2. 马达体验差： 震感极其廉价。室外开启震动时极易漏接电话，体验感很糟糕。 3. 外放水平一般： 扬声器质感单薄，甚至不如<span class="brand-apple">苹果</span>五年前的水平。 • 总结： 除了上述三点急需改进，其他方面全面超越<span class="brand-apple">苹果</span>。作为国产品牌，这点确实让人自豪。 关于<span class="brand-apple">苹果</span> 1. 系统体验糟糕： <span class="brand-apple">iOS</span> 26 是<span class="brand-apple">苹果</span>最差的系统。从首发至今，各版本在滑动、打开/关闭 App 等场景均有明显卡顿，严重拖垮硬件体验。 2. 版本现状： 升级 <span class="brand-apple">iOS</span> 26.5 后卡顿稍有缓解，但稳定性仍需进一步观察。 双持[话题] <span class="brand-huawei">华为</span>与<span class="brand-apple">苹果</span>[话题] <span class="brand-apple">iPhone</span>[话题] <span class="brand-huawei">华为</span>Mate[话题] 数码科技[话题] 真实体验[话题] 我的数码生活[话题] 国产之光[话题] <span class="brand-apple">iPhone</span>[话题] <span class="brand-apple">苹果</span>手机[话题] <span class="brand-huawei">华为</span>Mate[话题] <span class="brand-huawei">华为</span>手机[话题] 手机对比[话题] 手机体验[话题] 系统流畅度[话题] 日常使用体验[话题] 手机测评[话题] 科技数码[话题] 数码爱好者[话题] 数码控[话题] 数码生活[话题] 我的数码生活[话题] 真实体验[话题] 吐槽[话题] 避坑指南[话题] 购买参考[话题] 性价比[话题] 新品手机[话题] 科技测评[话题] 手机使用技巧[话题] 手机开箱[话题] 数码分享[话题] 使用感受[话题] 性能测试[话题] 双持手机[话题] <span class="brand-apple">iOS</span>体验[话题] 安卓体验[话题] 数码测评[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 新机下载软件、导入数据 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">其他</span></div>
+                            <div class="content-example">现在换了<span class="brand-apple">苹果</span>17pro，谁知道新机还在下载各种软件，导入信息文件，就感觉到了卡顿，我也是官网买的啊，不管怎么说，新机子不应该有点卡顿，还是说这是<span class="brand-apple">苹果</span>常态？而且系统真没有<span class="brand-huawei">华为</span>的流畅，没用到两小时，心里莫名失落，甚至有点后悔！和我的<span class="brand-huawei">华为</span>价格相差4000块，真是没啥性价比[失望R]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 扫码付卡 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span></div>
+                            <div class="content-example">17pro为什么这么卡，真是要疯了，真的受不了手机有一点卡顿，日常微信卡住不动，退后台好几次，微信拍小视频也卡顿，扫码付款卡住付不了，真的很社死，才用了几个月摄像头还有黑点，怕不是买到残次品了，又没有时间去等维修，手机里面的视频照片资料贼多，真的没招了，真的是我用<span class="brand-apple">苹果</span>以来最拉的一台手机apple售后[话题] Apple手机卡顿[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 声音调节 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span></div>
+                            <div class="content-example">要不是我在实体店买的 真的怀疑是假货…… 微信打视频黑屏卡顿 打字卡顿 手机慢半拍 声音调节卡顿…… 要不是我老十四摔得稀烂，哪轮得到你上位！ <span class="brand-apple">苹果</span>17pro[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 负一屏 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span></div>
+                            <div class="content-example">感觉小米是最中庸（实用的） <span class="brand-huawei">华为</span>是最有前瞻性的，很多功能缺失但是也有很多很新的功能。 <span class="brand-apple">苹果</span>？你们<span class="brand-apple">苹果</span>用户的嘴真严呀，负一屏卡成这样都一声不吭的[e][doge]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 闲鱼APP 闪退</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">闲鱼</span></div>
+                            <div class="content-example">今天气急败坏想找代打打开咸鱼软件闪退。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 微信 网络慢</div>
+                            <div class="content-tags"><span class="content-tag">日常APP</span><span class="content-tag sub">微信</span></div>
+                            <div class="content-example">信号啊信号！！！我真的感觉像4G一样，打开微信每次都要转几圈，电梯厕所直接断网</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 剪视频 速度慢</div>
+                            <div class="content-tags"><span class="content-tag">其他</span></div>
+                            <div class="content-example">尝试了一段时间，发现还是只用一个手机更适合我 原本想分2个手机用，一个工作，一个生活 工作是<span class="brand-apple">苹果</span>，生活是安卓 后来发现这样不行 主要是因为，我需要发图片和视频到APP上，小红书登陆，一次只能在一个设备上，我需要两个手机来回切换，很麻烦 小红书绑定的是微信，两个手机换着登陆，这中间的信息会消失 <span class="brand-apple">苹果</span>剪辑视频的速度也很慢，效率不高，需要我等很久发热</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 打字不跟手</div>
+                            <div class="content-tags"><span class="content-tag">系统功能</span><span class="content-tag sub">输入法</span></div>
+                            <div class="content-example">从<span class="brand-huawei">华为</span>mate60pro+纯血<span class="brand-huawei">鸿蒙</span>转的17air，不打游戏，日常使用，打字不跟手，返回不顺滑，体验感真的拉。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 打开APP 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">其他</span><span class="content-tag sub">开关APP</span></div>
+                            <div class="content-example">系统体验糟糕：<span class="brand-apple">iOS</span> 26是<span class="brand-apple">苹果</span>最差的系统。从首发至今，各版本在滑动、打开/关闭App等场景均有明显卡顿，严重拖垮硬件体验。</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="长期使用">
+                    <div class="secondary-header">
+                        <span class="secondary-title">长期使用</span>
+                        <span class="secondary-count">26条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">苹果 使用两年 卡顿</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">是谁说的<span class="brand-apple">iPhone</span>用四五年都不卡呀，我用了两年多都开始卡了。</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-apple">苹果</span>用了两年多了，感觉各方面的性能变慢了一点，系统方面也没有很流畅了，感觉还不错，正在考虑要不要换一个mate系列的高配买手机求推荐[话题] 国产手机[话题] 手机数码科技[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 使用三年 卡顿</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>手机p60pro用了3年了，挺卡顿的。？ <span class="brand-apple">苹果</span>p17pro值得买吗？？ 目测用8年。安卓和<span class="brand-apple">苹果</span>[话题]</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="打游戏">
+                    <div class="secondary-header">
+                        <span class="secondary-title">打游戏</span>
+                        <span class="secondary-count">14条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 吃鸡 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">吃鸡</span></div>
+                            <div class="content-example">真的没人觉得纯血<span class="brand-huawei">鸿蒙</span>卡吗？上周换了新手机，自带<span class="brand-huawei">鸿蒙</span>5.0，当天晚上刷小红书，视频页面就卡顿。换到吃鸡，页面卡了5次。第二天抖音也卡，就在卡的页面不动了。比我旧手机还卡，旧手机卡还能理解，毕竟内存不够了！！！可谁曾想新手机也卡！！！第三天更新到6.0。以上问题依然存在！我能理解那些软件功能适配不全，我也接受，但我接受不了，我就刷个视频也卡！！不是很丝滑吗？我完全没感受到<span class="brand-huawei">鸿蒙</span>[话题] 遥遥领先遥遥领先[话题] @<span class="brand-huawei">华为</span>终端客户服务 @<span class="brand-huawei">华为</span>终端 <span class="brand-huawei">鸿蒙</span>6.0[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 王者 掉帧</div>
+                            <div class="content-tags"><span class="content-tag">王者</span></div>
+                            <div class="content-example">手机Mate60Pro：麒麟芯片的代差导致性能不好，夏天时候玩王者温度一上去，60帧都不咋稳得住。反正玩游戏的话买<span class="brand-huawei">华为</span>前两年的手机还是有待商榷（今年Mate80PM性能应该还行）</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 燕云 卡顿</div>
+                            <div class="content-tags"><span class="content-tag">燕云</span></div>
+                            <div class="content-example">买<span class="brand-huawei">华为</span>mate80玩游戏一玩一个不吱声 玩燕云打侠境卡到一动不动，下地掉帧，图片跟雪花片一样</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 原神 掉帧</div>
+                            <div class="content-tags"><span class="content-tag">原神</span></div>
+                            <div class="content-example"><span class="brand-huawei">华为</span>麒麟9020+<span class="brand-huawei">鸿蒙</span>Next，日常流畅度不输<span class="brand-apple">苹果</span>！但《原神》高画质帧率波动明显，户外用5G发热更严重。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 发烫、掉帧、网络卡顿</div>
+                            <div class="content-tags"><span class="content-tag">其他</span></div>
+                            <div class="content-example">正常输就算了，因为手机问题输掉就很恼火 打着打着角色漂移，技能衔接不上被对面跑了，发烫、掉帧、网络卡顿，我都为了保帧率开中画质了还卡 我敢肯定不是网络问题。用红米玩的巨流畅，还不发烫，画质还是高画质 而红米1709元、<span class="brand-apple">苹果</span>13999+1599不带充电器 艹！ <span class="brand-apple">苹果</span>16[话题] 手游[话题] 王者荣耀[话题] 红米手机[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 代号鸢 操作卡顿</div>
+                            <div class="content-tags"><span class="content-tag">代号鸢</span></div>
+                            <div class="content-example">一般手机默认的60帧，看起来流畅不卡顿应该是过渡掉了一些动画，所以ui点击反应很快，高刷让动画变得流畅，补足了动画（不是很专业的解说👉🏻👈🏻）所以录屏的时候看不出来任何问题，只能看出来动画流畅，实际上点击的时候就会出来反应不灵敏，虽然很早就跟客服反馈过了但好像并没有用[呃R][呃R][呃R]如果想要玩鸢子流畅一点的可以开这个限制帧率，个人体感确实灵敏一些，但是手机使用很不舒服（尤其是开app关app动画不流畅）介意的要么换设备玩，要么只能接受（果子的自适应[嘻嘻R]代号鸢[话题] 如鸢[话题]</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 王者 掉帧</div>
+                            <div class="content-tags"><span class="content-tag">王者</span></div>
+                            <div class="content-example">16pro首发买的，系统是ios26 卡得像盗版一样，具体表现1 饭前打王者或者lolm中途相机按钮切出来拍个菜，不到一份钟再切回游戏已经要重新加载了。2 最近更恐怖到打王者一把就烫的掉帧，把壳摘了烫得拿不了只能用酒精湿巾垫着。鱼软件闪退。。 越来越垃圾了<span class="brand-apple">苹果</span>，要不是买了两年ac真想直接换了，换也不知道该换什么了 我不能理解[话题] <span class="brand-apple">苹果</span>16pro[话题]</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="系统动画">
+                    <div class="secondary-header">
+                        <span class="secondary-title">系统动画</span>
+                        <span class="secondary-count">12条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 不适配的软件 刷新率低</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">接下来是没有那好的地方了(仅基于个人真实使用情况)。1.割裂感：比如刷新率，不适配的软件就感觉很卡，有软件挂小窗也没有120帧</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">华为 系统触屏 卡顿</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">系统卡顿的不行，有时候触屏也卡顿，实用性都不及<span class="brand-huawei">华为</span>P40，这个手机是换那么多手机，第一次想摔的...新手机</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果 过渡动画 卡</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-apple">iPhone</span>17绷不住了。刚上手就这么卡，试了17其他型号也是这样，过度动画也改成史了，跟安卓比就是一坨，这下真不如安卓了[笑哭R]不知道的还以为是山寨机</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="系统">
+                    <div class="secondary-header">
+                        <span class="secondary-title">系统</span>
+                        <span class="secondary-count">13条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 新系统版本 卡顿</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">上一个版本又丝滑又省电。 sp52怎么能这么卡！ 像掉帧一样！ <span class="brand-huawei">鸿蒙</span>[话题] 系统更新[话题] <span class="brand-huawei">鸿蒙</span>6[话题]</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="多APP">
+                    <div class="secondary-header">
+                        <span class="secondary-title">多APP</span>
+                        <span class="secondary-count">10条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">不过受此启发，想起来最近卡顿之前，把B站的悬浮窗功能打开了，看视频挺爽，爽了两天之后，就出现卡顿的情况了。立刻马上，关掉悬浮窗功能</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">除了信号一无所有。用了四五年的<span class="brand-apple">苹果</span>都是有高刷版的、今年想支持国货、盲选了<span class="brand-huawei">华为</span>mate60PRO.买完这个破手机体验一天就无语了，感觉软件切换根本就不流畅</div>
+                        </div>
+
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">卡成ppt，但凡开超过两个以上软件同时运行，就不用买电磁炉了。</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="主观">
+                    <div class="secondary-header">
+                        <span class="secondary-title">主观</span>
+                        <span class="secondary-count">20条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">换了之后嘞，手机感觉变得有点卡顿，我有点厌蠢症，别人跟不上我的反应速度我就会有点嫌弃，手机也是，最后决定把它优化了。</div>
+                        </div>
+</div></div>
+            </div>
+        </div>
+
+        <div class="primary-section theme-stable" data-primary="稳定性">
+            <div class="primary-header">
+                <div class="primary-title">
+                    稳定性
+                    <span class="primary-badge">27条</span>
+                </div>
+                <div class="primary-stats">
+                    <span>有展开: <span class="highlight">5</span></span>
+                    <span>仅提及: <span class="highlight">22</span></span>
+                    <span>信息密度: <span class="highlight">18.5%</span></span>
+                </div>
+            </div>
+            <div class="secondary-grid">
+
+                <div class="secondary-card" data-secondary="系统">
+                    <div class="secondary-header">
+                        <span class="secondary-title">系统</span>
+                        <span class="secondary-count">9条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">华为 新机 闪退</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">刚买回来，就闪退过一次，还有玩游戏发热严重</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="长期使用">
+                    <div class="secondary-header">
+                        <span class="secondary-title">长期使用</span>
+                        <span class="secondary-count">7条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">苹果 使用五年 流畅</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">耐用性上也是<span class="brand-apple">苹果</span>更有优势，一部<span class="brand-apple">iPhone</span>使用5年还能流畅运行。</div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="content-summary">苹果3-10年，华为3-5年 寿命</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example"><span class="brand-apple">苹果</span>手机 <span class="brand-apple">苹果</span>手机的寿命普遍3年起步，保养得好甚至能用10年 。新，像<span class="brand-apple">iPhone</span>16系列，性能和系统都很能打。 📱<span class="brand-huawei">华为</span>手机 <span class="brand-huawei">华为</span>手机正常使用3 - 5年没问题体验，现有的<span class="brand-huawei">华为</span>手机还能再战3 - 5年。</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="多APP">
+                    <div class="secondary-header">
+                        <span class="secondary-title">多APP</span>
+                        <span class="secondary-count">3条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            <div class="content-summary">杀后台</div>
+                            <div class="content-tags"></div>
+                            <div class="content-example">我的15p杀后台严重，80没感觉到杀后台</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="日常使用">
+                    <div class="secondary-header">
+                        <span class="secondary-title">日常使用</span>
+                        <span class="secondary-count">1条</span>
+                    </div>
+<div class="content-list">
+                        <div class="content-item">
+                            
+                            <div class="content-tags"></div>
+                            <div class="content-example">如果是希望续航好，信号好，不想微信有延迟，玩法多，稳定选<span class="brand-huawei">华为</span>。</div>
+                        </div>
+</div></div>
+                <div class="secondary-card" data-secondary="主观">
+                    <div class="secondary-header">
+                        <span class="secondary-title">主观</span>
+                        <span class="secondary-count">7条</span>
+                    </div>
+<div class="mentioned-only">仅提及，无具体展开</div></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+        function filterAll() {
+            document.querySelectorAll('.primary-section').forEach(el => el.style.display = 'block');
+            document.querySelectorAll('.filter-btn').forEach(el => el.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+        
+        function filterPrimary(primary) {
+            document.querySelectorAll('.primary-section').forEach(el => {
+                el.style.display = el.dataset.primary === primary ? 'block' : 'none';
+            });
+            document.querySelectorAll('.filter-btn').forEach(el => el.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+        
+        function filterWithContent() {
+            document.querySelectorAll('.primary-section').forEach(section => {
+                const hasContent = section.querySelector('.content-item') !== null;
+                section.style.display = hasContent ? 'block' : 'none';
+            });
+            document.querySelectorAll('.filter-btn').forEach(el => el.classList.remove('active'));
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+</html>
