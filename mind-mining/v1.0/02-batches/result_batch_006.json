@@ -1,0 +1,128 @@
+[
+  {
+    "note_id": "67ffac9f000000001c0032eb",
+    "category": "info_missing",
+    "reason": "内容为芯片制造商科普盘点，标题问'你都认识吗'，但正文没有任何个人使用体验、观点或UGC互动元素，纯信息罗列。"
+  },
+  {
+    "note_id": "692816a9000000001d038d05",
+    "category": "real_ugc",
+    "reason": "真实用户分享Mate70RS与Mate80RS的质感对比体验，包含个人手感、拍照感受等主观评价，属于真实UGC内容。"
+  },
+  {
+    "note_id": "68d1234f000000001301ebf3",
+    "category": "info_missing",
+    "reason": "帖子标题为'到底是换还是不换，纠结中'，但content字段为空，无法判断具体内容。"
+  },
+  {
+    "note_id": "69e5d414000000001a02fd05",
+    "category": "info_missing",
+    "reason": "帖子标题为'pura90你长这样，合适吗?'，但content字段内容极少（仅标签），缺乏实质性内容。"
+  },
+  {
+    "note_id": "69bce520000000001a023a03",
+    "category": "real_ugc",
+    "reason": "用户发布Mate80风驰版镜头变化对比，邀请其他人'找不同'补充，属于用户自发的产品观察和互动内容。"
+  },
+  {
+    "note_id": "688a21da000000002500ec7b",
+    "category": "info_missing",
+    "reason": "标题为'全球四大处理器排名前十'，但content字段仅含标签，无实质内容。"
+  },
+  {
+    "note_id": "69e8348b0000000021004069",
+    "category": "real_ugc",
+    "reason": "真实用户（谢怀良）分享Pura90标准版真机体验，包含个人审美观点、手感描述和设计评价，属于深度UGC内容。"
+  },
+  {
+    "note_id": "69c145ec000000002301fa4f",
+    "category": "tutorial",
+    "reason": "标题为'一篇看懂华为手机，选手机不反复纠结'，内容引导用户了解华为手机选购，属于选购教程/指南类内容。"
+  },
+  {
+    "note_id": "6953a4f3000000001e0249d5",
+    "category": "real_ugc",
+    "reason": "用户分享荣耀Power2设计与iPhone18 Pro的对比观察，包含个人看法和调侃，属于UGC内容。"
+  },
+  {
+    "note_id": "6a00859700000000350219d8",
+    "category": "tutorial",
+    "reason": "标题为'买华为必看！最新麒麟芯片性能天梯榜'，内容为芯片性能排行科普/指南，属于教程类内容。"
+  },
+  {
+    "note_id": "69355eb2000000000d03b812",
+    "category": "spec_comparison",
+    "reason": "标题直接对比'小米17Pro还是华为Mate80'，属于产品规格/选择对比类内容。"
+  },
+  {
+    "note_id": "69538241000000002202102b",
+    "category": "real_ugc",
+    "reason": "用户（小白测评）发布荣耀Power2真机实拍并邀请评分，属于真实用户的产品展示和互动内容。"
+  },
+  {
+    "note_id": "68ef84690000000004022d82",
+    "category": "news",
+    "reason": "内容为2025年Q3中国手机销量排名数据报道，引用IDC数据，属于行业新闻/资讯类内容。"
+  },
+  {
+    "note_id": "69352690000000000d0374f1",
+    "category": "spec_comparison",
+    "reason": "详细对比Mate70 Pro+与Mate80 Pro的配置、价格、材质等参数，属于产品规格对比内容。"
+  },
+  {
+    "note_id": "698918b2000000001b01e433",
+    "category": "tutorial",
+    "reason": "标题为'2026华为建议入的4款机型'，内容为4款华为手机的参数对比和选购建议，属于选购教程/指南。"
+  },
+  {
+    "note_id": "68da33500000000012032a07",
+    "category": "info_missing",
+    "reason": "标题为'到底华为好用还是苹果好用'，但content字段为空，无法判断具体内容。"
+  },
+  {
+    "note_id": "6a0731050000000035029491",
+    "category": "real_ugc",
+    "reason": "真实用户分享换机纠结，详细描述个人使用场景、需求和四款手机的对比考虑，属于真实UGC求助/分享内容。"
+  },
+  {
+    "note_id": "6a069cdf0000000007021beb",
+    "category": "news",
+    "reason": "内容为苹果和华为降价促销的行业动态分析，引用具体日期和价格数据，属于行业新闻/资讯类内容。"
+  },
+  {
+    "note_id": "68b95691000000001d03a1b5",
+    "category": "info_missing",
+    "reason": "标题为'四大旗舰手机芯片，你更看好哪一款？'，但content字段仅含标签，无实质内容。"
+  },
+  {
+    "note_id": "692675de000000001f00a59e",
+    "category": "spec_comparison",
+    "reason": "详细对比Mate70 Pro与Mate80的性能、屏幕、相机、续航等参数，属于产品规格对比内容。"
+  },
+  {
+    "note_id": "6837cd670000000012001ee6",
+    "category": "real_ugc",
+    "reason": "真实用户分享华为mate70Pro与iPhone16Promax的拍照对比实测，包含个人主观评价和具体观察，属于真实UGC测评内容。"
+  },
+  {
+    "note_id": "68d4bb9c000000001101ce2f",
+    "category": "real_ugc",
+    "category": "real_ugc",
+    "reason": "用户分享对iPhone边框材质变化的个人观察和观点，邀请大家讨论，属于UGC讨论内容。"
+  },
+  {
+    "note_id": "6a0a9164000000003502adc8",
+    "category": "real_ugc",
+    "reason": "真实用户求助选手机，描述个人使用习惯、需求和顾虑，属于UGC求助/讨论内容。"
+  },
+  {
+    "note_id": "65ed958a0000000013026c63",
+    "category": "real_ugc",
+    "reason": "真实用户分享十年果粉换华为mate60pro的深度体验对比，包含大量主观感受和使用细节，属于高质量UGC内容。"
+  },
+  {
+    "note_id": "69ecde310000000023017576",
+    "category": "news",
+    "reason": "内容为Mate90系列爆料信息汇总，整理可信的规格参数和发布时间预测，属于新品资讯/爆料类内容。"
+  }
+]

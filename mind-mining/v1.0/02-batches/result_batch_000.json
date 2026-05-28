@@ -1,0 +1,127 @@
+[
+  {
+    "note_id": "680d0fd9000000001c03452e",
+    "category": "spec_comparison",
+    "reason": "以Geekbench 6跑分等具体参数为核心，客观对比麒麟9020和苹果A18的芯片性能，属于参数对比类内容"
+  },
+  {
+    "note_id": "67abd904000000001902c044",
+    "category": "marketing",
+    "reason": "模板化结构（✅❌罗列），'宝子们'营销话术，标准化的优劣势盘点，典型的推广导购内容"
+  },
+  {
+    "note_id": "68f8c58f00000000050315db",
+    "category": "real_ugc",
+    "reason": "第一人称真实消费者体验，有具体使用细节（卡顿程度、电池健康度86%、发热情况等），个人真实声音"
+  },
+  {
+    "note_id": "689c1def000000001d0380fe",
+    "category": "marketing",
+    "reason": "大量emoji和营销话术，结构化参数罗列（1️⃣-7️⃣），'终极思考题'、'选购TIP'等典型营销号风格"
+  },
+  {
+    "note_id": "6999a186000000001b01c7f4",
+    "category": "info_missing",
+    "reason": "内容仅标题一句话'怎么选，是mate80还是iphone17'，无任何实质信息"
+  },
+  {
+    "note_id": "69ec286a000000003501ec96",
+    "category": "real_ugc",
+    "reason": "第一人称'突发奇想'，实际拍照对比体验，有个人发现和真实感受"
+  },
+  {
+    "note_id": "699d3995000000001b01d9bd",
+    "category": "real_ugc",
+    "reason": "第一人称双持用户，详细列出具体优缺点（电梯信号、app广告、卡片组件、app适配等），真实使用细节"
+  },
+  {
+    "note_id": "67a067dc000000001902d757",
+    "category": "info_missing",
+    "reason": "仅一句话'该篇对比一下华为Mate 70 Pro+和iPhone 16 Pro Max'，无实质内容"
+  },
+  {
+    "note_id": "68ca53600000000013009846",
+    "category": "info_missing",
+    "reason": "仅'三张图带你看完！Pura80的价格也太香了吧？'一句话，无实质内容"
+  },
+  {
+    "note_id": "68284618000000000f03b588",
+    "category": "news",
+    "reason": "芯片行业知识科普，介绍各品牌处理器渊源和性能排行，属于客观的行业信息分享"
+  },
+  {
+    "note_id": "66f4ebdd000000002a0321f4",
+    "category": "marketing",
+    "reason": "结构化对比表格模板，带#高价回收#标签，结尾引导互动，典型的营销推广内容"
+  },
+  {
+    "note_id": "68ecd586000000000703966d",
+    "category": "real_ugc",
+    "reason": "第一人称实拍对比，有个人主观结论，具体拍摄条件（31度晴天、无美颜无滤镜），真实消费者体验"
+  },
+  {
+    "note_id": "69eaeb79000000001f0063ce",
+    "category": "marketing",
+    "reason": "'纠结...的宝子看这篇'营销话术，结构化参数罗列+选购建议，典型的导购推广内容"
+  },
+  {
+    "note_id": "681b805c0000000023001471",
+    "category": "info_missing",
+    "reason": "仅'用数据说话。有差距不可怕...'几句话，无实际数据或实质内容"
+  },
+  {
+    "note_id": "675e98190000000002015171",
+    "category": "invalid",
+    "reason": "内容标签为#华为笔记本# #macbook# #笔记本电脑推荐#，讨论的是笔记本电脑外观质感，与手机产品完全无关"
+  },
+  {
+    "note_id": "68084afd000000001b0264bc",
+    "category": "info_missing",
+    "reason": "仅一句话'华为P70和iPhone15都是上一代的旗舰...纠结选择哪一款'，无实质内容"
+  },
+  {
+    "note_id": "6a041c2d000000003502df79",
+    "category": "info_missing",
+    "reason": "仅标题式提问'华为Mate90 Pro Max硬刚iPhone18 Pro Max！谁更强？'，无实质内容"
+  },
+  {
+    "note_id": "69f0333100000000350238f0",
+    "category": "news",
+    "reason": "基于iPhone Fold爆料的参数对比分析，属于行业新闻/爆料类内容"
+  },
+  {
+    "note_id": "69c74283000000001d01d028",
+    "category": "real_ugc",
+    "reason": "第一人称实拍体验（去年秋天拍照），对比索尼相机和苹果，有个人真实感受和场景描述"
+  },
+  {
+    "note_id": "69e46ba4000000002103bd30",
+    "category": "marketing",
+    "reason": "'终极选购指南'、'看完省1000元'，结构化对比+省钱技巧+避坑指南，典型的营销推广内容"
+  },
+  {
+    "note_id": "69d63643000000001b000681",
+    "category": "info_missing",
+    "reason": "仅一句话提问'你觉得鸿蒙6的流畅度达到iOS水平了吗？'，无实质内容"
+  },
+  {
+    "note_id": "6901e07f00000000030378cc",
+    "category": "real_ugc",
+    "reason": "第一人称'初上手感觉'，具体使用感受（发热、续航、流畅度），个人真实体验分享"
+  },
+  {
+    "note_id": "694cecfe000000001e021e36",
+    "category": "real_ugc",
+    "reason": "第一人称双持两年真实体验，有具体细节（电池健康91% vs 86%、游戏帧率、保值率、拍照对比）"
+  },
+  {
+    "note_id": "68f61a3d0000000003021774",
+    "category": "tutorial",
+    "reason": "教用户如何评测系统流畅度，有具体操作步骤（解锁动画、APP打断动画、负一屏切换等6个维度）"
+  },
+  {
+    "note_id": "68f0c0210000000007033c15",
+    "category": "marketing",
+    "reason": "大量OPPO推广内容（'绿厂这优化能力'、'ColorOS 16实力在的'），明显偏向OPPO的营销推广"
+  }
+]

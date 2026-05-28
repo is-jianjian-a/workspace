@@ -1,0 +1,27 @@
+{
+  "total_rounds": 3,
+  "rounds": [
+    {
+      "round": 1,
+      "version": "v0.2 rules",
+      "total": 100,
+      "changed": 35,
+      "agreed": 65
+    },
+    {
+      "round": 2,
+      "version": "v0.3 rules",
+      "total": 100,
+      "changed": 2,
+      "agreed": 98
+    },
+    {
+      "round": 3,
+      "version": "v0.4 llm",
+      "total": 100,
+      "changed": 4,
+      "agreed": 96
+    }
+  ],
+  "note": "Round 1&2基于同一批100条样本（规则分类不同版本），Round 3基于新抽取的100条样本（LLM分类）"
+}

@@ -1,0 +1,127 @@
+[
+  {
+    "note_id": "689f3f23000000001d01a85b",
+    "category": "info_missing",
+    "reason": "内容仅包含话题标签，无实质文字内容，无法判断真实意图"
+  },
+  {
+    "note_id": "68c79751000000001d02dd54",
+    "category": "real_ugc",
+    "reason": "真实用户分享从iPhone换华为mate60pro半年深度体验，包含具体使用场景和个人感受，有优缺点详细列举"
+  },
+  {
+    "note_id": "685bf3f1000000001c031673",
+    "category": "real_ugc",
+    "reason": "真实用户双持mate70Pro和iPhone15Pro一周后的详细体验分享，包含手感、信号、处理器等具体对比"
+  },
+  {
+    "note_id": "66a58394000000002701e578",
+    "category": "info_missing",
+    "reason": "内容像信息汇总/搬运，缺乏个人真实使用体验，是各品牌优缺点的罗列整理"
+  },
+  {
+    "note_id": "693299a5000000001b021354",
+    "category": "real_ugc",
+    "reason": "真实用户从iPhone17PM换到Mate80PM的详细体验，包含屏幕、系统流畅度、信号等具体对比感受"
+  },
+  {
+    "note_id": "6948e168000000000d036bee",
+    "category": "real_ugc",
+    "reason": "苹果老用户转华为鸿蒙的真实感受，包含流畅性、功能性、UI细节等具体体验"
+  },
+  {
+    "note_id": "692635a4000000001e024c3d",
+    "category": "info_missing",
+    "reason": "内容仅包含话题标签，无实质文字内容"
+  },
+  {
+    "note_id": "67dd5f2d000000000d01500a",
+    "category": "info_missing",
+    "reason": "内容是各品牌手机寿命的信息汇总/整理，缺乏个人真实使用体验，像是搬运或AI生成内容"
+  },
+  {
+    "note_id": "68fa2866000000000503bf54",
+    "category": "info_missing",
+    "reason": "内容仅一句话\"不做选择都拥有\"，无实质体验分享"
+  },
+  {
+    "note_id": "68dc7914000000000400700a",
+    "category": "real_ugc",
+    "reason": "真实用户从华为X6/70rs换回苹果17pm的详细体验，包含信号、充电、屏幕、流畅度、拍照等具体感受"
+  },
+  {
+    "note_id": "69e75344000000001a02bc5f",
+    "category": "info_missing",
+    "reason": "内容仅包含话题标签和简短标题，无实质体验内容"
+  },
+  {
+    "note_id": "685d5ad5000000001c031220",
+    "category": "real_ugc",
+    "reason": "真实用户花费16000购买华为折叠屏后的负面体验分享，包含微信跳转、支付、地址共享等具体问题"
+  },
+  {
+    "note_id": "69e5c6a3000000002200e7d4",
+    "category": "real_ugc",
+    "reason": "用户表达对三款折叠屏手机的个人偏好和理想组合，属于真实用户观点表达"
+  },
+  {
+    "note_id": "6913685b0000000005038c6b",
+    "category": "real_ugc",
+    "reason": "真实用户从16promax换华为X6使用一个半月后又换回苹果的详细体验，包含折叠屏使用频率、习惯等具体感受"
+  },
+  {
+    "note_id": "675a955b000000000603994c",
+    "category": "spec_comparison",
+    "reason": "内容是对iPhone16和Mate70的参数/功能对比，包含外观、性能、续航、隐私、生态等结构化对比，偏向导购/对比类"
+  },
+  {
+    "note_id": "6985b93c000000000b00b57d",
+    "category": "info_missing",
+    "reason": "内容仅包含话题标签，无实质文字内容"
+  },
+  {
+    "note_id": "69fdad5e000000003502083f",
+    "category": "real_ugc",
+    "reason": "用户分享华为Pura 90 Pro Max屏幕在户外使用的真实体验，包含具体测试场景（正午太阳下导航）"
+  },
+  {
+    "note_id": "661f73ec000000001c0099b6",
+    "category": "real_ugc",
+    "reason": "用户求助选iPad还是matepadpro，属于真实用户的购买咨询/需求表达"
+  },
+  {
+    "note_id": "67289eff000000001901b55b",
+    "category": "real_ugc",
+    "reason": "真实用户同时购买华为P70pro和苹果16pm后的使用感受，包含屏幕舒适度、拍照、炫光等具体体验"
+  },
+  {
+    "note_id": "69fdb51d000000003501f47c",
+    "category": "marketing",
+    "reason": "内容是鸿蒙OS 7.0的规格参数宣传（响应速度提升40%等），带有明显的营销话术和表情符号，偏向官方/营销号风格"
+  },
+  {
+    "note_id": "6697b759000000002500506f",
+    "category": "real_ugc",
+    "reason": "真实用户分享华为mate60Pro和mate20Pro屏幕显示对比的实拍体验，包含个人观感评价"
+  },
+  {
+    "note_id": "68b82855000000001d00a1c8",
+    "category": "info_missing",
+    "reason": "内容仅包含话题标签，无实质文字内容"
+  },
+  {
+    "note_id": "676e4ff60000000013008671",
+    "category": "real_ugc",
+    "reason": "真实用户从苹果转安卓两周后的详细体验，包含工作软件、支付、相机、操作逻辑等具体问题"
+  },
+  {
+    "note_id": "6928ff3a000000001e02f5de",
+    "category": "info_missing",
+    "reason": "内容仅包含话题标签，无实质文字内容"
+  },
+  {
+    "note_id": "666181f7000000000e033bca",
+    "category": "real_ugc",
+    "reason": "真实用户从iPhone15换华为Mate60后的详细感受，包含信号、性能、摄影摄像等6个维度的对比"
+  }
+]
