@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华为 vs 苹果 流畅性情感趋势分析</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #0a0a1a;
+    color: #e0e0e0;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 25px 20px;
+    background: linear-gradient(135deg, #0f0f2e 0%, #1a1a3e 100%);
+    border-radius: 16px;
+    border: 1px solid #2a2a5a;
+  }
+  .header h1 { color: #fff; font-size: 26px; margin-bottom: 8px; }
+  .header .subtitle { color: #8892b0; font-size: 14px; }
+  .header .badge {
+    display: inline-block;
+    background: #2d5a87;
+    color: #fff;
+    padding: 4px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .section {
+    background: #11112a;
+    border: 1px solid #2a2a5a;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+  .section h2 {
+    color: #ccd6f6;
+    font-size: 18px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #2a2a5a;
+  }
+  .section h3 {
+    color: #a0aec0;
+    font-size: 14px;
+    margin: 16px 0 10px 0;
+  }
+  .chart-container {
+    position: relative;
+    height: 420px;
+    margin-bottom: 20px;
+  }
+  .chart-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .chart-half {
+    position: relative;
+    height: 350px;
+  }
+  @media (max-width: 900px) {
+    .chart-row { grid-template-columns: 1fr; }
+  }
+  .legend-bar {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: #a0aec0;
+  }
+  .legend-box {
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+  }
+  .legend-box.huawei { background: #dc2626; }
+  .legend-box.apple { background: #2563eb; }
+  .legend-box.pos { background: #22c55e; }
+  .legend-box.neg { background: #ef4444; }
+  .legend-box.net-pos { background: #22c55e; }
+  .legend-box.net-neg { background: #ef4444; }
+  .insight-box {
+    background: #0f0f23;
+    border-left: 3px solid #2d5a87;
+    padding: 14px 16px;
+    border-radius: 0 8px 8px 0;
+    margin: 12px 0;
+    font-size: 13px;
+    color: #b0b8d0;
+  }
+  .insight-box strong { color: #ccd6f6; }
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    margin: 16px 0;
+  }
+  .stat-card {
+    background: #0f0f23;
+    border: 1px solid #2a2a5a;
+    border-radius: 10px;
+    padding: 14px;
+    text-align: center;
+  }
+  .stat-card .value {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+  }
+  .stat-card .label {
+    font-size: 11px;
+    color: #8892b0;
+    margin-top: 4px;
+  }
+  .stat-card .sub {
+    font-size: 11px;
+    color: #64748b;
+    margin-top: 2px;
+  }
+  .tab-bar {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    justify-content: center;
+  }
+  .tab-btn {
+    padding: 8px 20px;
+    border: 1px solid #2a2a5a;
+    background: #0f0f23;
+    color: #a0aec0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s;
+  }
+  .tab-btn:hover { background: #1a1a3e; }
+  .tab-btn.active { background: #2d5a87; border-color: #2d5a87; color: #fff; }
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .note {
+    font-size: 11px;
+    color: #64748b;
+    text-align: center;
+    margin-top: 8px;
+  }
+  .comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin-top: 12px;
+  }
+  .comparison-table th, .comparison-table td {
+    padding: 8px 10px;
+    text-align: center;
+    border: 1px solid #2a2a5a;
+  }
+  .comparison-table th {
+    background: #1a1a3e;
+    color: #8892b0;
+    font-weight: 600;
+  }
+  .comparison-table td {
+    background: #0f0f23;
+  }
+  .comparison-table .brand-huawei { color: #f87171; font-weight: 600; }
+  .comparison-table .brand-apple { color: #60a5fa; font-weight: 600; }
+  .trend-up { color: #22c55e; }
+  .trend-down { color: #ef4444; }
+  .trend-flat { color: #6b7280; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔄 华为 vs 苹果 流畅性情感趋势分析</h1>
+  <div class="subtitle">基于 67 条流畅相关 UGC 原声的时间维度情感演化</div>
+  <div class="badge">数据来源: 03-audit-report.html</div>
+</div>
+
+<!-- 概览统计 -->
+<div class="section">
+  <h2>📊 数据概览</h2>
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="value" style="color:#f87171;">43</div>
+      <div class="label">华为观点</div>
+      <div class="sub">正27 / 负16</div>
+    </div>
+    <div class="stat-card">
+      <div class="value" style="color:#60a5fa;">23</div>
+      <div class="label">苹果观点</div>
+      <div class="sub">正10 / 负13</div>
+    </div>
+    <div class="stat-card">
+      <div class="value" style="color:#22c55e;">37</div>
+      <div class="label">正向观点</div>
+      <div class="sub">占比 55.2%</div>
+    </div>
+    <div class="stat-card">
+      <div class="value" style="color:#ef4444;">29</div>
+      <div class="label">负向观点</div>
+      <div class="sub">占比 43.3%</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">2024-03</div>
+      <div class="label">最早数据</div>
+      <div class="sub">至 2026-05</div>
+    </div>
+    <div class="stat-card">
+      <div class="value">17个月</div>
+      <div class="label">时间跨度</div>
+      <div class="sub">8个季度 / 3年</div>
+    </div>
+  </div>
+</div>
+
+<!-- 核心趋势图 -->
+<div class="section">
+  <h2>📈 核心趋势：情感正负向分布（双向柱状图）</h2>
+  <div class="legend-bar">
+    <div class="legend-item"><div class="legend-box huawei"></div>华为</div>
+    <div class="legend-item"><div class="legend-box apple"></div>苹果</div>
+    <div class="legend-item"><div class="legend-box pos"></div>正向（向上）</div>
+    <div class="legend-item"><div class="legend-box neg"></div>负向（向下）</div>
+  </div>
+  
+  <div class="tab-bar">
+    <button class="tab-btn active" onclick="switchTab('month')">按月</button>
+    <button class="tab-btn" onclick="switchTab('quarter')">按季</button>
+    <button class="tab-btn" onclick="switchTab('year')">按年</button>
+  </div>
+  
+  <div id="tab-month" class="tab-content active">
+    <div class="chart-container"><canvas id="chartMonth"></canvas></div>
+    <div class="note">按月聚合，共 17 个时间点。数据稀疏月份（仅1条）可能产生极端比率，建议结合按季视图综合判断。</div>
+  </div>
+  <div id="tab-quarter" class="tab-content">
+    <div class="chart-container"><canvas id="chartQuarter"></canvas></div>
+    <div class="note">按季度聚合，共 8 个季度。推荐主要参考此视图，样本量更均衡。</div>
+  </div>
+  <div id="tab-year" class="tab-content">
+    <div class="chart-container"><canvas id="chartYear"></canvas></div>
+    <div class="note">按年聚合，仅 3 个年份。适合看宏观走向，但丢失季度级波动细节。</div>
+  </div>
+</div>
+
+<!-- 净得分趋势 -->
+<div class="section">
+  <h2>📉 净得分趋势（正向 - 负向）</h2>
+  <div class="chart-row">
+    <div class="chart-half"><canvas id="netQuarterH"></canvas></div>
+    <div class="chart-half"><canvas id="netQuarterA"></canvas></div>
+  </div>
+  <div class="note">净得分 = 正向观点数 - 负向观点数。正值为绿，负值为红。</div>
+  
+  <div class="insight-box">
+    <strong>💡 关键发现：</strong><br>
+    • <strong>华为</strong>：2025Q3 达到净得分峰值 +4（好评率 83%），但 2025Q4 骤降至 -2（好评率 40%），出现明显口碑下滑。<br>
+    • <strong>苹果</strong>：2024-2025 上半年持续负向（净得分 -1 至 -3），但 2025Q4 反弹至 +4（好评率 75%），与华为形成「剪刀差」。<br>
+    • 2026Q1-Q2 两者趋于平衡，华为净得分 +2→0，苹果 -1→-1。
+  </div>
+</div>
+
+<!-- 好评率趋势 -->
+<div class="section">
+  <h2>📊 好评率趋势对比</h2>
+  <div class="chart-container"><canvas id="ratioChart"></canvas></div>
+  <div class="note">好评率 = 正向观点 / (正向 + 负向)。仅统计有观点的季度。</div>
+  
+  <div class="insight-box">
+    <strong>💡 解读：</strong>好评率比绝对数量更能反映「口碑质量」。华为 2025Q2 达到 100% 好评，但 Q4 骤降至 40%；
+    苹果 2025Q4 从 0% 反弹至 75%，可能与 iOS 更新或华为口碑事件有关。
+  </div>
+</div>
+
+<!-- 数据明细表 -->
+<div class="section">
+  <h2>📋 季度数据明细</h2>
+  <table class="comparison-table">
+    <tr>
+      <th>季度</th>
+      <th colspan="4">华为</th>
+      <th colspan="4">苹果</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>正向</th><th>负向</th><th>净得分</th><th>好评率</th>
+      <th>正向</th><th>负向</th><th>净得分</th><th>好评率</th>
+    </tr>
+    <tr>
+      <td><strong>2024Q1</strong></td>
+      <td class="brand-huawei">4</td>
+      <td class="brand-huawei">2</td>
+      <td class="trend-up">+2</td>
+      <td>67%</td>
+      <td class="brand-apple">0</td>
+      <td class="brand-apple">3</td>
+      <td class="trend-down">-3</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>2024Q3</strong></td>
+      <td class="brand-huawei">4</td>
+      <td class="brand-huawei">1</td>
+      <td class="trend-up">+3</td>
+      <td>80%</td>
+      <td class="brand-apple">0</td>
+      <td class="brand-apple">1</td>
+      <td class="trend-down">-1</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>2025Q1</strong></td>
+      <td class="brand-huawei">2</td>
+      <td class="brand-huawei">1</td>
+      <td class="trend-up">+1</td>
+      <td>67%</td>
+      <td class="brand-apple">0</td>
+      <td class="brand-apple">1</td>
+      <td class="trend-down">-1</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>2025Q2</strong></td>
+      <td class="brand-huawei">2</td>
+      <td class="brand-huawei">0</td>
+      <td class="trend-up">+2</td>
+      <td>100%</td>
+      <td class="brand-apple">1</td>
+      <td class="brand-apple">1</td>
+      <td class="trend-flat">+0</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td><strong>2025Q3</strong></td>
+      <td class="brand-huawei">5</td>
+      <td class="brand-huawei">1</td>
+      <td class="trend-up">+4</td>
+      <td>83%</td>
+      <td class="brand-apple">2</td>
+      <td class="brand-apple">2</td>
+      <td class="trend-flat">+0</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td><strong>2025Q4</strong></td>
+      <td class="brand-huawei">4</td>
+      <td class="brand-huawei">6</td>
+      <td class="trend-down">-2</td>
+      <td>40%</td>
+      <td class="brand-apple">6</td>
+      <td class="brand-apple">2</td>
+      <td class="trend-up">+4</td>
+      <td>75%</td>
+    </tr>
+    <tr>
+      <td><strong>2026Q1</strong></td>
+      <td class="brand-huawei">3</td>
+      <td class="brand-huawei">1</td>
+      <td class="trend-up">+2</td>
+      <td>75%</td>
+      <td class="brand-apple">0</td>
+      <td class="brand-apple">1</td>
+      <td class="trend-down">-1</td>
+      <td>0%</td>
+    </tr>
+    <tr>
+      <td><strong>2026Q2</strong></td>
+      <td class="brand-huawei">3</td>
+      <td class="brand-huawei">3</td>
+      <td class="trend-flat">+0</td>
+      <td>50%</td>
+      <td class="brand-apple">1</td>
+      <td class="brand-apple">2</td>
+      <td class="trend-down">-1</td>
+      <td>33%</td>
+    </tr>
+  </table>
+</div>
+
+<!-- 建议与局限 -->
+<div class="section">
+  <h2>⚠️ 数据局限与建议</h2>
+  <div class="insight-box">
+    <strong>当前局限：</strong><br>
+    • 样本量较小（67条），按月聚合时多数月份仅 1-3 条，统计意义有限。<br>
+    • 数据来源为「华为和苹果性能/流畅度/卡顿对比」搜索词，存在采样偏倚——主动搜索对比的用户往往带有明确立场。<br>
+    • 缺少 2024Q2、2024Q4 数据，存在时间断档。<br>
+    • 未加权（高互动帖子与低互动帖子同等计数）。
+  </div>
+  <div class="insight-box">
+    <strong>📌 改进建议：</strong><br>
+    • <strong>加权分析</strong>：按点赞+评论数加权，高互动帖子影响力更大。<br>
+    • <strong>引入强度维度</strong>：当前仅分正负，可将「强/中/弱」强度纳入，绘制情感强度热力图。<br>
+    • <strong>事件标注</strong>：在时间点标注产品发布（如 Mate 70、iPhone 17）、系统更新（鸿蒙 NEXT、iOS 26）等事件。<br>
+    • <strong>增加样本</strong>：扩大至 200+ 条流畅相关观点，提升统计稳健性。<br>
+    • <strong>细分维度</strong>：将「流畅」拆分为「系统动画/游戏/日常使用/长期使用」子维度分别追踪。
+  </div>
+</div>
+
+<script>
+// 数据
+var monthlyData = {"labels": ["2024-03", "2024-07", "2024-08", "2024-09", "2025-01", "2025-02", "2025-03", "2025-04", "2025-06", "2025-07", "2025-09", "2025-10", "2025-12", "2026-01", "2026-02", "2026-04", "2026-05"], "华为_pos": [4, 1, 2, 1, 1, 1, 0, 1, 1, 1, 4, 3, 1, 2, 1, 1, 2], "华为_neg": [2, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1, 3, 3, 0, 1, 1, 2], "苹果_pos": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 2, 3, 3, 0, 0, 0, 1], "苹果_neg": [3, 0, 1, 0, 0, 0, 1, 0, 1, 0, 2, 1, 1, 1, 0, 1, 1]};
+
+var quarterlyData = {"labels": ["2024Q1", "2024Q3", "2025Q1", "2025Q2", "2025Q3", "2025Q4", "2026Q1", "2026Q2"], "华为_pos": [4, 4, 2, 2, 5, 4, 3, 3], "华为_neg": [2, 1, 1, 0, 1, 6, 1, 3], "苹果_pos": [0, 0, 0, 1, 2, 6, 0, 1], "苹果_neg": [3, 1, 1, 1, 2, 2, 1, 2]};
+
+var yearlyData = {"labels": ["2024", "2025", "2026"], "华为_pos": [8, 13, 6], "华为_neg": [3, 8, 4], "苹果_pos": [0, 9, 1], "苹果_neg": [4, 6, 3]};
+
+var qNetH = {"labels": ["2024Q1", "2024Q3", "2025Q1", "2025Q2", "2025Q3", "2025Q4", "2026Q1", "2026Q2"], "net": [2, 3, 1, 2, 4, -2, 2, 0]};
+
+var qNetA = {"labels": ["2024Q1", "2024Q3", "2025Q1", "2025Q2", "2025Q3", "2025Q4", "2026Q1", "2026Q2"], "net": [-3, -1, -1, 0, 0, 4, -1, -1]};
+
+var ratioData = {"labels": ["2024Q1", "2024Q3", "2025Q1", "2025Q2", "2025Q3", "2025Q4", "2026Q1", "2026Q2"], "华为": [66.7, 80.0, 66.7, 100.0, 83.3, 40.0, 75.0, 50.0], "苹果": [0.0, 0.0, 0.0, 50.0, 50.0, 75.0, 0.0, 33.300000000000004]};
+
+// Tab切换
+function switchTab(period) {
+  document.querySelectorAll('.tab-btn').forEach(function(btn) { btn.classList.remove('active'); });
+  document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+  event.target.classList.add('active');
+  document.getElementById('tab-' + period).classList.add('active');
+}
+
+// 通用图表配置
+Chart.defaults.color = '#8892b0';
+Chart.defaults.borderColor = '#2a2a5a';
+Chart.defaults.font.family = '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+
+function createDivergingChart(canvasId, data, title) {
+  var ctx = document.getElementById(canvasId).getContext('2d');
+  return new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: data.labels,
+      datasets: [
+        {
+          label: '华为 正向',
+          data: data['华为_pos'],
+          backgroundColor: 'rgba(220, 38, 38, 0.85)',
+          borderColor: '#dc2626',
+          borderWidth: 1,
+          stack: '华为',
+          order: 1
+        },
+        {
+          label: '华为 负向',
+          data: data['华为_neg'].map(function(v) { return -v; }),
+          backgroundColor: 'rgba(220, 38, 38, 0.35)',
+          borderColor: '#dc2626',
+          borderWidth: 1,
+          stack: '华为',
+          order: 2
+        },
+        {
+          label: '苹果 正向',
+          data: data['苹果_pos'],
+          backgroundColor: 'rgba(37, 99, 235, 0.85)',
+          borderColor: '#2563eb',
+          borderWidth: 1,
+          stack: '苹果',
+          order: 3
+        },
+        {
+          label: '苹果 负向',
+          data: data['苹果_neg'].map(function(v) { return -v; }),
+          backgroundColor: 'rgba(37, 99, 235, 0.35)',
+          borderColor: '#2563eb',
+          borderWidth: 1,
+          stack: '苹果',
+          order: 4
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        title: { display: true, text: title, color: '#ccd6f6', font: { size: 14 } },
+        legend: { display: false },
+        tooltip: {
+          callbacks: {
+            label: function(context) {
+              var val = context.parsed.y;
+              var label = context.dataset.label;
+              var absVal = Math.abs(val);
+              return label + ': ' + absVal + ' 条';
+            }
+          }
+        }
+      },
+      scales: {
+        y: {
+          ticks: {
+            callback: function(v) { return Math.abs(v); },
+            color: '#64748b'
+          },
+          grid: { color: '#1a1a3e' },
+          title: { display: true, text: '观点数（负向向下显示）', color: '#64748b', font: { size: 11 } }
+        },
+        x: {
+          grid: { display: false },
+          ticks: { color: '#a0aec0', maxRotation: 45 }
+        }
+      }
+    }
+  });
+}
+
+function createNetChart(canvasId, data, brand, color) {
+  var ctx = document.getElementById(canvasId).getContext('2d');
+  var barColors = data.net.map(function(v) {
+    return v >= 0 ? 'rgba(34, 197, 94, 0.8)' : 'rgba(239, 68, 68, 0.8)';
+  });
+  var borderColors = data.net.map(function(v) {
+    return v >= 0 ? '#22c55e' : '#ef4444';
+  });
+  return new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: data.labels,
+      datasets: [{
+        label: brand + ' 净得分',
+        data: data.net,
+        backgroundColor: barColors,
+        borderColor: borderColors,
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        title: { display: true, text: brand + ' 净得分趋势', color: color, font: { size: 14 } },
+        legend: { display: false }
+      },
+      scales: {
+        y: {
+          grid: { color: '#1a1a3e' },
+          title: { display: true, text: '净得分（正向-负向）', color: '#64748b', font: { size: 11 } }
+        },
+        x: { grid: { display: false }, ticks: { color: '#a0aec0' } }
+      }
+    }
+  });
+}
+
+function createRatioChart() {
+  var ctx = document.getElementById('ratioChart').getContext('2d');
+  return new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: ratioData.labels,
+      datasets: [
+        {
+          label: '华为好评率',
+          data: ratioData['华为'],
+          borderColor: '#dc2626',
+          backgroundColor: 'rgba(220, 38, 38, 0.1)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 5,
+          pointBackgroundColor: '#dc2626'
+        },
+        {
+          label: '苹果好评率',
+          data: ratioData['苹果'],
+          borderColor: '#2563eb',
+          backgroundColor: 'rgba(37, 99, 235, 0.1)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 5,
+          pointBackgroundColor: '#2563eb'
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        title: { display: true, text: '季度好评率对比（%）', color: '#ccd6f6', font: { size: 14 } },
+        legend: { labels: { color: '#a0aec0' } }
+      },
+      scales: {
+        y: {
+          min: 0,
+          max: 100,
+          grid: { color: '#1a1a3e' },
+          ticks: { callback: function(v) { return v + '%'; }, color: '#64748b' },
+          title: { display: true, text: '好评率', color: '#64748b', font: { size: 11 } }
+        },
+        x: { grid: { display: false }, ticks: { color: '#a0aec0' } }
+      }
+    }
+  });
+}
+
+// 初始化
+window.onload = function() {
+  createDivergingChart('chartMonth', monthlyData, '按月聚合');
+  createDivergingChart('chartQuarter', quarterlyData, '按季聚合（推荐）');
+  createDivergingChart('chartYear', yearlyData, '按年聚合');
+  createNetChart('netQuarterH', qNetH, '华为', '#f87171');
+  createNetChart('netQuarterA', qNetA, '苹果', '#60a5fa');
+  createRatioChart();
+};
+</script>
+
+</body>
+</html>
