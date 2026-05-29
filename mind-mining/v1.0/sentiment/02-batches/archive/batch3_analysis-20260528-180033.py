@@ -1,0 +1,834 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Batch 3: 对索引50-74的25条UGC进行品牌-情绪识别分析
+"""
+
+import json
+
+INPUT_FILE = "/Users/zhijian/workspace/mind-mining/v1.0/brand-sentiment/01-input-top100.json"
+OUTPUT_FILE = "/Users/zhijian/workspace/mind-mining/v1.0/brand-sentiment/02-batch3-result.json"
+
+
+def main():
+    with open(INPUT_FILE, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    results = []
+
+    # 索引50: 第一部手机在苹果和华为中纠结
+    results.append({
+        "opinion_id": "batch3_01_1",
+        "note_id": "69e6409f0000000023011db4",
+        "title": "第一部手机在苹果和华为中纠结",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 270,
+        "comment_count": 770,
+        "opinion_text": "从拍照和价钱两个方面来看哪个性价比更高呀。苹果和华为人像哪个会好看一点。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达纠结，询问苹果和华为人像哪个好看，无明确褒贬倾向",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_01_2",
+        "note_id": "69e6409f0000000023011db4",
+        "title": "第一部手机在苹果和华为中纠结",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 270,
+        "comment_count": 770,
+        "opinion_text": "从拍照和价钱两个方面来看哪个性价比更高呀。苹果和华为人像哪个会好看一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达纠结，询问苹果和华为人像哪个好看，无明确褒贬倾向",
+        "confidence": "高"
+    })
+
+    # 索引51: 不看品牌，你觉得哪一个手机设计更好看？
+    results.append({
+        "opinion_id": "batch3_02_1",
+        "note_id": "69c3835e0000000023015ddb",
+        "title": "不看品牌，你觉得哪一个手机设计更好看？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1590,
+        "comment_count": 1514,
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起设计审美讨论，邀请大家评判，未表达个人褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_02_2",
+        "note_id": "69c3835e0000000023015ddb",
+        "title": "不看品牌，你觉得哪一个手机设计更好看？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1590,
+        "comment_count": 1514,
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起设计审美讨论，邀请大家评判，未表达个人褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_02_3",
+        "note_id": "69c3835e0000000023015ddb",
+        "title": "不看品牌，你觉得哪一个手机设计更好看？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1590,
+        "comment_count": 1514,
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo。",
+        "brand_target": "三星",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起设计审美讨论，邀请大家评判，未表达个人褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_02_4",
+        "note_id": "69c3835e0000000023015ddb",
+        "title": "不看品牌，你觉得哪一个手机设计更好看？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1590,
+        "comment_count": 1514,
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo。",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起设计审美讨论，邀请大家评判，未表达个人褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_02_5",
+        "note_id": "69c3835e0000000023015ddb",
+        "title": "不看品牌，你觉得哪一个手机设计更好看？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1590,
+        "comment_count": 1514,
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起设计审美讨论，邀请大家评判，未表达个人褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_02_6",
+        "note_id": "69c3835e0000000023015ddb",
+        "title": "不看品牌，你觉得哪一个手机设计更好看？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1590,
+        "comment_count": 1514,
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起设计审美讨论，邀请大家评判，未表达个人褒贬",
+        "confidence": "高"
+    })
+
+    # 索引52: 到底选华为还是苹果啊
+    results.append({
+        "opinion_id": "batch3_03_1",
+        "note_id": "67d79445000000000603f492",
+        "title": "到底选华为还是苹果啊",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 29,
+        "comment_count": 216,
+        "opinion_text": "到底选华为还是苹果啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达选择纠结，无明确褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_03_2",
+        "note_id": "67d79445000000000603f492",
+        "title": "到底选华为还是苹果啊",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 29,
+        "comment_count": 216,
+        "opinion_text": "到底选华为还是苹果啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达选择纠结，无明确褒贬",
+        "confidence": "高"
+    })
+
+    # 索引53: Mate70RS对比Mate80RS 质感真的下降了么？
+    results.append({
+        "opinion_id": "batch3_04_1",
+        "note_id": "692816a9000000001d038d05",
+        "title": "Mate70RS对比Mate80RS 质感真的下降了么？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 364,
+        "comment_count": 207,
+        "opinion_text": "个人感觉陶瓷的手感确实很温润舒服，但是新的昆仑玻璃后盖也感觉不错，有阻尼感还能摸到纹路，手感上不那么滑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为Mate80RS的昆仑玻璃后盖手感不错，整体没有质感下降，依旧是全方面顶级的旗舰",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_04_2",
+        "note_id": "692816a9000000001d038d05",
+        "title": "Mate70RS对比Mate80RS 质感真的下降了么？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 364,
+        "comment_count": 207,
+        "opinion_text": "拍照色彩上第二代红枫确实更准色彩还原度更好。整体没有大家网上说的质感下降啥的我感觉，喜欢的还是会喜欢，依旧是全方面顶级的旗舰。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户肯定Mate80RS拍照色彩更准、色彩还原度更好，认为依旧是全方面顶级的旗舰",
+        "confidence": "高"
+    })
+
+    # 索引54: 华为Mate80风驰版镜头变化
+    results.append({
+        "opinion_id": "batch3_05_1",
+        "note_id": "69bce520000000001a023a03",
+        "title": "华为Mate80风驰版镜头变化",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 8,
+        "comment_count": 6,
+        "opinion_text": "找不同！目前找到两处！欢迎补充！1️⃣镜头处，似乎少了东西 2️⃣多了一圈出风口",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅做产品外观观察对比，邀请他人补充，无褒贬倾向",
+        "confidence": "高"
+    })
+
+    # 索引55: 虽然天生自带争议，但你就是你，独一份的存在
+    results.append({
+        "opinion_id": "batch3_06_1",
+        "note_id": "69e8348b0000000021004069",
+        "title": "虽然天生自带争议，但你就是你，独一份的存在",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 51,
+        "comment_count": 90,
+        "opinion_text": "被网上提前曝出的高糊图给影响了...还以为Pura 90标准版能有多丑呢？直至线下见到了真机：'这不是还挺美的！'",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户线下见到Pura90真机后认为挺美的，肯定其设计高级耐看、清冷纯净且克制，裸机轻薄手感舒服",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_06_2",
+        "note_id": "69e8348b0000000021004069",
+        "title": "虽然天生自带争议，但你就是你，独一份的存在",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 51,
+        "comment_count": 90,
+        "opinion_text": "Ta其实很高级也很耐看，视觉重心高度聚焦于左上角，三角形依然先锋，不循规蹈矩。磨砂玻璃背板没有冗余的元素，最舒服的是裸机轻薄手感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户详细赞美Pura90标准版设计高级耐看、三角形先锋、裸机轻薄手感舒服，表示很看好Ta",
+        "confidence": "高"
+    })
+
+    # 索引56: 长的有点像，电池容量大不一样
+    results.append({
+        "opinion_id": "batch3_07_1",
+        "note_id": "6953a4f3000000001e0249d5",
+        "title": "长的有点像，电池容量大不一样",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 143,
+        "comment_count": 52,
+        "opinion_text": "荣耀Power2这个设计和配色实在是眼熟啊，右边的那颗镜头很大很抢眼。据说明年iPhone18 Pro系列也要取消拼色设计了，荣耀Power2也算是iPhone 18Pro版本前瞻了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户将荣耀设计与iPhone18 Pro做关联调侃，无明确褒贬",
+        "confidence": "中"
+    })
+
+    # 索引57: 荣耀Power2全颜色真机实拍 10080mAh电池
+    # 此条不涉及华为/苹果/小米/三星/OPPO/vivo/安卓等品牌情绪，仅为荣耀产品展示，不输出
+
+    # 索引58: 华为和苹果选哪一个
+    results.append({
+        "opinion_id": "batch3_09_1",
+        "note_id": "6a0731050000000035029491",
+        "title": "华为和苹果选哪一个",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 0,
+        "comment_count": 0,
+        "opinion_text": "因为我其他的产品都是华为，所以觉得再换华为会更方便。但是我看好多说纯血鸿蒙系统有些功能不太适配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为换华为更方便（正向），但担心纯血鸿蒙系统有些功能不太适配（负向）",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_09_2",
+        "note_id": "6a0731050000000035029491",
+        "title": "华为和苹果选哪一个",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 0,
+        "comment_count": 0,
+        "opinion_text": "而苹果确实拍照比较好看，在17 512g和17pro 256g中纠结。听说苹果手机比较省内存，好纠结。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为苹果拍照比较好看、比较省内存，但因纠结未形成强情绪",
+        "confidence": "高"
+    })
+
+    # 索引59: 明明华为拍照更好看，为什么还有人吹苹果？
+    results.append({
+        "opinion_id": "batch3_10_1",
+        "note_id": "6837cd670000000012001ee6",
+        "title": "明明华为拍照更好看，为什么还有人吹苹果？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 368,
+        "comment_count": 1366,
+        "opinion_text": "没想到华为mate70拍出的效果竟然会这么好，不会像pura70那样发灰或者色彩过于浓郁，又保留了华为原本就有的优点（细节丰富，清晰度高）。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户明确认为华为mate70拍照效果更好，细节丰富清晰度高，标题直接质疑为什么有人吹苹果",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_10_2",
+        "note_id": "6837cd670000000012001ee6",
+        "title": "明明华为拍照更好看，为什么还有人吹苹果？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 368,
+        "comment_count": 1366,
+        "opinion_text": "我自己日常都是用苹果比较多，很喜欢苹果的色彩。色调来看，其实华为mate70的色彩跟苹果差距很小了，都属于比较自然的，色彩还原度也比较高。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户承认自己喜欢苹果的色彩，但认为华为色彩已接近苹果，整体立场偏向华为",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_10_3",
+        "note_id": "6837cd670000000012001ee6",
+        "title": "明明华为拍照更好看，为什么还有人吹苹果？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 368,
+        "comment_count": 1366,
+        "opinion_text": "华为近距离拍摄的清晰度确实很绝，就连右边花瓣上沾着的绒毛都丝丝分明。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户高度赞扬华为近距离拍摄清晰度，用'很绝''丝丝分明'等强烈表达",
+        "confidence": "高"
+    })
+
+    # 索引60: 怀疑iPhone钛金属边框会沦为绝响~~
+    results.append({
+        "opinion_id": "batch3_11_1",
+        "note_id": "68d4bb9c000000001101ce2f",
+        "title": "怀疑iPhone钛金属边框会沦为绝响~~",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 1177,
+        "comment_count": 148,
+        "opinion_text": "iPhone Pro系列边框变化，从铝合金到不锈钢到钛金属，再回归铝合金，大家觉得那一代的边框比较符合心意？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发起iPhone边框材质变化讨论，邀请大家评判，无明确褒贬",
+        "confidence": "高"
+    })
+
+    # 索引61: 请～大家帮忙选手机！
+    results.append({
+        "opinion_id": "batch3_12_1",
+        "note_id": "6a0a9164000000003502adc8",
+        "title": "请～大家帮忙选手机！",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 4,
+        "comment_count": 34,
+        "opinion_text": "一直都用的华为，感觉除了拍照不太行，系统和性能都很丝滑方便。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为系统和性能丝滑方便（正向），但拍照不太行（负向）",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_12_2",
+        "note_id": "6a0a9164000000003502adc8",
+        "title": "请～大家帮忙选手机！",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 4,
+        "comment_count": 34,
+        "opinion_text": "周围的朋友都劝换苹果，但是担心信号和电池问题。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户因担心苹果信号和电池问题而犹豫，对苹果持谨慎负向态度",
+        "confidence": "高"
+    })
+
+    # 索引62: 十年果粉换华为，有什么区别？
+    results.append({
+        "opinion_id": "batch3_13_1",
+        "note_id": "65ed958a0000000013026c63",
+        "title": "十年果粉换华为，有什么区别？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3040,
+        "comment_count": 1807,
+        "opinion_text": "续航：由于不是重度手机依赖，两部手机出门都不会有续航焦虑。流畅度：两部手机都非常流畅，完全感觉不到卡的地方。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为两部手机在续航和流畅度方面没有明显区别",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_13_2",
+        "note_id": "65ed958a0000000013026c63",
+        "title": "十年果粉换华为，有什么区别？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3040,
+        "comment_count": 1807,
+        "opinion_text": "信号：信号无论在什么地方都比苹果好太多太多了（比如用苹果的时候在停车场开不了导航，华为就完全不会有这个问题）。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户认为华为信号比苹果好太多，用'好太多太多了'强调",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_13_3",
+        "note_id": "65ed958a0000000013026c63",
+        "title": "十年果粉换华为，有什么区别？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3040,
+        "comment_count": 1807,
+        "opinion_text": "后台留存：华为基本没有杀后台的问题，苹果经常打游戏的时候切出去回条消息就重新加载了。侧滑返回、分屏、单手操作、88w快充真的太爽了谁用谁知道。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户高度肯定华为后台留存、侧滑返回、分屏、快充等功能，用'太爽了'表达强烈正向情绪",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_13_4",
+        "note_id": "65ed958a0000000013026c63",
+        "title": "十年果粉换华为，有什么区别？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3040,
+        "comment_count": 1807,
+        "opinion_text": "体验不如苹果的：华为震动马达太太太廉价了，质感很差。华为在外放音量比较大的时候手机会震。华为耳机不如AirPods。华为有很多广告要花十几分钟设置关掉。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户指出华为震动马达廉价、外放震手、广告多等缺点，用'太太太廉价'表达不满",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_13_5",
+        "note_id": "65ed958a0000000013026c63",
+        "title": "十年果粉换华为，有什么区别？",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3040,
+        "comment_count": 1807,
+        "opinion_text": "苹果经常打游戏的时候切出去回条消息就重新加载了。华为耳机不如AirPods，所以现在我还是在用airpods。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户指出苹果杀后台问题严重，但认可AirPods体验优于华为耳机",
+        "confidence": "高"
+    })
+
+    # 索引63: 从苹果用户换到华为感受
+    results.append({
+        "opinion_id": "batch3_14_1",
+        "note_id": "68eeee8c0000000004010015",
+        "title": "从苹果用户换到华为感受",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 284,
+        "comment_count": 321,
+        "opinion_text": "苹果电池不耐用，到了换手机的时候，完全不了解华为，想支持国产，换了店里说像素最高的一款华为P80说是顶配了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为苹果电池不耐用是换机原因",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_14_2",
+        "note_id": "68eeee8c0000000004010015",
+        "title": "从苹果用户换到华为感受",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 284,
+        "comment_count": 321,
+        "opinion_text": "到手第一天发现系统用不习惯，而且很多不更新我就了解了一下是在完善，开始好难受，好想退货。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户初用华为时系统不习惯，感到难受甚至想退货",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_14_3",
+        "note_id": "68eeee8c0000000004010015",
+        "title": "从苹果用户换到华为感受",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 284,
+        "comment_count": 321,
+        "opinion_text": "但是用了几天下来，发现鸿蒙系统完善很快，很多功能很强大，是苹果很多没有的功能。支持华为，支持国产，越用越香，真的挺不错的，期待鸿蒙系统更加好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户使用几天后认为鸿蒙系统完善快、功能强大，用'越用越香''真的挺不错的'表达强烈正向情绪",
+        "confidence": "高"
+    })
+
+    # 索引64: 一开始真没觉得Pura90标准版好看
+    results.append({
+        "opinion_id": "batch3_15_1",
+        "note_id": "69f710cc0000000035026b15",
+        "title": "一开始真没觉得Pura90标准版好看",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 9,
+        "comment_count": 19,
+        "opinion_text": "结果看完真机越看越顺眼，属于耐看型越看越上头。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户看完Pura90真机后认为越看越顺眼、越看越上头，表达正向审美认可",
+        "confidence": "高"
+    })
+
+    # 索引65: 华为这个沉浸光感表现很强哇！不输iOS
+    results.append({
+        "opinion_id": "batch3_16_1",
+        "note_id": "69e602be000000002301d025",
+        "title": "华为这个沉浸光感表现很强哇！不输iOS",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 30,
+        "comment_count": 44,
+        "opinion_text": "感觉华为这个沉浸光感还挺好看，华为的性能居然也能支撑得起来，而且还很流畅，这就是自研系统的好处吗？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户高度肯定华为沉浸光感表现，用'很强哇''居然也能支撑''很流畅'表达惊喜和赞赏",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_16_2",
+        "note_id": "69e602be000000002301d025",
+        "title": "华为这个沉浸光感表现很强哇！不输iOS",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 30,
+        "comment_count": 44,
+        "opinion_text": "华为这个沉浸光感表现很强哇！不输iOS",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户以iOS作为参照标准，未对iOS本身表达褒贬",
+        "confidence": "高"
+    })
+
+    # 索引66: 想问下 大家在华为和苹果手机之间 选了哪个
+    results.append({
+        "opinion_id": "batch3_17_1",
+        "note_id": "681a0258000000001200456f",
+        "title": "想问下 大家在华为和苹果手机之间 选了哪个[买爆R]",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 13,
+        "comment_count": 192,
+        "opinion_text": "想问下 大家在华为和苹果手机之间 选了哪个",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅发起投票/征集，无明确褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_17_2",
+        "note_id": "681a0258000000001200456f",
+        "title": "想问下 大家在华为和苹果手机之间 选了哪个[买爆R]",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 13,
+        "comment_count": 192,
+        "opinion_text": "想问下 大家在华为和苹果手机之间 选了哪个",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅发起投票/征集，无明确褒贬",
+        "confidence": "高"
+    })
+
+    # 索引67: 苹果跟华为那个好
+    results.append({
+        "opinion_id": "batch3_18_1",
+        "note_id": "68698cb20000000024009cb7",
+        "title": "苹果跟华为那个好",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3,
+        "comment_count": 71,
+        "opinion_text": "苹果跟华为那个好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅发起PK投票，无明确褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_18_2",
+        "note_id": "68698cb20000000024009cb7",
+        "title": "苹果跟华为那个好",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3,
+        "comment_count": 71,
+        "opinion_text": "苹果跟华为那个好",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅发起PK投票，无明确褒贬",
+        "confidence": "高"
+    })
+
+    # 索引68: 苹果用户千万不要尝试换华为
+    results.append({
+        "opinion_id": "batch3_19_1",
+        "note_id": "678bea44000000001901ee1c",
+        "title": "苹果用户千万不要尝试换华为😱",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 2737,
+        "comment_count": 2935,
+        "opinion_text": "优点：信号好，流畅度高，操作方便，续航好，充电快。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户明确列出华为信号好、流畅度高、续航好、充电快等优点",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_19_2",
+        "note_id": "678bea44000000001901ee1c",
+        "title": "苹果用户千万不要尝试换华为😱",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 2737,
+        "comment_count": 2935,
+        "opinion_text": "缺点：拍照哒咩（原相机发灰，录制视频不行，前置不如后置）。想换回苹果。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户明确指出华为拍照发灰、录制视频不行等缺点，甚至想换回苹果",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_19_3",
+        "note_id": "678bea44000000001901ee1c",
+        "title": "苹果用户千万不要尝试换华为😱",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 2737,
+        "comment_count": 2935,
+        "opinion_text": "想换回苹果，但是手机刚换不久，工资不高，置换折损又太大，全款又实在负担不起，纠结。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户因华为拍照不满意而想换回苹果，但因经济原因纠结",
+        "confidence": "高"
+    })
+
+    # 索引69: 到底是买华为还是苹果
+    results.append({
+        "opinion_id": "batch3_20_1",
+        "note_id": "68311df6000000002203690a",
+        "title": "到底是买华为还是苹果",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 5,
+        "comment_count": 68,
+        "opinion_text": "到底是买华为还是苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达购买纠结，无明确褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_20_2",
+        "note_id": "68311df6000000002203690a",
+        "title": "到底是买华为还是苹果",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 5,
+        "comment_count": 68,
+        "opinion_text": "到底是买华为还是苹果",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达购买纠结，无明确褒贬",
+        "confidence": "高"
+    })
+
+    # 索引70: 14pro想换mate70pro＋…
+    results.append({
+        "opinion_id": "batch3_21_1",
+        "note_id": "67d3db2200000000090396e9",
+        "title": "14pro想换mate70pro＋…",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 13,
+        "comment_count": 50,
+        "opinion_text": "苹果用了两年多了，感觉各方面的性能变慢了一点，系统方面也没有很流畅了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为苹果用两年后性能变慢、系统不流畅，是考虑换机的原因",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_21_2",
+        "note_id": "67d3db2200000000090396e9",
+        "title": "14pro想换mate70pro＋…",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 13,
+        "comment_count": 50,
+        "opinion_text": "但是看到华为mate系列才上新感觉还不错，正在考虑要不要换一个mate系列的高配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为华为mate系列上新感觉还不错，正在考虑换机",
+        "confidence": "高"
+    })
+
+    # 索引71: 选啥Pura80啊，现在买Mate70才真香
+    results.append({
+        "opinion_id": "batch3_22_1",
+        "note_id": "684ee05c000000002202eb23",
+        "title": "选啥Pura80啊，现在买Mate70才真香",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 510,
+        "comment_count": 56,
+        "opinion_text": "现在Mate70降价，同配置比Pura80普遍便宜500-600。9999能买Pura80Ultra，我9999都可以买Mate70Rs了，哪个男人能拒绝八边形Deco的诱惑？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为Mate70降价后性价比更高，用'真香''哪个男人能拒绝'表达购买推荐",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_22_2",
+        "note_id": "684ee05c000000002202eb23",
+        "title": "选啥Pura80啊，现在买Mate70才真香",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 510,
+        "comment_count": 56,
+        "opinion_text": "买Pura80的等等，这一代降价空间也不小，水分不小。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为Pura80降价空间大、水分不小，不建议现在购买",
+        "confidence": "高"
+    })
+
+    # 索引72: 同价位选华为还是苹果
+    results.append({
+        "opinion_id": "batch3_23_1",
+        "note_id": "68a6f79b000000001b01d45e",
+        "title": "同价位选华为还是苹果",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 146,
+        "comment_count": 191,
+        "opinion_text": "同价位选华为还是苹果，最近想换手机，但一直纠结。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达同价位选择纠结，无明确褒贬",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_23_2",
+        "note_id": "68a6f79b000000001b01d45e",
+        "title": "同价位选华为还是苹果",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 146,
+        "comment_count": 191,
+        "opinion_text": "同价位选华为还是苹果，最近想换手机，但一直纠结。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户仅表达同价位选择纠结，无明确褒贬",
+        "confidence": "高"
+    })
+
+    # 索引73: 17promax感觉银色最好看
+    results.append({
+        "opinion_id": "batch3_24_1",
+        "note_id": "68d7c7dc000000001201d4e3",
+        "title": "17promax感觉银色最好看",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 131,
+        "comment_count": 7,
+        "opinion_text": "纠结橙色和银色，最后还是选了银色比较适合我吧。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为17promax银色最好看并选择购买，表达个人审美偏好",
+        "confidence": "高"
+    })
+
+    # 索引74: 虽然80Pro不是80系列最好的机器
+    results.append({
+        "opinion_id": "batch3_25_1",
+        "note_id": "692d9cd8000000001d03e1da",
+        "title": "虽然80Pro不是80系列最好的机器",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3,
+        "comment_count": 0,
+        "opinion_text": "但是我觉得还是够用，屏幕观感还行。总评如果对华为有好感这代还是值得买的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为80Pro够用、值得买，但语气较克制（'还行''如果对华为有好感'）",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_25_2",
+        "note_id": "692d9cd8000000001d03e1da",
+        "title": "虽然80Pro不是80系列最好的机器",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3,
+        "comment_count": 0,
+        "opinion_text": "就是这个自然色温怎么啥环境都偏冷呢？跟旁边的苹果形成鲜明对比感觉没啥用。外观质感相较于前几代我觉得是倒退，星环好评，直角高亮边框差评。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户指出华为80Pro自然色温偏冷、外观质感倒退、直角高亮边框差评",
+        "confidence": "高"
+    })
+    results.append({
+        "opinion_id": "batch3_25_3",
+        "note_id": "692d9cd8000000001d03e1da",
+        "title": "虽然80Pro不是80系列最好的机器",
+        "source_keyword": "华为和苹果性能对比",
+        "liked_count": 3,
+        "comment_count": 0,
+        "opinion_text": "跟旁边的苹果形成鲜明对比感觉没啥用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户以苹果作为参照对比华为色温，未对苹果本身表达褒贬",
+        "confidence": "高"
+    })
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        json.dump(results, f, ensure_ascii=False, indent=2)
+
+    print(f"Done. Total opinions: {len(results)}")
+    print(f"Output saved to: {OUTPUT_FILE}")
+
+
+if __name__ == "__main__":
+    main()
