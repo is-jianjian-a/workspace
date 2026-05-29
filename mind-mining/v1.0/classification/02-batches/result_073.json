@@ -1,0 +1,127 @@
+[
+  {
+    "note_id": "6a0b00a000000000070213ea",
+    "category": "real_ugc",
+    "reason": "第一人称视角，有明确主题的提问讨论（\"iPhone能用四五年是不是无脑吹\"），分享了与美国朋友的真实对话，有具体观点和好奇"
+  },
+  {
+    "note_id": "666d02d3000000000d00e9b9",
+    "category": "news",
+    "reason": "客观报道WWDC24视频中出现的未发布产品信息，无个人使用体验，属于新闻/行业资讯"
+  },
+  {
+    "note_id": "6949728b000000001f009d76",
+    "category": "info_missing",
+    "reason": "仅有标题和话题标签，无实质内容，无法判断真实意图和观点"
+  },
+  {
+    "note_id": "6a0fce88000000000602210f",
+    "category": "info_missing",
+    "reason": "内容过短（\"价格一直没变过，有好价吗？求带\"），无实质观点，仅为求购信息"
+  },
+  {
+    "note_id": "698e7558000000000a0329f6",
+    "category": "news",
+    "reason": "报道新版Siri推迟发布的行业消息，引用\"知情人士透露\"，属于客观新闻/行业分析"
+  },
+  {
+    "note_id": "698b1100000000000c0361e6",
+    "category": "info_missing",
+    "reason": "内容极短（仅重复标题），无展开说明，无法判断真实意图"
+  },
+  {
+    "note_id": "6a09fa8000000000350232f4",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，详细描述了手术后苹果健康App记录步伐稳定性变化的过程，有具体时间线和真实感受"
+  },
+  {
+    "note_id": "6a07e59e000000003603075a",
+    "category": "marketing",
+    "reason": "格式整齐、模板化的行业分析文章，无个人真实使用体验，无具体机型和数据，属于营销号风格内容"
+  },
+  {
+    "note_id": "6a12db9c000000003601f540",
+    "category": "marketing",
+    "reason": "以销售iCloud拼车服务为目的，包含详细价格、规则说明，属于推广/交易内容"
+  },
+  {
+    "note_id": "69230280000000001e00d27c",
+    "category": "real_ugc",
+    "reason": "第一人称真实吐槽，描述了在京东购买iPhone17promax后遇到的具体质量问题（频繁关机重启、卡死），有苹果检测报告佐证"
+  },
+  {
+    "note_id": "6a054756000000003701cf2a",
+    "category": "invalid",
+    "reason": "内容关于水果（苹果/柚子/草莓）与血糖控制，与手机产品完全无关"
+  },
+  {
+    "note_id": "6a059c460000000035025d5d",
+    "category": "marketing",
+    "reason": "以销售iCloud拼车服务为目的，包含价格和收款方式说明，属于推广/交易内容"
+  },
+  {
+    "note_id": "6a0fea710000000008033eee",
+    "category": "real_ugc",
+    "reason": "第一人称真实吐槽，描述了macOS和iPhone之间接力功能长期不稳定的具体使用体验"
+  },
+  {
+    "note_id": "699db1f70000000022032f3c",
+    "category": "invalid",
+    "reason": "内容关于Claude AI订阅服务销售，与手机产品完全无关"
+  },
+  {
+    "note_id": "698d1c48000000000b012eba",
+    "category": "marketing",
+    "reason": "模板化推荐iOS更新，无具体个人使用体验，一味夸赞（\"赶紧更新吧\"），属于推广风格"
+  },
+  {
+    "note_id": "690174f9000000000402a549",
+    "category": "news",
+    "reason": "报道iPhone20固态按键技术的行业爆料，引用传闻信息，属于新闻/行业资讯"
+  },
+  {
+    "note_id": "6a0ac5df000000003601ef2c",
+    "category": "news",
+    "reason": "行业分析文章，梳理iPhone设计借鉴历史，无个人使用体验，属于行业分析/资讯"
+  },
+  {
+    "note_id": "69dd708d0000000023020128",
+    "category": "news",
+    "reason": "行业分析文章，分析苹果在AI领域的战略现状，无个人使用体验"
+  },
+  {
+    "note_id": "699baf40000000001b01542f",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，分享了苹果健康App记录骨折恢复过程的个人故事，有真实情感"
+  },
+  {
+    "note_id": "6995f2d9000000001a036ec4",
+    "category": "info_missing",
+    "reason": "内容极短（仅重复标题），无展开说明，无实质观点"
+  },
+  {
+    "note_id": "695b5c2d000000001a02847d",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，分享了iPhone15 Pro Max的手感感受，并询问iPhone17系列耐用性，有具体机型和真实观点"
+  },
+  {
+    "note_id": "69d05dc500000000230217af",
+    "category": "news",
+    "reason": "行业/财经分析文章，分析苹果DRAM采购策略对手机市场的影响，无个人使用体验"
+  },
+  {
+    "note_id": "684009130000000023015fb9",
+    "category": "news",
+    "reason": "行业分析文章，分析Apple Ring专利、市场前景和生态定位，无个人使用体验"
+  },
+  {
+    "note_id": "69d7c68200000000220028c0",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，分享了Apple Watch记录术后步行稳定性恢复的个人经历"
+  },
+  {
+    "note_id": "68269832000000000303bcbe",
+    "category": "real_ugc",
+    "reason": "第一人称真实开发体验，详细分享了7天使用苹果生态开发产品的具体过程、技术栈和心得"
+  }
+]

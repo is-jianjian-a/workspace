@@ -1,0 +1,162 @@
+import json
+
+# 硬编码的分类结果（基于LLM语义分析）
+CLASSIFICATION_RESULTS = [
+    {
+        "note_id": "69e74584000000001a03457a",
+        "category": "news",
+        "reason": "客观报道雷鸟V4新品参数曝光信息，引用站长爆料，有对比图，属于行业新品资讯报道，无个人使用体验"
+    },
+    {
+        "note_id": "6a08522f00000000060341da",
+        "category": "real_ugc",
+        "reason": "第一人称视角分享真机对比感受，提到'手感都不错'，有个人真实体验评价"
+    },
+    {
+        "note_id": "677aac8d0000000014027a4b",
+        "category": "spec_comparison",
+        "reason": "以历代iPhone屏幕尺寸变化为核心，做参数对比图，属于规格参数对比类内容"
+    },
+    {
+        "note_id": "68d8246f0000000012014d98",
+        "category": "news",
+        "reason": "客观报道iPhone 17 Pro厚度数据，回顾历代厚度，属于行业资讯/数据报道，无个人体验"
+    },
+    {
+        "note_id": "69b2aea400000000220338c3",
+        "category": "spec_comparison",
+        "reason": "iPhone17全系列参数对比，覆盖各型号参数，属于典型的规格参数对比内容"
+    },
+    {
+        "note_id": "6937d7d9000000001d03ae7d",
+        "category": "real_ugc",
+        "reason": "第一人称观点表达，对两款手机外观设计有个人审美判断和偏好，'越看越顺眼'、'喜欢哪一个'体现真实观点"
+    },
+    {
+        "note_id": "68de3bd8000000000302fe62",
+        "category": "marketing",
+        "reason": "格式高度模板化（🔍💡🤔等emoji分段），一味夸赞新配色'美到心巴上'，无具体使用数据，选色建议泛泛而谈，典型的营销号风格"
+    },
+    {
+        "note_id": "69c4f6d3000000001a021341",
+        "category": "spec_comparison",
+        "reason": "以处理器排行为核心，罗列具体参数（骁龙8E5、CIPA 6.5级、7150mAh等），属于参数对比/排行榜类"
+    },
+    {
+        "note_id": "662ed43e00000000010336ea",
+        "category": "real_ugc",
+        "reason": "第一人称真实场景记录，'此时外面正在下雨，就看了一下'，是真实的即时使用对比行为，有296条评论说明引发真实讨论"
+    },
+    {
+        "note_id": "67723f2d000000000902d617",
+        "category": "info_missing",
+        "reason": "标题党式空疑问句，仅'买华为还是苹果，好纠结'，无任何实质观点、需求描述或对比维度，属于信息不全"
+    },
+    {
+        "note_id": "6a0715e0000000003502d33a",
+        "category": "news",
+        "reason": "客观发布国内手机市场份额数据（第三方数据源），属于行业市场数据报道"
+    },
+    {
+        "note_id": "6949231b000000001e03080d",
+        "category": "spec_comparison",
+        "reason": "以华为nova15相比nova14的升级为核心，罗列芯片等配置参数，属于参数对比类"
+    },
+    {
+        "note_id": "6a0bd7cf000000003601d1e2",
+        "category": "real_ugc",
+        "reason": "详细的第一人称真实使用体验，包含具体价格（258元）、电池容量（80%）、预约流程、维修过程等具体细节，是真实的换电池经历分享"
+    },
+    {
+        "note_id": "69a40388000000000e00ccf7",
+        "category": "spec_comparison",
+        "reason": "以历代高通骁龙芯片Geekbench跑分数据为核心做对比，属于参数/性能对比类"
+    },
+    {
+        "note_id": "68d00572000000001300e54c",
+        "category": "real_ugc",
+        "reason": "第一人称观察发现，'17pro比14pro明显大了一圈'，是个人真实对比观察，虽短但有具体发现"
+    },
+    {
+        "note_id": "692a631e000000001e012612",
+        "category": "news",
+        "reason": "标题为'一张图看懂华为发布会'，内容只有标签，属于发布会资讯类，无个人体验"
+    },
+    {
+        "note_id": "69faf838000000003601808d",
+        "category": "invalid",
+        "reason": "内容仅包含生活美学、橘子海等标签，与手机产品完全无关，属于无效帖"
+    },
+    {
+        "note_id": "6a0abd660000000008000f17",
+        "category": "marketing",
+        "reason": "典型的导购营销文，格式整齐分段推荐各价位手机，最后引导'618买三星上天猫就购了'，有明确推广目的，无个人真实使用体验"
+    },
+    {
+        "note_id": "67a2d91a00000000290185d6",
+        "category": "tutorial",
+        "reason": "明确的选购攻略，有'选购建议'分类，教用户怎么选护眼iPad平板，属于教程/攻略类"
+    },
+    {
+        "note_id": "69e7353000000000230243a5",
+        "category": "real_ugc",
+        "reason": "第一人称真实审美吐槽，'真的好丑好廉价'、'不只是我一个人觉得'，有明确个人观点和情感表达"
+    },
+    {
+        "note_id": "6a0912570000000006033096",
+        "category": "news",
+        "reason": "潇湘晨报官方账号发布的客观新闻报道，报道苹果华为小米集体降价的市场新闻，有具体价格数据和消费者案例"
+    },
+    {
+        "note_id": "6a07e6d3000000003502910e",
+        "category": "marketing",
+        "reason": "表面是拍照对比，但末尾明确推广'转转95新'，'比新机划算1.2k呢 想高性价比的可以考虑一下'，有明确的销售推广目的"
+    },
+    {
+        "note_id": "69a5f5c400000000220323c4",
+        "category": "spec_comparison",
+        "reason": "'一图看懂新旧两款入门iphone硬件配置'，以硬件配置参数对比为核心"
+    },
+    {
+        "note_id": "6927bc4e000000001e024a5d",
+        "category": "real_ugc",
+        "reason": "第一人称观点表达，对安卓和iOS体验差异有明确看法，'是不是都卷错了方向'体现真实思考和观点，引发369条评论"
+    },
+    {
+        "note_id": "6a094b9f0000000035020341",
+        "category": "real_ugc",
+        "reason": "第一人称真实使用体验，详细描述使用荣耀WIN的实际感受，反驳网上负面评价，有具体续航数据（亮屏10小时、游戏5-6小时），是真实用户反馈"
+    }
+]
+
+def main():
+    # 读取批次文件
+    batch_path = "/Users/zhijian/workspace/mind-mining/v1.0/classification/02-batches/batch_008.json"
+    with open(batch_path, "r", encoding="utf-8") as f:
+        batch_data = json.load(f)
+    
+    # 验证数量
+    assert len(batch_data) == 25, f"期望25条，实际{len(batch_data)}条"
+    assert len(CLASSIFICATION_RESULTS) == 25, f"分类结果期望25条，实际{len(CLASSIFICATION_RESULTS)}条"
+    
+    # 验证note_id匹配
+    batch_ids = {item["note_id"] for item in batch_data}
+    result_ids = {item["note_id"] for item in CLASSIFICATION_RESULTS}
+    assert batch_ids == result_ids, f"note_id不匹配: 批次有{batch_ids - result_ids}, 结果有{result_ids - batch_ids}"
+    
+    # 输出结果
+    output_path = "/Users/zhijian/workspace/mind-mining/v1.0/classification/02-batches/result_008.json"
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(CLASSIFICATION_RESULTS, f, ensure_ascii=False, indent=2)
+    
+    # 统计
+    from collections import Counter
+    categories = Counter(item["category"] for item in CLASSIFICATION_RESULTS)
+    print(f"✅ 分类完成，共 {len(CLASSIFICATION_RESULTS)} 条")
+    print(f"📁 输出文件: {output_path}")
+    print("📊 分类统计:")
+    for cat, count in sorted(categories.items()):
+        print(f"   {cat}: {count}条")
+
+if __name__ == "__main__":
+    main()

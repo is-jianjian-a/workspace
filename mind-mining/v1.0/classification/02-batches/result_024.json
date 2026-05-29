@@ -1,0 +1,127 @@
+[
+  {
+    "note_id": "6959dbd2000000001d03acc1",
+    "category": "news",
+    "reason": "客观报道华为'三年不卡顿'承诺的兑现情况，内容偏行业资讯，无个人使用体验"
+  },
+  {
+    "note_id": "69586ae9000000001e000b4e",
+    "category": "info_missing",
+    "reason": "仅有标题式疑问句，无实质内容展开，属于标题党式空疑问"
+  },
+  {
+    "note_id": "69f8b853000000002301d240",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，刚买的手机出现卡顿，表达真实困惑和不满"
+  },
+  {
+    "note_id": "69db4f0a000000002100679d",
+    "category": "real_ugc",
+    "reason": "第一人称视角，分享同型号不同使用感受（入坑/退坑），有明确主题的讨论"
+  },
+  {
+    "note_id": "68bc002d000000001b03f64b",
+    "category": "spec_comparison",
+    "reason": "内容为'手机产品优缺点一览表'，以参数规格对比为核心，像产品说明书"
+  },
+  {
+    "note_id": "672c9dfa000000001a035372",
+    "category": "real_ugc",
+    "reason": "第一人称换机经历分享，询问大家的换机尴尬瞬间，有明确主题的互动讨论"
+  },
+  {
+    "note_id": "691011ce000000000700840f",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，详细描述mate60pro+卡顿问题、人脸识别故障，有具体使用细节和情感表达"
+  },
+  {
+    "note_id": "68993589000000000200307d",
+    "category": "real_ugc",
+    "reason": "第一人称换机心路历程，从苹果到华为的详细体验对比，有具体使用感受（干眼症、信号、拍照等）"
+  },
+  {
+    "note_id": "69edc9d00000000035039b2b",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，描述华为P60卡顿和断网问题，有具体使用场景"
+  },
+  {
+    "note_id": "69d2033a0000000021011255",
+    "category": "real_ugc",
+    "reason": "第一人称真实吐槽，详细描述17pro各种卡顿场景（微信卡、扫码卡、拍视频卡），有具体使用细节"
+  },
+  {
+    "note_id": "699d574800000000150394f9",
+    "category": "news",
+    "reason": "报道OPPO设计总监吐槽iPhone17Pro卡顿的行业新闻，客观报道第三方观点，无个人体验"
+  },
+  {
+    "note_id": "694a5751000000001e03bc06",
+    "category": "info_missing",
+    "reason": "仅有标题'从IOS换成纯血鸿蒙，使用半年的感受'，正文只有话题标签，无实质内容"
+  },
+  {
+    "note_id": "69c33000000000002301e520",
+    "category": "info_missing",
+    "reason": "仅有标题'到底安卓卡是什么'，正文只有话题标签，无实质内容展开"
+  },
+  {
+    "note_id": "6a0bbfe30000000035039614",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，描述mate60pro卡顿变慢问题，询问其他用户是否遇到"
+  },
+  {
+    "note_id": "69384838000000000d03ae23",
+    "category": "real_ugc",
+    "reason": "第一人称真实吐槽，描述华为mate70Pro相机卡顿问题，有具体使用场景和情绪表达"
+  },
+  {
+    "note_id": "6929b3b4000000001f00940e",
+    "category": "news",
+    "reason": "客观报道华为鸿蒙电脑发布，偏行业资讯和民族情绪，无个人使用体验"
+  },
+  {
+    "note_id": "68a60c74000000001d02faaa",
+    "category": "spec_comparison",
+    "reason": "以拍照参数对比为核心，详细对比iPhone、华为、小米、OPPO的色彩还原和清晰度，像测评报告"
+  },
+  {
+    "note_id": "68dbf5900000000004007f09",
+    "category": "real_ugc",
+    "reason": "第一人称真实拍照体验对比，有个人感受和具体观察（苹果微距难对焦、华为亮但涂抹等）"
+  },
+  {
+    "note_id": "69677e07000000001a032b39",
+    "category": "info_missing",
+    "reason": "标题党式空疑问，仅问'该选择哪款'，无实质观点或使用体验"
+  },
+  {
+    "note_id": "6628da47000000000401b4c3",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，详细描述mate60pro卡顿问题，求助解决方案，有具体使用细节"
+  },
+  {
+    "note_id": "69a550a6000000000d009bfb",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用体验，询问iPhone16promax卡顿问题，有明确主题的互动讨论"
+  },
+  {
+    "note_id": "675653b1000000000102bffc",
+    "category": "marketing",
+    "reason": "格式整齐、多品牌提及、一味夸赞各系统流畅度，尤其突出ColorOS15和OPPO Reno13，带有明显推广性质"
+  },
+  {
+    "note_id": "68f312fe0000000005010b0d",
+    "category": "marketing",
+    "reason": "标题为'iPhone17对比国产安卓手机'但正文只有话题标签和转转平台标签，无实质内容，疑似引流"
+  },
+  {
+    "note_id": "687ca7da000000001c036505",
+    "category": "news",
+    "reason": "客观报道华为鸿蒙电脑发布，偏行业资讯，无个人使用体验"
+  },
+  {
+    "note_id": "69e70452000000002003a78b",
+    "category": "real_ugc",
+    "reason": "第一人称视角，表达对鸿蒙6.1流畅度的期待并准备尝试，有真实个人意图"
+  }
+]

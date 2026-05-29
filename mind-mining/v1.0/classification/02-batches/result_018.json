@@ -1,0 +1,127 @@
+[
+  {
+    "note_id": "659a72d2000000001d02a620",
+    "category": "news",
+    "reason": "品牌策略分析文章，客观分解苹果、华为、小米的品牌差异，无个人使用体验，属于行业分析类内容"
+  },
+  {
+    "note_id": "68dc8790000000000700ec9a",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用疑问，对比华为和苹果手表的睡眠质量数据，有明确主题和个人使用场景"
+  },
+  {
+    "note_id": "6753c6aa000000000201ab29",
+    "category": "real_ugc",
+    "reason": "明确主题的提问讨论，对华为定价提出质疑，引发大量评论互动，有真实观点和讨论意图"
+  },
+  {
+    "note_id": "66212a660000000001007222",
+    "category": "spec_comparison",
+    "reason": "以华为P70各版本参数配置为核心，详细罗列处理器、屏幕、相机、价格等规格差异，像产品说明书式的参数对比"
+  },
+  {
+    "note_id": "6788feee000000001b00adf6",
+    "category": "marketing",
+    "reason": "格式整齐、模板化表达，使用'小钢炮''洪荒之力'等营销话术，一味夸赞两款手机但无具体使用数据或个人真实体验"
+  },
+  {
+    "note_id": "64fef1fc000000001e031a14",
+    "category": "spec_comparison",
+    "reason": "详细罗列Mate60三款机型的处理器、内存、电池、屏幕、摄像头等参数差异，纯参数对比导向"
+  },
+  {
+    "note_id": "672e3fe3000000003c01a9f2",
+    "category": "real_ugc",
+    "reason": "第一人称换机心路历程，详细描述了苹果、OPPO、华为三款手机的真实使用感受（信号、电池、像素、重量等），有具体场景和情感"
+  },
+  {
+    "note_id": "66dacbb0000000002603e230",
+    "category": "tutorial",
+    "reason": "明确的选购教程/攻略，从便携性、系统、屏幕、绘画、生产力、续航等维度给出对比分析和选购建议，有操作指导性"
+  },
+  {
+    "note_id": "68b3f169000000001d034e5d",
+    "category": "invalid",
+    "reason": "内容仅重复一句话，无实质观点或展开讨论，属于无效帖"
+  },
+  {
+    "note_id": "6937e202000000001b02591c",
+    "category": "info_missing",
+    "reason": "标题党式空内容，仅有标题'低端与高端人群的区别'，无实质内容展开，无法判断意图"
+  },
+  {
+    "note_id": "68cb4317000000000b03c454",
+    "category": "real_ugc",
+    "reason": "有具体数据（低8~10度）和个人观点（夏天户外拍视频不怕烫手），虽短但有实质内容和真实体验指向"
+  },
+  {
+    "note_id": "6a0a99d70000000037037a2f",
+    "category": "real_ugc",
+    "reason": "第一人称真实换机顾虑，表达了对苹果信号的担忧，有真实情感和明确购机意图"
+  },
+  {
+    "note_id": "6a081abf0000000038036b60",
+    "category": "real_ugc",
+    "reason": "第一人称购机计划，提到具体机型（vivo x300pro）和价格（5500以上），有真实购买意图和对比思考"
+  },
+  {
+    "note_id": "67ce5a27000000002503d6ba",
+    "category": "real_ugc",
+    "reason": "第一人称真实使用理念分享，提到具体设备（iPhone14、iPad pro、华为mate30），有个人感悟和真实使用痕迹"
+  },
+  {
+    "note_id": "664d8bd90000000014019601",
+    "category": "real_ugc",
+    "reason": "实拍对比体验，有具体机型（vivo X100 Ultra、华为Pura 70 Ultra、iPhone15 Pro Max）和个人评价（发黄、红润、真实风等），有真实使用感受"
+  },
+  {
+    "note_id": "69101b2600000000070150aa",
+    "category": "info_missing",
+    "reason": "标题党式空内容，仅有标题'百分之八十的老板都在用苹果手机'，无实质内容或数据支撑"
+  },
+  {
+    "note_id": "685022da0000000021002784",
+    "category": "spec_comparison",
+    "reason": "以Pura80 Pro和Pro+的参数差异为核心（玻璃、主摄、卫星通信、内存），进行逐项对比分析，参数导向"
+  },
+  {
+    "note_id": "6a0876e10000000007010af8",
+    "category": "news",
+    "reason": "客观报道iPhone17 Pro降价信息，提到具体价格和电商平台补贴，属于新闻资讯类"
+  },
+  {
+    "note_id": "65312ebe00000000250080f6",
+    "category": "news",
+    "reason": "华为与苹果历年出货量数据对比，属于行业数据/市场分析类内容，无个人使用体验"
+  },
+  {
+    "note_id": "6355507e000000001401c887",
+    "category": "real_ugc",
+    "reason": "个人观点分析，对手机品牌鄙视链发表看法，提到具体机型（iPhone 14 Pro Max、小米12S Ultra、华为Mate 50 Pro等）和个人判断"
+  },
+  {
+    "note_id": "650a4f98000000001e03db27",
+    "category": "spec_comparison",
+    "reason": "iPhone14和华为mate50Pro的辐射值客观数据对比，引用国家标准，属于参数/数据对比"
+  },
+  {
+    "note_id": "66321ff7000000001e024e64",
+    "category": "news",
+    "reason": "对市场趋势的观察观点，无个人使用体验，属于行业评论/新闻类内容"
+  },
+  {
+    "note_id": "6676ed88000000001e0105f4",
+    "category": "real_ugc",
+    "reason": "情感化的个人表达，对华为鸿蒙发展历程的感慨，有真实情感色彩和观点立场"
+  },
+  {
+    "note_id": "69e9bd23000000001a02e77f",
+    "category": "info_missing",
+    "reason": "仅有标题'华为 Pura：90 Pro Max 对比 80 ultra'，正文无实质内容，无法判断具体对比意图"
+  },
+  {
+    "note_id": "65e31c35000000000b018f18",
+    "category": "real_ugc",
+    "reason": "第一人称真实购买体验，详细描述了为孩子选购平板的心路历程，对比了iPad和华为MatepadAir的优缺点，有真实决策过程和体验"
+  }
+]
