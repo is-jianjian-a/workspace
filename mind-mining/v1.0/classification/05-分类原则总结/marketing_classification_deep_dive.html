@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>营销内容分类深度解析</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f1419;
+    color: #e6edf3;
+    line-height: 1.7;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.header {
+    background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 50%, #ff9f43 100%);
+    padding: 60px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.header::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+    animation: pulse 4s ease-in-out infinite;
+}
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.8; }
+}
+.header h1 { font-size: 2.8em; margin-bottom: 16px; position: relative; }
+.header p { font-size: 1.2em; opacity: 0.9; position: relative; }
+
+.stats-bar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.stat-item {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.stat-item:hover { border-color: #ff6b6b; transform: translateY(-4px); }
+.stat-item .number { font-size: 2.5em; font-weight: 800; color: #ff6b6b; }
+.stat-item .label { color: #8b949e; margin-top: 8px; font-size: 0.95em; }
+
+.taxonomy-nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+}
+.taxonomy-nav a {
+    padding: 12px 24px;
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    color: #e6edf3;
+    text-decoration: none;
+    transition: all 0.3s;
+    font-weight: 600;
+}
+.taxonomy-nav a:hover, .taxonomy-nav a.active {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.category-section {
+    margin-bottom: 60px;
+}
+.category-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #30363d;
+}
+.category-header .icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em;
+}
+.category-header h2 { font-size: 1.9em; }
+.category-header .count {
+    margin-left: auto;
+    background: #ff6b6b;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.subtype-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 24px;
+    transition: all 0.3s;
+}
+.subtype-card:hover { border-color: #ff6b6b; }
+.subtype-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.subtype-header .badge {
+    background: #ff6b6b;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 12px;
+    font-size: 0.85em;
+    font-weight: 700;
+}
+.subtype-header h3 { font-size: 1.3em; }
+.subtype-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 16px;
+    background: #0f1419;
+    border-radius: 10px;
+}
+.meta-item .label { color: #8b949e; font-size: 0.85em; margin-bottom: 4px; }
+.meta-item .value { color: #e6edf3; font-weight: 600; }
+
+.signals {
+    margin-bottom: 20px;
+}
+.signals .label { color: #8b949e; font-size: 0.9em; margin-bottom: 8px; }
+.signal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.signal-tag {
+    background: #238636;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 8px;
+    font-size: 0.85em;
+}
+
+.examples { margin-top: 20px; }
+.examples .label { color: #ff9f43; font-size: 0.9em; margin-bottom: 12px; font-weight: 600; }
+.example {
+    background: #0f1419;
+    border-left: 3px solid #ff6b6b;
+    padding: 16px;
+    margin-bottom: 12px;
+    border-radius: 0 10px 10px 0;
+}
+.example-title { font-weight: 600; color: #ff9f43; margin-bottom: 8px; }
+.example-content { color: #c9d1d9; font-size: 0.95em; margin-bottom: 8px; font-style: italic; }
+.example-reason { color: #7ee787; font-size: 0.9em; }
+.example-reason::before { content: "✓ 判定: "; font-weight: 600; }
+
+.insight-box {
+    background: linear-gradient(135deg, #1f6feb20, #23863620);
+    border: 1px solid #1f6feb;
+    border-radius: 16px;
+    padding: 28px;
+    margin: 40px 0;
+}
+.insight-box h3 { color: #58a6ff; margin-bottom: 16px; }
+.insight-box ul { list-style: none; }
+.insight-box li { padding: 8px 0; padding-left: 24px; position: relative; }
+.insight-box li::before { content: "▸"; position: absolute; left: 0; color: #58a6ff; }
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    margin-top: 60px;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.3em;
+    box-shadow: 0 4px 16px rgba(255,107,107,0.4);
+}
+@media (max-width: 768px) {
+    .stats-bar { grid-template-columns: repeat(2, 1fr); }
+    .subtype-meta { grid-template-columns: 1fr; }
+    .header h1 { font-size: 2em; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>🔥 营销内容分类深度解析</h1>
+    <p>基于 173 条营销内容的完整拆解 | 3大维度 × 13个子类型</p>
+</div>
+
+<div class="stats-bar">
+    <div class="stat-item">
+        <div class="number">173</div>
+        <div class="label">营销内容总数</div>
+    </div>
+    <div class="stat-item">
+        <div class="number">13</div>
+        <div class="label">识别子类型</div>
+    </div>
+    <div class="stat-item">
+        <div class="number">3</div>
+        <div class="label">分类维度</div>
+    </div>
+    <div class="stat-item">
+        <div class="number">8.5%</div>
+        <div class="label">占总数据比例</div>
+    </div>
+</div>
+
+<div class="taxonomy-nav">
+    <a href="#biz">💰 按商业模式</a>
+    <a href="#content">📝 按内容形态</a>
+    <a href="#operation">🎯 按运营目的</a>
+</div>
+
+<div class="category-section" id="biz">
+    <div class="category-header">
+        <div class="icon" style="background: #ff6b6b20;">💰</div>
+        <h2>按商业模式分类</h2>
+        <div class="count">5 类</div>
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #e74c3c">9.8%</span>
+            <h3>二手交易平台推广</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">17 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">C2C/B2C二手交易佣金</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">促成二手手机交易</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">转转</span>
+                <span class="signal-tag">闲鱼</span>
+                <span class="signal-tag">回收</span>
+                <span class="signal-tag">95新</span>
+                <span class="signal-tag">上门回收</span>
+                <span class="signal-tag">秒打款</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #e67e22">6.9%</span>
+            <h3>电商渠道/店铺推广</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">12 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">新机销售佣金/广告费</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">引导购买新机</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">百亿补贴</span>
+                <span class="signal-tag">天猫</span>
+                <span class="signal-tag">京东</span>
+                <span class="signal-tag">到店</span>
+                <span class="signal-tag">促销</span>
+                <span class="signal-tag">立减</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #f39c12">6.4%</span>
+            <h3>品牌官方/新品预热</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">11 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">品牌PR/口碑营销</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">制造期待感，预热销量</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">新品</span>
+                <span class="signal-tag">预热</span>
+                <span class="signal-tag">上市</span>
+                <span class="signal-tag">配色</span>
+                <span class="signal-tag">美图</span>
+                <span class="signal-tag">越看越</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #9b59b6">1.2%</span>
+            <h3>APP/软件产品推广</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">2 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">软件下载/用户增长</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">获取APP用户</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">APP</span>
+                <span class="signal-tag">下载</span>
+                <span class="signal-tag">千问</span>
+                <span class="signal-tag">智能场景</span>
+                <span class="signal-tag">快捷指令</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #1abc9c">0.6%</span>
+            <h3>配件/周边产品推广</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">1 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">配件销售</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">销售手机周边产品</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">保护壳</span>
+                <span class="signal-tag">贴膜</span>
+                <span class="signal-tag">充电器</span>
+                <span class="signal-tag">配件</span>
+                <span class="signal-tag">周边</span>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="category-section" id="content">
+    <div class="category-header">
+        <div class="icon" style="background: #ff6b6b20;">📝</div>
+        <h2>按内容形态分类</h2>
+        <div class="count">4 类</div>
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #3498db">19.1%</span>
+            <h3>导购清单/选购攻略</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">33 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">导购佣金/广告植入</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">通过推荐引导购买</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">排行</span>
+                <span class="signal-tag">榜单</span>
+                <span class="signal-tag">盘点</span>
+                <span class="signal-tag">必买</span>
+                <span class="signal-tag">值得入手</span>
+                <span class="signal-tag">怎么选</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #2ecc71">11.0%</span>
+            <h3>参数对比/跑分排行</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">19 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">品牌公关/技术营销</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">用数据说服用户</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">跑分</span>
+                <span class="signal-tag">参数</span>
+                <span class="signal-tag">规格</span>
+                <span class="signal-tag">配置</span>
+                <span class="signal-tag">geekbench</span>
+                <span class="signal-tag">天梯</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #e74c3c">3.5%</span>
+            <h3>优缺点模板化罗列</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">6 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">流量变现/广告植入</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">快速生产内容获取流量</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">✅</span>
+                <span class="signal-tag">❌</span>
+                <span class="signal-tag">优缺点</span>
+                <span class="signal-tag">优势</span>
+                <span class="signal-tag">短板</span>
+                <span class="signal-tag">槽点</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #95a5a6">1.7%</span>
+            <h3>空壳营销/纯标签堆砌</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">3 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">刷量/养号</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">维持账号活跃度</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">仅有话题标签</span>
+                <span class="signal-tag">无实质内容</span>
+                <span class="signal-tag">口号式</span>
+                <span class="signal-tag">家人们</span>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="category-section" id="operation">
+    <div class="category-header">
+        <div class="icon" style="background: #ff6b6b20;">🎯</div>
+        <h2>按运营目的分类</h2>
+        <div class="count">4 类</div>
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #e74c3c">25.4%</span>
+            <h3>营销号通用模板</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">44 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">MCN机构批量生产</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">规模化获取流量变现</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">模板化</span>
+                <span class="signal-tag">格式整齐</span>
+                <span class="signal-tag">营销话术</span>
+                <span class="signal-tag">一味夸赞</span>
+                <span class="signal-tag">空泛表述</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #9b59b6">7.5%</span>
+            <h3>引流涨粉/账号运营</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">13 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">粉丝经济/后续变现</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">积累粉丝资产</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">关注</span>
+                <span class="signal-tag">涨粉</span>
+                <span class="signal-tag">➕💗</span>
+                <span class="signal-tag">不迷路</span>
+                <span class="signal-tag">get更多</span>
+                <span class="signal-tag">标题党</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #f39c12">2.9%</span>
+            <h3>夸张话术/情感煽动</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">5 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">流量变现</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">通过情绪刺激获取互动</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">杀疯了</span>
+                <span class="signal-tag">降维打击</span>
+                <span class="signal-tag">封神</span>
+                <span class="signal-tag">屠榜</span>
+                <span class="signal-tag">逆天</span>
+                <span class="signal-tag">洪荒之力</span>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="subtype-card">
+        <div class="subtype-header">
+            <span class="badge" style="background: #e74c3c">0%</span>
+            <h3>引战/对比营销</h3>
+        </div>
+        
+        <div class="subtype-meta">
+            <div class="meta-item">
+                <div class="label">数量</div>
+                <div class="value">0 条</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">商业模式</div>
+                <div class="value">黑公关/流量收割</div>
+            </div>
+            <div class="meta-item">
+                <div class="label">核心意图</div>
+                <div class="value">制造争议获取曝光</div>
+            </div>
+        </div>
+        
+        <div class="signals">
+            <div class="label">🚩 识别信号</div>
+            <div class="signal-tags">
+                <span class="signal-tag">引战</span>
+                <span class="signal-tag">拉踩</span>
+                <span class="signal-tag">贬低</span>
+                <span class="signal-tag">吊打</span>
+                <span class="signal-tag">碾压</span>
+                <span class="signal-tag">小黑子</span>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="insight-box">
+    <h3>💡 关键洞察</h3>
+    <ul>
+        <li>营销内容中「营销号通用模板」占比最高（25.4%），说明工业化内容生产已成主流</li>
+        <li>「导购清单/选购攻略」（19.1%）+「参数对比」（11.0%）= 30.1%，"假装客观"是最常见的营销策略</li>
+        <li>二手交易推广（9.8%）和电商推广（6.9%）合计16.7%，说明交易平台是重要营销阵地</li>
+        <li>「引流涨粉」（7.5%）独立于商业推广，说明"先涨粉再变现"是常见路径</li>
+        <li>「夸张话术」（2.9%）+「引战」（纳入其他）比例不高，但互动效率可能更高</li>
+        <li>「空壳营销」（1.7%）虽然数量少，但可能是养号阶段的常见形态</li>
+    </ul>
+</div>
+
+<div class="footer">
+    <p>营销内容分类深度解析 | 数据来源：小红书华为/苹果相关帖子分类结果</p>
+</div>
+
+<a href="#" class="back-to-top">↑</a>
+
+</div>
+</body>
+</html>

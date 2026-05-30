@@ -1,0 +1,500 @@
+[
+  {
+    "note_id": "6a0f23bc000000003701d0cb",
+    "opinions": [
+      {
+        "opinion_text": "买新不买旧在我这里根本不存在，我又不皇有病去入一个自己喜欢不起来的东西，勉强了自己好久发现根本勉强不了，萝卜青菜各有所爱所以还是4k多拿下我喜欢已久的16pro了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "还是4k多拿下我喜欢已久的16pro了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "功课做下来16pro拍照依旧能打哇性能也不差",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "16pro拍照依旧能打哇性能也不差",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "听说17的边框有点\"娇气\"，对我这种一天摔八百回的手滑党来说不适合不适合",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "17的边框有点\"娇气\"，对我这种一天摔八百回的手滑党来说不适合不适合",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68a0a62b000000001d008574",
+    "opinions": [
+      {
+        "opinion_text": "iOS26自适应电量会降低20%单核性能，多核约5-10%",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iOS26自适应电量会降低20%单核性能，多核约5-10%",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0fcf8f000000003501db11",
+    "opinions": [
+      {
+        "opinion_text": "用了几年安卓，感觉各方面性能都很顶",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用了几年安卓，感觉各方面性能都很顶",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "每次看到姐妹用苹果手机拍出来的合照，那质感和出片率真的羡慕了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手机拍出来的合照，那质感和出片率真的羡慕了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果普遍能比日常便宜个1000多元，还能申请国补，是个换苹果机的好机会",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "是个换苹果机的好机会",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68f8425c0000000005033f21",
+    "opinions": [
+      {
+        "opinion_text": "国产手机快充、高刷、摄像头堆料猛，价格还更便宜",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "国产手机快充、高刷、摄像头堆料猛，价格还更便宜",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "身边不少人换机还是首选苹果",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "身边不少人换机还是首选苹果",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "是iOS真的碾压安卓，还是品牌效应？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "是iOS真的碾压安卓，还是品牌效应？",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68f86c140000000005039fba",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 6当时感觉很惊艳，手感做工质感真的不错，但是真的卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感做工质感真的不错，但是真的卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 6s Plus，6代改进版，流畅很多，6s Plus续航堪比现在PM，很惊艳",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "流畅很多，6s Plus续航堪比现在PM，很惊艳",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 7从金属改为玻璃质感，其他的体验区别不大，手感很好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "手感很好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 7 Plus当年加价两三万的离谱机器，实际体验比6 Plus好不了多少，普通",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实际体验比6 Plus好不了多少，普通",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 8 Plus当年的游戏神器，可以说几乎没短板，很不错",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "游戏神器，可以说几乎没短板，很不错",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone X首发就买了，除了是个全面屏之外感觉其他的都非常一般",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "除了是个全面屏之外感觉其他的都非常一般",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone XR最喜欢的机器之一，续航堪比现在pm，价格便宜拍照好，除了边框大几乎没短板",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最喜欢的机器之一，续航堪比现在pm，价格便宜拍照好，除了边框大几乎没短板",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone XS和X半斤八两",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "和X半斤八两",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 11 Promax印象不深只记得是绿色，总体还行",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "总体还行",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 12用了一周就退了，续航发热信号各种拉跨",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "续航发热信号各种拉跨",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 13 Pro经历12的拉跨后13真香来了，13 Pro也是用的最久的iPhone，除了续航外总体都很不错还有了高刷，很惊艳",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "13真香来了，除了续航外总体都很不错还有了高刷，很惊艳",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 15 Promax总体还不错吧，就是热，质感比17强很多，其他续航中规中矩",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "总体还不错吧，就是热，质感比17强很多",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 17 Pro拉跨卡顿bug多的iOS 26很致命，质感流畅度续航发热还不错，可惜了系统",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "拉跨卡顿bug多的iOS 26很致命，质感流畅度续航发热还不错，可惜了系统",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "下代肯定还会买，好不好用就另说了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "下代肯定还会买",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "698d7e94000000000a02aa48",
+    "opinions": [
+      {
+        "opinion_text": "高端手机的性价比并不在于参数的堆砌，而是综合性能、用户体验和品牌价值",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "高端手机的性价比并不在于参数的堆砌，而是综合性能、用户体验和品牌价值",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "参数如续航、内存等虽重要，但实际体验受软硬件配合、芯片效率等因素影响",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "参数如续航、内存等虽重要，但实际体验受软硬件配合、芯片效率等因素影响",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67bd8f8f000000002a00c521",
+    "opinions": [
+      {
+        "opinion_text": "苹果连扬声器的小细节都打磨的很认真，开孔做的蛮精致的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "连扬声器的小细节都打磨的很认真，开孔做的蛮精致的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓的设计看着有点粗糙了",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓的设计看着有点粗糙了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这也就难怪人家卖的贵了吧？毕竟做工摆在那",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "毕竟做工摆在那",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6926e578000000001e00ace2",
+    "opinions": [
+      {
+        "opinion_text": "苹果的老机型更新系统之后也会变卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果的老机型更新系统之后也会变卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我800整得2手XR来当备用机的，结果不小心开自动更新系统了，现在是18.3.1感觉确实没之前那么流畅了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉确实没之前那么流畅了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "真的有手机厂商故意降低老机型的性能，逼你换新手机啊？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "故意降低老机型的性能，逼你换新手机",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "660e0ea9000000001a015e77",
+    "opinions": [
+      {
+        "opinion_text": "15系列份额不及14&13系列同期，对比国内公司动不动首发功能或者新技术，看苹果每次更新内容的确较少，摆烂挤牙膏",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果每次更新内容的确较少，摆烂挤牙膏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我仍然用苹果原因不单是生态依赖，我是认为综合可靠性和保值率较高",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "综合可靠性和保值率较高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "它像个每项都不突出但能力均衡的六边形战士",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "每项都不突出但能力均衡的六边形战士",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c7b6af000000001a025a4b",
+    "opinions": [
+      {
+        "opinion_text": "继13之后的iPhone最强标准版没有之一",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "继13之后的iPhone最强标准版没有之一",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "质感第一 性能第二",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "质感第一 性能第二",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6975baa80000000009039fcc",
+    "opinions": [
+      {
+        "opinion_text": "7999全是缺点，5499全是优点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "5499全是优点",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68cb91270000000011015651",
+    "opinions": [
+      {
+        "opinion_text": "每年的苹果新品评测视频，我基本上第一时间必须看钟文泽老师出品的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "基本上第一时间必须看",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67c7e8bd000000001203dbca",
+    "opinions": [
+      {
+        "opinion_text": "苹果还是那个苹果，最新发布的Air7，除了把处理器从M2升级到了M3以外，基本找不到其他的升级点，感觉靠吃老本就能活的很好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "基本找不到其他的升级点，感觉靠吃老本就能活的很好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "都2025年了，最低4799的平板，竟然还是没有高刷，而且就是这样没有诚意的新品，苹果还不愁它的销量",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "竟然还是没有高刷，没有诚意的新品",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在国产平板除了生态以外，应该都比它强",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "国产平板除了生态以外，应该都比它强",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6718c743000000001402e479",
+    "opinions": [
+      {
+        "opinion_text": "前三都是M系列芯片，在M5出来之前前三应该不会改变了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "前三都是M系列芯片",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "A18Pro已经很接近M1了，等A19Pro出来感觉有希望追上M1，让手机达到桌面级芯片的性能水平",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "让手机达到桌面级芯片的性能水平",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69d23f1c00000000230240f2",
+    "opinions": [
+      {
+        "opinion_text": "如今买这高不成低不就的中配，就已经到了3w。究竟是物价回不去了，还是电脑硬件贵太离谱了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "高不成低不就的中配，就已经到了3w",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "经常看到说苹果真香现在看来真有性价比。（加1TB要3k，嗯，确实便宜）能不能别再吹了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "能不能别再吹了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果这次的MacBook Pro虽然看起来很贵，但是相比于以前的Mac Pro，它的性能更强，能给人带来更高的性能，更低的售价",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "性能更强，能给人带来更高的性能，更低的售价",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

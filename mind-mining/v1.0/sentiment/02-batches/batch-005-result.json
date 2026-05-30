@@ -1,0 +1,617 @@
+[
+  {
+    "note_id": "69e8348b0000000021004069",
+    "opinions": [
+      {
+        "opinion_text": "被网上提前曝出的高糊图给影响了，还以为Pura 90标准版能有多丑呢？直至线下见到了真机：'这不是还挺美的！'",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'这不是还挺美的！'直接表达了对Pura 90外观的惊喜和赞赏，从负面预期转为正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Ta其实很高级也很耐看，视觉重心高度聚焦于左上角，三角形依然先锋，不循规蹈矩。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'高级''耐看''先锋''不循规蹈矩'等词明确表达了对Pura 90设计美学的高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "磨砂玻璃背板没有冗余的元素，在哑光质感下呈现出柔和的陶瓷般光泽，搭配金属中框，清冷、纯净且克制，整体调性相当利落，最舒服的是裸机轻薄手感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'清冷、纯净且克制''相当利落''最舒服''轻薄手感'等描述表达了对材质和手感的强烈喜爱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "那个生下来就与众不同的家庭成员，也许天生就自带争议，但Ta就是Ta，我很看好Ta。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'我很看好Ta'直接表达了对Pura 90市场前景和产品价值的强烈信心",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6953a4f3000000001e0249d5",
+    "opinions": [
+      {
+        "opinion_text": "荣耀Power2这个设计和配色实在是眼熟啊，右边的那颗镜头很大很抢眼。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "'眼熟''很大很抢眼'是客观描述，没有明显的褒贬倾向，只是指出设计特征",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "据说明年iPhone18 Pro系列也要取消拼色设计了，荣耀Power2也算是iPhone 18Pro版本前瞻了。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "将荣耀设计与未来iPhone关联，是客观类比，没有表达好恶",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "据说明年iPhone18 Pro系列也要取消拼色设计了，荣耀Power2也算是iPhone 18Pro版本前瞻了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及iPhone18 Pro设计变化传闻，属于信息传递，无情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69538241000000002202102b",
+    "opinions": [
+      {
+        "opinion_text": "外观满分5，给几分？",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是询问读者对荣耀Power2外观的评分，没有表达个人观点或情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69352690000000000d0374f1",
+    "opinions": [
+      {
+        "opinion_text": "如果你有6000多的购机预算，最近在考虑Mate80 Pro。你其实还有个选择：老款的Mate70 Pro+。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观提出购机建议，没有褒贬，只是提供另一个选择",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "老款Mate70 Pro+有更大的屏幕，中框用的钛金属材质，钛金属的边框比普通铝合金中框耐用的多。相机方面，两款手机主要的参数也比较接近。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "强调Mate70 Pro+的屏幕更大、钛金属中框更耐用，是对老款优势的肯定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体看下来，这1500元的差价主要体现在麒麟9030 Pro的性能上。如果你本身觉得老款的性能够用，我觉得5000多块钱，买到一台去年的超大杯顶级旗舰，核心功能没有多少损失，还是很划算的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'还是很划算的'明确表达了对Mate70 Pro+性价比的正面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0731050000000035029491",
+    "opinions": [
+      {
+        "opinion_text": "现在用的是华为p50pro，用了有4年多快5年了，最近电池和内存确实不太够用，想换手机。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'电池和内存确实不太够用'表达了对旧华为手机性能衰减的不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "因为我其他的产品都是华为，所以觉得再换华为会更方便。但是我看好多说纯血鸿蒙系统有些功能不太适配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'再换华为会更方便'是正向，'纯血鸿蒙系统有些功能不太适配'是负向，表达矛盾心理",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果确实拍照比较好看，听说苹果手机比较省内存。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'拍照比较好看''比较省内存'是对苹果手机拍照和内存管理的正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "692675de000000001f00a59e",
+    "opinions": [
+      {
+        "opinion_text": "我看到很多人都在说，华为Mate80这次的标准版很良心，值得买。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "转述他人观点'很良心，值得买'，对Mate80标准版持肯定态度",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但我觉得，与其买标准版，还不如买老款的Mate70 Pro。Mate70 Pro和Mate80都是用的麒麟9020处理器，性能都一样。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "推荐Mate70 Pro，指出性能相同但老款更有优势，是对Mate70 Pro的正面推荐",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Mate70 Pro是6.9英寸的微曲面屏幕，Mate80是6.75英寸的大直屏。从屏幕的分辨率、护眼等指标来看，两款屏幕的显示素质都差不多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观对比屏幕参数，'显示素质都差不多'是中立评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate80标准版的长焦镜头用的是1200万像素，Mate70 Pro用的是4800万像素。整体看Mate70 Pro长焦相机更有优势。Mate70 Pro的影像能力稍强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'长焦相机更有优势''影像能力稍强'明确肯定Mate70 Pro的拍照能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate80标准版的电池比Mate70 Pro大了250mAh，但Mate70 Pro的快充不管是有线还是无线，都比Mate80要强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate80电池更大是正向，Mate70 Pro快充更强也是正向，整体是各有优劣的混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "综合看来，Mate70 Pro的配置更有优势。在价格差不多的情况下，我觉得买Mate70 Pro显然更划算！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'配置更有优势''显然更划算'强烈推荐Mate70 Pro，表达明确的正面偏好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6837cd670000000012001ee6",
+    "opinions": [
+      {
+        "opinion_text": "我自己日常都是用苹果比较多，很喜欢苹果的色彩。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'很喜欢苹果的色彩'直接表达了对苹果色彩还原的偏爱和长期使用习惯",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓和鸿蒙拍照有时候会优化过度，显得很假。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'优化过度，显得很假'批评了安卓/鸿蒙系统的拍照算法问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "没想到华为mate70拍出的效果竟然会这么好，不会像pura70那样发灰或者色彩过于浓郁，又保留了华为原本就有的优点（细节丰富，清晰度高）。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'效果竟然会这么好''细节丰富，清晰度高'表达了对华为mate70拍照效果的惊喜和高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为mate70的色彩跟苹果差距很小了，都属于比较自然的，色彩还原度也比较高，但是华为存在的问题就是发挥不稳定，前后拍了五六张照片，会存在有的暗有的亮的情况。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'色彩自然''还原度高'是正向，'发挥不稳定''有的暗有的亮'是负向，整体混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍出的清晰度其实也不错，只是花蕊部分的细节没有华为那么清晰。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "'清晰度其实也不错'是轻度肯定，但'细节没有华为那么清晰'指出不足，整体偏中性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为近距离拍摄的清晰度确实很绝，就连右边花瓣上沾着的绒毛都丝丝分明。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'确实很绝''丝丝分明'强烈赞赏华为mate70的微距清晰度和细节表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d4bb9c000000001101ce2f",
+    "opinions": [
+      {
+        "opinion_text": "iPhone Pro系列边框变化，从铝合金到不锈钢到钛金属，再回归铝合金，大家觉得那一代的边框比较符合心意？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提出问题和讨论，询问大家偏好，没有表达个人褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "怀疑iPhone钛金属边框会沦为绝响。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'怀疑...会沦为绝响'表达了对钛金属边框被取消的惋惜和遗憾",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0a9164000000003502adc8",
+    "opinions": [
+      {
+        "opinion_text": "一直都用的华为，感觉除了拍照不太行，系统和性能都很丝滑方便。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'系统和性能都很丝滑方便'是正向，'拍照不太行'是负向，整体混合评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但是现在的新机都是鸿蒙系统担心app不适配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'担心app不适配'表达了对鸿蒙系统生态兼容性的担忧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "周围的朋友都劝换苹果，但是担心信号和电池问题。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'担心信号和电池问题'表达了对苹果手机信号和续航的顾虑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "65ed958a0000000013026c63",
+    "opinions": [
+      {
+        "opinion_text": "两部手机出门都不会有续航焦虑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'不会有续航焦虑'是对华为续航能力的正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两部手机都非常流畅，完全感觉不到卡的地方。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'非常流畅''完全感觉不到卡'强烈肯定华为的流畅度表现",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "两部手机都非常流畅，完全感觉不到卡的地方。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'非常流畅''完全感觉不到卡'同样强烈肯定iPhone的流畅度表现",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "拍照感觉有时候华为好有时候iPhone好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "表示拍照各有优劣，没有明确偏好，属于中立评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照感觉有时候华为好有时候iPhone好。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "表示拍照各有优劣，没有明确偏好，属于中立评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "信号无论在什么地方都比苹果好太多太多了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'好太多太多了'强烈肯定华为信号优势，同时隐含对苹果信号的批评",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为基本没有杀后台的问题，苹果经常打游戏的时候切出去回条消息就重新加载了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'基本没有杀后台的问题'肯定华为后台留存能力，同时对比批评苹果",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "侧滑返回、分屏、单手操作、88w快充真的太爽了谁用谁知道。圆弧边框的手感比苹果好了不止一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'真的太爽了''好了不止一点'强烈赞赏华为在交互、快充和手感方面的优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为在信号切换的时候比苹果顺畅很多，比如从家里出门，从WiFi环境切换到5G，苹果会卡一段时间，华为很丝滑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'比苹果顺畅很多''很丝滑'高度肯定华为网络切换体验，对比批评苹果卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为震动马达太太太廉价了，质感很差。华为在外放音量比较大的时候手机会震。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'太太太廉价了''质感很差'强烈批评华为震动马达和外放震手问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为耳机不如AirPods，所以现在我还是在用airpods。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'不如AirPods'直接表达了对华为耳机的负面评价，并继续使用苹果耳机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为有很多广告要花十几分钟设置关掉。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评华为系统广告多，需要花时间关闭，影响用户体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为看b站视频快进的时候声音会一卡一卡的，b站党崩溃。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'一卡一卡的''崩溃'强烈表达了对华为B站视频播放卡顿的不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68eeee8c0000000004010015",
+    "opinions": [
+      {
+        "opinion_text": "苹果电池不耐用，到了换手机的时候。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'电池不耐用'明确表达了对苹果电池续航的不满，是换机的主要原因",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "想支持国产，换了店里说像素最高的一款华为P80说是顶配了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'想支持国产'表达了购买华为的积极动机，带有爱国情感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "到手第一天发现系统用不习惯，而且很多不更新，开始好难受，好想退货。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'好难受''好想退货'强烈表达了初期使用鸿蒙系统的不适和后悔",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用了几天下来，发现鸿蒙系统完善很快，很多功能很强大，是苹果很多没有的功能。支持华为，支持国产，越用越香，真的挺不错的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'完善很快''功能很强大''越用越香''真的挺不错的'从负面转为强烈正面，表达了对鸿蒙系统的高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "期待鸿蒙系统更加好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'期待...更加好'表达了对鸿蒙系统未来发展的积极期望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e602be000000002301d025",
+    "opinions": [
+      {
+        "opinion_text": "感觉华为这个沉浸光感还挺好看，华为的性能居然也能支撑得起来，而且还很流畅。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'还挺好看''居然也能支撑得起来''还很流畅'表达了对华为性能和视觉效果的双重惊喜和肯定",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这就是自研系统的好处吗？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "以反问形式肯定了自研鸿蒙系统带来的性能优势",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不输iOS。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "'不输iOS'表示华为与iOS相当，没有超越也没有落后，属于中性比较",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "681a0258000000001200456f",
+    "opinions": [
+      {
+        "opinion_text": "想问下 大家在华为和苹果手机之间 选了哪个。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提问询问他人选择，没有表达个人观点或情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "想问下 大家在华为和苹果手机之间 选了哪个。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提问询问他人选择，没有表达个人观点或情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "678bea44000000001901ee1c",
+    "opinions": [
+      {
+        "opinion_text": "三个月前我鼓起勇气从苹果换到华为P70 Pro。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "陈述换机事实，'鼓起勇气'暗示有一定顾虑但无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "优点：信号好，流畅度高，操作方便，续航好，充电快。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "列举了信号、流畅度、操作、续航、充电五个方面的优点，全面肯定华为体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "缺点：拍照哒咩（原相机发灰，录制视频不行，前置不如后置）。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'哒咩'配合❌符号，强烈否定华为拍照能力，指出发灰、视频差、前置差等问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "想换回苹果，但是手机刚换不久，工资不高，置换折损又太大，全款又实在负担不起，纠结。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'想换回苹果'表达了对苹果手机的偏好和怀念，尽管因经济原因无法实现",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67d3db2200000000090396e9",
+    "opinions": [
+      {
+        "opinion_text": "苹果用了两年多了，感觉各方面的性能变慢了一点，系统方面也没有很流畅了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'性能变慢''没有很流畅'表达了对苹果14pro使用两年后性能衰减和流畅度下降的不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "看到华为mate系列才上新感觉还不错，正在考虑要不要换一个mate系列的高配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'感觉还不错''正在考虑换'表达了对华为mate系列新品的正面兴趣和换机意愿",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

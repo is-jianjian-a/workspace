@@ -1,0 +1,599 @@
+[
+  {
+    "note_id": "688dd96a000000002202037c",
+    "opinions": [
+      {
+        "opinion_text": "iPhone3g我觉得手感最好的，也是很漂亮的外形，背后是弧形的，好像个黑色面包",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "iPhone3g我觉得手感最好的，也是很漂亮的外形，背后是弧形的，好像个黑色面包",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iphone4g这个版本在那时候很火，通过帮人刷机和破解，下载软件又赚回来了一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这个版本在那时候很火",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone5c这个太可惜了唯一的塑料壳iPhone系列",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这个太可惜了唯一的塑料壳iPhone系列",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone6plus玫瑰金当时真的很拉风",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "玫瑰金当时真的很拉风",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone xr用了一年屏幕摔坏了，二手置换掉了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用了一年屏幕摔坏了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone12第一次用上双摄苹果的喜悦，还有磁吸，很惊喜",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "第一次用上双摄苹果的喜悦，还有磁吸，很惊喜",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone13pm当时12内存满了，所以换了一部256内存的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "当时12内存满了，所以换了一部256内存的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone15pm这次也是13的内存满了置换了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这次也是13的内存满了置换了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone16pm沙漠金感觉跟6p还真有点相似，大小也差不多，就是厚了许多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "感觉跟6p还真有点相似，大小也差不多，就是厚了许多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "作为乔粉，只留下了他的这三部经典作品作为怀念",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作为乔粉，只留下了他的这三部经典作品作为怀念",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67a4c360000000001701c9d2",
+    "opinions": [
+      {
+        "opinion_text": "苹果人像拍照发挥依旧稳定，即使开了live图拍出的照片也美美嘟，细看皮肤也是比较细腻的，即使是逆光，拍出的背景和人都很清晰，真的是景美人也美了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果人像拍照发挥依旧稳定，即使开了live图拍出的照片也美美嘟，细看皮肤也是比较细腻的，即使是逆光，拍出的背景和人都很清晰，真的是景美人也美了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍照别开live！别开live！别开live！本来可以拍出美美的照片，结果开了live真的有被震惊到了，拍的啥玩意啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为拍照别开live！本来可以拍出美美的照片，结果开了live真的有被震惊到了，拍的啥玩意啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Pura70Ultra关掉live拍的效果还是很不错的，跟苹果的效果不相上下，甚至还有些超过，背景色彩更加丰富，面部细腻程度和清晰度都不错",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "关掉live拍的效果还是很不错的，跟苹果的效果不相上下，甚至还有些超过，背景色彩更加丰富，面部细腻程度和清晰度都不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivoX200Pro逆光人像来说，这次vivo拍出的效果虽然不错，但整体表现效果比起上面两个稍差些，整体亮度有些暗了，但面部细节拍出的效果还是很不错的，vivo的人像确实很强",
+        "brand_target": "vivo",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "逆光人像来说，这次vivo拍出的效果虽然不错，但整体表现效果比起上面两个稍差些，整体亮度有些暗了，但面部细节拍出的效果还是很不错的，vivo的人像确实很强",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "三星S23Ultra逆光人像也有些差强人意了，人整体还是清晰的，但背景完全白成一片了，细节几乎也没有了，特别是面部细节，不放大还好，一放大看密密麻麻的像卡粉一样的点点是什么啊？完全是无中生有啊，没有还原美貌就算了，也不能拍这么丑吧，属实是有些过分了",
+        "brand_target": "三星",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "三星的逆光人像也有些差强人意了，背景完全白成一片了，细节几乎也没有了，特别是面部细节，密密麻麻的像卡粉一样的点点，完全是无中生有啊，没有还原美貌就算了，也不能拍这么丑吧，属实是有些过分了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ec6dc8000000003802153d",
+    "opinions": [
+      {
+        "opinion_text": "80rs用了4个月，见到大阔折叠还是没忍住，太帅了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "见到大阔折叠还是没忍住，太帅了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Pura Xmax帅是真的帅，不过屏幕透亮度的确没发跟80rs比",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "帅是真的帅，不过屏幕透亮度的确没发跟80rs比",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ec37090000000035027780",
+    "opinions": [
+      {
+        "opinion_text": "华为puraxmax确实胖的可爱，尺寸刚刚好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为puraxmax确实胖的可爱，尺寸刚刚好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "65a36f35000000001101b631",
+    "opinions": [
+      {
+        "opinion_text": "华为拍的橘子海颜色比较淡，有些粉调，波光感比较密集，光点较小",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为拍的橘子海颜色比较淡，有些粉调，波光感比较密集，光点较小",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍出来的颜色饱和度比较高，真的很橘，波光的光点是比较大的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果拍出来的颜色饱和度比较高，真的很橘，波光的光点是比较大的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只看色调的话，我还是更喜欢苹果饱和度高一点色调，即使天气不好，拍出的颜色也不错",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "只看色调的话，我还是更喜欢苹果饱和度高一点色调，即使天气不好，拍出的颜色也不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68da39d1000000001101429f",
+    "opinions": [
+      {
+        "opinion_text": "拼多多都是品牌好货的，不太放心",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拼多多都是品牌好货的，不太放心",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最终8350线下买了华为Pura80 Ultra，对比拼夕夕只多了两百块，还行",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "对比拼夕夕只多了两百块，还行",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "673e9df9000000000601746b",
+    "opinions": [
+      {
+        "opinion_text": "苹果开了live图，华为和vivo拍摄时有live图但需要从相机设置中的单独入口进入，总感觉live图效果没有原相机拍出的效果好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果开了live图，总感觉live图效果没有原相机拍出的效果好（暗示苹果live图体验优于华为vivo）",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为和vivo拍摄时有live图但需要从相机设置中的单独入口进入，总感觉live图效果没有原相机拍出的效果好，而且live图是不可以带水印的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为拍摄时有live图但需要从相机设置中的单独入口进入，总感觉live图效果没有原相机拍出的效果好，而且live图是不可以带水印的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "个人感觉正常距离拍摄下，不管是live图还是照片来看，都是苹果更好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "个人感觉正常距离拍摄下，不管是live图还是照片来看，都是苹果更好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍出的水滴更加清楚，即使是自动对焦也能很好的捕捉到动态的水滴，这点华为和vivo做的都不够好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果拍出的水滴更加清楚，即使是自动对焦也能很好的捕捉到动态的水滴",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为是带红调黄调的白，简单来说一个是冷调一个是暖调",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为是带红调黄调的白，简单来说一个是冷调一个是暖调",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6954bf2f00000000220091b6",
+    "opinions": [
+      {
+        "opinion_text": "华为Watch GT6 Pro本来以为只是将就，结果直接真香了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "本来以为只是将就，结果直接真香了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Apple Watch美好的一天从充电开始，出差旅行必带充电器，束缚感+1",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "美好的一天从充电开始，出差旅行必带充电器，束缚感+1",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为两周续航！真的两周！！充点？差点忘了这回事",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "两周续航！真的两周！！充点？差点忘了这回事",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为跑步骑行轨迹0漂移，心率秒跟，跳绳/羽毛球都有独立算法，每周生成运动报告，连我喝水太少坐太久都管",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "跑步骑行轨迹0漂移，心率秒跟，跳绳/羽毛球都有独立算法，每周生成运动报告",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果是冷静的机器，华为是贴心的私人教练",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果是冷静的机器",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果是冷静的机器，华为是贴心的私人教练",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为是贴心的私人教练",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为睡眠监测绝了：20分钟午睡都给你分析出来！苹果的ECG很强…但国内用不了啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "睡眠监测绝了：20分钟午睡都给你分析出来",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的ECG很强…但国内用不了啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果的ECG很强…但国内用不了啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为应用少：不能装微信抖音，配iPhone功能阉割，充电不算快",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "应用少：不能装微信抖音，配iPhone功能阉割，充电不算快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Apple Watch是手腕上的微型手机，华为GT6 Pro才是真正懂健康的智能手表",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Apple Watch是手腕上的微型手机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Apple Watch是手腕上的微型手机，华为GT6 Pro才是真正懂健康的智能手表",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为GT6 Pro才是真正懂健康的智能手表",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "698174c6000000000e00f4a1",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 17系列垫底这事儿，咱也就忍了。毕竟大家都懂，苹果的信号就是随缘，第三梯队都算给面子了。进电梯直接失联，大家都习惯了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果的信号就是随缘，第三梯队都算给面子了。进电梯直接失联",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate 80 Pro Max居然只在第二梯队？按理说华为自己做基站又做基带，应该是考官级的存在啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate 80 Pro Max居然只在第二梯队？按理说华为自己做基站又做基带，应该是考官级的存在啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68c0e6c6000000001c034c1b",
+    "opinions": [
+      {
+        "opinion_text": "虽然17air很香，但我16pm应该还可以用好多年",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "虽然17air很香，但我16pm应该还可以用好多年",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6599a361000000000f01d592",
+    "opinions": [
+      {
+        "opinion_text": "从安卓换到苹果，用了2个多月之后记的一些缺点跟我不习惯的地方",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用了2个多月之后记的一些缺点跟我不习惯的地方",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在已经很习惯了哈，反而不太习惯安卓了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在已经很习惯了哈，反而不太习惯安卓了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果相册分类后原始相册还是有这张照片这个点我真的无法接受",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "相册分类后原始相册还是有这张照片这个点我真的无法接受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用苹果后手机拍的照片、App的照片、表情包、截图等等大量的照片混合在一起，我已经懒得整理了，有时候找个照片真的头大",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用苹果后手机拍的照片、App的照片、表情包、截图等等大量的照片混合在一起，我已经懒得整理了，有时候找个照片真的头大",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用安卓的时候，我经常分类照片，找起来也很方便",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "之前用安卓的时候，我经常分类照片，找起来也很方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68dc8790000000000700ec9a",
+    "opinions": [
+      {
+        "opinion_text": "华为和苹果的睡眠质量测出来怎么这么大差别，哪个数据更准确呢",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为和苹果的睡眠质量测出来怎么这么大差别，哪个数据更准确呢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为和苹果的睡眠质量测出来怎么这么大差别，哪个数据更准确呢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为和苹果的睡眠质量测出来怎么这么大差别，哪个数据更准确呢",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6753c6aa000000000201ab29",
+    "opinions": [
+      {
+        "opinion_text": "弱弱的问一句华为这配置为什么能卖一万多啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "弱弱的问一句华为这配置为什么能卖一万多啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "672e3fe3000000003c01a9f2",
+    "opinions": [
+      {
+        "opinion_text": "我的苹果13实在是信号太太太太差了，离开无线不能活，打我电话就在关机",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "信号太太太太差了，离开无线不能活，打我电话就在关机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO信号确实是很好的，进地下通道能有信号，其次电池是绝对耐用的，到晚上12点还有47%，像素也不错，不爱发烫，打了几把王者",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "信号确实是很好的，进地下通道能有信号，其次电池是绝对耐用的，到晚上12点还有47%，像素也不错，不爱发烫",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO缺点就是网页出来比较慢，有天刷了小红书图片加载不出来，对象的小米进去能刷出来。然后卡了三小下，不是特别严重的那种",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "网页出来比较慢，有天刷了小红书图片加载不出来。然后卡了三小下",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "OPPO拍照太复杂了，对于苹果党表示摸不到头脑",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照太复杂了，对于苹果党表示摸不到头脑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为pura70pro触摸屏感觉比oppo好一些，网页不会刷不出来，颜值高",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "触摸屏感觉比oppo好一些，网页不会刷不出来，颜值高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为pura70pro像素没有oppo好，信号没有oppo好，机子挺重，也挺大，我手小感觉挺累的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "像素没有oppo好，信号没有oppo好，机子挺重，也挺大，我手小感觉挺累的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍照也是花里胡哨一堆，不会调",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照也是花里胡哨一堆，不会调",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68cb4317000000000b03c454",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17系铝合金散热能力比钛合金好，这整整低了8~10度啊，夏天在户外拍视频都不怕烫手了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这整整低了8~10度啊，夏天在户外拍视频都不怕烫手了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

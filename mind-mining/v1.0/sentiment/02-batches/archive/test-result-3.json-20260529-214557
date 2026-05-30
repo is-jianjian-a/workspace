@@ -1,0 +1,257 @@
+[
+  {
+    "post_id": "68f8c58f00000000050315db",
+    "nickname": "每天都要开心吖",
+    "title": "从苹果到华为再回到苹果，我的真实体验",
+    "brand_opinions": [
+      {
+        "brand": "华为",
+        "aspect": "性能/流畅度",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "用了才一年多就卡到炸裂，进一个程序要等好几秒才能反应过来",
+        "intensity": "strong",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "华为",
+        "aspect": "发热",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "发热发到感觉要炸掉的程度",
+        "intensity": "strong",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "华为",
+        "aspect": "电池/续航",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "掉电还掉的贼快，才用了一年电池健康度就86%",
+        "intensity": "strong",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "华为",
+        "aspect": "拍照/像素",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "像素根本没有吹的那么好，颜色已经特别失真，拍照特别特别模糊",
+        "intensity": "strong",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "华为",
+        "aspect": "信号",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "华为手机的信号是真的好，这个不黑",
+        "intensity": "moderate",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "华为",
+        "aspect": "整体体验",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "本来真的对华为有很高期待的，用完真的拉黑",
+        "intensity": "strong",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "电池耐用性",
+        "sentiment": "positive",
+        "confidence": "moderate",
+        "opinion_text": "iPhone13pro还有79的健康度呢（对比华为一年掉到86%）",
+        "intensity": "moderate",
+        "evidence_type": "firsthand_experience"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "整体体验",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "忍了一年实在受不了了，最终决定还是换回苹果，入了新款17pro",
+        "intensity": "moderate",
+        "evidence_type": "firsthand_experience"
+      }
+    ]
+  },
+  {
+    "post_id": "689c1def000000001d0380fe",
+    "nickname": "爱疯码",
+    "title": "啊？🤡\"华为稳如狗🐶 vs 苹果猛如虎",
+    "brand_opinions": [
+      {
+        "brand": "华为",
+        "aspect": "散热",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "华为最优（液冷黑科技），稳帧神器保下限",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "华为",
+        "aspect": "屏幕/抗摔",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "玄武钢化昆仑玻璃，抗摔提升30%，裸奔党狂喜",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "华为",
+        "aspect": "长焦/拍照",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "机械伸缩长焦，真·物理开挂，拍放大10倍以上纹理都很清晰",
+        "intensity": "strong",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "华为",
+        "aspect": "通信/卫星",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "双卫星通信3.0，沙漠无人区能发30秒急救语音",
+        "intensity": "strong",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "华为",
+        "aspect": "快充",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "100W快充，25分钟满血",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "华为",
+        "aspect": "电池耐用性",
+        "sentiment": "negative",
+        "confidence": "moderate",
+        "opinion_text": "2年后电池健康恐掉到85%以下",
+        "intensity": "moderate",
+        "evidence_type": "speculation"
+      },
+      {
+        "brand": "华为",
+        "aspect": "芯片/游戏性能",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "麒麟9020游戏帧率输苹果半筹",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "散热",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "苹果16PM依然暖手宝，王者团战激烈时可能自动变暗屏幕",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "屏幕/抗摔",
+        "sentiment": "mixed",
+        "confidence": "high",
+        "opinion_text": "超瓷晶更抗刮，但摔角依旧碎屏警告",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "长焦/拍照",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "10倍以上糊成油画",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "通信/卫星",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "仅卫星短信，国内暂未开放",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "快充",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "35W快充，80分钟充满",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "电池耐用性",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "电池损耗慢，1年健康度仍95%+",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "芯片/性能",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "A18 Pro性能天花板，原神高帧率高画质全程无压力",
+        "intensity": "strong",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "信号",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "信号差，英特尔基带背锅",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "AI功能",
+        "sentiment": "negative",
+        "confidence": "high",
+        "opinion_text": "国行AI被阉割",
+        "intensity": "moderate",
+        "evidence_type": "stated_fact"
+      }
+    ]
+  },
+  {
+    "post_id": "69ec286a000000003501ec96",
+    "nickname": "uubaby",
+    "title": "原来苹果17pm都能和华为长焦掰腕子了？",
+    "brand_opinions": [
+      {
+        "brand": "华为",
+        "aspect": "长焦/拍照",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "一直以为华为长焦是神一般的存在",
+        "intensity": "strong",
+        "evidence_type": "prior_belief"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "长焦/拍照",
+        "sentiment": "positive",
+        "confidence": "high",
+        "opinion_text": "隔着两条马路拉个三四十倍长焦对比一下，结果居然差不多",
+        "intensity": "moderate",
+        "evidence_type": "firsthand_experience"
+      }
+    ]
+  }
+]

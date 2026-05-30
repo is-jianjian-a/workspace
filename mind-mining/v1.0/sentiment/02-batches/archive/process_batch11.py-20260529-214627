@@ -1,0 +1,585 @@
+import json
+
+# Read input
+with open('/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/remaining-batch11-input.json', 'r', encoding='utf-8') as f:
+    posts = json.load(f)
+
+results = []
+opinion_counter = 0
+
+for post in posts:
+    note_id = post['note_id']
+    title = post['title']
+    content = post['content']
+    full_text = title + '\n' + content
+    liked_count = post.get('liked_count', 0)
+    comment_count = post.get('comment_count', 0)
+    source_keyword = post.get('source_keyword', '')
+    
+    # Post 175: 华为和苹果原相机自拍/华为赢很大？
+    if note_id == "65295485000000001e02c42b":
+        # Opinion 1: 华为 - positive
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_175_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "就我自己审美而言，感觉这次华为赢很大，因为同样的广角模式下，华为拍出来更显头小、脸小",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户明确表示\"就我自己审美而言，感觉这次华为赢很大，因为同样的广角模式下，华为拍出来更显头小、脸小\"，对华为自拍效果持明确正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: 苹果 - neutral (just mentioned as comparison device, no sentiment)
+        # No explicit sentiment toward Apple, just used as comparison baseline
+        
+    # Post 176: 苹果的售后和华为简直没法比
+    elif note_id == "649941ec0000000013011738":
+        # Opinion 1: 苹果 - negative (after-sales service)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_176_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "苹果外包售后感受太差，前台只有两个人，叫号20分钟，收费台对老人态度差，像皮包公司，感觉以后不会再用苹果了",
+            "brand_target": "苹果",
+            "sentiment_polarity": "负向",
+            "sentiment_intensity": "强",
+            "sentiment_reason": "用户吐槽\"这种外包的售后，感受太差\"、\"这里就像是个皮包公司\"、\"我感觉以后不会再用苹果了\"，对苹果售后持强烈负面态度，并明确表示弃用意愿",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: 华为 - positive (after-sales service)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_176_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "以前用华为的时候，售后也在隔壁，态度非常好，而且前台和维修分开，管理有序，速度也快",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户对比表示\"以前用华为的时候，售后也在隔壁，态度非常好，而且前台和维修分开，管理有序，速度也快\"，对华为售后服务持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 3: 苹果 - negative (camera)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_176_3",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "相机拍出来的人太丑，搞的我都不愿意拍照了，虽然一直有说比较真实，但真的比本人要丑啊，显胖",
+            "brand_target": "苹果",
+            "sentiment_polarity": "负向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户吐槽\"相机拍出来的人太丑，搞的我都不愿意拍照了\"、\"真的比本人要丑啊，显胖\"，对苹果相机拍摄效果持负面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 177: 同样是小红书，华为比苹果多出3个G？
+    elif note_id == "60f3c8dd000000000102decc":
+        # Opinion 1: 华为 - negative (memory management)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_177_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为手机64G的，本身内存都小，没下载多少东西就用了50多G，同样的小红书APP，华为占内存4.43G，没有可以清理的缓存",
+            "brand_target": "华为",
+            "sentiment_polarity": "负向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户指出华为手机内存占用过高，\"同样的小红书APP，华为占内存4.43G\"而苹果仅1点多个G，且华为\"没有可以清理的缓存\"，对华为内存管理持负面态度",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: 苹果 - positive (memory management, implied)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_177_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "同样是小红书APP，苹果占内存1点多个G还有缓存可清理",
+            "brand_target": "苹果",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "弱",
+            "sentiment_reason": "用户对比指出苹果版小红书\"占内存1点多个G还有缓存可清理\"，相比华为更省空间，隐含对苹果内存管理的认可",
+            "confidence": "中",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 178: 苹果/小米/华为/vivo公认的好看我来对比下！
+    elif note_id == "66f0ec1e000000002c014837":
+        # Opinion 1: 苹果 - neutral (consistent quality)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_178_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "苹果14/15/16系列拍照都差不多，16系列屏幕会更亮，照片更原生，比较靠光线",
+            "brand_target": "苹果",
+            "sentiment_polarity": "中性",
+            "sentiment_intensity": "弱",
+            "sentiment_reason": "用户客观描述苹果各代拍照差异不大，\"拍照都差不多\"，指出\"照片更原生，比较靠光线\"，属于中性观察无明显褒贬",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: vivo - positive
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_178_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "vivo x100系列的前后置拍照都非常清晰！都很像优秀相机拍出来的，后置比前置更好看",
+            "brand_target": "vivo",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户评价\"vivo x100系列的前后置拍照都非常清晰！都很像优秀相机拍出来的\"，对vivo拍照效果持正面态度",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 3: 小米 - positive
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_178_3",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "小米原生但是好看，小米14 ultra比14好很多，机型也好看很多，照片偏原生也是偏暗",
+            "brand_target": "小米",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户表示\"小米原生但是好看\"、\"小米14 ultra比14好很多，机型也好看很多\"，对小米拍照效果持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 4: 华为 - positive (with caveat on video)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_178_4",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为pura70 ultra比pura70好看很多，前置后置拍照拍完需要等几秒钟才会出\"修出来的\"成片，非常之好看！但是视频有点一言难尽",
+            "brand_target": "华为",
+            "sentiment_polarity": "混合",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户既称赞华为拍照\"非常之好看\"，又指出\"视频有点一言难尽\"，对华为拍照正向但对视频负向，整体为混合情感",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 179: 你的双持是什么？
+    elif note_id == "6864efb9000000001c03470a":
+        # Opinion 1: 华为 - positive (business/photography)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_179_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为Mate70 RS是办公首选，多任务处理轻松无压力，流畅运行毫无卡顿，电量焦虑根本不存在，影像系统惊艳，夜拍清晰明亮噪点极少",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "强",
+            "sentiment_reason": "用户高度评价华为Mate70 RS办公性能\"轻松无压力\"\"毫无卡顿\"，续航\"电量焦虑根本不存在\"，影像\"惊艳\"\"清晰明亮\"，整体强烈正面",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        # Opinion 2: 苹果 - positive (gaming/video) with negative (signal/office)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_179_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "iPhone 16 Pro在办公软件兼容性和操作便捷性上不如华为，信号不好影响效率，但游戏高帧率流畅丝滑，视频拍摄稳定性出色",
+            "brand_target": "苹果",
+            "sentiment_polarity": "混合",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户既指出苹果\"办公软件兼容性和操作便捷性上不如华为\"\"信号不好\"，又肯定\"游戏始终保持高帧率运行，画面流畅丝滑\"\"视频拍摄的稳定性和流畅度非常出色\"，对苹果为混合情感",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        # Opinion 3: 华为 - positive (social)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_179_3",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为Mate70 RS信号好，在人群密集的地方发消息、刷朋友圈也很流畅",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户肯定华为\"信号好\"，\"在人群密集的地方发消息、刷朋友圈也很流畅\"，对华为信号和日常使用体验持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        # Opinion 4: 苹果 - positive (social ecosystem)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_179_4",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "iPhone 16 Pro的iOS系统简洁易用，软件生态丰富，社交软件功能更新快",
+            "brand_target": "苹果",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户肯定苹果\"iOS系统简洁易用，软件生态丰富，一些社交软件的功能更新也比较快\"，对苹果系统和生态持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 180: 华为的信号真是一绝！
+    elif note_id == "66267cd3000000001c0059bd":
+        # Opinion 1: 华为 - positive (signal stability)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_180_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为的信号真是一绝！华为的确就比较稳定，爬山时信号接近满格",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "强",
+            "sentiment_reason": "用户赞叹\"华为的信号真是一绝！\"\"华为的确就比较稳定\"，并以实际对比图证明华为信号\"接近满格\"，对华为信号持强烈正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        # Opinion 2: 苹果 - negative (signal)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_180_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "苹果手机一到爬山或者坐地铁人多的时候，信号还就是不行，断断续续的一会有一会没有，直接无服务",
+            "brand_target": "苹果",
+            "sentiment_polarity": "负向",
+            "sentiment_intensity": "强",
+            "sentiment_reason": "用户批评苹果\"信号还就是不行，断断续续的一会有一会没有\"，\"直接无服务\"，对苹果信号持强烈负面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        # Opinion 3: 荣耀 - positive (signal)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_180_3",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "除了华为之外也有不少国产手机信号优秀，例如荣耀和OPPO等等，随便挑一台出来都挺稳定的",
+            "brand_target": "荣耀",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户提到\"荣耀\"作为信号优秀的国产手机代表，\"随便挑一台出来都挺稳定的\"，对荣耀信号持正面评价",
+            "confidence": "中",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        # Opinion 4: OPPO - positive (signal)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_180_4",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "除了华为之外也有不少国产手机信号优秀，例如荣耀和OPPO等等，随便挑一台出来都挺稳定的",
+            "brand_target": "OPPO",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户提到\"OPPO\"作为信号优秀的国产手机代表，\"随便挑一台出来都挺稳定的\"，对OPPO信号持正面评价",
+            "confidence": "中",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": True
+        })
+        
+    # Post 181: 华为🆚vivo，拍昆虫谁家更强🤔
+    elif note_id == "68ecb792000000000503aa52":
+        # Opinion 1: 华为 - positive (with minor caveat)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_181_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "HUAWEI Mate70 Pro能清晰呈现蜻蜓纹理细节，画面锐度高，色彩还原自然且富有层次，但画面有部分细节过曝",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户肯定华为\"能清晰呈现蜻蜓的纹理细节\"\"画面锐度高\"\"色彩还原自然且富有层次\"，虽有\"部分细节过曝\"的小瑕疵，整体仍为正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: vivo - positive
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_181_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "vivo X200 Pro在特写画面中眼部、肢体细节能较为清晰呈现，蔡司镜头色彩调校风格独特，画面色彩较为讨喜",
+            "brand_target": "vivo",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户肯定vivo\"眼部、肢体细节也能较为清晰地呈现\"\"蔡司镜头的色彩调校风格独特\"\"画面色彩较为讨喜\"，对vivo拍照持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 182: 华为🆚vivo🆚苹果，第一眼看谁拍的更好？
+    elif note_id == "687341a20000000011003bd1":
+        # Opinion 1: 华为 - positive
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_182_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为拍摄的天最蓝，夕阳的层次感也很明显，整体没有实际这么偏暖调，更清新挂",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户称赞华为\"拍摄的天最蓝，夕阳的层次感也很明显\"\"更清新挂\"，对华为拍摄效果持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: vivo - positive (user's favorite)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_182_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "vivo我个人最喜欢，拍出了夕阳的浓郁感，色彩表现力很强，最还原肉眼，适合随手拍",
+            "brand_target": "vivo",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "强",
+            "sentiment_reason": "用户明确表示\"vivo我个人最喜欢\"，称赞\"拍出了夕阳的浓郁感，色彩表现力很强，最还原肉眼\"，对vivo持强烈正面偏好",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 3: 苹果 - negative
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_182_3",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "苹果拍夕阳有点拍发灰了，建筑的细节和光线都没有保留，更适合拍人文",
+            "brand_target": "苹果",
+            "sentiment_polarity": "负向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户指出苹果\"拍夕阳有点拍发灰了\"\"建筑的细节和光线都没有保留\"，对苹果拍摄夕阳效果持负面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 183: 华为拍的很好看，但我还是喜欢苹果的live图！
+    elif note_id == "659f5895000000000f0328f6":
+        # Opinion 1: 华为 - positive (photo quality)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_183_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "华为拍的石头是沙土色的，个人感觉华为的更好看一些，两款手机拍的都很不错，拍出了清澈见底的感觉，很清透",
+            "brand_target": "华为",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户表示\"个人感觉华为的更好看一些\"\"拍出了清澈见底的感觉，很清透\"，对华为拍照效果持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: 苹果 - positive (live photo feature)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_183_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "谁能拒绝苹果的live图啊，特别是在手机相册里还能听到海浪声，简直不要太美妙了",
+            "brand_target": "苹果",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "强",
+            "sentiment_reason": "用户感叹\"谁能拒绝苹果的live图啊\"\"简直不要太美妙了\"，对苹果live图功能持强烈正面情感",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        
+    # Post 184: 苹果换华为后，华为也没宣传的那么好
+    elif note_id == "694c79e0000000001b03079a":
+        # Opinion 1: 华为 - negative (vs expectations)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_184_1",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "苹果换华为后，华为也没宣传的那么好，对比苹果26.2系统及其生态软件有差距",
+            "brand_target": "华为",
+            "sentiment_polarity": "负向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户表示\"华为也没宣传的那么好\"，认为华为在系统功能和生态软件上\"对比苹果26.2系统及其生态软件\"存在差距，对华为实际体验持负面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+        # Opinion 2: 苹果 - positive (system/ecosystem)
+        opinion_counter += 1
+        results.append({
+            "opinion_id": f"rb11_184_2",
+            "note_id": note_id,
+            "title": title,
+            "source_keyword": source_keyword,
+            "liked_count": liked_count,
+            "comment_count": comment_count,
+            "opinion_text": "苹果系统可以支持防止广告启动其他app，搜索栏位置方便单手操作，app颜值高，广告没有或较少",
+            "brand_target": "苹果",
+            "sentiment_polarity": "正向",
+            "sentiment_intensity": "中",
+            "sentiment_reason": "用户肯定苹果\"可以防止广告启动其他app\"\"搜索栏位置方便单手操作\"\"app颜值高\"\"广告没有或较少\"，对苹果系统和生态持正面评价",
+            "confidence": "高",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False
+        })
+
+# Write output
+with open('/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/remaining-batch11-result.json', 'w', encoding='utf-8') as f:
+    json.dump(results, f, ensure_ascii=False, indent=2)
+
+print(f"Total opinions extracted: {len(results)}")
+print(f"Total posts processed: {len(posts)}")
+
+# Verify JSON validity
+with open('/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/remaining-batch11-result.json', 'r', encoding='utf-8') as f:
+    verify = json.load(f)
+print(f"Verified JSON load: {len(verify)} opinions")
+
+# Summary stats
+from collections import Counter
+brands = Counter([r['brand_target'] for r in results])
+pols = Counter([r['sentiment_polarity'] for r in results])
+ints = Counter([r['sentiment_intensity'] for r in results])
+fluency = sum(1 for r in results if r['is_fluency_related'])
+print(f"\nBrand distribution: {dict(brands)}")
+print(f"Polarity distribution: {dict(pols)}")
+print(f"Intensity distribution: {dict(ints)}")
+print(f"Fluency-related opinions: {fluency}")

@@ -1,0 +1,608 @@
+[
+  {
+    "note_id": "69aa4605000000001b014851",
+    "opinions": [
+      {
+        "opinion_text": "iphone17pro的使用体验跟之前用12G内存的小米13差不多，都是动不动就掉帧的，页面滚动的时候经常一卡一卡的不流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "动不动就掉帧的，页面滚动的时候经常一卡一卡的不流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iphone17pro的使用体验跟之前用12G内存的小米13差不多",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "跟iPhone17pro差不多，都是动不动就掉帧的（间接说明小米13也不流畅）",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在用的16G内存的小米15还比苹果流畅",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小米15还比苹果流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在用的16G内存的小米15还比苹果流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小米15还比苹果流畅（苹果不如小米流畅）",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6884fba1000000002400cc0c",
+    "opinions": [
+      {
+        "opinion_text": "iPhone的实况要比安卓的实况流畅很多，苹果的实况帧率感觉有60帧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone的实况要比安卓的实况流畅很多，苹果的实况帧率感觉有60帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安卓的顶多20-30帧",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓的顶多20-30帧（远低于iPhone的60帧）",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0ed7540000000038021127",
+    "opinions": [
+      {
+        "opinion_text": "最近买了台苹果4s，寄过来是ios9，在我一顿操作下，降级到ios6还能下载一堆游戏，很流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0bc1e60000000036030155",
+    "opinions": [
+      {
+        "opinion_text": "本来就丝滑的界面现在更滑溜溜的，最主要是，打字顺滑了好多，微信相机试了几次也不卡，拍照也没有卡卡声音了，超流畅超顺滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "超流畅超顺滑，打字顺滑了好多，微信相机试了几次也不卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "唯一不爽就是，丝滑用续航换的，更新之后，电池更不耐用了，更新前电池100更新完就96，还发烫",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池更不耐用了，还发烫，续航打折好多",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e8c393000000002202911f",
+    "opinions": [
+      {
+        "opinion_text": "质感真的！翻盖打开合上有个一丝丝延迟还是磁吸，很舒服！！！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "很舒服！！！",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "外屏及内外屏，切换丝滑，外屏就是一个正常手机",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "切换丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "本人全键盘输入法，打字很顺溜",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "打字很顺溜",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "抓pura x展开，单手就不行",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "单手就不行",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "按照mate平移，确实是要过万的定价（虽然万元机是很离谱）",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "万元机是很离谱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "希望软件，软件适配适配适配！毕竟，实用第一",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "希望软件适配（暗示软件适配不足）",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69670922000000000e00d0f6",
+    "opinions": [
+      {
+        "opinion_text": "在华为的上门服务车上直接给我换好了，全程不过十几分钟",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "直接给我换好了，全程不过十几分钟",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ff03640000000036003817",
+    "opinions": [
+      {
+        "opinion_text": "换了华为Pura X以后感觉自己技术都进步了哈哈哈哈，大屏实在太丝滑了，技能释放嘎嘎准",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "大屏实在太丝滑了，技能释放嘎嘎准",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0422550000000035039f03",
+    "opinions": [
+      {
+        "opinion_text": "优点：分屏 充电 智能遥控 软件种种种都很不错",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "分屏 充电 智能遥控 软件种种种都很不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "缺点：重 三折叠是很轻，但是日常对比起来太重了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "日常对比起来太重了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不是国产车，只能买个Hicar盒子，然后用着流畅度掉帧的盗版车机",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用着流畅度掉帧的盗版车机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "昨天换回原版applecarplay 一切都丝滑了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "一切都丝滑了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统问题 鸿蒙next 鸿蒙5.1 鸿蒙6.0 我都用过，肉眼可见的也是功能越来越多，越来越强大",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "功能越来越多，越来越强大",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "网易云到底什么时候上线？车机的选择面很窄",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "网易云到底什么时候上线？车机的选择面很窄",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为给我一种，做东西做到一半的感觉就草草端上来让用户自适应了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "做东西做到一半的感觉就草草端上来让用户自适应了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过还是希望国产越来越好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "希望国产越来越好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "684fcb24000000002001f10d",
+    "opinions": [
+      {
+        "opinion_text": "升级后的鸿蒙好用么？既有iOS的丝滑，又有安卓的功能强大",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "既有iOS的丝滑，又有安卓的功能强大",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "目前使用第二天，出乎意料的满意",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "出乎意料的满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d91bef00000000130346e6",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙6.0丝滑的我头晕，太顺滑了，用一会觉得头晕",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "丝滑的我头晕，太顺滑了（正向）但用一会觉得头晕（负向体验）",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c498820000000022026cf5",
+    "opinions": [
+      {
+        "opinion_text": "好多不方便的地方，完全没有iphone的丝滑感",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "好多不方便的地方，完全没有iphone的丝滑感",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "好多不方便的地方，完全没有iphone的丝滑感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完全没有iphone的丝滑感（暗示iPhone更丝滑）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "折叠屏只能用指关节敲屏幕截图，游戏里自动屏蔽指关节根本截不了图。太低能了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "太低能了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总体体验确实苹果好，攒攒钱换最新苹果了打算",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "总体体验确实苹果好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总体体验确实苹果好，攒攒钱换最新苹果了打算",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "总体体验确实苹果好（华为不如苹果）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "爱用啥用啥吧，要不是这手机是免费送的我是真不愿意用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "要不是这手机是免费送的我是真不愿意用",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b19d4900000000230393aa",
+    "opinions": [
+      {
+        "opinion_text": "影像成像不好，主摄在阴天下成像会有很灰的感觉",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "成像不好，主摄在阴天下成像会有很灰的感觉",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "长焦的5.5x的焦段实在太远，很不实用，而且在用长焦拍摄树、花之类比较小需要精确对焦的情况下，会出现虚焦对不准物体的情况",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很不实用，会出现虚焦对不准物体的情况",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整个mate80系列全部变成直屏直边框，怀念mate60 pro。并且这代mate手机实在没有什么设计感",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实在没有什么设计感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙6以来肉眼可见华为一直在抄苹果设计，一个高端品牌，没了自己的调性，选择去拟合其他高端品牌，就已经默认技不如人了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "没了自己的调性，就已经默认技不如人了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "视频变焦能力得到极大加强，变焦现在很丝滑，基本达到了非苹果阵营的一流水准了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "变焦现在很丝滑，基本达到了非苹果阵营的一流水准",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "视频录制的流畅度和承受时长也有增强",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "视频录制的流畅度和承受时长也有增强",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统的操作手感很好，当然在高负载的情况下下拉通知栏可能会有一瞬间的掉帧",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "操作手感很好（正向）但高负载下拉通知栏可能会有一瞬间的掉帧（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "麒麟9020肯定不如当前市面的骁龙a系旗舰芯片和麒麟9030pro的性能强，估摸着也就骁龙8＋的水平",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "肯定不如当前市面的骁龙a系旗舰芯片",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航已经可以满足极高强度使用手机的情况下半天的要求",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航已经可以满足极高强度使用手机的情况下半天的要求",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "3D人脸终于上mate手机标准版了，普天同庆",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "普天同庆",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "该手机实际体验还是可以的，但跟苹果学坏了用上代芯片",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实际体验还是可以的（正向）但跟苹果学坏了用上代芯片（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "684abf8800000000210057e2",
+    "opinions": [
+      {
+        "opinion_text": "实况窗太丑，之前华为实况窗都是在左上角，影响美观，现在随大流改到中间了，不过那个中间的摄像头太突兀了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实况窗太丑，影响美观，太突兀了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在华为全面采用鸿蒙系统，虽然装机量远不如安卓和ios，但是也在快速发展，很多主流软件在快速适配，但冷门软件还是没有很好的解决办法",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "也在快速发展，很多主流软件在快速适配（正向）但冷门软件还是没有很好的解决办法（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次配色比较单一，且容易沾指纹",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "配色比较单一，且容易沾指纹",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙真的丝滑无比，且是安卓无法拥有的体验",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "鸿蒙真的丝滑无比",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为锁屏实况窗还有大小卡片，动画做的赏心悦目",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "动画做的赏心悦目",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "pura系列比mate系列瘦小，手感很不错",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感很不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相比pura70提升很大，但是究竟能不能比过vivo和oppo的ultra，还有待大博主的对比评测",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "相比pura70提升很大，但究竟能不能比过vivo和oppo的ultra还有待评测",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "买pura80标准版不如买nova14u。华为还是不舍得给pura上3d，mate系列永远是真旗舰",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不舍得给pura上3d，mate系列永远是真旗舰（暗示pura不如mate）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e6ad8e000000001d01fd03",
+    "opinions": [
+      {
+        "opinion_text": "本来对华子有点祛魅了，因为我的70p+才用了两年就有些卡卡的，开应用和日常使用总有些不如意",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "才用了两年就有些卡卡的，开应用和日常使用总有些不如意",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "昨天更新的6.1系统能够这么丝滑！！！！瞬间又带给我新机的体验感，这波优化我给满分！！！！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "能够这么丝滑，瞬间又带给我新机的体验感，这波优化我给满分",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69df01e300000000220257ed",
+    "opinions": [
+      {
+        "opinion_text": "感觉像是换了一个新手机，很流畅丝滑，我觉得不比苹果差",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很流畅丝滑，我觉得不比苹果差",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "感觉像是换了一个新手机，很流畅丝滑，我觉得不比苹果差",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "不比苹果差（将苹果作为流畅度标杆）",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "有一些小的东西还没完善，但是可以忽略，跟整个系统的体验感比",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "有一些小的东西还没完善，但是可以忽略",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "唯一我觉得不太好的地方是我觉得拍照好像没有之前清晰了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照好像没有之前清晰了",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

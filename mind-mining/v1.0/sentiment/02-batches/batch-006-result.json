@@ -1,0 +1,365 @@
+[
+  {
+    "note_id": "684ee05c000000002202eb23",
+    "opinions": [
+      {
+        "opinion_text": "现在Mate70降价，同配置比Pura80普遍便宜500-600。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"现在Mate70降价\"\"比Pura80普遍便宜500-600\"——强调Mate70降价后性价比高，是正向购买建议",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "9999能买Pura80Ultra，我9999都可以买Mate70Rs了，哪个男人能拒绝八边形Deco的诱惑？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"哪个男人能拒绝八边形Deco的诱惑\"——强烈表达Mate70Rs设计吸引力，认为同价位Mate70Rs更值得",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "买Pura80的等等，这一代降价空间也不小，水分不小。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"降价空间也不小，水分不小\"——暗示Pura80定价虚高，不值得现在购买",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68a6f79b000000001b01d45e",
+    "opinions": [
+      {
+        "opinion_text": "同价位选华为还是苹果，最近想换手机，但一直纠结。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户处于纠结状态，未表达明确偏好，只是提出选择困惑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同价位选华为还是苹果，最近想换手机，但一直纠结。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户处于纠结状态，未表达明确偏好，只是提出选择困惑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d7c7dc000000001201d4e3",
+    "opinions": [
+      {
+        "opinion_text": "17promax感觉银色最好看，纠结橙色和银色，最后还是选了银色比较适合我。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"银色最好看\"\"比较适合我\"——表达对iPhone 17 Pro Max银色配色的喜爱和满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "692d9cd8000000001d03e1da",
+    "opinions": [
+      {
+        "opinion_text": "我觉得还是够用，屏幕观感还行。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"还是够用\"\"屏幕观感还行\"——基本满意但语气保守，是弱正向评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "自然色温怎么啥环境都偏冷呢？跟旁边的苹果形成鲜明对比感觉没啥用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"偏冷\"\"感觉没啥用\"——批评华为自然色温功能表现不佳，与苹果对比后认为该功能无用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "外观质感相较于前几代我觉得是倒退，星环好评，直角高亮边框差评。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"外观质感倒退\"\"直角高亮边框差评\"（负向）与\"星环好评\"（正向）并存，整体是混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总评如果对华为有好感这代还是值得买的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"还是值得买的\"——给出有条件的正向推荐，但限定\"对华为有好感\"，语气保守",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a08522f00000000060341da",
+    "opinions": [
+      {
+        "opinion_text": "两款手机的手感都不错，延续了华为一贯非常优秀的做工。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"手感都不错\"\"一贯非常优秀的做工\"——对华为Pura90系列手感和做工给予肯定评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6937d7d9000000001d03ae7d",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17Pro的外观越看越顺眼了，银色后盖上下不会有很明显色差。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"越看越顺眼\"——表达对iPhone17Pro外观设计的逐渐认可和喜爱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate80Pro回归星环设计，白色款下面的无线充电圈不明显，正面屏幕极具辨识度，三挖孔。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"回归星环设计\"\"极具辨识度\"——对华为Mate80Pro设计特点给予正面描述，星环回归是用户认可的卖点",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "662ed43e00000000010336ea",
+    "opinions": [
+      {
+        "opinion_text": "此时外面正在下雨，就看了一下苹果和华为手机的天气预报。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅陈述查看天气预报的行为，未表达任何评价或情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "此时外面正在下雨，就看了一下苹果和华为手机的天气预报。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅陈述查看天气预报的行为，未表达任何评价或情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0bd7cf000000003601d1e2",
+    "opinions": [
+      {
+        "opinion_text": "手机用了三年多，现在一天要充三次，电池容量显示80％。159电池，99上门费，电池焦虑不再。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"电池焦虑不再\"——换电池后解决了续航焦虑，对华为售后换电池服务满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "主要是新款华为和苹果的价格，让我觉得旧手机值得拯救一下。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "暗示新款华为价格过高，因此选择维修旧手机而非购买新机，对新机价格持负面态度",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "主要是新款华为和苹果的价格，让我觉得旧手机值得拯救一下。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "暗示新款苹果价格过高，因此选择维修旧手机而非购买新机，对新机价格持负面态度",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统性能很好，再用两三年。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"系统性能很好\"——对华为mate60pro系统性能给予正面评价，认为还能继续使用两三年",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68d00572000000001300e54c",
+    "opinions": [
+      {
+        "opinion_text": "17pro比14pro明显大了一圈诶。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅客观陈述尺寸对比发现，\"明显大了一圈\"是事实描述，未表达喜好或评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e7353000000000230243a5",
+    "opinions": [
+      {
+        "opinion_text": "这真的是人能想出来的设计吗，感觉真的好丑好廉价啊，应该不只是我一个人觉得不好看吧。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"好丑好廉价\"\"不好看\"——强烈表达对华为p90标准版外观设计的厌恶和失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6927bc4e000000001e024a5d",
+    "opinions": [
+      {
+        "opinion_text": "安卓都是配置没输过，体验上没赢过ios。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"体验上没赢过ios\"——认为安卓虽然配置强但实际体验不如iOS，对安卓整体体验持负面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安卓都是配置没输过，体验上没赢过ios。是不是都卷错了方向？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通过对比暗示iOS体验优于安卓，对苹果iOS体验持正面评价",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a094b9f0000000035020341",
+    "opinions": [
+      {
+        "opinion_text": "这手机没有网上说的这么垃圾，什么电池虚标了，什么屏幕闪眼睛了，乱七八糟的。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"没有网上说的这么垃圾\"——反驳负面评价，为荣耀WIN正名，表达实际体验比网传好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我这台不仅没有发绿，而且也没有出现眼部不适。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"没有发绿\"\"没有出现眼部不适\"——否认屏幕问题，对荣耀WIN屏幕表现满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "性能是第五代骁龙8至尊版，这是目前安卓阵营顶级的芯片了吧？",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"安卓阵营顶级的芯片\"——对荣耀WIN性能配置给予高度评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "续航更没话说，10000mAh大电池就是物理外挂。日常亮屏近10小时，玩游戏也能撑5-6小时，续航是真的有说法。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"物理外挂\"\"续航是真的有说法\"——强烈赞扬荣耀WIN续航能力，有具体数据支撑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6944df23000000001f00778e",
+    "opinions": [
+      {
+        "opinion_text": "苹果用了差不多12年了，换了8部左右。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "12年长期使用8部苹果手机，说明对苹果品牌有高度忠诚和认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在准备换手机，个人喜好偏向华为，但我怕使用习惯适应不了华为，好纠结。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"个人喜好偏向华为\"——表达转向华为的意愿，但担忧使用习惯适应问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e3491b00000000230239a3",
+    "opinions": [
+      {
+        "opinion_text": "个人认为对比pocket4的画质确实提升很多，这次4画质问题是真的改善很多，细节都做的很好，以及画面的景深都做的很好，不是手机的算法虚骄，所以质感体验上确实会更好一些。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"质感体验上确实会更好一些\"——通过与大疆Pocket4对比，认为iPhone17pro在画质和质感体验上更好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68c111e6000000001c011a2e",
+    "opinions": [
+      {
+        "opinion_text": "发布会之前已经准备好买17pro了，现在觉得颜色又丑性价比又低。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"颜色又丑\"\"性价比又低\"——对iPhone17Pro外观和价格表达双重不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "17标准版的性价比真的高，颜色还很好看。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"性价比真的高\"\"颜色还很好看\"——对iPhone17标准版给予正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,2289 @@
+{
+  "chart_data": {
+    "monthly": {
+      "labels": [
+        "2021-05~06",
+        "2021-07~08",
+        "2022-09~10",
+        "2023-05~06",
+        "2023-09~10",
+        "2023-11~12",
+        "2024-01~02",
+        "2024-03~04",
+        "2024-05~06",
+        "2024-07~08",
+        "2024-09~10",
+        "2024-11~12",
+        "2025-01~02",
+        "2025-03~04",
+        "2025-05~06",
+        "2025-07~08",
+        "2025-09~10",
+        "2025-11~12",
+        "2026-01~02",
+        "2026-03~04",
+        "2026-05~06"
+      ],
+      "华为": {
+        "pos": [
+          1,
+          0,
+          1,
+          1,
+          15,
+          7,
+          6,
+          21,
+          27,
+          18,
+          19,
+          17,
+          44,
+          38,
+          71,
+          69,
+          70,
+          76,
+          115,
+          160,
+          133
+        ],
+        "neg": [
+          0,
+          2,
+          0,
+          0,
+          4,
+          2,
+          2,
+          15,
+          6,
+          12,
+          8,
+          18,
+          29,
+          51,
+          47,
+          41,
+          72,
+          80,
+          59,
+          149,
+          155
+        ],
+        "net": [
+          1,
+          -2,
+          1,
+          1,
+          11,
+          5,
+          4,
+          6,
+          21,
+          6,
+          11,
+          -1,
+          15,
+          -13,
+          24,
+          28,
+          -2,
+          -4,
+          56,
+          11,
+          -22
+        ],
+        "ratio": [
+          100.0,
+          0.0,
+          100.0,
+          100.0,
+          78.9,
+          77.8,
+          75.0,
+          58.3,
+          81.8,
+          60.0,
+          70.4,
+          48.6,
+          60.3,
+          42.7,
+          60.2,
+          62.7,
+          49.3,
+          48.7,
+          66.1,
+          51.8,
+          46.2
+        ]
+      },
+      "苹果": {
+        "pos": [
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          13,
+          18,
+          8,
+          14,
+          24,
+          17,
+          35,
+          19,
+          48,
+          48,
+          94,
+          77,
+          68,
+          75,
+          111
+        ],
+        "neg": [
+          0,
+          0,
+          0,
+          3,
+          5,
+          3,
+          3,
+          10,
+          22,
+          17,
+          30,
+          25,
+          25,
+          21,
+          42,
+          32,
+          98,
+          71,
+          90,
+          92,
+          112
+        ],
+        "net": [
+          1,
+          1,
+          1,
+          -2,
+          -3,
+          1,
+          10,
+          8,
+          -14,
+          -3,
+          -6,
+          -8,
+          10,
+          -2,
+          6,
+          16,
+          -4,
+          6,
+          -22,
+          -17,
+          -1
+        ],
+        "ratio": [
+          100.0,
+          100.0,
+          100.0,
+          25.0,
+          28.6,
+          57.1,
+          81.2,
+          64.3,
+          26.7,
+          45.2,
+          44.4,
+          40.5,
+          58.3,
+          47.5,
+          53.3,
+          60.0,
+          49.0,
+          52.0,
+          43.0,
+          44.9,
+          49.8
+        ]
+      }
+    },
+    "quarterly": {
+      "labels": [
+        "2021Q2",
+        "2021Q3",
+        "2022Q4",
+        "2023Q2",
+        "2023Q3",
+        "2023Q4",
+        "2024Q1",
+        "2024Q2",
+        "2024Q3",
+        "2024Q4",
+        "2025Q1",
+        "2025Q2",
+        "2025Q3",
+        "2025Q4",
+        "2026Q1",
+        "2026Q2"
+      ],
+      "华为": {
+        "pos": [
+          1,
+          0,
+          1,
+          1,
+          6,
+          16,
+          14,
+          40,
+          35,
+          19,
+          66,
+          87,
+          110,
+          105,
+          161,
+          247
+        ],
+        "neg": [
+          0,
+          2,
+          0,
+          0,
+          3,
+          3,
+          6,
+          17,
+          18,
+          20,
+          63,
+          64,
+          75,
+          118,
+          124,
+          239
+        ],
+        "net": [
+          1,
+          -2,
+          1,
+          1,
+          3,
+          13,
+          8,
+          23,
+          17,
+          -1,
+          3,
+          23,
+          35,
+          -13,
+          37,
+          8
+        ],
+        "ratio": [
+          100.0,
+          0.0,
+          100.0,
+          100.0,
+          66.7,
+          84.2,
+          70.0,
+          70.2,
+          66.0,
+          48.7,
+          51.2,
+          57.6,
+          59.5,
+          47.1,
+          56.5,
+          50.8
+        ]
+      },
+      "苹果": {
+        "pos": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          6,
+          16,
+          23,
+          26,
+          29,
+          47,
+          55,
+          82,
+          137,
+          109,
+          145
+        ],
+        "neg": [
+          0,
+          0,
+          0,
+          3,
+          1,
+          7,
+          4,
+          31,
+          30,
+          42,
+          36,
+          52,
+          77,
+          124,
+          126,
+          168
+        ],
+        "net": [
+          1,
+          1,
+          1,
+          -2,
+          -1,
+          -1,
+          12,
+          -8,
+          -4,
+          -13,
+          11,
+          3,
+          5,
+          13,
+          -17,
+          -23
+        ],
+        "ratio": [
+          100.0,
+          100.0,
+          100.0,
+          25.0,
+          0.0,
+          46.2,
+          80.0,
+          42.6,
+          46.4,
+          40.8,
+          56.6,
+          51.4,
+          51.6,
+          52.5,
+          46.4,
+          46.3
+        ]
+      }
+    },
+    "yearly": {
+      "labels": [
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "华为": {
+        "pos": [
+          1,
+          1,
+          23,
+          108,
+          368,
+          408
+        ],
+        "neg": [
+          2,
+          0,
+          6,
+          61,
+          320,
+          363
+        ],
+        "net": [
+          -1,
+          1,
+          17,
+          47,
+          48,
+          45
+        ],
+        "ratio": [
+          33.3,
+          100.0,
+          79.3,
+          63.9,
+          53.5,
+          52.9
+        ]
+      },
+      "苹果": {
+        "pos": [
+          2,
+          1,
+          7,
+          94,
+          321,
+          254
+        ],
+        "neg": [
+          0,
+          0,
+          11,
+          107,
+          289,
+          294
+        ],
+        "net": [
+          2,
+          1,
+          -4,
+          -13,
+          32,
+          -40
+        ],
+        "ratio": [
+          100.0,
+          100.0,
+          38.9,
+          46.8,
+          52.6,
+          46.4
+        ]
+      }
+    }
+  },
+  "table_data": [
+    {
+      "publish_time": "2026-05-28 18:17",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "就是冲着粉色买的，新电池续航也不错，直接单手操作，流畅度还可以",
+      "interaction": 16,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 18:17",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "之前还担心卡呢，有点多余了，我朋友的感觉版本比较低，没我的流畅",
+      "interaction": 16,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 18:17",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "有人说高系统可能续航会不好，新电池没什么感觉",
+      "interaction": 16,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 18:17",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "拍照也好看，挺真实的",
+      "interaction": 16,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 14:49",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "之前买过两个华为的 freelace 系列，碰到过单设备链接声音断断续续然后断联，需要删除设备重连的情况。",
+      "interaction": 2,
+      "source_keyword": "华为稳定"
+    },
+    {
+      "publish_time": "2026-05-28 14:49",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "双设备切换时，即使电脑音频已暂停，手机音频已经放了数十秒，仍然没声的情况，所以有点顾虑。",
+      "interaction": 2,
+      "source_keyword": "华为稳定"
+    },
+    {
+      "publish_time": "2026-05-28 11:13",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "昨天置换了一个华为手机，华为畅享90Promax，用起来那就是一个丝滑，起飞",
+      "interaction": 5,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 10:17",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "手机是去年5月底买的，今年5月份突然刷到电池返场，我看了下自己的，循环了372次就92%了",
+      "interaction": 91,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 10:17",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "刚收到的时候就觉得面容不行，经常面容付款，开机失败",
+      "interaction": 91,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 10:17",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "但是之前的小12超级丝滑，没有这种问题啊",
+      "interaction": 91,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 10:17",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "还有黑屏，抖音退出却一直有声音等一系列问题",
+      "interaction": 91,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-28 10:17",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "不过也要夸一夸苹果售后真的快速，给了备用机，10天就拿到了满血复活的手机",
+      "interaction": 91,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-27 19:48",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "总的来说新机的流畅度肯定是没问题的，一口气开了20多个后台也不卡顿。",
+      "interaction": 6,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-27 19:48",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "虽然不是影像旗舰系列，但是拍照质量还可以，新玩法挺多的。",
+      "interaction": 6,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-27 19:48",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "但是发现了第1个不如p60的地方——就是播放音乐没有p60那样的立体音效，毕竟他也不是主打影音。",
+      "interaction": 6,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-27 16:50",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "买了华为mate80pro,16g,512g，满心期待，实话说，系统很丝滑。",
+      "interaction": 24,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-27 16:50",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "但刷抖音和小红书视频模糊，问了AI说不是硬件问题，而是软件适配问题？",
+      "interaction": 24,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-27 11:07",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "一直用果子，现在13pro4年多了依旧丝滑。",
+      "interaction": 10,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 11:07",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "就是电池健康76%，续航太差我也不考虑换电池。",
+      "interaction": 10,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 08:06",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "nova6感觉超级好用",
+      "interaction": 0,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 08:06",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "nova11芯片配置不如以前，使用感没有以前丝滑了",
+      "interaction": 0,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 08:06",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "用惯了华为手机，换华为在账号数据之类的好传导，手感不会变",
+      "interaction": 0,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 08:06",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "mate80pro相比下来芯片最高，价格也还ok",
+      "interaction": 0,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 08:06",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果ios系统没试过，而且价格高，朋友的16pm用了一年多也会出现发烫",
+      "interaction": 0,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-27 08:06",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "鸿蒙6据说是会有点难用，wx、平台优惠quan、软件功能不兼容",
+      "interaction": 0,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-26 17:34",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "4年前穿插用过一年多华为，觉得挺好，丝滑，电池硬挺，信号好，兼容度高",
+      "interaction": 3,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-26 17:34",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "后来换了14pro，顿时觉得卡的要死",
+      "interaction": 3,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-26 17:34",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "现在又换了华为80非凡大师，整个人都蒙了。鸿蒙这个系统是什么路数。微信功能回到解放前。完全不成熟的系统就开始上市了",
+      "interaction": 3,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-26 10:18",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "这不是什么产业革命，这是一场精心策划的资本炒作。",
+      "interaction": 3,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-26 10:18",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "没人提的是3D堆叠的致命缺陷：散热和功耗。现在手机芯片叠3层就已经热得烫手，AI训练芯片单卡功耗已达700瓦。",
+      "interaction": 3,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-26 10:18",
+      "brand": "华为",
+      "sentiment": "混合",
+      "intensity": "中",
+      "opinion_text": "我从不否认华为是一家伟大的公司，但伟大的公司也会做营销，也会配合资本讲故事。",
+      "interaction": 3,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-25 21:19",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "不然就像我一样卡的要死，停在这个页面十分钟，强制关机都关不了",
+      "interaction": 10,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 21:19",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "本来我的14pro还能再坚挺五年，现在估计一年内就要换了",
+      "interaction": 10,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 21:19",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "原来是ios17.6，很丝滑。如果不是为了匹配AirPods和iwatch功能更本不想更新",
+      "interaction": 10,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 21:19",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "现在搞的跟安卓机一样",
+      "interaction": 10,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 21:19",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "苹果更新和windows系统更新一样恶心",
+      "interaction": 10,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 18:55",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "系统很丝滑，拍照非常清晰，最喜欢的就是可以调色",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-25 18:55",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "电池多少有点不抗打，实况看起来有点卡顿",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-25 18:55",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "总体来说是非常满意的，并没有其他人说的很难适应",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-25 18:55",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "直接把我的15pm当备用机了，打算把苹果卖了用华为当主力机",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-25 17:38",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "北京银行app的部分功能也受到限制，因为手机问题，自己还要专门跑一趟网点",
+      "interaction": 17,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 17:38",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "只能说在这个信息化的时代，华为mate80pro真是666",
+      "interaction": 17,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-25 16:44",
+      "brand": "华为",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "鸿蒙系统能达到IOS那么流畅吗？",
+      "interaction": 8,
+      "source_keyword": "华为流畅"
+    },
+    {
+      "publish_time": "2026-05-25 16:44",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "鸿蒙系统能达到IOS那么流畅吗？",
+      "interaction": 8,
+      "source_keyword": "华为流畅"
+    },
+    {
+      "publish_time": "2026-05-25 10:00",
+      "brand": "华为",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "某些媒体过度解读，称其打破摩尔定律。事实上，并不与摩尔定律相违背，是在2D横向尺寸逼近理论极限的困境下的纵向突围，以非摩尔补摩尔，实现等效于先进制程的芯片性能。",
+      "interaction": 6,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-24 14:28",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "全网也就你们苹果用户最矫情，天天刷屏搜省电技巧、护电池偏方、纠结续航、死磕电池健康度，别的品牌用户正常用机，就你们一群人把一块消耗品当祖宗供着。",
+      "interaction": 5,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-24 14:28",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "花大价钱买苹果，图的就是流畅省心，结果倒好：5G不敢开、亮度不敢调、后台不敢留、快充不敢用，为了护电池疯狂阉割体验，买个旗舰机硬生生用成老年机",
+      "interaction": 5,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-24 14:28",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "拿着苹果还天天担心续航电池，说难听点，纯属矫情又好笑，纯属自我内耗",
+      "interaction": 5,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-24 12:42",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "标准版没有长焦是真的难受，但16pm上的5倍长焦焦段又太大，不实用。",
+      "interaction": 64,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-24 12:42",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "我觉得苹果完全可以给标准版加上一个3倍的长焦镜头，不用潜望，立式的就完全够用。",
+      "interaction": 64,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-24 12:42",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "pro本来就是给有专业视频要求的人用的，有log和4k120、杜比视界，还有芯片肯定会比标准版性能好。",
+      "interaction": 64,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-24 12:42",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "真正有需求的人一直会买pro，预算多的也会，想要游戏性能的也会。",
+      "interaction": 64,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-24 12:42",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "这不是在推测下一代苹果标准版会怎样，只是自己完美中标准版要有的样子。",
+      "interaction": 64,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-24 09:31",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "目的明确，付款拿手机，30分钟丝滑离场",
+      "interaction": 39,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-23 11:04",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "这位不差钱的大佬还用着七年前的手机，说明P30 Pro还能胜任主用机的任务",
+      "interaction": 6,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-23 11:04",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "性能上，华为P30 Pro搭载了麒麟980处理器，全系标配8G内存，加上后续一路升到鸿蒙4.0系统，实现了软硬件优化的极致",
+      "interaction": 6,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-23 11:04",
+      "brand": "华为",
+      "sentiment": "混合",
+      "intensity": "中",
+      "opinion_text": "如果不玩游戏，这套配置只用来聊微信，那绝对够用的。但要刷短视频的话，其实偶尔会卡顿一下，更适合当备用机",
+      "interaction": 6,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-23 11:04",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "华为P30 Pro作为拍照旗舰，后置摄像头也不错，搭载了徕卡四摄，当年在DxOMark评分112获得第一名，具备50倍数字变焦能力",
+      "interaction": 6,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-23 11:04",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "这个NM卡是华为自己的标准，当年比TF卡还贵，如今TF卡涨上天，NM卡却没涨价",
+      "interaction": 6,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-22 23:48",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "在看了小红书上关于配置的帖子后，非常的焦虑，买了两台都是gh3，确实感觉显示不太行。",
+      "interaction": 18,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 23:48",
+      "brand": "苹果",
+      "sentiment": "混合",
+      "intensity": "中",
+      "opinion_text": "实际一年用下来，除了屏幕非常满意之外，感觉其他配置也就那样。",
+      "interaction": 18,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 23:48",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "第二张的电池其实也不咋地，这台打游戏很频繁，电池掉的快可能和打游戏也有关系。",
+      "interaction": 18,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 23:48",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "所以我觉得只要自己觉得屏幕没什么问题，不用太纠结配置，太在意反而没有了得到新手机的快乐。",
+      "interaction": 18,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 23:48",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "这些纠结配置的，本质还是供应商的问题，但我觉得不应该顾客买单，至少统一显示效果应该是该做的。",
+      "interaction": 18,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "Mate70pro镜头大凸起，个人还觉得有点丑",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "苹果17pm整体使用体验除了返回方式有割裂感，其他的都还好",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果信号确实不如华为，用流量打moba手游时不时就会卡，跳ping比较严重",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "华为信号没有遇到地下停车场没信号的情况",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "苹果",
+      "sentiment": "混合",
+      "intensity": "中",
+      "opinion_text": "苹果17pm散热很不错，这一代材质很适合散热，但脆皮也是真脆皮",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "华为freeclip2连苹果所有功能都正常，设备间切换在17pm和Mate40之间也能用",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "鸿蒙系统可以关闭app的陀螺仪权限，摇一摇广告伤害不到我",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 17:02",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果摇一摇广告功能不可控，经常打开软件一不小心就弹出去了",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 15:28",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "查了一下自己的17pm，发现配置分数太低了，别人最低都有八分，没见过比我配置还低的17pm，已经退货重买了。",
+      "interaction": 44,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 14:34",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果iOS 26的Foundation Models框架听起来隐私强能力够，但国行iPhone根本用不了",
+      "interaction": 1,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 13:32",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "一直很依赖macOS 和iPhone 之间的接力功能，但这个不太稳定，经常不能用，很恶心，多少版本了一直都有。",
+      "interaction": 6,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-22 13:12",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "每次看到姐妹用苹果手机拍出来的合照，那质感和出片率真的羡慕了",
+      "interaction": 143,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 13:12",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "苹果普遍能比日常便宜个1000多元，还能申请国补，是个换苹果机的好机会",
+      "interaction": 143,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-22 12:52",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "苹果官网不能换只能退，要等发货后才能退款，退换货流程僵硬冷漠",
+      "interaction": 13,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 12:52",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果的体验更多集中在产品拿到手之后，下单到收货的流程有落差",
+      "interaction": 13,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 11:23",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果手机储存太少了，我的内存是256起步，我知道它拍照好看，但我是想买一个主力机",
+      "interaction": 1,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-22 11:23",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "我买了两个华为的手机内存占满了，有一个手机还是因为一个明星代言买的，用了两年多就卡了",
+      "interaction": 1,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-22 11:23",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "另外一个华为手机已经用了五年多了还很耐用就是内存太少了",
+      "interaction": 1,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-22 11:23",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "我现在不好用的另外一个手机已经出现不玩游戏情况下切换抖音和vx就是卡顿，vx电话接不起来，接起来了缓慢很久，十秒之后才能接起来",
+      "interaction": 1,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-22 11:23",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "连玩游戏的时候放小窗wx时候回消息都很卡，我真的要吐了",
+      "interaction": 1,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-22 11:23",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "明星推荐的手机，他现在平时用的抖音微信QQ就正常的用的这三个软件，它就会发热很烫",
+      "interaction": 1,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-22 11:05",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "第一次用苹果的笔记本，没想到MacBook这么丝滑，突然就理解了它为什么卖这么贵了。",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 11:05",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "从欣赏的角度看，是艺术与科技结合的产物。",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 05:52",
+      "brand": "华为",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "我手里的设备是华为一条龙。",
+      "interaction": 13,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-22 05:52",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "需求只有能登上苹果账号+云燕云能流畅进行支撑我充上钱。",
+      "interaction": 13,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-22 01:08",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "我用苹果手机打游戏老是又卡又烫又掉帧",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 01:08",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "关机重启了一下手机，发现就不会了，每次打游戏之前都重启一下太有用了",
+      "interaction": 8,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 00:44",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "第一次体验真的很好，电脑上点击支付，手机立马弹起确认，支付完成，这个界面设计的真是唯美。",
+      "interaction": 4,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-22 00:16",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "没用过苹果，然后要求就是拍照好看，人像风景都好看的。",
+      "interaction": 14,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-22 00:16",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "手机流畅不卡，能够现在当主机使用就好了。",
+      "interaction": 14,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-21 23:29",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "今晚系统推了4.2.0.232，更新完之后突然就没有SIM卡信号了。",
+      "interaction": 0,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 23:24",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "买新不买旧在我这里根本不存在，我又不皇有病去入一个自己喜欢不起来的东西，勉强了自己好久发现根本勉强不了，萝卜青菜各有所爱所以还是4k多拿下我喜欢已久的16pro...",
+      "interaction": 12,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-21 23:24",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "功课做下来16pro拍照依旧能打哇性能也不差",
+      "interaction": 12,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-21 23:24",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "听说17的边框有点\"娇气\"，对我这种一天摔八百回的手滑党来说不适合不适合",
+      "interaction": 12,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-21 20:31",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "苹果全家桶效率大大的提升，太丝滑了，再也不用微信QQ来回传文件",
+      "interaction": 6,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 20:31",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "屏幕镜像相当于多了一块显示屏分屏，再也不用来回切屏了",
+      "interaction": 6,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 18:16",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "Apple的无障碍影片《有爱，无碍》已经上线，可以在各大渠道和官网观看",
+      "interaction": 17,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 18:16",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "第一次体验音乐触感反馈的时候其实并不太好理解，打开全部混音之后震动的复杂程度较高，初次体验会更难理解音频的触感",
+      "interaction": 17,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 18:16",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "摸索一番后，将触感选择为仅人声，会更容易理解音乐的触感，有了歌词和对这首歌的印象，即便没有播放声音，也能感知到振动传递出来的声音变化",
+      "interaction": 17,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 18:16",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "声音识别辅助功能是一个更为容易理解的例子，假设戴着耳机开着音乐听不到周围的声音，这就是一个直观的提醒，并且可以添加自定义声音来推送提醒",
+      "interaction": 17,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 17:58",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "我的华为matepad11还是很流畅",
+      "interaction": 2,
+      "source_keyword": "华为流畅"
+    },
+    {
+      "publish_time": "2026-05-21 17:58",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "除了内存不足",
+      "interaction": 2,
+      "source_keyword": "华为流畅"
+    },
+    {
+      "publish_time": "2026-05-21 17:58",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "最近买了台苹果4s，寄过来是ios9，在我一顿操作下，降级到ios6还能下载一堆游戏，很流畅",
+      "interaction": 10,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-21 17:34",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "在世纪威锋换完苹果电池后，手机变得很容易卡顿，使用体验很差",
+      "interaction": 3,
+      "source_keyword": "苹果卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 17:29",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "不讲不讲我的14promax还能再战一年，都用4年了依旧顽强狂摔不烂",
+      "interaction": 31,
+      "source_keyword": "苹果性能"
+    },
+    {
+      "publish_time": "2026-05-21 14:55",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "太后悔了买了，才买了三个月就出现卡顿，反应迟钝的现象",
+      "interaction": 23,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:55",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "现在才5月，在室内玩一会手机就超级烫了，我已经被迫贴上散热贴了",
+      "interaction": 23,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:55",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "自带的有些软件很鸡肋，只要右滑第二个界面永远出现",
+      "interaction": 23,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:55",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "摄像头真丑，屏幕太大，包稍微小的根本塞不下",
+      "interaction": 23,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:55",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "续航能力挺强的",
+      "interaction": 23,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:55",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "双开软件，双开的第二个软件有的时候会出现卡顿现象",
+      "interaction": 23,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:04",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "去年5月份买的华为P70u最近严重的发烫，对，是发烫，不是发热，很烫，烫的时候还卡，有时候还闪退，后台清完了还是卡",
+      "interaction": 12,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 14:04",
+      "brand": "华为",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "我朋友同期买的，她的不知道是不是因为用的是纯血鸿蒙的原因，就没有我这种情况的",
+      "interaction": 12,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 12:32",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "今年2月份第一次买了苹果17pro，使用下来有好有坏，但是令我最不爽的还是广告问题，我深受其害。",
+      "interaction": 26,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 12:32",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "换了iPhone之后，发现早就在我生活中绝迹的开屏广告又出现了，特别在地铁上使用的时候，经常会因为不小心识别成摇一摇自动跳到某宝，让人平静的心情都毁了。",
+      "interaction": 26,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 11:15",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "大家的matepadPRO升级到4.0有没有觉得卡顿啊，连自带的笔记用星闪笔写都没之前丝滑了",
+      "interaction": 2,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 09:54",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "目前感觉26.0.1很稳定续航很好也不怎么发烫",
+      "interaction": 38,
+      "source_keyword": "苹果卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 09:54",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "除了拍照卡的问题都挺好的",
+      "interaction": 38,
+      "source_keyword": "苹果卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 09:54",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "请问26.5续航怎么样视频发烫严重吗",
+      "interaction": 38,
+      "source_keyword": "苹果卡顿"
+    },
+    {
+      "publish_time": "2026-05-21 02:27",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "iPhone 13适应新系统后不那么卡了，还有些流畅",
+      "interaction": 28,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-21 01:48",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "Claudecode, code, minimax, 和苹果生态，MacBook的接洽，无缝接入，纵享丝滑",
+      "interaction": 3,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-20 21:39",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "时隔八年用回苹果，好丝滑，界面简洁美观",
+      "interaction": 3,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-20 21:39",
+      "brand": "华为",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "屏幕和华为mate60pro差不多大，可以无负担地玩游戏了",
+      "interaction": 3,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-20 19:53",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "先是自动关机，又是频繁拍照卡顿，现在又发热烫手",
+      "interaction": 3,
+      "source_keyword": "苹果卡顿"
+    },
+    {
+      "publish_time": "2026-05-20 19:32",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "已经换了一块全新的非原装电池了，电量满的，谁知道还是杀后台严重",
+      "interaction": 1,
+      "source_keyword": "苹果卡顿"
+    },
+    {
+      "publish_time": "2026-05-20 11:42",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "中",
+      "opinion_text": "苹果17和17pro差距还是蛮大的。",
+      "interaction": 2453,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-20 11:42",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "拍照远景确实是比不过苹果pro版，色彩还原度还是苹果有优势一点。",
+      "interaction": 2453,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-20 11:42",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "中",
+      "opinion_text": "系统流畅度方面他们差距接近没有。",
+      "interaction": 2453,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-20 11:42",
+      "brand": "苹果",
+      "sentiment": "混合",
+      "intensity": "中",
+      "opinion_text": "苹果标准版提升幅度也很高，Pro和Pro max版的属于常规升级。",
+      "interaction": 2453,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-19 22:06",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "从iphone15 pro换成用华为系两年了，从mate60到pura x，华为整体体验也很好。",
+      "interaction": 11,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-19 22:06",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "但是换回苹果17pro之后，感受到的丝滑程度华为不可比拟。",
+      "interaction": 11,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-19 22:06",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "Purax体验主要在新形态，换回苹果后我瞬间觉得我用的X系统像老古董，app功能简洁了之后，无法体验各种app产品经理的小巧思，感觉像2026年的诺基亚。",
+      "interaction": 11,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-19 22:06",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "苹果17 pro橙色也是一整个新形态，系统还是一样优秀丝滑，坏处是手机太好玩，导致我每天都在玩手机。",
+      "interaction": 11,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-19 18:19",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "刚换的华为meta80，打游戏和刷抖音都特别特别卡，比我用了五年的meta40都卡",
+      "interaction": 2,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-19 18:19",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "家里人不卡，就我卡，尤其是四点以后，晚上卡的情况最严重",
+      "interaction": 2,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-19 16:35",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "苹果和华为做得最为出色，二者在我心中属于同一梯队",
+      "interaction": 0,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-19 16:35",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "苹果和华为做得最为出色，二者在我心中属于同一梯队",
+      "interaction": 0,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-19 16:35",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "苹果的视频能力、日常功耗稳定性",
+      "interaction": 0,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-19 16:35",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "华为的通信与影像优化",
+      "interaction": 0,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-19 11:37",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "用了不到一天，屏幕大很多，电池耐用了，信号也好很多。",
+      "interaction": 84,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-19 11:37",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "很多软件感觉挺别扭的，没有完全适配，目前遇到最难用的是股票软件，难受的要命。感觉就是有壳没灵魂或者说很弱小，说实话有点后悔。",
+      "interaction": 84,
+      "source_keyword": "华为丝滑"
+    },
+    {
+      "publish_time": "2026-05-19 11:23",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "手机用了三年多，现在一天要充三次，电池容量显示80％。159电池，99上门费，电池焦虑不再。",
+      "interaction": 0,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-19 11:23",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "主要是新款华为和苹果的价格，让我觉得旧手机值得拯救一下。",
+      "interaction": 0,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-19 11:23",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "弱",
+      "opinion_text": "主要是新款华为和苹果的价格，让我觉得旧手机值得拯救一下。",
+      "interaction": 0,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-19 11:23",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "系统性能很好，再用两三年。",
+      "interaction": 0,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-19 09:50",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "本来就丝滑的界面现在更滑溜溜的，最主要是，打字顺滑了好多，微信相机试了几次也不卡，拍照也没有卡卡声音了，超流畅超顺滑",
+      "interaction": 15,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-19 09:50",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "唯一不爽就是，丝滑用续航换的，更新之后，电池更不耐用了，更新前电池100更新完就96，还发烫",
+      "interaction": 15,
+      "source_keyword": "苹果流畅"
+    },
+    {
+      "publish_time": "2026-05-19 09:41",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "mate60 pro越来越慢了，经常卡顿",
+      "interaction": 7,
+      "source_keyword": "华为和苹果卡顿对比"
+    },
+    {
+      "publish_time": "2026-05-18 22:48",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "终于不用再忍受苹果手机在地铁里差劲的信号了，刚下地铁就能瞬间打卡爽爆了！",
+      "interaction": 2,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 22:48",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "华为已经不再是当年用mate 40 Promax时的丝滑模样了！",
+      "interaction": 2,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 22:48",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "刚不用忍受像2g的信号，又要开始忍受鸿蒙系统的各种缺胳膊短腿了！",
+      "interaction": 2,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 22:48",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "终于不用每天给苹果手表充电了！华为手表是它价格的一半，我能用到的功能该有的都有，还可以五六天充一次电，让人觉得好日子来了。",
+      "interaction": 2,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 22:48",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "华为手表是它价格的一半，我能用到的功能该有的都有，还可以五六天充一次电，让人觉得好日子来了。",
+      "interaction": 2,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 22:48",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "苹果手机和手表都好保值啊，手表两千出头买的，用了一年，卖了小一千，15ProMAX用了两年多了还能卖四千多。",
+      "interaction": 2,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:43",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "目前的mate40pro已从2021年坚持到现在，依旧很丝滑",
+      "interaction": 1,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:43",
+      "brand": "华为",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "目前在纠结继续买华为mate70pro，还是转战oppo vivo，预算5k以内",
+      "interaction": 1,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:36",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "除了折叠形式、信号、AI构图之外，精致度全方位不如iPhone",
+      "interaction": 34,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:36",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "鸿蒙系统的软件适配一般般，外屏信息流费劲儿，内屏横向很多都是拉伸填充",
+      "interaction": 34,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:36",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "展开竖屏很像看书，很爽",
+      "interaction": 34,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:36",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "日常用的软件功能都是精简版，步数设状态都不行",
+      "interaction": 34,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:36",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "信号好",
+      "interaction": 34,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:36",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "精致度全方位不如iPhone",
+      "interaction": 34,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:35",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "华为mate80pro截屏隐私保护限制多，想截图告诉朋友在追剧，根本截不了",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:35",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "华为基本功能过渡没有什么大碍，但是细节真是不行，很不适应，微信收到文件直接用WPS打开，文件形式的转化发送，真是不如苹果丝滑方便",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:35",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，华为的解压后无法预览，只能再点开WPS点开看，真是影响工作丝滑度",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:35",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "支付宝设置'心愿储蓄'，在华为上弹不出输入密码的口，反馈给客服说是支付宝的问题，但明明在苹果上就没问题",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 21:35",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "苹果丝滑方便，解压后能直接预览文件，支付宝在苹果上没问题",
+      "interaction": 30,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 20:27",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "华为mate80pm动态图卡，你们的实况图也这么卡吗",
+      "interaction": 1,
+      "source_keyword": "华为和苹果流畅度对比"
+    },
+    {
+      "publish_time": "2026-05-18 20:05",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "一直很好奇苹果手机真的像网上说的可以用四五年都不卡吗，真的不是吹出来吗？",
+      "interaction": 318,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-18 20:05",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "她说她iPhone用了快四年，除了电池不太行，其他流畅得没理由买新机。",
+      "interaction": 318,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-18 20:05",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "可是既然能用三四年，为啥每年iPhone销量还这么高呀？",
+      "interaction": 318,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-18 16:34",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "刚更新了鸿蒙6.1的117版本，新增了一些主题、安全性之类功能，然后流畅度也提升了一些吧",
+      "interaction": 343,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-18 16:34",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "但发热问题依旧还在，日常刷视频、看红书就变成暖手宝；然后玩游戏就直接烫手，甚至在王者打团、洛克王国刷异色出污染的时候，会有偶发性电音问题",
+      "interaction": 343,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-18 16:34",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "功耗也依旧压不住，续航不够用，一天得2～3冲才勉强。并且因为发热问题，电池健康度下降很快，仅有83%了",
+      "interaction": 343,
+      "source_keyword": "华为性能"
+    },
+    {
+      "publish_time": "2026-05-18 13:56",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "升级后的感受真的很差………各种软件用起来真的慢的一批",
+      "interaction": 83,
+      "source_keyword": "华为和苹果卡顿对比"
+    },
+    {
+      "publish_time": "2026-05-18 13:56",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "强",
+      "opinion_text": "尤其是不兼容的软件放在卓易通里面的更是难用，一打开页面直接停滞像一层雾，1-2s后才转为正常",
+      "interaction": 83,
+      "source_keyword": "华为和苹果卡顿对比"
+    },
+    {
+      "publish_time": "2026-05-18 13:56",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "各种软件的便捷操作还不到位，真的影响手机使用",
+      "interaction": 83,
+      "source_keyword": "华为和苹果卡顿对比"
+    },
+    {
+      "publish_time": "2026-05-18 12:47",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "想从三星换回苹果，但实体店销售说每台信号都不太一样，看缘分，实在担心信号还是拉胯。",
+      "interaction": 0,
+      "source_keyword": "华为和苹果稳定性对比"
+    },
+    {
+      "publish_time": "2026-05-18 12:23",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "mate60pro自从一直升级最新系统，虽然系统流畅，但app确实有点卡。淘宝，支付宝，美团很明显卡顿。估计是性能太差，70和80就不会。",
+      "interaction": 10,
+      "source_keyword": "华为和苹果卡顿对比"
+    },
+    {
+      "publish_time": "2026-05-18 12:23",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "前段时间换80pro了，想着把它退回去4.2看看，没想到退回去又很好用了。不过4.2的UI确实没有6丝滑舒服。但app确实流畅了。",
+      "interaction": 10,
+      "source_keyword": "华为和苹果卡顿对比"
+    },
+    {
+      "publish_time": "2026-05-18 12:11",
+      "brand": "华为",
+      "sentiment": "混合",
+      "intensity": "中",
+      "opinion_text": "一直都用的华为，感觉除了拍照不太行，系统和性能都很丝滑方便。",
+      "interaction": 38,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-18 12:11",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "但是现在的新机都是鸿蒙系统担心app不适配。",
+      "interaction": 38,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-18 12:11",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "周围的朋友都劝换苹果，但是担心信号和电池问题。",
+      "interaction": 38,
+      "source_keyword": "华为和苹果性能对比"
+    },
+    {
+      "publish_time": "2026-05-18 11:26",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "苹果17pro系统好丝滑",
+      "interaction": 113,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-18 11:26",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "苹果17pro好多功能不大会用，输入法好难用",
+      "interaction": 113,
+      "source_keyword": "苹果丝滑"
+    },
+    {
+      "publish_time": "2026-05-18 10:45",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "我感觉自己的pura x这次更新了之后刷小红书明显卡顿了好多。",
+      "interaction": 86,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-18 10:45",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "微信小程序的加载速度也慢了很多。",
+      "interaction": 86,
+      "source_keyword": "华为卡顿"
+    },
+    {
+      "publish_time": "2026-05-18 07:49",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "p30pro给了家属，家属用到现在，前后用了6年多了还是0维修，没有刚买时候的丝滑，但日常使用足够了，不卡顿",
+      "interaction": 7,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 07:49",
+      "brand": "苹果",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "因为工作原因我换回了苹果，各种app是更方便了，但对于重度使用者来说，续航是真给我整emo了",
+      "interaction": 7,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 07:49",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "华为真的是一台各方面性能都很稳定无短板的手机，相当省心",
+      "interaction": 7,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 07:49",
+      "brand": "华为",
+      "sentiment": "正向",
+      "intensity": "强",
+      "opinion_text": "华为就不用担心这个续航问题，而且非常耐摔，用过的几台手机都是0磕碰0磨损",
+      "interaction": 7,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 07:49",
+      "brand": "华为",
+      "sentiment": "负向",
+      "intensity": "中",
+      "opinion_text": "直到今年3月我的whatsapp被封，用了好多办法都不行，换台手机才能登录",
+      "interaction": 7,
+      "source_keyword": "华为和苹果丝滑对比"
+    },
+    {
+      "publish_time": "2026-05-18 01:27",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "中",
+      "opinion_text": "苹果自带测步伐稳定性蛮准的。2月底手术后疼痛和穿支具，走路比较瘸，稳定性突降为低。",
+      "interaction": 4,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-18 01:27",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "3月中到4月中稳定性开始提升，确实是3月中刀口不肿后，加上康复，突然就一天比一天好很多。",
+      "interaction": 4,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-18 01:27",
+      "brand": "苹果",
+      "sentiment": "正向",
+      "intensity": "弱",
+      "opinion_text": "4月中开始拆支具，继续康复，稳定性也越来越好。",
+      "interaction": 4,
+      "source_keyword": "苹果稳定"
+    },
+    {
+      "publish_time": "2026-05-18 00:18",
+      "brand": "苹果",
+      "sentiment": "中性",
+      "intensity": "弱",
+      "opinion_text": "年年换新平均成本不是更高吗？",
+      "interaction": 5,
+      "source_keyword": "苹果稳定"
+    }
+  ],
+  "summary": {
+    "华为": {
+      "total": 1797,
+      "pos": 815,
+      "neg": 752,
+      "neu": 136,
+      "mix": 94,
+      "net_score": 3.5,
+      "approval_rate": 52.0,
+      "pos_ratio": 45.4,
+      "neg_ratio": 41.8
+    },
+    "苹果": {
+      "total": 1534,
+      "pos": 606,
+      "neg": 701,
+      "neu": 154,
+      "mix": 73,
+      "net_score": -6.2,
+      "approval_rate": 46.4,
+      "pos_ratio": 39.5,
+      "neg_ratio": 45.7
+    }
+  }
+}

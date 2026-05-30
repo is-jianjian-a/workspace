@@ -1,0 +1,491 @@
+[
+  {
+    "note_id": "6a0b26c00000000006020f5e",
+    "opinions": [
+      {
+        "opinion_text": "终于不用再忍受苹果手机在地铁里差劲的信号了，刚下地铁就能瞬间打卡爽爆了！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手机在地铁里差劲的信号",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为已经不再是当年用mate 40 Promax时的丝滑模样了！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为已经不再是当年用mate 40 Promax时的丝滑模样了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "刚不用忍受像2g的信号，又要开始忍受鸿蒙系统的各种缺胳膊短腿了！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙系统的各种缺胳膊短腿",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "终于不用每天给苹果手表充电了！华为手表是它价格的一半，我能用到的功能该有的都有，还可以五六天充一次电，让人觉得好日子来了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不用每天给苹果手表充电了（暗示苹果手表续航差）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手表是它价格的一半，我能用到的功能该有的都有，还可以五六天充一次电，让人觉得好日子来了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为手表是它价格的一半，功能该有的都有，还可以五六天充一次电",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "本来要换手机的那天都被links种草了OPPO，打算第二天就询价的。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "被links种草了OPPO",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "希望它能是信号好也不缺胳膊短腿也没有第三个缺点的手机！",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "希望OPPO信号好也不缺胳膊短腿",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果手机和手表都好保值啊，手表两千出头买的，用了一年，卖了小一千，15ProMAX用了两年多了还能卖四千多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手机和手表都好保值啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "675906aa000000000603ba28",
+    "opinions": [
+      {
+        "opinion_text": "本来是想看下华为Mate70 Pro+的续航，还在感慨Mate续航总算提升起来了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate续航总算提升起来了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果4开头电池居然跟一众5、6开头电池，打的有去有来。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果4开头电池居然跟一众5、6开头电池，打的有去有来",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "有时候你不服果子是真不行，所以如果苹果可以加大电池的话，那又会是什么场面？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "你不服果子是真不行",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "679ee243000000002503c2e3",
+    "opinions": [
+      {
+        "opinion_text": "以前用安卓机的时候，其他人都说苹果用久了不会卡。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "以前用安卓机的时候，其他人都说苹果用久了不会卡",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "等我用苹果以后才知道纯属胡扯八道，该卡还是卡，卡爆！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "该卡还是卡，卡爆",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67957bab0000000018019189",
+    "opinions": [
+      {
+        "opinion_text": "华为半天不放货。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为半天不放货",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信不能应用分身！不能及时的获取另一个号的信息！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信不能应用分身",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不能开小窗，在玩游戏的时候根本不能同时读新信息。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不能开小窗",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机相册不自带拼图功能，手机不自带长截屏功能。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机相册不自带拼图功能，手机不自带长截屏功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "侧边没有返回键，对小手很不友好！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "侧边没有返回键，对小手很不友好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "以前从苹果换华为，是系统上的不适应，过了七年换回去，是体验感上的巨大落差，朋友精辟总结：从智能走向半自动。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "体验感上的巨大落差，从智能走向半自动",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "以前从苹果换华为，是系统上的不适应。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "从苹果换华为，是系统上的不适应",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6803bb3d000000001e004189",
+    "opinions": [
+      {
+        "opinion_text": "真的难用，卡的要死，不充电的时候手机也发烫。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真的难用，卡的要死，不充电的时候手机也发烫",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "比起苹果伤眼睛还是不能接受卡顿。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果伤眼睛",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "比起苹果伤眼睛还是不能接受卡顿。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "不能接受卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6874f9bc000000001d00d3e7",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙系统太卡了，刚开始用都很丝滑，现在真的不行，网速也慢，无语死了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "鸿蒙系统太卡了，现在真的不行，网速也慢，无语死了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68cf9bca000000001202c1aa",
+    "opinions": [
+      {
+        "opinion_text": "我一度以为我用的是一个好几年的手机，很卡，打开个微信图片都要几秒钟…偶尔还会死机～一个经常让我在朋友面前丢脸的手机。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "很卡，打开个微信图片都要几秒钟，偶尔还会死机，经常让我在朋友面前丢脸",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68cfa25f00000000120309cf",
+    "opinions": [
+      {
+        "opinion_text": "刚上手就这么卡，试了17其他型号也是这样，过度动画也改成史了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "刚上手就这么卡，过度动画也改成史了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "跟安卓比就是一坨，这下真不如安卓了，不知道的还以为是山寨机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "跟安卓比就是一坨，真不如安卓了，不知道的还以为是山寨机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "跟安卓比就是一坨，这下真不如安卓了。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真不如安卓了（暗示安卓更好）",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f8b853000000002301d240",
+    "opinions": [
+      {
+        "opinion_text": "刚买的华为p90promax卡顿这对吗？？？？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刚买的华为p90promax卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69db4f0a000000002100679d",
+    "opinions": [
+      {
+        "opinion_text": "同个型号不同使用感受，一个入坑一个退坑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "同个型号不同使用感受，一个入坑一个退坑",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "672c9dfa000000001a035372",
+    "opinions": [
+      {
+        "opinion_text": "苹果手机真是网上没赢过，销量没输过。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "网上没赢过，销量没输过",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "691011ce000000000700840f",
+    "opinions": [
+      {
+        "opinion_text": "最近我的mate60pro＋巨巨巨巨卡，打开app要等很久，点击任何链接都要等很久才显示出来，app之间跳转也巨巨巨巨卡。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "mate60pro＋巨巨巨巨卡，打开app要等很久，点击任何链接都要等很久才显示出来，app之间跳转也巨巨巨巨卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "从mate20到mate30到mate40，都没有这样卡过。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "mate20到mate30到mate40，都没有这样卡过（暗示以前型号不卡）",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这还怎么遥遥领先啊。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这还怎么遥遥领先啊",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68993589000000000200307d",
+    "opinions": [
+      {
+        "opinion_text": "那时候用着也没觉得怎样，就是眼睛越来越不舒服，晚上不敢用电话，眼睛特别干涩。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "眼睛越来越不舒服，晚上不敢用电话，眼睛特别干涩",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "后来换了16promax，想着屏幕大了会不会好一点，结果！直接连白天都玩不动手机！看一会就眼睛疼脑袋晕。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "直接连白天都玩不动手机，看一会就眼睛疼脑袋晕",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "一用水果手机就干眼症。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "一用水果手机就干眼症",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "换了华为p系列，干眼症立竿见影缓解了，现在晚上也能看电子书了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "干眼症立竿见影缓解了，现在晚上也能看电子书了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "p系列照相可以，录视频还是不及水果机。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "p系列照相可以",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "录视频还是不及水果机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "录视频还是不及水果机（暗示苹果录视频更好）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为信号也不咋滴，微信不打开就接不到消息。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为信号也不咋滴，微信不打开就接不到消息",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69edc9d00000000035039b2b",
+    "opinions": [
+      {
+        "opinion_text": "大家的华为P60开始卡顿了吗？我的手机这两天有点卡。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我的手机这两天有点卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "大家的网络会不会出现经常断网的情况？无限明明连接着突然断网连不上了，我经常出现这样的状况。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "无限明明连接着突然断网连不上了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d2033a0000000021011255",
+    "opinions": [
+      {
+        "opinion_text": "17pro为什么这么卡，真是要疯了，真的受不了手机有一点卡顿，日常微信卡住不动，退后台好几次，微信拍小视频也卡顿，扫码付款卡住付不了，真的很社死。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "17pro为什么这么卡，日常微信卡住不动，微信拍小视频也卡顿，扫码付款卡住付不了，真的很社死",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "才用了几个月摄像头还有黑点，怕不是买到残次品了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "才用了几个月摄像头还有黑点，怕不是买到残次品了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "真的是我用苹果以来最拉的一台手机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真的是我用苹果以来最拉的一台手机",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,554 @@
+[
+  {
+    "note_id": "690ab7070000000004013f8c",
+    "opinions": [
+      {
+        "opinion_text": "华为画面亮度高，树叶的绿色显得很鲜艳通透，蓝天也更清亮，画面更有视觉冲击力，色彩艳丽讨喜",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为画面亮度高，树叶的绿色显得很鲜艳通透，蓝天也更清亮\"\"华为的画面更有视觉冲击力，色彩艳丽讨喜\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone色彩还原很自然，树叶的绿色更接近真实肉眼看到的样子，画面整体偏写实风，更真实自然，质感很舒服",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"iPhone色彩还原很自然，树叶的绿色更接近真实肉眼看到的样子，画面整体偏写实风\"\"iPhone的画面更真实自然，质感很舒服\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为画面的层次感不错，远处的海面和小岛细节也能看清",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"华为画面的层次感不错，远处的海面和小岛细节也能看清\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone的细节保留得很细腻，比如树叶的纹理、人物的衣着都很清晰",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"iPhone的细节保留得很细腻，比如树叶的纹理、人物的衣着都很清晰\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "688502c200000000170371c1",
+    "opinions": [
+      {
+        "opinion_text": "华为这张看起来好寡淡，鸭肠看起来有点偏灰粉了，花瓣看起来也蔫蔫的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为这张看起来好寡淡，鸭肠看起来有点偏灰粉了，花瓣看起来也蔫蔫的\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "荣耀这张看起来颜色要好看很多，花瓣也起死回生，变新鲜了不少，怎么看都觉得荣耀的鸭肠拍的更有食欲",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"荣耀这张看起来颜色要好看很多，花瓣也起死回生，变新鲜了不少，怎么看都觉得荣耀的鸭肠拍的更有食欲\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "65deb7a800000000040011ee",
+    "opinions": [
+      {
+        "opinion_text": "华为信号好，在电梯中能持续刷出信息视频流；游戏场景下能够利用蜂窝数据加速，整体延迟卡顿较少",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"在电梯中，华为能持续刷出信息视频流；且在游戏场景下，华为能够利用蜂窝数据加速，整体延迟卡顿较少\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为拍景的能力确实还可以，尤其是这代60pro和pro+配备了长焦微距，能拍出很多奇妙的镜头；录像也比上代有很大的提升，尤其是动态范围和稳定性上",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为拍景的能力确实还可以，尤其是这代60pro和pro+配备了长焦微距，能拍出很多奇妙的镜头；录像也比上代有很大的提升，尤其是动态范围和稳定性上\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "X5的折叠屏展开后，在看报表、大图文都很方便，办公时经常内屏应用3开，效率很高；华为本地化+生态加持，收取快递，快捷停车，健康监控等，使用体验便利不少",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"X5的折叠屏展开后，在看报表、大图文都很方便，办公时经常内屏应用3开，效率很高；再者华为本地化+生态加持，收取快递，快捷停车，健康监控等，使用体验便利不少\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone更新到这一代确实可以说有点'无聊'，唯一吸引我的就是5倍长焦+钛合金的轻薄机身，这一代完全裸奔手感很好，5倍长焦拍照和视频使用场景很多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"iPhone更新到这一代确实可以说有点'无聊'，唯一吸引我的就是5倍长焦+钛合金的轻薄机身\"\"这一代完全裸奔手感很好，5倍长焦拍照和视频使用场景很多\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone录像对比华为优势太大，实际体验就是拍摄流畅、色彩真实",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"录像对比华为优势太大，实际体验就是拍摄流畅、色彩真实\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "年轻人在微信中直接拍摄小视频或图片，华为在这个入口下没有计算摄影的加持，拍出来的画面很劣质，而iPhone依然保持着较好的水平",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为在这个入口下没有计算摄影的加持，拍出来的画面很劣质\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "年轻人在微信中直接拍摄小视频或图片，iPhone依然保持着较好的水平",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"iPhone依然保持着较好的水平\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e8414e000000002003a40e",
+    "opinions": [
+      {
+        "opinion_text": "Mate 80 Pro Max的定位还是要整体高于Pura 90 Pro Max，屏幕用双层OLED峰值亮度更高，多一个5000万像素超长焦，同版本只贵500元，渠道优惠更多，更推荐Mate 80 Pro Max",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"Mate 80 Pro Max 的定位还是要整体高于 Pura 90 Pro Max\"\"我更推荐 Mate 80 Pro Max\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67b5f761000000001203fabf",
+    "opinions": [
+      {
+        "opinion_text": "苹果拍出的色调整体有些发黄，导致整个人的肤色看上去也是偏黄的，稍微显得没那么有血色感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"苹果拍出的色调整体有些发黄，导致整个人的肤色看上去也是偏黄的，稍微显得没那么有血色感\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为自带滤镜加持，整体更加红润，人的气色也好了不少，嘴唇也是红润有血色的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为这边自带滤镜加持，整体更加红润，人的气色也好了不少，嘴唇也是红润有血色的\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果放大看面部细节，脸上的瑕疵是比较明显的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果放大看面部细节，脸上的瑕疵是比较明显的\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为要好很多，虽然可以看到毛孔但皮肤看起来要更好，清晰度也要比苹果更高",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为要好很多，虽然可以看到毛孔但皮肤看起来要更好，清晰度也要比苹果更高\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a07ecac000000000803f39e",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17拿到手比较轻，外观更简洁素雅，拍照光线更还原",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"17拿到手比较轻，外观更简洁素雅。拍照对比一下，17光线更还原\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone17没找到指纹解锁，可以密码和面容，但不太习惯，指纹更方便",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"17没找到指纹解锁，可以密码和面容，但我不太习惯，指纹更方便\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone17账号注册之类的激活比较严谨，可能更保护玩家",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"17账号注册之类的激活比较严谨，可能更保护玩家\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone17最大的问题是微信不能双开，让我有点不爽",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"17最大的问题是微信不能双开，这让我有点不爽\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只玩游戏和普通日常，安卓机够用了，而且0帧起手",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"只玩游戏和普通日常，安卓机够用了，而且0帧起手\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6961b694000000000b00a38d",
+    "opinions": [
+      {
+        "opinion_text": "华为不愧是华为，食物都会自动美颜，但是看起来很有食欲，建议菜单都用华为拍",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为不愧是华为，食物都会自动美颜，但是看起来很有食欲，建议菜单都用华为拍\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍的很真实但让人没什么食欲",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"苹果拍的很真实但让人没什么食欲\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690728460000000003021553",
+    "opinions": [
+      {
+        "opinion_text": "苹果色彩偏黄偏暗，更有落日余晖的感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果色彩偏黄偏暗，更有落日余晖的感觉\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍出来的颜色偏蓝，色彩明亮，像是两种不同天气拍出来的效果",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"华为拍出来的颜色偏蓝，色彩明亮，像是两种不同天气拍出来的效果\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "放大看细节，华为的清晰度不错，细节处理细腻",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"放大看细节，华为的清晰度不错，细节处理细腻\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果会有些许颗粒感，但看右边发光的字，苹果拍的是清晰的，华为竟然糊成一团了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果拍的是清晰的\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "看右边发光的字，华为竟然糊成一团了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为嘛竟然糊成一团了\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68bea43a000000001b03efa8",
+    "opinions": [
+      {
+        "opinion_text": "iPhone的色彩和亮度比较贴近实际场景，看着很真实，保留了现场的雾感，整体偏写实，海水和岩石的颜色更自然",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"iPhone的色彩和亮度比较贴近实际场景，看着很真实\"\"iPhone保留了现场的雾感，整体偏写实\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的画面更明亮，色彩也更鲜艳些，看起来会更有活力，把天空拍得更蓝，雾气也淡了些，画面显得更通透，色彩更抓人眼球",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为的画面更明亮，色彩也更鲜艳些，看起来会更有活力\"\"华为把天空拍得更蓝，雾气也淡了些，画面显得更通透\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67795fc50000000014026aa8",
+    "opinions": [
+      {
+        "opinion_text": "华为键盘不熟悉，美图秀秀修图功能也不一样，意大利的好多App都不能下载，花了两个下午也没能安装好谷歌框架，实在没有耐心再试下去",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"键盘不熟悉，美图秀秀修图功能也不一样。意大利的好多App都不能下载，跟着工匠先森花了两个下午也没能安装好谷歌框架，还好只是备用机，不然真的很抓狂\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为色彩各方面都没有苹果16的细腻",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"色彩各方面都没有苹果16的细腻\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为网速稍微比苹果快一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"网速稍微比🍎快一点\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为唯一的明显优点是充电速度真的快，临出门花个10分钟也能充满",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"唯一的明显优点是充电速度真的快，临出门花个10分钟也能充满\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b6cbb60000000021039283",
+    "opinions": [
+      {
+        "opinion_text": "很多用华为手机、鸿蒙电脑的人都说用起来很丝滑，就像苹果iOS一样，鸿蒙用起来很流畅",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"很多用华为手机、鸿蒙电脑的人都说用起来很丝滑，就像苹果iOS一样，鸿蒙用起来有人很流畅\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "说华为卡的应该用的不是mate或者pura，华为畅享或者nova还真有可能会有卡顿，毕竟配置摆在那了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"如果说是华为畅享或者nova，还真有可能会有卡顿，毕竟配置摆在那了\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "三年前的mate60Pro用起来也是流畅的，才一千九要啥自行车，肯定是比现在的千元机要好用的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"三年前的mate60Pro用起来也是流畅的，才一千九要啥自行车，肯定是比现在的千元机要好用的\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0b15b7000000003701ea45",
+    "opinions": [
+      {
+        "opinion_text": "华为mate80pro截屏隐私保护限制多，想截图告诉朋友在追剧，根本截不了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"想截图告诉他在追剧，发现根本截不了\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为基本功能过渡没有什么大碍，但是细节真是不行，很不适应，微信收到文件直接用WPS打开，文件形式的转化发送，真是不如苹果丝滑方便",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"但是细节真是不行，很不适应\"\"真是不如苹果丝滑方便\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存，华为的解压后无法预览，只能再点开WPS点开看，真是影响工作丝滑度",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为手机上微信里直接转WPS解压保存竟然显示超过100无法解压保存\"\"华为的解压后无法预览\"\"真是影响工作丝滑度\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "支付宝设置'心愿储蓄'，在华为上弹不出输入密码的口，反馈给客服说是支付宝的问题，但明明在苹果上就没问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"支付宝设置'心愿储蓄'，最后就是弹不出输入密码的口\"\"明明在苹果上就没问题\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果丝滑方便，解压后能直接预览文件，支付宝在苹果上没问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"只能用苹果手机登录微信完成解压保存，而且解压后能直接预览文件\"\"明明在苹果上就没问题\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67e3da2f000000000603d299",
+    "opinions": [
+      {
+        "opinion_text": "iPhone16Promax整体色调有些偏黄，放大看细节会有些许糊感，比起精致感来说，更多的可能是氛围感和随意感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"整体色调有些偏黄，放大看细节会有些许糊感，比起精致感来说，更多的可能是氛围感和随意感\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Pura70Pro+可能是这四个旗舰机中，拍出的清晰度和质感最出色的一个，放大看细节非常清晰，整体色调没有vivo那么浓郁，也没有苹果那么寡淡",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"华为可能是这四个旗舰机中，拍出的清晰度和质感最出色的一个，放大看细节非常清晰\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivoX100ultra拍出的暗调比较明显，整体色调有些偏黄偏绿的感觉，个人不是很喜欢这种效果",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"vivo拍出的暗调比较明显\"\"整体色调也是有些偏黄偏绿的感觉，个人不是很喜欢这种效果\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPOfindX8Pro给人一种清晰又精致的感觉，效果跟华为有些相似",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"感觉OPPO的效果跟华为有些相似\"\"给人一种清晰又精致的感觉\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a095a7c0000000008000acc",
+    "opinions": [
+      {
+        "opinion_text": "更新iOS26.5后，app内滑动掉帧，要疯了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"更新ios26.5 app内滑动掉帧 要疯了\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68dffef0000000000303be51",
+    "opinions": [
+      {
+        "opinion_text": "苹果拍出的效果更接近真实食物，会比苹果的稍微再偏暖一丢丢，但没有华为拍的那么黄",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"食物更接近苹果拍出的效果\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍得太黄了，整块牛排都黄黄的，肉拍成这样看着有点不敢吃了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"整块牛排都黄黄的，肉拍成这样看着有点不敢吃了\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为清晰度做得很不错，自动对焦的情况下，拍食物的清晰范围要比苹果多很多，牛排和后面的虾都是清晰的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"这点华为就做的很不错，自动对焦的情况下，拍食物的清晰范围要比苹果多很多\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍出的牛排是清晰的，但虾被当成背景虚化掉了，这点处理的不是很好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果拍出的牛排是清晰的，但虾被当成背景虚化掉了，这点处理的不是很好\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,581 @@
+[
+  {
+    "note_id": "69e0da31000000001d01a1f2",
+    "opinions": [
+      {
+        "opinion_text": "Mate80有3D人脸识别，不管是人脸解锁、安全支付都很方便，比Pura90的2D人脸+侧边指纹体验好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate80有3D人脸识别，不管是人脸解锁、安全支付都很方便。比Pura90的2D人脸＋侧边指纹体验好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "都是麒麟9020处理器，Pura90多等了大半年升级还不大，反而价格却是新机价，而Mate80现在已经来到了3700",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "都是麒麟9020处理器，Pura90多等了大半年升级还不大，反而价格却是新机价→而Mate80现在已经来到了3700",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate外观经典星环，更有高端质感，Pura90的渐变色反而土土的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate外观经典星环，更有高端质感。Pura90的渐变色反而土土的....",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0a54020000000008024b9f",
+    "opinions": [
+      {
+        "opinion_text": "p30pro给了家属，家属用到现在，前后用了6年多了还是0维修，没有刚买时候的丝滑，但日常使用足够了，不卡顿",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "前后用了6年多了还是0维修，没有刚买时候的丝滑，但日常使用足够了，不卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "因为工作原因我换回了苹果，各种app是更方便了，但对于重度使用者来说，续航是真给我整emo了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "各种app是更方便了，但对于重度使用者来说，续航是真给我整emo了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为真的是一台各方面性能都很稳定无短板的手机，相当省心",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为真的是一台各方面性能都很稳定无短板的手机，相当省心",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为就不用担心这个续航问题，而且非常耐摔，用过的几台手机都是0磕碰0磨损",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为就不用担心这个续航问题。而且非常耐摔！用过的几台手机都是0磕碰0磨损",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "直到今年3月我的whatsapp被封，用了好多办法都不行，换台手机才能登录",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "直到今年3月我的whatsapp被封，用了好多办法都不行，换台手机才能登录",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6937ee45000000001f00c76b",
+    "opinions": [
+      {
+        "opinion_text": "华为Mate80 Pro Max拍出来，色调会冷很多，感觉好像没有iPhone17 Pro Max准",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为Mate80 Pro Max拍出来，色调会冷很多，[呃R]不说是有第二代红枫原色镜头，色温更精准吗？[吃瓜R]但感觉好像没有iPhone17 Pro Max准……",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的美颜把控非常好，介于iPhone的真实和小米美颜之间，会给我一种刚刚好的感觉，特别是在自拍的时候",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不过华为的美颜把控非常好，介于iPhone的真实和小米美颜之间，会给我一种刚刚好的感觉，特别是在自拍的时候！",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米的照片对比度更高一些，可能这就是徕卡味",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "小米的照片对比度更高一些，可能这就是徕卡味？",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone的皮肤最真实自然，色调也是我最喜欢的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "iPhone的皮肤最真实自然，色调也是我最喜欢的",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690300390000000005000e6b",
+    "opinions": [
+      {
+        "opinion_text": "小米17 Pro有一点美颜，场景色温表现和iPhone17 Pro最接近，看着很真实，主摄2倍变焦画质是四款手机里细节最好的",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "小米17 Pro有一点美颜，场景色温表现和iPhone17 Pro最接近，看着很真实\n主摄2倍变焦画质是四款手机里细节最好的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo X300 Pro美颜是挺好看的，但场景颜色偏红，看着不是那么舒服",
+        "brand_target": "vivo",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vivo X300 Pro美颜是挺好看的，但场景颜色偏红，看着不是那么舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "荣耀Magic8 Pro美颜痕迹太严重，而且画质感觉最一般",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "荣耀Magic8 Pro美颜痕迹太严重，而且画质感觉最一般……",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "自拍的话，iPhone17Pro我倒是最爱，脸色看起来比较有血色",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "另外自拍的话，📱iPhone17Pro我倒是最爱[偷笑R]脸色看起来比较有血色",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "65b91848000000000c005357",
+    "opinions": [
+      {
+        "opinion_text": "完善的iOS生态加上多年AppStore库存和游戏账号，一直走不出舒适区",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完善的 iOS 生态加上 多年 AppStore 库存和游戏账号，一直走不出舒适区",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最近实在忍不了信号和帧率了，试着搞了个新安卓试试，20分钟充满大电池，电梯车库永远满格的信号和全局120稳帧已经吊打了",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "20分钟充满大电池，电梯车库永远满格的信号和全局120稳帧已经吊打了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "数码也好电车也好，我们的东西已经很多方面比美国佬的好了，真的要多支持国产",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "其实数码也好电车也好，我们的东西已经很多方面比🇺🇸佬的好了，真的要多支持国产💪",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693952a3000000001e028865",
+    "opinions": [
+      {
+        "opinion_text": "什么功能是手机厂商狂吹但实际上没啥卵用的？曲面屏？165hz？卫星通讯？",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "什么功能是手机厂商狂吹但实际上没啥卵用的？\n曲面屏？165hz？卫星通讯？",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69cb7113000000002003bc73",
+    "opinions": [
+      {
+        "opinion_text": "刚从苹果换过来，没想到最大不适竟然是UI，一眼看上去就很low，甚至不如前几代鸿蒙精致",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "刚从苹果换过来，没想到最大不适竟然是UI，一眼看上去就很low，甚至不如前几代鸿蒙精致",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66370f9c000000001e01cd9d",
+    "opinions": [
+      {
+        "opinion_text": "iPhone15 ProMax太真实了，没有什么美颜的痕迹，不过在背景元素较多的场景里，很难凸显出人像的美，而且有些场景下脸部曝光比较暗，会显得有些脏",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "太真实了，没有什么美颜的痕迹，不过在背景元素较多的场景里，很难凸显出人像的美，而且有些场景下脸部曝光比较暗，会显得有些脏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Pura 70 Ultra有美颜，但在能够接受的程度之内，背景虚化没有什么大瑕疵，不过照片整体会有一些些偏黄",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有美颜，但在能够接受的程度之内，比如脸上的小黑痣还是可以看到的！背景虚化没有什么大瑕疵，不过我个人感觉照片整体会有一些些偏黄",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果更贴近真实，适合开live记录真实的生活",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "两个算是不同风格的人像，苹果嘛，更贴近真实，适合开live记录真实的生活",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ec731f00000000350254fe",
+    "opinions": [
+      {
+        "opinion_text": "资深苹果忠实用户，一直习惯iOS的丝滑流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "资深苹果忠实用户，一直习惯iOS的丝滑流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前用过华为Mate X5大折叠，太沉，拍照表现普通，系统流畅度一般，用了几个月还是换回了苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "之前用过华为Mate X5大折叠，太沉，拍照表现普通，系统流畅度一般，用了几个月还是换回了🍎",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为Pura X Max开合铰链丝滑，使用时看不到折痕，屏幕利用率高，影像质感和系统流畅度都提升很明显",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "开合铰链丝滑，使用时看不到折痕。屏幕利用率高，影像质感和系统流畅度都提升很明显",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果17 Pro Max重量大概288g，Pura X Max大概237g，单手拿没负担",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我的🍎17 Pro Max重量大概288g，Pura X Max大概237g，单手拿没负担",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "唯一的bug就是赠送的壳只包后面，店里也没有新壳，网上买的迟迟不发货",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "唯一的bug就是赠送的壳只包后面，店里也没有新壳，网上买的迟迟不发货",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67865ea0000000000b00f949",
+    "opinions": [
+      {
+        "opinion_text": "苹果就是比安卓流畅，不服来辩",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果就是比安卓流畅，不服来辩",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果就是比安卓流畅，不服来辩",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果就是比安卓流畅，不服来辩",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a097968000000000803dba4",
+    "opinions": [
+      {
+        "opinion_text": "mate70Air的处理器仅为9020B，而iPhone17Air的是跟iPhone17pro Max几乎一样的A19pro",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "mate70Air的处理器仅为9020B（华为目前旗舰芯片是麒麟9030pro）而iPhone17Air的是跟iPhone17pro Max几乎一样的A19pro（略微阉割）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙系统的优化令人惊叹，华为在各种日常使用场景的丝滑程度远强于苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "不得不惊叹于鸿蒙系统的优化！华为在各种日常使用场景的丝滑程度远强于苹果（开启了全局高刷）！",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果只有在软件打开速度上有明显的优势，但是竟然因为不能保持全局高刷出现了以往安卓机器的傻快傻快的感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果只有在软件打开速度上有明显的优势，但是竟然因为不能保持全局高刷出现了以往安卓机器的傻快傻快的感觉！",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "mate70Air在王者荣耀上可以做到帧率极高、分辨率超高、画面总画质高清的惊人表现，iPhone17Air目前只能锁60帧",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "mate70Air在王者荣耀上可以做到【帧率极高、分辨率超高、画面总画质高清】的惊人表现！反而是iPhone17Air目前只能锁60帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "其他重负载游戏，在没有厂家积极适配的情况下，华为的表现都是不如苹果的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "但是其他重负载游戏，在没有厂家积极适配的情况下，华为的表现都是不如苹果的（苹果不过热的情况下）！",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "mate70Air有6500毫安的大电池，配合华为快充，真的从来感受不到电量焦虑，iPhone17Air的3100毫安电池真的就省着点儿用还行吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "mate70Air有6500毫安的大电池，配合华为快充，真的从来感受不到电量焦虑！iPhone17Air的3100毫安电池真的就…..省着点儿用还行吧！",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone17Air的3100毫安电池真的就省着点儿用还行吧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone17Air的3100毫安电池真的就…..省着点儿用还行吧！",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍了晚上的小桥流水，朋友说比他的iPhone17pro Max效果还要好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "拍了晚上的小桥流水，朋友说比他的iPhone17pro Max效果还要好！一听说我这手机才4000多买的，气急败坏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "mate70Air是大气圆润美观，iPhone17Air则更加精致冷艳抓人眼球",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "颜值方面，mate70Air是大气圆润美观（四等深微曲屏）iPhone17Air则更加精致冷艳抓人眼球",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用华为这款护眼屏时间久了，再用回苹果怎么感觉眼睛那么容易酸",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用华为这款护眼屏时间久了，再用回苹果怎么感觉眼睛那么容易酸呢？",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我最后还是为了苹果的小众设计买单了，上次是iPhone13mini，这次是Air，但也许是最后一次了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我最后还是为了苹果的小众设计买单了，上次是iPhone13mini，这次是Air，但也许是最后一次了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c4f21a000000001a023547",
+    "opinions": [
+      {
+        "opinion_text": "犹豫X6还是苹果17，最终还是苹果输给了华为，因为看文件还是大屏舒服",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "犹豫X6还是苹果17，最终还是苹果输给了华为！因为看文件还是大屏舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "犹豫X6还是苹果17，最终还是苹果输给了华为",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "犹豫X6还是苹果17，最终还是苹果输给了华为！因为看文件还是大屏舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0954eb000000003503a31b",
+    "opinions": [
+      {
+        "opinion_text": "背面磨砂玻璃像摸猫肚皮，银色带点流光，折叠起来像块小方糖，展开直接变小平板",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "背面磨砂玻璃像摸猫肚皮，银色带点流光...折叠起来像块小方糖，展开直接变小平板",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "后置镜头夜景模式绝了，这个红枫影像解析力真的很强",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "后置镜头夜景模式绝了，这个红枫影像解析力真的很强",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙OS丝滑到像在溜冰，多开5个APP都没卡，但是部分软件适配进度还是有点拖后腿",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙OS丝滑到像在溜冰，多开5个APP都没卡！但是部分软件适配进度还是有点拖后腿，希望能快点跟上节奏",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "重度用半天50电，毕竟电池在那里了，不过我也是上班随便充电不焦虑",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "重度用半天50电，毕竟电池在那里了，不过我也是上班随便充电不焦虑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "展开后屏幕太大，单手拿像举哑铃，价格嘛得吃三个月泡面",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "展开后屏幕太大，单手拿像举哑铃（但躺着追剧爽到飞起）；价格嘛…得吃三个月泡面",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fc56b20000000023007166",
+    "opinions": [
+      {
+        "opinion_text": "作为多年苹果全家桶用户，Mac、AW、Airpods Pro一个不落",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作为多年苹果全家桶用户🍎\nMac、AW、Airpods Pro一个不落",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Find X9s Pro小屏手感很舒服，质感也ok不输iPhone，单手操作毫无压力",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小屏手感很舒服✨质感也ok不输iPhone\n单手操作毫无压力，揣口袋也轻松",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "和苹果设备互联居然没壁垒，AirPods开盖秒弹，和Mac传文件一碰就行，AW通知也能同步，iPhone来电在OPhone上能接",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "到手后，意外的是和苹果设备互联居然没壁垒！\nAirPods开盖秒弹，和Mac传文件一碰就行✅\nAW通知也能同步，iPhone来电在OPhone上能接",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "ColorOS流畅度不输iOS，自定义还更多还有丰富的AI功能",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "ColorOS流畅度不输iOS，自定义还更多还有丰富的AI功能",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不是说苹果不好，只是安卓现在真的香",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "不是说苹果不好，只是安卓现在真的香",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f0e36e000000002300705b",
+    "opinions": [
+      {
+        "opinion_text": "小红书刷到m6发现性价比挺高的，第一次买二手，用了快一个月，感觉没有翻车",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小红书刷到m6发现性价比挺高的...第一次买二手，用了快一个月，感觉没有翻车",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "屏除了有一个亮点，其他没发现什么问题，成色也挺新的，不玩大型游戏，刷视屏追剧完全没问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏除了有一个亮点，其他没发现什么问题，成色也挺新的，不玩大型游戏，刷视屏追剧完全没问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

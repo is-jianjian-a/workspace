@@ -1,0 +1,635 @@
+[
+  {
+    "note_id": "68ffb133000000000302ccf2",
+    "opinions": [
+      {
+        "opinion_text": "微信扫一扫跟付款码没有快捷组件，iPhone没有，只能在锁屏页添加，位置还不能调整，锁屏界面很难看，平时付款要用到手机如果是在桌面还得锁屏打开，或者点开微信，不方便",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone没有微信快捷组件，只能在锁屏页添加且位置不能调整，付款不方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "软件收纳只有小文件夹，很多应用放一起需要用到还要打开文件夹，安卓的有中文件夹大文件夹，归纳一起不点进去直接点软件就能打开",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone软件收纳只有小文件夹，不如安卓的中文件夹大文件夹方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "软件图标太大了，改不了大小，那么大一个图标在桌面，看着冷冰冰的，占那么大一块位置，很丑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone软件图标太大不能改大小，看着冷冰冰的很丑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照没有想象中的惊艳，拍出来的图片竟然没有安卓拍的更好看，甚至颜色比实物相差的很大，没有安卓还原，拍视频还很糊，特别是微信拍的视频，很难想象一万多的手机微信拍视频的像素跟诺基亚翻盖机一样的水平",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "iPhone拍照没有安卓好看，颜色不还原，拍视频很糊，微信拍视频像素差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "很多小众软件应用商店搜不到，网站上下载也安装不了，完全限制我的娱乐爱好。第三方软件最新版本系统根本安装不了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone很多小众软件应用商店搜不到，第三方软件安装不了，限制娱乐爱好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "会抽风，有时候会卡在某个界面滑动不了，要熄屏重新进去，现在还有手机是这样的？这是25年的手机该出现的现象吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "iPhone会卡在某个界面滑动不了，要熄屏重新进去",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "相册不会分类，找照片困难",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone相册不会分类，找照片困难",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "图片不能消除水印，安卓的可以在相册里面消除，不花钱，很好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone图片不能消除水印，安卓可以",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "清理系统垃圾不能一键清理，占内存",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone清理系统垃圾不能一键清理，占内存",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "面容解锁很不灵敏，要摆好姿势才能成功，不然得输入密码开锁，安卓什么奇怪的姿势都能秒开很便捷",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone面容解锁不灵敏，要摆好姿势才能成功，不如安卓便捷",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "竟然不可以全屏翻译真的心碎了，就算跟网上搞快捷指令翻译，他也不是全屏在原本的屏幕上翻译成中文，它是提取出来翻译的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone不可以全屏翻译，快捷指令翻译也是提取出来翻译的",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ea22d30000000019032405",
+    "opinions": [
+      {
+        "opinion_text": "苹果手机没有他们吹的那么神乎其神。什么苹果x，苹果11，苹果12用到现在还不卡。那是你卡习惯了。但是苹果手机的卡是相当于死机了一下子。然后死机个十几秒或半分钟以后。就不卡了。过一段时间再大卡一下子",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手机卡是相当于死机一下子，死机十几秒或半分钟，过一段时间再大卡一下子",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安卓手机用时间长了是一点一点地卡，慢慢折磨你的感觉",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓手机用时间长了是一点一点地卡，慢慢折磨",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a01cb530000000037035606",
+    "opinions": [
+      {
+        "opinion_text": "三年前第一批Mate60pro和gt4云杉绿的用户，用到今年手机电池健康只剩80%，出去玩得随时备着充电宝",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate60pro电池健康只剩80%，出去玩得随时备着充电宝",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "想换Mate80发现纯血鸿蒙很多工作软件没法直接用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate80纯血鸿蒙很多工作软件没法直接用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "换了电池之后，手机感觉变得有点卡顿，我有点厌蠢症，别人跟不上我的反应速度我就会有点嫌弃，手机也是，最后决定把它优化了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate60pro换了电池后变得有点卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "想换回苹果但是IOS新的界面又觉得很丑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "iOS新的界面觉得很丑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最终还有一些手机保值率的考量，华为的保值率实在是不敢恭维，17pmx和ultra3都是在京东用华为以旧换新的，手机估价1000，手表估价260，如果是同期iPhone和apple watch的话应该能估得更高点",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为保值率不敢恭维，以旧换新估价低，同期iPhone和apple watch应该能估得更高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果是同期iPhone和apple watch的话应该能估得更高点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "同期iPhone和apple watch以旧换新应该能估得更高",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6979d16b000000000b008fc6",
+    "opinions": [
+      {
+        "opinion_text": "苹果这么多年第一次不涨价，我猜应该是销量真的控制不住，想想也是，现在谁还年年换手机啊，手里的13用上三年都不卡。不涨价说明市场真的在萎缩，苹果也得低头了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果第一次不涨价，销量控制不住，市场萎缩，但手里的13用上三年都不卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不过对于消费者来说倒是好事，终于不用被当作韭菜割了。就是不知道为了控制成本，会不会在配置上缩水",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果不涨价对消费者是好事，但担心为了控制成本在配置上缩水",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6974bb9800000000280226b1",
+    "opinions": [
+      {
+        "opinion_text": "华为matepadmini颜值遥遥领先",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为matepadmini颜值遥遥领先",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "ipadmini边框停航母",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPad mini边框停航母（边框太宽）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过性能上华为还是差一些",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为matepadmini性能上还是差一些",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "692da99c000000001e017650",
+    "opinions": [
+      {
+        "opinion_text": "华为mate60pro卡得相当无语了，刷抖音掉帧、卡顿，进app反应慢，一直转圈圈，还不如我妈那1000多的手机反应快",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为mate60pro刷抖音掉帧、卡顿，进app反应慢，还不如1000多的手机反应快",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "还是换苹果吧，失望",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "因为华为卡顿，决定换苹果",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6872418b000000002201d9b1",
+    "opinions": [
+      {
+        "opinion_text": "fit4碾压性的优势就是续航，充电40分钟到1h管5到6天，iwatch每日一充，随时电量焦虑",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为fit4续航碾压，充电40分钟到1h管5到6天，iwatch每日一充",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "fit4配iPhone都可以接微信电话，iwatch居然不可以接微信电话，接微信电话很重要",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为fit4配iPhone都可以接微信电话，iwatch居然不可以",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "fit4实时显示心率数据，iwatch的心率还要点进去现测才能看到数据",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为fit4实时显示心率数据，iwatch要现测",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "fit4的模块切换左右滑动就可以了，所有的返回操作都是向左滑动即返回，iwatch的返回都要按实体键返回，还不一定返回到上一层，也没有直观显示数据的模块卡片",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为fit4模块切换和返回操作更便捷，iwatch要按实体键",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "fit4的声音很大，iwatch的声音很小，运动的时候都听不到iwatch的提示语音，一点激励的感觉都没有",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为fit4声音大，iwatch声音小运动听不到",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "fit4一个华为运动健康app搞定所有功能，iwatch的步数和热量，情绪检测都是需要第三方软件的，app store里有很多这样的软件但很多都要VIP，界面体验很不好，处处提示要你开通vip",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为fit4一个app搞定所有功能，iwatch需要第三方软件且很多要VIP",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iwatch价格在那里，屏幕质感都很高级，表盘的设计也很高级",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iwatch屏幕质感高级，表盘设计高级",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iwatch有手腕体温，fit4没有体温监测",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "iwatch有手腕体温监测，fit4没有",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "fit4配iPhone不能回微信消息，不能查看微信图片，不能听微信语音，iwatch可以接/发微信图片，听/发微信语音",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iwatch可以接发微信图片、听发微信语音，fit4不能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "网上说睡眠检测iwatch要准一些",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "网上说iwatch睡眠检测要准一些",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果你是苹果手机我也建议你选fit4，除非你是专业运动员或者你就是冲iwatch的颜值去的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "即使是苹果手机用户也建议选华为fit4",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f55b44000000003700f046",
+    "opinions": [
+      {
+        "opinion_text": "当时的遥遥领先mate60pro现在的一大坨，终于受不了换了vivo x300",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为mate60pro现在变成一大坨，终于受不了换了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo自带的互传很好用，旧手机华为也下载一个互传，就可以把所有app，通讯录，信息，照片传输过去，而且速度很快",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vivo自带互传很好用，传输速度快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "关于屏幕瞎眼，自己使用下来确实发现，看屏幕不一会就太阳穴疼和眉间疼",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vivo x300屏幕看久了太阳穴疼和眉间疼",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "性能和系统，自我感觉流畅和丝滑，和对象的苹果16也对比了，我俩都感受基本和苹果无差别了",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vivo x300性能和系统流畅丝滑，和苹果16基本无差别",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "续航目前来说是比我的mate60pro好的",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vivo x300续航比华为mate60pro好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航目前来说是比我的mate60pro好的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为mate60pro续航不如vivo x300",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我的旧华为最终卖了1500真是没想到才用了两年半不到，掉价这么严重",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为mate60pro才用两年半不到只卖了1500，掉价严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a02a2400000000008003f1c",
+    "opinions": [
+      {
+        "opinion_text": "华为鸿蒙系统这几天好卡啊，尤其是切换APP的时候",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为鸿蒙系统这几天好卡，尤其是切换APP的时候",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "699c2ed0000000001b015a5d",
+    "opinions": [
+      {
+        "opinion_text": "实况只有苹果和其他，Mate80实况真不中，拉的不是一星半点",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为Mate80实况功能很差，拉的不是一星半点",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "实况只有苹果和其他",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果实况功能独一档，只有苹果和其他之分",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e8bfb7000000001d018948",
+    "opinions": [
+      {
+        "opinion_text": "最近更新了鸿蒙6.1，发现跟平时一样在用但是没有之前那么发烫了！这是真的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更新鸿蒙6.1后没有之前那么发烫了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我之前跟豆包聊几句，或者同花顺开一段时间就烫的不行而且还巨卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "之前华为用豆包或同花顺就烫的不行还巨卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "677c84570000000020026764",
+    "opinions": [
+      {
+        "opinion_text": "Mate 70Pro+刚拿到手是鸿蒙4.3，使用了一段时间后我发现4.3卡顿掉帧确实有点多，甚至比不上我手机的VIVO X200Pro的流畅度。连接智界车机超级桌面后，手机卡顿掉帧。玩消消乐卡顿掉帧。还有随机出现的掉帧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate70Pro+鸿蒙4.3卡顿掉帧多，连接车机、玩消消乐都卡顿掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "升级了5.0，动画变得细腻丰富，用下来流畅度和目前的VIVO、OPPO一个水平，但是动画比安卓阵营都强",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙5.0动画细腻丰富，流畅度和VIVO、OPPO一个水平，动画比安卓阵营强",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "跟iOS比的话，我认为大差不差。iOS的动画简短不拖沓，给人敏捷的感觉，鸿蒙5.0动画优雅连贯，视觉享受",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙5.0跟iOS比大差不差，动画优雅连贯，视觉享受",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "跟iOS比的话，我认为大差不差。iOS的动画简短不拖沓，给人敏捷的感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iOS动画简短不拖沓，给人敏捷的感觉",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "像李跳跳、虚拟定位这类是没办法使用的。并且已适配的软件目前都还没完全适配，软件功能都有或多或少的缺失。如果手上有且只有一台手机，建议再等等",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙5.0有些软件没法使用，已适配软件功能有缺失",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate 70Pro+的拍照，之前的笔记一直在吐槽华为拍照，但是这次确实惊喜蛮大。不偏色不发灰，很多场景下拍照是比iPhone优秀的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate70Pro+拍照惊喜蛮大，不偏色不发灰，很多场景比iPhone优秀",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "很多场景下拍照是比iPhone优秀的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "Mate70Pro+很多场景拍照比iPhone优秀",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是目前和OVM比，还是有明显差距",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate70Pro+拍照和OVM比还是有明显差距",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate 70系列是一台好机器，前提是你不重度游戏不重度拍照摄影且预算充足",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate70系列是一台好机器（前提是不重度游戏不重度拍照且预算充足）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e63d6b000000001f0072b5",
+    "opinions": [
+      {
+        "opinion_text": "华为mate80pro买了还不到一个月，微信视频挂断不了，黑屏，然后点挂断没反应，点微信也进不去，取消程序也取消不了，app不好用也就算了，网速差也就算了，不到一个月卡死好几次了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为mate80pro不到一个月卡死好几次，微信视频挂断不了、黑屏、点挂断没反应",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6867d7df00000000100119d2",
+    "opinions": [
+      {
+        "opinion_text": "华为Watch5下班回家突然发现可以更新，更新完，手表变卡了，微信不能登",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为Watch5更新后手表变卡了，微信不能登",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68cff9e8000000001201d92b",
+    "opinions": [
+      {
+        "opinion_text": "pura70真的太卡了，差到极致，从来没有用过这么卡的手机，才1年",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为pura70太卡了，差到极致，才1年就从来没有用过这么卡的手机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我对华为彻底脱粉，Bye",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "对华为彻底脱粉，不再购买",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

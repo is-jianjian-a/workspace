@@ -1,0 +1,833 @@
+[
+  {
+    "note_id": "674431b5000000000202ada5",
+    "opinions": [
+      {
+        "opinion_text": "为什么很多人都说苹果好，但是说华为好的人就很少？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "标题'为什么苹果好，华为没人说'以及内容'很多人都说苹果好'，陈述了社会上对苹果评价较高的普遍现象，无褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为什么很多人都说苹果好，但是说华为好的人就很少？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "标题'为什么苹果好，华为没人说'以及内容'说华为好的人就很少'，陈述了社会上对华为正面评价较少的普遍现象，无褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6995a524000000001a01c960",
+    "opinions": [
+      {
+        "opinion_text": "都是黑色又不太一样，更喜欢16的黑，给要买手机的朋友们一个参考",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'更喜欢16的黑'，对iPhone16的黑色表达偏好，并推荐给购机用户",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6947fd4f000000001d03d2a8",
+    "opinions": [
+      {
+        "opinion_text": "网上很多人说华为好，我觉得款式也蛮好看的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "网上很多人说华为好，我觉得款式也蛮好看的\"，对华为外观有正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果用腻了，但是又怕买了华为会卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果用腻了\"，对苹果产生审美疲劳，表达厌倦情绪",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果用腻了，但是又怕买了华为会卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "又怕买了华为会卡\"，对华为流畅度/性能存在担忧",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "66b8963900000000050238e4",
+    "opinions": [
+      {
+        "opinion_text": "每年iPhone最难用的时候一定是夏天，三十多度的天气稍微玩玩就发烫降亮度",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "每年iPhone最难用的时候一定是夏天\"\"稍微玩玩就发烫降亮度\"，对iPhone发热降亮度问题表达强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "去年P60Art的使用体验远超预期，所以很看好今年的Pura70系列",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "P60Art的使用体验远超预期\"\"很看好今年的Pura70系列\"，对华为产品体验高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙的动画和跟手性绝对是体验最好的，从iOS换到鸿蒙也不会有什么不适应",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "鸿蒙的动画和跟手性绝对是体验最好的\"\"从iOS换到鸿蒙也不会有什么不适应\"，高度赞扬鸿蒙流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "光凭这一点我觉得iOS已经没有特别领先国产系统的地方了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iOS已经没有特别领先国产系统的地方了\"，认为苹果系统优势已丧失",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "在功能性和实用性方面安卓本身就是完爆苹果的，分屏、长截图、NFC门禁卡、骚扰拦截这些软件功能一直都有苹果用户吐槽，但苹果也从来没有加上",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓本身就是完爆苹果的\"\"这些软件功能一直都有苹果用户吐槽，但苹果也从来没有加上\"，批评苹果功能性不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为一定更懂中国人，华为的智慧感知简直太方便了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为一定更懂中国人\"\"华为的智慧感知简直太方便了\"，高度认可华为本地化体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "中转站功能...简直太方便了，小红书的图片拖进去直接没有水印",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "中转站功能...简直太方便了\"，对华为中转站功能高度赞赏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的平板手表耳机什么的确实都很好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果的平板手表耳机什么的确实都很好用\"，认可苹果生态产品体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "今年iPad Pro的发布让我彻底想退坑了，除了OLED屏幕确实没什么升级，价格倒是贵了不少",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "今年iPad Pro的发布让我彻底想退坑了\"\"除了OLED屏幕确实没什么升级，价格倒是贵了不少\"，对iPad Pro升级不满并想退出苹果生态",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "MatePad Pro12.2柔光版，丝滑的想让我想换掉我的20款iPad Pro了，华为手机和平板之间的联动也非常好用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "MatePad Pro12.2柔光版，丝滑的想让我想换掉我的20款iPad Pro了\"\"华为手机和平板之间的联动也非常好用\"，高度认可华为平板及联动体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone和iPad之间可以说是几乎没有联动了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone和iPad之间可以说是几乎没有联动了\"，批评苹果设备间联动差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为WatchGT系列主流的功能一个没少，续航却比Apple Watch好太多，从一天一充换成一周一充的体验简直不要太好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "续航却比Apple Watch好太多\"\"从一天一充换成一周一充的体验简直不要太好\"，高度赞赏华为手表续航",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "今年9月的iPhone16系列如果提升还是不大的话，可能真的要被我买来当做备用机了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone16系列如果提升还是不大的话，可能真的要被我买来当做备用机了\"，暗示iPhone将沦为备用机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果你现在用的是iPhone的标准版或者准备入手16的标准版，不妨尝试换到同样价位的华为Pura或者Mate系列，一定会感觉到巨大的变化",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "不妨尝试换到同样价位的华为Pura或者Mate系列，一定会感觉到巨大的变化\"，强烈推荐华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果你现在用的是iPhone的标准版或者准备入手16的标准版，不妨尝试换到同样价位的华为Pura或者Mate系列，一定会感觉到巨大的变化",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "暗示iPhone标准版体验远不如同价位华为，劝退苹果用户",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67bbf3ad000000000901773d",
+    "opinions": [
+      {
+        "opinion_text": "都说iPhone的iOS系统丝滑无敌",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "都说iPhone的iOS系统丝滑无敌\"，引用社会共识，高度认可iOS流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "抛开苹果，你觉得哪家厂商的手机系统最流畅呢？",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问讨论安卓阵营哪家最流畅，无明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69ec072d0000000035025be7",
+    "opinions": [
+      {
+        "opinion_text": "华为的鸿蒙系统比苹果还流畅了？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "以疑问形式提出\"鸿蒙比苹果还流畅？\"，无明确立场，属于求证",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为的鸿蒙系统比苹果还流畅了？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "以疑问形式将鸿蒙与苹果对比，无明确立场",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "694f6805000000001e0099c6",
+    "opinions": [
+      {
+        "opinion_text": "感觉系统流畅度还是苹果最好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "感觉系统流畅度还是苹果最好\"，明确认为苹果流畅度最优",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安卓和鸿蒙流畅度差不多",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "安卓和鸿蒙流畅度差不多\"，将鸿蒙与安卓并列，无褒贬",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "vivo的屏幕感官比华为强一些，感觉华为的屏幕冷白冷白的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "感觉华为的屏幕冷白冷白的\"，对华为屏幕色彩表现有轻微负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为什么网上都说华为最强",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "为什么网上都说华为最强\"，质疑网上对华为的过高评价，但本身为疑问句",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6804f2a3000000001c02866e",
+    "opinions": [
+      {
+        "opinion_text": "安卓看起来动画什么的也挺流畅的，动效也好看，但是用起来就是轻飘飘的手感，不踏实",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用起来就是轻飘飘的手感，不踏实\"，对安卓流畅体验有负面主观感受",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果的iOS用起来就是很成熟稳重的流畅，体验起来差别挺大的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果的iOS用起来就是很成熟稳重的流畅\"，高度认可iOS流畅体验的质感",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "686de7f8000000000b02dfb4",
+    "opinions": [
+      {
+        "opinion_text": "华为新的鸿蒙系统有些功能和苹果类似，音乐锁屏一样可以放大，有可以调节参数的滤镜",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "指出鸿蒙功能与苹果类似，暗示功能丰富，语气中性偏正面",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这是华为pura80 Pro+，我觉得挺好用的，一英寸拍照好、系统也流畅，还挺省电的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我觉得挺好用的\"\"一英寸拍照好、系统也流畅，还挺省电的\"，对华为Pura80 Pro+多方面正面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "696b8020000000000a03304a",
+    "opinions": [
+      {
+        "opinion_text": "今天在同一个地方测了下速，苹果很卡，华为就很快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果很卡\"，明确负面评价苹果WiFi速度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "今天在同一个地方测了下速，苹果很卡，华为就很快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为就很快\"，明确正面评价华为WiFi速度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone下载只有1.7m，华为300多，我家宽带200M电信",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "实测数据iPhone下载仅1.7m vs 华为300+m，强烈对比凸显苹果WiFi性能差",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone下载只有1.7m，华为300多，我家宽带200M电信",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "实测数据华为下载300+m，远超iPhone，凸显华为WiFi性能强",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "再更新评论区推荐的新测速工具，依然是华为更快，iPhone差距不少",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone差距不少\"，多次测试确认苹果WiFi速度落后",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "再更新评论区推荐的新测速工具，依然是华为更快，iPhone差距不少",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "依然是华为更快\"，多次测试确认华为WiFi速度领先",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68613fd40000000012023b16",
+    "opinions": [
+      {
+        "opinion_text": "mate70PRO更宽反而握着更舒服，16PROMAX有点硌手，不好单手操作",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "mate70PRO更宽反而握着更舒服\"，对华为握持感正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "mate70PRO更宽反而握着更舒服，16PROMAX有点硌手，不好单手操作",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "16PROMAX有点硌手，不好单手操作\"，对苹果握持感负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为相机好、信号好、充电快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为相机好、信号好、充电快\"，明确列出华为三大优点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果屏幕更细腻、信号差、充电慢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果屏幕更细腻\"（正向）+\"信号差、充电慢\"（负向），混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "实测苹果的待机时间更久",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实测苹果的待机时间更久\"，认可苹果待机续航优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "669772070000000005004ad5",
+    "opinions": [
+      {
+        "opinion_text": "最大的感受就是信号，华为真的不是强的一点半点，在地下室、电梯、大的室内剧院等地方，苹果信号必差！但是华为刷短视频、下载、游戏啥的真的无压力",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为真的不是强的一点半点\"\"华为刷短视频、下载、游戏啥的真的无压力\"，高度赞赏华为信号表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最大的感受就是信号，华为真的不是强的一点半点，在地下室、电梯、大的室内剧院等地方，苹果信号必差！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果信号必差\"，强烈批评苹果信号问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "返回功能：这点苹果做的也是很差，而且很不好用，华为（等一众安卓手机）的返回功能就特别好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这点苹果做的也是很差，而且很不好用\"，批评苹果返回功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "返回功能：这点苹果做的也是很差，而且很不好用，华为（等一众安卓手机）的返回功能就特别好用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为（等一众安卓手机）的返回功能就特别好用\"，赞赏华为返回功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "震动反馈：这一项上华为扣大分，体验和苹果比差的不是一点半点。华为这震动马达我真的想把它彻底关掉，有的时候真的是噪音，毫无体验感可言",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这一项上华为扣大分\"\"华为这震动马达我真的想把它彻底关掉\"\"毫无体验感可言\"，强烈批评华为震动马达",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "震动反馈：这一项上华为扣大分，体验和苹果比差的不是一点半点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通过与华为对比，间接认可苹果震动反馈体验更好",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "操作系统：都很流畅，但是和iOS比，在很多细节上还是有差距的，我一十几年的苹果老用户肯定是更站队苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "都很流畅\"，承认华为流畅，但认为细节不如iOS，整体中性偏负",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "操作系统：都很流畅，但是和iOS比，在很多细节上还是有差距的，我一十几年的苹果老用户肯定是更站队苹果",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "和iOS比，在很多细节上还是有差距的\"\"更站队苹果\"，认为iOS细节体验更优",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "网上测评都说华为手机不适合游戏，应该还是处理器的原因，这也很无奈",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为手机不适合游戏\"\"应该还是处理器的原因\"，指出华为游戏性能不足",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "总结一下，苹果最大的缺点就是信号差，除了这点，其它没有什么硬伤",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果最大的缺点就是信号差\"（负向）+\"其它没有什么硬伤\"（正向），混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果不是为了和家里的华为系设备进行生态匹配，可能我还是会选择苹果手机",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "可能我还是会选择苹果手机\"，表达在无生态约束下仍倾向苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机没办法科学上网，这一点以后升级了纯血鸿蒙的话应该更没戏了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为手机没办法科学上网\"\"更没戏了\"，对华为系统开放性表达负面看法",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6840c8b7000000002100685e",
+    "opinions": [
+      {
+        "opinion_text": "苹果换安卓使用一天的感受，没苦硬吃",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "没苦硬吃\"强烈表达从苹果换到安卓后的痛苦体验，认为换机是自找苦吃",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6621d0ed0000000001033220",
+    "opinions": [
+      {
+        "opinion_text": "如果是以前毫不犹豫选择苹果，但是如今的鸿蒙系统已经崛起来了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "如今的鸿蒙系统已经崛起来了\"，认可鸿蒙系统的进步",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果搭载的ios系统在流畅度方面是绝对没有问题的，但是随着系统的更新，发现发热问题有点严重，电池续航能力也下降的有点快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度方面是绝对没有问题的\"（正向）+\"发热问题有点严重，电池续航能力也下降的有点快\"（负向），混合评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为的鸿蒙系统目前还不是纯版鸿蒙，流畅度自然没有苹果这么丝滑，偶尔会出现明显的卡顿现象，但是完全不影响日常使用",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度自然没有苹果这么丝滑，偶尔会出现明显的卡顿现象\"（负向）+\"完全不影响日常使用\"（正向），混合评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "相信纯版鸿蒙出现以后能达到ios的水准，很值得期待",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "相信纯版鸿蒙出现以后能达到ios的水准，很值得期待\"，对华为未来系统表现有信心",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "在信号方面，华为是完全碾压苹果的，我在使用mate60pro至今为止，无论走到哪里都不会出现没有信号的问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为是完全碾压苹果的\"\"无论走到哪里都不会出现没有信号的问题\"，高度赞赏华为信号",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果只要去一些乡下，很容易没有信号，信息都发不出去",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很容易没有信号，信息都发不出去\"，批评苹果信号差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前苹果的游戏体验效果是强于mate60pro的，虽然说苹果玩游戏发热严重，但是没有明显的卡顿现象，而华为有明显的掉帧现象",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果的游戏体验效果是强于mate60pro的\"\"没有明显的卡顿现象\"，认可苹果游戏体验更好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "目前苹果的游戏体验效果是强于mate60pro的，虽然说苹果玩游戏发热严重，但是没有明显的卡顿现象，而华为有明显的掉帧现象",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为有明显的掉帧现象\"，批评华为游戏性能/流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "续航体验：两者相差不大，基本上平局",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "两者相差不大，基本上平局\"，续航方面无优劣",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航体验：两者相差不大，基本上平局",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "两者相差不大，基本上平局\"，续航方面无优劣",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电速度：华为稳赢，在相同电量的时候，华为只需要半小时就充满电了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为稳赢\"\"只需要半小时就充满电了\"，高度认可华为充电速度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果需要充一个小时左右",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电慢于华为，作为对比项表达负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果你拍自然风景，我建议用苹果，因为更加的真实",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我建议用苹果，因为更加的真实\"，认可苹果风景拍照真实性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍出来的风景，自带一种滤镜感，色彩会更加的突出。如果你拍人像，例如想把脸上的痘痘去掉，那么优选华为，真的太好看了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "优选华为，真的太好看了\"，认可华为人像拍照效果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "经过两款的对比，我可能更偏向苹果手机一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我可能更偏向苹果手机一点\"，总体倾向苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fafb1500000000350328de",
+    "opinions": [
+      {
+        "opinion_text": "mate x3轻薄的手感，精美的做工，高端的定位，在当时确实是折叠屏手机最强的存在，让人眼前一亮",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "确实是折叠屏手机最强的存在，让人眼前一亮\"，高度赞赏华为mate x3的产品力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "产品的高溢价又让人望而却步，12+256版本首发价格12999，当时需要加价5000元，用高溢价换一时的情绪价值，作为理智的消费者，直接劝退",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "高溢价又让人望而却步\"\"直接劝退\"，批评华为mate x3定价过高、加价严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "正式使用的第一个下午，它发热严重、掉电很快。这么贵的手机就这？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "发热严重、掉电很快\"\"这么贵的手机就这？\"，强烈不满华为mate x3发热和续航",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "使用的第三天，我接了一个父亲的微信电话，烫到手机不能贴耳朵。7月份，作为导航去了趟北京，在车上是边充电边导航，中途由于过热手机直接卡死",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "烫到手机不能贴耳朵\"\"过热手机直接卡死\"，严重批评华为mate x3发热问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "正常使用一天，坚持到下班回家是没问题的，但是稍微重度使用中午必须充电一次，66w快充，充电速度还行",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航一般（重度使用需中午充电）但充电速度还行，混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "可能是一直使用iPhone的原因，总觉得x3拍出来颜色很别扭，录视频的颜色整体发灰",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍出来颜色很别扭，录视频的颜色整体发灰\"，批评华为mate x3影像表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体流畅度基本是没问题的，给我留下最深的印象就是淘宝和京东，体验特别差，就是卡、慢",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "整体流畅度基本是没问题的\"（正向）+\"淘宝和京东，体验特别差，就是卡、慢\"（负向），混合评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这部手机是唯一一部因为体验差被我换掉的手机，血亏也得换",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "唯一一部因为体验差被我换掉的手机\"\"血亏也得换\"，强烈负面总结",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "X3的使用体验，让我对华为这个品牌的好感降到了最低",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "对华为这个品牌的好感降到了最低\"，品牌层面强烈负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这么贵的产品，使用体验是糟糕的，但宣传的可是遥遥领先",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "使用体验是糟糕的，但宣传的可是遥遥领先\"，批评华为宣传与实际不符",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的技术领先和创新毋庸置疑，但是产品的高价格还是首先用产品力作为支撑，第二才是品牌力",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "技术领先和创新毋庸置疑\"（正向）+\"高价格还是首先用产品力作为支撑\"（批评定价策略），混合评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "希望华为还是认真做产品，不要搞饥饿营销，也不要搞过度宣传，拿产品说话",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不要搞饥饿营销，也不要搞过度宣传\"，批评华为营销方式",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

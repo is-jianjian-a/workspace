@@ -1,0 +1,536 @@
+[
+  {
+    "note_id": "663f972e000000001e038ef8",
+    "opinions": [
+      {
+        "opinion_text": "以前安卓的时候每天开着流量，90个g完全不担心，从来没出现过流量不够用。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "以前安卓的时候每天开着流量，90个g完全不担心，从来没出现过流量不够用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "自从换了苹果手机两个月，每个月多出来30 40个g，我有时候看不见消息，都比原来多花15的流量费，太崩溃了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "每个月多出来30 40个g，我有时候看不见消息，都比原来多花15的流量费，太崩溃了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67557ae9000000000103fccd",
+    "opinions": [
+      {
+        "opinion_text": "目前手机电池健康程度82，有点小卡会有一点反应迟钝。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有点小卡会有一点反应迟钝",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67147ef9000000001600e20f",
+    "opinions": [
+      {
+        "opinion_text": "华为的信号真的比苹果信号好吗？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这是一个提问，没有表达明确的情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的信号真的比苹果信号好吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这是一个提问，没有表达明确的情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a044bb50000000006033655",
+    "opinions": [
+      {
+        "opinion_text": "选fit4PRO 930还是fit5 760 有点纠结。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是在纠结两款华为产品的选择，没有表达好恶",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "673cb73e000000000202d24d",
+    "opinions": [
+      {
+        "opinion_text": "以前使用华为的识屏翻译，绝对比iPhone好用。双指长按屏幕会去屏幕中的界面进入识图，这是第一点好用的地方。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "以前使用华为的识屏翻译，绝对比iPhone好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的翻译做的极差。苹果的拍照翻译选取字词一点也不丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果的翻译做的极差；苹果的拍照翻译选取字词一点也不丝滑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e9f6d5000000001a02e2b6",
+    "opinions": [
+      {
+        "opinion_text": "升级完以后上网突然变得很卡！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "升级完以后上网突然变得很卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "697ae1d20000000021029942",
+    "opinions": [
+      {
+        "opinion_text": "不能长截屏，只能截了短的之后一个个拼。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不能长截屏，只能截了短的之后一个个拼",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "通话不能录屏录音，电话录音甚至有提示。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通话不能录屏录音，电话录音甚至有提示",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓可以调禁止读取方向就不会转跳淘宝，苹果不行。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓可以调禁止读取方向就不会转跳淘宝",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果消息有就会亮屏很烦。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果消息有就会亮屏很烦",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "很莫名其妙没信号没网。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "很莫名其妙没信号没网",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照比较好看，手机比较轻薄，系统比较丝滑美观，灵动岛蛮实用的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照比较好看，手机比较轻薄，系统比较丝滑美观，灵动岛蛮实用的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "微信消息延迟严重。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信消息延迟严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机发烫严重。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机发烫严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相册整理比安卓麻烦。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "相册整理比安卓麻烦（暗示安卓相册整理更方便）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照音质好，接轨国际软件方便，广告相对少。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照音质好，接轨国际软件方便，广告相对少",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67bc8ada000000002503c64d",
+    "opinions": [
+      {
+        "opinion_text": "我一开始也觉得苹果堆料整体不如安卓，内存贵，性价比低。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果堆料整体不如安卓，内存贵，性价比低",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是用了我发现他贵有贵的道理。屏幕质量极佳，扬声器质量非常好，续航好，IOS系统是我最喜欢的OS，生态完善。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "贵有贵的道理。屏幕质量极佳，扬声器质量非常好，续航好，IOS系统是我最喜欢的OS，生态完善",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "说实话用过oppo，华为，荣耀，小米，感觉苹果是最好用的。我很喜欢他的设计哲学。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "感觉苹果是最好用的。我很喜欢他的设计哲学",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "说实话用过oppo，华为，荣耀，小米，感觉苹果是最好用的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用过华为，但感觉苹果是最好用的（暗示华为不如苹果）",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我极其不推荐选择huawei，用落后三代的芯片，但是价格严重溢出，在我这个计算机学生眼里属于纯骗子品牌，性价比极低。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "极其不推荐选择huawei，用落后三代的芯片，但是价格严重溢出，属于纯骗子品牌，性价比极低",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "大三在hw实习的感受真的巨差，hw的实习是真的学不到任何的东西，再加上hw离谱的hr团队，反正我是一生hw黑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "实习的感受真的巨差，学不到任何的东西，离谱的hr团队，一生hw黑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68ff2990000000000303b1f4",
+    "opinions": [
+      {
+        "opinion_text": "远离菊花，转投苹果，前两天说了两句华为的缺点，引来一堆爱国华的关注。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "远离菊花，说了两句华为的缺点，引来一堆爱国华的关注",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "干脆用回苹果，想怎么骂都行，舒坦了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用回苹果，想怎么骂都行，舒坦了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a02ea42000000003601c912",
+    "opinions": [
+      {
+        "opinion_text": "华为屏幕精细度不足，感知力较强的用户能明显发现华为屏幕不如 Apple 细腻，四角有严重的锯齿感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为屏幕精细度不足，屏幕不如 Apple 细腻，四角有严重的锯齿感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为马达体验差，震感极其廉价，室外开启震动时极易漏接电话，体验感很糟糕。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "马达体验差，震感极其廉价，极易漏接电话，体验感很糟糕",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为外放水平一般，扬声器质感单薄，甚至不如苹果五年前的水平。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "外放水平一般，扬声器质感单薄，甚至不如苹果五年前的水平",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "除了上述三点急需改进，其他方面全面超越苹果。作为国产品牌，这点确实让人自豪。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "其他方面全面超越苹果。作为国产品牌，这点确实让人自豪",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iOS 26 是苹果最差的系统，从首发至今，各版本在滑动、打开/关闭 App 等场景均有明显卡顿，严重拖垮硬件体验。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "iOS 26 是苹果最差的系统，各版本在滑动、打开/关闭 App 等场景均有明显卡顿，严重拖垮硬件体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "升级 iOS 26.5 后卡顿稍有缓解，但稳定性仍需进一步观察。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "卡顿稍有缓解，但稳定性仍需进一步观察",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69635713000000000a02de18",
+    "opinions": [
+      {
+        "opinion_text": "这两家现在都主打走的高端路线，大多数产品定价很高，溢价严重。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "大多数产品定价很高，溢价严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这两家现在都主打走的高端路线，大多数产品定价很高，溢价严重。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "大多数产品定价很高，溢价严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为padmini和Mac mini都是两家最良心的产品了，入门级的价格，体验非常好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最良心的产品，入门级的价格，体验非常好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mac mini还没有怎么涨价，是两家最良心的产品。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "Mac mini还没有怎么涨价，是两家最良心的产品",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机走高端路线，卖的太贵了，多卖点走量的产品，才能促进鸿蒙生态形成。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为手机走高端路线，卖的太贵了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d753110000000013034d42",
+    "opinions": [
+      {
+        "opinion_text": "有人说，苹果就是要比安卓流畅，真的是这样吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这是一个提问，没有表达明确的情感倾向",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我用的安卓手机确实是越来越卡，特别是在外面出太阳的时候，手机热的发烫，然后卡的打不开相机。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "安卓手机确实是越来越卡，手机热的发烫，卡的打不开相机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "五年前的vivox50Pro+放到现在流畅度是真不行了。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vivox50Pro+放到现在流畅度是真不行了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68c8cbb3000000001d037569",
+    "opinions": [
+      {
+        "opinion_text": "感觉更新完ios26玩手机整一个大晕机，现在就是非常想吐。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "更新完ios26玩手机整一个大晕机，现在就是非常想吐",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fdbdea000000001a02d211",
+    "opinions": [
+      {
+        "opinion_text": "都是万元机，一夸华为就被喷？夸苹果反倒没事呢？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这是一个质疑/提问，表达对舆论环境的不满，对华为产品本身没有明确好恶",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "都是万元机，一夸华为就被喷？夸苹果反倒没事呢？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这是一个质疑/提问，表达对舆论环境的不满",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "puraxmax真的很酷啊！！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "puraxmax真的很酷啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69acd545000000001b017b23",
+    "opinions": [
+      {
+        "opinion_text": "现在安卓旗舰很多地方，真的已经比 iPhone 有意思太多了。拍照更有意思，折叠屏真的是另一种体验，AI 生产力这块更激进，充电快太多。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "安卓旗舰很多地方真的已经比 iPhone 有意思太多了，拍照更有意思，AI更激进，充电快太多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果最强的地方我一直都认：邮件、iCloud、家庭联动、AirPlay，整个生态接起来的那种省心感。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果最强的地方我一直都认，整个生态接起来的那种省心感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果现在最强的不是「领先」，而是「稳」。想省心，买苹果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果现在最强的不是「领先」，而是「稳」。想省心，买苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我现在对 iPhone 最大的不满其实就四个字：不思进取。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "对 iPhone 最大的不满其实就四个字：不思进取",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓旗舰有时候用久了会发热、会卡，而且你经常不知道它到底为什么突然这样。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用久了会发热、会卡，而且经常不知道它到底为什么突然这样",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安卓旗舰的性价比明显更高。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓旗舰的性价比明显更高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

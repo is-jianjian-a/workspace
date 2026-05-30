@@ -1,0 +1,482 @@
+[
+  {
+    "note_id": "6a0ed72f000000003601a08a",
+    "opinions": [
+      {
+        "opinion_text": "我的华为matepad11还是很流畅",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我的华为matepad11还是很流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "除了内存不足",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "除了内存不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在想要不要买部kpad替换掉",
+        "brand_target": "其他",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "在想要不要买部kpad替换掉",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fb2357000000003701e525",
+    "opinions": [
+      {
+        "opinion_text": "说是纯血自研+端侧大模型加持，流畅度直接提升30%",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度直接提升30%",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "国产系统终于站起来了，跨设备协同独一档，老机升级还能再战3年",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "国产系统终于站起来了，跨设备协同独一档，老机升级还能再战3年",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "半年一更根本没诚意，生态还没补全就急着迭代，小众APP直接凉凉，老机型适配都没做完又开新坑",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "半年一更根本没诚意，生态还没补全就急着迭代，小众APP直接凉凉，老机型适配都没做完又开新坑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "看着别人的AI交互和丝滑体验，又心痒痒",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "AI交互和丝滑体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "699d651c00000000150332a7",
+    "opinions": [
+      {
+        "opinion_text": "两款价格的话Pura价格相对来说更划算一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "Pura价格相对来说更划算一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate屏幕相对来说要大一点，也支持3D人脸识别",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "Mate屏幕相对来说要大一点，也支持3D人脸识别",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "698d441b000000000c034fa9",
+    "opinions": [
+      {
+        "opinion_text": "我以前也用过苹果，同时我也知道华为的很多方面不如苹果，特别是拍照和续航方面我不太满意",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为的很多方面不如苹果，特别是拍照和续航方面我不太满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我以前也用过苹果，同时我也知道华为的很多方面不如苹果，特别是拍照和续航方面我不太满意",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为的很多方面不如苹果，特别是拍照和续航方面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "依然买了mate30，50，60，到现在80，因为我觉得，我出一份小小力量去支持华为，聚沙成塔，华为才有更多的研发经费去提升",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "出一份小小力量去支持华为，聚沙成塔，华为才有更多的研发经费去提升",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的配色真的\"土\"，不知道是调研不足，还是因为针对\"老登\"人群的定位，什么极光绿，金色，真是一言难尽",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为的配色真的\"土\"，什么极光绿，金色，真是一言难尽",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "声音大了有震动，确实如此，但还是接受范围",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "声音大了有震动，确实如此",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照效果进步非常大，红枫镜头真不错，我觉得不输苹果了，或者说差距很小了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "拍照效果进步非常大，红枫镜头真不错，我觉得不输苹果了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照效果进步非常大，红枫镜头真不错，我觉得不输苹果了，或者说差距很小了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不输苹果了，或者说差距很小了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "侧边按钮指纹解锁，同时还可以设置拍照触摸上下滑动调整焦距，这真是非常爽的操作方式",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这真是非常爽的操作方式",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "流畅度非常好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "流畅度非常好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为全新自研的鸿蒙系统，虽然很多软件还不够兼容，或者说功能还不完善，但是经过每次系统升级，我明显感觉体验感越来越好",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很多软件还不够兼容，功能还不完善，但是经过每次系统升级，我明显感觉体验感越来越好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的操作系统真的是认真研究了中国人的操作习惯，很多细节都感受到了华为满满对用户的体贴",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "认真研究了中国人的操作习惯，很多细节都感受到了华为满满对用户的体贴",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对于华为手机的体验，我还是八成以上是满意的，希望华为越来越好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "八成以上是满意的，希望华为越来越好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "686109360000000012022eb8",
+    "opinions": [
+      {
+        "opinion_text": "用了十几年苹果，第一次用华为，很出片，摄影效果不错",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很出片，摄影效果不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用了十几年苹果，第一次用华为",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用了十几年苹果",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统软件还在进一步学习中，还不错哦，值得推荐哈",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还不错哦，值得推荐哈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ce55f300000000200393b7",
+    "opinions": [
+      {
+        "opinion_text": "Max手感太宽大长时间握持压力不小，但是又实在舍不得这块双层Oled的屏幕",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感太宽大长时间握持压力不小，但是又实在舍不得这块双层Oled的屏幕",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Pro手感好，一只手盈盈可握，还是我最爱的白色背板",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Pro手感好，一只手盈盈可握，还是我最爱的白色背板",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c5fe940000000023007bba",
+    "opinions": [
+      {
+        "opinion_text": "颜值不错啊，本来以为四曲面不好用，发现还挺显高级",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "颜值不错啊，发现还挺显高级",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e5d9f8000000001a023105",
+    "opinions": [
+      {
+        "opinion_text": "Pura 90数字版，这特么像个角钢螺丝钉一样",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这特么像个角钢螺丝钉一样",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我算是知道大嘴为什么说要提高审美了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我算是知道大嘴为什么说要提高审美了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b1422f000000001b01664e",
+    "opinions": [
+      {
+        "opinion_text": "华为这个实况窗还挺有特点的，居然不像是其他品牌那样居中，而是选择歪向一边",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "还挺有特点的，居然不像是其他品牌那样居中，而是选择歪向一边",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "也就幸好我不是强迫症，这要是强迫症的人看了得多难受",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这要是强迫症的人看了得多难受",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d3e8e700000000120140c6",
+    "opinions": [
+      {
+        "opinion_text": "从mate20到40到60，给人的体验越来越差了，产品质量差，售后差，体验差",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "给人的体验越来越差了，产品质量差，售后差，体验差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "国产品牌并不会在意用户的感受，更可怕的是说不得一点不好",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "国产品牌并不会在意用户的感受，更可怕的是说不得一点不好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还是选个适合老百姓用的品牌吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还是选个适合老百姓用的品牌吧",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d1f738000000002301c76b",
+    "opinions": [
+      {
+        "opinion_text": "华为mate80pm真的很好看",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为mate80pm真的很好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "有了Mate80pm，原相机自拍再也不用P了，懒人福音",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原相机自拍再也不用P了，懒人福音",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从🍎16到华子mate80pm",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "从🍎16到华子mate80pm",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "688df4c8000000002302dc35",
+    "opinions": [
+      {
+        "opinion_text": "刚发现华为pura70pro也可以发实况了，让我也来试一试",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "刚发现华为pura70pro也可以发实况了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6877a148000000001d00fb19",
+    "opinions": [
+      {
+        "opinion_text": "华为手机卡的仿佛是不支持4G5G，换了个一千左右的华为手机，但每次卡的都让人怀疑人生",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "每次卡的都让人怀疑人生",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "同等价位的其他牌子也用过，但华为卡的仿佛是上个世纪古董",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为卡的仿佛是上个世纪古董",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "同等价位的其他牌子也用过",
+        "brand_target": "其他",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "同等价位的其他牌子也用过",
+        "confidence": "低",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "678b1db70000000016029149",
+    "opinions": [
+      {
+        "opinion_text": "我现在都想摔手机了，微信各种功能用不了，主题也没了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "我现在都想摔手机了，微信各种功能用不了，主题也没了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "山姆会员卡登陆不进了，设备太多，这简直是太拉胯，各种不适配",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这简直是太拉胯，各种不适配",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "千万别脑子发热升级纯血，千万不要不要不要",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "千万别脑子发热升级纯血",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d8c76a000000000e00cf7f",
+    "opinions": [
+      {
+        "opinion_text": "华为Pura80pro+显示没有可回退的系统，接下来怎么操作",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "显示没有可回退的系统",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

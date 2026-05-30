@@ -1,0 +1,572 @@
+[
+  {
+    "note_id": "696841b4000000001a031d1c",
+    "opinions": [
+      {
+        "opinion_text": "不算果粉，但也用了不少苹果的产品，之前说x系列以后双数换机，但是我确实觉得双数最好用，外观啥的也看习惯了，性能提升也都稳定了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "双数最好用，性能提升也都稳定了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "单数更像是试探，双数才各种调整到最优",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "单数更像是试探",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "18这配色难评，为啥最经典的黑白都没了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "配色难评，最经典的黑白都没了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0280b20000000035029ba1",
+    "opinions": [
+      {
+        "opinion_text": "iOS26.5小17已无脑更，流畅度续航拉满，可以冲了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "流畅度续航拉满，可以冲了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6944107d000000001b022851",
+    "opinions": [
+      {
+        "opinion_text": "手表续航太短，抬腕唤醒、熄屏显示等所有功能都开着真的需要一天一充，作为电子产品来说非常不耐用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "续航太短，一天一充，非常不耐用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机的电量耗得很快，手表和手机需要长期蓝牙连接，之前17pro正常使用可以1.5-2天一充电，跟手表连接之后手机也要1天一充了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机电量耗得很快，手机也要1天一充",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "运动健身记录不太必要，非健身、跑步、游泳的运动项目，带着手表活动计算不准确",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "运动记录计算不准确，记录数据意义不大",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "价格高，性价比低，2999买了一个美丽废物，需要天天充电当祖宗一样供起来",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "价格高，性价比低，美丽废物，天天充电当祖宗供起来",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "好玩的app要第三方付费，自带的app功能很少，像记录心情、提醒喝水这种都需要单独去下载并购买会员",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "自带app功能很少，需要购买会员",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Nike运动回环表带有颜值有舒适度，强烈推荐",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有颜值有舒适度，强烈推荐",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机和手表的互联没有延迟，体验感很好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "互联没有延迟，体验感很好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "手指交互很有科技感，手指捏可以关闭",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "很有科技感",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "696f687f000000000e00dc4e",
+    "opinions": [
+      {
+        "opinion_text": "用了几天Air，明白了为什么它销量差，对其他人来说，单摄、电池小、esim统统是缺点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "销量差，单摄、电池小、esim统统是缺点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Air是一部精致的iOS启动器，为我提供了巨大的情绪价值，每当拿起惊艳的轻薄机身，我就瞬间原谅它了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "精致的iOS启动器，巨大的情绪价值，惊艳的轻薄机身",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d0c930000000001101fdb8",
+    "opinions": [
+      {
+        "opinion_text": "iPhone16 Pro第一时间升级到了iOS26正式版，经过了三四天发热耗电异常以后，感觉已经恢复了正常水平",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "经过三四天发热耗电异常以后恢复正常水平",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "678122b2000000001a01fad7",
+    "opinions": [
+      {
+        "opinion_text": "从21年的iPhone 13pro入了苹果的坑，再到AirPods 3，22年因为健身入手Apple Watch S8，23年升级iPhone 15pro，一步步被苹果生态捆绑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "入了苹果的坑，一步步被苹果生态捆绑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在想转安卓阵营，回头一望，难啊",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "想转安卓阵营，回头一望难啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6889b4d60000000022021d54",
+    "opinions": [
+      {
+        "opinion_text": "以前盒里塞满耳机+充电头+数据线+贴纸，现在只剩一根C to C线，长度鸡贼地从1.2m缩水到1m，要耳机另外买，要转接线另外买",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "只剩一根线，长度缩水，要什么都另外买",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "就连贴纸也在2024年成为绝版，嗯，就很环保",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "贴纸成为绝版，就很环保（反讽）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69951694000000001a031639",
+    "opinions": [
+      {
+        "opinion_text": "截止到iOS 26.3正式版，你们觉得哪个系统版本续航最好、性能最优秀？可以说说自己的机型和系统版本",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问讨论，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6931235b000000001e0036f4",
+    "opinions": [
+      {
+        "opinion_text": "按照这个设计iPhone17e是不是你的菜？反正我是挺钟意",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我是挺钟意",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69a627ef000000001b0167f3",
+    "opinions": [
+      {
+        "opinion_text": "忍不住吐槽，iPhone 17e就给60Hz屏幕，不知道有多少人被拒之门外，感情老屏幕还没清完是吧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "就给60Hz屏幕，被拒之门外，老屏幕还没清完",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不过实体卡+esim的组合还是挺好的，对于像我这样一张常用卡一张流量卡的，还挺合适",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "组合还是挺好的，还挺合适",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总体来说，不推荐",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "总体来说，不推荐",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a06b8e500000000070280e3",
+    "opinions": [
+      {
+        "opinion_text": "从遥遥领先换到阔折叠半个月，最大的感觉就是别的手机拿起来好像是遥控器",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "别的手机拿起来好像是遥控器（对比突出华为阔折叠好）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小屏看日常使用足够了，女生一只手拿起来也不费劲",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "日常使用足够，一只手拿起来也不费劲",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "内屏追剧刷抖音刷小红书玩游戏简直不要太爽，简直是完美尺寸",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "简直不要太爽，简直是完美尺寸",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小艺ai修图输入指令就把路人消除的毫无痕迹，以后拍照有路人也不怕啦",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "把路人消除的毫无痕迹",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "看电子书还有眼动翻页，告别手翻，好像随身带了阅读器",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "眼动翻页，好像随身带了阅读器",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "看到很多人说鸿蒙很多不适配，目前为止经常使用的还没有发现哪里不适配，真香",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "没有发现哪里不适配，真香",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "再也回不去直屏了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "再也回不去直屏了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a140bf0000000003601b3c5",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙系统能达到IOS那么流畅吗？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问讨论，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙系统能达到IOS那么流畅吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问讨论，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67a76234000000002a002cc0",
+    "opinions": [
+      {
+        "opinion_text": "换机原因：CarPlay、live photo、视频能力",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "因为CarPlay、live photo、视频能力换机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刷到很多帖子说iPhone16的配置分为高、中、低，花相同的钱买到的却不够好，心里不舒服很正常",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "花相同的钱买到的却不够好，心里不舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "零配件混用的情况其它厂商也存在，当年huawei也被骂得很惨",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "当年huawei也被骂得很惨（客观陈述）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "屏幕误触或断触不跟手，有时想右滑，结果成了上滑，总之就是不跟手，裸机无膜也这样，实体店样机也这样",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "屏幕误触或断触不跟手，总之就是不跟手",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "充电不够快，官网数据充电功率20W，30分钟最多可充至50%",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电不够快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "因为功耗低，所以电池挺耐用，100%电池能用十小时以上，我感觉能接受",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "电池挺耐用，能用十小时以上，能接受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "操作逻辑不统一，有的界面能右滑，有的界面不行，需要适应，更喜欢安卓/鸿蒙的操作逻辑，左滑右滑均可",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "操作逻辑不统一，需要适应",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "更喜欢安卓/鸿蒙的操作逻辑，左滑右滑均可",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更喜欢安卓/鸿蒙的操作逻辑，左滑右滑均可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "原生输入法不够智能，最不喜欢ios在输入法底下空了一块，浪费屏幕",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "输入法不够智能，浪费屏幕",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "更喜欢第三方输入法，有上滑输入数字、剪贴板历史、侧边符号栏等，语音转文字也更准更快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更喜欢第三方输入法（暗示原生不好）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "打电话时会断网，主号接电话时，副卡的网络就断了，难评",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "打电话时会断网，难评",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "没有长截屏，safari里能长截屏但我不用safari",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没有长截屏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "闹钟不智能，不能智能识别工作日、节假日，不符合我国国情，没有中国特色",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "闹钟不智能，不符合我国国情",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "AI功能缺失，没有apple intelligence、侧键不实用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "AI功能缺失，侧键不实用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "无法拦截骚扰短信/通话",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "无法拦截骚扰短信/通话",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "678f1e3d0000000029019659",
+    "opinions": [
+      {
+        "opinion_text": "尤其是手机，日常用的最多，R角真的很舒服，视觉和手感都很nice，目前只在iPhone看过",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "R角真的很舒服，视觉和手感都很nice",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "你说为啥其他品牌手机不借鉴一下呢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "暗示iPhone的R角设计优于其他品牌",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6935238d00000000190240e9",
+    "opinions": [
+      {
+        "opinion_text": "喜欢苹果的系统和生态",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "喜欢苹果的系统和生态",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "受不了续航和游戏性能",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "受不了续航和游戏性能",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "喜欢苹果的手感，但受不了看视频太小",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "喜欢手感但受不了看视频太小",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "视频用安卓（大），读书用安卓（大、有护眼），游戏用安卓（性能好，散热好）",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "视频用大屏幕，有护眼，性能好，散热好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "听歌用苹果（喜欢iOS的AM），笔记用苹果，地图打车用苹果（需要支付），背单词用苹果（交互舒服）",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "喜欢iOS的AM，交互舒服",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

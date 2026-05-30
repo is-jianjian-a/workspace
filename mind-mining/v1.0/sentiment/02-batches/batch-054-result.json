@@ -1,0 +1,707 @@
+[
+  {
+    "note_id": "69a58d180000000026030669",
+    "opinions": [
+      {
+        "opinion_text": "除了黑X和Teams登陆失败，其他常规App都能使用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "提到部分App登录失败，但大部分常规App可用，整体中性偏认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统也很流畅，不用再忍受Mate20老人机了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确说系统也很流畅，对比旧手机Mate20有改善",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "目前对我来讲M80pm最大的槽点就是就是摄像头模组太凸出了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用最大的槽点表达对摄像头模组凸出的不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69eec3900000000035020360",
+    "opinions": [
+      {
+        "opinion_text": "陪伴我3个年头的经典神机，今天终于功成身退了，从最开始的鸿蒙+安卓系统，到最后的纯血鸿蒙系统，一直都是很流畅，没有死机过。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "称经典神机、功成身退、一直都很流畅没有死机过，高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "外观颜色，也是当年的主打色，个人也很喜欢。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确说个人也很喜欢外观设计",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只可惜电池不太行了，一天2-3冲，有点麻烦，出门还必须要带一个充电线。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用只可惜、不太行了、有点麻烦表达对电池衰减的不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68fcb995000000000501329d",
+    "opinions": [
+      {
+        "opinion_text": "苹果iOS26带来的液态玻璃，在全球引起了很大的反响，出色的玻璃效果获得很多用户的喜爱。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "出色的玻璃效果、获得很多用户的喜爱，对iOS26设计认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过实话实说，现在的iOS26还不能算是一个完全体，仍然有不少的bug和问题，需要比较长的一段时间来慢慢完善。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "指出有不少的bug和问题、还不能算完全体，表达不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0d2da9000000000803d8e7",
+    "opinions": [
+      {
+        "opinion_text": "苹果17和17pro差距还是蛮大的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "客观陈述两款机型差距大，无明显褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO findx9并没有网上说的那么刺眼。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "为OPPO屏幕正名，反驳网上负面说法，偏正面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照远景确实是比不过苹果pro版，色彩还原度还是苹果有优势一点。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确说苹果在拍照远景和色彩还原度有优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照远景确实是比不过苹果pro版。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "指出OPPO在拍照远景方面比不过苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统流畅度方面他们差距接近没有。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "说两者流畅度差距接近没有，客观持平",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统流畅度方面他们差距接近没有。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "说两者流畅度差距接近没有，客观持平",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "今年的OPPO findx9ultra拍照提升极其巨大，实际体验拍照确实很惊艳。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "极其巨大、确实很惊艳高度认可OPPO拍照提升",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果标准版提升幅度也很高，Pro和Pro max版的属于常规升级。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "标准版提升幅度也很高是正向，Pro版常规升级偏平淡",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0833b30000000035038d9b",
+    "opinions": [
+      {
+        "opinion_text": "烫的不行、卡的不行，设置改了一下还是卡爆。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "烫的不行、卡的不行、卡爆强烈负面情绪",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "没更新之前是18好像，天没有暴热还是很好用的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "说之前iOS18还是很好用的，认可旧版本",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "26.5好像没那么卡了，wifi不卡！但wifi偶尔发热，流量卡！流量发热！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没那么卡了是正向，但流量卡、发热仍是问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "692c15c3000000001f00a1c8",
+    "opinions": [
+      {
+        "opinion_text": "Mate80pro上手两天，鸿蒙6系统极其丝滑，大部分app的基础功能都有，广告极少，对我个人而言可以满足日常使用需求。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "极其丝滑、广告极少、可以满足日常使用需求高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "当然有部分功能还是缺的，希望各家软件商继续加油适配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "承认有部分功能还是缺的，但语气较温和，希望改进",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信没有卡包，微信小程序页面不能单开，百度输入法只能移动光标不能全选剪切复制。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "列举多个具体功能缺失，表达使用不便",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f4d3bd0000000035024de9",
+    "opinions": [
+      {
+        "opinion_text": "mate80更新了鸿蒙6.1，抖音刷不了，全部提示播放错误。点淘非常非常卡。小红书图片全部不显示。微博打开要卡顿几秒。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常非常卡、刷不了、图片全部不显示多个严重问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "出门换了个WiFi环境也卡得很。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "卡得很持续表达卡顿问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "目前系统很丝滑了，续航感觉比之前还好一点。不管怎么重度使用手机都可以一天一充。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "很丝滑了、续航感觉比之前还好、一天一充高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "693f6217000000001e03249d",
+    "opinions": [
+      {
+        "opinion_text": "我玩一款游戏，差不多10年前上的，游戏刚出那会很多功能没上，我用820芯片都觉得很流畅，过了几年各种功能上了，我换888勉强够用，再到后面8gen3才能维持最开始的流畅度，本质和你系统不大，而是游戏里的东西越来越多了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用游戏经历类比解释系统流畅度变化原因，对鸿蒙6.0流畅度持中性分析态度",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e617cd000000001a02f228",
+    "opinions": [
+      {
+        "opinion_text": "我艹，鸿蒙6.1太丝滑了吧，反应不过来了，太快了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "太丝滑了吧、反应不过来了太快了强烈惊叹和认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67979b99000000002803d88e",
+    "opinions": [
+      {
+        "opinion_text": "华为作为国产唯一高端手机厂商，应该更注意品质品控问题，不应该在这些方面有所失误，至少要看齐苹果。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评华为做工品控不应该有所失误，要求看齐苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为作为国产唯一高端手机厂商，应该更注意品质品控问题，至少要看齐苹果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "以苹果为标杆要求华为看齐，间接认可苹果品控",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手感：太宽了，我手小，握持手感很差，屏幕与边框衔接也不流畅，会割手。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感很差、不流畅、会割手明确负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "麒麟9000s发热量过大，夏天经常发烫锁帧，甚至冬天在多开应用之后高强度刷信息流也会发烫。芯片功耗很差，导致手机续航也不尽人意，实测续航一般就四五个小时。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "发热量过大、发烫锁帧、功耗很差、续航不尽人意多个严重问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "mate60pro在拍照录像时，变焦顿挫很明显，ai计算摄影会有很严重的计算涂抹感，偏色真的很严重，imx766的cmos应该扫入历史的垃圾堆了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "顿挫很明显、很严重、偏色真的很严重、扫入历史的垃圾堆强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "极致优美的外观设计，拼接设计，外加雅川青配色，江河水流花纹，这都是其他手机厂商未曾带给我的震撼设计，华为在美学设计这块，能捕获相当多人的心。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "极致优美、震撼设计高度赞美外观设计",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "信号：坐高铁，搭配移动信号卡，只要不进隧道，基本全程可用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "高铁上基本全程可用，认可信号表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的动图仅次于苹果实况图，跟oppo的动图同属第二梯队，但要追上苹果的实况拍摄，还要时间。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "仅次于苹果认可华为动图表现，但承认不如苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的动图仅次于苹果实况图。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为动图仅次于苹果，苹果实况拍摄是第一标杆",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "跟oppo的动图同属第二梯队。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "OPPO动图与华为同属第二梯队，认可但非顶级",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙next系统的流畅度，足以比肩苹果ios系统，但在系统精致度和动画效果上，鸿蒙next还要继续追赶ios。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "极致的流畅、足以比肩苹果ios高度认可流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙next系统的流畅度足以比肩苹果ios系统，但在系统精致度和动画效果上，鸿蒙next还要继续追赶ios。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果iOS在系统精致度和动画效果上仍是标杆，鸿蒙需追赶",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙next作为国内首个完全自主研发的移动操作系统，意义非常重大，假以时日，必然与ios和安卓形成三足鼎立之势。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "意义非常重大、必然形成三足鼎立高度看好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "必然与ios和安卓形成三足鼎立之势。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作为三足之一被提及，中性客观",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "必然与ios和安卓形成三足鼎立之势。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作为三足之一被提及，中性客观",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69a6cc04000000001d024281",
+    "opinions": [
+      {
+        "opinion_text": "平板使用以来除了微信和B站其实没有感觉到很明显的劣势差异，更多是丝滑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没有感觉到很明显的劣势差异、更多是丝滑，整体正面",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "cctalk发现下载使用几次后就闪退，要重新安装后才能使用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "闪退、要重新安装表达软件适配问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "去应用市场打算重新下载，发现居然更新了软件，这个速度真的，这波极速解决更新感觉更有信心用纯血鸿蒙了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "居然更新了、极速解决、更有信心高度认可响应速度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "爱你华为，越来越好！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "直接表达喜爱和祝福",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e8b874000000001d01d63e",
+    "opinions": [
+      {
+        "opinion_text": "入手第二天，发现挺多小功能不适配，聊天框发表情包点击没反应，引用图片不显示，朋友圈动态封面不展示，群聊点图片反应很久才出来大图。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "列举9条微信功能不适配问题，反应很久等表达不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总的来说用着很流畅很实用，希望技术人员刷到就继续完善吧。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用着很流畅很实用整体认可，同时希望完善",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0bdafe000000000702cd26",
+    "opinions": [
+      {
+        "opinion_text": "用了不到一天，屏幕大很多，电池耐用了，信号也好很多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池耐用了、信号也好很多多个正面体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "很多软件感觉挺别扭的，没有完全适配，目前遇到最难用的是股票软件，难受的要命。感觉就是有壳没灵魂或者说很弱小，说实话有点后悔。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "难受的要命、有壳没灵魂、有点后悔强烈负面情绪",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69a169a7000000002202d1d5",
+    "opinions": [
+      {
+        "opinion_text": "黑色质感无敌。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "质感无敌强烈赞美外观",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整机整体来说确实不算重，但稍宽一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观描述重量和宽度，无明显褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统确实很流畅，丝滑度拉满，可玩性也很强，数据迁移过程中也没有遇到什么问题。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "确实很流畅、丝滑度拉满、可玩性也很强高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "相机整体还原度较好，红枫拍照也很能打，亮光下以及人像都不错。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还原度较好、很能打、都不错认可拍照表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "原色模式在暗光下有点偏黄，拍动态物体色温不稳定。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "指出偏黄、色温不稳定等拍照问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "基本常用软件适配已经没什么大问题了，但部分软件确实是亟待更新，有一些可以在卓易通的搜应用下载，但是无法微信登录。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没什么大问题是正向，但亟待更新、无法微信登录是问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "马达还是一如既往的很华为，振动感不明显，振动党需要特别注意，振动偏弱。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "振动感不明显、振动偏弱指出马达体验不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "屏幕双层OLED，亮度拉满，啥情况下你都能看清楚，而且整体很通透，真心好评。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "亮度拉满、很通透、真心好评高度认可屏幕",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "感觉当主力机基本没啥问题。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "基本没啥问题认可作为主力机使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6996e46f000000001d027345",
+    "opinions": [
+      {
+        "opinion_text": "买来iPhone才发现iPhone丝毫不封闭，app store的应用非常全，有大量的软件开发者开发优质的软件给ios。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "丝毫不封闭、应用非常全、优质的软件高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "国产安卓体验确实很一般：很多游戏只能去官网下，应用商店劣质应用占大多数，而且应用本来就很少。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "确实很一般、劣质应用占大多数、应用本来就很少强烈批评",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone在软硬件结合方面就是更好，能感受到专业软件的含金量，都是基于苹果的硬件进行设计优化的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "就是更好、专业软件的含金量高度认可软硬件结合",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "几年前的vivo x100，origin新系统更新已经不会第一时间推送了。反观ios26，从iPhone11到最新的iPhone17，都是同时推送的。这种体验是独一无二的。能感受到iPhone尊重它出的每一代手机。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评vivo旧机型不会第一时间推送系统更新",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "ios26从iPhone11到最新的iPhone17都是同时推送的，这种体验是独一无二的，能感受到iPhone尊重它出的每一代手机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "独一无二的、尊重它出的每一代手机高度认可系统更新策略",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "国产安卓的穷途末路：一切都得视iPhone而定，纷纷上了仿液态玻璃的新系统。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "穷途末路、一切都得视iPhone而定、仿液态玻璃强烈批评",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果vision pro不出，那么vivo大概永远不会出vivo的vision pro。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评vivo缺乏自主创新，跟随苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果iPhone air不出，荣耀永远也不会出荣耀air。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评荣耀缺乏自主创新，跟随苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果保时捷不出，小米也研发不出和现在一样的小米su7。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评小米缺乏自主创新，模仿保时捷",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只有华为明白什么叫中国的手机：自研芯片，自研系统。只有拥有了这些核心的技术才能发展起来。这叫格局。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "只有华为明白、这叫格局高度赞扬华为自研能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这些手机厂商的嘴脸太令人感到恶心，这些厂商热衷于营销，对产品本身没有任何打磨。其他造车的厂商没有一个比小米营销更狠了。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "嘴脸太令人感到恶心、热衷于营销、没有任何打磨、营销更狠强烈批评",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

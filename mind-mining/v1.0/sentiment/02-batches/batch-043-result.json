@@ -1,0 +1,626 @@
+[
+  {
+    "note_id": "6833183e0000000020028fa1",
+    "opinions": [
+      {
+        "opinion_text": "全系中，我觉得只有黑色以及Ultra的金色，质感最好。没有那股子塑料的廉价感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"质感最好\"\"没有那股子塑料的廉价感\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "红枫摄像头下放在中端机型上面，肯定是降维打击的，色彩表现真的很好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"降维打击\"\"色彩表现真的很好\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "性能不太能比得上主流机型是一定的。不过用着感知差别不大，或许是系统弥补了这一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"性能不太能比得上主流机型\"（负向）+ \"用着感知差别不大\"（正向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统流畅不卡帧，日常软件也大部分都有。但都是毛坯房，跟APP刚出版似的。如果还能回退鸿蒙4.3的话，我肯定回退。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"系统流畅不卡帧\"（正向）+ \"都是毛坯房\"\"肯定回退\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "2900买下的，有华为旗舰机一样的配置，还是挺满意了。感觉比买Mate70标准款要好点啊。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"还是挺满意了\"\"比买Mate70标准款要好点\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69cde49c000000001f0029fa",
+    "opinions": [
+      {
+        "opinion_text": "畅享90在信号、网络质量、系统流畅度这些方面都非常不错。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"非常不错\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前果子手机每次进出建筑物和电梯都会卡一下，现在不用再担心这个问题了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"每次进出建筑物和电梯都会卡一下\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "畅享90promax这次的颜值颜很高，有点越级的美感，青绿色也非常好看。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"颜值颜很高\"\"越级的美感\"\"非常好看\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刚买回来就下了王者荣耀测试到底能不能稳定120帧，结果也是让人非常满意，从进游戏到在游戏页面操作，没有一处卡顿的地方，太赞了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"非常满意\"\"没有一处卡顿的地方\"\"太赞了\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "694166d1000000001b02514b",
+    "opinions": [
+      {
+        "opinion_text": "升级鸿蒙4.2.0后流畅度拉满，星环摄像头设计颜值高、机身轻薄便携，办公娱乐都适配。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"流畅度拉满\"\"颜值高\"\"轻薄便携\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "5000万像素主摄拍照效果好，麒麟9000E芯片性能抗打。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"拍照效果好\"\"性能抗打\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "仅电池续航随使用年限下降，出门需带充电宝。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"电池续航随使用年限下降\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体依旧超满意。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"超满意\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e5abcb000000001a03724e",
+    "opinions": [
+      {
+        "opinion_text": "以前经常因为存储不够，手机经常卡顿，影响老人使用体验！这回好了，可以放心的拍照和刷短剧了！一点都不卡顿！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"一点都不卡顿\"\"放心的拍照和刷短剧\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "老人很喜欢，特别是超级快充100W，充电速度特别快！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"老人很喜欢\"\"充电速度特别快\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还夸我所有买过的手机，这款是最称心的，老人高兴比什么都重要！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"最称心的\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69364c3a000000001f0075f9",
+    "opinions": [
+      {
+        "opinion_text": "极客湾直播时说鸿蒙系统比所有安卓系统都要流畅，甚至都iOS26都不一定有鸿蒙6流畅，评价很高啊。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"比所有安卓系统都要流畅\"\"iOS26都不一定有鸿蒙6流畅\"\"评价很高\"",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前浅浅体验了下，流畅度没问题，现在就等生态逐步完善了，不过日常使用肯定是没问题的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"流畅度没问题\"\"日常使用肯定是没问题的\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "就是需要时间发展，毕竟是个年轻的系统。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"需要时间发展\"\"年轻的系统\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "极客湾直播时说鸿蒙系统比所有安卓系统都要流畅。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"比所有安卓系统都要流畅\"（间接对比，暗示安卓不如鸿蒙流畅）",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "甚至都iOS26都不一定有鸿蒙6流畅。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"iOS26都不一定有鸿蒙6流畅\"（间接对比，暗示iOS不如鸿蒙流畅）",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69eda5460000000036001416",
+    "opinions": [
+      {
+        "opinion_text": "轻薄便携，整机970克，日常携带一点压力都没有；外观黑色的微绒材质，摸起来质感不错，就是容易粘指纹。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"一点压力都没有\"\"质感不错\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙系统现在已经更新到了6.1，适配的软件也越来越多了，如果日常办公只是处理邮件和文档，再加上即时通讯，妥妥的够用了，如果有设计或者开发的工作需要，还是有点不够。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"妥妥的够用了\"（正向）+ \"有点不够\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用铠大师的虚拟机装了W11，两个系统切换着用也很流畅，我日常工作中大部分都在用鸿蒙系统。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"也很流畅\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "续航能力还是不错的，日常8小时够用了，再加上140W快充，补电很快。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"还是不错的\"\"够用了\"\"补电很快\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总体来说，轻办公是够用的，便捷又轻薄，携带也没压力，赶上国补优惠，性价比也不错！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"性价比也不错\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66135394000000001a016125",
+    "opinions": [
+      {
+        "opinion_text": "这台华为Mate60Pro我用了大概四个多月，一开始给我的感受是还不如我之前用的荣耀magic6至臻。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"还不如我之前用的荣耀magic6至臻\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是随着鸿蒙的优化，现在越用越丝滑了！完全不会卡顿。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"越用越丝滑\"\"完全不会卡顿\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "电池还是不如目前荣耀标配的青海湖电池。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"荣耀标配的青海湖电池\"（被用作正面参照）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照不如之前用的苹果13Pro。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"苹果13Pro\"被用作拍照更好的参照",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "其他全是优点！而且主打一个保值，6999你如果能买到，可能回收价还会在5000到5500。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"其他全是优点\"\"主打一个保值\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6744210e000000000703b090",
+    "opinions": [
+      {
+        "opinion_text": "纵享丝滑，目前对于我而言还有10个未上架应用，但有备用机，不影响日常使用，就不打算回退了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"纵享丝滑\"\"不影响日常使用\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "期待明天发布会不知道会不会推正式版系统。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅为期待，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695e125f0000000022032e48",
+    "opinions": [
+      {
+        "opinion_text": "6.84英寸OLED大直屏是真·打工人的福音！打工人刷网课、追剧、回消息，1.1mm四等边窄边+2160Hz高频调光，眼睛不酸胀！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"真·打工人的福音\"\"眼睛不酸胀\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "直屏虽爽，打游戏时偶尔误触边缘，得适应两天才能完全掌控。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"偶尔误触边缘\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "后置四摄+红枫影像系统，拍演唱会山顶票能数清人脸！主摄可变光圈F1.4-F4，夜景灯光不炸眼；3.7倍潜望长焦拍月亮细节拉满。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"能数清人脸\"\"细节拉满\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "前置红枫镜头虽好，超广角被砍，自拍想拍大场景？得退两步！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"超广角被砍\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "麒麟9010S+鸿蒙6.0，王者120帧稳如老狗，原神60帧跑图温度不超过35.9°C！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"稳如老狗\"\"温度不超过35.9°C\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "6500mAh电池从早撑到晚，100W快充半小时充77%，但！最后10%涓流充电要等20分钟，急性子得抓狂！",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"从早撑到晚\"\"半小时充77%\"（正向）+ \"涓流充电要等20分钟\"\"急性子得抓狂\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "价格4199起，比上代贵300块，值吗？看重性价比的宝子得纠结！处理器性能比旗舰差口气，重载任务偶尔卡顿，但日常用足够！",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"比上代贵300块\"\"重载任务偶尔卡顿\"（负向）+ \"日常用足够\"（正向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这手机像极了火锅——香是真香，辣也是真辣！拍照党、直屏控、续航焦虑星人闭眼冲！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"香是真香\"\"闭眼冲\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66aa2ee50000000009015d60",
+    "opinions": [
+      {
+        "opinion_text": "p40pro 作为4年+的机器 质感依然很好，做工质感都不错，日常使用非常流程无卡顿，系统信号依然很稳。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"质感依然很好\"\"无卡顿\"\"信号依然很稳\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69ce294300000000230160e0",
+    "opinions": [
+      {
+        "opinion_text": "屏幕黑边这一块儿，终于是摆脱了以前畅享系列那样的劣质低端感，这回畅享90ProMax有那股子旗舰机的味儿了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"摆脱了以前畅享系列那样的劣质低端感\"\"有那股子旗舰机的味儿了\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统是鸿蒙6，还是蛮丝滑流畅的，跟手性也很好。不过嘛毕竟不是旗舰机，对比Mate80来说，开软件动画会有掉帧的时候，且肉眼可见。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"蛮丝滑流畅的\"\"跟手性也很好\"（正向）+ \"开软件动画会有掉帧\"\"肉眼可见\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "电池确实大，续航不错。到手开机就只有70%多的电，用了3小时，导资料、刷视频等才仅仅掉个15%左右，还行。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"续航不错\"\"还行\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "麒麟8000的性能就那样吧，也是两三年前的处理器了，反正玩玩王者啥的，能稳120帧不卡顿就行。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"性能就那样吧\"\"不卡顿就行\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "拍照感觉比我Mate60Pro要好些，暗光锐化不强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"比我Mate60Pro要好些\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "作为华为一千多的机型，有这么个表现还行吧，能让人接受。毕竟相比以前的畅享系列来说，这次畅享90ProMax要有诚意的多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"能让人接受\"\"要有诚意的多\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "699ee22b000000000e03f2ff",
+    "opinions": [
+      {
+        "opinion_text": "X5折叠有仪式感，但论精致度、高级感，80 RS完全降维打击。钛金属中框+双面昆仑玻璃，拿在手里沉甸甸的气场。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"完全降维打击\"\"沉甸甸的气场\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "X5外屏小、内屏娇贵，用着总小心翼翼。80 RS整块高素质直屏，亮度、色彩、细腻度拉满。无折痕、无脆弱区。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"细腻度拉满\"\"无折痕\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "X5拍照够用，但80 RS是质感碾压。夜景干净、长焦稳定、人像自然。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"质感碾压\"\"夜景干净\"\"长焦稳定\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两者重量差不多，80 RS稍宽一点，单手操控没X5折叠态轻巧，久握有点累。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"久握有点累\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "X5用1年多，内屏意外损坏，维修贵又折腾。折叠屏结构天生娇弱，日常使用总提心吊胆。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"维修贵又折腾\"\"天生娇弱\"\"提心吊胆\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "唯一小遗憾是鸿蒙6部分功能还没完全适配，但通过卓越系统都能完美解决，日常使用完全不影响。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"部分功能还没完全适配\"（负向）+ \"都能完美解决\"\"完全不影响\"（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mate 80 RS才是华为真正的顶流旗舰。从\"折腾的精致\"变成\"踏实的尊贵\"，这波换得太值。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"真正的顶流旗舰\"\"这波换得太值\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69dc4a8f0000000021039e8b",
+    "opinions": [
+      {
+        "opinion_text": "剩余66%，可以算备用神机了，第6天，还有66%的电，每天下滑还是比较稳定的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"备用神机\"\"还是比较稳定的\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体流畅度好像有点越来越流畅的趋势。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"越来越流畅的趋势\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69258920000000001f00593c",
+    "opinions": [
+      {
+        "opinion_text": "如图，Mate80 Pro是9C14T，而Mate80 Pro Max是9C12T，这是为何？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "纯提问，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fd78470000000022025e8f",
+    "opinions": [
+      {
+        "opinion_text": "X7镜头模组实在不敢认同。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"实在不敢认同\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "x6以后换了荣耀v6，总感觉少点啥。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"总感觉少点啥\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次的Pur90pro挺好的，小巧，拍照也还好，一切都差不多还好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"挺好的\"\"拍照也还好\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,518 @@
+[
+  {
+    "note_id": "661223e1000000001a01710e",
+    "opinions": [
+      {
+        "opinion_text": "真的好不习惯啊，想截图给朋友分享半天找不到截图，只能最原始的电源键加音量键，长截图也没有，录屏也找不到，我像个刚用手机的原始人。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真的好不习惯啊[哭惹R]想截图给朋友分享半天找不到截图，只能最原始的电源键➕音量键，长截图也没有，录屏也找不到[哭惹R]我像个刚用手机的原始人[哭惹R]",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69aac007000000000e00d677",
+    "opinions": [
+      {
+        "opinion_text": "我现在用的是华为手机加平板，目前来说没什么缺点，特别是分屏功能我比较喜欢。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "目前来说没什么缺点，特别是分屏功能我比较喜欢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我又很喜欢苹果的外观，并且周围的同学都是用苹果，也有的功能苹果有但是华为没有。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "我又很喜欢苹果的外观",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我现在用的是畅享70，前年夏天买来作为过渡机，不太流畅，以后勉强能当作备用机。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不太流畅，以后勉强能当作备用机",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68235ccc00000000220296d9",
+    "opinions": [
+      {
+        "opinion_text": "感觉自己像刚学会用手机的智障，天天查使用方法，静音了还会震动，声效与触控反馈规则复杂，没法截长图，充电线和充电器特殊，经常借不到，闹钟难调，响不响看天意，退回上一页面不方便无法右滑，新消息来了没闪烁灯提醒，换壁纸麻烦，打字容易打错，nfc可能不适配，没指纹解锁，信号时好时坏，发烫如热水袋，拍照对不上焦，夜景拍照延时，天气预报非常不准。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "感觉自己像刚学会用手机的智障，天天查使用方法[哭惹R]包括但不限于以下不适应...",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "可能最让人满意的只有拍照功能了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "可能最让人满意的只有拍照功能了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "682d63d9000000000f03aef7",
+    "opinions": [
+      {
+        "opinion_text": "我知道还有很多问题苹果确实比不上安卓，但我觉得苹果某些功能也确实挺好用的，比如图库里可以随意拷贝文字或者矫正，而且拍照也确实挺喜欢，特别是16的调色盘拍出来很好看。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "但我觉得苹果某些功能也确实挺好用的（比如图库里可以随意拷贝文字或者矫正）而且拍照也确实挺喜欢（特别是16的调色盘拍出来很好看）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我知道还有很多问题苹果确实比不上安卓。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "我知道还有很多问题苹果确实比不上安卓",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我前二十多年一直使用安卓手机，三年前开始使用iPad，目前我觉得我没什么不适应的，安卓也还在用。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "目前我觉得我没什么不适应的，安卓也还在用",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6734ae32000000001901b366",
+    "opinions": [
+      {
+        "opinion_text": "用了十多年的华为，用腻了，嫌弃它的像素，终于换了一台苹果15。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "嫌弃它的像素",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "天老爷，好多功能都用不了，门禁卡不能用，不能分屏，这些我用了一个月已经习惯了，最大的一个问题，信号啊信号，我真的感觉像4G一样，打开微信每次都要转几圈，电梯厕所直接断网。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "天老爷，好多功能都用不了...最大的一个问题，信号啊信号！！！我真的感觉像4G一样，打开微信每次都要转几圈，电梯厕所直接断网[石化R][石化R]",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "666bba59000000001c0232a1",
+    "opinions": [
+      {
+        "opinion_text": "明明安卓手机的耐用性、功能性、拍照、流畅度都追上来很多了呀。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明明安卓手机的耐用性、功能性、拍照、流畅度都追上来很多了呀",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68529935000000002400e957",
+    "opinions": [
+      {
+        "opinion_text": "苹果转华为，差不多半个月了，感觉用着都差不多，鸿蒙系统不像苹果系统那么封闭，体验都是一流的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉用着都差不多，鸿蒙系统不像苹果系统那么封闭，体验都是一流的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "外观：我觉得华为好看，摄像头居中对称远比在一侧的看起来舒服，至少我这么觉得。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我觉得华为好看，摄像头居中对称远比在一侧的看起来舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统流畅性：旗舰机的话，安卓也好鸿蒙也好，也不会卡，至少我的用了两三年，目前不卡。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "旗舰机的话，安卓也好鸿蒙也好，也不会卡，至少我的用了两三年，目前不卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统封闭：老实说，这点我是比较偏向于IOS，因为安卓、鸿蒙经常你一不小心就装了个垃圾app，就很让人不爽。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这点我是比较偏向于IOS",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果华为我都有，还是华为的用着安逸，苹果的除了系统丝滑，其他功能没啥牛的，而且很多华为在国内很好用、很实用的场景功能，苹果根本没有。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还是华为的用着安逸...很多华为在国内很好用、很实用的场景功能，苹果根本没有",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果的除了系统丝滑，其他功能没啥牛的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果的除了系统丝滑，其他功能没啥牛的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "同价位的手机拿来比，应该没有太大差距吧，可能还是国产的功能更丰富一点，苹果胜在系统吧，能坚持好多年用起来依旧流畅，很少出现死机、卡屏现象。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果胜在系统吧，能坚持好多年用起来依旧流畅，很少出现死机、卡屏现象",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "同价位的手机拿来比，应该没有太大差距吧，可能还是国产的功能更丰富一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "可能还是国产的功能更丰富一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ee42270000000035021078",
+    "opinions": [
+      {
+        "opinion_text": "导航键没有，向左滑动返回不行，音量键和华为手机是相反的，淘宝购物车商品长按居然没有找相似功能，微信聊天置顶不能长按置顶或取消置顶，打字键盘难用，法定节假日休息闹铃关不掉，华为文件蓝牙不能发送给苹果，将近3万张照片显示要传34小时然后传了大概20%断网了，华为和苹果账号不互通，我那氪了近2万的号。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "绷不住了，新买的🍎手机，真的有点难用...给我致命一击...救命啊...",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e57cef000000001a02eaa6",
+    "opinions": [
+      {
+        "opinion_text": "如果你用的一直是ios系统，从来没用过鸿蒙，那真的不建议你轻易更换，你会深刻体会到一夜回到解放前。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "那真的不建议你轻易更换，你会深刻体会到一夜回到解放前",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "并不是说系统不流畅，至少我觉得特别丝滑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "并不是说系统不流畅，至少我觉得特别丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "而是app的功能缺失的太多，跟ios相比至少差了好几个版本，甚至更多，当个备用机倒是足够。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "app的功能缺失的太多，跟ios相比至少差了好几个版本，甚至更多",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68970da2000000002303252b",
+    "opinions": [
+      {
+        "opinion_text": "前一阵子换了工作机，所以最近的双持改为苹果加红米，但是苹果和安卓搭配的底层逻辑没有改变。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "双持改为苹果➕红米，但是苹果和安卓搭配的底层逻辑没有改变",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "红米：工作手机，主要使用wx、导航、相机这些和工作相关的内容。",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "主要使用wx、导航、相机这些和工作相关的内容",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果：生活手机，日常生活中会用到的各种app都会在这个手机里。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "日常生活中会用到的各种app都会在这个手机里",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用久了苹果觉得很没意思，很想换个手机，还在观望中。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用久了苹果觉得很没意思😐很想换个手机",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67ce7dd5000000002a00c0ca",
+    "opinions": [
+      {
+        "opinion_text": "苹果剪辑视频的速度也很慢，效率不高，需要我等很久，续航速度也不行，时间一久容易发热。虽然它拍视频的效果是要更好一些，但是综合来看，直接用安卓拍对我来说更方便。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果剪辑视频的速度也很慢，效率不高，需要我等很久，续航速度也不行，时间一久容易发热",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "虽然它拍视频的效果是要更好一些。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "虽然它拍视频的效果是要更好一些",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓手机，屏幕大，看着更加舒适，我还是更喜欢用它来当我的主力机。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓手机，屏幕大，看着更加舒适，我还是更喜欢用它来当我的主力机",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b0d9020000000009021ebc",
+    "opinions": [
+      {
+        "opinion_text": "咬咬牙换的华为最新款的买的最顶配，等它等了好几个月，前天刚到手，感觉电池用下来真的很一般，不怎么用都要一天一充，刚到当天半天冲2次，可能传数据比较费电，个人感觉电池真的一般般，刚到手第二天真心想退。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉电池用下来真的很一般，不怎么用都要一天一充，刚到当天半天冲2次...个人感觉电池真的一般般，刚到手第二天真心想退",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "有些辅助功能确实比苹果好用，不得不说华为充电确实比苹果确实快，屏幕也真的特别亮。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有些辅助功能确实比苹果好用，不得不说华为充电确实比苹果确实快，屏幕也真的特别亮",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对比了一下拍照个人感觉不错，长焦完全不输苹果，部分饱和度会比较高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对比了一下拍照个人感觉不错，长焦完全不输苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统个人换过来感觉还好，我是苹果13换过来的，更新最新系统，个人日常用的APP基本都适配，刚换用起来多少有一点不习惯，用用应该就适应了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "系统个人换过来感觉还好...刚换用起来多少有一点不习惯，用用应该就适应了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "虽然裸机外观很高级，手感也好，但是谁懂啊女生用起来手机壳特别难买，刚开始挑的都差点破防。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "虽然裸机外观很高级 手感也好，但是谁懂啊女生用起来手机壳特别难买！！！刚开始挑的都差点破防",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69df28fb000000001d01c64a",
+    "opinions": [
+      {
+        "opinion_text": "用惯了15pm现在换17p了真不太适应，感觉太小了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用惯了15pm现在换17p了真不太适应 感觉太小了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0c6e82000000003700dedb",
+    "opinions": [
+      {
+        "opinion_text": "从iphone15 pro换成用华为系两年了，从mate60到pura x，华为整体体验也很好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为整体体验也很好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是换回苹果17pro之后，感受到的丝滑程度华为不可比拟。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "感受到的丝滑程度华为不可比拟",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Purax体验主要在新形态，换回苹果后我瞬间觉得我用的X系统像老古董，app功能简洁了之后，无法体验各种app产品经理的小巧思，感觉像2026年的诺基亚。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "换回苹果后我瞬间觉得我用的X系统像老古董哈哈哈，app功能简洁了之后，无法体验各种app产品经理的小巧思，感觉像2026年的诺基亚",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果17 pro橙色也是一整个新形态，系统还是一样优秀丝滑，坏处是手机太好玩，导致我每天都在玩手机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统还是一样优秀丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6914423c0000000005031255",
+    "opinions": [
+      {
+        "opinion_text": "一年前换了16pm，现在用了一年电池降到96%，感觉电池续航确实降了一些，可能因为夏天的时候天热加用了一段时间无线充电，损伤了电池。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "感觉电池续航确实降了一些",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最大的优点还是拍照真的很好看，翻相册感觉生活更加明媚了，看实况真的能把记忆拉回拍照的时候，有时候点拍摄的瞬间没有拍到的内容，实况可能会拍到，就能拯救一下或者发现额外惊喜。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最大的优点还是拍照真的很好看，翻相册感觉生活更加明媚了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "追星的人大多数会用苹果，互相传照片的时候用隔空投送很方便，之前用华为的时候总是感觉被排除在外。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "互相传照片的时候用隔空投送很方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用华为的时候总是感觉被排除在外。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "之前用华为的时候总是感觉被排除在外😭",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "出国旅游的时候可能会下载当地的app，这些app在app store里都能下载到，华为的话可能需要通过浏览器下载，很不方便。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这些app在app store里都能下载到",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的话可能需要通过浏览器下载，很不方便。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为的话可能需要通过浏览器下载，很不方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在依旧认为的缺点：日常生活中还是会有输入法不智能的时候，计算器只能一个个删除到错误的数字，灵动岛会有一些遮挡，如果面容解锁不了就一定要输密码，微信不能小程序和聊天界面分开管理。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在依旧认为的缺点...",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我后续再换手机也就会延续苹果了，我愿意为它的拍照质量买单，虽然我感觉今年17的设计有点丑，但是8倍放大拍摄真的好厉害，外观丑也能接受。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "我后续再换手机也就会延续苹果了，我愿意为它的拍照质量买单",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

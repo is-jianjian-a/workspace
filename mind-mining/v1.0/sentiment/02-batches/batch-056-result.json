@@ -1,0 +1,626 @@
+[
+  {
+    "note_id": "698360fa000000000b009a83",
+    "opinions": [
+      {
+        "opinion_text": "华为真的很不容易，为国产芯片做出这么多",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"华为真的很不容易\"\"为国产芯片做出这么多\"——表达对华为在国产芯片领域付出的认可和同情",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为什么华为还被人骂",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"为什么华为还被人骂\"——对华为被批评表示不解和委屈，隐含对负面评价的负面情绪",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d6a1de000000000e0333ac",
+    "opinions": [
+      {
+        "opinion_text": "华为的910B显卡使用起来和英伟达有什么区别吗？忽略性能等差异，仅从环境配置和生态角度看，求大佬解答",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "纯提问，询问华为910B显卡与英伟达在生态配置上的差异，无明确褒贬态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的910B显卡使用起来和英伟达有什么区别吗？忽略性能等差异，仅从环境配置和生态角度看",
+        "brand_target": "其他",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及英伟达作为对比对象，但无对英伟达的明确情感态度，仅为技术对比",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693acdd6000000001f00b642",
+    "opinions": [
+      {
+        "opinion_text": "要不说华为mate80屏幕强呢，没想到差别居然能这么大，同样是双层OLED屏幕，去年的mate70RS放在今年80RS旁边，直接显得黯淡无光了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"华为mate80屏幕强呢\"\"直接显得黯淡无光了\"——对Mate80RS屏幕表现高度赞赏，对比之下旧机型黯然失色",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "看了这个对比，我只想说\"买新不买旧\"这谚语真的诚不欺我",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"诚不欺我\"——对华为新品升级幅度表示认可，强化了买新机的决策",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a111957000000003701cb96",
+    "opinions": [
+      {
+        "opinion_text": "这位不差钱的大佬还用着七年前的手机，说明P30 Pro还能胜任主用机的任务",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"P30 Pro还能胜任主用机的任务\"——认为七年前华为手机至今仍能胜任主力机使用，体现对耐用性的认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "性能上，华为P30 Pro搭载了麒麟980处理器，全系标配8G内存，加上后续一路升到鸿蒙4.0系统，实现了软硬件优化的极致",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"实现了软硬件优化的极致\"——对华为软硬件优化能力给予高度评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "如果不玩游戏，这套配置只用来聊微信，那绝对够用的。但要刷短视频的话，其实偶尔会卡顿一下，更适合当备用机",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"绝对够用的\"（正向）与\"偶尔会卡顿一下\"（负向）并存——认可基础使用场景，但指出刷视频存在卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为P30 Pro作为拍照旗舰，后置摄像头也不错，搭载了徕卡四摄，当年在DxOMark评分112获得第一名，具备50倍数字变焦能力",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"DxOMark评分112获得第一名\"——对华为当年拍照能力的高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这个NM卡是华为自己的标准，当年比TF卡还贵，如今TF卡涨上天，NM卡却没涨价",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"NM卡却没涨价\"——对华为NM卡保值性表示认可",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6881ef4700000000230050a0",
+    "opinions": [
+      {
+        "opinion_text": "5年前的华为mate30，现在到我手里依旧是个宝",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"依旧是个宝\"——对五年前的华为Mate30高度肯定，表达强烈喜爱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "屏幕显示素质优秀，但是可以肯定的是，比不过现在的高频护眼屏，也没有高刷，不过色彩显示这一块确实可以",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"屏幕显示素质优秀\"\"色彩显示这一块确实可以\"（正向）与\"比不过现在的高频护眼屏，也没有高刷\"（负向）并存",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "电池续航依旧给力，我这部现在电池还有84，连续工作的情况下，还能坚持亮屏5小时，我觉得蛮好的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"电池续航依旧给力\"\"我觉得蛮好的\"——对Mate30五年后电池续航表现满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前麒麟990的性能，依旧轻松满足日常所需，打开各种软件丝滑无压力，但是打游戏就不行了",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"轻松满足日常所需\"\"丝滑无压力\"（正向）与\"打游戏就不行了\"（负向）并存",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "拍摄图片能力不错，解析力满足工作需求，当然比不过现在的中端哈，比低端还是比绰绰有余的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"拍摄图片能力不错\"\"比低端还是比绰绰有余的\"——对Mate30拍照能力认可，认为优于低端新机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "低端机虽然是新的，但是无论材质，屏幕，摄像头还是性能都不如过气的旗舰，这点毋庸置疑",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"不如过气的旗舰\"——对低端新机整体持负面评价，认为不如二手旗舰",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "反正我觉得我的选择是对的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"我的选择是对的\"——对购买二手华为Mate30的决策高度肯定",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ca2fdf000000001e00fb5d",
+    "opinions": [
+      {
+        "opinion_text": "谁能想得到Mate80系列都没能完成的任务，让畅享90ProMax干的差不多了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"让畅享90ProMax干的差不多了\"——对畅享90ProMax的市场表现感到惊讶和赞叹",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "都说这玩意儿是老人机、7年前性能、不如友商同价位千元机等等，但是它就硬生生在狗东干了个手机热卖总榜第4",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"老人机、7年前性能、不如友商同价位千元机\"（负向评价）与\"热卖总榜第4\"（正向市场表现）形成强烈反差",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "以前用骁龙680都已经把畅享口碑搞的很脏，结果现在简简单单翻盘",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"简简单单翻盘\"——对华为畅享系列口碑逆转表示认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "仅次于iPhone17ProMax、iPhone17Pro",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及iPhone17ProMax/Pro作为销量排名对比，无对苹果的直接情感态度",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695c9eb1000000001a024933",
+    "opinions": [
+      {
+        "opinion_text": "原来新麒麟这么猛",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"新麒麟这么猛\"——对华为新麒麟处理器性能表现高度赞赏",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "在采用同样处理器的情况下，华为直板机的性能普遍都要好于折叠屏",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观陈述华为直板机与折叠屏性能差异，无明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "麒麟9030 Pro的性能在折叠屏上提升更为明显，达到了30%",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"提升更为明显，达到了30%\"——对麒麟9030 Pro性能提升幅度表示认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这个跑分软件目前整体还比较粗糙，提供的性能仅作参考，并不能作为绝对的性能成绩",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观说明跑分软件局限性，非对华为产品的评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙系统总算是有了一个可以量化考核性能的平台，对于大家的选择多少也有一些借鉴意义",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"总算是有了\"——对鸿蒙系统终于有了性能跑分平台表示欣慰",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68c9432e000000001101ce91",
+    "opinions": [
+      {
+        "opinion_text": "Padmini的细节显示居然远远不如五年前的旧平板m6，很震惊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"远远不如五年前的旧平板m6\"\"很震惊\"——对华为Padmini显示效果远逊于旧款m6感到震惊和失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不是说这个柔光屏很牛吗？居然还不如5年前的机子，等这么久出一款小平板，结果这样",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"居然还不如5年前的机子\"\"结果这样\"——对华为Padmini实际表现远低于预期表示强烈失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "修图的速度，也和m6差不了多少",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"和m6差不了多少\"——对Padmini性能提升不明显表示失望，新机型应优于五年前的旧机型",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "本来想10月份等mate 80RS的，现在歇了吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"现在歇了吧\"——因Padmini体验失望而打消购买华为Mate80RS的计划",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a06b39900000000060238a7",
+    "opinions": [
+      {
+        "opinion_text": "华为Pura 70第一批大冤种本来已经要放弃华为手机了，掉电池太快了，买了两年电池已经到了90%，一天用下来恨不得三四充，太烦了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"掉电池太快了\"\"太烦了\"\"本来已经要放弃华为手机了\"——对Pura70电池衰减严重表示强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "误打误撞升级了鸿蒙系统6，我感觉华为手机又活过来了，电池耐用太多了，现在基本一天1-2充",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"又活过来了\"\"电池耐用太多了\"——升级鸿蒙6后对华为手机的续航改善高度满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "又对华为改观了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"又对华为改观了\"——因系统升级改善了体验，对华为品牌印象重新转好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69a06d460000000028022a3f",
+    "opinions": [
+      {
+        "opinion_text": "华为matepadmini边框这么窄，试用手感也不错还蛮喜欢这个屏幕触感的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"边框这么窄\"\"手感也不错\"\"蛮喜欢这个屏幕触感\"——对华为平板的外观设计和手感表示喜爱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "姐姐说华为不能打游戏，永久会卡，这是真的吗",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"不能打游戏，永久会卡\"——引述他人对华为平板游戏性能和流畅度的负面评价，表达担忧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPadmini7好像是8.3英寸，而华为是8.8英寸",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观陈述iPadmini7尺寸信息，无情感态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我入手平板考虑是阅读便携，学习，我还蛮喜欢玩游戏的。所以很纠结",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "表达购买纠结，无明确褒贬，属于决策犹豫状态",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69eedbef000000002301ff73",
+    "opinions": [
+      {
+        "opinion_text": "质感和设计顶级。万元机的标准，明显比PuraX更精致，纹理玻璃+陶瓷镜圈，镜头模组设计也更具有美感，个人觉得质感甚至比matex7更好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"质感和设计顶级\"\"明显比PuraX更精致\"\"甚至比matex7更好\"——对PuraXMax质感和设计高度赞赏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "折痕这块相当惊艳，花系最强。绝大多数时候可以完全忽略折痕，手指从铰链划过几乎感觉不到凸起",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"相当惊艳\"\"花系最强\"\"可以完全忽略折痕\"——对折痕控制表现极度满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手感比较灾难。最担心的事还是发生了，合上后机身太宽，并且有一定厚度，还是直角边框，单手握持非常担心坠落",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"手感比较灾难\"\"非常担心坠落\"——对PuraXMax合盖后的握持手感强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "外屏可用性大幅提升！小外屏也是阔比例，相比PuraX那个方屏，这块外屏几乎可以处理所有APP",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"大幅提升\"\"几乎可以处理所有APP\"——对外屏可用性改善高度认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "阔比例实用性完爆普通折叠。游戏体验好了太多，9030Pro玩王者、金铲铲、三角洲、洛克王国都是满帧运行，非常流畅",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"完爆普通折叠\"\"满帧运行\"\"非常流畅\"——对阔比例设计和游戏性能表现极度满意",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "影像意外不错。在较小的机身里塞进了matex7标准版的影像硬件，夜景表现比一般折叠屏更好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"意外不错\"\"夜景表现比一般折叠屏更好\"——对影像表现超出预期表示认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "超广角比较烂",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"比较烂\"——对超广角表现直接否定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "5300毫安电池续航和x7没什么区别，不要抱太大希望",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"不要抱太大希望\"——对续航表现表示失望，与预期有差距",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "配件有点失望，66w方糖充电器，但手机壳竟然是透明塑料壳，完全不如x7的素皮支架壳",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"有点失望\"\"完全不如x7\"——对配件质量不满，认为不如前代",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "首发福利缩水了，没啥用的一个月petal会员，就送一张主题兑换卷，也没日日新红包了，差评",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"缩水了\"\"差评\"——对首发福利缩水表示不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "铰链紧实程度有提高，也有大角度悬停，没PuraX那么松了，但依旧不如X7",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"有提高\"\"没那么松了\"（正向）与\"依旧不如X7\"（负向）并存",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体确实是非常优秀的产品，这个比例比常规折叠好用很多",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"非常优秀的产品\"\"比常规折叠好用很多\"——对产品整体高度评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过首发价格偏高，16+1t要1.4w，建议按需选择",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"首发价格偏高\"——认为定价过高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f321680000000037037482",
+    "opinions": [
+      {
+        "opinion_text": "华为Pura X Max比去年的Pura X发售价贵了3500块，但是首销销量是其两倍",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "涨价后销量翻倍，暗示产品力强，市场认可度高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对比Pura X来说，想用主摄自拍，需要展开了，不能像Pura X一样折叠背屏看着拍",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "指出自拍体验退步，不如前代PuraX方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航跟目前其他机子比，确实短了不少，另外性能对于游戏党不太够用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"续航确实短了不少\"\"性能对于游戏党不太够用\"——对续航和性能表示不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Pura X Max的形态还是比较创新的，鸿蒙6的丝滑程度，过度动画啥也都是有目共睹的，所以创新产品力在线，它卖的好也正常",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"形态还是比较创新的\"\"丝滑程度有目共睹\"\"创新产品力在线\"——对产品创新和系统流畅度高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "692af862000000001e0268e9",
+    "opinions": [
+      {
+        "opinion_text": "刚更新了一下FishingFox（适配了Mate80），正确显示核心数和线程数了。很满意，坐等详细评测",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"很满意\"——对Mate80核心数信息确认表示满意和期待",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6761a357000000000800eaea",
+    "opinions": [
+      {
+        "opinion_text": "试了下目前版本的ai云增强，发现了一个超级牛比克拉斯的东西，增强之后细节能放得更大，最牛逼的来了，增强之前直出的是1200万像素，增强之后直出的是镜头的完全体4800万像素",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"超级牛比克拉斯\"\"最牛逼的来了\"\"完全体4800万像素\"——对华为AI云增强功能效果极度满意和惊喜",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fc8ccd0000000020039b00",
+    "opinions": [
+      {
+        "opinion_text": "Mate简直就是华为亲儿子，Mate80标准版，配置直接看齐Pro去了，同样的外观、同样的尺寸、同样的3D人脸，差不多的影像配置。处理器虽然没用上新款，但好赖是上一代旗舰芯，没落后太多",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"亲儿子\"\"配置直接看齐Pro\"——对Mate80标准版配置诚意高度赞赏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Pura就是来凑数的，Pura90标准版看齐的是nova，不知道何意味的外观设计，严重脱离Pura的审美与设计语言",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"来凑数的\"\"严重脱离Pura的审美与设计语言\"——对Pura90设计方向强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "处理器用的是Pura80标准同款，没升级就算了，新升级的旗舰配置也没捞着。反而是把nova同款前置红枫给搞过来，纯纯弄成了nova15相似物，甚至配置和颜值没有15U好",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"没升级就算了\"\"纯纯弄成了nova15相似物\"\"甚至配置和颜值没有15U好\"——对Pura90配置缩水极度失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "再也没以前P、Mate一代双雄的感觉了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"再也没以前...一代双雄的感觉了\"——对华为两大旗舰系列差距拉大表示遗憾",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

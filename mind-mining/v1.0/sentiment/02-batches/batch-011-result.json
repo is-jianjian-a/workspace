@@ -1,0 +1,527 @@
+[
+  {
+    "note_id": "69f309a7000000002300519f",
+    "opinions": [
+      {
+        "opinion_text": "为什么安卓手机配置更高，但三四年后流畅度就是打不过同期的iPhone？",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为安卓手机即使配置更高，三四年后流畅度也比不上同期的iPhone，暗含对安卓长期流畅度的负面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "为什么安卓手机配置更高，但三四年后流畅度就是打不过同期的iPhone？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为iPhone在三四年后仍能保持比安卓更好的流畅度，是对苹果长期流畅度的正面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a09c6b40000000038023754",
+    "opinions": [
+      {
+        "opinion_text": "苹果优点是使用时间可以很久很久，拍照可能比较真实，短板就是续航和充电慢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为苹果使用时间长、拍照真实是优点，但续航和充电慢是短板，正负评价并存",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前自己一直用安卓的，目前这个就是小米的，用了三年多了，现在感觉到流畅度不够，很卡，尤其是视频和另一个软件同开的时候，手机都点不动了",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者明确表达小米用了三年后流畅度不够、很卡，甚至手机点不动，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不知道三年后华为的会不会也这样，主要是流畅度卡的问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者对华为三年后是否也会卡顿表示担忧和不确定，没有明确褒贬，只是疑问",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "66c9bba9000000001f01ab46",
+    "opinions": [
+      {
+        "opinion_text": "个人感觉拍生肉两款手机出来的效果都不是很理想，锅底的话感觉苹果的效果比较普通，华为的会更出色一些",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为华为拍生肉效果不理想但拍锅底更出色，评价有正有负",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "个人感觉拍生肉两款手机出来的效果都不是很理想，锅底的话感觉苹果的效果比较普通，华为的会更出色一些",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为苹果拍生肉效果不理想、拍锅底效果普通，整体评价偏中性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍的生鱼肉过于偏粉嫩了，虽然色调还是很好看的，但有点不太敢吃的样子，苹果拍的正常很多",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为华为拍生鱼肉偏粉嫩到让人不敢吃，虽然色调好看但效果失真，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍的生鱼肉过于偏粉嫩了，虽然色调还是很好看的，但有点不太敢吃的样子，苹果拍的正常很多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为苹果拍生鱼肉正常很多，是对苹果拍照真实性的正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的色调依旧是偏黄，饱和度偏高，水面沸腾的波纹会更明显一些，但苹果可以看到live图，感受沸腾的感觉",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者指出华为色调偏黄、饱和度高，但波纹更明显，有正有负",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的色调依旧是偏黄，饱和度偏高，水面沸腾的波纹会更明显一些，但苹果可以看到live图，感受沸腾的感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为苹果live图能感受沸腾的感觉，是对苹果动态拍照功能的正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次随手拍的效果我都不是很满意，华为滤镜有些重，苹果过于真实",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者对华为拍照不满意，认为滤镜有些重，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次随手拍的效果我都不是很满意，华为滤镜有些重，苹果过于真实",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者认为苹果过于真实，虽然略带负面但'过于真实'也可理解为还原度高",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "688df60f0000000022020e1b",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 15换到华为pura80Pro+，本来还担心不好用，但没想到还不错，实况窗不输灵动岛，一下子能显示五个应用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者从iPhone换到华为后觉得还不错，认为实况窗不输灵动岛，能显示五个应用，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照有好看的个性色卡，别人偷看我屏幕还会提醒，还有小艺AI识别，之前用苹果时没AI，感觉一切好新奇啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者对华为的个性色卡、隐私提醒、小艺AI等功能感到新奇和满意，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用苹果时没AI，感觉一切好新奇啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者暗示苹果没有AI功能，相比之下华为有小艺AI，对苹果略有负面",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690b01fb000000000301fdd1",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙5和鸿蒙6到底有哪些区别？另外在手机的操作上，鸿蒙6上也开放了蛮多权限的，大家体验下来感觉怎么样呢？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者只是提问询问鸿蒙5和鸿蒙6的区别以及鸿蒙6的操作权限体验，没有表达明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68a43109000000001c037317",
+    "opinions": [
+      {
+        "opinion_text": "一个是更新换代牙膏挤爆，2nm处理器A19Pro+iOS丝滑流畅且录像无敌的iPhone17",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为iPhone17有2nm处理器A19Pro、iOS丝滑流畅、录像无敌，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "一个是集国内大成，鸿蒙系统、麒麟芯片全栈自研，外加有红枫镜头卫星通信等黑科技的mate80",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为mate80集国内大成，有全栈自研的鸿蒙系统和麒麟芯片，还有红枫镜头卫星通信等黑科技，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6625ceda00000000030225b2",
+    "opinions": [
+      {
+        "opinion_text": "苹果对光的捕捉和色彩的还原度完胜，尤其在3500k色温下拍摄，虽然两款都有一定程度偏差，但苹果比华为更能展现现场温暖的色调",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为苹果对光的捕捉和色彩还原度完胜，比华为更能展现温暖色调，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果对光的捕捉和色彩的还原度完胜，尤其在3500k色温下拍摄，虽然两款都有一定程度偏差，但苹果比华为更能展现现场温暖的色调",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为华为在3500k色温下不如苹果能展现温暖色调，色彩还原度不如苹果，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果5倍焦距拍出来的效果也并不拉垮，而且在逆光情况下，苹果对细节的展现要优秀很多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为苹果5倍焦距效果不拉垮，逆光下细节展现优秀很多，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果5倍焦距拍出来的效果也并不拉垮，而且在逆光情况下，苹果对细节的展现要优秀很多",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者暗示华为在逆光情况下细节展现不如苹果，负面评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "蕞后一道杀手锏是live图，2秒钟的动态让图片更加生动立体，虽然华为也有，但时长短而且上传到网络后会丢失，真的遗憾",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为苹果live图是杀手锏，让图片更生动立体，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "蕞后一道杀手锏是live图，2秒钟的动态让图片更加生动立体，虽然华为也有，但时长短而且上传到网络后会丢失，真的遗憾",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为华为live图时长短且上传后会丢失，表示遗憾，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果自带的图片编辑功能也很强大，处理图片形变和光影效果非常专业，怪不得家居博主人手一个iphone，它是真的好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为苹果图片编辑功能强大、专业，家居博主人手一个，是真的好用，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68b27c5e000000001d003281",
+    "opinions": [
+      {
+        "opinion_text": "据说接下来的安卓新手机无论是外观还是系统内在，体验什么的都很像苹果，系统与苹果深度互联，果里果气的",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者描述安卓新手机像苹果、果里果气，这是客观描述，没有明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓有自己独特的优势，大电池、好的影像、好的游戏体验等等",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为安卓有大电池、好的影像、好的游戏体验等独特优势，正面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "693cf8eb000000001e030344",
+    "opinions": [
+      {
+        "opinion_text": "根本接受不了华为的哑光肤效，根本不自拍",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者明确表示根本接受不了华为的哑光肤效，甚至因此不自拍，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还是喜欢苹果的皮肤质感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者明确表示喜欢苹果的皮肤质感，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是华为拍景是不错的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者认为华为拍景不错，是对华为拍照的正面评价，但语气较弱",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a08120600000000380376c3",
+    "opinions": [
+      {
+        "opinion_text": "使用华为需要成本的，爱国买华为，爱自己买苹果，奉劝大家要买华为的真的要斟酌一下吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为使用华为需要成本，奉劝大家买华为要斟酌，将'爱国'与'爱自己'对立，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "使用华为需要成本的，爱国买华为，爱自己买苹果",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为'爱自己买苹果'，暗示苹果更适合注重自我体验的用户，正面评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我自己使用不玩游戏，用华为自带的相机晚上室内拍照10几张，温度直接飙到39°，白天室外导航五分钟温度41°华为都认为是正常的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者详细描述华为手机发热严重（拍照10几张39°、导航5分钟41°），且华为客服认为是正常的，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "毕竟12000的都这样了，那其他的怎么办",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为12000元的华为手机都这样，更低端的更不行，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e88250000000001d0196bc",
+    "opinions": [
+      {
+        "opinion_text": "一边是刚发布，主打影像拍照，且降低起售价了的Pura90Pro",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者描述Pura90Pro主打影像拍照且降低起售价，是客观描述但略带正面",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "一边是拥有3D人脸，旗舰定位配置，但贵上500的Mate80Pro",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者描述Mate80Pro有3D人脸、旗舰配置但贵500，是客观描述，没有明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "670640f1000000001902de19",
+    "opinions": [
+      {
+        "opinion_text": "如果单纯录视频的话，苹果没有安卓耐用，一旦开4K录视频，那简直就是烧内存",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为苹果录视频不耐用，开4K烧内存，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果单纯录视频的话，苹果没有安卓耐用",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为安卓录视频比苹果耐用，正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "日常软件使用方面，虽然苹果应用安装包大小普遍比安卓应用安装包大，但是苹果的软件缓存垃圾会比安卓少一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为苹果软件缓存垃圾比安卓少，正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "日常软件使用方面，虽然苹果应用安装包大小普遍比安卓应用安装包大，但是苹果的软件缓存垃圾会比安卓少一点",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为安卓软件缓存垃圾比苹果多，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0845a70000000006023633",
+    "opinions": [
+      {
+        "opinion_text": "之前的mate60升级了鸿蒙6其实挺丝滑，就是电池不行，一天几充，出门就焦虑",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为mate60升级鸿蒙6后挺丝滑（正面），但电池不行一天几充（负面），正负并存",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "换了80觉得最大的提升就是电池续航，早上充满出门上班，到下班可能还有30+",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为mate80最大的提升是电池续航，早上充满到下班还有30%+，正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "今天下午我的mate80就很烫，飞速掉电，电量卡在31，充了很久都不动，半个多小时充了不到20%",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者详细描述mate80发烫、飞速掉电、充电极慢，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "售后反馈说使用没问题，建议定期清理后台，不要长期在高温下使用手机，武汉今天只刚刚30度电池健康还显示100",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者对华为售后的处理不满意，认为30度不算高温且电池健康100%却出问题，负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "684dac1b000000000c03a987",
+    "opinions": [
+      {
+        "opinion_text": "苹果这张拍出来偏暗的一些，但定格的时候会比live图动起来的瞬间要亮要清晰，在写实方面果子还是没有对手",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为苹果在写实方面没有对手，定格比live图更亮更清晰，正面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为这个饱和度太夸张了，感觉好像注水猪肉，这谁敢吃。华为的算法还是不够稳定，即使红枫镜头加持在真实还原这方面华为还是不敌苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者认为华为饱和度太夸张像注水猪肉，算法不够稳定，真实还原不敌苹果，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66415fb5000000001e025009",
+    "opinions": [
+      {
+        "opinion_text": "自从2月底从苹果换了华为，3月份把累积流量用光，4月份流量超出，5月份现在流量已经过半，和用苹果的时候流量是同样多，换了个手机就不够了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "作者详细描述从苹果换华为后流量消耗剧增，同样流量不够用了，负面评价强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照视频不好看，我可以忍受，信号很好，我也很喜欢",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "作者认为华为拍照视频不好看（负面）但信号很好（正面），正负并存",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照视频不好看，我可以忍受",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "作者暗示苹果拍照视频可能更好看（所以才说华为拍照不好看可以忍受），但没有直接评价苹果",
+        "confidence": "低",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

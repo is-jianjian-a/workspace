@@ -1,0 +1,554 @@
+[
+  {
+    "note_id": "69f5a2fc000000001f00220d",
+    "opinions": [
+      {
+        "opinion_text": "已更6.1很丝滑",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "已更6.1很丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但是app这些还没完全适配",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "但是app这些还没完全适配",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f44c7a000000001e00c314",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙6.1退回了4.3 这个版本是真经典啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙6.1退回了4.3 这个版本是真经典啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "退回来也没不适应 反而觉得很流畅 各种功能齐全 也没有发热发烫",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "退回来也没不适应 反而觉得很流畅 各种功能齐全 也没有发热发烫",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我的mate60PRO 就停留在这个系统了 不再更新了 期待10月份发布90新款",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "我的mate60PRO 就停留在这个系统了 不再更新了 期待10月份发布90新款",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67d3898e0000000006038d37",
+    "opinions": [
+      {
+        "opinion_text": "双折叠屏幕展开刷短视频，看图片，是真的爽，双折叠天然优势",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "双折叠屏幕展开刷短视频，看图片，是真的爽，双折叠天然优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照牛，专业模式比🍎好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照牛，专业模式比🍎好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "摄像也还凑合，肯定是比不上🍎",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "摄像也还凑合，肯定是比不上🍎",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "电池太垃圾了，按着网上各种省电设置都弄一遍，也比预期差太多，完全不及🍎电池全新",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "电池太垃圾了，按着网上各种省电设置都弄一遍，也比预期差太多，完全不及🍎电池全新",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "虽然都是120 Hz的刷新率，但感觉就是没苹果丝滑，就拿剪映来说，🍎剪辑很丝滑，指哪打哪，但这x6就感觉很滑，它也不是卡，就是处理的不是很明了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "虽然都是120 Hz的刷新率，但感觉就是没苹果丝滑，就拿剪映来说，🍎剪辑很丝滑，指哪打哪，但这x6就感觉很滑，它也不是卡，就是处理的不是很明了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "吃鸡就不说了，跟🍎无法比",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "吃鸡就不说了，跟🍎无法比",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "都说华为信号好，还行吧，可能比🍎好，没太注意",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "都说华为信号好，还行吧，可能比🍎好，没太注意",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "x6这手机，体验过就好了，我只能这么说",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "x6这手机，体验过就好了，我只能这么说",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我要说说你🍎，你也是，但凡你努力点，我也不至于买X6阿，有点新意吧朋友",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我要说说你🍎，你也是，但凡你努力点，我也不至于买X6阿，有点新意吧朋友",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "🍎剪辑很丝滑，指哪打哪",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "🍎剪辑很丝滑，指哪打哪",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "完全不及🍎电池全新",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完全不及🍎电池全新",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e78490000000001e00e7b7",
+    "opinions": [
+      {
+        "opinion_text": "实测华为鸿蒙6.1系统更新后 会比原来的更加丝滑 打开软件的速度会快一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实测华为鸿蒙6.1系统更新后 会比原来的更加丝滑 打开软件的速度会快一点",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69ad71f0000000000d00bdc3",
+    "opinions": [
+      {
+        "opinion_text": "核心数据全飘：今天6.3km乳酸阈值跑，爬升下降数据严重失真，越野跑er靠这个导航测坡，妥妥迷路＋训练无效",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "核心数据全飘：今天6.3km乳酸阈值跑，爬升下降数据严重失真，越野跑er靠这个导航测坡，妥妥迷路＋训练无效",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "专业测试白瞎：严格按教程控速、控心率跑完，手表直接显示「测量失败」",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "专业测试白瞎：严格按教程控速、控心率跑完，手表直接显示「测量失败」",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "成绩预测离谱：最大摄氧量71（专业水平），却给我预测全马347？懂的都懂，这数据对严肃训练毫无参考价值",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "成绩预测离谱：最大摄氧量71（专业水平），却给我预测全马347？懂的都懂，这数据对严肃训练毫无参考价值",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "功能阉割：纯血鸿蒙不支持微信，跑步时想回个紧急消息都不行，割裂感拉满",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "功能阉割：纯血鸿蒙不支持微信，跑步时想回个紧急消息都不行，割裂感拉满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为生态绝配：和Mate80联动丝滑到离谱，一碰传、消息同步、跨设备续连，效率直接拉满",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为生态绝配：和Mate80联动丝滑到离谱，一碰传、消息同步、跨设备续连，效率直接拉满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "健康监测能打：血管年龄≤20岁、睡眠93分，体温／心率等日常健康数据出结果快，精度也在线",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "健康监测能打：血管年龄≤20岁、睡眠93分，体温／心率等日常健康数据出结果快，精度也在线",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "颜值与佩戴：轻量化机身＋高清炫彩屏，日常通勤、上课戴完全不违和，颜值吊打专业运动表",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "颜值与佩戴：轻量化机身＋高清炫彩屏，日常通勤、上课戴完全不违和，颜值吊打专业运动表",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "666a5164000000001c034e14",
+    "opinions": [
+      {
+        "opinion_text": "用了小半年，现在最新系统，真就越更越流畅，比之前的iPhone13还要流畅，而且不杀后台，几乎无卡顿无掉帧",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用了小半年，现在最新系统，真就越更越流畅，比之前的iPhone13还要流畅，而且不杀后台，几乎无卡顿无掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "最大问题就是发热和续航一般，广告太多",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "最大问题就是发热和续航一般，广告太多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "其他的真的流畅top1",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "其他的真的流畅top1",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "比之前的iPhone13还要流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "比之前的iPhone13还要流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6857509f000000001d00e3cc",
+    "opinions": [
+      {
+        "opinion_text": "滑动阻尼这玩意是软件调性，在同硬件基础上没有什么关系。而且菊厂想调整这个不跟玩的一样，怎么能做到有快有慢，这才是核心难点",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "菊厂想调整这个不跟玩的一样，怎么能做到有快有慢，这才是核心难点",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "非要刷的像飞的一样才好吗？iphone滑动阻尼设定也类似，也没被往死里喷嘛",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "iphone滑动阻尼设定也类似，也没被往死里喷嘛",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68f8d0f00000000003019ee6",
+    "opinions": [
+      {
+        "opinion_text": "个人感觉整体屏幕清晰了，感觉流畅了一些",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "个人感觉整体屏幕清晰了，感觉流畅了一些",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e5f94f0000000023027249",
+    "opinions": [
+      {
+        "opinion_text": "买p80u吧，买新不买旧",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "买p80u吧，买新不买旧",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "买p90prom吧，芯片9030s，说GPU给你阉割了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "买p90prom吧，芯片9030s，说GPU给你阉割了",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "买m80p吧，好重，好大，长得也不好看",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "买m80p吧，好重，好大，长得也不好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手持最冤种的p60支撑到现在，华子你这次真的拉",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手持最冤种的p60支撑到现在，华子你这次真的拉",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "685fb81c000000000b02e927",
+    "opinions": [
+      {
+        "opinion_text": "感觉传统的手势返回，比起mback和鸿蒙的单点小白条还是费劲了不少——'点'不需要产生水平位移，连点速度超快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉传统的手势返回，比起mback和鸿蒙的单点小白条还是费劲了不少——'点'不需要产生水平位移，连点速度超快",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "mback和鸿蒙这个就值得爆赞",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "mback和鸿蒙这个就值得爆赞",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现今很多OS都没做返回动画的打断——需要等上一个返回动画结束，才能继续划第二下返回，而不能直接打断上一个返回动画，连续快速返回多级页面",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现今很多OS都没做返回动画的打断——需要等上一个返回动画结束，才能继续划第二下返回，而不能直接打断上一个返回动画，连续快速返回多级页面",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "696359b900000000220381d9",
+    "opinions": [
+      {
+        "opinion_text": "手感超级好... 华为 MatePad Mini，准备当手机用了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感超级好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c7e0e40000000022028339",
+    "opinions": [
+      {
+        "opinion_text": "新的沉浸光感终于下放所有机型，mate70pro＋感觉满血复活",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "新的沉浸光感终于下放所有机型，mate70pro＋感觉满血复活",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "希望之后华为能够出一个能自由拉通透程度的按钮，每个人有每个人的喜好",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "希望之后华为能够出一个能自由拉通透程度的按钮，每个人有每个人的喜好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a055b5d0000000037035778",
+    "opinions": [
+      {
+        "opinion_text": "不好意思了纯血鸿蒙。用了快半年，还是回退了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不好意思了纯血鸿蒙。用了快半年，还是回退了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68353359000000000f038212",
+    "opinions": [
+      {
+        "opinion_text": "之前不管是苹果IOS还是运行安卓apk的鸿蒙4，安卓就更不用说了，你在任意app搜索任意事物，其它所有app都知道你搜索了什么，然后进行所谓的精准推送，甚至连微信朋友圈广告都有广告",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "之前不管是苹果IOS还是运行安卓apk的鸿蒙4，安卓就更不用说了，你在任意app搜索任意事物，其它所有app都知道你搜索了什么，然后进行所谓的精准推送，甚至连微信朋友圈广告都有广告",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前不管是苹果IOS还是运行安卓apk的鸿蒙4，安卓就更不用说了，你在任意app搜索任意事物，其它所有app都知道你搜索了什么",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "安卓就更不用说了，你在任意app搜索任意事物，其它所有app都知道你搜索了什么，然后进行所谓的精准推送",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙的安全性相对安卓和IOS有史诗级的提升，所有app都无法读取键盘数据，也无法获取手机通讯录、通话记录、麦克风、相册等私密数据，需要调用相关软件或硬件的时候只能单次单个授权，安全感爆棚",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "鸿蒙的安全性相对安卓和IOS有史诗级的提升，所有app都无法读取键盘数据，也无法获取手机通讯录、通话记录、麦克风、相册等私密数据，需要调用相关软件或硬件的时候只能单次单个授权，安全感爆棚",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "694a8e36000000001f0085e5",
+    "opinions": [
+      {
+        "opinion_text": "这个鸿蒙6真的难用死",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这个鸿蒙6真的难用死",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "导航条和悬浮球为什么要二选一，我就是同时开，全都要用，少一个都不习惯。反正那个上滑手势我是用不了，每次滑半天",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "导航条和悬浮球为什么要二选一，我就是同时开，全都要用，少一个都不习惯。反正那个上滑手势我是用不了，每次滑半天",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "手机下拉大字报，这UI第一眼像老年机",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机下拉大字报，这UI第一眼像老年机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "各类APP阉割变形严重，证券app习惯看的翻不到，讯飞输入法还不能调整键盘布局，害我总按错键盘，最可恶的是燕云小组件不能布局到屏幕上",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "各类APP阉割变形严重，证券app习惯看的翻不到，讯飞输入法还不能调整键盘布局，害我总按错键盘，最可恶的是燕云小组件不能布局到屏幕上",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙6就是体验感很差，用了两天终于忍不了，今天耗时两个钟回退到4.2版本",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "鸿蒙6就是体验感很差，用了两天终于忍不了，今天耗时两个钟回退到4.2版本",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这么个半成品就硬推，起码软件适配体验过关吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这么个半成品就硬推，起码软件适配体验过关吧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统升级一定是为了有更好的使用体验，而不是帮你改进产品",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统升级一定是为了有更好的使用体验，而不是帮你改进产品",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还是原系统用的舒服",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还是原系统用的舒服",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

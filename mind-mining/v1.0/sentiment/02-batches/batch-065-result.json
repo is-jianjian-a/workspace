@@ -1,0 +1,374 @@
+[
+  {
+    "note_id": "6a165fdc000000003601bfb6",
+    "opinions": [
+      {
+        "opinion_text": "一直用果子，现在13pro4年多了依旧丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "13pro4年多了依旧丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "就是电池健康76%，续航太差我也不考虑换电池。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池健康76%，续航太差",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ba7e99000000002800a0cc",
+    "opinions": [
+      {
+        "opinion_text": "我虽知一台苹果手机可以用很多年而且不卡，但它的电池耐电性、导航信号弱还有越来越大的内存要匹配越来越高的价格，把我劝退了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池耐电性、导航信号弱还有越来越大的内存要匹配越来越高的价格，把我劝退了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在再看我用过的苹果手机觉得简直就是漂亮的废物。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果手机觉得简直就是漂亮的废物",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不买不知道，买了以后才知道国产手机已经进化成这样了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "国产手机已经进化成这样了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f4ad7e000000001b0228b9",
+    "opinions": [
+      {
+        "opinion_text": "相比于荣耀600Pro直接照抄iPhone 17 Pro Max的不要脸行为，小米17Pro这种仅通过命名碰瓷的方式显得还是太保守了。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "直接照抄iPhone 17 Pro Max的不要脸行为",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相比于荣耀600Pro直接照抄iPhone 17 Pro Max的不要脸行为，小米17Pro这种仅通过命名碰瓷的方式显得还是太保守了。",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅通过命名碰瓷的方式显得还是太保守了",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a17e5840000000035033106",
+    "opinions": [
+      {
+        "opinion_text": "之前买过两个华为的 freelace 系列，碰到过单设备链接声音断断续续然后断联，需要删除设备重连的情况。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "声音断断续续然后断联，需要删除设备重连",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "双设备切换时，即使电脑音频已暂停，手机音频已经放了数十秒，仍然没声的情况，所以有点顾虑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机音频已经放了数十秒，仍然没声",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69a7ce51000000001a020f45",
+    "opinions": [
+      {
+        "opinion_text": "1图是iqoo15安卓机安装华为阅读，打开提示仅限于支持HarmonyOS设备。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "iqoo15安卓机安装华为阅读，打开提示仅限于支持HarmonyOS设备",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第二张图与第三张图是荣耀分家后的产品，现在的荣耀GTpro，依然可以稳定打开，是不是说明magicos底层有不少鸿蒙的影子在。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "荣耀GTpro，依然可以稳定打开",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c90a30000000001a02b664",
+    "opinions": [
+      {
+        "opinion_text": "爆料把9050吹成能刚骁龙、追苹果的神U，但两个关键问题没人提：一是3D堆叠必然带来更高散热压力，性能释放会不会被温控锁死？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "3D堆叠必然带来更高散热压力，性能释放会不会被温控锁死",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "二是架构大改后，系统调度和APP适配能不能跟上？纸面参数再好看，续航崩、游戏卡，照样没人买账。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航崩、游戏卡，照样没人买账",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "能不能叫板旗舰，等真机实测见真章，现在喊赢还太早！",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "等真机实测见真章，现在喊赢还太早",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a13ad58000000003601bcf6",
+    "opinions": [
+      {
+        "opinion_text": "某些媒体过度解读，称其打破摩尔定律。事实上，并不与摩尔定律相违背，是在2D横向尺寸逼近理论极限的困境下的纵向突围，以非摩尔补摩尔，实现等效于先进制程的芯片性能。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "并不与摩尔定律相违背，是在2D横向尺寸逼近理论极限的困境下的纵向突围",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "698a6dfb000000000d009aff",
+    "opinions": [
+      {
+        "opinion_text": "好，手机不让跑分，还能用手机跑分代表不了体验来洗，那车不让拆解是因为啥？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机不让跑分，车不让拆解",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "别的车人家拆解就拆解了，无所谓，为啥华为贴牌的车也不敢让人拆，是怕被人发现偷工减料吗？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "是怕被人发现偷工减料吗",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e608c2000000001d01dc4f",
+    "opinions": [
+      {
+        "opinion_text": "总的来说新机的流畅度肯定是没问题的，一口气开了20多个后台也不卡顿。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度肯定是没问题的，一口气开了20多个后台也不卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "虽然不是影像旗舰系列，但是拍照质量还可以，新玩法挺多的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照质量还可以，新玩法挺多的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "发现了第1个不如p60的地方——就是播放音乐没有p60那样的立体音效，毕竟他也不是主打影音。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "播放音乐没有p60那样的立体音效",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a150306000000003502b40e",
+    "opinions": [
+      {
+        "opinion_text": "这不是什么产业革命，这是一场精心策划的资本炒作。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这是一场精心策划的资本炒作",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "没人提的是3D堆叠的致命缺陷：散热和功耗。现在手机芯片叠3层就已经热得烫手，AI训练芯片单卡功耗已达700瓦。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "3D堆叠的致命缺陷：散热和功耗",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我从不否认华为是一家伟大的公司，但伟大的公司也会做营销，也会配合资本讲故事。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "从不否认华为是一家伟大的公司，但伟大的公司也会做营销",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67f06d49000000001b03cbc4",
+    "opinions": [
+      {
+        "opinion_text": "华为的处理器差，为什么还有人买。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为的处理器差",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a05eff700000000350233e7",
+    "opinions": [
+      {
+        "opinion_text": "今年2月23号买的，现在3个月不到，已经心率监测没法用了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "3个月不到，已经心率监测没法用了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手表当场拉胯打我脸，简直了，才发现5月10号数据就不正常了，背面绿光也不亮。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手表当场拉胯打我脸",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "关键保修1年。我又在海外，回国都过了1年保修期了。我还有洁癖，坏了的东西就不想用了，品控太差了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "品控太差了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fa04cb000000003503ae76",
+    "opinions": [
+      {
+        "opinion_text": "既然纯血鸿蒙流畅度这么好，为什么鸿蒙智行的车机不用呢，以至于总被诟病卡顿？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "总被诟病卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a16b0680000000038021d32",
+    "opinions": [
+      {
+        "opinion_text": "买了华为mate80pro,16g,512g，满心期待，实话说，系统很丝滑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统很丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但刷抖音和小红书视频模糊，问了AI说不是硬件问题，而是软件适配问题？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刷抖音和小红书视频模糊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a16d9f20000000036032fc4",
+    "opinions": [
+      {
+        "opinion_text": "总的来说新机的流畅度肯定是没问题的，一口气开了20多个后台也不卡顿。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度肯定是没问题的，一口气开了20多个后台也不卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "虽然不是影像旗舰系列，但是拍照质量还可以，新玩法挺多的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照质量还可以，新玩法挺多的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是发现了第1个不如p60的地方——就是播放音乐没有p60那样的立体音效，毕竟他也不是主打影音。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "播放音乐没有p60那样的立体音效",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

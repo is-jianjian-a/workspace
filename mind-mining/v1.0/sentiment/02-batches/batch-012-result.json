@@ -1,0 +1,779 @@
+[
+  {
+    "note_id": "6a0b0594000000003502123d",
+    "opinions": [
+      {
+        "opinion_text": "华为mate80pm动态图卡，你们的实况图也这么卡吗",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户吐槽华为mate80promax实况图功能卡顿，用疑问语气表达不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6800ee53000000001c034e12",
+    "opinions": [
+      {
+        "opinion_text": "苹果13pro使用了快3年，电池健康低于80%，手机内存告急仅剩23%",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户描述苹果13pro电池衰减严重、内存不足，是换机的直接原因",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为信号封神，车库、电梯全满格，打开微信不会像苹果那样信号圈在转转转",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户高度赞扬华为信号表现，对比苹果在弱信号场景下的优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从WiFi切换到数据的过程比较丝滑，不像苹果手机要等个四五秒",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为网络切换更流畅，对比苹果切换延迟问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为充电逆天，30分钟满血复活，日常使用一天一充即可，之前用苹果手机恨不得时时刻刻把充电宝绑身上",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户盛赞华为快充和续航，对比苹果续航差的痛点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍照能够很真实的还原色彩饱和度，不像苹果会过度锐化和曝光，华为自拍还自带美颜功能",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为拍照色彩还原更真实，自拍有美颜功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为录制视频调了4k格式后真的巨清晰，这一点竟然不输苹果手机",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户惊喜发现华为视频录制效果可与苹果媲美",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为滚动长截屏真的很方便，苹果手机需要一张一张的截图",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为长截屏功能优于苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为桌面的软件文件夹可以自己调尺寸，甚至还能变成竖排，里面的软件一点就能直接打开，苹果手机的桌面软件文件夹只能是小正方形的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为桌面文件夹功能更灵活，是最惊喜的细节",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为mate70pro尺寸6.9，一只手有点抓不过来，晚上拿着刷视频手竟然有点酸",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户觉得华为mate70pro尺寸太大，单手操作不便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刷抖音视频或者直播间的时候，有些明显感觉较于苹果来说，视频看起来会有点糊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户发现华为在抖音等视频场景中画质不如苹果清晰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机的音量键只能单独控制媒体音量或者铃声音量，苹果会针对不同的软件自动调整音量键的控制",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为华为音量控制不如苹果智能便捷",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机没有一键静音的功能，苹果13pro就有静音拨片不用解锁手机就能操作",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为华为缺少苹果标志性的物理静音拨片功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机刷微信朋友圈的时候，点上方好像不会自动回到顶部",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户发现华为微信操作细节不如苹果便捷",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "好看的华为手机壳真的太少了，换了华为竟然对网购手机壳失去了欲望",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为华为周边配件（手机壳）选择少",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果手表不适配任何安卓手机，换了华为才发现苹果手表连不了，妥妥吃灰了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户抱怨苹果手表生态封闭，换华为后无法使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总的来说，入手华为还是不后悔的，体验感要比期待值要高许多，现在是属于越用越爱的程度",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户总结性表达：换华为不后悔，体验超预期，越用越喜欢",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6991bebf000000001a02ec29",
+    "opinions": [
+      {
+        "opinion_text": "苹果从4开始用，觉得真的用腻了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户表示长期使用苹果产生审美疲劳",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "逛华为一眼心动，外表是真喜欢，1T才七千多，感觉性价比嘎嘎的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户被华为外观吸引，认为大存储版本性价比高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "结果还是受不了鸿蒙系统，用了一个多月，还是回到苹果的怀抱了，下次不会再尝试了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户明确表示无法忍受鸿蒙系统，使用一个多月后放弃华为，态度坚决表示不会再尝试",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "676e1c37000000000b023a87",
+    "opinions": [
+      {
+        "opinion_text": "mate60pro不玩不热，一玩就热卡的直掉帧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户吐槽华为mate60pro发热严重且伴随卡顿掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68b2da40000000001b02086f",
+    "opinions": [
+      {
+        "opinion_text": "苹果16Pro走的是暖色调氛围感路线，拍出来的肤色偏暖，比较红润，看起来更有元气一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户描述苹果16Pro拍照色彩风格偏暖，肤色红润有元气感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为P80Pro+和实际看到的比较接近，没有太多的修饰",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户客观描述华为Pura80Pro+色彩还原接近真实，没有明显褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果16Pro在细节方面表现不错，能够清晰地拍出人物的发丝、皮肤纹理等，不过也会把一些小瑕疵拍得很清楚",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为苹果细节表现好但会暴露瑕疵，有正面也有负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为P80Pro+在保证细节清晰的同时，还能通过算法对皮肤进行一定程度的磨皮处理，让皮肤看起来光滑细腻，又不失真实感",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为在保留细节的同时能自然磨皮，效果优于苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过总体来讲，主包更喜欢果子的感觉，毕竟皮肤什么的都是可以p的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户明确表达个人偏好更喜欢苹果的拍照风格",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0b1774000000003700cad3",
+    "opinions": [
+      {
+        "opinion_text": "目前的mate40pro已从2021年坚持到现在，依旧很丝滑",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户称赞华为mate40pro使用4年依然流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "目前在纠结继续买华为mate70pro，还是转战oppo vivo，预算5k以内",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户在华为和OPPO/vivo之间犹豫，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前在纠结继续买华为mate70pro，还是转战oppo vivo，预算5k以内",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户在华为和OPPO/vivo之间犹豫，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前在纠结继续买华为mate70pro，还是转战oppo vivo，预算5k以内",
+        "brand_target": "vivo",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户在华为和OPPO/vivo之间犹豫，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6863ab950000000023006ba6",
+    "opinions": [
+      {
+        "opinion_text": "在色彩还原度上，华为拍出来特别通透，显得皮肤很好；苹果则是有些偏暖",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为夜景色彩还原更通透，皮肤效果更好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在色彩还原度上，华为拍出来特别通透，显得皮肤很好；苹果则是有些偏暖",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为苹果夜景拍照偏暖，不如华为通透",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "清晰度上个人感觉华为大于苹果，感觉可以和相机媲美了，苹果在夜景状态下还是略微弱一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为夜景清晰度优于苹果，接近相机水平",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "清晰度上个人感觉华为大于苹果，感觉可以和相机媲美了，苹果在夜景状态下还是略微弱一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为苹果夜景清晰度略弱于华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的相机有AI算法，会更加突出人物，使皮肤色调看起来更柔和，但总体是好看的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为AI算法突出人物，肤色柔和好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "60cf5fc2000000000102734e",
+    "opinions": [
+      {
+        "opinion_text": "现在三大系统鸿蒙、安卓、苹果越来越像，系统ui相似我觉得是差不多的",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户客观描述鸿蒙与其他系统UI趋同的现象",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在三大系统鸿蒙、安卓、苹果越来越像，系统ui相似我觉得是差不多的",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户客观描述安卓与其他系统UI趋同的现象",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在三大系统鸿蒙、安卓、苹果越来越像，系统ui相似我觉得是差不多的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户客观描述苹果与其他系统UI趋同的现象",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两个系统使用无缝切换一点没有割裂感，都很好用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为系统间切换体验流畅无割裂感",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "两个系统使用无缝切换一点没有割裂感，都很好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为系统间切换体验流畅无割裂感",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6502a9bf000000001e03c48a",
+    "opinions": [
+      {
+        "opinion_text": "华为mate60pro手感挺好的，圆润加几乎直屏，正面看很像iphone8plus，手感也像，轻薄",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为mate60pro手感好，圆润轻薄",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为mate60pro唯独摄像头硌手，不过能接受啦",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户指出华为摄像头凸起硌手的小缺点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两个机子同样放大15倍，清晰度差不多，60pro预览框很丑，但是拍出来60pro的色彩很好看，计算摄影很强大，14promax惨白惨白的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为mate60pro拍照色彩好看，计算摄影强大，预览框虽丑但成片效果好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两个机子同样放大15倍，清晰度差不多，60pro预览框很丑，但是拍出来60pro的色彩很好看，计算摄影很强大，14promax惨白惨白的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为苹果14promax拍照色彩惨白，不如华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "65295485000000001e02c42b",
+    "opinions": [
+      {
+        "opinion_text": "就我自己审美而言，感觉这次华为赢很大，因为同样的广角模式下，华为拍出来更显头小、脸小",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户明确认为华为自拍效果更好，广角模式下更显脸小头小",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同样的广角模式下，华为拍出来更显头小、脸小",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户通过对比暗示苹果自拍不如华为显脸小",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "649941ec0000000013011738",
+    "opinions": [
+      {
+        "opinion_text": "苹果电话售后非常好，还是对得起这个品牌的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认可苹果电话售后服务质量",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果外包的售后感受太差，前台只有两个人，叫一个号码起码20分钟，收费台的工作人员对待老人的态度不是一般的差",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户强烈不满苹果线下外包售后服务，排队时间长、服务态度差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "以前用华为的时候，售后也在隔壁，态度非常好，而且前台和维修分开，管理有序，速度也快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户称赞华为售后服务态度好、管理有序、速度快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我感觉以后不会再用苹果了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户因售后体验差明确表示以后不再使用苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果相机拍出来的人太丑，搞的我都不愿意拍照了，虽然一直有说比较真实，但真的比本人要丑啊，显胖",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户强烈吐槽苹果相机拍人显丑显胖，影响拍照意愿",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "60f3c8dd000000000102decc",
+    "opinions": [
+      {
+        "opinion_text": "华为手机64G的，本身内存都小，没下载多少东西就用了50多G",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户抱怨华为手机存储空间小，系统占用高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同样是小红书APP，苹果占内存1点多个G还有缓存可清理，华为4.43G，没有可以清理的缓存",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户发现同样APP在华为上占用内存远大于苹果，且无法清理缓存",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同样是小红书APP，苹果占内存1点多个G还有缓存可清理",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户认为苹果APP内存管理更好，占用小且可清理缓存",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66f0ec1e000000002c014837",
+    "opinions": [
+      {
+        "opinion_text": "华为pura 70 ultra和vivo x100系列都像相机拍的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为pura70 ultra拍照效果像专业相机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为pura 70 ultra和vivo x100系列都像相机拍的",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为vivo x100系列拍照效果像专业相机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米原生但是好看",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为小米拍照风格原生且好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果14/15/16系列拍照都差不多，真的，然后16系列屏幕会更亮，照片更原生，比较靠光线",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户客观描述苹果各代拍照差异不大，16系列屏幕更亮、更依赖光线",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo x100系列的前后置拍照都非常清晰，都很像优秀相机拍出来的，后置比前置更好看，会算法调色，但是对比其他的拍出来会偏暗",
+        "brand_target": "vivo",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为vivo拍照清晰但偏暗，有优点也有不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米14 ultra比14好很多，机型也好看很多，照片偏原生也是偏暗",
+        "brand_target": "小米",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为小米14 ultra比14好但照片偏暗",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为pura70 ultra比pura70好看很多，前置后置拍照拍完需要等几秒钟才会出修出来的成片，非常之好看，但是拍出来的视频有点一言难尽",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为pura70 ultra照片好看但视频表现不佳",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6864efb9000000001c03470a",
+    "opinions": [
+      {
+        "opinion_text": "华为Mate70 RS绝对是办公首选，麒麟9020芯片搭配鸿蒙4.3系统，多任务处理轻松无压力，经常需要开视频一边处理文档，它都能流畅运行毫无卡顿",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户高度认可华为Mate70 RS办公性能，多任务流畅无卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为Mate70 RS有5700mAh的大电池，再加上100W有线快充和80W无线快充，电量焦虑根本不存在，出差一整天也不用担心",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户盛赞华为大电池和快充，彻底解决电量焦虑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 16 Pro的A18 Pro芯片性能也很强劲，但在办公软件的兼容性和操作便捷性上，还是华为更胜一筹",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认可苹果性能强劲但办公体验不如华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的信号大家都懂的，在一些信号不好的地方，真的很影响效率",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户吐槽苹果信号差影响工作效率",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate70 RS的影像系统真的让我惊艳，5000万像素超聚光主摄等配置，不管是风景、人像还是微距拍摄都能轻松驾驭，尤其是夜拍清晰明亮，噪点极少",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户对华为影像系统高度惊艳，夜拍表现优异",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 16 Pro在拍摄方面也有自己的优势，色彩还原度高，视频拍摄的稳定性和流畅度非常出色，4K 120FPS录制效果超棒",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认可苹果色彩还原和视频拍摄稳定性",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但在像素和夜拍的细节表现上，还是华为更厉害一些",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为在像素和夜拍细节上优于苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "玩游戏我一般用iPhone 16 Pro，A18 Pro芯片的强大性能能让游戏始终保持高帧率运行，画面流畅丝滑，iOS系统的游戏生态也非常丰富",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户认为苹果游戏体验更好，高帧率流畅丝滑，生态丰富",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为Mate70 RS玩游戏也不错，16GB的大运存保证了游戏的稳定运行，不过在一些对处理器性能要求极高的大型游戏中，和iPhone 16 Pro相比还是稍显逊色",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为华为游戏表现不错但大型游戏不如苹果",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 16 Pro的iOS系统简洁易用，软件生态丰富，一些社交软件的功能更新也比较快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认可苹果iOS简洁易用、生态丰富、更新快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate70 RS的鸿蒙系统也有自己的特色，比如超级终端功能可以和其他华为设备无缝连接，分享文件传输数据非常方便，而且它的信号好在人群密集的地方发消息刷朋友圈也很流畅",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认可华为鸿蒙超级终端功能和信号优势",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为Mate70 RS作为主力机，在商务办公和影像拍摄方面给了我极大的便利；iPhone 16 Pro则作为我的娱乐小帮手，在游戏和日常社交中也表现出色",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户总结华为作为主力机在办公和影像方面表现极佳",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate70 RS作为主力机，在商务办公和影像拍摄方面给了我极大的便利；iPhone 16 Pro则作为我的娱乐小帮手，在游戏和日常社交中也表现出色",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户总结苹果作为娱乐机在游戏的日常社交中表现出色",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66267cd3000000001c0059bd",
+    "opinions": [
+      {
+        "opinion_text": "华为的信号真是一绝，而华为的确就比较稳定，图中就是同样在爬山时两部手机的信号强度对比，一个接近满格",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户高度赞扬华为信号稳定，爬山时接近满格",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果手机那么强大，但是一到爬山或者坐地铁人多的时候，信号还就是不行，断断续续的一会有一会没有",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户吐槽苹果在爬山和地铁等场景信号断断续续",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "除了华为之外也有不少国产手机信号优秀，例如荣耀和OPPO等等，随便挑一台出来都挺稳定的",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为荣耀手机信号稳定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "除了华为之外也有不少国产手机信号优秀，例如荣耀和OPPO等等，随便挑一台出来都挺稳定的",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为OPPO手机信号稳定",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,43 @@
+{
+  "cutoff_date": "2024-10-22",
+  "before": {
+    "label": "2024-10-22前 (< 2024-10-22)",
+    "total": 38,
+    "pos": 27,
+    "neg": 10,
+    "neu": 1,
+    "mix": 4,
+    "pos_ratio": 71.05263157894737,
+    "neg_ratio": 26.31578947368421,
+    "pos_strong": 16,
+    "pos_medium": 10,
+    "pos_weak": 1,
+    "neg_strong": 3,
+    "neg_medium": 5,
+    "neg_weak": 2,
+    "pos_interaction": 40449,
+    "neg_interaction": 10350,
+    "avg_pos": 1498.111111111111,
+    "avg_neg": 1035.0
+  },
+  "after": {
+    "label": "2024-10-22后 (≥ 2024-10-22)",
+    "total": 436,
+    "pos": 202,
+    "neg": 214,
+    "neu": 20,
+    "mix": 25,
+    "pos_ratio": 46.330275229357795,
+    "neg_ratio": 49.08256880733945,
+    "pos_strong": 66,
+    "pos_medium": 129,
+    "pos_weak": 7,
+    "neg_strong": 104,
+    "neg_medium": 104,
+    "neg_weak": 6,
+    "pos_interaction": 83384,
+    "neg_interaction": 71074,
+    "avg_pos": 412.7920792079208,
+    "avg_neg": 332.1214953271028
+  }
+}

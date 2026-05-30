@@ -1,0 +1,590 @@
+[
+  {
+    "note_id": "66dc1944000000002603178d",
+    "opinions": [
+      {
+        "opinion_text": "之前苹果微信有延迟，一直转圈圈，华为微信发消息这些没有延迟，在地铁里面信号也不错，像平时经常去户外运动，有卫星电话这些都要放心很多，这点值得肯定",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为微信发消息没有延迟，地铁信号不错，有卫星电话放心很多，值得肯定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前苹果微信有延迟，一直转圈圈",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果微信有延迟，一直转圈圈",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone15Pro日常工作使用到下午3点左右就没有电了，毕竟只有3000多毫安电池，太小了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone15Pro下午3点就没电了，电池太小",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate 60Pro续航没问题，上班使用到晚上8点左右，充电方面也比iPhone快，华为充20分钟左右就可以用很久",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate60Pro续航没问题，充电比iPhone快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍人像我个人觉得不错，拍出来明显好看很多，苹果拍摄出来人像太黄了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为拍人像不错，拍出来明显好看很多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍人像我个人觉得不错，拍出来明显好看很多，苹果拍摄出来人像太黄了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果拍摄出来人像太黄了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍摄景色的话，我个人还是喜欢苹果的真实，也更真实清晰",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果拍摄景色真实，更真实清晰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为高光压制不够，容易发白，安卓都这样子，还有夜景拍摄，总感觉画面有点糊成一团",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为高光压制不够，容易发白，夜景画面有点糊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为高光压制不够，容易发白，安卓都这样子",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "安卓都这样子（高光压制不够，容易发白）",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "长焦那就肯定选华为了，好一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "长焦肯定选华为，好一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "视频方面：苹果肯定是比华为好的，不论是防抖还是清晰度流畅度这些",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果视频比华为好，防抖、清晰度、流畅度更好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为也够用，视频有些发白，手动调一下感光度也能接受",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为视频够用，有些发白但调感光度能接受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果系统和华为鸿蒙系统都差不多，丝滑，但是华为有时候还是会有小小的掉帧小卡顿",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为鸿蒙丝滑，但有时候有小小的掉帧小卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果系统和华为鸿蒙系统都差不多，丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果系统丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "如果需要极致的性能，相比于苹果，华为肯定是给不到你的，毕竟是麒麟9000s，玩很大型的游戏也会发烫",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为极致性能给不到，麒麟9000s玩大型游戏会发烫",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为整个生态系统可以给到办公人士最好的体验",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为生态系统可以给办公人士最好的体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果用上了A17 Pro芯片，性能强，但是玩游戏也是容易发烫，希望后期优化可以把温度控制好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果A17 Pro性能强，但玩游戏容易发烫",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "698054b7000000002800b824",
+    "opinions": [
+      {
+        "opinion_text": "华为mate x7拍照有点怪，怪好看的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "怪好看的（正面调侃，表示拍照好看）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f9a7490000000022026d42",
+    "opinions": [
+      {
+        "opinion_text": "苹果手表质感高级、做工出众，精致氛围感拉满；只是机身自带一定分量，全天佩戴腕间有时候会忍不住甩甩手腕儿",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手表质感高级、做工出众，但机身有分量，全天佩戴会甩手腕",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为FIT5佩戴轻盈无感，透气表带久戴清爽不闷汗，开会办公、敲键盘加班全天佩戴都很舒适，完全不耽误日常工作操作",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为FIT5佩戴轻盈无感，久戴清爽不闷汗，全天佩戴舒适",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果基础健康监测做得很扎实，日常基础监护完全能满足",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果基础健康监测做得很扎实，能满足日常",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为则更贴合国内打工人作息，能实时照看压力情绪、深度解析睡眠状态，还有工位微运动随时拉伸放松，特别懂上班族的亚健康小困扰",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为更贴合国内打工人作息，懂上班族亚健康困扰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为大屏看消息清晰直观，定位稳定、运动记录完整靠谱；和华为手机生态联动顺滑，安卓机型也适配友好，日常通勤戴着特别省心",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为大屏看消息清晰，定位稳定，生态联动顺滑，安卓适配友好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为FIT5千元亲民定价，实用配置直接拉满，日常随性佩戴不用刻意爱惜，性价比特别适合普通通勤打工人",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为FIT5千元亲民定价，实用配置拉满，性价比高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ef36760000000035023c85",
+    "opinions": [
+      {
+        "opinion_text": "好喜欢我的新手机！就就就就要放开活放开阔",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "好喜欢我的新手机（华为Pura X max），表达强烈喜爱",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a07da6b000000003502e9c3",
+    "opinions": [
+      {
+        "opinion_text": "华为watch fit 5 pro有一个很大的bug，手表居然配的线是type-a，找遍了全家，找不出一个像样的a口充电器",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为watch fit 5 pro充电器接口设计不合理，type-a接口找不到充电器，很奇怪的设计和逻辑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6927c8d7000000001b023689",
+    "opinions": [
+      {
+        "opinion_text": "苹果or华为？各自的优缺点呢？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问询问苹果和华为优缺点，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果or华为？各自的优缺点呢？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问询问苹果和华为优缺点，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69736dea000000000a02b0ad",
+    "opinions": [
+      {
+        "opinion_text": "华为Mate80Pro和iPhone17Pro都是好手机，日用都是很流畅，华为的优势是信号和拍照",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为Mate80Pro是好手机，日用流畅，优势是信号和拍照",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为Mate80Pro和iPhone17Pro都是好手机，日用都是很流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iPhone17Pro是好手机，日用流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果则是系统生态成熟和录像牛",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果系统生态成熟，录像牛",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68775f31000000001d00c9af",
+    "opinions": [
+      {
+        "opinion_text": "为什么苹果手机贵没有人喷，华为手机贵就这么多人喷？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问为什么苹果贵没人喷，无明确对苹果的情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为什么苹果手机贵没有人喷，华为手机贵就这么多人喷？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问为什么华为贵就很多人喷，隐含对华为被喷现象的不解，但非直接情感表达",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66e14198000000002603fb59",
+    "opinions": [
+      {
+        "opinion_text": "我很喜欢苹果的快捷键没有了，但华为的中转站也确实不错，可以分屏，用苹果时很羡慕的分屏",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "喜欢苹果的快捷键没有了（换华为后缺失），用苹果时很羡慕分屏功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的中转站也确实不错，可以分屏",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为中转站不错，可以分屏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍照也有实况，拍出的照片清晰度确实很高，有相机出片的感觉，可以放大的倍数更高",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为拍照清晰度高，有相机出片感，放大倍数更高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍照的真实感也确实会好点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果拍照真实感确实会好点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用苹果的快充，觉得充电速度已经挺快了，没想到华为充电速度更快，洗漱回来居然充满了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为充电速度更快，洗漱回来居然充满了（惊喜）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用苹果的快充，觉得充电速度已经挺快了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果快充充电速度已经挺快了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "信号方面，两款相比，华为信号会好很多会更稳定一些",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为信号会好很多，更稳定",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f5f011000000003700c6ab",
+    "opinions": [
+      {
+        "opinion_text": "刚买完华为手机就后悔了，一直用的都是苹果，感觉好不习惯",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "刚买完华为手机就后悔了，感觉好不习惯",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最后悔的就是买了9Pro，没有买9Pro max",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "后悔买了9Pro没买9Pro max",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68f1f629000000000302f3a7",
+    "opinions": [
+      {
+        "opinion_text": "为什么华为那么强却不如苹果的产品力？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问为什么华为不如苹果产品力，隐含对华为产品力的疑问，但非直接情感表达",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为什么华为那么强却不如苹果的产品力？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问中提及苹果产品力更强，但属于提问而非直接评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e6409f0000000023011db4",
+    "opinions": [
+      {
+        "opinion_text": "从拍照和价钱两个方面来看哪个性价比更高呀，苹果和华为人像哪个会好看一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问询问苹果性价比和人像效果，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从拍照和价钱两个方面来看哪个性价比更高呀，苹果和华为人像哪个会好看一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问询问华为性价比和人像效果，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c3835e0000000023015ddb",
+    "opinions": [
+      {
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及苹果旗舰机体验很强，但主要是客观陈述，询问设计审美意见",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo",
+        "brand_target": "三星",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及三星旗舰机，客观陈述，询问设计审美意见",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及华为旗舰机，客观陈述，询问设计审美意见",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及小米旗舰机，客观陈述，询问设计审美意见",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及OPPO旗舰机，客观陈述，询问设计审美意见",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在各手机品牌的旗舰机体验都很强了，但设计审美还是有不少差异，我凑齐国际大厂苹果、三星，以及国内大厂华为、小米、OPPO和vivo",
+        "brand_target": "vivo",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提及vivo旗舰机，客观陈述，询问设计审美意见",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "692816a9000000001d038d05",
+    "opinions": [
+      {
+        "opinion_text": "陶瓷的手感确实很温润舒服，但是新的昆仑玻璃后盖也感觉不错，有阻尼感还能摸到纹路，手感上不那么滑",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate80RS昆仑玻璃后盖感觉不错，有阻尼感，手感不那么滑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "边框是变成直角边框但同样是亮面钛金属，感觉也没有硌手感",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate80RS边框没有硌手感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照色彩上第二代红枫确实更准色彩还原度更好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "第二代红枫色彩更准，还原度更好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体没有大家网上说的质感下降啥的我感觉，喜欢的还是会喜欢，依旧是全方面顶级的旗舰",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Mate80RS没有质感下降，依旧是全方面顶级旗舰",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69bce520000000001a023a03",
+    "opinions": [
+      {
+        "opinion_text": "华为Mate80风驰版镜头处似乎少了东西，多了一圈出风口",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观描述Mate80风驰版镜头外观变化，找不同互动，无明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

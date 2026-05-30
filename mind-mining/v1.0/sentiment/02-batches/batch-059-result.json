@@ -1,0 +1,473 @@
+[
+  {
+    "note_id": "696faad4000000000a02f99a",
+    "opinions": [
+      {
+        "opinion_text": "1万多的手机啊，你们一个个说买就买，还说经济不好，只有我经济不好么？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "1万多的手机啊，你们一个个说买就买，还说经济不好，只有我经济不好么？",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone17全系销量甚至达到了1700万台，销量年年这么高，国产安卓真拿它没办法。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "销量甚至达到了1700万台，销量年年这么高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "国产安卓真拿它没办法",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "国产安卓真拿它没办法",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "696599d1000000001a036b77",
+    "opinions": [
+      {
+        "opinion_text": "苹果iOS26.3 Beta2刚推送，就火速拿iPhone17测了波跑分，对比Beta1的成绩，这提升幅度直接惊到我！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这提升幅度直接惊到我！",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "实际用起来APP启动快了一截，多任务切换也更丝滑，A系列芯片的潜力被榨得明明白白",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "APP启动快了一截，多任务切换也更丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安兔兔才是重头戏！Beta1总分2176377分，Beta2直接干到2312744分，整体暴涨6.26%！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "Beta2直接干到2312744分，整体暴涨6.26%",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "剪4K视频、建模渲染时速度直接起飞，重度办公党狂喜",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "速度直接起飞，重度办公党狂喜",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "玩大型游戏帧率更稳，UX用户体验也涨了3.51%，系统动画顺滑到上瘾",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "帧率更稳，系统动画顺滑到上瘾",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "在用无线充的时候，微信按语音输入的时候会小概率出现断触现象！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "小概率出现断触现象",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "只能说苹果的系统优化太懂用户了，Beta2不仅修复了Beta1的小bug，还把性能释放拉满，iPhone17用户赶紧更！这波升级血赚～",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统优化太懂用户了，这波升级血赚",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6908489f0000000007020ef5",
+    "opinions": [
+      {
+        "opinion_text": "屏幕一次给满了，高刷+抗反射+超瓷晶2.0 效果是真不错，甚至连全天候显示都给了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "效果是真不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航/充电也有提升，基本还算满意吧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "基本还算满意吧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "外观普普通通，铝合金也没啥质感，摄像头很简洁，但放在桌面上跷跷板太严重",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "外观普普通通，铝合金也没啥质感，跷跷板太严重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "缺点不过ios26bug是真多，体验一般，图标有点丑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "ios26bug是真多，体验一般，图标有点丑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总评12以来第一台值得买的标准版iPhone",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "12以来第一台值得买的标准版iPhone",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d14eed0000000013036c6c",
+    "opinions": [
+      {
+        "opinion_text": "这次的17pm完全的遵循实用主义，一切材质一切设计都是为功能服务。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完全的遵循实用主义，一切材质一切设计都是为功能服务",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手感有点回归7plus….顶部deco触碰上去总有种macbook的感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "手感有点回归7plus，总有种macbook的感觉",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "确实更好用了，也确实没那么美了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更好用了，也确实没那么美了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68cec3d1000000001101cb73",
+    "opinions": [
+      {
+        "opinion_text": "图一：80电量手机裸机，手机底下放两张沾水的洗脸巾：重启连WiFi清空后台冰箱先降温放冰箱跑geekbench6；图二：正常使用环境下跑geekbench6；差距还是有点大的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "差距还是有点大的",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "696a1167000000001a022399",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17e复用 iPhone 16那块屏幕，影像后置为Air同款后置传奇单摄。。。这跟老人机有什么区别",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这跟老人机有什么区别",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695398c0000000001e00f698",
+    "opinions": [
+      {
+        "opinion_text": "一直听听网友们说安卓要卡，苹果不卡，但我换了N个安卓或是苹果，也没有明显感觉苹果比安卓好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没有明显感觉苹果比安卓好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "一直听听网友们说安卓要卡，苹果不卡，但我换了N个安卓或是苹果，也没有明显感觉苹果比安卓好",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "换了N个安卓或是苹果，也没有明显感觉苹果比安卓好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这个是四五年前的VIVO备用机当时价位好像不到4000，现在也没有卡顿情况啊",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在也没有卡顿情况啊",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68a83e64000000001c00becf",
+    "opinions": [
+      {
+        "opinion_text": "如果iPhone只买三四千起步，我估计国产安卓旗舰都玩完了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果确实牛逼；国产安卓旗舰都玩完了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果iPhone只买三四千起步，我估计国产安卓旗舰都玩完了",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "国产安卓旗舰都玩完了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6702568d000000002c02c8fc",
+    "opinions": [
+      {
+        "opinion_text": "标准版iPhone没有高刷这件事一直成为许多人心中介意和吐槽的点。确实，对于一款售价5999元的手机来说，没有高刷是一件让人无法接受的事情",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "没有高刷是一件让人无法接受的事情",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "如果你没用过高刷那可能没太大感觉，一旦你用过，相信大多数人就很难回去了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "一旦用过，相信大多数人就很难回去了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0ed06e000000003601b442",
+    "opinions": [
+      {
+        "opinion_text": "不讲不讲我的14promax还能再战一年，都用4年了依旧顽强狂摔不烂",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "还能再战一年，依旧顽强，狂摔不烂",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68c908ba000000001202c220",
+    "opinions": [
+      {
+        "opinion_text": "还很贴心的出了橙色，但凡赶上哥仨应援拼得最凶的时候iPhone都有泼天富贵了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还很贴心的出了橙色，iPhone都有泼天富贵了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "属于是49年入国军了，赶不上好时候啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "49年入国军了，赶不上好时候啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f313ed0000000035023ad9",
+    "opinions": [
+      {
+        "opinion_text": "感觉当代的红米也能把live做起来也是挺不错了",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "也是挺不错了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但比起苹果前几代的标准版，无论画面色彩和流畅度还是相差不少",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "无论画面色彩和流畅度还是相差不少",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但比起苹果前几代的标准版，无论画面色彩和流畅度还是相差不少",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "无论画面色彩和流畅度还是相差不少",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a129a7b000000003701cdc0",
+    "opinions": [
+      {
+        "opinion_text": "全网也就你们苹果用户最矫情，天天刷屏搜省电技巧、护电池偏方、纠结续航、死磕电池健康度，别的品牌用户正常用机，就你们一群人把一块消耗品当祖宗供着。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "全网也就你们苹果用户最矫情，把一块消耗品当祖宗供着",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "花大价钱买苹果，图的就是流畅省心，结果倒好：5G不敢开、亮度不敢调、后台不敢留、快充不敢用，为了护电池疯狂阉割体验，买个旗舰机硬生生用成老年机",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "为了护电池疯狂阉割体验，买个旗舰机硬生生用成老年机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "拿着苹果还天天担心续航电池，说难听点，纯属矫情又好笑，纯属自我内耗",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "纯属矫情又好笑，纯属自我内耗",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6872017e000000000b01fbb2",
+    "opinions": [
+      {
+        "opinion_text": "最近被OPhone刷了屏，毕竟这外观和iPhone也太像了吧！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "外观和iPhone也太像了吧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对于从iPhone换过来的人来说，几乎不用适应就能上手，这点还挺加分的",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "几乎不用适应就能上手，这点还挺加分的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刷小红书的时候滑动很流畅，没出现卡顿",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "滑动很流畅，没出现卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "拍照功能有点惊喜，后置镜头拍美食色彩很鲜亮，前置自拍的磨皮也不会假脸",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照功能有点惊喜，色彩很鲜亮，磨皮也不会假脸",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航比我之前的老iPhone强太多，早上充满电，刷刷视频聊聊天，晚上回家还能剩30%左右",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航比我之前的老iPhone强太多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果预算有限又想体验类似iPhone的操作感，OPhone确实是个性价比之选",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "确实是个性价比之选",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69159fa00000000007017451",
+    "opinions": [
+      {
+        "opinion_text": "iPhone自带输入法确实流畅不卡顿，这点对比第三方确实领先",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "确实流畅不卡顿，这点对比第三方确实领先",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但字词联想真的不知道咋回事，明明打的拼音是对的，但它会排第二个，养不熟的感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明明打的拼音是对的，但它会排第二个，养不熟的感觉",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

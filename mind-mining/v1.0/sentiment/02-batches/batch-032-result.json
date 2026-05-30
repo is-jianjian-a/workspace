@@ -1,0 +1,455 @@
+[
+  {
+    "note_id": "692961b6000000001e034dac",
+    "opinions": [
+      {
+        "opinion_text": "虽然说都是256g，但是安卓系统的内存偏高，我把安卓聊天记录导入苹果系统，发现省了10g内存！",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓系统的内存偏高；同样的聊天记录占的内存相差这么大；安卓是真的一张照片内存都比苹果要高出很多；我就说我的安卓内存不耐用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同样的聊天记录，结果占的内存相差这么大！难怪他们苹果256g的内存可以用这么久！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果256g的内存可以用这么久；导入苹果系统发现省了10g内存",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a043d140000000035028526",
+    "opinions": [
+      {
+        "opinion_text": "两个手机塞裤兜裤子在疯狂往下掉，在考虑要不要把mate80rs换成iPhone Air。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "夏天双持好重；两个手机塞裤兜裤子在疯狂往下掉",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是又舍不得80rs的摄像头素质、屏幕还有质感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "舍不得80rs的摄像头素质、屏幕还有质感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在考虑要不要把mate80rs换成iPhone Air。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "考虑换成iPhone Air，因为双持太重",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69cc79e80000000023014aed",
+    "opinions": [
+      {
+        "opinion_text": "上一个版本又丝滑又省电。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "上一个版本又丝滑又省电",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "sp52怎么能这么卡！像掉帧一样！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "sp52怎么能这么卡；像掉帧一样；鸿蒙sp52，你是负优化的神",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "65ddee760000000007026d97",
+    "opinions": [
+      {
+        "opinion_text": "都在一个区，一个安卓平台一个iOS平台（雀之羽），尼玛",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果和华为为什么这内存差这么多；一个安卓平台一个iOS平台；情绪词\"尼玛\"表达不满",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果和华为为什么这内存差这么多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "标题提到苹果和华为内存差这么多，但内容主要表达的是对差异的惊讶，未明确褒贬苹果",
+        "confidence": "低",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a045bf4000000000702960f",
+    "opinions": [
+      {
+        "opinion_text": "从小米10用到现在，家里的空调、空气净化器全是小米的，手环都买了两个，发布会熬夜看，首发必冲，逢人就安利小米性价比。",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "10年米粉；家里的空调、空气净化器全是小米的；逢人就安利小米性价比",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "结果这次小米17 Pro，直接把我的情怀碾得稀碎。刷个10分钟抖音，后盖烫得能煎鸡蛋。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "直接把我的情怀碾得稀碎；后盖烫得能煎鸡蛋；冬天不用买暖手宝",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信扫码要等3秒，切个后台直接杀进程，打了一半的字全没了。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "微信扫码要等3秒；切个后台直接杀进程；打了一半的字全没了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统bug多到离谱，输入法闪退、通知不显示、小窗拉胯。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统bug多到离谱；输入法闪退、通知不显示、小窗拉胯",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "续航崩得离谱，满电出门撑不过半天，一天三充是标配。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "续航崩得离谱；满电出门撑不过半天；一天三充是标配",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "检测报告说\"硬件一切正常\"，原封不动给我寄回来了。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "硬件一切正常但问题未解决；售后体验差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机没关机！就这么裹着三四层泡沫，在密封的快递盒里闷了整整两天！手机烫得根本握不住，电量只剩4%，两秒钟之后直接黑屏死机。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机烫得根本握不住；电量只剩4%；直接黑屏死机；售后寄回过程严重失误",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b5106c0000000023004d0c",
+    "opinions": [
+      {
+        "opinion_text": "这手机已经卡的没办法正常使用了，只要开了导航软件，就不能再同时使用其他软件了。",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡的没办法正常使用了；开了导航就不能同时使用其他软件；一分钟都不想再用了；真的很崩溃",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69830a96000000000a02c63f",
+    "opinions": [
+      {
+        "opinion_text": "周末去实体店对比了一下两台平板，华为是柔光版，视频这个颜色还是有区别的，华为看着冷白一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为看着冷白一点；客观描述颜色差异，未明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我现在就好纠结到底要买华为还是苹果，有没有懂行的朋友说说啊啊啊啊！！！",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户处于纠结购买决策中，未表达明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我现在就好纠结到底要买华为还是苹果，有没有懂行的朋友说说啊啊啊啊！！！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户处于纠结购买决策中，未表达明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a06e45300000000070204bd",
+    "opinions": [
+      {
+        "opinion_text": "华为Fit5你很好看。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为Fit5你很好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我不就板凳上磕了你一下吗，你怎么就有坑了，还好银色的不明显，可我有强迫症。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "铝的就是不经碰；磕一下就出坑；美丽废物；强迫症无法接受",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69adaa7e000000001a02fe5f",
+    "opinions": [
+      {
+        "opinion_text": "总是卡死，卡退出了回来任务白做了，根本没有存档。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "总是卡死；卡退出了任务白做；手机版本的戴夫劝退了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f605b7000000001a02f758",
+    "opinions": [
+      {
+        "opinion_text": "最近电池耗电巨快，发烫严重，打开和退出软件都要卡半天。",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "电池耗电巨快；发烫严重；打开和退出软件都要卡半天；最近一个月明显感觉手机不行了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "前几个月我还一直在夸它用了两年多了还很流畅。",
+        "brand_target": "其他",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用了两年多了还很流畅；前几个月还一直在夸",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "695b0c78000000001e015046",
+    "opinions": [
+      {
+        "opinion_text": "带的是华为10手环！测出来：华为健康82分，苹果健康93分，差了好多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为健康82分，苹果健康93分；用户只是困惑该信哪个，未明确褒贬华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "带的是华为10手环！测出来：华为健康82分，苹果健康93分，差了好多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为健康82分，苹果健康93分；用户只是困惑该信哪个，未明确褒贬苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a08389c0000000036032f7f",
+    "opinions": [
+      {
+        "opinion_text": "作为苹果全家桶，iWatch亖于续航，实在无法接受续航最低不足3天且没快充的电量焦虑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iWatch亖于续航；无法接受续航最低不足3天且没快充；电量焦虑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为运动健康依旧难用，ios兼容有提高，和原生iwatch肯定没得比。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为运动健康依旧难用；和原生iwatch肯定没得比",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Fit5pro颜色各有各的\"丑\"，预售期各种恶心，首发即崩价，经销商价格乱象很厉害。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "颜色各有各的丑；预售期各种恶心；首发即崩价；价格乱象；入手就是买贵了的体验感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电口还在usb，什么年代了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电口还在usb；表达落后、不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "官方原生表盘终于能看了，第三方比前两年丰富了特别多，至少能选了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "官方原生表盘终于能看了；第三方比前两年丰富了特别多；至少能选了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航依旧给力，初始电量65%，各种固件更新换表盘设置操作，折腾一下午，耗电5%。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "续航依旧给力；折腾一下午耗电仅5%",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "屏幕显示不管在亮度还是细腻度，都是目测可发现的提升，操控顺畅度也有轻微提高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏幕亮度、细腻度有提升；操控顺畅度也有轻微提高",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "佩戴轻便感是够的，自带表带其实够用了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "佩戴轻便感够；自带表带够用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "综合来说，其实还是一个不错的产品，但就是各种让你膈应，没有买东西畅快的wow感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "综合来说还是一个不错的产品（正向），但各种让你膈应，没有wow感（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iwatch的质感还是…一比还是…期待未来几代续航有升级吧。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iwatch的质感还是更好（隐含对比）；期待未来几代续航升级",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a07ad3f000000003502aa4a",
+    "opinions": [
+      {
+        "opinion_text": "升级ColorOS16后挺正常的，后来就开始不对劲，手机发热，卡顿掉帧，耗电快。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机发热；卡顿掉帧；耗电快；耗电比例达到40%且纯后台",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69eace2e0000000020000803",
+    "opinions": [
+      {
+        "opinion_text": "这次鸿蒙6更新系统居然要19.02G，我这512G内存能坚持几次系统更新。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙6更新系统居然要19.02G；内存买小了；512G内存能坚持几次系统更新",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69db139900000000210057f8",
+    "opinions": [
+      {
+        "opinion_text": "刚买没几个月的小米17巨卡，有时候打开个微信打字都反应迟钝一下。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "刚买没几个月就巨卡；打开微信打字反应迟钝；标题\"小米手机巨卡\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "相机也是，放大手势做完一秒后摄像头才放大。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "放大手势做完一秒后摄像头才放大；相机反应严重延迟",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "有时候打开三四个软件，卡了一会之后手机特别烫。",
+        "brand_target": "小米",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "打开三四个软件就卡；手机特别烫",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

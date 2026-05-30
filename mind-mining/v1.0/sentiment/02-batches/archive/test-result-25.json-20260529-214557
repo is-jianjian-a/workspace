@@ -1,0 +1,1174 @@
+[
+  {
+    "id": 1,
+    "note_id": "68f8c58f00000000050315db",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "性能/卡顿",
+        "quote": "用了才一年多就卡到炸裂，进一个程序要等好几秒才能反应过来",
+        "confidence": 0.95
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "发热",
+        "quote": "发热发到感觉要炸掉的程度",
+        "confidence": 0.95
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "续航/电池",
+        "quote": "掉电还掉的贼快...才用了一年电池健康度就86%",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "拍照/像素",
+        "quote": "像素根本没有吹的那么好...颜色已经特别失真，拍照特别特别模糊",
+        "confidence": 0.93
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "华为手机的信号是真的好，这个不黑",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "整体体验",
+        "quote": "体验感巨差...用完真的拉黑",
+        "confidence": 0.95
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "整体体验",
+        "quote": "最终决定还是换回苹果，入了新款17pro",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "note_id": "689c1def000000001d0380fe",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "散热",
+        "quote": "华为最优（液冷黑科技）",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕/玻璃",
+        "quote": "华为升级「玄武钢化昆仑玻璃」：抗摔提升30%！裸奔党狂喜",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "长焦/拍照",
+        "quote": "华为「机械伸缩长焦」：真·物理开挂！拍放大10倍以上纹理都很清晰",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "通信/卫星",
+        "quote": "华为双卫星通信3.0：沙漠无人区能发30秒急救语音！（救命刚需）",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "快充/电池",
+        "quote": "华为100W快充：25分钟满血！但2年后电池健康恐掉到85%↓",
+        "confidence": 0.82
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "散热",
+        "quote": "苹果16PM依然'暖手宝'",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "游戏性能",
+        "quote": "苹果16PM：王者团战激烈时可能自动变暗屏幕，但是原神高帧率高画质全程无压力",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "屏幕/抗刮",
+        "quote": "苹果超瓷晶更抗刮",
+        "confidence": 0.80
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "长焦/拍照",
+        "quote": "苹果：夜景提亮明显，但10倍以上糊成油画",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "通信/卫星",
+        "quote": "苹果仅卫星短信：国内暂未开放",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "电池/耐用",
+        "quote": "苹果35W'快充'：80分钟充满…但电池损耗慢！1年健康度仍95%+",
+        "confidence": 0.82
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "芯片性能",
+        "quote": "苹果A18 Pro：性能天花板！",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "note_id": "69ec286a000000003501ec96",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "长焦/拍照",
+        "quote": "一直以为华为长焦是神一般的存在",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "长焦/拍照",
+        "quote": "隔着两条马路拉个三四十倍长焦对比一下，结果居然差不多?!",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "neutral",
+        "aspect": "长焦/拍照",
+        "quote": "结果居然差不多?!",
+        "confidence": 0.80
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "note_id": "699d3995000000001b01d9bd",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "信号是真的好，苹果进电梯就无信号，华为从5G变4G但不影响使用",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕",
+        "quote": "屏幕视觉精细感可以对标苹果，在握感、操作流畅度等方面体验优于其他厂商",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/广告",
+        "quote": "广告变少，各app在iOS端也开始大量放广告...目前鸿蒙暂无此问题",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/组件",
+        "quote": "卡片/组件能真正发挥用处，能不花钱就看到天气变化情况和云图变化趋势",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "长焦/拍照",
+        "quote": "长焦能把远处拉近还不糊",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/APP适配",
+        "quote": "鸿蒙系统下各app还是不能适配",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "手感/重量",
+        "quote": "重。。。和17pro不相上下",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "quote": "苹果进电梯就无信号",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "系统/广告",
+        "quote": "各app在iOS端也开始大量放广告，打开部分app就各种跳转",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "note_id": "68ecd586000000000703966d",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "拍照/逆光",
+        "quote": "逆光：华为mate60pro＞iPhone15pro",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "拍照/逆光",
+        "quote": "在极强的光线下华为不仅人物拍的很清晰，背景也很有氛围感。整体色调很和谐，最主要是不发灰没有色偏",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "拍照/顺光",
+        "quote": "个人顺光不选华为的原因是感觉华为会把人拍胖，而且明暗对比度很强，后期照片处理起来难度很大",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "拍照/顺光",
+        "quote": "顺光：iPhone15pro＞华为mate60pro",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "拍照/逆光",
+        "quote": "苹果什么都好，就是逆光拍照不能兼顾人像和背景的白平衡，导致人物在背景强光线上发灰",
+        "confidence": 0.90
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "note_id": "69c74283000000001d01d028",
+    "opinions": [
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "拍照/live图",
+        "quote": "苹果拍出来的色调更好看...live图真的太生动了...live确实冲击力更大一点",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "拍照/人像",
+        "quote": "苹果拍出来的色调更好看，但是人会臃肿一些",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "note_id": "69d63643000000001b000681",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "neutral",
+        "aspect": "系统/流畅度",
+        "quote": "你觉得鸿蒙6的流畅度达到iOS水平了吗？",
+        "confidence": 0.70
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "neutral",
+        "aspect": "系统/流畅度",
+        "quote": "你觉得鸿蒙6的流畅度达到iOS水平了吗？",
+        "confidence": 0.70
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "note_id": "6901e07f00000000030378cc",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "初上手感觉鸿蒙6很丝滑啊...感觉流畅度和稳定性已经超越了iOS",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "发热",
+        "quote": "发热和续航比4.2好太多了",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "续航",
+        "quote": "发热和续航比4.2好太多了",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "系统/流畅度",
+        "quote": "特别是iOS26那一坨",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "note_id": "694cecfe000000001e021e36",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "这俩手机现在都不卡...日常用不管是UI动画丝滑程度还是跟手度，都跟刚买时候无异",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/生态",
+        "quote": "华为Mate60Pro更新了鸿蒙6，所以生态上有点难受",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "游戏性能",
+        "quote": "麒麟芯片的代差导致性能不好，夏天时候玩王者温度一上去，60帧都不咋稳得住",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "续航/电池",
+        "quote": "Mate60Pro：电池健康还有86%...受快充影响＋夏天十分烫，华为电池健康下降很快",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "保值率",
+        "quote": "华为现在估成2k～2.5k",
+        "confidence": 0.82
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "这俩手机现在都不卡...日常用不管是UI动画丝滑程度还是跟手度，都跟刚买时候无异",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "游戏性能",
+        "quote": "iPhone15Pro：芯片性能很强悍＋系统本身就做得好。哪怕过了两年，游戏方面表现依旧很不错",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "quote": "但是网络信号不咋好...用流量玩王者之类，常常460",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "续航/电池",
+        "quote": "iPhone15Pro：电池健康还有91%，日常用续航跟尿尿似的",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "保值率",
+        "quote": "苹果现在平台估成3.8k～4k",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "note_id": "68f61a3d0000000003021774",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "华为鸿蒙OS 5目前轻量化流畅性还是不错的",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/跟手性",
+        "quote": "跟手性感觉还是苹果华为OPPO要好一点点",
+        "confidence": 0.80
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "除了苹果iOS一贯流畅外",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/后台",
+        "quote": "视觉上，还是苹果和OPPO的堆料后台更丝滑",
+        "confidence": 0.82
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "note_id": "68c79751000000001d02dd54",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "信号无论在什么地方都比苹果好太多太了（比如用苹果的时候在停车场开不了导航，华为就完全不会有这个问题）",
+        "confidence": 0.93
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/后台留存",
+        "quote": "后台留存：华为基本没有杀后台的问题，苹果经常打游戏的时候切出去回条消息就重新加载了",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/功能",
+        "quote": "侧滑返回、分屏、单手操作、88w快充真的太爽了谁用谁知道",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "手感",
+        "quote": "圆弧边框的手感比苹果好了不止一点",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/信号切换",
+        "quote": "华为在信号切换的时候比苹果顺畅很多，比如从家里出门，从WiFi环境切换到5G，苹果会卡一段时间，华为很丝滑",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "震动马达",
+        "quote": "华为震动马达太太太廉价了，质感很差",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "外放",
+        "quote": "华为在外放音量比较大的时候手机会震",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "耳机",
+        "quote": "华为耳机不如AirPods",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/广告",
+        "quote": "华为有很多广告要花十几分钟设置关掉",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/视频",
+        "quote": "华为看b站视频快进的时候声音会一卡一卡的，b站党崩溃",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "续航",
+        "quote": "续航：由于不是重度手机依赖，两部手机出门都不会有续航焦虑",
+        "confidence": 0.75
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "流畅度：两部手机都非常流畅，完全感觉不到卡的地方",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "quote": "用苹果的时候在停车场开不了导航",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "系统/后台留存",
+        "quote": "苹果经常打游戏的时候切出去回条消息就重新加载了",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "系统/信号切换",
+        "quote": "从WiFi环境切换到5G，苹果会卡一段时间",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "note_id": "685bf3f1000000001c031673",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "手感",
+        "quote": "华为虽然是曲面屏、弧线边框...但是它又宽又大，尺寸及其不合理对爱单手使用的人不是很友好",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "华为真是搞通信起家的，就是不一样，mate70Pro的信号稳定性和上传下载速度，就是要强于iPhone",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "处理器/性能",
+        "quote": "麒麟9020完全和A17Pro比不了，制程差距摆在那里，简直就是天堑",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "华为鸿蒙OS 5目前轻量化流畅性还是不错的",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "拍照",
+        "quote": "拍照→华为...华为红枫的色准做的很好了，还原很真实，长焦镜头也比iPhone的10倍望的更远",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "快充",
+        "quote": "华为100W充电更快，比iPhone能更快恢复'元气'",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "手感",
+        "quote": "iPhone15Pro的6.1英寸直屏，拿着就要顺手很多，多的不说小直屏YYDS",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "quote": "iPhone呢则是信号这边，VX常常失联比较惹人烦",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "iPhone这边是iOS17.2.6...用着依旧丝滑流畅，牛的，苹果系统没得说",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "面容解锁",
+        "quote": "iPhone的3D结构光就要更全面、更灵敏一点，一招鲜吃遍天",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "录像",
+        "quote": "录像→苹果...iPhone真的就是永远的神，手机录像这边真没得对手",
+        "confidence": 0.92
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "note_id": "693299a5000000001b021354",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕",
+        "quote": "国产机很久没用过这么透润的屏了",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "鸿蒙6.0+麒麟9030Pro是国产机子的T0梯队。无论是响应速度，还是过度动画和打断动画的打磨，都是跟iOS齐平的",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "等你用了华为5A后，你才发现数据信号好的离谱，高铁、地铁发消息不带转圈的",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "散热",
+        "quote": "打三角洲开120帧...一局下来34℃，而且全程没有影响操作的卡顿和掉帧",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "续航",
+        "quote": "续航也很离谱了...不打游戏能坚持10个小时...这个电池管理跟iPhone真有得一拼了",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "屏幕",
+        "quote": "苹果17PM引以为傲的三星G9N屏，在双层OLED前不值得一提，甚至全方位被碾压",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "quote": "以为苹果5GA多牛呢，也只是比自家5G快罢了",
+        "confidence": 0.82
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "录像",
+        "quote": "录视频打不过苹果",
+        "confidence": 0.80
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "note_id": "6948e168000000000d036bee",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "现在的鸿蒙系统流畅性是能比肩甚至某些场景能超越ios的，指哪打哪不卡顿非常跟手",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/功能",
+        "quote": "功能性便利性也比ios强",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/APP适配",
+        "quote": "现在最大的问题就差在软件功能的适配上",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/UI设计",
+        "quote": "还有一些ui，字体，页面排版，动画动效交互上的体验，观感，细节，精致度不如ios",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/UI设计",
+        "quote": "ui，字体，页面排版，动画动效交互上的体验，观感，细节，精致度不如ios",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "note_id": "68dc7914000000000400700a",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "quote": "一直以为华为信号比苹果好，但是真的绝了...信号真的烂到爆炸",
+        "confidence": 0.93
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "快充",
+        "quote": "华为充电速度是绝了",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "续航",
+        "quote": "但是掉电也绝了",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "整体体验",
+        "quote": "华为已经很进步可是还是有点失望",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "屏幕",
+        "quote": "屏幕细腻度",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "手机流畅度...系统更流畅啦",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "拍照",
+        "quote": "拍照真的很绝，质感真的是无敌",
+        "confidence": 0.90
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "note_id": "685d5ad5000000001c031220",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/APP适配",
+        "quote": "朋友发个小红书链接到微信 我想打开看 根本跳转不过来",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/支付",
+        "quote": "闲鱼上买点东西 死活付不了款，因为根本跳转不到支付宝",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/功能",
+        "quote": "地址共享开不了...图片编辑编辑不了 微信表情整理整理不了",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "系统/APP适配",
+        "quote": "一堆APP用不了...支付宝功能也受限制...随申办使用也受限制",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "整体体验",
+        "quote": "花了16,000买个体验降级...鸿蒙系统，我谢谢你...没做好别出来丢人了",
+        "confidence": 0.95
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "品牌忠诚度",
+        "quote": "本人正式华为粉转黑",
+        "confidence": 0.95
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "note_id": "69e5c6a3000000002200e7d4",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "信号用华为的",
+        "confidence": 0.80
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "拍照/摄像头",
+        "quote": "后置摄像头居中和信号用华为的",
+        "confidence": 0.80
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/广告",
+        "quote": "系统没广告...用苹果就更加完美了",
+        "confidence": 0.82
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "录像",
+        "quote": "录视频防抖用苹果",
+        "confidence": 0.82
+      },
+      {
+        "brand": "三星",
+        "sentiment": "positive",
+        "aspect": "设计/框架",
+        "quote": "框架和屏幕用三星的",
+        "confidence": 0.80
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "note_id": "6913685b0000000005038c6b",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/功能",
+        "quote": "华为确实科技感满满！很多很多新的功能和有趣的小组件都很吸引我们",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "并没有觉得发烫或者是卡顿",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "quote": "信号好",
+        "confidence": 0.80
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "快充",
+        "quote": "快充方便",
+        "confidence": 0.80
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "产品形态/折叠屏",
+        "quote": "这个x6真的使用折叠屏的机会很少 甚至打开屏幕会觉得很不方便 由于脆弱性的原因又要小心别摔了 所以平时根本也不打开",
+        "confidence": 0.90
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "产品形态/直板",
+        "quote": "直板手机我是不考虑华为的",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "整体评价",
+        "quote": "华为很好 不卡顿 不发烫 信号好 功能多 快充方便...优点太多了 值得购买体验一下 不后悔",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "note_id": "69fdad5e000000003502083f",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕/抗反光",
+        "quote": "抗反光耐刮昆仑玻璃，能降低70%反光，这是实打实的硬件优势",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕/户外可视",
+        "quote": "正午太阳下华为不用手挡光也能看清导航",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "屏幕/户外可视",
+        "quote": "苹果就得找阴影",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "note_id": "661f73ec000000001c0099b6",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "neutral",
+        "aspect": "整体",
+        "quote": "求助各位小伙伴，选哪个啊？求推荐",
+        "confidence": 0.60
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "neutral",
+        "aspect": "整体",
+        "quote": "求助各位小伙伴，选哪个啊？求推荐",
+        "confidence": 0.60
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "note_id": "67289eff000000001901b55b",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "屏幕/护眼",
+        "quote": "华为手机的屏幕耍久了眼睛太痛了，酸胀的痛感",
+        "confidence": 0.92
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "屏幕/屏闪",
+        "quote": "从拍照来看，华为手机有屏闪，而苹果手机没有",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "屏幕/清晰度",
+        "quote": "从屏幕清晰度来说，感觉苹果要更好些",
+        "confidence": 0.85
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "拍照/炫光",
+        "quote": "强光下，华为手机有炫光",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "屏幕/护眼",
+        "quote": "苹果16pm屏幕看着比华为P70pro舒服...苹果手机没有造成眼睛不舒服",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "屏幕/清晰度",
+        "quote": "从屏幕清晰度来说，感觉苹果要更好些",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "note_id": "6697b759000000002500506f",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "屏幕/显示",
+        "quote": "国产屏有进步，但离LG还是有点点差距...颜色通透感、细腻程度、色彩效果还是mate20Pro更胜一筹",
+        "confidence": 0.88
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "note_id": "676e4ff60000000013008671",
+    "opinions": [
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/稳定性",
+        "quote": "工作软件（base 境外hk）通知有时候收不到，有时候闪退，不稳定",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "生态",
+        "quote": "整体感觉网上测评声音多过使用体验，实际上周边生态也没有苹果丰富",
+        "confidence": 0.82
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "系统/交互",
+        "quote": "滑动点击逻辑，苹果滑动时点击屏幕第一次逻辑是阻止滑动...苹果更加符合直觉一些",
+        "confidence": 0.88
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "产品哲学",
+        "quote": "苹果是简单的哲学，靠谱",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "note_id": "69042b6c0000000007032f8e",
+    "opinions": [
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "续航",
+        "quote": "苹果这续航真的得不顶用啊",
+        "confidence": 0.90
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "网络/信号",
+        "quote": "网络还卡",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "续航",
+        "quote": "续航一天够够的",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "网络/信号",
+        "quote": "网比之前流畅多了",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "外观/颜值",
+        "quote": "带出去颜值真行啊",
+        "confidence": 0.85
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "note_id": "69fdb125000000003502ec08",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕/手感",
+        "quote": "大屏手感超舒服，日常用着又丝滑又顺手",
+        "confidence": 0.88
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "系统/流畅度",
+        "quote": "日常用着又丝滑又顺手，完完全全承包我的私人生活",
+        "confidence": 0.85
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "neutral",
+        "aspect": "整体",
+        "quote": "闲置下来的iPhone 16 Pro直接当工作机，专门收工作消息、办公打卡、接验证码",
+        "confidence": 0.75
+      }
+    ]
+  }
+]

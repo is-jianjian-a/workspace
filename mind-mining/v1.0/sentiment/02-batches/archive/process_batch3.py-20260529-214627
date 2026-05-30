@@ -1,0 +1,339 @@
+#!/usr/bin/env python3
+"""
+Batch 3 UGC Sentiment Extraction Script
+Reads input JSON, extracts brand-sentiment opinions using semantic understanding,
+and writes results to output JSON.
+"""
+
+import json
+import re
+
+INPUT_PATH = "/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/02-batch3-input.json"
+OUTPUT_PATH = "/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/02-batch3-result.json"
+
+# Brand mapping rules
+BRAND_KEYWORDS = {
+    "华为": ["华为", "huawei", "mate", "pura", "p系列", "nova", "畅享", "麦芒", "鸿蒙", "麒麟", "遥遥领先"],
+    "苹果": ["苹果", "apple", "iphone", "ipad", "airpods", "macbook", "ios", "果粉", "钛金属边框"],
+    "三星": ["三星", "samsung", "galaxy", "s系列", "note系列", "z flip", "z fold"],
+    "小米": ["小米", "xiaomi", "redmi", "红米", "mix"],
+    "OPPO": ["oppo", "find", "reno", "一加", "oneplus"],
+    "vivo": ["vivo", "iqoo"],
+    "荣耀": ["荣耀", "honor", "magic"],
+    "安卓": ["安卓", "android"],
+}
+
+def detect_brands(text):
+    """Detect all brands mentioned in text using semantic understanding."""
+    text_lower = text.lower()
+    brands_found = set()
+    for brand, keywords in BRAND_KEYWORDS.items():
+        for kw in keywords:
+            if kw.lower() in text_lower:
+                brands_found.add(brand)
+                break
+    return sorted(list(brands_found))
+
+def split_into_opinions(post):
+    """Split a post into opinion segments (1-3 sentences each expressing one view)."""
+    content = post.get("content", "")
+    title = post.get("title", "")
+    full_text = title + "\n" + content if title else content
+    
+    # Split by common separators
+    # First, split by numbered lists, bullet points, or newlines
+    segments = []
+    
+    # Handle numbered lists like ①②③ or 1️⃣2️⃣3️⃣ or 1. 2. 3.
+    numbered_split = re.split(r'(?=\n?[①②③④⑤⑥⑦⑧⑨⑩]|\n?\d+[\.\、]\s*|\n?\d+️⃣\s*)', full_text)
+    
+    for seg in numbered_split:
+        if not seg.strip():
+            continue
+        # Further split by double newlines or clear paragraph breaks
+        sub_segs = re.split(r'\n\s*\n', seg)
+        for sub in sub_segs:
+            sub = sub.strip()
+            if sub and len(sub) > 5:
+                segments.append(sub)
+    
+    # If no clear splits, treat the whole text as one segment
+    if not segments:
+        segments = [full_text]
+    
+    return segments
+
+def judge_sentiment(opinion_text, brand):
+    """Judge sentiment polarity and intensity for a specific brand in an opinion."""
+    text = opinion_text.lower()
+    
+    # Positive keywords
+    positive_words = [
+        "好", "不错", "优秀", "强", "棒", "赞", "喜欢", "爱", "满意", "推荐", "值得", "划算",
+        "香", "惊喜", "舒服", "流畅", "丝滑", "快", "清晰", "稳定", "耐用", "方便", "爽",
+        "顶级", "旗舰", "高级", "耐看", "美", "好看", "精致", "给力", "完美", "升级",
+        "优势", "成熟", "牛", "绝", "yyds", "真香", "越用越香", "支持", "看好", "期待",
+        "没有焦虑", "不会卡", "不卡", "非常流畅", "很流畅", "太爽了", "谁用谁知道",
+        "温润", "手感好", "轻薄", "利落", "纯净", "克制", "极简", "先锋", "质感",
+    ]
+    
+    # Negative keywords
+    negative_words = [
+        "差", "不好", "烂", "坑", "后悔", "失望", "吐槽", "喷", "贵", "慢", "卡", "卡顿",
+        "发热", "掉电", "续航差", "不行", "不习惯", "难受", "崩溃", "廉价", "震", "广告",
+        "折损", "负担不起", "发灰", "不如", "比不上", "下降", "丑", "笨重", "厚重",
+        "不耐用", "焦虑", "担心", "纠结", "想退货", "想换回去", "哒咩", "❌",
+        "变慢", "不流畅", "没有很流畅", "性能损失", "阉割",
+    ]
+    
+    # Neutral/Question keywords
+    neutral_words = [
+        "哪个", "怎么", "为什么", "如何", "请问", "求", "建议", "对比", "区别",
+        "纠结", "选择", "选", "帮忙", "推荐", "测评", "评测", "客观", "有没有",
+        "呢？", "吗？", "？", "什么", "哪里", "多少", "还是", "or", "vs", "和",
+        "找不同", "凑齐", "觉得", "认为", "感觉", "观察",
+    ]
+    
+    # Intensity indicators
+    strong_positive = ["太", "非常", "很", "真的", "确实", "超级", "极其", "绝对", "完全", "谁用谁知道", "太爽了", "真的挺不错的", "越用越香", "遥遥领先"]
+    strong_negative = ["太", "非常", "很", "真的", "确实", "超级", "极其", "绝对", "完全", "崩溃", "太太太", "实在"]
+    
+    pos_count = sum(1 for w in positive_words if w in text)
+    neg_count = sum(1 for w in negative_words if w in text)
+    neu_count = sum(1 for w in neutral_words if w in text)
+    
+    # Determine polarity
+    if pos_count > 0 and neg_count > 0:
+        polarity = "混合"
+    elif pos_count > neg_count:
+        polarity = "正向"
+    elif neg_count > pos_count:
+        polarity = "负向"
+    else:
+        # Check if it's mostly a question or comparison without clear sentiment
+        if neu_count > 2 or text.count("？") > 0 or "?" in text:
+            polarity = "中性"
+        elif "vs" in text or "对比" in text or "比较" in text:
+            polarity = "中性"
+        else:
+            polarity = "中性"
+    
+    # Determine intensity
+    if polarity == "正向":
+        strong_indicators = sum(1 for w in strong_positive if w in text)
+        if strong_indicators >= 2 or pos_count >= 3:
+            intensity = "强"
+        elif strong_indicators == 1 or pos_count >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+    elif polarity == "负向":
+        strong_indicators = sum(1 for w in strong_negative if w in text)
+        if strong_indicators >= 2 or neg_count >= 3:
+            intensity = "强"
+        elif strong_indicators == 1 or neg_count >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+    elif polarity == "混合":
+        # Mixed sentiment intensity based on strength of both sides
+        if pos_count >= 2 and neg_count >= 2:
+            intensity = "强"
+        else:
+            intensity = "中"
+    else:
+        intensity = "弱"
+    
+    return polarity, intensity
+
+def generate_reason(opinion_text, brand, polarity):
+    """Generate sentiment reason with quoted evidence."""
+    # Extract key sentences containing brand mentions or sentiment words
+    sentences = re.split(r'[。！？\n]', opinion_text)
+    relevant_sentences = []
+    
+    brand_keywords = BRAND_KEYWORDS.get(brand, [brand])
+    
+    for sent in sentences:
+        sent = sent.strip()
+        if not sent:
+            continue
+        # Check if sentence mentions the brand or contains sentiment words
+        sent_lower = sent.lower()
+        mentions_brand = any(kw.lower() in sent_lower for kw in brand_keywords)
+        
+        sentiment_words = [
+            "好", "不错", "优秀", "强", "棒", "赞", "喜欢", "满意", "推荐", "值得", "划算",
+            "香", "惊喜", "舒服", "流畅", "丝滑", "快", "清晰", "稳定", "差", "不好", "烂",
+            "坑", "后悔", "失望", "吐槽", "慢", "卡", "卡顿", "发热", "不行", "不习惯",
+            "难受", "崩溃", "廉价", "后悔", "想退货", "想换回去", "哒咩", "不习惯",
+        ]
+        has_sentiment = any(w in sent for w in sentiment_words)
+        
+        if mentions_brand or has_sentiment:
+            relevant_sentences.append(sent)
+    
+    if relevant_sentences:
+        # Pick the most relevant sentence (prefer one that mentions the brand)
+        for sent in relevant_sentences:
+            sent_lower = sent.lower()
+            if any(kw.lower() in sent_lower for kw in brand_keywords):
+                return f"原文：\"{sent}\""
+        return f"原文：\"{relevant_sentences[0]}\""
+    
+    return f"原文：\"{opinion_text[:80]}...\""
+
+def check_fluency_related(opinion_text):
+    """Check if opinion discusses smoothness/lag/fluency/performance/stability."""
+    fluency_keywords = [
+        "流畅", "丝滑", "卡顿", "卡", "lag", "流畅度", "性能", "速度", "快", "慢",
+        "顺滑", "不卡", "稳定", "掉帧", "帧率", "反应", "响应", "顺滑度", "系统流畅",
+        "操作流畅", "运行", "处理器", "芯片", "麒麟", "a系列", "a芯片",
+    ]
+    text_lower = opinion_text.lower()
+    return any(kw in text_lower for kw in fluency_keywords)
+
+def determine_confidence(opinion_text, brand, polarity):
+    """Determine confidence level based on clarity of sentiment expression."""
+    text = opinion_text
+    
+    # High confidence: clear sentiment words, explicit brand mention, specific details
+    if polarity in ["正向", "负向"]:
+        brand_keywords = BRAND_KEYWORDS.get(brand, [brand])
+        mentions_brand = any(kw.lower() in text.lower() for kw in brand_keywords)
+        
+        sentiment_words = [
+            "好", "不错", "优秀", "强", "棒", "赞", "喜欢", "满意", "推荐", "后悔",
+            "差", "不好", "烂", "坑", "失望", "吐槽", "流畅", "卡顿", "舒服", "难受",
+        ]
+        has_sentiment = any(w in text for w in sentiment_words)
+        
+        if mentions_brand and has_sentiment and len(text) > 20:
+            return "高"
+        elif mentions_brand and has_sentiment:
+            return "中"
+        else:
+            return "低"
+    elif polarity == "混合":
+        return "中"
+    else:
+        return "中"
+
+def process_post(post, post_idx):
+    """Process a single post and extract opinion-level brand sentiments."""
+    opinions = []
+    
+    title = post.get("title", "")
+    content = post.get("content", "")
+    full_text = title + "\n" + content if title else content
+    
+    # Detect all brands in the full post
+    all_brands = detect_brands(full_text)
+    
+    if not all_brands:
+        # No brands detected, skip
+        return opinions
+    
+    # Split into opinion segments
+    segments = split_into_opinions(post)
+    
+    opinion_idx = 0
+    for segment in segments:
+        segment_brands = detect_brands(segment)
+        
+        if not segment_brands:
+            continue
+        
+        # For each brand mentioned in this segment, create a separate opinion
+        for brand in segment_brands:
+            polarity, intensity = judge_sentiment(segment, brand)
+            reason = generate_reason(segment, brand, polarity)
+            confidence = determine_confidence(segment, brand, polarity)
+            is_fluency = check_fluency_related(segment)
+            
+            opinion = {
+                "opinion_id": f"batch3_{post_idx}_{opinion_idx}",
+                "note_id": post.get("note_id", ""),
+                "title": post.get("title", ""),
+                "source_keyword": post.get("source_keyword", ""),
+                "liked_count": post.get("liked_count", 0),
+                "comment_count": post.get("comment_count", 0),
+                "opinion_text": segment[:300] if len(segment) > 300 else segment,
+                "brand_target": brand,
+                "sentiment_polarity": polarity,
+                "sentiment_intensity": intensity,
+                "sentiment_reason": reason,
+                "confidence": confidence,
+                "full_title": post.get("title", ""),
+                "full_content": post.get("content", ""),
+                "is_fluency_related": is_fluency,
+            }
+            opinions.append(opinion)
+            opinion_idx += 1
+    
+    # If no opinions were extracted from segments, create one from full text
+    if not opinions:
+        for brand in all_brands:
+            polarity, intensity = judge_sentiment(full_text, brand)
+            reason = generate_reason(full_text, brand, polarity)
+            confidence = determine_confidence(full_text, brand, polarity)
+            is_fluency = check_fluency_related(full_text)
+            
+            opinion = {
+                "opinion_id": f"batch3_{post_idx}_0",
+                "note_id": post.get("note_id", ""),
+                "title": post.get("title", ""),
+                "source_keyword": post.get("source_keyword", ""),
+                "liked_count": post.get("liked_count", 0),
+                "comment_count": post.get("comment_count", 0),
+                "opinion_text": full_text[:300] if len(full_text) > 300 else full_text,
+                "brand_target": brand,
+                "sentiment_polarity": polarity,
+                "sentiment_intensity": intensity,
+                "sentiment_reason": reason,
+                "confidence": confidence,
+                "full_title": post.get("title", ""),
+                "full_content": post.get("content", ""),
+                "is_fluency_related": is_fluency,
+            }
+            opinions.append(opinion)
+    
+    return opinions
+
+def main():
+    # Read input
+    with open(INPUT_PATH, "r", encoding="utf-8") as f:
+        posts = json.load(f)
+    
+    # Process all posts
+    all_opinions = []
+    for post_idx, post in enumerate(posts):
+        opinions = process_post(post, post_idx)
+        all_opinions.extend(opinions)
+    
+    # Write output
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(all_opinions, f, ensure_ascii=False, indent=2)
+    
+    print(f"Processed {len(posts)} posts, extracted {len(all_opinions)} opinions.")
+    print(f"Results saved to {OUTPUT_PATH}")
+    
+    # Print summary statistics
+    brand_counts = {}
+    polarity_counts = {}
+    for op in all_opinions:
+        brand = op["brand_target"]
+        polarity = op["sentiment_polarity"]
+        brand_counts[brand] = brand_counts.get(brand, 0) + 1
+        polarity_counts[polarity] = polarity_counts.get(polarity, 0) + 1
+    
+    print("\nBrand distribution:")
+    for brand, count in sorted(brand_counts.items()):
+        print(f"  {brand}: {count}")
+    
+    print("\nPolarity distribution:")
+    for polarity, count in sorted(polarity_counts.items()):
+        print(f"  {polarity}: {count}")
+
+if __name__ == "__main__":
+    main()

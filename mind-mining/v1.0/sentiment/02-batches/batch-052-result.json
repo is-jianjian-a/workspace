@@ -1,0 +1,383 @@
+[
+  {
+    "note_id": "69f32a400000000035032534",
+    "opinions": [
+      {
+        "opinion_text": "现在用的苹果，但是信号经常无，用的联通卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在用的苹果，但是信号经常无，用的联通卡",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机用的丝滑吗",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用苹果的人信号都如何啊，手机用的丝滑吗",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69acfcaa000000002303956f",
+    "opinions": [
+      {
+        "opinion_text": "Apple TV 看 F1 直播无敌丝滑，多视角切换超丝滑，车载视角代入感拉满",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "体验感直接封神！多视角切换超丝滑，车载视角代入感拉满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "实时数据同步，清晰度也是顶级",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "实时数据同步，清晰度也是顶级",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6909b58b0000000004012d51",
+    "opinions": [
+      {
+        "opinion_text": "iOS 26.1 一上手明显感觉操作更丝滑了，动画的速度更快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "一上手明显感觉操作更丝滑了，动画的速度更快",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0f3bf70000000037034f2a",
+    "opinions": [
+      {
+        "opinion_text": "我用苹果手机打游戏老是又卡又烫又掉帧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我用苹果手机打游戏老是又卡又烫又掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "关机重启了一下手机，发现就不会了，每次打游戏之前都重启一下太有用了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "结果有次我打游戏之前关机重启了一下手机，发现就不会了！！！之后每次打游戏之前都重启一下太有用了",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c7add50000000023017c9b",
+    "opinions": [
+      {
+        "opinion_text": "苹果 11 升级 iOS 26.4 以后是真的丝滑太多了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我的苹果 11 升级 iOS 26.4 以后是真的丝滑太多了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69b3f74d000000002800b153",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 返回键太难用，左上角小箭头手小党根本够不着，单手操作害怕手机摔地上",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用惯安卓再用iPhone，最大的崩溃：返回键太难用！左上角小箭头，手小党根本够不着，单手操作害怕手机摔地上",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "边缘左滑还经常失灵、APP不统一，每次点返回都想叹气",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "边缘左滑还经常失灵、APP不统一，每次点返回都想叹气",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "安卓早就单手丝滑到飞起",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "安卓早就单手丝滑到飞起",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0db99d000000003601ee03",
+    "opinions": [
+      {
+        "opinion_text": "时隔八年用回苹果，好丝滑，界面简洁美观",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "时隔八年用回苹果，好丝滑，界面简洁美观",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "屏幕和华为mate60pro差不多大，可以无负担地玩游戏了",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "屏幕和华为mate60pro差不多大",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0efb2b000000000702ba9e",
+    "opinions": [
+      {
+        "opinion_text": "苹果全家桶效率大大的提升，太丝滑了，再也不用微信QQ来回传文件",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "自从凑齐了苹果全家桶之后，效率大大的提升！太丝滑了！再也不用微信、QQ 来回传文件",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "屏幕镜像相当于多了一块显示屏分屏，再也不用来回切屏了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏幕镜像相当于多了一块显示屏分屏，再也不用来回切屏了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693d0da0000000001d03b5e4",
+    "opinions": [
+      {
+        "opinion_text": "更新iOS 26.02之后好顺滑，甚至都感觉手机变轻巧了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉更新ios26.02之后 好顺滑，甚至都感觉手机变轻巧了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69fe6281000000003502a3c9",
+    "opinions": [
+      {
+        "opinion_text": "iOS 26.5 新增的壁纸动画特效更加丝滑了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "新增的壁纸动画特效更加丝滑了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68f0c0b7000000000302ea16",
+    "opinions": [
+      {
+        "opinion_text": "升级iOS 26以后numbers数字、日期等按键失灵",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "升级IOS26以后，numbers 数字、日期等按键失灵的情况",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "七宝苹果店小哥丝滑解决了问题，对比静安苹果给的solutions给七宝门店点赞",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "丝滑解决了升级IOS26以后，numbers 数字、日期等按键失灵的情况。对比静安苹果给的solutions，我给七宝苹果门店点赞",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6855771b0000000023007d8c",
+    "opinions": [
+      {
+        "opinion_text": "升级后把我16pm的120刷新率弄得像60，就这顺滑度果子你下个版本还得加把劲",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "虽然升级后把我 16pm 的120刷新率弄得像60，但这个 UI 玻璃真是越看越顺眼，就这顺滑度，果子你下个版本还得加把劲",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "UI玻璃越看越顺眼",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "但这个 UI 玻璃真是越看越顺眼",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "控制中心丑，不太美观，这点真得优化",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "都说控制中心丑，实际上更新后，肉眼距离手机这么近的时候，识别度是没有问题的，但确实不太美观，这点真得优化，没得辩",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "耗电量没有明显变快，电池应该不受太大影响",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "目前耗电量没有明显变快，电池应该不受太大影响",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "开了两把MOBA特效全开，明显掉帧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "开了两把 MOBA 特效全开，明显掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "卡牌游戏没有变化，没有影响",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "卡牌游戏没有变化，没有影响",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6969a64f00000000220202e2",
+    "opinions": [
+      {
+        "opinion_text": "Apple新玻璃界面只是为了show off，并没有让UI变得更好，甚至影响了正常使用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "xs老师直接说apple只是为了show off，那它有让UI变得更好吗？并没有。甚至影响了用户在看这种很fancy的transition的时候的正常使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "liquid glass太old school了，不是新的东西",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "liquid glass太old school了，这不是什么新的东西",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "本人真的不是这种设计风格的受众",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "其实我也觉得，反正本人真的不是这种设计风格的受众",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c4ffea000000001a02a124",
+    "opinions": [
+      {
+        "opinion_text": "XR更新最新系统好丝滑，用电量也变少了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "xr更新最新系统好丝滑！用电量也变少了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "满电出门撑到了下午三点才电量告急",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "满电出门撑到了下午三点！才电量告急！",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还原所有设置可以解决更新后充不进去电的问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "还原所有设置，可以解决更新后你们说的那些问题，尤其充不进去电这个",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68ec42000000000007020ebb",
+    "opinions": [
+      {
+        "opinion_text": "苹果17终于到手了，用了两天发现和之前的pro相比，打开每个软件都好慢好卡，肉眼可见的慢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "我的苹果17终于到手了，用了两天，发现和之前的pro相比，打开每个软件都好慢好卡，是肉眼可见的慢",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果用户是真的会自适应的，想想网上说苹果用户自适应，以前还觉得可笑，现在想想确实",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果用户是真的会自适应的，想想网上说苹果用户自适应，以前还觉得可笑，现在想想确实 我是小丑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "前一部电池不行了，其他品牌应该也不会考虑，pro又实在太丑了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "前一部电池不行了，其他品牌应该也不会考虑，pro又实在太丑了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

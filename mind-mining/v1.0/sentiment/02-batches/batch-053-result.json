@@ -1,0 +1,455 @@
+[
+  {
+    "note_id": "69e7ab36000000001b021069",
+    "opinions": [
+      {
+        "opinion_text": "模糊输入全是错的，之前绝对不是这样，这两年太离谱了，越来越离谱，怎么做到在这个时代走下坡路的？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "我真的完全受不了了；模糊输入全是错的，之前绝对不是这样；这两年太离谱了；越来越离谱；怎么做到在这个时代走下坡路的",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e0d791000000001a027378",
+    "opinions": [
+      {
+        "opinion_text": "更新后还挺不习惯的，界面丑了很多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更新后还挺不习惯的，界面丑了很多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是真的好丝滑好流畅和新手机一样，也多了好多新功能，或许更新也没那么糟糕",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真的好丝滑好流畅和新手机一样；也多了好多新功能；或许更新也没那么糟糕",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a09d6d9000000003601cdab",
+    "opinions": [
+      {
+        "opinion_text": "用了几天，还没有完全适应。大，单手操作困难；重，拿起来玩累手；屏幕太大玩久了眼睛疼",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "大，单手操作困难；重，拿起来玩累手；屏幕太大玩久了眼睛疼",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整体发黄，拍照发红，手机暗",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "整体发黄；拍照发红；手机暗",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信拍照卡顿目前还没有遇到，配40w充电器，手机充电不发烫",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "微信拍照卡顿目前还没有遇到；配40w充电器，手机充电不发烫",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "屏幕真的大，看着爽。内存1T完全不用担心内存压力。电池大，续航真的强，两天充一次都没问题。侧边相机控制很奈斯",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏幕真的大，看着爽；电池大，续航真的强，两天充一次都没问题；侧边相机控制很奈斯",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "由于大和重，走路上也不想拿出手机玩了，也不会无意义刷手机，因为端着它就很累了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "走路上也不想拿出手机玩了；端着它就很累了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0edb86000000000803c081",
+    "opinions": [
+      {
+        "opinion_text": "Apple的无障碍影片《有爱，无碍》已经上线，可以在各大渠道和官网观看",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "Apple的无障碍影片《有爱，无碍》已经上线",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第一次体验音乐触感反馈的时候其实并不太好理解，打开全部混音之后震动的复杂程度较高，初次体验会更难理解音频的触感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "第一次体验的时候其实并不太好理解；初次体验会更难理解音频的触感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "摸索一番后，将触感选择为仅人声，会更容易理解音乐的触感，有了歌词和对这首歌的印象，即便没有播放声音，也能感知到振动传递出来的声音变化",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "会更容易理解音乐的触感；能感知到振动传递出来的声音变化",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "声音识别辅助功能是一个更为容易理解的例子，假设戴着耳机开着音乐听不到周围的声音，这就是一个直观的提醒，并且可以添加自定义声音来推送提醒",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这就是一个直观的提醒；可以添加自定义声音来推送提醒",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693955ea000000001e010683",
+    "opinions": [
+      {
+        "opinion_text": "全程1小时，没有丢失数据图片之类的，微信记录、手机设置等完好无损",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "没有丢失数据图片之类的；微信记录、手机设置等完好无损",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前使用过程很丝滑，手机也没有发热之类的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "目前使用过程很丝滑，手机也没有发热之类的",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69662920000000001a028947",
+    "opinions": [
+      {
+        "opinion_text": "一直左手用手机，从来没觉得很多人吐槽的iPhone左滑返回难用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "从来没觉得很多人吐槽的iPhone左滑返回难用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "直到试了下用右手玩iPhone17Pro Max之后确实有点难绷啊！安卓基本左滑右滑都能返回，苹果还是不改",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "确实有点难绷啊；苹果还是不改",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓基本左滑右滑都能返回",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "安卓基本左滑右滑都能返回",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "698f4879000000000a032e94",
+    "opinions": [
+      {
+        "opinion_text": "之前没有用过苹果，所以一直很想要，但是买了用了之后发现没有我想象中的好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "买了用了之后发现没有我想象中的好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还是说我用的是基础版的本身就不行",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "基础版的本身就不行",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690986860000000007031808",
+    "opinions": [
+      {
+        "opinion_text": "本人17pm，自从买来就发现26系统好多bug",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "自从买来就发现26系统好多bug",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "发现许多bug消失了，最明显的就是切换后台不闪了，用起来确实比26系统流畅丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "许多bug消失了；切换后台不闪了；用起来确实比26系统流畅丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "对于什么负1屏掉帧，我觉得还好吧，之前14pm也有这种情况，所以我还能适应下来",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "我觉得还好吧；还能适应下来",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68af3bc6000000001c006e6c",
+    "opinions": [
+      {
+        "opinion_text": "ascend 910b pytorch在diffuser、cogvideo、transformers上巨慢，光加载模型都需要好几分钟，推理时间更是a100的1/7左右",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "ascend 910b pytorch巨慢；光加载模型都需要好几分钟；推理时间更是a100的1/7左右",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "问了技术支持说大部分时间都在数据搬运和调度开销，但是compile又不成功，ERR99999",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "compile又不成功，ERR99999",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69fb67c500000000380377fa",
+    "opinions": [
+      {
+        "opinion_text": "六年前买的华为nova7，这样了都还能继续用，把屏幕按回去一切照常，背面被摔过无数次早就稀巴烂了，外壳支离破碎，性能毫发无伤，佩服",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这样了都还能继续用；性能毫发无伤；佩服",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6982d396000000000a03277c",
+    "opinions": [
+      {
+        "opinion_text": "华为NPU昇腾芯片是否属于重大战略方向性失误，应该选择GPGPU，导致CANN软件栈面临作废状态？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "是否属于重大战略方向性失误；CANN软件栈面临作废状态",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f472b30000000036032df8",
+    "opinions": [
+      {
+        "opinion_text": "去之前：华为Pura X Max竟然敢卖10999？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "竟然敢卖10999",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在：多么完美的手机啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "多么完美的手机啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "682fea9e000000002301c1af",
+    "opinions": [
+      {
+        "opinion_text": "我始终不能理解，国内为啥会有那么多人对华为这家科技公司有着那么大的恶意，一提到华为就是各种冷嘲热讽，恶意满满",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "钦佩于它敢对美国极限施压说不",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的这个底气既来源于我们国家，也来源它自身的技术实力，华为主业是在通信领域，像5G、麒麟芯片、鸿蒙操作系统、红枫影像、折叠屏铰链全都是自研，全都是核心技术",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "全都是自研，全都是核心技术",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在多种重要高科技核心领域都有着不错的表现，电脑方面CPU、鸿蒙操作系统是自研；智驾方面智能座舱、智能驾驶、AEB以及激光雷达、电机电控、图灵底盘也是自研；服务器方面鲲鹏服务器和昇腾服务器两大系列也全部都是自研；通信基础设施方面从3G、4G到5G全部都是自研；AI方面企业级的盘古大模型、AI算力芯片",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "全都是自研；都有着不错的表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "即使是做到了这种程度，似乎也不合某些人的法眼，好在华为是一家实干型公司，少说话多做事，时间会证明，究竟会有多少人撑你",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为是一家实干型公司，少说话多做事；加油，华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68c1722c000000001b01d5b8",
+    "opinions": [
+      {
+        "opinion_text": "回归了mate40系列的经典设计，而且很可能会是最后一代的同心圆星环设计",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "回归了mate40系列的经典设计",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是它的表现属实不太好，拍照发糊、用起来发热、续航一天三冲、麒麟9000s的性能也不太好",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "表现属实不太好；拍照发糊、用起来发热、续航一天三冲、麒麟9000s的性能也不太好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "当时发布啥新黑科技都没，红枫镜头咯、钛金属边框咯等等都没得，就只是单纯回归＋首代三挖孔设计，属实是除了颜值啥都很一般了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "啥新黑科技都没；除了颜值啥都很一般了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0724bd0000000037034ffa",
+    "opinions": [
+      {
+        "opinion_text": "粉红芭乐真的很好看，特别新机到手比去店里样机看到的还要好一点",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "粉红芭乐真的很好看；比去店里样机看到的还要好一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机很流畅，之前用的nova pro，换了之后真的很丝滑，刷NFC之类都比之前快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机很流畅；真的很丝滑；刷NFC之类都比之前快",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "多了很多巧思点，比如各种有趣小组件还有快捷键灵动岛等等，页面确实更丰富了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "多了很多巧思点；页面确实更丰富了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "试了一下像素还是很不错的，坐在大侧但能拍得挺清楚的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "像素还是很不错的；能拍得挺清楚的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "云闪付里面的那个有奖发票的到账奖励不支持查看也无法使用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "不支持查看也无法使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信有些企业微信消息免打扰以后没有折叠聊天，有些企业微信可以，有些不行",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "没有折叠聊天；有些可以，有些不行",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "QQ音乐的卡片不能透明化，之前安卓窗口小工具是可以的，现在有色真的很别扭",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "不能透明化；现在有色真的很别扭",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

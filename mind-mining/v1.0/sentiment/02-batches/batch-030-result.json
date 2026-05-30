@@ -1,0 +1,383 @@
+[
+  {
+    "note_id": "68fc9cd70000000004010308",
+    "opinions": [
+      {
+        "opinion_text": "华为真的越来越苹果了，嘴上不怎么说，但这个门店啊，这个设置啊，真的有点像啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户观察到华为的门店和设置越来越像苹果，这是一种客观观察，没有明显的褒贬态度，只是指出相似性",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a053cff00000000380363f8",
+    "opinions": [
+      {
+        "opinion_text": "不打游戏，不看视频，纯打字手机都发烫，且天气温度并不高。手机电池健康直接给我干掉一格",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述了手机在轻度使用下异常发烫，且电池健康度下降，表达明显的不满和困扰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "要不要升鸿蒙6啊，会好一些吗",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户在询问是否升级鸿蒙6能改善问题，是一种求助性质的提问，没有明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a07f6b9000000003503a586",
+    "opinions": [
+      {
+        "opinion_text": "华为P70用户真的会谢！！在空调房里就刷刷抖音小红书，连手机壳都不敢带，结果手机直接烫成暖手宝…",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户表达了对华为P70发烫问题的强烈不满，即使在空调房轻度使用也严重发烫，使用了'真的会谢'等强烈情绪表达",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "去线下检测说一切正常？？这到底是我错觉还是产品真的有问题啊？下次再也不想支持国货了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户对售后检测结果表示质疑，并明确表示下次不再支持国货，表达了强烈的失望和放弃意愿",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69029b6e00000000070168d5",
+    "opinions": [
+      {
+        "opinion_text": "华为手环10未显示清醒时间，苹果手表S10显示清醒时间59分钟。实测苹果更接近真实的情况",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户通过实测对比，认为苹果手表的睡眠监测数据更接近真实情况，对苹果的数据准确性给予了肯定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是仔细看了解读发现是两个品牌统计的方式不一样",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户指出华为和苹果的睡眠监测差异源于统计方式不同，这是一种客观解释，没有褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是仔细看了解读发现是两个品牌统计的方式不一样",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户指出华为和苹果的睡眠监测差异源于统计方式不同，这是一种客观解释，没有褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69cb27fc0000000023026280",
+    "opinions": [
+      {
+        "opinion_text": "苹果睡眠评分100，但华为只给79。起夜两次，还能有100分，苹果真宽容",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为苹果睡眠评分更宽容，即使在起夜两次的情况下仍给满分，暗示对苹果评分机制的认可和喜爱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果睡眠评分100，但华为只给79",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户对比显示华为评分较低（79分），结合上下文暗示华为评分过于严格，让用户感到不满",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0aaa2a0000000037034a66",
+    "opinions": [
+      {
+        "opinion_text": "升级后的感受真的很差………各种软件用起来真的慢的一批",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户明确表示升级纯血鸿蒙后体验很差，软件运行缓慢，使用了'真的很差'和'慢的一批'等强烈负面表达",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "尤其是不兼容的软件放在卓易通里面的更是难用，一打开页面直接停滞像一层雾，1-2s后才转为正常",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述了不兼容软件在卓易通中的严重卡顿问题，页面停滞1-2秒，严重影响使用体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "各种软件的便捷操作还不到位，真的影响手机使用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户指出鸿蒙系统下软件便捷操作不完善，影响了整体手机使用体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d4cc94000000001300eb22",
+    "opinions": [
+      {
+        "opinion_text": "千万不要买，如果想买等到两三个月之后再买！第一次在官网抢的首发，19号收到17pro512G，传输完之后玩了一个多小时，手机屏幕出现故障，所有黑色的地方变红",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户强烈建议不要购买iPhone 17 Pro首发，描述了严重的屏幕故障问题（黑色变红），并经历了退货",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "退货之后又抢了一部同样的型号，刚开始用很正常，但是用着用着发现太卡了，经常卡着不动",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述了更换后的iPhone 17 Pro仍然存在严重卡顿问题，经常卡着不动，影响日常使用",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "比如抖音商城申请换货的时候，每次都卡在上传图片的时候，退出来重新弄还是卡到那里不动",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户举例说明手机在抖音商城上传图片时卡顿的具体场景，反复出现同一问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "696f24cc000000000b00a94d",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17真的是用过最难用的🍎没有之一！vx聊天里面想拍照，打开直接黑屏，退出vx页面用相机也是黑屏",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户强烈批评iPhone 17是自己用过最难用的苹果手机，描述了微信和相机黑屏的严重问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机拔掉充电器依旧在充电…我在大马路上啊…哪里来的电啊？赶紧出新款吧，17真的用的恼火了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述了拔掉充电器后仍显示充电的bug，表达了极度恼火和无奈，希望赶紧出新款替换",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "697c615c00000000210318a5",
+    "opinions": [
+      {
+        "opinion_text": "微信打视频黑屏卡顿，打字卡顿，手机慢半拍，声音调节卡顿……",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户列举了iPhone 17 Pro多个卡顿问题：视频黑屏、打字卡顿、反应慢、声音调节卡顿，表达强烈不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "要不是我老十四摔得稀烂，哪轮得到你上位！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户表达了对iPhone 17 Pro的失望和后悔，暗示如果不是旧手机坏了，根本不会买这款",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69947172000000001a035aaf",
+    "opinions": [
+      {
+        "opinion_text": "当了十多年的苹果用户，后面确实体感没有觉得升级换代有什么不一样",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户作为十多年苹果用户，感觉苹果升级换代没有明显差异，是一种平淡的中性评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照丑，这个是我最受不了的，一开始就觉得丑，用到后面越来越丑，而且镜头开始莫名其妙的发灰，拍照土拉吧唧的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户强烈批评华为mate 70pro+拍照效果差，镜头发灰，使用了'最受不了'、'土拉吧唧'等强烈负面表达",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙系统抱着忍忍吧给点时间，从早期连微信收藏都没有，忍到今天终于能看到朋友圈原来大家还可以发表情包了，但还是需要给更多时间，不想等了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户对鸿蒙系统的完善速度表示失望，虽然有所进步但等待太久，已经失去耐心",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "文件传输之类的看东西很方便，电量过关不用经常充电",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户肯定了华为在文件传输和续航方面的优点，认为很方便且电量够用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最喜欢的nfc、遥控器，一些不常用的小玩意儿提高了很大的幸福感",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户喜欢华为的NFC和遥控器功能，认为这些小功能提升了使用幸福感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为掉价真的太快了！！！才买了半年多，我的手机身价二手已经从8k＋降到了3900",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户对华为手机保值率极低表示强烈不满，半年多贬值超过50%",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我的iphone13 pro历时4年＋居然还能卖2500",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户对比指出iPhone 13 Pro使用4年多仍能卖2500元，肯定了苹果的高保值率",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "692b64e8000000000d00d074",
+    "opinions": [
+      {
+        "opinion_text": "我22年以前用的是几千块钱的安卓机确实用两年就卡了",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户回忆过去使用安卓机的经历，表示用两年就会卡顿，对安卓的耐用性有负面印象",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "后面换了个14pro但是用了两年多电池就不行了，现在打游戏偶尔也出现卡幀",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户描述iPhone 14 Pro使用两年多后电池衰减和游戏卡帧问题，对苹果的长期使用体验表示不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在的高配旗舰手机和苹果差别大吗",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户提问现在国产高配旗舰与苹果的差距，是一种中性的询问，没有明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695f2aed000000001a029c24",
+    "opinions": [
+      {
+        "opinion_text": "玩燕云打侠境卡到一动不动，下地掉帧，图片跟雪花片一样",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述了华为mate80玩游戏时的严重卡顿和掉帧问题，'卡到一动不动'和'雪花片'表达了强烈不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a03d4ad0000000038023802",
+    "opinions": [
+      {
+        "opinion_text": "不知道是不是我的打开方式不对，好卡啊，反应好慢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户表达了对iPhone 17 Pro Max卡顿和反应慢的强烈不满，虽然用了疑问语气但核心情绪是负面",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f02a0d00000000370349ba",
+    "opinions": [
+      {
+        "opinion_text": "下个办公软件要一百个补丁……受不了了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户表达了对鸿蒙系统下办公软件兼容性极差的强烈不满，'一百个补丁'是夸张表达，'受不了了'显示情绪强烈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "681f6342000000002102e24a",
+    "opinions": [
+      {
+        "opinion_text": "华为的手机真tmd难用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户用粗话直接表达对华为手机的不满，情绪非常强烈，虽然内容简短但态度明确",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

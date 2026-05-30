@@ -1,0 +1,349 @@
+[
+  {
+    "note_id": "6826d276000000000303c137",
+    "opinions": [
+      {
+        "opinion_text": "这个功能我以为会让purax独占，没想到这么快就下放到mate70系列了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没想到这么快就下放到mate70系列了——表达惊喜，认为功能下放速度快是好消息",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刚才试了一下，还是很好用，很灵敏的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还是很好用，很灵敏的——直接表达使用体验好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a15692a000000003502f0ff",
+    "opinions": [
+      {
+        "opinion_text": "4年前穿插用过一年多华为，觉得挺好，丝滑，电池硬挺，信号好，兼容度高",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "觉得挺好，丝滑，电池硬挺，信号好，兼容度高——多个维度正面评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "后来换了14pro，顿时觉得卡的要死",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "顿时觉得卡的要死——强烈负面评价流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在又换了华为80非凡大师，整个人都蒙了。鸿蒙这个系统是什么路数。微信功能回到解放前。完全不成熟的系统就开始上市了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "整个人都蒙了，微信功能回到解放前，完全不成熟的系统就开始上市了——强烈不满和质疑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6951dae8000000001e039d36",
+    "opinions": [
+      {
+        "opinion_text": "升级之后，除了沉浸光感的特效特别炫酷外，感觉系统使用中更加丝滑",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "特效特别炫酷，感觉系统使用中更加丝滑——正面评价升级效果",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Mate80入手两周来，对于图库相册无法手动拖动排序，一直比较苦恼，125版本更新之后，这个问题完全解决了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这个问题完全解决了——正面评价问题修复",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙6果然是越用越好用，越用越爱用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "越用越好用，越用越爱用——强烈正面情感表达",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a17b2df000000000702c3ef",
+    "opinions": [
+      {
+        "opinion_text": "昨天置换了一个华为手机，华为畅享90Promax，用起来那就是一个丝滑，起飞",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用起来那就是一个丝滑，起飞——强烈正面流畅度评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a14188d000000003601e400",
+    "opinions": [
+      {
+        "opinion_text": "北京银行app的部分功能也受到限制，因为手机问题，自己还要专门跑一趟网点",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "部分功能也受到限制，还要专门跑一趟网点——表达兼容性问题带来的实际困扰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只能说在这个信息化的时代，华为mate80pro真是666",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真是666——反讽语气，结合上下文表达强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69453575000000001e020f81",
+    "opinions": [
+      {
+        "opinion_text": "大家有没有觉得苹果的高刷很多场景没有120hz呀，比如刷小红书",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很多场景没有120hz——质疑苹果高刷体验未达预期",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a18162f0000000007025545",
+    "opinions": [
+      {
+        "opinion_text": "就是冲着粉色买的，新电池续航也不错，直接单手操作，流畅度还可以",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航也不错，流畅度还可以——正面评价续航和流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前还担心卡呢，有点多余了，我朋友的感觉版本比较低，没我的流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "担心卡有点多余了，没我的流畅——正面评价流畅度，并与朋友手机对比",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "有人说高系统可能续航会不好，新电池没什么感觉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "新电池没什么感觉——对续航话题的中性回应，无明确情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照也好看，挺真实的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照也好看，挺真实的——正面评价拍照效果",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695b3984000000001e03607f",
+    "opinions": [
+      {
+        "opinion_text": "资深Win用户，因为小新突然死掉➕买到了Dell的瑕疵品*2次➕好心网友告诉的联想600刀的屏幕是不好的，折腾一通果断决定换",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "小新突然死掉，Dell的瑕疵品*2次，联想600刀的屏幕是不好的——对联想和Dell的强烈负面经历",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "下单的Mac M4银色，到手感觉非常耐看",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "到手感觉非常耐看——正面评价外观",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航真的强，用一天足足够够，不用背着充电器跑了以后；很轻，不用带鼠标",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "续航真的强，用一天足足够够——强烈正面评价续航和便携性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "触控板：之前用联想就喜欢用触控板，在研究了教程后可以舍弃鼠标，切换屏幕，快捷手势超级丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "快捷手势超级丝滑——强烈正面评价触控板流畅度体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "彻底实现苹果生态系统联动，文件传输助手退休，包括但不限于ipad作拓展屏，iphone ipad复制直接粘贴，iphone iPad给电脑笔记拍图片",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "彻底实现苹果生态系统联动——强烈正面评价生态体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Office系列登陆学校账号都能用，因为寒假偷懒也没什么要处理的所以还没深入研究",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "都能用，还没深入研究——中性陈述，无明确情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总结：不打游戏不用特别专业软件，早买早享受，少走弯路",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "早买早享受，少走弯路——强烈推荐和正面总结",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a17a5d00000000035038b03",
+    "opinions": [
+      {
+        "opinion_text": "手机是去年5月底买的，今年5月份突然刷到电池返场，我看了下自己的，循环了372次就92%了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "循环了372次就92%了——对电池衰减速度的负面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刚收到的时候就觉得面容不行，经常面容付款，开机失败",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "面容不行，经常面容付款，开机失败——负面评价面容识别功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是之前的小12超级丝滑，没有这种问题啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小12超级丝滑，没有这种问题——正面评价旧机型iPhone 12的流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "还有黑屏，抖音退出却一直有声音等一系列问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "黑屏，抖音退出却一直有声音——负面评价系统稳定性问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过也要夸一夸苹果售后真的快速，给了备用机，10天就拿到了满血复活的手机",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "售后真的快速，给了备用机，10天就拿到了满血复活的手机——正面评价售后服务",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a144c650000000008031248",
+    "opinions": [
+      {
+        "opinion_text": "不然就像我一样卡的要死，停在这个页面十分钟，强制关机都关不了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡的要死，停在这个页面十分钟，强制关机都关不了——强烈负面评价系统卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "本来我的14pro还能再坚挺五年，现在估计一年内就要换了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "本来还能再坚挺五年，现在估计一年内就要换了——表达更新导致手机提前报废的强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "原来是ios17.6，很丝滑。如果不是为了匹配AirPods和iwatch功能更本不想更新",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原来是ios17.6，很丝滑——正面评价旧版本系统流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在搞的跟安卓机一样",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在搞的跟安卓机一样——负面评价更新后体验下降，暗含对安卓的负面刻板印象",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果更新和windows系统更新一样恶心",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果更新和windows系统更新一样恶心——强烈负面评价系统更新策略",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

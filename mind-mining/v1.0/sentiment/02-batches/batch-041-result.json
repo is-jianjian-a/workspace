@@ -1,0 +1,392 @@
+[
+  {
+    "note_id": "691eb15a000000001e00d17c",
+    "opinions": [
+      {
+        "opinion_text": "苹果16promax出现回音卡顿，老卡在最后一个音",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果16promax出现回音卡顿 老卡在最后一个音",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6918bceb0000000004016b24",
+    "opinions": [
+      {
+        "opinion_text": "之前用的13PM，照理说也是一代神机了，但有段时间经常会卡顿，点什么都没反应，就卡住不动，过个五六秒或者上滑到桌面又好了，还频繁的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "经常会卡顿，点什么都没反应，就卡住不动，还频繁的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但过了那段时间又好了，现在嘎嘎丝滑反而比前段时间好了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在嘎嘎丝滑反而比前段时间好了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "难怪好多人3000以内狂推二手13PM",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "好多人3000以内狂推二手13PM",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0e65e10000000038020b4b",
+    "opinions": [
+      {
+        "opinion_text": "目前感觉26.0.1很稳定续航很好也不怎么发烫",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "很稳定续航很好也不怎么发烫",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "除了拍照卡的问题都挺好的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照卡的问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "请问26.5续航怎么样视频发烫严重吗",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "询问26.5续航和视频发烫情况，无明确态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0da0b800000000080244a7",
+    "opinions": [
+      {
+        "opinion_text": "先是自动关机，又是频繁拍照卡顿，现在又发热烫手",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "自动关机、频繁拍照卡顿、发热烫手",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "690da086000000000702317c",
+    "opinions": [
+      {
+        "opinion_text": "今年刚从13换到16，拿到手没几天开始视频卡罗，人家发消息过来从抖音切换到微信等几十秒，微信拍照卡顿，摄像黑屏卡住",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "视频卡罗、切换到微信等几十秒、微信拍照卡顿、摄像黑屏卡住",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "从18.3升级到26，一切都丝滑了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "一切都丝滑了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69fc02f5000000003601c5c1",
+    "opinions": [
+      {
+        "opinion_text": "现在的这个破九代笔触延迟已经来到了一笔卡一秒，每次组合页开画布都只剩下7个图层画得我吐血，还时不时来个闪退让我没法撤回",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "笔触延迟一笔卡一秒、只剩下7个图层、时不时来个闪退",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我以前一直以为平板图层就这样少，直到ds告诉我同样是5000*5000别的平板可以几十个图层而我只有个位数",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "别的平板可以几十个图层而我只有个位数",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ea42850000000022025f77",
+    "opinions": [
+      {
+        "opinion_text": "拍照特别发烫、卡到掉帧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照特别发烫、卡到掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "编辑实况照片会闪退",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "编辑实况照片会闪退",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "经常无信号",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "经常无信号",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "打视频电话也是发烫卡顿",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "打视频电话也是发烫卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "掉电特别快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "掉电特别快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相机会黑屏",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "相机会黑屏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "电源键经常无反应",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电源键经常无反应",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果直接给我换了新电池和主板，在保修期内，不花一分钱，满血回归",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "不花一分钱，满血回归",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68da786d000000001400bd80",
+    "opinions": [
+      {
+        "opinion_text": "苹果17pro电话结束后声音会延迟几秒关闭，是那种卡卡的非正常声音",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "声音会延迟几秒关闭，是那种卡卡的非正常声音",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "刷视频退回主界面后也有卡卡的声音，持续几秒",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有卡卡的声音，持续几秒",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69b22c6d000000000c0095c2",
+    "opinions": [
+      {
+        "opinion_text": "苹果13卡疯了，有没有办法能让它变得顺畅一点",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果13卡疯了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0d9bcd00000000070259c4",
+    "opinions": [
+      {
+        "opinion_text": "已经换了一块全新的非原装电池了，电量满的，谁知道还是杀后台严重",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还是杀后台严重",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68d0d4ed000000000b03dcb0",
+    "opinions": [
+      {
+        "opinion_text": "为什么最近苹果系统卡没人骂",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提出疑问为什么苹果系统卡没人骂，无明确褒贬态度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "小米系统稍稍有一点卡就被骂惨",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "描述小米系统稍卡就被骂惨的现象，属于客观陈述对比",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6959c7dc00000000210312b4",
+    "opinions": [
+      {
+        "opinion_text": "因为受不了总是黑屏换了手机，结果还是转圈圈",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "受不了总是黑屏、结果还是转圈圈",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "换下来的旧机却正常了，擦干净sim卡，连续几天好像不转圈圈了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "旧机却正常了、好像不转圈圈了",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68f44cb500000000070384ed",
+    "opinions": [
+      {
+        "opinion_text": "苹果手机不卡顿的原理是什么？是因为它经常定期清理缓存吗？不太理解",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提出技术疑问，无明确褒贬态度",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a00851d000000003601f2ac",
+    "opinions": [
+      {
+        "opinion_text": "经常卡顿，微博照相微信卡死只能退出重新进",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "经常卡顿，微博照相微信卡死只能退出重新进",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "电池掉电巨快，从94到92只充30多次",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池掉电巨快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只电池问题不建议返，耽误时间查不出问题还会变成拆封机得不偿失",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "耽误时间查不出问题还会变成拆封机得不偿失",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "并不是买苹果就想捞点好处",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "澄清自己不是想捞好处，无明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "当初若知道17是钛金属，我是不会同意退款的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "暗示对钛金属材质有偏好，隐含对产品的认可",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68ccbba8000000001300cdae",
+    "opinions": [
+      {
+        "opinion_text": "一开机就一直卡在这个页面怎么处理啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "一开机就一直卡在这个页面",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

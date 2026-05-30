@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UGC分类判定原则手册</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f5f7fa;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 60px 40px;
+    border-radius: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.header h1 { font-size: 2.5em; margin-bottom: 12px; }
+.header p { font-size: 1.1em; opacity: 0.9; }
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.stat-card {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-left: 4px solid;
+    transition: transform 0.2s;
+}
+.stat-card:hover { transform: translateY(-4px); }
+.stat-card .name { font-size: 1.1em; font-weight: 600; margin-bottom: 8px; }
+.stat-card .count { font-size: 2em; font-weight: 700; margin-bottom: 4px; }
+.stat-card .pct { color: #7f8c8d; font-size: 0.9em; }
+.toc {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.toc h2 { margin-bottom: 20px; font-size: 1.5em; }
+.toc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+.toc-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;
+    color: inherit;
+}
+.toc-item:hover { background: #f0f2f5; }
+.toc-item .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+.toc-item .info { flex: 1; }
+.toc-item .name { font-weight: 600; }
+.toc-item .count { font-size: 0.85em; color: #7f8c8d; }
+
+.category-section {
+    background: white;
+    border-radius: 16px;
+    padding: 40px;
+    margin-bottom: 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+.category-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ecf0f1;
+}
+.category-header .badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    font-size: 1.2em;
+    margin-right: 16px;
+}
+.category-header .info h2 { font-size: 1.8em; margin-bottom: 4px; }
+.category-header .info .desc { color: #7f8c8d; }
+.category-header .stats {
+    margin-left: auto;
+    text-align: right;
+}
+.category-header .stats .count { font-size: 2em; font-weight: 700; }
+.category-header .stats .pct { color: #7f8c8d; }
+
+.principle {
+    margin-bottom: 32px;
+    padding: 24px;
+    background: #fafbfc;
+    border-radius: 12px;
+    border-left: 4px solid;
+}
+.principle-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.principle-number {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    margin-right: 12px;
+    font-size: 0.9em;
+}
+.principle-title { font-size: 1.2em; font-weight: 600; }
+.principle-detail {
+    color: #5a6c7d;
+    margin-bottom: 16px;
+    padding-left: 44px;
+}
+.examples { padding-left: 44px; }
+.example {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 12px;
+    border: 1px solid #e8ecf1;
+}
+.example-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.example-badge {
+    background: #e8f4fd;
+    color: #1976d2;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.example-title { font-weight: 600; color: #2c3e50; }
+.example-content {
+    color: #5a6c7d;
+    font-size: 0.95em;
+    margin-bottom: 8px;
+    padding: 8px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    font-style: italic;
+}
+.example-reason {
+    color: #27ae60;
+    font-size: 0.9em;
+    padding: 8px;
+    background: #e8f8f0;
+    border-radius: 6px;
+    border-left: 3px solid #27ae60;
+}
+.example-reason::before {
+    content: "✓ 判定理由: ";
+    font-weight: 600;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 48px;
+    height: 48px;
+    background: #667eea;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(102,126,234,0.4);
+    font-size: 1.2em;
+    text-decoration: none;
+}
+.footer {
+    text-align: center;
+    padding: 40px;
+    color: #95a5a6;
+    font-size: 0.9em;
+}
+@media (max-width: 768px) {
+    .header h1 { font-size: 1.8em; }
+    .category-section { padding: 24px; }
+    .principle-detail, .examples { padding-left: 0; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>UGC分类判定原则手册</h1>
+    <p>基于 2,038 条小红书帖子的实际分类结果总结 | 8大分类 × 3条原则 × 3个示例</p>
+</div>
+<div class="stats-grid">
+    <div class="stat-card" style="border-left-color: #2ecc71">
+        <div class="name">真实UGC</div>
+        <div class="count" style="color: #2ecc71">986</div>
+        <div class="pct">占比 48.4%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #3498db">
+        <div class="name">行业新闻</div>
+        <div class="count" style="color: #3498db">232</div>
+        <div class="pct">占比 11.4%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #95a5a6">
+        <div class="name">信息缺失</div>
+        <div class="count" style="color: #95a5a6">224</div>
+        <div class="pct">占比 11.0%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #e74c3c">
+        <div class="name">营销内容</div>
+        <div class="count" style="color: #e74c3c">173</div>
+        <div class="pct">占比 8.5%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #9b59b6">
+        <div class="name">教程攻略</div>
+        <div class="count" style="color: #9b59b6">170</div>
+        <div class="pct">占比 8.3%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #f39c12">
+        <div class="name">参数对比</div>
+        <div class="count" style="color: #f39c12">113</div>
+        <div class="pct">占比 5.5%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #1abc9c">
+        <div class="name">职场求职</div>
+        <div class="count" style="color: #1abc9c">110</div>
+        <div class="pct">占比 5.4%</div>
+    </div>
+    
+    <div class="stat-card" style="border-left-color: #7f8c8d">
+        <div class="name">无效内容</div>
+        <div class="count" style="color: #7f8c8d">30</div>
+        <div class="pct">占比 1.5%</div>
+    </div>
+    </div>
+<div class="toc">
+    <h2>📑 目录导航</h2>
+    <div class="toc-grid">
+
+    <a href="#cat-real_ugc" class="toc-item">
+        <div class="dot" style="background: #2ecc71"></div>
+        <div class="info">
+            <div class="name">真实UGC</div>
+            <div class="count">986条 (48.4%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-news" class="toc-item">
+        <div class="dot" style="background: #3498db"></div>
+        <div class="info">
+            <div class="name">行业新闻</div>
+            <div class="count">232条 (11.4%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-info_missing" class="toc-item">
+        <div class="dot" style="background: #95a5a6"></div>
+        <div class="info">
+            <div class="name">信息缺失</div>
+            <div class="count">224条 (11.0%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-marketing" class="toc-item">
+        <div class="dot" style="background: #e74c3c"></div>
+        <div class="info">
+            <div class="name">营销内容</div>
+            <div class="count">173条 (8.5%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-tutorial" class="toc-item">
+        <div class="dot" style="background: #9b59b6"></div>
+        <div class="info">
+            <div class="name">教程攻略</div>
+            <div class="count">170条 (8.3%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-spec_comparison" class="toc-item">
+        <div class="dot" style="background: #f39c12"></div>
+        <div class="info">
+            <div class="name">参数对比</div>
+            <div class="count">113条 (5.5%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-career" class="toc-item">
+        <div class="dot" style="background: #1abc9c"></div>
+        <div class="info">
+            <div class="name">职场求职</div>
+            <div class="count">110条 (5.4%)</div>
+        </div>
+    </a>
+    
+    <a href="#cat-invalid" class="toc-item">
+        <div class="dot" style="background: #7f8c8d"></div>
+        <div class="info">
+            <div class="name">无效内容</div>
+            <div class="count">30条 (1.5%)</div>
+        </div>
+    </a>
+    
+    </div>
+</div>
+
+<div class="category-section" id="cat-real_ugc">
+    <div class="category-header">
+        <div class="badge" style="background: #2ecc71">真</div>
+        <div class="info">
+            <h2>真实UGC</h2>
+            <div class="desc">用户基于真实使用体验产生的内容，包含个人感受、场景描述、情感表达</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #2ecc71">986</div>
+            <div class="pct">48.4%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #2ecc71">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #2ecc71">1</div>
+            <div class="principle-title">第一人称真实体验分享</div>
+        </div>
+        <div class="principle-detail">使用"我"的视角描述实际使用感受，包含具体场景（换机、拍照、日常使用等）和个人评价</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">苹果换华为，真实使用感受</span>
+                </div>
+                <div class="example-content">用了三年苹果，最近换了华为Pura 70 Ultra。说实话，刚开始很不习惯，鸿蒙系统和iOS差别挺大的。但是用了一周后，发现很多细节做得比苹果好。比如长焦拍照，华为真的强太多了，拍远处的建筑细节很清楚。充电速度也是，100W快充半小时就满了，苹果根本比不了。不过视频拍摄还是苹果更稳，色彩更真实。总的来说，各有优劣，看个人需求吧。</div>
+                <div class="example-reason">第一人称真实换机心路历程，详细描述了长焦拍照、充电速度、视频拍摄等具体使用体验，有个人评价和情感</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">有对比才有伤害</span>
+                </div>
+                <div class="example-content">选哪个？求推荐。主要用来追剧、学习、画画、偶尔小游戏。希望性能好、用得久。看了华为和苹果，纠结中...</div>
+                <div class="example-reason">有明确主题的求助讨论，说明了具体使用场景（追剧、学习、画画、小游戏）和需求（性能好、用得久），属于真实用户提问</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">苹果、华为、vivo人像对比</span>
+                </div>
+                <div class="example-content">去门店实测了三款手机的人像模式。vivo X100 Ultra拍出来肤色最红润，华为Pura 70 Ultra比较真实自然，iPhone15 Pro Max有点发黄。个人更喜欢华为的效果，不会过度美颜，保留皮肤质感。</div>
+                <div class="example-reason">第一人称真实到店体验对比，有具体机型和详细观察，有个人偏好评价</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #2ecc71">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #2ecc71">2</div>
+            <div class="principle-title">有明确使用场景和需求表达</div>
+        </div>
+        <div class="principle-detail">说明具体使用目的（追剧、学习、拍照、游戏等），表达真实困惑或需求</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">学生党选华为还是苹果？</span>
+                </div>
+                <div class="example-content">预算5000左右，主要用来记笔记、看网课、偶尔拍照。华为MatePad和iPad Air怎么选？</div>
+                <div class="example-reason">明确说明身份（学生党）、预算、使用场景（记笔记、网课、拍照），属于真实需求表达</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">拍照党求助</span>
+                </div>
+                <div class="example-content">平时喜欢拍风景和人像，偶尔拍视频。华为Pura 70 Ultra和iPhone15 Pro Max哪个更适合？</div>
+                <div class="example-reason">明确使用场景（风景、人像、视频）和偏好，属于真实用户求助</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">换机纠结</span>
+                </div>
+                <div class="example-content">现在用iPhone12，电池不行了想换机。在华为Mate 60 Pro和iPhone15之间纠结，主要考虑续航和信号。</div>
+                <div class="example-reason">说明现有设备、换机原因、纠结点，有具体对比维度（续航、信号）</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #2ecc71">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #2ecc71">3</div>
+            <div class="principle-title">包含真实情感或态度表达</div>
+        </div>
+        <div class="principle-detail">内容中有惊喜、失望、满意、后悔等真实情感，或明确的好恶态度</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">从苹果换华为，后悔了...</span>
+                </div>
+                <div class="example-content">用了十年苹果，这次换了华为Mate 60 Pro。说实话有点后悔，系统很多地方不习惯，有些常用App适配也不好。</div>
+                <div class="example-reason">表达真实情感（后悔），有具体不满原因（不习惯、App适配），属于真实体验分享</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">华为拍照惊艳到我了</span>
+                </div>
+                <div class="example-content">本来对华为拍照没抱太大期望，结果去西藏旅游拍了一组照片，长焦效果太惊艳了！</div>
+                <div class="example-reason">有真实情感变化（没期望→惊艳），有具体场景（西藏旅游）和具体功能（长焦）</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">苹果信号真的让人抓狂</span>
+                </div>
+                <div class="example-content">在地铁里、电梯里、地下室，苹果信号总是最差的一个。同样的地方，华为满格，苹果直接无服务。</div>
+                <div class="example-reason">表达真实情绪（抓狂），有具体场景（地铁、电梯、地下室）和对比观察</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-news">
+    <div class="category-header">
+        <div class="badge" style="background: #3498db">行</div>
+        <div class="info">
+            <h2>行业新闻</h2>
+            <div class="desc">客观报道行业动态、产品爆料、市场数据，无个人使用体验</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #3498db">232</div>
+            <div class="pct">11.4%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #3498db">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #3498db">1</div>
+            <div class="principle-title">产品爆料/参数曝光</div>
+        </div>
+        <div class="principle-detail">报道未发布产品的参数、配置、发布时间等信息，来源为供应链或爆料者</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">iPhone Fold爆料：8英寸内屏+钛合金铰链</span>
+                </div>
+                <div class="example-content">据供应链消息，苹果首款折叠屏iPhone将采用8英寸OLED内屏，钛合金铰链设计，预计2026年发布。配置方面，搭载A19 Pro芯片，支持Apple Pencil，起售价预计1999美元。</div>
+                <div class="example-reason">客观报道产品爆料参数，无个人使用体验，属于行业新闻/爆料内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">鸿蒙OS 7.0正式发布</span>
+                </div>
+                <div class="example-content">华为正式发布鸿蒙OS 7.0，官方数据显示响应速度提升40%，后台保活率提升60%，新增AI大模型助手功能。支持机型包括Mate 60系列、Pura 70系列等。</div>
+                <div class="example-reason">内容全是官方技术参数和数据，格式整齐像新闻稿/官方发布，无个人使用体验</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">2024年Q3全球手机出货量排名</span>
+                </div>
+                <div class="example-content">根据IDC最新数据，2024年第三季度全球智能手机出货量排名：三星第一（市场份额20%），苹果第二（17%），小米第三（14%），华为回升至第五（9%）。</div>
+                <div class="example-reason">客观行业数据报道，无个人观点或使用体验，属于市场分析类新闻</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #3498db">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #3498db">2</div>
+            <div class="principle-title">官方发布/技术解读</div>
+        </div>
+        <div class="principle-detail">转述官方技术参数、系统更新内容，或对新技术的客观解读</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">鸿蒙Next适配进展</span>
+                </div>
+                <div class="example-content">华为公布鸿蒙Next适配计划，目前已有5000+应用完成适配，预计年底达到10000+。</div>
+                <div class="example-reason">转述官方数据和计划，无个人使用体验，属于官方信息发布类内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">A18芯片工艺解析</span>
+                </div>
+                <div class="example-content">苹果A18采用台积电3nm工艺，晶体管数量达到200亿，相比A17能效提升15%。</div>
+                <div class="example-reason">客观技术参数解读，无个人观点，属于技术分析类新闻</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">iOS 18新功能一览</span>
+                </div>
+                <div class="example-content">苹果发布iOS 18，主要更新包括：AI大模型集成、自定义主屏幕、改进的控制中心等。</div>
+                <div class="example-reason">客观罗列系统更新内容，无个人评价，属于产品发布新闻</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #3498db">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #3498db">3</div>
+            <div class="principle-title">市场数据/行业分析</div>
+        </div>
+        <div class="principle-detail">引用第三方数据机构的出货量、市场份额、销量排名等数据</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">Canalys Q3数据</span>
+                </div>
+                <div class="example-content">Canalys报告显示，2024年Q3中国智能手机市场，vivo第一（19%），华为第二（16%），苹果第三（15%）。</div>
+                <div class="example-reason">引用第三方机构数据，客观呈现市场格局，无个人使用体验</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">双11手机销量榜</span>
+                </div>
+                <div class="example-content">天猫双11手机销量TOP5：iPhone15、Redmi K70、华为Mate 60、iPhone14、荣耀100。</div>
+                <div class="example-reason">客观销售数据排名，无个人观点或体验分享</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">全球5G手机渗透率</span>
+                </div>
+                <div class="example-content">Counterpoint数据显示，2024年全球5G手机渗透率达到65%，中国市场的渗透率已超过80%。</div>
+                <div class="example-reason">引用行业数据，客观分析市场趋势，属于行业分析内容</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-info_missing">
+    <div class="category-header">
+        <div class="badge" style="background: #95a5a6">信</div>
+        <div class="info">
+            <h2>信息缺失</h2>
+            <div class="desc">内容过于简短或仅有图片，缺乏实质观点和有效信息</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #95a5a6">224</div>
+            <div class="pct">11.0%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #95a5a6">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #95a5a6">1</div>
+            <div class="principle-title">空泛提问无展开</div>
+        </div>
+        <div class="principle-detail">只有一句话的疑问，未说明具体场景、需求或对比维度</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">华为和苹果哪个好？</span>
+                </div>
+                <div class="example-content">华为和苹果哪个好？</div>
+                <div class="example-reason">空泛疑问句，标题和内容完全一致只有一句话，无实质观点和信息，看不出好赖</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">求推荐</span>
+                </div>
+                <div class="example-content">[图片][图片][图片]</div>
+                <div class="example-reason">只有图片无文字实质内容，无法判断对比细节和具体观点</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">纠结中</span>
+                </div>
+                <div class="example-content">好纠结啊，到底选哪个？</div>
+                <div class="example-reason">情绪化表达但无具体信息，未说明纠结原因、使用场景或对比维度</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #95a5a6">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #95a5a6">2</div>
+            <div class="principle-title">仅有图片无文字</div>
+        </div>
+        <div class="principle-detail">帖子只包含图片，没有任何文字描述或观点表达</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">[图片][图片][图片]</span>
+                </div>
+                <div class="example-content"></div>
+                <div class="example-reason">完全无文字内容，仅有图片，无法判断任何观点或信息</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">对比图</span>
+                </div>
+                <div class="example-content">[图片]</div>
+                <div class="example-reason">仅有图片和标题，无文字说明对比了什么、结论是什么</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">实拍</span>
+                </div>
+                <div class="example-content">[图片][图片]</div>
+                <div class="example-reason">仅有图片，无拍摄设备说明、无使用感受、无对比观点</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #95a5a6">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #95a5a6">3</div>
+            <div class="principle-title">情绪化表达无实质信息</div>
+        </div>
+        <div class="principle-detail">只有感叹、纠结等情绪，未说明原因、场景或具体需求</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">太难了</span>
+                </div>
+                <div class="example-content">选择困难症犯了，怎么办啊</div>
+                <div class="example-reason">仅有情绪表达（困难、纠结），未说明选择什么、为什么纠结</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">无语</span>
+                </div>
+                <div class="example-content">真的无语了</div>
+                <div class="example-reason">仅有情绪词，无事件描述、无对象、无原因</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">求助</span>
+                </div>
+                <div class="example-content">各位帮帮忙</div>
+                <div class="example-reason">仅有求助信号，未说明求助内容、背景或需求</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-marketing">
+    <div class="category-header">
+        <div class="badge" style="background: #e74c3c">营</div>
+        <div class="info">
+            <h2>营销内容</h2>
+            <div class="desc">以推广为目的的内容，格式模板化，无真实个人体验</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #e74c3c">173</div>
+            <div class="pct">8.5%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #e74c3c">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #e74c3c">1</div>
+            <div class="principle-title">模板化优缺点罗列</div>
+        </div>
+        <div class="principle-detail">使用✅❌、表格等整齐格式，机械罗列优缺点，无个人真实体验</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">华为vs苹果终极对比</span>
+                </div>
+                <div class="example-content">✅华为优势：信号强、充电快、拍照好、性价比高
+❌华为劣势：广告多、生态封闭、海外应用少
+✅苹果优势：系统流畅、生态完善、隐私保护好
+❌苹果劣势：信号差、充电慢、价格贵</div>
+                <div class="example-reason">格式整齐模板化（✅❌符号），无个人使用体验，一味罗列优缺点，典型的营销号风格</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">高价回收二手手机</span>
+                </div>
+                <div class="example-content">专业回收华为、苹果、小米等各大品牌手机。价格公道，当面验机，现场打款。支持以旧换新，欢迎咨询！</div>
+                <div class="example-reason">标签含手机回收/高价回收，以推广业务为目的，无个人真实体验</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">2024手机选购指南</span>
+                </div>
+                <div class="example-content">处理器：苹果A18 &gt; 骁龙8 Gen3 &gt; 麒麟9020
+屏幕：三星 &gt; 京东方 &gt; 维信诺
+续航：华为 &gt; 小米 &gt; 苹果
+影像：vivo &gt; 华为 &gt; 苹果</div>
+                <div class="example-reason">纯参数罗列和排名对比，无个人使用体验，营销号/导购风格</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #e74c3c">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #e74c3c">2</div>
+            <div class="principle-title">商业推广/引流目的</div>
+        </div>
+        <div class="principle-detail">内容以推广业务、引流到私域或销售产品为目的</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">专业回收各品牌手机</span>
+                </div>
+                <div class="example-content">高价回收华为、苹果、小米等品牌手机，支持上门回收，当场验机打款。微信xxx</div>
+                <div class="example-reason">以回收业务推广为目的，包含联系方式引流，无真实使用体验</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">手机批发渠道</span>
+                </div>
+                <div class="example-content">各品牌手机批发价，比官网便宜500-2000。支持全国发货，假一赔十。</div>
+                <div class="example-reason">以销售为目的，宣传价格优势，无真实体验内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">关注领取购机攻略</span>
+                </div>
+                <div class="example-content">关注我，私信"攻略"领取2024最全手机选购指南，帮你省2000元！</div>
+                <div class="example-reason">以引流涨粉为目的，用福利诱导关注，无实质内容</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #e74c3c">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #e74c3c">3</div>
+            <div class="principle-title">纯参数/排名对比</div>
+        </div>
+        <div class="principle-detail">只罗列参数、跑分、排名，无实际使用感受或场景描述</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">2024手机性能排行榜</span>
+                </div>
+                <div class="example-content">TOP1: iPhone15 Pro Max（A18，98万分）
+TOP2: 小米14 Ultra（骁龙8 Gen3，95万分）
+TOP3: 华为Pura 70 Ultra（麒麟9020，88万分）</div>
+                <div class="example-reason">纯排名和分数罗列，无个人体验，属于营销号/导购风格</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">各品牌旗舰参数一览</span>
+                </div>
+                <div class="example-content">华为：麒麟9020、12GB、512GB、5200mAh
+苹果：A18 Pro、8GB、512GB、4422mAh
+小米：骁龙8 Gen3、16GB、1TB、5300mAh</div>
+                <div class="example-reason">纯参数表格罗列，无使用体验，属于产品说明书式内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">手机选购口诀</span>
+                </div>
+                <div class="example-content">拍照选vivo，性价比选小米，商务选华为，生态选苹果。</div>
+                <div class="example-reason">简单化口诀式推荐，无具体场景分析，属于营销号风格</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-tutorial">
+    <div class="category-header">
+        <div class="badge" style="background: #9b59b6">教</div>
+        <div class="info">
+            <h2>教程攻略</h2>
+            <div class="desc">以教学、指导为目的的内容，包含知识讲解或操作步骤</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #9b59b6">170</div>
+            <div class="pct">8.3%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #9b59b6">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #9b59b6">1</div>
+            <div class="principle-title">知识科普/原理解释</div>
+        </div>
+        <div class="principle-detail">讲解技术原理、参数含义、选购知识等教育性内容</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">手机芯片科普：A18 vs 麒麟9020</span>
+                </div>
+                <div class="example-content">很多小伙伴看不懂手机芯片参数，今天给大家科普一下。CPU主要看核心数和频率，GPU影响游戏性能，NPU负责AI计算。选购原则：买新不买旧，同代产品看跑分和功耗。</div>
+                <div class="example-reason">科普教程风格，教读者了解手机芯片知识，有知识讲解和选购原则</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">超全平板选购指南</span>
+                </div>
+                <div class="example-content">1. 确定预算：2000以下选安卓，3000以上考虑苹果
+2. 明确用途：学习选支持手写笔的，娱乐选屏幕大的
+3. 核心对比：处理器、屏幕、续航、生态
+4. 避坑指南：注意存储容量，128G可能不够用</div>
+                <div class="example-reason">明确的选购攻略/教程，有核心对比、价格对比、避坑指南等操作指导</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">华为手机隐藏功能大全</span>
+                </div>
+                <div class="example-content">1. 指关节截屏：用指关节双击屏幕
+2. 分屏操作：指关节在屏幕中间画线
+3. 语音助手：长按电源键唤醒小艺
+4. 隐私空间：设置-隐私-隐私空间</div>
+                <div class="example-reason">操作教程性质，教用户如何使用特定功能，有明确步骤指导</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #9b59b6">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #9b59b6">2</div>
+            <div class="principle-title">选购攻略/决策指南</div>
+        </div>
+        <div class="principle-detail">提供选购建议、对比维度、避坑指南等决策辅助内容</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">2024手机选购全攻略</span>
+                </div>
+                <div class="example-content">1. 确定预算区间
+2. 明确核心需求（拍照/游戏/续航）
+3. 对比同价位机型
+4. 关注用户评价而非参数
+5. 线下体验后再决定</div>
+                <div class="example-reason">系统的选购指导，有步骤和原则，属于攻略类内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">避坑指南：这些手机不要买</span>
+                </div>
+                <div class="example-content">1. 存储128G以下的不要买
+2. 电池小于4000mAh的不要买
+3. 发布超过两年的旗舰不要买
+4. 小众品牌售后没保障的不要买</div>
+                <div class="example-reason">以避坑为目的的选购指导，有明确标准和原因</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">不同预算手机推荐</span>
+                </div>
+                <div class="example-content">1000-2000：Redmi Note系列、realme
+2000-3000：一加Ace、iQOO Neo
+3000-5000：小米数字系列、荣耀Magic
+5000+：华为Mate、iPhone</div>
+                <div class="example-reason">按预算分档推荐，有明确选购逻辑，属于导购攻略</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #9b59b6">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #9b59b6">3</div>
+            <div class="principle-title">操作教程/使用技巧</div>
+        </div>
+        <div class="principle-detail">教用户如何使用特定功能或设置</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">华为手机省电设置</span>
+                </div>
+                <div class="example-content">1. 设置-电池-省电模式
+2. 关闭不必要的后台应用
+3. 降低屏幕刷新率
+4. 关闭5G使用4G</div>
+                <div class="example-reason">具体操作步骤指导，教用户如何设置，属于教程类内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">iPhone相机专业模式</span>
+                </div>
+                <div class="example-content">打开相机，滑动到"专业"，可以手动调节ISO、快门速度、白平衡等参数。</div>
+                <div class="example-reason">功能使用教学，有明确操作步骤</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">手机数据迁移教程</span>
+                </div>
+                <div class="example-content">苹果转华为：使用"手机克隆"App，扫码连接后选择要迁移的数据。华为转苹果：使用"转移到iOS"App。</div>
+                <div class="example-reason">跨品牌数据迁移操作指导，属于教程类内容</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-spec_comparison">
+    <div class="category-header">
+        <div class="badge" style="background: #f39c12">参</div>
+        <div class="info">
+            <h2>参数对比</h2>
+            <div class="desc">以客观参数、跑分、规格为核心的对比内容，无个人体验</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #f39c12">113</div>
+            <div class="pct">5.5%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #f39c12">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #f39c12">1</div>
+            <div class="principle-title">跑分/性能数据对比</div>
+        </div>
+        <div class="principle-detail">以Benchmark跑分、性能测试数据为核心进行客观对比</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">Geekbench 6跑分对比</span>
+                </div>
+                <div class="example-content">麒麟9020：单核1600，多核5100
+苹果A18：单核2800，多核6800
+骁龙8 Gen3：单核2200，多核6500
+数据来源：Geekbench官网</div>
+                <div class="example-reason">以跑分数据为核心，客观对比芯片参数，像产品说明书式的参数罗列</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">各品牌手机优缺点汇总</span>
+                </div>
+                <div class="example-content">华为：信号强、续航好、拍照强，但价格贵、广告多
+苹果：系统流畅、生态好、隐私强，但信号差、充电慢
+小米：性价比高、功能全，但品控不稳定、广告多
+vivo：拍照好、音质强，但系统一般、更新慢</div>
+                <div class="example-reason">格式整齐像产品说明书，无个人使用体验，以品牌特性/参数为核心的客观罗列</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">旗舰手机拍照效果对比</span>
+                </div>
+                <div class="example-content">测试机型：iPhone15 Pro Max、华为Pura 70 Ultra、小米14 Ultra、vivo X100 Ultra
+对比维度：清晰度、色调、夜景、长焦
+结果：vivo长焦最强，华为夜景最好，苹果色彩最准</div>
+                <div class="example-reason">以多款手机拍照效果对比为核心，有具体设备列表和对比维度，属于参数/效果对比类内容</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #f39c12">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #f39c12">2</div>
+            <div class="principle-title">硬件规格参数对比</div>
+        </div>
+        <div class="principle-detail">对比处理器、屏幕、电池、摄像头等硬件参数</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">旗舰手机硬件参数对比</span>
+                </div>
+                <div class="example-content">屏幕：华为6.8" OLED 120Hz，苹果6.7" OLED 120Hz
+处理器：华为麒麟9020，苹果A18 Pro
+电池：华为5200mAh，苹果4422mAh
+充电：华为100W，苹果35W</div>
+                <div class="example-reason">纯硬件参数罗列对比，无个人使用体验</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">摄像头参数对比</span>
+                </div>
+                <div class="example-content">主摄：华为5000万 f/1.6，苹果4800万 f/1.78
+长焦：华为5000万 3.5x，苹果1200万 5x
+超广角：华为4000万，苹果1200万</div>
+                <div class="example-reason">纯摄像头规格对比，无实拍样张评价</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">屏幕参数对比</span>
+                </div>
+                <div class="example-content">分辨率：华为2844×1260，苹果2796×1290
+亮度：华为2500nit，苹果2000nit
+调光：华为1440Hz PWM，苹果480Hz PWM</div>
+                <div class="example-reason">纯屏幕技术参数对比，无实际观感描述</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #f39c12">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #f39c12">3</div>
+            <div class="principle-title">品牌特性客观总结</div>
+        </div>
+        <div class="principle-detail">总结各品牌的客观特点（非个人体验），如信号、生态、售后等</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">各品牌信号表现</span>
+                </div>
+                <div class="example-content">华为：支持卫星通信，地下室信号好
+苹果：信号一般，地铁易断线
+小米：信号中等，城市够用
+vivo：信号较好，支持5G双卡</div>
+                <div class="example-reason">客观总结品牌信号特点，无个人使用体验</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">各品牌售后政策</span>
+                </div>
+                <div class="example-content">华为：全国2000+服务点，保修一年
+苹果： Genius Bar预约，AppleCare+
+小米：寄修服务，部分城市有门店
+OPPO：门店多，服务好</div>
+                <div class="example-reason">客观对比售后服务，属于品牌特性总结</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">各品牌生态对比</span>
+                </div>
+                <div class="example-content">华为：鸿蒙生态，多设备协同
+苹果：iOS生态，AirDrop、Handoff
+小米：米家生态，智能家居
+三星：Galaxy生态，DeX桌面</div>
+                <div class="example-reason">客观总结各品牌生态系统特点</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-career">
+    <div class="category-header">
+        <div class="badge" style="background: #1abc9c">职</div>
+        <div class="info">
+            <h2>职场求职</h2>
+            <div class="desc">与华为/苹果作为雇主相关的职场、求职、面试内容</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #1abc9c">110</div>
+            <div class="pct">5.4%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #1abc9c">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #1abc9c">1</div>
+            <div class="principle-title">面试经验/求职分享</div>
+        </div>
+        <div class="principle-detail">分享在华为或苹果的面试经历、求职流程、offer选择</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">华为员工都在用什么手机</span>
+                </div>
+                <div class="example-content">在华为工作两年了，发现身边同事用什么的都有。研发部门很多用华为Mate系列，测试部门有人用苹果做对比测试。管理层基本都是华为旗舰。</div>
+                <div class="example-reason">内容与华为作为雇主相关，描述员工手机使用情况，属于职场/工作类内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">华为技术岗面经分享</span>
+                </div>
+                <div class="example-content">投了华为agent技术岗，分享一下面试经历。技术面问了Transformer原理和项目经验，主管面聊了对大模型的理解，HR面主要谈薪资期望。</div>
+                <div class="example-reason">详细描述华为技术岗面试经历，属于求职/面试经验分享</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">从苹果跳槽到华为的体验</span>
+                </div>
+                <div class="example-content">之前在苹果做供应链，现在跳槽到华为两个月了。工作节奏确实快很多，但成长也快。薪资待遇比苹果高20%左右，福利差不多。</div>
+                <div class="example-reason">涉及华为作为雇主的工作体验，属于职场/求职相关内容</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #1abc9c">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #1abc9c">2</div>
+            <div class="principle-title">员工视角/工作体验</div>
+        </div>
+        <div class="principle-detail">以员工身份描述在公司的工作体验、文化、福利等</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">在华为工作是什么体验</span>
+                </div>
+                <div class="example-content">入职华为三年了，分享一下工作感受。加班确实多，但成长也快。薪资在同行业算高的，年终奖看绩效。</div>
+                <div class="example-reason">以华为员工身份分享工作体验，属于职场类内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">苹果员工福利揭秘</span>
+                </div>
+                <div class="example-content">在Apple Store工作两年，员工每年有25%折扣，可以购买两台设备。</div>
+                <div class="example-reason">以苹果员工身份分享福利信息，属于职场类内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">华为vs苹果工作对比</span>
+                </div>
+                <div class="example-content">在华为和苹果都实习过，华为节奏快、压力大，苹果流程规范、work-life balance更好。</div>
+                <div class="example-reason">以员工/实习生视角对比两家公司，属于职场体验分享</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #1abc9c">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #1abc9c">3</div>
+            <div class="principle-title">招聘/内推信息</div>
+        </div>
+        <div class="principle-detail">发布招聘信息、内推机会、岗位介绍等</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">华为2025校招启动</span>
+                </div>
+                <div class="example-content">华为2025届校园招聘正式启动，岗位包括研发、产品、设计等类别。</div>
+                <div class="example-reason">招聘信息发布，与华为作为雇主相关</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">求华为内推</span>
+                </div>
+                <div class="example-content">有华为的大佬可以内推吗？投了简历没回音，求帮忙推一下。</div>
+                <div class="example-reason">求职内推请求，与华为作为雇主相关</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">苹果实习生招募</span>
+                </div>
+                <div class="example-content">Apple正在招募暑期实习生，要求计算机相关专业，有iOS开发经验优先。</div>
+                <div class="example-reason">实习招聘信息，与苹果作为雇主相关</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="category-section" id="cat-invalid">
+    <div class="category-header">
+        <div class="badge" style="background: #7f8c8d">无</div>
+        <div class="info">
+            <h2>无效内容</h2>
+            <div class="desc">与手机产品无关或内容完全不相关</div>
+        </div>
+        <div class="stats">
+            <div class="count" style="color: #7f8c8d">30</div>
+            <div class="pct">1.5%</div>
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #7f8c8d">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #7f8c8d">1</div>
+            <div class="principle-title">产品类别不符</div>
+        </div>
+        <div class="principle-detail">讨论的是笔记本、平板、手表等非手机产品</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">华为笔记本vs MacBook</span>
+                </div>
+                <div class="example-content">华为MateBook和MacBook Air对比，主要用来写代码和办公。</div>
+                <div class="example-reason">内容是华为笔记本vs MacBook笔记本电脑，与手机产品完全无关</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">橘子海</span>
+                </div>
+                <div class="example-content">被爱好似有靠山。今天天气很好，和男朋友一起去海边了。</div>
+                <div class="example-reason">内容与手机产品无关，仅为秀恩爱文案，手机型号只是背景道具</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">生活美学</span>
+                </div>
+                <div class="example-content">[图片][图片] 分享今天的下午茶。</div>
+                <div class="example-reason">内容仅包含生活美学标签，与手机产品完全无关，属于无效帖</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #7f8c8d">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #7f8c8d">2</div>
+            <div class="principle-title">内容与手机无关</div>
+        </div>
+        <div class="principle-detail">帖子主题与手机产品完全无关，手机只是背景或道具</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">今日穿搭</span>
+                </div>
+                <div class="example-content">分享今天的穿搭，手机壳是华为Mate 60的配套款。</div>
+                <div class="example-reason">主题是穿搭分享，手机只是配件提及，与手机产品无关</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">美食探店</span>
+                </div>
+                <div class="example-content">今天去了一家新餐厅，用iPhone拍了几张照片。</div>
+                <div class="example-reason">主题是美食探店，手机只是拍照工具提及</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">旅行日记</span>
+                </div>
+                <div class="example-content">西藏之旅Day3，沿途风景太美了！</div>
+                <div class="example-reason">主题是旅行分享，完全未涉及手机产品讨论</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="principle" style="border-left-color: #7f8c8d">
+        <div class="principle-header">
+            <div class="principle-number" style="background: #7f8c8d">3</div>
+            <div class="principle-title">纯广告/无关推广</div>
+        </div>
+        <div class="principle-detail">与手机完全无关的广告、推广内容</div>
+        <div class="examples">
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 1</span>
+                    <span class="example-title">减肥训练营招生</span>
+                </div>
+                <div class="example-content">30天减重10斤，专业教练一对一指导，现在报名享8折优惠！</div>
+                <div class="example-reason">与手机产品完全无关的广告内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 2</span>
+                    <span class="example-title">房产中介</span>
+                </div>
+                <div class="example-content">市中心精装房，三室两厅，拎包入住，价格可谈。</div>
+                <div class="example-reason">与手机产品完全无关的推广内容</div>
+            </div>
+
+            <div class="example">
+                <div class="example-header">
+                    <span class="example-badge">示例 3</span>
+                    <span class="example-title">理财产品</span>
+                </div>
+                <div class="example-content">年化收益8%，保本保息，限时抢购！</div>
+                <div class="example-reason">与手机产品完全无关的金融广告</div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    <p>UGC分类判定原则手册 | 数据来源：小红书 华为/苹果相关帖子 | 分类时间：2024年</p>
+</div>
+
+<a href="#" class="back-to-top">↑</a>
+
+</div>
+</body>
+</html>

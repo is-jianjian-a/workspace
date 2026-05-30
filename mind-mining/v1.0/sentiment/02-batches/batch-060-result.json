@@ -1,0 +1,545 @@
+[
+  {
+    "note_id": "6847dbc1000000002202c7cb",
+    "opinions": [
+      {
+        "opinion_text": "卡是真的卡，我 iPhone14 Pro，按理说不算太差劲，但表现出了明显的性能问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡是真的卡，我 iPhone14 Pro，按理说不算太差劲，但表现出了明显的性能问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "热是真的热，单单是把玩了一些系统应用，短短 1 小时就掉电到剩下 20%",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "热是真的热，单单是把玩了一些系统应用，短短 1 小时就掉电到剩下 20%",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "花是真的花，液态玻璃的透明度和模糊度把控得并不好，背景花一点的话，可读性非常差",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "花是真的花，液态玻璃的透明度和模糊度把控得并不好，背景花一点的话，可读性非常差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "进入桌面的一瞬间，有锤子「春风拂面」的感觉了！应用的入场特效明显做了加强，强到有点不像苹果的风格",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "进入桌面的一瞬间，有锤子「春风拂面」的感觉了！应用的入场特效明显做了加强",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "图标的质感有明显的提升，很舒服；单层次图片进化为了多层，可以有多层的高光质感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "图标的质感有明显的提升，很舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "液态玻璃的名字非常贴切，就像是一个水滴被压扁，中间非常通透，但同时保留了水滴四周的扭曲视觉感受",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "液态玻璃的名字非常贴切，就像是一个水滴被压扁，中间非常通透",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "真机上手体验后，远比看别人的视频和截图要震撼得多，把玩时的动态美感和动效非常舒服",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真机上手体验后，远比看别人的视频和截图要震撼得多，把玩时的动态美感和动效非常舒服",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "先别升级，真的卡，真的热，真的费电，尤其如果是主力机的话，强烈不建议",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "先别升级，真的卡，真的热，真的费电，尤其如果是主力机的话，强烈不建议",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "老机型的朋友就别升级了，这套渲染机制优化得再好，也会涉及到多层环境实时渲染的问题，对机器肯定是有额外损耗的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "老机型的朋友就别升级了，这套渲染机制优化得再好，也会涉及到多层环境实时渲染的问题，对机器肯定是有额外损耗的",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68fbad880000000007016fd4",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙系统最满意的就是小艺输入法，无比丝滑，语音识别非常准",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "鸿蒙系统最满意的就是小艺输入法，无比丝滑，语音识别非常准",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0df406000000003501c64b",
+    "opinions": [
+      {
+        "opinion_text": "Claudecode, code, minimax, 和苹果生态，MacBook的接洽，无缝接入，纵享丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "和苹果生态，MacBook的接洽，无缝接入，纵享丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e36fd700000000230273bb",
+    "opinions": [
+      {
+        "opinion_text": "受够了 Electron 和 Python 的臃肿卡顿？这才是原生开发该有的样子",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "纯 Swift 代码 + Apple Silicon 芯片，这就是 Osaurus 带来的极致体验：启动快如闪电，内存占用极低，流畅度直接拉满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "对于追求极致性能的开发者和用户来说，这才是真正的原生质感，完全释放了 Mac 的硬件潜力",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完全释放了 Mac 的硬件潜力",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a1254d90000000008033113",
+    "opinions": [
+      {
+        "opinion_text": "目的明确，付款拿手机，30分钟丝滑离场",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "30分钟丝滑离场，用上国补，店补，付款4999，等等党终于等到了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "698d33bc000000001a035451",
+    "opinions": [
+      {
+        "opinion_text": "买个Apple Watch送人，非强迫升级到最新系统，但我不想升级啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "非强迫升级到最新系统，但我不想升级啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "就连华为手表绑定我的iphone都很丝滑",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "就连华为手表绑定我的iphone都很丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "APPLE简直越来越霸道了，越来越不好用了。没有NFC，害我忘带门禁卡就经常开不了小区门",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "APPLE简直越来越霸道了，越来越不好用了。没有NFC，害我忘带门禁卡就经常开不了小区门",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我从3GS用到现在，这只是一个老果粉对Apple越来越失望的吐槽",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "老果粉对Apple越来越失望的吐槽",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为了国补，和快递员一起激活了好半天不成功",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "和快递员一起激活了好半天不成功",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "好不容易绑定成功了…这界面，什么鬼，乱七八糟的。我还是继续用我的华为手表了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这界面，什么鬼，乱七八糟的",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69cacb1300000000220035cc",
+    "opinions": [
+      {
+        "opinion_text": "先是magic8pro上下，帧数画质战斗体验都很棒，但屏幕太小，搓玻璃不舒服",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "magic8pro上下，帧数画质战斗体验都很棒",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但鸣潮没有纯血鸿蒙版，就在tap上下载，然后就是画质大色块，帧数稳不了40，分辨率在12.2英寸大屏上根本不够看，没有插针算法跑下来的原生表现极其糟糕基本不能玩",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "画质大色块，帧数稳不了40，分辨率在12.2英寸大屏上根本不够看，没有插针算法跑下来的原生表现极其糟糕基本不能玩",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这倒也可以理解，麒麟9000S的性能流畅打鸣潮确实不现实",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "麒麟9000S的性能流畅打鸣潮确实不现实",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c77a6b0000000022000ccd",
+    "opinions": [
+      {
+        "opinion_text": "mate80pro上市以来，在鸿蒙next加持下，系统运行的流畅度和生态ui一致性上展现出了和iOS几乎同等的高度",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统运行的流畅度和生态ui一致性上展现出了和iOS几乎同等的高度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "APP生态不足，鸿蒙可谓一直在猛猛补课，但确实是个时间活，得慢慢才能出效果",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "APP生态不足，鸿蒙可谓一直在猛猛补课，但确实是个时间活",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "CPU性能不够，除了系统层面的优化定制，华为其实一直在用激进调度掩盖性能，带来的缺点也很明显：续航差、发热大",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "CPU性能不够，续航差、发热大",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "风扇声音很轻，贴近耳朵也很轻微，没有高频刺耳的噪音",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "风扇声音很轻，贴近耳朵也很轻微，没有高频刺耳的噪音",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "降温效果不错，游戏时，开与不开，大概有7度左右的温差",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "降温效果不错，游戏时，开与不开，大概有7度左右的温差",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "希望华为加油做更猛的处理器，过渡阶段，主动散热整挺好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "希望华为加油做更猛的处理器，过渡阶段，主动散热整挺好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "689467db00000000250277e9",
+    "opinions": [
+      {
+        "opinion_text": "手机不小心从高空掉进了水里，然后手机就经历了6个多小时的浸泡，加上两场特大暴雨的冲击，晚上十点多闭园后工作人员给我捞上来的时候没想到手机完好无损，电量充足，没有关机，能够正常使用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机完好无损，电量充足，没有关机，能够正常使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "工作人员拆机清理了积水，说是里面的积水有很多，镜头里面都装满了水，但是清理完后目前检测手机内部没有任何损坏，不影响使用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "清理完后目前检测手机内部没有任何损坏，不影响使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机yyds",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为手机yyds",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6928504d000000001f00df81",
+    "opinions": [
+      {
+        "opinion_text": "制裁下的华为就像打不死的小强，中芯国际是鬼斧神工，Duv干着EUV的活",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "制裁下的华为就像打不死的小强，中芯国际是鬼斧神工",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙6的浏览器兼容性不错，应急登陆ERP操作很顺手，打打王者基本没压力",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙6的浏览器兼容性不错，应急登陆ERP操作很顺手，打打王者基本没压力",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "感觉挺厉害",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉挺厉害",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0acefb000000000803d45a",
+    "opinions": [
+      {
+        "opinion_text": "刚更新了鸿蒙6.1的117版本，新增了一些主题、安全性之类功能，然后流畅度也提升了一些吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "流畅度也提升了一些吧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但发热问题依旧还在，日常刷视频、看红书就变成暖手宝；然后玩游戏就直接烫手，甚至在王者打团、洛克王国刷异色出污染的时候，会有偶发性电音问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "发热问题依旧还在，日常刷视频就变成暖手宝；玩游戏就直接烫手，会有偶发性电音问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "功耗也依旧压不住，续航不够用，一天得2～3冲才勉强。并且因为发热问题，电池健康度下降很快，仅有83%了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "功耗也依旧压不住，续航不够用，一天得2～3冲才勉强，电池健康度下降很快，仅有83%了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67626a5a0000000014026fc4",
+    "opinions": [
+      {
+        "opinion_text": "功耗低的不像用落后的国产工艺7nm，真的强，体验了差不多两周了，游戏打了有王者，永劫，温度一直是温温的，最热反而是充电的时候",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "功耗低的不像用落后的国产工艺7nm，真的强，温度一直是温温的，最热反而是充电的时候",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "日常基本不发热，贼离谱",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "日常基本不发热，贼离谱",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69d17c7a000000001d01f31a",
+    "opinions": [
+      {
+        "opinion_text": "原生安卓的海外版Mate X7，大概介于骁龙8GEN2-GEN3之间，而且这个应该是超线程没有识别出来的情况下，实际有14核，蛮不错啦，加油",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "大概介于骁龙8GEN2-GEN3之间，实际有14核，蛮不错啦，加油",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67deac25000000000900df78",
+    "opinions": [
+      {
+        "opinion_text": "太宽了、不能一手持握、而且很方。外观设计也一般吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "太宽了、不能一手持握、而且很方。外观设计也一般吧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "价格简直是坑、7500起、就这？？说好的人人都买得起呢",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "价格简直是坑、7500起、就这？？说好的人人都买得起呢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "前期铺垫了一大堆、搞得神神秘秘、结果….. 期望值拉的太高了、真机简直不要…",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "期望值拉的太高了、真机简直不要…",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "4700W的电池不太够用啊，起码得5000W往上啊、开屏用很耗电的、一天1.5充了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "4700W的电池不太够用啊，开屏用很耗电的、一天1.5充了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "真怀疑大嘴是不是有反心，故意败坏品牌口碑",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真怀疑大嘴是不是有反心，故意败坏品牌口碑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "类纸化阅读、影院级观影等等卖点难以完全实现、好多App交互和适应还是不行啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "卖点难以完全实现、好多App交互和适应还是不行啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6980a10f000000002200b4f8",
+    "opinions": [
+      {
+        "opinion_text": "很多人买 iPhone，不是因为真的需要，而是因为不想买错",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "很多人买 iPhone，不是因为真的需要，而是因为不想买错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照用的是默认，性能永远富余，新功能看完发布会就忘了，真正每天用的，还是那几个 App",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照用的是默认，性能永远富余，新功能看完发布会就忘了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不是说 iPhone 不好，而是对普通人来说，它的价值有一半是心理层面的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "不是说 iPhone 不好，而是对普通人来说，它的价值有一半是心理层面的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "你每天在意的，其实是电量稳不稳、信号好不好、卡不卡、用着省不省心",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "电量稳不稳、信号好不好、卡不卡、用着省不省心",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "把手机用简单一点，比把手机买贵一点更重要",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "把手机用简单一点，比把手机买贵一点更重要",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

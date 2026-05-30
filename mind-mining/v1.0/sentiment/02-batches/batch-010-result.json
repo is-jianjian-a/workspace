@@ -1,0 +1,689 @@
+[
+  {
+    "note_id": "697972cd00000000220339d7",
+    "opinions": [
+      {
+        "opinion_text": "查看了对比图，真的好难选，又想加点钱买mate80pro",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户表达购买纠结，对mate80pro有倾向但无明确褒贬评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "696b75880000000021029498",
+    "opinions": [
+      {
+        "opinion_text": "听说拍照谁都\"吊打\"苹果这是共识？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"吊打\"一词暗示苹果拍照被其他品牌超越，带有贬低意味",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "依旧原相机4倍长焦直出，在日间与夜间各种环境下谁的效果更合你意？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观发起拍照对比，未表达明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "依旧原相机4倍长焦直出，在日间与夜间各种环境下谁的效果更合你意？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观发起拍照对比，未表达明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69635f1a000000000a0282ee",
+    "opinions": [
+      {
+        "opinion_text": "喜欢华为mate80的性能，又割舍不了苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"喜欢\"华为mate80的性能，表达正面情感",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "喜欢华为mate80的性能，又割舍不了苹果",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"割舍不了\"表达对苹果的高度依赖和喜爱",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为的nfc和自动拦截骚扰电话是苹果没有的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "强调华为具备苹果没有的功能优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的nfc和自动拦截骚扰电话是苹果没有的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "指出苹果缺少NFC和骚扰拦截功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用了这么多年的苹果全家桶，还是更适应苹果的生态系统，出门拍照片也更喜欢用17promax",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"更适应\"\"更喜欢\"表达对苹果生态和拍照的偏好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还是华为的主题更精致一些，动态效果和擦玻璃的互动，体验感拉满了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"更精致\"\"体验感拉满了\"表达高度满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a067118000000003700f67f",
+    "opinions": [
+      {
+        "opinion_text": "先选一个能用三年以上的电话，平时不玩大型游戏，看文件，看视频，拍照多一点，电池抗用就行",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户求助选型，未表达对品牌的褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66825bdf000000001c027c11",
+    "opinions": [
+      {
+        "opinion_text": "荣耀换华为我后悔了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"后悔了\"表达强烈负面情绪",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "就日常体验而已，系统的稳定性和丝滑度上，华为比起荣耀差远了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"差远了\"强烈否定华为的系统稳定性和丝滑度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "就日常体验而已，系统的稳定性和丝滑度上，华为比起荣耀差远了",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "通过对比突出荣耀在稳定性和丝滑度上的优势",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为的中转站真不如荣耀的任意门",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"不如\"直接否定华为中转站功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的中转站真不如荣耀的任意门",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通过对比肯定荣耀任意门功能更优",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "网上对华为吹捧的真过度了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"吹捧过度\"批评华为被过度美化",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "希望纯血鸿蒙推送后真的能不一样吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "表达对未来版本的期待，隐含对现状的不满",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ead02f000000001f031804",
+    "opinions": [
+      {
+        "opinion_text": "苹果的生态很好，但是air没有高刷，只有60，而且配置不行",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"生态很好\"为正面，\"没有高刷\"\"配置不行\"为负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但不得不说苹果确实可以用可以而且依然很流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"依然很流畅\"肯定苹果的流畅度表现",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "oppo5pro配置都是顶配，但是怕后期用久了就不流畅",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"配置都是顶配\"为正面，\"怕后期不流畅\"为负面担忧",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67b83429000000000602861e",
+    "opinions": [
+      {
+        "opinion_text": "iPhone：钛金属边框+磨砂玻璃，质感高级但直角边略硌手，6.9英寸大屏单手握持有点吃力",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"质感高级\"为正面，\"略硌手\"\"有点吃力\"为负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为：6.9英寸四曲面屏+钛合金中框，星环设计辨识度高，握感圆润不割手，但机身偏宽，女生单手操作困难",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"辨识度高\"\"握感圆润\"为正面，\"机身偏宽\"\"操作困难\"为负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "颜值控：华为回头率拉满，苹果低调但耐看",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"回头率拉满\"高度肯定华为外观吸引力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "颜值控：华为回头率拉满，苹果低调但耐看",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"低调但耐看\"温和肯定苹果外观",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone：A18 Pro芯片+iOS18，游戏帧率稳如老狗，《原神》全高画质60帧无压力，但充电时玩易发热（实测45℃+）",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"稳如老狗\"\"无压力\"强肯定性能，\"易发热\"为负面",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为：麒麟9020+鸿蒙Next，日常流畅度不输苹果！但《原神》高画质帧率波动明显，户外用5G发热更严重（烫手警告）",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"日常流畅度不输苹果\"强肯定，\"帧率波动明显\"\"烫手\"强否定游戏性能",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "建议：重度游戏党选苹果，商务党选华为",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "推荐重度游戏用户选择苹果",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "建议：重度游戏党选苹果，商务党选华为",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "推荐商务用户选择华为",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为：红枫原色镜头+150万光谱传感器，夜景细节和色彩还原绝了！AI消除、月亮模式直出不用P，但视频防抖弱于苹果",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"绝了\"\"不用P\"强肯定拍照，\"视频防抖弱于苹果\"为负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone：4K 120fps视频录制独一档，三摄变焦丝滑无卡顿，Live实况图yyds！但夜间拍照噪点多，长焦锐度输华为",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"独一档\"\"丝滑无卡顿\"\"yyds\"强肯定视频，\"噪点多\"\"输华为\"为负面",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为：5700mAh+100W快充，25分钟满血复活！重度用一天到家还剩20%，反向充电能救急其他设备",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"满血复活\"\"还剩20%\"强肯定续航和快充",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone：4685mAh+30W充电，续航比上代强但充电慢（实测2小时充满），出门必带充电宝",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"充电慢\"\"必带充电宝\"批评苹果充电和续航",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iOS18：后台驻留强到离谱（三天前的App秒开），动画丝滑如德芙，但信号差+微信消息延迟（电梯直接失联）",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"强到离谱\"\"丝滑如德芙\"强肯定系统，\"信号差\"\"直接失联\"强否定信号",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙Next：AI抠图、多屏协同效率爆炸！双微信+应用锁超实用，信号碾压苹果（山区都能刷视频）",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"效率爆炸\"\"超实用\"\"碾压苹果\"高度肯定鸿蒙功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "痛点：iOS闹钟不认节假日，鸿蒙广告多需手动关",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"闹钟不认节假日\"指出苹果系统痛点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "痛点：iOS闹钟不认节假日，鸿蒙广告多需手动关",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"广告多需手动关\"指出鸿蒙系统痛点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "选华为：拍照党/商务人士/续航焦虑者/爱国产生态用户（卫星通信太顶了！）",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"太顶了\"高度肯定华为卫星通信等功能",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "选苹果：视频创作者/iOS全家桶用户/游戏党/强迫症流畅党",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "推荐特定用户群体选择苹果，肯定其生态和流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为512G比苹果同配置便宜1.5k+，但二手苹果更保值",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"便宜1.5k+\"肯定华为价格优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为512G比苹果同配置便宜1.5k+，但二手苹果更保值",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"更保值\"肯定苹果二手价值",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两台都是顶级旗舰，但华为在快充、信号、AI功能上弯道超车，苹果赢在生态和耐用性",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"弯道超车\"高度肯定华为在快充、信号、AI上的领先",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两台都是顶级旗舰，但华为在快充、信号、AI功能上弯道超车，苹果赢在生态和耐用性",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"赢在生态和耐用性\"肯定苹果核心优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a05dd98000000000702939b",
+    "opinions": [
+      {
+        "opinion_text": "现在手机内存还有一百多G，感觉发烫比之前厉害，偶尔会卡顿",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"发烫厉害\"\"偶尔会卡顿\"表达负面使用体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "想问下17Pro体验感真的好很多吗，发热问题和续航和15Pro比有进步吗",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户咨询新款表现，未表达明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69ede1a80000000038036b77",
+    "opinions": [
+      {
+        "opinion_text": "Mate 80 Pro Max（左）与Pure 90 Pro Max（右）屏幕最高亮度对比，双层OLED玲珑屏含金量还在上升",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"降档明显\"标题暗示Pure 90 Pro Max不如Mate 80 Pro Max，\"含金量还在上升\"肯定旧款",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0c20dd0000000035029da5",
+    "opinions": [
+      {
+        "opinion_text": "苹果和华为做得最为出色，二者在我心中属于同一梯队",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"最为出色\"\"同一梯队\"高度肯定苹果产品能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果和华为做得最为出色，二者在我心中属于同一梯队",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"最为出色\"\"同一梯队\"高度肯定华为产品能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的视频能力、日常功耗稳定性",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "肯定苹果在视频能力和功耗稳定性方面的优势",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为的通信与影像优化",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "肯定华为在通信和影像优化方面的优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "像OPPO这类厂商，依托开源底层+公版硬件，靠极致打磨系统流畅度、稳定性，同样实现了体验领先",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"极致打磨\"\"体验领先\"肯定OPPO系统优化能力",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "盲目堆硬件参数，一直是不少国产手机的通病",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"通病\"批评国产手机盲目堆硬件的现象",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69257501000000000d034510",
+    "opinions": [
+      {
+        "opinion_text": "用惯了苹果Pro，看华为proMAX，需要适应",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "表达尺寸差异带来的适应问题，无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用惯了苹果Pro，看华为proMAX，需要适应",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "表达尺寸差异带来的适应问题，无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0034b2000000003700fd2d",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 每年一换可能比三年一换更划算",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通过成本计算论证每年换iPhone更划算，间接肯定iPhone保值性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "每年换新的好处就是你的维修风险很低，且电池衰减几乎无感",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"维修风险很低\"\"电池衰减几乎无感\"肯定iPhone耐用性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "你每年都是用的一台最新款的 iPhone，对于心理上的满足也更高",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "肯定每年用新款iPhone带来的心理满足感",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68648913000000002201c766",
+    "opinions": [
+      {
+        "opinion_text": "mate70pro＋陪伴了我九个月！当时到手后第一时间升级了鸿蒙5系统，去年冬天的鸿蒙5功能还不完善",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"功能还不完善\"指出早期鸿蒙5的不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从冬天到现在升级了无数遍，每一次升级都很期待，就像是看着自己的孩子在一步步成长",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"很期待\"\"一步步成长\"表达对鸿蒙系统升级的正面情感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在换成出厂自带鸿蒙5的pura80pro＋，怎么感觉比mate70pro＋还丝滑！！？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"还丝滑\"强烈肯定pura80pro＋的流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "而且拍照也比mate更好看了！长焦拍摄超清晰",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"更好看\"\"超清晰\"高度肯定pura80pro＋拍照能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6833895b000000002202b1ff",
+    "opinions": [
+      {
+        "opinion_text": "每次我用一段时间华为全家桶，老是想换回苹果全家桶，还是有原因的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"老是想换回\"表达华为全家桶体验不如苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "每次我用一段时间华为全家桶，老是想换回苹果全家桶，还是有原因的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"想换回苹果全家桶\"表达对苹果生态的偏好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为是什么都有，但是什么都差点，每次就只做到6分及格线",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"什么都差点\"\"6分及格线\"强烈批评华为产品完成度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手表其实检测的东西比苹果还多，但是给用户呈现这块就差了，只管测，没有总结和指导，测了等于白测",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"测了等于白测\"强烈否定华为手表的数据呈现能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "加上生态也不够，所以用起来差距就很明显",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"生态也不够\"批评华为生态建设不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6714c2060000000021009ee7",
+    "opinions": [
+      {
+        "opinion_text": "图二 华为原相机",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅标注华为原相机照片，未表达明确褒贬",
+        "confidence": "低",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "图三 苹果原相机",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅标注苹果原相机照片，未表达明确褒贬",
+        "confidence": "低",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

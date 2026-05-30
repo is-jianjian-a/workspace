@@ -1,0 +1,572 @@
+[
+  {
+    "note_id": "68484962000000002202df17",
+    "opinions": [
+      {
+        "opinion_text": "iPad OS 26：ipad mini5和6不推荐更新，非m系列芯片的ipad air或pro不推荐更新，会非常卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "ipad mini5和6不推荐更新，非m系列芯片的ipad air或pro不推荐更新，会非常卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iOS 26：iphone16pro都卡，主屏幕滑动120hz都卡成60hz了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "iphone16pro都卡，主屏幕滑动120hz都卡成60hz了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "3D照片功能非常带劲，很好玩；新相机和相册APP非常好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "3D照片功能非常带劲，很好玩。新相机和相册APP非常好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Mac OS26卡顿没发现，但是很多软件会出现打不开的情况，正版fcpx闪退，正版ps无法关闭，盗版ae相当丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "macos26卡顿没发现，但是很多软件会出现打不开的情况，正版fcpx闪退，正版ps无法关闭，盗版ae相当丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Watch OS26完全无感，也没什么新表盘，就把时间改成了液体玻璃",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "完全无感。。。也没什么新表盘，就把时间改成了液体玻璃",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "外观好看的人喜欢死，难看的觉得超廉价，我属于前者",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "外观好看的人喜欢死，难看的觉得超廉价，我属于前者",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "主力机请勿升级，现在的开发者测试版非常多bug",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "主力机请勿升级，至少等一个月后的公共测试版，现在的开发者测试版非常多bug",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vision pro首发美国背回来，一年半里几乎全在吃灰，无语了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "vision pro上个月卖了，一年半里几乎全在吃灰，无语了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ec84440000000036018d8f",
+    "opinions": [
+      {
+        "opinion_text": "S26 Ultra硬件参数确实很顶",
+        "brand_target": "三星",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "买了S26 Ultra硬件参数确实很顶",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "S26 Ultra的触控响应延迟、按键振动反馈的细腻度，和iPhone 17 Pro Max还是有肉眼可见的差距",
+        "brand_target": "三星",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "S26 Ultra的触控响应延迟、按键振动反馈的细腻度，和iPhone 17 Pro Max还是有肉眼可见的差距",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "S26 Ultra快速输入长文本时，偶尔会出现按键无响应、联想词卡顿的情况，滑动输入的跟手度也明显不如iPhone顺滑",
+        "brand_target": "三星",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "快速输入长文本时，偶尔会出现按键无响应、联想词卡顿的情况，滑动输入的跟手度也明显不如iPhone顺滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "One UI的功能丰富度没话说，但多任务切换、锁屏时系统和APP启动和iOS那种\"无感知的丝滑\"还是有距离",
+        "brand_target": "三星",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "One UI的功能丰富度没话说，但多任务切换、锁屏时系统和APP启动和iOS那种\"无感知的丝滑\"还是有距离",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone 17 Pro Max在打字、触控响应、振动反馈、滑动输入跟手度、多任务切换等方面体验更好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "和iPhone 17 Pro Max还是有肉眼可见的差距；滑动输入的跟手度也明显不如iPhone顺滑；iOS那种\"无感知的丝滑\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "S26 Ultra买了两个月了手写笔没有拿出来一次，宣传最大的卖点防窥屏不能常开",
+        "brand_target": "三星",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "买了两个月了手写笔没有拿出来一次，宣传最大的卖点防窥屏不能常开，开了最大隐私保护自己看屏幕也会特别难受",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a101b8b00000000350205c4",
+    "opinions": [
+      {
+        "opinion_text": "Mate70pro镜头大凸起，个人还觉得有点丑",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "实在不喜欢大凸起的镜头；Mate80系列依然还是大凸起，并且个人还觉得有点丑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果17pm整体使用体验除了返回方式有割裂感，其他的都还好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "整体使用体验：除了返回方式上的巨大割裂感会导致有些难受以外，其他的都还好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果信号确实不如华为，用流量打moba手游时不时就会卡，跳ping比较严重",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "果子确实是不如华子，尤其体现在用流量打moba手游，时不时就会卡，跳ping比较严重",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为信号没有遇到地下停车场没信号的情况",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "信号也没有那么差，我倒是没遇到过在地下停车场没信号的情况",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果17pm散热很不错，这一代材质很适合散热，但脆皮也是真脆皮",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "散热方面：确实很不错，这一代的材质确实很适合散热，但是脆皮也是真脆皮，手机镜头模组被平板磕了一下就是一个坑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为freeclip2连苹果所有功能都正常，设备间切换在17pm和Mate40之间也能用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "freeclip2连苹果的话所有功能都正常；这个功能在17pm和Mate40之间也能用！真的是非常不错了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙系统可以关闭app的陀螺仪权限，摇一摇广告伤害不到我",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙系统有一点挺好的，就是可以关闭app的陀螺仪权限，这样的话那些摇一摇广告就一点也伤害不到我",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果摇一摇广告功能不可控，经常打开软件一不小心就弹出去了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果这个功能就不可控，甚至可以说还挺灵敏，经常打开软件一不小心就弹出去了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68486095000000002002886d",
+    "opinions": [
+      {
+        "opinion_text": "iOS26液态玻璃UI很难说是变好了，快捷控制页面可读性变差，全透明状态下图标太丑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "跟前几代很不一样，但很难说是变好了；快捷控制页面由于是全透明毛玻璃，明显可读性变差；全透明状态下的图标太丑了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的雕花工艺令人钦佩，玻璃动效和细节非常拟真，全程非常丝滑，但有点强行炫技",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不得不佩服苹果的雕花工艺！这种级别的玻璃动效和细节，确实是相当下功夫的；全程非常丝滑；感觉现在的玻璃效果有点强行炫技的成分",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "液态玻璃渲染可能带来更多功耗降低续航",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "相比简单的扁平化UI，这种频次的玻璃材质渲染可能带来更多功耗降低续航",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相机交互简化去繁留简，对绝大部分用户友好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "相机交互简化：去繁留简，对绝大部分用户都友好的相机交互设计",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相册回退听劝，回到过去的图库与精选集分离状态",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "相册回退：听劝，回到过去的「图库」与「精选集」分离状态",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "悬浮透明的导航栏更沉浸，好评",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "悬浮透明的导航栏：更沉浸的应用框架，好评",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对iOS26更新比较失望，AI功能缺位，UI风格更换是负优化",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我自己对这次iOS26的更新还是比较失望；翘首以盼的AI功能仍然缺位，UI风格的更换在我看来某种层面是负优化",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0ff8e30000000035023832",
+    "opinions": [
+      {
+        "opinion_text": "苹果iOS 26的Foundation Models框架听起来隐私强能力够，但国行iPhone根本用不了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Claude疯狂安利苹果iOS 26的Foundation Models框架；但国行iPhone根本用不了；合着纯纯白给",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用Codex接入服务端大模型，丝滑到想哭",
+        "brand_target": "其他",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用Codex两小时全部搞完收工，丝滑到想哭",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "DeepSeek便宜到像在做慈善，钱少活好",
+        "brand_target": "其他",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真的便宜到像在做慈善；钱少活好，respect拉满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0a86e900000000380228a3",
+    "opinions": [
+      {
+        "opinion_text": "苹果17pro系统好丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "体验了下，系统好丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果17pro好多功能不大会用，输入法好难用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "但好多功能不大会用，而且输入法好难用啊啊啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0fe1030000000006032907",
+    "opinions": [
+      {
+        "opinion_text": "苹果官网不能换只能退，要等发货后才能退款，退换货流程僵硬冷漠",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果的\"丝滑体验\"，原来不包括退换货；从下单到收货之间的这段流程，尤其是退换货环节，仍然保留着大公司的僵硬和冷漠",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的体验更多集中在产品拿到手之后，下单到收货的流程有落差",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果一直以用户体验著称，但这次的经历让我意识到：苹果的体验更多集中在\"产品拿到手之后\"；相比国内一些电商平台，苹果官网的体验确实有落差",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c478d2000000001f007f0d",
+    "opinions": [
+      {
+        "opinion_text": "iOS 26.4升级后体验如丝般顺滑，修复了26.3的一些小问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "升级了26.4之后体验如丝般顺滑，也修复了26.3的一些小问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iOS 26.4升级后手机声音变小了，同等音量听着更散听不清",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我怎么感觉手机的声音变小了？同等的音量在相同的环境下，应该是比26.3听着声音更散，听不清",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0dfd2e000000000603291a",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 13适应新系统后不那么卡了，还有些流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "感觉我的13适应了新系统了，不那么卡了，现在居然还有些流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68d0ea020000000012015180",
+    "opinions": [
+      {
+        "opinion_text": "刚从安卓转苹果感觉好难用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刚从安卓转苹果感觉好难用",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "694a4324000000001b026ae0",
+    "opinions": [
+      {
+        "opinion_text": "华为mate 80普通版搭载麒麟9020是为了清库存，pura80系列卖得不好",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "pure 80系列卖的不太好，所以导致了9020这个芯片有很多库存没有清，所以搭载到mate 80普通版上把它清掉",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "麒麟9030 Pro版本在性能和功耗上提升比较巨大，不是常规升级",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在都传言9030，尤其是Pro版本，在性能和功耗上提升比较巨大，不是常规升级",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "695a672b000000001e00fcb4",
+    "opinions": [
+      {
+        "opinion_text": "nova15 U实机上手后越看越顺眼，整体基本满意",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "一上手之后，就又是那回事儿\"越看越顺眼\"起来了；整体基本满意吧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "nova15 U日常用够用，王者铲铲都能玩，但原神崩3别选这个",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "反正日常用够用了；玩游戏呢也不是不能玩，反正王者啦、铲铲啦都行，但如果你要玩原、崩3啥的，那还是别选这个了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙6.0挺好用的，换上来没有什么不适，基本适配",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙6.0挺好用的，因为我之前的Mate60Pro就已经更新过了，所以换上来没有什么不适；基本适配",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "nova15 U拍照比Mate60Pro好太多，后置前置都是秒杀级别，拍照终于不发灰了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "拍照比我之前的Mate60Pro好太多，不管是后置还是前置自拍，都是秒杀级别的，拍照终于不发灰了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "nova15 U用上金属边框质感不错，机身尺寸不像Mate那么宽，手感很好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这回nova破天荒用上金属边框，质感挺不错，机身尺寸也不像那牢Mate宽的不行，手感很好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "nova15 U直屏设计贴膜轻松且钢化膜便宜，但壳子不好配",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "这次是直屏设计了，贴膜很轻松而且买的钢化膜也比之前Mate60Pro的便宜多了；但是壳子不是很好配",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d1e419000000001b023d46",
+    "opinions": [
+      {
+        "opinion_text": "华为折叠屏麒麟9030Pro安兔兔跑分181万，比mate70Pro优享版麒麟9020A都猛",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "麒麟9030Pro在安兔兔跑分跑了181万？卧槽？比我华为mate70Pro优享版(麒麟9020A)都猛的一批",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "鸿蒙6还没有完全适配好，搭配麒麟9030Pro这么强的芯片不确定能否流畅",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙6还没有完全适配好啊。搭配上麒麟9030Pro这么强的芯片确定能流畅吗？",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67763c30000000000800f0c2",
+    "opinions": [
+      {
+        "opinion_text": "mate70p+用手指甲敲击有种空心的感觉",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "你们的70p+用手指甲敲击这里也有种空心的感觉嘛",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "692bb324000000001e02d86e",
+    "opinions": [
+      {
+        "opinion_text": "mate 80刷抖音视频不清晰模糊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刷抖音感觉视频不清晰，模糊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "mate 80上抖音微博红果头条等APP通通没有做任务的界面",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "抖音，微博，红果，头条，所有做任务薅羊毛的软件通通没有做任务的界面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "mate 80上微信和QQ太丐版了，学习资料不能直接打印",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信和QQ太丐版了，学习资料不能直接打印",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "mate 80很多冷门APP还没有安装，觉得得带两个手机出门",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "很多冷门的APP还没有安装……想哭，觉得我得带两个手机出门",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

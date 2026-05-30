@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI 需求调研报告</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,300;1,8..60,400;1,8..60,600;1,8..60,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=IBM+Plex+Mono:wght@300;400;500&family=Noto+Serif+SC:wght@300;400;500;600;700&family=Noto+Sans+SC:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ═══ FRONTEND SLIDES — VIEWPORT BASE (MANDATORY) ═══ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; background: #0a0e1a; }
+    .viewport { width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center; }
+    .stage { width: 1920px; height: 1080px; position: relative; transform-origin: center center; }
+    .slide { position: absolute; inset: 0; visibility: hidden; opacity: 0; pointer-events: none; transition: opacity 0.6s ease; }
+    .slide.active { visibility: visible; opacity: 1; pointer-events: auto; }
+    @media (prefers-reduced-motion: reduce) { .slide { transition: none; } }
+
+    /* ═══ SIGNAL TEMPLATE — DESIGN SYSTEM ═══ */
+    :root {
+      --c-bg: #1c2644;
+      --c-bg-alt: #232f55;
+      --c-bg-light: #f0ece3;
+      --c-bg-light-alt: #e6e0d4;
+      --c-fg: #e2dcd0;
+      --c-fg-2: #8a96a8;
+      --c-fg-3: #4e5a6e;
+      --c-fg-light: #1a2030;
+      --c-fg-light-2: #5a6270;
+      --c-fg-light-3: #9aa0a8;
+      --c-accent: #c8a870;
+      --c-border: #2e3d5c;
+      --c-border-light: #cac4b4;
+      --f-display: "Source Serif 4", "Noto Serif SC", Georgia, serif;
+      --f-heading: "Source Serif 4", "Noto Serif SC", Georgia, serif;
+      --f-body: "DM Sans", "Noto Sans SC", system-ui, sans-serif;
+      --f-mono: "IBM Plex Mono", "JetBrains Mono", monospace;
+    }
+
+    /* ═══ SLIDE 1 — COVER (Dark) ═══ */
+    .slide-cover {
+      background: var(--c-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 120px;
+    }
+    .slide-cover .kicker {
+      font-family: var(--f-mono);
+      font-size: 14px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--c-accent);
+      margin-bottom: 32px;
+    }
+    .slide-cover h1 {
+      font-family: var(--f-display);
+      font-size: 96px;
+      font-weight: 700;
+      line-height: 1.0;
+      color: var(--c-fg);
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+    }
+    .slide-cover h1 em {
+      font-style: italic;
+      color: var(--c-accent);
+    }
+    .slide-cover .subtitle {
+      font-family: var(--f-body);
+      font-size: 24px;
+      color: var(--c-fg-2);
+      line-height: 1.5;
+      max-width: 700px;
+    }
+    .slide-cover .meta {
+      position: absolute;
+      bottom: 60px;
+      left: 120px;
+      font-family: var(--f-mono);
+      font-size: 12px;
+      color: var(--c-fg-3);
+      letter-spacing: 0.1em;
+    }
+    .slide-cover .grid-texture {
+      position: absolute;
+      inset: 0;
+      opacity: 0.03;
+      background-image:
+        linear-gradient(rgba(200,168,112,0.3) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(200,168,112,0.3) 1px, transparent 1px);
+      background-size: 80px 80px;
+      pointer-events: none;
+    }
+
+    /* ═══ SLIDE 2 — CONTENT (Light) ═══ */
+    .slide-content-light {
+      background: var(--c-bg-light);
+      display: flex;
+      flex-direction: column;
+      padding: 80px 120px;
+    }
+    .slide-content-light .section-label {
+      font-family: var(--f-mono);
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--c-fg-light-3);
+      margin-bottom: 40px;
+    }
+    .slide-content-light h2 {
+      font-family: var(--f-heading);
+      font-size: 56px;
+      font-weight: 600;
+      color: var(--c-fg-light);
+      line-height: 1.1;
+      margin-bottom: 48px;
+    }
+    .slide-content-light .body-text {
+      font-family: var(--f-body);
+      font-size: 20px;
+      color: var(--c-fg-light-2);
+      line-height: 1.65;
+      max-width: 900px;
+    }
+    .slide-content-light .stat-row {
+      display: flex;
+      gap: 80px;
+      margin-top: 60px;
+    }
+    .slide-content-light .stat-item {
+      border-top: 1px solid var(--c-border-light);
+      padding-top: 20px;
+    }
+    .slide-content-light .stat-value {
+      font-family: var(--f-mono);
+      font-size: 48px;
+      font-weight: 500;
+      color: var(--c-accent);
+      margin-bottom: 8px;
+    }
+    .slide-content-light .stat-label {
+      font-family: var(--f-body);
+      font-size: 14px;
+      color: var(--c-fg-light-3);
+    }
+
+    /* ═══ SLIDE 3 — QUOTE (Dark) ═══ */
+    .slide-quote {
+      background: var(--c-bg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 200px;
+      text-align: center;
+    }
+    .slide-quote .quote-mark {
+      font-family: var(--f-display);
+      font-size: 120px;
+      color: var(--c-accent);
+      opacity: 0.4;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+    .slide-quote blockquote {
+      font-family: var(--f-heading);
+      font-size: 42px;
+      font-weight: 400;
+      font-style: italic;
+      color: var(--c-fg);
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+    .slide-quote .attribution {
+      font-family: var(--f-mono);
+      font-size: 14px;
+      color: var(--c-fg-2);
+      letter-spacing: 0.1em;
+    }
+
+    /* ═══ NAVIGATION HINT ═══ */
+    .nav-hint {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      font-family: var(--f-mono);
+      font-size: 11px;
+      color: var(--c-fg-3);
+      background: rgba(28, 38, 68, 0.8);
+      padding: 8px 16px;
+      border-radius: 4px;
+      z-index: 100;
+    }
+  </style>
+</head>
+<body>
+  <div class="viewport">
+    <div class="stage">
+
+      <!-- SLIDE 1: Cover -->
+      <div class="slide slide-cover active" data-slide="0">
+        <div class="grid-texture"></div>
+        <div class="kicker">AI Demand Research · 2026</div>
+        <h1>看视频时<br>想要的 <em>AI 功能</em></h1>
+        <div class="subtitle">基于小红书 UGC 数据的用户需求调研报告</div>
+        <div class="meta">ZHANG RUI · MAY 2026 · CONFIDENTIAL</div>
+      </div>
+
+      <!-- SLIDE 2: Key Findings -->
+      <div class="slide slide-content-light" data-slide="1">
+        <div class="section-label">01 · Key Findings</div>
+        <h2>用户最需要的<br>三大 AI 功能</h2>
+        <div class="body-text">
+          通过对 350 条小红书 UGC 内容的深度分析，我们发现用户在观看视频场景下对 AI 功能的需求呈现明显的分层结构。
+        </div>
+        <div class="stat-row">
+          <div class="stat-item">
+            <div class="stat-value">22</div>
+            <div class="stat-label">防沉迷工具需求</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">15</div>
+            <div class="stat-label">使用时长提醒</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">9</div>
+            <div class="stat-label">内容过滤</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3: User Quote -->
+      <div class="slide slide-quote" data-slide="2">
+        <div class="quote-mark">"</div>
+        <blockquote>希望手机能自动识别我在刷视频，<br>超过 30 分钟就提醒我休息</blockquote>
+        <div class="attribution">— 小红书用户 @小美爱生活</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="nav-hint">← → 箭头键切换 · 共 3 页</div>
+
+  <script>
+    (function() {
+      const slides = document.querySelectorAll('.slide');
+      let current = 0;
+      const total = slides.length;
+
+      function showSlide(index) {
+        slides.forEach((s, i) => {
+          s.classList.toggle('active', i === index);
+        });
+        current = index;
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          if (current < total - 1) showSlide(current + 1);
+        } else if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          if (current > 0) showSlide(current - 1);
+        }
+      });
+
+      // Touch support
+      let touchStartX = 0;
+      document.addEventListener('touchstart', function(e) {
+        touchStartX = e.changedTouches[0].screenX;
+      });
+      document.addEventListener('touchend', function(e) {
+        const touchEndX = e.changedTouches[0].screenX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > 50) {
+          if (diff > 0 && current < total - 1) {
+            showSlide(current + 1);
+          } else if (diff < 0 && current > 0) {
+            showSlide(current - 1);
+          }
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

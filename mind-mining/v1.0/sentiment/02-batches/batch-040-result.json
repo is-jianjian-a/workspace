@@ -1,0 +1,374 @@
+[
+  {
+    "note_id": "68d8b8e600000000120337d2",
+    "opinions": [
+      {
+        "opinion_text": "线下果断换了17，到手后出现卡顿，非常严重！问了商家，没有解决办法，又让我开机，又让我升级的，说等新系统升级后再看看！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"到手后出现卡顿，非常严重\"\"没有解决办法\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "终于终于不卡了，设置电池电量模式低电量模式开启（是灰色状态）",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"终于终于不卡了\"（但解决方式非预期）",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "虽然暂时解决问题了，但依旧是不完善，不完美！内心还是想换新，如果低电量模式开启会卡顿，那就是机器存在问题！商家说不属于机器问题，没办法退换！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"依旧是不完善，不完美\"\"内心还是想换新\"\"机器存在问题\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68dbfab60000000003022804",
+    "opinions": [
+      {
+        "opinion_text": "解锁或者开app都一顿一顿的，解锁扫开那瞬间会顿一下才到主屏，打字也有点卡，用了一年不到的手机卡成这屎样，之前18.1根本不卡，现在不仅卡，发热和耗电都更严重了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"卡成这屎样\"\"发热和耗电都更严重了\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前18.1根本不卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"之前18.1根本不卡\"（隐含对旧版本的认可）",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "693d9f3a000000001e03a592",
+    "opinions": [
+      {
+        "opinion_text": "苹果17 pro max刚买的为什么那么卡一点不流畅为什么？里面没有什么软件内存512",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"那么卡一点不流畅\"\"太难用了卡死了\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "没有14pro好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"没有14pro好用\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "完全不像苹果系统是不是要退货了重新换一个",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"完全不像苹果系统\"\"要退货\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "680b973a000000001c01fa9f",
+    "opinions": [
+      {
+        "opinion_text": "破苹果16pro，这辈子没用过这么难用的手机，天天卡，卡到爆，信号极差，打视频基本不能玩手机，怎么会有这么难用的手机啊啊啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"这辈子没用过这么难用的手机\"\"天天卡，卡到爆\"\"信号极差\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "每一处都不如之前的14pro",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"每一处都不如之前的14pro\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我都开始怀疑我是不是在苹果店里买到假手机了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"怀疑买到假手机\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6862cfda000000001d00d472",
+    "opinions": [
+      {
+        "opinion_text": "我的好卡啊！！！感觉一帧一帧的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"好卡啊\"\"一帧一帧的\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69080fc00000000003021ba5",
+    "opinions": [
+      {
+        "opinion_text": "16pm卡顿的像老年机了，之前18的系统，晚上都不掉电，升级后一晚上掉8%左右，然后非常卡顿，卡的怀疑人生",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"卡顿的像老年机了\"\"卡的怀疑人生\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前18的系统，晚上都不掉电",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"之前18的系统，晚上都不掉电\"",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68e515bc000000000703be2e",
+    "opinions": [
+      {
+        "opinion_text": "🍎13最近一直发烫严重，然后卡顿，电池健康度还有83%，不会是因为系统更新到18.6的原因吧，只微信聊天都又卡又烫",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"发烫严重\"\"又卡又烫\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "总感觉17promax在向我招手",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"17promax在向我招手\"（暗示想换新款）",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "694518f8000000001e02f0c5",
+    "opinions": [
+      {
+        "opinion_text": "用了一个月吧，发语音的时候会卡，拍照会卡黑屏，V里点开录视频会迟钝有纪律黑屏，连接蓝牙放歌切换听音乐的时候延迟非常大，看dy画面比音频快一步，各种卡顿不顺畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"各种卡顿不顺畅\"\"延迟非常大\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "还在犹豫的就别买了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"还在犹豫的就别买了\"（劝阻购买）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68f8a37f000000000503b156",
+    "opinions": [
+      {
+        "opinion_text": "体验感极其差，纠结了半天还是决定退货了，信号不好，打开微信摄像头经常卡顿，相机拍人像莫名有黑点，微信电话和信息经常没声音提醒",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"体验感极其差\"\"决定退货了\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "还是继续用回我的13pm吧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"继续用回我的13pm\"（对旧机型的认可）",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fff7db000000003503023b",
+    "opinions": [
+      {
+        "opinion_text": "用来打卡的苹果老爷机昨天突然卡机，点击的时候会出现一个框，但手机没反应，重启也没用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"突然卡机\"\"手机没反应，重启也没用\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c5e0aa000000001b023dfd",
+    "opinions": [
+      {
+        "opinion_text": "🍎13这两天一直严重发烫跟卡顿，玩个抓大鹅都烫的不行",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"严重发烫跟卡顿\"\"烫的不行\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "到底13香怎么了呢，还不想换掉你啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"还不想换掉你\"（对旧机的不舍）",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "699c0ea7000000001b017883",
+    "opinions": [
+      {
+        "opinion_text": "17pm为什么声音会有卡顿，这两天突然发现手机在打电话快挂断的时候或者是退出视频软件的时候，总会声音一卡一卡的，持续三四声",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"声音会有卡顿\"\"声音一卡一卡的\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前因为老自动重启，手机已经退换了一次，现在不想再去折腾了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"已经退换了一次\"\"不想再去折腾了\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68ce5a9300000000130186b1",
+    "opinions": [
+      {
+        "opinion_text": "更新ios26系统用了两天，使用感受手机发热，偶尔有点卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"手机发热\"\"偶尔有点卡\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "昨晚突然出现突然关机，再开机就出现图片的情况，重新启动也是如此，用不了了，去了售后说是系统问题，重装系统要288元",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"用不了了\"\"手机变成板砖\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "675990fd000000000201633d",
+    "opinions": [
+      {
+        "opinion_text": "我就不该换这个手机，钱花了还生气，真的好垃圾好生气，手机在官网买的，今天七点多拿到手的，高高兴兴打开说激活再转移数据，好家伙卡住了，关又关不掉，打又打不开，屏幕一直在那闪啊闪",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"真的好垃圾好生气\"\"卡住了，关又关不掉，打又打不开\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "机身也特别特别烫，打电话给客服，教我重新启动，启动完依旧划不开密码，说不行只能拿去店里修，靠，新手机，才拿到就这样，明天还要去修，好气好气好气，垃圾垃圾",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"机身也特别特别烫\"\"才拿到就这样\"\"垃圾垃圾\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刷完就不烫了，当天刷机完后我重新激活，没有换机，目前用下来的确发烫这问题是没有了，用了几天暂时也没有出现其他问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"发烫这问题是没有了\"\"没有出现其他问题\"",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b237a9000000000c008995",
+    "opinions": [
+      {
+        "opinion_text": "第一代有touch bar的macbook pro在我这里用了十年了，今年终于觉得有点卡（苹果质量真好），就准备换一下",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"用了十年了\"\"苹果质量真好\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "看上线了新一代，想着应该更轻更薄吧，让gpt推荐了个配置，就无脑下单了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"无脑下单了\"",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拆箱，天塌了…咋那么重，那么厚？这个四万的激情下单好失败",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"天塌了\"\"咋那么重，那么厚\"\"好失败\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

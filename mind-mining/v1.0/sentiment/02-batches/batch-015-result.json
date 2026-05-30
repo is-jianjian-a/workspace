@@ -1,0 +1,608 @@
+[
+  {
+    "note_id": "6a0a99d70000000037037a2f",
+    "opinions": [
+      {
+        "opinion_text": "想从三星换回苹果，但实体店销售说每台信号都不太一样，看缘分，实在担心信号还是拉胯。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"实在担心信号还是拉胯\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "想从三星换回苹果，说明目前在用三星。",
+        "brand_target": "三星",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"想从三星换回苹果\"——仅提及当前使用品牌，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a081abf0000000038036b60",
+    "opinions": [
+      {
+        "opinion_text": "618打算换vivo x300pro 16+1T，价都在5500以上，6500的电池虽然不小但友商都干到七八千了，还是差点意思。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"还是差点意思啊\"、\"再不降价，我可真不买了哦\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果华为小米都在降价，vivo你为什么不降啊。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果华为小米都在降价\"——仅作为价格参照提及，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果华为小米都在降价，vivo你为什么不降啊。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果华为小米都在降价\"——仅作为价格参照提及，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果华为小米都在降价，vivo你为什么不降啊。",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果华为小米都在降价\"——仅作为价格参照提及，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67ce5a27000000002503d6ba",
+    "opinions": [
+      {
+        "opinion_text": "之前我的iPhone屏幕摔裂，iPad边角磕碰，相机和手机充电口也有了磨损，起初心里别扭，但时间长了释然了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"但时间长了，我倒释然了\"\"放下对物品损耗的担忧，大胆去用\"——从对iPhone/iPad磨损的纠结转变为接受和释然，体现对物品使用价值的正向态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "附清单中有华为mate30，但全文对华为无具体评价，仅作为设备清单提及。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"华为mate30\"仅在清单中提及，无情感评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "664d8bd90000000014019601",
+    "opinions": [
+      {
+        "opinion_text": "vivo X100 Ultra拍出来的照片是三款手机中观感最差的，曝光感觉低了些，而且照片发黄很厉害。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"千万别用vivo X100 Ultra质感模式拍人\"\"观感最差的\"\"照片发黄很厉害\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo X100 Ultra前置依然发黄，但没那么黄了，质感好评。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"质感好评\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Pura 70 Ultra后置皮肤红润，高清大片的感觉；前置美颜刚刚好，但暗部有噪点，感觉雾蒙蒙的，不够有质感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "后置\"皮肤红润，高清大片的感觉\"（正向）；前置\"暗部有噪点，感觉雾蒙蒙的，不够有质感\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone15 Pro Max后置中规中矩真实风，但清晰度不够高；前置曝光最足最明亮，我个人最喜欢。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "后置\"中规中矩真实风，但清晰度不够高\"（中性偏负）；前置\"曝光最足最明亮，我个人最喜欢\"（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6355507e000000001401c887",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 14 Pro Max确实是目前天花板机型，不过真果粉一般不会选它，多数选14 Pro，原来Mini堪称真果粉最佳备用机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"确实是目前天花板机型\"\"堪称真果粉的最佳备用机\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米12S Ultra国产顶级水桶机毫无疑问，这个没得说。",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"国产顶级水桶机毫无疑问，这个没得说\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "三星S22 Ultra用户普遍有钱，不过多纠结价格，但\"是不是老板在用\"不确定。",
+        "brand_target": "三星",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"普遍有钱，不过多纠结价格\"——暗示品牌高端定位，用户消费能力强",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate 50 Pro虽然只是4G手机，但确实也是国产高端机担当，无论是产品力还是品牌力，目前仍是天花板。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"国产高端机担当\"\"目前仍是天花板\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO Find X5 Pro还是不错的，不过就是价格确实稍贵了些。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"还是不错的\"（正向）\"价格确实稍贵了些\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6676ed88000000001e0105f4",
+    "opinions": [
+      {
+        "opinion_text": "自研手机系统这条路很难，但我们坚持走了十年，现在回想真觉得挺受气的，但我觉得鸿蒙next是一个很好的开始，期待中国科技下一个十年。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"鸿蒙next是一个很好的开始\"\"期待中国科技下一个十年\"——对华为鸿蒙系统持高度期待和肯定态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "标题\"弯着的腰终于能直起来了吗\"隐含与苹果的对比，认为华为通过鸿蒙实现了技术自立。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果仅在话题标签中提及，正文未直接评价苹果",
+        "confidence": "低",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "65e31c35000000000b018f18",
+    "opinions": [
+      {
+        "opinion_text": "ipad的体验感和稳定性都是最好的，也最喜欢，但ipad价格太高，超预算太多，确实没必要。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"体验感和稳定性都是最好的\"\"也最喜欢\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPad9已经是上个时代的产品了，有些脱节，非全面屏，单扬声器，60HZ屏幕，都不太符合需求。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"上个时代的产品了，有些脱节\"\"都不太符合我们的需求\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的AIR和PRO固然爽，质感没得挑，但看个动画片来说，这个价格确实是没必要。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"固然爽，质感没得挑\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "选择了华为MatepadAir，屏幕好，144hz和2.8k，看着确实舒服，价格也合适，就果断入手了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"屏幕好\"\"看着确实舒服\"\"价格也合适\"\"果断入手\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "买国产平板还是有些担心，怕用一两年以后就开始卡，犯安卓的老毛病，但相信华为的产品力，赌它以后不会卡顿。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"怕用一两年以后就开始卡\"（负向担忧）\"相信华为的产品力\"\"赌它以后不会卡顿\"（正向信任）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "\"犯安卓的老毛病\"——对安卓系统流畅性有固有负面印象。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"犯安卓的老毛病\"——暗示安卓系统用久了会卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e8abcd000000001a02de25",
+    "opinions": [
+      {
+        "opinion_text": "Pura90 Pro/ProMax用上了麒麟9030S，对比P80的9020，性能调度更稳，蓝牙6.0+星闪2.0，连设备延迟更低。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"性能调度更稳\"\"连设备延迟更低\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "P90 ProMax用上了抗反光昆仑玻璃，户外强光下看屏幕不反光，打游戏更方便。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"户外强光下看屏幕不反光\"\"打游戏更方便\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "P90 Pro/ProMax电池干到6000mAh，日常用一天完全不用慌；P90 ProMax续航+快充双在线。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"日常用一天完全不用慌\"\"续航+快充双在线\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e9c2a1000000001901e006",
+    "opinions": [
+      {
+        "opinion_text": "标准版的镜头模组和前面板摄像头与其他俩有所不同，个人觉得有点格格不入。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"个人觉得有点格格不入\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "芯片日常使用、游戏都可安心，但9000系什么时候可以再进一步，拭目以待。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"日常使用、游戏都可安心\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "电池配置\"属实有点迷\"——标准版6500mAh但Pro版只有66W充电。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"属实有点迷\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "影像表现突出，尤其Pro Max的长焦给了2亿大底长焦。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"表现突出\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "喜欢鸿蒙系统和信号强的，依旧值得冲。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"依旧值得冲\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f079a70000000035030d19",
+    "opinions": [
+      {
+        "opinion_text": "Pura 90标准版6500mAh超大电池+100W快充，续航是系列天花板，价格最友好4699元，但麒麟9010S性能比另外两款弱一档，不适合重度游戏党。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"续航是系列天花板\"\"价格最友好\"（正向）\"性能比另外两款弱一档\"\"不适合重度游戏党\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Pura 90 Pro麒麟9030 Pro芯片性能直接拉满，游戏剪辑都丝滑无压力，影像全面升级，但电池比标准版小，续航略弱。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"性能直接拉满\"\"游戏、剪辑都丝滑无压力\"（正向）\"电池比标准版小，续航略弱一档\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Pura 90 Pro Max影像天花板，抗反光耐刮昆仑玻璃户外体验拉满，全金属玄武架构中框质感和防护性顶级，但价格偏高7499元起，机身最重235g。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"影像天花板\"\"户外使用体验拉满\"\"系列顶级\"（正向）\"价格偏高\"\"机身最重\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e6640f000000001b020b50",
+    "opinions": [
+      {
+        "opinion_text": "在如今内存都涨价的时代华为交出这个价格良心了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"良心了\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Pura整体降档，以后只有Mate是旗舰了；最尴尬的就是Pura90，标准版就是大号的nova15 ultra。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"整体降档\"\"最尴尬的就是Pura90\"\"标准版就是大号的nova15 ultra\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "有预算上90Pro Max，处理器9030S没有9030Pro强，ISP带的动这个长焦，但日常使用建议看看Mate 80 Pro Max。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"有预算上90Pro Max\"（正向推荐）\"处理器9030S没有9030Pro强\"\"日常使用建议看看Mate 80 Pro Max\"（负向/建议转向其他机型）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68e0336d0000000003012168",
+    "opinions": [
+      {
+        "opinion_text": "颜色上苹果写实一些，小米和OPPO都比较贴近苹果的颜色。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "\"苹果写实一些\"——对苹果色彩还原的肯定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "清晰度苹果肉眼可见的差，倒数；对焦体验也一般；苹果该改善的不是长焦，是微距。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"肉眼可见的差，倒数\"\"对焦体验也一般\"\"苹果该改善的不是长焦，是微距\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为清晰度毫无疑问遥遥领先，对比度和锐化高，看起来特别清晰；Pura80系对焦体验改善了不少。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"毫无疑问的遥遥领先\"\"看起来感觉特别清晰\"\"对焦体验好了不少\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米和OPPO颜色都比较贴近苹果的颜色。",
+        "brand_target": "小米",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅提及小米颜色与苹果相近，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米和OPPO颜色都比较贴近苹果的颜色。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅提及OPPO颜色与苹果相近，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e62572000000002202b594",
+    "opinions": [
+      {
+        "opinion_text": "Pura 90 Pro和Pro Max都用上了麒麟9030S，整体性能强于去年的9020，但不如麒麟9030 Pro。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"整体性能应该还是强于去年的9020\"（正向）\"但应该是不如麒麟9030 Pro\"（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Pura 90 Pro和90 Pro Max除了超长焦画质之外，其他能力应该都比去年80 Pro和80 Ultra更强，提升了光圈，第二代鸿蒙镜头，影像优化更深。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"应该都要比去年的80 Pro和80 Ultra更强\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "90 Pro的充电对比80 Pro反而做了一些阉割。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"反而做了一些阉割\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "麒麟9030能效比提升，预计Pura 90系列续航应该比80系列强不少。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"续航应该会比80系列强不少\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次华为的定价挺有意思，整体看起来还挺良心；90 Pro Max更适合走量。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"整体看起来还挺良心\"\"更适合走量的机型\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "674997560000000002038359",
+    "opinions": [
+      {
+        "opinion_text": "荣耀Magic7约等于华为Mate70+iPhone16的结合升级版，硬件比华为强，AI等软件特色上又超过iPhone。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"结合升级版\"\"硬件比华为强\"\"AI等软件特色上又超过iPhone\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate70搭载麒麟9020处理器，大型游戏有些吃力。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"大型游戏有些吃力\"",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为Mate70后置主摄十档可变光圈，还有多光谱通道原色摄像头；有九大AI功能。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"十档可变光圈\"\"多光谱通道原色摄像头\"\"九大AI功能\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为Mate70电池5300mAh，66W有线+50W无线快充，屏幕没有荣耀的4320Hz PWM调光护眼。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "与荣耀对比，华为续航和充电规格均落后，且屏幕护眼效果不如荣耀",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone16搭载A18芯片，国行版暂不支持AI功能；电池3561mAh，最高45W快充；信号一直被诟病。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"国行版暂不支持AI功能\"\"信号一直被诟病\"——充电和续航也明显落后于荣耀",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone16后置4800万像素主摄等镜头，有灵动胶囊、人脸解锁等功能。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅客观描述iPhone16配置，无明确情感评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68935dd7000000000500533b",
+    "opinions": [
+      {
+        "opinion_text": "苹果拍出来有些发灰发暗，放大看噪点会比较明显；清晰度5倍和10倍都是倒数。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"发灰发暗\"\"噪点会比较明显\"\"倒数\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为和vivo色调比较相似，比苹果更亮；清晰度5倍OPPO≥华为＞苹果，10倍华为＞苹果，整体中规中矩。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"中规中矩吧\"——评价较为平淡，无强烈情感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo看起来很有质感，整体很高级；5倍清晰度vivo排第一，整体表现不错。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "\"看起来很有质感，整体很高级\"\"vivo＞OPPO≥华为＞苹果\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO颜色比较讨喜，天空很蓝，整体蓝调明显，有轻微雾感；10倍清晰度OPPO排第一。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "\"比较讨喜\"\"10倍拍摄效果，OPPO＞vivo＞华为＞苹果\"",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

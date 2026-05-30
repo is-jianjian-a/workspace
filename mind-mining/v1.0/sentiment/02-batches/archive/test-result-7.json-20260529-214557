@@ -1,0 +1,407 @@
+[
+  {
+    "id": 1,
+    "note_id": "68f8c58f00000000050315db",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "性能/卡顿",
+        "text": "用了才一年多就卡到炸裂，进一个程序要等好几秒才能反应过来，拍的照片要等几秒钟相册才显示，甚至会诡异的不见",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "发热",
+        "text": "发热发到感觉要炸掉的程度",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "电池/续航",
+        "text": "掉电还掉的贼快，而且除了原装线，我用其他线充不进去电，才用了一年电池健康度就86%",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "拍照/像素",
+        "text": "像素根本没有吹的那么好，一开始显色度还行，用到现在颜色已经特别失真，拍照特别特别模糊",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "text": "华为手机的信号是真的好，这个不黑",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "整体体验",
+        "text": "但除此以外，体验感巨差",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "整体评价",
+        "text": "本来真的对华为有很高期待的，用完真的拉黑",
+        "intensity": "high"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "电池耐用性",
+        "text": "我iPhone13pro还有79的健康度呢",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "整体选择",
+        "text": "忍了一年实在受不了了，最终决定还是换回苹果，入了新款17pro",
+        "intensity": "medium"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "note_id": "689c1def000000001d0380fe",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "散热",
+        "text": "华为最优（液冷黑科技）",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "游戏稳帧",
+        "text": "华为：稳帧神器保下限（休闲玩家）",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕玻璃/抗摔",
+        "text": "华为升级「玄武钢化昆仑玻璃」：抗摔提升30%！裸奔党狂喜",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "长焦拍照",
+        "text": "华为「机械伸缩长焦」：真·物理开挂！拍放大10倍以上纹理都很清晰",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "卫星通信",
+        "text": "华为双卫星通信3.0：沙漠无人区能发30秒急救语音！（救命刚需）",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "电池健康",
+        "text": "华为100W快充：25分钟满血！但2年后电池健康恐掉到85%↓",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "游戏性能",
+        "text": "华为麒麟9020：NPU狂堆AI算力！鸿蒙5.1丝滑如德芙，但游戏帧率输苹果半筹",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "散热",
+        "text": "苹果16PM依然'暖手宝'",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "游戏性能",
+        "text": "苹果16PM：王者团战激烈时可能自动变暗屏幕，但是原神高帧率高画质全程无压力",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "屏幕玻璃/抗刮",
+        "text": "苹果超瓷晶更抗刮",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "屏幕玻璃/抗摔",
+        "text": "但摔角依旧碎屏警告…（维修费肉疼警告）",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "长焦拍照",
+        "text": "苹果：夜景提亮明显，但10倍以上糊成油画…",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "卫星通信",
+        "text": "苹果仅卫星短信：国内暂未开放…",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "电池耐用性",
+        "text": "苹果35W'快充'：80分钟充满…但电池损耗慢！1年健康度仍95%+（慢性子福音）",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "芯片性能",
+        "text": "苹果A18 Pro：性能天花板！",
+        "intensity": "high"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "text": "但…信号差+发热老毛病仍在",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "AI功能",
+        "text": "国行AI被阉割",
+        "intensity": "medium"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "note_id": "69ec286a000000003501ec96",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "长焦拍照",
+        "text": "一直以为华为长焦是神一般的存在",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "neutral",
+        "aspect": "长焦拍照",
+        "text": "突发奇想隔着两条马路拉个三四十倍长焦对比一下，结果居然差不多?!",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "长焦拍照",
+        "text": "iPhone17PM都能和华为长焦掰腕子了",
+        "intensity": "medium"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "note_id": "699d3995000000001b01d9bd",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "信号",
+        "text": "信号是真的好，苹果进电梯就无信号，华为从5G变4G但不影响使用",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "屏幕/握感",
+        "text": "屏幕视觉精细感可以对标苹果，在握感、操作流畅度等方面体验优于其他厂商",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "广告/系统",
+        "text": "广告变少，各app在iOS端也开始大量放广告，打开部分app就各种跳转，目前鸿蒙暂无此问题",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "卡片组件",
+        "text": "卡片/组件能真正发挥用处，能不花钱就看到天气变化情况和云图变化趋势，日历待办也方便很多",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "长焦拍照",
+        "text": "长焦能把远处拉近还不糊",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "app适配",
+        "text": "鸿蒙系统下各app还是不能适配",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "重量",
+        "text": "重。。。和17pro不相上下",
+        "intensity": "medium"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "广告",
+        "text": "更新：广告变多了......",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "信号",
+        "text": "苹果进电梯就无信号",
+        "intensity": "high"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "广告",
+        "text": "各app在iOS端也开始大量放广告，打开部分app就各种跳转",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "长焦拍照",
+        "text": "主要用80u弥补苹果长焦与信号问题",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "屏幕",
+        "text": "屏幕视觉精细感可以对标苹果",
+        "intensity": "medium"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "note_id": "68ecd586000000000703966d",
+    "opinions": [
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "逆光拍照",
+        "text": "逆光：华为mate60pro＞iPhone15pro",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "positive",
+        "aspect": "逆光人像",
+        "text": "在极强的光线下华为不仅人物拍的很清晰，背景也很有氛围感。整体色调很和谐，最主要是不发灰没有色偏",
+        "intensity": "high"
+      },
+      {
+        "brand": "华为",
+        "sentiment": "negative",
+        "aspect": "顺光拍照",
+        "text": "顺光不选华为的原因是感觉华为会把人拍胖，而且明暗对比度很强，后期照片处理起来难度很大",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "逆光拍照",
+        "text": "逆光拍照不能兼顾人像和背景的白平衡，导致人物在背景强光线上发灰",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "顺光拍照",
+        "text": "顺光：iPhone15pro＞华为mate60pro",
+        "intensity": "high"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "整体评价",
+        "text": "苹果什么都好，就是逆光拍照不能兼顾人像和背景的白平衡",
+        "intensity": "medium"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "note_id": "69c74283000000001d01d028",
+    "opinions": [
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "色调",
+        "text": "苹果拍出来的色调更好看",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "negative",
+        "aspect": "人像效果",
+        "text": "但是人会臃肿一些",
+        "intensity": "medium"
+      },
+      {
+        "brand": "苹果",
+        "sentiment": "positive",
+        "aspect": "live图",
+        "text": "live图真的太生动了，尤其是过了大半年在回顾的时候……live确实冲击力更大一点",
+        "intensity": "high"
+      },
+      {
+        "brand": "索尼",
+        "sentiment": "positive",
+        "aspect": "人像效果",
+        "text": "索尼拍出来的通透感很好，人物更清冷清瘦一些",
+        "intensity": "medium"
+      },
+      {
+        "brand": "索尼",
+        "sentiment": "positive",
+        "aspect": "整体拍照",
+        "text": "虽然相机拍的更好看",
+        "intensity": "medium"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "note_id": "69d63643000000001b000681",
+    "opinions": []
+  }
+]

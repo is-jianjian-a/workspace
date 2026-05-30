@@ -1,0 +1,230 @@
+[
+  {
+    "id": 1,
+    "note_id": "68f8c58f00000000050315db",
+    "opinions": [
+      {
+        "brand": "华为",
+        "aspect": "性能/流畅度",
+        "sentiment": "negative",
+        "confidence": 0.95,
+        "quote": "用了才一年多就卡到炸裂，进一个程序要等好几秒才能反应过来",
+        "reasoning": "作者明确表达性能差劲，用'卡到炸裂'形容，列举程序响应慢、相册加载延迟等具体负面体验"
+      },
+      {
+        "brand": "华为",
+        "aspect": "发热",
+        "sentiment": "negative",
+        "confidence": 0.95,
+        "quote": "发热发到感觉要炸掉的程度",
+        "reasoning": "使用夸张但强烈的负面表达'感觉要炸掉'描述发热问题"
+      },
+      {
+        "brand": "华为",
+        "aspect": "续航/电池",
+        "sentiment": "negative",
+        "confidence": 0.90,
+        "quote": "掉电还掉的贼快...才用了一年电池健康度就86%",
+        "reasoning": "明确批评掉电快、充电兼容性差、电池健康度下降快，并与iPhone13pro对比暗示不满"
+      },
+      {
+        "brand": "华为",
+        "aspect": "拍照/像素",
+        "sentiment": "negative",
+        "confidence": 0.90,
+        "quote": "像素根本没有吹的那么好...颜色已经特别失真，拍照特别特别模糊",
+        "reasoning": "否定宣传预期，指出显色度失真、拍照模糊等实际体验落差"
+      },
+      {
+        "brand": "华为",
+        "aspect": "信号",
+        "sentiment": "positive",
+        "confidence": 0.90,
+        "quote": "华为手机的信号是真的好，这个不黑",
+        "reasoning": "唯一明确正面评价，使用'不黑'强调客观认可"
+      },
+      {
+        "brand": "华为",
+        "aspect": "整体体验",
+        "sentiment": "negative",
+        "confidence": 0.95,
+        "quote": "体验感巨差...用完真的拉黑",
+        "reasoning": "总结性负面评价，'拉黑'表明彻底否定和品牌排斥"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "整体体验",
+        "sentiment": "positive",
+        "confidence": 0.85,
+        "quote": "忍了一年实在受不了了，最终决定还是换回苹果，入了新款17pro",
+        "reasoning": "通过'换回苹果'的行动选择，隐含对苹果品牌的信任和偏好；多年老用户身份也强化正面基础印象"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "电池耐用性",
+        "sentiment": "positive",
+        "confidence": 0.80,
+        "quote": "我iPhone13pro还有79的健康度呢",
+        "reasoning": "在批评华为电池时提及iPhone13pro电池健康度，暗示苹果电池更耐用、更经得起时间考验"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "note_id": "689c1def000000001d0380fe",
+    "opinions": [
+      {
+        "brand": "华为",
+        "aspect": "散热",
+        "sentiment": "positive",
+        "confidence": 0.85,
+        "quote": "华为最优（液冷黑科技）...稳帧神器保下限",
+        "reasoning": "将华为散热评为最优，用'黑科技'褒义表达，肯定其稳帧表现"
+      },
+      {
+        "brand": "华为",
+        "aspect": "屏幕/抗摔",
+        "sentiment": "positive",
+        "confidence": 0.85,
+        "quote": "抗摔提升30%！裸奔党狂喜",
+        "reasoning": "正面评价昆仑玻璃抗摔性能，'狂喜'表达用户群体认可"
+      },
+      {
+        "brand": "华为",
+        "aspect": "长焦/拍照",
+        "sentiment": "positive",
+        "confidence": 0.90,
+        "quote": "真·物理开挂！拍放大10倍以上纹理都很清晰",
+        "reasoning": "高度赞扬机械伸缩长焦，用'开挂'形容10倍以上清晰度优势"
+      },
+      {
+        "brand": "华为",
+        "aspect": "通信/卫星",
+        "sentiment": "positive",
+        "confidence": 0.90,
+        "quote": "捅破天的华为！沙漠无人区能发30秒急救语音！（救命刚需）",
+        "reasoning": "强烈正面评价，'救命刚需'强调卫星通信的实用价值和不可替代性"
+      },
+      {
+        "brand": "华为",
+        "aspect": "快充",
+        "sentiment": "positive",
+        "confidence": 0.80,
+        "quote": "华为100W快充：25分钟满血！",
+        "reasoning": "正面描述快充速度，但后文提及2年后电池健康恐降，略有保留"
+      },
+      {
+        "brand": "华为",
+        "aspect": "电池健康/耐久",
+        "sentiment": "negative",
+        "confidence": 0.75,
+        "quote": "但2年后电池健康恐掉到85%↓",
+        "reasoning": "用'恐掉'表达对华为快充导致电池衰减的担忧，与苹果形成对比"
+      },
+      {
+        "brand": "华为",
+        "aspect": "芯片/游戏性能",
+        "sentiment": "mixed",
+        "confidence": 0.80,
+        "quote": "NPU狂堆AI算力！鸿蒙5.1丝滑如德芙，但游戏帧率输苹果半筹",
+        "reasoning": "混合评价：肯定AI算力和系统流畅度，但承认游戏帧率不如苹果"
+      },
+      {
+        "brand": "华为",
+        "aspect": "价格",
+        "sentiment": "negative",
+        "confidence": 0.70,
+        "quote": "华为Pura 80 Ultra：9999",
+        "reasoning": "在国补对比中列出高价，结合上下文'苹果16 Pro Max：8399'及'[大笑R]'表情，暗示华为定价偏高"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "散热",
+        "sentiment": "negative",
+        "confidence": 0.85,
+        "quote": "苹果16PM依然'暖手宝'...王者团战激烈时可能自动变暗屏幕",
+        "reasoning": "批评苹果散热差，用'暖手宝'贬义比喻，指出游戏时降亮度问题"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "屏幕/抗摔",
+        "sentiment": "mixed",
+        "confidence": 0.75,
+        "quote": "苹果超瓷晶更抗刮：但摔角依旧碎屏警告…（维修费肉疼警告）",
+        "reasoning": "混合评价：承认抗刮优势，但强调摔落易碎和高昂维修成本"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "长焦/拍照",
+        "sentiment": "negative",
+        "confidence": 0.80,
+        "quote": "夜景提亮明显，但10倍以上糊成油画…",
+        "reasoning": "承认夜景优势，但明确批评10倍以上长焦画质差"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "通信/卫星",
+        "sentiment": "negative",
+        "confidence": 0.85,
+        "quote": "苹果仅卫星短信：国内暂未开放…（果粉：等我进罗布泊再开通？）",
+        "reasoning": "讽刺苹果卫星功能在国内不可用，用反问句表达失望和调侃"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "快充",
+        "sentiment": "negative",
+        "confidence": 0.80,
+        "quote": "苹果35W'快充'：80分钟充满…",
+        "reasoning": "用引号讽刺'快充'名不副实，充电速度远逊于华为"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "电池健康/耐久",
+        "sentiment": "positive",
+        "confidence": 0.85,
+        "quote": "但电池损耗慢！1年健康度仍95%+（慢性子福音）",
+        "reasoning": "正面评价电池损耗慢，'慢性子福音'幽默肯定其耐久性优势"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "芯片/游戏性能",
+        "sentiment": "positive",
+        "confidence": 0.85,
+        "quote": "苹果A18 Pro：性能天花板！原神高帧率高画质全程无压力",
+        "reasoning": "高度肯定芯片性能，'性能天花板'为强烈正面评价"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "信号",
+        "sentiment": "negative",
+        "confidence": 0.80,
+        "quote": "信号差+发热老毛病仍在（英特尔基带背锅？）",
+        "reasoning": "批评信号差是老毛病，用括号疑问暗示对基带问题的不满"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "AI功能",
+        "sentiment": "negative",
+        "confidence": 0.75,
+        "quote": "国行al被阉割",
+        "reasoning": "批评国行AI功能被削减，'阉割'表达强烈不满"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "价格",
+        "sentiment": "positive",
+        "confidence": 0.80,
+        "quote": "苹果16 Pro Max：8399 [大笑R][大笑R][大笑R]",
+        "reasoning": "在国补背景下列出较低价格，配合大笑表情，表达价格优势带来的正面情绪"
+      },
+      {
+        "brand": "苹果",
+        "aspect": "耐用性/保值",
+        "sentiment": "positive",
+        "confidence": 0.75,
+        "quote": "非常稳健 iPhone11依旧能打",
+        "reasoning": "借果粉之口肯定苹果产品耐用性和长期可用性"
+      }
+    ]
+  }
+]

@@ -1,0 +1,549 @@
+# -*- coding: utf-8 -*-
+import json
+
+# Read input
+with open('/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/remaining-batch12-input.json', 'r', encoding='utf-8') as f:
+    posts = json.load(f)
+
+results = []
+
+# Post 185: 对不起华为 我要放弃你了
+# Long-time Huawei user, disappointed with Mate60 Pro camera quality
+results.append({
+    "opinion_id": "rb12_0_0",
+    "note_id": "691335e8000000000700d257",
+    "title": "对不起华为 我要放弃你了",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 856,
+    "comment_count": 2471,
+    "opinion_text": "全家华为手机8年+用户，Mate60 Pro拍照太无语，和朋友拍同一位置照片对比后彻底不想用了",
+    "brand_target": "华为",
+    "sentiment_polarity": "负向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"后面买的手机拍照太无语了，不知道是批次的问题还是什么，知直到今天和朋友拍了同一个位置的照片，我彻底不想用了。我是mate 60 pro 再见\" — 8年老用户因拍照问题明确表达放弃意愿，情感强烈",
+    "confidence": "高",
+    "full_title": "对不起华为 我要放弃你了",
+    "full_content": "我们全家华为手机，双方父母都是送的都是华为手机，用华为至少8年打底，我老公电脑/车都是华为，后面买的手机拍照太无语了，不知道是批次的问题还是什么，知直到今天和朋友拍了同一个位置的照片，我彻底不想用了。我是mate 60 pro 再见\n#华为手机[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 186: 为什么有人喜欢用苹果拍？华为冷白皮赢麻了！
+# Multi-brand comparison: iPhone, vivo, Samsung, Huawei
+results.append({
+    "opinion_id": "rb12_1_0",
+    "note_id": "6799d8180000000018005211",
+    "title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 869,
+    "comment_count": 233,
+    "opinion_text": "华为Pura70Pro+拍出的冷白皮很好看，不需要修图可以原图直出",
+    "brand_target": "华为",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出\" — 明确赞美华为冷白皮效果，认为可以直接出片",
+    "confidence": "高",
+    "full_title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "full_content": "📱iPhone16Promax\n📱vivoX100Ultra\n📱三星S23Ultra\n📱华为Pura70Pro+\n⚠️均为原相机直出照片，没有调过任何参数，🈚美颜，🈚滤镜，手机自动对焦，用的是95新🆕\n\n✨拍摄场景为中午正常光线，感觉还是华为和vivo比较出片，特别是华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出\n\n👉🏻iPhone16Promax\n苹果拍出来的效果比较自然，只有苹果的黑色是没有偏色，但是整体看起来比较普通，色调偏黄，显得有些没有气色，属于需要后期修图会更加好看的那种\n\n👉🏻vivoX100Ultra\nvivo的人像真的很好看，如果说苹果是原生态的好看，vivo就是加了美颜和修图的好看，不需要后期修P图也行\n\n👉🏻三星S23Ultra\n三星整体也是有些偏黄的，但会更亮一些，面部细节不如vivo，可以明显的看出法令纹\n\n👉🏻华为Pura70Pro+\n华为拍出的冷白皮震惊到我了，也是面部细节不如vivo，法令纹也是比较明显的，但拍人是真的很白\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机拍照[话题]# #苹果手机[话题]# #iPhone[话题]# #人像摄影[话题]# #华为[话题]# #vivo[话题]# #iPhone16[话题]# #手机拍照测评[话题]# #iphone原相机[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_1_1",
+    "note_id": "6799d8180000000018005211",
+    "title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 869,
+    "comment_count": 233,
+    "opinion_text": "iPhone16Promax拍出来的效果比较自然，黑色没有偏色，但整体普通、色调偏黄、显得没气色，需要后期修图",
+    "brand_target": "苹果",
+    "sentiment_polarity": "中性",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"苹果拍出来的效果比较自然，只有苹果的黑色是没有偏色，但是整体看起来比较普通，色调偏黄，显得有些没有气色，属于需要后期修图会更加好看的那种\" — 有优点（自然、黑色不偏色）也有缺点（偏黄、没气色、需修图），整体中性偏略负",
+    "confidence": "高",
+    "full_title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "full_content": "📱iPhone16Promax\n📱vivoX100Ultra\n📱三星S23Ultra\n📱华为Pura70Pro+\n⚠️均为原相机直出照片，没有调过任何参数，🈚美颜，🈚滤镜，手机自动对焦，用的是95新🆕\n\n✨拍摄场景为中午正常光线，感觉还是华为和vivo比较出片，特别是华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出\n\n👉🏻iPhone16Promax\n苹果拍出来的效果比较自然，只有苹果的黑色是没有偏色，但是整体看起来比较普通，色调偏黄，显得有些没有气色，属于需要后期修图会更加好看的那种\n\n👉🏻vivoX100Ultra\nvivo的人像真的很好看，如果说苹果是原生态的好看，vivo就是加了美颜和修图的好看，不需要后期修P图也行\n\n👉🏻三星S23Ultra\n三星整体也是有些偏黄的，但会更亮一些，面部细节不如vivo，可以明显的看出法令纹\n\n👉🏻华为Pura70Pro+\n华为拍出的冷白皮震惊到我了，也是面部细节不如vivo，法令纹也是比较明显的，但拍人是真的很白\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机拍照[话题]# #苹果手机[话题]# #iPhone[话题]# #人像摄影[话题]# #华为[话题]# #vivo[话题]# #iPhone16[话题]# #手机拍照测评[话题]# #iphone原相机[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_1_2",
+    "note_id": "6799d8180000000018005211",
+    "title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 869,
+    "comment_count": 233,
+    "opinion_text": "vivoX100Ultra人像很好看，像加了美颜和修图的效果，不需要后期修图",
+    "brand_target": "vivo",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"vivo的人像真的很好看，如果说苹果是原生态的好看，vivo就是加了美颜和修图的好看，不需要后期修P图也行\" — 高度肯定vivo人像效果",
+    "confidence": "高",
+    "full_title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "full_content": "📱iPhone16Promax\n📱vivoX100Ultra\n📱三星S23Ultra\n📱华为Pura70Pro+\n⚠️均为原相机直出照片，没有调过任何参数，🈚美颜，🈚滤镜，手机自动对焦，用的是95新🆕\n\n✨拍摄场景为中午正常光线，感觉还是华为和vivo比较出片，特别是华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出\n\n👉🏻iPhone16Promax\n苹果拍出来的效果比较自然，只有苹果的黑色是没有偏色，但是整体看起来比较普通，色调偏黄，显得有些没有气色，属于需要后期修图会更加好看的那种\n\n👉🏻vivoX100Ultra\nvivo的人像真的很好看，如果说苹果是原生态的好看，vivo就是加了美颜和修图的好看，不需要后期修P图也行\n\n👉🏻三星S23Ultra\n三星整体也是有些偏黄的，但会更亮一些，面部细节不如vivo，可以明显的看出法令纹\n\n👉🏻华为Pura70Pro+\n华为拍出的冷白皮震惊到我了，也是面部细节不如vivo，法令纹也是比较明显的，但拍人是真的很白\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机拍照[话题]# #苹果手机[话题]# #iPhone[话题]# #人像摄影[话题]# #华为[话题]# #vivo[话题]# #iPhone16[话题]# #手机拍照测评[话题]# #iphone原相机[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_1_3",
+    "note_id": "6799d8180000000018005211",
+    "title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 869,
+    "comment_count": 233,
+    "opinion_text": "三星S23Ultra整体有些偏黄但更亮，面部细节不如vivo，法令纹明显",
+    "brand_target": "三星",
+    "sentiment_polarity": "负向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"三星整体也是有些偏黄的，但会更亮一些，面部细节不如vivo，可以明显的看出法令纹\" — 指出偏黄、面部细节不足等问题",
+    "confidence": "高",
+    "full_title": "为什么有人喜欢用苹果拍？华为冷白皮赢麻了！",
+    "full_content": "📱iPhone16Promax\n📱vivoX100Ultra\n📱三星S23Ultra\n📱华为Pura70Pro+\n⚠️均为原相机直出照片，没有调过任何参数，🈚美颜，🈚滤镜，手机自动对焦，用的是95新🆕\n\n✨拍摄场景为中午正常光线，感觉还是华为和vivo比较出片，特别是华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出\n\n👉🏻iPhone16Promax\n苹果拍出来的效果比较自然，只有苹果的黑色是没有偏色，但是整体看起来比较普通，色调偏黄，显得有些没有气色，属于需要后期修图会更加好看的那种\n\n👉🏻vivoX100Ultra\nvivo的人像真的很好看，如果说苹果是原生态的好看，vivo就是加了美颜和修图的好看，不需要后期修P图也行\n\n👉🏻三星S23Ultra\n三星整体也是有些偏黄的，但会更亮一些，面部细节不如vivo，可以明显的看出法令纹\n\n👉🏻华为Pura70Pro+\n华为拍出的冷白皮震惊到我了，也是面部细节不如vivo，法令纹也是比较明显的，但拍人是真的很白\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机拍照[话题]# #苹果手机[话题]# #iPhone[话题]# #人像摄影[话题]# #华为[话题]# #vivo[话题]# #iPhone16[话题]# #手机拍照测评[话题]# #iphone原相机[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 187: iPhone其实比华为更护眼？真不是瞎眼屏！
+# Technical comparison of screen eye protection between iPhone and Huawei
+results.append({
+    "opinion_id": "rb12_2_0",
+    "note_id": "69287a8d000000001e00f956",
+    "title": "iPhone其实比华为更护眼？真不是瞎眼屏！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 49,
+    "comment_count": 84,
+    "opinion_text": "iPhone17Promax在大部分灰阶下SVM值比华为Mate70Air更低，尤其在暗色模式下iPhone更护眼，质疑\"苹果不护眼\"的刻板印象",
+    "brand_target": "苹果",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"到了晚上呢？小红书、微信的暗色模式背景一般是G20灰阶左右，这时你会发现，反而是iPhone的SVM更低！\" \"你还认为苹果不护眼吗？\" — 用数据论证iPhone更护眼，为苹果正名",
+    "confidence": "高",
+    "full_title": "iPhone其实比华为更护眼？真不是瞎眼屏！",
+    "full_content": "现在博主们喜欢用SVM（频闪可视度）来算屏幕是否伤眼，你可以简单理解成SVM越高，就越容易疲劳。一般他们会手动调节手机亮度，用探头测量白色界面的SVM值，也可以看到IPhone17Promax即使关闭了PWM调光，依然普遍比华为Mate70Air的SVM值高。\n但大部分软件并不都是全白，如果画面有点灰度，到了图2大约100灰阶的背景，你就会发现华为手机的SVM和iPhone接近了。。。\n那如果到了晚上呢？小红书、微信的暗色模式背景一般是G20灰阶左右，这时你会发现，反而是iPhone的SVM更低！\n简单做个热力图，可以看到大部分灰阶下华为Mate70Air的SVM都要比苹果高，而晚上正是环境光更少，人眼更专注于屏幕内容，瞳孔也更大的时候。。。\n你还认为苹果不护眼吗？\n注：由于探头精度裁剪掉小于15的灰阶\n#散光和近视[话题]# #一起聊数码[话题]#\n#iPhone17[话题]#   #iPhone17护眼模式[话题]# #iPhone17ProMax[话题]#  #iPhone17pro[话题]#  #苹果17pro[话题]#  #苹果手机[话题]#  #数码大玩家[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_2_1",
+    "note_id": "69287a8d000000001e00f956",
+    "title": "iPhone其实比华为更护眼？真不是瞎眼屏！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 49,
+    "comment_count": 84,
+    "opinion_text": "华为Mate70Air在大部分灰阶下SVM值比iPhone高，白色界面SVM值也偏高，暗色模式下不如iPhone护眼",
+    "brand_target": "华为",
+    "sentiment_polarity": "负向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"IPhone17Promax即使关闭了PWM调光，依然普遍比华为Mate70Air的SVM值高\" \"大部分灰阶下华为Mate70Air的SVM都要比苹果高\" — 用数据说明华为屏幕SVM值更高（更伤眼），相对iPhone处于劣势",
+    "confidence": "高",
+    "full_title": "iPhone其实比华为更护眼？真不是瞎眼屏！",
+    "full_content": "现在博主们喜欢用SVM（频闪可视度）来算屏幕是否伤眼，你可以简单理解成SVM越高，就越容易疲劳。一般他们会手动调节手机亮度，用探头测量白色界面的SVM值，也可以看到IPhone17Promax即使关闭了PWM调光，依然普遍比华为Mate70Air的SVM值高。\n但大部分软件并不都是全白，如果画面有点灰度，到了图2大约100灰阶的背景，你就会发现华为手机的SVM和iPhone接近了。。。\n那如果到了晚上呢？小红书、微信的暗色模式背景一般是G20灰阶左右，这时你会发现，反而是iPhone的SVM更低！\n简单做个热力图，可以看到大部分灰阶下华为Mate70Air的SVM都要比苹果高，而晚上正是环境光更少，人眼更专注于屏幕内容，瞳孔也更大的时候。。。\n你还认为苹果不护眼吗？\n注：由于探头精度裁剪掉小于15的灰阶\n#散光和近视[话题]# #一起聊数码[话题]#\n#iPhone17[话题]#   #iPhone17护眼模式[话题]# #iPhone17ProMax[话题]#  #iPhone17pro[话题]#  #苹果17pro[话题]#  #苹果手机[话题]#  #数码大玩家[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 188: 4️⃣款顶级旗舰，安卓真的比不过苹果live吗？
+# Multi-brand live photo comparison: iPhone, Huawei, OPPO, Xiaomi
+results.append({
+    "opinion_id": "rb12_3_0",
+    "note_id": "6882fe5f0000000013012475",
+    "title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 213,
+    "comment_count": 16,
+    "opinion_text": "苹果live图更加自然，安卓机开了live没有关掉清晰，这点一直没有优化好",
+    "brand_target": "苹果",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"就live图来说，感觉还是苹果要更加自然\" \"苹果只看照片的话只能说中规中矩吧，主要还是live图动起来加上海浪声比较治愈\" — 肯定苹果live图自然度和治愈感",
+    "confidence": "高",
+    "full_title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "full_content": "📱iPhone16Promax\n📱华为mate70RS\n📱OPPOfindX8ultra\n📱小米15ultra\n⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，自动对焦，手机用的都是95新🆕\n\n💬这里拿了四款旗舰机，本来是在纠结要不要用vivo，最后还是用了小米，各家影像算法优化区别比较明显，就live图来说，感觉还是苹果要更加自然，总感觉安卓机开了live没有关掉清晰，这点一直没有优化好，不知道是不是我的错觉\n\n👉🏻色调来看，区别最大的就是OPPO了，暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感，华为和小米整体都比较亮，但华为的明暗对比度要更强一些，苹果只看照片的话只能说中规中矩吧，主要还是live图动起来加上海浪声比较治愈\n\n👉🏻清晰度来看，整体来看小米的清晰度要好很多，不管是树叶还是岩石纹理处理的都很好，细节很到位，其次就是华为和OPPO，苹果没有其他三家对比的话也是比较清晰的，但细看会有轻微糊感\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机摄影[话题]# #苹果手机[话题]# #手机拍照[话题]# #iPhone[话题]# #华为[话题]# #小米[话题]# #OPPO[话题]# #live图[话题]# #原相机[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_3_1",
+    "note_id": "6882fe5f0000000013012475",
+    "title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 213,
+    "comment_count": 16,
+    "opinion_text": "华为mate70RS整体比较亮，明暗对比度更强，但live图不如苹果自然",
+    "brand_target": "华为",
+    "sentiment_polarity": "中性",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"华为和小米整体都比较亮，但华为的明暗对比度要更强一些\" — 对华为色调有客观描述，未明确褒贬；live图方面不如苹果",
+    "confidence": "中",
+    "full_title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "full_content": "📱iPhone16Promax\n📱华为mate70RS\n📱OPPOfindX8ultra\n📱小米15ultra\n⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，自动对焦，手机用的都是95新🆕\n\n💬这里拿了四款旗舰机，本来是在纠结要不要用vivo，最后还是用了小米，各家影像算法优化区别比较明显，就live图来说，感觉还是苹果要更加自然，总感觉安卓机开了live没有关掉清晰，这点一直没有优化好，不知道是不是我的错觉\n\n👉🏻色调来看，区别最大的就是OPPO了，暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感，华为和小米整体都比较亮，但华为的明暗对比度要更强一些，苹果只看照片的话只能说中规中矩吧，主要还是live图动起来加上海浪声比较治愈\n\n👉🏻清晰度来看，整体来看小米的清晰度要好很多，不管是树叶还是岩石纹理处理的都很好，细节很到位，其次就是华为和OPPO，苹果没有其他三家对比的话也是比较清晰的，但细看会有轻微糊感\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机摄影[话题]# #苹果手机[话题]# #手机拍照[话题]# #iPhone[话题]# #华为[话题]# #小米[话题]# #OPPO[话题]# #live图[话题]# #原相机[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_3_2",
+    "note_id": "6882fe5f0000000013012475",
+    "title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 213,
+    "comment_count": 16,
+    "opinion_text": "小米15ultra清晰度最好，树叶和岩石纹理处理到位，细节很到位",
+    "brand_target": "小米",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"整体来看小米的清晰度要好很多，不管是树叶还是岩石纹理处理的都很好，细节很到位\" — 高度肯定小米清晰度",
+    "confidence": "高",
+    "full_title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "full_content": "📱iPhone16Promax\n📱华为mate70RS\n📱OPPOfindX8ultra\n📱小米15ultra\n⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，自动对焦，手机用的都是95新🆕\n\n💬这里拿了四款旗舰机，本来是在纠结要不要用vivo，最后还是用了小米，各家影像算法优化区别比较明显，就live图来说，感觉还是苹果要更加自然，总感觉安卓机开了live没有关掉清晰，这点一直没有优化好，不知道是不是我的错觉\n\n👉🏻色调来看，区别最大的就是OPPO了，暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感，华为和小米整体都比较亮，但华为的明暗对比度要更强一些，苹果只看照片的话只能说中规中矩吧，主要还是live图动起来加上海浪声比较治愈\n\n👉🏻清晰度来看，整体来看小米的清晰度要好很多，不管是树叶还是岩石纹理处理的都很好，细节很到位，其次就是华为和OPPO，苹果没有其他三家对比的话也是比较清晰的，但细看会有轻微糊感\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机摄影[话题]# #苹果手机[话题]# #手机拍照[话题]# #iPhone[话题]# #华为[话题]# #小米[话题]# #OPPO[话题]# #live图[话题]# #原相机[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_3_3",
+    "note_id": "6882fe5f0000000013012475",
+    "title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 213,
+    "comment_count": 16,
+    "opinion_text": "OPPOfindX8ultra暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感",
+    "brand_target": "OPPO",
+    "sentiment_polarity": "中性",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"区别最大的就是OPPO了，暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感\" — 客观描述OPPO风格特点，油画感可正可负，属中性评价",
+    "confidence": "中",
+    "full_title": "4️⃣款顶级旗舰，安卓真的比不过苹果live吗？",
+    "full_content": "📱iPhone16Promax\n📱华为mate70RS\n📱OPPofindX8ultra\n📱小米15ultra\n⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，自动对焦，手机用的都是95新🆕\n\n💬这里拿了四款旗舰机，本来是在纠结要不要用vivo，最后还是用了小米，各家影像算法优化区别比较明显，就live图来说，感觉还是苹果要更加自然，总感觉安卓机开了live没有关掉清晰，这点一直没有优化好，不知道是不是我的错觉\n\n👉🏻色调来看，区别最大的就是OPPO了，暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感，华为和小米整体都比较亮，但华为的明暗对比度要更强一些，苹果只看照片的话只能说中规中矩吧，主要还是live图动起来加上海浪声比较治愈\n\n👉🏻清晰度来看，整体来看小米的清晰度要好很多，不管是树叶还是岩石纹理处理的都很好，细节很到位，其次就是华为和OPPO，苹果没有其他三家对比的话也是比较清晰的，但细看会有轻微糊感\n#你觉着谁拍出的效果更好？[投票]#\n#拍照[话题]# #手机摄影[话题]# #苹果手机[话题]# #手机拍照[话题]# #iPhone[话题]# #华为[话题]# #小米[话题]# #OPPO[话题]# #live图[话题]# #原相机[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 189: 又换回了mate
+# User switched back from Apple to Huawei Mate80
+results.append({
+    "opinion_id": "rb12_4_0",
+    "note_id": "69721f12000000001a025ea7",
+    "title": "又换回了mate",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 378,
+    "comment_count": 247,
+    "opinion_text": "从苹果换回华为Mate80，用了两天丝滑流畅，小艺输入法和小艺AI反应灵敏超级好用",
+    "brand_target": "华为",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"用了两天丝滑流畅。第二代红枫影像，还在摸索中。小艺输入法，小艺AI反应灵敏，超级好用\" — 明确表达流畅好用，情感积极",
+    "confidence": "高",
+    "full_title": "又换回了mate",
+    "full_content": "再次从苹果换回了华为。入手mate 80，用了两天丝滑流畅。第二代红枫影像，还在摸索中。小艺输入法，小艺AI反应灵敏，超级好用。\n#我和我的mate[话题]#\n期待记录美好生活[大笑R]",
+    "is_fluency_related": True
+})
+
+results.append({
+    "opinion_id": "rb12_4_1",
+    "note_id": "69721f12000000001a025ea7",
+    "title": "又换回了mate",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 378,
+    "comment_count": 247,
+    "opinion_text": "再次从苹果换回了华为，暗示之前从华为换到苹果现在又换回来",
+    "brand_target": "苹果",
+    "sentiment_polarity": "中性",
+    "sentiment_intensity": "弱",
+    "sentiment_reason": "原文：\"再次从苹果换回了华为\" — 仅说明换机动作，未直接评价苹果，但从\"再次换回\"可推断对苹果不够满意才换回华为，属间接负面",
+    "confidence": "中",
+    "full_title": "又换回了mate",
+    "full_content": "再次从苹果换回了华为。入手mate 80，用了两天丝滑流畅。第二代红枫影像，还在摸索中。小艺输入法，小艺AI反应灵敏，超级好用。\n#我和我的mate[话题]#\n期待记录美好生活[大笑R]",
+    "is_fluency_related": False
+})
+
+# Post 190: 华为pura x和苹果16pro 留哪个？
+# User decided to switch to Huawei Pura X from iPhone 16 Pro
+results.append({
+    "opinion_id": "rb12_5_0",
+    "note_id": "688de509000000002301a491",
+    "title": "华为pura x和苹果16pro 留哪个？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 336,
+    "comment_count": 122,
+    "opinion_text": "决定换华为Pura X，小小的看起来好可爱，屏幕比例看起来好舒服，先当主力机使用",
+    "brand_target": "华为",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"最终还是决定换华为啦，小小的，看起来好可爱，屏幕比例看起来好舒服\" — 被华为Pura X的外观和屏幕比例吸引，表达喜爱",
+    "confidence": "高",
+    "full_title": "华为pura x和苹果16pro 留哪个？",
+    "full_content": "还是被种草了、最终还是决定换华为啦，小小的，看起来好可爱，屏幕比例看起来好舒服，先当主力机使用一段时间看看，之后给大家反馈\n#折叠屏[话题]# #鸿蒙和苹果[话题]#  #换手机[话题]# #华为purax[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_5_1",
+    "note_id": "688de509000000002301a491",
+    "title": "华为pura x和苹果16pro 留哪个？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 336,
+    "comment_count": 122,
+    "opinion_text": "在华为Pura X和苹果16pro之间选择了华为，放弃苹果",
+    "brand_target": "苹果",
+    "sentiment_polarity": "中性",
+    "sentiment_intensity": "弱",
+    "sentiment_reason": "原文：\"华为pura x和苹果16pro 留哪个？\"最终选择华为 — 未直接批评苹果，但选择放弃苹果转投华为，属间接负面",
+    "confidence": "中",
+    "full_title": "华为pura x和苹果16pro 留哪个？",
+    "full_content": "还是被种草了、最终还是决定换华为啦，小小的，看起来好可爱，屏幕比例看起来好舒服，先当主力机使用一段时间看看，之后给大家反馈\n#折叠屏[话题]# #鸿蒙和苹果[话题]#  #换手机[话题]# #华为purax[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 191: 4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？
+# Multi-brand night shot comparison
+results.append({
+    "opinion_id": "rb12_6_0",
+    "note_id": "6890d98b00000000020007d2",
+    "title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 544,
+    "comment_count": 187,
+    "opinion_text": "iPhone16Promax夜拍亮度最高，像白天一样，夜拍清晰度翻盘排名第二",
+    "brand_target": "苹果",
+    "sentiment_polarity": "混合",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"苹果竟然是里面亮度调节最高的一个，对比其他的来看，感觉都有点像白天了\" \"苹果夜拍清晰度竟然翻盘了，终于不是垫底了\" — 亮度过度（偏负）但清晰度好（偏正），混合评价",
+    "confidence": "高",
+    "full_title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "full_content": "[举手R]测评设备：\n📱iPhone16Promax\n📱华为mate70Pro\n📱OPPOfindX8ultra\n📱vivoX200ultra\n⚠️均为原相机直出照片，没有调过任何参数，自动对焦，自动识别延长曝光1-3s，手机用的均为95新🆕\n\n⌚拍摄时间：晚上8:00，基本已经很黑了\n\n💬使用体验\n👉🏻色调来看，同样都是有长曝光的情况下，整体亮度苹果＞华为＞OPPO＞vivo，✨苹果竟然是里面亮度调节最高的一个，对比其他的来看，感觉都有点像白天了，✨华为比苹果好一点，但也有种亮亮的感觉，✨OPPO会有些滤镜感，偏色明显一些，有点紫调？✨vivo是四个当中最像晚上的，白平衡比较不错，效果比较自然\n\n👉🏻夜拍清晰度来看，放大看清晰度结果还是比较意外的，vivo＞苹果＞OPPO＞华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了\n#你觉着谁的夜拍效果更好？[投票]#\n#拍照[话题]# #苹果手机[话题]# #夜景拍摄[话题]# #手机拍照[话题]# #夜景[话题]# #iPhone[话题]# #手机拍照测评[话题]# #华为[话题]# #vivo[话题]# #OPPO[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_6_1",
+    "note_id": "6890d98b00000000020007d2",
+    "title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 544,
+    "comment_count": 187,
+    "opinion_text": "华为mate70Pro夜拍亮度偏高，有种亮亮的感觉，夜拍清晰度排名最后",
+    "brand_target": "华为",
+    "sentiment_polarity": "负向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"华为比苹果好一点，但也有种亮亮的感觉\" \"vivo＞苹果＞OPPO＞华为\" — 亮度控制不佳，清晰度垫底",
+    "confidence": "高",
+    "full_title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "full_content": "[举手R]测评设备：\n📱iPhone16Promax\n📱华为mate70Pro\n📱OPPOfindX8ultra\n📱vivoX200ultra\n⚠️均为原相机直出照片，没有调过任何参数，自动对焦，自动识别延长曝光1-3s，手机用的均为95新🆕\n\n⌚拍摄时间：晚上8:00，基本已经很黑了\n\n💬使用体验\n👉🏻色调来看，同样都是有长曝光的情况下，整体亮度苹果＞华为＞OPPO＞vivo，✨苹果竟然是里面亮度调节最高的一个，对比其他的来看，感觉都有点像白天了，✨华为比苹果好一点，但也有种亮亮的感觉，✨OPPO会有些滤镜感，偏色明显一些，有点紫调？✨vivo是四个当中最像晚上的，白平衡比较不错，效果比较自然\n\n👉🏻夜拍清晰度来看，放大看清晰度结果还是比较意外的，vivo＞苹果＞OPPO＞华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了\n#你觉着谁的夜拍效果更好？[投票]#\n#拍照[话题]# #苹果手机[话题]# #夜景拍摄[话题]# #手机拍照[话题]# #夜景[话题]# #iPhone[话题]# #手机拍照测评[话题]# #华为[话题]# #vivo[话题]# #OPPO[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_6_2",
+    "note_id": "6890d98b00000000020007d2",
+    "title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 544,
+    "comment_count": 187,
+    "opinion_text": "vivoX200ultra夜拍最像晚上，白平衡不错效果自然，夜拍清晰度排名第一",
+    "brand_target": "vivo",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"vivo是四个当中最像晚上的，白平衡比较不错，效果比较自然\" \"vivo＞苹果＞OPPO＞华为\" — 白平衡和清晰度均获第一",
+    "confidence": "高",
+    "full_title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "full_content": "[举手R]测评设备：\n📱iPhone16Promax\n📱华为mate70Pro\n📱OPPOfindX8ultra\n📱vivoX200ultra\n⚠️均为原相机直出照片，没有调过任何参数，自动对焦，自动识别延长曝光1-3s，手机用的均为95新🆕\n\n⌚拍摄时间：晚上8:00，基本已经很黑了\n\n💬使用体验\n👉🏻色调来看，同样都是有长曝光的情况下，整体亮度苹果＞华为＞OPPO＞vivo，✨苹果竟然是里面亮度调节最高的一个，对比其他的来看，感觉都有点像白天了，✨华为比苹果好一点，但也有种亮亮的感觉，✨OPPO会有些滤镜感，偏色明显一些，有点紫调？✨vivo是四个当中最像晚上的，白平衡比较不错，效果比较自然\n\n👉🏻夜拍清晰度来看，放大看清晰度结果还是比较意外的，vivo＞苹果＞OPPO＞华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了\n#你觉着谁的夜拍效果更好？[投票]#\n#拍照[话题]# #苹果手机[话题]# #夜景拍摄[话题]# #手机拍照[话题]# #夜景[话题]# #iPhone[话题]# #手机拍照测评[话题]# #华为[话题]# #vivo[话题]# #OPPO[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_6_3",
+    "note_id": "6890d98b00000000020007d2",
+    "title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 544,
+    "comment_count": 187,
+    "opinion_text": "OPPOfindX8ultra夜拍有些滤镜感，偏色明显，有点紫调",
+    "brand_target": "OPPO",
+    "sentiment_polarity": "负向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"OPPO会有些滤镜感，偏色明显一些，有点紫调？\" — 指出OPPO偏色问题",
+    "confidence": "高",
+    "full_title": "4️⃣款旗舰夜拍对比，苹果把晚上拍成了白天？",
+    "full_content": "[举手R]测评设备：\n📱iPhone16Promax\n📱华为mate70Pro\n📱OPPofindX8ultra\n📱vivoX200ultra\n⚠️均为原相机直出照片，没有调过任何参数，自动对焦，自动识别延长曝光1-3s，手机用的均为95新🆕\n\n⌚拍摄时间：晚上8:00，基本已经很黑了\n\n💬使用体验\n👉🏻色调来看，同样都是有长曝光的情况下，整体亮度苹果＞华为＞OPPO＞vivo，✨苹果竟然是里面亮度调节最高的一个，对比其他的来看，感觉都有点像白天了，✨华为比苹果好一点，但也有种亮亮的感觉，✨OPPO会有些滤镜感，偏色明显一些，有点紫调？✨vivo是四个当中最像晚上的，白平衡比较不错，效果比较自然\n\n👉🏻夜拍清晰度来看，放大看清晰度结果还是比较意外的，vivo＞苹果＞OPPO＞华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了\n#你觉着谁的夜拍效果更好？[投票]#\n#拍照[话题]# #苹果手机[话题]# #夜景拍摄[话题]# #手机拍照[话题]# #夜景[话题]# #iPhone[话题]# #手机拍照测评[话题]# #华为[话题]# #vivo[话题]# #OPPO[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 192: Huawei PuraX 换 iPhone 17pro
+# User switched from Huawei PuraX to iPhone 17pro due to software issues
+results.append({
+    "opinion_id": "rb12_7_0",
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 90,
+    "comment_count": 45,
+    "opinion_text": "华为PuraX颜值杠杠的、手感满分、双屏同显拍照满分、16:10屏幕满分，但软件适配度拉垮，微信功能阉割得厉害，只能放弃",
+    "brand_target": "华为",
+    "sentiment_polarity": "混合",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"阔折叠 颜值杠杠的\n手感满分💯 双屏同显拍照💯 16:10屏幕💯\" \"🉑软件适配度拉垮[失望R][失望R][失望R] 败给纯血鸿蒙\n特别是微信功能阉割得厉害 只能放弃啦\" — 硬件高度赞美，软件严重吐槽，情感强烈且矛盾",
+    "confidence": "高",
+    "full_title": "Huawei PuraX 换 iPhone 17pro",
+    "full_content": "老王哥同款手机 阔折叠 颜值杠杠的\n手感满分💯 双屏同显拍照💯 16:10屏幕💯\n果然是小折叠手机里的天花板\n🉑软件适配度拉垮[失望R][失望R][失望R] 败给纯血鸿蒙\n特别是微信功能阉割得厉害 只能放弃啦\n2025.11.23-2026.2.5 历时俩月+，\n成为我用时最短的手机📱\n回想使用过的智能机：Samsung S4，iPhone 5s、6Plus、7Plus、X、Xs、12、14promax，15pro，VIvo X200promini，Huawei PuraX，iPhone 17pro\n总结：ios系统最好用，vivo拍照最好看，三星屏幕最好，华为系统最干净无广\n#purax[话题]# #iPhone17pro[话题]# #鸿蒙系统6[话题]# #ios系统[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_7_1",
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 90,
+    "comment_count": 45,
+    "opinion_text": "iPhone 17pro的iOS系统最好用，从华为PuraX换到iPhone 17pro",
+    "brand_target": "苹果",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"总结：ios系统最好用\" — 在多品牌使用经历中明确认为iOS系统最好用，高度肯定",
+    "confidence": "高",
+    "full_title": "Huawei PuraX 换 iPhone 17pro",
+    "full_content": "老王哥同款手机 阔折叠 颜值杠杠的\n手感满分💯 双屏同显拍照💯 16:10屏幕💯\n果然是小折叠手机里的天花板\n🉑软件适配度拉垮[失望R][失望R][失望R] 败给纯血鸿蒙\n特别是微信功能阉割得厉害 只能放弃啦\n2025.11.23-2026.2.5 历时俩月+，\n成为我用时最短的手机📱\n回想使用过的智能机：Samsung S4，iPhone 5s、6Plus、7Plus、X、Xs、12、14promax，15pro，VIvo X200promini，Huawei PuraX，iPhone 17pro\n总结：ios系统最好用，vivo拍照最好看，三星屏幕最好，华为系统最干净无广\n#purax[话题]# #iPhone17pro[话题]# #鸿蒙系统6[话题]# #ios系统[话题]#",
+    "is_fluency_related": True
+})
+
+results.append({
+    "opinion_id": "rb12_7_2",
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 90,
+    "comment_count": 45,
+    "opinion_text": "vivo X200promini拍照最好看",
+    "brand_target": "vivo",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"总结：...vivo拍照最好看\" — 在多品牌使用经历中明确认为vivo拍照最好看",
+    "confidence": "高",
+    "full_title": "Huawei PuraX 换 iPhone 17pro",
+    "full_content": "老王哥同款手机 阔折叠 颜值杠杠的\n手感满分💯 双屏同显拍照💯 16:10屏幕💯\n果然是小折叠手机里的天花板\n🉑软件适配度拉垮[失望R][失望R][失望R] 败给纯血鸿蒙\n特别是微信功能阉割得厉害 只能放弃啦\n2025.11.23-2026.2.5 历时俩月+，\n成为我用时最短的手机📱\n回想使用过的智能机：Samsung S4，iPhone 5s、6Plus、7Plus、X、Xs、12、14promax，15pro，VIvo X200promini，Huawei PuraX，iPhone 17pro\n总结：ios系统最好用，vivo拍照最好看，三星屏幕最好，华为系统最干净无广\n#purax[话题]# #iPhone17pro[话题]# #鸿蒙系统6[话题]# #ios系统[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_7_3",
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 90,
+    "comment_count": 45,
+    "opinion_text": "三星屏幕最好",
+    "brand_target": "三星",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"总结：...三星屏幕最好\" — 在多品牌使用经历中明确认为三星屏幕最好",
+    "confidence": "高",
+    "full_title": "Huawei PuraX 换 iPhone 17pro",
+    "full_content": "老王哥同款手机 阔折叠 颜值杠杠的\n手感满分💯 双屏同显拍照💯 16:10屏幕💯\n果然是小折叠手机里的天花板\n🉑软件适配度拉垮[失望R][失望R][失望R] 败给纯血鸿蒙\n特别是微信功能阉割得厉害 只能放弃啦\n2025.11.23-2026.2.5 历时俩月+，\n成为我用时最短的手机📱\n回想使用过的智能机：Samsung S4，iPhone 5s、6Plus、7Plus、X、Xs、12、14promax，15pro，VIvo X200promini，Huawei PuraX，iPhone 17pro\n总结：ios系统最好用，vivo拍照最好看，三星屏幕最好，华为系统最干净无广\n#purax[话题]# #iPhone17pro[话题]# #鸿蒙系统6[话题]# #ios系统[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_7_4",
+    "note_id": "6984c932000000001a01e04f",
+    "title": "Huawei PuraX 换 iPhone 17pro",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 90,
+    "comment_count": 45,
+    "opinion_text": "华为系统最干净无广告",
+    "brand_target": "华为",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"总结：...华为系统最干净无广\" — 肯定华为系统干净无广告的优点",
+    "confidence": "高",
+    "full_title": "Huawei PuraX 换 iPhone 17pro",
+    "full_content": "老王哥同款手机 阔折叠 颜值杠杠的\n手感满分💯 双屏同显拍照💯 16:10屏幕💯\n果然是小折叠手机里的天花板\n🉑软件适配度拉垮[失望R][失望R][失望R] 败给纯血鸿蒙\n特别是微信功能阉割得厉害 只能放弃啦\n2025.11.23-2026.2.5 历时俩月+，\n成为我用时最短的手机📱\n回想使用过的智能机：Samsung S4，iPhone 5s、6Plus、7Plus、X、Xs、12、14promax，15pro，VIvo X200promini，Huawei PuraX，iPhone 17pro\n总结：ios系统最好用，vivo拍照最好看，三星屏幕最好，华为系统最干净无广\n#purax[话题]# #iPhone17pro[话题]# #鸿蒙系统6[话题]# #ios系统[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 193: 苹果和华为拍照很接近了，感觉还是华为高级？
+# Comparison between iPhone and Huawei camera
+results.append({
+    "opinion_id": "rb12_8_0",
+    "note_id": "686a9aa9000000001202e338",
+    "title": "苹果和华为拍照很接近了，感觉还是华为高级？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 50,
+    "comment_count": 53,
+    "opinion_text": "iPhone16Promax和华为mate70Pro拍照色调、色彩还原度、清晰度都比较接近，但细看华为更有高级感；苹果自动对焦清晰范围比华为更小，主体更突出",
+    "brand_target": "华为",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"怎么感觉细看还是华为更有高级感呢？\" — 虽然两者接近，但认为华为更有高级感，偏向正面",
+    "confidence": "高",
+    "full_title": "苹果和华为拍照很接近了，感觉还是华为高级？",
+    "full_content": "📱iPhone16Promax\n📱华为mate70Pro\n⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，相机自动对焦，手机用的都是95新🆕\n\n👉🏻iPhone16Promax和华为mate70Pro拍出来的照片不管是色调、色彩还原度、清晰度等都比较接近了，怎么感觉细看还是华为更有高级感呢？\n\n👉🏻细看的话，两者还是有些区别的，手机自动对焦苹果的清晰范围比华为更小，主体更突出\n#你觉着谁拍的效果更好？[PK]#\n#拍照[话题]# #苹果手机[话题]# #手机拍照[话题]# #手机摄影[话题]# #iPhone[话题]# #花[话题]# #华为[话题]# #华为苹果拍照对比[话题]# #手机拍照测评[话题]# #手机测评[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_8_1",
+    "note_id": "686a9aa9000000001202e338",
+    "title": "苹果和华为拍照很接近了，感觉还是华为高级？",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 50,
+    "comment_count": 53,
+    "opinion_text": "iPhone16Promax和华为mate70Pro拍照接近，苹果自动对焦清晰范围更小，主体更突出",
+    "brand_target": "苹果",
+    "sentiment_polarity": "中性",
+    "sentiment_intensity": "中",
+    "sentiment_reason": "原文：\"手机自动对焦苹果的清晰范围比华为更小，主体更突出\" — 客观描述苹果对焦特点，有优点（主体突出）也有隐含缺点（范围小），整体中性",
+    "confidence": "高",
+    "full_title": "苹果和华为拍照很接近了，感觉还是华为高级？",
+    "full_content": "📱iPhone16Promax\n📱华为mate70Pro\n⚠️均为原相机直出照片，没有调过任何参数，🈚滤镜，相机自动对焦，手机用的都是95新🆕\n\n👉🏻iPhone16Promax和华为mate70Pro拍出来的照片不管是色调、色彩还原度、清晰度等都比较接近了，怎么感觉细看还是华为更有高级感呢？\n\n👉🏻细看的话，两者还是有些区别的，手机自动对焦苹果的清晰范围比华为更小，主体更突出\n#你觉着谁拍的效果更好？[PK]#\n#拍照[话题]# #苹果手机[话题]# #手机拍照[话题]# #手机摄影[话题]# #iPhone[话题]# #花[话题]# #华为[话题]# #华为苹果拍照对比[话题]# #手机拍照测评[话题]# #手机测评[话题]#",
+    "is_fluency_related": False
+})
+
+# Post 194: 苹果🆚华为拍烤肉，肉的质感差距也太大了！
+# Food photography comparison between iPhone and Huawei
+results.append({
+    "opinion_id": "rb12_9_0",
+    "note_id": "68235cd2000000000303b7ac",
+    "title": "苹果🆚华为拍烤肉，肉的质感差距也太大了！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 226,
+    "comment_count": 824,
+    "opinion_text": "iPhone16Promax拍烤肉自动对焦有问题，前景虚的，对焦后面鳗鱼时前面又虚化；偏自然色彩，接近真实色彩",
+    "brand_target": "苹果",
+    "sentiment_polarity": "负向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"苹果自动对焦前景是虚的，直接对焦在后面鳗鱼上，手动对焦后面鳗鱼又会虚化\" \"苹果是偏自然色彩的，颜色比较接近于真实色彩\" — 对焦问题严重，虽然色彩真实但拍摄体验差",
+    "confidence": "高",
+    "full_title": "苹果🆚华为拍烤肉，肉的质感差距也太大了！",
+    "full_content": "📱iPhone16Promax\n📱华为Mate70Pro+\n⚠️均为原相机直出照片，苹果没有开实况，华为用的是原色模式，🈚滤镜，近距离手机自动对焦，手机用的都是相同成色的95新🆕\n\n💬相同光线和环境下，实际灯光是比较暗的，华为和苹果完全拍出了两种质感的肉，明显感觉华为拍的肉要更有食欲一些\n\n👉🏻先来说一下拍摄中发现的问题，苹果自动对焦前景是虚的，直接对焦在后面鳗鱼上，手动对焦后面鳗鱼又会虚化\n\n👉🏻华为的问题就是同样是原色模式的情况下，没有加任何美食滤镜，却拍出了三种不同色调的照片，这点也是蛮神奇的，最后一张拍出的烤肉是色彩最还原的一张，只能说AI算法过于强大了\n\n👉🏻再来对比一下色调，苹果是偏自然色彩的，颜色比较接近于真实色彩，华为拍的有点偏暖色调了，饱和度比较高，色彩也比较鲜艳\n\n👉🏻最近再对比一下清晰度和细节，就相机自动对焦的效果来说，明显是华为更加智能，前面的烤肉整体都是清晰的，而苹果自动识别对焦在后面的鳗鱼上面，这样来看的话细节确实华为要更优秀\n#你觉着谁拍出的效果更好？[PK]#\n#拍照[话题]# #手机拍照[话题]# #手机摄影[话题]# #苹果手机[话题]# #iPhone[话题]# #手机拍照测评[话题]# #华为苹果拍照对比[话题]# #美食[话题]# #华为[话题]# #华为手机[话题]# #烤肉[话题]# #iPhone16[话题]# #华为mate70[话题]# #美食分享[话题]#",
+    "is_fluency_related": False
+})
+
+results.append({
+    "opinion_id": "rb12_9_1",
+    "note_id": "68235cd2000000000303b7ac",
+    "title": "苹果🆚华为拍烤肉，肉的质感差距也太大了！",
+    "source_keyword": "华为和苹果稳定性对比",
+    "liked_count": 226,
+    "comment_count": 824,
+    "opinion_text": "华为Mate70Pro+拍的肉更有食欲，自动对焦更智能，前面烤肉整体清晰，细节更优秀；但原色模式下拍出三种不同色调，AI算法过于强大",
+    "brand_target": "华为",
+    "sentiment_polarity": "正向",
+    "sentiment_intensity": "强",
+    "sentiment_reason": "原文：\"明显感觉华为拍的肉要更有食欲一些\" \"明显是华为更加智能，前面的烤肉整体都是清晰的\" \"细节确实华为要更优秀\" — 多维度肯定华为拍照效果，认为更有食欲、对焦更智能、细节更优秀",
+    "confidence": "高",
+    "full_title": "苹果🆚华为拍烤肉，肉的质感差距也太大了！",
+    "full_content": "📱iPhone16Promax\n📱华为Mate70Pro+\n⚠️均为原相机直出照片，苹果没有开实况，华为用的是原色模式，🈚滤镜，近距离手机自动对焦，手机用的都是相同成色的95新🆕\n\n💬相同光线和环境下，实际灯光是比较暗的，华为和苹果完全拍出了两种质感的肉，明显感觉华为拍的肉要更有食欲一些\n\n👉🏻先来说一下拍摄中发现的问题，苹果自动对焦前景是虚的，直接对焦在后面鳗鱼上，手动对焦后面鳗鱼又会虚化\n\n👉🏻华为的问题就是同样是原色模式的情况下，没有加任何美食滤镜，却拍出了三种不同色调的照片，这点也是蛮神奇的，最后一张拍出的烤肉是色彩最还原的一张，只能说AI算法过于强大了\n\n👉🏻再来对比一下色调，苹果是偏自然色彩的，颜色比较接近于真实色彩，华为拍的有点偏暖色调了，饱和度比较高，色彩也比较鲜艳\n\n👉🏻最近再对比一下清晰度和细节，就相机自动对焦的效果来说，明显是华为更加智能，前面的烤肉整体都是清晰的，而苹果自动识别对焦在后面的鳗鱼上面，这样来看的话细节确实华为要更优秀\n#你觉着谁拍出的效果更好？[PK]#\n#拍照[话题]# #手机拍照[话题]# #手机摄影[话题]# #苹果手机[话题]# #iPhone[话题]# #手机拍照测评[话题]# #华为苹果拍照对比[话题]# #美食[话题]# #华为[话题]# #华为手机[话题]# #烤肉[话题]# #iPhone16[话题]# #华为mate70[话题]# #美食分享[话题]#",
+    "is_fluency_related": False
+})
+
+# Write output
+with open('/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/remaining-batch12-result.json', 'w', encoding='utf-8') as f:
+    json.dump(results, f, ensure_ascii=False, indent=2)
+
+print(f"Total opinions extracted: {len(results)}")
+print(f"Posts processed: {len(posts)}")
+
+# Stats
+brands = {}
+polarities = {}
+for r in results:
+    brands[r['brand_target']] = brands.get(r['brand_target'], 0) + 1
+    polarities[r['sentiment_polarity']] = polarities.get(r['sentiment_polarity'], 0) + 1
+
+print(f"\nBrand distribution: {brands}")
+print(f"Polarity distribution: {polarities}")

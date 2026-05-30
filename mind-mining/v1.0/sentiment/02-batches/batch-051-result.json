@@ -1,0 +1,365 @@
+[
+  {
+    "note_id": "69b3aea100000000230177cd",
+    "opinions": [
+      {
+        "opinion_text": "同事还在用苹果11，她说很丝滑，然后过了3秒钟又淡淡开口说其实用你们手机还觉得太快了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "同事声称iPhone 11很丝滑，但3秒停顿后反讽说用其他手机觉得太快了，暗示iPhone 11实际上并不快，表面夸奖实则讽刺",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0fc7e0000000003701edbd",
+    "opinions": [
+      {
+        "opinion_text": "第一次用苹果的笔记本，没想到MacBook这么丝滑，突然就理解了它为什么卖这么贵了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'这么丝滑''理解了它为什么卖这么贵'，表达了强烈的惊喜和认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "从欣赏的角度看，是艺术与科技结合的产物。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'艺术与科技结合的产物'，高度赞美MacBook的设计",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b2c5fa000000000600f18f",
+    "opinions": [
+      {
+        "opinion_text": "我真的受够iPhone只能左侧右滑返回了，每次想返回都要精准戳左边边缘，手小/单手操作真的巨不方便。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'受够''巨不方便'，强烈不满iPhone侧滑返回设计",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "像安卓一样随便一划就退回上一页，桌面/APP内都能用，丝滑不卡顿。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'丝滑不卡顿'，赞美安卓侧滑返回体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "目前IOS26支持空白区域右划，但还是有一些APP不支持右划返回。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "指出iOS26仍有部分APP不支持右划返回，表达不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "682cb6a4000000000f03ab75",
+    "opinions": [
+      {
+        "opinion_text": "买了人生第一台iPhone，使用两天感受：不能连着Wi-Fi开热点，容易发烫，无法自定义nfc，没有后台一键清除，输入法反人类，信号差，长焦不如oppo，没有红外遥控，不能长截图，无分屏悬浮窗，响铃键和音量键总是按错，苹果税，出国了发现苹果手机遥遥落后，电池差，国外iCloud同步超级慢。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "列举了15条缺点，包括信号差、发烫、电池差、功能缺失等，情感强烈负面",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone颜值高，手感非常棒，界面简洁流畅，自拍质感很好，pro的大小对煮啵这种手小的人来说很合适，一套生态用起来丝滑方便。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'颜值高''手感非常棒''界面简洁流畅''丝滑方便'，对苹果外观、流畅度和生态表示认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "外观上OPPO雀食跟风苹果了，但是真心不喜欢x8的大圆镜头，又丑又没安全感。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'又丑又没安全感'，对OPPO Find X8外观设计不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "正好读研用几年果子工作之后再换回卓吧，除非库克能改进。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确表示工作后会换回安卓，对苹果改进不抱期望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0f36530000000037034228",
+    "opinions": [
+      {
+        "opinion_text": "第一次体验真的很好，电脑上点击支付，手机立马弹起确认，支付完成，这个界面设计的真是唯美。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'第一次体验真的很好''界面设计的真是唯美'，对Apple Pay体验表示赞赏",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6940f051000000001e035523",
+    "opinions": [
+      {
+        "opinion_text": "我真的好喜欢新的ios26系统，感觉好漂亮好丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'好喜欢''好漂亮好丝滑'，强烈表达对iOS26的喜爱",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c332b40000000021006dda",
+    "opinions": [
+      {
+        "opinion_text": "更新ios26.4后如此丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'如此丝滑'，对iOS26.4更新后的流畅度表示满意",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "691332420000000004005fa7",
+    "opinions": [
+      {
+        "opinion_text": "把13pm换成了16p，16PRO叠加indigo会比GR更好拍，10备变焦都拍很清楚，出片真的非常油润、清透，有相机感。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'太好用了''出片真的非常油润、清透'，高度认可iPhone 16 Pro拍照能力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用13pm超级卡，拍个两张就要等很久，然后会发烫。为了拍照我换成了16pm，现在是很丝滑了，也不发烫了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "对比13pm'超级卡''发烫'，16pm'很丝滑''不发烫'，强烈认可升级后的流畅体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6973b293000000000903a9c3",
+    "opinions": [
+      {
+        "opinion_text": "25年的苹果还不如23年的三星，不论是屏幕，色彩，可玩性，丝滑程度都不如三星，而且苹果糊糊的感觉，算了激活不能退，明年换回三星了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'不如三星''糊糊的感觉''明年换回三星'，对苹果各方面表现强烈不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "25年的苹果还不如23年的三星，不论是屏幕，色彩，可玩性，丝滑程度都不如三星。",
+        "brand_target": "三星",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通过对比肯定三星在屏幕、色彩、可玩性、丝滑程度上的优势",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f71f870000000035028b3b",
+    "opinions": [
+      {
+        "opinion_text": "对我来说今年最好的投资毫无疑问就是这台M5 Pro 64GB的MacBook了，只用一个词来形容的话，丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'最好的投资''毫无疑问''丝滑'，极度认可MacBook M5 Pro",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "64G的内存，即使同时在编译代码，docker运行中，生成视频或者对视频进行处理时使用这些模型，系统也非常稳定高速，完全不会卡顿。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'非常稳定高速，完全不会卡顿'，对性能和稳定性高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Xcode构建：旧机器需要300-600秒，新机器大约10-15秒。从构建到安装并在模拟器运行：旧机器要10-20分钟，新机器15-20秒。太神了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用具体数据对比突出新机器效率提升，'太神了'表达强烈赞叹",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68c414e0000000001c03e511",
+    "opinions": [
+      {
+        "opinion_text": "在选手机的整个过程也没有任何卡顿，纵享丝滑，感觉比之前的操作方式合理很多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'没有任何卡顿，纵享丝滑''比之前的操作方式合理很多'，对苹果商城抢购体验表示满意",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "65b24fc4000000002c0370ca",
+    "opinions": [
+      {
+        "opinion_text": "我个人很欣赏这款产品，在我看来它是苹果实用主义内核，极简主义审美的典型代表。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'很欣赏''典型代表'，对苹果妙控鼠标设计理念表示认可",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "说实话我真的并没有明显的累手感，和触控板一致的操作方式真的很丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'并没有明显的累手感''真的很丝滑'，认可妙控鼠标的使用体验",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0e8acf0000000036003bad",
+    "opinions": [
+      {
+        "opinion_text": "今年2月份第一次买了苹果17pro，使用下来有好有坏，但是令我最不爽的还是广告问题，我深受其害。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'最不爽''深受其害'，对iPhone广告问题强烈不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用小米14的时候，可以设置APP权限，让它开屏广告不能跳转，再加上李跳跳这个神级App，开屏广告几乎杜绝了。",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'神级App''开屏广告几乎杜绝了'，认可小米14的去广告体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "换了iPhone之后，发现早就在我生活中绝迹的开屏广告又出现了，特别在地铁上使用的时候，经常会因为不小心识别成摇一摇自动跳到某宝，让人平静的心情都毁了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'让人平静的心情都毁了'，对iPhone广告跳转问题极度不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "上网搜了下iPhone有什么办法跳过开屏广告，几乎都是借助快捷指令，要么就是用URL打开，总之没有之前用小米的那种丝滑去广告的体验。",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'丝滑去广告的体验'，通过对比肯定小米的去广告体验更优",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "66dfbd6b00000000270047ba",
+    "opinions": [
+      {
+        "opinion_text": "升级是挤牙膏，硬伤都不改，坚决不改，就是高贵，不会改的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'挤牙膏''硬伤都不改''高贵'，强烈批评苹果傲慢态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果不改，不再买了，下一个小米或者华为，就算是什么丝滑度时间久了差点，卡了，内存虚，大不了再换新不就好了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'不再买了'明确拒绝苹果，认为苹果高傲",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "下一个小米或者华为，就算是什么丝滑度时间久了差点，卡了，内存虚，大不了再换新不就好了，价格差多少，也不看看呢。",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "虽然提到小米可能丝滑度差点、卡、内存虚，但认为价格低可接受，倾向选择小米",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "下一个小米或者华为，就算是什么丝滑度时间久了差点，卡了，内存虚，大不了再换新不就好了，价格差多少，也不看看呢。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "将华为列为下一部手机的选择，虽然提到可能丝滑度差点但认为价格低可接受",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a03eaa5000000003502e32c",
+    "opinions": [
+      {
+        "opinion_text": "15Pro从18.7.2升级26.5，目前使用很丝滑，电池使用没感觉有变化，也没有发烫和卡顿现象。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'很丝滑''没有发烫和卡顿现象'，对iOS26.5更新体验满意",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

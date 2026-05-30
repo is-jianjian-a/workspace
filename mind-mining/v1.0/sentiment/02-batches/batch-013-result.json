@@ -1,0 +1,635 @@
+[
+  {
+    "note_id": "68ecb792000000000503aa52",
+    "opinions": [
+      {
+        "opinion_text": "HUAWEI Mate70 Pro能清晰呈现蜻蜓的纹理细节，包括翅膀的脉络、身体的条纹以及叶片的质感，画面锐度高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "能清晰呈现蜻蜓的纹理细节，包括翅膀的脉络、身体的条纹以及叶片的质感，画面锐度高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "HUAWEI Mate70 Pro画面色彩还原自然且富有层次，绿色的叶片和蜻蜓的斑纹对比鲜明，但画面有部分细节过曝。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "色彩还原自然且富有层次，对比鲜明（正向）；画面有部分细节过曝（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo X200 Pro在特写画面中，蜻蜓的眼部、肢体细节也能较为清晰地呈现，蔡司镜头的色彩调校风格独特，画面色彩较为讨喜。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "眼部、肢体细节也能较为清晰地呈现，蔡司镜头的色彩调校风格独特，画面色彩较为讨喜",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "687341a20000000011003bd1",
+    "opinions": [
+      {
+        "opinion_text": "华为拍摄的天最蓝，夕阳的层次感也很明显，整体没有实际这么偏暖调，更清新挂。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "天最蓝，夕阳的层次感也很明显，更清新挂",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo我个人最喜欢，拍出了夕阳的浓郁感，色彩表现力很强，最还原肉眼，适合随手拍。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "我个人最喜欢，拍出了夕阳的浓郁感，色彩表现力很强，最还原肉眼",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍夕阳有点拍发灰了，建筑的细节和光线都没有保留，live图的赛道还是在于氛围感和生命力，更适合拍人文。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍夕阳有点拍发灰了，建筑的细节和光线都没有保留",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "659f5895000000000f0328f6",
+    "opinions": [
+      {
+        "opinion_text": "华为拍的石头是沙土色的，个人感觉华为的更好看一些。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "个人感觉华为的更好看一些",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两款手机拍的都很不错，拍出了清澈见底的感觉，很清透。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "两款手机拍的都很不错，拍出了清澈见底的感觉，很清透",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两款手机拍的都很不错，拍出了清澈见底的感觉，很清透。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "两款手机拍的都很不错，拍出了清澈见底的感觉，很清透",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "谁能拒绝苹果的live图啊，特别是在手机相册里还能听到海浪声，简直不要太美妙了！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "简直不要太美妙了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "694c79e0000000001b03079a",
+    "opinions": [
+      {
+        "opinion_text": "苹果换华为后，华为也没宣传的那么好，尤其是对比苹果26.2系统及其生态软件。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为也没宣传的那么好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果系统可以支持防止广告启动其他app，搜索栏位置方便单手操作，app颜值高，广告没有或较少等等。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "防止广告启动其他app，搜索栏位置方便单手操作，app颜值高，广告没有或较少",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "691335e8000000000700d257",
+    "opinions": [
+      {
+        "opinion_text": "后面买的华为手机拍照太无语了，不知道是批次的问题还是什么，直到今天和朋友拍了同一个位置的照片，我彻底不想用了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "拍照太无语了，我彻底不想用了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6799d8180000000018005211",
+    "opinions": [
+      {
+        "opinion_text": "感觉还是华为和vivo比较出片，特别是华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "感觉还是华为和vivo比较出片，特别是华为拍出来的冷白皮真的很好看，不需要修图也可以原图直出。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉还是华为和vivo比较出片",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍出来的效果比较自然，只有苹果的黑色是没有偏色，但是整体看起来比较普通，色调偏黄，显得有些没有气色，属于需要后期修图会更加好看的那种。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "效果比较自然，黑色没有偏色（正向）；整体看起来比较普通，色调偏黄，显得有些没有气色，需要后期修图（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo的人像真的很好看，如果说苹果是原生态的好看，vivo就是加了美颜和修图的好看，不需要后期修P图也行。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "vivo的人像真的很好看，不需要后期修P图也行",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "三星整体也是有些偏黄的，但会更亮一些，面部细节不如vivo，可以明显的看出法令纹。",
+        "brand_target": "三星",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "整体也是有些偏黄的，面部细节不如vivo，可以明显的看出法令纹",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍出的冷白皮震惊到我了，也是面部细节不如vivo，法令纹也是比较明显的，但拍人是真的很白。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "冷白皮震惊到我了，拍人是真的很白（正向）；面部细节不如vivo，法令纹也是比较明显的（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69287a8d000000001e00f956",
+    "opinions": [
+      {
+        "opinion_text": "IPhone17Promax即使关闭了PWM调光，依然普遍比华为Mate70Air的SVM值高。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "SVM值越高就越容易疲劳，iPhone的SVM值普遍比华为高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果画面有点灰度，到了大约100灰阶的背景，华为手机的SVM和iPhone接近了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为手机的SVM和iPhone接近了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "到了晚上暗色模式背景一般是G20灰阶左右，反而是iPhone的SVM更低。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "反而是iPhone的SVM更低",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "大部分灰阶下华为Mate70Air的SVM都要比苹果高，而晚上正是环境光更少，人眼更专注于屏幕内容，瞳孔也更大的时候。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "大部分灰阶下华为Mate70Air的SVM都要比苹果高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6882fe5f0000000013012475",
+    "opinions": [
+      {
+        "opinion_text": "就live图来说，感觉还是苹果要更加自然，总感觉安卓机开了live没有关掉清晰，这点一直没有优化好。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉还是苹果要更加自然",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "就live图来说，感觉还是苹果要更加自然，总感觉安卓机开了live没有关掉清晰，这点一直没有优化好。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓机开了live没有关掉清晰，这点一直没有优化好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO暗调明显，对比度很弱，有种柔和感，把风景拍出了油画感。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有种柔和感，把风景拍出了油画感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为和小米整体都比较亮，但华为的明暗对比度要更强一些。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为的明暗对比度要更强一些",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果只看照片的话只能说中规中矩吧，主要还是live图动起来加上海浪声比较治愈。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "中规中矩（中性）；live图动起来加上海浪声比较治愈（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米的清晰度要好很多，不管是树叶还是岩石纹理处理的都很好，细节很到位。",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "清晰度要好很多，细节很到位",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果没有其他三家对比的话也是比较清晰的，但细看会有轻微糊感。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "也是比较清晰的（正向）；细看会有轻微糊感（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69721f12000000001a025ea7",
+    "opinions": [
+      {
+        "opinion_text": "再次从苹果换回了华为。入手mate 80，用了两天丝滑流畅。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用了两天丝滑流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "小艺输入法，小艺AI反应灵敏，超级好用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "反应灵敏，超级好用",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "688de509000000002301a491",
+    "opinions": [
+      {
+        "opinion_text": "最终还是决定换华为啦，小小的，看起来好可爱，屏幕比例看起来好舒服。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "看起来好可爱，屏幕比例看起来好舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6890d98b00000000020007d2",
+    "opinions": [
+      {
+        "opinion_text": "苹果竟然是里面亮度调节最高的一个，对比其他的来看，感觉都有点像白天了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉都有点像白天了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为比苹果好一点，但也有种亮亮的感觉。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "比苹果好一点（正向）；但也有种亮亮的感觉（轻微负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "OPPO会有些滤镜感，偏色明显一些，有点紫调。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "会有些滤镜感，偏色明显一些，有点紫调",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo是四个当中最像晚上的，白平衡比较不错，效果比较自然。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "最像晚上的，白平衡比较不错，效果比较自然",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo大于苹果大于OPPO大于华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果夜拍清晰度竟然翻盘了，终于不是垫底了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo大于苹果大于OPPO大于华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "清晰度排序华为垫底",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo大于苹果大于OPPO大于华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "vivo夜拍清晰度排名第一",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "vivo大于苹果大于OPPO大于华为，苹果夜拍清晰度竟然翻盘了，终于不是垫底了。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "清晰度排序OPPO第三",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6984c932000000001a01e04f",
+    "opinions": [
+      {
+        "opinion_text": "阔折叠颜值杠杠的，手感满分，双屏同显拍照满分，16:10屏幕满分，果然是小折叠手机里的天花板。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "颜值杠杠的，手感满分，双屏同显拍照满分，16:10屏幕满分，小折叠手机里的天花板",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "软件适配度拉垮，败给纯血鸿蒙，特别是微信功能阉割得厉害，只能放弃啦。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "软件适配度拉垮，微信功能阉割得厉害，只能放弃啦",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "ios系统最好用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "ios系统最好用",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "vivo拍照最好看。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "vivo拍照最好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "三星屏幕最好。",
+        "brand_target": "三星",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "三星屏幕最好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为系统最干净无广。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为系统最干净无广",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "686a9aa9000000001202e338",
+    "opinions": [
+      {
+        "opinion_text": "iPhone16Promax和华为mate70Pro拍出来的照片不管是色调、色彩还原度、清晰度等都比较接近了，怎么感觉细看还是华为更有高级感呢？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "细看还是华为更有高级感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone16Promax和华为mate70Pro拍出来的照片不管是色调、色彩还原度、清晰度等都比较接近了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍出来的照片不管是色调、色彩还原度、清晰度等都比较接近了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机自动对焦苹果的清晰范围比华为更小，主体更突出。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "清晰范围比华为更小，主体更突出",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68235cd2000000000303b7ac",
+    "opinions": [
+      {
+        "opinion_text": "华为和苹果完全拍出了两种质感的肉，明显感觉华为拍的肉要更有食欲一些。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明显感觉华为拍的肉要更有食欲一些",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果自动对焦前景是虚的，直接对焦在后面鳗鱼上，手动对焦后面鳗鱼又会虚化。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果自动对焦前景是虚的，手动对焦后面鳗鱼又会虚化",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的问题是同样是原色模式的情况下，没有加任何美食滤镜，却拍出了三种不同色调的照片，只能说AI算法过于强大了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "AI算法过于强大了（正向）；拍出了三种不同色调的照片（负向/问题）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果是偏自然色彩的，颜色比较接近于真实色彩，华为拍的有点偏暖色调了，饱和度比较高，色彩也比较鲜艳。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "偏自然色彩的，颜色比较接近于真实色彩",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果是偏自然色彩的，颜色比较接近于真实色彩，华为拍的有点偏暖色调了，饱和度比较高，色彩也比较鲜艳。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "饱和度比较高，色彩也比较鲜艳",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "就相机自动对焦的效果来说，明显是华为更加智能，前面的烤肉整体都是清晰的，而苹果自动识别对焦在后面的鳗鱼上面，这样来看的话细节确实华为要更优秀。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "明显是华为更加智能，前面的烤肉整体都是清晰的，细节确实华为要更优秀",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "就相机自动对焦的效果来说，明显是华为更加智能，前面的烤肉整体都是清晰的，而苹果自动识别对焦在后面的鳗鱼上面，这样来看的话细节确实华为要更优秀。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果自动识别对焦在后面的鳗鱼上面",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "660e836d000000000401a4dd",
+    "opinions": [
+      {
+        "opinion_text": "天气很好，近距离拍的两款手机其实都很出片，但是两个色调不一样，华为拍出的色调更蓝，苹果的偏绿一点，两个效果都很不错。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "两款手机其实都很出片，两个效果都很不错，华为拍出的色调更蓝",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "天气很好，近距离拍的两款手机其实都很出片，但是两个色调不一样，华为拍出的色调更蓝，苹果的偏绿一点，两个效果都很不错。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "两款手机其实都很出片，两个效果都很不错，苹果的偏绿一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的亮度不如苹果，但看石头苹果好像锐化会明显一点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为的亮度不如苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的亮度不如苹果，但看石头苹果好像锐化会明显一点。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果好像锐化会明显一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果拍海边和水真的太绝了，水流真的吼吼看，清晰度也很高，还能听到水流声真的好治愈。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真的太绝了，水流真的吼吼看，清晰度也很高，真的好治愈",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

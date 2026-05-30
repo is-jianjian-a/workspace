@@ -1,0 +1,653 @@
+[
+  {
+    "note_id": "698469b4000000000e03fa1d",
+    "opinions": [
+      {
+        "opinion_text": "今年换了最新的iPhone17pro，终于让老13退休了。满心欢喜，到手之后流畅的系统，满意的续航，和再也不会遇到在找餐厅和导航切换时杀后台的崩溃都让人不再焦虑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅的系统，满意的续航，再也不会遇到杀后台的崩溃都让人不再焦虑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "以前我在地铁上因为卡顿的系统，不愿掏出手机，听歌放空和读书成了所谓的替代品。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "因为卡顿的系统，不愿掏出手机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "卡顿和老旧的系统阻碍了我把时间花在过量的信息上，让我貌似被动的拥有了更多的自己。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "卡顿和老旧的系统阻碍了我把时间花在过量的信息上——表面贬义但暗含因祸得福的复杂态度",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68a02744000000001c008a54",
+    "opinions": [
+      {
+        "opinion_text": "新买的苹果16，刚拿到手屏幕滑动就有问题，滑动打开软件，上滑退出软件都会出现卡帧滑帧的现象，就像卡了0.000秒一样，眼花像有小尾巴一样，一点不丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "屏幕滑动就有问题，卡帧滑帧，眼花像有小尾巴一样，一点不丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69cd1d500000000022029a1f",
+    "opinions": [
+      {
+        "opinion_text": "为什么Mac book更新系统一直卡在五分钟啊，卡了两三天了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更新系统一直卡在五分钟，卡了两三天了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "66a8d032000000002701f6fa",
+    "opinions": [
+      {
+        "opinion_text": "卡死了！！！天天卡死，点都点不动，巨发热！！切换app就给我清后台，真服了！！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡死了，天天卡死，点都点不动，巨发热，切换app就给我清后台",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "难道是因为基础版，所以辣鸡？？pro用户会卡吗。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "基础版辣鸡",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ddffa7000000001e00fe27",
+    "opinions": [
+      {
+        "opinion_text": "一直对折叠屏手机很无感，直到果子说也要做，还期待着果子的设计能否使我有所改观，果然还是没能做到。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "果然还是没能做到",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "个人最接受不了折叠屏的地方在于折叠态的状态总有一个令人抓乱的直角，这个直角你无论是塞满屏幕还是空出来都很令人难受，仅凭这一点我就永远无法接受折叠屏。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "永远无法接受折叠屏，直角很令人难受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "折叠屏真的能满足什么功能需求吗？实在没有感受到，我认为更多是被厂商调教出来的面子需求吧。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "折叠屏真的能满足什么功能需求吗？实在没有感受到，更多是被厂商调教出来的面子需求",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d78e61000000002301c22d",
+    "opinions": [
+      {
+        "opinion_text": "升级完了卡顿、发热、闪退，后来想想，自己兜比脸干净，没什么害怕黑客的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "升级完了卡顿、发热、闪退",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "669f6d52000000000a024865",
+    "opinions": [
+      {
+        "opinion_text": "四年前8g＋麒麟9000的配置现在不打吃鸡啥的依然能流畅使用，华为鸿蒙真的还是有一套子的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "依然能流畅使用，华为鸿蒙真的还是有一套子的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "2020年觉得略宽的手机2024年拿着居然觉得手感挺好，很圆润，大小也合适。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感挺好，很圆润，大小也合适",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "2020年发布价格6999当时觉得略贵，现在看来好像是华为最有性价比的产品了，没有什么高价低配，直接就是高端产品高端价。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为最有性价比的产品，没有什么高价低配，直接就是高端产品高端价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6905d9f3000000000300e5cf",
+    "opinions": [
+      {
+        "opinion_text": "之前pura80pro配上鸿蒙5就像一个半成品，现在更新鸿蒙6流畅度大幅提升。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "流畅度大幅提升",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "壁纸主题配上这个大R角和质感，真的高级感拉满！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "高级感拉满",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68d0a4ee000000000e00cecc",
+    "opinions": [
+      {
+        "opinion_text": "更完鸿蒙6，晚上78个小时，电量100%一点没变，早上7点使用，用了绿泡泡、滴滴出行、携程，到现在87，几乎20分钟左右才掉1格电，太舒服了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "电量100%一点没变，几乎20分钟左右才掉1格电，太舒服了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照新加了P80的色卡，等于说用着m70pro+，相当于拥有一台P80，太香了！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "太香了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "星闪蓝牙合并，比蓝牙更稳定，覆盖距离更远，功耗更低，我的妈呀，太牛了吧，感觉就是高科技十足。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "太牛了吧，高科技十足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在打算15p专门用来拍照录视频（u1s1视频还是果子最强）主力机m70pro+，这个组合满意值+10086。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "主力机m70pro+，满意值+10086",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "视频还是果子最强。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "视频还是果子最强",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "688364a800000000110029e9",
+    "opinions": [
+      {
+        "opinion_text": "大家说的鸿蒙微信很多功能不适配的问题，我自己用下来正常使用是没有问题的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "正常使用是没有问题的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信的更新速度非常快，一周三更，鸿蒙5.1系统流畅度也大幅提高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统流畅度也大幅提高",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "实况窗应该算是我目前使用频率最高的一个功能了，像高德地图导航、咪咕听歌，大麦、抢票、录音等的信息都能在实况窗实时显示，锁屏也有小卡片方便查看，重点是不需要反复切换APP。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "使用频率最高的一个功能，方便查看，不需要反复切换APP",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还是觉得华为在功能贴心、系统稳定这块儿做得靠谱，继续当主力机没毛病，也盼着鸿蒙越来越强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "功能贴心、系统稳定这块儿做得靠谱，继续当主力机没毛病",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "667db24e000000001d0188cb",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙系统用起来很流畅，建议德芙找你打广告。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用起来很流畅，建议德芙找你打广告",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我的华为P70已经升级到华为最新的鸿蒙系统了，不仅发热情况比之前好了一点，系统动画更是感觉今非昔比。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "发热情况比之前好了一点，系统动画更是感觉今非昔比",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "无论是系统打断动画还是在小窗口分屏这些上，各种操作的丝滑程度都不输给iOS，我们的国产手机操作系统真的起来了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "丝滑程度都不输给iOS，国产手机操作系统真的起来了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "其他几个手机厂商们也要加油啊！",
+        "brand_target": "其他",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "其他手机厂商也要加油——无明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68a2f5d7000000001d02bb3c",
+    "opinions": [
+      {
+        "opinion_text": "振动马达震感非常非常垃圾。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常非常垃圾",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统广告（鸿蒙4.3）巨多无比，所有内置APP都塞了大量广告，大多数可以关，有的关不了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "巨多无比，所有内置APP都塞了大量广告",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统流畅度还可以，感觉能耗管理一般，经常微微发热。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度还可以（正向），能耗管理一般，经常微微发热（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "有的页面十分抽象，比如负一屏的服务页面，费劲巴拉的给关了，结果页面还是会存在，并且在下面放了一个开启按钮。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "页面十分抽象，费劲巴拉的给关了，结果页面还是会存在",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果以外唯一的3D人脸识别，优化一坨，只有少数常用软件适配人脸，其他很多软件还是要指纹，一会人脸一会指纹。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "优化一坨，只有少数常用软件适配人脸",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信最抽象，明明设置的是人脸支付，正常支付都是人脸，但从桌面长按出来的收付款快捷方式却验证指纹。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信最抽象，快捷方式却验证指纹",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "车联hicar系统页面ui设计和APP适配一坨，ui丑字体小。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "ui设计和APP适配一坨，ui丑字体小",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "高德地图很多页面直接手机端搬过来的，收藏夹分组在hicar端没有，所有收藏地点全在一起。并且hicar桌面的家、公司地址不是地图APP的，是要在手机系统里额外设置，并且选地址的数据源很少，很多地点搜不到。总之跟carplay完全没有可比性。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "跟carplay完全没有可比性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "云同步相册非常慢，似乎不能后台同步，只有打开相册才会同步一些，并且一会就会断掉，一万多张照片陆续同步了一周才搞定。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "非常慢，似乎不能后台同步，一会就会断掉，同步了一周才搞定",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果数据传到华为时，苹果手机短信不能传，试了网上的多种方法，isms2droid软件不好用，很多短信传过来是空白的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手机短信不能传，isms2droid软件不好用，很多短信传过来是空白的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最后用了换机无忧APP插线传输的，好用，强推！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "好用，强推",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最惊喜好用的小设计是负一屏的停车卡片，非常非常好用！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常非常好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "总的来说体验还过得去，512G原价6999的话纯冤种，降价优惠加国补加以旧换新补贴，4999入手性价比还可以。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "体验还过得去（正向），原价6999纯冤种（负向），4999入手性价比还可以（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "配了一个华为66w氮化镓充电器和freebuds6i耳机都挺不错的，这个充电器非常非常小巧，充电速度比起原装100w大块头只慢了几分钟，耳机降噪水平很不错，性价比很高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "都挺不错的，非常非常小巧，降噪水平很不错，性价比很高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "674880450000000008004f14",
+    "opinions": [
+      {
+        "opinion_text": "整体感受很满意，使用起来非常丝滑流畅。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "很满意，非常丝滑流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我买的这个壳不顶膜，而且感觉套上之后变直屏了，几乎没啥曲屏的手感，喜欢曲屏的我对这点有一丢丢桑心。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "有一丢丢桑心",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "刚买来前两天确实会掉电比较快，待机一晚上差不多掉十个电，但20号也就是买的第三个晚上，待机状态基本就不怎么掉电了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "前两天掉电快（负向），第三个晚上基本就不怎么掉电了（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "打视频是我目前觉得最耗电的，这个我觉得没啥问题，应该手机都这样吧。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "觉得没啥问题，应该手机都这样",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "打视频会糊，多数时候看对方画质确实是有点糊糊的，偶尔看着又是清晰的，感觉是画质不太稳定，不过这点对我来说没什么问题。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "画质有点糊糊的，不太稳定（负向），但对我来说没什么问题（弱正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "P8是今天刚拍的天空，鲜艳模式，p9是原色模式，原色有点偏黄，鲜艳模式更贴近实景颜色。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "原色有点偏黄（负向），鲜艳模式更贴近实景颜色（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66769704000000001d0155c4",
+    "opinions": [
+      {
+        "opinion_text": "如果你一直都是华为手机用户，那么切换到鸿蒙next之后一切你都会感到非常熟悉，所有的设计和交互，都是基于之前的鸿蒙4，你不会感到陌生。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "一切你都会感到非常熟悉，你不会感到陌生",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最大的感受就是流畅，华为这次更加注重了系统各种动效、动画和操作之间的衔接和过渡，非常流畅和跟手。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最大的感受就是流畅，非常流畅和跟手",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "另外一个感受就是干净，很多鸿蒙Next版的应用都尽可能做到了轻量化、简洁化，没有开屏广告，没有各种推荐，也没有各种鸡肋的功能模块。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "干净，轻量化、简洁化，没有开屏广告，没有各种推荐",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前主流的常用APP，鸿蒙Next基本都做到了适配，但腾讯系的APP中腾讯新闻已经适配，微信、QQ目前都还没有。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "主流常用APP基本都适配了（正向），但微信、QQ目前都还没有（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为重新设计了很多原生app的图标和应用界面，更加简洁美观，但估计用的人不太多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "更加简洁美观（正向），但估计用的人不太多（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67ac46eb0000000018019956",
+    "opinions": [
+      {
+        "opinion_text": "用了四年华为，昨天还是没忍住，换了荣耀Magic7Pro，虽然以前是铁杆华为粉丝，但是我也用腻了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "铁杆华为粉丝但用腻了——对华为本身无褒贬，只是个人换机选择",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "大家都说荣耀体验和华为一样。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "荣耀体验和华为一样（华为体验被默认为正向）",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第一是看外观颜值，这一点是真没话说，旗舰就是旗舰，金属中框和玻璃后盖做工没有一丝瑕疵，连接处和屏幕都非常贴合，让人拿在手上就像一块整体。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真没话说，没有一丝瑕疵，非常贴合",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第二是系统流畅度，之前还比较担心，不是华为手机会不会系统上很卡，结果证实了我的想法确实多余，打开软件游戏都是飞一般的感觉。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "飞一般的感觉",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "第三性能够强，骁龙8至尊果然名不虚传，整个安卓体系的王者芯片，想玩什么游戏都不受限制。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "果然名不虚传，王者芯片，想玩什么游戏都不受限制",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第四就是续航方面目前也没有不够用的表现，5850毫安电池加100w有线完全够用一天，充电一流，80w无线也没缺，短板没有。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "完全够用一天，充电一流，短板没有",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第五拍照上确实比不了华为，余承东可能还是有点狡猾的留了一手，不过荣耀现在更新的大王影像，平时拍照也还不错，有一说一。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照上确实比不了华为，余承东留了一手——侧面肯定华为拍照更强",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第五拍照上确实比不了华为，余承东可能还是有点狡猾的留了一手，不过荣耀现在更新的大王影像，平时拍照也还不错，有一说一。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "平时拍照也还不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "其余的方面比如有超声波指纹，而且有IP68，IP69，3D人脸，使用起来挺满意的，简单的说，平替Mate70Pro是完全可以，而且还能省一笔不少的钱，关键是性能还要更强。",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "使用起来挺满意的，平替Mate70Pro完全可以，性能还要更强",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "平替Mate70Pro是完全可以。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "被作为参照物提及，无直接褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

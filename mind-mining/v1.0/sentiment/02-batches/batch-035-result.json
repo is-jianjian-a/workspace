@@ -1,0 +1,527 @@
+[
+  {
+    "note_id": "69db81cf000000001f006ef9",
+    "opinions": [
+      {
+        "opinion_text": "有多少人在用华为mate80啊，总感觉有些卡卡的，特别是一些app",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "总感觉有些卡卡的，特别是一些app",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c8b7d7000000002800b619",
+    "opinions": [
+      {
+        "opinion_text": "华为鸿蒙6.0.0.328SP52比以前小卡顿小掉帧变多了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "比以前小卡顿小掉帧变多了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不过还是非常感谢华为下放给老机器，这个效果非常好看",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "非常感谢华为下放给老机器，这个效果非常好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "只是希望能再优化一下流畅度",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "希望能再优化一下流畅度",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "696504c2000000001a02c9f4",
+    "opinions": [
+      {
+        "opinion_text": "这个P40E才用了不到3年，就前两天突然开始，卡得要死",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡得要死",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "就连充电都是！插线之后得隔几秒再震动，再显示充电的标志",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "插线之后得隔几秒再震动，再显示充电的标志",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "还会突然黑屏，还莫名重启了几次",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "突然黑屏，莫名重启了几次",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0c3929000000003502b793",
+    "opinions": [
+      {
+        "opinion_text": "刚换的华为meta80，打游戏和刷抖音都特别特别卡，比我用了五年的meta40都卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "打游戏和刷抖音都特别特别卡，比我用了五年的meta40都卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "家里人不卡，就我卡，尤其是四点以后，晚上卡的情况最严重",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "就我卡，尤其是四点以后，晚上卡的情况最严重",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "677a46d00000000009015edc",
+    "opinions": [
+      {
+        "opinion_text": "首先声明我不是华为黑粉，后续还会继续支持华为产品",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "后续还会继续支持华为产品",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "先说说外观，我很喜欢，握持手感很舒服，整体设计流畅，简约又大气",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我很喜欢，握持手感很舒服，整体设计流畅，简约又大气",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "打王者加载界面时开小窗应用会卡死，对，当天晚上会卡死三次",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "开小窗应用会卡死，当天晚上会卡死三次",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "抖音刷久了会卡顿掉帧，小红书上下滑动时会误触",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "抖音刷久了会卡顿掉帧，小红书上下滑动时会误触",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "屏幕也很让眼睛不舒服，有点刺眼",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏幕也很让眼睛不舒服，有点刺眼",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "掉电也挺快的，没有我预期的好，还好充电速度快",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "掉电也挺快的，没有我预期的好，还好充电速度快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这个价格的手机不应该给我这种体验",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "这个价格的手机不应该给我这种体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69de2b01000000001b0208c8",
+    "opinions": [
+      {
+        "opinion_text": "8G运行内存的手机真的要被淘汰了，开几个APP就疯狂卡顿，今天直接卡到自动关机",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "开几个APP就疯狂卡顿，今天直接卡到自动关机",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在旗舰都16G、32G运存起步，8G党日常用机跟渡劫一样",
+        "brand_target": "其他",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "8G党日常用机跟渡劫一样",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f893be000000001f003307",
+    "opinions": [
+      {
+        "opinion_text": "去年5月买的华为mate70pro优享版，今年4月开始发现有点卡，接着越来越卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "今年4月开始发现有点卡，接着越来越卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "切换应用会卡顿，并且切换回上一个应用之后，上一个应用会重新启动",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "切换应用会卡顿，上一个应用会重新启动",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "微信切换通讯录、我的会卡顿，打开朋友圈会卡顿，点开键盘要打字也会卡顿",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信切换会卡顿，打开朋友圈会卡顿，点开键盘也会卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "在我后台应用及时清理的情况下，卡顿的情况并没有减轻",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "后台应用及时清理的情况下，卡顿的情况并没有减轻",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "692ee330000000000d00db10",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙6系统流畅性贼好",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统流畅性贼好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "软件适配太差了，又回退到4.3了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "软件适配太差了，又回退到4.3了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "感觉软件适配没4.3丝滑，特别是打字，自从升级鸿蒙6打字像捉虫",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "软件适配没4.3丝滑，打字像捉虫",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68876ae800000000170370a6",
+    "opinions": [
+      {
+        "opinion_text": "华为门店宣称matepad pro12.2能带动大型游戏，我买回家后，发现打游戏卡成ppt",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "打游戏卡成ppt，即使将画质调到最低也很卡，无法正常玩游戏",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "样机丝毫不卡顿，而我的机卡到爆",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "我的机卡到爆",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这里要感谢店长，是真心为消费者处理问题的",
+        "brand_target": "其他",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感谢店长，是真心为消费者处理问题的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "既然样机运行逆水寒不卡，那是否可以购买这款平板用于游戏？我的建议是慎重",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "我的建议是慎重，因为你不一定能买到样机那个质量的",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "690192ae00000000050107fa",
+    "opinions": [
+      {
+        "opinion_text": "华为padmini为什么一直卡一卡的，太奇怪了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "为什么一直卡一卡的，太奇怪了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e98fa80000000023013959",
+    "opinions": [
+      {
+        "opinion_text": "十年的果粉从苹果4开始到现在的16pm，用腻了苹果，受不了苹果的续航以及充电速度",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "受不了苹果的续航以及充电速度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "选择华为的主要原因还是因为遥遥领先，当时只是想体验下国人自己的操作系统",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "想体验下国人自己的操作系统",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙4.3系统，系统ui，操作，流畅度都很不错",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统ui，操作，流畅度都很不错",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "纯血鸿蒙加持下很流畅，华为的显示很细腻，红枫影像真的好看",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "纯血鸿蒙加持下很流畅，显示很细腻，红枫影像真的好看",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "唯一接受不了的就是生态的不完善",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "唯一接受不了的就是生态的不完善",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对这台唯一的槽点就是他的边框，很容易毛，带这手机壳不知不觉就都是划痕了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "边框很容易毛，不知不觉就都是划痕了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不是他不好用，只是担心芯片问题再用个一两年不知道会不会很卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "担心芯片问题再用个一两年不知道会不会很卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "不出苹果主要有手表，耳机，平板，以及长期依赖的CarPlay实在戒不掉",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "有手表，耳机，平板，以及长期依赖的CarPlay实在戒不掉",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的新款mate80 p90外观什么的都很喜欢，超级喜欢直屏手感",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "外观什么的都很喜欢，超级喜欢直屏手感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前软件适配太慢了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "目前软件适配太慢了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69aab364000000002303ae0a",
+    "opinions": [
+      {
+        "opinion_text": "X7的流畅度真的不如mate70pro+，玩游戏太卡了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "X7的流畅度真的不如mate70pro+，玩游戏太卡了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "打开双屏的状态下分辨率还不如老手机",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "打开双屏的状态下分辨率还不如老手机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "除了办公方便一些，拍照清晰一些，其它的功能很一般",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "办公方便一些，拍照清晰一些，其它的功能很一般",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69bf4c4f000000002800afbd",
+    "opinions": [
+      {
+        "opinion_text": "mate X5典藏版出现严重卡顿现象，刚才更是vx都打不开了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "严重卡顿现象，刚才更是vx都打不开了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "刚出这个手机就买了，现在这个闹心",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "现在这个闹心",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "686be7890000000024008f0a",
+    "opinions": [
+      {
+        "opinion_text": "1TB的华为mate60 pro为什么才用600多G就一直提示内存不足",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "才用600多G就一直提示内存不足",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机还变的巨卡，这手机还有救吗，才买来不到两年就这样了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机还变的巨卡，才买来不到两年就这样了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68d8a845000000000e026279",
+    "opinions": [
+      {
+        "opinion_text": "华为Mate 40P卡的要死，困扰了两周了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡的要死，困扰了两周了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "路边扫个小黄车都得卡半天",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "路边扫个小黄车都得卡半天",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "今早发现居然是因为不知道什么时候关掉了电池设置里的性能模式，手机给我降速了",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "是因为关掉了性能模式导致降速，找到原因了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

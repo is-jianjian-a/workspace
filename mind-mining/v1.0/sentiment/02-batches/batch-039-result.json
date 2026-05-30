@@ -1,0 +1,410 @@
+[
+  {
+    "note_id": "693e16c8000000001e02f8bd",
+    "opinions": [
+      {
+        "opinion_text": "16pm换17pm！当天还完明显感觉卡顿 不流畅！打开相机会卡一下，点开app也会卡一下！玩个游戏也会卡！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "当天还完明显感觉卡顿 不流畅！打开相机会卡一下，点开app也会卡一下！玩个游戏也会卡！",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "从苹果3开始用到17，17pm是我唯一觉得不流畅的手机，真的想换回16pm",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "17pm是我唯一觉得不流畅的手机[泪崩R] 真的想换回16pm",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69181102000000001b026b72",
+    "opinions": [
+      {
+        "opinion_text": "卡了两周了，都恢复出厂设置了，小红书各种办法都试了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "卡了两周了，都恢复出厂设置了，小红书各种办法都试了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "删掉小组件，直接顺滑如初了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "删掉小组件，直接顺滑如初了[哇R]",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6944c8bc000000001e02f5d1",
+    "opinions": [
+      {
+        "opinion_text": "13基础款，自从26.2系统出了之后，小13莫名其妙的卡顿，掉帧似的，桌面滑动之类的操作狠掉帧似的，非常不丝滑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小13莫名其妙的卡顿，掉帧似的...桌面滑动，之类的操作狠掉帧似的，非常不丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "难道是我17PM看习惯了？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "难道是我17PM看习惯了？",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695d06c0000000001a031a9e",
+    "opinions": [
+      {
+        "opinion_text": "刚到手的17pm，系统是26.2，最近发现在接电话时偶尔会卡顿，能听到铃声但是看不到来电提醒，接完电话系统整个就卡成图片里的情况",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "接电话时偶尔会卡顿，能听到铃声但是看不到来电提醒，接完电话系统整个就卡成图片里的情况",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0ed1a60000000007029a4c",
+    "opinions": [
+      {
+        "opinion_text": "在世纪威锋换完苹果电池后，手机变得很容易卡顿，使用体验很差",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机变得很容易卡顿，使用体验很差",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f2e5380000000023015f51",
+    "opinions": [
+      {
+        "opinion_text": "17pro Max 别更新微信了，给你卡到无边了。比以前卡一万倍，现在微信拍照卡的几率为98%",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "给你卡到无边了。比以前卡一万倍，现在微信拍照卡的几率为98%",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a08701b00000000360012aa",
+    "opinions": [
+      {
+        "opinion_text": "17pro一定要更新ios26.5！！每天被微信打开相机卡气得",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "每天被微信打开相机卡气得",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "更新完之后目前没有再遇到卡的情况了！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更新完之后目前没有再遇到卡的情况了！",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "696e43c8000000000e03fa67",
+    "opinions": [
+      {
+        "opinion_text": "iPadOS 26.3所有外接实体键盘包括妙控键盘打字都卡顿到底有没有人管了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "所有外接实体键盘包括妙控键盘打字都卡顿到底有没有人管了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69fc7324000000003502855d",
+    "opinions": [
+      {
+        "opinion_text": "2025年11月因为14p摔坏被迫更新成17p，拿到手机后在使用中明显感受卡顿，流畅度逊过用了多年的14p",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "拿到手机后在使用中明显感受卡顿，流畅度逊过用了多年的14p",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "使用大概7天左右 手机左上角无故出现字母q 以及闪屏显示 以及微信唤起相机卡顿三个问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机左上角无故出现字母q 以及闪屏显示 以及微信唤起相机卡顿三个问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "上周根据顾问建议升级至最新系统后，拉黑的电话号码也能打进来了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拉黑的电话号码也能打进来了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我之所以对17代如此失望远远不止出现上述一个问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "对17代如此失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69971d25000000000d008826",
+    "opinions": [
+      {
+        "opinion_text": "为啥17p开省电模式就卡的要死",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "开省电模式就卡的要死",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69cc8c71000000001b002c18",
+    "opinions": [
+      {
+        "opinion_text": "17pm声音卡顿，推出视频、挂断电话都会重复最后的声音",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "17pm声音卡顿，推出视频、挂断电话都会重复最后的声音",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68cabe68000000001003cca2",
+    "opinions": [
+      {
+        "opinion_text": "刚更新到iOS26确实有点热，还有点卡，不过大版本升级基本都会这样，大概过了一两个小时，主动发热和卡顿现象基本消失",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "刚更新到iOS26确实有点热，还有点卡，不过大版本升级基本都会这样，大概过了一两个小时，主动发热和卡顿现象基本消失",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统流畅度方面，个人觉得比之前iOS18还要好，还有液态玻璃的体验和观感确实可以，认真用了一天多，续航跟iOS18差不多，13Pro及以上用户应该可以放心升级",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统流畅度方面，个人觉得比之前iOS18还要好...13Pro及以上用户应该可以放心升级",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这次加入了左滑返回，不过可惜只有系统二级菜单可以用，建议快点全系统，全app支持吧，这个一直被安卓用户嘲笑啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "可惜只有系统二级菜单可以用，建议快点全系统，全app支持吧，这个一直被安卓用户嘲笑啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "使用知x乎要发布作品，选择图片时会出现闪退，打王者流畅度不错，全程稳120帧，温度跟之前差不多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "选择图片时会出现闪退（负），打王者流畅度不错，全程稳120帧（正）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "13Pro毕竟是4岁大的旧机型，一开始还有点不太敢升，不过实际体验下来，有点超预期，也没发现严重影响使用的bug",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实际体验下来，有点超预期，也没发现严重影响使用的bug",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e33be60000000021011555",
+    "opinions": [
+      {
+        "opinion_text": "13pm钉子户换到17pm，真的有种这不是苹果的感觉。液态玻璃确实很好看很艺术，但是左右切屏频繁掉帧，尤其是切负一屏和资源库，总是会卡一下。解锁有时候也会卡一下，甚至有时候下滑通知栏和控制中心也掉帧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "真的有种这不是苹果的感觉...左右切屏频繁掉帧...总是会卡一下。解锁有时候也会卡一下，甚至有时候下滑通知栏和控制中心也掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "手机重启之后桌面和图标还需要明显的加载过程，跟我之前的小米一样",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机重启之后桌面和图标还需要明显的加载过程，跟我之前的小米一样",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去逛了移动专卖店，就苹果一家是切屏掉帧的，华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "就苹果一家是切屏掉帧的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去逛了移动专卖店，就苹果一家是切屏掉帧的，华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去逛了移动专卖店，就苹果一家是切屏掉帧的，华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "brand_target": "荣耀",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去逛了移动专卖店，就苹果一家是切屏掉帧的，华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去逛了移动专卖店，就苹果一家是切屏掉帧的，华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去逛了移动专卖店，就苹果一家是切屏掉帧的，华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华耀ov米至少主界面划拉那几下子是十分跟手一点不卡的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前的13pm和m1的ipad pro停留在15.7的系统但是非常丝滑，手滑到哪动画就跟到哪，随心所欲从来没担心过卡顿",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "之前的13pm...非常丝滑，手滑到哪动画就跟到哪，随心所欲从来没担心过卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "13pm预装的ios15丝滑无比，17pm预装的ios26掉帧严重，不是在官网买的真以为买到假货了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "17pm预装的ios26掉帧严重，不是在官网买的真以为买到假货了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "如果非要在液态主题和流畅之间选择我肯定选择后者，那种不管怎样用都不用担心卡顿的安心感是我选择苹果的初衷",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "那种不管怎样用都不用担心卡顿的安心感是我选择苹果的初衷（暗示现在已失去）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但是17pm性能、散热和续航也是真的强，没有尬黑",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "17pm性能、散热和续航也是真的强，没有尬黑",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6858bc14000000001703675e",
+    "opinions": [
+      {
+        "opinion_text": "为什么都说苹果手机不会卡，可我的经常卡",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "可我的经常卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0884e5000000000803f91e",
+    "opinions": [
+      {
+        "opinion_text": "在网上看到大家说苹果17Pro拍照容易卡顿。然后我想知道大家出现这种情况的是256g的还是512g的，因为我想想是不是跟内存有关？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "在网上看到大家说苹果17Pro拍照容易卡顿（转述他人说法，自身持疑问态度）",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

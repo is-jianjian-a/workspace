@@ -1,0 +1,464 @@
+[
+  {
+    "note_id": "692fa408000000001e00b461",
+    "opinions": [
+      {
+        "opinion_text": "用Mate80RS记录今日OOTD，是动态图片哦",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户主动分享使用Mate80RS拍照的体验，语气轻松自然，带有分享欲",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙6越用越香",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "话题标签明确表达鸿蒙6系统使用体验越来越好，'越用越香'是典型正向表达",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "699b0b9a000000001a037cad",
+    "opinions": [
+      {
+        "opinion_text": "15系统和14系统绝配",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "标题为'老系统的流畅性'，内容称iOS15和14系统'绝配'并配点赞表情，明确表达对老系统流畅性的高度认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "684a6cce000000002202e054",
+    "opinions": [
+      {
+        "opinion_text": "iOS26更新了，没更新前看网上的图感觉一塌糊涂，在网上骂了两天，更新完真香～看图片和体验完全不一样",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "从'骂了两天'到'更新完真香'的强烈情感转变，强调实际体验远超预期",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小问题还是不少的～",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "明确承认iOS26存在一些小问题，但语气轻描淡写",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69480c12000000001d03e31f",
+    "opinions": [
+      {
+        "opinion_text": "比18的界面好看，我认为这种视觉大改变比换个手机还新鲜",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确认为iOS26界面比iOS18好看，'比换个手机还新鲜'表达高度新鲜感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "carplay的精致感提高了，很明显",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "直接指出carplay精致感有明显提升",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "流畅度没问题，一周用下来，跟18没区别，16pro或者max可以无脑升",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "确认流畅度与iOS18持平，并推荐16pro/max用户直接升级",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "字体、图标以及某些弹出的窗口等，略微变大了一点点，感觉操作逻辑更舒服",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对iOS26细节改进表示认可，认为操作逻辑更舒适",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "省电模式下挺卡的，这反差是不是有些过大了？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确指出省电模式下卡顿问题，用反问表达不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果的信号和续航没什么可说的，什么版本也好，都是半斤八两",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对苹果信号和续航表示一贯不满，'半斤八两'表达失望情绪",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "684ab9190000000021002625",
+    "opinions": [
+      {
+        "opinion_text": "体验类一天，感觉不错，可以打80分，有新的动画，有新的Liquid Glass风格，我的感觉就是时尚、科技、潮流、酷炫",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "给iOS26打80分，用多个正面形容词（时尚、科技、潮流、酷炫）描述体验",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iOS26至少领先行业2年，这个液态玻璃视效是有技术壁垒的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "高度评价iOS26领先行业2年，强调技术壁垒",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前感受发热和卡顿也比较轻微，并没传言那么严重",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "为iOS26发热和卡顿问题正名，认为实际情况比传言好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果更多是为了2年后，甚至5年后的虚拟现实铺路，生态壁垒从来都不是一天两天建成的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "认可苹果的长远战略布局和生态壁垒建设",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0965460000000035024098",
+    "opinions": [
+      {
+        "opinion_text": "7p除了电量不行了，屏幕流畅度还是非常能打",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对老款iPhone7p的屏幕流畅度给予高度评价，'非常能打'是正向口语表达",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "本来想等18Pro系列，但刷到不是双卡之后我果断入手了17pm",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "描述换机决策过程，因18Pro非双卡而选择17pm，属于事实陈述",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693031ec000000001f006d7f",
+    "opinions": [
+      {
+        "opinion_text": "感觉iPhone应用内流畅度还是第一档",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "明确将iPhone应用内流畅度评为'第一档'，并配赞表情",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "coloros虽然也是十分流畅，应用内还是欠一点感觉",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "承认coloros整体流畅，但指出应用内流畅度相比iPhone略有不足，'欠一点感觉'是委婉批评",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "693a76b60000000019027d97",
+    "opinions": [
+      {
+        "opinion_text": "感觉m80Pro系统距离苹果手机流畅度还是有相当多细节上的差距",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "从15pm换到mate80Pro后，认为华为系统在流畅度细节上与苹果有相当多差距",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "交互上差距有点大，有落差",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确指出交互体验差距大，表达换机后的失落感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果手机流畅度（作为对比基准，被认可为更高标准）",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户以苹果流畅度为标杆进行对比，隐含对苹果流畅度的高度认可",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a02a4a600000000060301f9",
+    "opinions": [
+      {
+        "opinion_text": "老机型iphone14pro，感觉更新完了动画变快了，有点傻快，但是总体是丝滑的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "既有'傻快'的轻微负面评价，也有'总体是丝滑的'正面评价，情感混合",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "发热续航等等待定",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "对发热和续航持观望态度，未给出明确评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c4716a00000000220001de",
+    "opinions": [
+      {
+        "opinion_text": "升级完感觉还不错啊，没想的那么难看，体验挺好的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "从iOS18.7升级到26.4后，表示体验超出预期，'还不错''挺好的'都是正向表达",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航还不错",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "对iOS26.4续航给予正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电好像慢一点了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "指出充电速度似乎变慢，'好像'表示不确定但带有负面倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a09866800000000060202da",
+    "opinions": [
+      {
+        "opinion_text": "❗️不建议更新！！！续航相对上两个版本都有明显下降",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "明确强烈建议不要更新，指出续航明显下降，使用多个感叹号强调",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "15PM更新26.5后有下降，不如26.4.1和26.4.2流畅",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "指出15PM更新后流畅度下降，不如之前的版本",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "16PM和17PM流畅度没变化",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "对16PM和17PM流畅度给出中性评价，表示没有变化",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67b166e0000000001701c598",
+    "opinions": [
+      {
+        "opinion_text": "边框是真的超窄",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对16promax的边框设计表示赞叹，'真的超窄'配哭表情表达惊喜",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Apple Music触感反馈挺好用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对Apple Music触感反馈功能给予正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6783b4a6000000002002aa33",
+    "opinions": [
+      {
+        "opinion_text": "华为的很多功能，比如分屏、返回手势、遥控野生空调确实好用",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "明确认可华为多项功能好用，'确实好用'是肯定表达",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "无论是外壳材质质感还是屏幕显示的细腻柔和质感，16pro个人认为还是优于华为旗舰",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "认为16pro在质感方面优于华为旗舰，明确表达偏好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果的实况体验和视频体验还是一如既往的稳定发挥，也够用了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "认可苹果实况和视频体验稳定，'一如既往的稳定发挥'是正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66a3c2040000000005020c74",
+    "opinions": [
+      {
+        "opinion_text": "iPhone虽然功能没有很出彩，但胜在均衡，而且很精致",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "认可iPhone均衡和精致的特点，虽然功能不出彩但整体体验好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "机身盈盈一握，边角都做了圆弧处理，不割手",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对iPhone15机身手感和设计细节给予正面评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "摄像头虽然没有一英寸大底，但4800万主摄可以裁切到两倍，超广角镜头也很广，两个镜头的画面一致性很好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对iPhone15摄像头表现给予正面评价，认可画面一致性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iOS确实丝滑，动画的连贯程度真是独一档的存在",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "高度评价iOS流畅度，'丝滑''独一档'是强烈正向表达",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "可惜这款不是pro，没有高刷，也算是美中不足吧",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "对iPhone15缺少高刷表示遗憾，'美中不足'是轻微负面表达",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6836a51d000000002102f67c",
+    "opinions": [
+      {
+        "opinion_text": "为什么2025年了，还有很多人觉得苹果流畅？苹果现在都锁80",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "质疑苹果流畅度的观点，指出苹果锁80帧的局限性",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "但凡用过ov的旗舰机都不会说这话！时代变了，多出去看看",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "通过对比暗示OV旗舰机流畅度已超越苹果，'时代变了'表达品牌偏好转变",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "体验过今年安卓旗舰流畅度的人，真的不会说苹果流畅",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对安卓旗舰整体流畅度给予高度评价，认为已超越苹果",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

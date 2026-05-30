@@ -1,0 +1,491 @@
+[
+  {
+    "note_id": "69ce41db00000000230219a5",
+    "opinions": [
+      {
+        "opinion_text": "感觉我的微信像是残疾了一样，安卓好多应用没法用，鸿蒙应用市场也不完善，OMG被孤立了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "微信像是残疾了一样、安卓好多应用没法用、应用市场不完善、被孤立了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "今天才发现一个流畅的手机生态多重要，好想念我的旧手机",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "好想念我的旧手机，暗示当前华为手机体验不如旧手机",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "发现传过来很多安卓系统没法登陆了，因为没法微信扫码，后续还有各种问题，已经联系过内部工程师，说要等系统更新",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "各种问题、没法微信扫码、要等系统更新",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不仅问题还没被解决，又陆续总能发现各种新的小bug就非常恼火",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "各种新的小bug、非常恼火",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "自打用手机以来除了用过一次酷派其他换过的五个手机都是华为，我家人的手机也都是华为，愿意支持华为",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "五个手机都是华为、家人手机也都是华为、愿意支持华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0ea07b0000000006021988",
+    "opinions": [
+      {
+        "opinion_text": "去年5月份买的华为P70u最近严重的发烫，对，是发烫，不是发热，很烫，烫的时候还卡，有时候还闪退，后台清完了还是卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "严重的发烫、很烫、烫的时候还卡、闪退、后台清完了还是卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我朋友同期买的，她的不知道是不是因为用的是纯血鸿蒙的原因，就没有我这种情况的",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "朋友同期买的没有这种情况，暗示可能是系统版本差异，非直接褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "689db5d3000000001b033226",
+    "opinions": [
+      {
+        "opinion_text": "先买了华为手机，再买了华为平板，最后买了matebook14，手机和平板就不说了",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "陈述购买历程，对手机和平板未做评价",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "电脑买回一周不到，出现卡顿，频繁出现，另外工作一小时发烫的厉害",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡顿频繁出现、工作一小时发烫的厉害",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "大家支持国产，咱产品也得争口气",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "产品也得争口气，表达恨铁不成钢的失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "684536d40000000021019732",
+    "opinions": [
+      {
+        "opinion_text": "华为pura X才买了三天，卡顿了，售后说重新装系统，我问她重装了会不卡嘛，她说她不能保证",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "才买了三天就卡顿、售后不能保证重装后不卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "微信里邮箱也不支持打开，别的手机都可以，真是花钱受罪",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "邮箱不支持打开、别的手机都可以、花钱受罪",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0fcc290000000035028bd6",
+    "opinions": [
+      {
+        "opinion_text": "苹果手机储存太少了，我的内存是256起步，我知道它拍照好看，但我是想买一个主力机",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "储存太少了，但承认拍照好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我买了两个华为的手机内存占满了，有一个手机还是因为一个明星代言买的，用了两年多就卡了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用了两年多就卡了、明星代言的手机也就那样",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "另外一个华为手机已经用了五年多了还很耐用就是内存太少了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用了五年多了还很耐用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我现在不好用的另外一个手机已经出现不玩游戏情况下切换抖音和vx就是卡顿，vx电话接不起来，接起来了缓慢很久，十秒之后才能接起来",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "切换抖音和vx就是卡顿、vx电话接不起来、接起来缓慢很久、十秒后才能接起来",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "连玩游戏的时候放小窗wx时候回消息都很卡，我真的要吐了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "放小窗wx回消息都很卡、真的要吐了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "明星推荐的手机，他现在平时用的抖音微信QQ就正常的用的这三个软件，它就会发热很烫",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "正常使用三个软件就发热很烫",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我现在看的是安卓16+512内存的，前两天本来看的一加15的，IQ15我也看了，我更喜欢一加15",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "更喜欢一加15",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "IQ15我也看了",
+        "brand_target": "vivo",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅提及看过IQ15，无明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69cb6db90000000021039278",
+    "opinions": [
+      {
+        "opinion_text": "新机到手4-5天就出现很多问题，不到一个星期，发烫好几次了，出现一次就算了，后面刷个抖音都发烫",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "新机4-5天就出现很多问题、发烫好几次、刷个抖音都发烫",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "进去更会卡顿无响应，闪退，还有就是qq也是一样，根本就是无响应，一大堆问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡顿无响应、闪退、qq无响应、一大堆问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "才几天就发烫几次了，后面还不知道会不会经常性发烫，真的无语了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "才几天就发烫几次、真的无语了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a016a04000000000702eb9c",
+    "opinions": [
+      {
+        "opinion_text": "最大的感受就是真轻薄，在家里床上看电脑看视频完全重力感可以忽略，地铁上也是随意开合，开机速度非常快，WPS文档处理非常快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真轻薄、重力感可以忽略、开机速度非常快、WPS文档处理非常快",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "截图非常不好用，本机截图分享到企业微信飞书都要一顿操作，企业微信群公告内容无法复制，企业微信在线文档很多功能不全",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "截图非常不好用、群公告无法复制、在线文档很多功能不全",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "钉钉视频会议经常卡顿，24内存开了QQ飞书钉钉企业微信微信在一个钉钉会议在几个浏览器就跳出来内存不足了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "钉钉视频会议经常卡顿、24内存就跳出来内存不足",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69253a35000000001e0217cd",
+    "opinions": [
+      {
+        "opinion_text": "买了到现在差不多一年，特别特别卡，而且早在几个月前就有各种小问题",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "特别特别卡、几个月前就有各种小问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "相当于买了才不到一年就很难用了，经常性闪退黑屏卡顿，服了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "不到一年就很难用、经常性闪退黑屏卡顿、服了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a017dee000000003503a01f",
+    "opinions": [
+      {
+        "opinion_text": "抖音极速版本刷久了是真的卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刷久了是真的卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69d61fa4000000001e00d680",
+    "opinions": [
+      {
+        "opinion_text": "上个月18号线下门店购买，到手第一个星期就出现界面卡顿，打开表格卡顿",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "到手第一个星期就出现界面卡顿、打开表格卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "更新完系统后，还是非常卡顿，表现在每次多表格打开就会出现鼠标转圈，表格输入卡顿严重的现象",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "还是非常卡顿、鼠标转圈、表格输入卡顿严重",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "超过7天不能退，超过15天不能换，非常难用咋办",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常难用",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e1a763000000001b000c21",
+    "opinions": [
+      {
+        "opinion_text": "非常后悔买了华为，支持国产，但是我不打游戏，手机当老年机用的人，你微信给我卡，我真不能接受",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常后悔买了华为、微信给我卡、真不能接受",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69c8fdcb000000001b023551",
+    "opinions": [
+      {
+        "opinion_text": "华为mate70用了不到一年，但是现在卡的不得行",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用了不到一年、卡的不得行",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这种情况正常吗，可以售后吗",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "仅提问是否正常、能否售后，无直接褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f94838000000003502e492",
+    "opinions": [
+      {
+        "opinion_text": "24年12月到手的，存储还有很多空间，这几天看网页或视频忽然就卡顿了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "存储还有很多空间、忽然就卡顿了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "本来为了能用久一点，才买的大存储，新系统也不敢更新",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "陈述购买初衷和不敢更新系统的谨慎态度，非直接褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6999de1e000000001d012030",
+    "opinions": [
+      {
+        "opinion_text": "最致命的，看小视频、微信视频都无法倍速播放",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最致命的、无法倍速播放",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信输入无法直接语音转成文字，微信无法浮窗显示，评论区的图片无法显示，微信文件无法直接转发到企业微信",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "无法直接语音转文字、无法浮窗显示、图片无法显示、无法直接转发",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "以上都非常不方便，严重影响使用便捷性",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "非常不方便、严重影响使用便捷性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电超级快",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电超级快",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "过滤了所有弹窗广告，非常nice",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "过滤了所有弹窗广告、非常nice",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69078145000000000300ce60",
+    "opinions": [
+      {
+        "opinion_text": "手机和平板都升级了鸿蒙6，用的校园网，理论上学校的网络都是极快的，很稳定，但是平板和手机让人感觉网络不好",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "让人感觉网络不好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "哔哩哔哩点进视频很快，但是快进快退就要卡七八秒，手机看微信视频快进快退也需要加载",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "快进快退就要卡七八秒、需要加载",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "同样是校园网，鸿蒙4的手机和电脑看哔哩哔哩什么的都不卡，所以应该就是鸿蒙5和6在面对校园网的时候会卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙5和6在面对校园网的时候会卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "到家里用家里的WiFi就不会卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "家里WiFi不会卡，说明非设备硬件问题",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,481 @@
+[
+  {
+    "note_id": "68269832000000000303bcbe",
+    "opinions": [
+      {
+        "opinion_text": "苹果的原生态虽然没有JS、Python百花齐放，但其实也够用了，开发、测试、上线全流程可以把你照顾的很好",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "够用了，开发、测试、上线全流程可以把你照顾的很好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "所有的库都是官方认证，这种感觉还是蛮安心的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "蛮安心的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果不考虑安卓，那无脑选原生",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "无脑选原生",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果考虑安卓，那么还是出门左转去找Expo吧",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "出门左转去找Expo",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68e9059f0000000007016ba6",
+    "opinions": [
+      {
+        "opinion_text": "iPhone16 Pro不装任何的娱乐软件影响注意力，只保留真正能提升效率的生产力工具",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "提升效率的生产力工具",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米17Pro Max补充了iPhone续航不够用的问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航不够用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米17Pro Max屏幕更大且护眼，追剧、刷视频更快乐",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏幕更大且护眼，追剧、刷视频更快乐",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小米17Pro Max和苹果互联也很丝滑，传数据传照片的都很快",
+        "brand_target": "小米",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "互联也很丝滑，传数据传照片的都很快",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "692d54cb000000001f0069a2",
+    "opinions": [
+      {
+        "opinion_text": "安卓随便一台新手机都在6000mAh以上",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "随便一台新手机都在6000mAh以上",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果还在5000mAh左右徘徊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还在5000mAh左右徘徊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "安卓阵营疯狂叠堆硅碳负极、叠片工艺，已经开始让电池往10000mAh+甚至更高的容量冲",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "疯狂叠堆...往10000mAh+甚至更高的容量冲",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果搞不好会靠可拆卸电池来弥补续航短板",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航短板",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6884816b000000001c031d20",
+    "opinions": [
+      {
+        "opinion_text": "ipad11是256的，买回来基本就是隔三差五的拿出来开个机，不知道干啥",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "不知道干啥",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机是16的基础版，倒是天天用",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "天天用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "希望可以用个5年叭",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "希望可以用个5年",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69248844000000000d03f3cd",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17...感觉耗电很快",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "耗电很快",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fa87ac0000000038035740",
+    "opinions": []
+  },
+  {
+    "note_id": "6a09beaa000000003502f403",
+    "opinions": [
+      {
+        "opinion_text": "7119的Mac(16+1t)，17p还在蹲",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "价格信息提及，无明确情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "私心还是安利大家官旗，开出顶配配件概率高很多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "开出顶配配件概率高很多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "共创了一个小小苹果乌托邦",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果乌托邦",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a034208000000003502677e",
+    "opinions": [
+      {
+        "opinion_text": "17pro还没一个月，真没招了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真没招了...还没一个月",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ee2eb7000000002301e73c",
+    "opinions": [
+      {
+        "opinion_text": "光追在iPhone 17 Pro上的表现也非常优秀",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "表现也非常优秀",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "在iPhone 13 Pro这样旧的机型上，全开也能保证有稳定40+fps的表现",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "稳定40+fps的表现",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "游戏对硬件的优化和芯片的性能设计余量都功不可没",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "性能设计余量都功不可没",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69d47990000000002100584b",
+    "opinions": [
+      {
+        "opinion_text": "这是我用过的十几个iphone手机历史上第二次碎屏，而且是在使用官方保护壳的情况下...直接碎屏",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "直接碎屏",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "AC早年非常好，稍微屏幕有个缺角就可以免费换一台全新机，非常日常给力",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "非常日常给力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前来看完全是不划算，AC的购买成本大约1k/每年...不买AC比较划算",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完全是不划算",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "Apple年年换新下的折价，还不如某些回收平台",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "还不如某些回收平台",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "官方预约好到店维修，大概一个半小时，体验还可以",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "体验还可以",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a09ea69000000003700d0e6",
+    "opinions": [
+      {
+        "opinion_text": "年年换新平均成本不是更高吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问式表达，引用AI数据做成本分析",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "1年一换：年均≈3200元｜体验★★★★★｜成本高｜适合发烧友",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "体验高但成本高",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "2年一换：年均≈2250元｜体验★★★★☆｜均衡｜适合大多数",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "均衡｜适合大多数",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "3年一换：年均≈1900元｜体验★★★☆☆｜最省｜适合省钱党",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "最省｜适合省钱党",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f8198200000000350297e7",
+    "opinions": [
+      {
+        "opinion_text": "从21年苹果发布第一代MagSafe外接电池，很多人一直在等迭代更新",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "一直在等迭代更新",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "直到25年，只更新了iPhone Air专用版本。热度和销量更高的17Pro系列，反而完全无法适配",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "完全无法适配",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "常年用Pro机型的刚需用户，一直没等到适配款。等待很久，结果落差挺大",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "落差挺大",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a083512000000003600209d",
+    "opinions": [
+      {
+        "opinion_text": "实话说17pro手感非常一般有点失望",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感非常一般有点失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我的16pro一直裸机使用手感无敌",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感无敌",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "置换价格很香，抵了5600",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "价格很香",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67d94140000000001c009688",
+    "opinions": [
+      {
+        "opinion_text": "xs购于2018年的日本大阪苹果专卖店8000+，用了7年",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用了7年",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "完全不卡顿",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "完全不卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "只有电池续航不行了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "电池续航不行了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照很给力",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照很给力",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "老战友，不娇气，平时爬山徒步刮风淋雨，除了下水不行，我户外拍摄的最好搭子",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最好搭子",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f5909e0000000036018cff",
+    "opinions": [
+      {
+        "opinion_text": "现在苹果隔空投送是真的太难用了，本来就很不稳定容易找不到人、或者卡着转圈",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "太难用了...不稳定...卡着转圈",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在还限制投送输密码，传个东西简直太不方便了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "太不方便了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

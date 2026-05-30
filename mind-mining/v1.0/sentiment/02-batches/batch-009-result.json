@@ -1,0 +1,860 @@
+[
+  {
+    "note_id": "66951f61000000000a004d73",
+    "opinions": [
+      {
+        "opinion_text": "苹果最大优点：手感好，app图标设计好看，有质感，拍电子屏幕从不花屏，很稳，无边记很好用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感好，app图标设计好看，有质感，拍电子屏幕从不花屏，很稳，无边记很好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果最大缺点：不能通话录音，信号有时候不好，充电慢。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不能通话录音，信号有时候不好，充电慢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为最大优点：可自动通话录音，可截长图，可自动屏蔽骚扰电话和短信，充电非常快，拍远景很方便很清晰。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "可自动通话录音，可截长图，可自动屏蔽骚扰电话和短信，充电非常快，拍远景很方便很清晰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为最大缺点：拍电子屏幕会花屏，声音开大点手机会有震感。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍电子屏幕会花屏，声音开大点手机会有震感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两者共同缺点：使用时间长了外壳都会升温，耗电都挺快，续航能力都一般，正常使用要一天一充。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "使用时间长了外壳都会升温，耗电都挺快，续航能力都一般，正常使用要一天一充",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两者共同缺点：使用时间长了外壳都会升温，耗电都挺快，续航能力都一般，正常使用要一天一充。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "使用时间长了外壳都会升温，耗电都挺快，续航能力都一般，正常使用要一天一充",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6988504f000000000e03ee1f",
+    "opinions": [
+      {
+        "opinion_text": "用了几天华为mate70pro+，待机和流畅都不行。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "待机和流畅都不行",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "换回苹果了，不折腾了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "换回苹果了，不折腾了（暗示苹果更省心可靠）",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69626250000000000e03e7b0",
+    "opinions": [
+      {
+        "opinion_text": "白色的80越看越好看，17只能说是看久了，偶尔还是会被背面那块拼接板丑到。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "白色的80越看越好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "白色的80越看越好看，17只能说是看久了，偶尔还是会被背面那块拼接板丑到。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "偶尔还是会被背面那块拼接板丑到",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "80的灵动岛设计暂时不如17，人脸识别图标、应用状态没有跟挖孔很好的融合。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "80的灵动岛设计暂时不如17",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "80的灵动岛设计暂时不如17，人脸识别图标、应用状态没有跟挖孔很好的融合。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "80的灵动岛设计暂时不如17（苹果灵动岛设计更好）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "80的音量键是连在一起的，按起来偏硬，而且和锁屏键在一侧，容易按错。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "按起来偏硬，容易按错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "后面板不支持磁吸，磁吸充电和车载手机支架不能用嘞。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "后面板不支持磁吸，磁吸充电和车载手机支架不能用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同是标准模式下随手拍了几张，看起来80的更好看，颜色更鲜艳，17好像有点泛白，颜色更柔和点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "80的更好看，颜色更鲜艳",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同是标准模式下随手拍了几张，看起来80的更好看，颜色更鲜艳，17好像有点泛白，颜色更柔和点。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "17好像有点泛白",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "鸿蒙6.0的卓易通很好用，安卓app都可以兼容，原生app也比较丰富了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "卓易通很好用，安卓app都可以兼容，原生app也比较丰富了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过对于长辈来说鸿蒙上手可能还是会有一点点难度。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "对于长辈来说鸿蒙上手可能还是会有一点点难度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "功能性上完爆17，有非常多的实用小功能，可玩性很高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "功能性上完爆17，有非常多的实用小功能，可玩性很高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "英雄联盟非常流畅，不会发热，和17没啥区别。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "非常流畅，不会发热",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "英雄联盟非常流畅，不会发热，和17没啥区别。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "和17没啥区别（苹果也流畅不发热）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我的15p杀后台严重，80没感觉到杀后台。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "15p杀后台严重",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我的15p杀后台严重，80没感觉到杀后台。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "80没感觉到杀后台",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统层面，鸿蒙6.0非常流畅，不卡，但手感上个人还是喜欢iOS，可能是习惯了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙6.0非常流畅，不卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统层面，鸿蒙6.0非常流畅，不卡，但手感上个人还是喜欢iOS，可能是习惯了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感上个人还是喜欢iOS",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "电量超级耐用，完爆苹果。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "超级耐用，完爆苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "电量超级耐用，完爆苹果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "完爆苹果（被华为完爆）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "80深度体验到现在，非常好用，没有短板，已经记不得ip好在哪里了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常好用，没有短板",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "80深度体验到现在，非常好用，没有短板，已经记不得ip好在哪里了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "已经记不得ip好在哪里了",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ed84060000000035038e9b",
+    "opinions": [
+      {
+        "opinion_text": "笨人没用过鸿蒙系统，有没有都用过的用户说一下鸿蒙系统和安卓最流畅coloros流畅度谁更好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提问询问鸿蒙系统流畅度，未表达明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "笨人没用过鸿蒙系统，有没有都用过的用户说一下鸿蒙系统和安卓最流畅coloros流畅度谁更好。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提问询问coloros流畅度，未表达明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "680dee37000000001c0291fb",
+    "opinions": [
+      {
+        "opinion_text": "苹果15pormax换成华为70非凡大师，用了三天直接不想用了，没有苹果反应快，还会死机，散退。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "没有苹果反应快，还会死机，用了三天直接不想用了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果15pormax换成华为70非凡大师，用了三天直接不想用了，没有苹果反应快，还会死机，散退。现在想换回苹果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "没有苹果反应快（暗示苹果反应更快），现在想换回苹果",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67bb64600000000029008a71",
+    "opinions": [
+      {
+        "opinion_text": "拍照的自动优化是真的让人很很难受到，每次实况中途都好好的，实况一结束照片就自动优化的特别不自然。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "让人很很难受到，自动优化的特别不自然",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "实况目前绿地球还兼容不了，之前朋友圈苹果发的实况图，华为都看不到。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "兼容不了，华为都看不到",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相册视频如果剪辑，就算是最普通的比例裁切下，也是直接用到自带的华为剪辑，最后要导出，总感觉会影响清晰度。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "总感觉会影响清晰度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为整理照片，添加到其他相册的照片，如果删除是直接从总相册里删掉的，不像苹果会提示从此相册移除还是直接删除。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "删除是直接从总相册里删掉的（不如苹果方便）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电嘎嘎快！一小时左右，日常用一整天没问题！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "充电嘎嘎快！一小时左右，日常用一整天没问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "界面随意摆放，东一个西一个，多个软件可以放一个大图标里，大图标可以单个点进软件。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "界面随意摆放，多个软件可以放一个大图标里",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小艺小艺真的很好用！我之前siri总耳背没怎么用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "小艺小艺真的很好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小艺小艺真的很好用！我之前siri总耳背没怎么用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "siri总耳背没怎么用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "软件小窗口，可以分屏，长截图很方便。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "可以分屏，长截图很方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相册自带拼图软件，选中照片直接拼图，对于服装人可以直接把想要的衣服面料辅料拼在一张图，一目了然。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "选中照片直接拼图，一目了然",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "智慧生活场景也好用，可以设置离家多少米提醒我取快递，设置打开抖抖或一些视频软件音量亮度自动减弱到多少。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "智慧生活场景也好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "软件小卡片，可以在主界面清晰看到并使用，如快递还有多少个在路上，主页可以直接导航输入想去的地方。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "可以在主界面清晰看到并使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果很介意拍照，那还是苹果更真实自然，但除了这点其他都很香。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果更真实自然",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "如果很介意拍照，那还是苹果更真实自然，但除了这点其他都很香。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "除了拍照这点其他都很香",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b508d70000000023011ee5",
+    "opinions": [
+      {
+        "opinion_text": "华为5A根本不是5G！产品不错，非要耍小聪明？",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "根本不是5G！产品不错，非要耍小聪明",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "685a8b8f000000002201ee14",
+    "opinions": [
+      {
+        "opinion_text": "因这代摄像头的增大，虽然风向标型的摄像头造型对于右手握持还可以，但是左手握持会有明显的挡手。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "左手握持会有明显的挡手",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "p80pro的重量分布没有15pm好，摄像头的增大导致重量集中在左上角，坠手感明显，刚开始拿久一点比拿15pm手更酸。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "坠手感明显，拿久一点比拿15pm手更酸",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "p80pro的重量分布没有15pm好，摄像头的增大导致重量集中在左上角，坠手感明显，刚开始拿久一点比拿15pm手更酸。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "重量分布比p80pro好，拿久一点手没那么酸",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "打字马达震动个人感觉太弱。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "打字马达震动个人感觉太弱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "抖音没有团购优惠，美团的团购优惠不能在页面显示，鸿蒙版美团没有任何显示。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "抖音没有团购优惠，美团的团购优惠不能在页面显示",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "微信小程序不支持搜索，微信内部分链接无法点击和打开。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不支持搜索，部分链接无法点击和打开",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "淘宝不支持朋友代付。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "淘宝不支持朋友代付",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "小红书信息推送无法收到，已经全部设置了但还是无法收到。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "信息推送无法收到，已经全部设置了但还是无法收到",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "各app内字体大小不统一，有些是跟随系统字体大小，有些需要手动调节，但是调节完还是系统字体大小不一致。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "字体大小不统一，调节完还是不一致",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6627d2dd000000001c00a740",
+    "opinions": [
+      {
+        "opinion_text": "华为永远拍不出那种真实感，终于知道朋友圈为什么很多食物看起来都好假了，他们可能用的都是华为。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "永远拍不出那种真实感，很多食物看起来都好假",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为永远拍不出那种真实感，终于知道朋友圈为什么很多食物看起来都好假了，他们可能用的都是华为。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果能拍出真实感（通过对比暗示）",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的左右滑动，返回上一屏确实对于单手操作很友好，苹果只能右滑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "对于单手操作很友好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为的左右滑动，返回上一屏确实对于单手操作很友好，苹果只能右滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果只能右滑（不如华为方便）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为信号很好，同样的隧道，华为有信号，苹果啥也加载不出来了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "信号很好，同样的隧道华为有信号",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为信号很好，同样的隧道，华为有信号，苹果啥也加载不出来了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果啥也加载不出来了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果尺寸一定是经过很多次试验达到最优尺寸的，确实比华为那种长屏幕好用，苹果手握起来更舒服。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "确实比华为那种长屏幕好用，苹果手握起来更舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果尺寸一定是经过很多次试验达到最优尺寸的，确实比华为那种长屏幕好用，苹果手握起来更舒服。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为那种长屏幕不如苹果好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为打错字，修改光标定位很方便，苹果经常光标定位错误，需要整句话删除重新输入。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "修改光标定位很方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为打错字，修改光标定位很方便，苹果经常光标定位错误，需要整句话删除重新输入。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "经常光标定位错误，需要整句话删除重新输入",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6736b49c000000001a037d0a",
+    "opinions": [
+      {
+        "opinion_text": "虽然近几年大家一直在吐槽苹果手机越来越贵，但回过头发现，好像华为已经比苹果还要贵了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "华为已经比苹果还要贵了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "虽然近几年大家一直在吐槽苹果手机越来越贵，但回过头发现，好像华为已经比苹果还要贵了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果手机越来越贵",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "大家觉得是华为的业内首款三折叠屏，更有含金量，还是苹果的正常迭代更新更有含金量呢？",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提问引导讨论，未表达明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "大家觉得是华为的业内首款三折叠屏，更有含金量，还是苹果的正常迭代更新更有含金量呢？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提问引导讨论，未表达明确情感倾向",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6680f1f5000000001e012cf6",
+    "opinions": [
+      {
+        "opinion_text": "你可以说华为芯片制程差，性能不行，但你不能说华为在通信方面差。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "芯片制程差，性能不行（负向），但通信方面不差（正向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相同的地方，Pura70也接近满格信号，虽然不显示5G，但是上网速度肯定慢不了，刷刷视频肯定不在话下。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "接近满格信号，上网速度肯定慢不了，刷刷视频肯定不在话下",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在看隔壁友商，无服务 无服务 无服务 无服务，这时候没信号，网络都用不了，即使有3nm的芯片也没用了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "无服务，没信号，网络都用不了，即使有3nm的芯片也没用了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在就没有一个十全十美的手机，性能好没信号，信号好性能又差点。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "信号好性能又差点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在就没有一个十全十美的手机，性能好没信号，信号好性能又差点。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "性能好没信号",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fee36200000000230177df",
+    "opinions": [
+      {
+        "opinion_text": "苹果和华为到底哪一个能用好几年都不会卡？我的朋友们用的都是苹果，感觉都还挺好的，拍照也都挺好的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉都还挺好的，拍照也都挺好的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "买苹果主要就是拍照好看，还非常的流畅。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍照好看，还非常的流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "父母呢，比较喜欢华为，因为华为是国货。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "父母比较喜欢华为，因为华为是国货",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693f8057000000001e03b764",
+    "opinions": [
+      {
+        "opinion_text": "自从入手了华为Mate 80 Pro MAX和日常用的iPhone 17 Pro对比，使用体验真的越来越接近。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "使用体验真的越来越接近（与苹果接近是正面评价）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为改为直面屏后，两台机器用起来都很丝滑，尤其是双层LED屏幕是最舒服的。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用起来都很丝滑，双层LED屏幕是最舒服的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为改为直面屏后，两台机器用起来都很丝滑，尤其是双层LED屏幕是最舒服的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "两台机器用起来都很丝滑（苹果也很丝滑）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "唯一的缺点是华为的相机玻璃盖总是会被划伤，用了两周就有痕迹了，这是所有华为的通病。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "相机玻璃盖总是会被划伤，用了两周就有痕迹了，这是所有华为的通病",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6859272d000000000b01f4a4",
+    "opinions": [
+      {
+        "opinion_text": "感觉苹果的色差相对会大一点，看实物还是Pura 80 Ultra得色准还原度高。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "色差相对会大一点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "感觉苹果的色差相对会大一点，看实物还是Pura 80 Ultra得色准还原度高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Pura 80 Ultra得色准还原度高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "颜色越鲜艳Pura 80 Ultra拍的越准。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "颜色越鲜艳Pura 80 Ultra拍的越准",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ecb176000000002202b456",
+    "opinions": [
+      {
+        "opinion_text": "Mate70pro昨晚升级后，今天开始使用，流畅度还是快很多的，小功能可玩性比较高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度还是快很多的，小功能可玩性比较高",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

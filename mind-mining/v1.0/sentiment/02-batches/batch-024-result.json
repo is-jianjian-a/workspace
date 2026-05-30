@@ -1,0 +1,428 @@
+[
+  {
+    "note_id": "69e8e3840000000021038e2e",
+    "opinions": [
+      {
+        "opinion_text": "苹果为啥最终要抄袭华为的折叠屏？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "标题'抄袭'，内容质疑苹果抄袭华为折叠屏，带有批评和质疑态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果为啥最终要抄袭华为的折叠屏？",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果被质疑抄袭华为折叠屏，暗示华为在折叠屏领域领先/被模仿",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a02c7860000000006037086",
+    "opinions": [
+      {
+        "opinion_text": "好玩，爱玩。第一次用折叠屏，还买了两年碎屏险care+，不用小心翼翼随便造了！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'好玩，爱玩'表达喜爱，'不用小心翼翼随便造'体现对产品的放心和满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果转华为pura x max已买，已体验两天",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是陈述从苹果转华为的事实，未对苹果表达明确情感态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66b44aa5000000001e01f686",
+    "opinions": [
+      {
+        "opinion_text": "苹果这么难用为啥还那么多人买，想不通。谁能说点好处平复一下我的落差，看我截图上可怜的两格信号。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'这么难用''想不通''可怜的两格信号''平复落差'强烈表达对苹果信号差的不满和失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "688f7523000000002502222b",
+    "opinions": [
+      {
+        "opinion_text": "华为p80现在就是软件适配问题，还有手机用久了会不会卡。线下感受p80的手感还不错，价格也可以。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "担忧软件适配和卡顿问题（负向），但认可手感和价格（正向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "16pm我肯定要买512G基本就是上W了，也是蛮贵了，最担心的就是信号不好的问题，而且本人在乡镇工作，更担心了，还有一个就是电池健康焦虑，感觉都要天天担心。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'蛮贵了''信号不好''电池健康焦虑''天天担心'表达对苹果价格、信号、电池的多重担忧",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "本人对手机的要求基本就是流畅和续航，想要用得久一点，一直是安卓手机，有一点想尝试用苹果，但是又担心不习惯或者不会用。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "陈述自己一直用安卓手机的事实，对安卓没有明确褒贬评价",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f7a7a90000000035023d33",
+    "opinions": [
+      {
+        "opinion_text": "苹果17Pro莫名其妙机身畸变，画面对比雾蒙蒙的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'莫名其妙机身畸变''雾蒙蒙的'明确指出苹果对镜拍的成像缺陷",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为大阔折折叠手持有一定重量，小拇指遭罪。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'有一定重量''小拇指遭罪'抱怨华为折叠屏手持时的重量负担",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69561adc000000001e016e4b",
+    "opinions": [
+      {
+        "opinion_text": "两个的界面质感和画面，越来越趋同了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观描述鸿蒙和iOS界面趋同的现象，未表达褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "两个的界面质感和画面，越来越趋同了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客观描述鸿蒙和iOS界面趋同的现象，未表达褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69ff554700000000360315f7",
+    "opinions": [
+      {
+        "opinion_text": "虽然mate80pro的处理器和骁龙旗舰还有差距，但鸿蒙调教的屏幕色彩，系统流畅度体验都比贵了七八百的vivo好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "认可华为屏幕色彩和系统流畅度优于更贵的vivo，虽有处理器差距的客观承认但整体肯定华为",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "vivox300ultra可谓是摄影偏科生胜在影像，相较x200ultra，续航和声音外放都有提升。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "肯定vivo影像能力，并指出续航和外放相比前代有提升",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a08670300000000360312bb",
+    "opinions": [
+      {
+        "opinion_text": "十几年的果粉终于遇到自己喜欢的机型下定决心换了华为，对于系统我觉得比苹果智能很多，软件对我来说基本98%是适配的，系统很习惯。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'比苹果智能很多''系统很习惯'作为资深果粉转华为后高度认可华为系统智能性和适配度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "十几年的果粉终于遇到自己喜欢的机型下定决心换了华为，对于系统我觉得比苹果智能很多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'比苹果智能很多'暗示苹果系统不如华为智能，作为果粉转投华为也反映对苹果的失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是屏幕我不习惯，觉得小屏小了一点，大屏大了一点，看得我头有点晕。用了不到一周，在纠结要不要出。又很喜欢，又确实不太适应这个屏幕。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'又很喜欢'（正向）但'不习惯''头晕''纠结要不要出'（负向），对屏幕尺寸有矛盾感受",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "687d9f9e000000001d00e4ed",
+    "opinions": [
+      {
+        "opinion_text": "苹果不愧是你，live图的神，虽然现在其他手机也推出了live功能，但苹果的动图还是最真实生动的那个。喷泉溅起的水珠动态、荷叶随风摇晃的样子，都还原得很真实。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'live图的神''最真实生动''还原得很真实'高度赞扬苹果live图的真实感和生动性",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "不过到定格画面就没有什么优势了，清晰度和质感都不如华为。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'没有什么优势''清晰度和质感都不如华为'指出苹果在定格画面上的劣势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为你的调色是请了什么高人指导吗？直接开启'细节狂魔'+'色调大师'模式！晴天用华为拍照色调真的很绝，完全还原了蓝天白云和草地喷泉的美。荷叶的纹理、喷泉溅起的水中涟漪，每一处都经得起放大端详。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'真的很绝''完全还原''经得起放大端详'极力赞美华为调色和细节表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但整体的饱和度还是稍微有点过重的感觉，整个画面色调比较浓郁。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "'稍微有点过重''色调比较浓郁'轻微批评华为饱和度过高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69e793ab000000002200dce1",
+    "opinions": [
+      {
+        "opinion_text": "华为Pura 90 Pro Max和华为Pura X Max两台手机全部导完资料，彻彻底底当做主力机猛猛的用了一整天，真的爽啊！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'真的爽啊'强烈表达使用华为新机后的爽快感受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这一天里有大半的时间是反复转动手机欣赏外观，橘子海配色我可太喜欢了！大阔折屏幕也是一展开就一眼心动，怎么会有这么完美的显示体验。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'我可太喜欢了''一眼心动''完美的显示体验'极度喜爱华为外观配色和屏幕显示",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "伴随式AI玩了一会感觉大有可为，阔屏就该这样吃满比例优势。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'大有可为'肯定华为伴随式AI的潜力，认可阔屏比例优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67a23df1000000001801a1cb",
+    "opinions": [
+      {
+        "opinion_text": "苹果的live图确实更加有生命力，特别是在苹果镜头下的水面波纹更加好看。色调来看，苹果的饱和度更加高，暖调明显，整体色调呈现是暖黄色的，有种很温暖治愈的氛围感。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'更加有生命力''更加好看''温暖治愈的氛围感'高度肯定苹果live图和色调表现",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍出的效果虽然也不错，但总感觉少了点感觉。华为整体有些偏白，饱和度不高，整体效果不如苹果。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'少了点感觉''偏白''饱和度不高''整体效果不如苹果'认为华为拍照效果不如苹果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "放大看细节其实是华为更加清晰一些，细节也比较丰富。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'更加清晰''细节也比较丰富'肯定华为在清晰度上的优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为开live图会糊就没开。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'live图会糊'指出华为live图功能存在模糊问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6989d64600000000280219bb",
+    "opinions": [
+      {
+        "opinion_text": "华为拍个短片都要找营销号拉踩苹果，给营销号的文案几乎就是一模一样了，连广告片都要拉踩苹果。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "批评华为营销手段，认为其通过营销号拉踩苹果，对华为营销方式持负面态度",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为拍个短片都要找营销号拉踩苹果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果被华为拉踩，间接暗示苹果是被对标/竞争的对象，但用户本身未直接评价苹果",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "691d5e77000000001e036629",
+    "opinions": [
+      {
+        "opinion_text": "苹果微信能双开就好了，信号再好点就更好了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'能...就好了'表达遗憾和不满，指出苹果不支持微信双开和信号差的痛点",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "17pro续航的确提升了很多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'续航的确提升了很多'肯定苹果17pro在续航方面的进步",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "日常无限纠结，华为生态还是苹果生态。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是在华为和苹果生态之间纠结选择，未对华为生态表达明确褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0814c00000000035022403",
+    "opinions": [
+      {
+        "opinion_text": "现在的p70pro电池已经不太行了一天冲4-5次受不了了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'电池已经不太行了''一天冲4-5次''受不了了'抱怨华为P70pro电池续航严重衰减",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "一直在对比vivo和华为最后还是买回华为，因为系统比较好用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'系统比较好用'肯定华为系统体验优于vivo，是最终选择华为的原因",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "一直在对比vivo和华为最后还是买回华为。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提到对比过vivo，未对vivo表达明确褒贬评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67062187000000001b021353",
+    "opinions": [
+      {
+        "opinion_text": "现在的安卓功能真的比苹果好太多了。安卓主打就是便捷，机型之间或有差异，但用下来方便程度还是安卓的好，手机重量普遍还是安卓更轻。而且安卓还有小屏单手模式，一手玩转全屏。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'比苹果好太多了''方便程度还是安卓的好''更轻''一手玩转全屏'强烈肯定安卓在便捷性、重量、单手操作方面的优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我个人更喜欢安卓的便捷、轻、天气、拍照和nfc！而且现在的安卓不会像以前这么卡，用了三四年依然很顺滑。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "'更喜欢''用了三四年依然很顺滑'高度认可安卓流畅度和持久性，打破安卓卡顿的刻板印象",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "以前觉得苹果好，换了苹果以后用了一阵子作出的对比。用久了安卓换苹果会觉得很沉。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "'换了苹果以后''会觉得很沉'表达从安卓换苹果后的不适应，认为苹果更重",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

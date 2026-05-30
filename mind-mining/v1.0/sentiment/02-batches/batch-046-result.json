@@ -1,0 +1,536 @@
+[
+  {
+    "note_id": "683a51d3000000002001f528",
+    "opinions": [
+      {
+        "opinion_text": "因为内存问题，导致经常要删除文件。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "因为内存问题，导致经常要删除文件。",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "更新了系统，出现了卡顿的问题 (准备当作备用机)。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "出现了卡顿的问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "上个月下决心，换了心心念念iphone16pro。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "心心念念iphone16pro",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0270f3000000000701104f",
+    "opinions": [
+      {
+        "opinion_text": "iOS26.5是非常推荐的一个版本！续航非常不错的！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "非常推荐的一个版本！续航非常不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "信号没啥增强，稳定性没有提升。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "信号没啥增强，稳定性没有提升",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "流畅度：很不错。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "流畅度：很不错",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone13以下机型不建议更新！26系统更耗电一些！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不建议更新！26系统更耗电一些",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690c91d3000000000700c3a8",
+    "opinions": [
+      {
+        "opinion_text": "每次苹果一出新系统，我的时间线就开始炸——有人说更省电了！有人说变卡了！有人说根本没变化…",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "有人说更省电了！有人说变卡了！有人说根本没变化",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "于是我自己升上去，用了两天，结论有点出乎意料。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "结论有点出乎意料",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0f7e84000000000803e989",
+    "opinions": [
+      {
+        "opinion_text": "我手里的设备是华为一条龙。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "手里的设备是华为一条龙",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "需求只有能登上苹果账号+云燕云能流畅进行支撑我充上钱。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "能流畅进行支撑我充上钱",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f9686000000000230054b0",
+    "opinions": [
+      {
+        "opinion_text": "新增彩虹墙纸，右划有多种颜色，没动态效果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "没动态效果",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前用Beta2版本，下拉边框黑块效果没有了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "下拉边框黑块效果没有了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "和beta2发热效果持平，因为是26.4.1太热耗电而升，觉得比26.4.1好。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "觉得比26.4.1好",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a06a6be0000000008032107",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 17 Pro和Pro Max的均衡、全能，反过来说就是毫无特色。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "均衡、全能，反过来说就是毫无特色",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "一直以来苹果招牌的iOS在iOS 26更新以来也越来越没优势了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iOS在iOS 26更新以来也越来越没优势了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "iPhone的充电、信号，也一直算弱项。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电、信号，也一直算弱项",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "同价位不太玩游戏选择华为 Mate 80 Pro Max。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "同价位不太玩游戏选择华为 Mate 80 Pro Max",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "追求拍照选vivo X300 Ultra。",
+        "brand_target": "vivo",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "追求拍照选vivo X300 Ultra",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "玩游戏有iQOO、一加的性能旗舰。",
+        "brand_target": "其他",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "玩游戏有iQOO、一加的性能旗舰",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "677be3e7000000001703a557",
+    "opinions": [
+      {
+        "opinion_text": "我发现我电池健康还挺不错的，基本每天都是一冲，除了一整天把它拿在手里的话，就一天两充，最近很少玩，快两年了，还有83还是挺不错的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池健康还挺不错的...还有83还是挺不错的",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "692d8aeb000000000d03fe58",
+    "opinions": [
+      {
+        "opinion_text": "17pro升级真不小，最明显的是解决了上两代pro的发热问题。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "解决了上两代pro的发热问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我深受15pro发热困扰，最后官方给我免费更换了主板和硬件。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "深受15pro发热困扰",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "17pro外观还可以，实物比渲染图要好看。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实物比渲染图要好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "17pro的边框要比上两代钛合金更脆弱一些，不带壳一摔一个坑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "边框要比上两代钛合金更脆弱一些，不带壳一摔一个坑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我还是更喜欢ios的封闭以及系统层面的各种可控性。这种优秀不是说拼动画的快速和超高帧率，而是系统整体的流畅与统一性。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "更喜欢ios的封闭以及系统层面的各种可控性...系统整体的流畅与统一性",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "缺点就是，少了很多乐趣，比如智障一样的siri，没有了跳开屏广告神器，也没有开放nfc的便捷。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "智障一样的siri，没有了跳开屏广告神器，也没有开放nfc的便捷",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "国行至今还没有AI啊。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "国行至今还没有AI啊",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "15pro长焦光线不好的情况下真的很糊，17pro的长焦进步明显。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "15pro长焦光线不好的情况下真的很糊，17pro的长焦进步明显",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 17pro是比较成功的产品，至少用了两个月，还没有遇到什么大坑影响体验，也无发烫现象。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "比较成功的产品...还没有遇到什么大坑影响体验，也无发烫现象",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电更快了，续航更久些，系统大变样，我会给它一个优秀的评价。（15pro肯定是不及格）",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "充电更快了，续航更久些，系统大变样，我会给它一个优秀的评价",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用了不到一年的澎湃，我明白为什么会用这么长时间的iPhone了。",
+        "brand_target": "其他",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用了不到一年的澎湃，我明白为什么会用这么长时间的iPhone了",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68ecd0e10000000005032635",
+    "opinions": [
+      {
+        "opinion_text": "我感觉苹果好像真的好用点，很丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果好像真的好用点，很丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a021ae60000000036031c07",
+    "opinions": [
+      {
+        "opinion_text": "感觉比上一版本流畅，开几个应用不会热的卡顿降两度。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "比上一版本流畅，开几个应用不会热的卡顿降两度",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "过渡动画更稳定了，但我觉得再调慢一点会好很多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "过渡动画更稳定了，但我觉得再调慢一点会好很多",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "上个版本打王者发热团战都能卡到60帧以下。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "打王者发热团战都能卡到60帧以下",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "个人主观感受是真比上一个版本好一点。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "真比上一个版本好一点",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0f2fc40000000007021837",
+    "opinions": [
+      {
+        "opinion_text": "没用过苹果，然后要求就是拍照好看，人像风景都好看的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "拍照好看，人像风景都好看的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机流畅不卡，能够现在当主机使用就好了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "手机流畅不卡，能够现在当主机使用就好了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "68c8c7be000000001d02f223",
+    "opinions": [
+      {
+        "opinion_text": "这个系统更的值，感觉像换了新机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统更的值，感觉像换了新机",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69bf37cd000000001a02c39a",
+    "opinions": [
+      {
+        "opinion_text": "上学时候第一部智能手机就是荣耀i7，后来换了一台神机mate30，各种跌坠水泡还抗了5年，依旧流畅，让我对华为整个企业深信不疑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "神机mate30，各种跌坠水泡还抗了5年，依旧流畅，让我对华为整个企业深信不疑",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "于是我下单了mate60这个孽畜。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "mate60这个孽畜",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "电池健康极度诡异。用了一年不到，电池健康直下80，上个班一整天都需要连着赛博脐带，不然中午就敢给你断片。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "电池健康极度诡异。用了一年不到，电池健康直下80",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "发热严重。换60后基本戒手游了，玩个三谋都烫手，终末地之类的直接烫到掉帧。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "发热严重...玩个三谋都烫手，终末地之类的直接烫到掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "25年10月刚刚过保，手机开始无法快充，送到维修中心检测说是主板损坏，没有水泡没有大摔。换主板2k，并且不保证换了就能好使。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "手机开始无法快充...主板损坏...换主板2k，并且不保证换了就能好使",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "26年3月突然关机变砖，送修2周后告知已经无法修好，以旧换新可以抵200块。数据全部无法取出。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "突然关机变砖...已经无法修好，以旧换新可以抵200块。数据全部无法取出",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "整个过程让我对华为整个公司的专业程度和管理水平产生了怀疑，很难相信这是那个做出了mate30的企业。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "对华为整个公司的专业程度和管理水平产生了怀疑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "短时间内不会再信任华为了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "短时间内不会再信任华为了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0a7d2e00000000360186ca",
+    "opinions": [
+      {
+        "opinion_text": "我感觉自己的pura x这次更新了之后刷小红书明显卡顿了好多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刷小红书明显卡顿了好多",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "微信小程序的加载速度也慢了很多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信小程序的加载速度也慢了很多",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0f24d4000000000803300e",
+    "opinions": [
+      {
+        "opinion_text": "今晚系统推了4.2.0.232，更新完之后突然就没有SIM卡信号了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "更新完之后突然就没有SIM卡信号了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

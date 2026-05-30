@@ -1,0 +1,356 @@
+[
+  {
+    "note_id": "696f04c700000000220386b2",
+    "opinions": [
+      {
+        "opinion_text": "鸿蒙6.0，有没有觉得网速变慢、信号变差了的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户提问鸿蒙6.0系统下网速变慢、信号变差，表达不满和困扰",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "689e8b8a000000001d0142c3",
+    "opinions": [
+      {
+        "opinion_text": "七月底升级了4.2.0.180，一开始只有淘宝卡，后来什么都卡，接电话半天切不到接听页面，输入框点击后键盘半天不弹出。动不动跳个system无响应",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "详细描述mate40pro升级后严重卡顿：淘宝卡到什么都卡，接电话切不到页面，键盘不弹出，system无响应",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "按他给的方案一顿操作，然后好像真不卡了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "客服方案操作后卡顿问题解决，表达初步认可但还需观察",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6762a0ec000000000b01673f",
+    "opinions": [
+      {
+        "opinion_text": "华为X6微信打字严重卡顿，用了好几天，今天碰到这状况好几次了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述华为X6微信打字严重卡顿，且多次出现，标题用了三个感叹号表达强烈不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "689747a800000000250114b9",
+    "opinions": [
+      {
+        "opinion_text": "mate40pro突然卡起来了，没有缘由反应慢、闪退！256的内存曾经满了都不卡，现在还剩100G都卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户愤怒吐槽mate40pro突然变卡，用大量感叹号强调，对比曾经满内存不卡现在剩100G却卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67efa57b000000001c00362f",
+    "opinions": [
+      {
+        "opinion_text": "已经显示这个界面一下午了，跟板砖一样",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为手机卡住显示恢复界面一下午，形容为'板砖'，表达极度不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "现在用苹果拍华为手机，真的是服了",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户用苹果手机拍摄华为手机故障状态，苹果作为工具出现，无明显情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d9e8b0000000002301232a",
+    "opinions": [
+      {
+        "opinion_text": "本来我的Mate 60 Pro卡顿发烫掉电很严重",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户描述Mate60Pro升级前卡顿发烫掉电严重的问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "升级了纯血鸿蒙，手机瞬间丝滑了很多，也没之前那么烫手了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "升级纯血鸿蒙后手机变丝滑、不烫手，表达满意",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "软件匹配度比刚开始好的太多了，目前比较满意",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认可软件匹配度大幅提升，表达满意",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68956c050000000025017415",
+    "opinions": [
+      {
+        "opinion_text": "下班玩一会巨烫手，而且有时候会突然卡住了你点击屏幕啥的一点反应都没有",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述mate70Pro发烫严重、突然卡住点击无反应，有具体场景",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去售后检测就说没有毛病，说后面升级系统了就解决了，结果升级到最新还是这样，太让人失望了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "售后未解决问题，升级后依然卡顿，用户表达失望和无语",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6825d5c9000000002301fccb",
+    "opinions": [
+      {
+        "opinion_text": "在店里体验华为mate70pro居然有卡顿现象，在图库打开一张图片，双指放大一下图片然后立刻左滑或者右滑，要么图片不动，要么图片很生硬的移动",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户在门店体验mate70pro发现图库操作卡顿，图片不动或生硬移动",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "体验了pura70ultra，没这个现象",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "pura70ultra没有卡顿现象，表达认可",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0e78dd00000000350395ba",
+    "opinions": [
+      {
+        "opinion_text": "大家的matepadPRO升级到4.0有没有觉得卡顿啊，连自带的笔记用星闪笔写都没之前丝滑了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户提问matepadPRO升级4.0后卡顿，星闪笔写字不丝滑",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f44b0900000000350287d7",
+    "opinions": [
+      {
+        "opinion_text": "自己手上的Mate 50 pro稍有卡顿，所以动了换手机的念头",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "Mate50pro稍有卡顿成为换机动机之一",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "Pura max高昂的售价（机子本身做工和质感值这个价）和展开时难用的打字，最终把我劝退",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Pura max售价高、展开打字难用、眼睛累，用户被劝退",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用max的外屏敲字，反而没有用x的内屏敲字来得舒服",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "Pura max外屏打字体验不如Pura x内屏，对比表达不满",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从华为p20 pro到华为mate50 pro再到华为Pura x，一路走来，内心越来越认可华为，不后悔多年前选择了华为",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户回顾多年华为使用历程，表达越来越认可华为、不后悔选择华为",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67c2096c000000000903a95e",
+    "opinions": [
+      {
+        "opinion_text": "之前的那一部是苹果14Pro max，当时就感觉苹果手机电池后面不耐用，充电又慢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为苹果14Pro max电池不耐用、充电慢，是换机原因之一",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "用了八天，第1天拿回家打王者就感觉有点卡顿，结果玩了8天了，从刚开始的一点卡到现在爆卡，直接把我卡的打个王者把我气哭",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户描述mate60pro从第一天轻微卡顿到第八天爆卡，打王者气哭，情绪强烈",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "打团的时候直接卡到电流声，三个人打一条龙直接卡都放不出技能",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "具体描述游戏卡顿到电流声、放不出技能，表达极度不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "华为还说自己是遥遥领先，我觉得真的是更加无语",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户讽刺华为'遥遥领先'的宣传，表达强烈不满和失望",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a06b4f5000000003802316f",
+    "opinions": [
+      {
+        "opinion_text": "这两天17pm声音卡顿，退出视频、挂断电话，都会重复最后的声音",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户描述iPhone17pm声音卡顿问题：退出视频、挂断电话重复最后声音",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "之前最多是WX拍照片时卡，现在怎么卡的越来越离谱",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户认为卡顿从微信拍照发展到声音卡顿，越来越严重",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "670defa800000000210077b8",
+    "opinions": [
+      {
+        "opinion_text": "13换16的天都塌了，信号差，卡顿，断触，反应慢",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户从iPhone13换到16后体验极差：信号差、卡顿、断触、反应慢，'天都塌了'表达强烈失望",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "已经更新到18.01了，兔子也拉到底了，键盘也还原过了，按键重复也关了，触感反馈触控也调到快了，一点吊用没有",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用户尝试多种设置调整均无效，'一点吊用没有'表达强烈挫败感",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这点点字打了毛10分钟，完全跟不上我的手速啊",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "打字极度卡顿，10分钟打几个字，完全跟不上手速，表达强烈不满",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0900b3000000003601a360",
+    "opinions": [
+      {
+        "opinion_text": "iPhone 17 pro max升级iOS 26.5后，每天早上拿起来使用的时候会卡顿，然后过一会儿就好了，以前从来没有这样的问题",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户描述iPhone17pm升级iOS26.5后早晨卡顿，以前没有此问题",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6902ff4c0000000004010eb3",
+    "opinions": [
+      {
+        "opinion_text": "手机拿回来总感觉哪里卡卡的",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用户感觉iPhone17pro拿回来就卡顿，但表述较模糊",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "按照网友的办法设置里面关闭这两项，打开关闭app时明显感觉顺畅很多",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "用户通过设置调整后，打开关闭app明显感觉顺畅，表达改善后的满意",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

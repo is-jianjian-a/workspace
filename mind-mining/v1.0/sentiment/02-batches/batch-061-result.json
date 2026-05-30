@@ -1,0 +1,608 @@
+[
+  {
+    "note_id": "6a1281c2000000003502fe54",
+    "opinions": [
+      {
+        "opinion_text": "标准版没有长焦是真的难受，但16pm上的5倍长焦焦段又太大，不实用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "标准版没有长焦是真的难受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我觉得苹果完全可以给标准版加上一个3倍的长焦镜头，不用潜望，立式的就完全够用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "只是提出改进建议，没有明显褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "pro本来就是给有专业视频要求的人用的，有log和4k120、杜比视界，还有芯片肯定会比标准版性能好。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "芯片肯定会比标准版性能好",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "真正有需求的人一直会买pro，预算多的也会，想要游戏性能的也会。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "认可Pro版本对专业用户和游戏玩家的价值",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这不是在推测下一代苹果标准版会怎样，只是自己完美中标准版要有的样子。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "纯个人看法表达，无明显情感倾向",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a107ace0000000035023d7c",
+    "opinions": [
+      {
+        "opinion_text": "在看了小红书上关于配置的帖子后，非常的焦虑，买了两台都是gh3，确实感觉显示不太行。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "确实感觉显示不太行",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "实际一年用下来，除了屏幕非常满意之外，感觉其他配置也就那样。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "屏幕非常满意，但其他配置也就那样",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第二张的电池其实也不咋地，这台打游戏很频繁，电池掉的快可能和打游戏也有关系。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池其实也不咋地",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "所以我觉得只要自己觉得屏幕没什么问题，不用太纠结配置，太在意反而没有了得到新手机的快乐。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "建议性的个人反思，无明显褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但是屏幕这件事上，我还是觉得三星的比lg好。",
+        "brand_target": "三星",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "觉得三星的比lg好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这些纠结配置的，本质还是供应商的问题，但我觉得不应该顾客买单，至少统一显示效果应该是该做的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不应该顾客买单，至少统一显示效果应该是该做的",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6999c2de000000001a02f39f",
+    "opinions": [
+      {
+        "opinion_text": "段永平说苹果售价高出安卓均价一倍，但很难抢到安卓的用户，我很难理解其中原因。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "引用他人观点并表达困惑，无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我自己苹果转安卓，觉得便宜好用。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "觉得便宜好用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但我身边用苹果的朋友，都说下一个手机肯定还是苹果，基本不会考虑安卓。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "下一个手机肯定还是苹果，基本不会考虑安卓",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果优势：拍照，拍视频好看，剪辑也流畅；系统流畅，精致。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统流畅，精致；拍照拍视频好看，剪辑也流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果优势：iCloud同步方便，尤其是有了全家桶之后；没有广告之类乱七八糟的东西；手感好。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iCloud同步方便，没有广告，手感好",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果劣势：信号差，地铁和停车场经常没信号。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "信号差，地铁和停车场经常没信号",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果劣势：电池容量小，充电慢；屏幕看久了眼睛不舒服。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "电池容量小，充电慢；屏幕看久了眼睛不舒服",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果劣势：不能右滑返回，不方便单手操作；添加nfc受限，不能红外遥控调空调。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不能右滑返回，不方便单手操作；添加nfc受限",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我感觉劣势也很明显，在苹果手机显著贵于安卓机的时候，为什么大家还会选择苹果呢？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提出疑问，无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b9580b0000000023004c02",
+    "opinions": [
+      {
+        "opinion_text": "结果是因为我的手机是鸿蒙6系统，然后微信有些功能是不全的，从别人的视角看，甲方是说别的项目的问题，那几个语音不是在说我。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "微信有些功能是不全的，导致工作沟通出现严重误解",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "纯血鸿蒙你就用吧，一用一个不吱声。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "一用一个不吱声，讽刺鸿蒙系统体验差",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69b29b4700000000150231a8",
+    "opinions": [
+      {
+        "opinion_text": "为什么都说MacOS好用啊？对于一个习惯了Windows的人来说，用MacOS简直是折磨，好多操作逻辑都跟Windows相反。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用MacOS简直是折磨",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "都说Macbook可以不用关机，不用了合上电脑屏幕就行，下次开屏即用，但是我Windows的电脑也可以做到不用关机，下次打开直接用啊，也并没有体验到MacOS有多稳定。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "也并没有体验到MacOS有多稳定",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "都说Macbook可以不用关机，不用了合上电脑屏幕就行，下次开屏即用，但是我Windows的电脑也可以做到不用关机。",
+        "brand_target": "其他",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "Windows也可以做到不用关机，下次打开直接用",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "676416f10000000014020561",
+    "opinions": [
+      {
+        "opinion_text": "价格昂贵：苹果手机的价格普遍较高，对于预算有限的用户来说，可能难以承受。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "价格普遍较高，可能难以承受",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "信号差：苹果手机的信号接收能力相对较弱，可能在某些地区或环境下，信号质量不佳。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "信号接收能力相对较弱，信号质量不佳",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电慢：苹果手机的充电速度相对较慢，可能需要较长时间才能充满电。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电速度相对较慢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "功能不完善：苹果手机的功能相对较少，例如不支持应用双开、电话录音、NFC等。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "功能相对较少，不支持应用双开、电话录音、NFC等",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航差：苹果手机的续航能力相对较差，可能需要频繁充电。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "续航能力相对较差，可能需要频繁充电",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "兼容性差：苹果手机的系统相对封闭，与其他设备或应用的兼容性较差。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "系统相对封闭，兼容性较差",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "无法通话录音：苹果手机不支持通话录音功能，对于需要记录通话内容的用户来说，可能不太方便。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "不支持通话录音功能，不太方便",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "信号有时不好：苹果手机的信号质量有时会不稳定，可能会影响通话或网络连接。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "信号质量有时会不稳定，影响通话或网络连接",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d4ec28000000001a02a23f",
+    "opinions": [
+      {
+        "opinion_text": "苹果有一个优势是安卓永远也比不了的，那就是当你犯事的时候，取证比较困难，只要你忘记了密码，乔布斯都脑瓜疼。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "隐私保护强，取证比较困难",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "所以有的单位不让用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "有的单位不让用，暗示隐私过强带来不便",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果有一个优势是安卓永远也比不了的。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "暗示安卓在隐私保护方面不如苹果",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0722920000000036000514",
+    "opinions": [
+      {
+        "opinion_text": "多机器并不是为了跑本地模型，因为本地运行速度较慢，且目前没有极高的隐私安全需求。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "本地运行速度较慢",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "运行本地 Agent 会大量消耗 CPU 和内存。特别是开启浏览器或执行多项命令时，单个 Agent 运行时可能就会占用 2-3GB 内存。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "大量消耗 CPU 和内存",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "多台 Mac mini 的配置与维护会耗费较多精力。低配版机器因系统占用部分内存，实际性价比并不高。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "配置与维护会耗费较多精力，实际性价比并不高",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "低配版（如 16GB 内存）的优势在于设备分散，在无法快速采购的情况下，可以灵活借给同事应急使用。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "可以灵活借给同事应急使用",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "依然建议：搞AI可以有一台mac mini，有预算上大内存。毕竟它可以不关机，24小时帮你执行任务。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "建议搞AI可以有一台mac mini，可以不关机24小时执行任务",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "根据你本地的数据进行关联，这是云端的不可比拟的。因为云端那个如果养龙虾的话，回复速度慢，无法多线程，不稳定。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "本地数据关联是云端不可比拟的，对比云端不稳定",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6a0b00a000000000070213ea",
+    "opinions": [
+      {
+        "opinion_text": "一直很好奇苹果手机真的像网上说的可以用四五年都不卡吗，真的不是吹出来吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提出疑问，质疑iPhone能用四五年的说法",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "她说她iPhone用了快四年，除了电池不太行，其他流畅得没理由买新机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "用了快四年，其他流畅得没理由买新机",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "可是既然能用三四年，为啥每年iPhone销量还这么高呀？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提出疑问，无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a09fa8000000000350232f4",
+    "opinions": [
+      {
+        "opinion_text": "苹果自带测步伐稳定性蛮准的。2月底手术后疼痛和穿支具，走路比较瘸，稳定性突降为低。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "测步伐稳定性蛮准的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "3月中到4月中稳定性开始提升，确实是3月中刀口不肿后，加上康复，突然就一天比一天好很多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "记录数据与实际康复情况吻合",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "4月中开始拆支具，继续康复，稳定性也越来越好。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "稳定性也越来越好，数据记录准确",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69230280000000001e00d27c",
+    "opinions": [
+      {
+        "opinion_text": "新买的17promax，激活第二天就频繁关机重启，刷抖音多次卡死在页面里出不去。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "频繁关机重启，刷抖音多次卡死在页面里出不去",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果检测系统稳定性未通过，建议退货或换货。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统稳定性未通过",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "京东收到后检测了两天说手机没有问题，原路返回，让我刷机重做一下系统。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "售后处理不当，问题未解决",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a0fea710000000008033eee",
+    "opinions": [
+      {
+        "opinion_text": "一直很依赖macOS 和iPhone 之间的接力功能，但这个不太稳定，经常不能用，很恶心，多少版本了一直都有。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "不太稳定，经常不能用，很恶心，多少版本了一直都有",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "699baf40000000001b01542f",
+    "opinions": [
+      {
+        "opinion_text": "苹果健康倒是用一些小的数据来帮我完成了record人生波动时刻，就，蛮有趣的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "帮我完成了record人生波动时刻，蛮有趣的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "行走稳定性里默默记录了我从圣诞节开始的右脚跟骨骨折到近期逐渐恢复原状。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "默默记录了骨折恢复过程，数据准确",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "695b5c2d000000001a02847d",
+    "opinions": [
+      {
+        "opinion_text": "我用着15 Pro Max，我认为手感挺好的，耐刮耐造。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感挺好的，耐刮耐造",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "13系列不锈钢手感就比较硌手，重。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手感就比较硌手，重",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "听说17系列采用的铝合金不耐跌，带壳跌落都会有磕碰，是真的吗？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "听说铝合金不耐跌，带壳跌落都会有磕碰",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69d7c68200000000220028c0",
+    "opinions": [
+      {
+        "opinion_text": "原来，保持锻炼，腿腿慢慢变好，除了自己的关注，iwatch也在偷偷记录。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iWatch也在偷偷记录康复过程，有陪伴感",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从非常低到低，iWatch也看到了我的努力。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "iWatch也看到了我的努力，记录康复进步",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

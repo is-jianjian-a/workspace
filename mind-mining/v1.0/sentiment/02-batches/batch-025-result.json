@@ -1,0 +1,662 @@
+[
+  {
+    "note_id": "6a0739880000000036000821",
+    "opinions": [
+      {
+        "opinion_text": "本来一直在纠结要等ipad mini新版还是等华为matepadmini 2出来再做决定，还是为这个价格激情下单了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "为这个价格激情下单了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第一次买平板，不考虑芯片续航啥的，不打游戏，单纯刷抖音看短剧，这个尺寸应该蛮爽的吧！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这个尺寸应该蛮爽的",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "目前体验很棒，还处于摸索中，之前一直用的苹果。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "目前体验很棒",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "唯一的槽点是出厂自带膜，那个自带膜手感很差，还不好扣下来！扣了好久才扣下来换买的新膜，新膜丝滑多了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "出厂自带膜手感很差，还不好扣下来",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69a8da46000000002602fc28",
+    "opinions": [
+      {
+        "opinion_text": "左手戴的华为GT5，右手戴的苹果SE，图中是检测数据，睡眠时间倒是差不多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "睡眠时间倒是差不多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果分的更细，但是深度睡眠居然差那么多，华为深度睡眠是2小时39分，苹果居然只有41分钟，差了近两个小时！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果深度睡眠居然只有41分钟，差了近两个小时",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果分的更细，但是深度睡眠居然差那么多，华为深度睡眠是2小时39分，苹果居然只有41分钟，差了近两个小时！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为深度睡眠是2小时39分",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "668e6cf40000000003025462",
+    "opinions": [
+      {
+        "opinion_text": "华为MATE40换手机苹果15Pro Max，使用习惯什么的都能克服，苹果手感不错，非常流畅。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果手感不错，非常流畅",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "万万没想到，苹果15pm的屏幕也太废眼睛了吧，看了就眼球发胀，眼睛发酸，实在受不了了，怒亏五百卖掉了，就激活用了一天。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "屏幕也太废眼睛了吧，看了就眼球发胀，眼睛发酸，怒亏五百卖掉了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "697b3c13000000000c035438",
+    "opinions": [
+      {
+        "opinion_text": "上次发了一条深度睡眠三小时的华为手表监测的睡眠数据，不少网友说苹果手表与华为手表测出来的差距很大，于是主包昨晚借了朋友的苹果手表，左手苹果手表，右手华为手表同时监测。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "借了朋友的苹果手表同时监测",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "早上醒来第一时间看苹果手表，监测到的总睡眠时长8小时22分，其中深度睡眠59分钟。再用手机看了华为的数据，以为我晚上9点就开始睡觉了，实则我9到10点爬上床玩了一个小时手机。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果把晚上9-10点玩手机的时段也错误记录为睡眠",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "再点开苹果健康后，苹果就像考试发现旁边的人多做了一道题于是把晚上9-10点也无脑抄上去了，但是后面的深度睡眠数据没有变。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果把晚上9-10点也无脑抄上去了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果记录的三段深度睡觉与华为的基本重合。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果记录的三段深度睡觉与华为的基本重合",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对我来说八小时的睡眠，华为监测到3小时深度睡眠，苹果监测到1小时深度睡眠，已有相关研究表明苹果手表的深度睡眠偏低，华为的虚高。",
+        "brand_target": "华为",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "华为监测到3小时深度睡眠（正向），但已有研究表明华为的虚高（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "对我来说八小时的睡眠，华为监测到3小时深度睡眠，苹果监测到1小时深度睡眠，已有相关研究表明苹果手表的深度睡眠偏低，华为的虚高。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "苹果监测到1小时深度睡眠（负向），但已有研究表明苹果手表的深度睡眠偏低（客观说明）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "查阅了相关的研究，发现和专业PSG相比，苹果的会低估深度睡眠时间（平均43分钟）和高估核心睡眠/浅睡眠的时间（平均45分钟）所以不同品牌手表的算法不同，所以数据没有可比性。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "苹果的会低估深度睡眠时间，不同品牌手表的算法不同，数据没有可比性",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a08642a000000000602205c",
+    "opinions": [
+      {
+        "opinion_text": "华为pura80ultra里面的细节都拍的清清楚楚，放大看也很好看！",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "细节都拍的清清楚楚，放大看也很好看",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone17promax放大看糊成一坨了，下面树的颜色也不如华为的鲜艳颜色好看，这波华为赢麻了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "放大看糊成一坨了，颜色也不如华为的鲜艳",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69c906290000000023016f2f",
+    "opinions": [
+      {
+        "opinion_text": "车机联动：特斯拉手机钥匙识别率极高，彻底告别App手动解锁。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "识别率极高，彻底告别App手动解锁",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "散热进化：散热改善巨大，重度游戏不降亮度、不掉帧。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "散热改善巨大，重度游戏不降亮度、不掉帧",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "续航表现：优于华为Pura，持平OPPO X8。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "优于华为Pura，持平OPPO X8",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航表现：优于华为Pura，持平OPPO X8。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "iPhone 17 Pro续航优于华为Pura",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "系统生态：生态优秀，系统极度稳定，（对比安卓的莫名小bug和鸿蒙现在的不成熟）视频拍摄能力依然保持领先。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "生态优秀，系统极度稳定，视频拍摄能力依然保持领先",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统生态：生态优秀，系统极度稳定，（对比安卓的莫名小bug和鸿蒙现在的不成熟）视频拍摄能力依然保持领先。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "安卓的莫名小bug",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "系统生态：生态优秀，系统极度稳定，（对比安卓的莫名小bug和鸿蒙现在的不成熟）视频拍摄能力依然保持领先。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "鸿蒙现在的不成熟",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "功能缺失：依然不支持双开、分屏、陌生号码智能识别。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "依然不支持双开、分屏、陌生号码智能识别",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照水平：静态成像优势不再，已被安卓第一梯队超越。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "静态成像优势不再，已被安卓第一梯队超越",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "充电效率：充电速度较慢，尤其是80%后的涓流充电。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "充电速度较慢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "单卡使用情况下，信号表现稳定，并未遇到网络传言的信号差问题。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "信号表现稳定，并未遇到网络传言的信号差问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone 17 Pro依然是那个稳定、高性能的选择，但如果你深度依赖安卓的便捷功能，入坑前需三思。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "依然是那个稳定、高性能的选择",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6936f425000000001e01206c",
+    "opinions": [
+      {
+        "opinion_text": "今天刷抖，出现两次了，有没有一样的啊啥情况。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "刷短视频出现曝光问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6972bab3000000001a01e528",
+    "opinions": [
+      {
+        "opinion_text": "这次我听取了评论区的意见，在睡觉前把华为设置为了睡眠模式，然后右手戴华为，左手戴苹果，松紧度几乎一致。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "设置华为为睡眠模式进行测试",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次两家的监测的都与我的体感类似，中途确实在5点钟左右、5:30左右醒过一次，总的来说这次两家都监测的差不多。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "两家都监测的差不多",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "这次两家的监测的都与我的体感类似，中途确实在5点钟左右、5:30左右醒过一次，总的来说这次两家都监测的差不多。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "两家都监测的差不多",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "66f62b08000000002a0308e2",
+    "opinions": [
+      {
+        "opinion_text": "从iPhone 15 Pro换成了iPhone 16，在使用了一段时间后，我来和你分享我的得与失。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "分享得与失",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "高刷，从Pro版换到基础款最明显的感知就是手机有点「卡卡」的，因为你的刷新率降低了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "手机有点「卡卡」的，刷新率降低了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "混音，这也许是这次换到iPhone 16最我兴奋的功能点吧，当我在给朋友展示这项功能的时候，朋友们都说以后拍视频很大程度上不再需要外接麦克风了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "最我兴奋的功能点，以后拍视频很大程度上不再需要外接麦克风",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "空间音频，这代基础款因为改变了摄像头排布之后，也支持了空间视频的拍摄，虽然只是1080P分辨率，但是所带来的沉浸感只有亲自体验了才知道。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "所带来的沉浸感只有亲自体验了才知道",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "相机键，这次在外观上的另一大不同吧，不过在目前实际的体验上确实不是很理想，触控位置离手指就比较远，需要换手姿才行，其次就是需要一定的学习成本来适应操作，并且滑动过程中的流畅度也欠缺。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "实际的体验上确实不是很理想，滑动过程中的流畅度也欠缺",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "最后说一说自己为什么从Pro系列换到数字系列，最主要的原因就是现在使用的频率不高了，基本上iPhone就是用来处理工作，另一个原因就是生态，所以今年换数字款，并且重量也更轻了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "重量也更轻了，生态原因",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f413c60000000022029171",
+    "opinions": [
+      {
+        "opinion_text": "用了一周华为，不要去看网上哪些说什么鸿蒙系统这不好那不好的帖子，我最开始也担心从安卓系统换过来害怕不好用，结果用了下来，这担心多余了，系统真的不错。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "这担心多余了，系统真的不错",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "要说缺点，现在就发现一个，手机铃声和信息通知音量调节在一块，如果能分开就好了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "手机铃声和信息通知音量调节在一块",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690373e7000000000301dde7",
+    "opinions": [
+      {
+        "opinion_text": "之前是用了10年左右的苹果，最后一代是苹果13，才用了两三年就开始卡顿，以前的6s用了五六年一点不卡啊，实在受不了换了华为pura70。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "才用了两三年就开始卡顿，实在受不了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "也是第一次用华为，没想到从苹果换到华为带来蛮多的惊喜，新机感比较强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "带来蛮多的惊喜，新机感比较强",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为手机优点也很多，系统流畅，信号确实好，拍照放大倍数也清晰，功能啥的齐全好用，比如地铁闸往上一放就能刷，不用扫码。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统流畅，信号确实好，拍照放大倍数也清晰，功能齐全好用",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "我最不能接受的两个缺点：全民k歌录歌效果不太行，换苹果耳机不兼容，想过很多办法还是无法解决。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "全民k歌录歌效果不太行，换苹果耳机不兼容",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍视频也让人挺难受，就是几乎不太愿意录视频了，自拍的时候会自动给我戴美瞳的感觉（非人像模式），拍出来的效果我个人是不喜欢的，但是后摄还可以。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "拍视频也让人挺难受，自拍效果不喜欢",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "现在换了苹果17pro，谁知道新机还在下载各种软件，导入信息文件，就感觉到了卡顿，我也是官网买的啊，不管怎么说，新机子不应该有点卡顿。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "新机还在下载各种软件就感觉到卡顿，新机子不应该有点卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "而且系统真没有华为的流畅，没用到两小时，心里莫名失落，甚至有点后悔！和我的华为价格相差4000块，真是没啥性价比。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "系统真没有华为的流畅，心里莫名失落，甚至有点后悔，没啥性价比",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "和我的华为价格相差4000块，真是没啥性价比，也就为了全民k歌，录视频和长焦。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "价格相差4000块，华为性价比更高",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6895cb9100000000230184dc",
+    "opinions": [
+      {
+        "opinion_text": "2年不到，机器卡到离谱，游戏不能玩，直播不能看，一看就手机发烫，最尴尬的是买东西排队打开支付宝要几十秒，真是离谱至极！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "机器卡到离谱，游戏不能玩，直播不能看，打开支付宝要几十秒，离谱至极",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "最近微信语音也是随缘才能听到声音。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "微信语音也是随缘才能听到声音",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "一万多的价格是至今买过最贵的一个手机也是用的时间最短的一个。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "一万多的价格，用的时间最短",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "当初一句遥遥领先属于中国人自己的鸿蒙系统我热血支持，结果被上了一课。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "热血支持，结果被上了一课",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67e75caa000000001e004659",
+    "opinions": [
+      {
+        "opinion_text": "本人手机史:三星3年—苹果3年—华为几个月，用下来的感受华为最烦！以后再也不会用华为手机了，谁爱用谁用。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "华为最烦！以后再也不会用华为手机了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "最让人受不了的是:手机拍下的视频，我想把它删剪一段，操作不了，必须再下载一个“花瓣**”才能操作，捆绑？苹果手机不需要，可以直接剪辑。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "操作不了，必须再下载一个app才能操作，捆绑",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在使用微信发送消息时，键盘的发送键会消失！导致我码好消息以后没办法发送出去！而且不是一次两次，出现过好几次，非常着急上火。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "键盘的发送键会消失，出现过好几次，非常着急上火",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为运动健康里面可以记录经期，但是它必须得再下载一个什么安装包才能记录，而且华为推测的时间不准！苹果手机根本不需要，而且智能很多！！！会记录下我的周期，推测的时间也很准！！",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "必须得再下载安装包才能记录，推测的时间不准",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "华为运动健康里面可以记录经期，但是它必须得再下载一个什么安装包才能记录，而且华为推测的时间不准！苹果手机根本不需要，而且智能很多！！！会记录下我的周期，推测的时间也很准！！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "苹果手机根本不需要，而且智能很多，推测的时间也很准",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "在和家人视频的时候，经常听到自己讲话的回声！真的很抓狂，甚至家人也能听到两次我说的话，烦死了。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "经常听到自己讲话的回声，真的很抓狂，烦死了",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "我的新手机啊，使用不足半年，从来不玩游戏，只用来聊天和追剧的手机，动不动就卡顿！！已经很多次了，非常着急上火。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "使用不足半年，动不动就卡顿，非常着急上火",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果除了信号会有延迟，使用感真的没话说！",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "使用感真的没话说",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "三星也好用，即使用到后面电池不咋行了，但是很少卡顿！！",
+        "brand_target": "三星",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "三星也好用，很少卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "672a9179000000001b028490",
+    "opinions": [
+      {
+        "opinion_text": "这是干什么，OPPO也太卡了吧，以后不会买这个牌子了。",
+        "brand_target": "OPPO",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "OPPO也太卡了吧，以后不会买这个牌子了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "698463f2000000000e00fb9f",
+    "opinions": [
+      {
+        "opinion_text": "给我看懵了，一直看到说iPhone用五六年都不卡，但又加了[doge]，这是在玩梗还是说实话啊？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "提问iPhone用五六年都不卡是真是假，表达困惑",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

@@ -1,0 +1,383 @@
+[
+  {
+    "note_id": "6939419e000000001e0294ae",
+    "opinions": [
+      {
+        "opinion_text": "华为打字很卡，双十一新买的华为p70peo，最近不知道为什么有时候打字延迟很重",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "打字很卡、打字延迟很重",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69245574000000001e0378d6",
+    "opinions": [
+      {
+        "opinion_text": "手机是华为P70，听说纯血有很多bug不敢升级还停留在4.2想等它再完善一点再升",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "听说纯血有很多bug不敢升级",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "之前都用的没什么感觉但这几天突然变得超级卡，切换应用界面都是卡顿的，有时候必须得退出去重新进入app",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "突然变得超级卡、切换应用界面都是卡顿的",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "还重启了一下手机依旧卡，今天删除三张照片，试了好几遍一直是这样子，反正就删不掉一直在加载",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "重启了一下手机依旧卡、删不掉一直在加载",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "用微信的时候也是返回或者切换界面都超级卡，真的严重的有点受不了了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "返回或者切换界面都超级卡、严重的有点受不了了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e4fb19000000002301da81",
+    "opinions": [
+      {
+        "opinion_text": "今晚华为的淘宝卡爆了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "淘宝卡爆了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "搜了一下，发现近期也有好多小伙伴淘宝很卡的不知道是不是软件有问题了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "好多小伙伴淘宝很卡",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "67e6900f000000001c02b546",
+    "opinions": [
+      {
+        "opinion_text": "华为手机投屏为啥会卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "投屏会卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6971f763000000000b0102ce",
+    "opinions": [
+      {
+        "opinion_text": "你们的mate60开始卡了吗，我要被卡到社死了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "被卡到社死了",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6895a5a400000000230224d1",
+    "opinions": [
+      {
+        "opinion_text": "华为旧手机不要更新系统！昨晚自动更新了系统，今天卡成ppt了，各种问题不断",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡成ppt了、各种问题不断",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "逼着我换新机啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "逼着我换新机",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69423eb6000000001f0042ff",
+    "opinions": [
+      {
+        "opinion_text": "用了三年多的mate 40 pro，突然就卡爆了，干啥都卡，任何软件进行操作都卡，着急时候就卡死了，半天才反应过来",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "突然就卡爆了、干啥都卡、卡死了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "内存没满，没毒，没垃圾软件，有一天晚上没电关机了，再开机就这样了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "排除其他原因后仍卡顿，暗示系统或硬件问题",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "67dd343e000000001c001536",
+    "opinions": [
+      {
+        "opinion_text": "从大学就开始一直用华为，最开始是p9，后来换了mate9pro，用了四年，觉得还不错，只是电池不行了",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "觉得还不错",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "买了mate40 pro，当时很火，加价买的，用着也还可以",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "用着也还可以",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "但用了两年左右吧，可能因为内存不够了，也开始卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "也开始卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "就在去年冬天换了60pro，以为512g的总该够了，不会再卡了，结果内存只用了252左右，就卡到爆",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "就卡到爆",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去华为店铺问销售，销售说他的也是60，也卡。我说那是怎么回事，他说系统的事儿，用着吧",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "销售承认也卡、系统的事儿",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "好好好，再也不会再买了。太无语了。微信卡顿极其严重，别的软件也延迟。使用感极差",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "再也不会再买了、太无语了、微信卡顿极其严重、使用感极差",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69e49dfc000000001a0339d0",
+    "opinions": [
+      {
+        "opinion_text": "华为pura80pro怎么这么卡！买的第一天就白屏，后面更是卡成狗，玩代号鸢合成小游戏都卡",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "怎么这么卡、卡成狗、玩小游戏都卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "没救了！还不如我用了3年的旧手机",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "没救了、还不如旧手机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "真的不想一遍遍的跑了，好烦好烦好烦",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "好烦好烦好烦",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "685e9a10000000000d024b4c",
+    "opinions": [
+      {
+        "opinion_text": "华为matex5马上用了一年了。卡死了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "卡死了",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "有什么办法不卡吗？或者有没有不卡的折叠屏",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "寻求不卡的办法或替代产品，暗示对当前产品失望",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "692027bb000000001e038ae4",
+    "opinions": [
+      {
+        "opinion_text": "华为p80pro纯血鸿蒙为什么感觉有时候卡卡的，有没有同款手机的用户",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉有时候卡卡的",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "683038520000000012001aa2",
+    "opinions": [
+      {
+        "opinion_text": "最近大家是不是用华为m40pro有莫名其妙卡顿的举手，真的很奇怪，以前都不会这样的",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "莫名其妙卡顿、真的很奇怪",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "去了第一家官方修理，说是主板问题，叫我换机",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "主板问题、叫我换机",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "第二家更直接，说内存不足，内存多大才够呢，总有天会满吧，清理了也是一个有时莫名其妙的卡顿",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "清理了也是一个有时莫名其妙的卡顿",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f1902b000000002003a8f8",
+    "opinions": [
+      {
+        "opinion_text": "你们的华为mate80pro信号好不好啊？我买了几天快崩溃了，无线网都能卡住，网络不可用",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "快崩溃了、无线网都能卡住、网络不可用",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "这个遥遥领先受不了了",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "受不了了",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68baebaa000000001d008cbb",
+    "opinions": [
+      {
+        "opinion_text": "为什么华为P80的手机用了20多天，感觉越来越卡呢",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "感觉越来越卡",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69ba5cef000000002300445c",
+    "opinions": [
+      {
+        "opinion_text": "这两天刷抖音小红书微博都出现了不同程度的卡顿是咋回事啊！加载不出视频",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "出现了不同程度的卡顿、加载不出视频",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "是我手机鸿蒙新系统的问题还是安卓系统也这样啊",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "质疑鸿蒙新系统问题",
+        "confidence": "中",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "是我手机鸿蒙新系统的问题还是安卓系统也这样啊",
+        "brand_target": "安卓",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "询问安卓系统是否也有同样问题，无明确褒贬",
+        "confidence": "中",
+        "is_fluency_related": true
+      }
+    ]
+  }
+]

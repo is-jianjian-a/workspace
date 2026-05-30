@@ -1,0 +1,486 @@
+import json
+
+# Read input
+with open('remaining-batch9-input.json', 'r', encoding='utf-8') as f:
+    posts = json.load(f)
+
+opinions = []
+idx = 0
+
+for post in posts:
+    note_id = post['note_id']
+    title = post['title']
+    content = post['content']
+    full_text = title + '\n' + content
+    liked_count = post['liked_count']
+    comment_count = post['comment_count']
+    source_keyword = post['source_keyword']
+
+    op_idx = 0
+
+    # Post 155: 鸿蒙5和鸿蒙6区别讨论 - 提问型，无明确品牌情感
+    if post['id'] == 155:
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '鸿蒙5和鸿蒙6到底有哪些区别？在手机的操作上，鸿蒙6上也开放了蛮多权限的',
+            'brand_target': '华为',
+            'sentiment_polarity': '中性',
+            'sentiment_intensity': '弱',
+            'sentiment_reason': '用户只是提问询问鸿蒙5和鸿蒙6的区别以及鸿蒙6的操作权限体验，没有表达正面或负面的情感倾向，属于信息寻求型内容。原文："鸿蒙5和鸿蒙6到底有哪些区别？另外在手机的操作上，鸿蒙6上也开放了蛮多权限的，大家体验下来感觉怎么样呢？"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+    # Post 156: iPhone17 vs Mate80选择讨论
+    elif post['id'] == 156:
+        # Opinion about Apple
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': 'iPhone17是更新换代牙膏挤爆，2nm处理器A19Pro+iOS丝滑流畅且录像无敌',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"丝滑流畅""录像无敌"等强烈正面词汇描述iPhone17，"牙膏挤爆"虽有调侃意味但整体是对性能大幅提升的正面评价。原文："一个是更新换代牙膏挤爆，2nm处理器A19Pro+iOS丝滑流畅且录像无敌的iPhone17"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+        # Opinion about Huawei
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': 'mate80集国内大成，鸿蒙系统、麒麟芯片全栈自研，外加有红枫镜头卫星通信等黑科技',
+            'brand_target': '华为',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"集国内大成""全栈自研""黑科技"等高度正面词汇描述mate80，表达了对其技术实力的认可。原文："一个是集国内大成，鸿蒙系统、麒麟芯片全栈自研，外加有红枫镜头卫星通信等黑科技的mate80"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 157: 苹果拍照vs华为拍照对比
+    elif post['id'] == 157:
+        # Opinion about Apple - strongly positive
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '苹果对光的捕捉和色彩的还原度完胜，5倍焦距拍出来的效果也并不拉垮，逆光情况下对细节的展现要优秀很多，live图让图片更加生动立体，自带图片编辑功能也很强大',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"完胜""优秀很多""强大""好用"等强烈正面词汇评价苹果拍照，标题直接说"苹果拍照真的赢啊"，整体情感非常正面。原文："苹果对光的捕捉和色彩的还原度完胜✅""苹果5倍焦距拍出来的效果也并不拉垮，而且在逆光情况下，苹果对细节的展现要优秀很多👍""该说不说：苹果自带的图片编辑功能也很强大...它是真的好用🫶🏻！"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Huawei - mixed/negative
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '华为mate30 pro用久了，和苹果15pm对比难免不公平，华为live图时长短而且上传到网络后会丢失，真的遗憾',
+            'brand_target': '华为',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者虽然提到机型老旧对比不公平，但明确指出华为live图"时长短""上传到网络后会丢失""真的遗憾"，表达了对华为拍照功能不足的负面感受。原文："虽然华为也有，但时长短而且上传到网络后会丢失，真的遗憾！"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 158: 为什么不直接用苹果？
+    elif post['id'] == 158:
+        # Opinion about Apple
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '安卓新手机无论是外观还是系统内在，体验什么的都很像苹果，系统与苹果深度互联，果里果气的',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者指出安卓手机在模仿苹果，"果里果气的"暗示苹果是行业标杆和被模仿的对象，间接表达了对苹果设计/体验的认可。原文："据说接下来的安卓新手机无论是外观还是系统内在，体验什么的都很像苹果，系统与苹果深度互联，果里果气的"',
+            'confidence': '中',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+        # Opinion about Android
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '安卓有自己独特的优势，大电池、好的影像、好的游戏体验等等',
+            'brand_target': '安卓',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者明确肯定了安卓相对于苹果的独特优势，"大电池""好的影像""好的游戏体验"都是正面评价。原文："那为什么不直接用苹果用iPhone呢？还不是安卓有自己独特的优势，大电池、好的影像、好的游戏体验等等..."',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+    # Post 159: 用了十个月的华为我还是换回苹果了
+    elif post['id'] == 159:
+        # Opinion about Apple - positive
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '还是喜欢苹果的皮肤质感',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者明确表达"喜欢苹果的皮肤质感"，"喜欢"是直接的正面情感词，且因为这一原因从华为换回苹果。原文："根本接受不了华为的哑光肤效根本不自拍！还是喜欢苹果的皮肤质感"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Huawei - negative
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '根本接受不了华为的哑光肤效，根本不自拍',
+            'brand_target': '华为',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"根本接受不了"这种强烈否定表达，明确指出华为自拍"哑光肤效"是自己放弃华为、换回苹果的原因。原文："根本接受不了华为的哑光肤效根本不自拍！"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Huawei - positive (拍景)
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '但是华为拍景是不错的',
+            'brand_target': '华为',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '弱',
+            'sentiment_reason': '作者在批评华为自拍的同时，也客观肯定了华为拍景的表现"不错"，这是微弱的正面评价。原文："但是华为拍景是不错的"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 160: 华为发热严重吐槽
+    elif post['id'] == 160:
+        # Opinion about Huawei - strongly negative
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '用华为自带的相机晚上室内拍照10几张，温度直接飙到39°，白天室外导航五分钟温度41°华为都认为是正常的，12000的都这样了',
+            'brand_target': '华为',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"温度直接飙到""奉劝大家""斟酌"等强烈负面表达，详细描述了华为手机严重发热问题（拍照10几张39°、导航5分钟41°），且对华为客服态度不满，情感非常负面。原文："用华为自带的相机晚上室内拍照10几张，温度直接飙到39°""白天室外导航五分钟温度41°华为都认为是正常的""奉劝大家买的时候斟酌一下吧，毕竟12000的都这样了"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+        # Opinion about Apple - positive (implied)
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '爱国买华为，爱自己买苹果',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者通过对比"爱国买华为，爱自己买苹果"，暗示苹果在用户体验上更好、更值得为自己选择，这是对苹果的间接正面评价。原文："爱国买华为，爱自己买苹果"',
+            'confidence': '中',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 161: 选Mate80还是Pura90？
+    elif post['id'] == 161:
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': 'Pura90Pro刚发布，主打影像拍照，且降低起售价了；Mate80Pro拥有3D人脸，旗舰定位配置，但贵上500',
+            'brand_target': '华为',
+            'sentiment_polarity': '中性',
+            'sentiment_intensity': '弱',
+            'sentiment_reason': '作者只是在客观描述两款华为手机的配置差异和价格对比，寻求购买建议，没有表达明显的正面或负面情感倾向。原文："一边是刚发布，主打影像拍照，且降低起售价了的Pura90Pro；一边是拥有3D人脸，旗舰定位配置，但贵上500的Mate80Pro"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 162: 苹果256G vs 安卓256G
+    elif post['id'] == 162:
+        # Opinion about Apple
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '日常软件使用方面，苹果的软件缓存垃圾会比安卓少一点，苹果256G真的比安卓256G耐用',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者认为苹果在存储耐用性上优于安卓，"缓存垃圾会比安卓少一点"是对苹果存储管理效率的正面评价，标题直接说"苹果256G真的比安卓256G耐用"。原文："虽然苹果应用安装包大小普遍比安卓应用安装包大，但是苹果的软件缓存垃圾会比安卓少一点"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Apple - negative (录视频)
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '如果单纯录视频的话，苹果没有安卓耐用，一旦开4K录视频，那简直就是烧内存',
+            'brand_target': '苹果',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者明确指出苹果在录视频场景下的劣势，"没有安卓耐用""简直就是烧内存"表达了对苹果视频录制占用空间过大的负面评价。原文："如果单纯录视频的话，苹果没有安卓耐用，一旦开4K录视频，那简直就是烧内存"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Android
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '录视频方面，安卓比苹果耐用，开4K录视频不会像苹果那样烧内存',
+            'brand_target': '安卓',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者认为安卓在录视频场景下比苹果更耐用，不会因为4K录制而快速消耗存储空间，这是对安卓存储效率的正面评价。原文："如果单纯录视频的话，苹果没有安卓耐用，一旦开4K录视频，那简直就是烧内存"（从安卓角度解读）',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Android - negative
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '日常软件使用方面，安卓的软件缓存垃圾比苹果多，同样环境下使用一段时间后安卓占用存储更多',
+            'brand_target': '安卓',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者指出安卓在日常软件使用中缓存垃圾更多，存储耐用性不如苹果，这是对安卓存储管理的负面评价。原文："虽然苹果应用安装包大小普遍比安卓应用安装包大，但是苹果的软件缓存垃圾会比安卓少一点"（从安卓角度解读）',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 163: mate80发烫掉电问题
+    elif post['id'] == 163:
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': 'mate80今天下午很烫，飞速掉电，电量卡在31充了很久都不动，半个多小时充了不到20%，售后说使用没问题',
+            'brand_target': '华为',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者详细描述了mate80的严重问题：发烫、飞速掉电、充电极慢，且售后未能解决问题，"逐渐60化"暗示问题与mate60类似，整体情感非常负面。原文："今天下午我的mate80就很烫，飞速掉电！""电量卡在31，充了很久都不动""半个多小时充了不到20%""反馈说：使用没问题"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+        # Positive about mate60's smoothness
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '之前的mate60升级了鸿蒙6其实挺丝滑',
+            'brand_target': '华为',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者在吐槽mate80问题的同时，肯定了mate60升级鸿蒙6后的流畅体验，"挺丝滑"是正面评价。原文："之前的mate60升级了鸿蒙6其实挺丝滑"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': True
+        })
+        op_idx += 1
+
+        # Positive about mate80 battery (initially)
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '换了80觉得最大的提升就是电池续航，早上充满出门上班，到下班可能还有30+',
+            'brand_target': '华为',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '中',
+            'sentiment_reason': '作者最初对mate80的电池续航表示满意，"最大的提升""早上充满...到下班可能还有30+"是正面评价，但后续出现了负面问题。原文："换了80觉得最大的提升就是电池续航，早上充满出门上班，到下班可能还有30+"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    # Post 164: 华为滤镜重吐槽
+    elif post['id'] == 164:
+        # Opinion about Huawei - negative
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '华为这个饱和度太夸张了，感觉好像注水猪肉，华为的算法还是不够稳定，即使红枫镜头加持在"真实还原"这方面华为还是不敌苹果',
+            'brand_target': '华为',
+            'sentiment_polarity': '负向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"太夸张了""注水猪肉""不够稳定""不敌苹果"等强烈负面词汇批评华为拍照，标题直接说"华为滤镜这么重，到底是谁在喜欢"，情感非常负面。原文："华为这个饱和度太夸张了，感觉好像注水猪肉，这谁敢吃""华为的算法还是不够稳定，即使红枫镜头加持在"真实还原"这方面华为还是不敌苹果"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+        # Opinion about Apple - positive
+        opinions.append({
+            'opinion_id': f'rb9_{idx}_{op_idx}',
+            'note_id': note_id,
+            'title': title,
+            'source_keyword': source_keyword,
+            'liked_count': liked_count,
+            'comment_count': comment_count,
+            'opinion_text': '苹果这张拍出来偏暗的一些，但定格的时候会比live图动起来的瞬间要亮要清晰，在写实方面果子还是没有对手',
+            'brand_target': '苹果',
+            'sentiment_polarity': '正向',
+            'sentiment_intensity': '强',
+            'sentiment_reason': '作者用"没有对手"这一最高级评价肯定苹果在写实方面的优势，"要亮要清晰"也是正面描述。原文："在写实方面果子还是没有对手"',
+            'confidence': '高',
+            'full_title': title,
+            'full_content': content,
+            'is_fluency_related': False
+        })
+        op_idx += 1
+
+    idx += 1
+
+# Write output
+with open('remaining-batch9-result.json', 'w', encoding='utf-8') as f:
+    json.dump(opinions, f, ensure_ascii=False, indent=2)
+
+print(f'Processed {len(posts)} posts, extracted {len(opinions)} opinions')
+for op in opinions:
+    print(f"  {op['opinion_id']}: {op['brand_target']} - {op['sentiment_polarity']} ({op['sentiment_intensity']})")

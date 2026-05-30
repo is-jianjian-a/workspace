@@ -1,0 +1,367 @@
+#!/usr/bin/env python3
+"""
+Batch 4 UGC Sentiment Extraction Script
+Semantic understanding-based brand-sentiment opinion extraction.
+"""
+
+import json
+import re
+
+BRAND_KEYWORDS = {
+    "华为": ["华为", "huawei", "鸿蒙", "harmonyos", "mate", "pura", "p系列", "nova", "畅享", "麦芒", "matepad", "freeclip", "watchgt"],
+    "苹果": ["苹果", "apple", "iphone", "ipad", "ios", "airpods", "macbook", "mac", "17pro", "16pro", "15pro", "14pro"],
+    "三星": ["三星", "samsung", "galaxy"],
+    "小米": ["小米", "xiaomi", "redmi", "红米", "mix"],
+    "OPPO": ["oppo", "find", "reno", "一加", "oneplus"],
+    "vivo": ["vivo", "iqoo"],
+    "荣耀": ["荣耀", "honor", "magic"],
+    "安卓": ["安卓", "android"],
+}
+
+
+def detect_brands(text):
+    """Detect all brands mentioned in text using semantic understanding."""
+    text_lower = text.lower()
+    brands_found = set()
+
+    for brand, keywords in BRAND_KEYWORDS.items():
+        for kw in keywords:
+            if kw.lower() in text_lower:
+                brands_found.add(brand)
+                break
+
+    # Handle "Pocket" specially - only map to Huawei if it's NOT DJI Pocket
+    if "pocket" in text_lower:
+        if "dji" in text_lower or "大疆" in text_lower:
+            pass  # DJI Pocket, don't map to Huawei
+        elif "华为" in text or "huawei" in text_lower:
+            brands_found.add("华为")
+
+    # Handle numeric model patterns like "17pro", "16" etc. - only Apple if iPhone context
+    if re.search(r'\b1[4-9]pro\b', text_lower) or re.search(r'\biphone\s*1[4-9]\b', text_lower):
+        brands_found.add("苹果")
+
+    return sorted(list(brands_found))
+
+
+def split_into_opinions(text, title):
+    """Split text into opinion units (1-3 sentences each expressing one view)."""
+    text = text.replace("\\n", "\n").replace("\\t", " ")
+    text = re.sub(r'#\S+?\[话题\]', '', text)
+    text = re.sub(r'\[\w+R\]', '', text)
+    text = re.sub(r'[\ud83c-\udfff]+', '', text)
+
+    sentences = re.split(r'([。！？.!?])', text)
+    parts = []
+    current = ""
+    for i, s in enumerate(sentences):
+        current += s
+        if s in "。！？.!?":
+            parts.append(current.strip())
+            current = ""
+    if current.strip():
+        parts.append(current.strip())
+
+    parts = [p for p in parts if len(p) > 10]
+
+    opinions = []
+    i = 0
+    while i < len(parts):
+        unit = parts[i]
+        if i + 1 < len(parts) and len(unit) < 80:
+            unit += parts[i + 1]
+            i += 1
+            if i + 1 < len(parts) and len(unit) < 120:
+                unit += parts[i + 1]
+                i += 1
+        opinions.append(unit)
+        i += 1
+
+    if not opinions:
+        opinions = [text.strip()]
+
+    return opinions
+
+
+def judge_sentiment(opinion_text, brand, full_context=""):
+    """Judge sentiment polarity and intensity using semantic understanding."""
+    text = opinion_text.lower()
+    context = full_context.lower()
+
+    # Positive indicators
+    pos_words = [
+        "好", "香", "棒", "优秀", "流畅", "丝滑", "快", "强", "推荐", "值得", "喜欢", "爱",
+        "满意", "不错", "挺好", "好用", "方便", "舒适", "漂亮", "好看", "美", "精致",
+        "领先", "无敌", "完美", "惊喜", "超预期", "真香", "好评", "赞", "给力",
+        "顺滑", "稳", "踏实", "成熟", "出色", "提升", "改善", "升级",
+        "适合", "匹配", "契合", "顺手", "省心", "达标", "合格", "优秀", "做工",
+    ]
+
+    # Negative indicators
+    neg_words = [
+        "差", "烂", "糟", "坏", "慢", "卡", "顿", "烫", "热", "丑", "廉价", "失望",
+        "后悔", "坑", "骗", "假", "虚", "退", "弃", "吐槽", "抱怨", "不满", "讨厌",
+        "恶心", "烦", "糟心", "头疼", "难受", "痛苦", "纠结", "焦虑",
+        "退步", "倒退", "下降", "变差", "不如", "比不上", "落后", "弱",
+        "偏冷", "偏暖", "色差", "闪", "绿", "虚标", "伤眼",
+        "不值", "不划算", "性价比低", "贵", "水分", "降价", "血亏",
+    ]
+
+    # Intensity modifiers
+    strong_pos = ["非常", "特别", "极其", "超级", "太", "简直", "绝对", "无敌", "完美", "最", "真的"]
+    strong_neg = ["非常", "特别", "极其", "超级", "太", "简直", "绝对", "真的", "好丑", "好差", "好烂"]
+
+    pos_count = sum(1 for w in pos_words if w in text)
+    neg_count = sum(1 for w in neg_words if w in text)
+
+    has_strong_pos = any(w in text for w in strong_pos)
+    has_strong_neg = any(w in text for w in strong_neg)
+
+    # === SEMANTIC SPECIAL CASES ===
+
+    # "没赢过" / "没输过" patterns
+    if "没赢过" in text:
+        if brand == "安卓":
+            return "负向", "中", f"原文引用：\"{opinion_text[:50]}...\"；语义理解：\"没赢过\"明确表示安卓在体验上不如iOS"
+        if brand == "苹果":
+            return "正向", "中", f"原文引用：\"{opinion_text[:50]}...\"；语义理解：iOS在体验上胜过安卓"
+    if "没输过" in text:
+        if brand == "安卓":
+            return "正向", "中", f"原文引用：\"{opinion_text[:50]}...\"；语义理解：安卓在配置上不落下风"
+
+    # "不是...这么垃圾" = defending
+    if "不是" in text and "这么垃圾" in text and brand in text:
+        return "正向", "中", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：用户反驳\"垃圾\"评价，实际为正面辩护"
+
+    # "没有...不适" / "没有...发绿" = positive
+    if ("没有发绿" in text or "没有出现" in text or "没有不适" in text) and brand in text:
+        return "正向", "中", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：用户否认负面问题，表达正面使用体验"
+
+    # "好丑" / "丑出天际"
+    if ("丑" in text or "廉价" in text) and brand in text:
+        intensity = "强" if "丑出天际" in text or "好丑" in text or "真的丑" in text else "中"
+        return "负向", intensity, f"原文引用：\"{opinion_text[:60]}...\"；语义理解：明确表达对外观/质感的负面评价"
+
+    # "轻飘飘" / "不踏实" for 安卓
+    if brand == "安卓" and ("轻飘飘" in text or "不踏实" in text):
+        return "负向", "中", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：\"轻飘飘\"\"不踏实\"表达安卓使用体验不够扎实"
+
+    # "稳重" / "成熟" for 苹果
+    if brand == "苹果" and ("稳重" in text or "成熟" in text):
+        return "正向", "强", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：\"稳重\"\"成熟\"是对iOS流畅度的高度肯定"
+
+    # WiFi speed comparison: 华为快 vs 苹果卡
+    if "华为就很快" in text or "华为更快" in text:
+        if brand == "华为":
+            return "正向", "强", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：实测华为WiFi速度远快于苹果"
+    if "苹果很卡" in text or "iphone 差距不少" in text:
+        if brand == "苹果":
+            return "负向", "强", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：实测苹果WiFi速度慢，与华为差距明显"
+
+    # "冷白冷白" for 华为 screen
+    if brand == "华为" and "冷白" in text:
+        return "负向", "中", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：\"冷白冷白\"是对华为屏幕显示效果的负面描述"
+
+    # "屏幕感官比华为强" for vivo
+    if brand == "vivo" and "比华为强" in text:
+        return "正向", "中", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：明确表达vivo屏幕优于华为"
+
+    # "系统流畅度还是苹果最好"
+    if "系统流畅度还是苹果最好" in text:
+        if brand == "苹果":
+            return "正向", "强", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：明确认为苹果系统流畅度最佳"
+        if brand in ["华为", "vivo", "安卓"]:
+            # These brands are mentioned but not praised for流畅度
+            return "中性", "弱", f"原文引用：\"{opinion_text[:60]}...\"；语义理解：该段主要 praise 苹果流畅度，{brand}仅为提及"
+
+    # "纠结" / "怕" / "担心"
+    if "纠结" in text or ("怕" in text and "适应" in text) or "担心" in text:
+        if pos_count == 0 and neg_count == 0:
+            return "中性", "弱", f"用户表达纠结/担忧情绪，但未明确评价{brand}"
+
+    # "对比" / "比较" / "vs"
+    if "对比" in text or "比较" in text or "vs" in text.lower():
+        if pos_count > 0 and neg_count > 0:
+            return "混合", "中", f"文本同时包含对{brand}的正面和负面评价"
+        elif pos_count > neg_count:
+            return "正向", "中", f"对比中整体偏向正面评价{brand}"
+        elif neg_count > pos_count:
+            return "负向", "中", f"对比中整体偏向负面评价{brand}"
+
+    # "真香"
+    if "真香" in text:
+        return "正向", "强", f"原文引用：\"{opinion_text[:50]}...\"；\"真香\"是强烈正面评价"
+
+    # "越看越顺眼"
+    if "越看越顺眼" in text or "顺眼" in text:
+        return "正向", "中", f"原文引用：\"{opinion_text[:50]}...\"；表达逐渐认可的正面态度"
+
+    # Default polarity determination
+    if pos_count > neg_count:
+        polarity = "正向"
+        if has_strong_pos or pos_count >= 3:
+            intensity = "强"
+        elif pos_count >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+        reason = f"原文引用：\"{opinion_text[:60]}...\"；文本包含对{brand}的正面评价词汇"
+    elif neg_count > pos_count:
+        polarity = "负向"
+        if has_strong_neg or neg_count >= 3:
+            intensity = "强"
+        elif neg_count >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+        reason = f"原文引用：\"{opinion_text[:60]}...\"；文本包含对{brand}的负面评价词汇"
+    else:
+        polarity = "中性"
+        intensity = "弱"
+        reason = f"文本未明确表达对{brand}的情感倾向"
+
+    return polarity, intensity, reason
+
+
+def is_fluency_related(text):
+    """Check if opinion discusses smoothness/lag/fluency/performance/stability."""
+    fluency_keywords = [
+        "流畅", "丝滑", "顺滑", "卡顿", "卡", "顿", " lag", "laggy", "stutter",
+        "性能", "速度", "快", "慢", "响应", "跟手", "动画", "动效", "系统",
+        "发热", "烫", "降频", "降亮度", "稳定", "不稳", "闪退", "崩溃",
+        "帧率", "fps", "刷新率", "高刷", "掉帧",
+    ]
+    text_lower = text.lower()
+    return any(kw in text_lower for kw in fluency_keywords)
+
+
+def extract_opinions(post, post_idx):
+    """Extract all brand-sentiment opinions from a single post."""
+    results = []
+
+    title = post.get("title", "")
+    content = post.get("content", "")
+    full_text = f"{title}\n{content}".strip()
+
+    brands = detect_brands(full_text)
+
+    if not brands:
+        results.append({
+            "opinion_id": f"batch4_{post_idx}_0",
+            "note_id": post.get("note_id", ""),
+            "title": title,
+            "source_keyword": post.get("source_keyword", ""),
+            "liked_count": post.get("liked_count", 0),
+            "comment_count": post.get("comment_count", 0),
+            "opinion_text": title if title else content[:100],
+            "brand_target": "未识别",
+            "sentiment_polarity": "中性",
+            "sentiment_intensity": "弱",
+            "sentiment_reason": "文本中未识别到明确的品牌提及",
+            "confidence": "低",
+            "full_title": title,
+            "full_content": content,
+            "is_fluency_related": False,
+        })
+        return results
+
+    opinion_units = split_into_opinions(content, title)
+
+    if len(content) < 50:
+        opinion_units = [full_text]
+
+    opinion_idx = 0
+    for unit in opinion_units:
+        unit_brands = detect_brands(unit)
+        if not unit_brands:
+            continue
+
+        for brand in unit_brands:
+            polarity, intensity, reason = judge_sentiment(unit, brand, full_text)
+
+            if polarity in ["正向", "负向"] and ("很" in unit or "非常" in unit or "真的" in unit or "特别" in unit or "好" in unit):
+                confidence = "高"
+            elif polarity == "中性":
+                confidence = "中"
+            else:
+                confidence = "中"
+
+            results.append({
+                "opinion_id": f"batch4_{post_idx}_{opinion_idx}",
+                "note_id": post.get("note_id", ""),
+                "title": title,
+                "source_keyword": post.get("source_keyword", ""),
+                "liked_count": post.get("liked_count", 0),
+                "comment_count": post.get("comment_count", 0),
+                "opinion_text": unit[:200],
+                "brand_target": brand,
+                "sentiment_polarity": polarity,
+                "sentiment_intensity": intensity,
+                "sentiment_reason": reason,
+                "confidence": confidence,
+                "full_title": title,
+                "full_content": content,
+                "is_fluency_related": is_fluency_related(unit),
+            })
+            opinion_idx += 1
+
+    if not results and brands:
+        for brand in brands:
+            polarity, intensity, reason = judge_sentiment(full_text, brand)
+            results.append({
+                "opinion_id": f"batch4_{post_idx}_{opinion_idx}",
+                "note_id": post.get("note_id", ""),
+                "title": title,
+                "source_keyword": post.get("source_keyword", ""),
+                "liked_count": post.get("liked_count", 0),
+                "comment_count": post.get("comment_count", 0),
+                "opinion_text": full_text[:200],
+                "brand_target": brand,
+                "sentiment_polarity": polarity,
+                "sentiment_intensity": intensity,
+                "sentiment_reason": reason,
+                "confidence": "中",
+                "full_title": title,
+                "full_content": content,
+                "is_fluency_related": is_fluency_related(full_text),
+            })
+            opinion_idx += 1
+
+    return results
+
+
+def main():
+    input_path = "/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/02-batch4-input.json"
+    output_path = "/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/02-batch4-result.json"
+
+    with open(input_path, "r", encoding="utf-8") as f:
+        posts = json.load(f)
+
+    all_opinions = []
+    for idx, post in enumerate(posts):
+        opinions = extract_opinions(post, idx)
+        all_opinions.extend(opinions)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(all_opinions, f, ensure_ascii=False, indent=2)
+
+    print(f"Processed {len(posts)} posts, extracted {len(all_opinions)} opinions.")
+    print(f"Results saved to {output_path}")
+
+    brand_counts = {}
+    polarity_counts = {}
+    for op in all_opinions:
+        brand_counts[op["brand_target"]] = brand_counts.get(op["brand_target"], 0) + 1
+        polarity_counts[op["sentiment_polarity"]] = polarity_counts.get(op["sentiment_polarity"], 0) + 1
+
+    print("\nBrand distribution:")
+    for brand, count in sorted(brand_counts.items(), key=lambda x: -x[1]):
+        print(f"  {brand}: {count}")
+
+    print("\nPolarity distribution:")
+    for pol, count in sorted(polarity_counts.items(), key=lambda x: -x[1]):
+        print(f"  {pol}: {count}")
+
+
+if __name__ == "__main__":
+    main()

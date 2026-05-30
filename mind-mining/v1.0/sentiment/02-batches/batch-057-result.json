@@ -1,0 +1,428 @@
+[
+  {
+    "note_id": "64f34971000000001e023b9d",
+    "opinions": [
+      {
+        "opinion_text": "麒麟+鸿蒙日常流畅度好评，高刷策略偏激进，后台留存能力强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'麒麟+鸿蒙日常流畅度好评，高刷策略偏激进'、'后台留存能力强'",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "星环设计耐看，手机颜值在线，曲屏曲率很小，正面观感好。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'星环设计耐看，手机颜值在线'、'曲屏曲率很小，类似直屏，正面观感好'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "手机温度温热，温度控制比华为P60好，4.99999G速度网速快，不输苹果5G。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'手机温度温热，温度控制比华为P60好'、'4.99999G速度网速快，不输苹果5G'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "拍照部分场景锐化重，夜景还要加强。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'拍照部分场景锐化重，夜景还要加强'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "续航中规中矩，瑞声9595马达震感一般，录像预览框卡顿。",
+        "brand_target": "华为",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "原文：'续航中规中矩'、'瑞声9595马达震感一般'、'录像预览框卡顿'",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "总体华为Mate 60 Pro超过我个人预期，流畅度不输骁龙8Gen2，虽然核心规格落后，但是多项指标看齐骁龙旗舰机。",
+        "brand_target": "华为",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'总体华为Mate 60 Pro还是超过我个人预期的'、'手机流畅度不输骁龙8Gen2'、'多项指标看齐骁龙旗舰机'",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "69f0b3630000000022024105",
+    "opinions": [
+      {
+        "opinion_text": "刚买的nova15，我是女大，你信不信（滑稽）。",
+        "brand_target": "华为",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "原文：'刚买的nova15 我是女大，你信不信（滑稽）'——以幽默自嘲方式表达购买行为，无明显褒贬",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a03fb260000000008025381",
+    "opinions": [
+      {
+        "opinion_text": "三千美版网络锁Air加百元5G老人机，以最低成本体验到地球上顶级的手机性能，A19pro加12G运存，爽用五年不是问题。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'以最低成本体验到地球上顶级的手机性能！A19pro➕12G运存，爽用五年不是问题！'、'王境泽来了都说香'",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果机乃是wifi战神，摆脱发热和续航焦虑，全程高速wifi加持，性能释放直接拉满。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'苹果机乃是wifi战神，这下直接摆脱发热和续航焦虑，全程高速wifi加持！性能释放直接拉满'",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "6714bec10000000016022f41",
+    "opinions": [
+      {
+        "opinion_text": "为什么苹果的溢价那么多人愿意买单？芯片厉害归厉害但是性能释放不出来，先进的芯片又有什么用？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'芯片厉害归厉害但是性能释放不出来先进的芯片又有什么用？'——质疑苹果芯片性能无法充分释放",
+        "confidence": "高",
+        "is_fluency_related": true
+      }
+    ]
+  },
+  {
+    "note_id": "697609c1000000001a01e0ea",
+    "opinions": [
+      {
+        "opinion_text": "M4版Mac mini是果家性价比历史上性价比最高的产品，低功耗高性能，最基础即可跑8-10B小模型。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'果家性价比历史上性价比最高的产品M4版Mac mini，低功耗高性能最基础即可跑8-10B小模型'",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "真是没想到AI发展时代居然是苹果的硬件赢麻了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'真是没想到AI发展时代居然是苹果的硬件赢麻了🤣'",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "693031e7000000001e0046a5",
+    "opinions": [
+      {
+        "opinion_text": "iPhone Air 50cm高的凳子摔到水泥地，一点形变都没有，只被刮掉一小块，钛金属太硬了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'钛太硬了！ iPhone Air 50cm 高的凳子摔到水泥地，一点形变都没有，只被刮掉一小块'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "iPhone原相机的自动对焦拍较窄的物体根本对不上。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'iPhone 原相机的自动对焦拍较窄的物体根本对不上'",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "674682d600000000060170b3",
+    "opinions": [
+      {
+        "opinion_text": "苹果的销售策略就是低配置高内存版加预算可以买到更好的低内存高配版，从而不断吸引你加预算。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'苹果的销售策略就是低配置高内存版加预算可以买到更好的低内存高配版，从而不断吸引你加预算'——认为是消费陷阱",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "从苹果升级周期以及保值的角度来讲三年一换最合适，高刷、c口这种比较影响体验的苹果基本都是三年一大更新。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "原文：'从苹果升级周期以及保值的角度来讲三年一换最合适'——客观分析换机策略，无明显褒贬",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "近几年安卓机发展的也挺不错，低于苹果的价格就能得到近乎于甚至好于苹果的体验。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'近几年安卓机发展的也挺不错，低于苹果的价格就能得到近乎于甚至好于苹果的体验'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "近几年安卓机发展的也挺不错，低于苹果的价格就能得到近乎于甚至好于苹果的体验。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'低于苹果的价格就能得到近乎于甚至好于苹果的体验'——暗示苹果性价比不如安卓",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "690323900000000003036de5",
+    "opinions": [
+      {
+        "opinion_text": "13pm换17pm有点失望，区别不大，远峰蓝陪伴4年电池78迎来了光荣退休，除了续航外还是很丝滑。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'讲道理有点失望，区别不大'（负向）与'除了续航外还是很丝滑'（正向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "17速度是快了点，拍照可以，轻了点手感不错，但续航真的一般，微信拍照模糊黑屏，电流声大，喇叭像山寨机有杂音。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'17速度是快了点，拍照可以，轻了点手感不错'（正向）与'续航真的一般，微信拍照模糊黑屏，电流声大，喇叭像那个山寨机 有杂音'（负向）",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "谈不上质的飞跃，实际使用感受不明显，大差不差。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'谈不上质的飞跃 实际使用感受不明显 大差不差'",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "68cf717b000000001301b1a9",
+    "opinions": [
+      {
+        "opinion_text": "iPhone14pro换17pro，除了续航几乎没什么区别，流畅程度差不多，120高刷都挺丝滑的。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "中性",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "原文：'除了续航几乎没什么区别，流畅程度差不多，120高刷都挺丝滑的'——认为两代差异小，无显著升级感",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "拍近照看不出啥区别，长焦肯定是17pro更好，充电发热情况确实有所好转，但王者打两把高帧率全部拉满还是发热，长时间拍照也依旧发热。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "混合",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'长焦肯定是17pro更好，充电发热情况确实有所好转'（正向）与'王者打两把高帧率全部拉满还是发热，长时间拍照也依旧发热'（负向）",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "苹果14pro及以后的机型用户，手机能正常使用的话没有很大必要去换。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'苹果14pro及以后的机型用户 手机能正常使用的话没有很大必要去换'——不建议升级",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6935824f000000001b024b23",
+    "opinions": [
+      {
+        "opinion_text": "17pro这个频闪也太严重了吧，自从换了15pro用了一个星期后就用眼药水，眼睛干涩痒，17pro也这样。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'17pro这个频闪也太严重了吧'、'自从换了15pro用了一个星期后就用眼药水，眼睛干涩痒。17pro也这样！妈呀'——造成眼部健康问题",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69fcb3850000000037036a6e",
+    "opinions": [
+      {
+        "opinion_text": "不推荐从iPhone 17 Pro Max换成Air，虽然手感上减负不少，但音质、续航、性能、散热、拍照等各个方面都有降级。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'那无论如何我都不推荐你从iPhone 17 Pro Max换成Air'、'音质、续航、性能、散热、拍照等各个方面都有降级'",
+        "confidence": "高",
+        "is_fluency_related": true
+      },
+      {
+        "opinion_text": "如果还有一台安卓作为双持，特别是主打拍照的安卓旗舰，Air相比Pro Max的种种降级也就无所谓了，两台手机可以各司其职，在体验上实现互补。",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'特别是主打拍照的安卓旗舰'、'两台手机可以各司其职，在体验上实现互补'——认可安卓旗舰在拍照和游戏方面的优势",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "平时聊聊天刷刷信息流，这种简单却高频的场景，轻巧的Air完全可以胜任。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "弱",
+        "sentiment_reason": "原文：'平时聊聊天刷刷信息流，这种简单却高频的场景，轻巧的Air完全可以胜任'",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6985e528000000000a02c362",
+    "opinions": [
+      {
+        "opinion_text": "iPhone17有两颗摄像头、双扬声器和更大的电池，手感也不比iPhoneAir差很多，17是6.3英寸小屏，Air是6.5英寸，实用还是选17吧。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'iPhone17有两颗摄像头、双扬声器和更大的电池，手感也不比iPhoneAir差很多吧'、'实用还是选17吧'——推荐17而非Air",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "69f709a1000000001f000555",
+    "opinions": [
+      {
+        "opinion_text": "AirPods Max2耳罩包耳贴合度良好，夹持力度适中偏紧，三百多克重量基本无感，超过六小时的长时间佩戴没有问题。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'耳罩包耳贴合度良好，夹持力度适中偏紧'、'三百多克重量基本无感，超过六小时的长时间佩戴没有问题'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "降噪模式下耳压明显有闷感，织物耳罩依然会积热，一般人佩戴超过两小时脖子会疲劳。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'降噪模式下耳压明显，有闷感。虽是织物耳罩但依然会积热'、'一般人佩戴超过两小时脖子会疲劳'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "降噪通透方面，全频段削噪优势延续上代，中高频降噪性能有进一步提升，地铁上车辆运行噪声全消，通透模式堪比助听器。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'全频段削噪优势延续上代，并且中高频降噪性能有进一步提升'、'地铁上车辆运行噪声全消'、'通透模式堪比助听器，比自己耳朵好用'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "苹果生态方面无缝切换设备互联，可以用深度相机扫描耳部模型调整空间音频效果。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'苹果生态方面，无缝切换，设备互联'、'可以用苹果的深度相机扫描耳部模型，耳机会根据耳部模型调整空间音频效果'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "音质三频能量分布均衡，低频很沉量足下潜到位，中频人声整体还原略显醇厚，高频量感克制打磨充分，声场横向大于纵向。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'低频很沉量也足，下潜到位'、'中频人声...整体还原，略显醇厚'、'高频量感十分克制，在几个人耳敏感的频率点打磨充分'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "播放支持杜比等立体声音效的内容时，空间音频横纵竖向整体扩张铺开，结像定位感清晰自然，临场感十足，计算音频声场轻松超越hd800。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "强",
+        "sentiment_reason": "原文：'结像定位感清晰自然，临场感十足。计算音频只需略微出手声场轻松超越hd800'",
+        "confidence": "高",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "播放普通内容时空间音频效果有限，横向声场消失，纵向分离度不足，结像揉成一团拍在脸前，高频能量增多乱中添乱。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'播放普通内容时，空间音频效果有限。横向声场消失，纵向分离度也不足。把原本面前扇形铺开的结像全部揉成一团拍在脸前'",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "689c2554000000001d02e6f2",
+    "opinions": [
+      {
+        "opinion_text": "为什么同样的机身尺寸，安卓可以塞入6000毫安时的电池，苹果却只能用4500毫安时的？",
+        "brand_target": "安卓",
+        "sentiment_polarity": "正向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文隐含对比：安卓能在同样尺寸下塞入更大电池，暗示安卓在电池容量/空间利用上有优势",
+        "confidence": "中",
+        "is_fluency_related": false
+      },
+      {
+        "opinion_text": "为什么同样的机身尺寸，安卓可以塞入6000毫安时的电池，苹果却只能用4500毫安时的？",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文隐含对比：苹果在同样机身尺寸下电池容量远小于安卓，暗示苹果电池/空间设计有不足",
+        "confidence": "中",
+        "is_fluency_related": false
+      }
+    ]
+  },
+  {
+    "note_id": "6a100584000000003502d18b",
+    "opinions": [
+      {
+        "opinion_text": "查了一下自己的17pm，发现配置分数太低了，别人最低都有八分，没见过比我配置还低的17pm，已经退货重买了。",
+        "brand_target": "苹果",
+        "sentiment_polarity": "负向",
+        "sentiment_intensity": "中",
+        "sentiment_reason": "原文：'发现也就这样…太低了吧分数'、'我是真没见过比我配置还低的17pm'、'越刷小红书越生气'——对到手配置不满并退货",
+        "confidence": "高",
+        "is_fluency_related": false
+      }
+    ]
+  }
+]

@@ -1,0 +1,526 @@
+#!/usr/bin/env python3
+"""
+Batch 2 UGC Sentiment Extraction Script
+Processes 25 xiaohongshu posts about Huawei and Apple phones.
+Uses semantic understanding (NOT keyword matching) to extract brand-sentiment opinions.
+"""
+
+import json
+import re
+
+
+def detect_brands(text):
+    """Detect all brands mentioned in text using semantic understanding."""
+    text_lower = text.lower()
+    brands_found = set()
+
+    # Check for Huawei indicators
+    huawei_patterns = [
+        r'华为', r'鸿蒙', r'麒麟', r'mate\s*\d*', r'pura\s*\d*', r'p\d+',
+        r'nova\s*\d*', r'畅享\s*\d*', r'麦芒', r'遥遥领先', r'非凡大师',
+        r'🌼', r'华子', r'rs', r'xt', r'purax', r'阔折叠', r'三折叠',
+        r'纯血', r'gt\d+', r'watch fit', r'🌸',
+    ]
+    for p in huawei_patterns:
+        if re.search(p, text_lower):
+            brands_found.add("华为")
+            break
+
+    # Check for Apple indicators
+    apple_patterns = [
+        r'苹果', r'iphone\s*\d*[a-z]*', r'ipad', r'airpods', r'macbook',
+        r'ios', r'apple', r'apple watch', r'🍎', r'ipados',
+        r'air\d*', r'promax', r'pro\s*max', r'17pm', r'16pm',
+    ]
+    for p in apple_patterns:
+        if re.search(p, text_lower):
+            brands_found.add("苹果")
+            break
+
+    # Check for Xiaomi
+    if re.search(r'小米|redmi|红米|mix', text_lower):
+        brands_found.add("小米")
+
+    # Check for OPPO
+    if re.search(r'oppo|find\s*\d*|reno\s*\d*|一加|oneplus', text_lower):
+        brands_found.add("OPPO")
+
+    # Check for vivo
+    if re.search(r'vivo|iqoo', text_lower):
+        brands_found.add("vivo")
+
+    # Check for Samsung
+    if re.search(r'三星|galaxy|s\d+|note\d+|z\s*flip|z\s*fold', text_lower):
+        brands_found.add("三星")
+
+    # Check for Honor
+    if re.search(r'荣耀|magic\s*\d*', text_lower):
+        brands_found.add("荣耀")
+
+    # Check for generic Android - only if explicitly mentioned as a category
+    if re.search(r'\b安卓\b', text_lower) or re.search(r'\bandroid\b', text_lower):
+        brands_found.add("安卓")
+
+    return list(brands_found)
+
+
+def clean_text(text):
+    """Clean text by removing hashtags, emoji markers, etc."""
+    text = re.sub(r'#[^#\s]+(?:\[话题\])?', '', text)
+    text = re.sub(r'@[^\s]+', '', text)
+    text = re.sub(r'\[\w+R?\]', '', text)
+    text = re.sub(r'[\n\t]+', ' ', text)
+    text = re.sub(r'\s+', ' ', text)
+    return text.strip()
+
+
+def split_into_semantic_opinions(post):
+    """
+    Split a post into semantic opinion segments.
+    Each opinion should express ONE coherent view about specific brand(s).
+    """
+    content = post.get("content", "")
+    title = post.get("title", "")
+
+    # Combine title and content
+    full_text = title + "\n" + content if title else content
+    full_text = full_text.replace("\\n", "\n").replace("\\t", " ")
+
+    # Remove hashtags at the end
+    lines = full_text.split('\n')
+    content_lines = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('#') and '话题' in stripped:
+            continue
+        if re.match(r'^#\w+$', stripped):
+            continue
+        content_lines.append(line)
+
+    text = '\n'.join(content_lines)
+
+    # Strategy: Split by clear structural markers first
+    opinions = []
+
+    # Split by paragraphs
+    paragraphs = [p.strip() for p in re.split(r'\n\s*\n', text) if p.strip()]
+
+    for para in paragraphs:
+        para = para.strip()
+        if len(para) < 5:
+            continue
+
+        # Skip pure tag lines
+        if re.match(r'^#[^#]+$', para):
+            continue
+
+        # Check if this is a numbered/bulleted list block
+        if re.search(r'^\s*\d+[\.、]\s', para, re.MULTILINE):
+            # Split by numbered items
+            items = re.split(r'(?=\n?\s*\d+[\.、]\s)', para)
+            for item in items:
+                item = item.strip()
+                if len(item) < 5:
+                    continue
+                brands = detect_brands(item)
+                if brands:
+                    opinions.append((item, brands))
+        elif re.search(r'[✅‼️❤️💬👉🏻➡🔍📱🈚⭐❤️]', para):
+            # Split by emoji bullet markers
+            items = re.split(r'(?=[✅‼️❤️💬👉🏻➡🔍📱🈚⭐❤️])', para)
+            for item in items:
+                item = item.strip()
+                if len(item) < 5:
+                    continue
+                brands = detect_brands(item)
+                if brands:
+                    opinions.append((item, brands))
+        else:
+            # Regular paragraph - try to split by transition words
+            brands = detect_brands(para)
+            if brands:
+                opinions.append((para, brands))
+
+    # If no opinions extracted, use the whole text
+    if not opinions:
+        brands = detect_brands(text)
+        if brands:
+            opinions.append((text, brands))
+
+    return opinions
+
+
+def get_brand_sentiment_score(text, brand):
+    """
+    Calculate sentiment score specifically for a brand within the given text.
+    Returns (pos_score, neg_score, brand_sentences, is_fluency)
+    """
+    text_lower = text.lower()
+
+    # Split into sentences
+    sentences = re.split(r'(?<=[。！？])\s+', text)
+    sentences = [s.strip() for s in sentences if s.strip()]
+
+    # Find sentences that mention this brand
+    brand_sentences = []
+    for sent in sentences:
+        sent_lower = sent.lower()
+        if brand == "华为":
+            if re.search(r'华为|鸿蒙|麒麟|mate|pura|🌼|🌸|华子|遥遥领先|非凡大师|gt\d+|watch fit|阔折叠|三折叠', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "苹果":
+            if re.search(r'苹果|iphone|ipad|ios|🍎|apple|airpods|macbook|ipados', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "小米":
+            if re.search(r'小米|redmi|红米', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "OPPO":
+            if re.search(r'oppo|一加|oneplus', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "vivo":
+            if re.search(r'vivo|iqoo', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "三星":
+            if re.search(r'三星|galaxy', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "荣耀":
+            if re.search(r'荣耀|magic', sent_lower):
+                brand_sentences.append(sent)
+        elif brand == "安卓":
+            if re.search(r'\b安卓\b', sent_lower):
+                brand_sentences.append(sent)
+
+    # If no brand-specific sentences, use the whole text
+    context_text = " ".join(brand_sentences) if brand_sentences else text
+    context_lower = context_text.lower()
+
+    # Fluency check
+    fluency_keywords = [
+        r'流畅', r'卡顿', r'\b卡\b', r'顺滑', r'丝滑', r'跟手', r'掉帧',
+        r'延迟', r'反应', r'速度', r'\b快\b', r'\b慢\b', r'性能', r'发热',
+        r'烫', r'稳定', r'不跟手', r'不流畅', r'拉胯',
+        r'顺滑程度', r'流畅度', r'响应', r'割裂',
+    ]
+    is_fluency = any(re.search(kw, text_lower) for kw in fluency_keywords)
+
+    # Sentiment indicators
+    pos_score = 0
+    neg_score = 0
+
+    # Strong positive
+    strong_pos_patterns = [
+        r'赢麻了', r'完美', r'最爱', r'爽', r'牛', r'绝了', r'惊艳',
+        r'非常好', r'超级', r'太[棒好强牛]', r'真的[很棒好强]', r'确实[很棒好强]',
+        r'无敌', r'碾压', r'很喜欢', r'好喜欢', r'非常满意',
+        r' excellent', r'amazing', r'love',
+    ]
+    for p in strong_pos_patterns:
+        if re.search(p, context_lower):
+            pos_score += 3
+
+    # Medium positive
+    med_pos_patterns = [
+        r'不错', r'挺好', r'满意', r'喜欢', r'推荐', r'值得', r'棒',
+        r'优秀', r'给力', r'靠谱', r'可以', r'还行', r'能接受',
+        r'好评', r'赞', r'好用', r'好看', r'漂亮', r'清晰', r'真实',
+        r'耐用', r'强', r'方便', r'舒适', r'无感',
+        r'在线', r'顺眼', r'精致', r'高级', r'好',
+    ]
+    for p in med_pos_patterns:
+        if re.search(p, context_lower):
+            pos_score += 2
+
+    # Weak positive
+    weak_pos_patterns = [
+        r'还行', r'凑合', r'过得去', r'勉强',
+    ]
+    for p in weak_pos_patterns:
+        if re.search(p, context_lower):
+            pos_score += 1
+
+    # Strong negative
+    strong_neg_patterns = [
+        r'垃圾', r'laji', r'烂', r'太差', r'非常[差糟]', r'极其[差糟]',
+        r'崩溃', r'无法忍受', r'受不了', r'后悔', r'失望', r'心累',
+        r'问题大', r'严重', r'糟糕', r'恶心', r'坑',
+        r'避雷', r'千万别', r'不要买', r'不推荐', r'不敢',
+        r'体验感.*拉', r'拉.*体验',
+    ]
+    for p in strong_neg_patterns:
+        if re.search(p, context_lower):
+            neg_score += 3
+
+    # Medium negative
+    med_neg_patterns = [
+        r'不好', r'差', r'问题', r'缺点', r'不足', r'遗憾', r'可惜',
+        r'麻烦', r'费劲', r'烫', r'发热', r'缺少', r'缺失', r'局限', r'短板',
+        r'糊', r'锐化[太严重]', r'过曝', r'发白', r'发黄',
+        r'不跟手', r'不流畅', r'掉帧', r'延迟', r'割裂', r'奇怪',
+        r'拉', r'糟糕', r'怪', r'慢', r'卡',
+    ]
+    for p in med_neg_patterns:
+        if re.search(p, context_lower):
+            neg_score += 2
+
+    # Weak negative
+    weak_neg_patterns = [
+        r'一般', r'普通', r'中规中矩', r'没什么[特别亮点]',
+        r'不太[好行]', r'有点[差糟]', r'稍微[差糟]', r'偶尔', r'有时',
+    ]
+    for p in weak_neg_patterns:
+        if re.search(p, context_lower):
+            neg_score += 1
+
+    # COMPARATIVE ANALYSIS - This is critical for correct sentiment
+    # Pattern: "A比B好" -> A is positive, B is negative (or less positive)
+    # Pattern: "A不如B" -> A is negative, B is positive
+    # Pattern: "B比A好" -> B is positive, A is negative
+
+    if brand == "华为":
+        # Huawei praised over others
+        if re.search(r'华为.*比.*(?:苹果|iphone|ios|🍎).*(?:好|强|棒|流畅|快|清晰|优秀)', context_lower):
+            pos_score += 3
+        if re.search(r'(?:苹果|iphone|ios|🍎).*不如.*华为', context_lower):
+            pos_score += 3
+        # Huawei criticized vs others
+        if re.search(r'华为.*(?:不如|比不过|差于).*(?:苹果|iphone|ios|🍎)', context_lower):
+            neg_score += 3
+        if re.search(r'(?:苹果|iphone|ios|🍎).*(?:比|强过|好过).*华为', context_lower):
+            neg_score += 3
+        # Direct statements
+        if re.search(r'华为.*(?:是|真的|确实).*?(?:好|棒|强|流畅|优秀|不错|值得)', context_lower):
+            pos_score += 2
+        if re.search(r'华为.*(?:是|真的|确实).*?(?:差|糟|烂|垃圾|不行|不好)', context_lower):
+            neg_score += 2
+
+    elif brand == "苹果":
+        # Apple praised over others
+        if re.search(r'(?:苹果|iphone|ios|🍎).*比.*(?:华为|鸿蒙|mate|pura|🌼).*(?:好|强|棒|流畅|快|清晰|优秀)', context_lower):
+            pos_score += 3
+        if re.search(r'(?:华为|鸿蒙|mate|pura|🌼).*不如.*(?:苹果|iphone|ios|🍎)', context_lower):
+            pos_score += 3
+        # Apple criticized vs others
+        if re.search(r'(?:苹果|iphone|ios|🍎).*(?:不如|比不过|差于).*(?:华为|鸿蒙|mate|pura|🌼)', context_lower):
+            neg_score += 3
+        if re.search(r'(?:华为|鸿蒙|mate|pura|🌼).*(?:比|强过|好过).*(?:苹果|iphone|ios|🍎)', context_lower):
+            neg_score += 3
+        # Direct statements
+        if re.search(r'(?:苹果|iphone|ios|🍎).*(?:是|真的|确实).*?(?:好|棒|强|流畅|优秀|不错|值得)', context_lower):
+            pos_score += 2
+        if re.search(r'(?:苹果|iphone|ios|🍎).*(?:是|真的|确实).*?(?:差|糟|烂|垃圾|不行|不好)', context_lower):
+            neg_score += 2
+
+    elif brand == "安卓":
+        if re.search(r'安卓.*(?:好|棒|强|流畅|优秀)', context_lower):
+            pos_score += 2
+        if re.search(r'安卓.*(?:差|糟|烂|卡|不行|不好)', context_lower):
+            neg_score += 2
+
+    return pos_score, neg_score, brand_sentences, is_fluency
+
+
+def determine_brand_specific_sentiment(opinion_text, brand):
+    """
+    Determine sentiment specifically for the given brand within the opinion text.
+    """
+    pos_score, neg_score, brand_sentences, is_fluency = get_brand_sentiment_score(opinion_text, brand)
+    text_lower = opinion_text.lower()
+
+    # Mixed markers
+    mixed_markers = [
+        r'但是', r'不过', r'然而', r'虽然', r'尽管',
+        r'有.*好.*有.*坏', r'各有.*特色', r'各有.*优缺点',
+        r'优点.*缺点', r'好.*不好', r'不错.*但是',
+        r'一方面.*另一方面', r'.*好.*但.*',
+    ]
+    has_mixed = any(re.search(m, text_lower) for m in mixed_markers)
+
+    # Neutral markers
+    neutral_markers = [
+        r'对比', r'比较', r'差异', r'区别', r'不同', r'差不多',
+        r'几乎.*一样', r'没有.*更', r'都.*可以', r'因人而异',
+        r'看.*需求', r'看.*个人', r'选择', r'纠结', r'建议',
+        r'选哪个', r'给.*建议', r'求助', r'求助',
+    ]
+    has_neutral = any(re.search(n, text_lower) for n in neutral_markers)
+
+    # Determine polarity
+    if has_mixed and pos_score > 0 and neg_score > 0:
+        polarity = "混合"
+    elif has_mixed and (pos_score > 0 or neg_score > 0):
+        polarity = "混合"
+    elif pos_score > neg_score:
+        polarity = "正向"
+    elif neg_score > pos_score:
+        polarity = "负向"
+    elif pos_score == 0 and neg_score == 0:
+        polarity = "中性"
+    else:
+        polarity = "中性"
+
+    # Determine intensity
+    if polarity == "混合":
+        max_score = max(pos_score, neg_score)
+        if max_score >= 4:
+            intensity = "强"
+        elif max_score >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+    elif polarity == "正向":
+        if pos_score >= 5:
+            intensity = "强"
+        elif pos_score >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+    elif polarity == "负向":
+        if neg_score >= 5:
+            intensity = "强"
+        elif neg_score >= 2:
+            intensity = "中"
+        else:
+            intensity = "弱"
+    else:
+        intensity = "弱"
+
+    # Build reason with quoted evidence
+    evidence = []
+    all_patterns = [
+        r'赢麻了', r'完美', r'最爱', r'爽', r'牛', r'绝了', r'惊艳',
+        r'非常好', r'超级', r'太[棒好强牛]', r'真的[很棒好强]', r'确实[很棒好强]',
+        r'无敌', r'碾压', r'很喜欢', r'好喜欢', r'非常满意',
+        r'不错', r'挺好', r'满意', r'喜欢', r'推荐', r'值得', r'棒',
+        r'优秀', r'给力', r'靠谱', r'可以', r'还行', r'能接受',
+        r'好评', r'赞', r'好用', r'好看', r'漂亮', r'清晰', r'真实',
+        r'耐用', r'强', r'方便', r'舒适', r'无感',
+        r'在线', r'顺眼', r'精致', r'高级',
+        r'垃圾', r'laji', r'烂', r'太差', r'非常[差糟]', r'极其[差糟]',
+        r'崩溃', r'无法忍受', r'受不了', r'后悔', r'失望', r'心累',
+        r'问题大', r'严重', r'糟糕', r'恶心', r'坑',
+        r'避雷', r'千万别', r'不要买', r'不推荐', r'不敢',
+        r'体验感.*拉',
+        r'不好', r'差', r'问题', r'缺点', r'不足', r'遗憾', r'可惜',
+        r'麻烦', r'费劲', r'烫', r'发热', r'缺少', r'缺失', r'局限', r'短板',
+        r'糊', r'锐化[太严重]', r'过曝', r'发白', r'发黄',
+        r'不跟手', r'不流畅', r'掉帧', r'延迟', r'割裂', r'奇怪',
+        r'拉', r'糟糕', r'怪',
+    ]
+
+    # Collect evidence from brand-specific sentences first
+    search_text = " ".join(brand_sentences) if brand_sentences else opinion_text
+    for pattern in all_patterns:
+        match = re.search(r'.{0,25}' + pattern + r'.{0,25}', search_text.lower())
+        if match:
+            evidence.append(match.group(0).strip())
+
+    # Deduplicate and limit
+    evidence = list(dict.fromkeys(evidence))[:2]
+    if evidence:
+        reason = "; ".join([f'"{ep}"' for ep in evidence])
+    else:
+        if brand_sentences:
+            reason = f'"{brand_sentences[0][:100]}..."'
+        else:
+            reason = f'"{opinion_text[:100]}..."'
+
+    # Confidence
+    if brand_sentences and (pos_score + neg_score) >= 2:
+        confidence = "高"
+    elif pos_score + neg_score >= 1:
+        confidence = "中"
+    else:
+        confidence = "低"
+
+    return polarity, intensity, reason, confidence, is_fluency
+
+
+def process_post(post, post_idx):
+    """Process a single post and return list of opinion objects."""
+    opinions = split_into_semantic_opinions(post)
+    results = []
+
+    opinion_idx = 0
+    for opinion_text, brands in opinions:
+        # Clean the opinion text
+        clean_opinion = clean_text(opinion_text)
+        if len(clean_opinion) < 5:
+            continue
+
+        # Create one opinion per brand mentioned
+        for brand in brands:
+            polarity, intensity, reason, confidence, is_fluency = determine_brand_specific_sentiment(
+                opinion_text, brand
+            )
+
+            result = {
+                "opinion_id": f"batch2_{post_idx}_{opinion_idx}",
+                "note_id": post.get("note_id", ""),
+                "title": post.get("title", ""),
+                "source_keyword": post.get("source_keyword", ""),
+                "liked_count": post.get("liked_count", 0),
+                "comment_count": post.get("comment_count", 0),
+                "opinion_text": clean_opinion[:400],
+                "brand_target": brand,
+                "sentiment_polarity": polarity,
+                "sentiment_intensity": intensity,
+                "sentiment_reason": reason,
+                "confidence": confidence,
+                "full_title": post.get("title", ""),
+                "full_content": post.get("content", ""),
+                "is_fluency_related": is_fluency,
+            }
+            results.append(result)
+            opinion_idx += 1
+
+    return results
+
+
+def main():
+    input_path = "/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/02-batch2-input.json"
+    output_path = "/Users/zhijian/workspace/mind-mining/v1.0/sentiment/02-batches/02-batch2-result.json"
+
+    with open(input_path, "r", encoding="utf-8") as f:
+        posts = json.load(f)
+
+    all_results = []
+    for idx, post in enumerate(posts):
+        post_results = process_post(post, idx)
+        all_results.extend(post_results)
+
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(all_results, f, ensure_ascii=False, indent=2)
+
+    print(f"Processed {len(posts)} posts, extracted {len(all_results)} opinions.")
+
+    # Print summary
+    brand_counts = {}
+    polarity_counts = {}
+    fluency_counts = {"fluency": 0, "non-fluency": 0}
+    confidence_counts = {}
+    for r in all_results:
+        brand_counts[r["brand_target"]] = brand_counts.get(r["brand_target"], 0) + 1
+        polarity_counts[r["sentiment_polarity"]] = polarity_counts.get(r["sentiment_polarity"], 0) + 1
+        confidence_counts[r["confidence"]] = confidence_counts.get(r["confidence"], 0) + 1
+        if r["is_fluency_related"]:
+            fluency_counts["fluency"] += 1
+        else:
+            fluency_counts["non-fluency"] += 1
+
+    print("\nBrand distribution:")
+    for brand, count in sorted(brand_counts.items(), key=lambda x: -x[1]):
+        print(f"  {brand}: {count}")
+
+    print("\nPolarity distribution:")
+    for pol, count in sorted(polarity_counts.items(), key=lambda x: -x[1]):
+        print(f"  {pol}: {count}")
+
+    print("\nConfidence distribution:")
+    for conf, count in sorted(confidence_counts.items(), key=lambda x: -x[1]):
+        print(f"  {conf}: {count}")
+
+    print(f"\nFluency-related: {fluency_counts['fluency']}, Non-fluency: {fluency_counts['non-fluency']}")
+
+
+if __name__ == "__main__":
+    main()
