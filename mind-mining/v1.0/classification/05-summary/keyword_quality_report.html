@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>搜索关键词质量反馈报告</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0f1419;
+    color: #e6edf3;
+    line-height: 1.6;
+}
+.container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+.header {
+    background: linear-gradient(135deg, #1f6feb 0%, #58a6ff 100%);
+    padding: 50px 40px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.header h1 { font-size: 2.4em; margin-bottom: 12px; }
+.header p { font-size: 1.1em; opacity: 0.9; }
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.summary-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 28px;
+    text-align: center;
+}
+.summary-card .number { font-size: 2.2em; font-weight: 800; color: #58a6ff; }
+.summary-card .label { color: #8b949e; margin-top: 8px; font-size: 0.95em; }
+
+/* 概念词聚合区域 */
+.concept-section {
+    margin-bottom: 50px;
+}
+.section-title {
+    font-size: 1.6em;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #30363d;
+}
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
+    margin-bottom: 30px;
+}
+.concept-card {
+    background: #161b22;
+    border: 2px solid #30363d;
+    border-radius: 16px;
+    padding: 24px 16px;
+    text-align: center;
+    transition: all 0.3s;
+}
+.concept-card:hover {
+    transform: translateY(-4px);
+    border-color: #58a6ff;
+}
+.concept-card .concept-name {
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.concept-card .concept-pct {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+.concept-card .concept-detail {
+    color: #8b949e;
+    font-size: 0.9em;
+}
+.concept-card .concept-bar {
+    width: 100%;
+    height: 8px;
+    background: #21262d;
+    border-radius: 4px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.concept-card .concept-bar-fill {
+    height: 100%;
+    border-radius: 4px;
+    transition: width 0.5s;
+}
+
+/* 对比表格 */
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background: #161b22;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.compare-table th {
+    background: #0f1419;
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 600;
+    color: #8b949e;
+    border-bottom: 2px solid #30363d;
+}
+.compare-table td {
+    padding: 14px 16px;
+    border-bottom: 1px solid #21262d;
+}
+.compare-table tr:hover td { background: #1c2128; }
+
+/* 原有样式 */
+.quality-legend {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+.quality-badge {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+.badge-excellent { background: #238636; color: white; }
+.badge-good { background: #1f6feb; color: white; }
+.badge-moderate { background: #9e8c00; color: white; }
+.badge-poor { background: #da3633; color: white; }
+
+.keyword-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+.keyword-table th {
+    background: #161b22;
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    color: #8b949e;
+    border-bottom: 2px solid #30363d;
+    font-size: 0.9em;
+}
+.keyword-table td {
+    padding: 14px 12px;
+    border-bottom: 1px solid #21262d;
+    vertical-align: middle;
+}
+.keyword-table tr:hover td { background: #161b22; }
+
+.keyword-name { font-weight: 600; font-size: 1.05em; }
+.keyword-total { color: #8b949e; font-size: 0.9em; }
+
+.pct-bar {
+    width: 100%;
+    height: 28px;
+    background: #21262d;
+    border-radius: 14px;
+    overflow: hidden;
+    position: relative;
+}
+.pct-fill {
+    height: 100%;
+    border-radius: 14px;
+    transition: width 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    font-weight: 700;
+    font-size: 0.85em;
+    color: white;
+    min-width: 40px;
+}
+.pct-excellent { background: linear-gradient(90deg, #238636, #2ea043); }
+.pct-good { background: linear-gradient(90deg, #1f6feb, #58a6ff); }
+.pct-moderate { background: linear-gradient(90deg, #9e8c00, #d4a72c); }
+.pct-poor { background: linear-gradient(90deg, #da3633, #f85149); }
+
+.dist-bars {
+    display: flex;
+    height: 24px;
+    border-radius: 12px;
+    overflow: hidden;
+    min-width: 120px;
+}
+.dist-bar-seg { height: 100%; }
+
+.category-legend {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85em;
+    color: #8b949e;
+}
+.legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+
+.insight-box {
+    background: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 16px;
+    padding: 28px;
+    margin-top: 40px;
+}
+.insight-box h3 { color: #58a6ff; margin-bottom: 16px; }
+.insight-box ul { list-style: none; }
+.insight-box li { padding: 8px 0; padding-left: 20px; position: relative; }
+.insight-box li::before { content: "▸"; position: absolute; left: 0; color: #58a6ff; }
+
+.footer {
+    text-align: center;
+    padding: 40px;
+    color: #8b949e;
+    border-top: 1px solid #30363d;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .summary-grid { grid-template-columns: repeat(2, 1fr); }
+    .concept-grid { grid-template-columns: repeat(2, 1fr); }
+    .keyword-table { font-size: 0.85em; }
+    .keyword-table th, .keyword-table td { padding: 10px 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="header">
+    <h1>🔍 搜索关键词质量反馈报告</h1>
+    <p>15个搜索关键词 × 2,038条帖子 | 真实UGC占比分析</p>
+</div>
+
+<div class="summary-grid">
+    <div class="summary-card">
+        <div class="number">2036</div>
+        <div class="label">总帖子数</div>
+    </div>
+    <div class="summary-card">
+        <div class="number" style="color: #2ecc71;">985</div>
+        <div class="label">真实UGC数</div>
+    </div>
+    <div class="summary-card">
+        <div class="number" style="color: #f39c12;">48.4%</div>
+        <div class="label">平均有效占比</div>
+    </div>
+    <div class="summary-card">
+        <div class="number" style="color: #e74c3c;">15</div>
+        <div class="label">搜索关键词数</div>
+    </div>
+</div>
+
+<div class="concept-section">
+    <h2 class="section-title">📊 概念词聚合分析</h2>
+    
+    <div class="concept-grid">
+
+        <div class="concept-card">
+            <div class="concept-name" style="color: #3498db">流畅</div>
+            <div class="concept-pct" style="color: #3498db">51.5%</div>
+            <div class="concept-detail">202 / 392 条</div>
+            <div class="concept-bar">
+                <div class="concept-bar-fill" style="width: 51.5%; background: #3498db;"></div>
+            </div>
+        </div>
+
+        <div class="concept-card">
+            <div class="concept-name" style="color: #9b59b6">丝滑</div>
+            <div class="concept-pct" style="color: #9b59b6">52.1%</div>
+            <div class="concept-detail">212 / 407 条</div>
+            <div class="concept-bar">
+                <div class="concept-bar-fill" style="width: 52.1%; background: #9b59b6;"></div>
+            </div>
+        </div>
+
+        <div class="concept-card">
+            <div class="concept-name" style="color: #2ecc71">卡顿</div>
+            <div class="concept-pct" style="color: #2ecc71">69.2%</div>
+            <div class="concept-detail">288 / 416 条</div>
+            <div class="concept-bar">
+                <div class="concept-bar-fill" style="width: 69.2%; background: #2ecc71;"></div>
+            </div>
+        </div>
+
+        <div class="concept-card">
+            <div class="concept-name" style="color: #e74c3c">稳定</div>
+            <div class="concept-pct" style="color: #e74c3c">31.4%</div>
+            <div class="concept-detail">127 / 405 条</div>
+            <div class="concept-bar">
+                <div class="concept-bar-fill" style="width: 31.4%; background: #e74c3c;"></div>
+            </div>
+        </div>
+
+        <div class="concept-card">
+            <div class="concept-name" style="color: #f39c12">性能</div>
+            <div class="concept-pct" style="color: #f39c12">37.5%</div>
+            <div class="concept-detail">156 / 416 条</div>
+            <div class="concept-bar">
+                <div class="concept-bar-fill" style="width: 37.5%; background: #f39c12;"></div>
+            </div>
+        </div>
+
+    </div>
+    
+    <table class="compare-table">
+        <thead>
+            <tr>
+                <th>概念词</th>
+                <th>总帖子</th>
+                <th>真实UGC</th>
+                <th>占比</th>
+                <th>包含关键词</th>
+                <th>主要噪音</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td><strong style="color: #3498db">流畅</strong></td>
+                <td>392</td>
+                <td>202</td>
+                <td><span style="color: #3498db; font-weight: 700;">51.5%</span></td>
+                <td>华为和苹果流畅度对比, 华为流畅, 苹果流畅</td>
+                <td>信息缺失 (54条)</td>
+            </tr>
+
+            <tr>
+                <td><strong style="color: #9b59b6">丝滑</strong></td>
+                <td>407</td>
+                <td>212</td>
+                <td><span style="color: #9b59b6; font-weight: 700;">52.1%</span></td>
+                <td>华为和苹果丝滑对比, 华为丝滑, 苹果丝滑</td>
+                <td>营销 (46条)</td>
+            </tr>
+
+            <tr>
+                <td><strong style="color: #2ecc71">卡顿</strong></td>
+                <td>416</td>
+                <td>288</td>
+                <td><span style="color: #2ecc71; font-weight: 700;">69.2%</span></td>
+                <td>华为和苹果卡顿对比, 华为卡顿, 苹果卡顿</td>
+                <td>教程 (64条)</td>
+            </tr>
+
+            <tr>
+                <td><strong style="color: #e74c3c">稳定</strong></td>
+                <td>405</td>
+                <td>127</td>
+                <td><span style="color: #e74c3c; font-weight: 700;">31.4%</span></td>
+                <td>华为和苹果稳定性对比, 华为稳定, 苹果稳定</td>
+                <td>职场 (78条)</td>
+            </tr>
+
+            <tr>
+                <td><strong style="color: #f39c12">性能</strong></td>
+                <td>416</td>
+                <td>156</td>
+                <td><span style="color: #f39c12; font-weight: 700;">37.5%</span></td>
+                <td>华为和苹果性能对比, 华为性能, 苹果性能</td>
+                <td>新闻 (89条)</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<div class="quality-legend">
+    <span class="quality-badge badge-excellent">🟢 优秀 ≥60%</span>
+    <span class="quality-badge badge-good">🔵 良好 45%-59%</span>
+    <span class="quality-badge badge-moderate">🟡 一般 30%-44%</span>
+    <span class="quality-badge badge-poor">🔴 较差 <30%</span>
+</div>
+
+<h2 class="section-title">📋 关键词详细数据</h2>
+<table class="keyword-table">
+<thead>
+    <tr>
+        <th>搜索关键词</th>
+        <th>总数</th>
+        <th>真实UGC占比</th>
+        <th>分类分布</th>
+        <th>质量评级</th>
+    </tr>
+</thead>
+<tbody>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为和苹果卡顿对比</div>
+            <div class="keyword-total">共 209 条</div>
+        </td>
+        <td>209</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-excellent" style="width: 71.8%;">71.8%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 71.8%; background: #2ecc71;" title="真实UGC: 150"></div><div class="dist-bar-seg" style="width: 5.7%; background: #3498db;" title="新闻: 12"></div><div class="dist-bar-seg" style="width: 4.3%; background: #e74c3c;" title="营销: 9"></div><div class="dist-bar-seg" style="width: 5.3%; background: #9b59b6;" title="教程: 11"></div><div class="dist-bar-seg" style="width: 3.3%; background: #f39c12;" title="参数对比: 7"></div><div class="dist-bar-seg" style="width: 8.1%; background: #95a5a6;" title="信息缺失: 17"></div><div class="dist-bar-seg" style="width: 1.4%; background: #7f8c8d;" title="无效: 3"></div></div></td>
+        <td>🟢 优秀</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为和苹果性能对比</div>
+            <div class="keyword-total">共 201 条</div>
+        </td>
+        <td>201</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-moderate" style="width: 35.3%;">35.3%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 35.3%; background: #2ecc71;" title="真实UGC: 71"></div><div class="dist-bar-seg" style="width: 16.4%; background: #3498db;" title="新闻: 33"></div><div class="dist-bar-seg" style="width: 8.5%; background: #e74c3c;" title="营销: 17"></div><div class="dist-bar-seg" style="width: 5.0%; background: #9b59b6;" title="教程: 10"></div><div class="dist-bar-seg" style="width: 13.9%; background: #f39c12;" title="参数对比: 28"></div><div class="dist-bar-seg" style="width: 0.5%; background: #1abc9c;" title="职场: 1"></div><div class="dist-bar-seg" style="width: 19.4%; background: #95a5a6;" title="信息缺失: 39"></div><div class="dist-bar-seg" style="width: 1.0%; background: #7f8c8d;" title="无效: 2"></div></div></td>
+        <td>🟡 一般</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为和苹果流畅度对比</div>
+            <div class="keyword-total">共 189 条</div>
+        </td>
+        <td>189</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-good" style="width: 56.1%;">56.1%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 56.1%; background: #2ecc71;" title="真实UGC: 106"></div><div class="dist-bar-seg" style="width: 7.9%; background: #3498db;" title="新闻: 15"></div><div class="dist-bar-seg" style="width: 6.9%; background: #e74c3c;" title="营销: 13"></div><div class="dist-bar-seg" style="width: 2.1%; background: #9b59b6;" title="教程: 4"></div><div class="dist-bar-seg" style="width: 9.0%; background: #f39c12;" title="参数对比: 17"></div><div class="dist-bar-seg" style="width: 17.5%; background: #95a5a6;" title="信息缺失: 33"></div><div class="dist-bar-seg" style="width: 0.5%; background: #7f8c8d;" title="无效: 1"></div></div></td>
+        <td>🔵 良好</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为和苹果稳定性对比</div>
+            <div class="keyword-total">共 181 条</div>
+        </td>
+        <td>181</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-good" style="width: 48.1%;">48.1%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 48.1%; background: #2ecc71;" title="真实UGC: 87"></div><div class="dist-bar-seg" style="width: 9.4%; background: #3498db;" title="新闻: 17"></div><div class="dist-bar-seg" style="width: 11.0%; background: #e74c3c;" title="营销: 20"></div><div class="dist-bar-seg" style="width: 2.8%; background: #9b59b6;" title="教程: 5"></div><div class="dist-bar-seg" style="width: 11.0%; background: #f39c12;" title="参数对比: 20"></div><div class="dist-bar-seg" style="width: 15.5%; background: #95a5a6;" title="信息缺失: 28"></div><div class="dist-bar-seg" style="width: 2.2%; background: #7f8c8d;" title="无效: 4"></div></div></td>
+        <td>🔵 良好</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为和苹果丝滑对比</div>
+            <div class="keyword-total">共 181 条</div>
+        </td>
+        <td>181</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-excellent" style="width: 60.8%;">60.8%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 60.8%; background: #2ecc71;" title="真实UGC: 110"></div><div class="dist-bar-seg" style="width: 6.6%; background: #3498db;" title="新闻: 12"></div><div class="dist-bar-seg" style="width: 9.9%; background: #e74c3c;" title="营销: 18"></div><div class="dist-bar-seg" style="width: 2.8%; background: #9b59b6;" title="教程: 5"></div><div class="dist-bar-seg" style="width: 7.7%; background: #f39c12;" title="参数对比: 14"></div><div class="dist-bar-seg" style="width: 9.4%; background: #95a5a6;" title="信息缺失: 17"></div><div class="dist-bar-seg" style="width: 2.8%; background: #7f8c8d;" title="无效: 5"></div></div></td>
+        <td>🟢 优秀</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为稳定</div>
+            <div class="keyword-total">共 117 条</div>
+        </td>
+        <td>117</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-poor" style="width: 3.4%;">3.4%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 3.4%; background: #2ecc71;" title="真实UGC: 4"></div><div class="dist-bar-seg" style="width: 17.9%; background: #3498db;" title="新闻: 21"></div><div class="dist-bar-seg" style="width: 5.1%; background: #e74c3c;" title="营销: 6"></div><div class="dist-bar-seg" style="width: 66.7%; background: #1abc9c;" title="职场: 78"></div><div class="dist-bar-seg" style="width: 6.0%; background: #95a5a6;" title="信息缺失: 7"></div><div class="dist-bar-seg" style="width: 0.9%; background: #7f8c8d;" title="无效: 1"></div></div></td>
+        <td>🔴 较差</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为丝滑</div>
+            <div class="keyword-total">共 116 条</div>
+        </td>
+        <td>116</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-moderate" style="width: 37.9%;">37.9%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 37.9%; background: #2ecc71;" title="真实UGC: 44"></div><div class="dist-bar-seg" style="width: 7.8%; background: #3498db;" title="新闻: 9"></div><div class="dist-bar-seg" style="width: 12.1%; background: #e74c3c;" title="营销: 14"></div><div class="dist-bar-seg" style="width: 9.5%; background: #9b59b6;" title="教程: 11"></div><div class="dist-bar-seg" style="width: 0.9%; background: #f39c12;" title="参数对比: 1"></div><div class="dist-bar-seg" style="width: 25.0%; background: #1abc9c;" title="职场: 29"></div><div class="dist-bar-seg" style="width: 6.9%; background: #95a5a6;" title="信息缺失: 8"></div></div></td>
+        <td>🟡 一般</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">苹果丝滑</div>
+            <div class="keyword-total">共 110 条</div>
+        </td>
+        <td>110</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-good" style="width: 52.7%;">52.7%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 52.7%; background: #2ecc71;" title="真实UGC: 58"></div><div class="dist-bar-seg" style="width: 9.1%; background: #3498db;" title="新闻: 10"></div><div class="dist-bar-seg" style="width: 12.7%; background: #e74c3c;" title="营销: 14"></div><div class="dist-bar-seg" style="width: 19.1%; background: #9b59b6;" title="教程: 21"></div><div class="dist-bar-seg" style="width: 4.5%; background: #95a5a6;" title="信息缺失: 5"></div><div class="dist-bar-seg" style="width: 1.8%; background: #7f8c8d;" title="无效: 2"></div></div></td>
+        <td>🔵 良好</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为性能</div>
+            <div class="keyword-total">共 110 条</div>
+        </td>
+        <td>110</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-moderate" style="width: 38.2%;">38.2%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 38.2%; background: #2ecc71;" title="真实UGC: 42"></div><div class="dist-bar-seg" style="width: 30.9%; background: #3498db;" title="新闻: 34"></div><div class="dist-bar-seg" style="width: 10.9%; background: #e74c3c;" title="营销: 12"></div><div class="dist-bar-seg" style="width: 1.8%; background: #9b59b6;" title="教程: 2"></div><div class="dist-bar-seg" style="width: 8.2%; background: #f39c12;" title="参数对比: 9"></div><div class="dist-bar-seg" style="width: 1.8%; background: #1abc9c;" title="职场: 2"></div><div class="dist-bar-seg" style="width: 8.2%; background: #95a5a6;" title="信息缺失: 9"></div></div></td>
+        <td>🟡 一般</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">苹果稳定</div>
+            <div class="keyword-total">共 107 条</div>
+        </td>
+        <td>107</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-moderate" style="width: 33.6%;">33.6%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 33.6%; background: #2ecc71;" title="真实UGC: 36"></div><div class="dist-bar-seg" style="width: 23.4%; background: #3498db;" title="新闻: 25"></div><div class="dist-bar-seg" style="width: 10.3%; background: #e74c3c;" title="营销: 11"></div><div class="dist-bar-seg" style="width: 8.4%; background: #9b59b6;" title="教程: 9"></div><div class="dist-bar-seg" style="width: 14.0%; background: #95a5a6;" title="信息缺失: 15"></div><div class="dist-bar-seg" style="width: 10.3%; background: #7f8c8d;" title="无效: 11"></div></div></td>
+        <td>🟡 一般</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为卡顿</div>
+            <div class="keyword-total">共 105 条</div>
+        </td>
+        <td>105</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-excellent" style="width: 79.0%;">79.0%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 79.0%; background: #2ecc71;" title="真实UGC: 83"></div><div class="dist-bar-seg" style="width: 1.9%; background: #e74c3c;" title="营销: 2"></div><div class="dist-bar-seg" style="width: 14.3%; background: #9b59b6;" title="教程: 15"></div><div class="dist-bar-seg" style="width: 4.8%; background: #95a5a6;" title="信息缺失: 5"></div></div></td>
+        <td>🟢 优秀</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">苹果性能</div>
+            <div class="keyword-total">共 105 条</div>
+        </td>
+        <td>105</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-moderate" style="width: 41.0%;">41.0%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 41.0%; background: #2ecc71;" title="真实UGC: 43"></div><div class="dist-bar-seg" style="width: 21.0%; background: #3498db;" title="新闻: 22"></div><div class="dist-bar-seg" style="width: 6.7%; background: #e74c3c;" title="营销: 7"></div><div class="dist-bar-seg" style="width: 11.4%; background: #9b59b6;" title="教程: 12"></div><div class="dist-bar-seg" style="width: 6.7%; background: #f39c12;" title="参数对比: 7"></div><div class="dist-bar-seg" style="width: 12.4%; background: #95a5a6;" title="信息缺失: 13"></div><div class="dist-bar-seg" style="width: 1.0%; background: #7f8c8d;" title="无效: 1"></div></div></td>
+        <td>🟡 一般</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">苹果卡顿</div>
+            <div class="keyword-total">共 102 条</div>
+        </td>
+        <td>102</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-good" style="width: 53.9%;">53.9%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 53.9%; background: #2ecc71;" title="真实UGC: 55"></div><div class="dist-bar-seg" style="width: 1.0%; background: #3498db;" title="新闻: 1"></div><div class="dist-bar-seg" style="width: 1.0%; background: #e74c3c;" title="营销: 1"></div><div class="dist-bar-seg" style="width: 37.3%; background: #9b59b6;" title="教程: 38"></div><div class="dist-bar-seg" style="width: 6.9%; background: #95a5a6;" title="信息缺失: 7"></div></div></td>
+        <td>🔵 良好</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">苹果流畅</div>
+            <div class="keyword-total">共 102 条</div>
+        </td>
+        <td>102</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-good" style="width: 45.1%;">45.1%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 45.1%; background: #2ecc71;" title="真实UGC: 46"></div><div class="dist-bar-seg" style="width: 13.7%; background: #3498db;" title="新闻: 14"></div><div class="dist-bar-seg" style="width: 9.8%; background: #e74c3c;" title="营销: 10"></div><div class="dist-bar-seg" style="width: 14.7%; background: #9b59b6;" title="教程: 15"></div><div class="dist-bar-seg" style="width: 6.9%; background: #f39c12;" title="参数对比: 7"></div><div class="dist-bar-seg" style="width: 9.8%; background: #95a5a6;" title="信息缺失: 10"></div></div></td>
+        <td>🔵 良好</td>
+    </tr>
+
+    <tr>
+        <td>
+            <div class="keyword-name">华为流畅</div>
+            <div class="keyword-total">共 101 条</div>
+        </td>
+        <td>101</td>
+        <td>
+            <div class="pct-bar">
+                <div class="pct-fill pct-good" style="width: 49.5%;">49.5%</div>
+            </div>
+        </td>
+        <td><div class="dist-bars"><div class="dist-bar-seg" style="width: 49.5%; background: #2ecc71;" title="真实UGC: 50"></div><div class="dist-bar-seg" style="width: 6.9%; background: #3498db;" title="新闻: 7"></div><div class="dist-bar-seg" style="width: 17.8%; background: #e74c3c;" title="营销: 18"></div><div class="dist-bar-seg" style="width: 11.9%; background: #9b59b6;" title="教程: 12"></div><div class="dist-bar-seg" style="width: 3.0%; background: #f39c12;" title="参数对比: 3"></div><div class="dist-bar-seg" style="width: 10.9%; background: #95a5a6;" title="信息缺失: 11"></div></div></td>
+        <td>🔵 良好</td>
+    </tr>
+
+</tbody>
+</table>
+<div class="category-legend">
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #2ecc71;"></div>
+        <span>真实UGC</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #3498db;"></div>
+        <span>新闻</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #e74c3c;"></div>
+        <span>营销</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #9b59b6;"></div>
+        <span>教程</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #f39c12;"></div>
+        <span>参数对比</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #1abc9c;"></div>
+        <span>职场</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #95a5a6;"></div>
+        <span>信息缺失</span>
+    </div>
+
+    <div class="legend-item">
+        <div class="legend-dot" style="background: #7f8c8d;"></div>
+        <span>无效</span>
+    </div>
+</div>
+<div class="insight-box">
+    <h3>💡 关键洞察</h3>
+    <ul>
+        <li><strong>最佳概念词：</strong>"卡顿"（69.2%真实UGC），用户遇到卡顿会主动吐槽，真实性强</li>
+        <li><strong>最差概念词：</strong>"稳定"（仅31.4%），大量职场内容混入（华为员工稳定性讨论）</li>
+        <li><strong>体感词优于技术词：</strong>"卡顿""丝滑"等体感描述（平均60.7%）显著优于"性能""稳定"等技术参数（平均34.5%）</li>
+        <li><strong>对比类优于单品牌：</strong>"XX对比"类关键词平均有效率高10-15个百分点</li>
+        <li><strong>建议：</strong>优先使用"卡顿""丝滑"等体感对比词；避免"稳定""性能"等单属性词；"流畅"处于中间地带（51.5%），可接受但非最优</li>
+    </ul>
+</div>
+
+<div class="footer">
+    <p>搜索关键词质量反馈报告 | 数据来源：小红书华为/苹果相关帖子分类结果</p>
+</div>
+
+</div>
+</body>
+</html>
